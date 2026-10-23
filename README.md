@@ -8,4 +8,4 @@ GitHub Pages публикует только каталог `site/` через `
 
 Визуальный референс и исследование остаются локально в BHOUSE/research/pirogi-2026-10-23 и не входят в этот репозиторий.
 
-Настройка DNS повторяет схему /Volumes/DevSim/Projects/MALINA/dns.md: Cloudflare Free, DNS only, GitHub Pages, корневой домен и www.
+Настройка DNS повторяет схему /Volumes/DevSim/Projects/MALINA/dns.md: Cloudflare Free, DNS only, GitHub Pages, корневой домен и www. Текущее состояние и команды проверки — в [DNS.md](DNS.md).
