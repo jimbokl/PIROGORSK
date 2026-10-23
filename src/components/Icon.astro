@@ -1,0 +1,16 @@
+---
+import pin from '@phosphor-icons/core/assets/regular/map-pin.svg?raw';
+import bag from '@phosphor-icons/core/assets/light/handbag-light.svg?raw';
+import caret from '@phosphor-icons/core/assets/bold/caret-down-bold.svg?raw';
+import arrow from '@phosphor-icons/core/assets/regular/arrow-right.svg?raw';
+import close from '@phosphor-icons/core/assets/regular/x.svg?raw';
+import minus from '@phosphor-icons/core/assets/regular/minus.svg?raw';
+import plus from '@phosphor-icons/core/assets/regular/plus.svg?raw';
+import check from '@phosphor-icons/core/assets/regular/check.svg?raw';
+import wave from '@phosphor-icons/core/assets/regular/wave-sine.svg?raw';
+import copy from '@phosphor-icons/core/assets/regular/copy.svg?raw';
+const icons = { pin, bag, caret, arrow, close, minus, plus, check, wave, copy };
+interface Props { name: keyof typeof icons; class?: string }
+const { name, class: className = '' } = Astro.props;
+---
+<span class:list={['icon', className]} aria-hidden="true" set:html={icons[name]} />

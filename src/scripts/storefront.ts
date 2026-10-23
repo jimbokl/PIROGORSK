@@ -1,0 +1,181 @@
+export {};
+
+type Product = { id: string; name: string; description: string; category: string; prices: Record<string, number> };
+type Selection = { id: string; weight: 500 | 1000; quantity: number };
+const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
+const selection: Selection[] = [];
+try {
+  const saved: unknown = JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]');
+  if (Array.isArray(saved)) {
+    for (const item of saved) {
+      if (item && products.some(product => product.id === item.id) && [500, 1000].includes(item.weight) && Number.isSafeInteger(item.quantity) && item.quantity > 0) selection.push({ id: item.id, weight: item.weight, quantity: item.quantity });
+    }
+  }
+} catch { /* A fresh selection is available when storage is unavailable or invalid. */ }
+const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
+const weightLabel = (weight: number) => weight === 500 ? '500 г' : `${(weight / 1000).toLocaleString('ru-RU')} кг`;
+const all = <T extends HTMLElement = HTMLElement>(selector: string) => [...document.querySelectorAll<T>(selector)];
+let city = 'Зеленоградск';
+let toastTimer: ReturnType<typeof setTimeout>;
+const itemContainer = document.querySelector<HTMLElement>('[data-selection-items]')!;
+
+function toast(message: string) {
+  const element = document.querySelector<HTMLElement>('[data-toast]')!;
+  clearTimeout(toastTimer);
+  element.textContent = message;
+  element.classList.add('visible');
+  toastTimer = setTimeout(() => element.classList.remove('visible'), 2400);
+}
+
+function openDialog(id: string) {
+  const dialog = document.getElementById(id) as HTMLDialogElement | null;
+  if (!dialog) return;
+  all<HTMLDialogElement>('dialog[open]').forEach(current => current.close());
+  if (id === 'selection-dialog') renderSelection();
+  dialog.showModal();
+}
+
+function setCity(value: string, announce = true) {
+  if (!['Зеленоградск', 'Калининград', 'Светлогорск'].includes(value)) return;
+  city = value;
+  all('[data-city]').forEach(element => element.textContent = city);
+  all('[data-select-city]').forEach(element => {
+    if (element.closest('.city-options')) element.setAttribute('aria-pressed', String(element.dataset.selectCity === city));
+  });
+  try { localStorage.setItem('pirogorsk-city', city); } catch { /* The city still works when storage is unavailable. */ }
+  document.querySelector<HTMLDialogElement>('#city-dialog')?.close();
+  if (announce) toast(`Ваш город — ${city}`);
+}
+
+function addProduct(id: string, weight: 500 | 1000) {
+  if (!products.some(product => product.id === id)) return;
+  const existing = selection.find(item => item.id === id && item.weight === weight);
+  if (existing) existing.quantity += 1;
+  else selection.push({ id, weight, quantity: 1 });
+  updateBadge();
+}
+
+function updateBadge() {
+  try { localStorage.setItem('pirogorsk-selection', JSON.stringify(selection)); } catch { /* In-memory selection remains available. */ }
+  const count = selection.reduce((sum, item) => sum + item.quantity, 0);
+  all('[data-count]').forEach(element => { element.textContent = String(count); element.hidden = count === 0; });
+  document.querySelector('[data-open="selection-dialog"]')?.setAttribute('aria-label', count ? `Подборка: ${count} шт.` : 'Подборка, открыть');
+}
+
+function renderSelection() {
+  itemContainer.replaceChildren();
+  const summary = document.querySelector<HTMLElement>('.selection-summary')!;
+  summary.hidden = selection.length === 0;
+  document.querySelector<HTMLElement>('[data-copy-fallback]')!.hidden = true;
+  document.querySelector<HTMLElement>('[data-copy] span:not(.icon)')!.textContent = 'Скопировать подборку';
+  if (!selection.length) {
+    const empty = document.createElement('div');
+    empty.className = 'empty-selection';
+    empty.innerHTML = '<p>Здесь будут ваши пироги</p><p>Начните с любимой начинки.<br>А размер выберем под компанию.</p><button class="button" data-go-catalog>Выбрать пирог</button>';
+    itemContainer.append(empty);
+    return;
+  }
+  for (const item of selection) {
+    const product = products.find(product => product.id === item.id)!;
+    const element = document.createElement('div');
+    element.className = 'selection-item';
+    element.dataset.item = `${item.id}-${item.weight}`;
+    const template = document.querySelector<HTMLTemplateElement>('#selection-item-template')!;
+    element.append(template.content.cloneNode(true));
+    element.querySelector('h3')!.textContent = product.name;
+    element.querySelector('small')!.textContent = `${weightLabel(item.weight)} · ${money(product.prices[item.weight])}`;
+    element.querySelector('output')!.textContent = String(item.quantity);
+    element.querySelector('[data-item-price]')!.textContent = money(product.prices[item.weight] * item.quantity);
+    element.querySelector('[data-decrease]')!.setAttribute('aria-label', `Уменьшить: ${product.name}, ${weightLabel(item.weight)}`);
+    element.querySelector('[data-increase]')!.setAttribute('aria-label', `Увеличить: ${product.name}, ${weightLabel(item.weight)}`);
+    element.querySelector('[data-remove]')!.setAttribute('aria-label', `Убрать: ${product.name}, ${weightLabel(item.weight)}`);
+    itemContainer.append(element);
+  }
+  const total = selection.reduce((sum, item) => sum + products.find(product => product.id === item.id)!.prices[item.weight] * item.quantity, 0);
+  const totalWeight = selection.reduce((sum, item) => sum + item.weight * item.quantity, 0);
+  document.querySelector('[data-total]')!.textContent = money(total);
+  document.querySelector('[data-total-weight]')!.textContent = `Общий вес — ${weightLabel(totalWeight)}`;
+}
+
+all('[data-open]').forEach(button => button.addEventListener('click', () => openDialog(button.dataset.open!)));
+all('[data-close]').forEach(button => button.addEventListener('click', () => button.closest('dialog')?.close()));
+all<HTMLDialogElement>('dialog').forEach(dialog => dialog.addEventListener('click', event => {
+  if (event.target !== dialog) return;
+  const { left, right, top, bottom } = dialog.getBoundingClientRect();
+  if (event.clientX < left || event.clientX > right || event.clientY < top || event.clientY > bottom) dialog.close();
+}));
+all('[data-select-city]').forEach(button => button.addEventListener('click', () => setCity(button.dataset.selectCity!)));
+try { setCity(localStorage.getItem('pirogorsk-city') || city, false); } catch { /* Default city remains usable. */ }
+
+all('[data-filter]').forEach(button => button.addEventListener('click', () => {
+  all('[data-filter]').forEach(filter => filter.setAttribute('aria-pressed', String(filter === button)));
+  all('[data-product]').forEach(card => card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter);
+}));
+
+all('[data-product]').forEach(card => {
+  const product = products.find(product => product.id === card.dataset.product)!;
+  card.addEventListener('change', () => {
+    const value = card.querySelector<HTMLInputElement>('input:checked')!.value;
+    card.querySelector('[data-price]')!.textContent = money(product.prices[value]);
+  });
+  card.querySelector<HTMLButtonElement>('[data-add]')!.addEventListener('click', event => {
+    const button = event.currentTarget as HTMLButtonElement;
+    const weight = Number(card.querySelector<HTMLInputElement>('input:checked')!.value) as 500 | 1000;
+    addProduct(product.id, weight);
+    button.classList.add('added');
+    button.querySelector('span:not(.icon)')!.textContent = 'Добавлен';
+    toast(`${product.name}, ${weightLabel(weight)} — в подборке`);
+    setTimeout(() => { button.classList.remove('added'); button.querySelector('span:not(.icon)')!.textContent = 'В подборку'; }, 1500);
+  });
+});
+
+all('[data-preset]').forEach(button => button.addEventListener('click', () => {
+  const preset: [string, 500 | 1000][] = button.dataset.preset === 'dinner'
+    ? [['meat', 500], ['cheese', 500]]
+    : [['meat', 1000], ['fish', 1000], ['cabbage', 1000]];
+  preset.forEach(([id, weight]) => addProduct(id, weight));
+  openDialog('selection-dialog');
+}));
+
+function goToCatalog() {
+  all<HTMLDialogElement>('dialog[open]').forEach(dialog => dialog.close());
+  document.querySelector('#pirogi')?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+}
+document.addEventListener('click', event => {
+  const target = event.target as HTMLElement;
+  if (target.closest('[data-go-catalog], [data-custom-bundle]')) goToCatalog();
+  const control = target.closest<HTMLElement>('[data-decrease], [data-increase], [data-remove]');
+  if (!control) return;
+  const row = control.closest<HTMLElement>('[data-item]')!;
+  const itemIndex = selection.findIndex(item => `${item.id}-${item.weight}` === row.dataset.item);
+  if (itemIndex < 0) return;
+  const action = control.hasAttribute('data-increase') ? 'increase' : control.hasAttribute('data-decrease') ? 'decrease' : 'remove';
+  const rowIndex = [...itemContainer.children].indexOf(row);
+  if (action === 'remove' || (action === 'decrease' && selection[itemIndex].quantity === 1)) selection.splice(itemIndex, 1);
+  else selection[itemIndex].quantity += action === 'increase' ? 1 : -1;
+  updateBadge();
+  renderSelection();
+  const nextRow = itemContainer.children[Math.min(rowIndex, itemContainer.children.length - 1)];
+  (nextRow?.querySelector(`[data-${action}]`) as HTMLButtonElement | null)?.focus();
+});
+
+document.querySelector('[data-copy]')!.addEventListener('click', async () => {
+  const lines = selection.map(item => {
+    const product = products.find(product => product.id === item.id)!;
+    return `${product.name} · ${weightLabel(item.weight)} × ${item.quantity} — ${money(product.prices[item.weight] * item.quantity)}`;
+  });
+  const text = `Пирогорск · ${city}\n\n${lines.join('\n')}\n\nИтого: ${document.querySelector('[data-total]')!.textContent}\nЦены предварительные. Приём заказов пока не открыт.\nhttps://pirogorsk.ru/`;
+  try {
+    await navigator.clipboard.writeText(text);
+    document.querySelector<HTMLElement>('[data-copy] span:not(.icon)')!.textContent = 'Подборка скопирована';
+  } catch {
+    const fallback = document.querySelector<HTMLTextAreaElement>('[data-copy-fallback]')!;
+    fallback.value = text;
+    fallback.hidden = false;
+    fallback.focus();
+    fallback.select();
+    document.querySelector<HTMLElement>('[data-copy] span:not(.icon)')!.textContent = 'Выделили текст — скопируйте';
+  }
+});
+
+updateBadge();

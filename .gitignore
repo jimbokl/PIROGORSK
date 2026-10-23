@@ -2,3 +2,8 @@
 .env
 .env.*
 !.env.example
+node_modules/
+.astro/
+site/
+qa/*.json
+qa/*.html

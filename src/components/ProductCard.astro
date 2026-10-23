@@ -1,0 +1,23 @@
+---
+import { Picture } from 'astro:assets';
+import Icon from './Icon.astro';
+import type { products } from '../data/catalog';
+interface Props { product: (typeof products)[number] }
+const { product } = Astro.props;
+---
+<article class="product-card" data-product={product.id} data-category={product.category}>
+  <Picture src={product.image} formats={['avif', 'webp']} widths={[240, 400, 600]} sizes="(max-width: 600px) 48vw, (max-width: 850px) 42vw, 260px" width={300} height={266} quality={48} alt={`${product.name} и кусочек с начинкой`} class="product-image" loading="lazy" decoding="async" />
+  <h3>{product.name}</h3>
+  <p class="product-description">{product.description}</p>
+  <fieldset class="weight-switch">
+    <legend class="sr-only">Вес: {product.name.toLowerCase()}</legend>
+    {[500, 1000].map((weight) => <label>
+      <input type="radio" name={`weight-${product.id}`} value={weight} checked={weight === 500} />
+      <span>{weight === 500 ? '500 г' : '1 кг'}</span>
+    </label>)}
+  </fieldset>
+  <div class="product-bottom">
+    <span class="product-price" data-price aria-live="polite">{product.prices[500]} ₽</span>
+    <button class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button>
+  </div>
+</article>
