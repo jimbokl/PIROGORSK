@@ -4,7 +4,7 @@ import tower from '../../design/layered-assets-v2/logo/tower-compact-symbol.png'
 interface Props { href?: string; footer?: boolean }
 const { href = '/', footer = false } = Astro.props;
 ---
-<a class:list={['pirogorsk-brand', { 'pirogorsk-brand--footer': footer }]} href={href} aria-label="Пирогорск — главная">
+<a class:list={['pirogorsk-brand', { 'pirogorsk-brand--footer': footer }]} href={href}>
   <Image src={tower} format="webp" width={56} height={56} quality={90} alt="" aria-hidden="true" class="pirogorsk-brand-symbol" loading="eager" />
   <span class="pirogorsk-brand-copy"><span class="pirogorsk-brand-name">ПИРОГОРСК</span><span class="pirogorsk-brand-tagline">Пироги с балтийским характером</span></span>
 </a>

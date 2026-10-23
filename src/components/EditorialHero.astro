@@ -5,8 +5,20 @@ import { conceptCaption } from '../data/editorial';
 interface Props { eyebrow: string; title: string; intro: string; image?: ImageMetadata; imageAlt?: string; compact?: boolean }
 const { eyebrow, title, intro, image, imageAlt = '', compact = false } = Astro.props;
 const hasVisual = Boolean(image) || Astro.slots.has('visual');
+const hasActions = Astro.slots.has('actions');
 ---
-<section class:list={['ed-hero', { 'ed-hero-compact': compact, 'ed-hero-text': !hasVisual }]}>
+<section class:list={['ed-hero', { 'ed-hero-compact': compact, 'ed-hero-text': !hasVisual, 'ed-hero-with-actions': hasActions }]}>
   <div class="ed-hero-copy"><p class="ed-eyebrow">{eyebrow}</p><h1>{title}</h1><p class="ed-intro">{intro}</p><slot /></div>
   {hasVisual && <figure class="ed-hero-art">{image ? <Picture src={image} formats={['avif', 'webp']} widths={[480, 800, 1200]} sizes="(max-width: 760px) 92vw, 52vw" width={800} height={Math.round(800 * image.height / image.width)} quality={58} alt={imageAlt} loading="eager" decoding="async" fetchpriority="high" /> : <slot name="visual" />}<figcaption>{conceptCaption}</figcaption></figure>}
+  {hasActions && <div class="ed-hero-actions"><slot name="actions" /></div>}
 </section>
+<style>
+  .ed-hero-with-actions{grid-template-areas:'copy art' 'actions art';row-gap:0}
+  .ed-hero-with-actions .ed-hero-copy{grid-area:copy;align-self:end}
+  .ed-hero-with-actions .ed-hero-art{grid-area:art}
+  .ed-hero-actions{grid-area:actions;align-self:start;padding-top:26px}
+  @media(max-width:760px){
+    .ed-hero-with-actions{grid-template-areas:'copy' 'art' 'actions';row-gap:24px}
+    .ed-hero-actions{padding-top:0}
+  }
+</style>

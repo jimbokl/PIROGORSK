@@ -201,7 +201,8 @@ all('[data-order]').forEach(button => button.addEventListener('click', () => {
   if (!selection.length) { goToCatalog(); return; }
   document.dispatchEvent(new CustomEvent('pirogorsk:order-open', { detail: { items: selection.map(item => ({ ...item })), city } }));
 }));
-const interestId = new URLSearchParams(location.search).get('interest');
+const interestParams = new URLSearchParams(location.search);
+const interestId = interestParams.get('interest');
 if (interestId && Object.hasOwn(editorialCityIntents, interestId)) {
   setCity(editorialCityIntents[interestId as keyof typeof editorialCityIntents], false);
   openDialog('selection-dialog');
@@ -214,8 +215,18 @@ if (interestId && Object.hasOwn(editorialCityIntents, interestId)) {
   }
   openDialog('selection-dialog');
 } else if (interestId && products.some(product => product.id === interestId)) {
-  // A product link focuses its Add control; the visitor chooses the weight first.
+  const product = products.find(product => product.id === interestId)!;
+  const variant = Number(interestParams.get('variant'));
   const card = all('[data-product]').find(card => card.dataset.product === interestId);
-  card?.scrollIntoView({ block: 'center' });
-  card?.querySelector<HTMLButtonElement>('[data-add]')?.focus({ preventScroll: true });
+  if (product.variants.some(item => item.value === variant)) {
+    // The product-page CTA explicitly adds this size. Reloading that URL keeps
+    // the same selection instead of increasing its quantity again.
+    const input = card?.querySelector<HTMLInputElement>(`input[value="${variant}"]`);
+    if (input) { input.checked = true; input.dispatchEvent(new Event('change', { bubbles: true })); }
+    if (!selection.some(item => item.id === interestId && item.value === variant)) addProduct(interestId, variant);
+    openDialog('selection-dialog');
+  } else {
+    card?.scrollIntoView({ block: 'center' });
+    card?.querySelector<HTMLButtonElement>('[data-add]')?.focus({ preventScroll: true });
+  }
 }

@@ -6,7 +6,7 @@ import type { Product } from '../data/catalog';
 import ProductBadge from './ProductBadge.astro';
 import '../styles/catalog.css';
 
-interface Props { product: Product }
+interface Props { product: Product; layout?: 'catalog' | 'menu' | 'hero' }
 type AssetFile = { path?: string; status?: string; alpha?: boolean };
 type AssetEntry = {
   status?: string;
@@ -16,7 +16,7 @@ type AssetEntry = {
     product_css_height_percent?: number; product_center_x_percent?: number; product_center_y_percent?: number;
   };
 };
-const { product } = Astro.props;
+const { product, layout = 'catalog' } = Astro.props;
 const manifest = manifestData as { pairs?: Record<string, AssetEntry>; drinks?: Record<string, AssetEntry> };
 const images = import.meta.glob<ImageMetadata>('../../design/layered-assets-v2/**/*.{png,webp,avif}', { eager: true, import: 'default' });
 const legacyImages = import.meta.glob<ImageMetadata>('../../design/assets-source/{meat,fish,cabbage,cheese}.png', { eager: true, import: 'default' });
@@ -34,15 +34,32 @@ const subjectWidth = product.kind === 'pie' ? composition?.pie_css_width_percent
 const subjectX = product.kind === 'pie' ? composition?.pie_center_x_percent ?? 50 : composition?.product_center_x_percent ?? 50;
 const subjectY = product.kind === 'pie' ? composition?.pie_center_y_percent ?? 54 : composition?.product_center_y_percent ?? 50;
 const position = `--subject-width:${subjectWidth}%;--subject-x:${subjectX}%;--subject-y:${subjectY}%;`;
-const imageWidths = [240, 320, 400, 600];
-const sizes = product.kind === 'drink'
-  ? '(max-width: 380px) calc(100vw - 36px), (max-width: 600px) calc((100vw - 56px) / 2), (max-width: 1200px) 28vw, 230px'
-  : '(max-width: 380px) calc(100vw - 36px), (max-width: 600px) calc((100vw - 56px) / 2), (max-width: 850px) 42vw, (max-width: 1060px) 28vw, 300px';
+const imageWidths = layout === 'hero' ? [320, 480, 640, 800, 1200] : [240, 280, 320, 400, 480, 600, 800];
+// Match each grid's columns, gaps and container. The transparent layer occupies
+// only part of that slot, so it needs its own sizes rather than the background's.
+type Slot = [breakpoint: number, vw: number, pixels: number];
+const slots: Slot[] = layout === 'hero'
+  ? [[420, 100, -36], [760, 100, -48], [1000, 51.9231, -39.4615], [1300, 51.9231, -69.5769], [Infinity, 0, 605.4231]]
+  : layout === 'menu'
+    ? [[420, 100, -36], [760, 50, -33], [1000, 100 / 3, -88 / 3], [1300, 100 / 3, -136 / 3], [Infinity, 0, 388]]
+    : [[380, 100, -36], [600, 50, -28], [850, 50, -51], [1060, 100 / 3, -44],
+      ...(product.kind === 'drink'
+        ? [[1200, 100 / 3, -60], [1400, 20, -41.6], [Infinity, 0, 238.4]] as Slot[]
+        : [[1400, 25, -51], [Infinity, 0, 299]] as Slot[])];
+const slotSizes = (scale = 1) => slots.map(([breakpoint, vw, pixels]) => {
+  const length = vw === 0 ? `${+(pixels * scale).toFixed(3)}px`
+    : `calc(${+(vw * scale).toFixed(3)}vw - ${+(-pixels * scale).toFixed(3)}px)`;
+  return `${Number.isFinite(breakpoint) ? `(max-width: ${breakpoint}px) ` : ''}${length}`;
+}).join(', ');
+const sizes = slotSizes();
+const subjectSizes = slotSizes(subjectWidth / 100);
+const loading = layout === 'hero' ? 'eager' : 'lazy';
+const fetchpriority = layout === 'hero' ? 'high' : 'auto';
 ---
 <div class:list={['product-visual', `product-visual--${product.kind}`, { 'product-visual--pending': imageState === 'pending' }]} data-image-state={imageState} style={position}>
   {layered ? <>
-    {background && <Picture src={background} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={600} quality={44} alt="" class="product-visual-background" loading="lazy" decoding="async" />}
-    <Picture src={subject!} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={600} quality={58} alt={product.kind === 'pie' ? `${product.name}: пирог и кусочек с начинкой` : product.name} class="product-visual-subject" loading="lazy" decoding="async" />
+    {background && <Picture src={background} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={600} quality={44} alt="" class="product-visual-background" loading={loading} fetchpriority={fetchpriority} decoding="async" />}
+    <Picture src={subject!} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={subjectSizes} width={600} height={600} quality={58} alt={product.kind === 'pie' ? `${product.name}: пирог и кусочек с начинкой` : product.name} class="product-visual-subject" loading={loading} fetchpriority={fetchpriority} decoding="async" />
   </> : legacy ? <Picture src={legacy} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={532} quality={48} alt={`${product.name} и кусочек с начинкой`} class="product-visual-legacy" loading="lazy" decoding="async" /> : <div class="product-visual-placeholder" aria-hidden="true">
     <span class="product-placeholder-caption">Скоро в Пирогорске</span>
     <span class="product-placeholder-name">{product.kind === 'pie' ? 'Кусочек' : 'К вашему'}<br />{product.kind === 'pie' ? 'сладкого' : 'пирогу'}</span>

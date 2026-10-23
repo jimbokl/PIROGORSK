@@ -1,19 +1,19 @@
 # Interest form checkpoint
 
-Updated: 2026-10-23, Europe/Kaliningrad.
+Updated: 2026-10-23 20:12 UTC.
 
-Objective: anonymous, persisted prelaunch demand; no contact data; server acknowledgement before conversion. Owner details are postponed by the user. No name, phone, email, Telegram, address or comments in the form/API.
+Objective: persisted anonymous prelaunch demand. The user postponed owner details and contact collection. The form/API have no name, phone, email, Telegram, address or comments. This is intent, not payment or confirmed delivery.
 
-Implemented: form/component/styles, five agreed Metrica goals with counter disabled by default, Worker validation/CORS/bounded body, atomic D1 admission + save, idempotent retry, transient hashed rate keys, SQL migration, privacy/terms, API and deployment documentation. Worker uses the shared canonical catalog including extras and stores price snapshots.
+Production: https://pirogorsk-interest.mmotorin.workers.dev, API `/api/interest`, health `{"ok":true,"storage":"d1","mode":"intent"}`. D1 `pirogorsk-interest`, UUID `4d614db7-3ae1-4972-b76e-197f8174d758`, binding `DB`, `ALLOW_LOCALHOST=false`. Workers Logs/Traces/Issues OFF. Cron `*/10 * * * *` saved and independently confirmed after Dashboard reload; execution history still to verify. Config `worker/wrangler.jsonc` contains existing resource IDs, no secrets. Schema was applied through D1 Console; Wrangler migration history remains unconfirmed, so do not reapply the original CREATE TABLE migration blindly.
 
-Production: root deployed https://pirogorsk-interest.mmotorin.workers.dev through Cloudflare Dashboard. API /api/interest is set in src/config/analytics.ts (this documentation turn does not edit src). D1 pirogorsk-interest UUID 4d614db7-3ae1-4972-b76e-197f8174d758; DB binding and ALLOW_LOCALHOST=false confirmed. Workers Logs OFF confirmed. Cron */10 * * * * was saved; root is independently rechecking it, and actual scheduled execution is not yet evidenced. Public existing-resource config is worker/wrangler.jsonc; no secrets.
+Verified:
+- Two production API submissions with UUID `bae9085e-2379-4c2b-9c32-c9f6f9c7dad8` produced one D1 row, total 1640.
+- Full production UI submission from https://pirogorsk.ru/ returned UUID `1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578`. Independent D1 SELECT returned one matching row: Зеленоградск, 2027-05-16, delivery, total 690, meat/500 × 1. Browser console has no errors.
+- Both UUIDs are QA and excluded from demand queries in ANALYTICS.md. They have not been deleted.
+- Worker/client typechecks and all 14 real SQLite/API tests PASS. Earlier browser QA verified validation/focus, 320px viewport, double submit, lost acknowledgement after commit, same-ID retry, one conversion event, Escape/focus restoration and disabled empty endpoint.
 
-Production verification reported by root: GET /health returned {"ok":true,"storage":"d1","mode":"intent"}. Two POSTs with request_id bae9085e-2379-4c2b-9c32-c9f6f9c7dad8 produced one row; independent D1 read-back returned duplicate_count=1 and value_total=1640. This UUID is QA and must be excluded from real demand metrics. Deletion is not confirmed. ANALYTICS.md contains exact health/read-back checks and SQL excluding this UUID. Published-page end-to-end verification remains separate from this API/storage evidence.
+Implemented: canonical 13-item catalog validation, price snapshots, atomic D1 admission/save, idempotency, transient hashed rate keys, bounded body/CORS, scheduled cleanup. Server acknowledgement of the same UUID precedes success and `order_submit`. Unknown fields are rejected. Contact data is never sent to analytics.
 
-Metrica: metricaId remains 0. Counter creation reaches an agreement acceptance step; that step has not been performed in this task. Five goals agreed: catalog_add, order_form_open, order_form_start, order_submit, order_submit_error. No live Metrica events were sent by the local QA.
+Metrica remains disabled (`metricaId:0`). Account setup reaches an agreement acceptance step, not completed. Prepared goals: catalog_add, order_form_open, order_form_start, order_submit, order_submit_error. No claim of active Metrica tracking.
 
-Local verification: this follow-up re-ran node worker/scripts/verify.mjs on 2026-10-23; Worker typecheck PASS, browser script typecheck PASS, all 14 API/SQL tests PASS. Log: worker/dist/verify-production-docs.log. Tests use real SQLite and the migration. Earlier browser QA covered actual form + deployable Worker bundle, mobile 320px, validation/focus, double submit, lost acknowledgement after commit, retry with the same ID, one conversion/event, Escape/focus restore and empty endpoint. The synchronous chrome.kill() cleanup hint was fixed. Re-run node worker/scripts/verify.mjs for scoped typechecks/API tests; node worker/scripts/bundle.mjs and node --check worker/dist/worker.js for bundle; node worker/scripts/qa-browser.mjs for browser integration. Generated output is ignored in Git.
-
-This follow-up edits only ANALYTICS.md, this checkpoint and worker config, then runs local backend checks. No production POST, src edit, commit, deploy, agreement acceptance or QA deletion. Remote Wrangler migration history is not confirmed because the production schema was applied through D1 Console.
-
-Cron recheck completed by root at 2026-10-23 20:03 UTC: Dashboard reload shows Every 10 minutes and Next 20:10 UTC; unsaved changes bar absent. Actual scheduled execution remains unverified. Remaining: published-page verification and any QA cleanup. Counter setup remains pending. Record new evidence without treating anonymous interest or value_total as paid orders/revenue.
+Scoped verification: `node worker/scripts/verify.mjs`; bundle: `node worker/scripts/bundle.mjs` and `node --check worker/dist/worker.js`; browser integration: `node worker/scripts/qa-browser.mjs`. Generated reports are ignored. API/storage evidence and published-page screenshots are recorded in ANALYTICS.md.

@@ -7,3 +7,7 @@ node_modules/
 site/
 qa/*.json
 qa/*.html
+
+# Admin evidence stays local; screenshots may show the signed-in account.
+qa/screenshots/google-*.png
+qa/screenshots/production-d1-*.png

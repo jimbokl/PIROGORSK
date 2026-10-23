@@ -1,10 +1,10 @@
 # Анонимная проверка спроса Пирогорска
 
-Состояние на 23 октября 2026 года: backend опубликован, endpoint в `src/config/analytics.ts` установлен на `https://pirogorsk-interest.mmotorin.workers.dev/api/interest`. `metricaId: 0`: счётчик не создан и скрипт Яндекса не загружается. Создание остановлено на принятии соглашения; согласие в рамках этой задачи не предоставлялось. Сведения о владельце пользователь отложил, форма продолжает собирать только анонимный интерес.
+Состояние на 23 октября 2026 года: backend опубликован, endpoint в `src/config/analytics.ts` установлен на `https://pirogorsk-interest.mmotorin.workers.dev/api/interest`. `metricaId: 0`: счётчик не создан и скрипт Яндекса не загружается. Создание дошло до обязательного принятия соглашения; этот шаг пока не выполнен. Сведения о владельце пользователь отложил, форма продолжает собирать только анонимный интерес.
 
 ## Production и проверка сохранения
 
-Основной агент опубликовал Worker через Cloudflare Dashboard и сообщил результаты независимого чтения D1:
+Worker опубликован через Cloudflare Dashboard. Сохранение независимо проверено чтением D1:
 
 | Параметр | Фактическое значение |
 | --- | --- |
@@ -17,7 +17,12 @@
 | Cron | `*/10 * * * *` сохранён; 23.10 20:03 UTC после перезагрузки Dashboard показано Every 10 minutes, Next 20:10 UTC. Выполнение обработчика отдельно не подтверждено |
 | Публичный конфиг Worker | `worker/wrangler.jsonc`; UUID базы не является секретом |
 
-Два POST с одним `requestId` дали одну запись. Независимый запрос в D1 вернул `duplicate_count=1`, `value_total=1640` для UUID `bae9085e-2379-4c2b-9c32-c9f6f9c7dad8`. Это служебная QA-заявка, не реальный спрос; исключать её UUID из всех подсчётов и выгрузок спроса. Её удаление пока не подтверждено. Проверка подтверждает production API и D1; end-to-end отправку с опубликованной страницы нужно учитывать отдельно, когда основной агент её подтвердит.
+Production проверен двумя независимыми способами:
+
+- API: два POST с одним `requestId` дали одну запись. Чтение D1 вернуло `duplicate_count=1`, `value_total=1640` для UUID `bae9085e-2379-4c2b-9c32-c9f6f9c7dad8`.
+- Опубликованная форма на `https://pirogorsk.ru/`: выбран мясной пирог 500 г, Зеленоградск, 16.05.2027, доставка, предварительная сумма 690 ₽. После отправки интерфейс показал подтверждение с UUID `1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578`. Независимый SELECT в D1 вернул одну строку с тем же UUID, городом, датой, способом получения, суммой 690 и вариантом `meat/500`, количеством 1. В консоли браузера ошибок нет.
+
+Оба UUID — служебный QA, а не реальный спрос. Они исключены из SQL ниже; записи не удалены. Скриншоты: `qa/screenshots/production-interest-saved-20261023.png`, `qa/screenshots/production-d1-readback-20261023.png`.
 
 Точная повторная проверка health не создаёт записей:
 
@@ -33,7 +38,7 @@ FROM interests
 WHERE request_id = 'bae9085e-2379-4c2b-9c32-c9f6f9c7dad8';
 ```
 
-Зафиксированный результат: `duplicate_count=1`, `value_total=1640`. Health сам по себе не проверяет всю отправку: подтверждение сохранения установлено двумя POST и последующим независимым чтением D1. Этот документационный проход не выполняет новых production POST, деплой или удаление QA-записи.
+Зафиксированный результат: `duplicate_count=1`, `value_total=1640`. Health сам по себе не проверяет всю отправку: подтверждение сохранения установлено двумя POST и последующим независимым чтением D1. Новых записей для повторного подтверждения этих фактов не требуется.
 
 ## Что означает конверсия
 
@@ -169,7 +174,10 @@ npx wrangler deploy
 SELECT request_id, datetime(created_at / 1000, 'unixepoch') AS created_utc,
        city, items_json, desired_date, delivery, price_consent, value_total
 FROM interests
-WHERE request_id <> 'bae9085e-2379-4c2b-9c32-c9f6f9c7dad8'
+WHERE request_id NOT IN (
+  'bae9085e-2379-4c2b-9c32-c9f6f9c7dad8',
+  '1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578'
+)
 ORDER BY created_at DESC LIMIT 100;
 ```
 
@@ -178,7 +186,10 @@ ORDER BY created_at DESC LIMIT 100;
 ```sql
 SELECT city, COUNT(*) AS interests
 FROM interests
-WHERE request_id <> 'bae9085e-2379-4c2b-9c32-c9f6f9c7dad8'
+WHERE request_id NOT IN (
+  'bae9085e-2379-4c2b-9c32-c9f6f9c7dad8',
+  '1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578'
+)
 GROUP BY city;
 ```
 
