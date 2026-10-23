@@ -1,6 +1,6 @@
 # Скорость production-сборки
 
-Финальная проверка: **23 октября 2026, 20:41 Europe/Kaliningrad**. Lighthouse **13.5.0**, production preview `http://127.0.0.1:4322/` после `npm run check` и `npm run build`.
+Финальная проверка: **23 октября 2026, 20:46 Europe/Kaliningrad**. Lighthouse **13.5.0**, production preview `http://127.0.0.1:4322/` после `npm run check` и `npm run build`.
 
 | Категория | Mobile | Desktop |
 | --- | ---: | ---: |
@@ -16,7 +16,7 @@
 | Speed Index | 0,9 с | 0,2 с |
 | Total Blocking Time | 0 мс | 0 мс |
 | Cumulative Layout Shift | 0 | 0 |
-| Передано в ходе аудита | 297 981 байт | 360 881 байт |
+| Передано в ходе аудита | 297 982 байт | 360 882 байт |
 | Запросов | 15 | 15 |
 
 ## Условия и воспроизведение
@@ -42,8 +42,8 @@ npm run audit:performance -- https://pirogorsk.ru/
 
 Последние сырые отчёты сохранены локально и исключены из Git:
 
-- [Mobile HTML](qa/lighthouse-mobile.html), [JSON](qa/lighthouse-mobile.json): `2026-10-23T18:41:35.950Z`.
-- [Desktop HTML](qa/lighthouse-desktop.html), [JSON](qa/lighthouse-desktop.json): `2026-10-23T18:41:41.411Z`.
+- [Mobile HTML](qa/lighthouse-mobile.html), [JSON](qa/lighthouse-mobile.json): `2026-10-23T18:46:42.297Z`.
+- [Desktop HTML](qa/lighthouse-desktop.html), [JSON](qa/lighthouse-desktop.json): `2026-10-23T18:46:47.844Z`.
 - [Сводка JSON](qa/performance-summary.json).
 
 ## Что обеспечивает результат
