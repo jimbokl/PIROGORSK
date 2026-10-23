@@ -1,6 +1,6 @@
 # Пирогорск — рабочий checkpoint
 
-Обновлено: 23.10.2026 20:37 UTC. Ночная работа продолжается до **24.10.2026 09:00 Europe/Kaliningrad (07:00 UTC)**. Основной goal активен; heartbeat `09-00` каждые 30 минут, без сообщений при неизменном состоянии. В 09:00 — финальная проверка и пауза heartbeat через native automation tool.
+Обновлено: 23.10.2026 20:47 UTC. Ночная работа продолжается до **24.10.2026 09:00 Europe/Kaliningrad (07:00 UTC)**. Основной goal активен; heartbeat `09-00` каждые 30 минут, без сообщений при неизменном состоянии. В 09:00 — финальная проверка и пауза heartbeat через native automation tool.
 
 ## Production
 
@@ -14,7 +14,7 @@
 
 - Typecheck: 45 files, 0 errors/warnings/hints. Build PASS. SEO PASS: 23 HTML, 7 концептов, 21 sitemap URL, 1587 local references. Backend: 14 tests + Worker/client typechecks PASS. Shared harness registry strict PASS.
 - Lighthouse 13.5 на **https://pirogorsk.ru/**: mobile 100, desktop 100; Accessibility / Best Practices / SEO 100 на обоих. Замер 20:35 UTC: mobile FCP 1.21 с, LCP 1.40 с, TBT 0, CLS .0022; desktop LCP .45 с, TBT/CLS 0. Это Lighthouse на домене, не официальный PSI.
-- Официальный PSI UI пока сообщает, что не может перейти по новому домену; API ранее 429 quota 0. Не выдавать локальные/доменный Lighthouse за результат PSI.
+- Официальный PSI заработал: [отчёт 20:39 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ktw8leuo8q?form_factor=mobile), mobile 98 / desktop 100, A/BP/SEO 100 на обоих. Mobile LCP 1.801 с, TBT/CLS 0. После preload Golos Latin нужен новый официальный замер.
 - UI: 1440/390/320px, город Калининград, варианты веса, суммы и сценарии, отсутствие повторного добавления набора после reload проверены. Production UI-заявка сохранилась, независимый D1 readback подтвердил все значения. QA UUID исключены из спроса (ANALYTICS.md).
 
 ## Поисковые консоли и аналитика
@@ -34,7 +34,7 @@
 ## Сейчас / далее
 
 1. Уточнённые sizes слоёв с cap 520px, вариант 700px, accessible name логотипа, короткие тексты и выбор 500 г / 1 кг опубликованы. UI проверен: цена, перенос размера в подборку, reload без дубля, неверный variant, отсутствие ошибок. Дополнительный аудит карточки: local mobile 99 / desktop 100, A/BP/SEO 100; замечаний image-delivery не осталось. На домене новые sizes и загрузка слоёв подтверждены. Typecheck/build/SEO PASS.
-2. Доменный Lighthouse после изменений — 100/100, отчёты и точные времена в PERFORMANCE.md. Официальный PSI пока не открывает URL; повторить позднее. DNS-проверки NOERROR, причина ошибки PSI не установлена. По результатам проверки изменения DNS не требуются.
+2. Официальный PSI 98/100 mobile и 100/100 desktop. В критической цепочке обнаружен Golos Latin, добавлен preload. Check/build/SEO PASS; local mobile 99 / desktop 100, TBT/CLS 0. Публикуем и проверяем официальный PSI повторно; прежний отчёт сохранён в PERFORMANCE.md.
 3. Проверить историю cron и доступность Яндекс Sitemap. Продолжать heartbeat до 09:00, записывать только новые результаты.
 
 ## Координация
