@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "date": "2026-10-23",
+  "asset_count": 24,
+  "transparent_count": 16,
+  "opaque_count": 8,
+  "checks": [
+    {
+      "path": "meat/pie.png",
+      "result": "PASS"
+    },
+    {
+      "path": "meat/background.png",
+      "result": "PASS"
+    },
+    {
+      "path": "fish/pie.png",
+      "result": "PASS"
+    },
+    {
+      "path": "fish/background.png",
+      "result": "PASS"
+    },
+    {
+      "path": "cabbage/pie.png",
+      "result": "PASS"
+    },
+    {
+      "path": "cabbage/background.png",
+      "result": "PASS"
+    },
+    {
+      "path": "cheese/pie.png",
+      "result": "PASS"
+    },
+    {
+      "path": "cheese/background.png",
+      "result": "PASS"
+    },
+    {
+      "path": "apple/pie.png",
+      "result": "PASS"
+    },
+    {
+      "path": "apple/background.png",
+      "result": "PASS"
+    },
+    {
+      "path": "cherry/pie.png",
+      "result": "PASS"
+    },
+    {
+      "path": "cherry/background.png",
+      "result": "PASS"
+    },
+    {
+      "path": "curd/pie.png",
+      "result": "PASS"
+    },
+    {
+      "path": "curd/background.png",
+      "result": "PASS"
+    },
+    {
+      "path": "drinks/cranberry.png",
+      "result": "PASS"
+    },
+    {
+      "path": "drinks/seabuckthorn.png",
+      "result": "PASS"
+    },
+    {
+      "path": "drinks/tea.png",
+      "result": "PASS"
+    },
+    {
+      "path": "drinks/coffee.png",
+      "result": "PASS"
+    },
+    {
+      "path": "drinks/water.png",
+      "result": "PASS"
+    },
+    {
+      "path": "logo/tower-symbol.png",
+      "result": "PASS"
+    },
+    {
+      "path": "logo/kurhaus-symbol.png",
+      "result": "PASS"
+    },
+    {
+      "path": "logo/tower-compact-symbol.png",
+      "result": "PASS"
+    },
+    {
+      "path": "hero/pie.png",
+      "result": "PASS"
+    },
+    {
+      "path": "hero/background.png",
+      "result": "PASS"
+    }
+  ],
+  "note": "RGBA cutouts retain generated semitransparent antialiased edges; the visible bbox threshold is 128, while content_bbox records all nonzero alpha pixels.",
+  "visual_review": "PASS — original images, catalog composites, alpha edges, small logo sizes and hero composition inspected in browser."
+}

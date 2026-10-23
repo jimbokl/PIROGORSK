@@ -1,0 +1,12 @@
+---
+import type { ProductBadgeKind } from '../data/catalog';
+import '../styles/catalog.css';
+
+interface Props { kind: ProductBadgeKind; class?: string }
+const { kind, class: className = '' } = Astro.props;
+const labels: Record<ProductBadgeKind, string> = {
+  hearty: 'Сытно', sweet: 'Сладкий', tea: 'К чаю', vegetable: 'Овощной',
+  cheese: 'Сырный', refreshing: 'Освежает', promotion: 'Акция', bestseller: 'Хит',
+};
+---
+<span class:list={['product-badge', `product-badge--${kind}`, className]}>{labels[kind]}</span>

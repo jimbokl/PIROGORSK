@@ -1,0 +1,32 @@
+---
+import { getImage } from 'astro:assets';
+import ProductVisual from '../../components/ProductVisual.astro';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
+import EditorialBody from '../../components/EditorialBody.astro';
+import EditorialInterest from '../../components/EditorialInterest.astro';
+import EditorialLinks from '../../components/EditorialLinks.astro';
+import { editorialProducts, productHref, siteOrigin, scenarios } from '../../data/editorial';
+export function getStaticPaths() {
+  return editorialProducts.map(product => ({ params: { slug: product.editorial.slug }, props: { product } }));
+}
+interface Props { product: (typeof editorialProducts)[number] }
+const { product } = Astro.props;
+const title = `${product.name} — концепт будущего меню | Пирогорск`;
+const description = `${product.name} в будущем меню Пирогорска. Что нужно знать о составе и подаче; рецептура ещё разрабатывается. Можно отметить интерес перед запуском.`;
+const image = product.image ? await getImage({ src: product.image, width: 1000, format: 'webp', quality: 65 }) : undefined;
+const schema = [{ '@type': 'Product', '@id': `${siteOrigin}${productHref(product)}#product`, name: product.name, description: product.editorial.intro, url: `${siteOrigin}${productHref(product)}`, ...(image ? { image: new URL(image.src, siteOrigin).href } : {}), brand: { '@type': 'Brand', name: 'Пирогорск' }, category: 'Концепт будущего меню' }];
+const otherProducts = editorialProducts.filter(other => other.id !== product.id && other.sweet === product.sweet).slice(0, 2);
+const scenario = scenarios.find(item => item.slug === product.editorial.scenario)!;
+---
+<ContentLayout {title} {description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }, { name: product.name, href: productHref(product) }]} {schema}>
+  <EditorialHero eyebrow={`${product.sweet ? 'Сладкий' : 'Сытный'} пирог · концепт меню`} title={product.name} intro={product.editorial.intro}><ProductVisual slot="visual" {product} /><div class="ed-meta"><span>Готовим запуск</span><span>Рецепт в разработке</span></div></EditorialHero>
+  <dl class="ed-facts"><div><dt>Состав и аллергены</dt><dd>Будут опубликованы после утверждения рецепта.</dd></div><div><dt>Размер и цена</dt><dd>Рассматриваем 500 г и 1 кг. Окончательные параметры ещё не утверждены.</dd></div><div><dt>Возможность заказа</dt><dd>Сейчас можно отметить интерес. Продажи пока не открыты.</dd></div></dl>
+  <EditorialBody sections={[
+    { title: 'Что уточним о начинке', paragraphs: [product.editorial.question, 'При аллергиях или других ограничениях понадобится полный состав теста и начинки, а также сведения о возможных следах аллергенов на производстве. Сейчас этих данных нет: по названию и изображению выбрать безопасный для конкретного рациона вариант нельзя.'] },
+    { title: 'С чем поставить на стол', paragraphs: [product.editorial.pairing, 'Сначала определите роль пирога: основное блюдо, дополнение к ужину или сладкое к чаю. Количество зависит от этого и от предпочтений гостей. Рекомендации по порциям появятся после проверки готовых изделий.'] },
+    { title: 'Как подать и разогреть', paragraphs: ['Для будущего пирога ещё нет утверждённой инструкции по разогреву и хранению. Мы опубликуем её после разработки продукта. До этого не называем универсальные температуру, время или срок годности.', 'Изображение показывает визуальную идею. Оно не подтверждает ингредиенты, вес или вид пирога, который будет выпущен после запуска.'] },
+  ]} />
+  <EditorialInterest interest={product.id} title={`Интересен ${product.name.toLowerCase()}?`} label="Отметить интерес к пирогу" />
+  <EditorialLinks title="Продумать общий стол" links={[...otherProducts.map(other => ({ href: productHref(other), title: other.name, text: other.editorial.intro, label: 'Другой вкус' })), { href: `/nabor/${scenario.slug}/`, title: scenario.title, text: scenario.description, label: 'Сценарий' }]} />
+</ContentLayout>

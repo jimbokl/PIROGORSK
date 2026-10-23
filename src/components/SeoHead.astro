@@ -1,0 +1,56 @@
+---
+import { siteOrigin } from '../data/editorial';
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  image?: string;
+  imageAlt?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+  schema?: Record<string, unknown>[];
+}
+const {
+  title, description, canonicalPath = Astro.url.pathname,
+  image = '/seo/pirogorsk-og.jpg',
+  imageAlt = 'Пирогорск — концепт пирогов с балтийским характером. Готовим запуск.',
+  type = 'website', noindex = false, schema = [],
+} = Astro.props;
+const canonical = new URL(canonicalPath, siteOrigin);
+canonical.search = '';
+canonical.hash = '';
+const imageUrl = new URL(image, siteOrigin).href;
+const graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'Organization', '@id': `${siteOrigin}/#organization`, name: 'Пирогорск', url: `${siteOrigin}/`, description: 'Проект пирогов с балтийским характером. Готовим запуск.' },
+    { '@type': 'WebSite', '@id': `${siteOrigin}/#website`, name: 'Пирогорск', url: `${siteOrigin}/`, inLanguage: 'ru-RU', publisher: { '@id': `${siteOrigin}/#organization` } },
+    ...schema,
+  ],
+};
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#fbf9f4" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'} />
+<link rel="canonical" href={canonical.href} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preload" href="/fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/golos-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="Пирогорск" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonical.href} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={imageAlt} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+<script type="application/ld+json" set:html={JSON.stringify(graph).replace(/</g, '\\u003c')} />

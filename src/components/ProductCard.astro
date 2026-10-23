@@ -1,23 +1,32 @@
 ---
-import { Picture } from 'astro:assets';
 import Icon from './Icon.astro';
-import type { products } from '../data/catalog';
-interface Props { product: (typeof products)[number] }
+import ProductVisual from './ProductVisual.astro';
+import type { Product } from '../data/catalog';
+import '../styles/catalog.css';
+
+interface Props { product: Product }
 const { product } = Astro.props;
+const selectedVariant = product.variants.find(({ value }) => value === product.defaultVariant) ?? product.variants[0]!;
+const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Объём' : 'Комплект';
 ---
-<article class="product-card" data-product={product.id} data-category={product.category}>
-  <Picture src={product.image} formats={['avif', 'webp']} widths={[240, 400, 600]} sizes="(max-width: 600px) 48vw, (max-width: 850px) 42vw, 260px" width={300} height={266} quality={48} alt={`${product.name} и кусочек с начинкой`} class="product-image" loading="lazy" decoding="async" />
-  <h3>{product.name}</h3>
-  <p class="product-description">{product.description}</p>
-  <fieldset class="weight-switch">
-    <legend class="sr-only">Вес: {product.name.toLowerCase()}</legend>
-    {[500, 1000].map((weight) => <label>
-      <input type="radio" name={`weight-${product.id}`} value={weight} checked={weight === 500} />
-      <span>{weight === 500 ? '500 г' : '1 кг'}</span>
+<article class:list={['product-card', 'catalog-card', `catalog-card--${product.kind}`]} data-product={product.id} data-category={product.category} data-kind={product.kind} data-unit={product.unit} aria-labelledby={`product-${product.id}`}>
+  {product.kind !== 'accessory' && <ProductVisual product={product} />}
+  <div class="product-copy">
+    <h3 id={`product-${product.id}`}>{product.kind === 'pie' ? <a class="product-title-link" href={`/pirogi/${product.slug}/`}>{product.name}</a> : product.name}</h3>
+    <p class="product-description">{product.description}</p>
+  </div>
+  <fieldset class:list={['weight-switch', 'variant-switch', { 'variant-switch--single': product.variants.length === 1 }]}>
+    <legend class="sr-only">{measure}: {product.name.toLowerCase()}</legend>
+    {product.variants.map((variant) => <label>
+      <input type="radio" name={`weight-${product.id}`} value={variant.value} data-variant={variant.value} checked={variant.value === selectedVariant.value} />
+      <span>{variant.label}</span>
     </label>)}
   </fieldset>
   <div class="product-bottom">
-    <span class="product-price" data-price aria-live="polite">{product.prices[500]} ₽</span>
-    <button class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button>
+    <div class="product-price-wrap">
+      <span class="product-price" data-price aria-live="polite">{selectedVariant.price.toLocaleString('ru-RU')} ₽</span>
+      <small class="product-price-note">Предварительно</small>
+    </div>
+    <button type="button" class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button>
   </div>
 </article>

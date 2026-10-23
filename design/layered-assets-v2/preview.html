@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Пирогорск — проверка слоёв</title>
+<style>
+*{box-sizing:border-box}html{scroll-padding-top:0}body{margin:0;padding:32px;background:#e9e5dc;color:#082f3c;font:16px system-ui}h1{font:36px Georgia;margin:0 0 12px}h2{font:23px Georgia;margin:16px}p{max-width:900px}nav{position:sticky;top:0;z-index:2;padding:12px;background:#e9e5dc;display:flex;gap:20px;align-items:center;flex-wrap:wrap}a{color:inherit}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}article{background:#fbf9f4;border:1px solid #c6c4b9}.section-title{margin-top:40px}.stage{aspect-ratio:1;position:relative;overflow:hidden;background:#fbf9f4}.stage img{position:absolute;object-fit:contain}.bg{inset:0;width:100%;height:100%}.pie{width:88%;height:88%;left:50%;top:54%;transform:translate(-50%,-50%)}body.hide-bg .bg{display:none}body.dark .stage{background:#082f3c}.drinks .pie{width:88%;height:88%;top:50%}.logos .stage{height:280px;aspect-ratio:auto}.logos .stage img{inset:10%;width:80%;height:80%}.small-sizes{display:flex;gap:18px;align-items:end;justify-content:center;min-height:140px;padding:16px;background:#fbf9f4}.small-sizes figure{margin:0;text-align:center}.small-sizes img{display:block;object-fit:contain;margin:0 auto 8px}.small-sizes figcaption{font-size:12px}.hero{grid-column:1/-1;max-width:840px;width:100%;margin:auto}.hero .stage{aspect-ratio:3/2}.hero .pie{height:84%;width:66%;left:66%;top:55%}small{display:block;margin:0 16px 16px}#status{font-size:13px}section,article{scroll-margin-top:72px}@media(max-width:600px){body{padding:16px}nav{gap:12px}h1{font-size:30px}.hero .stage{aspect-ratio:3/2}}
+</style>
+<h1>Пирогорск — слои v2</h1>
+<p>Отдельные оригиналы и их наложение. Переключатели показывают края прозрачных изображений на светлой или тёмной поверхности. Малые знаки показаны в размере исходного PNG по высоте, с сохранением прозрачных полей.</p>
+<nav><label><input id="bg" type="checkbox" checked> Подложка</label><label><input id="dark" type="checkbox"> Тёмная поверхность</label><a href="#catalog">Пироги</a><a href="#beverages">Напитки</a><a href="#symbols">Знаки</a><a href="#hero-section">Hero</a><a href="manifest.json">Манифест</a><span id="status">Загрузка изображений…</span></nav>
+<section id="catalog"><main id="pairs"></main></section>
+<section id="beverages"><h1 class="section-title">Напитки</h1><main id="drinks" class="drinks"></main></section>
+<section id="symbols"><h1 class="section-title">Знаки</h1><main id="logos" class="logos"></main></section>
+<section id="hero-section"><h1 class="section-title">Hero</h1><main id="hero"></main></section>
+<script>
+const names={meat:'Мясо и лук',fish:'Рыба',cabbage:'Капуста',cheese:'Сыр',apple:'Яблоко и брусника',cherry:'Вишня',curd:'Творог и малина',cranberry:'Клюквенный морс',seabuckthorn:'Облепиховый морс',tea:'Чай',coffee:'Кофе',water:'Вода'};
+const logoNames={'tower-symbol.png':'Башня','kurhaus-symbol.png':'Курхаус','tower-compact-symbol.png':'Компактная башня'};
+const params=new URLSearchParams(location.search);
+const bg=document.querySelector('#bg'),dark=document.querySelector('#dark');
+function surface(){document.body.classList.toggle('hide-bg',!bg.checked);document.body.classList.toggle('dark',dark.checked)}
+bg.checked=params.get('bg')!=='0';dark.checked=params.get('dark')==='1';surface();bg.onchange=surface;dark.onchange=surface;
+fetch('manifest.json').then(r=>r.json()).then(async m=>{
+for(const [k,p] of Object.entries(m.pairs)){if(p.status!=='READY')continue;document.querySelector('#pairs').insertAdjacentHTML('beforeend',`<article id="pair-${k}"><h2>${names[k]}</h2><div class="stage"><img alt="Подложка ${names[k]}" class="bg" data-src="${k}/background.png"><img alt="Пирог ${names[k]}" class="pie" data-src="${k}/pie.png"></div><small>READY · отдельные background.png и pie.png</small></article>`)}
+for(const[k,d]of Object.entries(m.drinks)){if(d.status!=='READY')continue;document.querySelector('#drinks').insertAdjacentHTML('beforeend',`<article id="drink-${k}"><h2>${names[k]}</h2><div class="stage"><img alt="${names[k]}" class="pie" data-src="${d.path}"></div><small>READY · прозрачный PNG</small></article>`)}
+for(const l of m.logo.concepts){const name=logoNames[l.path.split('/').pop()];document.querySelector('#logos').insertAdjacentHTML('beforeend',`<article><h2>${name}</h2><div class="stage"><img alt="${name}" data-src="${l.path}"></div><div class="small-sizes">${[32,48,64,96].map(s=>`<figure><img alt="${name}, ${s} px" data-src="${l.path}" width="${s}" height="${s}"><figcaption>${s} px</figcaption></figure>`).join('')}</div><small>READY · ${l.path}</small></article>`)}
+if(m.hero.status==='READY')document.querySelector('#hero').insertAdjacentHTML('beforeend',`<article class="hero"><h2>Балтийская подложка и рыбный пирог</h2><div class="stage"><img alt="Балтийский фон" class="bg" data-src="hero/background.png"><img alt="Рыбный пирог" class="pie" data-src="hero/pie.png"></div><small>READY · отдельные hero/background.png и hero/pie.png</small></article>`);
+const images=[...document.images];
+async function loadImage(i){const src=i.dataset.src;for(let attempt=0;attempt<3;attempt++){i.src=src+(attempt?'?retry='+attempt:'');try{await i.decode();return}catch(e){if(attempt===2)throw new Error(src+': '+e.message)}}}
+for(let i=0;i<images.length;i+=3)await Promise.all(images.slice(i,i+3).map(loadImage));
+document.querySelector('#status').textContent='Все 24 оригинала загружены';
+if(params.get('section'))document.getElementById(params.get('section'))?.scrollIntoView();
+}).catch(e=>{document.querySelector('#status').textContent='Ошибка загрузки: '+e.message;console.error(e)});
+</script>
+</html>

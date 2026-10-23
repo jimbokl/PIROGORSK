@@ -1,0 +1,23 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
+import EditorialBody from '../../components/EditorialBody.astro';
+import EditorialInterest from '../../components/EditorialInterest.astro';
+import EditorialLinks from '../../components/EditorialLinks.astro';
+import { scenarios, guides } from '../../data/editorial';
+import { editorialScenarioIntents } from '../../data/editorial-intents';
+export function getStaticPaths() {
+  return scenarios.map(item => ({ params: { slug: item.slug }, props: { item } }));
+}
+interface Props { item: (typeof scenarios)[number] }
+const { item } = Astro.props;
+const guide = guides.find(guide => guide.slug === item.guide)!;
+const preset = editorialScenarioIntents[item.interest];
+---
+<ContentLayout title={`${item.title} — идея набора | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }, { name: item.title, href: `/nabor/${item.slug}/` }]}>
+  <EditorialHero eyebrow="Сценарии · готовим запуск" title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} />
+  <p class="ed-note"><strong>Подборка в разработке.</strong> Это сценарий будущего меню. Состав набора, количество пирогов, окончательная цена и возможность доставки ещё не утверждены.</p>
+  <EditorialBody sections={item.sections} />
+  <EditorialInterest interest={item.interest} title="Начать с примера подборки?" text={`${preset.preview} Кнопка добавит этот пример к вашей подборке на главной. Вкусы, вес и количество можно изменить. Это не рекомендация по порциям: состав, хранение и возможность получения ещё предстоит подтвердить.`} label="Добавить пример подборки" />
+  <EditorialLinks title="Подготовиться к встрече" links={[{ href: `/journal/${guide.slug}/`, title: guide.title, text: guide.description, label: 'Практический гид' }, { href: '/menu/', title: 'Посмотреть будущие вкусы', text: 'Сытные и сладкие концепты с честным статусом состава.', label: 'Меню' }, { href: '/delivery/', title: 'Города в планах', text: 'Какие направления рассматриваем и какие условия ещё предстоит подтвердить.', label: 'Доставка' }]} />
+</ContentLayout>

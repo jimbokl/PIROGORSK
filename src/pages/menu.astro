@@ -1,0 +1,17 @@
+---
+import ProductVisual from '../components/ProductVisual.astro';
+import ContentLayout from '../layouts/ContentLayout.astro';
+import EditorialHero from '../components/EditorialHero.astro';
+import EditorialInterest from '../components/EditorialInterest.astro';
+import EditorialLinks from '../components/EditorialLinks.astro';
+import { editorialProducts, productHref, scenarios, conceptCaption } from '../data/editorial';
+const title = 'Меню пирогов — вкусы к будущему запуску | Пирогорск';
+const description = 'Сытные и сладкие пироги в будущем меню Пирогорска. Сравните начинки, узнайте статус состава и отметьте интерес перед запуском.';
+---
+<ContentLayout {title} {description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }]}>
+  <EditorialHero eyebrow="Будущее меню · готовим запуск" title="Выберите свой вкус" intro="Собираем меню для ужинов, общих столов и чаепитий. Здесь можно рассмотреть идеи пирогов и выбрать интересные начинки. Рецепты, окончательные веса и цены ещё предстоит утвердить." />
+  <div class="ed-note"><strong>Сейчас проверяем интерес.</strong> Продажи и производство ещё не запущены. {conceptCaption} Состав и аллергены опубликуем до начала заказов.</div>
+  <section class="ed-catalog" aria-label="Концепты пирогов">{editorialProducts.map(product => <article class="ed-product-card"><a href={productHref(product)}><ProductVisual {product} /><p class="ed-eyebrow">{product.sweet ? 'К чаю' : 'К общему столу'} · концепт</p><h2>{product.name}</h2><p>{product.editorial.intro}</p><span class="ed-product-more">О вкусе и статусе рецепта ↗</span></a></article>)}</section>
+  <EditorialInterest interest="menu" title="Какие пироги вам интересны?" text="На главной можно собрать анонимную подборку и отметить город. Это поможет нам оценить спрос перед запуском; заказ и оплата пока недоступны." label="Выбрать интересные пироги" />
+  <EditorialLinks title="Собираете стол к случаю?" links={scenarios.map(item => ({ href: `/nabor/${item.slug}/`, title: item.title, text: item.intro, label: 'Сценарий' }))} />
+</ContentLayout>

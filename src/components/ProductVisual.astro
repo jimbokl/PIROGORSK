@@ -1,0 +1,52 @@
+---
+import { Picture } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import manifestData from '../../design/layered-assets-v2/manifest.json';
+import type { Product } from '../data/catalog';
+import ProductBadge from './ProductBadge.astro';
+import '../styles/catalog.css';
+
+interface Props { product: Product }
+type AssetFile = { path?: string; status?: string; alpha?: boolean };
+type AssetEntry = {
+  status?: string;
+  files?: { pie?: AssetFile; product?: AssetFile; image?: AssetFile; cutout?: AssetFile; background?: AssetFile };
+  composition?: {
+    pie_css_width_percent?: number; pie_center_x_percent?: number; pie_center_y_percent?: number;
+    product_css_height_percent?: number; product_center_x_percent?: number; product_center_y_percent?: number;
+  };
+};
+const { product } = Astro.props;
+const manifest = manifestData as { pairs?: Record<string, AssetEntry>; drinks?: Record<string, AssetEntry> };
+const images = import.meta.glob<ImageMetadata>('../../design/layered-assets-v2/**/*.{png,webp,avif}', { eager: true, import: 'default' });
+const legacyImages = import.meta.glob<ImageMetadata>('../../design/assets-source/{meat,fish,cabbage,cheese}.png', { eager: true, import: 'default' });
+const asset = (file?: AssetFile) => file?.path && file.status === 'READY' ? images[`../../design/layered-assets-v2/${file.path}`] : undefined;
+const entry = (product.kind === 'pie' ? manifest.pairs : manifest.drinks)?.[product.visualKey ?? product.id];
+const ready = entry?.status === 'READY';
+const background = ready ? asset(entry.files?.background) : undefined;
+const subjectFile = entry?.files?.pie ?? entry?.files?.product ?? entry?.files?.image ?? entry?.files?.cutout;
+const subject = ready && subjectFile?.alpha === true ? asset(subjectFile) : undefined;
+const layered = subject && (product.kind !== 'pie' || background);
+const legacy = product.kind === 'pie' ? legacyImages[`../../design/assets-source/${product.id}.png`] : undefined;
+const composition = entry?.composition;
+const imageState = layered ? 'ready' : legacy ? 'legacy' : 'pending';
+const subjectWidth = product.kind === 'pie' ? composition?.pie_css_width_percent ?? 88 : composition?.product_css_height_percent ?? 88;
+const subjectX = product.kind === 'pie' ? composition?.pie_center_x_percent ?? 50 : composition?.product_center_x_percent ?? 50;
+const subjectY = product.kind === 'pie' ? composition?.pie_center_y_percent ?? 54 : composition?.product_center_y_percent ?? 50;
+const position = `--subject-width:${subjectWidth}%;--subject-x:${subjectX}%;--subject-y:${subjectY}%;`;
+const imageWidths = [240, 320, 400, 600];
+const sizes = product.kind === 'drink'
+  ? '(max-width: 380px) calc(100vw - 36px), (max-width: 600px) calc((100vw - 56px) / 2), (max-width: 1200px) 28vw, 230px'
+  : '(max-width: 380px) calc(100vw - 36px), (max-width: 600px) calc((100vw - 56px) / 2), (max-width: 850px) 42vw, (max-width: 1060px) 28vw, 300px';
+---
+<div class:list={['product-visual', `product-visual--${product.kind}`, { 'product-visual--pending': imageState === 'pending' }]} data-image-state={imageState} style={position}>
+  {layered ? <>
+    {background && <Picture src={background} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={600} quality={44} alt="" class="product-visual-background" loading="lazy" decoding="async" />}
+    <Picture src={subject!} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={600} quality={58} alt={product.kind === 'pie' ? `${product.name}: пирог и кусочек с начинкой` : product.name} class="product-visual-subject" loading="lazy" decoding="async" />
+  </> : legacy ? <Picture src={legacy} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={532} quality={48} alt={`${product.name} и кусочек с начинкой`} class="product-visual-legacy" loading="lazy" decoding="async" /> : <div class="product-visual-placeholder" aria-hidden="true">
+    <span class="product-placeholder-caption">Скоро в Пирогорске</span>
+    <span class="product-placeholder-name">{product.kind === 'pie' ? 'Кусочек' : 'К вашему'}<br />{product.kind === 'pie' ? 'сладкого' : 'пирогу'}</span>
+    <span class="product-placeholder-note">Изображение готовится</span>
+  </div>}
+  {product.badge && <ProductBadge kind={product.badge} class="product-visual-badge" />}
+</div>

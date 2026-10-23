@@ -1,0 +1,20 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
+import EditorialBody from '../../components/EditorialBody.astro';
+import EditorialInterest from '../../components/EditorialInterest.astro';
+import EditorialLinks from '../../components/EditorialLinks.astro';
+import { guides, siteOrigin } from '../../data/editorial';
+export function getStaticPaths() {
+  return guides.map(item => ({ params: { slug: item.slug }, props: { item } }));
+}
+interface Props { item: (typeof guides)[number] }
+const { item } = Astro.props;
+const schema = [{ '@type': 'Article', headline: item.title, description: item.description, inLanguage: 'ru-RU', mainEntityOfPage: `${siteOrigin}/journal/${item.slug}/`, publisher: { '@id': `${siteOrigin}/#organization` } }];
+---
+<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'О проекте', href: '/about/' }, { name: item.title, href: `/journal/${item.slug}/` }]} {schema} type="article">
+  <EditorialHero eyebrow="Заметки к общему столу" title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} compact />
+  <EditorialBody sections={item.sections} />
+  <EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" />
+  <EditorialLinks title="К будущему меню" links={[{ href: item.related, title: item.relatedTitle, text: 'Какой формат рассматриваем и что нужно решить до запуска.', label: 'Сценарий' }, ...guides.filter(guide => guide.slug !== item.slug).map(guide => ({ href: `/journal/${guide.slug}/`, title: guide.title, text: guide.description, label: 'Ещё один гид' }))]} />
+</ContentLayout>

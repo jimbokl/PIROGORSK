@@ -1,0 +1,6 @@
+---
+import type { EditorialSection } from '../data/editorial';
+interface Props { sections: readonly EditorialSection[] }
+const { sections } = Astro.props;
+---
+<div class="ed-article">{sections.map((section, index) => <section class="ed-article-section" aria-labelledby={`section-${index}`}><h2 id={`section-${index}`}>{section.title}</h2><div>{section.paragraphs?.map(paragraph => <p>{paragraph}</p>)}{section.items && <ul>{section.items.map(item => <li>{item}</li>)}</ul>}</div></section>)}</div>

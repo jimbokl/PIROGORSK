@@ -1,0 +1,12 @@
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import { plainJavaScript } from './transpile.mjs';
+const output = fileURLToPath(new URL('../dist/worker.js', import.meta.url));
+const publicSource = await readFile(new URL('../../src/data/catalog.ts', import.meta.url), 'utf8');
+const workerSource = await readFile(new URL('../src/index.ts', import.meta.url), 'utf8');
+const catalogScript = plainJavaScript(publicSource);
+const workerScript = plainJavaScript(workerSource, ['./catalog.ts'], false);
+const bundled = `// Generated locally. No credentials. Paste this entire ES module in Cloudflare Edit code.\nconst catalog = (() => {\n${catalogScript}\nreturn Object.fromEntries(catalog.map(product => [product.id, Object.fromEntries(product.variants.map(variant => [String(variant.value), variant.price]))]));\n})();\n${workerScript}`;
+await mkdir(new URL('../dist/', import.meta.url), { recursive: true });
+await writeFile(output, bundled);
+process.stdout.write(`${output}\n`);

@@ -1,0 +1,19 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+import EditorialHero from '../components/EditorialHero.astro';
+import EditorialBody from '../components/EditorialBody.astro';
+import EditorialInterest from '../components/EditorialInterest.astro';
+import EditorialLinks from '../components/EditorialLinks.astro';
+import { locations } from '../data/editorial';
+const title = 'Доставка пирогов — города и планы запуска | Пирогорск';
+const description = 'Планы доставки Пирогорска в Зеленоградске, Калининграде и Светлогорске. Условия ещё разрабатываются; можно отметить город и интересные пироги.';
+---
+<ContentLayout {title} {description} breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }]}>
+  <EditorialHero eyebrow="Города · готовим запуск" title="Доставка начинается с понятных условий" intro="Пирогорск ещё не принимает заказы. Рассматриваем Зеленоградск, Калининград и Светлогорск и изучаем, где нужны пироги. На страницах городов собрали разные сценарии и вопросы, которые предстоит решить до запуска." />
+  <EditorialLinks title="Выберите свой город" links={locations.map(item => ({ href: `/dostavka/${item.slug}/`, title: item.city, text: item.intro, label: 'Направление в планах' }))} />
+  <EditorialBody sections={[
+    { title: 'Что сообщим до первого заказа', items: ['Адреса и границы, по которым действительно сможем доставлять.', 'Доступные дни и интервалы, стоимость и минимальную сумму заказа.', 'Порядок оплаты, изменения заказа и связи с проектом.', 'Подтверждённый состав, вес, условия хранения и подачи каждого пирога.'] },
+    { title: 'Как сейчас выразить интерес', paragraphs: ['На главной можно выбрать город, начинки и желаемый формат получения. Это анонимная проверка спроса перед запуском. Выбор дня или пирога не резервирует продукцию и время доставки.', 'Конкретных сроков запуска пока нет. Доставка на Куршскую косу и по всей области также не подтверждена: упоминание города не означает обслуживание соседних населённых пунктов.'] },
+  ]} />
+  <EditorialInterest interest="delivery" title="В каком городе вы бы выбрали пироги?" text="Отметьте город и интересные вкусы в анонимной форме на главной. Эти ответы помогут оценить направления запуска." label="Отметить город и вкусы" />
+</ContentLayout>

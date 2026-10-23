@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+User-agent: Yandex
+Allow: /
+Clean-param: interest&utm_source&utm_medium&utm_campaign&utm_content&utm_term /
+
 Sitemap: https://pirogorsk.ru/sitemap.xml

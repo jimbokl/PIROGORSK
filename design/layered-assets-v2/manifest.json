@@ -1,0 +1,942 @@
+{
+  "schema_version": 2,
+  "project": "Пирогорск",
+  "status": "READY",
+  "generator": "built-in image_gen",
+  "updated_at": "2026-10-23",
+  "scope": "Independent raster layers only; website integration handled separately.",
+  "pairs": {
+    "meat": {
+      "status": "READY",
+      "files": {
+        "pie": {
+          "path": "meat/pie.png",
+          "status": "READY",
+          "role": "pie",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.4996,
+          "content_bbox": [
+            0,
+            0,
+            1240,
+            1254
+          ],
+          "sha256": "2ecd04658127b65c959ff111eb3c82624708b3c99d9c7f6431f869a143f451ac",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-144631c3-492e-471c-a827-085c780b9cec.png",
+          "prompt_file": "meat/pie.prompt.txt",
+          "prompt": "Use case: background-extraction / premium food catalog cutout. Edit target: the supplied Pirogorsk meat pie photograph. Create ONE standalone square PNG layer, 1024 x 1024, with a genuinely transparent alpha background. Keep only the round baked meat pie with one wedge removed and that wedge placed close to the front-right, showing minced beef and cooked onion filling. Preserve the reference's camera, elevated three-quarter view, appetizing golden flaky pastry, handmade leaf vents and realistic filling. Refine the excessively shiny glaze to a natural lightly egg-washed crust with flaky irregular texture, soft daylight from upper left. Entire pie and wedge within x=8–92%, y=18–86% of square; ample transparent margin all around. Every pixel outside food is transparent. Remove ALL ingredient illustrations, cow, parsley, onion rings, peppercorns, paper surface, cast ground shadow, stray crumbs and props. No board, plate, hand, text, logo, badge, border or checkerboard. No illustration on the food. Clean antialiased pastry silhouette without cream halo. Food photography, not plastic 3D.",
+          "references": [
+            "../assets-source/meat.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            52,
+            165,
+            1231,
+            1109
+          ]
+        },
+        "background": {
+          "path": "meat/background.png",
+          "status": "READY",
+          "role": "background",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "alpha": false,
+          "alpha_extrema": null,
+          "transparent_fraction": 0,
+          "content_bbox": null,
+          "sha256": "7e6dfd1fc7b014164f0f7abb4b4ecfa4dd801e9744e1c9717850aaf2e3e01707",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-5632384d-e17d-41bf-bace-1339f4c924fc.png",
+          "prompt_file": "meat/background.prompt.txt",
+          "prompt": "Use case: illustration-story / standalone catalog background layer for Pirogorsk. Reference image gives the approved warm ivory and fine botanical engraving style only. Create ONE square 1024 x 1024 opaque PNG background, pale warm ivory #fbf9f4, extremely subtle uncoated paper texture. Remove the pie completely. Delicate hand-engraved ingredient illustrations around the outer edges: burgundy red onion whole and cut rings in upper left; muted forest-green parsley at upper right and lower left; a small umber cow profile near upper right edge; fine amber wheat stems at lower right. Thin confident natural linework with light watercolor tint, restrained print palette. Keep the broad central ellipse (x=15–85%, y=22–83%) entirely empty cream so a separate photographic pie can sit over it. Edge drawings may tuck behind the future pie but must leave breathing space. Even flat paper light, no cast shadows, no real photographed ingredient objects. No pie, food photograph, board, plate, lettering, logo, badge, price, watermark or border. One background only, no mockup, no contact sheet.",
+          "references": [
+            "../assets-source/meat.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text."
+        }
+      },
+      "composition": {
+        "pie_css_width_percent": 88,
+        "pie_center_x_percent": 50,
+        "pie_center_y_percent": 54,
+        "container_aspect_ratio": "1/1",
+        "note": "Center both layers. Background fills container; pie image width is 88% of container, preserving its transparent canvas. Badges remain separate HTML/CSS."
+      }
+    },
+    "fish": {
+      "status": "READY",
+      "files": {
+        "pie": {
+          "path": "fish/pie.png",
+          "status": "READY",
+          "role": "pie",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.4825,
+          "content_bbox": [
+            0,
+            19,
+            1254,
+            1254
+          ],
+          "sha256": "100490589f4b14575e03911bcecd244c40fdf1c43fb3f89d89794d6ad04c0e59",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-4f349e46-b63e-4c32-b880-54bed25477a7.png",
+          "prompt_file": "fish/pie.prompt.txt",
+          "prompt": "Use case: product-mockup / transparent food catalog layer. Image 1 is the approved fish pie filling and pastry design reference. Image 2 is the meat cutout that defines the exact series camera, framing, light and scale. Create ONE square PNG on a genuinely transparent background, no surface. A complete round golden flaky fish pie with one wedge removed and that wedge placed immediately front-right; visible filling of generous realistic pale salmon-pink and white fish flakes with tiny dill flecks. Preserve wholesome handmade pastry leaf vents and natural irregular lightly egg-washed crust. Match image 2 elevated three-quarter camera, soft upper-left daylight, object orientation and amount of transparent canvas. Pie and wedge occupy about 90% width, vertically centered. Every pixel outside the food is transparent. Remove all drawings, ingredients, loose herbs, lemon, fish illustrations, sea, crumbs and ground shadow. No board, plate, typography, badge, logo, checkerboard or white fringe. Photographic flaky food, no plastic shine, no rice, no orange puree.",
+          "references": [
+            "../assets-source/fish.png",
+            "meat/pie.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            44,
+            151,
+            1243,
+            1121
+          ]
+        },
+        "background": {
+          "path": "fish/background.png",
+          "status": "READY",
+          "role": "background",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "alpha": false,
+          "alpha_extrema": null,
+          "transparent_fraction": 0,
+          "content_bbox": null,
+          "sha256": "f071f1f09b55c6cadf501cef812220c93d572e3856b014577dca20efcf2f31e6",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-ebfa1e74-a784-4823-95be-440959b5f7c6.png",
+          "prompt_file": "fish/background.prompt.txt",
+          "prompt": "Use case: illustration-story / independent ingredient background. Image 1 is approved Pirogorsk fish palette and illustration reference; image 2 defines the layered series' empty-center background layout. Create ONE square opaque PNG 1024x1024, pale warm ivory #fbf9f4 with very subtle natural paper grain. Only fine hand-engraved drawings of fish-pie ingredients and Baltic water around the perimeter: one elegant whole salmon-like fish in muted Baltic blue at upper right, deep-green dill fronds along upper left and right edges, thin ochre lemon half/slices at left and lower right, a few flowing fine blue wave lines along the bottom edge. Natural scientific ingredient forms, delicate ink linework, restrained watercolor touches. Central ellipse x15–85% y22–83% stays empty ivory for an independent photo cutout; no illustration crossing the central pie area. Match image 2's detail weight and spacious cream background. No pie, actual food photograph, board, plate, shadows, text, brand, badge, price, frame or watermark. One clean standalone background layer.",
+          "references": [
+            "../assets-source/fish.png",
+            "meat/background.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text."
+        }
+      },
+      "composition": {
+        "pie_css_width_percent": 88,
+        "pie_center_x_percent": 50,
+        "pie_center_y_percent": 54,
+        "container_aspect_ratio": "1/1",
+        "note": "Center both layers. Background fills container; pie image width is 88% of container, preserving its transparent canvas. Badges remain separate HTML/CSS."
+      }
+    },
+    "cabbage": {
+      "status": "READY",
+      "files": {
+        "pie": {
+          "path": "cabbage/pie.png",
+          "status": "READY",
+          "role": "pie",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.4472,
+          "content_bbox": [
+            0,
+            64,
+            1254,
+            1254
+          ],
+          "sha256": "bf22ae808608e657773f6a90541ae5751e937163673f2c83bb562b48189c5397",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-a52ccef5-a33f-4dd6-9134-5f14e0e1334d.png",
+          "prompt_file": "cabbage/pie.prompt.txt",
+          "prompt": "Use case: product-mockup / transparent food catalog layer. Image 1 is the approved cabbage pie filling and pastry reference. Image 2 defines exact Pirogorsk series camera, framing, light and scale. One standalone square PNG on a genuinely transparent alpha background. A full round handmade golden flaky cabbage pie with one wedge cut out and placed close to front-right. The cut exposes soft pale golden shredded cooked cabbage ribbons and small translucent onion, slightly browned naturally, no meat, no fish, no carrot chunks. Match image 2's elevated three-quarter view, round shape, pastry leaf vents, orientation, framing and soft upper-left daylight. Naturally flaky handmade egg-washed crust with tiny surface variation; appetizing and credible, no plastic gloss. Object about 90% width, entire food inside frame with transparent margin. Every pixel outside food fully transparent. No ingredient drawings or loose ingredients, no dill sprigs outside, crumbs, plate, board, surface, cast ground shadow, letters, logo, badge, watermark, checkerboard or cream halo. Keep the visible cabbage filling visually distinct from minced meat and cheese.",
+          "references": [
+            "../assets-source/cabbage.png",
+            "meat/pie.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            29,
+            156,
+            1242,
+            1132
+          ]
+        },
+        "background": {
+          "path": "cabbage/background.png",
+          "status": "READY",
+          "role": "background",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "alpha": false,
+          "alpha_extrema": null,
+          "transparent_fraction": 0,
+          "content_bbox": null,
+          "sha256": "e05701e50a62ec4bcf42f7d33362dfb4851fb8772b170dbf634fef06daa7e04a",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-81b4b588-5ef9-425a-ab68-7ad126b03905.png",
+          "prompt_file": "cabbage/background.prompt.txt",
+          "prompt": "Use case: illustration-story / standalone ingredient background layer. Image 1 is approved cabbage botanical reference; image 2 establishes the series empty-center layout and cream palette. Create one square opaque PNG 1024x1024. Warm ivory #fbf9f4 uncoated paper, fine natural grain. Delicate fine engraved ink and light watercolor botanical drawings around the outer edges: a pale sage-green cut cabbage head with accurately folded leaves at upper left, a few separate veined cabbage leaves in corners, small golden-brown whole onion and onion half near upper right, muted green dill/parsley sprigs tracing lower perimeter. Restrained green and amber, hand-drawn elegant grocery illustration, same thin line weight as image 2. Keep large central ellipse x15–85%, y22–83% completely empty cream for a separate photographic pie. No pie or other food photograph, no carrot, meat or cheese, no board, plate, cast shadow, text, logo, badge, frame or watermark. One background layer only.",
+          "references": [
+            "../assets-source/cabbage.png",
+            "meat/background.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text."
+        }
+      },
+      "composition": {
+        "pie_css_width_percent": 88,
+        "pie_center_x_percent": 50,
+        "pie_center_y_percent": 54,
+        "container_aspect_ratio": "1/1",
+        "note": "Center both layers. Background fills container; pie image width is 88% of container, preserving its transparent canvas. Badges remain separate HTML/CSS."
+      }
+    },
+    "cheese": {
+      "status": "READY",
+      "files": {
+        "pie": {
+          "path": "cheese/pie.png",
+          "status": "READY",
+          "role": "pie",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.4958,
+          "content_bbox": [
+            0,
+            4,
+            1254,
+            1254
+          ],
+          "sha256": "06d15d03a5cebbc03a4e9633517bccd4b9d36fa1054a031203b77cc8921813da",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-676668b2-765a-4aac-b44e-833083e02683.png",
+          "prompt_file": "cheese/pie.prompt.txt",
+          "prompt": "Use case: product-mockup / transparent catalog food layer. Image 1 supplies the approved Pirogorsk cheese pie filling and style, image 2 sets identical series camera, framing, scale and lighting. One square PNG with actual transparent alpha. A round handmade golden flaky cheese pie, one wedge removed and set close to front-right, revealing moist creamy ivory crumbled and gently melted cheese with a few fine herb flecks. Filling reads as cheese, with soft curds and smooth melted joins, no long stringy cheese pull, no rice/grains, meat or fish. Preserve pastry leaf vents, natural golden lightly egg-washed crust with irregular flaky layers. Match image 2 elevated three-quarter angle, proportions and soft daylight upper left; object about90% width with all food safely inside square. Transparent pixels everywhere outside food; no white or cream field. Remove all ingredient drawings, milk jug, cheese props, loose herbs, crumbs, plate, board and shadow. No letters, label, logo, badge, watermark or checkerboard. Photographic food texture, no plastic shine.",
+          "references": [
+            "../assets-source/cheese.png",
+            "meat/pie.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            48,
+            168,
+            1243,
+            1092
+          ]
+        },
+        "background": {
+          "path": "cheese/background.png",
+          "status": "READY",
+          "role": "background",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "alpha": false,
+          "alpha_extrema": null,
+          "transparent_fraction": 0,
+          "content_bbox": null,
+          "sha256": "2b2ddb3ab032fd3b835cdae202650c5b45159923b21f2874badd598bd43626af",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-1c6ab3e7-bdbd-49e6-a387-74b5b8b3babb.png",
+          "prompt_file": "cheese/background.prompt.txt",
+          "prompt": "Use case: illustration-story / independent ingredient catalog background. Image 1 is approved Pirogorsk cheese illustration reference; image 2 defines cream palette, lineweight and spacious empty-center series layout. One square opaque PNG, warm ivory #fbf9f4 paper with very subtle grain. Fine engraved drawings with restrained amber and sage watercolor: small rustic milk jug at upper right, a wedge of pale creamy cheese with only a few natural small holes beside it, scattered small crumbled curds near lower-left edge, fine golden wheat ears along left and lower-right edges and a few sage-green parsley leaves. Drawings only around outer perimeter. Large ellipse x15–85% y22–83% remains entirely empty ivory for a separate photographic pie. Keep ingredient identities clear and print-like, no photographed props. No pie, board, plate, shadows, letters, labels, logo, badge, price, watermark or decorative enclosing border. Standalone background layer, not a composite.",
+          "references": [
+            "../assets-source/cheese.png",
+            "meat/background.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text."
+        }
+      },
+      "composition": {
+        "pie_css_width_percent": 88,
+        "pie_center_x_percent": 50,
+        "pie_center_y_percent": 54,
+        "container_aspect_ratio": "1/1",
+        "note": "Center both layers. Background fills container; pie image width is 88% of container, preserving its transparent canvas. Badges remain separate HTML/CSS."
+      }
+    },
+    "apple": {
+      "status": "READY",
+      "files": {
+        "pie": {
+          "path": "apple/pie.png",
+          "status": "READY",
+          "role": "pie",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.4546,
+          "content_bbox": [
+            0,
+            31,
+            1254,
+            1254
+          ],
+          "sha256": "ad11c87fc502825414cea1ce78fed3632ea4b167d18393f8aeefcfbae3cebf1f",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-84d7b11a-1f8b-4dd8-bf68-e74f18acd4b3.png",
+          "prompt_file": "apple/pie.prompt.txt",
+          "prompt": "Create a premium photorealistic food product cutout for PIROGORSK bakery, apple and lingonberry pie. Use the reference ONLY to match camera, light, approximate scale, and handmade flaky pastry family. Single large round rustic golden butter-pastry pie, thick crimped handmade rim and an elegant broad woven lattice on top. Apple filling must be identifiable as tender pale golden sliced apples with a modest scattering of small deep-red lingonberries in the filling, no cherries, no raspberries. One wedge removed at lower right, that exact wedge placed a little forward and right, angled to show its crisp layered pastry and juicy apple-slice cross-section clearly. Filling should look cooked and appetizing, naturally irregular, no excessively glossy gel. Same 35-degree elevated front three-quarter camera and soft upper-left studio daylight as reference, realistic browned pastry, golden and amber color. Entire pie and entire separated slice fully inside square canvas, generous transparent padding at all edges matching reference placement. Isolate only pie and detached slice. No plate, board, table, fruit outside pie, props, garnish, loose crumbs, background illustration, text, logo or badge. True clean transparent alpha background, no white rectangle, no baked checkerboard, minimal natural contact shading only within product silhouette. High-end bakery catalog photography.",
+          "references": [
+            "meat/pie.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            23,
+            144,
+            1247,
+            1140
+          ]
+        },
+        "background": {
+          "path": "apple/background.png",
+          "status": "READY",
+          "role": "background",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "alpha": false,
+          "alpha_extrema": null,
+          "transparent_fraction": 0,
+          "content_bbox": null,
+          "sha256": "5e0747620a99bd6f25f9ebfdffc39fa6c5cc4dc5b620e39cc5e92f4e3086d021",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-78f3b68d-c963-48fb-9b9e-b3f945428874.png",
+          "prompt_file": "apple/background.prompt.txt",
+          "prompt": "Generate a square standalone ingredient-illustration BACKGROUND layer for a premium Baltic bakery product card. Match reference cream paper, quiet engraved drawing style, soft warm coloring, airiness and peripheral layout, but replace ALL reference ingredients with accurate apple and lingonberry botanicals. Opaque warm ivory #fbf9f4 paper with extremely subtle natural grain. Upper left: small delicate muted sage apple branch with one warm ochre apple and leaves. Right edge: engraved halved apple, seed core visible, thin ochre and pale green watercolor washes. Bottom left: low creeping lingonberry sprigs with small oval leathery green leaves and tiny round crimson berries in compact clusters, botanically distinct from cherries and raspberries. A few faint delicate botanical strokes around the extreme corners. Sophisticated fine ink linework, restrained sage, faded amber and muted cranberry accents. Keep the entire central elliptical region from x18% to82% and y22% to78% completely empty cream for a separately overlaid pie cutout. Illustration must sit only around edges and never create a decorative circular frame. No pie, no pastry, no food photography, no plate, no tabletop scene, no text, no letters, no logo, no badges, no cow, no meat, no wheat. Full opaque square canvas, no transparency. This layer should remain calm and visible only as a narrow illustrated margin behind a large food photograph.",
+          "references": [
+            "meat/background.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text."
+        }
+      },
+      "composition": {
+        "pie_css_width_percent": 88,
+        "pie_center_x_percent": 50,
+        "pie_center_y_percent": 54,
+        "container_aspect_ratio": "1/1",
+        "note": "Center both layers. Background fills container; pie image width is 88% of container, preserving its transparent canvas. Badges remain separate HTML/CSS."
+      }
+    },
+    "cherry": {
+      "status": "READY",
+      "files": {
+        "pie": {
+          "path": "cherry/pie.png",
+          "status": "READY",
+          "role": "pie",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.451,
+          "content_bbox": [
+            0,
+            21,
+            1254,
+            1254
+          ],
+          "sha256": "241835838ca063028e5efb447ba4be15b1b84eef027700797457cd6ec382c595",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-957a332c-f6ba-4046-9a4f-82a22526bde2.png",
+          "prompt_file": "cherry/pie.prompt.txt",
+          "prompt": "Premium photorealistic CHERRY pie bakery cutout. Reference defines exact product family, camera, placement, light and realistic handmade flaky golden pastry; replace ALL apple and lingonberry filling with real cooked SOUR CHERRIES. Round full pie, handmade crimped rim and golden closed flaky pastry top with five decorative leaf-shaped vents consistent with reference. One wedge missing at lower right and the matching detached wedge moved forward-right, full wedge clearly visible. The exposed cavity and slice cross-section contain identifiable pitted cherries, irregular whole cherry halves with rounded soft skins, dark ruby red juicy interiors and restrained natural cherry juices. No raspberries, strawberries, blueberries, seeds, lingonberries, apple pieces or mixed fruit. Appetizing rich cherry filling, not hard candy and not smooth red jelly. Same elevated 35-degree front three-quarter view, soft upper-left studio daylight, camera scale and product proportions as reference. Entire product isolated on true transparent alpha, ample padding so crust and slice never touch edges. Only pie and detached slice, no external cherries, no stems, loose crumbs, plate, paper, boards, props, illustrations, backdrop, text or badge. Crisp natural pastry layers and accurate ruby filling. High-end food catalog photography.",
+          "references": [
+            "apple/pie.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            20,
+            142,
+            1253,
+            1144
+          ]
+        },
+        "background": {
+          "path": "cherry/background.png",
+          "status": "READY",
+          "role": "background",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "alpha": false,
+          "alpha_extrema": null,
+          "transparent_fraction": 0,
+          "content_bbox": null,
+          "sha256": "484706c8b3a9358caea7510eeaaca1bcc1bf5ef319071288727db3a4982fe833",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-742caae1-da15-418d-9a14-d0afc941d907.png",
+          "prompt_file": "cherry/background.prompt.txt",
+          "prompt": "Square standalone cherry botanical BACKGROUND for a premium Baltic bakery card. Reference only guides warm ivory paper, exquisite fine etched ingredient drawings, restrained natural watercolor and clear peripheral composition. Replace apple and lingonberry completely with ONLY true sour cherries: pairs of round ruby drupes hanging from long thin curved forked stems, narrow pointed serrated leaves, small cherry twigs. Upper-left branch entering from edge, upper-right one subtle leaf, lower-right small cherry cluster cropped by corner, lower-left one cut cherry with a single round pit and one fine stem. Cherries are smooth individual round fruits, not clusters of raspberry drupelets, not strawberries, not currants or lingonberry sprigs. Muted cranberry red fruit, sage and olive green leaves, fine warm sepia ink. Opaque warm cream #fbf9f4 background, subtle fine paper grain. Make much of the entire central area blank, including ellipse x18%-82%, y22%-78%, to hold a separate large pie photograph. Calm sparse ingredient art at perimeter only, no enclosing round wreath. No pie, pastry, plate, actual photo objects, typography, letters, logo, promotional marks or badges. No transparency. Same visual density and drawing quality as reference.",
+          "references": [
+            "apple/background.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text."
+        }
+      },
+      "composition": {
+        "pie_css_width_percent": 88,
+        "pie_center_x_percent": 50,
+        "pie_center_y_percent": 54,
+        "container_aspect_ratio": "1/1",
+        "note": "Center both layers. Background fills container; pie image width is 88% of container, preserving its transparent canvas. Badges remain separate HTML/CSS."
+      }
+    },
+    "curd": {
+      "status": "READY",
+      "files": {
+        "pie": {
+          "path": "curd/pie.png",
+          "status": "READY",
+          "role": "pie",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.4693,
+          "content_bbox": [
+            0,
+            19,
+            1254,
+            1254
+          ],
+          "sha256": "ea4876973ad46375b1d1f37b1724d36f57caf93b8b1dc6d4fef9e5f19dabe99f",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-7ad20303-d5bf-467c-8a71-854f09741326.png",
+          "prompt_file": "curd/pie.prompt.txt",
+          "prompt": "Create a premium photorealistic product cutout of a sweet TVOROG AND RASPBERRY pie for a Baltic bakery catalog. Use reference ONLY to match camera, light, golden handmade flaky pastry, round shape, overall size and separated wedge placement. Replace all reference meat filling with thick ivory-white baked farmer's curd/tvorog, gently grainy and soft with visible delicate small curds, with scattered cooked raspberries and modest raspberry-red marbling. Show recognizable raspberries made of tiny clustered drupelets embedded in white curd, not cherries, not strawberries, not smooth red jelly. Same rustic round pie with elegant five leaf-shaped vents and handmade crimped rim. Remove one wedge at lower right and place that matching wedge forward-right with generous creamy white curd cross-section clearly facing camera. Balance mostly white curd with small ruby raspberry pockets. Natural not plastic texture. Elevated 35-degree front three-quarter camera and soft upper-left studio daylight, matching the reference. Entire pie and slice comfortably inside square transparent canvas, no clipping. Only pie plus detached piece. No bowls, dairy jug, plates, utensils, boards, loose berries, loose crumbs, flowers, paper, text, badges, logo or illustrated backdrop. True clean alpha transparency around products, no opaque white or checkerboard, no broad floor shadow. High-end realistic bakery photography.",
+          "references": [
+            "meat/pie.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            34,
+            159,
+            1250,
+            1147
+          ]
+        },
+        "background": {
+          "path": "curd/background.png",
+          "status": "READY",
+          "role": "background",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "alpha": false,
+          "alpha_extrema": null,
+          "transparent_fraction": 0,
+          "content_bbox": null,
+          "sha256": "332934feba376d68a3cd0e26daa04a0d04b46dba4c3bf24da73176556e103b1e",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-ea43ad92-4a5b-4717-a243-d10da58e9438.png",
+          "prompt_file": "curd/background.prompt.txt",
+          "prompt": "Create a square standalone botanical and dairy ingredient BACKGROUND for a premium Baltic bakery card, matched to reference's warm ivory paper and delicate engraved ink illustration style. Only ingredients for tvorog with raspberry: upper-left graceful raspberry cane with serrated leaves and a few accurately drawn red raspberries made of many tiny compound drupelets; upper-right a small quiet engraved cream ceramic bowl of soft white grainy farmer's curd, no lettering; lower-left a low fresh raspberry branch curling around the extreme corner, a few fine pale leaves at lower-right. Restrained muted sage green, warm sepia linework and raspberry-red watercolor washes, bowl and curd nearly cream-on-cream. Leave the middle completely empty for separate pie photo overlay: ellipse x18%-82% and y22%-78% clear unmarked warm cream. Ingredients around margins only, sparse balanced placement, no closed circular wreath. Opaque warm ivory #fbf9f4 with very subtle fine paper grain across full square. No pie, no pastry, no cherries, no apples, no milk bottle, no wheat, no photographic objects, no typography, letters, logos, labels or badges. High-quality traditional botanical etching with modern airy layout. No transparency.",
+          "references": [
+            "cherry/background.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text."
+        }
+      },
+      "composition": {
+        "pie_css_width_percent": 88,
+        "pie_center_x_percent": 50,
+        "pie_center_y_percent": 54,
+        "container_aspect_ratio": "1/1",
+        "note": "Center both layers. Background fills container; pie image width is 88% of container, preserving its transparent canvas. Badges remain separate HTML/CSS."
+      }
+    }
+  },
+  "drinks": {
+    "cranberry": {
+      "status": "READY",
+      "path": "drinks/cranberry.png",
+      "files": {
+        "product": {
+          "path": "drinks/cranberry.png",
+          "status": "READY",
+          "role": "product",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.7259,
+          "content_bbox": [
+            0,
+            50,
+            1216,
+            1222
+          ],
+          "sha256": "f1e94ee696aa7e10a1d6f6fe5a7b81dc5ec81f7f78817e72d1eddd2614ee355d",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-c7d97939-d43f-4c34-8d5e-056c1178c8b0.png",
+          "prompt_file": "drinks/cranberry.prompt.txt",
+          "prompt": "Create a single premium photorealistic drink product cutout: an unbranded clear glass 500 ml round juice bottle filled with deep ruby-red cranberry mors, a naturally cloudy cranberry fruit drink, not soda. Elegant simple contemporary bottle, cylindrical straight body, softly rounded shoulders, slim moderately short neck, small plain matte deep Baltic blue-green screw cap #082f3c. No label of any kind, no embossed letters, no writing or numbers. Realistic clear glass thickness, natural restrained condensation, soft upper-left daylight, subtle long vertical reflections showing glass volume, cranberry liquid visible, realistic fill level slightly below neck. Almost straight-on product camera, tiny elevated view showing cap, entire bottle centered in a square canvas, bottle occupies 78% of canvas height, generous empty transparent margins around all sides. Isolate bottle only on TRUE transparent alpha. No berries, fruits, leaves, props, tabletop, floor, white box, backdrop, baked checkerboard, branding, ornament, floating droplets or detached shadow. Clean premium Baltic bakery catalog photography with warm natural highlights, highly realistic glass and liquid, no illustration.",
+          "references": [],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            419,
+            57,
+            835,
+            1200
+          ]
+        }
+      },
+      "composition": {
+        "product_css_height_percent": 88,
+        "product_center_x_percent": 50,
+        "product_center_y_percent": 50
+      }
+    },
+    "seabuckthorn": {
+      "status": "READY",
+      "path": "drinks/seabuckthorn.png",
+      "files": {
+        "product": {
+          "path": "drinks/seabuckthorn.png",
+          "status": "READY",
+          "role": "product",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.7216,
+          "content_bbox": [
+            121,
+            19,
+            1226,
+            1208
+          ],
+          "sha256": "a07920bc9abccffd06eccd608b158db9d15bdde522af63c1e49404ad1f9d8c53",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-df0d1994-c429-44ad-a51c-d240deacef13.png",
+          "prompt_file": "drinks/seabuckthorn.prompt.txt",
+          "prompt": "Make the SEA BUCKTHORN mors variant of this exact reference drink packshot. Preserve the bottle geometry, size, placement, camera, glass thickness, plain matte dark Baltic screw cap, reflections, subtle condensation and transparent isolation exactly. Change only the beverage from red cranberry drink to naturally cloudy golden-orange sea buckthorn fruit drink: warm amber orange/yellow, rich but plausible organic sea buckthorn color, opaque cloudy juice, realistic fill line. No red liquid. Entire same single clear glass bottle, completely unbranded, no label, no letters, numbers, embossing or symbols. Centered full bottle, no crop, generous square canvas, soft upper-left studio daylight and premium realistic product photography. Isolate only bottle on TRUE clean transparent alpha, no white rectangular background, no baked checkerboard, no broad floor shadow, props, berries, leaves or fruit.",
+          "references": [
+            "drinks/cranberry.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            418,
+            56,
+            837,
+            1202
+          ]
+        }
+      },
+      "composition": {
+        "product_css_height_percent": 88,
+        "product_center_x_percent": 50,
+        "product_center_y_percent": 50
+      }
+    },
+    "tea": {
+      "status": "READY",
+      "path": "drinks/tea.png",
+      "files": {
+        "product": {
+          "path": "drinks/tea.png",
+          "status": "READY",
+          "role": "product",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.5472,
+          "content_bbox": [
+            39,
+            25,
+            1184,
+            1212
+          ],
+          "sha256": "c68f0db40b305a80a6124fe72186205b17e9ecf3e4df3a3e3602d1553652c96a",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-c0a4fd03-d663-4f90-b9a3-c18ddb69cf29.png",
+          "prompt_file": "drinks/tea.prompt.txt",
+          "prompt": "A single premium takeaway TEA cup, photorealistic isolated product cutout for a Baltic bakery catalog. Beautiful plain matte deep Baltic navy/teal paper cup #082f3c, subtly fibrous paper surface, tapered cylindrical body, matching dark snug sip lid with realistic concentric molded rim, no branding. A fine natural tea-bag string emerges from under the lid at right and hangs down a little, ending in one small warm ivory square tea tag, completely blank with NO writing, no letters or symbol. Front three-quarter product view with mild elevated camera showing top of lid, natural soft upper-left studio daylight, realistic restrained highlights. Cup centered and occupies around 72% square canvas height; whole cup and tea tag completely inside with ample margins. Premium simple cup, tiny natural paper imperfections, not glossy plastic. Only the cup with lid, string and blank tag. True clean transparent alpha background, no table, floor, broad cast shadow, steam, utensils, saucer, leaves, fruit, tea bags beside cup, pattern, text, logo, label, price or badge. High-end realistic warm studio product photograph, crisp clean silhouette.",
+          "references": [],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            232,
+            77,
+            1090,
+            1197
+          ]
+        }
+      },
+      "composition": {
+        "product_css_height_percent": 88,
+        "product_center_x_percent": 50,
+        "product_center_y_percent": 50
+      }
+    },
+    "coffee": {
+      "status": "READY",
+      "path": "drinks/coffee.png",
+      "files": {
+        "product": {
+          "path": "drinks/coffee.png",
+          "status": "READY",
+          "role": "product",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.5644,
+          "content_bbox": [
+            135,
+            72,
+            1169,
+            1208
+          ],
+          "sha256": "7f0c206227593b209cab586d6127582b9d926d9b6abfc0ffaf4c4e6a2e34b239",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-2bcbe25f-5363-4f53-a007-d4191f73166a.png",
+          "prompt_file": "drinks/coffee.prompt.txt",
+          "prompt": "Create the COFFEE variant of this exact reference takeaway cup product cutout. Keep exactly the same plain matte deep Baltic navy/teal tapered paper cup, paper texture, dark molded sip lid, camera, size, centered position, natural soft upper-left light and full uncropped square framing. Remove the tea-bag string and tea tag completely; nothing hangs from cup or lid. The cup is plain and completely unbranded, no writing, logo, label, sleeve or pattern. Single coffee takeaway cup with matching lid, photorealistic premium studio photography. Preserve generous transparent margins and true clean alpha transparency. No tea tag, string, coffee beans, steam, splash, table, floor, broad detached shadow, saucer, other objects, letters or badges. Accurate clean silhouette and natural fine paper grain.",
+          "references": [
+            "drinks/tea.png"
+          ],
+          "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+          "visible_content_bbox_alpha_gt_128": [
+            233,
+            76,
+            1009,
+            1197
+          ]
+        }
+      },
+      "composition": {
+        "product_css_height_percent": 88,
+        "product_center_x_percent": 50,
+        "product_center_y_percent": 50
+      }
+    },
+    "water": {
+      "status": "READY",
+      "path": "drinks/water.png",
+      "files": {
+        "product": {
+          "path": "drinks/water.png",
+          "status": "READY",
+          "role": "product",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "transparent_fraction": 0.7419,
+          "content_bbox": [
+            0,
+            18,
+            1240,
+            1254
+          ],
+          "sha256": "90bd74b022a326368ce3a1519dc2b8d62a560f40199f91aaf1a3731c0994f144",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-21712bc2-159f-469b-907b-0fc07f581bdf.png",
+          "prompt_file": "drinks/water.prompt.txt",
+          "prompt": "Single unbranded clear spring-water bottle, premium realistic studio product cutout, on a completely transparent background. A simple elegant cylindrical clear recycled PET bottle filled with perfectly clear colorless still water, softly rounded shoulders, short neck, plain dark Baltic navy screw cap. Tall slim bottle, front view with slight view of top, centered full height within square canvas with generous margins. Glass-clear transparent sides and faint smooth reflections, clean smooth water, luminous fine edge highlights, real clear water appearance. Smooth continuous gentle transparency, clean contours, no speckled masking, no frost, no white liquid. The bottle is transparent so it softly transmits the background behind it, with subtle cool silver-blue reflection highlights. Premium bakery drink packshot, soft upper left studio lighting, no printed label, no logo, no letters, no numbers, no sticker, no decorative fruit, no other objects, no props, no surface shadow, no milky fill or bubbles. Entire bottle visible, beautiful controlled studio reflections, TRUE alpha background outside bottle.",
+          "references": [],
+          "visual_check": "Inspected full clear PET water bottle: plain cap, no label, full framing, isolated contour. Internal studio reflections retained; outside silhouette has transparent alpha.",
+          "visible_content_bbox_alpha_gt_128": [
+            445,
+            23,
+            809,
+            1224
+          ]
+        }
+      },
+      "composition": {
+        "product_css_height_percent": 88,
+        "product_center_x_percent": 50,
+        "product_center_y_percent": 50
+      }
+    }
+  },
+  "logo": {
+    "status": "READY",
+    "concepts": [
+      {
+        "path": "logo/tower-symbol.png",
+        "status": "READY",
+        "role": "symbol",
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGBA",
+        "alpha": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "transparent_fraction": 0.8312,
+        "content_bbox": [
+          43,
+          19,
+          1216,
+          1204
+        ],
+        "sha256": "f662cdfb72740dcde5514dacc48111400b280cde056c5e21b98481f787a3da22",
+        "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-9c301d57-668c-4474-b537-0378f6504147.png",
+        "prompt_file": "logo/tower-symbol.prompt.txt",
+        "prompt": "Design ONE polished minimalist logo SYMBOL for PIROGORSK Baltic bakery, no words. Architecture must be based on the actual Zelenogradsk water tower in the reference photograph, especially its highly distinctive proportions: narrow cylindrical shaft, widened cylindrical upper observation drum with 5 simplified arched windows, projecting balcony ring, broad shallow rounded dome roof and tiny cylindrical roof lantern with domed cap, pale flared polygonal base. Do not turn it into a lighthouse, castle, Gothic steeple or generic tall peaked tower. Reduce photograph to a confident calm artisanal brand mark: solid dark Baltic navy #082f3c shapes with a few wide transparent negative-space cuts, uniform sturdy curved contours, balanced symmetry, elegant handmade character. Integrate a subtle broad crimped pie-crust arc into the base as one clean supporting curve, no extra food illustration. Symbol should be memorable and legible at 32–48 pixels; simplify tiny window panes, railings and brick texture entirely. Single color, flat graphic, no gradients, shading, photo, hatching, distressed texture, 3D or thin fragile lines. One centered standalone mark comfortably within square canvas, around 70% height with ample padding. True transparent alpha background, open negative spaces also transparent. NO text, letters, numbers, banners, circles of writing, stars, cat, wheat sprigs or mockups. Output only a finished professional raster logo icon.",
+        "references": [
+          "logo/references/water-tower-novozhilov-2021.jpg"
+        ],
+        "visual_check": "Compared to actual viewed tower photo: widened drum, arched windows, balcony, broad dome, roof lantern, narrow shaft and flared base retained. No text. Transparent isolated dark symbol.",
+        "visible_content_bbox_alpha_gt_128": [
+          347,
+          64,
+          907,
+          1200
+        ]
+      },
+      {
+        "path": "logo/kurhaus-symbol.png",
+        "status": "READY",
+        "role": "symbol",
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGBA",
+        "alpha": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "transparent_fraction": 0.7691,
+        "content_bbox": [
+          0,
+          124,
+          1232,
+          1180
+        ],
+        "sha256": "603e0126131e7a07cdae122727fe412ca2bc80267d32eb485451c675335412ea",
+        "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-7e90e8d0-1653-473d-9c4e-641a8d6f0656.png",
+        "prompt_file": "logo/kurhaus-symbol.prompt.txt",
+        "prompt": "REDESIGN this detailed Kurhaus architectural drawing as a truly minimal small bakery LOGO ICON. Keep only its recognizable overall silhouette: broad low half-timber house, tall central roof tower with one little pointed cap, two short outer corner turrets and two front gables. Simplification is mandatory. Use big solid shapes and wide negative-space openings. Remove at least 85 percent of all interior detail: no balcony railings, windowpane grids, timber lattice grids, tiny roof lines, layered cornices or thin spires. Retain ONE central arch as a big transparent opening, TWO wide simple rectangular side windows, TWO simple diagonal half-timber strokes at each side, a single broad doorway opening. Maximum seven large transparent window/door holes in entire building. Bold smooth filled monochrome Baltic navy #082f3c shapes. Shorten extreme antenna tips to sturdy small points. Compact broad horizontal icon designed to work at 48 pixels. One small crimped arc under building can suggest pie rim. Balance heritage and modern brand clarity. Flat vector-like raster, solid color, no gradients, shading, hatch or texture. Whole standalone symbol centered with 15% clear padding on square TRUE alpha transparent background. No words, letters, text, numbers, signs, seals, circle borders or mockup. It should read as an elegant small brand mark rather than an architectural elevation.",
+        "references": [
+          "logo/references/kurhaus-russo-travel.jpg",
+          "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-87bf4409-be10-4d9c-bc89-8526968deda5.png"
+        ],
+        "visual_check": "Simplified actual Kurhaus facade to central tower, paired gables, two corner turrets and broad central arch. Removed fine railings and window grids. No text, transparent dark symbol.",
+        "visible_content_bbox_alpha_gt_128": [
+          80,
+          174,
+          1175,
+          1052
+        ]
+      },
+      {
+        "path": "logo/tower-compact-symbol.png",
+        "status": "READY",
+        "role": "symbol",
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGBA",
+        "alpha": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "transparent_fraction": 0.7474,
+        "content_bbox": [
+          146,
+          39,
+          1063,
+          1188
+        ],
+        "sha256": "5259326e23926a93cc38ef55f9b22b3f56519727333f778ee754384b68f3f683",
+        "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-d8a797cd-0c3e-4300-9761-0fd9ec099781.png",
+        "prompt_file": "logo/tower-compact-symbol.prompt.txt",
+        "prompt": "Create a third compact minimalist bakery LOGO ICON derived from the actual Zelenogradsk water tower in the reference photo. Designed as a very bold pictogram that stays recognizable at 24–32 px. Preserve the distinctive mushroom-like silhouette: broad rounded shallow dome with tiny roof lantern, wide upper observation drum, narrow cylindrical shaft and subtly flared base. Compress vertical proportions into a compact calm rounded mark. Use only three large negative-space arched windows in the wide top drum and one simple small doorway at bottom; no other shaft windows, balcony railings, brick texture, roof rings or thin interior lines. One wide simple balcony ledge. Merge the bottom into a broad shallow golden-pie-shaped outline but keep entire mark a single dark Baltic navy color #082f3c, no second color. The bottom is a smooth crimped pastry curve with just three soft scallops. Solid chunky flat masses, beautifully balanced smooth contours, strong silhouette, minimal friendly geometry, premium heritage bakery feel. One standalone centered icon, fills roughly 70% canvas height, generous clear square margins. True clean alpha-transparent canvas including negative-space holes. No lettering, text, numbers, stamp border, circle, banners, stars, animals, wheat, hatching, gradients, photo, shade, texture, 3D or mockup. Architectural source photo guides true tower shape only, no copied background.",
+        "references": [
+          "logo/references/water-tower-novozhilov-2021.jpg"
+        ],
+        "visual_check": "Minimal tower variant: three drum windows, dome and lantern, broad base. No fine railings, no text. Inspect at small sizes in preview.",
+        "visible_content_bbox_alpha_gt_128": [
+          292,
+          71,
+          962,
+          1184
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "subject": "Zelenogradsk water tower",
+        "local_reference": "logo/references/water-tower-novozhilov-2021.jpg",
+        "image_url": "https://visit-kaliningrad.ru/upload/medialibrary/776/pe9ngtin1t6zyq2izw2ct443mecvnu5d/Zelenogradsk-vodonapornya-bashnya-vid-sverkhu-Novozhilov-2021-_1_.jpg",
+        "page_url": "https://visit-kaliningrad.ru/entertainment/culture/museums/muzey-koshek-murarium/",
+        "publisher": "Kaliningrad regional tourism information centre",
+        "visual_review": "Viewed actual tower photograph before generation; dome, lantern, wide upper drum, narrow shaft and flared base used.",
+        "reference_sha256": "8b666da3f412adcf8fcd91924b59e295f0a71739ba9c986574a8bf24d410a1f9"
+      },
+      {
+        "subject": "Zelenogradsk Kurhaus",
+        "local_reference": "logo/references/kurhaus-russo-travel.jpg",
+        "image_url": "https://russo-travel.ru/upload/medialibrary/dff/dffab84d129a8ec61421f4ad097d831c.jpg",
+        "page_url": "https://russo-travel.ru/info/zelenogradsk-chto-posmotret/",
+        "corroborating_pages": [
+          "https://kurhaus.ru/",
+          "https://visit-kaliningrad.ru/entertainment/sights/gorodskie-zdaniya/kurhaus-v-zelenogradske/"
+        ],
+        "visual_review": "Viewed actual Kurhaus facade before generation; central roof tower, paired front gables, corner turrets and central arch used.",
+        "reference_sha256": "fca901f1e312ca842acc273a9e36414550c280ae3de859ba48f34f560042e114"
+      }
+    ],
+    "recommended_small_symbol": "logo/tower-compact-symbol.png",
+    "small_size_review": {
+      "canvas_sizes_css_px": [
+        32,
+        48,
+        64,
+        96
+      ],
+      "result": "Visually inspected in browser. Compact tower retains the clearest large openings at 32 px. Detailed tower is stronger from 64 px; Kurhaus from 48 px. Sizes include original transparent canvas padding."
+    }
+  },
+  "hero": {
+    "status": "READY",
+    "files": {
+      "pie": {
+        "path": "hero/pie.png",
+        "status": "READY",
+        "role": "pie",
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGBA",
+        "alpha": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "transparent_fraction": 0.4834,
+        "content_bbox": [
+          0,
+          4,
+          1254,
+          1254
+        ],
+        "sha256": "626cd9c8b21e3f735f674e08e2ba3d6824d95a284c0e10e1dbf4633b459d24a7",
+        "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-dca1d1b1-576b-4e11-9613-1fd0d73d4b08.png",
+        "prompt_file": "hero/pie.prompt.txt",
+        "prompt": "Create a hero-quality photorealistic Baltic SALMON PIE product cutout. Reference 1 establishes premium appetizing salmon pie appearance; reference 2 defines clean transparent catalog product style. Single generous round hand-baked golden flaky pastry pie, decorative elegant five leaf-shaped vents, rich natural amber browning and crimped handmade rim. A wedge removed lower right, matching slice placed forward-right, both visibly full and comfortably framed. Abundant salmon filling with distinct moist pale coral salmon flakes/chunks, creamy off-white filling and restrained finely chopped dill, realistic natural cooked texture. No shrimp. Slightly more elevated three-quarter food camera, soft upper-left daylight, golden pastry detail, appetizing high-end bakery hero photography. Exact objects are ONLY the whole pie and its separated slice, isolated as true clean alpha transparent PNG on a square canvas with comfortable margins. Remove all illustrated fish, lighthouse, waves, lemons, external herbs, peppercorns, crumbs, table, board, floor, paper, plate, backdrop, text and badges. No floating garnishes, no broad detached shadow. Preserve subtle realistic product self-shadow and crisp clean pastry contour. A premium large hero food photograph suitable for overlay on independent Baltic line-art background.",
+        "references": [
+          "../assets-source/hero.png",
+          "fish/pie.png"
+        ],
+        "visual_check": "Inspected generated image: subject, composition, edges and absence of text.",
+        "visible_content_bbox_alpha_gt_128": [
+          44,
+          153,
+          1245,
+          1133
+        ]
+      },
+      "background": {
+        "path": "hero/background.png",
+        "status": "READY",
+        "role": "background",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "alpha": false,
+        "alpha_extrema": null,
+        "transparent_fraction": 0,
+        "content_bbox": null,
+        "sha256": "5d86b15b10ac362070eb571a6ec44cea8716c54ee62cefdb32e0df186f8b87f0",
+        "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a16a09-8f21-7312-aa3c-2aa4e9d52e9f/exec-fe479ac2-50a1-418c-9219-b757ea7a0d94.png",
+        "prompt_file": "hero/background.prompt.txt",
+        "prompt": "Create a wide horizontal 3:2 standalone Baltic bakery HERO BACKGROUND, WITHOUT any pie or photographic food. Opaque warm ivory #fbf9f4 fine natural paper with delicate spacious engraved line-art scenery. Reference 1 guides original PIROGORSK cream-paper Baltic ink style, but remove ALL food photographs, peppercorns and loose crumbs. Reference 2 is the actual Zelenogradsk water tower: use this real architectural silhouette for a small distant drawing in the UPPER RIGHT quadrant, broad rounded shallow dome, tiny roof lantern, wide upper drum, thin brick shaft and flared base; do NOT draw the generic lighthouse from reference 1. Tower around x78%,y23%, fine muted blue-gray linework, distant half-timber roofs and dunes beneath it. Fine soft blue Baltic wave lines sweep along the bottom 15% edge, a little dune grass at far bottom-right, two tiny seabirds near top-right. At far right edge very subtle sage dill fronds and one thin muted amber lemon cross-section as quiet ingredient etching. Crucial composition: keep entire LEFT 43% completely blank cream, also keep main central/right food placement zone x48%-90%,y35%-85% almost empty cream, since a large separate pie cutout will be overlaid there. Airy premium heritage travel engraving, extremely calm light ink, no enclosing frame. No photo, pie, pastry, food objects, boards, utensils, realistic props, labels, text, letters, badges, seal, logo or typography. Fully opaque landscape canvas with subtle fine paper grain, no transparency.",
+        "references": [
+          "../assets-source/hero.png",
+          "logo/references/water-tower-novozhilov-2021.jpg"
+        ],
+        "visual_check": "Inspected generated image: subject, composition, edges and absence of text."
+      }
+    },
+    "composition": {
+      "container_aspect_ratio": "3/2",
+      "background_css_width_percent": 100,
+      "pie_css_width_percent": 66,
+      "pie_css_height_percent": 84,
+      "pie_center_x_percent": 66,
+      "pie_center_y_percent": 55,
+      "text_zone": "Left 43% of background; type and buttons remain HTML/CSS."
+    }
+  },
+  "integration": {
+    "badges": "HTML/CSS; no labels, promotions or prices baked into images",
+    "composition": "Overlay background and cutout in the same square container; actual dimensions recorded per file."
+  },
+  "verification": {
+    "report": "verification.json",
+    "asset_count": 24,
+    "transparent_png_count": 16,
+    "opaque_background_count": 8,
+    "checks": [
+      "PNG decode",
+      "dimensions and mode",
+      "true alpha range for cutouts",
+      "visible product bounds inside canvas at alpha > 128",
+      "SHA-256 match",
+      "exact prompt file match",
+      "original generation byte equality",
+      "reference path existence"
+    ],
+    "visual_review": {
+      "status": "PASS",
+      "checks": [
+        "Every original viewed individually",
+        "All seven layered pairs reviewed in browser",
+        "Cutout edges reviewed against dark surface",
+        "Five drinks checked for consistent bottles/cups and absence of labels",
+        "Three symbols reviewed at 32, 48, 64 and 96 CSS px",
+        "Hero background and cutout composition reviewed"
+      ],
+      "preview": "preview.html"
+    }
+  }
+}

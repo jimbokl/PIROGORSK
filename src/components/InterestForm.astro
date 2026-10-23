@@ -1,0 +1,31 @@
+---
+import { analyticsConfig } from '../config/analytics';
+import '../styles/interest.css';
+---
+<dialog id="interest-dialog" class="dialog interest-dialog" aria-labelledby="interest-heading" aria-describedby="interest-intro">
+  <div class="interest-top"><span class="eyebrow">Готовим запуск</span><button type="button" class="interest-close" data-interest-close aria-label="Закрыть заявку">×</button></div>
+  <h2 id="interest-heading">Какие пироги вам нужны?</h2>
+  <p id="interest-intro" class="interest-intro">Готовим запуск. Заявка показывает интерес, заказ и оплата пока не подтверждаются.</p>
+  <form id="interest-form" class="ym-disable-submit" novalidate>
+    <fieldset data-interest-fields>
+      <legend class="sr-only">Ваша заявка</legend>
+      <section class="interest-basket" aria-label="Состав заявки"><ul data-interest-items></ul><p>Предварительная сумма <strong data-interest-total></strong></p><small>Меню и цены могут измениться к запуску.</small></section>
+      <div class="interest-grid">
+        <div class="interest-field"><label for="interest-city">Город</label><select name="city" id="interest-city" required aria-describedby="interest-city-error"><option>Зеленоградск</option><option>Калининград</option><option>Светлогорск</option></select><span id="interest-city-error" class="interest-error" data-error="city"></span></div>
+        <div class="interest-field"><label for="interest-day">Желаемый день</label><input type="date" name="desiredDate" id="interest-day" required aria-describedby="interest-day-error" /><span id="interest-day-error" class="interest-error" data-error="desiredDate"></span></div>
+      </div>
+      <div class="interest-field"><label for="interest-delivery">Как было бы удобнее получить?</label><select name="delivery" id="interest-delivery" required aria-describedby="interest-delivery-error"><option value="">Выберите способ</option><option value="pickup">Самовывоз</option><option value="delivery">Доставка</option><option value="undecided">Пока не решил(а)</option></select><span id="interest-delivery-error" class="interest-error" data-error="delivery"></span></div>
+      <label class="interest-consent"><input type="checkbox" name="priceConsent" required aria-describedby="interest-price-error" /><span>Хочу заказать эту подборку по ориентировочной цене, когда Пирогорск начнёт работу.</span></label><span id="interest-price-error" class="interest-error" data-error="priceConsent"></span>
+      <p class="interest-anonymous">Заявка анонимная: имя и контакты не нужны. Связаться с вами по ней не получится.</p>
+      <div class="interest-trap" aria-hidden="true"><label for="interest-website">Ваш сайт</label><input id="interest-website" type="text" name="website" tabindex="-1" autocomplete="off" /></div>
+      <p class="interest-error" data-error="items"></p>
+      <p class="interest-status" data-interest-status role="status" aria-live="polite"></p>
+      <button class="button interest-submit" type="submit" disabled={!analyticsConfig.interestEndpoint} data-interest-submit>Оставить заявку</button>
+      <p class="interest-fine">Отправляя заявку, вы подтверждаете, что прочитали <a href="/terms/" target="_blank" rel="noopener">условия проверки спроса</a> и <a href="/privacy/" target="_blank" rel="noopener">информацию о данных</a>.</p>
+    </fieldset>
+  </form>
+  <section class="interest-success" data-interest-success hidden aria-live="polite" tabindex="-1"><h3>Заявка сохранена</h3><p data-interest-success-text></p><p class="interest-request">Номер заявки: <span data-interest-request></span></p><button class="button" type="button" data-interest-close>Вернуться к пирогам</button></section>
+</dialog>
+<script>
+  import '../scripts/interest';
+</script>

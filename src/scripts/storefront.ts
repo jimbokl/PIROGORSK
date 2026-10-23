@@ -1,19 +1,28 @@
-export {};
+import type { Product } from '../data/catalog';
+import { trackGoal } from './analytics';
+import { editorialCityIntents, editorialScenarioIntents } from '../data/editorial-intents';
 
-type Product = { id: string; name: string; description: string; category: string; prices: Record<string, number> };
-type Selection = { id: string; weight: 500 | 1000; quantity: number };
+type Selection = { id: string; value: number; quantity: number };
 const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
 const selection: Selection[] = [];
 try {
   const saved: unknown = JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]');
   if (Array.isArray(saved)) {
     for (const item of saved) {
-      if (item && products.some(product => product.id === item.id) && [500, 1000].includes(item.weight) && Number.isSafeInteger(item.quantity) && item.quantity > 0) selection.push({ id: item.id, weight: item.weight, quantity: item.quantity });
+      if (!item || typeof item !== 'object') continue;
+      const value = Number(item.value ?? item.weight);
+      const product = products.find(product => product.id === item.id);
+      if (!product?.variants.some(variant => variant.value === value) || !Number.isSafeInteger(item.quantity) || item.quantity < 1 || item.quantity > 99) continue;
+      const existing = selection.find(entry => entry.id === item.id && entry.value === value);
+      if (existing) existing.quantity = Math.min(99, existing.quantity + item.quantity);
+      else if (selection.length < 24) selection.push({ id: item.id, value, quantity: item.quantity });
     }
   }
 } catch { /* A fresh selection is available when storage is unavailable or invalid. */ }
 const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
-const weightLabel = (weight: number) => weight === 500 ? '500 г' : `${(weight / 1000).toLocaleString('ru-RU')} кг`;
+const weightLabel = (weight: number) => weight < 1000 ? `${weight} г` : `${(weight / 1000).toLocaleString('ru-RU')} кг`;
+const variantLabel = (product: Product, value: number) => product.variants.find(variant => variant.value === value)?.label || '';
+const productFor = (item: Selection) => products.find(product => product.id === item.id)!;
 const all = <T extends HTMLElement = HTMLElement>(selector: string) => [...document.querySelectorAll<T>(selector)];
 let city = 'Зеленоградск';
 let toastTimer: ReturnType<typeof setTimeout>;
@@ -47,12 +56,17 @@ function setCity(value: string, announce = true) {
   if (announce) toast(`Ваш город — ${city}`);
 }
 
-function addProduct(id: string, weight: 500 | 1000) {
-  if (!products.some(product => product.id === id)) return;
-  const existing = selection.find(item => item.id === id && item.weight === weight);
+function addProduct(id: string, value: number) {
+  const product = products.find(product => product.id === id);
+  if (!product?.variants.some(variant => variant.value === value)) return false;
+  const existing = selection.find(item => item.id === id && item.value === value);
+  if (existing && existing.quantity >= 99) { toast('В подборке уже 99 таких товаров'); return false; }
+  if (!existing && selection.length >= 24) { toast('В подборке уже 24 разных варианта'); return false; }
   if (existing) existing.quantity += 1;
-  else selection.push({ id, weight, quantity: 1 });
+  else selection.push({ id, value, quantity: 1 });
   updateBadge();
+  trackGoal('catalog_add', { city, productid: id, variant: String(value), qty: 1, value: product.prices[Number(value)] });
+  return true;
 }
 
 function updateBadge() {
@@ -79,22 +93,24 @@ function renderSelection() {
     const product = products.find(product => product.id === item.id)!;
     const element = document.createElement('div');
     element.className = 'selection-item';
-    element.dataset.item = `${item.id}-${item.weight}`;
+    element.dataset.item = `${item.id}-${item.value}`;
     const template = document.querySelector<HTMLTemplateElement>('#selection-item-template')!;
     element.append(template.content.cloneNode(true));
     element.querySelector('h3')!.textContent = product.name;
-    element.querySelector('small')!.textContent = `${weightLabel(item.weight)} · ${money(product.prices[item.weight])}`;
+    element.querySelector('small')!.textContent = `${variantLabel(product, item.value)} · ${money(product.prices[item.value])}`;
     element.querySelector('output')!.textContent = String(item.quantity);
-    element.querySelector('[data-item-price]')!.textContent = money(product.prices[item.weight] * item.quantity);
-    element.querySelector('[data-decrease]')!.setAttribute('aria-label', `Уменьшить: ${product.name}, ${weightLabel(item.weight)}`);
-    element.querySelector('[data-increase]')!.setAttribute('aria-label', `Увеличить: ${product.name}, ${weightLabel(item.weight)}`);
-    element.querySelector('[data-remove]')!.setAttribute('aria-label', `Убрать: ${product.name}, ${weightLabel(item.weight)}`);
+    element.querySelector('[data-item-price]')!.textContent = money(product.prices[item.value] * item.quantity);
+    element.querySelector('[data-decrease]')!.setAttribute('aria-label', `Уменьшить: ${product.name}, ${variantLabel(product, item.value)}`);
+    element.querySelector('[data-increase]')!.setAttribute('aria-label', `Увеличить: ${product.name}, ${variantLabel(product, item.value)}`);
+    element.querySelector('[data-remove]')!.setAttribute('aria-label', `Убрать: ${product.name}, ${variantLabel(product, item.value)}`);
     itemContainer.append(element);
   }
-  const total = selection.reduce((sum, item) => sum + products.find(product => product.id === item.id)!.prices[item.weight] * item.quantity, 0);
-  const totalWeight = selection.reduce((sum, item) => sum + item.weight * item.quantity, 0);
+  const total = selection.reduce((sum, item) => sum + products.find(product => product.id === item.id)!.prices[item.value] * item.quantity, 0);
+  const totalWeight = selection.reduce((sum, item) => sum + (productFor(item).kind === 'pie' ? item.value * item.quantity : 0), 0);
+  const drinks = selection.reduce((sum, item) => sum + (productFor(item).kind === 'drink' ? item.value * item.quantity : 0), 0);
+  const accessories = selection.reduce((sum, item) => sum + (productFor(item).kind === 'accessory' ? item.quantity : 0), 0);
   document.querySelector('[data-total]')!.textContent = money(total);
-  document.querySelector('[data-total-weight]')!.textContent = `Общий вес — ${weightLabel(totalWeight)}`;
+  document.querySelector('[data-total-weight]')!.textContent = [totalWeight ? `Пироги — ${weightLabel(totalWeight)}` : '', drinks ? `Напитки — ${(drinks / 1000).toLocaleString('ru-RU')} л` : '', accessories ? `Посуда — ${accessories} наб.` : ''].filter(Boolean).join(' · ');
 }
 
 all('[data-open]').forEach(button => button.addEventListener('click', () => openDialog(button.dataset.open!)));
@@ -109,22 +125,22 @@ try { setCity(localStorage.getItem('pirogorsk-city') || city, false); } catch { 
 
 all('[data-filter]').forEach(button => button.addEventListener('click', () => {
   all('[data-filter]').forEach(filter => filter.setAttribute('aria-pressed', String(filter === button)));
-  all('[data-product]').forEach(card => card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter);
+  all('#pirogi [data-product]').forEach(card => card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter);
 }));
 
 all('[data-product]').forEach(card => {
   const product = products.find(product => product.id === card.dataset.product)!;
   card.addEventListener('change', () => {
     const value = card.querySelector<HTMLInputElement>('input:checked')!.value;
-    card.querySelector('[data-price]')!.textContent = money(product.prices[value]);
+    card.querySelector('[data-price]')!.textContent = money(product.prices[Number(value)]);
   });
   card.querySelector<HTMLButtonElement>('[data-add]')!.addEventListener('click', event => {
     const button = event.currentTarget as HTMLButtonElement;
-    const weight = Number(card.querySelector<HTMLInputElement>('input:checked')!.value) as 500 | 1000;
-    addProduct(product.id, weight);
+    const value = Number(card.querySelector<HTMLInputElement>('input:checked')!.value);
+    if (!addProduct(product.id, value)) return;
     button.classList.add('added');
     button.querySelector('span:not(.icon)')!.textContent = 'Добавлен';
-    toast(`${product.name}, ${weightLabel(weight)} — в подборке`);
+    toast(`${product.name}, ${variantLabel(product, value)} — в подборке`);
     setTimeout(() => { button.classList.remove('added'); button.querySelector('span:not(.icon)')!.textContent = 'В подборку'; }, 1500);
   });
 });
@@ -147,11 +163,12 @@ document.addEventListener('click', event => {
   const control = target.closest<HTMLElement>('[data-decrease], [data-increase], [data-remove]');
   if (!control) return;
   const row = control.closest<HTMLElement>('[data-item]')!;
-  const itemIndex = selection.findIndex(item => `${item.id}-${item.weight}` === row.dataset.item);
+  const itemIndex = selection.findIndex(item => `${item.id}-${item.value}` === row.dataset.item);
   if (itemIndex < 0) return;
   const action = control.hasAttribute('data-increase') ? 'increase' : control.hasAttribute('data-decrease') ? 'decrease' : 'remove';
   const rowIndex = [...itemContainer.children].indexOf(row);
   if (action === 'remove' || (action === 'decrease' && selection[itemIndex].quantity === 1)) selection.splice(itemIndex, 1);
+  else if (action === 'increase' && selection[itemIndex].quantity >= 99) { toast('Можно выбрать до 99 таких товаров'); return; }
   else selection[itemIndex].quantity += action === 'increase' ? 1 : -1;
   updateBadge();
   renderSelection();
@@ -162,7 +179,7 @@ document.addEventListener('click', event => {
 document.querySelector('[data-copy]')!.addEventListener('click', async () => {
   const lines = selection.map(item => {
     const product = products.find(product => product.id === item.id)!;
-    return `${product.name} · ${weightLabel(item.weight)} × ${item.quantity} — ${money(product.prices[item.weight] * item.quantity)}`;
+    return `${product.name} · ${variantLabel(product, item.value)} × ${item.quantity} — ${money(product.prices[item.value] * item.quantity)}`;
   });
   const text = `Пирогорск · ${city}\n\n${lines.join('\n')}\n\nИтого: ${document.querySelector('[data-total]')!.textContent}\nЦены предварительные. Приём заказов пока не открыт.\nhttps://pirogorsk.ru/`;
   try {
@@ -179,3 +196,26 @@ document.querySelector('[data-copy]')!.addEventListener('click', async () => {
 });
 
 updateBadge();
+
+all('[data-order]').forEach(button => button.addEventListener('click', () => {
+  if (!selection.length) { goToCatalog(); return; }
+  document.dispatchEvent(new CustomEvent('pirogorsk:order-open', { detail: { items: selection.map(item => ({ ...item })), city } }));
+}));
+const interestId = new URLSearchParams(location.search).get('interest');
+if (interestId && Object.hasOwn(editorialCityIntents, interestId)) {
+  setCity(editorialCityIntents[interestId as keyof typeof editorialCityIntents], false);
+  openDialog('selection-dialog');
+} else if (interestId && Object.hasOwn(editorialScenarioIntents, interestId)) {
+  const scenario = editorialScenarioIntents[interestId as keyof typeof editorialScenarioIntents];
+  for (const item of scenario.items) {
+    if (!selection.some(existing => existing.id === item.id && existing.value === item.value)) {
+      addProduct(item.id, item.value);
+    }
+  }
+  openDialog('selection-dialog');
+} else if (interestId && products.some(product => product.id === interestId)) {
+  // A product link focuses its Add control; the visitor chooses the weight first.
+  const card = all('[data-product]').find(card => card.dataset.product === interestId);
+  card?.scrollIntoView({ block: 'center' });
+  card?.querySelector<HTMLButtonElement>('[data-add]')?.focus({ preventScroll: true });
+}

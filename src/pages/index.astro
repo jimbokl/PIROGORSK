@@ -2,40 +2,40 @@
 import { Picture } from 'astro:assets';
 import Icon from '../components/Icon.astro';
 import ProductCard from '../components/ProductCard.astro';
-import { cities, products, filters } from '../data/catalog';
-import hero from '../../design/assets-source/hero.png';
+import ExtrasSection from '../components/ExtrasSection.astro';
+import InterestForm from '../components/InterestForm.astro';
+import Analytics from '../components/Analytics.astro';
+import SeoHead from '../components/SeoHead.astro';
+import Brand from '../components/Brand.astro';
+import { cities, products, catalog, filters } from '../data/catalog';
+import heroPie from '../../design/layered-assets-v2/hero/pie.png';
+import heroBackground from '../../design/layered-assets-v2/hero/background.png';
 import bundle from '../../design/assets-source/bundle.png';
 import dinner from '../../design/assets-source/dinner.png';
 import company from '../../design/assets-source/company.png';
 import '../styles/global.css';
+import '../styles/home.css';
+const faqs = [
+  ['Можно уже заказать пирог?', 'Мы готовим запуск. Сейчас можно выбрать пироги и оставить анонимную заявку по предварительной цене. Это поможет определить меню и города. Заказ и оплата пока не подтверждаются.'],
+  ['Чем отличаются 500 г и 1 кг?', 'Это два варианта веса одного пирога. Можно взять несколько небольших пирогов с разными начинками или большой пирог к общему столу. Вес готового продукта уточним перед открытием.'],
+  ['Какие начинки планируются?', 'Мясо, рыба, капуста и сыр; к чаю — яблоко с брусникой, вишня, творог с малиной. Окончательные составы и сведения об аллергенах появятся после выбора производства.'],
+  ['В каких городах будет доставка?', 'Изучаем спрос в Зеленоградске, Калининграде и Светлогорске. Дату запуска, зоны, стоимость и способы получения опубликуем после согласования с производством.'],
+  ['Нужно оставлять телефон?', 'Нет. Заявка анонимная: мы сохраняем город, выбранные товары, количество, желаемый день и способ получения. Связаться с вами по такой заявке не получится.'],
+];
+const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })) };
 ---
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#fbf9f4" />
-    <meta name="description" content="Пирогорск — пироги с балтийским характером. Мясо, рыба, капуста и сыр. Выберите начинку, размер 500 г или 1 кг и соберите свою подборку." />
-    <link rel="canonical" href="https://pirogorsk.ru/" />
-    <meta property="og:url" content="https://pirogorsk.ru/" />
-    <meta property="og:title" content="Пирогорск — пироги с балтийским характером" />
-    <meta property="og:description" content="Мясо, рыба, капуста и сыр. Выберите свой пирог." />
-    <meta property="og:type" content="website" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" href="/fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/golos-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
-    <title>Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске</title>
+    <SeoHead title="Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске" description="Сытные и сладкие пироги с балтийским характером. Выберите 500 г или 1 кг, добавьте морс и оставьте заявку. Готовим запуск — меню и цены предварительные." canonicalPath="/" schema={[faqSchema]} />
   </head>
   <body>
     <a class="skip-link" href="#pirogi">Перейти к пирогам</a>
     <header class="site-header container">
-      <a class="brand" href="#top">
-        <span class="brand-name">ПИРОГОРСК</span>
-        <span class="brand-tagline"><Icon name="wave" />Пироги с балтийским характером</span>
-      </a>
+      <Brand href="#top" />
       <nav class="main-nav" aria-label="Основная навигация">
         <a href="#pirogi">Пироги</a><a href="#nabory">Наборы</a>
-        <button data-open="delivery-dialog">Доставка</button><button data-open="about-dialog">О проекте</button>
+        <a href="/delivery/">Доставка</a><a href="/about/">О проекте</a>
       </nav>
       <div class="header-actions">
         <button class="city-trigger" data-open="city-dialog" aria-haspopup="dialog"><Icon name="pin" /><span data-city>Зеленоградск</span><Icon name="caret" /></button>
@@ -43,13 +43,14 @@ import '../styles/global.css';
       </div>
     </header>
     <main id="top">
-      <section class="hero container" aria-labelledby="hero-heading">
-        <div class="hero-art">
-          <Picture src={hero} formats={['avif', 'webp']} widths={[480, 800, 1120, 1440]} sizes="(max-width: 650px) 100vw, (max-width: 1100px) 76vw, 900px" width={850} height={532} quality={48} alt="Румяный рыбный пирог с кусочком, укропом, лимоном и рисунком балтийского маяка" loading="eager" fetchpriority="high" decoding="async" />
+      <section class="hero hero-layered container" aria-labelledby="hero-heading">
+        <div class="hero-landscape" aria-hidden="true"><Picture src={heroBackground} formats={['avif', 'webp']} fallbackFormat="webp" widths={[480, 800, 1200, 1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} alt="" loading="eager" fetchpriority="high" decoding="async" /></div>
+        <div class="hero-art hero-art-layered">
+          <Picture src={heroPie} formats={['avif', 'webp']} fallbackFormat="webp" widths={[320, 480, 640, 800, 1000]} sizes="(max-width: 600px) 76vw, (max-width: 850px) 320px, (max-width: 1060px) 370px, (min-width: 1680px) 455px, 410px" width={900} height={900} quality={48} alt="Румяный рыбный пирог и кусочек с начинкой из рыбы, риса, моркови и зелени" loading="eager" fetchpriority="high" decoding="async" />
         </div>
         <div class="hero-content">
           <h1 id="hero-heading">Пироги<br />с балтийским<br />характером</h1>
-          <p class="hero-description">Мясо, рыба, капуста и сыр.<br />Выберите свой пирог.</p>
+          <p class="hero-description">Сытные — к ужину. Сладкие — к чаю.<br />Выберите свой пирог.</p>
           <a class="button hero-cta" href="#pirogi">Выбрать пирог<Icon name="arrow" /></a>
           <p class="hero-cities">Калининград · Светлогорск · Зеленоградск</p>
         </div>
@@ -59,8 +60,10 @@ import '../styles/global.css';
           <h2 id="catalog-heading">Выберите начинку</h2>
           <div class="filters" role="group" aria-label="Начинка пирога">{filters.map(([id, title]) => <button data-filter={id} aria-pressed={id === 'all'}>{title}</button>)}</div>
         </div>
+        <p class="catalog-launch">Готовим запуск. Цены ориентировочные, изображения — концепты будущих пирогов.</p>
         <div class="product-grid">{products.map(product => <ProductCard product={product} />)}</div>
       </section>
+      <ExtrasSection />
       <section class="bundle-section" id="nabory" aria-labelledby="bundle-heading">
         <Picture src={bundle} formats={['avif', 'webp']} widths={[640, 1120, 1680]} sizes="100vw" width={1680} height={672} quality={48} alt="Мясной и капустный пироги на деревянной доске у моря" loading="lazy" class="bundle-art" />
         <div class="container bundle-content">
@@ -82,15 +85,20 @@ import '../styles/global.css';
           </button>
         </div>
       </section>
+      <section class="discovery container" aria-labelledby="discovery-heading">
+        <div><span class="eyebrow">Балтийские города</span><h2 id="discovery-heading">К вашему столу</h2><p>Пироги после прогулки у моря, к ужину в апартаментах или встрече с друзьями. Изучаем спрос в трёх городах — выберите свой.</p></div>
+        <nav class="discovery-cities" aria-label="Пироги по городам"><a href="/dostavka/zelenogradsk/">Зеленоградск<Icon name="arrow" /></a><a href="/dostavka/kaliningrad/">Калининград<Icon name="arrow" /></a><a href="/dostavka/svetlogorsk/">Светлогорск<Icon name="arrow" /></a></nav>
+      </section>
+      <section class="home-faq container" aria-labelledby="faq-heading"><div><span class="eyebrow">Перед первым пирогом</span><h2 id="faq-heading">Что нужно знать</h2><a class="home-partner-link" href="/partners/">Владельцам апартаментов и пекарням<Icon name="arrow" /></a></div><div class="home-faq-list">{faqs.map(([question,answer]) => <details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>
     </main>
     <footer class="site-footer container">
       <div class="footer-main">
-        <a class="brand brand-footer" href="#top"><span class="brand-name">ПИРОГОРСК</span><span class="brand-tagline"><Icon name="wave" />Пироги с балтийским характером</span></a>
+        <Brand href="#top" footer />
         <nav aria-label="Выберите город" class="footer-cities">{['Калининград', 'Светлогорск', 'Зеленоградск'].map(city => <button data-select-city={city}>{city}</button>)}</nav>
         <span class="footer-domain"><Icon name="wave" />pirogorsk.ru</span>
       </div>
-      <nav class="footer-info" aria-label="О Пирогорске"><button data-open="delivery-dialog">Доставка</button><button data-open="about-dialog">О проекте</button></nav>
-      <p class="launch-note">Готовимся к открытию. Меню, цены и изображения предварительные. Приём заказов пока не открыт.</p>
+      <nav class="footer-info home-footer-links" aria-label="О Пирогорске"><a href="/delivery/">Доставка</a><a href="/about/">О проекте</a><a href="/menu/">Всё меню</a><a href="/partners/">Партнёрам</a><a href="/privacy/">О данных</a><a href="/terms/">Условия</a></nav>
+      <p class="launch-note">Готовимся к открытию. Меню, цены и изображения предварительные. Можно оставить анонимную заявку. Приём заказов и оплата пока не открыты.</p>
     </footer>
 
     <dialog id="city-dialog" class="dialog city-dialog" aria-labelledby="city-heading">
@@ -105,10 +113,12 @@ import '../styles/global.css';
       <div class="selection-summary" hidden>
         <div class="selection-total"><span>Итого</span><strong data-total>0 ₽</strong></div>
         <p class="selection-weight" data-total-weight></p>
-        <button class="button copy-selection" data-copy><Icon name="copy" /><span>Скопировать подборку</span></button>
+        <button class="button order-selection" data-order>Хочу заказать<Icon name="arrow" /></button>
+        <p class="order-selection-note">Анонимная заявка по предварительной цене</p>
+        <button class="button copy-selection button-secondary" data-copy><Icon name="copy" /><span>Скопировать подборку</span></button>
         <textarea class="copy-fallback" data-copy-fallback hidden readonly aria-label="Текст подборки для копирования"></textarea>
       </div>
-      <p class="selection-note">Сохраните понравившиеся пироги. Готовимся к открытию — цены предварительные, заказы пока не принимаем.</p>
+      <p class="selection-note">Готовим запуск. Оставьте заявку, чтобы мы учли ваш выбор. Оплата не требуется; связаться с вами по анонимной заявке не получится.</p>
     </dialog>
     <dialog id="bundle-dialog" class="dialog bundle-dialog" aria-labelledby="bundle-dialog-heading">
       <div class="dialog-header"><span class="eyebrow">Вместе вкуснее</span><button data-close class="icon-button" aria-label="Закрыть наборы"><Icon name="close" /></button></div>
@@ -125,12 +135,14 @@ import '../styles/global.css';
       <div class="dialog-header"><span class="eyebrow">Пирогорск</span><button data-close class="icon-button" aria-label="Закрыть информацию о проекте"><Icon name="close" /></button></div>
       <h2 id="about-heading">С балтийским характером</h2><p class="dialog-intro">Пирог, за которым хочется собраться.</p><p>После прогулки у моря, за ужином в апартаментах или за большим столом с друзьями. Мясо, рыба, капуста и сыр — знакомые начинки, два размера и возможность выбрать своё.</p><p>Сейчас мы готовимся к открытию. Изображения показывают задуманный продукт; окончательные составы и цены опубликуем перед запуском.</p><button class="button" data-go-catalog>Посмотреть пироги<Icon name="arrow" /></button>
     </dialog>
+    <InterestForm />
+    <Analytics />
     <div class="toast" role="status" aria-live="polite" data-toast></div>
     <template id="selection-item-template">
       <div><h3></h3><small></small></div><strong class="item-price" data-item-price></strong>
       <div class="item-details"><div class="item-controls"><button data-decrease><Icon name="minus" /></button><output></output><button data-increase><Icon name="plus" /></button></div></div><button class="item-remove" data-remove>Убрать</button>
     </template>
-    <script id="catalog-data" type="application/json" set:html={JSON.stringify(products.map(({ image, ...product }) => product))} />
+    <script id="catalog-data" type="application/json" set:html={JSON.stringify(catalog)} />
     <script>import '../scripts/storefront.ts';</script>
   </body>
 </html>

@@ -1,0 +1,6 @@
+---
+import { interestHref } from '../data/editorial';
+interface Props { interest?: string; title?: string; text?: string; label?: string }
+const { interest, title = 'Хотели бы попробовать?', text = 'Выберите интересные вкусы на главной. Так мы поймём, что стоит подготовить к запуску. Заказ и оплата пока недоступны.', label = 'Отметить интерес' } = Astro.props;
+---
+<aside class="ed-interest"><div><p class="ed-eyebrow">Перед запуском</p><h2>{title}</h2><p>{text}</p></div><a class="ed-button" href={interestHref(interest)}>{label}<span aria-hidden="true">↗</span></a></aside>

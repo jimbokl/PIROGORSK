@@ -1,0 +1,43 @@
+---
+import SeoHead from '../components/SeoHead.astro';
+import Analytics from '../components/Analytics.astro';
+import Brand from '../components/Brand.astro';
+import { siteOrigin } from '../data/editorial';
+import '../styles/editorial.css';
+interface Props {
+  title: string;
+  description: string;
+  breadcrumbs?: { name: string; href: string }[];
+  schema?: Record<string, unknown>[];
+  type?: 'website' | 'article';
+  noindex?: boolean;
+}
+const { title, description, breadcrumbs = [], schema = [], type, noindex } = Astro.props;
+const trail = [{ name: 'Главная', href: '/' }, ...breadcrumbs];
+const breadcrumbSchema = {
+  '@type': 'BreadcrumbList',
+  itemListElement: trail.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: new URL(item.href, siteOrigin).href })),
+};
+const nav = [{ href: '/menu/', name: 'Меню' }, { href: '/delivery/', name: 'Доставка' }, { href: '/partners/', name: 'Партнёрам' }, { href: '/about/', name: 'О проекте' }];
+---
+<!doctype html>
+<html lang="ru">
+  <head><SeoHead {title} {description} {type} {noindex} schema={[breadcrumbSchema, ...schema]} /></head>
+  <body class="editorial-site">
+    <Analytics />
+    <a class="ed-skip" href="#content">Перейти к содержанию</a>
+    <header class="ed-header ed-container">
+      <Brand />
+      <nav aria-label="Основная навигация">{nav.map(item => <a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.name}</a>)}</nav>
+    </header>
+    <main id="content" class="ed-container">
+      <nav class="ed-breadcrumbs" aria-label="Хлебные крошки"><ol>{trail.map((item, index) => <li>{index === trail.length - 1 ? <span aria-current="page">{item.name}</span> : <a href={item.href}>{item.name}</a>}</li>)}</ol></nav>
+      <slot />
+    </main>
+    <footer class="ed-footer ed-container">
+      <div><a class="ed-footer-brand" href="/">Пирогорск</a><p>Готовим запуск. Сейчас изучаем интерес<br class="ed-desktop-break" /> к вкусам, городам и форматам.</p></div>
+      <nav aria-label="Дополнительная навигация"><a href="/menu/">Будущее меню</a><a href="/delivery/">Города и условия</a><a href="/about/#guides">Полезные заметки</a><a href="/#pirogi">Отметить интерес</a></nav>
+      <p class="ed-footnote">Изображения на сайте — иллюстрации концептов. Производство и продажи ещё не запущены.</p>
+    </footer>
+  </body>
+</html>

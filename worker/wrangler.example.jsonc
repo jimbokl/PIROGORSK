@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "pirogorsk-interest",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-23",
+  "workers_dev": true,
+  "observability": { "enabled": false },
+  "vars": { "ALLOW_LOCALHOST": "false" },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "pirogorsk-interest",
+    "database_id": "REPLACE_WITH_EXISTING_ACCOUNT_DATABASE_ID",
+    "migrations_dir": "migrations"
+  }],
+  "triggers": { "crons": ["*/10 * * * *"] }
+}
