@@ -34,7 +34,7 @@ const subjectWidth = product.kind === 'pie' ? composition?.pie_css_width_percent
 const subjectX = product.kind === 'pie' ? composition?.pie_center_x_percent ?? 50 : composition?.product_center_x_percent ?? 50;
 const subjectY = product.kind === 'pie' ? composition?.pie_center_y_percent ?? 54 : composition?.product_center_y_percent ?? 50;
 const position = `--subject-width:${subjectWidth}%;--subject-x:${subjectX}%;--subject-y:${subjectY}%;`;
-const imageWidths = layout === 'hero' ? [320, 480, 640, 800, 1200] : [240, 280, 320, 400, 480, 600, 800];
+const imageWidths = layout === 'hero' ? [320, 480, 640, 700, 800, 1200] : [240, 280, 320, 400, 480, 600, 800];
 // Match each grid's columns, gaps and container. The transparent layer occupies
 // only part of that slot, so it needs its own sizes rather than the background's.
 type Slot = [breakpoint: number, vw: number, pixels: number];
@@ -49,7 +49,8 @@ const slots: Slot[] = layout === 'hero'
 const slotSizes = (scale = 1) => slots.map(([breakpoint, vw, pixels]) => {
   const length = vw === 0 ? `${+(pixels * scale).toFixed(3)}px`
     : `calc(${+(vw * scale).toFixed(3)}vw - ${+(-pixels * scale).toFixed(3)}px)`;
-  return `${Number.isFinite(breakpoint) ? `(max-width: ${breakpoint}px) ` : ''}${length}`;
+  const boundedLength = layout === 'hero' ? `min(${length}, ${+(520 * scale).toFixed(3)}px)` : length;
+  return `${Number.isFinite(breakpoint) ? `(max-width: ${breakpoint}px) ` : ''}${boundedLength}`;
 }).join(', ');
 const sizes = slotSizes();
 const subjectSizes = slotSizes(subjectWidth / 100);

@@ -5,14 +5,14 @@
 ## Production
 
 - Сайт: https://pirogorsk.ru/, Astro static, GitHub Pages, репозиторий `jimbokl/PIROGORSK`, main.
-- Опубликован commit `60a3d5f8fb884c3cfd40541031186251501f9af3`, workflow `40016422947` SUCCESS (20:06 UTC).
+- Опубликован commit `8bff283ed332aec8eb4a21b42c1653219ad8e4c7`, workflow `40019459587` SUCCESS. В production подтверждены выбор размера и ссылки с variant.
 - HTTPS root и www, HTTP→HTTPS, www→root подтверждены. DNS Cloudflare, сертификат до 21.01.2027, Enforce HTTPS включён.
 - 23 HTML-страницы, 21 URL sitemap. 7 пирогов + 6 дополнений. Три города, 500 г / 1 кг, фильтры, подборка, сценарные наборы, анонимная заявка.
 - Графика: 24 READY файла, независимые прозрачные пироги и подложки, напитки, логотип с башней Зеленоградска. Manifest/provenance в `design/layered-assets-v2/`.
 
 ## Проверки
 
-- Typecheck: 45 files, 0 errors/warnings/hints. Build PASS. SEO PASS: 23 HTML, 7 концептов, 21 sitemap URL, 1545 local references. Backend: 14 tests + Worker/client typechecks PASS. Shared harness registry strict PASS.
+- Typecheck: 45 files, 0 errors/warnings/hints. Build PASS. SEO PASS: 23 HTML, 7 концептов, 21 sitemap URL, 1587 local references. Backend: 14 tests + Worker/client typechecks PASS. Shared harness registry strict PASS.
 - Lighthouse 13.5 на **https://pirogorsk.ru/**: mobile 99, desktop 100; Accessibility / Best Practices / SEO 100 на обоих. Mobile FCP/LCP 1.26 с, TBT 7.5 мс, CLS .0014; desktop LCP .41 с, TBT/CLS 0. Это Lighthouse на домене, не официальный PSI.
 - Официальный PSI UI пока сообщает, что не может перейти по новому домену; API ранее 429 quota 0. Не выдавать локальные/доменный Lighthouse за результат PSI.
 - UI: 1440/390/320px, город Калининград, варианты веса, суммы и сценарии, отсутствие повторного добавления набора после reload проверены. Production UI-заявка сохранилась, независимый D1 readback подтвердил все значения. QA UUID исключены из спроса (ANALYTICS.md).
@@ -33,7 +33,7 @@
 
 ## Сейчас / далее
 
-1. Готовы уточнённые sizes независимых слоёв, accessible name логотипа, короткие тексты карточек и выбор 500 г / 1 кг на товарных страницах. UI проверен: цена, перенос размера в подборку, reload без дубля, неверный variant, отсутствие ошибок. Typecheck/build/SEO PASS. Опубликовать текущие правки.
+1. Уточнённые sizes слоёв, accessible name логотипа, короткие тексты и выбор 500 г / 1 кг опубликованы. UI проверен: цена, перенос размера в подборку, reload без дубля, неверный variant, отсутствие ошибок. Дополнительный аудит карточки: local mobile 99 / desktop 100, A/BP/SEO 100. Найдено превышение sizes над CSS max-width 520px; исправлено, добавлен вариант 700px. Typecheck/build/SEO PASS; опубликовать эту небольшую оптимизацию.
 2. Обновить доменный Lighthouse после изменений. Повторить официальный PSI после распространения DNS, без подмены результата.
 3. Проверить историю cron и доступность Яндекс Sitemap. Продолжать heartbeat до 09:00, записывать только новые результаты.
 
