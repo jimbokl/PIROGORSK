@@ -1,11 +1,11 @@
 # Пирогорск — рабочий checkpoint
 
-Обновлено: 23.10.2026 20:47 UTC. Ночная работа продолжается до **24.10.2026 09:00 Europe/Kaliningrad (07:00 UTC)**. Основной goal активен; heartbeat `09-00` каждые 30 минут, без сообщений при неизменном состоянии. В 09:00 — финальная проверка и пауза heartbeat через native automation tool.
+Обновлено: 23.10.2026 20:52 UTC. Ночная работа продолжается до **24.10.2026 09:00 Europe/Kaliningrad (07:00 UTC)**. Основной goal активен; heartbeat `09-00` каждые 30 минут, без сообщений при неизменном состоянии. В 09:00 — финальная проверка и пауза heartbeat через native automation tool.
 
 ## Production
 
 - Сайт: https://pirogorsk.ru/, Astro static, GitHub Pages, репозиторий `jimbokl/PIROGORSK`, main.
-- Опубликован commit `38da7a13ca0dcfc811c8b6ee2354b391369776b6`, workflow `40019923031` SUCCESS. В production подтверждены выбор размера и ссылки с variant.
+- Опубликован commit `b7cf868d199c0547ec1926be3f90fbef6750109e`, workflow `40021592025` SUCCESS. В production подтверждены выбор размера и ссылки с variant.
 - HTTPS root и www, HTTP→HTTPS, www→root подтверждены. DNS Cloudflare, сертификат до 21.01.2027, Enforce HTTPS включён.
 - 23 HTML-страницы, 21 URL sitemap. 7 пирогов + 6 дополнений. Три города, 500 г / 1 кг, фильтры, подборка, сценарные наборы, анонимная заявка.
 - Графика: 24 READY файла, независимые прозрачные пироги и подложки, напитки, логотип с башней Зеленоградска. Manifest/provenance в `design/layered-assets-v2/`.
@@ -14,14 +14,14 @@
 
 - Typecheck: 45 files, 0 errors/warnings/hints. Build PASS. SEO PASS: 23 HTML, 7 концептов, 21 sitemap URL, 1587 local references. Backend: 14 tests + Worker/client typechecks PASS. Shared harness registry strict PASS.
 - Lighthouse 13.5 на **https://pirogorsk.ru/**: mobile 100, desktop 100; Accessibility / Best Practices / SEO 100 на обоих. Замер 20:35 UTC: mobile FCP 1.21 с, LCP 1.40 с, TBT 0, CLS .0022; desktop LCP .45 с, TBT/CLS 0. Это Lighthouse на домене, не официальный PSI.
-- Официальный PSI заработал: [отчёт 20:39 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ktw8leuo8q?form_factor=mobile), mobile 98 / desktop 100, A/BP/SEO 100 на обоих. Mobile LCP 1.801 с, TBT/CLS 0. После preload Golos Latin нужен новый официальный замер.
+- Официальный PSI: [отчёт 20:49:42 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/5dulwgki3a?form_factor=mobile), mobile 100 / desktop 100; A/BP/SEO 100 на обоих. Mobile LCP 1.651 с, TBT/CLS 0; desktop LCP .381 с, TBT 0, CLS .014. Прежний отчёт 98/100 сохранён в PERFORMANCE.md.
 - UI: 1440/390/320px, город Калининград, варианты веса, суммы и сценарии, отсутствие повторного добавления набора после reload проверены. Production UI-заявка сохранилась, независимый D1 readback подтвердил все значения. QA UUID исключены из спроса (ANALYTICS.md).
 
 ## Поисковые консоли и аналитика
 
 - GSC domain verified DNS; sitemap отправлен, статус **Успешно**, **21** обнаруженная страница.
 - Яндекс.Вебмастер verified DNS. «Файлы Sitemap» сейчас read-only по системному уведомлению; ручная отправка недоступна. robots.txt уже содержит карту.
-- Worker+D1 опубликован; DB binding, ALLOW_LOCALHOST=false, observability OFF. Cron каждые 10 минут сохранён/подтверждён после reload; фактический scheduled run проверить отдельно.
+- Worker+D1 опубликован; DB binding, ALLOW_LOCALHOST=false, observability OFF. Cron каждые 10 минут сохранён/подтверждён после reload; фактический scheduled run проверить отдельно. D1 read 20:46 UTC: 0 временных токенов, 0 просроченных; Cron Events 20:43 UTC ещё пуст.
 - Метрика: подготовлен новый счётчик, создание дошло до обязательного соглашения. Этот шаг не выполнен, ID 0, отслеживание выключено. Не использовать ID godune. Цели подготовлены в коде.
 
 ## Решения
@@ -34,7 +34,7 @@
 ## Сейчас / далее
 
 1. Уточнённые sizes слоёв с cap 520px, вариант 700px, accessible name логотипа, короткие тексты и выбор 500 г / 1 кг опубликованы. UI проверен: цена, перенос размера в подборку, reload без дубля, неверный variant, отсутствие ошибок. Дополнительный аудит карточки: local mobile 99 / desktop 100, A/BP/SEO 100; замечаний image-delivery не осталось. На домене новые sizes и загрузка слоёв подтверждены. Typecheck/build/SEO PASS.
-2. Официальный PSI 98/100 mobile и 100/100 desktop. В критической цепочке обнаружен Golos Latin, добавлен preload. Check/build/SEO PASS; local mobile 99 / desktop 100, TBT/CLS 0. Публикуем и проверяем официальный PSI повторно; прежний отчёт сохранён в PERFORMANCE.md.
+2. Preload Golos Latin опубликован; check/build/SEO PASS, 3 preload подтверждены на домене. Официальный PSI 20:49:42 UTC — 100/100 на обоих устройствах, все четыре категории по 100. Сохранены отдельные скриншоты и ссылка. Не повторять performance без изменений или при финальной проверке.
 3. Проверить историю cron и доступность Яндекс Sitemap. Продолжать heartbeat до 09:00, записывать только новые результаты.
 
 ## Координация

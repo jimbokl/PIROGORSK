@@ -25,6 +25,20 @@ Lighthouse 13.5.0. Опубликованный сайт проверен отд
 
 ## Официальный PageSpeed Insights
 
+Последний [отчёт Google от 23.10.2026 20:49:42 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/5dulwgki3a?form_factor=mobile), после публикации preload Golos Latin: **100/100 Performance на мобильном и компьютере; Accessibility / Best Practices / SEO также 100 на обоих**. Agentic browsing 2/2. Lighthouse 13.5.0, HeadlessChromium 153.0.8010.36. Это результат конкретного официального измерения.
+
+| Метрика | Mobile | Desktop |
+| --- | ---: | ---: |
+| FCP | 1.072 с | 0.265 с |
+| LCP | 1.651 с | 0.381 с |
+| TBT | 0 мс | 0 мс |
+| CLS | 0 | 0.014 |
+| Speed Index | 1.072 с | 0.358 с |
+
+Скриншоты: `qa/screenshots/psi-mobile-font-20261023.png`, `psi-desktop-font-20261023.png`. Опубликованный код `b7cf868d199c0547ec1926be3f90fbef6750109e`, workflow `40021592025` SUCCESS; три font preload подтверждены на домене. CrUX пока без данных. Диагностика кеша GitHub Pages и части изображений ниже первого экрана остаётся и не мешает оценке 100.
+
+### Предыдущий официальный замер
+
 [Отчёт Google от 23.10.2026 20:39:50 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ktw8leuo8q?form_factor=mobile): mobile Performance **98**, desktop **100**. Accessibility / Best Practices / SEO — **100** на обоих. Lighthouse 13.5.0, HeadlessChromium 153.0.8010.36; mobile Moto G Power, slow 4G. Данных CrUX у нового домена пока нет.
 
 | Метрика | Mobile | Desktop |
@@ -35,7 +49,7 @@ Lighthouse 13.5.0. Опубликованный сайт проверен отд
 | CLS | 0 | 0.014 |
 | Speed Index | 3.671 с | 0.489 с |
 
-Мобильная критическая цепочка включала поздний `golos-latin.woff2` (714 мс); добавлен preload этого используемого шрифта. После изменения: check/build/SEO PASS, локальный Lighthouse mobile 99 / desktop 100, TBT и CLS 0 на обоих. Новый официальный замер после публикации ещё предстоит. Первый официальный отчёт и скриншоты сохранены отдельно: `qa/screenshots/psi-mobile-20261023.png`, `psi-desktop-20261023.png`. Ранняя недоступность PSI больше не воспроизводится.
+Мобильная критическая цепочка включала поздний `golos-latin.woff2` (714 мс); добавлен preload этого используемого шрифта. После изменения: check/build/SEO PASS, локальный Lighthouse mobile 99 / desktop 100, TBT и CLS 0 на обоих. Новый официальный замер после публикации дал 100 на обоих устройствах (см. выше). Первый официальный отчёт и скриншоты сохранены отдельно: `qa/screenshots/psi-mobile-20261023.png`, `psi-desktop-20261023.png`. Ранняя недоступность PSI больше не воспроизводится.
 
 ## Товарная страница
 
@@ -51,7 +65,7 @@ Astro отдаёт статический HTML; адаптивные AVIF/WebP, 
 
 - mobile: `2026-10-23T20:35:12.424Z`, URL `https://pirogorsk.ru/`, `qa/lighthouse-mobile.json` и `.html`.
 - desktop: `2026-10-23T20:35:20.578Z`, тот же URL, `qa/lighthouse-desktop.json` и `.html`.
-- `qa/performance-summary.json` — сводка текущего доменного замера. Сырые отчёты локальные, исключены из Git; последующий запуск перезаписывает их, время каждого зафиксированного замера указано в этом документе.
+- `qa/performance-summary.json` — сводка последнего запуска (сейчас локальный preview после preload шрифта, 20:44 UTC). Сырые отчёты локальные, исключены из Git; последующий запуск перезаписывает их, время каждого зафиксированного замера указано в этом документе.
 - `qa/screenshots/production-home-20261023.png` — главная на публичном домене после публикации.
 
-Typecheck (45 files, 0 errors/warnings/hints), build и SEO-проверка (23 HTML / 21 sitemap URL / 1587 local references) прошли. После этого кода не меняли; последующее обновление документации не изменяет проверенную сборку сайта.
+Typecheck (45 files, 0 errors/warnings/hints), build и SEO-проверка (23 HTML / 21 sitemap URL / 1587 local references) прошли. После добавления preload Golos Latin эти проверки повторены и прошли; commit `b7cf868d199c0547ec1926be3f90fbef6750109e` опубликован workflow `40021592025` SUCCESS. Три preload шрифтов подтверждены на публичном домене.
