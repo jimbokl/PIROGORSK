@@ -231,7 +231,7 @@ export const guides = [
 
 export const editorialImages = { hero, dinner, company, bundle };
 export const editorialPaths = [
-  '/menu/', '/delivery/', '/partners/', '/about/',
+  '/menu/', '/delivery/', '/partners/', '/about/', '/podbor/',
   ...editorialProducts.map(productHref),
   ...scenarios.map(item => `/nabor/${item.slug}/`),
   ...locations.map(item => `/dostavka/${item.slug}/`),

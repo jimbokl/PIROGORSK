@@ -11,7 +11,9 @@ const description = 'Сытные и сладкие пироги в будуще
 <ContentLayout {title} {description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }]}>
   <EditorialHero eyebrow="Будущее меню · готовим запуск" title="Выберите свой вкус" intro="Собираем меню для ужинов, общих столов и чаепитий. Здесь можно рассмотреть идеи пирогов и выбрать интересные начинки. Рецепты, окончательные веса и цены ещё предстоит утвердить." />
   <div class="ed-note"><strong>Сейчас проверяем интерес.</strong> Продажи и производство ещё не запущены. {conceptCaption} Состав и аллергены опубликуем до начала заказов.</div>
+  <p class="menu-planner-link"><a href="/podbor/">Сколько пирогов нужно на вашу компанию? Рассчитать вес ↗</a></p>
   <section class="ed-catalog" aria-label="Концепты пирогов">{editorialProducts.map(product => <article class="ed-product-card"><a href={productHref(product)}><ProductVisual {product} layout="menu" /><p class="ed-eyebrow">{product.sweet ? 'К чаю' : 'К общему столу'} · концепт</p><h2>{product.name}</h2><p>{product.editorial.intro}</p><span class="ed-product-more">О вкусе и статусе рецепта ↗</span></a></article>)}</section>
   <EditorialInterest interest="menu" title="Какие пироги вам интересны?" text="На главной можно собрать анонимную подборку и отметить город. Это поможет нам оценить спрос перед запуском; заказ и оплата пока недоступны." label="Выбрать интересные пироги" />
   <EditorialLinks title="Собираете стол к случаю?" links={scenarios.map(item => ({ href: `/nabor/${item.slug}/`, title: item.title, text: item.intro, label: 'Сценарий' }))} />
 </ContentLayout>
+<style>.menu-planner-link{margin:25px 0;font-size:13px;line-height:1.8}.menu-planner-link a{display:inline-block;min-height:44px;padding-block:10px;text-underline-offset:4px}</style>

@@ -18,7 +18,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: trail.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: new URL(item.href, siteOrigin).href })),
 };
-const nav = [{ href: '/menu/', name: 'Меню' }, { href: '/delivery/', name: 'Доставка' }, { href: '/partners/', name: 'Партнёрам' }, { href: '/about/', name: 'О проекте' }];
+const nav = [{ href: '/menu/', name: 'Меню' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/delivery/', name: 'Доставка' }, { href: '/partners/', name: 'Партнёрам' }, { href: '/about/', name: 'О проекте' }];
 ---
 <!doctype html>
 <html lang="ru">

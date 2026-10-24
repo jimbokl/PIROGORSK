@@ -26,9 +26,30 @@ jobs:
       - run: npm run check
       - run: npm run build
       - run: node scripts/verify-seo.mjs
+      - run: node --test scripts/indexnow.test.mjs scripts/pie-planner.test.mjs
+      - run: node scripts/indexnow.mjs manifest
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
       - uses: actions/deploy-pages@v5
         id: deployment
+      - uses: actions/cache/restore@v4
+        with:
+          path: .indexnow/state.json
+          key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: indexnow-v1-
+      - name: Notify IndexNow after publication
+        id: indexnow
+        run: node scripts/indexnow.mjs submit
+      - uses: actions/cache/save@v4
+        if: steps.indexnow.outcome == 'success'
+        with:
+          path: .indexnow/state.json
+          key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: indexnow-report
+          path: .indexnow/report.json
+          if-no-files-found: ignore

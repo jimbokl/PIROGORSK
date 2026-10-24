@@ -1,0 +1,60 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+import EditorialLinks from '../components/EditorialLinks.astro';
+import ProductVisual from '../components/ProductVisual.astro';
+import { products } from '../data/catalog';
+import { planPies } from '../lib/pie-planner';
+import '../styles/planner.css';
+const pies = products.filter(product => product.kind === 'pie');
+const initialPlan = planPies(4, 300, ['meat', 'cabbage'], pies);
+const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
+const title = 'Сколько пирогов нужно на компанию — калькулятор | Пирогорск';
+const description = 'Рассчитайте вес пирогов на гостей: задайте порцию, выберите начинки и сравните форматы 500 г и 1 кг. Сохраните подборку перед запуском Пирогорска.';
+---
+<ContentLayout {title} {description} breadcrumbs={[{ name: 'Калькулятор', href: '/podbor/' }]}>
+  <section class="planner-intro">
+    <p class="ed-eyebrow">К общему столу · готовим запуск</p>
+    <h1>Хватит на всех.<br /><em>А сколько это?</em></h1>
+    <p>Ужин на четверых или чаепитие большой компанией — посчитаем вес, а начинки вы выберете сами.</p>
+  </section>
+  <div class="planner" data-planner>
+    <form class="planner-controls" data-planner-form>
+      <fieldset>
+        <legend><span>01</span> Собираем компанию</legend>
+        <div class="planner-inputs">
+          <label for="guests">Сколько человек<input id="guests" name="guests" type="number" min="1" max="30" step="1" value="4" required inputmode="numeric" aria-describedby="guests-help" /><small id="guests-help">От 1 до 30 гостей</small></label>
+          <label for="grams">Порция на человека<select id="grams" name="grams">{[100,150,200,250,300,350,400,450,500].map(grams => <option value={grams} selected={grams === 300}>{grams} г</option>)}</select><small>Выберите под свой аппетит</small></label>
+        </div>
+        <p class="planner-hint">300 г — начальный ориентир для расчёта, который можно изменить. Учтите детей, другие блюда и то, хотите ли оставить пирог на завтра.</p>
+      </fieldset>
+      <fieldset>
+        <legend><span>02</span> Выбираем начинки</legend>
+        <div class="planner-flavours">{pies.map(product => <label><input type="checkbox" name="flavour" value={product.id} checked={['meat','cabbage'].includes(product.id)} /><span>{product.name.replace(' пирог', '')}</span></label>)}</div>
+        <p class="planner-hint">Распределим вес между выбранными вкусами с шагом 500 г. Если пирогов меньше, чем вкусов, возьмём первые по списку.</p>
+      </fieldset>
+      <fieldset>
+        <legend><span>03</span> Отмечаем город</legend>
+        <label for="planner-city" class="planner-city-label">Где вам интересен запуск<select id="planner-city" name="city"><option value="zelenogradsk">Зеленоградск</option><option value="kaliningrad">Калининград</option><option value="svetlogorsk">Светлогорск</option></select></label>
+      </fieldset>
+      <p class="planner-error" data-planner-error role="status" hidden></p>
+    </form>
+    <section class="planner-result" aria-labelledby="result-title">
+      <div class="planner-result-top"><p class="ed-eyebrow">Ваша компания за столом</p><h2 id="result-title">Начнём с <span data-planner-weight>1,5</span> <span class="planner-kg">кг</span></h2><p data-planner-formula>4 гостя × 300 г = 1,2 кг. Округляем вверх до 1,5 кг.</p></div>
+      <div class="planner-art" aria-hidden="true"><ProductVisual product={pies[0]} layout="menu" /><span>500 г<br /><b>или 1 кг</b></span></div>
+      <div class="planner-summary" aria-live="polite" aria-atomic="true"><h3>Вариант подборки</h3><ul data-planner-items>{initialPlan.items.map(item => {
+        const product = pies.find(product => product.id === item.id)!;
+        return <li><span>{product.name} · {item.value === 1000 ? '1 кг' : '500 г'} × {item.quantity}</span><span>{money(product.prices[item.value] * item.quantity)}</span></li>;
+      })}</ul><p class="planner-price"><span>Предварительно</span><strong data-planner-total>{money(initialPlan.total)}</strong></p></div>
+      <a class="ed-button planner-continue" data-planner-continue href="/?interest=calculator&amp;items=meat%3A1000%3A1%2Ccabbage%3A500%3A1&amp;city=zelenogradsk#pirogi">Добавить к подборке <span aria-hidden="true">↗</span></a>
+      <p class="planner-hint">На следующем шаге можно изменить количество и отметить интерес. Ранее выбранные товары сохранятся.</p>
+      <noscript><p class="planner-hint">Для пересчёта включите JavaScript. Выше — пример на четверых, по 300 г. Его можно открыть и изменить в подборке.</p></noscript>
+    </section>
+  </div>
+  <section class="planner-method">
+    <p class="ed-eyebrow">Как это считается</p><h2>Простая формула, открытые допущения</h2>
+    <div><p>Умножаем число гостей на выбранную вами порцию. Округляем общий вес вверх до ближайших 500 г. Два одинаковых варианта по 500 г объединяем в один пирог 1 кг.</p><p>Это ориентир для планирования стола, а не рекомендация по питанию или обещание сытости. Вес, рецептуры и цены пока предварительные. Доставка не включена: её условия определим перед запуском.</p><p>Продажи ещё не запущены. Калькулятор не отправляет заявку сам — она учитывается только после заполнения отдельной анонимной формы и подтверждения сохранения.</p></div>
+  </section>
+  <EditorialLinks title="Подберите стол к случаю" links={[{ href: '/nabor/uzhin-v-apartamentah/', title: 'Ужин в апартаментах', text: 'Что учесть, когда хочется поесть дома после прогулки.', label: 'Ужин' }, { href: '/menu/', title: 'Все начинки', text: 'Сытные и сладкие концепты будущего меню.', label: 'Меню' }]} />
+  <script id="planner-catalog" type="application/json" set:html={JSON.stringify(pies)} />
+  <script>import '../scripts/planner';</script>
+</ContentLayout>

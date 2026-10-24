@@ -1,6 +1,7 @@
 import type { Product } from '../data/catalog';
 import { trackGoal } from './analytics';
 import { editorialCityIntents, editorialScenarioIntents } from '../data/editorial-intents';
+import { parsePlan } from '../lib/pie-planner';
 
 type Selection = { id: string; value: number; quantity: number };
 const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
@@ -203,7 +204,21 @@ all('[data-order]').forEach(button => button.addEventListener('click', () => {
 }));
 const interestParams = new URLSearchParams(location.search);
 const interestId = interestParams.get('interest');
-if (interestId && Object.hasOwn(editorialCityIntents, interestId)) {
+if (interestId === 'calculator') {
+  const planned = parsePlan(interestParams.get('items'), products);
+  if (planned) {
+    const cityNames: Record<string, string> = { zelenogradsk: 'Зеленоградск', kaliningrad: 'Калининград', svetlogorsk: 'Светлогорск' };
+    const plannedCity = interestParams.get('city');
+    if (plannedCity && Object.hasOwn(cityNames, plannedCity)) setCity(cityNames[plannedCity], false);
+    for (const item of planned) {
+      const existing = selection.find(entry => entry.id === item.id && entry.value === item.value);
+      // A reload never multiplies the calculator quantities; keep prior choices.
+      const missing = Math.max(0, item.quantity - (existing?.quantity || 0));
+      for (let count = 0; count < missing; count++) if (!addProduct(item.id, item.value)) break;
+    }
+    openDialog('selection-dialog');
+  } else toast('Не удалось прочитать подборку. Выберите пироги в меню.');
+} else if (interestId && Object.hasOwn(editorialCityIntents, interestId)) {
   setCity(editorialCityIntents[interestId as keyof typeof editorialCityIntents], false);
   openDialog('selection-dialog');
 } else if (interestId && Object.hasOwn(editorialScenarioIntents, interestId)) {
