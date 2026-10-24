@@ -11,10 +11,11 @@ export function getStaticPaths() {
 interface Props { item: (typeof locations)[number] }
 const { item } = Astro.props;
 const scenario = scenarios.find(scenario => scenario.slug === item.scenario)!;
+const cityGuide = item.slug === 'svetlogorsk' ? { href: '/journal/gde-poest-v-svetlogorske/', title: 'Где поесть в Светлогорске', text: 'Три адреса и расчёт завтрака на четверых по открытому меню.', label: 'Гид по городу' } : item.slug === 'zelenogradsk' ? { href: '/journal/gde-poest-v-zelenogradske/', title: 'Где поесть в Зеленоградске', text: 'Меню кафе и расчёт четырёх блюд с датой проверки цен.', label: 'Гид по городу' } : undefined;
 ---
 <ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }, { name: item.city, href: `/dostavka/${item.slug}/` }]}>
   <EditorialHero eyebrow={`${item.city} · направление в планах`} title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} compact />
   <EditorialBody sections={item.sections} />
   <EditorialInterest interest={item.interest} title={`Интересен Пирогорск: ${item.city}?`} text={`На главной выберем город «${item.city}». Дальше можно собрать вкусы и отметить предпочтения в анонимной форме. Сейчас это проверка спроса: заказ, бронь дня и доставка ещё недоступны.`} label={`Выбрать ${item.city}`} />
-  <EditorialLinks title="Продумать ваш стол" links={[{ href: `/nabor/${scenario.slug}/`, title: scenario.title, text: scenario.description, label: 'Сценарий' }, { href: '/menu/', title: 'Будущее меню', text: 'Сравните начинки и узнайте, что ещё предстоит уточнить о пирогах.', label: 'Вкусы' }, { href: '/delivery/', title: 'Планы и условия доставки', text: 'Что опубликуем до начала работы и как сейчас выразить интерес.', label: 'Перед запуском' }]} />
+  <EditorialLinks title="Продумать ваш стол" links={[...(cityGuide ? [cityGuide] : []), { href: `/nabor/${scenario.slug}/`, title: scenario.title, text: scenario.description, label: 'Сценарий' }, { href: '/menu/', title: 'Будущее меню', text: 'Сравните начинки и узнайте, что ещё предстоит уточнить о пирогах.', label: 'Вкусы' }, { href: '/delivery/', title: 'Планы и условия доставки', text: 'Что опубликуем до начала работы и как сейчас выразить интерес.', label: 'Перед запуском' }]} />
 </ContentLayout>

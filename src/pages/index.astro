@@ -48,9 +48,9 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
     </header>
     <main id="top">
       <section class="hero hero-layered container" aria-labelledby="hero-heading">
-        <div class="hero-landscape" aria-hidden="true"><Picture src={heroBackground} formats={['avif', 'webp']} fallbackFormat="webp" widths={[480, 800, 1200, 1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} alt="" loading="eager" fetchpriority="high" decoding="async" /></div>
+        <div class="hero-landscape" aria-hidden="true"><Picture src={heroBackground} formats={['avif', 'webp']} fallbackFormat="webp" widths={[480, 800, 1200, 1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} alt="" loading="eager" fetchpriority="high" decoding="sync" /></div>
         <div class="hero-art hero-art-layered">
-          <Picture src={heroPie} formats={['avif', 'webp']} fallbackFormat="webp" widths={[320, 480, 640, 800, 1000]} sizes="(max-width: 600px) 76vw, (max-width: 850px) 320px, (max-width: 1060px) 370px, (min-width: 1680px) 455px, 410px" width={900} height={900} quality={48} alt="Румяный рыбный пирог и кусочек с начинкой из рыбы, риса, моркови и зелени" loading="eager" fetchpriority="high" decoding="async" />
+          <Picture src={heroPie} formats={['avif', 'webp']} fallbackFormat="webp" widths={[320, 480, 640, 800, 1000]} sizes="(max-width: 600px) 76vw, (max-width: 850px) 320px, (max-width: 1060px) 370px, (min-width: 1680px) 455px, 410px" width={900} height={900} quality={48} alt="Румяный рыбный пирог и кусочек с начинкой из рыбы, риса, моркови и зелени" loading="eager" fetchpriority="high" decoding="sync" />
         </div>
         <div class="hero-content">
           <h1 id="hero-heading">Пироги<br />с балтийским<br />характером</h1>
