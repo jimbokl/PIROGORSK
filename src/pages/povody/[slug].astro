@@ -1,0 +1,26 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
+import EditorialBody from '../../components/EditorialBody.astro';
+import EditorialLinks from '../../components/EditorialLinks.astro';
+import EditorialInterest from '../../components/EditorialInterest.astro';
+import { occasions } from '../../data/occasions';
+import { occasionPresets } from '../../data/occasion-presets';
+export function getStaticPaths() { return occasions.map(item => ({ params: { slug: item.slug }, props: { item } })); }
+interface Props { item: (typeof occasions)[number] }
+const { item } = Astro.props;
+const preset = occasionPresets.find(preset => preset.slug === item.slug)!;
+---
+<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'К случаю', href: '/povody/' }, { name: item.title, href: `/povody/${item.slug}/` }]}>
+  <EditorialHero eyebrow="План встречи · готовим запуск" title={item.title} intro={item.intro} compact />
+  <p class="ed-note"><strong>{item.takeaway}</strong> Здесь можно подготовить список пожеланий. Продажи ещё не запущены.</p>
+  <EditorialBody sections={item.sections} />
+  <section class="occasion-calculation" aria-labelledby="calculation-title">
+    <p class="ed-eyebrow">Пример, который можно изменить</p><h2 id="calculation-title">{preset.guests} человек × {preset.grams} г</h2>
+    <p>Это исходные параметры для калькулятора, а не норма порции. Внутри можно изменить гостей, порцию, начинки и город. Сумма считается по предварительным ценам каталога, без доставки.</p>
+    <a class="ed-button" href={`/podbor/?occasion=${item.slug}`}>Открыть этот расчёт <span aria-hidden="true">↗</span></a>
+  </section>
+  <EditorialInterest interest={`occasion-${item.slug}`} title="Какие вкусы вам интересны?" text="Анонимная подборка помогает оценить интерес перед запуском. Она не бронирует дату или доставку, контакты и оплату мы сейчас не собираем." label="Перейти к вкусам" />
+  <EditorialLinks title="Полезно при подготовке" links={[{ href: '/povody/', title: 'Другие случаи', text: 'Чем отличаются офисный стол, фуршет и встреча друзей.', label: 'Поводы' }, { href: '/menu/', title: 'Будущие начинки', text: 'Сытные и сладкие концепты, форматы 500 г и 1 кг.', label: 'Меню' }, { href: '/delivery/', title: 'Города и статус доставки', text: 'Что рассматриваем и какие условия ещё предстоит определить.', label: 'Доставка' }]} />
+</ContentLayout>
+<style>.occasion-calculation{padding:32px 0;border-block:1px solid var(--ed-line);margin:20px 0 40px;max-width:760px}.occasion-calculation h2{font:400 clamp(28px,5vw,42px)/1.2 var(--ed-serif);margin:10px 0 20px}.occasion-calculation>p:not(.ed-eyebrow){font-size:15px;line-height:1.8;margin-bottom:24px}</style>

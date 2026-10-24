@@ -13,5 +13,8 @@ qa/*.html
 qa/screenshots/google-*.png
 qa/screenshots/production-d1-*.png
 qa/screenshots/metrica-d1-*.png
+qa/screenshots/cloudflare-cron-*.jpg
+qa/screenshots/cron-canary-*.jpg
+qa/screenshots/yandex-*.jpg
 # Raw analytics audits include third-party cookie synchronization identifiers.
 qa/metrica-20261024/

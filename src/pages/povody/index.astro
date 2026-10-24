@@ -1,0 +1,15 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
+import EditorialLinks from '../../components/EditorialLinks.astro';
+import EditorialInterest from '../../components/EditorialInterest.astro';
+import { occasions } from '../../data/occasions';
+const title = 'Пироги к случаю: офис, общий стол и встреча друзей | Пирогорск';
+const description = 'Планирование стола для разных встреч: день рождения в офисе, фуршет, обед для бригады и семейный подарок. Чек-листы и редактируемые расчёты веса.';
+---
+<ContentLayout {title} {description} breadcrumbs={[{ name: 'К случаю', href: '/povody/' }]}>
+  <EditorialHero eyebrow="К случаю · готовим запуск" title="У каждого стола свой повод" intro="Где-то нужна еда на обед, где-то — небольшой кусок к чаю. Выберите ситуацию: внутри — вопросы для организатора и пример расчёта, который можно изменить." compact />
+  <EditorialLinks title="Что вы планируете?" links={occasions.map(item => ({ href: `/povody/${item.slug}/`, title: item.title, text: item.takeaway, label: 'План встречи' }))} />
+  <p class="ed-note">Это материалы для подготовки. Пирогорск изучает интерес к запуску в Калининграде, Зеленоградске и Светлогорске. Производство, обслуживание мероприятий и условия доставки пока не подтверждены.</p>
+  <EditorialInterest interest="occasions" title="Уже знаете, что хочется к столу?" text="Соберите вкусы в подборку и отметьте анонимный интерес. Окончательные рецептуры и цены определим перед началом продаж." label="Выбрать вкусы" />
+</ContentLayout>

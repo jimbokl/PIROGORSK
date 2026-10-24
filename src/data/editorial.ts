@@ -5,6 +5,7 @@ import bundle from '../../design/assets-source/bundle.png';
 import hero from '../../design/assets-source/hero.png';
 import manifest from '../../design/layered-assets-v2/manifest.json';
 import type { ImageMetadata } from 'astro';
+import { occasions } from './occasions';
 
 export const siteOrigin = 'https://pirogorsk.ru';
 export const conceptCaption = 'Изображение концепта. Внешний вид готовых пирогов ещё предстоит утвердить.';
@@ -231,7 +232,8 @@ export const guides = [
 
 export const editorialImages = { hero, dinner, company, bundle };
 export const editorialPaths = [
-  '/menu/', '/delivery/', '/partners/', '/about/', '/podbor/',
+  '/menu/', '/delivery/', '/partners/', '/about/', '/podbor/', '/povody/',
+  ...occasions.map(item => `/povody/${item.slug}/`),
   ...editorialProducts.map(productHref),
   ...scenarios.map(item => `/nabor/${item.slug}/`),
   ...locations.map(item => `/dostavka/${item.slug}/`),

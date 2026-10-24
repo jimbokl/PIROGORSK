@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { planPies, parsePlan } from '../src/lib/pie-planner.ts';
+import { occasionPresets } from '../src/data/occasion-presets.ts';
+import { occasions } from '../src/data/occasions.ts';
 
 const catalog = ['meat', 'cabbage', 'fish'].map((id, index) => ({ id, kind: 'pie', variants: [{ value: 500, price: 400 + index * 100 }, { value: 1000, price: 700 + index * 200 }] }));
 test('rounds up to 500 g, distributes flavours, and prices the actual variants', () => {
@@ -23,4 +25,14 @@ test('invalid input and empty/unknown/duplicate flavours fail', () => {
 });
 test('URL transfer rejects tampering, unsupported products, duplicate rows, and oversized values', () => {
   for (const value of [null,'','meat:500:0','meat:500:100','meat:100:1','coffee:500:1','meat:500:1,meat:500:2','meat:500:1<script>','a'.repeat(1001),'meat:500:1,fish:1000:2,']) assert.equal(parsePlan(value, catalog), null);
+});
+test('every published occasion has a usable, distinct calculator preset', () => {
+  assert.deepEqual(occasions.map(item => item.slug).sort(), occasionPresets.map(item => item.slug).sort());
+  assert.equal(new Set(occasions.map(item => item.slug)).size, occasions.length);
+  const allPies = ['meat','fish','cabbage','cheese','apple','cherry','curd'].map(id => ({ id, kind: 'pie', variants: [{ value: 500, price: 400 }, { value: 1000, price: 700 }] }));
+  for (const preset of occasionPresets) {
+    const plan = planPies(preset.guests, preset.grams, [...preset.ids], allPies);
+    assert.ok(plan.weight >= preset.guests * preset.grams);
+    assert.equal(plan.items.length > 0, true);
+  }
 });

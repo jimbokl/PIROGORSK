@@ -1,5 +1,6 @@
 import { planPies } from '../lib/pie-planner';
 import type { Product } from '../data/catalog';
+import { occasionPresets } from '../data/occasion-presets';
 
 const form = document.querySelector<HTMLFormElement>('[data-planner-form]')!;
 const catalog: Product[] = JSON.parse(document.getElementById('planner-catalog')!.textContent!);
@@ -7,6 +8,15 @@ const error = document.querySelector<HTMLElement>('[data-planner-error]')!;
 const link = document.querySelector<HTMLAnchorElement>('[data-planner-continue]')!;
 const weight = (grams: number) => (grams / 1000).toLocaleString('ru-RU');
 const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
+const preset = occasionPresets.find(item => item.slug === new URLSearchParams(location.search).get('occasion'));
+if (preset) {
+  form.querySelector<HTMLInputElement>('[name="guests"]')!.value = String(preset.guests);
+  form.querySelector<HTMLSelectElement>('[name="grams"]')!.value = String(preset.grams);
+  form.querySelectorAll<HTMLInputElement>('[name="flavour"]').forEach(input => { input.checked = (preset.ids as readonly string[]).includes(input.value); });
+  const label = document.querySelector<HTMLElement>('[data-planner-occasion]')!;
+  label.textContent = `Открыт пример: ${preset.label}. Все параметры можно изменить.`;
+  label.hidden = false;
+}
 function update() {
   const fields = new FormData(form);
   try {

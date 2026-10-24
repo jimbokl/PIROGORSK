@@ -40,7 +40,7 @@ test('wrong live release, missing key and 429 fail without success', async () =>
 test('wait for Pages propagation with GET retries, then submit only once', async () => {
   let keyReads = 0;
   let posts = 0;
-  const fetcher = async (url, options) => {
+  const fetcher = async url => {
     if (url.endsWith('.txt')) return new Response(++keyReads === 1 ? 'old' : 'public-key');
     if (url.endsWith('.json')) return Response.json(current);
     posts++;
