@@ -2,7 +2,26 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
-## Актуальный выпуск — 24.10.2026, 19:22–19:24 Калининград
+## Последний замер — гид Калининграда, 24.10.2026 19:42:09 Калининград
+
+Релиз `80e61827eb5a7f29a6187d79094d03427e0ea4dc`, [CI 40116892879](https://github.com/jimbokl/PIROGORSK/actions/runs/40116892879) SUCCESS. [Официальный PSI — mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-kaliningrade/yk9qma3xyb?form_factor=mobile) и [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-kaliningrade/yk9qma3xyb?form_factor=desktop) проверены отдельно.
+
+| Категория | Mobile | Desktop |
+| --- | ---: | ---: |
+| Performance | **91** | **100** |
+| Accessibility | 100 | 100 |
+| Best Practices | 100 | 100 |
+| SEO | 100 | 100 |
+
+Mobile: FCP 0.8 с, LCP 3.5 с, TBT 10 мс, CLS 0.002, SI 2.1 с. Desktop: FCP 0.3 с, LCP 0.3 с, TBT 10 мс, CLS 0.003, SI 0.4 с. Значения как показаны интерфейсом. CrUX без данных, Agentic browsing 2/2 на обоих. Снимки `qa/screenshots/psi-kal-{mobile,desktop}-20261024.jpg`.
+
+В развёрнутом mobile-аудите LCP — `section.ed-hero > figure.ed-hero-art > picture > img`, `kaliningrad-lunch.O1Vq7ZBe_GFH6B.avif`: TTFB 0 мс, задержка загрузки 170 мс, загрузка 160 мс, задержка отрисовки 990 мс. Изображение eager/high, размеры заданы. В отличие от главной здесь нет CSS-маски; общая причина пока не установлена. Эта трасса не складывается напрямую в смоделированный LCP. Нельзя объявлять восстановленные 100 на всём сайте по успешному отчёту другой страницы.
+
+### Диагностика без изменения кода
+
+24.10 17:46:52 UTC: локальный Lighthouse 13.5.0 с `throttlingMethod=devtools` на публичной главной — Performance 93, FCP 1.6 с, LCP 3.1 с, TBT 50 мс. TTFB 1097 мс, задержка загрузки LCP 398 мс, загрузка 1629 мс, задержка отрисовки **8.7 мс**. Это прямое замедление сети в другом окружении, не официальный PSI и не сопоставимый балл. Большая задержка отрисовки PSI не воспроизвелась: гипотеза о дорогой AVIF-декодировке/маске не подтверждена. Код на основании этого опыта не менялся. Компактное свидетельство — `qa/lcp-render-diagnostic-20261024.json`.
+
+## Предыдущий выпуск — 24.10.2026, 19:22–19:24 Калининград
 
 Релиз `45d995ffad8f3c837a08210d4323c740abfc1542`, [CI 40115451690](https://github.com/jimbokl/PIROGORSK/actions/runs/40115451690) SUCCESS. Обе desktop-вкладки проверены отдельно; это официальный публичный PSI, не локальный Lighthouse.
 

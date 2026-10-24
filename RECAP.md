@@ -4,17 +4,18 @@
 
 ## Новый выпуск
 
-- [Блог «К общему столу»](https://pirogorsk.ru/blog/): **8 материалов / 4 рубрики**, ссылки с главной, навигации и городских страниц.
-- Четыре новые статьи с самостоятельными иллюстрациями: [порции](https://pirogorsk.ru/journal/skolko-piroga-na-cheloveka/), [500 г или 1 кг](https://pirogorsk.ru/journal/pirog-500-g-ili-1-kg/), [напитки](https://pirogorsk.ru/journal/chto-pit-s-pirogami/), [где поесть в Светлогорске](https://pirogorsk.ru/journal/gde-poest-v-svetlogorske/). Оглавления, таблицы, калькулятор, AVIF/WebP, отдельные OG и BlogPosting. Старые `/journal/` адреса сохранены.
-- Релиз **`45d995f`**, [CI SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40115451690). Astro/TS 0 diagnostics, build 37 HTML, sitemap 35 URL, SEO 2265 локальных ссылок, 14 tests PASS. UI 1280/390/320 px, таблицы и переходы проверены. [QA нового гида](qa/svetlogorsk-guide-20261024.md).
-- Публичные страницы и sitemap проверены, IndexNow HTTP 200 на 8 изменённых URL. GSC ранее принял повторную отправку карты, последнее подтверждённое чтение — 21 URL от 23.10. Новые URL ещё не считаются обработанными или проиндексированными. Яндекс остаётся «Только для чтения».
+- [Блог «К общему столу»](https://pirogorsk.ru/blog/): **9 материалов / 5 рубрик**, ссылки с главной, навигации и городских страниц.
+- Пять новых статей с самостоятельными иллюстрациями: [порции](https://pirogorsk.ru/journal/skolko-piroga-na-cheloveka/), [500 г или 1 кг](https://pirogorsk.ru/journal/pirog-500-g-ili-1-kg/), [напитки](https://pirogorsk.ru/journal/chto-pit-s-pirogami/), [где поесть в Светлогорске](https://pirogorsk.ru/journal/gde-poest-v-svetlogorske/), [семейный обед в Калининграде](https://pirogorsk.ru/journal/gde-poest-v-kaliningrade/). Оглавления, таблицы, калькулятор, AVIF/WebP, отдельные OG и BlogPosting. Старые `/journal/` адреса сохранены.
+- Релиз **`80e6182`**, [CI SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40116892879). Astro/TS 0 diagnostics, build 38 HTML, sitemap 36 URL, SEO 2324 локальные ссылки, 14 tests PASS. UI 1280/390/320 px, таблицы и переходы проверены. [QA нового гида](qa/kaliningrad-guide-20261024.md).
+- Публичные страницы и sitemap проверены, IndexNow HTTP 200 на 4 изменённых URL. GSC ранее принял повторную отправку карты, последнее подтверждённое чтение — 21 URL от 23.10. Новые URL ещё не считаются обработанными или проиндексированными. Яндекс остаётся «Только для чтения».
 
 ## Текущий PageSpeed
 
-Официальные отчёты Google для опубликованного `45d995f`, 24.10.2026; desktop-вкладки проверены отдельно.
+Официальные отчёты Google от 24.10.2026: Калининград — текущий релиз `80e6182`; главная и Светлогорск — предыдущий `45d995f`. Desktop-вкладки проверены отдельно.
 
 | Страница / время Калининграда | Mobile Performance | Desktop Performance | Accessibility / Best Practices / SEO |
 | --- | ---: | ---: | --- |
+| [Гид Калининграда](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-kaliningrade/yk9qma3xyb?form_factor=mobile), 19:42:09 | **91** | **100** | 100 / 100 / 100 на обоих |
 | [Главная](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/li9klo0p4k?form_factor=mobile), 19:22:05 | **87** | **100** | 100 / 100 / 100 на обоих |
 | [Гид Светлогорска](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-svetlogorske/iv8ywsib2a?form_factor=mobile), 19:24:09 | **100** | **100** | 100 / 100 / 100 на обоих |
 
@@ -24,7 +25,9 @@
 
 До выпуска: Метрика 113767847, 7 посетителей / 8 прямых визитов / 13 просмотров за 24.10; в них могут быть проверки владельца и агента. Это не 7 подтверждённых потенциальных покупателей. GSC пока показывает только 22.10: 0 кликов / 0 показов.
 
-План — [BLOG-PLAN.md](BLOG-PLAN.md): обработка карты → первые 10 посетителей → 30 → 100, с проверкой источников, географии и конверсий. Следующий местный материал — гид Калининграда; начальные официальные источники уже сохранены. Общий трафик на расчёт порций не равен местному спросу на доставку. Два анонса статей, UTM и первый кандидат Telegram-канала — [BLOG-DISTRIBUTION.md](BLOG-DISTRIBUTION.md). Размещения и оплата не выполнялись.
+Повторная сводка вечером после refresh: **10 посетителей / 11 визитов / 25 просмотров**, все визиты прямые. Наши проверки входят в отчёт; первые 10 реальных читателей ещё не доказаны.
+
+План — [BLOG-PLAN.md](BLOG-PLAN.md): обработка карты → первые 10 посетителей → 30 → 100, с проверкой источников, географии и конверсий. Местные гиды трёх городов опубликованы; следующие темы выбирать по реальным запросам и переходам. Общий трафик на расчёт порций не равен местному спросу на доставку. Два анонса статей, UTM и первый кандидат Telegram-канала — [BLOG-DISTRIBUTION.md](BLOG-DISTRIBUTION.md). Размещения и оплата не выполнялись.
 
 ## Ранее завершено
 

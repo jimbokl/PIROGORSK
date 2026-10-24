@@ -1,6 +1,6 @@
 # Гид Калининграда · 24.10.2026
 
-Статус: локально готов к публикации; production и официальный PSI проверить после CI.
+Статус: опубликован и независимо проверен на production; официальный PSI mobile 91 / desktop 100.
 
 ## Содержание и источники
 
@@ -27,3 +27,11 @@ ImageGen создал оригинальную обложку: `/Users/dmitrij/.
 - UI 1280×900, 390×844 и таблица 320×740: overflow отсутствует, hero загружен, оглавление ведёт к нужному разделу, новая рубрика ведёт к статье. Заголовок колонки сокращён до «Порций» для узкого экрана.
 - Снимки: `kaliningrad-desktop-20261024.jpg`, `kaliningrad-mobile-20261024.jpg`, `kaliningrad-table-320-20261024.jpg`, `blog-kaliningrad-mobile-20261024.jpg`.
 - Worker/D1/цели/сбор контактов не изменялись.
+
+## Production и поисковое уведомление
+
+- Релиз `80e61827eb5a7f29a6187d79094d03427e0ea4dc`, [CI 40116892879](https://github.com/jimbokl/PIROGORSK/actions/runs/40116892879) SUCCESS.
+- Независимые GET новой статьи, `/blog/`, `/dostavka/kaliningrad/`, `/sitemap.xml`, `/indexnow-manifest.json`: HTTP 200. Canonical точный, AI-подпись присутствует; ссылки на статью есть на витрине и городской странице. Sitemap содержит 36 URL, manifest содержит новую статью.
+- IndexNow HTTP 200 / 4 изменённых URL / 24.10 17:40:16 UTC. Артефакт `indexnow-kaliningrad-20261024.json`; принятие уведомления не доказывает индексацию.
+- Production просмотрен в браузере: `kaliningrad-production-20261024.jpg`.
+- Официальный [PSI](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-kaliningrade/yk9qma3xyb?form_factor=mobile), 24.10 19:42:09 Europe/Kaliningrad: Performance mobile 91 / desktop 100, остальные три категории 100 на обоих. Снимки в `screenshots/psi-kal-{mobile,desktop}-20261024.jpg`; метрики и LCP — PERFORMANCE.md. CrUX без данных.

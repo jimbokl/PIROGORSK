@@ -1,0 +1,53 @@
+{
+  "kind": "Local Lighthouse diagnostic against production, not official PSI",
+  "fetchTime": "2026-10-24T17:46:52.324Z",
+  "url": "https://pirogorsk.ru/",
+  "lighthouseVersion": "13.5.0",
+  "throttlingMethod": "devtools",
+  "performance": 93,
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 1578.909,
+      "display": "1.6 s"
+    },
+    "largest-contentful-paint": {
+      "value": 3131.887,
+      "display": "3.1 s"
+    },
+    "total-blocking-time": {
+      "value": 48.67899993896458,
+      "display": "50 ms"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.0014209974505154715,
+      "display": "0.001"
+    },
+    "speed-index": {
+      "value": 2320,
+      "display": "2.3 s"
+    }
+  },
+  "lcpBreakdown": [
+    {
+      "subpart": "timeToFirstByte",
+      "label": "Time to first byte",
+      "duration": 1096.7269999389648
+    },
+    {
+      "subpart": "resourceLoadDelay",
+      "label": "Resource load delay",
+      "duration": 397.82800006103514
+    },
+    {
+      "subpart": "resourceLoadDuration",
+      "label": "Resource load duration",
+      "duration": 1628.671
+    },
+    {
+      "subpart": "elementRenderDelay",
+      "label": "Element render delay",
+      "duration": 8.661
+    }
+  ],
+  "conclusion": "PSI element render delay not reproduced; no code change based on this run."
+}
