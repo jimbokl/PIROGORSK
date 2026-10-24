@@ -2,7 +2,34 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
-## Актуальный официальный PageSpeed Insights после расширения сайта — 24.10.2026
+## Актуальный официальный замер — 24.10.2026, 18:52:41 Калининград
+
+Релиз `da17a4d3f2727fdd02303ae1d7b7483db5627b6a`, [CI 40113029047](https://github.com/jimbokl/PIROGORSK/actions/runs/40113029047) SUCCESS. Responsive AVIF preload и четвёртый локальный шрифт доступны на домене. Обе desktop-вкладки проверены отдельно.
+
+| Страница | Mobile Performance | Desktop Performance | Accessibility / Best Practices / SEO |
+| --- | ---: | ---: | --- |
+| [Блог](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/emmasrz4v2?form_factor=mobile) | **88** | **100** | 100 / 100 / 100 на обоих |
+| [Главная](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/yfoqpwx1ye?form_factor=mobile) | **87** | **100** | 100 / 100 / 100 на обоих |
+
+Блог mobile: FCP 0.8 с, LCP 3.7 с, TBT 40 мс, CLS 0, SI 3.5 с. Desktop: FCP 0.2 с, LCP 0.3 с, TBT 10 мс, CLS 0.008, SI 0.4 с. Главная mobile: FCP 1.0 с, LCP 4.1 с, TBT 0, CLS 0.003, SI 2.6 с. Desktop: FCP 0.3 с, LCP 0.5 с, TBT 0, CLS 0.011, SI 0.4 с. CrUX без данных, Agentic browsing 2/2. Снимки `qa/screenshots/psi-{blog,home}-{mobile,desktop}-preload-20261024.jpg`.
+
+Preload не устранил задержку LCP; нельзя считать мобильные 100 восстановленными. Следующая техническая задача — разобрать отрисовку первого изображения на медленной сети и нагрузку ранних ресурсов; не повторять одну и ту же проверку ради удачного балла. Метрика, реальные цели и контент работают без отключений. После этого замера подготовлена редактура внутренних абзацев трёх статей, без изменения кода первого экрана; результат этой версии отдельно не измерен.
+
+## Блог и повторная проверка первого экрана — 24.10.2026
+
+После добавления блога получены отдельные официальные отчёты, релиз `fed8f400adc1c270471fa8f01d632a74a01ee867`:
+
+| Страница / время Europe/Kaliningrad | Mobile Performance | Desktop Performance | Accessibility / Best Practices / SEO |
+| --- | ---: | ---: | --- |
+| [Блог, gtlfb4g68l](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/gtlfb4g68l?form_factor=mobile), 18:38:07 | 89 | 100 | 100 / 100 / 100 на обоих |
+| [Главная, trcth3oxcn](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/trcth3oxcn?form_factor=mobile), 18:38:11 | 86 | 100 | 100 / 100 / 100 на обоих |
+
+Блог mobile: LCP 3.7 с, FCP 0.9 с, TBT 0, CLS 0.002, SI 2.6 с. Главная mobile: LCP 4.1 с, FCP 1.1 с, TBT 0, CLS 0, SI 3.7 с. Блог desktop LCP 0.3 с / TBT 20 мс / CLS 0.006; главная desktop LCP 0.4 с / TBT 0 / CLS 0. CrUX пока без данных. Обе desktop-вкладки проверены независимо, Agentic browsing 2/2. Снимки и предыдущий первый замер блога — [QA выпуска](qa/blog-release-20261024.md).
+
+Уменьшение вариантов обложек сняло предупреждение об их размере, но мобильная отрисовка осталась медленной. Далее опубликован matching responsive preload изображения и позднего Playfair Latin; его результат приведён выше. Метрика не отключалась, контент ради измерения не скрывался. Локальный Lighthouse 100 Performance на публичном блоге — только диагностика, не подмена этих официальных результатов.
+
+## Исторический официальный PageSpeed перед блогом — 24.10.2026
+
 
 [Mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/hxmesh0nom?hl=ru&form_factor=mobile) и [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/hxmesh0nom?hl=ru&form_factor=desktop) независимо проверены в официальном интерфейсе Google. Отчёт **24.10.2026 17:54:49 Europe/Kaliningrad / 15:54:49 UTC**, релиз `abce049008b7e07921c474f62b4810bffc366d78`, [CI 40108888625](https://github.com/jimbokl/PIROGORSK/actions/runs/40108888625) SUCCESS. Калькулятор, страницы поводов, гид и явный pageview Метрики уже опубликованы; публичный manifest независимо совпал с локальной сборкой в 15:54:43 UTC.
 

@@ -39,3 +39,9 @@
 Уменьшение изображений убрало предупреждение о размере на блоге, но не устранило mobile LCP. Диагностика фактической отрисовки: задержка изображения блога 1020 мс, главной 1950 мс; Playfair Latin был в поздней критической цепочке. Следующая проверяемая правка: responsive AVIF preload ровно того srcset/sizes, что у Picture, и preload Playfair Latin. Ранний запрос не гарантирует устранение всей задержки; результат проверяется после публикации. Метрика включена, цели и обработчик заявок не изменены.
 
 Проверка правки preload: Astro/TS 0 ошибок/предупреждений/подсказок; build 36 HTML; SEO 34 URL / 2205 ссылок; 14 тестов PASS. Обе head-preload пары побайтово совпадают с srcset/sizes первого AVIF source на главной и блоге.
+
+## Проверка preload на домене
+
+`da17a4d3f2727fdd02303ae1d7b7483db5627b6a`, [CI 40113029047](https://github.com/jimbokl/PIROGORSK/actions/runs/40113029047) SUCCESS. Публичные head содержат matching responsive preload и Playfair Latin. Официальный замер 24.10 18:52:41 Europe/Kaliningrad: [блог](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/emmasrz4v2?form_factor=mobile) mobile 88 / desktop 100; [главная](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/yfoqpwx1ye?form_factor=mobile) mobile 87 / desktop 100. Остальные категории 100 на обоих, Agentic 2/2, CrUX без данных. Метрики — PERFORMANCE.md. Снимки `psi-{blog,home}-{mobile,desktop}-preload-20261024.jpg`. Preload не решил мобильный LCP; достижение 100 не заявляется.
+
+Редакционная правка: более прямые рекомендации, меньше повторных оговорок; условные расчёты цены/порций и статус предзапуска сохранены. После правки Astro/TS 0 ошибок/предупреждений/подсказок, build 36, SEO 34 URL / 2205 ссылок, 14 tests PASS. Логи `/tmp/pirogorsk-blog-copy-{check,build,seo,tests}.log`.
