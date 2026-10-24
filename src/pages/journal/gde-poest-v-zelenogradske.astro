@@ -1,0 +1,74 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
+import EditorialBody from '../../components/EditorialBody.astro';
+import EditorialLinks from '../../components/EditorialLinks.astro';
+import { siteOrigin } from '../../data/editorial';
+import { foodGuide, menuVenues } from '../../data/food-guides';
+
+const money = (amount: number) => `${amount.toLocaleString('ru-RU')} ₽`;
+const path = `/journal/${foodGuide.slug}/`;
+const schema = [{
+  '@type': 'Article',
+  headline: foodGuide.title,
+  description: foodGuide.description,
+  inLanguage: 'ru-RU',
+  datePublished: foodGuide.checkedAt,
+  dateModified: foodGuide.checkedAt,
+  mainEntityOfPage: `${siteOrigin}${path}`,
+  publisher: { '@id': `${siteOrigin}/#organization` },
+  citation: menuVenues.map(venue => venue.menuUrl),
+}];
+---
+<ContentLayout title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Заметки', href: '/about/#guides' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article">
+  <EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} intro="Перед ужином удобно открыть меню и посчитать свой стол. Мы выбрали два кафе, проверили их официальные сайты и собрали четыре примера — от овощной кесадильи до горячего с гарниром." compact>
+    <p class="guide-date">Меню проверены <time datetime={foodGuide.checkedAt}>{foodGuide.checkedLabel}</time></p>
+    <nav class="guide-jumps" aria-label="Кафе в гиде">{menuVenues.map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav>
+  </EditorialHero>
+
+  <aside class="ed-note" aria-label="Как читать расчёты"><strong>Считаем четыре блюда.</strong> В таблицах — цена одной позиции и четырёх таких же. Напитки, десерты, дополнительные блюда и возможные сборы не включены. Это примеры из меню двух кафе, а не средний чек по городу. Разные блюда не равны по весу и сытности.</aside>
+
+  <div class="venue-list">
+    {menuVenues.map((venue, index) => <section class="venue" id={venue.id} aria-labelledby={`${venue.id}-title`}>
+      <header class="venue-heading">
+        <p class="ed-eyebrow">{String(index + 1).padStart(2, '0')} · кафе</p>
+        <h2 id={`${venue.id}-title`}>{venue.name}</h2>
+        <p class="venue-address">{venue.address}</p>
+        <p>{venue.note}</p>
+        <a class="source-link" href={venue.website}>Сайт кафе <span aria-hidden="true">↗</span></a>
+      </header>
+      <div class="venue-menu">
+        <table>
+          <caption>Цены «{venue.name}»: одна позиция и четыре одинаковых блюда</caption>
+          <thead><tr><th scope="col">Блюдо</th><th scope="col">Одно</th><th scope="col">Четыре</th></tr></thead>
+          <tbody>{venue.dishes.map(dish => <tr><th scope="row">{dish.name}<small>{dish.weightGrams ? `${dish.weightGrams} г по меню` : 'Вес в списке меню не указан'}</small></th><td>{money(dish.priceRub)}</td><td>{money(dish.priceRub * 4)}</td></tr>)}</tbody>
+        </table>
+        <p class="mixed-table"><span>Если выбрать два разных блюда</span><strong>{money(venue.dishes.reduce((total, dish) => total + dish.priceRub * 2, 0))}</strong><small>По две порции каждой позиции из таблицы. Всего четыре блюда.</small></p>
+        <div class="menu-source"><a class="source-link" href={venue.menuUrl}>Официальное меню <span aria-hidden="true">↗</span></a><p>{venue.sourceNote}</p><p>Проверено {foodGuide.checkedLabel}. Перед визитом сверьте цены и доступность блюд с кафе.</p></div>
+      </div>
+    </section>)}
+  </div>
+
+  <EditorialBody sections={[
+    { title: 'Как выбрать под свою прогулку', paragraphs: ['Начните с маршрута: кафе у Малиновки и адрес на улице Володарского — разные точки города. Проверьте расстояние от жилья, время работы и наличие нужного блюда перед выходом. Если идёте компанией, заранее спросите про свободный стол.', 'В примерах на четверых нет супов, салатов и напитков. Добавьте их из того же меню, если они нужны вашему столу. Для детей и гостей с ограничениями в питании уточняйте состав у кафе: название блюда не заменяет полный список ингредиентов.'] },
+    { title: 'Если ужин планируется в апартаментах', paragraphs: ['Сначала проверьте посуду, места за столом и возможность разогрева. Для общего блюда полезно отдельно посчитать количество еды, а затем выбирать вкусы. В нашем калькуляторе можно задать число гостей и свою порцию в граммах.', 'Пирогорск пока разрабатывает меню и изучает спрос. Калькулятор показывает предварительный расчёт будущих пирогов; заказывать еду на сегодняшний вечер через него ещё нельзя. Цены кафе выше не сравниваем с ним как с готовой услугой доставки.'] },
+  ]} />
+
+  <section class="ed-interest" aria-labelledby="plan-title"><div><p class="ed-eyebrow">К общему столу</p><h2 id="plan-title">А сколько пирогов на четверых?</h2><p>Попробуйте расчёт: число гостей × выбранная вами порция. Меняйте начинки, вес и город; результат можно сохранить в подборку.</p><p>Или <a href="/?interest=guide-gde-poest-v-zelenogradske#pirogi">отметьте интересные вкусы</a> для будущего меню.</p></div><a class="ed-button" href="/podbor/">Рассчитать количество <span aria-hidden="true">↗</span></a></section>
+  <EditorialLinks title="Перед ужином" links={[
+    { href: '/journal/uzhin-v-semnyh-apartamentah/', title: 'Ужин в апартаментах', text: 'Что уточнить про технику и посуду до заселения.', label: 'Чек-лист' },
+    { href: '/povody/', title: 'Стол к случаю', text: 'Сценарии для компании: от офиса до семейной встречи.', label: 'Идеи' },
+    { href: '/menu/', title: 'Будущее меню', text: 'Сытные и сладкие начинки, интерес к которым мы проверяем.', label: 'Пирогорск' },
+  ]} />
+</ContentLayout>
+
+<style>
+  .guide-date{margin-top:20px;font-size:11px;color:var(--ed-muted);line-height:1.7}
+  .guide-jumps{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.guide-jumps a{display:flex;align-items:center;gap:26px;min-height:44px;padding:9px 15px;border:1px solid var(--ed-line);border-radius:3px;font-size:12px;text-decoration:none}.guide-jumps a:hover{background:var(--ed-sea)}
+  .venue-list{margin-block:38px 12px}.venue{display:grid;grid-template-columns:.7fr 1.3fr;gap:65px;padding-block:38px;border-top:1px solid var(--ed-line);scroll-margin-top:24px;min-width:0}.venue h2{font-size:38px;margin-top:10px;line-height:1.15}.venue-heading>p:not(.ed-eyebrow){font-size:13px;line-height:1.9;color:var(--ed-muted);margin-top:15px}.venue-heading .venue-address{color:var(--ed-ink)}
+  .source-link{display:inline-flex;align-items:center;gap:16px;min-height:44px;font-size:12px;text-underline-offset:4px}.venue-heading>.source-link{margin-top:14px}.venue-menu{min-width:0}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:13px}caption{text-align:left;font-size:11px;color:var(--ed-muted);line-height:1.7;padding-bottom:16px}th,td{text-align:right;padding:17px 0 17px 12px;vertical-align:top;border-top:1px solid var(--ed-line);line-height:1.6}th:first-child{text-align:left;padding-left:0;width:54%;font-weight:500}thead th{font-size:10px;color:var(--ed-muted);font-weight:500}td{white-space:nowrap}th small{display:block;font-size:10px;font-weight:400;color:var(--ed-muted);margin-top:6px;line-height:1.7}
+  .mixed-table{display:grid;grid-template-columns:1fr auto;gap:8px 18px;padding:20px;background:var(--ed-sea);font-size:12px;line-height:1.7}.mixed-table strong{font-size:17px;white-space:nowrap}.mixed-table small{grid-column:1/-1;font-size:10px;color:var(--ed-muted)}.menu-source{margin-top:16px}.menu-source p{font-size:10px;color:var(--ed-muted);line-height:1.8;max-width:65ch}.menu-source p+p{margin-top:7px}
+  @media(max-width:1000px){.venue{gap:35px}}
+  @media(max-width:760px){.venue{grid-template-columns:1fr;gap:22px;padding-block:30px}.venue h2{font-size:34px}.venue-heading>.source-link{margin-top:6px}table{font-size:12px}.mixed-table{padding:18px}.venue-list{margin-top:30px}}
+  @media(max-width:420px){th:first-child{width:49%}th,td{padding-left:7px}table{font-size:11px}thead th{font-size:9px}th small{font-size:9px}.mixed-table{grid-template-columns:1fr;gap:6px}.mixed-table strong{font-size:22px}}
+</style>

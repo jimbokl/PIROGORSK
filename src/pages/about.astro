@@ -5,6 +5,7 @@ import EditorialBody from '../components/EditorialBody.astro';
 import EditorialInterest from '../components/EditorialInterest.astro';
 import EditorialLinks from '../components/EditorialLinks.astro';
 import { editorialImages, guides } from '../data/editorial';
+import { foodGuide } from '../data/food-guides';
 const title = 'О Пирогорске — пироги с балтийским характером';
 const description = 'Пирогорск — проект пирогов для ужинов и встреч у Балтики. Честно о подготовке: концепты меню, иллюстрации, проверка интереса и будущие условия.';
 ---
@@ -16,5 +17,5 @@ const description = 'Пирогорск — проект пирогов для �
     { title: 'Зачем сейчас выбирать пироги', paragraphs: ['Ваш выбор помогает понять, какие вкусы и сценарии стоит разрабатывать первыми. Подборка показывает интерес; она не создаёт заказ, бронь или обязанность оплатить.', 'Для этого этапа не нужны телефон, электронная почта или адрес. Можно отметить город и предпочтения анонимно.'] },
   ]} />
   <EditorialInterest interest="about" title="Помогите выбрать будущее меню" text="Посмотрите вкусы и соберите свою подборку на главной. Участие анонимное; производство и приём заказов ещё впереди." label="Выбрать интересные вкусы" />
-  <EditorialLinks id="guides" title="Заметки к общему столу" links={guides.map(item => ({ href: `/journal/${item.slug}/`, title: item.title, text: item.description, label: 'Практический гид' }))} />
+  <EditorialLinks id="guides" title="Заметки к общему столу" links={[{ href: `/journal/${foodGuide.slug}/`, title: foodGuide.title, text: foodGuide.description, label: 'Меню кафе' }, ...guides.map(item => ({ href: `/journal/${item.slug}/`, title: item.title, text: item.description, label: 'Практический гид' }))]} />
 </ContentLayout>

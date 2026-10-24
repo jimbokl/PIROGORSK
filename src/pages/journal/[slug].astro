@@ -5,6 +5,7 @@ import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialInterest from '../../components/EditorialInterest.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import { guides, siteOrigin } from '../../data/editorial';
+import { foodGuide } from '../../data/food-guides';
 export function getStaticPaths() {
   return guides.map(item => ({ params: { slug: item.slug }, props: { item } }));
 }
@@ -16,5 +17,5 @@ const schema = [{ '@type': 'Article', headline: item.title, description: item.de
   <EditorialHero eyebrow="Заметки к общему столу" title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} compact />
   <EditorialBody sections={item.sections} />
   <EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" />
-  <EditorialLinks title="К будущему меню" links={[{ href: item.related, title: item.relatedTitle, text: 'Какой формат рассматриваем и что нужно решить до запуска.', label: 'Сценарий' }, ...guides.filter(guide => guide.slug !== item.slug).map(guide => ({ href: `/journal/${guide.slug}/`, title: guide.title, text: guide.description, label: 'Ещё один гид' }))]} />
+  <EditorialLinks title="К будущему меню" links={[{ href: item.related, title: item.relatedTitle, text: 'Какой формат рассматриваем и что нужно решить до запуска.', label: 'Сценарий' }, { href: `/journal/${foodGuide.slug}/`, title: foodGuide.title, text: foodGuide.description, label: 'Меню кафе' }, ...guides.filter(guide => guide.slug !== item.slug).map(guide => ({ href: `/journal/${guide.slug}/`, title: guide.title, text: guide.description, label: 'Ещё один гид' }))]} />
 </ContentLayout>
