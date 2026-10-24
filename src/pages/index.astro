@@ -6,6 +6,7 @@ import ExtrasSection from '../components/ExtrasSection.astro';
 import InterestForm from '../components/InterestForm.astro';
 import Analytics from '../components/Analytics.astro';
 import SeoHead from '../components/SeoHead.astro';
+import LcpImagePreload from '../components/LcpImagePreload.astro';
 import Brand from '../components/Brand.astro';
 import BlogCards from '../components/BlogCards.astro';
 import { blogEntries } from '../data/blog';
@@ -30,6 +31,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
 <html lang="ru">
   <head>
     <SeoHead title="Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске" description="Сытные и сладкие пироги с балтийским характером. Выберите 500 г или 1 кг, добавьте морс и оставьте заявку. Готовим запуск — меню и цены предварительные." canonicalPath="/" schema={[faqSchema]} />
+    <LcpImagePreload src={heroBackground} widths={[480, 800, 1200, 1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} />
   </head>
   <body>
     <a class="skip-link" href="#pirogi">Перейти к пирогам</a>

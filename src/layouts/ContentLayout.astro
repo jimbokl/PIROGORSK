@@ -24,7 +24,7 @@ const nav = [{ href: '/menu/', name: 'Меню' }, { href: '/podbor/', name: 'С
 ---
 <!doctype html>
 <html lang="ru">
-  <head><SeoHead {title} {description} {type} {noindex} {image} {imageAlt} schema={[breadcrumbSchema, ...schema]} /></head>
+  <head><SeoHead {title} {description} {type} {noindex} {image} {imageAlt} schema={[breadcrumbSchema, ...schema]} /><slot name="head" /></head>
   <body class="editorial-site">
     <Analytics />
     <a class="ed-skip" href="#content">Перейти к содержанию</a>
