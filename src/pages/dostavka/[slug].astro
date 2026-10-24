@@ -11,7 +11,7 @@ export function getStaticPaths() {
 interface Props { item: (typeof locations)[number] }
 const { item } = Astro.props;
 const scenario = scenarios.find(scenario => scenario.slug === item.scenario)!;
-const cityGuide = item.slug === 'svetlogorsk' ? { href: '/journal/gde-poest-v-svetlogorske/', title: 'Где поесть в Светлогорске', text: 'Три адреса и расчёт завтрака на четверых по открытому меню.', label: 'Гид по городу' } : item.slug === 'zelenogradsk' ? { href: '/journal/gde-poest-v-zelenogradske/', title: 'Где поесть в Зеленоградске', text: 'Меню кафе и расчёт четырёх блюд с датой проверки цен.', label: 'Гид по городу' } : undefined;
+const cityGuide = item.slug === 'svetlogorsk' ? { href: '/journal/gde-poest-v-svetlogorske/', title: 'Где поесть в Светлогорске', text: 'Три адреса и расчёт завтрака на четверых по открытому меню.', label: 'Гид по городу' } : item.slug === 'zelenogradsk' ? { href: '/journal/gde-poest-v-zelenogradske/', title: 'Где поесть в Зеленоградске', text: 'Меню кафе и расчёт четырёх блюд с датой проверки цен.', label: 'Гид по городу' } : { href: '/journal/gde-poest-v-kaliningrade/', title: 'Где поесть в центре Калининграда', text: 'Обед семьёй, еда с собой и расчёт по меню с датой проверки.', label: 'Гид по городу' };
 ---
 <ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }, { name: item.city, href: `/dostavka/${item.slug}/` }]}>
   <EditorialHero eyebrow={`${item.city} · направление в планах`} title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} compact />

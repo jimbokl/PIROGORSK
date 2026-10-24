@@ -29,6 +29,6 @@ const schema = [{ '@type': 'BlogPosting', '@id': `${siteOrigin}${articleHref(ite
     <EditorialBody sections={item.sections} />
   </article>
   <EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" />
-  <EditorialLinks title="Продолжить за столом" links={[{ href: item.related, title: item.relatedTitle, text: item.related.startsWith('/journal/') ? 'Связанный материал с примерами и расчётами.' : 'Посмотреть форматы и собрать предварительную подборку.', label: 'К делу' }, ...blogEntries.filter(entry => entry.slug !== item.slug).slice(0, 2).map(entry => ({ href: articleHref(entry.slug), title: entry.title, text: entry.description, label: entry.category }))]} />
+  <EditorialLinks title="Продолжить за столом" links={[{ href: item.related, title: item.relatedTitle, text: item.related.startsWith('/journal/') ? 'Связанный материал с примерами и расчётами.' : 'Посмотреть форматы и собрать предварительную подборку.', label: 'К делу' }, ...blogEntries.filter(entry => entry.slug !== item.slug && articleHref(entry.slug) !== item.related).slice(0, 2).map(entry => ({ href: articleHref(entry.slug), title: entry.title, text: entry.description, label: entry.category }))]} />
   <a class="blog-text-link" href="/blog/">Все материалы блога<span aria-hidden="true">↗</span></a>
 </ContentLayout>
