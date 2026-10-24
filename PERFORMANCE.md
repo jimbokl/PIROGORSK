@@ -2,7 +2,28 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
-## Актуальный официальный PageSpeed Insights — 24.10.2026
+## Актуальный официальный PageSpeed Insights после расширения сайта — 24.10.2026
+
+[Mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/hxmesh0nom?hl=ru&form_factor=mobile) и [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/hxmesh0nom?hl=ru&form_factor=desktop) независимо проверены в официальном интерфейсе Google. Отчёт **24.10.2026 17:54:49 Europe/Kaliningrad / 15:54:49 UTC**, релиз `abce049008b7e07921c474f62b4810bffc366d78`, [CI 40108888625](https://github.com/jimbokl/PIROGORSK/actions/runs/40108888625) SUCCESS. Калькулятор, страницы поводов, гид и явный pageview Метрики уже опубликованы; публичный manifest независимо совпал с локальной сборкой в 15:54:43 UTC.
+
+| Категория | Mobile | Desktop |
+| --- | ---: | ---: |
+| Performance | **100** | **100** |
+| Accessibility | **100** | **100** |
+| Best Practices | **100** | **100** |
+| SEO | **100** | **100** |
+
+| Метрика, отображение PSI | Mobile | Desktop |
+| --- | ---: | ---: |
+| FCP | 1.0 с | 0.3 с |
+| LCP | 1.7 с | 0.4 с |
+| TBT | 0 мс | 0 мс |
+| CLS | 0.003 | 0.014 |
+| Speed Index | 1.0 с | 0.4 с |
+
+Agentic browsing 2/2 на обоих. Lighthouse 13.5.0 / HeadlessChromium 153.0.8010.36; mobile Moto G Power, slow 4G. Метрики записаны как показаны интерфейсом, ссылка score calculator округляет некоторые значения иначе. CrUX без данных. Это проверка главной страницы, не всех 30 URL. Метрика не отключалась. Снимки: [mobile](qa/screenshots/psi-mobile-traffic-20261024.jpg), [desktop](qa/screenshots/psi-desktop-traffic-20261024.jpg).
+
+## Предыдущий официальный PageSpeed Insights после подключения Метрики — 24.10.2026
 
 [Мобильный отчёт Google](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/gosvs1aafm?hl=ru&form_factor=mobile) и [компьютер](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/gosvs1aafm?hl=ru&form_factor=desktop) независимо открыты и проверены. Дата отчёта: **24.10.2026 16:12:22 Europe/Kaliningrad (14:12:22 UTC)**. Это официальный PSI на публичном домене после подключения Метрики; код приложения `b7cc1a3`, опубликованная версия на момент проверки `4e92f99` (последний коммит менял документацию).
 

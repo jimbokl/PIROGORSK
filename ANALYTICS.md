@@ -220,3 +220,5 @@ GROUP BY city;
 UTM — только в просмотре Метрики, не в параметрах `reachGoal` и не в D1. Два текста и ссылки — [TELEGRAM-TEST.md](TELEGRAM-TEST.md); размещения не выполнялись. Стандартный UTM-отчёт по реальным рекламным визитам пока не проверен: реклама не запущена. Локально проверены очистка URL, известные/чужие/неполные/повторные метки и инициализация реального модуля без лишнего pageview или цели — [QA](qa/traffic-attribution-20261024.md).
 
 Основания: [init/defer](https://yandex.ru/support/metrica/ru/code/counter-initialize.html), [hit/referer](https://yandex.ru/support/metrica/ru/objects/hit), [метки первого просмотра](https://yandex.ru/support/metrica/ru/general/source-tags).
+
+Production debug после релиза `abce049` / CI 40108888625 SUCCESS подтвердил один pageview с фиксированными UTM `calculator_b` и без `_ym_debug`; целей и новых заявок в этом сценарии не было. Снимок и границы доказательства — [QA](qa/traffic-attribution-20261024.md).
