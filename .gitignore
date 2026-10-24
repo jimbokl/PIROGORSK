@@ -11,3 +11,6 @@ qa/*.html
 # Admin evidence stays local; screenshots may show the signed-in account.
 qa/screenshots/google-*.png
 qa/screenshots/production-d1-*.png
+qa/screenshots/metrica-d1-*.png
+# Raw analytics audits include third-party cookie synchronization identifiers.
+qa/metrica-20261024/

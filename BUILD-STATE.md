@@ -1,18 +1,19 @@
 # Пирогорск — рабочий checkpoint
 
-Обновлено: 24.10.2026 06:42 UTC. Публикация и официальные PSI 100/100 подтверждены. По прямому запросу пользователя «хартбит убери» автоматизация `09-00` удалена через native automation tool; ответ приложения: deleteStatus=deleted. Ночные периодические проверки и запланированный проход в 09:00 отменены. Дальнейшая работа — по запросам пользователя.
+Обновлено: 24.10.2026 после production-проверки Метрики (11:05 UTC и позднее). Счётчик и сквозная конверсия подтверждены; Performance 100/100 в новом локальном Lighthouse на домене, Best Practices 77 из-за cookies Яндекса. Исторический официальный PSI до Метрики — 100/100. По прямому запросу пользователя «хартбит убери» автоматизация `09-00` удалена через native automation tool; ответ приложения: deleteStatus=deleted. Ночные периодические проверки и запланированный проход в 09:00 отменены. Дальнейшая работа — по запросам пользователя.
 
 ## Запрос 24.10: подключить Метрику
 
 - Пользователь явно подтвердил принятие соглашения и продолжение создания счётчика; автономная работа повторно разрешена. В аккаунте jintronic создан «Пирогорск» **113767847**, домен pirogorsk.ru, GMT+02 Калининград, RUB. Принимать только указанный домен. Автоматические цели, Вебвизор и e-commerce OFF сохранены и проверены; tag manager остаётся штатным, пользовательских тегов не добавляли.
 - 11:00 UTC: в интерфейсе подтверждены пять целей с точным условием «Совпадает»: order_submit (ID **674123845**, избранная), catalog_add 674123931, order_form_open 674123960, order_form_start 674123969, order_submit_error 674123979. Скриншот `qa/screenshots/metrica-goals-20261024.png`.
 - Фактический ID включён в src/config/analytics.ts. Check: 45 files, 0 errors/warnings/hints; build PASS; SEO PASS 23 HTML / 21 sitemap / 1587 references. Shared registry strict PASS: errors 0, hasDrift false. Worker/client typechecks, 14 API/SQL tests, bundle и browser QA формы PASS (`/tmp/pirogorsk-metrica-tests.log`): двойная отправка, потерянное подтверждение, повтор UUID, одна запись/цель после подтверждения, без цели при ошибке.
-- Сейчас: опубликовать проверенный конфиг и проверить Метрику на production. Новых production QA-заявок пока нет. Heartbeat удалён, не включать.
+- Завершено: код `b7cc1a3` опубликован workflow `40088193551` SUCCESS, watch exit 0. На production выполнена одна QA-заявка `609e574e-b81e-4ca3-91a8-c6dddf38aba1`; UI подтвердил сохранение, независимый D1 SELECT — правильные поля и duplicate_count=1. Официальный debug показал один order_submit без ошибок, отчёт Метрики — 1 целевой визит / 1 достижение. UUID добавлен в оба SQL-исключения QA, из реального спроса исключать. Скриншоты `metrica-production-saved-20261024.png`, `metrica-conversion-received-20261024.png`; подробности в `qa/metrica-verification-20261024.md`.
+- После счётчика: локальный Lighthouse 13.5 на https://pirogorsk.ru/ mobile/desktop Performance 100, Accessibility/SEO 100, Best Practices 77 (сторонние cookies Яндекса). Новый официальный PSI не запускался. Heartbeat удалён, не включать.
 
 ## Production
 
 - Сайт: https://pirogorsk.ru/, Astro static, GitHub Pages, репозиторий `jimbokl/PIROGORSK`, main.
-- Опубликован commit `124b4304064a225d9e2b99effdc7c00d2fbcff00`, workflow `40022412500` SUCCESS; код идентичен `b7cf868d199c0547ec1926be3f90fbef6750109e`, добавлены документация и официальные скриншоты. В production подтверждены выбор размера, ссылки с variant и 3 preload шрифтов. HTTPS readback 20:53 UTC: HTTP 200, TLS verify 0, canonical https://pirogorsk.ru/.
+- Опубликован код `b7cc1a39a0afeb5761041aa1585a14aee06bbf84`, workflow `40088193551` SUCCESS: подключён фактический счётчик Метрики 113767847. Предыдущий официальный PSI относится к коду b7cf868 до включения счётчика. В production подтверждены выбор размера, ссылки с variant и 3 preload шрифтов. HTTPS readback 20:53 UTC: HTTP 200, TLS verify 0, canonical https://pirogorsk.ru/.
 - HTTPS root и www, HTTP→HTTPS, www→root подтверждены. DNS Cloudflare, сертификат до 21.01.2027, Enforce HTTPS включён.
 - 23 HTML-страницы, 21 URL sitemap. 7 пирогов + 6 дополнений. Три города, 500 г / 1 кг, фильтры, подборка, сценарные наборы, анонимная заявка.
 - Графика: 24 READY файла, независимые прозрачные пироги и подложки, напитки, логотип с башней Зеленоградска. Manifest/provenance в `design/layered-assets-v2/`.
@@ -20,8 +21,8 @@
 ## Проверки
 
 - Typecheck: 45 files, 0 errors/warnings/hints. Build PASS. SEO PASS: 23 HTML, 7 концептов, 21 sitemap URL, 1587 local references. Backend: 14 tests + Worker/client typechecks PASS. Shared harness registry strict PASS.
-- Lighthouse 13.5 на **https://pirogorsk.ru/**: mobile 100, desktop 100; Accessibility / Best Practices / SEO 100 на обоих. Замер 20:35 UTC: mobile FCP 1.21 с, LCP 1.40 с, TBT 0, CLS .0022; desktop LCP .45 с, TBT/CLS 0. Это Lighthouse на домене, не официальный PSI.
-- Официальный PSI: [отчёт 20:49:42 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/5dulwgki3a?form_factor=mobile), mobile 100 / desktop 100; A/BP/SEO 100 на обоих. Mobile LCP 1.651 с, TBT/CLS 0; desktop LCP .381 с, TBT 0, CLS .014. Прежний отчёт 98/100 сохранён в PERFORMANCE.md.
+- До подключения Метрики, 23.10: Lighthouse 13.5 на **https://pirogorsk.ru/**: mobile 100, desktop 100; Accessibility / Best Practices / SEO 100 на обоих. Замер 20:35 UTC: mobile FCP 1.21 с, LCP 1.40 с, TBT 0, CLS .0022; desktop LCP .45 с, TBT/CLS 0. Это Lighthouse на домене, не официальный PSI.
+- Официальный PSI до Метрики, 23.10: [отчёт 20:49:42 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/5dulwgki3a?form_factor=mobile), mobile 100 / desktop 100; A/BP/SEO 100 на обоих. Mobile LCP 1.651 с, TBT/CLS 0; desktop LCP .381 с, TBT 0, CLS .014. Прежний отчёт 98/100 сохранён в PERFORMANCE.md.
 - UI: 1440/390/320px, город Калининград, варианты веса, суммы и сценарии, отсутствие повторного добавления набора после reload проверены. Production UI-заявка сохранилась, независимый D1 readback подтвердил все значения. QA UUID исключены из спроса (ANALYTICS.md).
 
 ## Поисковые консоли и аналитика
@@ -29,7 +30,7 @@
 - GSC domain verified DNS; sitemap отправлен, статус **Успешно**, **21** обнаруженная страница.
 - Яндекс.Вебмастер verified DNS. «Файлы Sitemap» после reload 21:32 UTC всё ещё read-only по системному уведомлению; кнопка добавления disabled. Публичные robots.txt и sitemap.xml ответили HTTP 200, карта содержит 21 URL. Повторный плановый просмотр при финальной проверке, если раньше не появится новый сигнал.
 - Worker+D1 опубликован; DB binding, ALLOW_LOCALHOST=false, observability OFF. Cron каждые 10 минут сохранён/подтверждён после reload; фактический scheduled run проверить отдельно. D1 read 20:46 UTC: 0 временных токенов, 0 просроченных; Cron Events после reload 22:01 UTC всё ещё пуст. В редакторе Dashboard независимо подтверждён `scheduled` с удалением истёкших токенов в активной опубликованной версии `c06b7ac1` (Deploy disabled, изменений нет); скриншот `qa/screenshots/worker-scheduled-handler-20261023.png`. Settings показывают следующий запуск 22:10 UTC. Метрики: 23 вызова / 0 runtime errors, это не отдельное доказательство Cron. Фактический scheduled run остаётся неподтверждённым; следующий плановый просмотр при финальной проверке либо новом симптоме. Read-only health 24.10 06:30 UTC: HTTP 200, TLS verify 0, ok=true/storage=d1/mode=intent. Новых QA-заявок не создавали.
-- Метрика: создан счётчик **113767847** и 5 точных событий; основная цель order_submit **674123845**. ID включён в конфиг, публикация/production readback в работе. См. актуальный раздел запроса 24.10 и ANALYTICS.md.
+- Метрика подключена: **113767847**, 5 точных событий, основная цель order_submit **674123845**. Production UI → D1 → отчёт Метрики подтверждены: одна QA-запись и одно достижение. См. актуальный раздел запроса 24.10 и ANALYTICS.md.
 
 ## Решения
 
@@ -39,6 +40,8 @@
 - Конверсия order_submit только после сохранения с совпадающим UUID; отдельные события открытия/начала/ошибки. Контактов в Метрике нет.
 
 ## Сейчас / далее
+
+Запрос на Метрику выполнен и проверен на production. Ниже исторические этапы публикации до счётчика; периодическая работа не возобновляется.
 
 1. Уточнённые sizes слоёв с cap 520px, вариант 700px, accessible name логотипа, короткие тексты и выбор 500 г / 1 кг опубликованы. UI проверен: цена, перенос размера в подборку, reload без дубля, неверный variant, отсутствие ошибок. Дополнительный аудит карточки: local mobile 99 / desktop 100, A/BP/SEO 100; замечаний image-delivery не осталось. На домене новые sizes и загрузка слоёв подтверждены. Typecheck/build/SEO PASS.
 2. Preload Golos Latin опубликован; check/build/SEO PASS, 3 preload подтверждены на домене. Официальный PSI 20:49:42 UTC — 100/100 на обоих устройствах, все четыре категории по 100. Сохранены отдельные скриншоты и ссылка. Не повторять performance без изменений или при финальной проверке.

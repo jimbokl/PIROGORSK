@@ -22,7 +22,9 @@ Production проверен двумя независимыми способам
 - API: два POST с одним `requestId` дали одну запись. Чтение D1 вернуло `duplicate_count=1`, `value_total=1640` для UUID `bae9085e-2379-4c2b-9c32-c9f6f9c7dad8`.
 - Опубликованная форма на `https://pirogorsk.ru/`: выбран мясной пирог 500 г, Зеленоградск, 16.05.2027, доставка, предварительная сумма 690 ₽. После отправки интерфейс показал подтверждение с UUID `1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578`. Независимый SELECT в D1 вернул одну строку с тем же UUID, городом, датой, способом получения, суммой 690 и вариантом `meat/500`, количеством 1. В консоли браузера ошибок нет.
 
-Оба UUID — служебный QA, а не реальный спрос. Они исключены из SQL ниже; записи не удалены. Скриншоты: `qa/screenshots/production-interest-saved-20261023.png`, `qa/screenshots/production-d1-readback-20261023.png`.
+24.10 после публикации счётчика выполнена ещё одна отправка через production UI: `609e574e-b81e-4ca3-91a8-c6dddf38aba1`, Зеленоградск, мясной пирог 500 г × 1, доставка, 17.05.2027, ориентировочная сумма 690 ₽. Интерфейс показал «Заявка сохранена». Независимый SELECT в D1 подтвердил все поля и `duplicate_count=1`. Официальный отладчик Метрики показал ровно один `order_submit`, ошибок консоли нет. Затем отчёт Метрики показал **1 целевой визит и 1 достижение** цели «Сохранил анонимную заявку» (ID 674123845). Это сквозная проверка UI → D1 → Метрика, а не имитация вызова цели.
+
+Все три UUID — служебный QA, а не реальный спрос. Они исключены из SQL ниже; записи не удалены. Тестовое достижение остаётся в отчёте Метрики: при анализе спроса исключать его по параметру цели `requestId` или сверять с очищенной выборкой D1. Это намерение заказать, не оплаченная продажа. Доказательства: `qa/screenshots/metrica-production-saved-20261024.png`, `qa/screenshots/metrica-conversion-received-20261024.png`, `qa/metrica-verification-20261024.md`. Скриншоты D1 остаются локальными.
 
 Точная повторная проверка health не создаёт записей:
 
@@ -176,7 +178,8 @@ SELECT request_id, datetime(created_at / 1000, 'unixepoch') AS created_utc,
 FROM interests
 WHERE request_id NOT IN (
   'bae9085e-2379-4c2b-9c32-c9f6f9c7dad8',
-  '1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578'
+  '1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578',
+  '609e574e-b81e-4ca3-91a8-c6dddf38aba1'
 )
 ORDER BY created_at DESC LIMIT 100;
 ```
@@ -188,7 +191,8 @@ SELECT city, COUNT(*) AS interests
 FROM interests
 WHERE request_id NOT IN (
   'bae9085e-2379-4c2b-9c32-c9f6f9c7dad8',
-  '1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578'
+  '1d6b3ff8-e23e-44cb-bcdb-5d98cc84c578',
+  '609e574e-b81e-4ca3-91a8-c6dddf38aba1'
 )
 GROUP BY city;
 ```
