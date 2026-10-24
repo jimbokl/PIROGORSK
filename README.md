@@ -55,7 +55,7 @@ npm run audit:performance -- http://127.0.0.1:4322/
 
 ## Публикация
 
-`.github/workflows/pages.yml` на Node.js 24 выполняет `npm ci`, проверку и сборку перед публикацией `site/` в GitHub Pages. Домен — `pirogorsk.ru`, canonical и sitemap уже настроены. Новая сборка открыта для индексации.
+`.github/workflows/pages.yml` на Node.js 24 выполняет `npm ci`, проверку и сборку перед публикацией `site/` в GitHub Pages. Домен — `pirogorsk.ru`, canonical и sitemap уже настроены. После deploy IndexNow проверяет публичные key/manifest и отправляет только изменённые URL, сохраняя успешное состояние в Actions cache. Квитанция — artifact `indexnow-report`; cache miss может повторить начальную отправку. Новая сборка открыта для индексации.
 
 Настройка DNS повторяет схему `/Volumes/DevSim/Projects/MALINA/dns.md`: Cloudflare Free, DNS only, GitHub Pages. Записи и команды проверки — в [DNS.md](DNS.md). Наличие workflow не подтверждает публичную публикацию, выпуск сертификата или результаты PageSpeed на домене.
 
