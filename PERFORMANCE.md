@@ -2,7 +2,30 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
-## После подключения Метрики — 24.10.2026
+## Актуальный официальный PageSpeed Insights — 24.10.2026
+
+[Мобильный отчёт Google](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/gosvs1aafm?hl=ru&form_factor=mobile) и [компьютер](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/gosvs1aafm?hl=ru&form_factor=desktop) независимо открыты и проверены. Дата отчёта: **24.10.2026 16:12:22 Europe/Kaliningrad (14:12:22 UTC)**. Это официальный PSI на публичном домене после подключения Метрики; код приложения `b7cc1a3`, опубликованная версия на момент проверки `4e92f99` (последний коммит менял документацию).
+
+| Категория | Mobile | Desktop |
+| --- | ---: | ---: |
+| Performance | **100** | **100** |
+| Accessibility | **100** | **100** |
+| Best Practices | **100** | **100** |
+| SEO | **100** | **100** |
+
+| Метрика, как показана в PSI | Mobile | Desktop |
+| --- | ---: | ---: |
+| FCP | 1.1 с | 0.3 с |
+| LCP | 1.7 с | 0.5 с |
+| TBT | 50 мс | 20 мс |
+| CLS | 0 | 0.014 |
+| Speed Index | 1.1 с | 0.5 с |
+
+Lighthouse 13.5.0, HeadlessChromium 153.0.8010.36. Mobile: Moto G Power, slow 4G; оба замера — начальная загрузка одной страницы. Agentic browsing: 2/2 на обоих. Полевых данных CrUX пока нет. Баллы относятся к главной странице и этому измерению; товарные страницы не выдаются за проверенные официальным PSI.
+
+Подтверждения: [mobile](qa/screenshots/psi-mobile-final-20261024.jpg), [desktop](qa/screenshots/psi-desktop-final-20261024.jpg). Диагностические рекомендации по кешу, изображениям и стороннему JavaScript в отчёте остаются; оценка всех четырёх категорий — 100. Код сайта ради фиксации результата не менялся, Метрика не отключалась.
+
+## Исторический локальный Lighthouse после подключения Метрики — 24.10.2026
 
 Локальный Lighthouse 13.5 на публичном `https://pirogorsk.ru/`, опубликованный код `b7cc1a3`, 11:05 UTC. Счётчик 113767847 включён и загружается в проверяемой странице.
 
@@ -15,9 +38,9 @@ Lighthouse 13.5.0. Опубликованный сайт проверен отд
 
 Mobile: FCP 1.213 с, LCP 1.250 с, TBT 2.5 мс, CLS 0.00142, Speed Index 2.062 с. Desktop: FCP 0.355 с, LCP 0.537 с, TBT 0, CLS 0.01357, Speed Index 0.355 с.
 
-Best Practices снизился из-за сторонних cookies Яндекса (`third-party-cookies`, `inspector-issues`: Cookie). Ошибок консоли нет. Счётчик при измерении не блокировался и не отключался. Это **не новый официальный PageSpeed Insights**: официальный отчёт ниже относится к сборке до включения Метрики. Санитизированные результаты без URL синхронизации cookies: `qa/metrica-verification-20261024.md`; сырые новые отчёты остаются локальными.
+Best Practices снизился из-за сторонних cookies Яндекса (`third-party-cookies`, `inspector-issues`: Cookie). Ошибок консоли нет. Счётчик при измерении не блокировался и не отключался. Это отдельный локальный запуск Lighthouse на домене; его результат сохранён как исторический и не подменяет актуальный официальный PSI выше. Различие оценок не означает, что отдельное исправление cookies было внесено: код с тех пор не менялся. Санитизированные результаты без URL синхронизации cookies: `qa/metrica-verification-20261024.md`; сырые отчёты остаются локальными.
 
-## Опубликованный сайт
+## Исторический Lighthouse до Метрики — 23.10.2026
 
 Замер `https://pirogorsk.ru/` от 23.10.2026 20:35 UTC, опубликованный commit `38da7a13ca0dcfc811c8b6ee2354b391369776b6`, workflow `40019923031` SUCCESS.
 
@@ -38,9 +61,9 @@ Best Practices снизился из-за сторонних cookies Яндек�
 
 Это Lighthouse на публичном домене. 100/100 — результат данного измерения, а не гарантия одинакового балла при любых условиях.
 
-## Официальный PageSpeed Insights
+## Предыдущий официальный PageSpeed Insights до Метрики — 23.10.2026
 
-Последний [отчёт Google от 23.10.2026 20:49:42 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/5dulwgki3a?form_factor=mobile), после публикации preload Golos Latin: **100/100 Performance на мобильном и компьютере; Accessibility / Best Practices / SEO также 100 на обоих**. Agentic browsing 2/2. Lighthouse 13.5.0, HeadlessChromium 153.0.8010.36. Это результат конкретного официального измерения.
+Предыдущий [отчёт Google от 23.10.2026 20:49:42 UTC](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/5dulwgki3a?form_factor=mobile), после публикации preload Golos Latin: **100/100 Performance на мобильном и компьютере; Accessibility / Best Practices / SEO также 100 на обоих**. Agentic browsing 2/2. Lighthouse 13.5.0, HeadlessChromium 153.0.8010.36. Это результат конкретного официального измерения.
 
 | Метрика | Mobile | Desktop |
 | --- | ---: | ---: |
