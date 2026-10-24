@@ -29,4 +29,12 @@ UI: desktop 1280, mobile 390, таблица 320 px. Ширина докумен
 
 У двух eager/high изображений главного первого экрана `decoding=async` заменено на `sync`, слои и графика сохранены. Основание: прежний публичный PSI показывает около 1010 мс задержки отрисовки уже загруженного LCP, локальный Lighthouse это не воспроизводит. [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#decoding), [web.dev](https://web.dev/articles/optimize-lcp). Это эксперимент; улучшение или 100 не заявляются до официального повторного замера после публикации.
 
-Публикация и официальный PSI — дополнить фактическими результатами после CI.
+## Публикация и официальный PSI
+
+Опубликован `45d995ffad8f3c837a08210d4323c740abfc1542`, [CI 40115451690](https://github.com/jimbokl/PIROGORSK/actions/runs/40115451690) SUCCESS; 14 тестов повторно прошли в CI после последних правок. Production статья, блог, городская ссылка и canonical проверены: HTTP 200. Sitemap содержит 35 URL и новую статью. IndexNow HTTP 200 / 8 изменённых URL, 24.10 17:21:07 UTC; `indexnow-svetlogorsk-20261024.json` — сохранённый CI-артефакт. Это не подтверждение индексации.
+
+Официальный [PSI новой статьи](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-svetlogorske/iv8ywsib2a?form_factor=mobile), 24.10 19:24:09 Калининград: **mobile 100 / desktop 100**, Accessibility / Best Practices / SEO — по 100 на обоих. Mobile FCP 0.8 с / LCP 1.4 с / TBT 0 / CLS 0.013 / SI 0.8 с. Desktop 0.3 / 0.4 с / TBT 0 / CLS 0.006 / SI 0.3 с. CrUX без данных, Agentic browsing 2/2. Desktop-вкладка проверена отдельно. Снимки `screenshots/psi-svet-{mobile,desktop}-20261024.jpg`.
+
+[Главная в том же выпуске](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/li9klo0p4k?form_factor=mobile), 19:22:05: mobile **87** / desktop **100**; остальные три категории 100. Гипотеза `decoding=sync` не подтвердилась: mobile LCP 4.1 с, задержка отрисовки фонового слоя 1000 мс. Подробности — `../PERFORMANCE.md`. Успешный результат статьи не переносится на главную или весь сайт.
+
+Публичные снимки `screenshots/svetlogorsk-production-20261024.jpg` и `screenshots/blog-production-20261024.jpg`. Следующий редакционный приоритет — самостоятельный гид Калининграда; начальные первоисточники сохранены в `../research/blog/kaliningrad-sources-20261024.md`.

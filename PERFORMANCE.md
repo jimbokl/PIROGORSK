@@ -2,7 +2,22 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
-## Актуальный официальный замер — 24.10.2026, 18:52:41 Калининград
+## Актуальный выпуск — 24.10.2026, 19:22–19:24 Калининград
+
+Релиз `45d995ffad8f3c837a08210d4323c740abfc1542`, [CI 40115451690](https://github.com/jimbokl/PIROGORSK/actions/runs/40115451690) SUCCESS. Обе desktop-вкладки проверены отдельно; это официальный публичный PSI, не локальный Lighthouse.
+
+| Страница / время Europe/Kaliningrad | Mobile Performance | Desktop Performance | Accessibility / Best Practices / SEO |
+| --- | ---: | ---: | --- |
+| [Главная, li9klo0p4k](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/li9klo0p4k?form_factor=mobile), 19:22:05 | **87** | **100** | 100 / 100 / 100 на обоих |
+| [Гид Светлогорска, iv8ywsib2a](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-svetlogorske/iv8ywsib2a?form_factor=mobile), 19:24:09 | **100** | **100** | 100 / 100 / 100 на обоих |
+
+Главная mobile: FCP 1.0 с, LCP 4.1 с, TBT 0 мс, CLS 0.003, SI 2.6 с; desktop 0.3 / 0.4 с, TBT 0, CLS 0, SI 0.4 с. Статья mobile: FCP 0.8 с, LCP 1.4 с, TBT 0 мс, CLS 0.013, SI 0.8 с; desktop FCP 0.3 с, LCP 0.4 с, TBT 0, CLS 0.006, SI 0.3 с. Значения записаны как показаны интерфейсом; score calculator округляет иначе. CrUX без данных, Agentic browsing 2/2 на обоих.
+
+Замена `decoding=async` на `sync` у двух eager/high изображений главной **не устранила задержку**. Развёрнутый аудит главной: LCP — `section.hero > div.hero-landscape > picture > img`, ресурс `background.CF7ZZ9Af_285HE2.avif`; TTFB 0 мс, задержка загрузки 180 мс, загрузка 150 мс, задержка отрисовки 1000 мс. Эти этапы относятся к наблюдению трассы и не складываются напрямую в смоделированные 4.1 с. Метрика и слои остаются. Следующая диагностика должна проверять отрисовку слоя, а не повторять неизменный PSI ради балла.
+
+Снимки: `qa/screenshots/psi-home-{mobile,desktop}-svet-20261024.jpg`, `qa/screenshots/psi-svet-{mobile,desktop}-20261024.jpg`. Витрина `/blog/` после добавления восьмой статьи отдельно не измерялась; её последний результат 88/100 приведён ниже и относится к предыдущему выпуску.
+
+## Предыдущий официальный замер — 24.10.2026, 18:52:41 Калининград
 
 Релиз `da17a4d3f2727fdd02303ae1d7b7483db5627b6a`, [CI 40113029047](https://github.com/jimbokl/PIROGORSK/actions/runs/40113029047) SUCCESS. Responsive AVIF preload и четвёртый локальный шрифт доступны на домене. Обе desktop-вкладки проверены отдельно.
 
