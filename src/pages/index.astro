@@ -7,6 +7,8 @@ import InterestForm from '../components/InterestForm.astro';
 import Analytics from '../components/Analytics.astro';
 import SeoHead from '../components/SeoHead.astro';
 import Brand from '../components/Brand.astro';
+import BlogCards from '../components/BlogCards.astro';
+import { blogEntries } from '../data/blog';
 import { cities, products, catalog, filters } from '../data/catalog';
 import heroPie from '../../design/layered-assets-v2/hero/pie.png';
 import heroBackground from '../../design/layered-assets-v2/hero/background.png';
@@ -35,7 +37,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <Brand href="#top" />
       <nav class="main-nav" aria-label="Основная навигация">
         <a href="#pirogi">Пироги</a><a href="#nabory">Наборы</a>
-        <a href="/delivery/">Доставка</a><a href="/about/">О проекте</a>
+        <a href="/delivery/">Доставка</a><a href="/blog/">Блог</a><a href="/about/">О проекте</a>
       </nav>
       <div class="header-actions">
         <button class="city-trigger" data-open="city-dialog" aria-haspopup="dialog"><Icon name="pin" /><span data-city>Зеленоградск</span><Icon name="caret" /></button>
@@ -89,6 +91,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
         <div><span class="eyebrow">Балтийские города</span><h2 id="discovery-heading">К вашему столу</h2><p>Пироги после прогулки у моря, к ужину в апартаментах или встрече с друзьями. Изучаем спрос в трёх городах — выберите свой.</p></div>
         <nav class="discovery-cities" aria-label="Пироги по городам"><a href="/dostavka/zelenogradsk/">Зеленоградск<Icon name="arrow" /></a><a href="/dostavka/kaliningrad/">Калининград<Icon name="arrow" /></a><a href="/dostavka/svetlogorsk/">Светлогорск<Icon name="arrow" /></a></nav>
       </section>
+      <section class="home-journal container" aria-labelledby="journal-heading"><header><div><span class="eyebrow">Блог Пирогорска</span><h2 id="journal-heading">К общему столу</h2></div><a href="/blog/">Все материалы<Icon name="arrow" /></a></header><BlogCards entries={blogEntries.slice(0, 3)} /></section>
       <section class="home-faq container" aria-labelledby="faq-heading"><div><span class="eyebrow">Перед первым пирогом</span><h2 id="faq-heading">Что нужно знать</h2><a class="home-partner-link" href="/partners/">Владельцам апартаментов и пекарням<Icon name="arrow" /></a></div><div class="home-faq-list">{faqs.map(([question,answer]) => <details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>
     </main>
     <footer class="site-footer container">
@@ -97,7 +100,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
         <nav aria-label="Выберите город" class="footer-cities">{['Калининград', 'Светлогорск', 'Зеленоградск'].map(city => <button data-select-city={city}>{city}</button>)}</nav>
         <span class="footer-domain"><Icon name="wave" />pirogorsk.ru</span>
       </div>
-      <nav class="footer-info home-footer-links" aria-label="О Пирогорске"><a href="/delivery/">Доставка</a><a href="/about/">О проекте</a><a href="/menu/">Всё меню</a><a href="/podbor/">Сколько пирогов?</a><a href="/partners/">Партнёрам</a><a href="/privacy/">О данных</a><a href="/terms/">Условия</a></nav>
+      <nav class="footer-info home-footer-links" aria-label="О Пирогорске"><a href="/delivery/">Доставка</a><a href="/about/">О проекте</a><a href="/menu/">Всё меню</a><a href="/podbor/">Сколько пирогов?</a><a href="/blog/">Блог</a><a href="/partners/">Партнёрам</a><a href="/privacy/">О данных</a><a href="/terms/">Условия</a></nav>
       <p class="launch-note">Готовимся к открытию. Меню, цены и изображения предварительные. Можно оставить анонимную заявку. Приём заказов и оплата пока не открыты.</p>
     </footer>
 

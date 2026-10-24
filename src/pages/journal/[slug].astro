@@ -5,17 +5,29 @@ import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialInterest from '../../components/EditorialInterest.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import { guides, siteOrigin } from '../../data/editorial';
-import { foodGuide } from '../../data/food-guides';
+import { blogArticles, type BlogArticle } from '../../data/blog-articles';
+import { blogEntries, articleHref } from '../../data/blog';
+import '../../styles/blog.css';
 export function getStaticPaths() {
-  return guides.map(item => ({ params: { slug: item.slug }, props: { item } }));
+  return [...guides, ...blogArticles].map(item => ({ params: { slug: item.slug }, props: { item } }));
 }
-interface Props { item: (typeof guides)[number] }
+interface Props { item: (typeof guides)[number] | BlogArticle }
 const { item } = Astro.props;
-const schema = [{ '@type': 'Article', headline: item.title, description: item.description, inLanguage: 'ru-RU', mainEntityOfPage: `${siteOrigin}/journal/${item.slug}/`, publisher: { '@id': `${siteOrigin}/#organization` } }];
+const entry = blogEntries.find(entry => entry.slug === item.slug)!;
+const isNew = 'date' in item;
+const image = isNew ? `/seo/blog/${item.slug}.jpg` : undefined;
+const schema = [{ '@type': 'BlogPosting', '@id': `${siteOrigin}${articleHref(item.slug)}#article`, headline: item.title, description: item.description, inLanguage: 'ru-RU', mainEntityOfPage: `${siteOrigin}${articleHref(item.slug)}`, isPartOf: { '@id': `${siteOrigin}/blog/#blog` }, image: `${siteOrigin}${image ?? '/seo/pirogorsk-og.jpg'}`, ...(isNew ? { datePublished: item.date, dateModified: item.date } : {}), author: { '@type': 'Organization', '@id': `${siteOrigin}/#organization`, name: 'Пирогорск', url: `${siteOrigin}/about/` }, publisher: { '@id': `${siteOrigin}/#organization` } }];
 ---
-<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'О проекте', href: '/about/' }, { name: item.title, href: `/journal/${item.slug}/` }]} {schema} type="article">
-  <EditorialHero eyebrow="Заметки к общему столу" title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} compact />
-  <EditorialBody sections={item.sections} />
+<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} {schema} {image} imageAlt={item.imageAlt} type="article">
+  <article class="blog-article">
+    <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} caption={isNew ? 'Обложка создана с помощью ИИ. Это иллюстрация статьи, не фотография готовой продукции.' : undefined} compact>
+      <p class="blog-byline">Пирогорск{isNew && <> · <time datetime={item.date}>24 октября 2026</time></>} · ≈ {entry.minutes} мин чтения</p>
+    </EditorialHero>
+    {isNew && <aside class="blog-takeaway" aria-labelledby="takeaway-title"><h2 id="takeaway-title">Если коротко</h2><p>{item.takeaway}</p></aside>}
+    <nav class="blog-toc" aria-label="Содержание статьи">{item.sections.map((section, index) => <a href={`#section-${index}`}>{section.title}</a>)}</nav>
+    <EditorialBody sections={item.sections} />
+  </article>
   <EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" />
-  <EditorialLinks title="К будущему меню" links={[{ href: item.related, title: item.relatedTitle, text: 'Какой формат рассматриваем и что нужно решить до запуска.', label: 'Сценарий' }, { href: `/journal/${foodGuide.slug}/`, title: foodGuide.title, text: foodGuide.description, label: 'Меню кафе' }, ...guides.filter(guide => guide.slug !== item.slug).map(guide => ({ href: `/journal/${guide.slug}/`, title: guide.title, text: guide.description, label: 'Ещё один гид' }))]} />
+  <EditorialLinks title="Продолжить за столом" links={[{ href: item.related, title: item.relatedTitle, text: 'Посмотреть форматы и собрать предварительную подборку.', label: 'К делу' }, ...blogEntries.filter(entry => entry.slug !== item.slug).slice(0, 2).map(entry => ({ href: articleHref(entry.slug), title: entry.title, text: entry.description, label: entry.category }))]} />
+  <a class="blog-text-link" href="/blog/">Все материалы блога<span aria-hidden="true">↗</span></a>
 </ContentLayout>

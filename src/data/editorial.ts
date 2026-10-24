@@ -7,6 +7,7 @@ import manifest from '../../design/layered-assets-v2/manifest.json';
 import type { ImageMetadata } from 'astro';
 import { occasions } from './occasions';
 import { foodGuide } from './food-guides';
+import { blogArticles } from './blog-articles';
 
 export const siteOrigin = 'https://pirogorsk.ru';
 export const conceptCaption = 'Изображение концепта. Внешний вид готовых пирогов ещё предстоит утвердить.';
@@ -14,8 +15,10 @@ export const interestHref = (id?: string) => id ? `/?interest=${encodeURICompone
 
 export interface EditorialSection {
   title: string;
-  paragraphs?: string[];
-  items?: string[];
+  paragraphs?: readonly string[];
+  items?: readonly string[];
+  table?: { caption: string; headers: readonly string[]; rows: readonly (readonly string[])[] };
+  links?: readonly { href: string; title: string }[];
 }
 
 export interface EditorialLink {
@@ -234,7 +237,8 @@ export const guides = [
 export const editorialImages = { hero, dinner, company, bundle };
 export const editorialPaths = [
   `/journal/${foodGuide.slug}/`,
-  '/menu/', '/delivery/', '/partners/', '/about/', '/podbor/', '/povody/',
+  '/menu/', '/delivery/', '/partners/', '/about/', '/podbor/', '/povody/', '/blog/',
+  ...blogArticles.map(item => `/journal/${item.slug}/`),
   ...occasions.map(item => `/povody/${item.slug}/`),
   ...editorialProducts.map(productHref),
   ...scenarios.map(item => `/nabor/${item.slug}/`),

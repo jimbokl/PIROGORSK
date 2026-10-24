@@ -20,7 +20,7 @@ const schema = [{
   citation: menuVenues.map(venue => venue.menuUrl),
 }];
 ---
-<ContentLayout title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Заметки', href: '/about/#guides' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article">
+<ContentLayout title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article">
   <EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} intro="Перед ужином удобно открыть меню и посчитать свой стол. Мы выбрали два кафе, проверили их официальные сайты и собрали четыре примера — от овощной кесадильи до горячего с гарниром." compact>
     <p class="guide-date">Меню проверены <time datetime={foodGuide.checkedAt}>{foodGuide.checkedLabel}</time></p>
     <nav class="guide-jumps" aria-label="Кафе в гиде">{menuVenues.map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav>

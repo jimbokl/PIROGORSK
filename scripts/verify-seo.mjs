@@ -22,7 +22,7 @@ const htmlFiles = async directory => {
 };
 const routeFor = file => `/${path.relative(output, file).split(path.sep).join('/')}`.replace(/index\.html$/, '');
 const fileFor = pathname => path.join(output, pathname.endsWith('/') ? `${pathname}index.html` : pathname);
-const isEditorial = route => /^\/(menu|delivery|partners|about|podbor|povody)\/$|^\/(pirogi|nabor|dostavka|journal|povody)\/[^/]+\/$/.test(route);
+const isEditorial = route => /^\/(menu|delivery|partners|about|podbor|povody|blog)\/$|^\/(pirogi|nabor|dostavka|journal|povody)\/[^/]+\/$/.test(route);
 
 try {
   const all = await htmlFiles(output);
