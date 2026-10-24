@@ -12,7 +12,7 @@ const tagged = (campaign) => {
   return url;
 };
 
-test('both prepared placements retain their exact UTM tuple while dropping extra data', () => {
+test('prepared placements retain their exact UTM tuple while dropping extra data', () => {
   for (const campaign of trafficCampaigns) {
     const expected = tagged(campaign).href;
     const input = tagged(campaign);
