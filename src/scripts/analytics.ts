@@ -1,4 +1,5 @@
 import { analyticsConfig } from '../config/analytics';
+import { analyticsPageUrl } from '../lib/analytics-pageview';
 
 export type Goal = 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error';
 export type GoalParams = {
@@ -53,8 +54,11 @@ function initializeAnalytics(): void {
   window.ym(analyticsConfig.metricaId, 'init', {
     webvisor: false, clickmap: false, trackLinks: false, accurateTrackBounce: true,
     trackHash: false, triggerEvent: false, ecommerce: false,
-    // Keep arbitrary URL query strings (which may contain contacts) out of page hits.
-    url: `${location.origin}${location.pathname}`, referrer: document.referrer ? safeReferrer(document.referrer) : '',
+    // Send one explicit, sanitised pageview via the documented hit API.
+    defer: true,
+  });
+  window.ym(analyticsConfig.metricaId, 'hit', analyticsPageUrl(location.href), {
+    referer: document.referrer ? safeReferrer(document.referrer) : '',
   });
   const script = document.createElement('script');
   script.async = true;

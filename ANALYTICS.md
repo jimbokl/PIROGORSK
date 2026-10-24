@@ -212,3 +212,11 @@ GROUP BY city;
 - [Cloudflare: миграции D1](https://developers.cloudflare.com/d1/reference/migrations/).
 - [Cloudflare: dry-run deploy и outdir](https://developers.cloudflare.com/workers/wrangler/commands/workers/).
 - [Cloudflare Workers Free](https://developers.cloudflare.com/workers/platform/pricing/) и [D1 Free](https://developers.cloudflare.com/d1/platform/pricing/).
+
+## UTM подготовленных размещений — 24.10.2026
+
+Код явного просмотра использует документированные `init({defer:true})` и `hit(url, {referer})`: один pageview вместо автоматического плюс ручного. Передаётся origin/path и только полная фиксированная комбинация четырёх UTM из `src/lib/analytics-pageview.ts`; остальные параметры и hash удалены, query/hash реферера также исключены. Старые недокументированные поля `url/referrer` в init удалены. Это изменение формирования pageview, а не целей. `order_submit` по-прежнему зависит от подтверждения backend и совпадающего UUID.
+
+UTM — только в просмотре Метрики, не в параметрах `reachGoal` и не в D1. Два текста и ссылки — [TELEGRAM-TEST.md](TELEGRAM-TEST.md); размещения не выполнялись. Стандартный UTM-отчёт по реальным рекламным визитам пока не проверен: реклама не запущена. Локально проверены очистка URL, известные/чужие/неполные/повторные метки и инициализация реального модуля без лишнего pageview или цели — [QA](qa/traffic-attribution-20261024.md).
+
+Основания: [init/defer](https://yandex.ru/support/metrica/ru/code/counter-initialize.html), [hit/referer](https://yandex.ru/support/metrica/ru/objects/hit), [метки первого просмотра](https://yandex.ru/support/metrica/ru/general/source-tags).
