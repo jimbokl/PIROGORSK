@@ -2,7 +2,32 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
-## Последний замер — гид Калининграда, 24.10.2026 19:42:09 Калининград
+## Последняя проверка — главная, 25.10.2026 20:25–20:30 Калининград
+
+По запросу пользователя проверен открытый во внешнем Chrome отчёт **86**, затем выполнены два новых официальных публичных анализа без изменения кода. Опубликованный runtime — `c6174f1b29496d6f33028d505245f0bbbc6a4b2c` (обновление айдентики). HTML production совпал с локальным `site/index.html`: SHA-256 `edd832718292c37dce29fec855f05a06cd4471e8ed00f77fee5b6bbd9c2fe356`.
+
+| Отчёт / время Europe/Kaliningrad | Mobile Performance | Desktop Performance | Mobile FCP / LCP / TBT / CLS / SI |
+| --- | ---: | ---: | --- |
+| [Открытый пользователем, fshq3ex14t](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/fshq3ex14t?hl=ru&form_factor=mobile), 20:25:07 | **86** | Не проверен | 1.0 с / 4.1 с / 60 мс / 0 / 3.7 с |
+| [Свежий, czeot7hm4z](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/czeot7hm4z?form_factor=mobile), 20:29:15 | **100** | **[100](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/czeot7hm4z?form_factor=desktop)** | 1.0 с / 1.8 с / 0 мс / 0 / 1.2 с |
+| [Контрольный, n7ftihet7m](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/n7ftihet7m?form_factor=mobile), 20:30:02 | **100** | Не проверен | 1.0 с / 1.8 с / 30 мс / 0 / 1.0 с |
+
+Accessibility / Best Practices / SEO — **100 / 100 / 100** во всех четырёх прочитанных результатах. Desktop свежего отчёта: FCP 0.3 с, LCP 0.5 с, TBT 20 мс, CLS 0.014, SI 0.5 с. Значения как показаны интерфейсом. Lighthouse 13.5.0; mobile Moto G Power / slow 4G. CrUX пока без данных, Agentic browsing 2/2.
+
+В открытом и первом свежем mobile-отчётах LCP — тот же `section.hero > div.hero-landscape > picture > img`, `background.CF7ZZ9Af_285HE2.avif`, eager/high, `decoding=sync`. Разница в наблюдаемой трассе:
+
+| Этап LCP | Отчёт 86 | Свежий отчёт 100 |
+| --- | ---: | ---: |
+| TTFB | 0 мс | 0 мс |
+| Задержка загрузки | 250 мс | 50 мс |
+| Длительность загрузки | 150 мс | 140 мс |
+| Задержка отрисовки | **1980 мс** | **60 мс** |
+
+Этапы трассы не складываются напрямую в смоделированный LCP. Причина переменной задержки отрисовки **не установлена**; эти измерения не доказывают вину логотипа, Метрики, AVIF или CSS-маски. Сходные 86–87 на главной были до обновления айдентики. Два новых результата 100 показывают достижимость балла на текущем коде, но не доказывают устранение медленного сценария или стабильные 100. Изменений runtime, отключений интеграций и повторного деплоя в этой проверке не было. Общая оговорка о вариативности измерений — [официальная документация Lighthouse](https://github.com/GoogleChrome/lighthouse/blob/main/docs/variability.md).
+
+Доказательства: `qa/psi-20261025-{opened-mobile,fresh-mobile,fresh-desktop,repeat-mobile}.txt` и одноимённые PNG в `qa/screenshots/`. Контрольный mobile screenshot показывает все четыре оценки 100; desktop screenshot сохранён на диагностике, его оценки подтверждены текстом интерфейса. Проверка завершена; при дальнейшей оптимизации нужна воспроизводимая диагностика задержки отрисовки, а не выбор удачного отчёта. Исторические результаты других URL ниже остаются действующими для указанных выпусков.
+
+## Предыдущий замер — гид Калининграда, 24.10.2026 19:42:09 Калининград
 
 Релиз `80e61827eb5a7f29a6187d79094d03427e0ea4dc`, [CI 40116892879](https://github.com/jimbokl/PIROGORSK/actions/runs/40116892879) SUCCESS. [Официальный PSI — mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-kaliningrade/yk9qma3xyb?form_factor=mobile) и [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-kaliningrade/yk9qma3xyb?form_factor=desktop) проверены отдельно.
 

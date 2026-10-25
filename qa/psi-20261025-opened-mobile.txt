@@ -1,0 +1,348 @@
+Window: "PageSpeed Insights", App: Google Chrome.
+0 стандартное окно PageSpeed Insights - Google Chrome, URL: pagespeed.web.dev/analysis/https-pirogorsk-ru/fshq3ex14t?hl=ru&form_factor=mobile, Secondary Actions: Raise
+	1 container PageSpeed Insights - Google Chrome, URL: pagespeed.web.dev/analysis/https-pirogorsk-ru/fshq3ex14t?hl=ru&form_factor=mobile
+		2 container
+			3 панель инструментов
+				4 кнопка Назад
+				5 кнопка (disabled) Вперед
+				6 кнопка Перезагрузить
+				7 кнопка Открыть вкладку для параллельного просмотра
+				8 container
+					9 всплывающая кнопка Сведения о сайте
+					10 текстовое поле (settable) Адресная строка и строка поиска, Value: pagespeed.web.dev/analysis/https-pirogorsk-ru/fshq3ex14t?hl=ru&form_factor=mobile, Placeholder: Спросите Google или введите URL
+					11 кнопка Добавить страницу в закладки
+				12 container
+					13 всплывающая кнопка Bardeen: Automate Browser Apps with AI
+У расширения есть доступ к этому сайту
+					14 всплывающая кнопка AdBlock – блокировка рекламы в Интернете.
+У расширения есть доступ к этому сайту
+					15 всплывающая кнопка MetaMask
+У расширения есть доступ к этому сайту
+					16 всплывающая кнопка Zerion
+У расширения есть доступ к этому сайту
+					17 всплывающая кнопка TronLink
+У расширения есть доступ к этому сайту
+					18 всплывающая кнопка Phantom
+У расширения есть доступ к этому сайту
+					19 всплывающая кнопка ZeroOmega: Clash
+PROXY 127.0.0.1:7897
+
+У расширения есть доступ к этому сайту
+					20 всплывающая кнопка Расширения
+				21 кнопка Управляйте воспроизведением музыки, видео и других медиафайлов
+				22 кнопка dmitriy
+				23 всплывающая кнопка Chrome
+			24 container
+				25 область прокрутки
+					26 HTML-содержание PageSpeed Insights, URL: pagespeed.web.dev/analysis/https-pirogorsk-ru/fshq3ex14t?hl=ru&form_factor=mobile
+						27 container
+							28 link PageSpeed Insights logo PageSpeed Insights, Value: pagespeed.web.dev/
+							29 кнопка Скопировать ссылку
+							30 container
+								31 link Документация, Value: developers.google.com/speed/docs/insights/v5/about
+							32 container
+								33 text Отчет от  25 окт. 2026 г., 20:25:07
+								34 текстовое поле (settable) Value: https://pirogorsk.ru/, Placeholder: Укажите URL страницы
+								35 кнопка Анализировать
+								36 группа вкладок
+									37 tab (selected) Мобильные устройства, Value: 1
+									38 tab (settable, integer) Компьютер, Value: 0
+								39 container Мобильные устройства
+									40 текст Определяйте фактическую производительность сайта
+									41 кнопка button
+									42 текст Нет данных
+									43 текст Выявляйте проблемы с производительностью
+									44 container
+										45 container
+											46 link 86 Производительность, Value: pagespeed.web.dev/#performance
+											47 link 100 Специальные возможности, Value: pagespeed.web.dev/#accessibility
+											48 link 100 Рекомендации, Value: pagespeed.web.dev/#best-practices
+											49 link 100 Поисковая оптимизация, Value: pagespeed.web.dev/#seo
+											50 link 2/2 Агентный просмотр, Value: pagespeed.web.dev/#agentic-browsing
+										51 container
+											52 text 86 FCP +10 LCP +12 TBT +30 CLS +25 SI +9 Производительность
+										53 container
+											54 текст Значения приблизительные и могут изменяться. 
+											55 link Уровень производительности рассчитывается, Value: developer.chrome.com/docs/lighthouse/performance/performance-scoring/?utm_source=lighthouse&utm_medium=lr
+											56 текст  непосредственно на основании этих показателей.
+											57 link Показать калькулятор, Value: googlechrome.github.io/lighthouse/scorecalc/#FCP=956&LCP=4060&TBT=57&CLS=0&SI=3741&TTI=4060&device=mobile&version=13.5.0
+										58 text 0–49 50–89 90–100
+										59 изображение Final Screenshot
+										60 container
+											61 флажок Toggle the display of metric descriptions, Value: 0
+											62 text ПОКАЗАТЕЛИ Развернуть First Contentful Paint
+											63 текст 1,0 сек.
+											64 текст Largest Contentful Paint
+											65 текст 4,1 сек.
+											66 текст Total Blocking Time
+											67 текст 60 мс
+											68 текст Cumulative Layout Shift
+											69 текст 0
+											70 текст Speed Index
+											71 текст 3,7 сек.
+											72 список содержимого
+												73 текст Captured at 25 окт. 2026 г., 20:25 GMT+2
+												74 текст Эмуляция устройства Moto G Power with Lighthouse 13.5.0
+												75 текст Сеанс с просмотром одной страницы
+												76 текст Начальная загрузка страницы
+												77 текст Ограничение для сети 4G с низкой скоростью
+												78 текст Using HeadlessChromium 153.0.8010.36 with lr
+											79 кнопка Открыть карту эффективности
+										80 container
+											81 изображение Screenshot
+											82 изображение Screenshot
+											83 изображение Screenshot
+											84 изображение Screenshot
+											85 изображение Screenshot
+											86 изображение Screenshot
+											87 изображение Screenshot
+											88 изображение Screenshot
+										89 текст Показать аудиты
+										90 переключатель All, Value: 1
+										91 переключатель FCP, Value: 0
+										92 container First Contentful Paint
+											93 текст FCP
+										94 переключатель LCP, Value: 0
+										95 container Largest Contentful Paint
+											96 текст LCP
+										97 переключатель TBT, Value: 0
+										98 container Total Blocking Time
+											99 текст TBT
+										100 container
+											101 текст СТАТИСТИКА
+											102 треугольник развертывания Выбирайте эффективный период хранения кеша —Ожидаемая экономия – 349 КиБ
+												103 текст Выбирайте эффективный период хранения кеша
+												104 текст —
+												105 текст Ожидаемая экономия – 349 КиБ
+											106 треугольник развертывания Улучшите загрузку изображений —Ожидаемая экономия – 29 КиБ
+												107 текст Улучшите загрузку изображений
+												108 текст —
+												109 текст Ожидаемая экономия – 29 КиБ
+											110 треугольник развертывания Дерево зависимостей в сети
+												111 текст Дерево зависимостей в сети
+											112 container
+												113 треугольник развертывания Разбивка LCP
+													114 текст Разбивка LCP
+												115 текст Для каждого этапа 
+												116 link есть стратегии улучшения, Value: developer.chrome.com/docs/performance/insights/lcp-breakdown?utm_source=lighthouse&utm_medium=lr
+												117 текст . В идеале большая часть времени, требуемого на полную отрисовку элементов LCP, должна тратиться на загрузку ресурсов, а не на задержки.
+												118 текст LCP
+												119 текст Не оценивается
+												120 таблица
+													121 row
+														122 заголовок столбца
+															123 текст Этап
+														124 заголовок столбца
+															125 текст Длительность
+													126 row
+														127 ячейка
+															128 текст Time to First Byte
+														129 ячейка
+															130 текст 0 мс
+													131 row
+														132 ячейка
+															133 текст Задержка загрузки ресурса
+														134 ячейка
+															135 текст 250 мс
+													136 row
+														137 ячейка
+															138 текст Продолжительность загрузки ресурса
+														139 ячейка
+															140 текст 150 мс
+													141 row
+														142 ячейка
+															143 текст Задержка при отрисовке элемента
+														144 ячейка
+															145 текст 1 980 мс
+												146 container section.hero > div.hero-landscape > picture > img
+													147 текст section.hero > div.hero-landscape > picture > img
+													148 текст <img src="https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif" srcset="/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…" sizes="(max-width: 600px) 100vw, 95vw" alt="" loading="eager" fetchpriority="high" decoding="sync" width="1536" height="1024">
+											149 треугольник развертывания Сторонний код
+												150 текст Сторонний код
+											151 текст Статистические данные доступны на панели "Производительность" инструментов разработчика в Chrome. Чтобы узнавать подробную информацию, 
+											152 link создайте трассировку, Value: developer.chrome.com/docs/devtools/performance/reference?utm_source=lighthouse&utm_medium=lr
+											153 текст .
+										154 container
+											155 текст ДИАГНОСТИКА
+											156 треугольник развертывания Удалите неиспользуемый код JavaScript —Ожидаемая экономия – 38 КиБ
+												157 текст Удалите неиспользуемый код JavaScript
+												158 текст —
+												159 текст Ожидаемая экономия – 38 КиБ
+											160 треугольник развертывания Избегайте длительных задач в основном потоке —Обнаружена 1 длительная задача
+												161 текст Избегайте длительных задач в основном потоке
+												162 текст —
+												163 текст Обнаружена 1 длительная задача
+											164 текст Подробная информация о производительности вашего приложения. Эти цифры не влияют на показатель производительности 
+											165 link напрямую, Value: developer.chrome.com/docs/lighthouse/performance/performance-scoring/?utm_source=lighthouse&utm_medium=lr
+											166 текст .
+										167 треугольник развертывания УСПЕШНЫЕ АУДИТЫ (20) Показать
+											168 container
+												169 text УСПЕШНЫЕ АУДИТЫ (20)
+											170 текст Показать
+										171 заголовок 100 Специальные возможности, Value: 2
+											172 container
+												173 изображение
+												174 text 100 Специальные возможности
+										175 container
+											176 текст Узнайте, какие трудности могут возникнуть у людей с ограниченными возможностями при использовании вашего веб-приложения, и 
+											177 link сделайте его доступнее, Value: developer.chrome.com/docs/lighthouse/accessibility/?utm_source=lighthouse&utm_medium=lr
+											178 текст . Автоматические проверки не гарантируют доступность приложения, поэтому мы рекомендуем выполнять 
+											179 link тестирование вручную, Value: web.dev/articles/how-to-review?utm_source=lighthouse&utm_medium=lr
+											180 текст . Оно поможет выявить оставшиеся проблемы.
+										181 container
+											182 треугольник развертывания ДОПОЛНИТЕЛЬНЫЕ ОБЪЕКТЫ ДЛЯ ПРОВЕРКИ ВРУЧНУЮ (10) Скрыть
+												183 container
+													184 text ДОПОЛНИТЕЛЬНЫЕ ОБЪЕКТЫ ДЛЯ ПРОВЕРКИ ВРУЧНУЮ (10)
+												185 текст Скрыть
+											186 треугольник развертывания Interactive controls are keyboard focusable
+												187 текст Interactive controls are keyboard focusable
+											188 треугольник развертывания Interactive elements indicate their purpose and state
+												189 текст Interactive elements indicate their purpose and state
+											190 треугольник развертывания The page has a logical tab order
+												191 текст The page has a logical tab order
+											192 треугольник развертывания Visual order on the page follows DOM order
+												193 текст Visual order on the page follows DOM order
+											194 треугольник развертывания User focus is not accidentally trapped in a region
+												195 текст User focus is not accidentally trapped in a region
+											196 треугольник развертывания The user's focus is directed to new content added to the page
+												197 текст The user's focus is directed to new content added to the page
+											198 треугольник развертывания HTML5 landmark elements are used to improve navigation
+												199 текст HTML5 landmark elements are used to improve navigation
+											200 треугольник развертывания Offscreen content is hidden from assistive technology
+												201 текст Offscreen content is hidden from assistive technology
+											202 треугольник развертывания Custom controls have associated labels
+												203 текст Custom controls have associated labels
+											204 треугольник развертывания Custom controls have ARIA roles
+												205 текст Custom controls have ARIA roles
+											206 текст Ручная проверка позволяет охватить области, которые невозможно протестировать автоматически. Подробнее 
+											207 link о проверке специальных возможностей, Value: web.dev/articles/how-to-review?utm_source=lighthouse&utm_medium=lr
+											208 текст …
+										209 треугольник развертывания УСПЕШНЫЕ АУДИТЫ (24) Показать
+											210 container
+												211 text УСПЕШНЫЕ АУДИТЫ (24)
+											212 текст Показать
+										213 треугольник развертывания НЕПРИМЕНИМО (39) Показать
+											214 container
+												215 text НЕПРИМЕНИМО (39)
+											216 текст Показать
+										217 заголовок 100 Рекомендации, Value: 2
+											218 container
+												219 изображение
+												220 text 100 Рекомендации
+										221 container
+											222 текст НАДЕЖНОСТЬ И БЕЗОПАСНОСТЬ
+											223 треугольник развертывания Убедитесь, что политика CSP эффективна против атак XSS
+												224 текст Убедитесь, что политика CSP эффективна против атак XSS
+											225 треугольник развертывания Использование строгого механизма HSTS
+												226 текст Использование строгого механизма HSTS
+											227 треугольник развертывания Обеспечьте надлежащую изоляцию источников с помощью COOP
+												228 текст Обеспечьте надлежащую изоляцию источников с помощью COOP
+											229 треугольник развертывания Защита от кликджекинга с использованием заголовка XFO или CSP
+												230 текст Защита от кликджекинга с использованием заголовка XFO или CSP
+											231 треугольник развертывания Используйте Trusted Types для предотвращения XSS-атак на основе DOM
+												232 текст Используйте Trusted Types для предотвращения XSS-атак на основе DOM
+										233 container
+											234 текст СОВМЕСТИМОСТЬ С БРАУЗЕРАМИ
+											235 треугольник развертывания Функции Baseline
+												236 текст Функции Baseline
+										237 треугольник развертывания УСПЕШНЫЕ АУДИТЫ (13) Показать
+											238 container
+												239 text УСПЕШНЫЕ АУДИТЫ (13)
+											240 текст Показать
+										241 треугольник развертывания НЕПРИМЕНИМО (2) Показать
+											242 container
+												243 text НЕПРИМЕНИМО (2)
+											244 текст Показать
+										245 заголовок 100 Поисковая оптимизация, Value: 2
+											246 container
+												247 изображение
+												248 text 100 Поисковая оптимизация
+										249 container
+											250 текст Эти проверки позволяют узнать, соответствует ли страница основным рекомендациям к поисковой оптимизации. Lighthouse оценивает не все факторы, которые могут повлиять на позицию сайта в результатах поиска (например, производительность по 
+											251 link основным интернет-показателям, Value: web.dev/explore/vitals?utm_source=lighthouse&utm_medium=lr
+											252 текст ). Подробнее 
+											253 link о факторах, важных для Google Поиска, Value: support.google.com/webmasters/answer/35769
+											254 текст …
+										255 container
+											256 треугольник развертывания ДОПОЛНИТЕЛЬНЫЕ ОБЪЕКТЫ ДЛЯ ПРОВЕРКИ ВРУЧНУЮ (1) Скрыть
+												257 container
+													258 text ДОПОЛНИТЕЛЬНЫЕ ОБЪЕКТЫ ДЛЯ ПРОВЕРКИ ВРУЧНУЮ (1)
+												259 текст Скрыть
+											260 треугольник развертывания Структурированные данные действительны
+												261 текст Структурированные данные действительны
+											262 текст Проверьте, соответствует ли ваш сайт рекомендациям по поисковой оптимизации (SEO), с помощью этих дополнительных сервисов.
+										263 треугольник развертывания УСПЕШНЫЕ АУДИТЫ (10) Показать
+											264 container
+												265 text УСПЕШНЫЕ АУДИТЫ (10)
+											266 текст Показать
+										267 заголовок 2/2 Агентный просмотр, Value: 2
+											268 container
+												269 text 2/2 Агентный просмотр
+										270 container
+											271 текст Эти проверки гарантируют высокое качество 
+											272 link сайтов для ИИ-агентов, Value: goo.gle/lighthouse-agentic-web
+											273 текст  и правильность интеграции WebMCP. Эта категория находится на этапе разработки и может быть изменена.
+										274 треугольник развертывания УСПЕШНЫЕ АУДИТЫ (2) Показать
+											275 container
+												276 text УСПЕШНЫЕ АУДИТЫ (2)
+											277 текст Показать
+										278 треугольник развертывания НЕПРИМЕНИМО (5) Показать
+											279 container
+												280 text НЕПРИМЕНИМО (5)
+											281 текст Показать
+							282 текст Подробные сведения о PageSpeed Insights
+							283 link Что нового, Value: developers.google.com/speed/docs/insights/release_notes
+							284 link Документация, Value: developers.google.com/speed/docs/insights/v5/about
+							285 link Данные о скорости загрузки страниц, Value: developers.google.com/speed
+							286 link Задайте вопросы в Stack Overflow, Value: stackoverflow.com/questions/tagged/pagespeed-insights
+							287 link Список рассылки, Value: groups.google.com/g/pagespeed-insights-discuss
+							288 текст Похожий контент
+							289 link Обновления, Value: developer.chrome.com/blog
+							290 link Основы веб-дизайна, Value: developers.google.com/focus/web-development
+							291 link Примеры использования, Value: web.dev/case-studies
+							292 link Подкасты, Value: web.dev/shows
+							293 текст Связь
+							294 link Twitter, Value: twitter.com/ChromiumDev
+							295 link YouTube, Value: youtube.com/user/ChromeDevelopers
+							296 link Google Developers Logo, Value: developers.google.com/
+							297 link Chrome, Value: developer.chrome.com/
+							298 link Firebase, Value: firebase.google.com/
+							299 link Все продукты, Value: developers.google.com/products/
+							300 link Условия и политика конфиденциальности, Value: policies.google.com/
+							301 container
+								302 текст Чтобы узнать больше, прочитайте 
+								303 link правила сайта Google Developers, Value: developers.google.com/terms/site-policies
+								304 текст .
+			305 всплывающая кнопка Вкладка поиска
+			306 container
+				307 группа вкладок
+					308 вкладка (settable, boolean) Вкладка "Данные по эффективности контента в результатах поиска" использует 515 МБ памяти, Value: off
+						309 кнопка Закрыть
+					310 вкладка (selected, settable, boolean) Вкладка "PageSpeed Insights" использует 249 МБ памяти, Value: on
+						311 кнопка Закрыть
+					312 вкладка (settable, boolean) Value: off, Вкладка "(151) ПРОДАЁМ РАСТЕНИЯ НА АВИТО ВМЕСТЕ 🌿 От теплички до покупателя - YouTube" использует 651 МБ памяти
+						313 кнопка Закрыть
+					314 вкладка (settable, boolean) Value: off, Вкладка "братан нужна твоя помощь в выборе пути. я стою на развилке. нашел очень крутую тему с пирогами - при - Google Gemini" использует 559 МБ памяти
+						315 кнопка Закрыть
+					316 вкладка (settable, boolean) Вкладка "(151) YouTube" использует 487 МБ памяти, Value: off
+						317 кнопка Закрыть
+					318 вкладка (settable, boolean) Вкладка "Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске" использует 292 МБ памяти, Value: off
+						319 кнопка Закрыть
+			320 кнопка Новая вкладка
+			321 кнопка Открыть Gemini в Chrome
+	322 кнопка закрытия
+	323 кнопка полноэкранного режима Help: эта кнопка позволяет также изменять масштаб окна, Secondary Actions: изменить масштаб окна
+	324 кнопка свертывания
+325 menu bar
+	326 Chrome
+	327 Файл
+	328 Правка
+	329 Вид
+	330 История
+	331 Закладки
+	332 Профили
+	333 Вкладка
+	334 Окно
+	335 Справка
+
+The focused UI element is 113 треугольник развертывания Разбивка LCP

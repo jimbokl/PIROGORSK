@@ -1,0 +1,275 @@
+Browser tab: 6, Title: "PageSpeed Insights", URL: "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/n7ftihet7m?form_factor=mobile".
+0 AXWebArea PageSpeed Insights, URL: pagespeed.web.dev/analysis/https-pirogorsk-ru/n7ftihet7m?form_factor=mobile
+	1 container yDmH0d
+		2 container kO001e
+			3 link Description: PageSpeed Insights logo PageSpeed Insights, Value: pagespeed.web.dev/
+			34 button Скопировать ссылку
+				35 image
+				36 text Скопировать ссылку
+			4 container
+				5 link Description: Документация, Value: developers.google.com/speed/docs/insights/v5/about
+		37 container
+			38 container
+				39 text Отчет от  25 окт. 2026 г., 20:30:02
+				40 text field (settable) Value: https://pirogorsk.ru/, ID: c20
+				41 button Анализировать
+					42 text Анализировать
+				43 tab group
+					44 tab (selected, settable, boolean) Мобильные устройства, Value: 1, ID: mobile_tab
+					45 tab (selectable, settable, boolean) Компьютер, Value: 0, ID: desktop_tab
+				46 container Мобильные устройства
+					47 text Определяйте фактическую производительность сайта
+					48 button button
+					49 text Нет данных
+					51 text Выявляйте проблемы с производительностью
+					52 container
+						53 container
+							54 link Description: 100 Производительность, Value: pagespeed.web.dev/#performance
+							55 link Description: 100 Специальные возможности, Value: pagespeed.web.dev/#accessibility
+							56 link Description: 100 Рекомендации, Value: pagespeed.web.dev/#best-practices
+							57 link Description: 100 Поисковая оптимизация, Value: pagespeed.web.dev/#seo
+							58 link Description: 2/2 Агентный просмотр, Value: pagespeed.web.dev/#agentic-browsing
+						59 container performance
+							60 image
+								61 text 100
+								62 text FCP
+								63 text +10
+								64 text LCP
+								65 text +25
+								66 text TBT
+								67 text +30
+								68 text CLS
+								69 text +25
+								70 text SI
+								71 text +10
+								72 text Производительность
+							73 container
+								74 text Значения приблизительные и могут изменяться. 
+								75 link Description: Уровень производительности рассчитывается, Value: developer.chrome.com/docs/lighthouse/performance/performance-scoring/?utm_source=lighthouse&utm_medium=lr
+								76 text  непосредственно на основании этих показателей.
+								77 link Description: Показать калькулятор, Value: googlechrome.github.io/lighthouse/scorecalc/#FCP=970&LCP=1801&TBT=30&CLS=0&SI=970&TTI=3157&device=mobile&version=13.5.0
+							78 text 0–49 50–89 90–100
+							79 image Final Screenshot
+							80 container
+								81 checkbox (settable, integer) Description: Toggle the display of metric descriptions, Value: 0, ID: lh-metrics-toggle15
+								82 text ПОКАЗАТЕЛИ Развернуть
+								83 container first-contentful-paint
+									84 text First Contentful Paint
+									85 text 1,0 сек.
+								86 container largest-contentful-paint
+									87 text Largest Contentful Paint
+									88 text 1,8 сек.
+								89 container total-blocking-time
+									90 text Total Blocking Time
+									91 text 30 мс
+								92 container cumulative-layout-shift
+									93 text Cumulative Layout Shift
+									94 text 0
+								95 container speed-index
+									96 text Speed Index
+									97 text 1,0 сек.
+								98 content list
+									99 text Captured at 25 окт. 2026 г., 20:30 GMT+2
+									100 text Эмуляция устройства Moto G Power with Lighthouse 13.5.0
+									101 text Сеанс с просмотром одной страницы
+									102 text Начальная загрузка страницы
+									103 text Ограничение для сети 4G с низкой скоростью
+									104 text Using HeadlessChromium 153.0.8010.36 with lr
+								105 button Открыть карту эффективности
+							106 container screenshot-thumbnails
+								107 image Screenshot
+								108 image Screenshot
+								109 image Screenshot
+								110 image Screenshot
+								111 image Screenshot
+								112 image Screenshot
+								113 image Screenshot
+								114 image Screenshot
+							115 text Показать аудиты
+							116 radio button (settable, integer) Description: All, Value: 1, ID: metric-All-20
+							117 radio button (settable, integer) Description: FCP, Value: 0, ID: metric-FCP-20
+							118 container First Contentful Paint
+								119 text FCP
+							120 radio button (settable, integer) Description: LCP, Value: 0, ID: metric-LCP-20
+							121 container Largest Contentful Paint
+								122 text LCP
+							123 radio button (settable, integer) Description: TBT, Value: 0, ID: metric-TBT-20
+							124 container Total Blocking Time
+								125 text TBT
+							126 container
+								127 text СТАТИСТИКА
+								128 button (collapsed) Выбирайте эффективный период хранения кеша —Ожидаемая экономия – 349 КиБ, Secondary Actions: Expand
+									129 text Выбирайте эффективный период хранения кеша
+									130 text —
+									131 text Ожидаемая экономия – 349 КиБ
+								132 button (collapsed) Улучшите загрузку изображений —Ожидаемая экономия – 29 КиБ, Secondary Actions: Expand
+									133 text Улучшите загрузку изображений
+									134 text —
+									135 text Ожидаемая экономия – 29 КиБ
+								136 button (collapsed) Дерево зависимостей в сети, Secondary Actions: Expand
+									137 text Дерево зависимостей в сети
+								138 button (collapsed) Разбивка LCP, Secondary Actions: Expand
+									139 text Разбивка LCP
+								140 button (collapsed) Сторонний код, Secondary Actions: Expand
+									141 text Сторонний код
+								142 text Статистические данные доступны на панели "Производительность" инструментов разработчика в Chrome. Чтобы узнавать подробную информацию, 
+								143 link Description: создайте трассировку, Value: developer.chrome.com/docs/devtools/performance/reference?utm_source=lighthouse&utm_medium=lr
+								144 text .
+							145 container
+								146 text ДИАГНОСТИКА
+								147 button (collapsed) Удалите неиспользуемый код JavaScript —Ожидаемая экономия – 38 КиБ, Secondary Actions: Expand
+									148 text Удалите неиспользуемый код JavaScript
+									149 text —
+									150 text Ожидаемая экономия – 38 КиБ
+								151 button (collapsed) Избегайте длительных задач в основном потоке —Обнаружена 1 длительная задача, Secondary Actions: Expand
+									152 text Избегайте длительных задач в основном потоке
+									153 text —
+									154 text Обнаружена 1 длительная задача
+								155 text Подробная информация о производительности вашего приложения. Эти цифры не влияют на показатель производительности 
+								156 link Description: напрямую, Value: developer.chrome.com/docs/lighthouse/performance/performance-scoring/?utm_source=lighthouse&utm_medium=lr
+								157 text .
+							158 button (collapsed) УСПЕШНЫЕ АУДИТЫ (20) Показать, Secondary Actions: Expand
+								159 container
+									160 text УСПЕШНЫЕ АУДИТЫ (20)
+								161 text Показать
+						162 container accessibility
+							163 heading 100 Специальные возможности, Value: 2
+								164 container
+									165 image
+									166 text 100 Специальные возможности
+							167 container
+								168 text Узнайте, какие трудности могут возникнуть у людей с ограниченными возможностями при использовании вашего веб-приложения, и 
+								169 link Description: сделайте его доступнее, Value: developer.chrome.com/docs/lighthouse/accessibility/?utm_source=lighthouse&utm_medium=lr
+								170 text . Автоматические проверки не гарантируют доступность приложения, поэтому мы рекомендуем выполнять 
+								171 link Description: тестирование вручную, Value: web.dev/articles/how-to-review?utm_source=lighthouse&utm_medium=lr
+								172 text . Оно поможет выявить оставшиеся проблемы.
+							173 container
+								174 button (expanded) ДОПОЛНИТЕЛЬНЫЕ ОБЪЕКТЫ ДЛЯ ПРОВЕРКИ ВРУЧНУЮ (10) Скрыть, Secondary Actions: Collapse
+									175 container
+										176 text ДОПОЛНИТЕЛЬНЫЕ ОБЪЕКТЫ ДЛЯ ПРОВЕРКИ ВРУЧНУЮ (10)
+									177 text Скрыть
+								178 button (collapsed) Interactive controls are keyboard focusable, Secondary Actions: Expand
+									179 text Interactive controls are keyboard focusable
+								180 button (collapsed) Interactive elements indicate their purpose and state, Secondary Actions: Expand
+									181 text Interactive elements indicate their purpose and state
+								182 button (collapsed) The page has a logical tab order, Secondary Actions: Expand
+									183 text The page has a logical tab order
+								184 button (collapsed) Visual order on the page follows DOM order, Secondary Actions: Expand
+									185 text Visual order on the page follows DOM order
+								186 button (collapsed) User focus is not accidentally trapped in a region, Secondary Actions: Expand
+									187 text User focus is not accidentally trapped in a region
+								188 button (collapsed) The user's focus is directed to new content added to the page, Secondary Actions: Expand
+									189 text The user's focus is directed to new content added to the page
+								190 button (collapsed) HTML5 landmark elements are used to improve navigation, Secondary Actions: Expand
+									191 text HTML5 landmark elements are used to improve navigation
+								192 button (collapsed) Offscreen content is hidden from assistive technology, Secondary Actions: Expand
+									193 text Offscreen content is hidden from assistive technology
+								194 button (collapsed) Custom controls have associated labels, Secondary Actions: Expand
+									195 text Custom controls have associated labels
+								196 button (collapsed) Custom controls have ARIA roles, Secondary Actions: Expand
+									197 text Custom controls have ARIA roles
+								198 text Ручная проверка позволяет охватить области, которые невозможно протестировать автоматически. Подробнее 
+								199 link Description: о проверке специальных возможностей, Value: web.dev/articles/how-to-review?utm_source=lighthouse&utm_medium=lr
+								200 text …
+							201 button (collapsed) УСПЕШНЫЕ АУДИТЫ (24) Показать, Secondary Actions: Expand
+								202 container
+									203 text УСПЕШНЫЕ АУДИТЫ (24)
+								204 text Показать
+							205 button (collapsed) НЕПРИМЕНИМО (39) Показать, Secondary Actions: Expand
+								206 container
+									207 text НЕПРИМЕНИМО (39)
+								208 text Показать
+						209 container best-practices
+							210 heading 100 Рекомендации, Value: 2
+								211 container
+									212 image
+									213 text 100 Рекомендации
+							214 container
+								215 text НАДЕЖНОСТЬ И БЕЗОПАСНОСТЬ
+								216 button (collapsed) Убедитесь, что политика CSP эффективна против атак XSS, Secondary Actions: Expand
+									217 text Убедитесь, что политика CSP эффективна против атак XSS
+								218 button (collapsed) Использование строгого механизма HSTS, Secondary Actions: Expand
+									219 text Использование строгого механизма HSTS
+								220 button (collapsed) Обеспечьте надлежащую изоляцию источников с помощью COOP, Secondary Actions: Expand
+									221 text Обеспечьте надлежащую изоляцию источников с помощью COOP
+								222 button (collapsed) Защита от кликджекинга с использованием заголовка XFO или CSP, Secondary Actions: Expand
+									223 text Защита от кликджекинга с использованием заголовка XFO или CSP
+								224 button (collapsed) Используйте Trusted Types для предотвращения XSS-атак на основе DOM, Secondary Actions: Expand
+									225 text Используйте Trusted Types для предотвращения XSS-атак на основе DOM
+							226 container
+								227 text СОВМЕСТИМОСТЬ С БРАУЗЕРАМИ
+								228 button (collapsed) Функции Baseline, Secondary Actions: Expand
+									229 text Функции Baseline
+							230 button (collapsed) УСПЕШНЫЕ АУДИТЫ (13) Показать, Secondary Actions: Expand
+								231 container
+									232 text УСПЕШНЫЕ АУДИТЫ (13)
+								233 text Показать
+							234 button (collapsed) НЕПРИМЕНИМО (2) Показать, Secondary Actions: Expand
+								235 container
+									236 text НЕПРИМЕНИМО (2)
+								237 text Показать
+						238 container seo
+							239 heading 100 Поисковая оптимизация, Value: 2
+								240 container
+									241 image
+									242 text 100 Поисковая оптимизация
+							243 container
+								244 text Эти проверки позволяют узнать, соответствует ли страница основным рекомендациям к поисковой оптимизации. Lighthouse оценивает не все факторы, которые могут повлиять на позицию сайта в результатах поиска (например, производительность по 
+								245 link Description: основным интернет-показателям, Value: web.dev/explore/vitals?utm_source=lighthouse&utm_medium=lr
+								246 text ). Подробнее 
+								247 link Description: о факторах, важных для Google Поиска, Value: support.google.com/webmasters/answer/35769
+								248 text …
+							249 container
+								250 button (expanded) ДОПОЛНИТЕЛЬНЫЕ ОБЪЕКТЫ ДЛЯ ПРОВЕРКИ ВРУЧНУЮ (1) Скрыть, Secondary Actions: Collapse
+									251 container
+										252 text ДОПОЛНИТЕЛЬНЫЕ ОБЪЕКТЫ ДЛЯ ПРОВЕРКИ ВРУЧНУЮ (1)
+									253 text Скрыть
+								254 button (collapsed) Структурированные данные действительны, Secondary Actions: Expand
+									255 text Структурированные данные действительны
+								256 text Проверьте, соответствует ли ваш сайт рекомендациям по поисковой оптимизации (SEO), с помощью этих дополнительных сервисов.
+							257 button (collapsed) УСПЕШНЫЕ АУДИТЫ (10) Показать, Secondary Actions: Expand
+								258 container
+									259 text УСПЕШНЫЕ АУДИТЫ (10)
+								260 text Показать
+						261 container agentic-browsing
+							262 heading 2/2 Агентный просмотр, Value: 2
+								263 container
+									264 text 2/2 Агентный просмотр
+							265 container
+								266 text Эти проверки гарантируют высокое качество 
+								267 link Description: сайтов для ИИ-агентов, Value: goo.gle/lighthouse-agentic-web
+								268 text  и правильность интеграции WebMCP. Эта категория находится на этапе разработки и может быть изменена.
+							269 button (collapsed) УСПЕШНЫЕ АУДИТЫ (2) Показать, Secondary Actions: Expand
+								270 container
+									271 text УСПЕШНЫЕ АУДИТЫ (2)
+								272 text Показать
+							273 button (collapsed) НЕПРИМЕНИМО (5) Показать, Secondary Actions: Expand
+								274 container
+									275 text НЕПРИМЕНИМО (5)
+								276 text Показать
+		10 container ZCHFDb
+			11 text Подробные сведения о PageSpeed Insights
+			12 link Description: Что нового, Value: developers.google.com/speed/docs/insights/release_notes
+			13 link Description: Документация, Value: developers.google.com/speed/docs/insights/v5/about
+			14 link Description: Данные о скорости загрузки страниц, Value: developers.google.com/speed
+			15 link Description: Задайте вопросы в Stack Overflow, Value: stackoverflow.com/questions/tagged/pagespeed-insights
+			16 link Description: Список рассылки, Value: groups.google.com/g/pagespeed-insights-discuss
+			17 text Похожий контент
+			18 link Description: Обновления, Value: developer.chrome.com/blog
+			19 link Description: Основы веб-дизайна, Value: developers.google.com/focus/web-development
+			20 link Description: Примеры использования, Value: web.dev/case-studies
+			21 link Description: Подкасты, Value: web.dev/shows
+			22 text Связь
+			23 link Description: Twitter, Value: twitter.com/ChromiumDev
+			24 link Description: YouTube, Value: youtube.com/user/ChromeDevelopers
+			25 link Description: Google Developers Logo, Value: developers.google.com/
+			26 link Description: Chrome, Value: developer.chrome.com/
+			27 link Description: Firebase, Value: firebase.google.com/
+			28 link Description: Все продукты, Value: developers.google.com/products/
+			29 link Description: Условия и политика конфиденциальности, Value: policies.google.com/
+			30 container
+				31 text Чтобы узнать больше, прочитайте 
+				32 link Description: правила сайта Google Developers, Value: developers.google.com/terms/site-policies
+				33 text .
+
+The focused UI element is 0 AXWebArea PageSpeed Insights, URL: pagespeed.web.dev/analysis/https-pirogorsk-ru/n7ftihet7m?form_factor=mobile
