@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-25T18:00:25.672992+00:00",
+  "release": "c6174f1b29496d6f33028d505245f0bbbc6a4b2c",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 152066,
+      "newBrand": true,
+      "newIcon": true,
+      "logoSchema": true
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 50122,
+      "newBrand": true,
+      "newIcon": true,
+      "logoSchema": true
+    },
+    {
+      "path": "/brand/pirogorsk-symbol.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "bytes": 978,
+      "sha256": "47afb264a5d23cc2a05e1d16495a456028ce3e58ad60d8dc08a53998dd039e17",
+      "matchesLocal": true
+    },
+    {
+      "path": "/brand/pirogorsk-logo.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "bytes": 16006,
+      "sha256": "6904ffa0455143f69ecc5c9db53cd54a9521afc58266e8a97c381b8a884634df",
+      "matchesLocal": true
+    },
+    {
+      "path": "/favicon.svg?v=20261025",
+      "status": 200,
+      "type": "image/svg+xml",
+      "bytes": 511,
+      "sha256": "462fb77f120271cfa455aa46ed8f68b6cb159e3b5f524e6ffeaa9f61beda5f80",
+      "matchesLocal": true
+    },
+    {
+      "path": "/favicon.ico?v=20261025",
+      "status": 200,
+      "type": "image/vnd.microsoft.icon",
+      "bytes": 2832,
+      "sha256": "9ca1a92bc7d3db46e749361d92ef2d1288089aee9768917c4c7b8ebf218e4a87",
+      "matchesLocal": true
+    },
+    {
+      "path": "/favicon-32.png?v=20261025",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 884,
+      "sha256": "cdf787a2f5fc8957d4394b3ee735a5255fa6c74499f671d9985414aa4e7ab904",
+      "matchesLocal": true
+    },
+    {
+      "path": "/apple-touch-icon.png?v=20261025",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 5020,
+      "sha256": "775c2b799132a9ef83dba101402317579ec2830224cff96cba323eda305d52ab",
+      "matchesLocal": true
+    }
+  ]
+}
