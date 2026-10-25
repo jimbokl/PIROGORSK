@@ -3,14 +3,14 @@ interface Props { href?: string; footer?: boolean }
 const { href = '/', footer = false } = Astro.props;
 ---
 <a class:list={['pirogorsk-brand', { 'pirogorsk-brand--footer': footer }]} href={href}>
-  <img src="/brand/pirogorsk-symbol.svg" width="56" height="56" alt="" aria-hidden="true" class="pirogorsk-brand-symbol" decoding="async" />
+  <img src="/brand/pirogorsk-symbol.svg?v=4" width="56" height="56" alt="" aria-hidden="true" class="pirogorsk-brand-symbol" decoding="async" />
   <span class="pirogorsk-brand-copy"><span class="pirogorsk-brand-name">Пирогорск</span><span class="pirogorsk-brand-tagline">Пироги с балтийским характером</span></span>
 </a>
 <style>
-  .pirogorsk-brand{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;color:#113e50;text-decoration:none}
+  .pirogorsk-brand{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;color:#123b4a;text-decoration:none}
   .pirogorsk-brand-symbol{display:block;width:55px;height:55px;object-fit:contain;flex-shrink:0}
   .pirogorsk-brand-copy{display:flex;flex-direction:column;gap:5px}
-  .pirogorsk-brand-name{font-family:var(--serif,Georgia,serif);font-size:34px;line-height:1;font-weight:800;letter-spacing:-.055em}
+  .pirogorsk-brand-name{font-family:var(--serif,Georgia,serif);font-size:34px;line-height:1;font-weight:800;letter-spacing:-.04em}
   .pirogorsk-brand-tagline{font-size:9.5px;line-height:1.3;letter-spacing:.015em;white-space:nowrap}
   .pirogorsk-brand--footer .pirogorsk-brand-name{font-size:30px}
   .pirogorsk-brand--footer .pirogorsk-brand-symbol{width:49px;height:49px}

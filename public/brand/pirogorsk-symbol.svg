@@ -1,12 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
-  <g fill="#113e50">
-    <path d="M46 9V6a2 2 0 0 1 4 0v3c4 1 6 4 6 7H40c0-3 2-6 6-7Zm-12 17c2-7 7-10 14-10s12 3 14 10H34Z"/>
-    <path fill-rule="evenodd" d="M32 28h32v5h-3v14h-6v11H41V47h-6V33h-3v-5Zm6 15h5v-5a2.5 2.5 0 0 0-5 0v5Zm7.5 0h5v-5a2.5 2.5 0 0 0-5 0v5Zm7.5 0h5v-5a2.5 2.5 0 0 0-5 0v5Z"/>
-    <path fill-rule="evenodd" d="m10 48 14-13 14 13v12H13V48Zm12 7h5v-5a2.5 2.5 0 0 0-5 0v5Zm36-7 14-13 14 13h-3v12H58V48Zm11 7h5v-5a2.5 2.5 0 0 0-5 0v5Z"/>
+  <g fill="#123B4A">
+    <path d="M46 8V5a2 2 0 0 1 4 0v3a7 7 0 0 1 5 7H41a7 7 0 0 1 5-7Z"/>
+    <path d="M35 26c0-6 6-11 13-11s13 5 13 11H35Z"/>
+    <path fill-rule="evenodd" d="M33 29h30v5h-3v18H36V34h-3v-5Zm8 14h4v-5a2 2 0 0 0-4 0v5Zm10 0h4v-5a2 2 0 0 0-4 0v5Z"/>
+    <path fill-rule="evenodd" d="m9 48 14-13 14 13v11H12V48Zm12 7h5v-5a2.5 2.5 0 0 0-5 0v5Zm38-7 14-13 14 13h-3v11H59V48Zm11 7h5v-5a2.5 2.5 0 0 0-5 0v5Z"/>
   </g>
-  <path fill="#c4843d" d="M14 58c-4-2-5-6-2-9 2-3 6-3 9-2 1-5 6-7 10-4 3-4 8-5 12-2 3-4 8-4 11 0 4-3 9-2 12 2 4-3 9-1 10 4 3-1 7-1 9 2 3 3 2 7-2 9-2 12-15 20-35 20S16 70 14 58Z"/>
-  <g fill="#113e50">
-    <path d="M28 60c3-6 7-9 13-10-2 6-6 10-13 10Zm20-12c5 5 5 10 0 15-5-5-5-10 0-15Zm7 2c6 1 10 4 13 10-7 0-11-4-13-10Z"/>
-    <path d="M7 76c12 12 24-1 40 4 16 6 24 5 42-5-3 10-13 16-25 15-11 0-16-6-28-5C23 87 11 90 7 76Z"/>
+  <path fill="#E45B48" d="M12 57c-4-2-4-7 0-10 3-2 7-1 9 1 1-5 6-7 10-4 3-4 8-5 12-2 3-4 7-4 10 0 4-3 9-2 12 2 4-3 9-1 10 4 3-2 7-3 10-1 4 3 4 8 0 10-3 13-17 20-37 20s-33-7-36-20Z"/>
+  <g stroke="#FBF9F4" stroke-width="4" stroke-linecap="round">
+    <path d="m28 61 7-9m13 11V51m13 10-7-9"/>
   </g>
+  <path d="M10 80c12 9 23-7 38 0s24 8 38-1" stroke="#123B4A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M24 90c9 0 15-5 24-3s14 5 24 2" stroke="#123B4A" stroke-width="3" stroke-linecap="round"/>
 </svg>

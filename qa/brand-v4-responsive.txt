@@ -1,0 +1,763 @@
+Browser tab: 7, Title: "127.0.0.1:4322/brand-review.html", URL: "http://127.0.0.1:4322/brand-review.html".
+1 AXWebArea 127.0.0.1:4322/brand-review.html
+	2 heading 320 px · главная / 390 px · блог, Value: 2
+		3 text 320 px · главная / 390 px · блог
+	4 container Главная 320 px
+		5 AXWebArea Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске, URL: 127.0.0.1:4322/
+			6 link Description: Перейти к пирогам, Value: 127.0.0.1:4322/#pirogi
+			7 container
+				8 link Description: Пирогорск Пироги с балтийским характером, Value: 127.0.0.1:4322/#top
+				9 pop up button Зеленоградск
+				10 pop up button Подборка: 6 шт.
+			11 container top
+				12 container Пироги с балтийским характером
+					13 image Румяный рыбный пирог и кусочек с начинкой из рыбы, риса, моркови и зелени
+					14 container
+						15 heading Пироги с балтийским характером, Value: 1, ID: hero-heading
+							16 text Пироги
+							17 text с балтийским
+							18 text характером
+						19 text Сытные — к ужину. Сладкие — к чаю.
+						20 text Выберите свой пирог.
+						21 link Description: Выбрать пирог, Value: 127.0.0.1:4322/#pirogi
+						22 text Калининград · Светлогорск · Зеленоградск
+				23 container Выберите начинку, ID: pirogi
+					24 heading Выберите начинку, Value: 2, ID: catalog-heading
+						25 text Выберите начинку
+					26 container Начинка пирога
+						27 checkbox Все, Value: 1
+						28 checkbox Мясо, Value: 0
+						29 checkbox Рыба, Value: 0
+						30 checkbox Капуста, Value: 0
+						31 checkbox Сыр, Value: 0
+						32 checkbox Сладкие, Value: 0
+					33 text Готовим запуск. Цены ориентировочные, изображения — концепты будущих пирогов.
+					34 container Мясной пирог
+						35 container
+							36 image Мясной пирог: пирог и кусочек с начинкой
+							37 text Сытно
+						38 heading Мясной пирог, Value: 3, ID: product-meat
+							39 link Description: Мясной пирог, Value: 127.0.0.1:4322/pirogi/myasnoy-pirog/
+						40 text Сочная мясная начинка
+						41 container Вес: мясной пирог
+							42 text Вес: мясной пирог
+							43 container
+								44 radio button (settable, integer) Description: 500 г, Value: 1
+								45 text 500 г
+							46 container
+								47 radio button (settable, integer) Description: 1 кг, Value: 0
+								48 text 1 кг
+						49 text 690 ₽
+						50 text Предварительно
+						51 button В подборку: мясной пирог
+					52 container Рыбный пирог
+						53 container
+							54 image Рыбный пирог: пирог и кусочек с начинкой
+							55 text Сытно
+						56 heading Рыбный пирог, Value: 3, ID: product-fish
+							57 link Description: Рыбный пирог, Value: 127.0.0.1:4322/pirogi/rybnyy-pirog/
+						58 text Нежная рыбная начинка
+						59 container Вес: рыбный пирог
+							60 text Вес: рыбный пирог
+							61 container
+								62 radio button (settable, integer) Description: 500 г, Value: 1
+								63 text 500 г
+							64 container
+								65 radio button (settable, integer) Description: 1 кг, Value: 0
+								66 text 1 кг
+						67 text 790 ₽
+						68 text Предварительно
+						69 button В подборку: рыбный пирог
+					70 container Пирог с капустой
+						71 container
+							72 image Пирог с капустой: пирог и кусочек с начинкой
+							73 text Овощной
+						74 heading Пирог с капустой, Value: 3, ID: product-cabbage
+							75 link Description: Пирог с капустой, Value: 127.0.0.1:4322/pirogi/pirog-s-kapustoy/
+						76 text Мягкая тушёная капуста
+						77 container Вес: пирог с капустой
+							78 text Вес: пирог с капустой
+							79 container
+								80 radio button (settable, integer) Description: 500 г, Value: 1
+								81 text 500 г
+							82 container
+								83 radio button (settable, integer) Description: 1 кг, Value: 0
+								84 text 1 кг
+						85 text 390 ₽
+						86 text Предварительно
+						87 button В подборку: пирог с капустой
+					88 container Сырный пирог
+						89 container
+							90 image Сырный пирог: пирог и кусочек с начинкой
+							91 text Сырный
+						92 heading Сырный пирог, Value: 3, ID: product-cheese
+							93 link Description: Сырный пирог, Value: 127.0.0.1:4322/pirogi/syrnyy-pirog/
+						94 text Мягкая сырная начинка
+						95 container Вес: сырный пирог
+							96 text Вес: сырный пирог
+							97 container
+								98 radio button (settable, integer) Description: 500 г, Value: 1
+								99 text 500 г
+							100 container
+								101 radio button (settable, integer) Description: 1 кг, Value: 0
+								102 text 1 кг
+						103 text 590 ₽
+						104 text Предварительно
+						105 button В подборку: сырный пирог
+					106 container Пирог с яблоком и брусникой
+						107 container
+							108 image Пирог с яблоком и брусникой: пирог и кусочек с начинкой
+							109 text Сладкий
+						110 heading Пирог с яблоком и брусникой, Value: 3, ID: product-apple
+							111 link Description: Пирог с яблоком и брусникой, Value: 127.0.0.1:4322/pirogi/pirog-s-yablokom-i-brusnikoy/
+						112 text Сладкое яблоко, кислинка брусники
+						113 container Вес: пирог с яблоком и брусникой
+							114 text Вес: пирог с яблоком и брусникой
+							115 container
+								116 radio button (settable, integer) Description: 500 г, Value: 1
+								117 text 500 г
+							118 container
+								119 radio button (settable, integer) Description: 1 кг, Value: 0
+								120 text 1 кг
+						121 text 490 ₽
+						122 text Предварительно
+						123 button В подборку: пирог с яблоком и брусникой
+					124 container Пирог с вишней
+						125 container
+							126 image Пирог с вишней: пирог и кусочек с начинкой
+							127 text Сладкий
+						128 heading Пирог с вишней, Value: 3, ID: product-cherry
+							129 link Description: Пирог с вишней, Value: 127.0.0.1:4322/pirogi/pirog-s-vishney/
+						130 text Сочная вишнёвая начинка
+						131 container Вес: пирог с вишней
+							132 text Вес: пирог с вишней
+							133 container
+								134 radio button (settable, integer) Description: 500 г, Value: 1
+								135 text 500 г
+							136 container
+								137 radio button (settable, integer) Description: 1 кг, Value: 0
+								138 text 1 кг
+						139 text 590 ₽
+						140 text Предварительно
+						141 button В подборку: пирог с вишней
+					142 container Пирог с творогом и малиной
+						143 container
+							144 image Пирог с творогом и малиной: пирог и кусочек с начинкой
+							145 text К чаю
+						146 heading Пирог с творогом и малиной, Value: 3, ID: product-curd
+							147 link Description: Пирог с творогом и малиной, Value: 127.0.0.1:4322/pirogi/pirog-s-tvorogom-i-malinoy/
+						148 text Нежный творог и яркая малина
+						149 container Вес: пирог с творогом и малиной
+							150 text Вес: пирог с творогом и малиной
+							151 container
+								152 radio button (settable, integer) Description: 500 г, Value: 1
+								153 text 500 г
+							154 container
+								155 radio button (settable, integer) Description: 1 кг, Value: 0
+								156 text 1 кг
+						157 text 590 ₽
+						158 text Предварительно
+						159 button В подборку: пирог с творогом и малиной
+				160 container К пирогу — ещё кое-что, ID: extras
+					161 text ЗА ОДНИМ СТОЛОМ
+					162 heading К пирогу — ещё кое-что, Value: 2, ID: extras-heading
+						163 text К пирогу — ещё кое-что
+					164 container
+						165 text Ягодный морс к обеду.  Чай или кофе — к сладкому.
+					166 container Клюквенный морс
+						167 container
+							168 image Клюквенный морс
+							169 text Освежает
+						170 heading Клюквенный морс, Value: 3, ID: product-cranberry
+							171 text Клюквенный морс
+						172 text Ягодный вкус с приятной кислинкой
+						173 container Объём: клюквенный морс
+							174 text Объём: клюквенный морс
+							175 container
+								176 radio button (settable, integer) Description: 500 мл, Value: 1
+								177 text 500 мл
+							178 container
+								179 radio button (settable, integer) Description: 1 л, Value: 0
+								180 text 1 л
+						181 text 200 ₽
+						182 text Предварительно
+						183 button В подборку: клюквенный морс
+					184 container Облепиховый морс
+						185 container
+							186 image Облепиховый морс
+							187 text Освежает
+						188 heading Облепиховый морс, Value: 3, ID: product-seabuckthorn
+							189 text Облепиховый морс
+						190 text Яркая облепиха к любимому пирогу
+						191 container Объём: облепиховый морс
+							192 text Объём: облепиховый морс
+							193 container
+								194 radio button (settable, integer) Description: 500 мл, Value: 1
+								195 text 500 мл
+							196 container
+								197 radio button (settable, integer) Description: 1 л, Value: 0
+								198 text 1 л
+						199 text 200 ₽
+						200 text Предварительно
+						201 button В подборку: облепиховый морс
+					202 container Чай
+						203 image Чай
+						204 heading Чай, Value: 3, ID: product-tea
+							205 text Чай
+						206 text Чашка чая к сладкому или сытному
+						207 container Объём: чай
+							208 text Объём: чай
+							209 container
+								210 radio button (settable, integer) Description: 250 мл, Value: 1
+								211 text 250 мл
+						212 text 100 ₽
+						213 text Предварительно
+						214 button В подборку: чай
+					215 container Кофе
+						216 image Кофе
+						217 heading Кофе, Value: 3, ID: product-coffee
+							218 text Кофе
+						219 text К чашке кофе — кусочек пирога
+						220 container Объём: кофе
+							221 text Объём: кофе
+							222 container
+								223 radio button (settable, integer) Description: 250 мл, Value: 1
+								224 text 250 мл
+						225 text 160 ₽
+						226 text Предварительно
+						227 button В подборку: кофе
+					228 container Питьевая вода
+						229 image Питьевая вода
+						230 heading Питьевая вода, Value: 3, ID: product-water
+							231 text Питьевая вода
+						232 text Без газа
+						233 container Объём: питьевая вода
+							234 text Объём: питьевая вода
+							235 container
+								236 radio button (settable, integer) Description: 500 мл, Value: 1
+								237 text 500 мл
+						238 text 80 ₽
+						239 text Предварительно
+						240 button В подборку: питьевая вода
+					241 container Набор посуды
+						242 heading Набор посуды, Value: 3, ID: product-tableware
+							243 text Набор посуды
+						244 text Тарелка, вилка и салфетка на одного гостя
+						245 container Комплект: набор посуды
+							246 text Комплект: набор посуды
+							247 container
+								248 radio button (settable, integer) Description: 1 набор, Value: 1
+								249 text 1 набор
+						250 text 35 ₽
+						251 text Предварительно
+						252 button В подборку: набор посуды
+					253 text Меню готовится к открытию. Цены предварительные; окончательные составы и цены появятся перед запуском.
+				254 container Соберите свой набор, ID: nabory
+					255 image Мясной и капустный пироги на деревянной доске у моря
+					256 container
+						257 heading Соберите свой набор, Value: 2, ID: bundle-heading
+							258 text Соберите свой набор
+						259 text Разные начинки. Два размера. Одна компания.
+						260 button Выбрать набор
+				261 container Пироги к вашему случаю
+					262 heading Пироги к вашему случаю, Value: 2, ID: occasion-heading
+						263 text Пироги к вашему случаю
+					264 button Мясной пирог на уютном столе в апартаментах Ужин в апартаментах
+						265 image Мясной пирог на уютном столе в апартаментах
+						266 text Ужин
+						267 text в апартаментах
+					268 button Несколько пирогов на столе для компании у моря На компанию
+						269 image Несколько пирогов на столе для компании у моря
+						270 text На компанию
+				271 container К вашему столу
+					272 text БАЛТИЙСКИЕ ГОРОДА
+					273 heading К вашему столу, Value: 2, ID: discovery-heading
+						274 text К вашему столу
+					275 text Пироги после прогулки у моря, к ужину в апартаментах или встрече с друзьями. Изучаем спрос в трёх городах — выберите свой.
+					276 container Пироги по городам
+						277 link Description: Зеленоградск, Value: 127.0.0.1:4322/dostavka/zelenogradsk/
+						278 link Description: Калининград, Value: 127.0.0.1:4322/dostavka/kaliningrad/
+						279 link Description: Светлогорск, Value: 127.0.0.1:4322/dostavka/svetlogorsk/
+				280 container К общему столу
+					281 container
+						282 text БЛОГ ПИРОГОРСКА
+						283 heading К общему столу, Value: 2, ID: journal-heading
+							284 text К общему столу
+						285 link Description: Все материалы, Value: 127.0.0.1:4322/blog/
+					286 link Value: 127.0.0.1:4322/journal/skolko-piroga-na-cheloveka/, Description: Иллюстрация: нарезанный сытный пирог и тарелки вокруг общего стола РАСЧЁТЫ ≈ 3 мин Сколько пирога нужно на человека и на компанию Как рассчитать вес пирогов на 4, 6, 8, 10 и 12 гостей: таблица с разными порциями, округление до 500 г и калькулятор под ваш стол.
+					287 link Value: 127.0.0.1:4322/journal/pirog-500-g-ili-1-kg/, Description: Иллюстрация: маленький и большой яблочные пироги рядом с чашкой чая РАСЧЁТЫ ≈ 3 мин Пирог 500 г или 1 кг: один большой или два маленьких Один большой пирог или два маленьких? Сравниваем начинки, вес кусочка и цену за килограмм. С таблицей нарезки и простыми примерами расчётов.
+					288 link Value: 127.0.0.1:4322/journal/chto-pit-s-pirogami/, Description: Иллюстрация: ягодный напиток, чай, кофе и кусочек вишнёвого пирога у окна ЗА СТОЛОМ ≈ 3 мин Что пить с пирогами: морс, чай или кофе Идеи напитков к мясным, рыбным, сырным и сладким пирогам. Как собрать стол с морсом, чаем и кофе и не усложнить подготовку в апартаментах.
+				289 container Что нужно знать
+					290 text ПЕРЕД ПЕРВЫМ ПИРОГОМ
+					291 heading Что нужно знать, Value: 2, ID: faq-heading
+						292 text Что нужно знать
+					293 link Description: Владельцам апартаментов и пекарням, Value: 127.0.0.1:4322/partners/
+					294 button (collapsed) Можно уже заказать пирог?, Secondary Actions: Expand
+						295 text Можно уже заказать пирог?
+					296 button (collapsed) Чем отличаются 500 г и 1 кг?, Secondary Actions: Expand
+						297 text Чем отличаются 500 г и 1 кг?
+					298 button (collapsed) Какие начинки планируются?, Secondary Actions: Expand
+						299 text Какие начинки планируются?
+					300 button (collapsed) В каких городах будет доставка?, Secondary Actions: Expand
+						301 text В каких городах будет доставка?
+					302 button (collapsed) Нужно оставлять телефон?, Secondary Actions: Expand
+						303 text Нужно оставлять телефон?
+			304 container
+				305 link Description: Пирогорск Пироги с балтийским характером, Value: 127.0.0.1:4322/#top
+				306 container Выберите город
+					307 button Калининград
+					308 button Светлогорск
+					309 button Зеленоградск
+				310 container О Пирогорске
+					311 link Description: Доставка, Value: 127.0.0.1:4322/delivery/
+					312 link Description: О проекте, Value: 127.0.0.1:4322/about/
+					313 link Description: Всё меню, Value: 127.0.0.1:4322/menu/
+					314 link Description: Сколько пирогов?, Value: 127.0.0.1:4322/podbor/
+					315 link Description: Блог, Value: 127.0.0.1:4322/blog/
+					316 link Description: Партнёрам, Value: 127.0.0.1:4322/partners/
+					317 link Description: О данных, Value: 127.0.0.1:4322/privacy/
+					318 link Description: Условия, Value: 127.0.0.1:4322/terms/
+				319 text Готовимся к открытию. Меню, цены и изображения предварительные. Можно оставить анонимную заявку. Приём заказов и оплата пока не открыты.
+	320 container Блог 390 px
+		321 AXWebArea Блог Пирогорска — пироги и еда в Калининграде и на побережье, URL: 127.0.0.1:4322/blog/
+			322 link Description: Перейти к содержанию, Value: 127.0.0.1:4322/blog/#content
+			323 container
+				324 link Description: Пирогорск Пироги с балтийским характером, Value: 127.0.0.1:4322/
+				325 container Основная навигация
+					326 link Description: Меню, Value: 127.0.0.1:4322/menu/
+					327 link Description: Сколько пирогов?, Value: 127.0.0.1:4322/podbor/
+					328 link Description: Доставка, Value: 127.0.0.1:4322/delivery/
+					329 link Description: Блог, Value: 127.0.0.1:4322/blog/
+					330 link Description: Партнёрам, Value: 127.0.0.1:4322/partners/
+					331 link Description: О проекте, Value: 127.0.0.1:4322/about/
+			332 container content
+				333 container Хлебные крошки
+					334 content list
+						335 link Description: Главная, Value: 127.0.0.1:4322/
+						336 container
+							337 text / Блог
+				338 container
+					339 text БЛОГ ПИРОГОРСКА · 9 МАТЕРИАЛОВ
+					340 heading К общему столу, Value: 1
+						341 text К общему
+						342 text столу
+					343 text Сколько взять, с чем подать, где поесть после моря. Разбираем вопросы, с которых начинается хороший ужин.
+				344 container Сколько пирога нужно на человека и на компанию
+					345 link Description: Читать: Сколько пирога нужно на человека и на компанию, Value: 127.0.0.1:4322/journal/skolko-piroga-na-cheloveka/
+					346 container
+						347 text РАСЧЁТЫ · ≈ 3 МИН
+						348 heading Сколько пирога нужно на человека и на компанию, Value: 2, ID: feature-title
+							349 link Description: Сколько пирога нужно на человека и на компанию, Value: 127.0.0.1:4322/journal/skolko-piroga-na-cheloveka/
+						350 text Четыре гостя или двенадцать? Посчитаем общий вес, разделим его между начинками и не прибавим запас дважды.
+						351 link Description: Открыть таблицу, Value: 127.0.0.1:4322/journal/skolko-piroga-na-cheloveka/
+				352 text Обложки созданы с помощью ИИ для иллюстрации материалов. Это не фотографии готовой продукции.
+				353 container Темы блога
+					354 text О чём почитать
+					355 link Description: Расчёты 2, Value: 127.0.0.1:4322/blog/#raschety
+					356 link Description: За столом 4, Value: 127.0.0.1:4322/blog/#za-stolom
+					357 link Description: Зеленоградск 1, Value: 127.0.0.1:4322/blog/#zelenogradsk
+					358 link Description: Светлогорск 1, Value: 127.0.0.1:4322/blog/#svetlogorsk
+					359 link Description: Калининград 1, Value: 127.0.0.1:4322/blog/#kaliningrad
+				360 container Расчёты, ID: raschety
+					361 container
+						362 heading Расчёты, Value: 2, ID: raschety-title
+							363 text Расчёты
+						364 text Вес, порции и разные форматы пирогов.
+					365 link Value: 127.0.0.1:4322/journal/pirog-500-g-ili-1-kg/, Description: Иллюстрация: маленький и большой яблочные пироги рядом с чашкой чая РАСЧЁТЫ ≈ 3 мин Пирог 500 г или 1 кг: один большой или два маленьких Один большой пирог или два маленьких? Сравниваем начинки, вес кусочка и цену за килограмм. С таблицей нарезки и простыми примерами расчётов.
+				366 container За столом, ID: za-stolom
+					367 container
+						368 heading За столом, Value: 2, ID: za-stolom-title
+							369 text За столом
+						370 text Ужин, чаепитие и встречи без лишней суеты.
+					371 link Value: 127.0.0.1:4322/journal/chto-pit-s-pirogami/, Description: Иллюстрация: ягодный напиток, чай, кофе и кусочек вишнёвого пирога у окна ЗА СТОЛОМ ≈ 3 мин Что пить с пирогами: морс, чай или кофе Идеи напитков к мясным, рыбным, сырным и сладким пирогам. Как собрать стол с морсом, чаем и кофе и не усложнить подготовку в апартаментах.
+					372 link Value: 127.0.0.1:4322/journal/uzhin-v-semnyh-apartamentah/, Description: Иллюстрация идеи ужина с пирогами в апартаментах ЗА СТОЛОМ ≈ 2 мин Как подготовить ужин в съёмных апартаментах Короткий список для ужина в незнакомой квартире: техника, посуда, предпочтения гостей и запасной план на день приезда.
+					373 link Value: 127.0.0.1:4322/journal/kak-vybrat-pirogi-na-kompaniyu/, Description: Концепт пирогов для общего стола ЗА СТОЛОМ ≈ 2 мин Как выбрать пироги на компанию и не угадать за всех Как собрать предпочтения гостей, разделить сытное и сладкое и оценить количество пирогов без неподтверждённых обещаний по порциям.
+					374 link Value: 127.0.0.1:4322/journal/piknik-s-pirogom-chto-vzyat/, Description: Иллюстрация концепта пирогов для совместного отдыха ЗА СТОЛОМ ≈ 1 мин Пикник с пирогом: что продумать до выхода Практический список для пикника: путь до стола, условия перевозки, защита от песка и ветра, посуда и запасной план.
+				375 container Зеленоградск, ID: zelenogradsk
+					376 container
+						377 heading Зеленоградск, Value: 2, ID: zelenogradsk-title
+							378 text Зеленоградск
+						379 text Местные меню, цены и ссылки на источники.
+					380 link Value: 127.0.0.1:4322/journal/gde-poest-v-zelenogradske/, Description: Иллюстрация концепта: стол для ужина в апартаментах ЗЕЛЕНОГРАДСК ≈ 4 мин Где поесть в Зеленоградске: меню и цены на четверых Два кафе Зеленоградска, четыре блюда из официальных меню и расчёт на четверых. Цены, адреса, размеры порций и ссылки на источники: проверка 24 октября 2026.
+				381 container Светлогорск, ID: svetlogorsk
+					382 container
+						383 heading Светлогорск, Value: 2, ID: svetlogorsk-title
+							384 text Светлогорск
+						385 text Завтраки, семейный обед и проверенные адреса.
+					386 link Value: 127.0.0.1:4322/journal/gde-poest-v-svetlogorske/, Description: Иллюстрация: омлет, сырники и кофе на столе у окна с соснами и морем СВЕТЛОГОРСК ≈ 4 мин Где поесть в Светлогорске: завтрак, обед и семейный стол Три адреса в Светлогорске, меню «Круассан-кафе» и пример завтрака на четверых за 1 260 ₽ без напитков. Источники и цены проверены 24 октября 2026.
+				387 container Калининград, ID: kaliningrad
+					388 container
+						389 heading Калининград, Value: 2, ID: kaliningrad-title
+							390 text Калининград
+						391 text Обед в центре, еда с собой и расчёт по меню.
+					392 link Value: 127.0.0.1:4322/journal/gde-poest-v-kaliningrade/, Description: Иллюстрация семейного обеда: борщ, котлета с картофелем и салатом у светлого окна КАЛИНИНГРАД ≈ 4 мин Где поесть в центре Калининграда с семьёй Семейный обед у площади Победы и зоопарка: Патиссон Маркт, Борщ и Сало, самовывоз и расчёт четырёх блюд. Меню и условия проверены 24 октября 2026.
+				393 container
+					394 text ПЕРЕД ЗАПУСКОМ
+					395 heading А какой пирог выбрали бы вы?, Value: 2
+						396 text А какой пирог выбрали бы вы?
+					397 text Пирогорск готовится к запуску. Изучаем интерес к начинкам, форматам и трём балтийским городам. Можно собрать предварительную подборку без телефона и оплаты.
+					398 link Description: Выбрать начинки, Value: 127.0.0.1:4322/?interest=blog#pirogi
+			399 container
+				400 link Description: Пирогорск Пироги с балтийским характером, Value: 127.0.0.1:4322/
+				401 text Готовим запуск. Сейчас изучаем интерес  к вкусам, городам и форматам.
+				402 container Дополнительная навигация
+					403 link Description: Будущее меню, Value: 127.0.0.1:4322/menu/
+					404 link Description: К случаю, Value: 127.0.0.1:4322/povody/
+					405 link Description: Города и условия, Value: 127.0.0.1:4322/delivery/
+					406 link Description: Блог, Value: 127.0.0.1:4322/blog/
+					407 link Description: Отметить интерес, Value: 127.0.0.1:4322/#pirogi
+				408 text Изображения на сайте — иллюстрации концептов. Производство и продажи ещё не запущены.
+	409 heading 1280 px · главная, Value: 2
+		410 text 1280 px · главная
+	411 container Главная 1280 px
+		412 AXWebArea Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске, URL: 127.0.0.1:4322/
+			413 link Description: Перейти к пирогам, Value: 127.0.0.1:4322/#pirogi
+			414 container
+				415 link Description: Пирогорск Пироги с балтийским характером, Value: 127.0.0.1:4322/#top
+				416 container Основная навигация
+					417 link Description: Пироги, Value: 127.0.0.1:4322/#pirogi
+					418 link Description: Наборы, Value: 127.0.0.1:4322/#nabory
+					419 link Description: Доставка, Value: 127.0.0.1:4322/delivery/
+					420 link Description: Блог, Value: 127.0.0.1:4322/blog/
+					421 link Description: О проекте, Value: 127.0.0.1:4322/about/
+				422 pop up button Зеленоградск
+				423 pop up button Подборка: 6 шт.
+			424 container top
+				425 container Пироги с балтийским характером
+					426 image Румяный рыбный пирог и кусочек с начинкой из рыбы, риса, моркови и зелени
+					427 container
+						428 heading Пироги с балтийским характером, Value: 1, ID: hero-heading
+							429 text Пироги
+							430 text с балтийским
+							431 text характером
+						432 text Сытные — к ужину. Сладкие — к чаю.
+						433 text Выберите свой пирог.
+						434 link Description: Выбрать пирог, Value: 127.0.0.1:4322/#pirogi
+						435 text Калининград · Светлогорск · Зеленоградск
+				436 container Выберите начинку, ID: pirogi
+					437 heading Выберите начинку, Value: 2, ID: catalog-heading
+						438 text Выберите начинку
+					439 container Начинка пирога
+						440 checkbox Все, Value: 1
+						441 checkbox Мясо, Value: 0
+						442 checkbox Рыба, Value: 0
+						443 checkbox Капуста, Value: 0
+						444 checkbox Сыр, Value: 0
+						445 checkbox Сладкие, Value: 0
+					446 text Готовим запуск. Цены ориентировочные, изображения — концепты будущих пирогов.
+					447 container Мясной пирог
+						448 container
+							449 image Мясной пирог: пирог и кусочек с начинкой
+							450 text Сытно
+						451 heading Мясной пирог, Value: 3, ID: product-meat
+							452 link Description: Мясной пирог, Value: 127.0.0.1:4322/pirogi/myasnoy-pirog/
+						453 text Сочная мясная начинка
+						454 container Вес: мясной пирог
+							455 text Вес: мясной пирог
+							456 container
+								457 radio button (settable, integer) Description: 500 г, Value: 1
+								458 text 500 г
+							459 container
+								460 radio button (settable, integer) Description: 1 кг, Value: 0
+								461 text 1 кг
+						462 text 690 ₽
+						463 text Предварительно
+						464 button В подборку: мясной пирог
+					465 container Рыбный пирог
+						466 container
+							467 image Рыбный пирог: пирог и кусочек с начинкой
+							468 text Сытно
+						469 heading Рыбный пирог, Value: 3, ID: product-fish
+							470 link Description: Рыбный пирог, Value: 127.0.0.1:4322/pirogi/rybnyy-pirog/
+						471 text Нежная рыбная начинка
+						472 container Вес: рыбный пирог
+							473 text Вес: рыбный пирог
+							474 container
+								475 radio button (settable, integer) Description: 500 г, Value: 1
+								476 text 500 г
+							477 container
+								478 radio button (settable, integer) Description: 1 кг, Value: 0
+								479 text 1 кг
+						480 text 790 ₽
+						481 text Предварительно
+						482 button В подборку: рыбный пирог
+					483 container Пирог с капустой
+						484 container
+							485 image Пирог с капустой: пирог и кусочек с начинкой
+							486 text Овощной
+						487 heading Пирог с капустой, Value: 3, ID: product-cabbage
+							488 link Description: Пирог с капустой, Value: 127.0.0.1:4322/pirogi/pirog-s-kapustoy/
+						489 text Мягкая тушёная капуста
+						490 container Вес: пирог с капустой
+							491 text Вес: пирог с капустой
+							492 container
+								493 radio button (settable, integer) Description: 500 г, Value: 1
+								494 text 500 г
+							495 container
+								496 radio button (settable, integer) Description: 1 кг, Value: 0
+								497 text 1 кг
+						498 text 390 ₽
+						499 text Предварительно
+						500 button В подборку: пирог с капустой
+					501 container Сырный пирог
+						502 container
+							503 image Сырный пирог: пирог и кусочек с начинкой
+							504 text Сырный
+						505 heading Сырный пирог, Value: 3, ID: product-cheese
+							506 link Description: Сырный пирог, Value: 127.0.0.1:4322/pirogi/syrnyy-pirog/
+						507 text Мягкая сырная начинка
+						508 container Вес: сырный пирог
+							509 text Вес: сырный пирог
+							510 container
+								511 radio button (settable, integer) Description: 500 г, Value: 1
+								512 text 500 г
+							513 container
+								514 radio button (settable, integer) Description: 1 кг, Value: 0
+								515 text 1 кг
+						516 text 590 ₽
+						517 text Предварительно
+						518 button В подборку: сырный пирог
+					519 container Пирог с яблоком и брусникой
+						520 container
+							521 image Пирог с яблоком и брусникой: пирог и кусочек с начинкой
+							522 text Сладкий
+						523 heading Пирог с яблоком и брусникой, Value: 3, ID: product-apple
+							524 link Description: Пирог с яблоком и брусникой, Value: 127.0.0.1:4322/pirogi/pirog-s-yablokom-i-brusnikoy/
+						525 text Сладкое яблоко, кислинка брусники
+						526 container Вес: пирог с яблоком и брусникой
+							527 text Вес: пирог с яблоком и брусникой
+							528 container
+								529 radio button (settable, integer) Description: 500 г, Value: 1
+								530 text 500 г
+							531 container
+								532 radio button (settable, integer) Description: 1 кг, Value: 0
+								533 text 1 кг
+						534 text 490 ₽
+						535 text Предварительно
+						536 button В подборку: пирог с яблоком и брусникой
+					537 container Пирог с вишней
+						538 container
+							539 image Пирог с вишней: пирог и кусочек с начинкой
+							540 text Сладкий
+						541 heading Пирог с вишней, Value: 3, ID: product-cherry
+							542 link Description: Пирог с вишней, Value: 127.0.0.1:4322/pirogi/pirog-s-vishney/
+						543 text Сочная вишнёвая начинка
+						544 container Вес: пирог с вишней
+							545 text Вес: пирог с вишней
+							546 container
+								547 radio button (settable, integer) Description: 500 г, Value: 1
+								548 text 500 г
+							549 container
+								550 radio button (settable, integer) Description: 1 кг, Value: 0
+								551 text 1 кг
+						552 text 590 ₽
+						553 text Предварительно
+						554 button В подборку: пирог с вишней
+					555 container Пирог с творогом и малиной
+						556 container
+							557 image Пирог с творогом и малиной: пирог и кусочек с начинкой
+							558 text К чаю
+						559 heading Пирог с творогом и малиной, Value: 3, ID: product-curd
+							560 link Description: Пирог с творогом и малиной, Value: 127.0.0.1:4322/pirogi/pirog-s-tvorogom-i-malinoy/
+						561 text Нежный творог и яркая малина
+						562 container Вес: пирог с творогом и малиной
+							563 text Вес: пирог с творогом и малиной
+							564 container
+								565 radio button (settable, integer) Description: 500 г, Value: 1
+								566 text 500 г
+							567 container
+								568 radio button (settable, integer) Description: 1 кг, Value: 0
+								569 text 1 кг
+						570 text 590 ₽
+						571 text Предварительно
+						572 button В подборку: пирог с творогом и малиной
+				573 container К пирогу — ещё кое-что, ID: extras
+					574 text ЗА ОДНИМ СТОЛОМ
+					575 heading К пирогу — ещё кое-что, Value: 2, ID: extras-heading
+						576 text К пирогу — ещё кое-что
+					577 container
+						578 text Ягодный морс к обеду.
+						579 text Чай или кофе — к сладкому.
+					580 container Клюквенный морс
+						581 container
+							582 image Клюквенный морс
+							583 text Освежает
+						584 heading Клюквенный морс, Value: 3, ID: product-cranberry
+							585 text Клюквенный морс
+						586 text Ягодный вкус с приятной кислинкой
+						587 container Объём: клюквенный морс
+							588 text Объём: клюквенный морс
+							589 container
+								590 radio button (settable, integer) Description: 500 мл, Value: 1
+								591 text 500 мл
+							592 container
+								593 radio button (settable, integer) Description: 1 л, Value: 0
+								594 text 1 л
+						595 text 200 ₽
+						596 text Предварительно
+						597 button В подборку: клюквенный морс
+					598 container Облепиховый морс
+						599 container
+							600 image Облепиховый морс
+							601 text Освежает
+						602 heading Облепиховый морс, Value: 3, ID: product-seabuckthorn
+							603 text Облепиховый морс
+						604 text Яркая облепиха к любимому пирогу
+						605 container Объём: облепиховый морс
+							606 text Объём: облепиховый морс
+							607 container
+								608 radio button (settable, integer) Description: 500 мл, Value: 1
+								609 text 500 мл
+							610 container
+								611 radio button (settable, integer) Description: 1 л, Value: 0
+								612 text 1 л
+						613 text 200 ₽
+						614 text Предварительно
+						615 button В подборку: облепиховый морс
+					616 container Чай
+						617 image Чай
+						618 heading Чай, Value: 3, ID: product-tea
+							619 text Чай
+						620 text Чашка чая к сладкому или сытному
+						621 container Объём: чай
+							622 text Объём: чай
+							623 container
+								624 radio button (settable, integer) Description: 250 мл, Value: 1
+								625 text 250 мл
+						626 text 100 ₽
+						627 text Предварительно
+						628 button В подборку: чай
+					629 container Кофе
+						630 image Кофе
+						631 heading Кофе, Value: 3, ID: product-coffee
+							632 text Кофе
+						633 text К чашке кофе — кусочек пирога
+						634 container Объём: кофе
+							635 text Объём: кофе
+							636 container
+								637 radio button (settable, integer) Description: 250 мл, Value: 1
+								638 text 250 мл
+						639 text 160 ₽
+						640 text Предварительно
+						641 button В подборку: кофе
+					642 container Питьевая вода
+						643 image Питьевая вода
+						644 heading Питьевая вода, Value: 3, ID: product-water
+							645 text Питьевая вода
+						646 text Без газа
+						647 container Объём: питьевая вода
+							648 text Объём: питьевая вода
+							649 container
+								650 radio button (settable, integer) Description: 500 мл, Value: 1
+								651 text 500 мл
+						652 text 80 ₽
+						653 text Предварительно
+						654 button В подборку: питьевая вода
+					655 container Набор посуды
+						656 heading Набор посуды, Value: 3, ID: product-tableware
+							657 text Набор посуды
+						658 text Тарелка, вилка и салфетка на одного гостя
+						659 container Комплект: набор посуды
+							660 text Комплект: набор посуды
+							661 container
+								662 radio button (settable, integer) Description: 1 набор, Value: 1
+								663 text 1 набор
+						664 text 35 ₽
+						665 text Предварительно
+						666 button В подборку: набор посуды
+					667 text Меню готовится к открытию. Цены предварительные; окончательные составы и цены появятся перед запуском.
+				668 container Соберите свой набор, ID: nabory
+					669 image Мясной и капустный пироги на деревянной доске у моря
+					670 container
+						671 heading Соберите свой набор, Value: 2, ID: bundle-heading
+							672 text Соберите свой набор
+						673 text Разные начинки. Два размера. Одна компания.
+						674 button Выбрать набор
+				675 container Пироги к вашему случаю
+					676 heading Пироги к вашему случаю, Value: 2, ID: occasion-heading
+						677 text Пироги к вашему случаю
+					678 button Мясной пирог на уютном столе в апартаментах Ужин в апартаментах
+						679 image Мясной пирог на уютном столе в апартаментах
+						680 text Ужин
+						681 text в апартаментах
+					682 button Несколько пирогов на столе для компании у моря На компанию
+						683 image Несколько пирогов на столе для компании у моря
+						684 text На компанию
+				685 container К вашему столу
+					686 text БАЛТИЙСКИЕ ГОРОДА
+					687 heading К вашему столу, Value: 2, ID: discovery-heading
+						688 text К вашему столу
+					689 text Пироги после прогулки у моря, к ужину в апартаментах или встрече с друзьями. Изучаем спрос в трёх городах — выберите свой.
+					690 container Пироги по городам
+						691 link Description: Зеленоградск, Value: 127.0.0.1:4322/dostavka/zelenogradsk/
+						692 link Description: Калининград, Value: 127.0.0.1:4322/dostavka/kaliningrad/
+						693 link Description: Светлогорск, Value: 127.0.0.1:4322/dostavka/svetlogorsk/
+				694 container К общему столу
+					695 container
+						696 text БЛОГ ПИРОГОРСКА
+						697 heading К общему столу, Value: 2, ID: journal-heading
+							698 text К общему столу
+						699 link Description: Все материалы, Value: 127.0.0.1:4322/blog/
+					700 link Value: 127.0.0.1:4322/journal/skolko-piroga-na-cheloveka/, Description: Иллюстрация: нарезанный сытный пирог и тарелки вокруг общего стола РАСЧЁТЫ ≈ 3 мин Сколько пирога нужно на человека и на компанию Как рассчитать вес пирогов на 4, 6, 8, 10 и 12 гостей: таблица с разными порциями, округление до 500 г и калькулятор под ваш стол.
+					701 link Value: 127.0.0.1:4322/journal/pirog-500-g-ili-1-kg/, Description: Иллюстрация: маленький и большой яблочные пироги рядом с чашкой чая РАСЧЁТЫ ≈ 3 мин Пирог 500 г или 1 кг: один большой или два маленьких Один большой пирог или два маленьких? Сравниваем начинки, вес кусочка и цену за килограмм. С таблицей нарезки и простыми примерами расчётов.
+					702 link Value: 127.0.0.1:4322/journal/chto-pit-s-pirogami/, Description: Иллюстрация: ягодный напиток, чай, кофе и кусочек вишнёвого пирога у окна ЗА СТОЛОМ ≈ 3 мин Что пить с пирогами: морс, чай или кофе Идеи напитков к мясным, рыбным, сырным и сладким пирогам. Как собрать стол с морсом, чаем и кофе и не усложнить подготовку в апартаментах.
+				703 container Что нужно знать
+					704 text ПЕРЕД ПЕРВЫМ ПИРОГОМ
+					705 heading Что нужно знать, Value: 2, ID: faq-heading
+						706 text Что нужно знать
+					707 link Description: Владельцам апартаментов и пекарням, Value: 127.0.0.1:4322/partners/
+					708 button (collapsed) Можно уже заказать пирог?, Secondary Actions: Expand
+						709 text Можно уже заказать пирог?
+					710 button (collapsed) Чем отличаются 500 г и 1 кг?, Secondary Actions: Expand
+						711 text Чем отличаются 500 г и 1 кг?
+					712 button (collapsed) Какие начинки планируются?, Secondary Actions: Expand
+						713 text Какие начинки планируются?
+					714 button (collapsed) В каких городах будет доставка?, Secondary Actions: Expand
+						715 text В каких городах будет доставка?
+					716 button (collapsed) Нужно оставлять телефон?, Secondary Actions: Expand
+						717 text Нужно оставлять телефон?
+			718 container
+				719 link Description: Пирогорск Пироги с балтийским характером, Value: 127.0.0.1:4322/#top
+				720 container Выберите город
+					721 button Калининград
+					722 button Светлогорск
+					723 button Зеленоградск
+				724 text pirogorsk.ru
+				725 container О Пирогорске
+					726 link Description: Доставка, Value: 127.0.0.1:4322/delivery/
+					727 link Description: О проекте, Value: 127.0.0.1:4322/about/
+					728 link Description: Всё меню, Value: 127.0.0.1:4322/menu/
+					729 link Description: Сколько пирогов?, Value: 127.0.0.1:4322/podbor/
+					730 link Description: Блог, Value: 127.0.0.1:4322/blog/
+					731 link Description: Партнёрам, Value: 127.0.0.1:4322/partners/
+					732 link Description: О данных, Value: 127.0.0.1:4322/privacy/
+					733 link Description: Условия, Value: 127.0.0.1:4322/terms/
+				734 text Готовимся к открытию. Меню, цены и изображения предварительные. Можно оставить анонимную заявку. Приём заказов и оплата пока не открыты.
+	735 text [
+  {
+    "page": "Главная 320 px",
+    "width": 320,
+    "documentWidth": 320,
+    "brandRight": 166,
+    "cityLeft": 174,
+    "overlap": false
+  },
+  {
+    "page": "Блог 390 px",
+    "width": 390,
+    "documentWidth": 390,
+    "brandRight": 194,
+    "cityLeft": null,
+    "overlap": false
+  },
+  {
+    "page": "Главная 1280 px",
+    "width": 1280,
+    "documentWidth": 1280,
+    "brandRight": 295,
+    "cityLeft": 924,
+    "overlap": false
+  }
+]
+
+The focused UI element is 1 AXWebArea 127.0.0.1:4322/brand-review.html
