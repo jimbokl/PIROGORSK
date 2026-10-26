@@ -5,6 +5,12 @@
 .catalog .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px 28px; align-items: stretch; }
 .product-card.catalog-card { display: flex; flex-direction: column; min-width: 0; position: relative; }
 .product-card.catalog-card[hidden] { display: none; }
+.catalog .catalog-card--pie { padding: 9px 9px 17px; border: 1px solid #123b4a16; border-radius: 15px; background: #fffdf9; transition: box-shadow 280ms ease, border-color 280ms ease; }
+.catalog .catalog-card--pie .product-visual { border-radius: 9px; }
+.catalog .catalog-card--pie .product-copy { padding: 13px 5px 0; }
+.catalog .catalog-card--pie .variant-switch, .catalog .catalog-card--pie .product-bottom { margin-inline: 5px; }
+.catalog .catalog-card--pie .product-bottom { gap: 10px 5px; }
+.catalog .catalog-card--pie .button-small { padding-inline: 12px; }
 .catalog-card .product-copy { flex: 1; padding-top: 10px; }
 .product-card.catalog-card h3 { font-size: clamp(21px, 1.7vw, 25px); line-height: 1.2; letter-spacing: -.025em; white-space: normal; text-wrap: balance; min-height: 0; }
 .catalog-card .product-title-link { color: inherit; text-decoration: none; text-underline-offset: .15em; }
@@ -25,13 +31,17 @@
 .catalog-card .button-small.added { padding-inline: 13px; }
 .product-visual-link { display: block; border-radius: 7px; }
 .product-visual-link:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
-.product-visual-link .product-visual-subject { transition: transform 220ms ease; }
+.product-visual-link .product-visual-subject { transition: transform 600ms cubic-bezier(.16,1,.3,1), filter 600ms ease; }
+.product-visual-link .product-visual-background { transition: transform 700ms cubic-bezier(.16,1,.3,1); }
 @media (hover: hover) {
-  .product-visual-link:hover .product-visual-subject { transform: translate(-50%, -50%) scale(1.035); }
+  .catalog-card--pie:hover { border-color: #123b4a40; box-shadow: 0 13px 32px #123b4a0c; }
+  .product-visual-link:hover .product-visual-subject { transform: translate(-50%, -53%) rotate(-3deg) scale(1.045); filter: drop-shadow(0 10px 6px #123b4a1c); }
+  .product-visual-link:hover .product-visual-background { transform: scale(1.035) rotate(2deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .product-visual-link .product-visual-subject { transition: none; }
+  .catalog .catalog-card--pie, .product-visual-link .product-visual-subject, .product-visual-link .product-visual-background { transition: none; }
   .product-visual-link:hover .product-visual-subject { transform: translate(-50%, -50%); }
+  .product-visual-link:hover .product-visual-background { transform: none; }
 }
 
 .product-visual { aspect-ratio: 1; position: relative; isolation: isolate; overflow: hidden; border-radius: 7px; width: 100%; background: var(--paper); }
@@ -79,7 +89,7 @@
   .extras-section .extras-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
 }
 @media (max-width: 1060px) {
-  .catalog .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+  .catalog .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
 }
 @media (max-width: 850px) {
   .catalog .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
@@ -96,6 +106,10 @@
   .catalog .filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 7px; }
   .catalog .filters button { min-height: 44px; padding: 10px 15px; }
   .catalog .product-grid, .extras-section .extras-grid { gap: 28px 20px; }
+  .catalog .product-grid { gap: 20px 12px; }
+  .catalog .catalog-card--pie { padding: 5px 5px 12px; border-radius: 11px; }
+  .catalog .catalog-card--pie .product-copy { padding-inline: 3px; }
+  .catalog .catalog-card--pie .variant-switch, .catalog .catalog-card--pie .product-bottom { margin-inline: 3px; }
   .product-card.catalog-card h3 { font-size: 21px; line-height: 1.2; min-height: 0; }
   .catalog-card .product-description { font-size: 12px; min-height: 0; margin-bottom: 16px; }
   .catalog-card .product-bottom { align-items: start; }

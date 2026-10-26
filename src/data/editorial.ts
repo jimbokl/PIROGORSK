@@ -36,6 +36,13 @@ const productNotes = {
     pairing: 'Добавьте пирог с капустой, если хочется двух разных сытных вкусов. К общему столу можно выбрать клюквенный или облепиховый морс.',
     scenario: 'na-kompaniyu',
   },
+  chicken: {
+    slug: 'pirog-s-kuritsey-i-gribami',
+    intro: 'Курица и грибы — ещё один сытный вкус будущего меню. Выберите 500 г или 1 кг: небольшой пирог к ужину или большой для общего стола.',
+    question: 'Планируем сочетание нежной курицы и грибов. Точные ингредиенты, пропорции и аллергены опубликуем после утверждения рецепта. Иллюстрация показывает идею начинки.',
+    pairing: 'К нему подойдёт капустный пирог, если хочется нескольких несладких вкусов. Для завершения ужина можно добавить вишнёвый пирог и чай.',
+    scenario: 'uzhin-v-apartamentah',
+  },
   fish: {
     slug: 'rybnyy-pirog',
     intro: 'Рыбный пирог для ужина у Балтийского моря. Один из сытных вкусов будущего меню: выберите 500 г или 1 кг и добавьте в свою подборку.',
@@ -83,6 +90,7 @@ const productNotes = {
 type ProductNoteKey = keyof typeof productNotes;
 function noteKey(product: (typeof products)[number]): ProductNoteKey | undefined {
   const text = `${product.id} ${product.name}`.toLowerCase();
+  if (/chicken|куриц/.test(text)) return 'chicken';
   if (/meat|мяс/.test(text)) return 'meat';
   if (/fish|рыб/.test(text)) return 'fish';
   if (/cabbage|капуст/.test(text)) return 'cabbage';

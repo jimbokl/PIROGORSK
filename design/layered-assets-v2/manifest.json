@@ -473,6 +473,41 @@
         "container_aspect_ratio": "1/1",
         "note": "Center both layers. Background fills container; pie image width is 88% of container, preserving its transparent canvas. Badges remain separate HTML/CSS."
       }
+    },
+    "chicken": {
+      "status": "READY",
+      "files": {
+        "pie": {
+          "path": "chicken/pie.png",
+          "status": "READY",
+          "role": "pie",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "alpha": true,
+          "sha256": "9bc2ba49b5c155369e2fbbc1d66fe13d447761ea97c18e38c1d06b16f9fba7b2",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a167c6-1066-7432-b384-814320236427/exec-b445d911-e8bb-4f08-a5cb-272b27df343b.png",
+          "visual_check": "Inspected generated image: complete pie and wedge, chicken/mushroom filling, matching engraving backdrop. Separate alpha pie and opaque background. Concept only."
+        },
+        "background": {
+          "path": "chicken/background.png",
+          "status": "READY",
+          "role": "background",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGB",
+          "alpha": false,
+          "sha256": "223f05b6b83f22840a2bba56e055b2796e9b91e8fb7f5ee4ba12b3a89b433660",
+          "source_generated_file": "/Users/dmitrij/.codex/generated_images/01a167c6-1066-7432-b384-814320236427/exec-999e0d07-8bf6-47b8-8a88-2e51c7ef96f5.png",
+          "visual_check": "Inspected generated image: complete pie and wedge, chicken/mushroom filling, matching engraving backdrop. Separate alpha pie and opaque background. Concept only."
+        }
+      },
+      "composition": {
+        "pie_css_width_percent": 88,
+        "pie_center_x_percent": 50,
+        "pie_center_y_percent": 54,
+        "container_aspect_ratio": "1/1"
+      }
     }
   },
   "drinks": {

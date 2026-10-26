@@ -1,0 +1,41 @@
+---
+import { Picture } from 'astro:assets';
+import Icon from './Icon.astro';
+import fish from '../../design/layered-assets-v2/hero/pie.png';
+import meat from '../../design/layered-assets-v2/meat/pie.png';
+import cherry from '../../design/layered-assets-v2/cherry/pie.png';
+import coast from '../../design/layered-assets-v2/hero/background.png';
+import '../styles/tasting-hero.css';
+const scenes = [
+  { id: 'fish', label: 'Рыбный', name: 'Рыбный пирог', note: 'Начинка с морским настроением', href: '/pirogi/rybnyy-pirog/', image: fish },
+  { id: 'meat', label: 'Мясной', name: 'Мясной пирог', note: 'Сытный вкус для общего стола', href: '/pirogi/myasnoy-pirog/', image: meat },
+  { id: 'cherry', label: 'Вишнёвый', name: 'Пирог с вишней', note: 'Ягодный акцент к чашке чая', href: '/pirogi/pirog-s-vishney/', image: cherry },
+];
+---
+<section class="tasting-hero container" aria-labelledby="hero-heading" data-tasting-hero>
+  <div class="tasting-coast" aria-hidden="true"><Picture src={coast} formats={['avif','webp']} fallbackFormat="webp" widths={[480,800,1200,1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} alt="" loading="eager" fetchpriority="high" decoding="sync" /></div>
+  <div class="tasting-copy">
+    <p class="hero-eyebrow"><span aria-hidden="true"></span>Готовим запуск · изучаем ваши вкусы</p>
+    <h1 id="hero-heading">Пироги<br />с балтийским<br /><em>характером</em></h1>
+    <p class="tasting-description">После моря — к общему столу.<br />Сытные к ужину, сладкие к чаю.</p>
+    <div class="hero-actions"><a class="button hero-cta" href="#pirogi">Выбрать пирог<Icon name="arrow" /></a><a class="hero-planner" href="/podbor/">Сколько взять?<Icon name="arrow" /></a></div>
+    <p class="tasting-cities">Зеленоградск · Светлогорск · Калининград</p>
+  </div>
+  <div class="tasting-stage">
+    <div class="tasting-orbit" aria-hidden="true"></div>
+    <div class="tasting-seal" aria-label="Восемь начинок, два размера"><span>к вашему столу</span><strong>8</strong><span>начинок · 2 размера</span></div>
+    <div class="tasting-art" data-tasting-art>
+      {scenes.map((scene,i) => <div class="tasting-scene" data-tasting-scene={scene.id} hidden={i !== 0}>
+        <a href={scene.href} aria-label={`Рассмотреть: ${scene.name.toLowerCase()}`} tabindex={i === 0 ? 0 : -1}>
+          <Picture src={scene.image} formats={['avif','webp']} fallbackFormat="webp" widths={[320,480,640,800,1000]} sizes="(max-width: 760px) 68vw, (max-width: 1060px) 40vw, (max-width: 1500px) 39vw, 570px" width={900} height={900} quality={48} alt={`${scene.name}: пирог и кусочек с начинкой. Визуальный концепт.`} loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : 'low'} />
+        </a>
+      </div>)}
+    </div>
+    <div class="tasting-caption" aria-live="polite" aria-atomic="true"><span data-tasting-count>01 / 03</span><div><a data-tasting-title href={scenes[0]!.href}>{scenes[0]!.name}</a><small data-tasting-note>{scenes[0]!.note}</small></div><span class="tasting-weight">500 г<br /><b>или 1 кг</b></span></div>
+    <div class="tasting-controls" role="group" aria-label="Рассмотреть начинки">
+      {scenes.map((scene,i) => <button type="button" data-tasting-select={scene.id} data-name={scene.name} data-note={scene.note} data-href={scene.href} aria-pressed={i === 0}><span class="tasting-control-dot" aria-hidden="true"></span>{scene.label}</button>)}
+    </div>
+  </div>
+  <svg class="tasting-wave" viewBox="0 0 1200 48" fill="none" aria-hidden="true"><path d="M-50 29C65-13 160 63 280 26S465 2 590 26s180 14 290-9 200 8 370 5"/><path d="M-50 39C65-3 160 73 280 36S465 12 590 36s180 14 290-9 200 8 370 5"/></svg>
+</section>
+<script>import '../scripts/design-motion.ts';</script>

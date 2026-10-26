@@ -12,7 +12,7 @@ import SiteNavigation from '../components/SiteNavigation.astro';
 import BlogCards from '../components/BlogCards.astro';
 import { blogEntries } from '../data/blog';
 import { cities, products, catalog, filters } from '../data/catalog';
-import heroPie from '../../design/layered-assets-v2/hero/pie.png';
+import TastingHero from '../components/TastingHero.astro';
 import heroBackground from '../../design/layered-assets-v2/hero/background.png';
 import bundle from '../../design/assets-source/bundle.png';
 import dinner from '../../design/assets-source/dinner.png';
@@ -22,7 +22,7 @@ import '../styles/home.css';
 const faqs = [
   ['Можно уже заказать пирог?', 'Мы готовим запуск. Сейчас можно выбрать пироги и оставить анонимную заявку по предварительной цене. Это поможет определить меню и города. Заказ и оплата пока не подтверждаются.'],
   ['Чем отличаются 500 г и 1 кг?', 'Это два варианта веса одного пирога. Можно взять несколько небольших пирогов с разными начинками или большой пирог к общему столу. Вес готового продукта уточним перед открытием.'],
-  ['Какие начинки планируются?', 'Мясо, рыба, капуста и сыр; к чаю — яблоко с брусникой, вишня, творог с малиной. Окончательные составы и сведения об аллергенах появятся после выбора производства.'],
+  ['Какие начинки планируются?', 'Мясо, рыба, курица с грибами, капуста и сыр; к чаю — яблоко с брусникой, вишня, творог с малиной. Окончательные составы и сведения об аллергенах появятся после выбора производства.'],
   ['В каких городах будет доставка?', 'Изучаем спрос в Зеленоградске, Калининграде и Светлогорске. Дату запуска, зоны, стоимость и способы получения опубликуем после согласования с производством.'],
   ['Нужно оставлять телефон?', 'Нет. Заявка анонимная: мы сохраняем город, выбранные товары, количество, желаемый день и способ получения. Связаться с вами по такой заявке не получится.'],
 ];
@@ -45,22 +45,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       </div>
     </header>
     <main id="top">
-      <section class="hero hero-layered container" aria-labelledby="hero-heading">
-        <div class="hero-landscape" aria-hidden="true"><Picture src={heroBackground} formats={['avif', 'webp']} fallbackFormat="webp" widths={[480, 800, 1200, 1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} alt="" loading="eager" fetchpriority="high" decoding="sync" /></div>
-        <div class="hero-art hero-art-layered">
-          <Picture src={heroPie} formats={['avif', 'webp']} fallbackFormat="webp" widths={[320, 480, 640, 800, 1000]} sizes="(max-width: 600px) 76vw, (max-width: 850px) 320px, (max-width: 1060px) 370px, (min-width: 1680px) 455px, 410px" width={900} height={900} quality={48} alt="Румяный рыбный пирог и кусочек с начинкой из рыбы, риса, моркови и зелени" loading="eager" fetchpriority="high" decoding="sync" />
-        </div>
-        <div class="hero-content">
-          <p class="hero-eyebrow"><span aria-hidden="true"></span>Готовим запуск · изучаем ваши вкусы</p>
-          <h1 id="hero-heading">Пироги<br />с балтийским<br />характером</h1>
-          <p class="hero-description">Сытные — к ужину. Сладкие — к чаю.<br />Семь начинок. Два размера: 500 г и 1 кг.</p>
-          <div class="hero-actions">
-            <a class="button hero-cta" href="#pirogi">Выбрать пирог<Icon name="arrow" /></a>
-            <a class="hero-planner" href="/podbor/">Сколько взять?<Icon name="arrow" /></a>
-          </div>
-          <p class="hero-cities">Калининград · Светлогорск · Зеленоградск</p>
-        </div>
-      </section>
+      <TastingHero />
       <section class="catalog container" id="pirogi" aria-labelledby="catalog-heading">
         <div class="catalog-top">
           <h2 id="catalog-heading">Выберите начинку</h2>
