@@ -1,0 +1,70 @@
+[
+  {
+    "mode": "mobile",
+    "url": "http://127.0.0.1:4322/blog/",
+    "timestamp": "2026-10-26T12:18:22.775Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 842.900625,
+        "display": "0.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1664.3205000000003,
+        "display": "1.7 s"
+      },
+      "total-blocking-time": {
+        "value": 8,
+        "display": "10 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 842.900625,
+        "display": "0.8 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "url": "http://127.0.0.1:4322/blog/",
+    "timestamp": "2026-10-26T12:18:30.483Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 228.58669999999998,
+        "display": "0.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 366.8943499999999,
+        "display": "0.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 228.58669999999998,
+        "display": "0.2 s"
+      }
+    }
+  }
+]
