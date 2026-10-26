@@ -1,5 +1,18 @@
 # Скорость production-сборки
 
+## Индивидуальные обложки 23 статей — 26.10, 19:19 Калининград
+
+Runtime `2b6a569`, [CI40366612177 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40366612177). Новая графика: 15 сцен + восемь прежних индивидуальных сцен, оптимизированные AVIF/WebP и отдельные OG. 71 production URL совпал со сборкой. Проверена статья `/journal/rybnaya-nachinka-dlya-piroga/` без QA-параметра, с обычной Метрикой.
+
+| Публичный PSI | P / A / BP / SEO | FCP | LCP | TBT | CLS | SI |
+| --- | --- | --- | --- | --- | --- | --- |
+| [mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/uqoytb7fgy?form_factor=mobile) | 90 / 100 / 100 / 100 | 0,9с | 3,6с | 20мс | 0 | 2,8с |
+| [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/uqoytb7fgy?form_factor=desktop) | 100 / 100 / 100 / 100 | 0,3с | 0,4с | 20мс | 0 | 0,5с |
+
+CrUX нет. В mobile LCP — обложка; исходная разбивка: задержка ресурса210мс, загрузка250мс, отрисовка890мс. По одной разбивке нельзя приписать всю симулированную задержку одной причине. Требование 100 для всех шаблонов не закрыто, замеры прежнего выпуска не подменяются этими. [Показатели и readback](qa/article-artwork-20261026/public-psi-summary.json), [QA](qa/article-artwork-20261026/README.md).
+
+Локальный Lighthouse preview4322 этой статьи: P/A/BP/SEO100 обоих, mobile LCP1,8с / desktop0,4с / TBT0 / CLS0. [Полные локальные отчёты](qa/article-artwork-20261026/local-lighthouse/). Это отдельная среда, не PSI.
+
 ## Текущий выпуск SEO-экспансии — 26.10
 
 Runtime `4781207`, [CI40358029315 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40358029315). 42 production URL проверены по HTTP200 и точным хешам сборки. H1 статей использует локальный serif, не ожидающий web-font; остальные гарнитуры сохраняются. Калькуляторы, Метрика и backend не отключались для замеров.

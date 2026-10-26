@@ -1,0 +1,44 @@
+[
+  {
+    "mode": "mobile",
+    "url": "https://pirogorsk.ru/journal/rybnaya-nachinka-dlya-piroga/",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/uqoytb7fgy?form_factor=mobile",
+    "reportedAt": "2026-10-26 19:19:34 Europe/Kaliningrad",
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metricsFromVisibleCalculator": {
+      "FCP": 930.0,
+      "LCP": 3624.0,
+      "TBT": 23.0,
+      "CLS": 0.0,
+      "SI": 2805.0
+    },
+    "crux": "No data",
+    "source": "psi-mobile.txt"
+  },
+  {
+    "mode": "desktop",
+    "url": "https://pirogorsk.ru/journal/rybnaya-nachinka-dlya-piroga/",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/uqoytb7fgy?form_factor=desktop",
+    "reportedAt": "2026-10-26 19:19:34 Europe/Kaliningrad",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metricsFromVisibleCalculator": {
+      "FCP": 306.0,
+      "LCP": 362.0,
+      "TBT": 15.0,
+      "CLS": 0.0,
+      "SI": 461.0
+    },
+    "crux": "No data",
+    "source": "psi-desktop.txt"
+  }
+]

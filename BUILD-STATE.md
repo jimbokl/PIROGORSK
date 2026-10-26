@@ -4,7 +4,9 @@
 
 По последнему прямому поручению каждому из 23 материалов назначена собственная графика: **15 новых ImageGen-сцен + 8 существующих индивидуальных обложек**. Статья, карточка блога и OG используют одну тематическую сцену. [Реестр](src/data/article-artwork.json), [промпты/исходники](design/blog-source/README.md), [QA](qa/article-artwork-20261026/README.md).
 
-Check90 файлов/build69 HTML/SEO67 sitemap/19 tests/registry strict PASS. Проверка 23 уникальных SHA-256, alt, размеров, карточек и BlogPosting добавлена в CI. UI320/390/1280 без переполнения; AVIF/WebP/srcset/lazy сохранены. Публикация и публичная скорость ещё проверяются; прежние PSI не выдаются за замер этого выпуска.
+Check90 файлов/build69 HTML/SEO67 sitemap/19 tests/registry strict PASS. Проверка 23 уникальных SHA-256, alt, размеров, карточек и BlogPosting добавлена в CI. UI320/390/1280 без переполнения; AVIF/WebP/srcset/lazy сохранены.
+
+Опубликован runtime **`2b6a569`**, [CI40366612177 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40366612177). Все **71 проверенный production URL**: HTTP200 и точное совпадение SHA-256 со сборкой. IndexNow: 25 URL приняты обоими получателями HTTP200; это не подтверждение индексации. [Публичный PSI новой статьи](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/uqoytb7fgy?form_factor=mobile), 26.10 19:19 Калининград: **90 mobile / 100 desktop**, A/BP/SEO100. Mobile LCP3,6с, TBT20мс, CLS0; LCP — новая обложка. Локальный LH100/100 учтён отдельно. Достижение 100 на всех шаблонах остаётся открытым; расширение контента и посторонняя полировка в этом поручении не продолжались. [Доказательства](qa/article-artwork-20261026/README.md).
 
 ## Текущая работа — утверждённая SEO-экспансия, 26.10
 
