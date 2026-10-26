@@ -3,28 +3,41 @@ import ContentLayout from '../../layouts/ContentLayout.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
+import LcpImagePreload from '../../components/LcpImagePreload.astro';
 import { siteOrigin } from '../../data/editorial';
-import { foodGuide, menuVenues } from '../../data/food-guides';
+import { foodGuide, foodGuideImage, foodGuideImageAlt, localPieCafe, menuVenues } from '../../data/food-guides';
 
 const money = (amount: number) => `${amount.toLocaleString('ru-RU')} ₽`;
 const path = `/journal/${foodGuide.slug}/`;
 const schema = [{
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: foodGuide.title,
   description: foodGuide.description,
   inLanguage: 'ru-RU',
   datePublished: foodGuide.checkedAt,
-  dateModified: foodGuide.checkedAt,
+  dateModified: foodGuide.updatedAt,
+  image: `${siteOrigin}/seo/blog/gde-poest-v-zelenogradske.jpg`,
   mainEntityOfPage: `${siteOrigin}${path}`,
+  author: { '@id': `${siteOrigin}/#organization` },
   publisher: { '@id': `${siteOrigin}/#organization` },
-  citation: menuVenues.map(venue => venue.menuUrl),
+  citation: [...menuVenues.map(venue => venue.menuUrl), localPieCafe.sourceUrl],
 }];
 ---
-<ContentLayout title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article">
-  <EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} intro="Перед ужином удобно открыть меню и посчитать свой стол. Мы выбрали два кафе, проверили их официальные сайты и собрали четыре примера — от овощной кесадильи до горячего с гарниром." compact>
-    <p class="guide-date">Меню проверены <time datetime={foodGuide.checkedAt}>{foodGuide.checkedLabel}</time></p>
-    <nav class="guide-jumps" aria-label="Кафе в гиде">{menuVenues.map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav>
+<ContentLayout title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article" image="/seo/blog/gde-poest-v-zelenogradske.jpg" imageAlt={foodGuideImageAlt}>
+  <LcpImagePreload slot="head" src={foodGuideImage} widths={[480, 800, 1200]} sizes="(max-width: 760px) 92vw, 52vw" width={800} height={Math.round(800 * foodGuideImage.height / foodGuideImage.width)} quality={58} />
+  <EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} intro="После пляжа — кесадилья у моря, на ужин — паста или горячее, на Курортном — пироги с рыбными начинками. Собрали три варианта под разные прогулки и посчитали четыре блюда по двум официальным меню." image={foodGuideImage} imageAlt={foodGuideImageAlt} caption="Иллюстрация создана с помощью ИИ. Это вымышленное кафе, а не интерьер одного из мест в гиде." compact>
+    <p class="guide-date">Редакция Пирогорска · Обновлено <time datetime={foodGuide.updatedAt}>{foodGuide.updatedLabel}</time><br />Цены двух меню проверены <time datetime={foodGuide.checkedAt}>{foodGuide.checkedLabel}</time></p>
+    <nav class="guide-jumps" aria-label="Кафе в гиде">{[...menuVenues, localPieCafe].map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav>
   </EditorialHero>
+
+  <section class="guide-choices" aria-labelledby="choice-title">
+    <h2 id="choice-title">Сначала выберите, куда идёте</h2>
+    <div>
+      <a href="#gnezdo"><span class="ed-eyebrow">После моря</span><h3>«Гнездо» у Малиновки</h3><p>Рыбная или овощная кесадилья. Ниже — вес, цена и расчёт четырёх порций.</p><span class="source-link">Посмотреть меню <span aria-hidden="true">↓</span></span></a>
+      <a href="#dacha"><span class="ed-eyebrow">За общим столом</span><h3>«Дача» на Володарского</h3><p>Паста или куриная котлета с гарниром. Два примера из меню для семейного ужина.</p><span class="source-link">Посчитать ужин <span aria-hidden="true">↓</span></span></a>
+      <a href="#sestry-shutts"><span class="ed-eyebrow">На Курортном</span><h3>Пироги у «Сестёр Шутц»</h3><p>Место с прусской кухней и рыбными начинками, которое описывает областной турпортал.</p><span class="source-link">Узнать адрес <span aria-hidden="true">↓</span></span></a>
+    </div>
+  </section>
 
   <aside class="ed-note" aria-label="Как читать расчёты"><strong>Считаем четыре блюда.</strong> В таблицах — цена одной позиции и четырёх таких же. Напитки, десерты, дополнительные блюда и возможные сборы не включены. Это примеры из меню двух кафе, а не средний чек по городу. Разные блюда не равны по весу и сытности.</aside>
 
@@ -47,6 +60,10 @@ const schema = [{
         <div class="menu-source"><a class="source-link" href={venue.menuUrl}>Официальное меню <span aria-hidden="true">↗</span></a><p>{venue.sourceNote}</p><p>Проверено {foodGuide.checkedLabel}. Перед визитом сверьте цены и доступность блюд с кафе.</p></div>
       </div>
     </section>)}
+    <section class="venue" id={localPieCafe.id} aria-labelledby={`${localPieCafe.id}-title`}>
+      <header class="venue-heading"><p class="ed-eyebrow">03 · пироги на прогулке</p><h2 id={`${localPieCafe.id}-title`}>{localPieCafe.name}</h2><p class="venue-address">{localPieCafe.address}</p><a class="source-link" href={localPieCafe.sourceUrl}>Карточка на турпортале <span aria-hidden="true">↗</span></a></header>
+      <div class="venue-story"><p>Если хочется попробовать пирог во время прогулки по центру, присмотритесь к этому адресу. Областной туристический портал относит кафе к прусской кухне и перечисляет пироги с копчёной камбалой, красной рыбой, шпротами, курицей и судаком.</p><p>Это описание формата, а не список того, что сегодня есть на витрине. Начинку, состав, размер порции и наличие уточняйте у кафе. Свежие цены мы здесь не проверяли, поэтому расчёт на четверых для этого места не приводим.</p><p class="menu-source">Источник: <a href={localPieCafe.sourceUrl}>Туристический портал Калининградской области</a>. Карточка просмотрена 26 октября 2026.</p></div>
+    </section>
   </div>
 
   <EditorialBody sections={[
@@ -64,11 +81,12 @@ const schema = [{
 
 <style>
   .guide-date{margin-top:20px;font-size:11px;color:var(--ed-muted);line-height:1.7}
+  .guide-choices{margin-block:35px}.guide-choices>h2{font-size:clamp(26px,3vw,36px);line-height:1.2;margin-bottom:22px}.guide-choices>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.guide-choices a{display:block;padding:24px;border:1px solid var(--ed-line);text-decoration:none}.guide-choices a:hover{background:var(--ed-sea)}.guide-choices a:focus-visible{outline:2px solid var(--ed-ink);outline-offset:4px}.guide-choices h3{font-size:25px;line-height:1.2;margin-block:14px}.guide-choices p,.venue-story>p{font-size:14px;line-height:1.85;color:var(--ed-muted)}.venue-story>p+p{margin-top:18px}.guide-choices .source-link{margin-top:14px;text-decoration:underline;text-underline-offset:4px}
   .guide-jumps{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.guide-jumps a{display:flex;align-items:center;gap:26px;min-height:44px;padding:9px 15px;border:1px solid var(--ed-line);border-radius:3px;font-size:12px;text-decoration:none}.guide-jumps a:hover{background:var(--ed-sea)}
   .venue-list{margin-block:38px 12px}.venue{display:grid;grid-template-columns:.7fr 1.3fr;gap:65px;padding-block:38px;border-top:1px solid var(--ed-line);scroll-margin-top:24px;min-width:0}.venue h2{font-size:38px;margin-top:10px;line-height:1.15}.venue-heading>p:not(.ed-eyebrow){font-size:13px;line-height:1.9;color:var(--ed-muted);margin-top:15px}.venue-heading .venue-address{color:var(--ed-ink)}
   .source-link{display:inline-flex;align-items:center;gap:16px;min-height:44px;font-size:12px;text-underline-offset:4px}.venue-heading>.source-link{margin-top:14px}.venue-menu{min-width:0}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:13px}caption{text-align:left;font-size:11px;color:var(--ed-muted);line-height:1.7;padding-bottom:16px}th,td{text-align:right;padding:17px 0 17px 12px;vertical-align:top;border-top:1px solid var(--ed-line);line-height:1.6}th:first-child{text-align:left;padding-left:0;width:54%;font-weight:500}thead th{font-size:10px;color:var(--ed-muted);font-weight:500}td{white-space:nowrap}th small{display:block;font-size:10px;font-weight:400;color:var(--ed-muted);margin-top:6px;line-height:1.7}
   .mixed-table{display:grid;grid-template-columns:1fr auto;gap:8px 18px;padding:20px;background:var(--ed-sea);font-size:12px;line-height:1.7}.mixed-table strong{font-size:17px;white-space:nowrap}.mixed-table small{grid-column:1/-1;font-size:10px;color:var(--ed-muted)}.menu-source{margin-top:16px}.menu-source p{font-size:10px;color:var(--ed-muted);line-height:1.8;max-width:65ch}.menu-source p+p{margin-top:7px}
-  @media(max-width:1000px){.venue{gap:35px}}
-  @media(max-width:760px){.venue{grid-template-columns:1fr;gap:22px;padding-block:30px}.venue h2{font-size:34px}.venue-heading>.source-link{margin-top:6px}table{font-size:12px}.mixed-table{padding:18px}.venue-list{margin-top:30px}}
+  @media(max-width:1000px){.venue{gap:35px}.guide-choices>div{gap:14px}.guide-choices a{padding:18px}.guide-choices h3{font-size:23px}}
+  @media(max-width:760px){.guide-choices>div{grid-template-columns:1fr}.guide-choices a{padding:20px}.venue{grid-template-columns:1fr;gap:22px;padding-block:30px}.venue h2{font-size:34px}.venue-heading>.source-link{margin-top:6px}table{font-size:12px}.mixed-table{padding:18px}.venue-list{margin-top:30px}}
   @media(max-width:420px){th:first-child{width:49%}th,td{padding-left:7px}table{font-size:11px}thead th{font-size:9px}th small{font-size:9px}.mixed-table{grid-template-columns:1fr;gap:6px}.mixed-table strong{font-size:22px}}
 </style>

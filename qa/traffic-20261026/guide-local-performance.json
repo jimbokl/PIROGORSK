@@ -1,0 +1,139 @@
+[
+  {
+    "mode": "mobile",
+    "url": "http://127.0.0.1:4322/journal/gde-poest-v-zelenogradske/",
+    "timestamp": "2026-10-26T12:06:38.708Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 853.9681,
+        "display": "0.9 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1813.9681,
+        "display": "1.8 s"
+      },
+      "total-blocking-time": {
+        "value": 46.5,
+        "display": "50 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 853.9681,
+        "display": "0.9 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "display": "13 cookies found"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "display": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "display": null
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "display": "Est savings of 56 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 40 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "display": null
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "url": "http://127.0.0.1:4322/journal/gde-poest-v-zelenogradske/",
+    "timestamp": "2026-10-26T12:06:48.103Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 231.3923,
+        "display": "0.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 407.4098000000001,
+        "display": "0.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 231.3923,
+        "display": "0.2 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "display": "13 cookies found"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "display": "Est savings of 39 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "display": null
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "display": "Est savings of 55 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow",
+        "display": null
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "display": "Est savings of 22 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "display": null
+      }
+    ]
+  }
+]

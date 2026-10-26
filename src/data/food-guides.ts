@@ -1,9 +1,23 @@
+import zelenogradskLunch from '../../design/blog-source/zelenogradsk-seaside-lunch.png';
+
+export const foodGuideImage = zelenogradskLunch;
+export const foodGuideImageAlt = 'Иллюстрация: рыбный пирог и обед у окна с видом на Балтийское море';
+
 export const foodGuide = {
   slug: 'gde-poest-v-zelenogradske',
-  title: 'Где поесть в Зеленоградске: меню и цены на четверых',
-  description: 'Два кафе Зеленоградска, четыре блюда из официальных меню и расчёт на четверых. Цены, адреса, размеры порций и ссылки на источники: проверка 24 октября 2026.',
+  title: 'Где поесть в Зеленоградске: три кафе и цены на четверых',
+  description: 'Гнездо, Дача и Сёстры Шутц: где поесть после моря, выбрать горячее или попробовать пироги. Адреса, ссылки и расчёт четырёх блюд по двум официальным меню.',
   checkedAt: '2026-10-24',
   checkedLabel: '24 октября 2026',
+  updatedAt: '2026-10-26',
+  updatedLabel: '26 октября 2026',
+} as const;
+
+export const localPieCafe = {
+  id: 'sestry-shutts',
+  name: 'Сёстры Шутц',
+  address: 'Зеленоградск, Курортный проспект, 23',
+  sourceUrl: 'https://visit-kaliningrad.ru/food/syestry-shutts/',
 } as const;
 
 interface MenuDish {
