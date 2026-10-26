@@ -2,7 +2,28 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
-## Публичный PageSpeed — новый дизайн
+## Выразительная главная и восьмой пирог — 26.10.2026
+
+Первый выпуск `884219b`: [публичный PSI 75gwyvq9i4](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/75gwyvq9i4?form_factor=mobile) **87 mobile / 99 desktop**. После сокращения вступления и замены некомпозитного stroke-dashoffset на transform (`7f3c54b`): [b96owxkdni](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/b96owxkdni?form_factor=mobile) **87 / 99**. Задержка мобильного LCP сохранилась; эти правки её не устранили.
+
+`c2a13d6`, [CI 40313544387 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40313544387): на touch первый кадр сразу статичен, убраны лишние transform/blend/filter; смена вкусов и scroll motion сохранены. [PSI 8v8kevqfni](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/8v8kevqfni?form_factor=mobile), 13:17:53 Europe/Kaliningrad — **87 mobile / 100 desktop**, A/BP/SEO 100. Mobile FCP 1.0 с / LCP 3.8 с / TBT 0 / CLS 0 / SI 4.0 с. Desktop FCP 0.3 с / LCP 0.4 с / TBT 0 / CLS 0 / SI 0.3 с. Подложка — мобильный LCP, render delay 2000 мс.
+
+Финальный runtime **`b5e6b2e`**, [CI 40315000160 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40315000160), включает простое градиентное перекрытие вместо CSS-маски и компактную композицию на невысоких экранах ноутбуков. Production сверена со сборкой по SHA-256: главная, новый пирог, блог и sitemap — HTTP 200, точное совпадение.
+
+26.10.2026 **13:30:52 Europe/Kaliningrad** — новый официальный публичный [PSI budopejsat](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/budopejsat?form_factor=mobile):
+
+| Режим | Performance | Accessibility | Best Practices | SEO | FCP | LCP | TBT | CLS | SI |
+| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| [Mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/budopejsat?form_factor=mobile) | **100** | **100** | **100** | **100** | 0.9 с | 1.7 с | 0 мс | 0.003 | 0.9 с |
+| [Desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/budopejsat?form_factor=desktop) | **100** | **100** | **100** | **100** | 0.3 с | 0.4 с | 20 мс | 0.007 | 0.5 с |
+
+Обе вкладки прочитаны отдельно. Lighthouse 13.5.0; CrUX пока без данных; Agentic browsing 2/2. Тексты: `qa/psi-motion-b5e6b2e-{mobile,desktop}.txt`; снимки `qa/screenshots/design-motion-20261026/psi-final-*.png`. Это один новый анализ после изменения runtime; не повторяли неизменный код ради удачного балла. 100/100 подтверждены для финального выпуска, но один замер не доказывает устойчивое устранение прежнего переменного медленного LCP или его причину.
+
+Локальный мобильный LH с градиентом: **P98 / LCP 2.3 с**, фактический element render delay 71 мс. Это отдельная диагностика. Метрика не отключалась, UA-особых веток для теста нет.
+
+Подробности и доказательства: [QA](qa/design-motion-20261026.md). Предыдущие 100/100 ниже относятся к другому runtime.
+
+## Предыдущий дизайн — 26.10.2026 12:06
 
 26.10.2026 12:06:04 Europe/Kaliningrad, runtime `334a93856ffab9e5f6b2982d2557b121112b2a4a`, [CI 40304164336 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40304164336). Главная проверена на домене после публикации. HTML главной/товара/блога и sitemap побайтово совпали с локальной сборкой, HTTP 200: [proof](qa/design-refresh-production-20261026.json).
 

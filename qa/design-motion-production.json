@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-26T11:30:45.461558+00:00",
+  "runtime_commit": "b5e6b2e179795f91c2fa8e6e202e83debb03fe48",
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/40315000160",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 178113,
+      "matches_build": true,
+      "sha256": "8aa0c5a1e55ce206bd533a1d46f0d99e920c0f988cb094a3cd4f0fae97e31357"
+    },
+    {
+      "path": "/pirogi/pirog-s-kuritsey-i-gribami/",
+      "status": 200,
+      "bytes": 46137,
+      "matches_build": true,
+      "sha256": "0d0805044917dccd3df7bf8ceeeac343c9f9419b29b60008b0ae03a303fa33d6"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 2551,
+      "matches_build": true,
+      "sha256": "e7718b912c9fb6b981684c32c5d6db377744052210a43d82311aabaa027db7a5"
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "bytes": 51352,
+      "matches_build": true,
+      "sha256": "985d6ee6b6a243510a077352c8599dc226a7c553efb6c3800256cc0a7711e659"
+    }
+  ]
+}

@@ -37,4 +37,24 @@ Frontend `884219b` опубликован, [CI 40311572615 SUCCESS](https://gith
 
 Исправление: волны двигаются через transform, без перерисовки контура на каждом кадре; вступление пирога сокращено с 4.2 до 1.2 с, бейдж 900 мс и волны 1100 мс. Смена вкусов, параллакс, scroll reveal и hover сохранены. Build/SEO повторно PASS. Локальный LH после исправления: P98 / 100, A100 / SEO100, BP77; mobile LCP 2.3 с, SI 1.3 с, element render delay 130 мс, CLS 0. Это диагностический локальный результат, не публичный PSI.
 
-Публичный замер исправленного выпуска будет зафиксирован после публикации.
+## Второй публичный замер и touch-оптимизация
+
+Runtime `7f3c54b`, [CI 40312321116 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40312321116). Четыре production URL совпали со сборкой. Новый [PSI b96owxkdni](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/b96owxkdni?form_factor=mobile): **87 mobile / 99 desktop**, A/BP/SEO 100. Mobile FCP 1.0, LCP 3.8, TBT 0, CLS 0, SI 4.0; desktop FCP 0.4, LCP 0.9, TBT 30, CLS 0, SI 0.6. Некомпозитные волны больше не отмечены, но LCP-подложка имеет render delay 1980 мс. Следовательно, первое исправление не устранило задержку публичного LCP; локальный быстрый результат её не опровергает.
+
+В `c2a13d6` вступление ограничено hover/fine устройствами. На touch полный первый кадр статичен сразу, у подложки убраны transform/transition/mix-blend, у пирога — filter. Смена вкусов и scroll reveal остаются; reduced motion сохранён. Локальный LH: 98/100, A100/SEO100/BP77, mobile LCP 2.3 с, SI 1.2 с, TBT 0, CLS 0. Build/SEO PASS. Публичный [PSI 8v8kevqfni](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/8v8kevqfni?form_factor=mobile), 13:17:53 Europe/Kaliningrad: **87 mobile / 100 desktop**, A/BP/SEO 100. Mobile FCP 1.0 с, LCP 3.8 с, TBT 0, CLS 0, SI 4.0 с; desktop FCP 0.3 с, LCP 0.4 с, TBT 0, CLS 0, SI 0.3 с. [CI 40313544387 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40313544387), четыре production URL побайтово совпали со сборкой. Touch-правка восстановила desktop 100, но mobile LCP-подложка всё ещё имеет render delay 2000 мс. Это не устранённая задержка.
+
+## Упрощение подложки
+
+В `99d3bdf` CSS mask-image морской подложки заменён простым градиентным перекрытием в цвет бумаги. Отдельное изображение сохранено, визуальная композиция проверена на 1280 px; mask none, overflow false. На desktop blend/parallax остаются; на touch подложка статична. Локальный мобильный Lighthouse P98 / LCP 2.3 с, фактический element render delay 71 мс — отдельная диагностика, не публичный результат. Build/SEO PASS. Не объявляем mask-image установленной причиной задержки по одному локальному замеру.
+
+На невысоких ноутбуках (`min-width:761px`, `max-height:850px`) hero компактнее; подложка кадрируется с сохранением башни. Проверено на 1280×720: controls bottom 630 px, все три кнопки полностью видны, overflow false. Этот media query не меняет мобильную композицию.
+
+## Финальный выпуск — b5e6b2e
+
+[CI 40315000160 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40315000160). Check/build/SEO/14 tests PASS; IndexNow принял изменённую главную, HTTP 200. В 11:30:45 UTC четыре production URL (главная, курица с грибами, блог, sitemap) HTTP 200 и побайтово совпали со сборкой: `qa/design-motion-production.json`.
+
+Опубликованный UI повторно проверен: 1280×720 controls bottom 630 px, 390×844 hero 758 px; горизонтального переполнения нет. Первый рыбный слой загружен, скрытые альтернативы не блокируют первый кадр. Снимки `production-desktop.png` / `production-mobile-390.png` обновлены с домена.
+
+[Свежий официальный PSI mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/budopejsat?form_factor=mobile) / [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/budopejsat?form_factor=desktop), 26.10.2026 13:30:52 Europe/Kaliningrad: **100 / 100**, A/BP/SEO по 100 в обоих режимах. Mobile FCP 0.9 с / LCP 1.7 с / TBT 0 / CLS 0.003 / SI 0.9 с; desktop 0.3 с / 0.4 с / 20 мс / 0.007 / 0.5 с. Тексты `qa/psi-motion-b5e6b2e-{mobile,desktop}.txt`, снимки `psi-final-{mobile,desktop}.png`. CrUX без данных. Это один новый замер после изменения runtime; прежние 87 сохранены в истории. Один успех не доказывает стабильные 100 при любых условиях и не устанавливает причину переменной задержки LCP.
+
+Задача выразительного дизайна и восьмого пирога завершена. Метрика и подтверждение backend-успеха сохранены; реальных заказов, сбора контактов и платежей нет. Heartbeat не создавался. Следующая самостоятельная работа — наблюдение реальных показов/визитов и подготовка производства после решения владельца; этот проход её не возобновляет.
