@@ -1,10 +1,12 @@
-# Пирогорск — итог на 25 октября 2026
+# Пирогорск — итог на 26 октября 2026
 
 Сайт: **https://pirogorsk.ru/**. Новый раздел: **https://pirogorsk.ru/blog/**. Текущий этап — трафик и анонимное намерение заказать до запуска производства. **Работа остановлена по просьбе пользователя 24.10.2026; цель 100 реальных посетителей в день на паузе и пока не достигнута.** Автоматического продолжения нет.
 
+26.10 по новому запросу подготовлен [следующий спринт](SPRINT-2026-10-26.md): измеримый внешний поток, индексация, путь до формы, LCP и подготовка небольшого Telegram-теста. Выполнение спринта не запускалось; heartbeat отсутствует.
+
 ## Обновление айдентики 25 октября
 
-По отдельному запросу пользователя опубликован новый логотип «пирог-город» (пирог, приморская башня/крыши и волна) и favicon SVG/ICO/PNG/Apple Touch. Единый Brand в шапках и подвалах, самостоятельный логотип в кривых и Organization.logo. Код **`c6174f1`**, [CI 40218830355 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40218830355). 65 файлов без diagnostics, 38 HTML / 36 sitemap URL / 2359 локальных ссылок, 14 tests PASS; UI 1280/390/320 и HTTP/хеши production проверены. [Исходники и промпты](design/brand-v3/README.md), [протокол](qa/brand-refresh-20261025.md). Нового PSI в рамках логотипа не проводилось. Работа над трафиком остаётся на паузе, heartbeat отсутствует.
+Последняя версия логотипа — **v4**, глубокий балтийский синий и коралловый пирог с башней/крышами и волнами. Единый Brand в шапках и подвалах, SVG в кривых, favicon SVG/ICO/PNG/Apple Touch. Код **`78b04ee`**, [CI 40223233043 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40223233043). 66 файлов без diagnostics, 38 HTML / 36 sitemap URL / 2359 локальных ссылок, 14 tests PASS; UI 1280/390/320 и HTTP/хеши production проверены. [Исходники](design/brand-v4/README.md), [протокол](qa/brand-v4-20261025.md). Нового PSI для v4 нет.
 
 ## Предыдущий завершённый выпуск
 
@@ -19,6 +21,8 @@
 
 ## Текущий PageSpeed
 
+Последняя проверка главной **25.10** на предшествующем коде `c6174f1`: mobile 86, затем два новых публичных анализа на неизменном коде — 100 и 100; desktop первого свежего — 100. Причина колебания задержки отрисовки LCP не установлена; устранение медленного сценария не доказано. [Свежий mobile/desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/czeot7hm4z?form_factor=mobile), [контрольный mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/n7ftihet7m?form_factor=mobile). Подробности и снимки — [PERFORMANCE.md](PERFORMANCE.md). Ниже — история измерений 24.10, а не замеры актуальной айдентики v4.
+
 Официальные отчёты Google от 24.10.2026: Калининград — контентный релиз `80e6182`; главная и Светлогорск — предыдущий `45d995f`. Desktop-вкладки проверены отдельно.
 
 | Страница / время Калининграда | Mobile Performance | Desktop Performance | Accessibility / Best Practices / SEO |
@@ -27,7 +31,7 @@
 | [Главная](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/li9klo0p4k?form_factor=mobile), 19:22:05 | **87** | **100** | 100 / 100 / 100 на обоих |
 | [Гид Светлогорска](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-svetlogorske/iv8ywsib2a?form_factor=mobile), 19:24:09 | **100** | **100** | 100 / 100 / 100 на обоих |
 
-Последний замер [витрины блога](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/emmasrz4v2?form_factor=mobile) до восьмой статьи, 18:52:41 — mobile 88 / desktop 100. На мобильной главной остаётся LCP 4.1 с; decoding=sync не помог. Успех статьи не означает 100 на всём сайте. Исторические 100 главной и локальный Lighthouse не заменяют этот публичный результат. [История, метрики и снимки](PERFORMANCE.md), CrUX пока без данных. Метрика не отключалась.
+Замер [витрины блога](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/emmasrz4v2?form_factor=mobile) от 24.10 до восьмой статьи, 18:52:41 — mobile 88 / desktop 100. В медленном сценарии главной LCP 4.1 с; decoding=sync не доказал исправления. Успех статьи не означает 100 на всём сайте. Локальный Lighthouse не заменяет публичный PSI. [История, метрики и снимки](PERFORMANCE.md), в последних прочитанных отчётах CrUX без данных. Метрика не отключалась.
 
 ## Трафик и следующий этап
 
