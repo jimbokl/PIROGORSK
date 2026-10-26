@@ -2,6 +2,10 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
+## Центрирование пирога — 26.10.2026
+
+Runtime `219b240`, [CI 40316808707 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40316808707). Свежий официальный [PSI 3gi82ys8hq](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/3gi82ys8hq?form_factor=mobile), 26.10.2026 13:44:38 Europe/Kaliningrad: **100 mobile / 100 desktop**, A/BP/SEO по 100. Mobile FCP 1.0 с / LCP 1.7 с / TBT 0 / CLS 0.003 / SI 1.0 с; desktop 0.3 с / 0.4 с / 0 / 0.003 / 0.4 с. Обе вкладки прочитаны отдельно, один анализ после правки. Это отдельный публичный результат; локальный LH 98/100 указан отдельно. CrUX пока без данных.
+
 ## Выразительная главная и восьмой пирог — 26.10.2026
 
 Первый выпуск `884219b`: [публичный PSI 75gwyvq9i4](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/75gwyvq9i4?form_factor=mobile) **87 mobile / 99 desktop**. После сокращения вступления и замены некомпозитного stroke-dashoffset на transform (`7f3c54b`): [b96owxkdni](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/b96owxkdni?form_factor=mobile) **87 / 99**. Задержка мобильного LCP сохранилась; эти правки её не устранили.
