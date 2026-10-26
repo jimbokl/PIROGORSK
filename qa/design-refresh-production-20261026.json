@@ -1,0 +1,35 @@
+{
+  "time_utc": "2026-10-26T10:06:00.667912+00:00",
+  "runtime": "334a93856ffab9e5f6b2982d2557b121112b2a4a",
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/40304164336",
+  "pages": [
+    {
+      "url": "https://pirogorsk.ru/",
+      "status": 200,
+      "sha256": "86c88dcb8986ea989cec5404a02cdb3df9bed57747b77ae1e390ef8bd032dbd5",
+      "matches_local": true,
+      "bytes": 158083
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/myasnoy-pirog/",
+      "status": 200,
+      "sha256": "fc4d9d23c60e371d0602cc2edf80a08daf27fbab5d93c1709c244ef34af390e6",
+      "matches_local": true,
+      "bytes": 44476
+    },
+    {
+      "url": "https://pirogorsk.ru/blog/",
+      "status": 200,
+      "sha256": "985d6ee6b6a243510a077352c8599dc226a7c553efb6c3800256cc0a7711e659",
+      "matches_local": true,
+      "bytes": 51352
+    },
+    {
+      "url": "https://pirogorsk.ru/sitemap.xml",
+      "status": 200,
+      "sha256": "47e3659ff2b83ca596796c991bc0ca1712b729ff39cd9c9812310163dcc17f91",
+      "matches_local": true,
+      "bytes": 2474
+    }
+  ]
+}

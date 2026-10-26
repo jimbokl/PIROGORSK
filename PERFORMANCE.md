@@ -2,7 +2,18 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
-## Последняя проверка — главная, 25.10.2026 20:25–20:30 Калининград
+## Публичный PageSpeed — новый дизайн
+
+26.10.2026 12:06:04 Europe/Kaliningrad, runtime `334a93856ffab9e5f6b2982d2557b121112b2a4a`, [CI 40304164336 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40304164336). Главная проверена на домене после публикации. HTML главной/товара/блога и sitemap побайтово совпали с локальной сборкой, HTTP 200: [proof](qa/design-refresh-production-20261026.json).
+
+| Режим | Performance | Accessibility | Best Practices | SEO | FCP | LCP | TBT | CLS | SI |
+| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| [Mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/qz48pestwa?form_factor=mobile) | **100** | **100** | **100** | **100** | 1.0 с | 1.8 с | 10 ms | 0.008 | 1.4 с |
+| [Desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/qz48pestwa?form_factor=desktop) | **100** | **100** | **100** | **100** | 0.3 с | 0.5 с | 40 ms | 0.013 | 0.6 с |
+
+Обе вкладки открыты отдельно. Lighthouse 13.5.0, mobile Moto G Power / slow 4G; CrUX пока без данных, Agentic browsing 2/2. Текст отчётов — `qa/psi-design-20261026-mobile.txt` и `qa/psi-design-20261026-desktop.txt`; снимки — `qa/screenshots/design-20261026/psi-*.png`. Это один новый публичный анализ: он подтверждает результат данного выпуска, но не доказывает устранение прежнего переменного медленного LCP. Дополнительных повторов ради балла не было; Метрика не отключалась.
+
+## Предыдущая проверка — главная, 25.10.2026 20:25–20:30 Калининград
 
 По запросу пользователя проверен открытый во внешнем Chrome отчёт **86**, затем выполнены два новых официальных публичных анализа без изменения кода. Опубликованный runtime — `c6174f1b29496d6f33028d505245f0bbbc6a4b2c` (обновление айдентики). HTML production совпал с локальным `site/index.html`: SHA-256 `edd832718292c37dce29fec855f05a06cd4471e8ed00f77fee5b6bbd9c2fe356`.
 

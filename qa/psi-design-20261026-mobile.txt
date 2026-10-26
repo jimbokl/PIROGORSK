@@ -1,0 +1,279 @@
+- banner:
+  - link "PageSpeed Insights logo PageSpeed Insights":
+    - /url: ./
+    - img "PageSpeed Insights logo"
+    - generic: PageSpeed Insights
+  - button:
+  - generic: Документация
+  - link "Документация":
+    - /url: https://developers.google.com/speed/docs/insights/v5/about
+- generic: Отчет от 26 окт. 2026 г., 12:06:04
+- textbox:
+  - /placeholder: Укажите URL страницы
+  - text: https://pirogorsk.ru/
+- paragraph: Введите действительный URL.
+- button "Анализировать":
+  - generic: Анализировать
+- tablist:
+  - tab "Мобильные устройства" [selected]:
+    - generic: smartphone
+    - generic: Мобильные устройства
+  - tab "Компьютер":
+    - generic: computer
+    - generic: Компьютер
+- tabpanel "Мобильные устройства":
+  - generic: Определяйте фактическую производительность сайта
+  - button "button":
+  - generic: Нет данных
+  - separator
+  - generic: Выявляйте проблемы с производительностью
+  - article:
+    - link "100 Производительность":
+      - /url: "#performance"
+      - generic: "100"
+      - generic: Производительность
+    - link "100 Специальные возможности":
+      - /url: "#accessibility"
+      - generic: "100"
+      - generic: Специальные возможности
+    - link "100 Рекомендации":
+      - /url: "#best-practices"
+      - generic: "100"
+      - generic: Рекомендации
+    - link "100 Поисковая оптимизация":
+      - /url: "#seo"
+      - generic: "100"
+      - generic: Поисковая оптимизация
+    - link "2/2 Агентный просмотр":
+      - /url: "#agentic-browsing"
+      - generic: 2/2
+      - generic: Агентный просмотр
+    - text: Значения приблизительные и могут изменяться.
+    - link "Уровень производительности рассчитывается":
+      - /url: https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/?utm_source=lighthouse&utm_medium=lr
+    - text: непосредственно на основании этих показателей.
+    - link "Показать калькулятор":
+      - /url: https://googlechrome.github.io/lighthouse/scorecalc/#FCP=975&LCP=1801&TBT=11&CLS=0.01&SI=1379&TTI=3119&device=mobile&version=13.5.0
+    - generic: 0–49
+    - generic: 50–89
+    - generic: 90–100
+    - img "Final Screenshot"
+    - checkbox "Toggle the display of metric descriptions"
+    - generic: Показатели
+    - generic: Развернуть
+    - generic: First Contentful Paint
+    - generic: 1,0 сек.
+    - generic: Largest Contentful Paint
+    - generic: 1,8 сек.
+    - generic: Total Blocking Time
+    - generic: 10 мс
+    - generic: Cumulative Layout Shift
+    - generic: "0.008"
+    - generic: Speed Index
+    - generic: 1,4 сек.
+    - list:
+      - listitem: Captured at 26 окт. 2026 г., 12:06 GMT+2
+      - listitem: Эмуляция устройства Moto G Power with Lighthouse 13.5.0
+      - listitem: Сеанс с просмотром одной страницы
+      - listitem: Начальная загрузка страницы
+      - listitem: Ограничение для сети 4G с низкой скоростью
+      - listitem: Using HeadlessChromium 153.0.8010.36 with lr
+    - button "Открыть карту эффективности"
+    - img "Screenshot"
+    - img "Screenshot"
+    - img "Screenshot"
+    - img "Screenshot"
+    - img "Screenshot"
+    - img "Screenshot"
+    - img "Screenshot"
+    - img "Screenshot"
+    - generic: Показать аудиты
+    - radio "All" [checked]
+    - generic: All
+    - radio "FCP"
+    - generic "First Contentful Paint": FCP
+    - radio "LCP"
+    - generic "Largest Contentful Paint": LCP
+    - radio "TBT"
+    - generic "Total Blocking Time": TBT
+    - radio "CLS"
+    - generic "Cumulative Layout Shift": CLS
+    - generic: Статистика
+    - generic "Выбирайте эффективный период хранения кеша —Ожидаемая экономия – 349 КиБ":
+      - generic: Выбирайте эффективный период хранения кеша
+      - text: —Ожидаемая экономия – 349 КиБ
+    - generic "Улучшите загрузку изображений —Ожидаемая экономия – 14 КиБ":
+      - generic: Улучшите загрузку изображений
+      - text: —Ожидаемая экономия – 14 КиБ
+    - generic "Принудительная компоновка":
+      - generic: Принудительная компоновка
+    - generic "Дерево зависимостей в сети":
+      - generic: Дерево зависимостей в сети
+    - generic "Причины смещения макета":
+      - generic: Причины смещения макета
+    - generic "Оптимизация размера DOM-дерева":
+      - generic: Оптимизация размера DOM-дерева
+    - generic "Разбивка LCP":
+      - generic: Разбивка LCP
+    - generic "Сторонний код":
+      - generic: Сторонний код
+    - text: Статистические данные доступны на панели "Производительность" инструментов разработчика в Chrome. Чтобы узнавать подробную информацию,
+    - link "создайте трассировку":
+      - /url: https://developer.chrome.com/docs/devtools/performance/reference?utm_source=lighthouse&utm_medium=lr
+    - text: .
+    - generic: Диагностика
+    - generic "Удалите неиспользуемый код JavaScript —Ожидаемая экономия – 38 КиБ":
+      - generic: Удалите неиспользуемый код JavaScript
+      - text: —Ожидаемая экономия – 38 КиБ
+    - generic "Избегайте длительных задач в основном потоке —Обнаружена 1 длительная задача":
+      - generic: Избегайте длительных задач в основном потоке
+      - text: —Обнаружена 1 длительная задача
+    - text: Подробная информация о производительности вашего приложения. Эти цифры не влияют на показатель производительности
+    - link "напрямую":
+      - /url: https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/?utm_source=lighthouse&utm_medium=lr
+    - text: .
+    - generic "Успешные аудиты (17) Показать":
+      - generic: Успешные аудиты (17)
+      - generic: Показать
+    - text: — — —
+    - heading "100 Специальные возможности" [level=2]:
+      - generic: "100"
+      - generic: Специальные возможности
+    - text: Узнайте, какие трудности могут возникнуть у людей с ограниченными возможностями при использовании вашего веб-приложения, и
+    - link "сделайте его доступнее":
+      - /url: https://developer.chrome.com/docs/lighthouse/accessibility/?utm_source=lighthouse&utm_medium=lr
+    - text: . Автоматические проверки не гарантируют доступность приложения, поэтому мы рекомендуем выполнять
+    - link "тестирование вручную":
+      - /url: https://web.dev/articles/how-to-review?utm_source=lighthouse&utm_medium=lr
+    - text: . Оно поможет выявить оставшиеся проблемы.
+    - generic "Дополнительные объекты для проверки вручную (10) Скрыть":
+      - generic: Дополнительные объекты для проверки вручную (10)
+      - generic: Скрыть
+    - generic "Interactive controls are keyboard focusable":
+      - generic: Interactive controls are keyboard focusable
+    - generic "Interactive elements indicate their purpose and state":
+      - generic: Interactive elements indicate their purpose and state
+    - generic "The page has a logical tab order":
+      - generic: The page has a logical tab order
+    - generic "Visual order on the page follows DOM order":
+      - generic: Visual order on the page follows DOM order
+    - generic "User focus is not accidentally trapped in a region":
+      - generic: User focus is not accidentally trapped in a region
+    - generic "The user's focus is directed to new content added to the page":
+      - generic: The user's focus is directed to new content added to the page
+    - generic "HTML5 landmark elements are used to improve navigation":
+      - generic: HTML5 landmark elements are used to improve navigation
+    - generic "Offscreen content is hidden from assistive technology":
+      - generic: Offscreen content is hidden from assistive technology
+    - generic "Custom controls have associated labels":
+      - generic: Custom controls have associated labels
+    - generic "Custom controls have ARIA roles":
+      - generic: Custom controls have ARIA roles
+    - text: Ручная проверка позволяет охватить области, которые невозможно протестировать автоматически. Подробнее
+    - link "о проверке специальных возможностей":
+      - /url: https://web.dev/articles/how-to-review?utm_source=lighthouse&utm_medium=lr
+    - text: …
+    - generic "Успешные аудиты (24) Показать":
+      - generic: Успешные аудиты (24)
+      - generic: Показать
+    - generic "Неприменимо (39) Показать":
+      - generic: Неприменимо (39)
+      - generic: Показать
+    - heading "100 Рекомендации" [level=2]:
+      - generic: "100"
+      - generic: Рекомендации
+    - generic: Надежность и безопасность
+    - generic "Убедитесь, что политика CSP эффективна против атак XSS":
+      - generic: Убедитесь, что политика CSP эффективна против атак XSS
+    - generic "Использование строгого механизма HSTS":
+      - generic: Использование строгого механизма HSTS
+    - generic "Обеспечьте надлежащую изоляцию источников с помощью COOP":
+      - generic: Обеспечьте надлежащую изоляцию источников с помощью COOP
+    - generic "Защита от кликджекинга с использованием заголовка XFO или CSP":
+      - generic: Защита от кликджекинга с использованием заголовка XFO или CSP
+    - generic "Используйте Trusted Types для предотвращения XSS-атак на основе DOM":
+      - generic: Используйте Trusted Types для предотвращения XSS-атак на основе DOM
+    - generic: Совместимость с браузерами
+    - generic "Функции Baseline":
+      - generic: Функции Baseline
+    - generic "Успешные аудиты (13) Показать":
+      - generic: Успешные аудиты (13)
+      - generic: Показать
+    - generic "Неприменимо (2) Показать":
+      - generic: Неприменимо (2)
+      - generic: Показать
+    - heading "100 Поисковая оптимизация" [level=2]:
+      - generic: "100"
+      - generic: Поисковая оптимизация
+    - text: Эти проверки позволяют узнать, соответствует ли страница основным рекомендациям к поисковой оптимизации. Lighthouse оценивает не все факторы, которые могут повлиять на позицию сайта в результатах поиска (например, производительность по
+    - link "основным интернет-показателям":
+      - /url: https://web.dev/explore/vitals?utm_source=lighthouse&utm_medium=lr
+    - text: ). Подробнее
+    - link "о факторах, важных для Google Поиска":
+      - /url: https://support.google.com/webmasters/answer/35769
+    - text: …
+    - generic "Дополнительные объекты для проверки вручную (1) Скрыть":
+      - generic: Дополнительные объекты для проверки вручную (1)
+      - generic: Скрыть
+    - generic "Структурированные данные действительны":
+      - generic: Структурированные данные действительны
+    - generic: Проверьте, соответствует ли ваш сайт рекомендациям по поисковой оптимизации (SEO), с помощью этих дополнительных сервисов.
+    - generic "Успешные аудиты (10) Показать":
+      - generic: Успешные аудиты (10)
+      - generic: Показать
+    - heading "2/2 Агентный просмотр" [level=2]:
+      - generic: 2/2
+      - generic: Агентный просмотр
+    - text: Эти проверки гарантируют высокое качество
+    - link "сайтов для ИИ-агентов":
+      - /url: https://goo.gle/lighthouse-agentic-web
+    - text: и правильность интеграции WebMCP. Эта категория находится на этапе разработки и может быть изменена.
+    - generic "Успешные аудиты (2) Показать":
+      - generic: Успешные аудиты (2)
+      - generic: Показать
+    - text: — —
+    - generic "Неприменимо (5) Показать":
+      - generic: Неприменимо (5)
+      - generic: Показать
+- text: — — — — — — — — —
+- contentinfo:
+  - generic: Подробные сведения о PageSpeed Insights
+  - link "Что нового":
+    - /url: https://developers.google.com/speed/docs/insights/release_notes
+  - link "Документация":
+    - /url: https://developers.google.com/speed/docs/insights/v5/about
+  - link "Данные о скорости загрузки страниц":
+    - /url: https://developers.google.com/speed
+  - link "Задайте вопросы в Stack Overflow":
+    - /url: https://stackoverflow.com/questions/tagged/pagespeed-insights
+  - link "Список рассылки":
+    - /url: https://groups.google.com/g/pagespeed-insights-discuss
+  - generic: Похожий контент
+  - link "Обновления":
+    - /url: https://developer.chrome.com/blog
+  - link "Основы веб-дизайна":
+    - /url: https://developers.google.com/focus/web-development
+  - link "Примеры использования":
+    - /url: https://web.dev/case-studies
+  - link "Подкасты":
+    - /url: https://web.dev/shows
+  - generic: Связь
+  - link "Twitter":
+    - /url: https://twitter.com/ChromiumDev
+  - link "YouTube":
+    - /url: https://www.youtube.com/user/ChromeDevelopers
+  - link "Google Developers Logo":
+    - /url: https://developers.google.com/
+    - img "Google Developers Logo"
+  - link "Chrome":
+    - /url: https://developer.chrome.com/
+  - link "Firebase":
+    - /url: https://firebase.google.com/
+  - link "Все продукты":
+    - /url: https://developers.google.com/products/
+  - link "Условия и политика конфиденциальности":
+    - /url: https://policies.google.com/
+  - text: Чтобы узнать больше, прочитайте
+  - link "правила сайта Google Developers":
+    - /url: https://developers.google.com/terms/site-policies
+  - text: .

@@ -21,7 +21,7 @@
 - [x] Страница пирога: компактная мобильная иллюстрация и более ранний выбор размера; единые кнопки и стили блога.
 - [x] Короткая обратная связь hover/выбора/добавления, reduced motion; без постоянно движущихся декораций и новых библиотек.
 - [x] Проверить 320 / 390 / 1280 px, навигацию, город → вес → подборка → форма и возврат фокуса. Проверки проекта и скорость статической сборки.
-- [ ] Опубликовать проверенную версию, проверить production, записать фактический результат и остаток.
+- [x] Опубликовать проверенную версию, проверить production, записать фактический результат и остаток.
 
 ## Приёмка
 
@@ -35,3 +35,8 @@
 Проверки: Astro/TypeScript 0 diagnostics, build PASS, SEO 38 HTML / 36 URL / 2332 локальные ссылки, 14 tests PASS. Реестр навыков strict PASS, дрейфа нет. UI 320 / 390 / 1280 px, фильтр сладких (3 результата), выбор города и сохранение после reload, 1 кг → 1290 ₽ → подборка → форма, обязательные поля и Escape проверены. Новых production-заявок нет.
 
 Локальный Lighthouse 26.10: mobile 98 / desktop 100 по Performance; Accessibility/SEO по 100, Best Practices 77 (third-party cookies / Issues). Это не публичный PSI. Финальный выпуск и измерение домена записываются в [QA](qa/design-refresh-20261026.md).
+
+
+## Итог выпуска
+
+Опубликован `334a938`, [CI SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40304164336). Четыре проверенных публичных ресурса совпадают со сборкой, IndexNow принял 36 URL (HTTP 200). Свежий публичный PageSpeed главной: **100 mobile / 100 desktop**, остальные три категории по 100. [Отчёт mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/qz48pestwa?form_factor=mobile), [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/qz48pestwa?form_factor=desktop). Все пункты этого дизайн-плана завершены. Доказательства и оставшиеся задачи вне дизайна — [QA](qa/design-refresh-20261026.md).

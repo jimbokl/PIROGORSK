@@ -42,4 +42,10 @@ Best Practices: third-party cookies (13) и Chrome Issues; интеграции 
 
 ## Публикация
 
-Ожидается CI и проверка опубликованного домена. Публичный PSI будет записан отдельно после выпуска.
+Опубликован runtime `334a93856ffab9e5f6b2982d2557b121112b2a4a`, [CI 40304164336 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40304164336). Главная, карточка мясного пирога, блог и `/sitemap.xml` — HTTP 200, побайтовое совпадение с `site/` 26.10 10:06 UTC. [JSON](design-refresh-production-20261026.json). Production просмотрен в IAB, публичные снимки 1280×720 и 390×844 — `production-desktop.png` / `production-mobile.png`. IndexNow: 36 URL приняты, HTTP 200; это не подтверждение индексации.
+
+Публичный PSI 12:06:04 Калининград: [mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/qz48pestwa?form_factor=mobile) и [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/qz48pestwa?form_factor=desktop) — **100 / 100 / 100 / 100**. Mobile FCP 1.0 с, LCP 1.8 с, TBT 10 ms, CLS 0.008, SI 1.4 с. Desktop FCP 0.3 с, LCP 0.5 с, TBT 40 ms, CLS 0.013, SI 0.6 с. CrUX без данных. Обе вкладки подтверждены текстом и снимками, [история](../PERFORMANCE.md). Один замер не доказывает стабильность 100 или устранение старого переменного LCP.
+
+## Завершение и продолжение
+
+План дизайна выполнен и опубликован. Новых библиотек, генераций графики, публичных отзывов/акций/обещаний доставки нет. Анонимный backend и правило `order_submit` после сохранения не менялись. Heartbeat не восстанавливался, трафиковая цель 100/день не объявляется достигнутой. Следующая отдельная работа: фактические Метрика/индексация и внешний поток по существующему SPRINT-2026-10-26.md; до реальных продаж остаются кухня, цены, доставка и реквизиты.
