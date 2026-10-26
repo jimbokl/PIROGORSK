@@ -1,0 +1,31 @@
+{
+  "runtime": "e0b88e4e0b007ef898900491a79a1ccf4cfd6ad9",
+  "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/e3xbz9fgep",
+  "reportedAt": "2026-10-26T14:24:01+02:00",
+  "kind": "public PageSpeed Insights",
+  "mobile": {
+    "performance": 88,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 798,
+    "lcpMs": 3635,
+    "tbtMs": 81,
+    "clsDisplayed": 0,
+    "siMs": 3627,
+    "lcpRenderDelayMs": 1980
+  },
+  "desktop": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 356,
+    "lcpMs": 375,
+    "tbtMs": 57,
+    "clsDisplayed": 0.004,
+    "siMs": 596
+  },
+  "fieldData": "No CrUX data",
+  "conclusion": "Local async decode improvement did not reproduce in public PSI; mobile LCP issue remains open."
+}

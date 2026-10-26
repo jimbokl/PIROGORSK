@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-26T12:23:56.614133+00:00",
+  "runtime": "e0b88e4e0b007ef898900491a79a1ccf4cfd6ad9",
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/40321639727",
+  "pages": [
+    {
+      "url": "https://pirogorsk.ru/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 178121,
+      "sha256": "6b40e9edc85fa7946ef7016b86d1b31a3a64ead8c2a0f00a23c3338a1de78f27",
+      "matchesLocal": true
+    },
+    {
+      "url": "https://pirogorsk.ru/blog/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 51528,
+      "sha256": "86ce621f5726876e520dabfbdc71c77ec763cf6bfd608f4d9651a5c07d231554",
+      "matchesLocal": true,
+      "asyncDecode": true
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 46705,
+      "sha256": "695352eb0ff9bd3e3ec3a3f81e922976d3ca8ea0b8a23082486910d325f8fecf",
+      "matchesLocal": true
+    }
+  ]
+}

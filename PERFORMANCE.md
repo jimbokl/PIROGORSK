@@ -2,6 +2,19 @@
 
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
+## Блог и гид Зеленоградска — 26.10.2026
+
+Первый runtime `cb061ad`, [CI 40320349147 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40320349147): новая обложка и три кафе в гиде, он же главный материал блога. Главная не изменилась и сохранила HTML выпуска с центрированием пирога. Production сверена со сборкой, HTTP 200.
+
+| Страница / публичный PSI | Mobile P / A / BP / SEO | Desktop P / A / BP / SEO | Mobile LCP / TBT / CLS | Desktop LCP / TBT / CLS |
+| --- | --- | --- | --- | --- |
+| [Гид, ivztaq4855](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-poest-v-zelenogradske/ivztaq4855?form_factor=mobile), 14:14:30 Калининград | **100 / 100 / 100 / 100** | **100 / 100 / 100 / 100** | 1.5 с / 20 мс / 0 | 0.3 с / 10 мс / 0 |
+| [Блог, on9ftsivld](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/on9ftsivld?form_factor=mobile), 14:14:26 | **89 / 100 / 100 / 100** | **100 / 100 / 100 / 100** | 3.6 с / 10 мс / 0 | 0.3 с / 30 мс / 0.026 |
+
+В мобильном отчёте блога LCP-изображение AVIF 27 КБ загружалось с высоким приоритетом; основная задержка — отрисовка 1950 мс. После изменения только `decoding="sync"` на `"async"` локальный Lighthouse дал **100 mobile / 100 desktop**, мобильный LCP 1.7 с против 3.0 с в исходном локальном замере (P93). A100/BP77/SEO100 локально; BP связан со сторонними cookies/issues Метрики, интеграция сохранена. Это один эксперимент, который не устанавливает единственную причину переменной задержки.
+
+Async-runtime `e0b88e4` опубликован, [CI 40321639727 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40321639727); production HTML совпал со сборкой. Новый [публичный PSI e3xbz9fgep](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/e3xbz9fgep?form_factor=mobile), **26.10 14:24:01 Калининград**: **P88 mobile / P100 desktop**, A/BP/SEO по 100. Mobile FCP 0.8 с / LCP 3.6 с / TBT 80 мс / CLS 0 / SI 3.6 с; desktop 0.4 с / 0.4 с / 60 мс / 0.004 / 0.6 с. Отрисовка LCP задерживается на 1980 мс при загрузке 160 мс. Локальный выигрыш не подтвердился на домене, проблема остаётся открытой; async не считается её решением. Неизменный код ради удачного балла повторно не тестировали. Следующий технический шаг — трассировка публичной задержки, без отключения Метрики или изменения интеграций. CrUX на этих страницах пока без данных. Доказательства: `qa/traffic-20261026/`, [QA](qa/zelenogradsk-guide-20261026.md).
+
 ## Центрирование пирога — 26.10.2026
 
 Runtime `219b240`, [CI 40316808707 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40316808707). Свежий официальный [PSI 3gi82ys8hq](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/3gi82ys8hq?form_factor=mobile), 26.10.2026 13:44:38 Europe/Kaliningrad: **100 mobile / 100 desktop**, A/BP/SEO по 100. Mobile FCP 1.0 с / LCP 1.7 с / TBT 0 / CLS 0.003 / SI 1.0 с; desktop 0.3 с / 0.4 с / 0 / 0.003 / 0.4 с. Обе вкладки прочитаны отдельно, один анализ после правки. Это отдельный публичный результат; локальный LH 98/100 указан отдельно. CrUX пока без данных.
