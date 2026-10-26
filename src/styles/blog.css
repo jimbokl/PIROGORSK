@@ -5,3 +5,5 @@
 
 /* Keep line placement stable while the heading font replaces its fallback. */
 .blog-article .ed-hero h1{text-wrap:wrap}
+.blog-city-guide .ed-hero{padding-block:29px 24px}.blog-city-guide .ed-hero-copy{max-width:100%}.blog-city-guide .ed-hero h1{max-width:32ch}.blog-guide-context{display:grid;grid-template-columns:1fr .85fr;align-items:center;gap:40px;margin-block:30px 40px}.blog-guide-intro{font-size:15px;line-height:1.85;color:var(--ed-muted);max-width:65ch}.blog-guide-context img{width:100%;height:auto}.blog-guide-context figcaption{font-size:10px;line-height:1.7;color:var(--ed-muted);margin-top:10px}
+@media(max-width:760px){.blog-city-guide .ed-hero{padding-block:22px 20px}.blog-city-guide .ed-hero h1{font-size:34px;max-width:26ch}.blog-guide-context{grid-template-columns:1fr;gap:24px;margin-block:24px}.blog-guide-intro{font-size:14px}}

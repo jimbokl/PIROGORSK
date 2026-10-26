@@ -7,7 +7,7 @@ const { city } = Astro.props;
 const places = placesForCity(city);
 const plan = planPies(4,350,['meat','cabbage'],products);
 ---
-<section class="places" data-places aria-label={`Сравнение форматов еды: ${cityNames[city]}`}>
+<section class="places" id="places-comparison" data-places aria-label={`Сравнение форматов еды: ${cityNames[city]}`}>
   <header><p class="ed-eyebrow">{cityNames[city]} · источники октября 2026</p><h2>Куда идти и что получится по цене</h2><p>{places.length} адресов. Сумма указана только там, где есть состав корзины. Средний чек, очередь и время готовности не подменяют друг друга.</p></header>
   <label class="places-sort">Порядок <select data-place-sort><option value="name">По названию</option><option value="price">По сумме корзины</option><option value="takeaway">Сначала подтверждённый самовывоз</option></select></label>
   <div class="places-scroll" tabindex="0" role="region" aria-label="Таблица заведений, на небольшом экране прокручивается по горизонтали">

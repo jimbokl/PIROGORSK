@@ -3,7 +3,8 @@ import ContentLayout from '../../layouts/ContentLayout.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
-import LcpImagePreload from '../../components/LcpImagePreload.astro';
+import GuideSummary from '../../components/GuideSummary.astro';
+import { Picture } from 'astro:assets';
 import PartyCalculator from '../../components/PartyCalculator.astro';
 import RestaurantVsPiesTable from '../../components/RestaurantVsPiesTable.astro';
 import CostComparisonWidget from '../../components/CostComparisonWidget.astro';
@@ -31,11 +32,13 @@ const schema:Record<string,unknown>[] = [{
 schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
 ---
 <ContentLayout title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article" image="/seo/blog/gde-poest-v-zelenogradske.jpg" imageAlt={foodGuideImageAlt}>
-  <LcpImagePreload slot="head" src={foodGuideImage} widths={[480, 680, 800, 1200]} sizes="(max-width: 760px) 92vw, 52vw" width={800} height={Math.round(800 * foodGuideImage.height / foodGuideImage.width)} quality={58} />
-  <EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} intro="После пляжа — кесадилья у моря, на ужин — паста или горячее, на Курортном — пироги с рыбными начинками. Собрали три варианта под разные прогулки и посчитали четыре блюда по двум официальным меню." image={foodGuideImage} imageAlt={foodGuideImageAlt} caption="Иллюстрация создана с помощью ИИ. Это вымышленное кафе, а не интерьер одного из мест в гиде." compact>
+  <div class="guide-lead"><EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} compact /></div>
+  <GuideSummary city="zelenogradsk" />
+  <section class="guide-context" aria-label="Об этом гиде"><div><p>После пляжа — кесадилья у моря, на ужин — паста или горячее, на Курортном — пироги с рыбными начинками. Собрали три варианта под разные прогулки и посчитали четыре блюда по двум официальным меню.</p>
     <p class="guide-date">Редакция Пирогорска · Обновлено <time datetime={foodGuide.updatedAt}>{foodGuide.updatedLabel}</time><br />Цены двух меню проверены <time datetime={foodGuide.checkedAt}>{foodGuide.checkedLabel}</time></p>
-    <nav class="guide-jumps" aria-label="Кафе в гиде">{[...menuVenues, localPieCafe].map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav>
-  </EditorialHero>
+    <nav class="guide-jumps" aria-label="Кафе в гиде">{[...menuVenues, localPieCafe].map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav></div>
+    <figure><Picture src={foodGuideImage} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*foodGuideImage.height/foodGuideImage.width)} quality={58} alt={foodGuideImageAlt} loading="lazy" decoding="async" /><figcaption>Иллюстрация создана с помощью ИИ. Это вымышленное кафе, а не интерьер одного из мест в гиде.</figcaption></figure>
+  </section>
 
   <section class="guide-choices" aria-labelledby="choice-title">
     <h2 id="choice-title">Сначала выберите, куда идёте</h2>
@@ -94,6 +97,8 @@ schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
 </ContentLayout>
 
 <style>
+  .guide-lead :global(.ed-hero){padding-block:29px 24px}.guide-lead :global(h1){max-width:32ch}.guide-context{display:grid;grid-template-columns:1fr .85fr;gap:40px;align-items:center;margin-block:30px 40px}.guide-context>div>p:first-child{font-size:15px;line-height:1.85;color:var(--ed-muted)}.guide-context img{width:100%;height:auto}.guide-context figcaption{font-size:10px;line-height:1.7;color:var(--ed-muted);margin-top:10px}
+  @media(max-width:760px){.guide-lead :global(.ed-hero){padding-block:22px 20px}.guide-lead :global(h1){font-size:34px;max-width:26ch}.guide-context{grid-template-columns:1fr;gap:24px;margin-block:24px}.guide-context>div>p:first-child{font-size:14px}}
   .guide-date{margin-top:20px;font-size:11px;color:var(--ed-muted);line-height:1.7}
   .guide-choices{margin-block:35px}.guide-choices>h2{font-size:clamp(26px,3vw,36px);line-height:1.2;margin-bottom:22px}.guide-choices>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.guide-choices a{display:block;padding:24px;border:1px solid var(--ed-line);text-decoration:none}.guide-choices a:hover{background:var(--ed-sea)}.guide-choices a:focus-visible{outline:2px solid var(--ed-ink);outline-offset:4px}.guide-choices h3{font-size:25px;line-height:1.2;margin-block:14px}.guide-choices p,.venue-story>p{font-size:14px;line-height:1.85;color:var(--ed-muted)}.venue-story>p+p{margin-top:18px}.guide-choices .source-link{margin-top:14px;text-decoration:underline;text-underline-offset:4px}
   .guide-jumps{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.guide-jumps a{display:flex;align-items:center;gap:26px;min-height:44px;padding:9px 15px;border:1px solid var(--ed-line);border-radius:3px;font-size:12px;text-decoration:none}.guide-jumps a:hover{background:var(--ed-sea)}
