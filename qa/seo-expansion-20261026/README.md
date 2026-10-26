@@ -94,3 +94,5 @@ Check/build/SEO/expansion,19 tests и ранее14 Worker tests PASS; backend н
 Не подтверждены100 внешних посетителей в сутки, включение всех URL в индекс и реальные достижения новых целей. Данные для обогащения: цены/ожидание и координаты большинства адресов. Существующий анонимный сбор интереса и подтверждённый backend `order_submit` сохранены.
 
 Последний IndexNow: 23 изменённых URL, оба endpoint HTTP 200 ([отчёт](indexnow-final.json)); ранее отправлялась полная матрица. Мобильный гид: LCP 3,5 с, H1, задержка отрисовки около 1310 мс. Системный serif не устранил задержку в публичном тесте; причина не установлена. Сохранены [разбивка](public-guide-release-lcp.txt) и [снимок PSI](psi-guide-mobile-release.png).
+
+Контрольный повтор без изменений, 18:28: guide mobile91 / desktop100; A/BP/SEO100. Mobile LCP3,5с, TBT40мс, CLS0. [Сводка](public-guide-repeat-summary.json), исходные readback: `public-guide-repeat-mobile.txt`, `public-guide-repeat-desktop.txt`. Результат 91 воспроизведён, задача 100 на этом шаблоне не закрыта.

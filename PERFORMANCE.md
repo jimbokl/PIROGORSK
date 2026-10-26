@@ -17,6 +17,8 @@ Runtime `4781207`, [CI40358029315 SUCCESS](https://github.com/jimbokl/PIROGORSK/
 
 История сохранена: неудачная правка preload `baf9b3c` дала mobile86 у главной; её отменили. Optional-font `b489707` дал офис100, но гид91. Эти результаты не скрыты и не считаются доказательством единственной причины. Локальный системный H1 дал 100/100; он учитывается отдельно.
 
+Контроль без изменения кода, 18:28 Калининград: [повторный публичный PSI](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/va0lqtpzzm?form_factor=mobile) снова дал гиду mobile91 / desktop100, A/BP/SEO100. Mobile LCP3,5с, TBT40мс, CLS0. Результат не списывается на случайность; требование 100 остаётся открытым. [Исходные показатели](qa/seo-expansion-20261026/public-guide-repeat-summary.json).
+
 
 ## SEO-экспансия — публичный PSI 26.10, 17:55 Калининград
 
