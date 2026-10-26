@@ -1,0 +1,334 @@
+{
+  "analysedAt": "2026-10-26",
+  "method": "Read-only; reset incorrect A1 dimensions before iterating actual worksheet rows. Source metrics retain their original meaning. No workbook edits.",
+  "wordcraft": [
+    {
+      "file": "/Users/dmitrij/Downloads/wordcraft-tables-info-доставка еды зеленоградск-20261023-175718.xlsx",
+      "sheets": [
+        {
+          "sheet": "HostsTable",
+          "actualRows": 31,
+          "actualCols": 2
+        },
+        {
+          "sheet": "UrlsTable",
+          "actualRows": 38,
+          "actualCols": 3
+        },
+        {
+          "sheet": "Queries",
+          "actualRows": 22,
+          "actualCols": 6
+        },
+        {
+          "sheet": "AdditionalQueries",
+          "actualRows": 15,
+          "actualCols": 6
+        }
+      ]
+    },
+    {
+      "file": "/Users/dmitrij/Downloads/wordcraft-tables-info-пироги доставка-20261023-175748.xlsx",
+      "sheets": [
+        {
+          "sheet": "Queries",
+          "actualRows": 1001,
+          "actualCols": 6
+        },
+        {
+          "sheet": "AdditionalQueries",
+          "actualRows": 825,
+          "actualCols": 6
+        },
+        {
+          "sheet": "HostsTable",
+          "actualRows": 652,
+          "actualCols": 2
+        },
+        {
+          "sheet": "UrlsTable",
+          "actualRows": 1901,
+          "actualCols": 3
+        }
+      ]
+    },
+    {
+      "file": "/Users/dmitrij/Downloads/wordcraft-tables-info-кафе зеленоградск-20261007-110347.xlsx",
+      "sheets": [
+        {
+          "sheet": "Queries",
+          "actualRows": 438,
+          "actualCols": 6
+        },
+        {
+          "sheet": "AdditionalQueries",
+          "actualRows": 594,
+          "actualCols": 6
+        },
+        {
+          "sheet": "HostsTable",
+          "actualRows": 127,
+          "actualCols": 2
+        },
+        {
+          "sheet": "UrlsTable",
+          "actualRows": 643,
+          "actualCols": 3
+        }
+      ],
+      "breakfastQueries": [
+        {
+          "sheet": "Queries",
+          "headers": [
+            "query",
+            "cluster",
+            "clicks",
+            "demand",
+            "competitiveness",
+            "in_alice"
+          ],
+          "rows": [
+            {
+              "row": 396,
+              "values": [
+                "кафе с завтраками зеленоградск",
+                "где позавтракать в зеленоградске",
+                1.0,
+                1.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 426,
+              "values": [
+                "зеленоградск кафе завтраки",
+                "где позавтракать в зеленоградске",
+                1.0,
+                1.0,
+                "HIGH",
+                false
+              ]
+            }
+          ]
+        },
+        {
+          "sheet": "AdditionalQueries",
+          "headers": [
+            "query",
+            "cluster",
+            "clicks",
+            "demand",
+            "competitiveness",
+            "in_alice"
+          ],
+          "rows": [
+            {
+              "row": 32,
+              "values": [
+                "где позавтракать в зеленоградске",
+                "где позавтракать в зеленоградске",
+                92.0,
+                102.0,
+                "HIGH",
+                true
+              ]
+            },
+            {
+              "row": 44,
+              "values": [
+                "завтраки в зеленоградске",
+                "где позавтракать в зеленоградске",
+                59.0,
+                81.0,
+                "HIGH",
+                true
+              ]
+            },
+            {
+              "row": 115,
+              "values": [
+                "завтраки зеленоградск",
+                "где позавтракать в зеленоградске",
+                21.0,
+                31.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 151,
+              "values": [
+                "зеленоградск где позавтракать",
+                "где позавтракать в зеленоградске",
+                15.0,
+                13.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 154,
+              "values": [
+                "завтрак 7 45 зеленоградск",
+                "завтрак 7 45 зеленоградск",
+                15.0,
+                17.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 245,
+              "values": [
+                "зеленоградск завтраки вкусные",
+                "где позавтракать в зеленоградске",
+                9.0,
+                9.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 288,
+              "values": [
+                "завтрак к 7 45 зеленоградск",
+                "завтрак 7 45 зеленоградск",
+                7.0,
+                11.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 342,
+              "values": [
+                "где завтракать в зеленоградске",
+                "где позавтракать в зеленоградске",
+                5.0,
+                6.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 374,
+              "values": [
+                "завтраки в зеленоградске калининградской области",
+                "где позавтракать в зеленоградске",
+                4.0,
+                3.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 434,
+              "values": [
+                "завтрак к 7 45",
+                "завтрак 7 45 зеленоградск",
+                3.0,
+                3.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 442,
+              "values": [
+                "завтрак 7 45",
+                "завтрак 7 45 зеленоградск",
+                2.0,
+                2.0,
+                "HIGH",
+                true
+              ]
+            },
+            {
+              "row": 530,
+              "values": [
+                "зеленоградск завтрак",
+                "где позавтракать в зеленоградске",
+                1.0,
+                1.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 586,
+              "values": [
+                "где позавтракать зеленоградск",
+                "где позавтракать в зеленоградске",
+                1.0,
+                1.0,
+                "HIGH",
+                false
+              ]
+            },
+            {
+              "row": 593,
+              "values": [
+                "зеленоградск где завтракать",
+                "где позавтракать в зеленоградске",
+                1.0,
+                0.0,
+                "NO_DATA",
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "/Users/dmitrij/Downloads/wordcraft-tables-info-рестораны зеленоградск-20261007-110145.xlsx",
+      "sheets": [
+        {
+          "sheet": "Queries",
+          "actualRows": 705,
+          "actualCols": 6
+        },
+        {
+          "sheet": "AdditionalQueries",
+          "actualRows": 441,
+          "actualCols": 6
+        },
+        {
+          "sheet": "HostsTable",
+          "actualRows": 124,
+          "actualCols": 2
+        },
+        {
+          "sheet": "UrlsTable",
+          "actualRows": 713,
+          "actualCols": 3
+        }
+      ]
+    }
+  ],
+  "godune": {
+    "archive": "/Users/dmitrij/Downloads/https___godune.ru_-Performance-on-Search-2026-10-26.zip",
+    "filters": "Фильтр,Значение\nТип поиска,Веб-поиск (текст)\nДата,За последние 3 месяца",
+    "headers": [
+      "Популярные запросы",
+      "Kлики",
+      "Показы",
+      "CTR",
+      "Позиция"
+    ],
+    "selected": [
+      {
+        "row": 4,
+        "values": [
+          "где позавтракать в зеленоградске",
+          "0",
+          "7",
+          "0%",
+          "26.57"
+        ]
+      }
+    ],
+    "limitations": "This is godune.ru, a different young site. Its impressions are not market volume, traffic to Pirogorsk or evidence of pie demand."
+  }
+}

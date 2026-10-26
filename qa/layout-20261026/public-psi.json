@@ -1,0 +1,36 @@
+{
+  "reportId": "1desv5tjcc",
+  "url": "https://pirogorsk.ru/journal/dostavka-edy-v-zelenogradske/",
+  "runtime": "2d3ca0c53b8ccacb28cfe668849625f538932df4",
+  "capturedAt": "2026-10-26T15:39:49+02:00",
+  "lighthouseVersion": "13.5.0",
+  "source": "Public PageSpeed UI; saved accessibility snapshots in this directory",
+  "crux": "no data",
+  "mobile": {
+    "performance": 91,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 870,
+    "lcpMs": 3493,
+    "tbtMs": 27,
+    "cls": 0.005,
+    "speedIndexMs": 2211
+  },
+  "desktop": {
+    "performance": 95,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 230,
+    "lcpMs": 329,
+    "tbtMs": 0,
+    "cls": 0.141,
+    "speedIndexMs": 330
+  },
+  "limitations": [
+    "Desktop CLS regression remains unexplained; isolated local font probes do not reproduce it.",
+    "Filmstrip samples can miss early layout shifts.",
+    "Local Lighthouse scores are separate from public PSI."
+  ]
+}

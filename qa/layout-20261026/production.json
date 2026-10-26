@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-26T13:40:00.463164+00:00",
+  "runtimeCommit": "2d3ca0c53b8ccacb28cfe668849625f538932df4",
+  "ciRun": 40331597138,
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "matchesBuild": true,
+      "sha256": "ff413941057983f6f7dd6b68ba0bad8cb2436fd82a58741e12d56994c4596c81"
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "matchesBuild": true,
+      "sha256": "17c37227c22267ade1101ce313ffc3b9cb3c12e31fe3e7462b27a451ae38e2fa"
+    },
+    {
+      "path": "/journal/dostavka-edy-v-zelenogradske/",
+      "status": 200,
+      "matchesBuild": true,
+      "sha256": "9c7a529375fd2408097376d0db743d50c6774f6121f545e9e272b26d99b844a1"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "matchesBuild": true,
+      "sha256": "8c459cbc0fd1570159190771ce8a43948638ca99888a864abbbae22c297d8206"
+    },
+    {
+      "path": "/indexnow-manifest.json",
+      "status": 200,
+      "matchesBuild": true,
+      "sha256": "af612ef65cc0931a918ad45ddbf42654853a2e89f552e9660e98b9499419ba6e"
+    }
+  ],
+  "scriptAssets": [
+    {
+      "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.C3JVmfMD.js",
+      "qaGuard": false,
+      "metricaCounter": false
+    },
+    {
+      "path": "/_astro/analytics.BAJbuXW7.js",
+      "status": 200,
+      "matchesBuild": true,
+      "qaGuard": true,
+      "metricaCounter": true
+    }
+  ],
+  "assetVerifiedAt": "2026-10-26T13:41:19.662059+00:00"
+}

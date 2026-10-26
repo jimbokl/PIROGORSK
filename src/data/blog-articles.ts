@@ -1,5 +1,6 @@
 import company from '../../design/blog-source/company-table.png';
 import { deliveryGuide } from './delivery-guide';
+import { breakfastGuide } from './breakfast-guide';
 import sizes from '../../design/blog-source/two-sizes.png';
 import drinks from '../../design/blog-source/drinks-table.png';
 import svetlogorskBreakfast from '../../design/blog-source/svetlogorsk-breakfast.png';
@@ -21,6 +22,7 @@ export interface BlogArticle {
 }
 
 export const blogArticles: readonly BlogArticle[] = [
+  breakfastGuide,
   deliveryGuide,
   {
     slug: 'skolko-piroga-na-cheloveka',
