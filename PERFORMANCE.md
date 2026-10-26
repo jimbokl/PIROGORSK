@@ -1,5 +1,11 @@
 # Скорость production-сборки
 
+## Подготовлено исправление CLS — 26.10.2026
+
+Для статьи доставки установлен причинный сценарий с WOFF2, задержанным на 2000 мс: крошки добавляли строку на mobile, H1 перебалансировался на desktop. Две локальные CSS-правки уменьшили сумму сдвигов с 0.085672 до 0.003218 на 390 px и с 0.087161 до 0.023871 на 1350 px. На 320 px after0.014460. Это диагностический опыт, не публичный PSI и не обещание нулевого CLS в любой загрузке.
+
+Локальный LH 13.5.0 (26.10 13:23 UTC): P/A/BP/SEO100 mobile и desktop; LCP1812 / 428 мс, TBT0, CLS0. Локальные preview теперь исключены из Метрики для чистоты измерения спроса, поэтому результат явно отделён от production с настоящим счётчиком. [Полный протокол и снимки](qa/layout-20261026/README.md). Новый публичный PSI ожидает публикации; исторические 89/98 ниже остаются последним подтверждённым результатом статьи на домене.
+
 ## Новый гид доставки — публичный PSI 26.10, 14:53 Калининград
 
 Runtime `e4f5bf4`, новая страница `/journal/dostavka-edy-v-zelenogradske/`. [Публичный mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-dostavka-edy-v-zelenogradske/1eu8qmvnk3?form_factor=mobile) — **89**, LCP3486мс / TBT26мс / CLS0.09; [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-dostavka-edy-v-zelenogradske/1eu8qmvnk3?form_factor=desktop) — **98**, LCP327мс / TBT28мс / CLS0.088. Accessibility / Best Practices / SEO100 в обоих режимах; CrUX нет. Счётчики/скрипты не отключались ради балла. Подробности и видимые отчёты: `qa/traffic-20261026/delivery-public-psi.json`, `delivery-psi-*-initial*.txt`, `qa/screenshots/delivery-guide-20261026/psi-*-initial.png`.

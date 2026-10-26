@@ -5,6 +5,7 @@ import { runInNewContext } from 'node:vm';
 import ts from 'typescript';
 import { analyticsPageUrl, trafficCampaigns } from '../src/lib/analytics-pageview.ts';
 import { analyticsConfig } from '../src/config/analytics.ts';
+import { analyticsSessionEnabled } from '../src/lib/analytics-session.ts';
 
 const tagged = (campaign) => {
   const url = new URL(campaign.path, 'https://pirogorsk.ru');
@@ -55,6 +56,7 @@ test('real analytics initializer queues one explicit pageview and no goal', () =
     require(name) {
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
+      if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
       throw new Error(`Unexpected import: ${name}`);
     },
     window: { ym: (...args) => calls.push(args) },
@@ -75,4 +77,40 @@ test('real analytics initializer queues one explicit pageview and no goal', () =
   assert.equal(calls[1][3].referer, 'https://t.me/example');
   assert.equal(scripts.length, 1);
   assert.equal(scripts[0].src, 'https://mc.yandex.ru/metrika/tag.js');
+});
+
+test('local previews and QA tabs never load Metrica or send goals', () => {
+  for (const href of ['http://127.0.0.1:4322/', 'http://localhost:4322/blog/', 'https://preview.example/blog/', 'https://pirogorsk.ru/?qa=1']) {
+    const calls = [];
+    const context = {
+      exports: {}, URL, location: { href },
+      require(name) {
+        if (name === '../config/analytics') return { analyticsConfig };
+        if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
+        if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
+        throw new Error(`Unexpected import: ${name}`);
+      },
+      window: { ym: (...args) => calls.push(args) },
+      document: { querySelector() { throw new Error('Tracking must not initialize'); } },
+    };
+    runInNewContext(source, context);
+    context.exports.trackGoal('order_form_open', { city: 'Зеленоградск' });
+    context.exports.trackGoal('order_submit', { requestId: '10000000-0000-4000-8000-000000000001' });
+    assert.deepEqual(calls, []);
+  }
+});
+
+test('QA exclusion follows navigation in the same tab; other sessions still count', () => {
+  const entries = new Map();
+  const store = { getItem: key => entries.get(key) ?? null, setItem: (key, value) => entries.set(key, value) };
+  assert.equal(analyticsSessionEnabled('https://pirogorsk.ru/blog/', store), true);
+  assert.equal(analyticsSessionEnabled('https://pirogorsk.ru/blog/?qa=1', store), false);
+  assert.equal(analyticsSessionEnabled('https://pirogorsk.ru/podbor/', store), false);
+  assert.equal(analyticsSessionEnabled('https://pirogorsk.ru/podbor/'), true);
+  assert.equal(analyticsSessionEnabled('https://www.pirogorsk.ru/'), true);
+  assert.equal(analyticsSessionEnabled('https://pirogorsk.ru.evil.example/'), false);
+  assert.equal(analyticsSessionEnabled('invalid'), false);
+  const blockedStore = { getItem() { throw new Error('blocked'); }, setItem() { throw new Error('blocked'); } };
+  assert.equal(analyticsSessionEnabled('https://pirogorsk.ru/?qa=1', blockedStore), false);
+  assert.equal(analyticsSessionEnabled('https://pirogorsk.ru/', blockedStore), true);
 });

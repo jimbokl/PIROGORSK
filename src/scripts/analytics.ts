@@ -1,5 +1,6 @@
 import { analyticsConfig } from '../config/analytics';
 import { analyticsPageUrl } from '../lib/analytics-pageview';
+import { analyticsSessionEnabled } from '../lib/analytics-session';
 
 export type Goal = 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error';
 export type GoalParams = {
@@ -17,10 +18,14 @@ const goals = new Set<Goal>(['catalog_add', 'order_form_open', 'order_form_start
 const submitted = new Set<string>();
 const idPattern = /^[a-zA-Z0-9_-]{1,48}$/;
 const requestPattern = /^[\da-f]{8}-[\da-f]{4}-4[\da-f]{3}-[89ab][\da-f]{3}-[\da-f]{12}$/i;
+const analyticsEnabled = analyticsSessionEnabled(location.href, {
+  getItem: key => sessionStorage.getItem(key),
+  setItem: (key, value) => sessionStorage.setItem(key, value),
+});
 
 /** Only this allowlist can reach Metrica. Contact values and DOM form data are never read. */
 export function trackGoal(goal: Goal, params: GoalParams = {}): void {
-  if (!goals.has(goal) || !Number.isSafeInteger(analyticsConfig.metricaId) || analyticsConfig.metricaId <= 0) return;
+  if (!analyticsEnabled || !goals.has(goal) || !Number.isSafeInteger(analyticsConfig.metricaId) || analyticsConfig.metricaId <= 0) return;
   const safe: GoalParams = {};
   if (typeof params.city === 'string' && cities.has(params.city)) safe.city = params.city;
   for (const field of ['productid', 'variant'] as const) {
@@ -43,6 +48,7 @@ export function trackGoal(goal: Goal, params: GoalParams = {}): void {
 }
 
 function initializeAnalytics(): void {
+  if (!analyticsEnabled) return;
   if (analyticsConfig.metricaId <= 0 || !Number.isSafeInteger(analyticsConfig.metricaId)) return;
   if (document.querySelector('[data-pirogorsk-metrica]')) return;
   if (!window.ym) {

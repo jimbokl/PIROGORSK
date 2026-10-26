@@ -1,0 +1,264 @@
+[
+  {
+    "mode": "mobile",
+    "url": "http://127.0.0.1:4322/journal/dostavka-edy-v-zelenogradske/",
+    "timestamp": "2026-10-26T13:23:16.223Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 840.3152499999999,
+        "display": "0.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1812.2522,
+        "display": "1.8 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 840.3152499999999,
+        "display": "0.8 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 36 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,ARTICLE,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture > img",
+              "boundingRect": {
+                "top": 563,
+                "bottom": 813,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 251
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/zelenogradsk-delivery-supper.DV4BglBj_Z1RdNHX…\" srcset=\"/_astro/zelenogradsk-delivery-supper.DV4BglBj_Z23tofL.webp 480w, /_astro/z…\" sizes=\"(max-width: 760px) 92vw, 52vw\" alt=\"Иллюстрация: доставленный ужин в бумажных коробках на столе в апартаментах…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-4pzkchnt=\"true\" width=\"800\" height=\"533\">",
+              "nodeLabel": "Иллюстрация: доставленный ужин в бумажных коробках на столе в апартаментах у мо…"
+            },
+            "url": "http://127.0.0.1:4322/_astro/zelenogradsk-delivery-supper.DV4BglBj_Z1RdNHX.avif",
+            "totalBytes": 47170,
+            "wastedBytes": 36751,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x533) for its displayed dimensions (376x251). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 36751
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "BE653E8D40967092504DC61DD783A496": {
+                  "url": "http://127.0.0.1:4322/journal/dostavka-edy-v-zelenogradske/",
+                  "navStartToEndTime": 18,
+                  "transferSize": 11639,
+                  "isLongest": true,
+                  "children": {
+                    "17139.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.C3JVmfMD.js",
+                      "navStartToEndTime": 28,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "17139.18": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.BAJbuXW7.js",
+                          "navStartToEndTime": 66,
+                          "transferSize": 2005,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 66
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "url": "http://127.0.0.1:4322/journal/dostavka-edy-v-zelenogradske/",
+    "timestamp": "2026-10-26T13:23:22.053Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 230.49575,
+        "display": "0.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 428.39660000000003,
+        "display": "0.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 230.49575,
+        "display": "0.2 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 19 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,ARTICLE,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture > img",
+              "boundingRect": {
+                "top": 222,
+                "bottom": 630,
+                "left": 672,
+                "right": 1285,
+                "width": 613,
+                "height": 408
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/zelenogradsk-delivery-supper.DV4BglBj_Z1RdNHX…\" srcset=\"/_astro/zelenogradsk-delivery-supper.DV4BglBj_Z23tofL.webp 480w, /_astro/z…\" sizes=\"(max-width: 760px) 92vw, 52vw\" alt=\"Иллюстрация: доставленный ужин в бумажных коробках на столе в апартаментах…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-4pzkchnt=\"true\" width=\"800\" height=\"533\">",
+              "nodeLabel": "Иллюстрация: доставленный ужин в бумажных коробках на столе в апартаментах у мо…"
+            },
+            "url": "http://127.0.0.1:4322/_astro/zelenogradsk-delivery-supper.DV4BglBj_Z1RdNHX.avif",
+            "totalBytes": 47170,
+            "wastedBytes": 19502,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x533) for its displayed dimensions (613x408). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 19502
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "03E9973FC6D8DF67D77D909A46C2F76D": {
+                  "url": "http://127.0.0.1:4322/journal/dostavka-edy-v-zelenogradske/",
+                  "navStartToEndTime": 10,
+                  "transferSize": 11639,
+                  "isLongest": true,
+                  "children": {
+                    "17146.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.C3JVmfMD.js",
+                      "navStartToEndTime": 15,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "17146.18": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.BAJbuXW7.js",
+                          "navStartToEndTime": 51,
+                          "transferSize": 2005,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 51
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

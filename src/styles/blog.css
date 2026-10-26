@@ -2,3 +2,6 @@
 @media(max-width:900px){.blog-feature{gap:28px;grid-template-columns:1.15fr 1fr}.blog-feature-number{font-size:38px;margin-bottom:20px}.blog-feature h2{font-size:33px}.blog-takeaway{gap:35px}}
 @media(max-width:760px){.blog-heading{padding-block:30px;gap:25px;display:block}.blog-heading h1{font-size:76px;margin-top:16px}.blog-heading>p{max-width:48ch;font-size:14px;margin-top:24px}.blog-feature{grid-template-columns:1fr;gap:0;padding-top:26px}.blog-feature-copy{padding-block:24px 0}.blog-feature-number{float:right;margin:0 0 10px 20px;font-size:32px}.blog-feature h2{font-size:35px;max-width:25ch;margin-top:14px}.blog-feature-copy>p:not(.ed-eyebrow){font-size:14px;max-width:55ch}.blog-topics{margin-top:30px;gap:4px 20px}.blog-topics>span{width:100%}.blog-category{padding-top:33px}.blog-category>header{display:block;margin-bottom:20px}.blog-category>header h2{font-size:33px}.blog-category>header p{margin-top:10px}.blog-takeaway{grid-template-columns:1fr;gap:16px;padding-block:24px}.blog-takeaway p{font-size:14px}.blog-article .ed-hero{gap:25px}.blog-toc{display:grid;gap:2px;margin-top:12px}.blog-toc a{font-size:12px}}
 @media(max-width:360px){.blog-heading h1{font-size:65px}.blog-feature h2{font-size:31px}}
+
+/* Keep line placement stable while the heading font replaces its fallback. */
+.blog-article .ed-hero h1{text-wrap:wrap}

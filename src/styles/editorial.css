@@ -25,3 +25,8 @@
 .ed-header>.site-navigation{margin-left:auto}
 @media(max-width:1100px){.ed-header{flex-wrap:wrap;gap:6px;padding-block:16px 5px;min-height:0}.ed-header>.site-navigation{width:100%;order:2;overflow-x:auto;margin-left:0}}
 @media(max-width:760px){.ed-header{display:flex;padding-block:16px 5px}.ed-header>.site-navigation{gap:18px}.ed-breadcrumbs{padding-top:5px}}
+
+/* A font swap must not push the current page onto a new breadcrumb row. */
+@media(max-width:760px){
+ .ed-breadcrumbs li:last-child{flex:0 1 100%;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+}
