@@ -1,0 +1,238 @@
+[
+  {
+    "mode": "mobile",
+    "url": "http://127.0.0.1:4322/povody/kaliningrad/v-ofis-na-den-rozhdeniya/",
+    "timestamp": "2026-10-26T16:01:41.076Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1133.385625,
+        "display": "1.1 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1431.7085000000002,
+        "display": "1.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1133.385625,
+        "display": "1.1 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "1237287579EC08A4F739181BF9B0185A": {
+                  "url": "http://127.0.0.1:4322/povody/kaliningrad/v-ofis-na-den-rozhdeniya/",
+                  "navStartToEndTime": 14,
+                  "transferSize": 10745,
+                  "isLongest": true,
+                  "children": {
+                    "33359.19": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 67,
+                      "transferSize": 16224,
+                      "isLongest": true,
+                      "children": {}
+                    },
+                    "33359.17": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 67,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "33359.4": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.DzWmPW0E.js",
+                      "navStartToEndTime": 21,
+                      "transferSize": 351,
+                      "children": {
+                        "33359.14": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.B5Ewd5iM.js",
+                          "navStartToEndTime": 63,
+                          "transferSize": 2099,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "33359.6": {
+                      "url": "http://127.0.0.1:4322/_astro/PartyCalculator.astro_astro_type_script_index_0_lang.DoePOc9Z.js",
+                      "navStartToEndTime": 21,
+                      "transferSize": 1339,
+                      "children": {
+                        "33359.15": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 63,
+                          "transferSize": 1121,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 67
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "url": "http://127.0.0.1:4322/povody/kaliningrad/v-ofis-na-den-rozhdeniya/",
+    "timestamp": "2026-10-26T16:01:46.626Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 290.24749999999995,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 328.198,
+        "display": "0.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.02927134489099028,
+        "display": "0.029"
+      },
+      "speed-index": {
+        "value": 290.24749999999995,
+        "display": "0.3 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "E69D9E3C16230DCDA197F5166EE89D8B": {
+                  "url": "http://127.0.0.1:4322/povody/kaliningrad/v-ofis-na-den-rozhdeniya/",
+                  "navStartToEndTime": 12,
+                  "transferSize": 10745,
+                  "isLongest": true,
+                  "children": {
+                    "33365.17": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 51,
+                      "transferSize": 9546,
+                      "isLongest": true,
+                      "children": {}
+                    },
+                    "33365.19": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 51,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "33365.6": {
+                      "url": "http://127.0.0.1:4322/_astro/PartyCalculator.astro_astro_type_script_index_0_lang.DoePOc9Z.js",
+                      "navStartToEndTime": 16,
+                      "transferSize": 1339,
+                      "children": {
+                        "33365.15": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 48,
+                          "transferSize": 1121,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "33365.4": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.DzWmPW0E.js",
+                      "navStartToEndTime": 14,
+                      "transferSize": 351,
+                      "children": {
+                        "33365.14": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.B5Ewd5iM.js",
+                          "navStartToEndTime": 48,
+                          "transferSize": 2099,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 51
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "page": "guide",
+    "mode": "mobile",
+    "runtime": "4781207",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/xz1lacxsq1?form_factor=mobile",
+    "captured": "26 окт. 2026 г., 18:24 GMT+2",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "1,0 сек.",
+      "largest-contentful-paint": "3,5 сек.",
+      "total-blocking-time": "20 мс",
+      "cumulative-layout-shift": "0",
+      "speed-index": "2,2 сек."
+    },
+    "source": "public-guide-release-mobile.txt"
+  },
+  {
+    "page": "guide",
+    "mode": "desktop",
+    "runtime": "4781207",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/xz1lacxsq1?form_factor=desktop",
+    "captured": "26 окт. 2026 г., 18:24 GMT+2",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "0,3 сек.",
+      "largest-contentful-paint": "0,4 сек.",
+      "total-blocking-time": "20 мс",
+      "cumulative-layout-shift": "0",
+      "speed-index": "0,5 сек."
+    },
+    "source": "public-guide-release-desktop.txt"
+  }
+]

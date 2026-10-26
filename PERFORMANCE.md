@@ -1,5 +1,40 @@
 # Скорость production-сборки
 
+## Текущий выпуск SEO-экспансии — 26.10
+
+Runtime `4781207`, [CI40358029315 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40358029315). 42 production URL проверены по HTTP200 и точным хешам сборки. H1 статей использует локальный serif, не ожидающий web-font; остальные гарнитуры сохраняются. Калькуляторы, Метрика и backend не отключались для замеров.
+
+| Страница / режим | P / A / BP / SEO | FCP | LCP | TBT | CLS | SI |
+| --- | --- | --- | --- | --- | --- | --- |
+| [home / mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/cfapyaq905?form_factor=mobile) | 100 / 100 / 100 / 100 | 1,0 сек. | 1,8 сек. | 0 мс | 0 | 1,0 сек. |
+| [home / desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/cfapyaq905?form_factor=desktop) | 100 / 100 / 100 / 100 | 0,3 сек. | 0,4 сек. | 0 мс | 0.003 | 0,4 сек. |
+| [scenario / mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-povody-kaliningrad-v-ofis-na-den-rozhdeniya/csb7f9yf5w?form_factor=mobile) | 100 / 100 / 100 / 100 | 0,8 сек. | 1,2 сек. | 20 мс | 0 | 0,8 сек. |
+| [scenario / desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-povody-kaliningrad-v-ofis-na-den-rozhdeniya/csb7f9yf5w?form_factor=desktop) | 100 / 100 / 100 / 100 | 0,3 сек. | 0,3 сек. | 20 мс | 0 | 0,3 сек. |
+| [guide / mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/xz1lacxsq1?form_factor=mobile) | 91 / 100 / 100 / 100 | 1,0 сек. | 3,5 сек. | 20 мс | 0 | 2,2 сек. |
+| [guide / desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/xz1lacxsq1?form_factor=desktop) | 100 / 100 / 100 / 100 | 0,3 сек. | 0,4 сек. | 20 мс | 0 | 0,5 сек. |
+
+Требование 100 на всех проверенных шаблонах остаётся открытым: guide mobile — 91. Это публичный PSI, не локальный Lighthouse. CrUX пока без данных. Главная и офис измерены в 18:17 на `b489707`; их HTML побайтово не изменился в `4781207`. Гид заново измерен после изменения его H1. [Шесть записей и исходные readback](qa/seo-expansion-20261026/public-release-summary.json), [подтверждение неизменности страниц](qa/seo-expansion-20261026/unchanged-controls.json).
+
+История сохранена: неудачная правка preload `baf9b3c` дала mobile86 у главной; её отменили. Optional-font `b489707` дал офис100, но гид91. Эти результаты не скрыты и не считаются доказательством единственной причины. Локальный системный H1 дал 100/100; он учитывается отдельно.
+
+
+## SEO-экспансия — публичный PSI 26.10, 17:55 Калининград
+
+Runtime `0a59bc6`, CI40353514687 SUCCESS. Проверены три URL на домене без QA-параметра, с обычной Метрикой. Все шесть вкладок прочитаны отдельно. Lighthouse13.5.0, CrUX — нет данных.
+
+| Страница / режим | P / A / BP / SEO | FCP | LCP | TBT | CLS | SI |
+| --- | --- | --- | --- | --- | --- | --- |
+| [home / mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a321688j2u?form_factor=mobile) | 100 / 100 / 100 / 100 | 1,0 сек. | 1,7 сек. | 10 мс | 0.007 | 1,0 сек. |
+| [home / desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a321688j2u?form_factor=desktop) | 100 / 100 / 100 / 100 | 0,3 сек. | 0,4 сек. | 20 мс | 0.006 | 0,5 сек. |
+| [scenario / mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-povody-kaliningrad-v-ofis-na-den-rozhdeniya/vmor67q97l?form_factor=mobile) | 92 / 100 / 100 / 100 | 0,9 сек. | 3,3 сек. | 30 мс | 0 | 2,2 сек. |
+| [scenario / desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-povody-kaliningrad-v-ofis-na-den-rozhdeniya/vmor67q97l?form_factor=desktop) | 100 / 100 / 100 / 100 | 0,3 сек. | 0,3 сек. | 10 мс | 0 | 0,3 сек. |
+| [guide / mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/o77ij6noka?form_factor=mobile) | 100 / 100 / 100 / 100 | 1,0 сек. | 1,4 сек. | 20 мс | 0 | 1,0 сек. |
+| [guide / desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/o77ij6noka?form_factor=desktop) | 100 / 100 / 100 / 100 | 0,3 сек. | 0,4 сек. | 10 мс | 0 | 0,4 сек. |
+
+После переноса краткой таблицы на первый экран гид поднялся с P90 до P100 mobile. Офис остался P92 mobile: LCP3.3с, задержка отрисовки H1 около1300мс; CLS0. Причина не установлена. Требование 100 на всех новых шаблонах пока не выполнено. Локальные 100 не подменяют этот публичный результат.
+
+Первый runtime `5edf6af`, 17:39: главная100/100, офис92/100, гид90/100 (mobile/desktop), остальные категории100. Сохранены оба этапа: [исходные](qa/seo-expansion-20261026/public-initial-summary.json), [после первого экрана](qa/seo-expansion-20261026/public-first-screen-summary.json), тексты в той же папке.
+
 ## Завтраки в Зеленоградске — публичный PSI 26.10, 16:16 Калининград
 
 Опубликованный runtime `f585200`, CI40337317191 SUCCESS; production совпала со сборкой. Один публичный отчёт [dt2qwod6z3](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-pozavtrakat-v-zelenogradske/dt2qwod6z3?form_factor=mobile) от **26.10.2026 16:16:19 GMT+2**, Lighthouse13.5.0 / HeadlessChromium153.0.8010.36. Обычная production-конфигурация Метрики сохранена; URL теста без QA-флага.

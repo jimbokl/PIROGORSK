@@ -1,0 +1,128 @@
+[
+  {
+    "page": "home",
+    "mode": "mobile",
+    "runtime": "0a59bc6",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a321688j2u?form_factor=mobile",
+    "captured": "26 окт. 2026 г., 17:55 GMT+2",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "1,0 сек.",
+      "largest-contentful-paint": "1,7 сек.",
+      "total-blocking-time": "10 мс",
+      "cumulative-layout-shift": "0.007",
+      "speed-index": "1,0 сек."
+    },
+    "source": "public-home-final-mobile.txt"
+  },
+  {
+    "page": "home",
+    "mode": "desktop",
+    "runtime": "0a59bc6",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a321688j2u?form_factor=desktop",
+    "captured": "26 окт. 2026 г., 17:55 GMT+2",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "0,3 сек.",
+      "largest-contentful-paint": "0,4 сек.",
+      "total-blocking-time": "20 мс",
+      "cumulative-layout-shift": "0.006",
+      "speed-index": "0,5 сек."
+    },
+    "source": "public-home-final-desktop.txt"
+  },
+  {
+    "page": "scenario",
+    "mode": "mobile",
+    "runtime": "0a59bc6",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-povody-kaliningrad-v-ofis-na-den-rozhdeniya/vmor67q97l?form_factor=mobile",
+    "captured": "26 окт. 2026 г., 17:55 GMT+2",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "0,9 сек.",
+      "largest-contentful-paint": "3,3 сек.",
+      "total-blocking-time": "30 мс",
+      "cumulative-layout-shift": "0",
+      "speed-index": "2,2 сек."
+    },
+    "source": "public-scenario-final-mobile.txt"
+  },
+  {
+    "page": "scenario",
+    "mode": "desktop",
+    "runtime": "0a59bc6",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-povody-kaliningrad-v-ofis-na-den-rozhdeniya/vmor67q97l?form_factor=desktop",
+    "captured": "26 окт. 2026 г., 17:55 GMT+2",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "0,3 сек.",
+      "largest-contentful-paint": "0,3 сек.",
+      "total-blocking-time": "10 мс",
+      "cumulative-layout-shift": "0",
+      "speed-index": "0,3 сек."
+    },
+    "source": "public-scenario-final-desktop.txt"
+  },
+  {
+    "page": "guide",
+    "mode": "mobile",
+    "runtime": "0a59bc6",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/o77ij6noka?form_factor=mobile",
+    "captured": "26 окт. 2026 г., 17:55 GMT+2",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "1,0 сек.",
+      "largest-contentful-paint": "1,4 сек.",
+      "total-blocking-time": "20 мс",
+      "cumulative-layout-shift": "0",
+      "speed-index": "1,0 сек."
+    },
+    "source": "public-guide-final-mobile.txt"
+  },
+  {
+    "page": "guide",
+    "mode": "desktop",
+    "runtime": "0a59bc6",
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/o77ij6noka?form_factor=desktop",
+    "captured": "26 окт. 2026 г., 17:55 GMT+2",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "0,3 сек.",
+      "largest-contentful-paint": "0,4 сек.",
+      "total-blocking-time": "10 мс",
+      "cumulative-layout-shift": "0",
+      "speed-index": "0,4 сек."
+    },
+    "source": "public-guide-final-desktop.txt"
+  }
+]

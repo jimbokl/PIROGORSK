@@ -6,8 +6,8 @@
 
 ## Проверки сборки
 
-- `npm run check`: 86 файлов, 0 errors/warnings/hints.
-- `npm run build`; `node scripts/verify-seo.mjs`: 69 HTML, 8 товаров, 67 sitemap URL, 3957 локальных ссылок.
+- `npm run check`: 87 файлов, 0 errors/warnings/hints после финальной правки первого экрана.
+- `npm run build`; `node scripts/verify-seo.mjs`: 69 HTML, 8 товаров, 67 sitemap URL, 3931 локальная ссылка после финальной правки первого экрана.
 - `node scripts/verify-expansion.mjs`: 36 целей / 28 новых / 36 мест / 16 сценариев; 0 сирот, каждый индексируемый URL максимум в двух переходах от главной, правильный город в ссылке переноса.
 - 19 tests: расчёты 500/1000 г, 50 гостей, все 8 начинок, парсинг, allowlist микроцелей и QA-исключение, подтверждение и дедупликация `order_submit`, два получателя IndexNow и отказ без продвижения состояния.
 - `node worker/scripts/verify.mjs`: контракт Worker/API/SQL PASS, 14 тестов. Backend не менялся.
@@ -35,3 +35,62 @@
 Первый локальный Lighthouse 13.5.0: сценарий P/A/BP/SEO **100/100/100/100** mobile и desktop, LCP 1.5/0.3 с, TBT/CLS 0. Гид: mobile **99/100/100/100**, desktop **100/100/100/100**, LCP 2.0/0.5 с. В редакционный Picture добавлен промежуточный размер 680 px и синхронизирован preload старого гида: Retina-телефон сможет загрузить меньший файл вместо 800 px. Главный hero не менялся. Это локальные измерения, не публичный PSI. Итоговые замеры и публикация фиксируются ниже после проверки домена.
 
 Повтор после 680 px: локальный гид mobile 99/100/100/100, desktop 100/100/100/100; LCP 2.0/0.5 с. Загружаемый AVIF уменьшился с 49 659 до 38 387 байт передачи; прирост оценки не подтверждён.
+
+
+## Первый опубликованный выпуск и публичный PSI
+
+Runtime `5edf6af`, [CI 40350692916 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40350692916). Все 36 целевых URL и шесть служебных адресов проверены по HTTP 200 и SHA-256 относительно локальной сборки. Первоначальный IndexNow: 67 URL, api.indexnow.org HTTP 200, yandex.com HTTP 202 (ключ ожидает проверки). Это приём уведомлений, не подтверждение индексации. [Ответы](indexnow-initial.json).
+
+Публичный PSI от 26.10, 17:39 Europe/Kaliningrad, Lighthouse 13.5.0; обычная Метрика, без QA-параметра:
+
+| URL | Mobile P/A/BP/SEO | Desktop P/A/BP/SEO | Mobile LCP/TBT/CLS |
+| --- | --- | --- | --- |
+| [Главная](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/5raukvf3yi?form_factor=mobile) | 100/100/100/100 | 100/100/100/100 | 1.5 с / 10 мс / 0 |
+| [Офис](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-povody-kaliningrad-v-ofis-na-den-rozhdeniya/tcsu1orqen?form_factor=mobile) | 92/100/100/100 | 100/100/100/100 | 3.4 с / 0 мс / 0.006 |
+| [Пекарни Зеленоградска](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-pekarni-i-pirogi-v-zelenogradske/xlbd6lhlq0?form_factor=mobile) | 90/100/100/100 | 100/100/100/100 | 3.6 с / 40 мс / 0.006 |
+
+Обе вкладки каждого отчёта прочитаны отдельно; исходные тексты `public-*-{mobile,desktop}.txt`. CrUX пока без данных. Публичные 90/92 не заменены локальными 99/100. Дополнительный диагностический CLI по домену дал 99/100 у офиса и 100/100 у гида; причина расхождения не установлена.
+
+## Последующая правка первого экрана
+
+Runtime `0a59bc6`: краткая HTML-таблица с известными корзинами и статусом Пирогорска сразу после H1 на городских гидах, полная таблица 12 адресов — по якорю. Обложка ниже таблицы, lazy; длинные текстовые H1 без балансировки после смены шрифта. Hero главной не менялся. На 390 px таблица начинается на 403 px и полностью помещается по ширине 352 px; на 320 px ширина таблицы 282 px, страница без горизонтального переполнения. [390 px](guide-first-screen-390.png), [320 px](guide-first-screen-320.png). Check/build/SEO/expansion и 19 tests повторно PASS. Публичная проверка этого выпуска фиксируется отдельно после deploy.
+
+
+## Публикация таблицы на первом экране
+
+Runtime **`0a59bc6f583e96bbeecb764e8cc4b30a28242f8e`**, [CI40353514687 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40353514687). [Production proof](production-first-screen.json): 42 URL, в том числе все 36 целей, HTTP200 и точные хеши сборки. [Снимок первого экрана на домене](production-guide-first-screen.png): 390 px, таблица352px, переполнения нет. Перенос калькулятора на опубликованном офисном сценарии проверен: 15×350г →5500г, 5640₽/376₽ на гостя, четыре позиции с правильным городом; reload без прибавления количества. [Снимок](production-calculator.png). Заявка не отправлялась.
+
+[IndexNow выпуска с таблицей](indexnow-first-screen.json), 26.10 15:55:05 UTC: **66 изменённых URL**, api.indexnow.org **HTTP200**, yandex.com **HTTP200**. Это снимает прежнее ожидание проверки ключа (202), но не доказывает индексацию.
+
+Локальный контроль после изменения первого экрана: **100/100/100/100 mobile и desktop**, LCP1.7/0.4с, TBT/CLS0. [Отдельный Lighthouse](local-guide-first-screen-summary.json). Публичный PSI учитывается отдельно ниже.
+
+## Публичный контроль первого экрана
+
+17:55 Калининград, `0a59bc6`: главная100/100, новый гид100/100, офис92/100 (mobile/desktop); A/BP/SEO100 во всех шести вкладках. У гида mobile LCP1.4с/CLS0, офиса LCP3.3с/CLS0. Отрисовка H1 остаётся открытой задачей. [Шесть readback и показатели](public-first-screen-summary.json), ссылки на отчёты в PERFORMANCE.md. Требование 100 для каждого шаблона пока не закрыто.
+
+
+## Проверка стратегии загрузки шрифтов
+
+Выпуск `baf9b3c` убрал два Latin-preload из общего SeoHead. Публичный контроль 18:05–18:06 дал главная86/100, гид90/84, офис92/99 (mobile/desktop); остальные три категории100. Гипотеза улучшения не подтвердилась; результаты сохранены, не заменены удачными предыдущими замерами: [шесть показателей и readback](public-font-experiment-summary.json), [публичные хеши](production-font-experiment.json), [IndexNow](indexnow-font-experiment.json). Эти баллы сами по себе не доказывают причину регрессии.
+
+Следующая правка возвращает оба preload и меняет `font-display:swap` на `optional` только у редакционных страниц. Это предотвращает позднюю замену гарнитуры и связанные с ней сдвиги текста: при медленной первой загрузке браузер может сохранить системный шрифт до следующего посещения, при быстрой/кешированной — использовать фирменный. Стратегия следует [рекомендации Chrome](https://web.dev/articles/preload-optional-fonts). Главная сохраняет прежний `swap`, её preload восстановлены; аналитика не отключается. Локальный офис100/100, LCP1.5/0.3с, TBT/CLS0 — [отдельный Lighthouse](local-stable-font-summary.json). Публичный контроль после deploy фиксируется ниже.
+
+
+## Optional-font: опубликованный контроль
+
+Runtime `b489707`, CI40356734224 SUCCESS; 42 адреса HTTP200 и точное совпадение сборки ([хеши](production-optional-font.json)). [IndexNow](indexnow-optional-font.json): 67 URL, оба получателя HTTP200.
+
+[Публичный PSI 18:17](public-completion-summary.json): главная100/100, офис100/100, гид91/100 (mobile/desktop); A/BP/SEO100 во всех режимах. Офис mobile LCP1.2с, CLS0. Гид mobile LCP3.4с: отчёт выделяет H1 и задержку его отрисовки1330мс ([разбивка](public-guide-completion-lcp.txt)). Это не доказывает, что единственная причина — загрузка шрифта.
+
+Следующий выпуск `4781207` сохраняет serif-оформление H1 статей, используя локальную Georgia/Times, чтобы первый заголовок не зависел от прихода web-font. Остальные элементы используют брендовые гарнитуры; главная и сценарии не переделываются. [Локальный вид](local-system-heading-desktop.png), [отдельный Lighthouse](local-system-heading-summary.json): P/A/BP/SEO100 на mobile и desktop, LCP1.7/0.4с, CLS0. Check87 файлов, build, SEO, expansion и19 tests PASS. Публичный результат этого изменения фиксируется отдельно.
+
+
+## Окончательный выпуск
+
+Runtime `4781207`, [CI40358029315 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40358029315). [Production](production.json):42 URL HTTP200 и точное совпадение со сборкой. Главная и офис после их публичного замера не изменились ([контроль](unchanged-controls.json)). [Публичные результаты](public-release-summary.json): home 100/100, scenario 100/100, guide 91/100 (mobile/desktop), A/BP/SEO100. Требование 100 на всех проверенных шаблонах остаётся открытым: guide mobile — 91.
+
+Check/build/SEO/expansion,19 tests и ранее14 Worker tests PASS; backend не изменён. Финальный H1 проверен визуально на desktop; адаптив320/390 был проверен до этой правки, финальный mobile дополнительно охвачен Lighthouse. Снимок опубликованного гида — [production-final-guide.png](production-final-guide.png).
+
+Не подтверждены100 внешних посетителей в сутки, включение всех URL в индекс и реальные достижения новых целей. Данные для обогащения: цены/ожидание и координаты большинства адресов. Существующий анонимный сбор интереса и подтверждённый backend `order_submit` сохранены.
+
+Последний IndexNow: 23 изменённых URL, оба endpoint HTTP 200 ([отчёт](indexnow-final.json)); ранее отправлялась полная матрица. Мобильный гид: LCP 3,5 с, H1, задержка отрисовки около 1310 мс. Системный serif не устранил задержку в публичном тесте; причина не установлена. Сохранены [разбивка](public-guide-release-lcp.txt) и [снимок PSI](psi-guide-mobile-release.png).

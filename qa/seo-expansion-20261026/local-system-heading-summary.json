@@ -1,0 +1,70 @@
+[
+  {
+    "mode": "mobile",
+    "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "timestamp": "2026-10-26T16:19:05.028Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1136.34825,
+        "display": "1.1 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1659.0786,
+        "display": "1.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1136.34825,
+        "display": "1.1 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "timestamp": "2026-10-26T16:19:10.870Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 312.80937500000005,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 375.37125000000003,
+        "display": "0.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 312.80937500000005,
+        "display": "0.3 s"
+      }
+    }
+  }
+]
