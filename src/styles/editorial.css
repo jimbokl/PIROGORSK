@@ -28,5 +28,5 @@
 
 /* A font swap must not push the current page onto a new breadcrumb row. */
 @media(max-width:760px){
- .ed-breadcrumbs li:last-child{flex:0 1 100%;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .ed-breadcrumbs li:nth-child(n+3):last-child{flex:0 1 100%;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 }
