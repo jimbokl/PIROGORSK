@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-26T12:53:06.455Z",
+  "runtime": "e4f5bf41038adeca26465948201e6ac019c90492",
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/40325343926",
+  "results": [
+    {
+      "route": "/journal/dostavka-edy-v-zelenogradske/",
+      "status": 200,
+      "sha256": "8356ce79100184899970ba9657a28885fb0ab7e8091ca6c04181ee76aa4d7131",
+      "expectedSha256": "8356ce79100184899970ba9657a28885fb0ab7e8091ca6c04181ee76aa4d7131",
+      "matches": true,
+      "bytes": 47161
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "sha256": "18c0db8768336c1d4d40b975ab1a46c6804bcd31877e91b1de4e13bfeed205b4",
+      "expectedSha256": "18c0db8768336c1d4d40b975ab1a46c6804bcd31877e91b1de4e13bfeed205b4",
+      "matches": true,
+      "bytes": 54409
+    },
+    {
+      "route": "/journal/gde-poest-v-zelenogradske/",
+      "status": 200,
+      "sha256": "5ab62962b2464a833f7b0a1f35963e94e7b59be02c64c14114092ec605963fd4",
+      "expectedSha256": "5ab62962b2464a833f7b0a1f35963e94e7b59be02c64c14114092ec605963fd4",
+      "matches": true,
+      "bytes": 47001
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "sha256": "8c459cbc0fd1570159190771ce8a43948638ca99888a864abbbae22c297d8206",
+      "expectedSha256": "8c459cbc0fd1570159190771ce8a43948638ca99888a864abbbae22c297d8206",
+      "matches": true,
+      "bytes": 2631
+    },
+    {
+      "route": "/seo/blog/dostavka-edy-v-zelenogradske.jpg",
+      "status": 200,
+      "sha256": "7417489c540cd69b6b8b0a96dda9c6f9f105db9d5f22822f019e22c8e5d3ec18",
+      "expectedSha256": "7417489c540cd69b6b8b0a96dda9c6f9f105db9d5f22822f019e22c8e5d3ec18",
+      "matches": true,
+      "bytes": 147383
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "sha256": "31833610527abe11eb37ca17f44b9fbafb344d9e48afa72dc0c3e90f21e24e68",
+      "expectedSha256": "31833610527abe11eb37ca17f44b9fbafb344d9e48afa72dc0c3e90f21e24e68",
+      "matches": true,
+      "bytes": 178395
+    }
+  ]
+}

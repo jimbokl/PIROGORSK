@@ -1,0 +1,66 @@
+Browser tab: 27, Title: "PageSpeed Insights", URL: "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-dostavka-edy-v-zelenogradske/1eu8qmvnk3?form_factor=mobile".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 147-150
++								288 container
++									289 button (expanded) Причины смещения макета, Secondary Actions: Collapse
++										290 text Причины смещения макета
++									291 text Смещение макета происходит, когда элементы передвигаются без взаимодействия с пользователем. Это может быть связано с добавлением и удалением элементов или изменением их шрифтов при загрузке страницы. 
++									292 link Description: Выясните причины сдвигов., Value: developer.chrome.com/docs/performance/insights/cls-culprit?utm_source=lighthouse&utm_medium=lr
++									293 text CLS
++									294 text Не оценивается
++									295 table
++										296 row
++											297 cell
++												298 text Элемент
++											299 cell
++												300 text Показатель смещения макета
++										301 row
++											302 cell
++												303 text Всего
++											304 cell
++												305 text 0,090
++										306 row
++											307 cell
++												308 container body.editorial-site > main#content > article.blog-article
++													309 text ЗЕЛЕНОГРАДСК · БЛОГ ПИРОГОРСКА Доставка еды в Зеленоградске: ужин в апартамент…
++													310 text <article class="blog-article">
++											311 cell
++												312 text 0,090
++								313 container
++									314 button (expanded) Разбивка LCP, Secondary Actions: Collapse
++										315 text Разбивка LCP
++									316 text Для каждого этапа 
++									317 link Description: есть стратегии улучшения, Value: developer.chrome.com/docs/performance/insights/lcp-breakdown?utm_source=lighthouse&utm_medium=lr
++									318 text . В идеале большая часть времени, требуемого на полную отрисовку элементов LCP, должна тратиться на загрузку ресурсов, а не на задержки.
++									319 text LCP
++									320 text Не оценивается
++									321 table
++										322 row
++											323 cell
++												324 text Этап
++											325 cell
++												326 text Длительность
++										327 row
++											328 cell
++												329 text Time to First Byte
++											330 cell
++												331 text 0 мс
++										332 row
++											333 cell
++												334 text Задержка загрузки ресурса
++											335 cell
++												336 text 160 мс
++										337 row
++											338 cell
++												339 text Продолжительность загрузки ресурса
++											340 cell
++												341 text 160 мс
++										342 row
++											343 cell
++												344 text Задержка при отрисовке элемента
++											345 cell
++												346 text 1 000 мс
++									347 container section.ed-hero > figure.ed-hero-art > picture > img
++										348 text Иллюстрация: доставленный ужин в бумажных коробках на столе в апартаментах у мо…
++										349 text <img src="https://pirogorsk.ru/_astro/zelenogradsk-delivery-supper.DV4BglBj_Z1RdNHX.…" srcset="/_astro/zelenogradsk-delivery-supper.DV4BglBj_Z23tofL.webp 480w, /_astro/z…" sizes="(max-width: 760px) 92vw, 52vw" alt="Иллюстрация: доставленный ужин в бумажных коробках на столе в апартаментах…" loading="eager" decoding="async" fetchpriority="high" data-astro-cid-4pzkchnt="true" width="800" height="533">
+The focused UI element is 314 button (expanded) Разбивка LCP, Secondary Actions: Collapse

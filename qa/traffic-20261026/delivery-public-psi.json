@@ -1,0 +1,38 @@
+{
+  "url": "https://pirogorsk.ru/journal/dostavka-edy-v-zelenogradske/",
+  "source": "Public PageSpeed Insights UI, not local Lighthouse",
+  "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-dostavka-edy-v-zelenogradske/1eu8qmvnk3",
+  "reportedAt": "2026-10-26T14:53:11+02:00",
+  "runtime": "e4f5bf41038adeca26465948201e6ac019c90492",
+  "mobile": {
+    "performance": 89,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 866,
+    "lcpMs": 3486,
+    "tbtMs": 26,
+    "cls": 0.09,
+    "speedIndexMs": 2219,
+    "lcpBreakdownMs": {
+      "ttfb": 0,
+      "loadDelay": 160,
+      "loadDuration": 160,
+      "renderDelay": 1000
+    },
+    "layoutShiftElement": "article.blog-article"
+  },
+  "desktop": {
+    "performance": 98,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 281,
+    "lcpMs": 327,
+    "tbtMs": 28,
+    "cls": 0.088,
+    "speedIndexMs": 396
+  },
+  "fieldData": "No CrUX data",
+  "caveat": "Layout shift reported for article; specific root cause not established. Local CLI 100 is a separate measurement, not a public PSI result."
+}

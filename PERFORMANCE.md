@@ -1,5 +1,11 @@
 # Скорость production-сборки
 
+## Новый гид доставки — публичный PSI 26.10, 14:53 Калининград
+
+Runtime `e4f5bf4`, новая страница `/journal/dostavka-edy-v-zelenogradske/`. [Публичный mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-dostavka-edy-v-zelenogradske/1eu8qmvnk3?form_factor=mobile) — **89**, LCP3486мс / TBT26мс / CLS0.09; [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-dostavka-edy-v-zelenogradske/1eu8qmvnk3?form_factor=desktop) — **98**, LCP327мс / TBT28мс / CLS0.088. Accessibility / Best Practices / SEO100 в обоих режимах; CrUX нет. Счётчики/скрипты не отключались ради балла. Подробности и видимые отчёты: `qa/traffic-20261026/delivery-public-psi.json`, `delivery-psi-*-initial*.txt`, `qa/screenshots/delivery-guide-20261026/psi-*-initial.png`.
+
+CLS отмечен для `article.blog-article`; в mobile LCP breakdown — render delay1000мс. Это признаки для диагностики, не установленная причина. Локальный CLI новой статьи дал P100/100, A/SEO100, BP77 (Yandex third-party cookie / Issues), с LCP1663/404мс и CLS0. Он не заменяет публичные 89/98. Новая трасса CLI по публичному `/blog/` дала P100/LCP1575мс/render2.92мс и не воспроизвела публичные 88/LCP3.6с/render1980мс. Причина расхождения не установлена, speculative rendering fixes не делались. Санитизированная трасса: `qa/traffic-20261026/blog-trace-summary.json`. Последние публичные баллы блога остаются 88 mobile / 100 desktop.
+
 Lighthouse 13.5.0. Опубликованный сайт проверен отдельно от локальной сборки. Официальный PageSpeed Insights учитываем отдельно.
 
 ## Блог и гид Зеленоградска — 26.10.2026
