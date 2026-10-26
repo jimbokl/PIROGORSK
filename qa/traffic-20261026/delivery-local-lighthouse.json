@@ -1,0 +1,74 @@
+{
+  "kind": "local CLI Lighthouse against localhost, not public PageSpeed",
+  "results": [
+    {
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4322/journal/dostavka-edy-v-zelenogradske/",
+      "timestamp": "2026-10-26T12:46:12.729Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 835.710875,
+          "display": "0.8 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1662.8530500000002,
+          "display": "1.7 s"
+        },
+        "total-blocking-time": {
+          "value": 6,
+          "display": "10 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 835.710875,
+          "display": "0.8 s"
+        }
+      }
+    },
+    {
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4322/journal/dostavka-edy-v-zelenogradske/",
+      "timestamp": "2026-10-26T12:46:20.531Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 225.53075,
+          "display": "0.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 404.42459999999994,
+          "display": "0.4 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 225.53075,
+          "display": "0.2 s"
+        }
+      }
+    }
+  ],
+  "bestPracticesNote": "77 in both modes: third-party-cookies and inspector-issues attributed to Yandex requests. No analytics integration changed."
+}

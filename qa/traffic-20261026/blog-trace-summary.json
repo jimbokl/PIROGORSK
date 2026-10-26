@@ -1,0 +1,34 @@
+{
+  "kind": "Local CLI Lighthouse mobile against PUBLIC origin, not public PSI",
+  "fetchTime": "2026-10-26T12:34:55.585Z",
+  "url": "https://pirogorsk.ru/blog/",
+  "lighthouseVersion": "13.5.0",
+  "performance": 100,
+  "metrics": {
+    "first-contentful-paint": 1050.209,
+    "largest-contentful-paint": 1575.209,
+    "total-blocking-time": 1.5,
+    "cumulative-layout-shift": 0.0025142913225101333,
+    "speed-index": 2426.4267255380737
+  },
+  "observedLcpBreakdown": [
+    {
+      "subpart": "timeToFirstByte",
+      "duration": 1151.903
+    },
+    {
+      "subpart": "resourceLoadDelay",
+      "duration": 11.94
+    },
+    {
+      "subpart": "resourceLoadDuration",
+      "duration": 347.677
+    },
+    {
+      "subpart": "elementRenderDelay",
+      "duration": 2.92
+    }
+  ],
+  "reportSha256": "98c99eec9556a985720d6bec3aa032cea63a827b836d416447cac549883cc8b4",
+  "conclusion": "The public PSI blog render delay around 1980 ms did not reproduce in this local trace (2.92 ms). Cause not established; no speculative rendering change. Latest public blog PSI remains 88 mobile / 100 desktop."
+}

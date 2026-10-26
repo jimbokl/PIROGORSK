@@ -1,4 +1,5 @@
 import company from '../../design/blog-source/company-table.png';
+import { deliveryGuide } from './delivery-guide';
 import sizes from '../../design/blog-source/two-sizes.png';
 import drinks from '../../design/blog-source/drinks-table.png';
 import svetlogorskBreakfast from '../../design/blog-source/svetlogorsk-breakfast.png';
@@ -14,12 +15,13 @@ export interface BlogSection {
 }
 export interface BlogArticle {
   slug: string; title: string; description: string; intro: string;
-  category: 'Расчёты' | 'За столом' | 'Светлогорск' | 'Калининград'; date: string; image: ImageMetadata; imageAlt: string;
+  category: 'Расчёты' | 'За столом' | 'Зеленоградск' | 'Светлогорск' | 'Калининград'; date: string; image: ImageMetadata; imageAlt: string;
   takeaway: string; sections: readonly BlogSection[];
   related: string; relatedTitle: string;
 }
 
 export const blogArticles: readonly BlogArticle[] = [
+  deliveryGuide,
   {
     slug: 'skolko-piroga-na-cheloveka',
     title: 'Сколько пирога нужно на человека и на компанию',
