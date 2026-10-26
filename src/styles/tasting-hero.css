@@ -28,7 +28,9 @@
 .tasting-controls button:hover{background:var(--soft)}.tasting-controls button[aria-pressed=true]{background:var(--navy);color:#fff}.tasting-control-dot{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.65}
 .tasting-wave{position:absolute;z-index:-1;left:-30px;bottom:0;width:calc(100% + 60px);height:40px;stroke:var(--navy);stroke-width:1;opacity:.26;pointer-events:none}
 .tasting-wave path:last-child{opacity:.5}
-@media(prefers-reduced-motion:no-preference){
+/* Touch visitors get the complete first frame immediately; flavor changes and
+   scroll reveals still animate after interaction, without a loading sequence. */
+@media(prefers-reduced-motion:no-preference) and (hover:hover) and (pointer:fine){
  .tasting-scene:first-child{animation:tasting-breeze 1200ms cubic-bezier(.3,0,.3,1) 1}
  .tasting-seal{animation:seal-settle 900ms cubic-bezier(.2,.7,.2,1) 1}
  .tasting-wave{animation:wave-sway 1100ms ease-out 1}
@@ -51,4 +53,9 @@
  .tasting-copy .hero-actions{gap:8px 12px}
  .tasting-copy .hero-cta{min-width:174px;padding-inline:17px;font-size:13px}
  .tasting-copy .hero-planner{font-size:10px}
+}
+@media(hover:none), (pointer:coarse){
+ .tasting-art{transform:none;transition:none}
+ .tasting-coast img{transform:none;transition:none;mix-blend-mode:normal}
+ .tasting-scene img{filter:none}
 }
