@@ -1,0 +1,46 @@
+{
+  "url": "https://pirogorsk.ru/journal/gde-pozavtrakat-v-zelenogradske/",
+  "runtime": "f585200da33bd0941d959f587e17d6d9e88731b0",
+  "reportId": "dt2qwod6z3",
+  "capturedAt": "2026-10-26T16:16:19+02:00",
+  "lighthouseVersion": "13.5.0",
+  "chromium": "153.0.8010.36",
+  "crux": "No data",
+  "metrica": "Normal production configuration, no QA URL parameter",
+  "mobile": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpDisplay": "0.8 s",
+    "lcpDisplay": "1.4 s",
+    "tbtDisplay": "0 ms",
+    "clsDisplay": 0.005,
+    "siDisplay": "0.8 s",
+    "calculator": {
+      "fcpMs": 774,
+      "lcpMs": 1359,
+      "tbtMs": 0,
+      "siMs": 788
+    }
+  },
+  "desktop": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpDisplay": "0.3 s",
+    "lcpDisplay": "0.3 s",
+    "tbtDisplay": "10 ms",
+    "clsDisplay": 0.004,
+    "siDisplay": "0.4 s",
+    "calculator": {
+      "fcpMs": 264,
+      "lcpMs": 327,
+      "tbtMs": 7,
+      "siMs": 373
+    }
+  },
+  "evidence": "screenshots/breakfast-guide-20261026/psi-{mobile,desktop}.{png,txt}",
+  "scope": "This article only. One public report; not local Lighthouse. Does not resolve earlier blog or delivery-article performance issues."
+}

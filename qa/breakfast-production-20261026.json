@@ -1,0 +1,48 @@
+{
+  "runtime": "f585200da33bd0941d959f587e17d6d9e88731b0",
+  "checkedAt": "2026-10-26T14:16:14.933Z",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 178631,
+      "sha256": "cf2285bf419087af7cedd55b278028dc259f568dd8f8c8670a235542f64acc85",
+      "matchesBuild": true
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "bytes": 57141,
+      "sha256": "df6f683ff9a855ac4e24f1dba6739823ca19f10210ffce5176196449083aa58a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/gde-pozavtrakat-v-zelenogradske/",
+      "status": 200,
+      "bytes": 44311,
+      "sha256": "77c1223d57a9181f3a57f0a6a3591863e96fde83b3031d51012efa297b2a1a5f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/seo/blog/gde-pozavtrakat-v-zelenogradske.jpg",
+      "status": 200,
+      "bytes": 136991,
+      "sha256": "61dc476ee4e5a513f0829d0293a2107bd4c2fcc0a91fe93d0226d75a2264a0a0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 2714,
+      "sha256": "dc05d5b877942e672fc5311bfd2915f33aa412b30d772a049f23ee7ae7517ec6",
+      "matchesBuild": true
+    },
+    {
+      "path": "/indexnow-manifest.json",
+      "status": 200,
+      "bytes": 4773,
+      "sha256": "8c14ffeb47ea3cea7c6eeb329fbb63d97eada777b52cbe3c15214ffcbbfbf850",
+      "matchesBuild": true
+    }
+  ]
+}

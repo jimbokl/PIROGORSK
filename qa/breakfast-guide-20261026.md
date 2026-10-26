@@ -50,4 +50,8 @@ Astro/TS: 72 файла, 0 diagnostics. Build: 41 HTML. SEO: 39 sitemap URL / 26
 
 Локальный CLI Lighthouse 13.5: P/A/BP/SEO **100/100/100/100** на mobile и desktop; LCP1808/441мс, TBT0, CLS0. Локальный hostname исключает Метрику штатно; это не публичный PageSpeed. [Полный компактный результат](breakfast-lighthouse-20261026.json).
 
-Ожидают завершения публикация и production-проверка. Публичный PageSpeed будет указан отдельно от локального опыта. Внешних сообщений, платных размещений, backend-заявок и ложных целей не создавалось.
+Опубликован runtime `f585200da33bd0941d959f587e17d6d9e88731b0`, [CI40337317191 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40337317191). Все шесть проверенных публичных ресурсов HTTP200 и побайтово совпадают с локальным build: главная, блог, статья, OG, sitemap и IndexNow manifest. [Production-проверка](breakfast-production-20261026.json), UI1280/390 без переполнения, обложка загружена. IndexNow [принял12 URL](breakfast-indexnow-20261026.json) с HTTP200, это не доказательство индексации.
+
+Публичный [PSI dt2qwod6z3](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-pozavtrakat-v-zelenogradske/dt2qwod6z3?form_factor=mobile), 26.10.2026 **16:16:19 Калининград**: P/A/BP/SEO100 на mobile и desktop. Видимые mobile FCP0.8с/LCP1.4с/TBT0/CLS0.005/SI0.8с; desktop0.3с/0.3с/10мс/0.004/0.4с. CrUX нет. Обычная конфигурация Метрики сохранена, URL PSI без QA-флага. [Компактные данные](breakfast-public-psi-20261026.json); снимки и видимый текст `screenshots/breakfast-guide-20261026/psi-*`. Это один новый публичный отчёт, отдельный от локального CLI и прежних проблем других страниц.
+
+Верхний пирог сохранён с уже опубликованным центрированием. Внешних сообщений, платных размещений, backend-заявок и ложных целей не создавалось. 100 реальных внешних посетителей/день не доказаны; heartbeat не возобновлён.

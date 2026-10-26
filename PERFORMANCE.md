@@ -1,5 +1,16 @@
 # Скорость production-сборки
 
+## Завтраки в Зеленоградске — публичный PSI 26.10, 16:16 Калининград
+
+Опубликованный runtime `f585200`, CI40337317191 SUCCESS; production совпала со сборкой. Один публичный отчёт [dt2qwod6z3](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-gde-pozavtrakat-v-zelenogradske/dt2qwod6z3?form_factor=mobile) от **26.10.2026 16:16:19 GMT+2**, Lighthouse13.5.0 / HeadlessChromium153.0.8010.36. Обычная production-конфигурация Метрики сохранена; URL теста без QA-флага.
+
+| Режим | P / A / BP / SEO | FCP | LCP | TBT | CLS | SI |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mobile | **100 / 100 / 100 / 100** | 0.8с | 1.4с | 0мс | 0.005 | 0.8с |
+| Desktop | **100 / 100 / 100 / 100** | 0.3с | 0.3с | 10мс | 0.004 | 0.4с |
+
+Здесь показаны видимые округлённые показатели интерфейса. CrUX — нет данных. Результат относится к новой статье, не доказывает исправление прежних mobile88 у блога и91/95 у статьи доставки. Локальный CLI с исключённой по hostname Метрикой также100/100, учитывается отдельно. Скриншоты, текст отчёта и компактный JSON: `qa/screenshots/breakfast-guide-20261026/psi-*`, `qa/breakfast-public-psi-20261026.json`. Повторного анализа неизменной страницы ради балла не проводили.
+
 ## Статья после стабилизации — публичный PSI 26.10, 15:39 Калининград
 
 Опубликован runtime `2d3ca0c`, [CI 40331597138 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40331597138). Production совпала со сборкой. Публичный отчёт **1desv5tjcc**, 26.10.2026 15:39:49 Europe/Kaliningrad, Lighthouse13.5.0, CrUX без данных:
