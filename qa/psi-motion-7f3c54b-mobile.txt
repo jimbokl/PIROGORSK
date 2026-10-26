@@ -60,27 +60,27 @@ TBT
 Разбивка LCP
 Для каждого этапа есть стратегии улучшения. В идеале большая часть времени, требуемого на полную отрисовку элементов LCP, должна тратиться на загрузку ресурсов, а не на задержки.LCPНе оценивается
 Этап
-	
+
 Длительность
 
 
 Time to First Byte
-	
+
 10 мс
 
 
 Задержка загрузки ресурса
-	
+
 190 мс
 
 
 Продолжительность загрузки ресурса
-	
+
 170 мс
 
 
 Задержка при отрисовке элемента
-	
+
 1 980 мс
 section.tasting-hero > div.tasting-coast > picture > img
 <img src="https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif" srcset="/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…" sizes="(max-width: 600px) 100vw, 95vw" alt="" loading="eager" fetchpriority="high" decoding="sync" width="1536" height="1024">
