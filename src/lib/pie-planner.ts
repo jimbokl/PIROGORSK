@@ -3,8 +3,8 @@ type Pie = { id: string; kind: string; variants: { value: number; price: number 
 
 /** Portion size is a visitor's estimate, not a nutritional or satiety claim. */
 export function planPies(guests: number, grams: number, ids: string[], catalog: Pie[]) {
-  if (!Number.isInteger(guests) || guests < 1 || guests > 30 || !Number.isInteger(grams) || grams < 100 || grams > 500 || grams % 50) throw new Error('Проверьте число гостей и порцию.');
-  if (!ids.length || ids.length > 7 || new Set(ids).size !== ids.length) throw new Error('Выберите хотя бы одну начинку.');
+  if (!Number.isInteger(guests) || guests < 1 || guests > 50 || !Number.isInteger(grams) || grams < 100 || grams > 500 || grams % 50) throw new Error('Проверьте число гостей и порцию.');
+  if (!ids.length || ids.length > 8 || new Set(ids).size !== ids.length) throw new Error('Выберите хотя бы одну начинку.');
   const pies = ids.map(id => catalog.find(pie => pie.id === id && pie.kind === 'pie'));
   if (pies.some(pie => !pie || ![500, 1000].every(value => pie.variants.some(variant => variant.value === value && Number.isFinite(variant.price))))) throw new Error('Неизвестный вариант пирога.');
   const requested = guests * grams;
@@ -23,7 +23,7 @@ export function planPies(guests: number, grams: number, ids: string[], catalog: 
 export function parsePlan(value: string | null, catalog: Pie[]): PlannedItem[] | null {
   if (!value || value.length > 1000) return null;
   const rows = value.split(',');
-  if (rows.length > 14) return null;
+  if (rows.length > 16) return null;
   const seen = new Set<string>();
   const items: PlannedItem[] = [];
   for (const row of rows) {

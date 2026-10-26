@@ -1,0 +1,22 @@
+---
+import { products } from '../data/catalog';
+import { planPies } from '../lib/pie-planner';
+import { rub, placesForCity, type CitySlug } from '../data/local-data';
+interface Props { city: CitySlug }
+const {city}=Astro.props;
+const own=planPies(4,350,['meat','cabbage'],products).total;
+const sample=placesForCity(city).find(p=>p.familyOf4DinnerRub!==null);
+---
+<section class="cost" data-cost data-own={own}>
+ <div><p class="ed-eyebrow">Свой бюджет на четверых</p><h2>Сравните две суммы</h2><p>Введите вашу корзину кафе или доставки. Справа — пример мясного 1 кг и капустного 500 г по предварительным ценам Пирогорска. Напитки и получение прибавляйте к обоим вариантам.</p></div>
+ <form><label>Другая корзина, ₽<input name="other" type="number" min="0" max="100000" step="1" value={sample?.familyOf4DinnerRub ?? ''} placeholder="Ваша сумма" /></label><p class="cost-source">{sample ? <>Исходный пример: {sample.name}, <a href={sample.sources.find(s=>s.fields.includes('basket'))?.url}>состав и источник</a>. Можно заменить.</> : 'В этом городе проверенной корзины ужина пока нет. Введите свою сумму из меню.'}</p><p class="cost-output" aria-live="polite">Пирогорск: <strong>{rub(own)}</strong><br/><span data-difference>Разница: {sample ? rub(sample.familyOf4DinnerRub!-own) : 'введите вторую сумму'}</span></p></form>
+ <small>Разница — только арифметика. Блюда, вес, обслуживание и статус двух вариантов отличаются; это не обещание экономии при заказе.</small>
+</section>
+<script>
+for(const root of document.querySelectorAll<HTMLElement>('[data-cost]')){
+ const input=root.querySelector<HTMLInputElement>('input')!,output=root.querySelector('[data-difference]')!;
+ root.querySelector('form')!.addEventListener('submit',e=>e.preventDefault());
+ input.addEventListener('input',()=>{const n=Number(input.value),d=n-Number(root.dataset.own);output.textContent=input.value!==''&&input.validity.valid&&Number.isFinite(n)?`Другая корзина ${d>=0?'дороже':'дешевле'} на ${new Intl.NumberFormat('ru-RU').format(Math.abs(d))} ₽`:'Введите сумму от 0 до 100 000 ₽';});
+}
+</script>
+<style>.cost{margin:32px 0;padding:28px;border:1px solid var(--ed-line);display:grid;grid-template-columns:1fr 1fr;gap:22px 40px}.cost h2{font:400 30px/1.2 var(--ed-serif);margin:10px 0 18px}.cost p{font-size:13px;line-height:1.85}.cost label{font-size:12px;display:grid;gap:10px}.cost input{font:inherit;font-size:22px;max-width:100%;min-width:0;width:100%;min-height:48px;padding:10px;background:transparent;color:var(--ed-ink);border:1px solid var(--ed-line)}.cost .cost-source{font-size:10px;color:var(--ed-muted);margin:10px 0}.cost-output strong{font-size:24px}.cost small{grid-column:1/-1;font-size:10px;color:var(--ed-muted);line-height:1.8}@media(max-width:680px){.cost{grid-template-columns:1fr;padding:22px}}</style>

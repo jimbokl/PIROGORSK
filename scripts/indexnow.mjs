@@ -84,7 +84,7 @@ async function main() {
   let previous;
   try { previous = validateManifest(JSON.parse(await readFile(statePath, 'utf8')), config.host); }
   catch (error) { if (error.code !== 'ENOENT') throw error; }
-  const report = await submitChanges({ current, previous, ...config, readinessAttempts: 7 });
+  const report = await submitToEndpoints({ current, previous, ...config, readinessAttempts: 7 });
   await mkdir(path.dirname(statePath), { recursive: true });
   await writeFile(path.join(root, '.indexnow/report.json'), `${JSON.stringify({ ...report, checkedAt: new Date().toISOString() }, null, 2)}\n`);
   // A failed network request never advances the acknowledgement state.
@@ -92,11 +92,23 @@ async function main() {
   console.log(JSON.stringify(report));
 }
 
+/** Only acknowledge a release once every configured receiver accepts the batch. */
+export async function submitToEndpoints({ endpoints, ...options }) {
+  if (!Array.isArray(endpoints) || !endpoints.length || new Set(endpoints).size !== endpoints.length) throw new Error('Expected distinct IndexNow endpoints');
+  for (const endpoint of endpoints) if (!['https://api.indexnow.org/indexnow', 'https://yandex.com/indexnow'].includes(endpoint)) throw new Error('Unexpected IndexNow receiver');
+  const receivers=[];
+  for (const endpoint of endpoints) {
+    try { receivers.push({endpoint,...await submitChanges({...options,endpoint})}); }
+    catch (cause) { const error=new Error(`${endpoint}: ${cause.message}`); error.receivers=[...receivers,{endpoint,status:'failed',message:cause.message}]; throw error; }
+  }
+  return {status:receivers.every(r=>r.status==='unchanged')?'unchanged':'received-by-all',count:receivers[0].count,receivers};
+}
+
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   main().catch(async error => {
     console.error(error.message);
     await mkdir(path.join(root, '.indexnow'), { recursive: true });
-    await writeFile(path.join(root, '.indexnow/report.json'), `${JSON.stringify({ status: 'failed', message: error.message, checkedAt: new Date().toISOString() }, null, 2)}\n`);
+    await writeFile(path.join(root, '.indexnow/report.json'), `${JSON.stringify({ status: 'failed', message: error.message, receivers:error.receivers, checkedAt: new Date().toISOString() }, null, 2)}\n`);
     process.exitCode = 1;
   });
 }

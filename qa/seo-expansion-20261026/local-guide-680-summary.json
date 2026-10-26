@@ -1,0 +1,253 @@
+[
+  {
+    "mode": "mobile",
+    "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "timestamp": "2026-10-26T15:33:51.951Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1136.5727499999998,
+        "display": "1.1 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1963.8872999999999,
+        "display": "2.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1136.5727499999998,
+        "display": "1.1 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "8610A3C43E1E56B48C333AF4A30B4EEB": {
+                  "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+                  "navStartToEndTime": 18,
+                  "transferSize": 17595,
+                  "isLongest": true,
+                  "children": {
+                    "29926.9": {
+                      "url": "http://127.0.0.1:4322/_astro/PartyCalculator.astro_astro_type_script_index_0_lang.DoePOc9Z.js",
+                      "navStartToEndTime": 66,
+                      "transferSize": 1339,
+                      "isLongest": true,
+                      "children": {
+                        "29926.25": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 74,
+                          "transferSize": 1121,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29926.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.DzWmPW0E.js",
+                      "navStartToEndTime": 66,
+                      "transferSize": 351,
+                      "children": {
+                        "29926.24": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.B5Ewd5iM.js",
+                          "navStartToEndTime": 72,
+                          "transferSize": 2099,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 74
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "timestamp": "2026-10-26T15:33:57.613Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 309.99725,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 451.9967,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 309.99725,
+        "display": "0.3 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 20 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,ARTICLE,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture > img",
+              "boundingRect": {
+                "top": 222,
+                "bottom": 630,
+                "left": 672,
+                "right": 1285,
+                "width": 613,
+                "height": 408
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/svetlogorsk-breakfast.DAqTcKan_JyERv.avif\" srcset=\"/_astro/svetlogorsk-breakfast.DAqTcKan_FKp0F.webp 480w, /_astro/svetlogors…\" sizes=\"(max-width: 760px) 92vw, 52vw\" alt=\"Редакционная иллюстрация общего стола; не фотография заведения или готовой…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-4pzkchnt=\"true\" width=\"800\" height=\"533\">",
+              "nodeLabel": "Редакционная иллюстрация общего стола; не фотография заведения или готовой прод…"
+            },
+            "url": "http://127.0.0.1:4322/_astro/svetlogorsk-breakfast.DAqTcKan_JyERv.avif",
+            "totalBytes": 49391,
+            "wastedBytes": 20420,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x533) for its displayed dimensions (613x408). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 20420
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "1720448AE070B226BDB9C3ADDDE0641B": {
+                  "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+                  "navStartToEndTime": 14,
+                  "transferSize": 17595,
+                  "isLongest": true,
+                  "children": {
+                    "29935.9": {
+                      "url": "http://127.0.0.1:4322/_astro/PartyCalculator.astro_astro_type_script_index_0_lang.DoePOc9Z.js",
+                      "navStartToEndTime": 59,
+                      "transferSize": 1339,
+                      "isLongest": true,
+                      "children": {
+                        "29935.25": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 64,
+                          "transferSize": 1121,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29935.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.DzWmPW0E.js",
+                      "navStartToEndTime": 15,
+                      "transferSize": 351,
+                      "children": {
+                        "29935.20": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.B5Ewd5iM.js",
+                          "navStartToEndTime": 59,
+                          "transferSize": 2099,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 64
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

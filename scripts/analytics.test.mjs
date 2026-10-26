@@ -46,6 +46,39 @@ const source = ts.transpileModule(readFileSync(new URL('../src/scripts/analytics
   compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
 }).outputText;
 
+test('content micro-goals keep the saved-request gate and only measure marked editorial links', () => {
+  const calls = [], listeners = {}, storage = new Map();
+  class TestElement { constructor(marked = false) { this.marked = marked; } closest(selector) { assert.equal(selector, 'a[data-guide-catalog]'); return this.marked ? this : null; } }
+  const context = {
+    exports: {}, URL, Element: TestElement,
+    require(name) {
+      if (name === '../config/analytics') return { analyticsConfig };
+      if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
+      if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
+      throw new Error(`Unexpected import: ${name}`);
+    },
+    sessionStorage: { getItem: key => storage.get(key), setItem: (key, value) => storage.set(key, value) },
+    window: { ym: (...args) => calls.push(args) }, location: { href: 'https://pirogorsk.ru/blog/' },
+    document: { addEventListener: (name, callback) => listeners[name] = callback, querySelector: () => true },
+  };
+  runInNewContext(source, context);
+  const { trackGoal } = context.exports;
+  listeners.click({ target: new TestElement(false) });
+  listeners.click({ target: {} });
+  assert.equal(calls.length, 0);
+  listeners.click({ target: new TestElement(true) });
+  trackGoal('calculator_interact', { city: 'Калининград', private: 'must never leave' });
+  trackGoal('calc_apply_set', { city: 'Светлогорск' });
+  trackGoal('order_submit');
+  trackGoal('order_submit', { requestId: 'invalid' });
+  const requestId = 'efebca9b-8748-46ca-80a7-a06b41cfb931';
+  trackGoal('order_submit', { requestId });
+  trackGoal('order_submit', { requestId });
+  assert.deepEqual(calls.map(c => c[2]), ['guide_to_catalog_click', 'calculator_interact', 'calc_apply_set', 'order_submit']);
+  assert.deepEqual(JSON.parse(JSON.stringify(calls[1][3])), { city: 'Калининград' });
+  assert.equal(calls[3][3].requestId, requestId);
+});
+
 test('real analytics initializer queues one explicit pageview and no goal', () => {
   const calls = [];
   const scripts = [];
@@ -62,6 +95,7 @@ test('real analytics initializer queues one explicit pageview and no goal', () =
     window: { ym: (...args) => calls.push(args) },
     location: { href: input.href },
     document: {
+      addEventListener() {},
       referrer: 'https://t.me/example?private=value#private',
       querySelector: () => scripts[0] ?? null,
       createElement: () => ({ dataset: {} }),
@@ -91,7 +125,7 @@ test('local previews and QA tabs never load Metrica or send goals', () => {
         throw new Error(`Unexpected import: ${name}`);
       },
       window: { ym: (...args) => calls.push(args) },
-      document: { querySelector() { throw new Error('Tracking must not initialize'); } },
+      document: { addEventListener() {}, querySelector() { throw new Error('Tracking must not initialize'); } },
     };
     runInNewContext(source, context);
     context.exports.trackGoal('order_form_open', { city: 'Зеленоградск' });

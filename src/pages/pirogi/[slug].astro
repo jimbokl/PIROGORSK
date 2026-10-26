@@ -7,6 +7,7 @@ import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialInterest from '../../components/EditorialInterest.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
+import FillingRatioBar from '../../components/FillingRatioBar.astro';
 import { editorialProducts, productHref, siteOrigin, scenarios } from '../../data/editorial';
 export function getStaticPaths() {
   return editorialProducts.map(product => ({ params: { slug: product.editorial.slug }, props: { product } }));
@@ -28,5 +29,7 @@ const scenario = scenarios.find(item => item.slug === product.editorial.scenario
     { title: 'К запуску меню', paragraphs: ['Перед началом продаж опубликуем полный состав и аллергены, условия хранения и рекомендации по разогреву. Сейчас рецепты и цены предварительные, а изображения показывают идею будущих пирогов.'] },
   ]} />
   <EditorialInterest interest={product.id} title={`Интересен ${product.name.toLowerCase()}?`} label="Отметить интерес к пирогу" />
+  {!product.sweet && <FillingRatioBar/>}
+  <EditorialLinks title="Вес и количество для вашего стола" links={[{href:'/journal/skolko-piroga-na-cheloveka/',title:'Сколько пирога на компанию',text:'Таблица веса и калькулятор для разных порций.',label:'Расчёт'},{href:'/journal/pirog-500-g-ili-1-kg/',title:'500 г или 1 кг',text:'Сравнение одинакового веса и разных вкусов.',label:'Форматы'}]}/>
   <EditorialLinks title="Продумать общий стол" links={[...otherProducts.map(other => ({ href: productHref(other), title: other.name, text: other.editorial.intro, label: 'Другой вкус' })), { href: `/nabor/${scenario.slug}/`, title: scenario.title, text: scenario.description, label: 'Сценарий' }]} />
 </ContentLayout>

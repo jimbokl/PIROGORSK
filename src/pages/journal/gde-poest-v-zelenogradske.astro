@@ -4,12 +4,18 @@ import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import LcpImagePreload from '../../components/LcpImagePreload.astro';
+import PartyCalculator from '../../components/PartyCalculator.astro';
+import RestaurantVsPiesTable from '../../components/RestaurantVsPiesTable.astro';
+import CostComparisonWidget from '../../components/CostComparisonWidget.astro';
+import PlaceMap from '../../components/PlaceMap.astro';
+import GuideFaq from '../../components/GuideFaq.astro';
+import {contextualLinks,guideFaq,faqSchema,placesSchema} from '../../data/content-links';
 import { siteOrigin } from '../../data/editorial';
 import { foodGuide, foodGuideImage, foodGuideImageAlt, localPieCafe, menuVenues } from '../../data/food-guides';
 
 const money = (amount: number) => `${amount.toLocaleString('ru-RU')} ₽`;
 const path = `/journal/${foodGuide.slug}/`;
-const schema = [{
+const schema:Record<string,unknown>[] = [{
   '@type': 'BlogPosting',
   headline: foodGuide.title,
   description: foodGuide.description,
@@ -22,9 +28,10 @@ const schema = [{
   publisher: { '@id': `${siteOrigin}/#organization` },
   citation: [...menuVenues.map(venue => venue.menuUrl), localPieCafe.sourceUrl],
 }];
+schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
 ---
 <ContentLayout title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article" image="/seo/blog/gde-poest-v-zelenogradske.jpg" imageAlt={foodGuideImageAlt}>
-  <LcpImagePreload slot="head" src={foodGuideImage} widths={[480, 800, 1200]} sizes="(max-width: 760px) 92vw, 52vw" width={800} height={Math.round(800 * foodGuideImage.height / foodGuideImage.width)} quality={58} />
+  <LcpImagePreload slot="head" src={foodGuideImage} widths={[480, 680, 800, 1200]} sizes="(max-width: 760px) 92vw, 52vw" width={800} height={Math.round(800 * foodGuideImage.height / foodGuideImage.width)} quality={58} />
   <EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} intro="После пляжа — кесадилья у моря, на ужин — паста или горячее, на Курортном — пироги с рыбными начинками. Собрали три варианта под разные прогулки и посчитали четыре блюда по двум официальным меню." image={foodGuideImage} imageAlt={foodGuideImageAlt} caption="Иллюстрация создана с помощью ИИ. Это вымышленное кафе, а не интерьер одного из мест в гиде." compact>
     <p class="guide-date">Редакция Пирогорска · Обновлено <time datetime={foodGuide.updatedAt}>{foodGuide.updatedLabel}</time><br />Цены двух меню проверены <time datetime={foodGuide.checkedAt}>{foodGuide.checkedLabel}</time></p>
     <nav class="guide-jumps" aria-label="Кафе в гиде">{[...menuVenues, localPieCafe].map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav>
@@ -72,6 +79,12 @@ const schema = [{
   ]} />
 
   <section class="ed-interest" aria-labelledby="plan-title"><div><p class="ed-eyebrow">К общему столу</p><h2 id="plan-title">А сколько пирогов на четверых?</h2><p>Попробуйте расчёт: число гостей × выбранная вами порция. Меняйте начинки, вес и город; результат можно сохранить в подборку.</p><p>Или <a href="/?interest=guide-gde-poest-v-zelenogradske#pirogi">отметьте интересные вкусы</a> для будущего меню.</p></div><a class="ed-button" href="/podbor/">Рассчитать количество <span aria-hidden="true">↗</span></a></section>
+  <RestaurantVsPiesTable city="zelenogradsk"/>
+  <CostComparisonWidget city="zelenogradsk"/>
+  <PlaceMap city="zelenogradsk"/>
+  <PartyCalculator city="zelenogradsk"/>
+  <GuideFaq faq={guideFaq}/>
+  <EditorialLinks title="Собрать стол в Зеленоградске" links={contextualLinks('zelenogradsk')}/>
   <EditorialLinks title="Перед ужином" links={[
     { href: '/journal/dostavka-edy-v-zelenogradske/', title: 'Еда в апартаменты', text: 'Два меню доставки, проверка адреса и полной суммы.', label: 'Доставка' },
     { href: '/journal/uzhin-v-semnyh-apartamentah/', title: 'Ужин в апартаментах', text: 'Что уточнить про технику и посуду до заселения.', label: 'Чек-лист' },

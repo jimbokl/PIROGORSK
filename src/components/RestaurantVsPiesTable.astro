@@ -1,0 +1,28 @@
+---
+import { placesForCity, cityNames, rub, type CitySlug } from '../data/local-data';
+import { products } from '../data/catalog';
+import { planPies } from '../lib/pie-planner';
+interface Props { city: CitySlug }
+const { city } = Astro.props;
+const places = placesForCity(city);
+const plan = planPies(4,350,['meat','cabbage'],products);
+---
+<section class="places" data-places aria-label={`Сравнение форматов еды: ${cityNames[city]}`}>
+  <header><p class="ed-eyebrow">{cityNames[city]} · источники октября 2026</p><h2>Куда идти и что получится по цене</h2><p>{places.length} адресов. Сумма указана только там, где есть состав корзины. Средний чек, очередь и время готовности не подменяют друг друга.</p></header>
+  <label class="places-sort">Порядок <select data-place-sort><option value="name">По названию</option><option value="price">По сумме корзины</option><option value="takeaway">Сначала подтверждённый самовывоз</option></select></label>
+  <div class="places-scroll" tabindex="0" role="region" aria-label="Таблица заведений, на небольшом экране прокручивается по горизонтали">
+    <table><caption>Примеры корзин на четверых без напитков и стоимости получения. Это разные блюда и веса, не рейтинг выгодности.</caption><thead><tr><th scope="col">Место и адрес</th><th scope="col">Формат / с собой</th><th scope="col">Четыре блюда</th><th scope="col">Что учесть</th></tr></thead><tbody data-place-rows>{places.map(p => <tr data-name={p.name} data-price={p.familyOf4DinnerRub ?? ''} data-takeaway={String(p.hasTakeaway === true)}><th scope="row"><a href={p.sources[0].url}>{p.name} ↗</a><small>{p.address}</small></th><td>{p.category}<small>{p.hasTakeaway === true ? 'Навынос подтверждён' : 'Самовывоз уточнить'}</small></td><td>{p.familyOf4DinnerRub !== null ? <><strong>{rub(p.familyOf4DinnerRub)}</strong><details><summary>Состав корзины</summary>{p.basket?.items.map(i => <p>{i.name} · {i.quantity} × {rub(i.priceRub)}</p>)}<p>{p.basket?.note}</p><p>Цена проверена: {p.basket?.checkedAt.split('-').reverse().join('.')}</p><a href={p.sources.find(s=>s.fields.includes('basket'))?.url}>Меню-источник ↗</a></details></> : <span>Не рассчитано</span>}</td><td>{p.pros.join(' · ')}<small>{p.cons.join(' · ')}</small></td></tr>)}</tbody><tfoot><tr><th scope="row">Пирогорск<small>Проект, готовим запуск</small></th><td>Пример: мясной 1 кг + капуста 500 г</td><td><strong>{rub(plan.total)}</strong><small>Предварительно, 1,5 кг</small></td><td>Анонимная подборка; доставки сейчас нет. <a href="/nabor/uzhin-v-apartamentah/" data-guide-catalog>Посмотреть состав →</a></td></tr></tfoot></table>
+  </div>
+  <p class="places-note">«Не рассчитано» означает отсутствие проверенной корзины, а не дорогую еду. Адрес из справочника не подтверждает работу кухни сегодня. У заведений нет измеренных нами очередей. Ссылки ведут на первичные источники, цены сверяйте перед визитом.</p>
+</section>
+<script>
+for (const root of document.querySelectorAll('[data-places]')) {
+ const select=root.querySelector<HTMLSelectElement>('[data-place-sort]')!, body=root.querySelector('[data-place-rows]')!;
+ const rows=[...body.querySelectorAll<HTMLTableRowElement>('tr')];
+ const sort=()=>body.replaceChildren(...[...rows].sort((a,b)=>select.value==='price' ? (a.dataset.price ? Number(a.dataset.price):Infinity)-(b.dataset.price ? Number(b.dataset.price):Infinity)||a.dataset.name!.localeCompare(b.dataset.name!,'ru') : select.value==='takeaway' ? Number(b.dataset.takeaway==='true')-Number(a.dataset.takeaway==='true')||a.dataset.name!.localeCompare(b.dataset.name!,'ru') : a.dataset.name!.localeCompare(b.dataset.name!,'ru')));
+ select.addEventListener('change',sort);sort();
+}
+</script>
+<style>
+.places{margin:36px 0}.places h2{font:400 clamp(28px,4vw,38px)/1.2 var(--ed-serif);margin:10px 0 16px}.places header>p:last-child{font-size:14px;line-height:1.8;max-width:75ch}.places-sort{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:12px;margin:20px 0}.places select{min-width:0;font:inherit;background:transparent;color:inherit;min-height:44px;border:1px solid var(--ed-line);padding:8px;max-width:100%}.places-scroll{overflow-x:auto;border:1px solid var(--ed-line)}.places table{border-collapse:collapse;width:100%;min-width:650px;font-size:12px;line-height:1.8}.places caption{text-align:left;padding:16px;color:var(--ed-muted);font-size:11px}.places th,.places td{text-align:left;vertical-align:top;border-top:1px solid var(--ed-line);padding:16px;font-weight:400}.places thead th{font-size:10px;text-transform:uppercase;letter-spacing:.07em}.places tbody th{width:26%}.places small{display:block;color:var(--ed-muted);font-size:10px;line-height:1.7;margin-top:6px}.places strong{white-space:nowrap;font-weight:500}.places details{font-size:10px;max-width:200px;margin-top:8px}.places summary{cursor:pointer;min-height:30px}.places details p{margin-bottom:7px}.places tfoot{background:var(--ed-sea)}.places-note{font-size:11px;line-height:1.8;color:var(--ed-muted);margin-top:14px}
+</style>

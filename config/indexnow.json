@@ -1,5 +1,5 @@
 {
   "host": "pirogorsk.ru",
   "key": "82ddd92ad17884189d57e659c825269c",
-  "endpoint": "https://api.indexnow.org/indexnow"
+  "endpoints": ["https://api.indexnow.org/indexnow", "https://yandex.com/indexnow"]
 }

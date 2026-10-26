@@ -1,0 +1,32 @@
+---
+import ContentLayout from '../../../layouts/ContentLayout.astro';
+import EditorialHero from '../../../components/EditorialHero.astro';
+import EditorialBody from '../../../components/EditorialBody.astro';
+import EditorialLinks from '../../../components/EditorialLinks.astro';
+import PartyCalculator from '../../../components/PartyCalculator.astro';
+import GuideFaq from '../../../components/GuideFaq.astro';
+import {localOccasions,occasionHref,type LocalOccasion} from '../../../data/seo-occasions';
+import {occasionCopy,localContext,occasionDescription} from '../../../data/expansion-content';
+import {contextualLinks,faqSchema} from '../../../data/content-links';
+import {siteOrigin} from '../../../data/editorial';
+import {cityNames} from '../../../data/local-data';
+import {planPies} from '../../../lib/pie-planner';
+import {products} from '../../../data/catalog';
+export function getStaticPaths(){return localOccasions.map(item=>({params:{city:item.city,slug:item.slug},props:{item}}));}
+interface Props{item:LocalOccasion}
+const {item}=Astro.props;
+const copy=occasionCopy[item.slug];
+const sections=[...copy.sections,localContext(item.city,item.slug)];
+const plan=planPies(item.defaultGuestsCount,item.gramsPerGuest,item.recommendedSetIds,products);
+const schema=[{'@type':'Article',headline:item.h1,description:occasionDescription(item),datePublished:'2026-10-26',dateModified:'2026-10-26',author:{'@id':`${siteOrigin}/#organization`},publisher:{'@id':`${siteOrigin}/#organization`},mainEntityOfPage:`${siteOrigin}${occasionHref(item)}`},faqSchema(item.faq),{'@type':'ItemList',name:'Пример состава подборки',itemListElement:plan.items.map((p,i)=>({'@type':'ListItem',position:i+1,name:`${products.find(x=>x.id===p.id)!.name} · ${p.value} г × ${p.quantity}`}))}];
+---
+<ContentLayout title={`${item.h1} | Пирогорск`} description={occasionDescription(item)} breadcrumbs={[{name:'К случаю',href:'/povody/'},{name:item.h1,href:occasionHref(item)}]} {schema}>
+ <EditorialHero eyebrow={`${cityNames[item.city]} · планируем общий стол`} title={item.h1} intro={copy.intro} compact />
+ <p class="ed-note">Пирогорск готовится к запуску. Ниже — расчёт будущей подборки, без оплаты и бронирования доставки. Для действующего заказа выбирайте работающего поставщика и подтверждайте условия.</p>
+ <PartyCalculator city={item.city} guests={item.defaultGuestsCount} grams={item.gramsPerGuest} ids={item.recommendedSetIds} max={item.slug==='na-pominki'?50:25} />
+ <EditorialBody {sections}/>
+ <aside class="ed-note">{item.comparisonWithPizzaOrRolls}</aside>
+ <GuideFaq faq={item.faq}/>
+ <EditorialLinks title="Другие варианты для этого города" links={contextualLinks(item.city).filter(l=>l.href!==occasionHref(item)).concat(localOccasions.filter(p=>p.city===item.city&&p.slug!==item.slug&&!['semeynyy-uzhin','v-ofis-na-den-rozhdeniya'].includes(p.slug)).slice(0,1).map(p=>({href:occasionHref(p),title:p.h1,text:'Другие гости, порция и сценарий получения.',label:'К случаю'})))}/>
+ <EditorialLinks title="Разобраться в весе и цене" links={[{href:'/journal/skolko-piroga-na-cheloveka/',title:'Сколько пирога на человека',text:'Вес и порции под разный стол.',label:'Расчёт'},{href:'/journal/pirog-500-g-ili-1-kg/',title:'500 г или 1 кг',text:'Сравнить размеры и несколько вкусов.',label:'Форматы'},{href:`/journal/gde-poest-v-${item.city==='kaliningrad'?'kaliningrade':item.city==='svetlogorsk'?'svetlogorske':'zelenogradske'}/`,title:`Где поесть: ${cityNames[item.city]}`,text:'Действующие кафе, адреса и источники.',label:'Городской гид'}]}/>
+</ContentLayout>

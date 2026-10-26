@@ -1,0 +1,26 @@
+---
+import { products } from '../data/catalog';
+import { cityNames, rub, type CitySlug } from '../data/local-data';
+import { planPies } from '../lib/pie-planner';
+interface Props { city?: CitySlug; guests?: number; grams?: number; ids?: readonly string[]; max?: number }
+const { city = 'kaliningrad', guests = 4, grams = 350, ids = ['meat', 'cabbage'], max = 25 } = Astro.props;
+const initial = planPies(guests, grams, [...ids], products);
+const portionOptions = [...new Set([350, 200, grams])];
+const transfer = (items: typeof initial.items) => `/?${new URLSearchParams({ interest: 'calculator', city, items: items.map(i => `${i.id}:${i.value}:${i.quantity}`).join(',') })}#pirogi`;
+---
+<section class="party" data-party data-city={cityNames[city]} data-city-slug={city} aria-label="Калькулятор пирогов для компании">
+  <header><p class="ed-eyebrow">Ваш стол · предварительный расчёт</p><h2>Сколько взять на компанию?</h2><p>Выберите гостей и вкусы. Вес округляется вверх до 500 г.</p></header>
+  <form data-party-form>
+    <label class="party-guests">Гостей: <output data-guests>{guests}</output><input name="guests" type="range" min="1" max={max} step="1" value={guests} /></label>
+    <fieldset><legend>Порция для расчёта</legend>{portionOptions.map(value => <label><input name="grams" type="radio" value={value} checked={grams === value} />{value === 350 ? 'Ужин' : value === 200 ? 'Перекус' : 'Пример'} · {value} г</label>)}</fieldset>
+    <fieldset><legend>Начинки</legend>{products.filter(p => ['meat','fish','cheese','cabbage', ...ids].includes(p.id)).map(p => <label><input name="flavour" type="checkbox" value={p.id} checked={ids.includes(p.id)} />{p.name}</label>)}</fieldset>
+  </form>
+  <div class="party-result" aria-live="polite" aria-atomic="true"><p class="party-total"><strong data-party-person>{rub(Math.ceil(initial.total / guests))}</strong><span>на гостя · без доставки</span></p><p data-party-summary>{initial.requested} г по порции → {initial.weight} г в подборке · {rub(initial.total)}</p><ul data-party-items>{initial.items.map(i => <li>{products.find(p => p.id === i.id)!.name} · {i.value === 1000 ? '1 кг' : '500 г'} × {i.quantity}</li>)}</ul><p data-party-error role="status"></p><a class="ed-button" data-party-apply href={transfer(initial.items)}>Выбрать этот набор <span aria-hidden="true">↗</span></a></div>
+  <p class="party-note">200 и 350 г — примеры порции. Выбирайте объём с учётом аппетита гостей и другой еды на столе. Цены предварительные. Пирогорск готовится к запуску: переход переносит состав в анонимную подборку, без оплаты и брони доставки.</p>
+  <script type="application/json" data-party-catalog set:html={JSON.stringify(products.map(({id,name,kind,variants}) => ({id,name,kind,variants}))).replace(/</g,'\\u003c')} />
+</section>
+<script>import '../scripts/party-calculator';</script>
+<style>
+.party{padding:clamp(22px,4vw,42px);margin:36px 0;background:var(--ed-sea);border:1px solid var(--ed-line);border-radius:3px;display:grid;grid-template-columns:1.1fr 1fr;gap:22px 40px;min-width:0}.party header{grid-column:1/-1}.party h2{font:400 clamp(28px,4vw,40px)/1.15 var(--ed-serif);margin:10px 0}.party header>p:last-child{font-size:14px;line-height:1.7}.party form{display:grid;gap:23px;align-content:start}.party fieldset{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:12px 20px}.party legend{padding:0;margin-bottom:10px;font-size:12px;font-weight:600}.party fieldset label{font-size:13px;display:flex;align-items:center;gap:7px;min-height:32px}.party input{accent-color:var(--ed-ink)}.party input[type=range]{width:100%;display:block;min-height:44px}.party-guests{font-size:14px}.party-guests output{font-size:26px;margin-left:8px}.party-result{border-left:1px solid var(--ed-line);padding-left:30px;min-width:0}.party-total strong{font-size:38px;display:block;font-weight:500;line-height:1.2}.party-total span,.party-note{font-size:11px;color:var(--ed-muted);line-height:1.8}.party-result>p:not(.party-total){font-size:12px;line-height:1.8;margin-top:14px}.party ul{padding-left:18px;font-size:12px;line-height:1.9;margin-block:14px}.party-note{grid-column:1/-1;border-top:1px solid var(--ed-line);padding-top:16px}.party .ed-button{font-size:12px;min-height:48px}.party [data-party-error]:empty{display:none}
+@media(max-width:680px){.party{grid-template-columns:1fr;gap:24px}.party-result{border-left:0;border-top:1px solid var(--ed-line);padding:22px 0 0}.party .ed-button{width:100%;justify-content:space-between}.party-total strong{font-size:34px}}
+</style>

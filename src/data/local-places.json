@@ -1,0 +1,1195 @@
+[
+  {
+    "id": "zel-gnezdo",
+    "name": "Гнездо",
+    "city": "Зеленоградск",
+    "category": "кафе",
+    "address": "ул. Гагарина, 46",
+    "coords": [
+      54.954309829398,
+      20.453196741717
+    ],
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": 1880,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Кафе у моря"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "url": "https://gnezdo.cafe/",
+        "fields": [
+          "basket"
+        ],
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "url": "https://visit-kaliningrad.ru/food/gnezdo/",
+        "fields": [
+          "coords"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ],
+    "basket": {
+      "items": [
+        {
+          "name": "Кесадилья со скумбрией",
+          "priceRub": 520,
+          "quantity": 2
+        },
+        {
+          "name": "Кесадилья с кабачками",
+          "priceRub": 420,
+          "quantity": 2
+        }
+      ],
+      "note": "Четыре блюда из меню нижнего яруса, без напитков; это пример корзины, не оценка сытости.",
+      "checkedAt": "2026-10-24"
+    }
+  },
+  {
+    "id": "zel-dacha",
+    "name": "Дача",
+    "city": "Зеленоградск",
+    "category": "кафе",
+    "address": "ул. Володарского, 32",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": 2960,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Кафе у моря"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "url": "https://kafeymoryadacha.tilda.ws/menu",
+        "fields": [
+          "basket"
+        ],
+        "checkedAt": "2026-10-24"
+      }
+    ],
+    "basket": {
+      "items": [
+        {
+          "name": "Карбонара",
+          "priceRub": 690,
+          "quantity": 2
+        },
+        {
+          "name": "Куриная котлета с кускусом",
+          "priceRub": 790,
+          "quantity": 2
+        }
+      ],
+      "note": "Четыре блюда, без напитков. Вес порций не указан.",
+      "checkedAt": "2026-10-24"
+    }
+  },
+  {
+    "id": "zel-oblaka",
+    "name": "Облака",
+    "city": "Зеленоградск",
+    "category": "семейное кафе",
+    "address": "ул. Гагарина, 2/1",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Панорамный семейный ресторан"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-balt",
+    "name": "Балт",
+    "city": "Зеленоградск",
+    "category": "кафе",
+    "address": "Курортный проспект, 16",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Региональная кухня"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-telegraph",
+    "name": "Телеграф",
+    "city": "Зеленоградск",
+    "category": "кафе",
+    "address": "Курортный проспект, 29",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Региональная кухня"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-promenad",
+    "name": "Променад",
+    "city": "Зеленоградск",
+    "category": "кафе",
+    "address": "ул. Володарского, 24В",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Адрес на улице Володарского"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-sambia",
+    "name": "Самбия",
+    "city": "Зеленоградск",
+    "category": "семейное кафе",
+    "address": "ул. Володарского, 20",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Есть детское меню"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-veranda",
+    "name": "Веранда",
+    "city": "Зеленоградск",
+    "category": "семейное кафе",
+    "address": "ул. Гагарина, 2В",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Детский уголок на открытом воздухе"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-luiza",
+    "name": "Королева Луиза",
+    "city": "Зеленоградск",
+    "category": "семейное кафе",
+    "address": "ул. Московская, 50",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Есть детское меню"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-parkhouse",
+    "name": "Парк Хаус",
+    "city": "Зеленоградск",
+    "category": "кафе",
+    "address": "ул. Чкалова, 19",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Адрес на улице Чкалова"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-branch",
+    "name": "Бранч на море",
+    "city": "Зеленоградск",
+    "category": "кафе",
+    "address": "ул. Пугачёва, 4А",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Завтраки у пирса"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "zel-neptun",
+    "name": "У Нептуна",
+    "city": "Зеленоградск",
+    "category": "кафе",
+    "address": "ул. Гагарина, 2Б",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Адрес на улице Гагарина"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-zelenogradsk.ru/restaurants-cafes",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-alt-platz",
+    "name": "Alt Platz",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "ул. Ленина, 17А",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Ресторан в центре"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-bel-etage",
+    "name": "Bel Étage",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "Морской бульвар, 19",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "У подъёмника «Панорама»"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-crazy-tomatos",
+    "name": "Crazy Tomatos",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "ул. Гагарина, 9А",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Пиццерия"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-blinnaya",
+    "name": "Блинная",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "ул. Октябрьская, 22",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Рядом с водонапорной башней"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-bratets-krolik",
+    "name": "Братец Кролик",
+    "city": "Светлогорск",
+    "category": "семейное кафе",
+    "address": "Калининградский проспект, 74Б",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Семейное кафе в парке"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-veterok",
+    "name": "Ветерок",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "Береговой переулок, 2А",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "По пути к морю"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-vika",
+    "name": "Вика",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "ул. Октябрьская, 11А",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Кафе в туристическом центре"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-vysokiy-bereg",
+    "name": "Высокий берег",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "ул. Нахимова, 1",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Прусская и русская кухня"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-gravlaks",
+    "name": "Гравлакс",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "ул. Ленина, 52",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Локальная кухня"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-delo-vkusa",
+    "name": "Дело Вкуса",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "ул. Октябрьская, 10А",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Кафе-пиццерия"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-netipichnaya-pelmennaya",
+    "name": "НеТипичная Пельменная",
+    "city": "Светлогорск",
+    "category": "кафе",
+    "address": "ул. Ленина, 11",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Сибирская кухня"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.svetlogorsk-tourism.ru/eatery/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "svet-kruassan",
+    "name": "Круассан-кафе",
+    "city": "Светлогорск",
+    "category": "пекарня",
+    "address": "ул. Ленина, 33А",
+    "coords": [
+      54.944302417845,
+      20.147511332839
+    ],
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": true,
+    "pros": [
+      "Выпечка и завтраки"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://kruassan-ulitsa-lenina.clients.site/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "url": "https://visit-kaliningrad.ru/food/kruassan-kafe/",
+        "fields": [
+          "coords"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ],
+    "breakfastBasket": {
+      "items": [
+        {
+          "name": "Омлет",
+          "priceRub": 270,
+          "quantity": 2
+        },
+        {
+          "name": "Сырники",
+          "priceRub": 360,
+          "quantity": 2
+        }
+      ],
+      "totalRub": 1260,
+      "sourceUrl": "https://kruassanfamily.ru/poberejekruassan",
+      "checkedAt": "2026-10-24",
+      "note": "Завтрак, не ужин. Без напитков."
+    }
+  },
+  {
+    "id": "kal-kruassan-nevskogo",
+    "name": "Круассан-кафе · ул. А. Невского, 24",
+    "city": "Калининград",
+    "category": "пекарня",
+    "address": "ул. А. Невского, 24",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Выпечка и кафе одной сети"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/kruassan-kafe/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-kruassan-mira23",
+    "name": "Круассан-кафе · проспект Мира, 23",
+    "city": "Калининград",
+    "category": "пекарня",
+    "address": "проспект Мира, 23",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Выпечка и кафе одной сети"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/kruassan-kafe/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-kruassan-mira84",
+    "name": "Круассан-кафе · проспект Мира, 84",
+    "city": "Калининград",
+    "category": "пекарня",
+    "address": "проспект Мира, 84",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Выпечка и кафе одной сети"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/kruassan-kafe/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-kruassan-bagrationa",
+    "name": "Круассан-кафе · ул. Багратиона, 87",
+    "city": "Калининград",
+    "category": "пекарня",
+    "address": "ул. Багратиона, 87",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Выпечка и кафе одной сети"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/kruassan-kafe/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-kruassan-leninskiy",
+    "name": "Круассан-кафе · Ленинский проспект, 63",
+    "city": "Калининград",
+    "category": "пекарня",
+    "address": "Ленинский проспект, 63",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Выпечка и кафе одной сети"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/kruassan-kafe/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-kruassan-pobedy",
+    "name": "Круассан-кафе · площадь Победы, 4",
+    "city": "Калининград",
+    "category": "пекарня",
+    "address": "площадь Победы, 4",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Выпечка и кафе одной сети"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/kruassan-kafe/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-kruassan-gorkogo",
+    "name": "Круассан-кафе · ул. Горького, 150А",
+    "city": "Калининград",
+    "category": "пекарня",
+    "address": "ул. Горького, 150А",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Выпечка и кафе одной сети"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/kruassan-kafe/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-parmezan",
+    "name": "Пармезан · Карла Маркса",
+    "city": "Калининград",
+    "category": "семейное кафе",
+    "address": "ул. Карла Маркса, 18",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Детское меню и комната по описанию сети"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/parmezan/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-fisher",
+    "name": "Тётка Фишер",
+    "city": "Калининград",
+    "category": "семейное кафе",
+    "address": "ул. А. Шевченко, 11А",
+    "coords": [
+      54.711706297623,
+      20.511223875796
+    ],
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Детская комната и бизнес-ланчи"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://visit-kaliningrad.ru/food/tetka-fisher/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "url": "https://visit-kaliningrad.ru/food/tetka-fisher/",
+        "fields": [
+          "coords"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-beppe",
+    "name": "Папаша Беппе · Европа",
+    "city": "Калининград",
+    "category": "семейное кафе",
+    "address": "ул. Театральная, 30",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": true,
+    "pros": [
+      "Игровая комната",
+      "Можно взять закуски с собой"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://europecentre.ru/shops/kafe-i-restorany/papasha-beppe/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-pies",
+    "name": "Пироги а-ля Русс",
+    "city": "Калининград",
+    "category": "пекарня",
+    "address": "Правая набережная, 2А",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": null,
+    "waitTimeMin": null,
+    "hasTakeaway": null,
+    "pros": [
+      "Целые пироги с опубликованным весом"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://www.pirogi39.ru/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "kal-patisson",
+    "name": "Патиссон Маркт",
+    "city": "Калининград",
+    "category": "еда навынос",
+    "address": "площадь Победы, 4",
+    "coords": null,
+    "avgCheckRub": null,
+    "familyOf4DinnerRub": 2388,
+    "waitTimeMin": null,
+    "hasTakeaway": true,
+    "pros": [
+      "Самовывоз по условиям сайта"
+    ],
+    "cons": [
+      "Время ожидания не опубликовано"
+    ],
+    "verifiedAt": "2026-10",
+    "sources": [
+      {
+        "url": "https://patisson-markt.ru/",
+        "fields": [
+          "name",
+          "address",
+          "category"
+        ],
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "url": "https://patisson-markt.ru/",
+        "fields": [
+          "basket"
+        ],
+        "checkedAt": "2026-10-24"
+      }
+    ],
+    "basket": {
+      "items": [
+        {
+          "name": "Бургер «Патиссон» с фри и салатом, 750 г",
+          "priceRub": 597,
+          "quantity": 4
+        }
+      ],
+      "note": "Пример четырёх одинаковых позиций сайта для самовывоза, без напитков.",
+      "checkedAt": "2026-10-24"
+    }
+  }
+]

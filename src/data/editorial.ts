@@ -8,6 +8,8 @@ import type { ImageMetadata } from 'astro';
 import { occasions } from './occasions';
 import { foodGuide } from './food-guides';
 import { blogArticles } from './blog-articles';
+import { expansionGuides } from './expansion-guides';
+import { localOccasions, occasionHref } from './seo-occasions';
 
 export const siteOrigin = 'https://pirogorsk.ru';
 export const conceptCaption = 'Изображение концепта. Внешний вид готовых пирогов ещё предстоит утвердить.';
@@ -244,6 +246,8 @@ export const guides = [
 
 export const editorialImages = { hero, dinner, company, bundle };
 export const editorialPaths = [
+  ...expansionGuides.map(item => `/journal/${item.slug}/`),
+  ...localOccasions.map(occasionHref),
   `/journal/${foodGuide.slug}/`,
   '/menu/', '/delivery/', '/partners/', '/about/', '/podbor/', '/povody/', '/blog/',
   ...blogArticles.map(item => `/journal/${item.slug}/`),

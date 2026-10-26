@@ -18,3 +18,8 @@ qa/screenshots/cron-canary-*.jpg
 qa/screenshots/yandex-*.jpg
 # Raw analytics audits include third-party cookie synchronization identifiers.
 qa/metrica-20261024/
+
+# Full local Lighthouse reports for the content expansion stay local.
+qa/seo-expansion-20261026/local-*.json
+qa/seo-expansion-20261026/local-*.html
+!qa/seo-expansion-20261026/local-*-summary.json

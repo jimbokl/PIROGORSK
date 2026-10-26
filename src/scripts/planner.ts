@@ -1,6 +1,7 @@
 import { planPies } from '../lib/pie-planner';
 import type { Product } from '../data/catalog';
 import { occasionPresets } from '../data/occasion-presets';
+import {trackGoal} from './analytics';
 
 const form = document.querySelector<HTMLFormElement>('[data-planner-form]')!;
 const catalog: Product[] = JSON.parse(document.getElementById('planner-catalog')!.textContent!);
@@ -48,7 +49,9 @@ function update() {
     link.setAttribute('aria-disabled', 'true');
   }
 }
-form.addEventListener('input', update);
+let interacted=false;
+form.addEventListener('input', () => {update();if(!interacted){trackGoal('calculator_interact');interacted=true;}});
 form.addEventListener('change', update);
 form.addEventListener('submit', event => event.preventDefault());
+link.addEventListener('click',()=>{if(link.hasAttribute('href'))trackGoal('calc_apply_set');});
 update();

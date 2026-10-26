@@ -1,0 +1,6 @@
+---
+interface Props {faq:readonly {question:string;answer:string}[]}
+const {faq}=Astro.props;
+---
+<section class="guide-faq"><p class="ed-eyebrow">Перед выбором</p><h2>Частые вопросы</h2>{faq.map(f=><details><summary>{f.question}</summary><p>{f.answer}</p></details>)}</section>
+<style>.guide-faq{margin:42px 0}.guide-faq h2{font:400 clamp(28px,4vw,38px)/1.2 var(--ed-serif);margin:12px 0 20px}.guide-faq details{border-top:1px solid var(--ed-line);padding:16px 0}.guide-faq summary{font-size:14px;cursor:pointer;line-height:1.6;min-height:30px}.guide-faq details p{font-size:13px;line-height:1.8;max-width:760px;margin-top:14px}</style>

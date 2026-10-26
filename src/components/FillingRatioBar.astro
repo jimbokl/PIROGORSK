@@ -1,0 +1,18 @@
+---
+interface Props { fillingPercent?: number }
+const {fillingPercent=55}=Astro.props;
+---
+<section class="ratio" data-ratio>
+ <p class="ed-eyebrow">Граммы в разрезе · иллюстрация</p><h2>Что значит доля начинки</h2><p>У Пирогорска ещё нет утверждённой техкарты. Здесь можно проверить арифметику состава: это не заявление о наших пирогах или норме других пекарен.</p>
+ <label>Условная доля начинки: <output data-ratio-value>{fillingPercent}%</output><input name="filling" aria-label="Доля начинки в иллюстративном расчёте" type="range" min="30" max="70" step="5" value={fillingPercent}/></label>
+ <svg viewBox="0 0 1000 100" role="img" aria-label="Иллюстративная шкала: начинка и тесто"><rect width="1000" height="70" rx="8" fill="#c4d4d6"/><rect data-fill width={fillingPercent*10} height="70" rx="8" fill="#123b4a"/></svg>
+ <div class="ratio-results" aria-live="polite">{[500,1000].map(weight=><p><strong>{weight===1000?'1 кг':'500 г'}</strong><span data-weight={weight}>{weight*fillingPercent/100} г начинки · {weight*(100-fillingPercent)/100} г теста</span></p>)}</div>
+ <small>Процент относится к условному весу готового изделия. Граммы сырого фарша и теста до выпечки не дают этот показатель: при приготовлении меняется масса. Данных для сравнения со «стандартом сетей» нет.</small>
+</section>
+<script>
+for(const root of document.querySelectorAll('[data-ratio]')){
+ const input=root.querySelector<HTMLInputElement>('input')!;
+ input.addEventListener('input',()=>{const p=Number(input.value);root.querySelector('[data-ratio-value]')!.textContent=`${p}%`;root.querySelector('[data-fill]')!.setAttribute('width',String(p*10));root.querySelector('svg')!.setAttribute('aria-label',`Иллюстративный состав: ${p}% начинки, ${100-p}% теста`);for(const el of root.querySelectorAll<HTMLElement>('[data-weight]')){const w=Number(el.dataset.weight);el.textContent=`${w*p/100} г начинки · ${w*(100-p)/100} г теста`;}});
+}
+</script>
+<style>.ratio{padding:28px;margin:32px 0;background:var(--ed-sea)}.ratio h2{font:400 30px/1.2 var(--ed-serif);margin:10px 0 18px}.ratio>p:not(.ed-eyebrow){font-size:13px;line-height:1.8;max-width:75ch}.ratio label{display:block;font-size:12px;margin:20px 0}.ratio input{display:block;width:100%;min-height:44px;accent-color:var(--ed-ink)}.ratio svg{display:block;width:100%;height:auto;max-height:60px}.ratio-results{display:flex;gap:40px;margin-bottom:20px}.ratio-results strong,.ratio-results span{display:block;font-size:12px;line-height:1.8}.ratio-results strong{font-size:22px;font-weight:500}.ratio small{font-size:10px;color:var(--ed-muted);line-height:1.8;display:block}@media(max-width:500px){.ratio{padding:22px}.ratio-results{flex-direction:column;gap:12px}}</style>

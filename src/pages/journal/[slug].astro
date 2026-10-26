@@ -7,19 +7,31 @@ import EditorialLinks from '../../components/EditorialLinks.astro';
 import { guides, siteOrigin } from '../../data/editorial';
 import { blogArticles, type BlogArticle } from '../../data/blog-articles';
 import { blogEntries, articleHref } from '../../data/blog';
+import {expansionGuides,type ExpansionArticle} from '../../data/expansion-guides';
+import PartyCalculator from '../../components/PartyCalculator.astro';
+import RestaurantVsPiesTable from '../../components/RestaurantVsPiesTable.astro';
+import CostComparisonWidget from '../../components/CostComparisonWidget.astro';
+import FillingRatioBar from '../../components/FillingRatioBar.astro';
+import PlaceMap from '../../components/PlaceMap.astro';
+import GuideFaq from '../../components/GuideFaq.astro';
+import {cityForArticle,contextualLinks,guideFaq,faqSchema,placesSchema} from '../../data/content-links';
 import '../../styles/blog.css';
 export function getStaticPaths() {
-  return [...guides, ...blogArticles].map(item => ({ params: { slug: item.slug }, props: { item } }));
+  return [...guides, ...blogArticles, ...expansionGuides].map(item => ({ params: { slug: item.slug }, props: { item } }));
 }
-interface Props { item: (typeof guides)[number] | BlogArticle }
+interface Props { item: (typeof guides)[number] | BlogArticle | ExpansionArticle }
 const { item } = Astro.props;
 const entry = blogEntries.find(entry => entry.slug === item.slug)!;
 const isNew = 'date' in item;
-const image = isNew ? `/seo/blog/${item.slug}.jpg` : undefined;
+const image = blogArticles.some(a=>a.slug===item.slug) ? `/seo/blog/${item.slug}.jpg` : undefined;
+const city='city' in item ? item.city : cityForArticle(item.slug);
+const isCity='cluster' in item ? item.cluster==='city' : ['Калининград','Зеленоградск','Светлогорск'].includes(entry.category);
+const faq='takeaway' in item ? [{question:item.title,answer:item.takeaway},...guideFaq] : guideFaq;
 const dateLabel = isNew ? new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${item.date}T00:00:00Z`)).replace(/\s*г\.$/, '') : undefined;
 const schema = [{ '@type': 'BlogPosting', '@id': `${siteOrigin}${articleHref(item.slug)}#article`, headline: item.title, description: item.description, inLanguage: 'ru-RU', mainEntityOfPage: `${siteOrigin}${articleHref(item.slug)}`, isPartOf: { '@id': `${siteOrigin}/blog/#blog` }, image: `${siteOrigin}${image ?? '/seo/pirogorsk-og.jpg'}`, ...(isNew ? { datePublished: item.date, dateModified: item.date } : {}), author: { '@type': 'Organization', '@id': `${siteOrigin}/#organization`, name: 'Пирогорск', url: `${siteOrigin}/about/` }, publisher: { '@id': `${siteOrigin}/#organization` } }];
+const graph=[...schema,faqSchema(faq),isCity?placesSchema(city):{'@type':'ItemList',name:'Подборки для общего стола',itemListElement:contextualLinks(city).slice(0,2).map((link,i)=>({'@type':'ListItem',position:i+1,name:link.title,url:`${siteOrigin}${link.href}`}))}];
 ---
-<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} {schema} {image} imageAlt={item.imageAlt} type="article">
+<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} schema={graph} {image} imageAlt={item.imageAlt} type="article">
   <article class="blog-article">
     <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} caption={isNew ? 'Обложка создана с помощью ИИ для иллюстрации статьи. Она не показывает конкретное заведение или готовую продукцию.' : undefined} compact>
       <p class="blog-byline">Пирогорск{isNew && <> · <time datetime={item.date}>{dateLabel}</time></>} · ≈ {entry.minutes} мин чтения</p>
@@ -27,8 +39,13 @@ const schema = [{ '@type': 'BlogPosting', '@id': `${siteOrigin}${articleHref(ite
     {isNew && <aside class="blog-takeaway" aria-labelledby="takeaway-title"><h2 id="takeaway-title">Если коротко</h2><p>{item.takeaway}</p></aside>}
     <nav class="blog-toc" aria-label="Содержание статьи">{item.sections.map((section, index) => <a href={`#section-${index}`}>{section.title}</a>)}</nav>
     <EditorialBody sections={item.sections} />
+    {'feature' in item && item.feature==='ratio' && <FillingRatioBar />}
+    {isCity && <><RestaurantVsPiesTable {city} /><CostComparisonWidget {city} /><PlaceMap {city} /></>}
+    <PartyCalculator {city} />
+    <GuideFaq {faq} />
   </article>
   <EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" />
+  <EditorialLinks title="Собрать стол в своём городе" links={contextualLinks(city)} />
   <EditorialLinks title="Продолжить за столом" links={[{ href: item.related, title: item.relatedTitle, text: item.related.startsWith('/journal/') ? 'Связанный материал с примерами и расчётами.' : 'Посмотреть форматы и собрать предварительную подборку.', label: 'К делу' }, ...blogEntries.filter(entry => entry.slug !== item.slug && articleHref(entry.slug) !== item.related).slice(0, 2).map(entry => ({ href: articleHref(entry.slug), title: entry.title, text: entry.description, label: entry.category }))]} />
   <a class="blog-text-link" href="/blog/">Все материалы блога<span aria-hidden="true">↗</span></a>
 </ContentLayout>

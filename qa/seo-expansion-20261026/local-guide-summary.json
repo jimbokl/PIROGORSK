@@ -1,0 +1,289 @@
+[
+  {
+    "mode": "mobile",
+    "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "timestamp": "2026-10-26T15:30:40.170Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1064.5347,
+        "display": "1.1 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2039.5346999999997,
+        "display": "2.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1064.5347,
+        "display": "1.1 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 38 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,ARTICLE,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture > img",
+              "boundingRect": {
+                "top": 600,
+                "bottom": 851,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 251
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/svetlogorsk-breakfast.DAqTcKan_JyERv.avif\" srcset=\"/_astro/svetlogorsk-breakfast.DAqTcKan_FKp0F.webp 480w, /_astro/svetlogors…\" sizes=\"(max-width: 760px) 92vw, 52vw\" alt=\"Редакционная иллюстрация общего стола; не фотография заведения или готовой…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-4pzkchnt=\"true\" width=\"800\" height=\"533\">",
+              "nodeLabel": "Редакционная иллюстрация общего стола; не фотография заведения или готовой прод…"
+            },
+            "url": "http://127.0.0.1:4322/_astro/svetlogorsk-breakfast.DAqTcKan_JyERv.avif",
+            "totalBytes": 49391,
+            "wastedBytes": 38481,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x533) for its displayed dimensions (376x251). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 38481
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "052B4C5FD0F318A1EADF0E7F72DCB63E": {
+                  "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+                  "navStartToEndTime": 19,
+                  "transferSize": 17567,
+                  "isLongest": true,
+                  "children": {
+                    "29423.9": {
+                      "url": "http://127.0.0.1:4322/_astro/PartyCalculator.astro_astro_type_script_index_0_lang.DoePOc9Z.js",
+                      "navStartToEndTime": 75,
+                      "transferSize": 1339,
+                      "isLongest": true,
+                      "children": {
+                        "29423.25": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 81,
+                          "transferSize": 1121,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "29423.24": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.B5Ewd5iM.js",
+                          "navStartToEndTime": 81,
+                          "transferSize": 2099,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29423.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.DzWmPW0E.js",
+                      "navStartToEndTime": 75,
+                      "transferSize": 351,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 81
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "timestamp": "2026-10-26T15:30:46.458Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 312.10875,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 489.687,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 312.10875,
+        "display": "0.3 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 20 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,ARTICLE,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture > img",
+              "boundingRect": {
+                "top": 222,
+                "bottom": 630,
+                "left": 672,
+                "right": 1285,
+                "width": 613,
+                "height": 408
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/svetlogorsk-breakfast.DAqTcKan_JyERv.avif\" srcset=\"/_astro/svetlogorsk-breakfast.DAqTcKan_FKp0F.webp 480w, /_astro/svetlogors…\" sizes=\"(max-width: 760px) 92vw, 52vw\" alt=\"Редакционная иллюстрация общего стола; не фотография заведения или готовой…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-4pzkchnt=\"true\" width=\"800\" height=\"533\">",
+              "nodeLabel": "Редакционная иллюстрация общего стола; не фотография заведения или готовой прод…"
+            },
+            "url": "http://127.0.0.1:4322/_astro/svetlogorsk-breakfast.DAqTcKan_JyERv.avif",
+            "totalBytes": 49391,
+            "wastedBytes": 20420,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x533) for its displayed dimensions (613x408). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 20420
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "481E85D732D733331482B68453A4E2D7": {
+                  "url": "http://127.0.0.1:4322/journal/pekarni-i-pirogi-v-zelenogradske/",
+                  "navStartToEndTime": 16,
+                  "transferSize": 17567,
+                  "isLongest": true,
+                  "children": {
+                    "29463.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.DzWmPW0E.js",
+                      "navStartToEndTime": 65,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "29463.24": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.B5Ewd5iM.js",
+                          "navStartToEndTime": 71,
+                          "transferSize": 2099,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29463.9": {
+                      "url": "http://127.0.0.1:4322/_astro/PartyCalculator.astro_astro_type_script_index_0_lang.DoePOc9Z.js",
+                      "navStartToEndTime": 65,
+                      "transferSize": 1339,
+                      "children": {
+                        "29463.25": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 70,
+                          "transferSize": 1121,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 71
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

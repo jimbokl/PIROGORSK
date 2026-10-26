@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { changedUrls, submitChanges, validateManifest } from './indexnow.mjs';
+import { changedUrls, submitChanges, submitToEndpoints, validateManifest } from './indexnow.mjs';
 
 const host = 'pirogorsk.ru';
 const hash = 'a'.repeat(64);
@@ -50,4 +50,19 @@ test('wait for Pages propagation with GET retries, then submit only once', async
   assert.equal(result.httpStatus, 200);
   assert.equal(keyReads, 2);
   assert.equal(posts, 1);
+});
+test('both IndexNow receivers must acknowledge the same published batch',async()=>{
+ const endpoints=['https://api.indexnow.org/indexnow','https://yandex.com/indexnow'];
+ const posts=[];
+ const fetcher=async(url,options)=>{
+  if(url.endsWith('.txt'))return new Response('public-key');
+  if(url.endsWith('.json'))return Response.json(current);
+  posts.push([url,JSON.parse(options.body).urlList]);return new Response('',{status:200});
+ };
+ const r=await submitToEndpoints({current,key:'public-key',endpoints,fetcher});
+ assert.equal(r.status,'received-by-all');assert.deepEqual(posts.map(p=>p[0]),endpoints);assert.deepEqual(posts[0][1],posts[1][1]);
+ const failed=async(url,options)=>url===endpoints[1]?new Response('',{status:429}):fetcher(url,options);
+ await assert.rejects(submitToEndpoints({current,key:'public-key',endpoints,fetcher:failed}),error=>error.receivers[0].httpStatus===200&&error.receivers[1].status==='failed');
+ const unchanged=await submitToEndpoints({current,previous:current,endpoints,fetcher:()=>{throw Error('No requests for unchanged release');}});
+ assert.equal(unchanged.status,'unchanged');
 });

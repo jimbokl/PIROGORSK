@@ -223,12 +223,9 @@ if (interestId === 'calculator') {
     const cityNames: Record<string, string> = { zelenogradsk: 'Зеленоградск', kaliningrad: 'Калининград', svetlogorsk: 'Светлогорск' };
     const plannedCity = interestParams.get('city');
     if (plannedCity && Object.hasOwn(cityNames, plannedCity)) setCity(cityNames[plannedCity], false);
-    for (const item of planned) {
-      const existing = selection.find(entry => entry.id === item.id && entry.value === item.value);
-      // A reload never multiplies the calculator quantities; keep prior choices.
-      const missing = Math.max(0, item.quantity - (existing?.quantity || 0));
-      for (let count = 0; count < missing; count++) if (!addProduct(item.id, item.value)) break;
-    }
+    // Applying a calculated set means the exact displayed composition, including on reload.
+    selection.splice(0, selection.length, ...planned);
+    updateBadge();
     openDialog('selection-dialog');
   } else toast('Не удалось прочитать подборку. Выберите пироги в меню.');
 } else if (interestId && Object.hasOwn(editorialCityIntents, interestId)) {

@@ -6,15 +6,22 @@ import EditorialLinks from '../../components/EditorialLinks.astro';
 import EditorialInterest from '../../components/EditorialInterest.astro';
 import { occasions } from '../../data/occasions';
 import { occasionPresets } from '../../data/occasion-presets';
+import PartyCalculator from '../../components/PartyCalculator.astro';
+import GuideFaq from '../../components/GuideFaq.astro';
+import {contextualLinks,guideFaq,faqSchema} from '../../data/content-links';
+import {siteOrigin} from '../../data/editorial';
 export function getStaticPaths() { return occasions.map(item => ({ params: { slug: item.slug }, props: { item } })); }
 interface Props { item: (typeof occasions)[number] }
 const { item } = Astro.props;
 const preset = occasionPresets.find(preset => preset.slug === item.slug)!;
+const schema=[faqSchema(guideFaq),{'@type':'ItemList',name:'Подборки для встречи',itemListElement:contextualLinks('kaliningrad').slice(0,2).map((p,i)=>({'@type':'ListItem',position:i+1,name:p.title,url:`${siteOrigin}${p.href}`}))}];
 ---
-<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'К случаю', href: '/povody/' }, { name: item.title, href: `/povody/${item.slug}/` }]}>
+<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'К случаю', href: '/povody/' }, { name: item.title, href: `/povody/${item.slug}/` }]} {schema}>
   <EditorialHero eyebrow="План встречи · готовим запуск" title={item.title} intro={item.intro} compact />
   <p class="ed-note"><strong>{item.takeaway}</strong> Здесь можно подготовить список пожеланий. Продажи ещё не запущены.</p>
   <EditorialBody sections={item.sections} />
+  <PartyCalculator guests={preset.guests} grams={preset.grams} ids={preset.ids} max={item.slug==='na-pominki'?50:25}/>
+  <GuideFaq faq={guideFaq}/>
   <section class="occasion-calculation" aria-labelledby="calculation-title">
     <p class="ed-eyebrow">Пример, который можно изменить</p><h2 id="calculation-title">{preset.guests} человек × {preset.grams} г</h2>
     <p>Это исходные параметры для калькулятора, а не норма порции. Внутри можно изменить гостей, порцию, начинки и город. Сумма считается по предварительным ценам каталога, без доставки.</p>

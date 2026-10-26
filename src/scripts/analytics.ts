@@ -2,7 +2,7 @@ import { analyticsConfig } from '../config/analytics';
 import { analyticsPageUrl } from '../lib/analytics-pageview';
 import { analyticsSessionEnabled } from '../lib/analytics-session';
 
-export type Goal = 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error';
+export type Goal = 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error' | 'calculator_interact' | 'calc_apply_set' | 'guide_to_catalog_click';
 export type GoalParams = {
   city?: string;
   productid?: string | string[];
@@ -14,7 +14,7 @@ export type GoalParams = {
 type Metrica = ((...args: unknown[]) => void) & { a?: unknown[][]; l?: number };
 declare global { interface Window { ym?: Metrica } }
 const cities = new Set(['Зеленоградск', 'Калининград', 'Светлогорск']);
-const goals = new Set<Goal>(['catalog_add', 'order_form_open', 'order_form_start', 'order_submit', 'order_submit_error']);
+const goals = new Set<Goal>(['catalog_add', 'order_form_open', 'order_form_start', 'order_submit', 'order_submit_error', 'calculator_interact', 'calc_apply_set', 'guide_to_catalog_click']);
 const submitted = new Set<string>();
 const idPattern = /^[a-zA-Z0-9_-]{1,48}$/;
 const requestPattern = /^[\da-f]{8}-[\da-f]{4}-4[\da-f]{3}-[89ab][\da-f]{3}-[\da-f]{12}$/i;
@@ -78,3 +78,9 @@ function safeReferrer(value: string): string {
 }
 
 initializeAnalytics();
+
+// Only explicit editorial product/set links are measured; destinations never enter analytics.
+document.addEventListener('click', event => {
+  const target = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[data-guide-catalog]') : null;
+  if (target) trackGoal('guide_to_catalog_click');
+});
