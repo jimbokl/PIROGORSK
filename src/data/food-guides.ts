@@ -1,7 +1,6 @@
-import zelenogradskLunch from '../../design/blog-source/zelenogradsk-seaside-lunch.png';
+import { articleArtwork } from './article-artwork';
 
-export const foodGuideImage = zelenogradskLunch;
-export const foodGuideImageAlt = 'Иллюстрация: рыбный пирог и обед у окна с видом на Балтийское море';
+export const { image: foodGuideImage, imageAlt: foodGuideImageAlt } = articleArtwork('gde-poest-v-zelenogradske');
 
 export const foodGuide = {
   slug: 'gde-poest-v-zelenogradske',

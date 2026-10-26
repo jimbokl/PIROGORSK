@@ -1,3 +1,4 @@
+import { articleArtwork } from './article-artwork';
 import { products } from './catalog';
 import dinner from '../../design/assets-source/dinner.png';
 import company from '../../design/assets-source/company.png';
@@ -242,7 +243,7 @@ export const guides = [
     ] satisfies EditorialSection[],
     related: '/nabor/piknik-u-morya/', relatedTitle: 'Идея набора для пикника',
   },
-] as const;
+].map(guide => ({ ...guide, ...articleArtwork(guide.slug) }));
 
 export const editorialImages = { hero, dinner, company, bundle };
 export const editorialPaths = [

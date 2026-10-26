@@ -1,0 +1,45 @@
+import { readFile, readdir, stat } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import assert from 'node:assert/strict';
+import sharp from 'sharp';
+
+const manifest = JSON.parse(await readFile('src/data/article-artwork.json', 'utf8'));
+const journalSlugs = (await readdir('site/journal', { withFileTypes: true })).filter(e => e.isDirectory()).map(e => e.name).sort();
+assert.deepEqual(manifest.map(e => e.slug).sort(), journalSlugs, 'Every article needs its own artwork entry');
+assert.equal(new Set(manifest.map(e => e.source)).size, manifest.length, 'Articles must not share a source');
+const sourceHashes = new Set(), ogHashes = new Set();
+const blog = await readFile('site/blog/index.html', 'utf8');
+const results = [];
+for (const entry of manifest) {
+  const source = await readFile(entry.source);
+  const sourceHash = createHash('sha256').update(source).digest('hex');
+  assert.ok(!sourceHashes.has(sourceHash), `Repeated source image: ${entry.slug}`);
+  sourceHashes.add(sourceHash);
+  const ogPath = `/seo/blog/${entry.slug}.jpg`;
+  const og = await readFile(`site${ogPath}`);
+  const ogHash = createHash('sha256').update(og).digest('hex');
+  assert.ok(!ogHashes.has(ogHash), `Repeated social preview: ${entry.slug}`);
+  ogHashes.add(ogHash);
+  const metadata = await sharp(og).metadata();
+  assert.equal(metadata.width, 1200); assert.equal(metadata.height, 630);
+  assert.ok(og.length < 240 * 1024, `Oversized social preview: ${entry.slug}`);
+  const html = await readFile(`site/journal/${entry.slug}/index.html`, 'utf8');
+  assert.ok(html.includes(`property="og:image" content="https://pirogorsk.ru${ogPath}"`), `Wrong OG: ${entry.slug}`);
+  const schemas = [...html.matchAll(/<script[^>]+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap(match => { const value = JSON.parse(match[1]); return value['@graph'] ?? [value]; });
+  const article = schemas.find(node => node['@type'] === 'BlogPosting');
+  assert.equal(article?.image, `https://pirogorsk.ru${ogPath}`, `Wrong schema image: ${entry.slug}`);
+  const basename = entry.source.split('/').at(-1).replace(/\.png$/, '');
+  const cover = [...html.matchAll(/<img\b[^>]*>/g)].map(m => m[0]).find(tag => tag.includes(`/${basename}.`));
+  assert.ok(cover, `Missing original article cover: ${entry.slug}`);
+  assert.ok(cover.includes(entry.alt.replaceAll('&', '&amp;').replaceAll('"', '&quot;')), `Wrong alt: ${entry.slug}`);
+  assert.match(cover, /width="\d+"/); assert.match(cover, /height="\d+"/);
+  assert.match(cover, /srcset="/); assert.match(cover, /\.webp/);
+  assert.ok(blog.includes(`/${basename}.`), `Missing unique blog card: ${entry.slug}`);
+  assert.ok(!html.includes('src="/design/blog-source/'), 'Source PNG must not be shipped');
+  const src = cover.match(/\bsrc="([^"]+)"/)[1];
+  const bytes = (await stat(`site${src}`)).size;
+  assert.ok(bytes < 180 * 1024, `Oversized fallback cover: ${entry.slug}`);
+  results.push({ slug: entry.slug, sourceHash, ogHash, fallbackBytes: bytes, ogBytes: og.length });
+}
+console.log(`Artwork PASS: ${manifest.length} unique source scenes, covers, cards and 1200×630 social previews.`);
+if (process.argv.includes('--json')) console.log(JSON.stringify(results, null, 2));

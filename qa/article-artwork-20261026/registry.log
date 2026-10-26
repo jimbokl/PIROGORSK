@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-26T17:09:00.402378Z",
+  "stats": {
+    "projects": 215,
+    "projectsWithSkills": 58,
+    "projectsWithHarnesses": 66,
+    "skills": 262,
+    "validSkills": 236,
+    "harnesses": 504,
+    "harnessPackages": 410,
+    "harnessEntrypoints": 94,
+    "issues": 346,
+    "errors": 0,
+    "warnings": 125,
+    "info": 221
+  },
+  "drift": {
+    "skills": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "harnesses": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "hasDrift": false
+  },
+  "passed": true
+}

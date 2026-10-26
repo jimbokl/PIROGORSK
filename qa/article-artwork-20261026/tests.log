@@ -1,0 +1,28 @@
+✔ prepared placements retain their exact UTM tuple while dropping extra data (1.25875ms)
+✔ unknown, partial, duplicate and tampered campaign values cannot reach analytics (0.293125ms)
+✔ content micro-goals keep the saved-request gate and only measure marked editorial links (1.55275ms)
+✔ real analytics initializer queues one explicit pageview and no goal (0.730458ms)
+✔ local previews and QA tabs never load Metrica or send goals (1.029209ms)
+✔ QA exclusion follows navigation in the same tab; other sessions still count (0.097667ms)
+Waiting for public release (1/2): Published IndexNow key is not ready
+✔ initial submission, unchanged release, updates and removals (1.341625ms)
+✔ reject cross-host URLs and invalid hashes from cached state (0.47275ms)
+✔ unchanged content sends no HTTP request (0.114917ms)
+✔ verify live release, then make one batch to one endpoint (21.095334ms)
+✔ wrong live release, missing key and 429 fail without success (0.646ms)
+✔ wait for Pages propagation with GET retries, then submit only once (0.861542ms)
+✔ both IndexNow receivers must acknowledge the same published batch (0.721583ms)
+✔ rounds up to 500 g, distributes flavours, and prices the actual variants (1.234209ms)
+✔ every supported guest/portion combination preserves mass and bounded rounding (4.229583ms)
+✔ a 50-person table with eight flavours transfers without losing rows or mass (0.110458ms)
+✔ invalid input and empty/unknown/duplicate flavours fail (0.149167ms)
+✔ URL transfer rejects tampering, unsupported products, duplicate rows, and oversized values (0.071917ms)
+✔ every published occasion has a usable, distinct calculator preset (0.089334ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 299.761625

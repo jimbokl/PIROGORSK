@@ -1,7 +1,4 @@
-import coast from '../../design/blog-source/svetlogorsk-breakfast.png';
-import city from '../../design/blog-source/kaliningrad-lunch.png';
-import company from '../../design/blog-source/company-table.png';
-import sizes from '../../design/blog-source/two-sizes.png';
+import {articleArtwork} from './article-artwork';
 import type {BlogArticle} from './blog-articles';
 import type {CitySlug} from './local-data';
 export type ExpansionArticle=BlogArticle & {city:CitySlug;feature?:'ratio'|'reheat';cluster:'city'|'product'};
@@ -80,4 +77,4 @@ const drafts:Draft[]=[
  {title:'Что уточнить у хозяина апартаментов',items:['Где лежит инструкция к духовке или микроволновке.','Какая посуда предназначена для разогрева.','Есть ли холодильник и свободное место для еды.','Где стоят нож, тарелки и приборы для общего стола.'],links:[{href:'/povody/zelenogradsk/uzhin-v-apartamentah/',title:'Подготовить ужин в апартаментах'}]},
  ]},
 ];
-export const expansionGuides:ExpansionArticle[]=drafts.map(d=>({...d,date:'2026-10-26',image:d.cluster==='product'?(d.feature==='ratio'?sizes:company):d.city==='kaliningrad'?city:coast,imageAlt:'Редакционная иллюстрация общего стола; не фотография заведения или готовой продукции',related:'/podbor/',relatedTitle:'Рассчитать подборку на компанию'}));
+export const expansionGuides:ExpansionArticle[]=drafts.map(d=>({...d,date:'2026-10-26',...articleArtwork(d.slug),related:'/podbor/',relatedTitle:'Рассчитать подборку на компанию'}));
