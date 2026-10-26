@@ -18,7 +18,10 @@ const hasActions = Astro.slots.has('actions');
   .ed-hero-with-actions .ed-hero-art{grid-area:art}
   .ed-hero-actions{grid-area:actions;align-self:start;padding-top:26px}
   @media(max-width:760px){
-    .ed-hero-with-actions{grid-template-areas:'copy' 'art' 'actions';row-gap:24px}
+    .ed-hero-with-actions{grid-template-areas:'copy' 'art' 'actions';row-gap:18px}
+    .ed-hero-with-actions .ed-hero-art{width:min(100%,250px);justify-self:center}
+    .ed-hero-with-actions .ed-intro{margin-top:14px;line-height:1.65}
+    .ed-hero-with-actions .ed-hero-art figcaption{font-size:10px;margin-top:6px;text-align:center}
     .ed-hero-actions{padding-top:0}
   }
 </style>

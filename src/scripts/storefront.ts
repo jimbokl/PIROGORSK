@@ -27,6 +27,7 @@ const productFor = (item: Selection) => products.find(product => product.id === 
 const all = <T extends HTMLElement = HTMLElement>(selector: string) => [...document.querySelectorAll<T>(selector)];
 let city = 'Зеленоградск';
 let toastTimer: ReturnType<typeof setTimeout>;
+const dialogTriggers = new WeakMap<HTMLDialogElement, HTMLElement>();
 const itemContainer = document.querySelector<HTMLElement>('[data-selection-items]')!;
 
 function toast(message: string) {
@@ -40,6 +41,11 @@ function toast(message: string) {
 function openDialog(id: string) {
   const dialog = document.getElementById(id) as HTMLDialogElement | null;
   if (!dialog) return;
+  const active = document.activeElement;
+  const trigger = active instanceof HTMLElement && active !== document.body && !active.closest('dialog')
+    ? active
+    : document.querySelector<HTMLElement>(`[data-open="${id}"]`);
+  if (trigger) dialogTriggers.set(dialog, trigger);
   all<HTMLDialogElement>('dialog[open]').forEach(current => current.close());
   if (id === 'selection-dialog') renderSelection();
   dialog.showModal();
@@ -116,11 +122,18 @@ function renderSelection() {
 
 all('[data-open]').forEach(button => button.addEventListener('click', () => openDialog(button.dataset.open!)));
 all('[data-close]').forEach(button => button.addEventListener('click', () => button.closest('dialog')?.close()));
-all<HTMLDialogElement>('dialog').forEach(dialog => dialog.addEventListener('click', event => {
-  if (event.target !== dialog) return;
-  const { left, right, top, bottom } = dialog.getBoundingClientRect();
-  if (event.clientX < left || event.clientX > right || event.clientY < top || event.clientY > bottom) dialog.close();
-}));
+all<HTMLDialogElement>('dialog').forEach(dialog => {
+  dialog.addEventListener('close', () => {
+    if (document.querySelector('dialog[open]')) return;
+    const trigger = dialogTriggers.get(dialog);
+    if (trigger?.isConnected && trigger.getClientRects().length) trigger.focus({ preventScroll: true });
+  });
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const { left, right, top, bottom } = dialog.getBoundingClientRect();
+    if (event.clientX < left || event.clientX > right || event.clientY < top || event.clientY > bottom) dialog.close();
+  });
+});
 all('[data-select-city]').forEach(button => button.addEventListener('click', () => setCity(button.dataset.selectCity!)));
 try { setCity(localStorage.getItem('pirogorsk-city') || city, false); } catch { /* Default city remains usable. */ }
 

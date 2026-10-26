@@ -2,6 +2,7 @@
 import SeoHead from '../components/SeoHead.astro';
 import Analytics from '../components/Analytics.astro';
 import Brand from '../components/Brand.astro';
+import SiteNavigation from '../components/SiteNavigation.astro';
 import { siteOrigin } from '../data/editorial';
 import '../styles/editorial.css';
 interface Props {
@@ -20,7 +21,6 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: trail.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: new URL(item.href, siteOrigin).href })),
 };
-const nav = [{ href: '/menu/', name: 'Меню' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/delivery/', name: 'Доставка' }, { href: '/blog/', name: 'Блог' }, { href: '/partners/', name: 'Партнёрам' }, { href: '/about/', name: 'О проекте' }];
 ---
 <!doctype html>
 <html lang="ru">
@@ -30,7 +30,7 @@ const nav = [{ href: '/menu/', name: 'Меню' }, { href: '/podbor/', name: 'С
     <a class="ed-skip" href="#content">Перейти к содержанию</a>
     <header class="ed-header ed-container">
       <Brand />
-      <nav aria-label="Основная навигация">{nav.map(item => <a href={item.href} aria-current={Astro.url.pathname === item.href ? 'page' : undefined}>{item.name}</a>)}</nav>
+      <SiteNavigation />
     </header>
     <main id="content" class="ed-container">
       <nav class="ed-breadcrumbs" aria-label="Хлебные крошки"><ol>{trail.map((item, index) => <li>{index === trail.length - 1 ? <span aria-current="page">{item.name}</span> : <a href={item.href}>{item.name}</a>}</li>)}</ol></nav>

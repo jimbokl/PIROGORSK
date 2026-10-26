@@ -189,7 +189,13 @@ function start(event: Event): void {
 form?.addEventListener('input', start);
 form?.addEventListener('change', start);
 dialog?.querySelectorAll('[data-interest-close]').forEach(button => button.addEventListener('click', () => dialog.close()));
-dialog?.addEventListener('close', () => previousFocus?.focus());
+dialog?.addEventListener('close', () => {
+  if (document.querySelector('dialog[open]')) return;
+  const target = previousFocus?.isConnected && previousFocus.getClientRects().length
+    ? previousFocus
+    : document.querySelector<HTMLElement>('[data-open="selection-dialog"]');
+  target?.focus({ preventScroll: true });
+});
 dialog?.addEventListener('click', event => {
   if (event.target !== dialog) return;
   const rect = dialog.getBoundingClientRect();

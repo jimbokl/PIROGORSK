@@ -1,0 +1,29 @@
+/* Shared roles for the storefront and editorial pages. */
+:root {
+  --navy: #123b4a;
+  --navy-deep: #092c39;
+  --coral: #e45b48;
+  --coral-ink: #b13e32;
+  --paper: #fbf9f4;
+  --ink: var(--navy);
+  --muted: #536a72;
+  --soft: #efeee8;
+  --line: #dce1dc;
+  --sea: #eaf1ee;
+  --action: var(--navy);
+  --action-hover: var(--navy-deep);
+  --focus: #277c91;
+  --serif: Playfair, Georgia, 'Times New Roman', serif;
+  --sans: Golos, Arial, sans-serif;
+  /* Legacy aliases keep existing page components on the same palette. */
+  --amber: var(--action);
+  --amber-hover: var(--action-hover);
+  --ed-paper: var(--paper);
+  --ed-ink: var(--ink);
+  --ed-muted: var(--muted);
+  --ed-amber: var(--action);
+  --ed-line: var(--line);
+  --ed-sea: var(--sea);
+  --ed-serif: var(--serif);
+  --ed-sans: var(--sans);
+}

@@ -1,6 +1,11 @@
 # Пирогорск — рабочий checkpoint
 
-## Текущая точка — адаптация AI Design Skills
+## Текущая точка — дизайн по новым навыкам
+
+По запросу пользователя реализован [план дизайна](DESIGN-SPRINT-2026-10-26.md): единая палитра navy/coral, общая мобильная навигация, статус запуска в hero, улучшенные карточки и выбор веса в первом экране товара, короткие эффекты с reduced motion, исправлен возврат фокуса диалогов. UI 320/390/1280 px и путь до анонимной формы проверены, check/build/SEO/14 tests PASS. 38 HTML / 36 URL. Локальный Lighthouse: Performance 98 mobile / 100 desktop, Accessibility/SEO 100, Best Practices 77. Это не публичный PSI. [QA](qa/design-refresh-20261026.md). Публикация и замер домена выполняются; heartbeat не восстанавливался.
+
+
+## Предыдущая точка — адаптация AI Design Skills
 
 26.10.2026 по новому запросу пользователя адаптированы оба навыка из `elayadesign/ai-design-skills`: [pirogorsk-landing-design](skills/pirogorsk-landing-design/SKILL.md) и [pirogorsk-design-motion](skills/pirogorsk-design-motion/SKILL.md). Канонические папки хранятся в этом репозитории, в `~/.codex/skills/` подключены симлинки. Учтены Astro, балтийская айдентика, послойные пироги, города/веса, SEO, быстрый видимый hero и анонимная форма с подтверждённым backend-успехом. Исходная ревизия и MIT/credits сохранены. Использование и обновление — [DESIGN-SKILLS.md](DESIGN-SKILLS.md), проверки — [qa/design-skills-20261026.md](qa/design-skills-20261026.md). Публичный runtime не менялся, нового PSI нет.
 

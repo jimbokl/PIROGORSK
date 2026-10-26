@@ -8,6 +8,7 @@ import Analytics from '../components/Analytics.astro';
 import SeoHead from '../components/SeoHead.astro';
 import LcpImagePreload from '../components/LcpImagePreload.astro';
 import Brand from '../components/Brand.astro';
+import SiteNavigation from '../components/SiteNavigation.astro';
 import BlogCards from '../components/BlogCards.astro';
 import { blogEntries } from '../data/blog';
 import { cities, products, catalog, filters } from '../data/catalog';
@@ -37,10 +38,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
     <a class="skip-link" href="#pirogi">Перейти к пирогам</a>
     <header class="site-header container">
       <Brand href="#top" />
-      <nav class="main-nav" aria-label="Основная навигация">
-        <a href="#pirogi">Пироги</a><a href="#nabory">Наборы</a>
-        <a href="/delivery/">Доставка</a><a href="/blog/">Блог</a><a href="/about/">О проекте</a>
-      </nav>
+      <SiteNavigation home />
       <div class="header-actions">
         <button class="city-trigger" data-open="city-dialog" aria-haspopup="dialog"><Icon name="pin" /><span data-city>Зеленоградск</span><Icon name="caret" /></button>
         <button class="selection-trigger" data-open="selection-dialog" aria-haspopup="dialog"><span class="bag-wrap"><Icon name="bag" /><span class="bag-count" data-count hidden>0</span></span><span class="selection-label">Подборка</span></button>
@@ -53,9 +51,13 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
           <Picture src={heroPie} formats={['avif', 'webp']} fallbackFormat="webp" widths={[320, 480, 640, 800, 1000]} sizes="(max-width: 600px) 76vw, (max-width: 850px) 320px, (max-width: 1060px) 370px, (min-width: 1680px) 455px, 410px" width={900} height={900} quality={48} alt="Румяный рыбный пирог и кусочек с начинкой из рыбы, риса, моркови и зелени" loading="eager" fetchpriority="high" decoding="sync" />
         </div>
         <div class="hero-content">
+          <p class="hero-eyebrow"><span aria-hidden="true"></span>Готовим запуск · изучаем ваши вкусы</p>
           <h1 id="hero-heading">Пироги<br />с балтийским<br />характером</h1>
-          <p class="hero-description">Сытные — к ужину. Сладкие — к чаю.<br />Выберите свой пирог.</p>
-          <a class="button hero-cta" href="#pirogi">Выбрать пирог<Icon name="arrow" /></a>
+          <p class="hero-description">Сытные — к ужину. Сладкие — к чаю.<br />Семь начинок. Два размера: 500 г и 1 кг.</p>
+          <div class="hero-actions">
+            <a class="button hero-cta" href="#pirogi">Выбрать пирог<Icon name="arrow" /></a>
+            <a class="hero-planner" href="/podbor/">Сколько взять?<Icon name="arrow" /></a>
+          </div>
           <p class="hero-cities">Калининград · Светлогорск · Зеленоградск</p>
         </div>
       </section>

@@ -1,0 +1,39 @@
+.site-navigation {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 28px);
+  min-width: 0;
+}
+.site-navigation a {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  min-height: 44px;
+  flex-shrink: 0;
+  font: 500 12px/1.4 var(--sans);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-navigation a::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 5px;
+  height: 2px;
+  background: var(--coral);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 160ms ease;
+}
+.site-navigation a:is(:hover, [aria-current])::after { transform: scaleX(1); }
+.site-navigation a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+@media (max-width: 1000px) {
+  .site-navigation { width: 100%; overflow-x: auto; gap: 24px; scrollbar-width: thin; padding: 2px 2px 4px; }
+  .site-navigation a { font-size: 12px; }
+}
+@media (max-width: 600px) {
+  .site-navigation { gap: 18px; }
+  .site-navigation a { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-navigation a::after { transition: none; }
+}
