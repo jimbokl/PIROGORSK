@@ -1,5 +1,18 @@
 # Скорость production-сборки
 
+## Финальный выпуск перед паузой — 27.10, 09:12 Калининград
+
+Runtime `5a24752`, [CI40465096292 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40465096292). Hallmark polish и `decoding="sync"` у eager-обложек EditorialHero. Все67 sitemap URL и3 служебных файла совпали со сборкой; обычная Метрика сохранена.
+
+| Публичный PSI | Mobile P/A/BP/SEO | Desktop P/A/BP/SEO | Mobile LCP/TBT/CLS | Desktop LCP/TBT/CLS |
+| --- | --- | --- | --- | --- |
+| [Статья, etolyc7j1m](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/etolyc7j1m?form_factor=mobile),09:12:48 | 100/100/100/100 | 100/100/100/100 | 1501мс/28мс/0 | 381мс/25мс/0 |
+| [Главная, 1w8i4ecwfw](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/1w8i4ecwfw?form_factor=mobile),09:12:59 | 86/100/100/100 | 100/100/100/100 | 3871мс/18мс/0 | 401мс/0мс/0 |
+
+CrUX нет. До выпуска статья в свежем [r7dvecclvn](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/r7dvecclvn?form_factor=mobile),08:55:44:89/100, mobile LCP3635мс/TBT29мс/CLS0. В сравнении после выпуска LCP статьи улучшился; одно сравнение не доказывает единственную причину. Локальный preview статьи до/после100 обоих, mobile LCP1844→1825мс, отдельная среда.
+
+Главная: LCP `.tasting-coast img`, ресурс50+150мс, render delay2050мс. Отдельный CLI по публичному домену P99/LCP1705мс/render37мс (BP77 из-за сторонней интеграции) не воспроизвёл задержку PSI. Причина остаётся открытой; новых случайных исправлений не внесено. Неизменные страницы ради балла повторно не проверялись. Требование100 для всех шаблонов открыто. [JSON, видимые отчёты и QA](qa/finalize-20261027/README.md). Работа по прямому запросу поставлена на паузу до10.11.2026.
+
 ## Индивидуальные обложки 23 статей — 26.10, 19:19 Калининград
 
 Runtime `2b6a569`, [CI40366612177 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40366612177). Новая графика: 15 сцен + восемь прежних индивидуальных сцен, оптимизированные AVIF/WebP и отдельные OG. 71 production URL совпал со сборкой. Проверена статья `/journal/rybnaya-nachinka-dlya-piroga/` без QA-параметра, с обычной Метрикой.

@@ -44,5 +44,12 @@
     "browser": "pass, seven viewport widths; see browser-qa.json",
     "finish_review": "ship",
     "legacy_worker_fixture": "pass after follow-up fix: real analytics dependencies, local intercepted production origin, form validation/focus, retry/idempotency, one goal/event, empty endpoint, QA/local analytics suppression"
+  },
+  "publication": {
+    "date": "2026-10-27",
+    "runtime": "5a24752",
+    "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/40465096292",
+    "production_readback": "70 URLs HTTP200 and identical to build; Worker health200",
+    "qa": "qa/finalize-20261027/README.md"
   }
 }

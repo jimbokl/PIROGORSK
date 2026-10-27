@@ -1,0 +1,93 @@
+{
+  "before": {
+    "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/r7dvecclvn?form_factor=mobile",
+    "captured_at": "2026-10-27T08:55:44+02:00",
+    "runtime": "2b6a569",
+    "mobile": {
+      "performance": 89,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "fcp_ms": 939,
+      "lcp_ms": 3635,
+      "tbt_ms": 29,
+      "cls": 0,
+      "si_ms": 3693
+    },
+    "desktop": {
+      "performance": 100,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100,
+      "fcp_ms": 295,
+      "lcp_ms": 362,
+      "tbt_ms": 16,
+      "cls": 0,
+      "si_ms": 392
+    },
+    "crux": "no data"
+  },
+  "after": {
+    "runtime": "5a24752",
+    "article": {
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-rybnaya-nachinka-dlya-piroga/etolyc7j1m?form_factor=mobile",
+      "captured_at": "2026-10-27T09:12:48+02:00",
+      "mobile": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "fcp_ms": 954,
+        "lcp_ms": 1501,
+        "tbt_ms": 28,
+        "cls": 0,
+        "si_ms": 1429
+      },
+      "desktop": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "fcp_ms": 310,
+        "lcp_ms": 381,
+        "tbt_ms": 25,
+        "cls": 0,
+        "si_ms": 431
+      }
+    },
+    "home": {
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/1w8i4ecwfw?form_factor=mobile",
+      "captured_at": "2026-10-27T09:12:59+02:00",
+      "mobile": {
+        "performance": 86,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "fcp_ms": 1082,
+        "lcp_ms": 3871,
+        "tbt_ms": 18,
+        "cls": 0,
+        "si_ms": 3867
+      },
+      "desktop": {
+        "performance": 100,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 100,
+        "fcp_ms": 293,
+        "lcp_ms": 401,
+        "tbt_ms": 0,
+        "cls": 0,
+        "si_ms": 415
+      },
+      "lcp_element": ".tasting-coast img",
+      "lcp_breakdown_ms": {
+        "resource_delay": 50,
+        "resource_load": 150,
+        "element_render_delay": 2050
+      }
+    },
+    "crux": "no data"
+  },
+  "interpretation": "Article improved in this public before/after comparison; a single comparison does not establish the only cause. Public home mobile render delay remains unresolved. Separate CLI public-home diagnostic did not reproduce it. No unchanged-page reruns for a better score."
+}
