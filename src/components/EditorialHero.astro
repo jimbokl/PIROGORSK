@@ -9,7 +9,7 @@ const hasActions = Astro.slots.has('actions');
 ---
 <section class:list={['ed-hero', { 'ed-hero-compact': compact, 'ed-hero-text': !hasVisual, 'ed-hero-with-actions': hasActions }]}>
   <div class="ed-hero-copy"><p class="ed-eyebrow">{eyebrow}</p><h1>{title}</h1>{intro && <p class="ed-intro">{intro}</p>}<slot /></div>
-  {hasVisual && <figure class="ed-hero-art">{image ? <Picture src={image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[480, 680, 800, 1200]} sizes="(max-width: 760px) 92vw, 52vw" width={800} height={Math.round(800 * image.height / image.width)} quality={58} alt={imageAlt} loading="eager" decoding="async" fetchpriority="high" /> : <slot name="visual" />}<figcaption>{caption}</figcaption></figure>}
+  {hasVisual && <figure class="ed-hero-art">{image ? <Picture src={image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[480, 680, 800, 1200]} sizes="(max-width: 760px) 92vw, 52vw" width={800} height={Math.round(800 * image.height / image.width)} quality={58} alt={imageAlt} loading="eager" decoding="sync" fetchpriority="high" /> : <slot name="visual" />}<figcaption>{caption}</figcaption></figure>}
   {hasActions && <div class="ed-hero-actions"><slot name="actions" /></div>}
 </section>
 <style>

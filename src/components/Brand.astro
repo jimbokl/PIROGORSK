@@ -7,14 +7,16 @@ const { href = '/', footer = false } = Astro.props;
   <span class="pirogorsk-brand-copy"><span class="pirogorsk-brand-name">Пирогорск</span><span class="pirogorsk-brand-tagline">Пироги с балтийским характером</span></span>
 </a>
 <style>
-  .pirogorsk-brand{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;color:#123b4a;text-decoration:none}
+  .pirogorsk-brand{display:inline-flex;align-items:center;gap:10px;flex-shrink:0;color:var(--navy);text-decoration:none}
   .pirogorsk-brand-symbol{display:block;width:55px;height:55px;object-fit:contain;flex-shrink:0}
   .pirogorsk-brand-copy{display:flex;flex-direction:column;gap:5px}
   .pirogorsk-brand-name{font-family:var(--serif,Georgia,serif);font-size:34px;line-height:1;font-weight:800;letter-spacing:-.04em}
-  .pirogorsk-brand-tagline{font-size:9.5px;line-height:1.3;letter-spacing:.015em;white-space:nowrap}
+  .pirogorsk-brand-tagline{font-size:11px;line-height:1.3;letter-spacing:0;white-space:normal;max-width:185px}
   .pirogorsk-brand--footer .pirogorsk-brand-name{font-size:30px}
   .pirogorsk-brand--footer .pirogorsk-brand-symbol{width:49px;height:49px}
-  @media(max-width:1190px){.pirogorsk-brand-symbol{width:47px;height:47px}.pirogorsk-brand-name{font-size:31px}.pirogorsk-brand-tagline{font-size:8.5px}.pirogorsk-brand{gap:8px}}
-  @media(max-width:600px){.pirogorsk-brand{gap:7px}.pirogorsk-brand-symbol{width:39px;height:39px}.pirogorsk-brand-name{font-size:26px}.pirogorsk-brand-tagline{font-size:7px;letter-spacing:0}.pirogorsk-brand-copy{gap:4px}.pirogorsk-brand--footer .pirogorsk-brand-symbol{width:45px;height:45px}.pirogorsk-brand--footer .pirogorsk-brand-name{font-size:29px}.pirogorsk-brand--footer .pirogorsk-brand-tagline{font-size:8px}}
-  @media(max-width:370px){.pirogorsk-brand{gap:5px}.pirogorsk-brand-symbol{width:33px;height:33px}.pirogorsk-brand-name{font-size:22px}.pirogorsk-brand-tagline{font-size:6px}}
+  @media(max-width:1190px){.pirogorsk-brand-symbol{width:47px;height:47px}.pirogorsk-brand-name{font-size:31px}.pirogorsk-brand-tagline{font-size:11px}.pirogorsk-brand{gap:8px}}
+  @media(max-width:600px){.pirogorsk-brand{gap:7px}.pirogorsk-brand-symbol{width:39px;height:39px}.pirogorsk-brand-name{font-size:26px}.pirogorsk-brand-tagline{font-size:11px;letter-spacing:0}.pirogorsk-brand-copy{gap:4px}.pirogorsk-brand--footer .pirogorsk-brand-symbol{width:45px;height:45px}.pirogorsk-brand--footer .pirogorsk-brand-name{font-size:29px}.pirogorsk-brand--footer .pirogorsk-brand-tagline{font-size:11px}}
+  @media(max-width:370px){.pirogorsk-brand{gap:5px}.pirogorsk-brand-symbol{width:33px;height:33px}.pirogorsk-brand-name{font-size:22px}.pirogorsk-brand-tagline{font-size:11px}}
+@media(max-width:600px){.pirogorsk-brand-tagline{max-width:135px}}
+@media(max-width:370px){.pirogorsk-brand-tagline{max-width:110px}}
 </style>

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-26",
+  "results": [
+    {
+      "viewport": 320,
+      "layout": "pass"
+    },
+    {
+      "viewport": 375,
+      "layout": "pass"
+    },
+    {
+      "viewport": 414,
+      "layout": "pass"
+    },
+    {
+      "viewport": 768,
+      "layout": "pass"
+    },
+    {
+      "viewport": 1280,
+      "layout": "pass"
+    },
+    {
+      "viewport": 1440,
+      "layout": "pass"
+    },
+    {
+      "viewport": 1920,
+      "layout": "pass"
+    },
+    {
+      "checks": [
+        "flavor switch",
+        "catalog filters",
+        "variant price",
+        "selection",
+        "city",
+        "interest dialog",
+        "form validation/focus",
+        "dialog overflow",
+        "reduced motion",
+        "keyboard focus",
+        "no-JS initial frame",
+        "no external requests"
+      ],
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "external": 0
+}

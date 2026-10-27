@@ -1,0 +1,31 @@
+[
+  {
+    "date": "2026-10-26",
+    "redesign": "polish",
+    "genre": "editorial",
+    "theme": "existing Baltic brand",
+    "prompt": "Apply Nutlope Hallmark to polish the current Pirogorsk design",
+    "signature": "Existing layered pie artwork over the Baltic town",
+    "verification": "complete; see REPORT.md",
+    "mode": "redesign",
+    "depth": "polish",
+    "scope": "page",
+    "before": {
+      "floor": 79,
+      "reflex": 229,
+      "warn": 8
+    },
+    "after": {
+      "floor_static": 2,
+      "reflex": 0,
+      "warn": 0
+    },
+    "kept": {
+      "links": "29/29",
+      "fields": "30/30",
+      "headings": "28/31 exact; 3 reworded on record"
+    },
+    "finish_review": "ship",
+    "report": ".hallmark/REPORT.md"
+  }
+]

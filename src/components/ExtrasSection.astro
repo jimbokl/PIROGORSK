@@ -4,17 +4,16 @@ import ProductCard from './ProductCard.astro';
 import '../styles/catalog.css';
 
 interface Props { products?: Product[]; heading?: string; id?: string }
-const { products = extras, heading = 'К пирогу — ещё кое-что', id = 'extras' } = Astro.props;
+const { products = extras, heading = 'Напитки и посуда', id = 'extras' } = Astro.props;
 const drinks = products.filter(({ kind }) => kind === 'drink');
 const accessories = products.filter(({ kind }) => kind === 'accessory');
 ---
 <section class="extras-section container" id={id} aria-labelledby={`${id}-heading`}>
   <div class="extras-heading">
     <div>
-      <p class="extras-eyebrow">За одним столом</p>
       <h2 id={`${id}-heading`}>{heading}</h2>
     </div>
-    <p class="extras-intro">Ягодный морс к обеду.<br /> Чай или кофе — к сладкому.</p>
+    <p class="extras-intro">Ягодный морс к обеду.<br /> Чай или кофе к сладкому.</p>
   </div>
   {drinks.length > 0 && <div class="extras-grid">{drinks.map(product => <ProductCard product={product} />)}</div>}
   {accessories.length > 0 && <div class="extras-accessories">{accessories.map(product => <ProductCard product={product} />)}</div>}

@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-26",
+  "target": "/",
+  "project": "/Volumes/DevSim/Projects/PIROGORSK",
+  "depth": "polish",
+  "genre": "editorial",
+  "brand": {
+    "tokens": "src/styles/tokens.css:2",
+    "fonts": "src/styles/global.css:2",
+    "hero": "src/components/TastingHero.astro:15"
+  },
+  "preserve": [
+    "palette and fonts",
+    "logo and all existing artwork",
+    "section composition",
+    "links, forms, fields, IDs, data selectors, scripts and analytics",
+    "disclaimers and consent verbatim"
+  ],
+  "introduce": [
+    "shared component color tokens",
+    "plain section headings",
+    "legible illustration labels",
+    "focus and overflow fixes"
+  ],
+  "before": {
+    "floor": 79,
+    "reflex": 229,
+    "warn": 8
+  },
+  "verification": "complete; two contextual static flags documented",
+  "after": {
+    "floor_static": 2,
+    "reflex": 0,
+    "warn": 0,
+    "waived_occurrences": 4,
+    "answered": 3,
+    "dismissed": 2,
+    "layout_notes": 229
+  },
+  "checks": {
+    "astro_typescript": "pass, 92 files",
+    "build": "pass, 69 pages",
+    "node_tests": "pass, 19 tests",
+    "browser": "pass, seven viewport widths; see browser-qa.json",
+    "finish_review": "ship",
+    "legacy_worker_fixture": "pass after follow-up fix: real analytics dependencies, local intercepted production origin, form validation/focus, retry/idempotency, one goal/event, empty endpoint, QA/local analytics suppression"
+  }
+}

@@ -77,11 +77,11 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
         </div>
       </section>
       <section class="discovery container" aria-labelledby="discovery-heading">
-        <div><span class="eyebrow">Балтийские города</span><h2 id="discovery-heading">К вашему столу</h2><p>Пироги после прогулки у моря, к ужину в апартаментах или встрече с друзьями. Изучаем спрос в трёх городах — выберите свой.</p></div>
+        <div><h2 id="discovery-heading">Пироги в балтийских городах</h2><p>Пироги после прогулки у моря, к ужину в апартаментах или встрече с друзьями. Изучаем спрос в трёх городах — выберите свой.</p></div>
         <nav class="discovery-cities" aria-label="Пироги по городам"><a href="/dostavka/zelenogradsk/">Зеленоградск<Icon name="arrow" /></a><a href="/dostavka/kaliningrad/">Калининград<Icon name="arrow" /></a><a href="/dostavka/svetlogorsk/">Светлогорск<Icon name="arrow" /></a></nav>
       </section>
-      <section class="home-journal container" aria-labelledby="journal-heading"><header><div><span class="eyebrow">Блог Пирогорска</span><h2 id="journal-heading">К общему столу</h2></div><a href="/blog/">Все материалы<Icon name="arrow" /></a></header><BlogCards entries={blogEntries.slice(0, 3)} /></section>
-      <section class="home-faq container" aria-labelledby="faq-heading"><div><span class="eyebrow">Перед первым пирогом</span><h2 id="faq-heading">Что нужно знать</h2><a class="home-partner-link" href="/partners/">Владельцам апартаментов и пекарням<Icon name="arrow" /></a></div><div class="home-faq-list">{faqs.map(([question,answer]) => <details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>
+      <section class="home-journal container" aria-labelledby="journal-heading"><header><div><h2 id="journal-heading">Блог Пирогорска</h2></div><a href="/blog/">Все материалы<Icon name="arrow" /></a></header><BlogCards entries={blogEntries.slice(0, 3)} /></section>
+      <section class="home-faq container" aria-labelledby="faq-heading"><div><h2 id="faq-heading">Перед первым пирогом</h2><a class="home-partner-link" href="/partners/">Владельцам апартаментов и пекарням<Icon name="arrow" /></a></div><div class="home-faq-list">{faqs.map(([question,answer]) => <details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>
     </main>
     <footer class="site-footer container">
       <div class="footer-main">

@@ -1,0 +1,150 @@
+{
+  "url": "http://127.0.0.1:4322/journal/rybnaya-nachinka-dlya-piroga/",
+  "time": "2026-10-27T06:56:09.867Z",
+  "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": 1011.9509999999999,
+    "largest-contentful-paint": 1844.3411999999998,
+    "total-blocking-time": 0,
+    "cumulative-layout-shift": 0
+  },
+  "lcp": {
+    "type": "list",
+    "items": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 78.453
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 6.184
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 22.624
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 229.174
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,3,MAIN,1,ARTICLE,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+        "selector": "section.ed-hero > figure.ed-hero-art > picture > img",
+        "boundingRect": {
+          "top": 557,
+          "bottom": 808,
+          "left": 18,
+          "right": 394,
+          "width": 376,
+          "height": 250
+        },
+        "snippet": "<img src=\"http://127.0.0.1:4322/_astro/rybnaya-nachinka-dlya-piroga.D93BgSzj_yMiBt.a…\" srcset=\"/_astro/rybnaya-nachinka-dlya-piroga.D93BgSzj_Z28HgYk.webp 480w, /_astro/r…\" sizes=\"(max-width: 760px) 92vw, 52vw\" alt=\"Разрез концептуального пирога с рыбой, шпинатом и сыром\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-4pzkchnt=\"true\" width=\"800\" height=\"533\">",
+        "nodeLabel": "Разрез концептуального пирога с рыбой, шпинатом и сыром"
+      }
+    ]
+  },
+  "discovery": {
+    "type": "list",
+    "items": [
+      {
+        "type": "checklist",
+        "items": {
+          "priorityHinted": {
+            "label": "fetchpriority=high applied",
+            "value": true
+          },
+          "requestDiscoverable": {
+            "label": "Request is discoverable in initial document",
+            "value": true
+          },
+          "eagerlyLoaded": {
+            "label": "LCP resources should not use loading=lazy",
+            "value": true
+          }
+        }
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,3,MAIN,1,ARTICLE,0,SECTION,1,FIGURE,0,PICTURE,2,IMG",
+        "selector": "section.ed-hero > figure.ed-hero-art > picture > img",
+        "boundingRect": {
+          "top": 557,
+          "bottom": 808,
+          "left": 18,
+          "right": 394,
+          "width": 376,
+          "height": 250
+        },
+        "snippet": "<img src=\"http://127.0.0.1:4322/_astro/rybnaya-nachinka-dlya-piroga.D93BgSzj_yMiBt.a…\" srcset=\"/_astro/rybnaya-nachinka-dlya-piroga.D93BgSzj_Z28HgYk.webp 480w, /_astro/r…\" sizes=\"(max-width: 760px) 92vw, 52vw\" alt=\"Разрез концептуального пирога с рыбой, шпинатом и сыром\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-4pzkchnt=\"true\" width=\"800\" height=\"533\">",
+        "nodeLabel": "Разрез концептуального пирога с рыбой, шпинатом и сыром"
+      }
+    ]
+  },
+  "images": {
+    "type": "table",
+    "headings": [
+      {
+        "key": "node",
+        "valueType": "node",
+        "label": ""
+      },
+      {
+        "key": "url",
+        "valueType": "url",
+        "label": "URL",
+        "subItemsHeading": {
+          "key": "reason",
+          "valueType": "text"
+        }
+      },
+      {
+        "key": "totalBytes",
+        "valueType": "bytes",
+        "label": "Resource Size"
+      },
+      {
+        "key": "wastedBytes",
+        "valueType": "bytes",
+        "label": "Est Savings",
+        "subItemsHeading": {
+          "key": "wastedBytes",
+          "valueType": "bytes"
+        }
+      }
+    ],
+    "items": [],
+    "debugData": {
+      "type": "debugdata",
+      "wastedBytes": 0
+    }
+  }
+}
