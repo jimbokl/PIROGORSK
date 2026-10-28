@@ -31,4 +31,10 @@ CodeGraph: init --index, затем sync; MCP status подтверждает 58
 
 ## Публикация
 
-Будет заполнена после CI и независимого чтения домена.
+Runtime **6790913**, [CI40734118956 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40734118956); [снимок CI](ci.json). Независимое чтение домена **28.10.2026 17:20 UTC**: все **72 URL** (69 HTML, robots.txt, sitemap.xml, indexnow-manifest.json) отвечают HTTP200 и точно совпадают SHA-256 со сборкой. [Полный readback](production-readback.json). Worker health HTTP200, storage=d1, mode=intent; production-заявки не отправлялись.
+
+[IndexNow artifact](indexnow-release/report.json): **67 URL**, основной получатель HTTP200, Яндекс HTTP202 (`received-key-validation-pending`). Яндекс ожидает проверки ключа; уведомления не подтверждают включение URL в индекс.
+
+[Публичная статья](https://pirogorsk.ru/journal/skolko-piroga-na-cheloveka/): следующий шаг ведёт в /podbor/, рекомендации — форматы 500г/1кг и выбор пирогов на компанию. [Снимок](production-article.png), [DOM-подтверждение](production-ui.json). Просмотр с ?qa=1 исключён из аналитики. Временные размеры окна сброшены.
+
+[Registry strict](registry-check.json): PASS, errors=0, hasDrift=false после синхронизации изменения seozavod. Частоты спроса остаются неизвестными. Развитие сайта на паузе до существующей проверки 10.11.2026.
