@@ -6,6 +6,7 @@ import ts from 'typescript';
 import { analyticsPageUrl, trafficCampaigns } from '../src/lib/analytics-pageview.ts';
 import { analyticsConfig } from '../src/config/analytics.ts';
 import { analyticsSessionEnabled } from '../src/lib/analytics-session.ts';
+import { guideTransition } from '../src/lib/seo-navigation.ts';
 
 const tagged = (campaign) => {
   const url = new URL(campaign.path, 'https://pirogorsk.ru');
@@ -48,13 +49,14 @@ const source = ts.transpileModule(readFileSync(new URL('../src/scripts/analytics
 
 test('content micro-goals keep the saved-request gate and only measure marked editorial links', () => {
   const calls = [], listeners = {}, storage = new Map();
-  class TestElement { constructor(marked = false) { this.marked = marked; } closest(selector) { assert.equal(selector, 'a[data-guide-catalog]'); return this.marked ? this : null; } }
+  class TestElement { constructor(marked = false, href = 'https://pirogorsk.ru/podbor/?email=private#table') { this.marked = marked; this.href = href; } closest(selector) { assert.equal(selector, 'a[data-guide-catalog]'); return this.marked ? this : null; } }
   const context = {
     exports: {}, URL, Element: TestElement,
     require(name) {
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
       if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
+      if (name === '../lib/seo-navigation') return { guideTransition };
       throw new Error(`Unexpected import: ${name}`);
     },
     sessionStorage: { getItem: key => storage.get(key), setItem: (key, value) => storage.set(key, value) },
@@ -67,6 +69,9 @@ test('content micro-goals keep the saved-request gate and only measure marked ed
   listeners.click({ target: {} });
   assert.equal(calls.length, 0);
   listeners.click({ target: new TestElement(true) });
+  listeners.click({ target: new TestElement(true, 'https://evil.example/podbor/') });
+  listeners.click({ target: new TestElement(true, 'https://pirogorsk.ru/not-a-published-page/') });
+  trackGoal('guide_to_catalog_click', { source_page: '/blog/', destination_page: '/unknown/' });
   trackGoal('calculator_interact', { city: 'Калининград', private: 'must never leave' });
   trackGoal('calc_apply_set', { city: 'Светлогорск' });
   trackGoal('order_submit');
@@ -75,6 +80,7 @@ test('content micro-goals keep the saved-request gate and only measure marked ed
   trackGoal('order_submit', { requestId });
   trackGoal('order_submit', { requestId });
   assert.deepEqual(calls.map(c => c[2]), ['guide_to_catalog_click', 'calculator_interact', 'calc_apply_set', 'order_submit']);
+  assert.deepEqual(JSON.parse(JSON.stringify(calls[0][3])), { source_page: '/blog/', destination_page: '/podbor/' });
   assert.deepEqual(JSON.parse(JSON.stringify(calls[1][3])), { city: 'Калининград' });
   assert.equal(calls[3][3].requestId, requestId);
 });
@@ -90,6 +96,7 @@ test('real analytics initializer queues one explicit pageview and no goal', () =
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
       if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
+      if (name === '../lib/seo-navigation') return { guideTransition };
       throw new Error(`Unexpected import: ${name}`);
     },
     window: { ym: (...args) => calls.push(args) },
@@ -122,6 +129,7 @@ test('local previews and QA tabs never load Metrica or send goals', () => {
         if (name === '../config/analytics') return { analyticsConfig };
         if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
         if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
+        if (name === '../lib/seo-navigation') return { guideTransition };
         throw new Error(`Unexpected import: ${name}`);
       },
       window: { ym: (...args) => calls.push(args) },

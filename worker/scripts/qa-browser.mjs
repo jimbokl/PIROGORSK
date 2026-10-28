@@ -11,10 +11,11 @@ import worker from '../dist/worker.js';
 // This fixture uses the actual form, CSS and client scripts, and the deployable Worker bundle.
 // Metrica is intercepted locally. No production service receives a test event or application.
 const read = path => readFile(new URL(path, import.meta.url), 'utf8');
-const [component, styles, globalStyles, tokens, analytics, analyticsPageview, analyticsSession, interest, migration] = await Promise.all([
+const [component, styles, globalStyles, tokens, analytics, analyticsPageview, analyticsSession, seoNavigation, seoMatrix, interest, migration] = await Promise.all([
   read('../../src/components/InterestForm.astro'), read('../../src/styles/interest.css'),
   read('../../src/styles/global.css'), read('../../src/styles/tokens.css'), read('../../src/scripts/analytics.ts'),
   read('../../src/lib/analytics-pageview.ts'), read('../../src/lib/analytics-session.ts'),
+  read('../../src/lib/seo-navigation.ts'), read('../../src/data/seo-matrix.json'),
   read('../../src/scripts/interest.ts'), read('../migrations/0001_interests.sql'),
 ]);
 // Analytics requires a production origin; every request to this origin is served locally below.
@@ -22,7 +23,9 @@ const fixtureOrigin = 'https://pirogorsk.ru';
 const analyticsScript = [
   plainJavaScript(analyticsPageview),
   plainJavaScript(analyticsSession),
-  plainJavaScript(analytics, ['../config/analytics', '../lib/analytics-pageview', '../lib/analytics-session']),
+  `const matrix = ${JSON.stringify(JSON.parse(seoMatrix))};`,
+  plainJavaScript(seoNavigation, ['../data/seo-matrix.json']),
+  plainJavaScript(analytics, ['../config/analytics', '../lib/analytics-pageview', '../lib/analytics-session', '../lib/seo-navigation']),
 ].join('\n');
 const sqlite = new DatabaseSync(':memory:');
 sqlite.exec(migration);

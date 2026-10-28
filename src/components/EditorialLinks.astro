@@ -1,6 +1,7 @@
 ---
 import type { EditorialLink } from '../data/editorial';
+import { isConversionHref } from '../lib/seo-navigation';
 interface Props { title: string; links: readonly EditorialLink[]; id?: string }
 const { title, links, id } = Astro.props;
 ---
-<section class="ed-links-section" id={id}><h2>{title}</h2><div class="ed-link-grid">{links.map(link => <a class="ed-link-card" href={link.href} data-guide-catalog={/^\/(nabor|pirogi|menu)\//.test(link.href) ? '' : undefined}><span class="ed-eyebrow">{link.label ?? 'Пирогорск'}</span><h3>{link.title}<span aria-hidden="true">↗</span></h3><p>{link.text}</p></a>)}</div></section>
+<section class="ed-links-section" id={id}><h2>{title}</h2><div class="ed-link-grid">{links.map(link => <a class="ed-link-card" href={link.href} data-guide-catalog={isConversionHref(link.href) ? '' : undefined}><span class="ed-eyebrow">{link.label ?? 'Пирогорск'}</span><h3>{link.title}<span aria-hidden="true">↗</span></h3><p>{link.text}</p></a>)}</div></section>

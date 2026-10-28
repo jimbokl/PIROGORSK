@@ -27,8 +27,9 @@ jobs:
       - run: npm run build
       - run: node scripts/verify-seo.mjs
       - run: node scripts/verify-expansion.mjs
+      - run: node scripts/verify-seo-map.mjs
       - run: node scripts/verify-article-artwork.mjs
-      - run: node --test scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs
+      - run: node --test scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs
       - run: node scripts/indexnow.mjs manifest
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

@@ -4,6 +4,8 @@ import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialInterest from '../../components/EditorialInterest.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
+import EditorialNextStep from '../../components/EditorialNextStep.astro';
+import { articleRecommendations } from '../../data/editorial-recommendations';
 import GuideSummary from '../../components/GuideSummary.astro';
 import {Picture} from 'astro:assets';
 import { guides, siteOrigin } from '../../data/editorial';
@@ -46,6 +48,7 @@ const graph=[...schema,faqSchema(faq),isCity?placesSchema(city):{'@type':'ItemLi
     </>}
     {isNew && <aside class="blog-takeaway" aria-labelledby="takeaway-title"><h2 id="takeaway-title">Если коротко</h2><p>{item.takeaway}</p></aside>}
     <nav class="blog-toc" aria-label="Содержание статьи">{item.sections.map((section, index) => <a href={`#section-${index}`}>{section.title}</a>)}</nav>
+    <EditorialNextStep path={articleHref(item.slug)} />
     <EditorialBody sections={item.sections} />
     {'feature' in item && item.feature==='ratio' && <FillingRatioBar />}
     {isCity && <><RestaurantVsPiesTable {city} /><CostComparisonWidget {city} /><PlaceMap {city} /></>}
@@ -54,6 +57,6 @@ const graph=[...schema,faqSchema(faq),isCity?placesSchema(city):{'@type':'ItemLi
   </article>
   <EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" />
   <EditorialLinks title="Собрать стол в своём городе" links={contextualLinks(city)} />
-  <EditorialLinks title="Продолжить за столом" links={[{ href: item.related, title: item.relatedTitle, text: item.related.startsWith('/journal/') ? 'Связанный материал с примерами и расчётами.' : 'Посмотреть форматы и собрать предварительную подборку.', label: 'К делу' }, ...blogEntries.filter(entry => entry.slug !== item.slug && articleHref(entry.slug) !== item.related).slice(0, 2).map(entry => ({ href: articleHref(entry.slug), title: entry.title, text: entry.description, label: entry.category }))]} />
+  <EditorialLinks id="related-reading" title="Продолжить по теме" links={articleRecommendations(articleHref(item.slug))} />
   <a class="blog-text-link" href="/blog/">Все материалы блога<span aria-hidden="true">↗</span></a>
 </ContentLayout>

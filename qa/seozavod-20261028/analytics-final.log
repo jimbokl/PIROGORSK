@@ -1,0 +1,14 @@
+✔ prepared placements retain their exact UTM tuple while dropping extra data (1.597667ms)
+✔ unknown, partial, duplicate and tampered campaign values cannot reach analytics (0.376042ms)
+✔ content micro-goals keep the saved-request gate and only measure marked editorial links (1.990041ms)
+✔ real analytics initializer queues one explicit pageview and no goal (0.792625ms)
+✔ local previews and QA tabs never load Metrica or send goals (1.668292ms)
+✔ QA exclusion follows navigation in the same tab; other sessions still count (0.133708ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 384.478208

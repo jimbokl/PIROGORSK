@@ -1,6 +1,7 @@
 import { analyticsConfig } from '../config/analytics';
 import { analyticsPageUrl } from '../lib/analytics-pageview';
 import { analyticsSessionEnabled } from '../lib/analytics-session';
+import { guideTransition } from '../lib/seo-navigation';
 
 export type Goal = 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error' | 'calculator_interact' | 'calc_apply_set' | 'guide_to_catalog_click';
 export type GoalParams = {
@@ -10,6 +11,8 @@ export type GoalParams = {
   qty?: number | number[];
   value?: number;
   requestId?: string;
+  source_page?: string;
+  destination_page?: string;
 };
 type Metrica = ((...args: unknown[]) => void) & { a?: unknown[][]; l?: number };
 declare global { interface Window { ym?: Metrica } }
@@ -27,6 +30,12 @@ const analyticsEnabled = analyticsSessionEnabled(location.href, {
 export function trackGoal(goal: Goal, params: GoalParams = {}): void {
   if (!analyticsEnabled || !goals.has(goal) || !Number.isSafeInteger(analyticsConfig.metricaId) || analyticsConfig.metricaId <= 0) return;
   const safe: GoalParams = {};
+  if (goal === 'guide_to_catalog_click') {
+    if (typeof params.source_page !== 'string' || typeof params.destination_page !== 'string') return;
+    const transition = guideTransition(params.source_page, params.destination_page);
+    if (!transition) return;
+    Object.assign(safe, transition);
+  }
   if (typeof params.city === 'string' && cities.has(params.city)) safe.city = params.city;
   for (const field of ['productid', 'variant'] as const) {
     const value = params[field];
@@ -79,8 +88,10 @@ function safeReferrer(value: string): string {
 
 initializeAnalytics();
 
-// Only explicit editorial product/set links are measured; destinations never enter analytics.
+// Only marked links between registered pages are measured; query strings and hashes are discarded.
 document.addEventListener('click', event => {
   const target = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[data-guide-catalog]') : null;
-  if (target) trackGoal('guide_to_catalog_click');
+  if (!target) return;
+  const transition = guideTransition(location.href, target.href);
+  if (transition) trackGoal('guide_to_catalog_click', transition);
 });

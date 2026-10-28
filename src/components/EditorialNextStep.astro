@@ -1,0 +1,13 @@
+---
+import { articleRoute } from '../lib/seo-navigation';
+interface Props { path: string }
+const { nextStep } = articleRoute(Astro.props.path);
+---
+<aside class="ed-next-step" aria-label="Планирование своего стола">
+  <p>Для своего стола</p>
+  <a href={nextStep.path} data-guide-catalog>{nextStep.label}<span aria-hidden="true">↗</span></a>
+  <small>Пирогорск готовится к запуску. Меню и расчёты предварительные.</small>
+</aside>
+<style>
+  .ed-next-step{border-left:2px solid var(--ed-amber);padding:16px 20px;margin-block:24px 32px;background:var(--ed-sea)}.ed-next-step p{font-size:11px;color:var(--ed-muted)}.ed-next-step a{display:inline-flex;align-items:center;gap:20px;min-height:44px;font-size:15px;line-height:1.5;color:var(--ed-amber);text-underline-offset:4px}.ed-next-step a span{font-size:20px}.ed-next-step small{display:block;font-size:11px;line-height:1.7;color:var(--ed-muted)}@media(max-width:420px){.ed-next-step{padding:14px 16px}.ed-next-step a{font-size:14px}}
+</style>

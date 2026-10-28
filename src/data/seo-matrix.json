@@ -1,226 +1,1090 @@
 [
   {
+    "path": "/",
+    "cluster": "home",
+    "pageType": "home",
+    "title": "Пироги с балтийским характером",
+    "query": "пирогорск пироги",
+    "intent": "Найти Пирогорск, узнать статус запуска и отметить интерес к меню.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "cluster": "city",
+    "city": "zelenogradsk",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Пекарни и пироги в Зеленоградске: что проверить перед покупкой",
+    "query": "пекарни и пироги в зеленоградске",
+    "intent": "Найти адреса пекарен и проверить ассортимент перед покупкой.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Посмотреть будущее меню Пирогорска"
+    },
+    "relatedArticles": [
+      "/journal/gde-pozavtrakat-v-zelenogradske/",
+      "/journal/gde-poest-v-zelenogradske/"
+    ]
+  },
+  {
+    "path": "/journal/gde-poest-s-detmi-v-zelenogradske/",
+    "cluster": "city",
+    "city": "zelenogradsk",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Где поесть с детьми в Зеленоградске: как выбрать место",
+    "query": "где поесть с детьми в зеленоградске",
+    "intent": "Проверить условия для семейного визита и состав детских блюд.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/povody/zelenogradsk/semeynyy-uzhin/",
+      "label": "Рассчитать стол для семьи"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-v-zelenogradske/",
+      "/journal/uzhin-v-semnyh-apartamentah/"
+    ]
+  },
+  {
+    "path": "/journal/eda-s-soboy-v-svetlogorske/",
+    "cluster": "city",
+    "city": "svetlogorsk",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Еда с собой в Светлогорске: от кафе до апартаментов",
+    "query": "еда с собой в светлогорске",
+    "intent": "Выбрать еду навынос и спланировать дорогу до жилья.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/povody/svetlogorsk/uzhin-v-apartamentah/",
+      "label": "Спланировать ужин в апартаментах"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-v-svetlogorske/",
+      "/journal/kak-razogret-pirog-v-apartamentah/"
+    ]
+  },
+  {
+    "path": "/journal/nedorogo-poest-semey-v-svetlogorske/",
+    "cluster": "city",
+    "city": "svetlogorsk",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Где недорого поесть семьёй в Светлогорске: считаем корзину",
+    "query": "где недорого поесть семьей в светлогорске",
+    "intent": "Сравнить полную корзину для семьи, а не цену одного блюда.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/povody/svetlogorsk/semeynyy-uzhin/",
+      "label": "Рассчитать семейный стол"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-v-svetlogorske/",
+      "/journal/skolko-piroga-na-cheloveka/"
+    ]
+  },
+  {
+    "path": "/journal/rybnye-pirogi-v-kaliningrade/",
+    "cluster": "city",
+    "city": "kaliningrad",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Рыбные пироги в Калининграде: начинка, вес и цена",
+    "query": "рыбные пироги в калининграде сравнение",
+    "intent": "Сравнить предложения рыбных пирогов по составу, весу и цене.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/pirogi/rybnyy-pirog/",
+      "label": "Посмотреть концепт рыбного пирога"
+    },
+    "relatedArticles": [
+      "/journal/rybnaya-nachinka-dlya-piroga/",
+      "/journal/osetinskiy-ili-zakrytyy-pirog-kaliningrad/"
+    ]
+  },
+  {
+    "path": "/journal/dostavka-pirogov-v-kaliningrade-sravnenie/",
+    "cluster": "city",
+    "city": "kaliningrad",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Доставка пирогов в Калининграде: как сравнить предложения",
+    "query": "доставка пирогов в калининграде сравнение предложений",
+    "intent": "Проверить условия действующих служб и полную сумму доставки.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/dostavka/kaliningrad/",
+      "label": "Узнать о планах Пирогорска в городе"
+    },
+    "relatedArticles": [
+      "/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+      "/journal/rybnye-pirogi-v-kaliningrade/"
+    ]
+  },
+  {
+    "path": "/journal/obed-v-ofis-v-kaliningrade/",
+    "cluster": "city",
+    "city": "kaliningrad",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Обед в офис в Калининграде: порции или общий стол",
+    "query": "обед в офис в калининграде порции или общий стол",
+    "intent": "Сравнить порционные обеды и общий стол для офиса.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/povody/kaliningrad/v-ofis-na-den-rozhdeniya/",
+      "label": "Рассчитать пироги для коллег"
+    },
+    "relatedArticles": [
+      "/journal/skolko-piroga-na-cheloveka/",
+      "/journal/pekarni-kaliningrada-pirogi-na-vynos/"
+    ]
+  },
+  {
+    "path": "/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+    "cluster": "city",
+    "city": "kaliningrad",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Пекарни Калининграда и пироги навынос: адреса и выбор",
+    "query": "пекарни калининграда пироги на вынос",
+    "intent": "Найти адреса пекарен и проверить условия покупки навынос.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Посмотреть будущее меню Пирогорска"
+    },
+    "relatedArticles": [
+      "/journal/dostavka-pirogov-v-kaliningrade-sravnenie/",
+      "/journal/rybnye-pirogi-v-kaliningrade/"
+    ]
+  },
+  {
+    "path": "/journal/rybnaya-nachinka-dlya-piroga/",
+    "cluster": "product",
+    "city": "zelenogradsk",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Как выбрать рыбную начинку для пирога к ужину у моря",
+    "query": "рыбная начинка для пирога как выбрать",
+    "intent": "Разобраться в рыбной начинке, костях и составе перед выбором.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/pirogi/rybnyy-pirog/",
+      "label": "Посмотреть концепт рыбного пирога"
+    },
+    "relatedArticles": [
+      "/journal/rybnye-pirogi-v-kaliningrade/",
+      "/journal/pirog-500-g-ili-1-kg/"
+    ]
+  },
+  {
+    "path": "/journal/myasnoy-pirog-nachinka-i-testo/",
+    "cluster": "product",
+    "city": "kaliningrad",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Мясной пирог: как читать долю начинки и вес теста",
+    "query": "мясной пирог доля начинки и теста",
+    "intent": "Прочитать состав и понять, что означает заявленная доля начинки.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/pirogi/myasnoy-pirog/",
+      "label": "Посмотреть концепт мясного пирога"
+    },
+    "relatedArticles": [
+      "/journal/osetinskiy-ili-zakrytyy-pirog-kaliningrad/",
+      "/journal/pirog-500-g-ili-1-kg/"
+    ]
+  },
+  {
+    "path": "/journal/osetinskiy-ili-zakrytyy-pirog-kaliningrad/",
+    "cluster": "product",
+    "city": "kaliningrad",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Осетинский или закрытый пирог в Калининграде: как выбрать",
+    "query": "осетинский или закрытый пирог калининград",
+    "intent": "Сравнить форматы пирога по тесту, начинке и сервировке.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать вес для своего стола"
+    },
+    "relatedArticles": [
+      "/journal/myasnoy-pirog-nachinka-i-testo/",
+      "/journal/rybnye-pirogi-v-kaliningrade/"
+    ]
+  },
+  {
+    "path": "/journal/kak-razogret-pirog-v-apartamentah/",
+    "cluster": "product",
+    "city": "zelenogradsk",
+    "new": true,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Как разогреть пирог в апартаментах: что проверить сначала",
+    "query": "как разогреть пирог в апартаментах",
+    "intent": "Проверить технику, посуду и рекомендации производителя перед разогревом.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/nabor/uzhin-v-apartamentah/",
+      "label": "Посмотреть подборку для ужина"
+    },
+    "relatedArticles": [
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/eda-s-soboy-v-svetlogorske/"
+    ]
+  },
+  {
     "path": "/povody/kaliningrad/v-ofis-na-den-rozhdeniya/",
     "cluster": "scenario",
     "city": "kaliningrad",
     "new": true,
-    "query": "день рождения в офисе калининград"
+    "query": "день рождения в офисе калининград",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Что заказать в офис на день рождения в Калининграде",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/kaliningrad/furshet-na-korporativ/",
     "cluster": "scenario",
     "city": "kaliningrad",
     "new": true,
-    "query": "корпоратив и фуршет калининград"
+    "query": "корпоратив и фуршет калининград",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на корпоратив и фуршет в Калининграде",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/kaliningrad/na-pominki/",
     "cluster": "scenario",
     "city": "kaliningrad",
     "new": true,
-    "query": "поминальный стол калининград"
+    "query": "поминальный стол калининград",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на поминки: расчёт поминального стола в Калининграде",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/kaliningrad/semeynyy-uzhin/",
     "cluster": "scenario",
     "city": "kaliningrad",
     "new": true,
-    "query": "семейный ужин и гости калининград"
+    "query": "семейный ужин и гости калининград",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на семейный ужин и к приходу гостей в Калининграде",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/kaliningrad/uzhin-v-apartamentah/",
     "cluster": "scenario",
     "city": "kaliningrad",
     "new": true,
-    "query": "ужин в апартаментах калининград"
+    "query": "ужин в апартаментах калининград",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Ужин в апартаментах: пироги, кафе или готовка в Калининграде",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/zelenogradsk/v-ofis-na-den-rozhdeniya/",
     "cluster": "scenario",
     "city": "zelenogradsk",
     "new": true,
-    "query": "день рождения в офисе зеленоградск"
+    "query": "день рождения в офисе зеленоградск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Что заказать в офис на день рождения в Зеленоградске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/zelenogradsk/furshet-na-korporativ/",
     "cluster": "scenario",
     "city": "zelenogradsk",
     "new": true,
-    "query": "корпоратив и фуршет зеленоградск"
+    "query": "корпоратив и фуршет зеленоградск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на корпоратив и фуршет в Зеленоградске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/zelenogradsk/na-pominki/",
     "cluster": "scenario",
     "city": "zelenogradsk",
     "new": true,
-    "query": "поминальный стол зеленоградск"
+    "query": "поминальный стол зеленоградск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на поминки: расчёт поминального стола в Зеленоградске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/zelenogradsk/semeynyy-uzhin/",
     "cluster": "scenario",
     "city": "zelenogradsk",
     "new": true,
-    "query": "семейный ужин и гости зеленоградск"
+    "query": "семейный ужин и гости зеленоградск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на семейный ужин и к приходу гостей в Зеленоградске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/zelenogradsk/uzhin-v-apartamentah/",
     "cluster": "scenario",
     "city": "zelenogradsk",
     "new": true,
-    "query": "ужин в апартаментах зеленоградск"
+    "query": "ужин в апартаментах зеленоградск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Ужин в апартаментах: пироги, кафе или готовка в Зеленоградске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/svetlogorsk/v-ofis-na-den-rozhdeniya/",
     "cluster": "scenario",
     "city": "svetlogorsk",
     "new": true,
-    "query": "день рождения в офисе светлогорск"
+    "query": "день рождения в офисе светлогорск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Что заказать в офис на день рождения в Светлогорске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/svetlogorsk/furshet-na-korporativ/",
     "cluster": "scenario",
     "city": "svetlogorsk",
     "new": true,
-    "query": "корпоратив и фуршет светлогорск"
+    "query": "корпоратив и фуршет светлогорск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на корпоратив и фуршет в Светлогорске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/svetlogorsk/na-pominki/",
     "cluster": "scenario",
     "city": "svetlogorsk",
     "new": true,
-    "query": "поминальный стол светлогорск"
+    "query": "поминальный стол светлогорск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на поминки: расчёт поминального стола в Светлогорске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/svetlogorsk/semeynyy-uzhin/",
     "cluster": "scenario",
     "city": "svetlogorsk",
     "new": true,
-    "query": "семейный ужин и гости светлогорск"
+    "query": "семейный ужин и гости светлогорск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Пироги на семейный ужин и к приходу гостей в Светлогорске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/svetlogorsk/uzhin-v-apartamentah/",
     "cluster": "scenario",
     "city": "svetlogorsk",
     "new": true,
-    "query": "ужин в апартаментах светлогорск"
+    "query": "ужин в апартаментах светлогорск",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Ужин в апартаментах: пироги, кафе или готовка в Светлогорске",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/povody/zelenogradsk/eda-na-kurshskuyu-kosu/",
     "cluster": "scenario",
     "city": "zelenogradsk",
     "new": true,
-    "query": "еда на куршскую косу"
+    "query": "еда на куршскую косу",
+    "cohort": "expansion-20261026",
+    "pageType": "scenario",
+    "title": "Что взять из еды на Куршскую косу из Зеленоградска",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/journal/gde-poest-v-zelenogradske/",
     "cluster": "city",
-    "new": false
+    "new": false,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Где поесть в Зеленоградске: три кафе и цены на четверых",
+    "query": "где поесть в зеленоградске",
+    "intent": "Выбрать кафе по проверенным примерам меню и составу корзины.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/povody/zelenogradsk/uzhin-v-apartamentah/",
+      "label": "Спланировать ужин в апартаментах"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-s-detmi-v-zelenogradske/",
+      "/journal/dostavka-edy-v-zelenogradske/"
+    ]
   },
   {
-    "path": "/journal/gde-poest-v-svetlogorske/",
-    "cluster": "city",
-    "new": false
+    "path": "/menu/",
+    "cluster": "hub",
+    "pageType": "hub",
+    "title": "Выберите свой вкус",
+    "query": "меню пирогорска начинки и вес",
+    "intent": "Выбрать подходящую страницу по теме.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/gde-poest-v-kaliningrade/",
-    "cluster": "city",
-    "new": false
+    "path": "/delivery/",
+    "cluster": "delivery",
+    "pageType": "delivery",
+    "title": "Доставка начинается с понятных условий",
+    "query": "пирогорск условия будущей доставки",
+    "intent": "Узнать общие планы и ограничения будущей доставки Пирогорска.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/dostavka-edy-v-zelenogradske/",
-    "cluster": "city",
-    "new": false
+    "path": "/partners/",
+    "cluster": "partner",
+    "pageType": "partner",
+    "title": "Ужин для гостей — идея для будущего запуска",
+    "query": "пирогорск сотрудничество для апартаментов",
+    "intent": "Узнать об идее сотрудничества с владельцами апартаментов.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/about/",
+    "cluster": "about",
+    "pageType": "about",
+    "title": "Пироги с балтийским характером",
+    "query": "о проекте пирогорск",
+    "intent": "Узнать о проекте и текущем этапе запуска.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/podbor/",
+    "cluster": "planner",
+    "pageType": "planner",
+    "title": "Хватит на всех. А сколько это?",
+    "query": "калькулятор количества пирогов на гостей",
+    "intent": "Посчитать вес и предварительный бюджет стола для своих гостей.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/povody/",
+    "cluster": "hub",
+    "pageType": "hub",
+    "title": "У каждого стола свой повод",
+    "query": "пироги к разным поводам",
+    "intent": "Выбрать подходящую страницу по теме.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/blog/",
+    "cluster": "hub",
+    "pageType": "hub",
+    "title": "К общему столу",
+    "query": "блог пирогорска еда и общий стол",
+    "intent": "Выбрать подходящую страницу по теме.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
     "path": "/journal/gde-pozavtrakat-v-zelenogradske/",
     "cluster": "city",
-    "new": false
+    "new": false,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Где позавтракать в Зеленоградске: рано утром и у моря",
+    "query": "где позавтракать в зеленоградске",
+    "intent": "Выбрать место и время завтрака перед прогулкой.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/nabor/piknik-u-morya/",
+      "label": "Посмотреть подборку для прогулки"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-v-zelenogradske/",
+      "/journal/pekarni-i-pirogi-v-zelenogradske/"
+    ]
   },
   {
-    "path": "/journal/uzhin-v-semnyh-apartamentah/",
+    "path": "/journal/dostavka-edy-v-zelenogradske/",
     "cluster": "city",
-    "new": false
+    "new": false,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Доставка еды в Зеленоградске: ужин в апартаментах",
+    "query": "доставка еды в зеленоградске сравнение",
+    "intent": "Проверить предложения действующей доставки для ужина в апартаментах.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/povody/zelenogradsk/uzhin-v-apartamentah/",
+      "label": "Спланировать ужин дома"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-v-zelenogradske/",
+      "/journal/uzhin-v-semnyh-apartamentah/"
+    ]
   },
   {
     "path": "/journal/skolko-piroga-na-cheloveka/",
     "cluster": "product",
-    "new": false
+    "new": false,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Сколько пирога нужно на человека и на компанию",
+    "query": "сколько пирога на человека",
+    "intent": "Посчитать общий вес пирогов для числа гостей и своей порции.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать вес на своих гостей"
+    },
+    "relatedArticles": [
+      "/journal/pirog-500-g-ili-1-kg/",
+      "/journal/kak-vybrat-pirogi-na-kompaniyu/"
+    ]
   },
   {
     "path": "/journal/pirog-500-g-ili-1-kg/",
     "cluster": "product",
-    "new": false
+    "new": false,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Пирог 500 г или 1 кг: один большой или два маленьких",
+    "query": "пирог 500 г или 1 кг",
+    "intent": "Сравнить один большой и два маленьких пирога для разных вкусов.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Сравнить форматы для своего стола"
+    },
+    "relatedArticles": [
+      "/journal/skolko-piroga-na-cheloveka/",
+      "/journal/kak-vybrat-pirogi-na-kompaniyu/"
+    ]
   },
   {
-    "path": "/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "path": "/journal/chto-pit-s-pirogami/",
+    "cluster": "article",
+    "pageType": "article",
+    "title": "Что пить с пирогами: морс, чай или кофе",
+    "query": "что пить с пирогами",
+    "intent": "Подобрать напитки к сытным и сладким начинкам.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/nabor/na-kompaniyu/",
+      "label": "Посмотреть вкусы для компании"
+    },
+    "relatedArticles": [
+      "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+      "/journal/piknik-s-pirogom-chto-vzyat/"
+    ]
+  },
+  {
+    "path": "/journal/gde-poest-v-svetlogorske/",
     "cluster": "city",
-    "city": "zelenogradsk",
-    "new": true
+    "new": false,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Где поесть в Светлогорске: завтрак, обед и семейный стол",
+    "query": "где поесть в светлогорске",
+    "intent": "Выбрать формат еды в Светлогорске и проверить адреса.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/povody/svetlogorsk/semeynyy-uzhin/",
+      "label": "Рассчитать семейный стол"
+    },
+    "relatedArticles": [
+      "/journal/nedorogo-poest-semey-v-svetlogorske/",
+      "/journal/eda-s-soboy-v-svetlogorske/"
+    ]
   },
   {
-    "path": "/journal/gde-poest-s-detmi-v-zelenogradske/",
+    "path": "/journal/gde-poest-v-kaliningrade/",
     "cluster": "city",
-    "city": "zelenogradsk",
-    "new": true
+    "new": false,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Где поесть в центре Калининграда с семьёй",
+    "query": "где поесть с семьей в центре калининграда",
+    "intent": "Выбрать семейный стол в центре Калининграда.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/povody/kaliningrad/semeynyy-uzhin/",
+      "label": "Рассчитать стол для семьи"
+    },
+    "relatedArticles": [
+      "/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+      "/journal/obed-v-ofis-v-kaliningrade/"
+    ]
   },
   {
-    "path": "/journal/eda-s-soboy-v-svetlogorske/",
-    "cluster": "city",
-    "city": "svetlogorsk",
-    "new": true
+    "path": "/povody/v-ofis-na-den-rozhdeniya/",
+    "cluster": "scenario",
+    "pageType": "scenario",
+    "title": "Что принести в офис на день рождения",
+    "query": "что принести в офис на день рождения",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/nedorogo-poest-semey-v-svetlogorske/",
-    "cluster": "city",
-    "city": "svetlogorsk",
-    "new": true
+    "path": "/povody/furshet-na-korporativ/",
+    "cluster": "scenario",
+    "pageType": "scenario",
+    "title": "Пироги на фуршет: как спланировать общий стол",
+    "query": "пироги на фуршет: как спланировать общий стол",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/rybnye-pirogi-v-kaliningrade/",
-    "cluster": "city",
-    "city": "kaliningrad",
-    "new": true
+    "path": "/povody/na-pominki/",
+    "cluster": "scenario",
+    "pageType": "scenario",
+    "title": "Пироги для поминального стола: что уточнить заранее",
+    "query": "пироги для поминального стола: что уточнить заранее",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/dostavka-pirogov-v-kaliningrade-sravnenie/",
-    "cluster": "city",
-    "city": "kaliningrad",
-    "new": true
+    "path": "/povody/sytnyj-obed-na-strojku/",
+    "cluster": "scenario",
+    "pageType": "scenario",
+    "title": "Как спланировать обед для бригады",
+    "query": "как спланировать обед для бригады",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/obed-v-ofis-v-kaliningrade/",
-    "cluster": "city",
-    "city": "kaliningrad",
-    "new": true
+    "path": "/povody/eda-na-vypisku/",
+    "cluster": "scenario",
+    "pageType": "scenario",
+    "title": "Еда в подарок семье после выписки",
+    "query": "еда в подарок семье после выписки",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/pekarni-kaliningrada-pirogi-na-vynos/",
-    "cluster": "city",
-    "city": "kaliningrad",
-    "new": true
+    "path": "/povody/v-banyu-s-druzyami/",
+    "cluster": "scenario",
+    "pageType": "scenario",
+    "title": "Что взять к столу на встречу в бане",
+    "query": "что взять к столу на встречу в бане",
+    "intent": "Спланировать количество еды для конкретного повода.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/rybnaya-nachinka-dlya-piroga/",
+    "path": "/pirogi/myasnoy-pirog/",
     "cluster": "product",
-    "city": "zelenogradsk",
-    "new": true
+    "pageType": "product",
+    "title": "Мясной пирог",
+    "query": "пирогорск мясной пирог",
+    "intent": "Посмотреть концепт конкретного вкуса, варианты веса и предварительную цену.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/myasnoy-pirog-nachinka-i-testo/",
+    "path": "/pirogi/rybnyy-pirog/",
     "cluster": "product",
-    "city": "kaliningrad",
-    "new": true
+    "pageType": "product",
+    "title": "Рыбный пирог",
+    "query": "пирогорск рыбный пирог",
+    "intent": "Посмотреть концепт конкретного вкуса, варианты веса и предварительную цену.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/osetinskiy-ili-zakrytyy-pirog-kaliningrad/",
+    "path": "/pirogi/pirog-s-kapustoy/",
     "cluster": "product",
-    "city": "kaliningrad",
-    "new": true
+    "pageType": "product",
+    "title": "Пирог с капустой",
+    "query": "пирогорск пирог с капустой",
+    "intent": "Посмотреть концепт конкретного вкуса, варианты веса и предварительную цену.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
   },
   {
-    "path": "/journal/kak-razogret-pirog-v-apartamentah/",
+    "path": "/pirogi/syrnyy-pirog/",
     "cluster": "product",
-    "city": "zelenogradsk",
-    "new": true
+    "pageType": "product",
+    "title": "Сырный пирог",
+    "query": "пирогорск сырный пирог",
+    "intent": "Посмотреть концепт конкретного вкуса, варианты веса и предварительную цену.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/pirogi/pirog-s-kuritsey-i-gribami/",
+    "cluster": "product",
+    "pageType": "product",
+    "title": "Пирог с курицей и грибами",
+    "query": "пирогорск пирог с курицей и грибами",
+    "intent": "Посмотреть концепт конкретного вкуса, варианты веса и предварительную цену.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/pirogi/pirog-s-yablokom-i-brusnikoy/",
+    "cluster": "product",
+    "pageType": "product",
+    "title": "Пирог с яблоком и брусникой",
+    "query": "пирогорск пирог с яблоком и брусникой",
+    "intent": "Посмотреть концепт конкретного вкуса, варианты веса и предварительную цену.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/pirogi/pirog-s-vishney/",
+    "cluster": "product",
+    "pageType": "product",
+    "title": "Пирог с вишней",
+    "query": "пирогорск пирог с вишней",
+    "intent": "Посмотреть концепт конкретного вкуса, варианты веса и предварительную цену.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/pirogi/pirog-s-tvorogom-i-malinoy/",
+    "cluster": "product",
+    "pageType": "product",
+    "title": "Пирог с творогом и малиной",
+    "query": "пирогорск пирог с творогом и малиной",
+    "intent": "Посмотреть концепт конкретного вкуса, варианты веса и предварительную цену.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/nabor/uzhin-v-apartamentah/",
+    "cluster": "set",
+    "pageType": "set",
+    "title": "Пироги на ужин в апартаментах",
+    "query": "пироги на ужин в апартаментах",
+    "intent": "Выбрать сочетание вкусов под конкретный формат стола.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/nabor/na-kompaniyu/",
+    "cluster": "set",
+    "pageType": "set",
+    "title": "Пироги на компанию",
+    "query": "пироги на компанию",
+    "intent": "Выбрать сочетание вкусов под конкретный формат стола.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/nabor/piknik-u-morya/",
+    "cluster": "set",
+    "pageType": "set",
+    "title": "Пироги для пикника у моря",
+    "query": "пироги для пикника у моря",
+    "intent": "Выбрать сочетание вкусов под конкретный формат стола.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/dostavka/zelenogradsk/",
+    "cluster": "city",
+    "pageType": "city",
+    "title": "Доставка пирогов в Зеленоградске — готовим запуск",
+    "query": "пирогорск запуск доставки зеленоградск",
+    "intent": "Проверить статус запуска Пирогорска в конкретном городе.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/dostavka/kaliningrad/",
+    "cluster": "city",
+    "pageType": "city",
+    "title": "Доставка пирогов в Калининграде — изучаем спрос",
+    "query": "пирогорск запуск доставки калининград",
+    "intent": "Проверить статус запуска Пирогорска в конкретном городе.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/dostavka/svetlogorsk/",
+    "cluster": "city",
+    "pageType": "city",
+    "title": "Пироги и доставка в Светлогорске — планы Пирогорска",
+    "query": "пирогорск запуск доставки светлогорск",
+    "intent": "Проверить статус запуска Пирогорска в конкретном городе.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content"
+  },
+  {
+    "path": "/journal/uzhin-v-semnyh-apartamentah/",
+    "cluster": "city",
+    "new": false,
+    "cohort": "expansion-20261026",
+    "pageType": "article",
+    "title": "Как подготовить ужин в съёмных апартаментах",
+    "query": "как подготовить ужин в съемных апартаментах",
+    "intent": "Проверить кухню, посуду и возможность разогрева до ужина.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/nabor/uzhin-v-apartamentah/",
+      "label": "Посмотреть подборку для ужина"
+    },
+    "relatedArticles": [
+      "/journal/kak-razogret-pirog-v-apartamentah/",
+      "/journal/dostavka-edy-v-zelenogradske/"
+    ]
+  },
+  {
+    "path": "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+    "cluster": "article",
+    "pageType": "article",
+    "title": "Как выбрать пироги на компанию и не угадать за всех",
+    "query": "как выбрать пироги на компанию",
+    "intent": "Разделить вкусы и рассчитать вес общего стола.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/nabor/na-kompaniyu/",
+      "label": "Собрать предварительную подборку"
+    },
+    "relatedArticles": [
+      "/journal/skolko-piroga-na-cheloveka/",
+      "/journal/pirog-500-g-ili-1-kg/"
+    ]
+  },
+  {
+    "path": "/journal/piknik-s-pirogom-chto-vzyat/",
+    "cluster": "article",
+    "pageType": "article",
+    "title": "Пикник с пирогом: что продумать до выхода",
+    "query": "пикник с пирогом что взять",
+    "intent": "Продумать переноску, сервировку и условия еды на прогулке.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_content",
+    "nextStep": {
+      "path": "/nabor/piknik-u-morya/",
+      "label": "Посмотреть подборку для пикника"
+    },
+    "relatedArticles": [
+      "/journal/chto-pit-s-pirogami/",
+      "/journal/pirog-500-g-ili-1-kg/"
+    ]
   }
 ]

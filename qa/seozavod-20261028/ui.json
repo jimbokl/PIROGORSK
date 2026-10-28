@@ -1,0 +1,75 @@
+{
+  "articles": [
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "nextStep": "/podbor/",
+      "related": [
+        "/journal/pirog-500-g-ili-1-kg/",
+        "/journal/kak-vybrat-pirogi-na-kompaniyu/"
+      ],
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "nextStep": "/povody/zelenogradsk/uzhin-v-apartamentah/",
+      "related": [
+        "/journal/gde-poest-s-detmi-v-zelenogradske/",
+        "/journal/dostavka-edy-v-zelenogradske/"
+      ],
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "nextStep": "/podbor/",
+      "related": [
+        "/journal/pirog-500-g-ili-1-kg/",
+        "/journal/kak-vybrat-pirogi-na-kompaniyu/"
+      ],
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "nextStep": "/povody/zelenogradsk/uzhin-v-apartamentah/",
+      "related": [
+        "/journal/gde-poest-s-detmi-v-zelenogradske/",
+        "/journal/dostavka-edy-v-zelenogradske/"
+      ],
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "nextStep": "/podbor/",
+      "related": [
+        "/journal/pirog-500-g-ili-1-kg/",
+        "/journal/kak-vybrat-pirogi-na-kompaniyu/"
+      ],
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "nextStep": "/povody/zelenogradsk/uzhin-v-apartamentah/",
+      "related": [
+        "/journal/gde-poest-s-detmi-v-zelenogradske/",
+        "/journal/dostavka-edy-v-zelenogradske/"
+      ],
+      "scrollWidth": 1280,
+      "width": 1280
+    }
+  ],
+  "flow": {
+    "guests": 6,
+    "grams": 300,
+    "weightGrams": 2000,
+    "city": "Калининград",
+    "totalRub": 1980,
+    "formCity": "Калининград",
+    "formWidth": 286,
+    "formScrollWidth": 286,
+    "productionSubmission": false
+  }
+}

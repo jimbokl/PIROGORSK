@@ -3,6 +3,8 @@ import ContentLayout from '../../layouts/ContentLayout.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
+import EditorialNextStep from '../../components/EditorialNextStep.astro';
+import { articleRecommendations } from '../../data/editorial-recommendations';
 import GuideSummary from '../../components/GuideSummary.astro';
 import { Picture } from 'astro:assets';
 import PartyCalculator from '../../components/PartyCalculator.astro';
@@ -18,6 +20,7 @@ const money = (amount: number) => `${amount.toLocaleString('ru-RU')} ₽`;
 const path = `/journal/${foodGuide.slug}/`;
 const schema:Record<string,unknown>[] = [{
   '@type': 'BlogPosting',
+  '@id': `${siteOrigin}${path}#article`,
   headline: foodGuide.title,
   description: foodGuide.description,
   inLanguage: 'ru-RU',
@@ -25,6 +28,7 @@ const schema:Record<string,unknown>[] = [{
   dateModified: foodGuide.updatedAt,
   image: `${siteOrigin}/seo/blog/gde-poest-v-zelenogradske.jpg`,
   mainEntityOfPage: `${siteOrigin}${path}`,
+  isPartOf: { '@id': `${siteOrigin}/blog/#blog` },
   author: { '@id': `${siteOrigin}/#organization` },
   publisher: { '@id': `${siteOrigin}/#organization` },
   citation: [...menuVenues.map(venue => venue.menuUrl), localPieCafe.sourceUrl],
@@ -39,6 +43,8 @@ schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
     <nav class="guide-jumps" aria-label="Кафе в гиде">{[...menuVenues, localPieCafe].map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav></div>
     <figure><Picture src={foodGuideImage} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*foodGuideImage.height/foodGuideImage.width)} quality={58} alt={foodGuideImageAlt} loading="lazy" decoding="async" /><figcaption>Иллюстрация создана с помощью ИИ. Это вымышленное кафе, а не интерьер одного из мест в гиде.</figcaption></figure>
   </section>
+
+  <EditorialNextStep path={path} />
 
   <section class="guide-choices" aria-labelledby="choice-title">
     <h2 id="choice-title">Сначала выберите, куда идёте</h2>
@@ -88,12 +94,7 @@ schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
   <PartyCalculator city="zelenogradsk"/>
   <GuideFaq faq={guideFaq}/>
   <EditorialLinks title="Собрать стол в Зеленоградске" links={contextualLinks('zelenogradsk')}/>
-  <EditorialLinks title="Перед ужином" links={[
-    { href: '/journal/dostavka-edy-v-zelenogradske/', title: 'Еда в апартаменты', text: 'Два меню доставки, проверка адреса и полной суммы.', label: 'Доставка' },
-    { href: '/journal/uzhin-v-semnyh-apartamentah/', title: 'Ужин в апартаментах', text: 'Что уточнить про технику и посуду до заселения.', label: 'Чек-лист' },
-    { href: '/povody/', title: 'Стол к случаю', text: 'Сценарии для компании: от офиса до семейной встречи.', label: 'Идеи' },
-    { href: '/menu/', title: 'Будущее меню', text: 'Сытные и сладкие начинки, интерес к которым мы проверяем.', label: 'Пирогорск' },
-  ]} />
+  <EditorialLinks id="related-reading" title="Продолжить по теме" links={articleRecommendations(path)} />
 </ContentLayout>
 
 <style>
