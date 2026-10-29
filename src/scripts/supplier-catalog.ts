@@ -21,7 +21,7 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
     root!.querySelector('[data-supplier-count]')!.textContent = `Найдено: ${matches.length} · показано: ${Math.min(limit, matches.length)}`;
     root!.querySelector<HTMLElement>('[data-supplier-empty]')!.hidden = matches.length > 0;
     more.hidden = matches.length <= limit;
-    more.textContent = `Показать ещё ${Math.min(24, matches.length - limit)}`;
+    more.textContent = `Показать ещё ${Math.max(0, Math.min(24, matches.length - limit))}`;
   }
   function reveal(id: string | null) {
     const index = cards.findIndex(card => card.dataset.supplierId === id);

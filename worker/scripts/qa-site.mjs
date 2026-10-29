@@ -134,6 +134,8 @@ try {
     assert.equal(await page.$eval('#holland [data-supplier-filter=mini-pies]', button => button.getAttribute('aria-pressed')), 'true');
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.every(card => card.dataset.supplierGroup === 'mini-pies')), true);
     assert.ok(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length > 0));
+    assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'mini-pies do not show an exhausted pagination control');
+    assert.equal(await page.$eval('#holland [data-supplier-more]', button => button.textContent), 'Показать ещё 0');
 
     // All producer catalogue controls remain available on the full menu page.
     assert.equal(await page.$$eval('#holland [data-supplier-id]', cards => cards.length), 78);
@@ -145,15 +147,18 @@ try {
     await page.$eval('#holland [data-supplier-search]', input => { input.value = ''; input.dispatchEvent(new Event('input', { bubbles: true })); });
     await page.click('#holland [data-supplier-filter=dough]');
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 6);
+    assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'short categories hide pagination through CSS');
     await page.click('#holland [data-supplier-filter=all]');
     for (const count of [48, 72, 78]) {
       await page.click('#holland [data-supplier-more]');
       assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), count);
     }
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => button.hidden), true);
+    assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'the last catalogue page hides pagination through CSS');
     await page.goto(`${origin}/menu/?group=dough#holland`, { waitUntil: 'networkidle0' });
     assert.equal(await page.$eval('#holland [data-supplier-filter=dough]', button => button.getAttribute('aria-pressed')), 'true');
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 6);
+    assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'short categories hide pagination through CSS');
     await page.goto(`${origin}/menu/?group=invalid#holland`, { waitUntil: 'networkidle0' });
     assert.equal(await page.$eval('#holland [data-supplier-filter=all]', button => button.getAttribute('aria-pressed')), 'true');
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 24);
