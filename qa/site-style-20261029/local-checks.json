@@ -1,0 +1,86 @@
+{
+  "check": [
+    "",
+    "Result (162 files): ",
+    "- 0 errors",
+    "- 0 warnings",
+    "- 14 hints",
+    ""
+  ],
+  "tests": [
+    "ℹ pass 36",
+    "ℹ fail 0",
+    "ℹ cancelled 0",
+    "ℹ skipped 0",
+    "ℹ todo 0",
+    "ℹ duration_ms 346.601709"
+  ],
+  "worker": [
+    "> pirogorsk@0.1.0 test:worker",
+    "> node worker/scripts/verify.mjs",
+    "",
+    "Worker typecheck: PASS",
+    "Browser script typecheck: PASS",
+    "API and SQL integration tests: PASS"
+  ],
+  "browser": [
+    "> pirogorsk@0.1.0 test:browser",
+    "> node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs",
+    "",
+    "/Volumes/DevSim/Projects/PIROGORSK/worker/dist/worker.js",
+    "PASS: actual form + deployed bundle, 320px layout, validation/focus, double submit, lost acknowledgement, idempotent retry, one goal/event, empty endpoint, QA/local analytics suppression.",
+    "PASS: built Astro calculator, home → menu group → supplier product → home selection, mixed selection and fresh 2kg pie → Worker/SQLite; 139 producer cards, menu-scoped filters and selected variant transfer at 320/390/1280px; no production requests."
+  ],
+  "seo": [
+    "SEO verification passed: 214 HTML pages, 8 product concepts, 212 sitemap URLs, 13536 local references. Scope: all."
+  ],
+  "expansion": [
+    "Expansion PASS: 36 targets (28 new), 36 sourced locations, 16 scenarios, all indexable pages within 2 clicks."
+  ],
+  "seo-map": [
+    "SEO map PASS: 212 owners, 23 curated article routes, maximum depth 2."
+  ],
+  "cities": [
+    "City pages PASS: three existing canonical URLs, nine catalog cards, matching ItemLists, nine occasion links and delivery once."
+  ],
+  "article-artwork": [
+    "Artwork PASS: 23 unique source scenes, covers, cards and 1200×630 social previews."
+  ],
+  "products": [
+    "Product pages verified: 153 routes, 145 SEO owners, 139 imagegen originals and 1112 responsive assets."
+  ],
+  "compatibility": [
+    "Release compatibility PASS (check)"
+  ],
+  "registry": {
+    "checkedAt": "2026-10-29T21:31:04.950225Z",
+    "stats": {
+      "projects": 223,
+      "projectsWithSkills": 39,
+      "projectsWithHarnesses": 66,
+      "skills": 239,
+      "validSkills": 213,
+      "harnesses": 558,
+      "harnessPackages": 464,
+      "harnessEntrypoints": 94,
+      "issues": 294,
+      "errors": 0,
+      "warnings": 99,
+      "info": 195
+    },
+    "drift": {
+      "skills": {
+        "added": [],
+        "removed": [],
+        "changed": []
+      },
+      "harnesses": {
+        "added": [],
+        "removed": [],
+        "changed": []
+      },
+      "hasDrift": false
+    },
+    "passed": true
+  }
+}

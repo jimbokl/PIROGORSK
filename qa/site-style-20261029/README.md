@@ -24,4 +24,20 @@
 
 ## Публикация
 
-Ожидаются CI, независимое чтение production, мобильная проверка и публичный PSI. Результаты будут дописаны после публикации.
+Опубликован runtime **`e3980e222ca054e619b14974a44eac62d7c73b6b`**. [CI40958534448 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40958534448): сборка, все обязательные проверки, браузерные сценарии, deploy и проверка опубликованного Worker прошли.
+
+- Независимое чтение production: все 229 ресурсов, включая 214 HTML и 153 товара, HTTP200 и побайтово совпадают с локальной сборкой. `publication.json`.
+- Production UI: главная, меню, доставка, блог и статья на 320/390/1280px — 15 проверок, без горизонтального скролла и сломанных загруженных изображений. Основные кнопки от48px; длинная кнопка доставки на320px переносится и сохраняет удобную высоту. `production-ui.json`, снимки `production-*`.
+- Меню на390px: поиск «палтус» оставляет одну позицию, сброс возвращает153. Дополнительная проверка страницы осетинского пирога на390px без overflow и сломанных изображений. В production формы не отправлялись.
+- Дополнительно локально на768px проверены главная, меню, доставка и статья (`tablet-ui.json`); блог также просмотрен визуально. Registry strict: PASS, errors0, drift=false (`local-checks.json`). Published Pages/Worker compatibility: PASS.
+
+## Публичный PageSpeed
+
+29.10.2026, 23:39–23:40 GMT+2; Lighthouse13.6, Chromium153. По одному лабораторному отчёту на URL, каждый с двумя режимами; CrUX отсутствует. Это замеры лаборатории, не данные реальных посетителей. A/BP/SEO100 во всех четырёх режимах. Метрики и ссылки — `public-psi.json`, снимки `psi-*`.
+
+| Страница | Mobile: баллы / LCP | Desktop: баллы / LCP | CLS mobile / desktop |
+|---|---|---|---|
+| [Главная](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/j70skoajiw?form_factor=mobile) | 100 /1651мс | [100 /401мс](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/j70skoajiw?form_factor=desktop) | 0.007 /0.001 |
+| [Статья](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-skolko-piroga-na-cheloveka/wnrypetcqg?form_factor=mobile) | 100 /1501мс | [100 /361мс](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-skolko-piroga-na-cheloveka/wnrypetcqg?form_factor=desktop) | 0 /0 |
+
+Поручение завершено: стили опубликованы, телефон проверен, ассортимент из PDF сохранён отдельно.

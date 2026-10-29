@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-29T21:42:48.282Z",
+  "runtime": "e3980e222ca054e619b14974a44eac62d7c73b6b",
+  "method": "Public PageSpeed UI; one laboratory report per URL, both form factors. Exact FCP/LCP read from visible report calculator; displayed CLS/TBT also recorded because calculator rounds them. Lighthouse 13.6.0 / HeadlessChromium 153.0.8010.36. No CrUX data.",
+  "reports": [
+    {
+      "page": "home",
+      "device": "mobile",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/j70skoajiw?form_factor=mobile",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 1651,
+      "fcpMs": 945,
+      "tbtCalculatorMs": 5,
+      "clsCalculator": 0.01,
+      "calculator": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=945&LCP=1651&TBT=5&CLS=0.01&SI=945&TTI=2877&device=mobile&version=13.6.0",
+      "clsDisplayed": 0.007,
+      "tbtDisplayedMs": 10
+    },
+    {
+      "page": "home",
+      "device": "desktop",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/j70skoajiw?form_factor=desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 401,
+      "fcpMs": 266,
+      "tbtCalculatorMs": 0,
+      "clsCalculator": 0,
+      "calculator": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=266&LCP=401&TBT=0&CLS=0&SI=346&TTI=401&device=desktop&version=13.6.0",
+      "clsDisplayed": 0.001,
+      "tbtDisplayedMs": 0
+    },
+    {
+      "page": "article",
+      "device": "mobile",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-skolko-piroga-na-cheloveka/wnrypetcqg?form_factor=mobile",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 1501,
+      "fcpMs": 950,
+      "tbtCalculatorMs": 5,
+      "clsCalculator": 0,
+      "calculator": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=950&LCP=1501&TBT=5&CLS=0&SI=950&TTI=2645&device=mobile&version=13.6.0",
+      "clsDisplayed": 0,
+      "tbtDisplayedMs": 10
+    },
+    {
+      "page": "article",
+      "device": "desktop",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-journal-skolko-piroga-na-cheloveka/wnrypetcqg?form_factor=desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 361,
+      "fcpMs": 283,
+      "tbtCalculatorMs": 14,
+      "clsCalculator": 0,
+      "calculator": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=283&LCP=361&TBT=14&CLS=0&SI=367&TTI=749&device=desktop&version=13.6.0",
+      "clsDisplayed": 0,
+      "tbtDisplayedMs": 10
+    }
+  ]
+}
