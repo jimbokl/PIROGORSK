@@ -108,11 +108,14 @@
 .extras-section .catalog-card--drink .product-price { font-size: 21px; }
 .extras-section .catalog-card--drink .button-small { padding-inline: 13px; }
 .extras-section .extras-accessories { margin-top: 28px; border-block: 1px solid var(--line); }
-.extras-section .catalog-card--accessory { display: grid; grid-template-columns: minmax(0, 1fr) 100px minmax(220px, auto); align-items: center; gap: 24px; padding-block: 18px; }
-.extras-section .catalog-card--accessory .product-copy { padding: 0; }
+.extras-section .catalog-card--accessory { display: grid; grid-template-columns: 112px minmax(0, 1fr) 100px minmax(220px, auto); grid-template-areas: "visual copy variant actions"; align-items: center; gap: 24px; padding-block: 18px; }
+.extras-section .catalog-card--accessory .product-visual-link { grid-area: visual; width: 100%; min-width: 0; }
+.extras-section .catalog-card--accessory .product-copy { grid-area: copy; padding: 0; }
 .extras-section .catalog-card--accessory h3 { font-size: 23px; min-height: 0; text-wrap: initial; }
 .extras-section .catalog-card--accessory .product-description { min-height: 0; margin: 5px 0 0; }
-.extras-section .catalog-card--accessory .variant-switch { margin: 0; }
+.extras-section .catalog-card--accessory .variant-switch { grid-area: variant; margin: 0; }
+.extras-section .catalog-card--accessory .product-bottom { grid-area: actions; }
+.extras-section .catalog-card--accessory .button-small { width: auto; }
 .extras-section .extras-draft-note { color: var(--muted); font-size: 12px; line-height: 1.6; margin-top: 18px; max-width: 630px; }
 
 @media (max-width: 1200px) {
@@ -128,8 +131,9 @@
   .extras-section .extras-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
   .extras-section .extras-heading { align-items: start; flex-direction: column; gap: 12px; }
   .extras-section .extras-intro br { display: none; }
-  .extras-section .catalog-card--accessory { grid-template-columns: minmax(0, 1fr) 100px; gap: 12px 22px; }
-  .extras-section .catalog-card--accessory .product-bottom { grid-column: 1 / -1; justify-content: start; gap: 22px; }
+  .extras-section .catalog-card--accessory { grid-template-columns: 96px minmax(0, 1fr) 100px; grid-template-areas: "visual copy variant" "visual actions actions"; gap: 12px 22px; }
+  .extras-section .catalog-card--accessory .product-visual-link { align-self: start; }
+  .extras-section .catalog-card--accessory .product-bottom { justify-content: start; gap: 22px; }
 }
 @media (max-width: 600px) {
   .catalog .catalog-top { gap: 15px; }
@@ -156,7 +160,7 @@
   .extras-section .extras-eyebrow { font-size: 10px; }
   .extras-section .extras-heading { margin-bottom: 18px; }
   .extras-section .catalog-card--drink h3 { font-size: 21px; }
-  .extras-section .catalog-card--accessory { grid-template-columns: minmax(0, 1fr) 80px; gap: 12px; }
+  .extras-section .catalog-card--accessory { grid-template-columns: 80px minmax(0, 1fr); grid-template-areas: "visual copy" "visual variant" "actions actions"; gap: 12px; }
   .extras-section .catalog-card--accessory h3 { font-size: 22px; }
 }
 @media (max-width: 380px) {

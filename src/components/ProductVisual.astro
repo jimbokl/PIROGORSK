@@ -56,8 +56,10 @@ const slotSizes = (scale = 1) => slots.map(([breakpoint, vw, pixels]) => {
   const boundedLength = layout === 'hero' ? `min(${length}, ${+(520 * scale).toFixed(3)}px)` : length;
   return `${Number.isFinite(breakpoint) ? `(max-width: ${breakpoint}px) ` : ''}${boundedLength}`;
 }).join(', ');
-const sizes = slotSizes();
-const subjectSizes = slotSizes(subjectWidth / 100);
+const accessoryThumbnail = product.kind === 'accessory' && layout === 'catalog';
+const accessorySizes = (scale = 1) => `(max-width: 600px) ${80 * scale}px, (max-width: 850px) ${96 * scale}px, ${112 * scale}px`;
+const sizes = accessoryThumbnail ? accessorySizes() : slotSizes();
+const subjectSizes = accessoryThumbnail ? accessorySizes(subjectWidth / 100) : slotSizes(subjectWidth / 100);
 const loading = layout === 'hero' ? 'eager' : 'lazy';
 const fetchpriority = layout === 'hero' ? 'high' : 'auto';
 ---
