@@ -1,0 +1,105 @@
+{
+  "runtimeCommit": "fbc7637e70ca877226b5d7dd7e08c894d1781590",
+  "ci": {
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/40905233965",
+    "conclusion": "success",
+    "completedAt": "2026-10-29T15:56:22Z"
+  },
+  "products": 153,
+  "retainedProducts": 92,
+  "addedProducts": 61,
+  "addedFormats": 63,
+  "routesAndOriginalArt": {
+    "pages": 61,
+    "artworks": 61,
+    "matchingPublishedSha256": true
+  },
+  "browser": {
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "productSamples": 24,
+    "decodedSupplierImages": 139,
+    "mixedSelectionSamples": 3,
+    "errors": 0,
+    "productionSubmissions": 0
+  },
+  "indexNow": {
+    "submittedUrls": 212,
+    "receivers": [
+      {
+        "endpoint": "https://api.indexnow.org/indexnow",
+        "httpStatus": 200
+      },
+      {
+        "endpoint": "https://yandex.com/indexnow",
+        "httpStatus": 200
+      }
+    ],
+    "means": "Notification received; indexing is not confirmed."
+  },
+  "evidence": [
+    "published-readback.json",
+    "prod-readback.json",
+    "prod-selection-readback.json",
+    "worker-readback.json",
+    "indexnow-report.json",
+    "performance-summary.json",
+    "performance-ranges.json"
+  ],
+  "performance": {
+    "kind": "Local Lighthouse CLI against production; not public PageSpeed/CrUX",
+    "samples": [
+      {
+        "mode": "mobile",
+        "run": 1,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 77,
+          "seo": 100
+        },
+        "lcpMs": 1765.575,
+        "cls": 0.0033707829773746557
+      },
+      {
+        "mode": "mobile",
+        "run": 2,
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 77,
+          "seo": 100
+        },
+        "lcpMs": 1486.65,
+        "cls": 0.00229840902764954
+      },
+      {
+        "mode": "mobile",
+        "run": 3,
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 77,
+          "seo": 100
+        },
+        "lcpMs": 1671.655,
+        "cls": 0.0060045734468184295
+      },
+      {
+        "mode": "desktop",
+        "run": 1,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 77,
+          "seo": 100
+        },
+        "lcpMs": 608.7790000000005,
+        "cls": 0.007216894125952194
+      }
+    ]
+  }
+}
