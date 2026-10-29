@@ -1,0 +1,38 @@
+{
+  "runtime": "e91107cbfa52e45c370ff70d0ae3601a783a8fd4",
+  "ciRun": 40917126495,
+  "checks": [
+    {
+      "path": "index.html",
+      "url": "https://pirogorsk.ru/",
+      "bytes": 224021,
+      "artifactSha256": "53eddcaa4ec281340047db8a6180ddffa9fd997cf9ea1b636fa0e152e149b114",
+      "productionSha256": "53eddcaa4ec281340047db8a6180ddffa9fd997cf9ea1b636fa0e152e149b114",
+      "equal": true
+    },
+    {
+      "path": "menu/index.html",
+      "url": "https://pirogorsk.ru/menu/",
+      "bytes": 654463,
+      "artifactSha256": "2e646d449bc6dddc9b9d26eda389ad3977e4f020855e8a19c799da7b8967686c",
+      "productionSha256": "2e646d449bc6dddc9b9d26eda389ad3977e4f020855e8a19c799da7b8967686c",
+      "equal": true
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://pirogorsk.ru/sitemap.xml",
+      "bytes": 17712,
+      "artifactSha256": "48d15507a95beb6b4e52fb0e1bd75f989fdb7c6fd119abf6bd4a99681ad40619",
+      "productionSha256": "48d15507a95beb6b4e52fb0e1bd75f989fdb7c6fd119abf6bd4a99681ad40619",
+      "equal": true
+    },
+    {
+      "path": "catalog/nabor-posudy/index.html",
+      "url": "https://pirogorsk.ru/catalog/nabor-posudy/",
+      "bytes": 54182,
+      "artifactSha256": "ba3f6d1eb532c01eb32b184d1062caa9a841c31cb5dd5df8071ae3cb12227926",
+      "productionSha256": "ba3f6d1eb532c01eb32b184d1062caa9a841c31cb5dd5df8071ae3cb12227926",
+      "equal": true
+    }
+  ]
+}

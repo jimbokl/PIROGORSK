@@ -1,0 +1,60 @@
+{
+  "runtime": "461c8d8c935ebd6f1cd2f575b314cc3b0c3cbb23",
+  "ciRun": 40919117701,
+  "homepageUnchangedSincePublicPsi": true,
+  "checks": [
+    {
+      "path": "index.html",
+      "url": "https://pirogorsk.ru/",
+      "bytes": 224021,
+      "buildSha256": "53eddcaa4ec281340047db8a6180ddffa9fd997cf9ea1b636fa0e152e149b114",
+      "productionSha256": "53eddcaa4ec281340047db8a6180ddffa9fd997cf9ea1b636fa0e152e149b114",
+      "equal": true
+    },
+    {
+      "path": "menu/index.html",
+      "url": "https://pirogorsk.ru/menu/",
+      "bytes": 654485,
+      "buildSha256": "6c2d650d6c29e0c7dad5cd7517c2ed96a469d55a320430532089136164133e01",
+      "productionSha256": "6c2d650d6c29e0c7dad5cd7517c2ed96a469d55a320430532089136164133e01",
+      "equal": true
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://pirogorsk.ru/sitemap.xml",
+      "bytes": 17712,
+      "buildSha256": "48d15507a95beb6b4e52fb0e1bd75f989fdb7c6fd119abf6bd4a99681ad40619",
+      "productionSha256": "48d15507a95beb6b4e52fb0e1bd75f989fdb7c6fd119abf6bd4a99681ad40619",
+      "equal": true
+    },
+    {
+      "path": "catalog/nabor-posudy/index.html",
+      "url": "https://pirogorsk.ru/catalog/nabor-posudy/",
+      "bytes": 54182,
+      "buildSha256": "ba3f6d1eb532c01eb32b184d1062caa9a841c31cb5dd5df8071ae3cb12227926",
+      "productionSha256": "ba3f6d1eb532c01eb32b184d1062caa9a841c31cb5dd5df8071ae3cb12227926",
+      "equal": true
+    },
+    {
+      "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.FEA5GxCh.js",
+      "bytes": 32,
+      "buildSha256": "f7877caaff5d3e87d0526739dbb56e65397aff5b6162254d6b553cfc927531d5",
+      "productionSha256": "f7877caaff5d3e87d0526739dbb56e65397aff5b6162254d6b553cfc927531d5",
+      "equal": true
+    },
+    {
+      "path": "/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+      "bytes": 38,
+      "buildSha256": "a1245db7bbe51c23ded02852651413cd1b463891c75f03c974983f3abf8b0a80",
+      "productionSha256": "a1245db7bbe51c23ded02852651413cd1b463891c75f03c974983f3abf8b0a80",
+      "equal": true
+    },
+    {
+      "path": "/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+      "bytes": 38,
+      "buildSha256": "a1245db7bbe51c23ded02852651413cd1b463891c75f03c974983f3abf8b0a80",
+      "productionSha256": "a1245db7bbe51c23ded02852651413cd1b463891c75f03c974983f3abf8b0a80",
+      "equal": true
+    }
+  ]
+}

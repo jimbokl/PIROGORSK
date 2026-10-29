@@ -1,0 +1,33 @@
+{
+  "runtime": "e91107cbfa52e45c370ff70d0ae3601a783a8fd4",
+  "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/715ai8al1a",
+  "capturedAt": "2026-10-29T19:08:00+02:00",
+  "source": "public PageSpeed Insights UI",
+  "lighthouse": "13.5.0",
+  "chromium": "153.0.8010.36",
+  "crux": null,
+  "mobile": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 947,
+    "lcpMs": 1576,
+    "tbtMs": 4,
+    "cls": 0.003,
+    "speedIndexMs": 947
+  },
+  "desktop": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 309,
+    "lcpMs": 401,
+    "tbtMs": 3,
+    "cls": 0.001,
+    "speedIndexMs": 402
+  },
+  "homepageSha256": "53eddcaa4ec281340047db8a6180ddffa9fd997cf9ea1b636fa0e152e149b114",
+  "scope": "Fresh public report after e91107c publication; 461c8d8 only fixes menu pagination and produces identical homepage HTML."
+}

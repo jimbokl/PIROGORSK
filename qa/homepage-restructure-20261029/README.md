@@ -22,4 +22,13 @@
 
 ## Публикация
 
-Ожидается CI и независимая проверка production. Итоговые SHA, CI URL, скриншоты и публичный PSI будут добавлены после readback.
+Первый runtime **e91107cbfa52e45c370ff70d0ae3601a783a8fd4**, [CI40917126495 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40917126495), опубликован. Независимо скачан github-pages artifact: главная, меню, sitemap и страница посуды HTTP200 и побайтово совпали с ним. Published Pages/Worker compatibility PASS; catalog SHA и Worker не менялись. В production вручную подтверждены один H1, четыре карточки, семь категорий, два набора, переключение слайдов и переход в фильтр мини-пирогов. Production-заявки не отправлялись, существующая подборка пользователя сохранена.
+
+Свежий публичный [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/715ai8al1a?form_factor=mobile), **29.10.2026 19:08 GMT+2**, Lighthouse13.5.0 / Chromium153: **mobile100 / LCP1576мс / FCP947мс / TBT4мс / CLS0,003; desktop100 / LCP401мс / FCP309мс / TBT3мс / CLS0,001**. A/BP/SEO100 на обоих устройствах. Это лабораторный замер, CrUX данных пока нет. Точные метрики и ссылки — psi-production.json, скриншоты — psi-mobile-production.jpg / psi-desktop-production.jpg.
+
+Production QA обнаружил прежний CSS-дефект меню: скрытая через hidden кнопка «Показать ещё» оставалась видимой и показывала отрицательное число в короткой категории. Исправлено приоритетное скрытие кнопки/пустого состояния и ограничен нижний предел счётчика. Browser fixture теперь проверяет реальный computed display для мини-пирогов, теста и последней страницы, а не только атрибут hidden. Повторные check/build/browser320/390/1280 PASS. Исправление **461c8d8c935ebd6f1cd2f575b314cc3b0c3cbb23** опубликовано, [CI40919117701 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40919117701). HTML главной после этого исправления побайтово идентичен проверенному публичным PSI (SHA256 53eddcaa4ec281340047db8a6180ddffa9fd997cf9ea1b636fa0e152e149b114).
+
+
+Финальная независимая проверка: главная, меню, sitemap, страница посуды и три подключённых скрипта HTTP200 с точным SHA локальной сборки; Pages/Worker compatibility PASS. На production390px группа мини-пирогов показывает14/14, пагинация hidden=true / display:none / height0; отрицательного счётчика нет. Главная320/390/1280: один H1, три слайда, четыре товара, все разделы, без overflow. Существующая подборка не изменялась. Доказательства: production-readback-final.json, menu-pagination-production.json, home-production.json, ci-final.json. Скриншоты: home-desktop-production.jpg, sections-desktop-production.jpg, home-mobile-production.jpg, offers-mobile-production.jpg.
+
+Переработка, публикация и проверка завершены. Оценка влияния на органический трафик и заявки требует будущих реальных данных; этим релизом рост не заявляется.
