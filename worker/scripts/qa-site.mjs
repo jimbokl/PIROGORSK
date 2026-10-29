@@ -7,6 +7,7 @@ import { launch } from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
 import { analyticsConfig } from '../../src/config/analytics.ts';
 import { catalog } from '../../src/data/catalog.ts';
+import { cityMenu } from '../../src/data/city-menu.ts';
 import { releaseManifest } from '../../scripts/verify-release.mjs';
 import worker from '../dist/worker.js';
 
@@ -61,6 +62,29 @@ try {
     });
     const goals = () => page.evaluate(() => (window.ym?.a || []).filter(args => args[1] === 'reachGoal').map(args => ({ goal: args[2], params: args[3] })));
     const selection = () => page.evaluate(() => JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]'));
+    // City landing pages share the real catalog, keep delivery once, and route
+    // into the existing city intent without adding products to the selection.
+    for (const slug of ['kaliningrad', 'zelenogradsk', 'svetlogorsk']) {
+      const menu = cityMenu(slug);
+      await page.goto(`${origin}/dostavka/${slug}/`, { waitUntil: 'networkidle0' });
+      assert.equal(await page.$$eval('[data-city-product]', cards => cards.length), 3);
+      assert.equal(await page.$eval('[data-city-total]', el => Number(el.dataset.cityTotal)), menu.total);
+      assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true, `city ${slug} overflow at ${width}`);
+      assert.equal(await page.$$eval('.city-budget dd', cells => cells.every(cell => cell.getBoundingClientRect().right <= innerWidth)), true, `city ${slug} total clipped at ${width}`);
+      for (const entry of menu.entries) {
+        const href = await page.$eval(`[data-city-product="${entry.product.id}"] a`, a => a.getAttribute('href'));
+        assert.equal(href, entry.href);
+      }
+      await page.click('.city-sections a[href="#city-budget"]');
+      assert.equal(new URL(page.url()).hash, '#city-budget');
+      await page.$eval('#city-menu', section => section.scrollIntoView());
+      await page.screenshot({ path: new URL(`../dist/qa-city-${slug}-${width}.png`, import.meta.url).pathname });
+      await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('.ed-interest .ed-button')]);
+      assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
+      assert.equal(await page.$$eval('[data-city]', elements => elements.every(el => el.textContent === document.querySelector('[data-city]').textContent)), true);
+      assert.equal(await page.$eval('[data-city]', el => el.textContent), menu.city);
+      assert.deepEqual(await selection(), [], 'city intent preserves the empty selection');
+    }
     await page.goto(`${origin}/journal/skolko-piroga-na-cheloveka/`, { waitUntil: 'networkidle0' });
     await page.waitForSelector('[data-party-apply]');
     await page.$eval('[data-party-form] input[name=guests]', input => { input.value = '7'; input.dispatchEvent(new Event('input', { bubbles: true })); });

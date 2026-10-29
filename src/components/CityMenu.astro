@@ -1,0 +1,44 @@
+---
+import ProductVisual from './ProductVisual.astro';
+import SupplierArtwork from './SupplierArtwork.astro';
+import { cityMenu, type CityMenuSlug } from '../data/city-menu';
+interface Props { slug: CityMenuSlug }
+const menu = cityMenu(Astro.props.slug);
+const rub = (value: number) => `${new Intl.NumberFormat('ru-RU').format(value)} ₽`;
+---
+<section class="city-menu" id="city-menu" aria-labelledby="city-menu-title">
+  <div class="city-menu-heading">
+    <div><p class="ed-eyebrow">Будущее меню · {menu.city}</p><h2 id="city-menu-title">{menu.heading}</h2></div>
+    <p>{menu.intro}</p>
+  </div>
+  <div class="city-menu-grid">
+    {menu.entries.map(({ product, variant, href }) => <article data-city-product={product.id}>
+      <a href={href} data-guide-catalog>
+        {product.supplier ? <SupplierArtwork id={product.id} decorative /> : <ProductVisual {product} layout="menu" decorative />}
+        <div class="city-menu-copy">
+          <p class="ed-eyebrow">{product.supplier ? product.supplier.name : 'Начинки Пирогорска'}</p>
+          <h3>{product.name}</h3>
+          <p class="city-menu-price">{variant.label}<span>{rub(variant.price)}</span></p>
+          <span class="city-menu-more">Состав и варианты <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+    </article>)}
+  </div>
+  <p class="city-menu-note">Цены предварительные. Наличие, окончательный состав и условия продажи ещё не подтверждены. <a href="/menu/" data-guide-catalog>Посмотреть всё меню</a>, включая <a href="/menu/#holland" data-guide-catalog>Holland Bakery</a> и <a href="/menu/#pirogi39" data-guide-catalog>Пироги39</a>.</p>
+</section>
+<section class="city-budget" id="city-budget" aria-labelledby="city-budget-title" data-city-total={menu.total}>
+  <div><p class="ed-eyebrow">Пример для сравнения</p><h2 id="city-budget-title">Два пирога и доставка</h2><p>Так видна полная сумма для города. Это ориентир для выбора, а не оформленный заказ.</p></div>
+  <div>
+    <dl>
+      {menu.example.map(({ product, variant, href }) => <div><dt><a href={href} data-guide-catalog>{product.name}</a><small>{variant.label} · 1 шт.</small></dt><dd>{rub(variant.price)}</dd></div>)}
+      <div><dt>Доставка, ориентир<small>Один раз за всю подборку</small></dt><dd>{rub(menu.delivery)}</dd></div>
+      <div class="city-budget-total"><dt>Итого, предварительно</dt><dd>{rub(menu.total)}</dd></div>
+    </dl>
+    <p>Тариф курьера ещё не согласован. <a href="/delivery/" data-guide-catalog>Как считаем доставку</a></p>
+  </div>
+</section>
+<style>
+  .city-menu{margin-block:48px 56px;scroll-margin-top:24px}.city-menu-heading{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:28px}.city-menu h2,.city-budget h2{font-size:clamp(29px,3vw,39px);line-height:1.15;margin-top:10px}.city-menu-heading>p,.city-menu-note,.city-budget p{font-size:13px;line-height:1.8;color:var(--ed-muted)}.city-menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.city-menu-grid article{min-width:0}.city-menu-grid article>a{display:block;text-decoration:none}.city-menu-grid :global(.product-visual),.city-menu-grid :global(.supplier-artwork){aspect-ratio:1;border-radius:18px;overflow:hidden}.city-menu-copy{padding:19px 2px 0}.city-menu h3{font-size:clamp(24px,2.5vw,29px);line-height:1.2;margin-top:9px;min-height:2.4em}.city-menu-price{display:flex;gap:12px;justify-content:space-between;margin-top:14px;font-size:14px}.city-menu-price span{font-weight:600}.city-menu-more{display:flex;justify-content:space-between;align-items:center;min-height:44px;font-size:12px;color:var(--ed-amber);text-decoration:underline;text-underline-offset:4px}.city-menu-note{margin-top:24px;max-width:88ch}.city-menu-note a,.city-budget a{text-underline-offset:3px}.city-budget{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding:32px;background:var(--ed-sea);border-radius:18px;scroll-margin-top:24px}.city-budget>div>p{margin-top:18px}.city-budget dl{margin:0}.city-budget dl>div{display:flex;justify-content:space-between;gap:20px;padding-block:15px;border-bottom:1px solid var(--ed-line);font-size:14px;line-height:1.6}.city-budget dt{min-width:0}.city-budget small{display:block;font-size:11px;color:var(--ed-muted);margin-top:4px}.city-budget dd{margin:0;white-space:nowrap;font-variant-numeric:tabular-nums}.city-budget .city-budget-total{font-weight:600;border-bottom:0}.city-budget-total dd{font-size:22px}.city-budget-total dt{align-self:center}
+  @media(max-width:760px){.city-menu-heading,.city-budget{grid-template-columns:1fr;gap:22px}.city-menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 18px}.city-menu-grid article:last-child{grid-column:1/-1;max-width:calc(50% - 9px)}.city-menu h3{min-height:0}.city-menu{margin-block:36px 42px}.city-budget{padding:24px}.city-budget dl>div{font-size:13px}.city-budget-total dd{font-size:21px}}
+  @media(max-width:420px){.city-menu-grid{grid-template-columns:1fr}.city-menu-grid article:last-child{grid-column:auto;max-width:none}.city-menu h3{font-size:28px}.city-budget{padding:22px 18px}.city-budget dl>div{gap:12px}}
+</style>

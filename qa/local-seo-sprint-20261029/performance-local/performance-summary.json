@@ -1,0 +1,1265 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:18723/dostavka/kaliningrad/",
+    "timestamp": "2026-10-29T17:36:24.450Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 107,
+      "lcp": 107
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 12.316,
+      "elementRenderDelay": 94.883
+    },
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1776.37625,
+        "display": "1.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 3531.4515,
+        "display": "3.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1776.37625,
+        "display": "1.8 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 20 KiB",
+        "items": [
+          {
+            "url": ".pirogorsk-brand[data-astro-cid-6bctqxxv]{color:var(--navy);flex-shrink:0;align-items:center; … } …",
+            "wastedBytes": 20247,
+            "wastedPercent": 51.69138859812607,
+            "totalBytes": 39169
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 486 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:18723/_astro/analytics.eAhNn6I9.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 153593,
+            "wastedBytes": 153593
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/pie.Bo977vUT_Z10OBjY.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 56738,
+            "wastedBytes": 56738
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/pie.d61w9KjH_1qDcLv.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 55093,
+            "wastedBytes": 55093
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 43578,
+            "wastedBytes": 43578
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 39412,
+            "wastedBytes": 39412
+          },
+          {
+            "url": "http://127.0.0.1:18723/catalog-art/p39-256-640.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 37076,
+            "wastedBytes": 37076
+          },
+          {
+            "url": "http://127.0.0.1:18723/product-backdrops/hb-osetinskiy-pirog-s-govyadinoy-640.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 30036,
+            "wastedBytes": 30036
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18865,
+            "wastedBytes": 18865
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18785,
+            "wastedBytes": 18785
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/company.CMkjcZvB_ZziKiq.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16863,
+            "wastedBytes": 16863
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16093,
+            "wastedBytes": 16093
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 9416,
+            "wastedBytes": 9416
+          },
+          {
+            "url": "http://127.0.0.1:18723/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1205,
+            "wastedBytes": 1205
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 728,
+            "wastedBytes": 728
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 229,
+            "wastedBytes": 229
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 229,
+            "wastedBytes": 229
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 223,
+            "wastedBytes": 223
+          }
+        ]
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 46 KiB",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 8 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 26 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,4,SECTION,1,DIV,2,ARTICLE,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a > div.product-visual > picture > img.product-visual-background",
+              "boundingRect": {
+                "top": 2282,
+                "bottom": 2658,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 376
+              },
+              "snippet": "<img src=\"http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif\" srcset=\"/_astro/background.dPlBJLpD_1lbYH3.webp 240w, /_astro/background.dPlBJLpD_…\" sizes=\"(max-width: 420px) calc(100vw - 36px), (max-width: 760px) calc(50vw - 33px…\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\" width=\"600\" height=\"600\" class=\"product-visual-background\">",
+              "nodeLabel": "a > div.product-visual > picture > img.product-visual-background"
+            },
+            "url": "http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif",
+            "totalBytes": 43389,
+            "wastedBytes": 14036,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (658x658). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 14036
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,4,SECTION,1,DIV,0,ARTICLE,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a > div.product-visual > picture > img.product-visual-background",
+              "boundingRect": {
+                "top": 1132,
+                "bottom": 1508,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 376
+              },
+              "snippet": "<img src=\"http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif\" srcset=\"/_astro/background.DMEurvcD_yyOqd.webp 240w, /_astro/background.DMEurvcD_G…\" sizes=\"(max-width: 420px) calc(100vw - 36px), (max-width: 760px) calc(50vw - 33px…\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\" width=\"600\" height=\"600\" class=\"product-visual-background\">",
+              "nodeLabel": "a > div.product-visual > picture > img.product-visual-background"
+            },
+            "url": "http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif",
+            "totalBytes": 39223,
+            "wastedBytes": 12688,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (658x658). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 12688
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "EAB87B024A5BFCB30BBDC659D98A16D7": {
+                  "url": "http://127.0.0.1:18723/dostavka/kaliningrad/",
+                  "navStartToEndTime": 31,
+                  "transferSize": 71064,
+                  "isLongest": true,
+                  "children": {
+                    "52014.6": {
+                      "url": "http://127.0.0.1:18723/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 94,
+                      "transferSize": 223,
+                      "isLongest": true,
+                      "children": {
+                        "52014.39": {
+                          "url": "http://127.0.0.1:18723/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 100,
+                          "transferSize": 153593,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "52014.9": {
+                      "url": "http://127.0.0.1:18723/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 94,
+                      "transferSize": 229,
+                      "children": {
+                        "52014.38": {
+                          "url": "http://127.0.0.1:18723/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 98,
+                          "transferSize": 728,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "52014.10": {
+                      "url": "http://127.0.0.1:18723/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 94,
+                      "transferSize": 229,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 100
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "http://127.0.0.1:18723/dostavka/kaliningrad/",
+    "timestamp": "2026-10-29T17:36:30.831Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 69,
+      "lcp": 69
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1.458,
+      "elementRenderDelay": 67.334
+    },
+    "scores": {
+      "performance": 89,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1730.969875,
+        "display": "1.7 s"
+      },
+      "largest-contentful-paint": {
+        "value": 3607.16385,
+        "display": "3.6 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1730.969875,
+        "display": "1.7 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 20 KiB",
+        "items": [
+          {
+            "url": ".pirogorsk-brand[data-astro-cid-6bctqxxv]{color:var(--navy);flex-shrink:0;align-items:center; … } …",
+            "wastedBytes": 20247,
+            "wastedPercent": 51.69138859812607,
+            "totalBytes": 39169
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 486 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:18723/_astro/analytics.eAhNn6I9.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 153593,
+            "wastedBytes": 153593
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/pie.Bo977vUT_Z10OBjY.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 56738,
+            "wastedBytes": 56738
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/pie.d61w9KjH_1qDcLv.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 55093,
+            "wastedBytes": 55093
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 43578,
+            "wastedBytes": 43578
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 39412,
+            "wastedBytes": 39412
+          },
+          {
+            "url": "http://127.0.0.1:18723/catalog-art/p39-256-640.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 37076,
+            "wastedBytes": 37076
+          },
+          {
+            "url": "http://127.0.0.1:18723/product-backdrops/hb-osetinskiy-pirog-s-govyadinoy-640.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 30036,
+            "wastedBytes": 30036
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18865,
+            "wastedBytes": 18865
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18785,
+            "wastedBytes": 18785
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/company.CMkjcZvB_ZziKiq.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16863,
+            "wastedBytes": 16863
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16093,
+            "wastedBytes": 16093
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 9416,
+            "wastedBytes": 9416
+          },
+          {
+            "url": "http://127.0.0.1:18723/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1205,
+            "wastedBytes": 1205
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 728,
+            "wastedBytes": 728
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 229,
+            "wastedBytes": 229
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 229,
+            "wastedBytes": 229
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 223,
+            "wastedBytes": 223
+          }
+        ]
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 46 KiB",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 1 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 26 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,4,SECTION,1,DIV,2,ARTICLE,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a > div.product-visual > picture > img.product-visual-background",
+              "boundingRect": {
+                "top": 2282,
+                "bottom": 2658,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 376
+              },
+              "snippet": "<img src=\"http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif\" srcset=\"/_astro/background.dPlBJLpD_1lbYH3.webp 240w, /_astro/background.dPlBJLpD_…\" sizes=\"(max-width: 420px) calc(100vw - 36px), (max-width: 760px) calc(50vw - 33px…\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\" width=\"600\" height=\"600\" class=\"product-visual-background\">",
+              "nodeLabel": "a > div.product-visual > picture > img.product-visual-background"
+            },
+            "url": "http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif",
+            "totalBytes": 43389,
+            "wastedBytes": 14036,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (658x658). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 14036
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,4,SECTION,1,DIV,0,ARTICLE,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a > div.product-visual > picture > img.product-visual-background",
+              "boundingRect": {
+                "top": 1132,
+                "bottom": 1508,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 376
+              },
+              "snippet": "<img src=\"http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif\" srcset=\"/_astro/background.DMEurvcD_yyOqd.webp 240w, /_astro/background.DMEurvcD_G…\" sizes=\"(max-width: 420px) calc(100vw - 36px), (max-width: 760px) calc(50vw - 33px…\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\" width=\"600\" height=\"600\" class=\"product-visual-background\">",
+              "nodeLabel": "a > div.product-visual > picture > img.product-visual-background"
+            },
+            "url": "http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif",
+            "totalBytes": 39223,
+            "wastedBytes": 12688,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (658x658). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 12688
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "C0FCFEDFDFFD761CB74E40299CAC065D": {
+                  "url": "http://127.0.0.1:18723/dostavka/kaliningrad/",
+                  "navStartToEndTime": 7,
+                  "transferSize": 71064,
+                  "isLongest": true,
+                  "children": {
+                    "52036.9": {
+                      "url": "http://127.0.0.1:18723/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 50,
+                      "transferSize": 229,
+                      "isLongest": true,
+                      "children": {
+                        "52036.39": {
+                          "url": "http://127.0.0.1:18723/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 58,
+                          "transferSize": 728,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "52036.6": {
+                      "url": "http://127.0.0.1:18723/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 11,
+                      "transferSize": 223,
+                      "children": {
+                        "52036.28": {
+                          "url": "http://127.0.0.1:18723/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 50,
+                          "transferSize": 153593,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "52036.10": {
+                      "url": "http://127.0.0.1:18723/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 50,
+                      "transferSize": 229,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 58
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "http://127.0.0.1:18723/dostavka/kaliningrad/",
+    "timestamp": "2026-10-29T17:36:36.969Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 70,
+      "lcp": 70
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1.526,
+      "elementRenderDelay": 68.178
+    },
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1730.88275,
+        "display": "1.7 s"
+      },
+      "largest-contentful-paint": {
+        "value": 3532.0593,
+        "display": "3.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1730.88275,
+        "display": "1.7 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 20 KiB",
+        "items": [
+          {
+            "url": ".pirogorsk-brand[data-astro-cid-6bctqxxv]{color:var(--navy);flex-shrink:0;align-items:center; … } …",
+            "wastedBytes": 20247,
+            "wastedPercent": 51.69138859812607,
+            "totalBytes": 39169
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 486 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:18723/_astro/analytics.eAhNn6I9.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 153593,
+            "wastedBytes": 153593
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/pie.Bo977vUT_Z10OBjY.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 56738,
+            "wastedBytes": 56738
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/pie.d61w9KjH_1qDcLv.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 55093,
+            "wastedBytes": 55093
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 43578,
+            "wastedBytes": 43578
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 39412,
+            "wastedBytes": 39412
+          },
+          {
+            "url": "http://127.0.0.1:18723/catalog-art/p39-256-640.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 37076,
+            "wastedBytes": 37076
+          },
+          {
+            "url": "http://127.0.0.1:18723/product-backdrops/hb-osetinskiy-pirog-s-govyadinoy-640.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 30036,
+            "wastedBytes": 30036
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18865,
+            "wastedBytes": 18865
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18785,
+            "wastedBytes": 18785
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/company.CMkjcZvB_ZziKiq.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16863,
+            "wastedBytes": 16863
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16093,
+            "wastedBytes": 16093
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 9416,
+            "wastedBytes": 9416
+          },
+          {
+            "url": "http://127.0.0.1:18723/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1205,
+            "wastedBytes": 1205
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 728,
+            "wastedBytes": 728
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 229,
+            "wastedBytes": 229
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 229,
+            "wastedBytes": 229
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 223,
+            "wastedBytes": 223
+          }
+        ]
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 46 KiB",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 1 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 26 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,4,SECTION,1,DIV,2,ARTICLE,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a > div.product-visual > picture > img.product-visual-background",
+              "boundingRect": {
+                "top": 2282,
+                "bottom": 2658,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 376
+              },
+              "snippet": "<img src=\"http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif\" srcset=\"/_astro/background.dPlBJLpD_1lbYH3.webp 240w, /_astro/background.dPlBJLpD_…\" sizes=\"(max-width: 420px) calc(100vw - 36px), (max-width: 760px) calc(50vw - 33px…\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\" width=\"600\" height=\"600\" class=\"product-visual-background\">",
+              "nodeLabel": "a > div.product-visual > picture > img.product-visual-background"
+            },
+            "url": "http://127.0.0.1:18723/_astro/background.dPlBJLpD_2eOKGf.avif",
+            "totalBytes": 43389,
+            "wastedBytes": 14036,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (658x658). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 14036
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,4,SECTION,1,DIV,0,ARTICLE,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a > div.product-visual > picture > img.product-visual-background",
+              "boundingRect": {
+                "top": 1132,
+                "bottom": 1508,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 376
+              },
+              "snippet": "<img src=\"http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif\" srcset=\"/_astro/background.DMEurvcD_yyOqd.webp 240w, /_astro/background.DMEurvcD_G…\" sizes=\"(max-width: 420px) calc(100vw - 36px), (max-width: 760px) calc(50vw - 33px…\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\" width=\"600\" height=\"600\" class=\"product-visual-background\">",
+              "nodeLabel": "a > div.product-visual > picture > img.product-visual-background"
+            },
+            "url": "http://127.0.0.1:18723/_astro/background.DMEurvcD_1scApp.avif",
+            "totalBytes": 39223,
+            "wastedBytes": 12688,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x800) for its displayed dimensions (658x658). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 12688
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "0815C5F0BF46CAB38F84D6E632DA8B25": {
+                  "url": "http://127.0.0.1:18723/dostavka/kaliningrad/",
+                  "navStartToEndTime": 8,
+                  "transferSize": 71064,
+                  "isLongest": true,
+                  "children": {
+                    "52059.6": {
+                      "url": "http://127.0.0.1:18723/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 13,
+                      "transferSize": 223,
+                      "isLongest": true,
+                      "children": {
+                        "52059.28": {
+                          "url": "http://127.0.0.1:18723/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 51,
+                          "transferSize": 153593,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "52059.9": {
+                      "url": "http://127.0.0.1:18723/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 13,
+                      "transferSize": 229,
+                      "children": {
+                        "52059.29": {
+                          "url": "http://127.0.0.1:18723/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 51,
+                          "transferSize": 728,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "52059.10": {
+                      "url": "http://127.0.0.1:18723/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 51,
+                      "transferSize": 229,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 51
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:18723/dostavka/kaliningrad/",
+    "timestamp": "2026-10-29T17:36:43.130Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 72,
+      "lcp": 72
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1.278,
+      "resourceLoadDelay": 2.574,
+      "resourceLoadDuration": 5.375,
+      "elementRenderDelay": 63.042
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 404.50575000000003,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 705.4069,
+        "display": "0.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 404.50575000000003,
+        "display": "0.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 25 KiB",
+        "items": [
+          {
+            "url": ".pirogorsk-brand[data-astro-cid-6bctqxxv]{color:var(--navy);flex-shrink:0;align-items:center; … } …",
+            "wastedBytes": 25932,
+            "wastedPercent": 66.2054175495928,
+            "totalBytes": 39169
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 346 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:18723/_astro/analytics.eAhNn6I9.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 153593,
+            "wastedBytes": 153593
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/pie.Bo977vUT_Z1y8ort.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 28556,
+            "wastedBytes": 28556
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/pie.d61w9KjH_SkpE1.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 27930,
+            "wastedBytes": 27930
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/company.CMkjcZvB_1R0dxK.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 22356,
+            "wastedBytes": 22356
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18865,
+            "wastedBytes": 18865
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18785,
+            "wastedBytes": 18785
+          },
+          {
+            "url": "http://127.0.0.1:18723/catalog-art/p39-256-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16874,
+            "wastedBytes": 16874
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16093,
+            "wastedBytes": 16093
+          },
+          {
+            "url": "http://127.0.0.1:18723/product-backdrops/hb-osetinskiy-pirog-s-govyadinoy-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 13422,
+            "wastedBytes": 13422
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/background.dPlBJLpD_Z1OljjR.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 13244,
+            "wastedBytes": 13244
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/background.DMEurvcD_2tdEde.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 12604,
+            "wastedBytes": 12604
+          },
+          {
+            "url": "http://127.0.0.1:18723/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 9416,
+            "wastedBytes": 9416
+          },
+          {
+            "url": "http://127.0.0.1:18723/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1205,
+            "wastedBytes": 1205
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 728,
+            "wastedBytes": 728
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 229,
+            "wastedBytes": 229
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 229,
+            "wastedBytes": 229
+          },
+          {
+            "url": "http://127.0.0.1:18723/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 223,
+            "wastedBytes": 223
+          }
+        ]
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 46 KiB",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 0 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "FA06B05C27AEB5E7C54C61FE51233DA6": {
+                  "url": "http://127.0.0.1:18723/dostavka/kaliningrad/",
+                  "navStartToEndTime": 6,
+                  "transferSize": 71064,
+                  "isLongest": true,
+                  "children": {
+                    "52200.6": {
+                      "url": "http://127.0.0.1:18723/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 11,
+                      "transferSize": 223,
+                      "isLongest": true,
+                      "children": {
+                        "52200.28": {
+                          "url": "http://127.0.0.1:18723/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 49,
+                          "transferSize": 153593,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "52200.9": {
+                      "url": "http://127.0.0.1:18723/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 11,
+                      "transferSize": 229,
+                      "children": {
+                        "52200.29": {
+                          "url": "http://127.0.0.1:18723/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 48,
+                          "transferSize": 728,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "52200.10": {
+                      "url": "http://127.0.0.1:18723/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 11,
+                      "transferSize": 229,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 49
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
