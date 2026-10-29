@@ -19,7 +19,13 @@
 
 ## Публикация
 
-CI и независимая production-проверка ожидаются. После публикации будут записаны runtime SHA, результат CI, точное сравнение HTML, проверка мобильного интерфейса и публичный PSI.
+Runtime **`9ed775619c776749751743c712f1449d3789dd4f`**, [CI 40923546231 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40923546231). Восемь HTML и sitemap независимо прочитаны с production: HTTP 200 и точное совпадение SHA-256 с локальной сборкой. Pages/Worker compatibility PASS, каталог 153 позиций не изменён. Результаты — `ci.json`, `publication.json`.
+
+Production UI: Калининград 390/1280 px, Светлогорск 320 px, Зеленоградск 1280 px; по три карточки, суммы 1630/2030/1580 ₽, нет горизонтального переполнения или обрезанной итоговой суммы. Иллюстрации загрузились, ошибок JavaScript не обнаружено; сохранены `production-*.png`. Корзина пользователя и production-формы не изменялись.
+
+Публичный [PSI 29.10.2026, 19:48 GMT+2](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-dostavka-kaliningrad/7bugryw5ge?form_factor=mobile): mobile **100 / LCP 1201 мс**, desktop **100 / 361 мс**, accessibility / best practices / SEO 100, CLS 0. Один лабораторный замер, CrUX нет. Подробности и снимки — `psi-production.json`, `psi-mobile.png`, `psi-desktop.png`. Локальные результаты без сжатия выше не описывают скорость опубликованного CDN.
+
+IndexNow: 212 канонических URL приняты обоими получателями HTTP 200 (`indexnow.json`). Это приём уведомления, не доказательство индексации. Публикация и проверка завершены.
 
 ## Дальше
 

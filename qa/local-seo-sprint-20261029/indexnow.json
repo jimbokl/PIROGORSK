@@ -1,0 +1,18 @@
+{
+  "status": "received-by-all",
+  "count": 212,
+  "receivers": [
+    {
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "status": "received",
+      "httpStatus": 200,
+      "count": 212
+    },
+    {
+      "endpoint": "https://yandex.com/indexnow",
+      "status": "received",
+      "httpStatus": 200,
+      "count": 212
+    }
+  ]
+}

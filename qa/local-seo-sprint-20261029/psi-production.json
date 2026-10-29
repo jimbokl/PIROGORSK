@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-29T17:50:04.158Z",
+  "runtime": "9ed775619c776749751743c712f1449d3789dd4f",
+  "target": "https://pirogorsk.ru/dostavka/kaliningrad/",
+  "note": "One public PSI laboratory run; no CrUX data.",
+  "mobile": {
+    "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-dostavka-kaliningrad/7bugryw5ge?form_factor=mobile",
+    "calculator": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=965&LCP=1201&TBT=18&CLS=0&SI=1243&TTI=3005&device=mobile&version=13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100
+    }
+  },
+  "desktop": {
+    "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-dostavka-kaliningrad/7bugryw5ge?form_factor=desktop",
+    "calculator": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=328&LCP=361&TBT=37&CLS=0&SI=416&TTI=808&device=desktop&version=13.5.0",
+    "visibleSummary": "PageSpeed Insights\nСкопировать ссылку\nДокументация\nОтчет от 29 окт. 2026 г., 19:48:43\n\nВведите действительный URL.\n\nАнализировать\nsmartphone\nМобильные устройства\ncomputer\nКомпьютер\nОпределяйте фактическую производительность сайта\nНет данных\nВыявляйте проблемы с производительностью\n100\nПроизводительность\n100\nСпециальные возможности\n100\nРекомендации\n100\nПоисковая оптимизация\n2/2\nАгентный просмотр\n100\nFCP\n+10\nLCP\n+25\nTBT\n+30\nCLS\n+25\nSI\n+10\nПроизводительность\nЗначения приблизительные и могут изменяться. Уровень производительности рассчитывается непосредственно на основании этих показателей.Показать калькулятор\n0–49\n50–89\n90–100\nПОКАЗАТЕЛИ\nРазвернуть\nFirst Contentful Paint\n0,3 сек.\nLargest Contentful Paint\n0,4 сек.\nTotal Blocking Time\n40 мс\nCumulative Layout Shift\n0\nSpeed Index\n0,4 сек.\nCaptured at 29 окт. 2026 г., 19:48 GMT+2\nЭмуляция компьютера with Lighthouse 13.5.0\nСеанс с просмотром одной страницы\nНачальная загрузка страницы\nНастраиваемое ограничение\nUsing HeadlessChromium 153.0.8010.36 with lr\nОткрыть карту эффективности\nПоказать аудиты\nAll\nFCP\nLCP\nTBT\nCLS\nСТАТИСТИКА\nВыбирайте эффективный период хранения кеша Ожидаемая экономия – 254 КиБ\nДерево зависимостей в сети\nПричины смещения макета\nОптимизация размера DOM-дерева\nРазбивка LCP\nСторонний код\nСтатистические данные доступны на ",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100
+    }
+  }
+}

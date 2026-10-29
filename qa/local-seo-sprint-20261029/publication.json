@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-29T17:48:37.595Z",
+  "runtime": "9ed775619c776749751743c712f1449d3789dd4f",
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/40923546231",
+  "files": [
+    {
+      "path": "/",
+      "status": 200,
+      "sha256": "858309b7708d130327ccc264fe1437ee96631c85e8512af25c24da08ec666cf3",
+      "bytes": 224021,
+      "encoding": "gzip",
+      "matchesBuild": true
+    },
+    {
+      "path": "/menu/",
+      "status": 200,
+      "sha256": "0311838e634c8a4dae0b3cbf9d6c9bca23f3d16207dd46ae22331184ada0f17b",
+      "bytes": 654485,
+      "encoding": "gzip",
+      "matchesBuild": true
+    },
+    {
+      "path": "/podbor/",
+      "status": 200,
+      "sha256": "3c09e3e20add83f4d8a3475f4ea567c2d6248191ed0eb78d8330ec621c040dd9",
+      "bytes": 54523,
+      "encoding": "gzip",
+      "matchesBuild": true
+    },
+    {
+      "path": "/delivery/",
+      "status": 200,
+      "sha256": "3e7353c81878a369ad16cf0b590ea85c5a083d0ef553e75298d5dc8293ba374e",
+      "bytes": 30847,
+      "encoding": "gzip",
+      "matchesBuild": true
+    },
+    {
+      "path": "/dostavka/kaliningrad/",
+      "status": 200,
+      "sha256": "c0842e6ee6b2d7c0920695441ccee4e5412ed3ebb252f6983150eee585410a26",
+      "bytes": 70877,
+      "encoding": "gzip",
+      "matchesBuild": true
+    },
+    {
+      "path": "/dostavka/zelenogradsk/",
+      "status": 200,
+      "sha256": "088c4f09af7df459a599a5eaec8c368b5a5722035cae6e21b28f043bbcfdfb98",
+      "bytes": 70897,
+      "encoding": "gzip",
+      "matchesBuild": true
+    },
+    {
+      "path": "/dostavka/svetlogorsk/",
+      "status": 200,
+      "sha256": "04f8ba4517e156d49e7b9b186d89de486c1b7941d88ce3f196e5cb2895e3c6f1",
+      "bytes": 70930,
+      "encoding": "gzip",
+      "matchesBuild": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "sha256": "48d15507a95beb6b4e52fb0e1bd75f989fdb7c6fd119abf6bd4a99681ad40619",
+      "bytes": 17712,
+      "encoding": "gzip",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-myasom-govyadina-850-g/",
+      "status": 200,
+      "sha256": "48dc0a4a3b263fdf57ea529d4c327d5117899df3cd958d919b8fc0fce3de2622",
+      "bytes": 56957,
+      "encoding": "gzip",
+      "matchesBuild": true
+    }
+  ]
+}
