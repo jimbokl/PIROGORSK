@@ -1,8 +1,12 @@
 # Скорость production-сборки
 
-## Визуальный референс — 29.10, локальный контроль
+## Визуальный референс — 29.10, опубликован и проверен
 
-После диагностики пользователь поручил попробовать стеклянные поверхности, журнальные заголовки и плавный hover. Эффекты ограничены главной, blur — desktop fine pointer, reduced motion учтён. Это визуальная задача, не подтверждённое лечение LCP. Preview4322, Chrome156, три свежих mobile-профиля: P98/99/98, LCP2368/2201/2287мс, observed render63–101мс; desktop100/LCP524мс. A/BP/SEO100. [Данные](qa/home-lcp-20261029/design-local-summary.json). Локальная среда отличается от production; публичная перепроверка выполняется после CI.
+После диагностики пользователь поручил попробовать стеклянные поверхности, журнальные заголовки и плавный hover. Эффекты ограничены главной, blur — desktop fine pointer, reduced motion учтён. Это визуальная задача, не подтверждённое лечение LCP. Preview4322, Chrome156, три свежих mobile-профиля: P98/99/98, LCP2368/2201/2287мс, observed render63–101мс; desktop100/LCP524мс. A/BP/SEO100. [Локальные данные](qa/home-lcp-20261029/design-local-summary.json); среда отличается от production.
+
+Runtime `e6af7dd`, [CI40837674941 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40837674941), HTML/inline CSS совпадают со сборкой, published compatibility PASS. [Production CLI](qa/home-lcp-20261029/design-production-summary.json), Chrome156 / LH13.5, 09:54–09:55 GMT+2: mobile **P99/99/100**, LCP1736/1833/1749мс, observed render33/44/49мс. Desktop **P60/LCP4152мс**, observed LCP1293мс/render20мс; запросы Playfair заняли около3.9с, simulated TTFB3970мс. [Диагностика выброса](qa/home-lcp-20261029/design-desktop-outlier.json). Два заранее ограниченных контрольных desktop-запуска09:58, свежие процессы с теми же настройками: **P99/99, LCP621/595мс**, render46/38мс. [Оба сохранены](qa/home-lcp-20261029/design-desktop-followup.json), первоначальный выброс не заменён. A100/SEO100, CLI BP77 — сторонние cookies/issues Метрики.
+
+[Публичный PSI mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a0jll2o1fz?form_factor=mobile) / [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a0jll2o1fz?form_factor=desktop), 09:56:55 GMT+2, Chrome153: **85/100**, LCP4002/401мс, TBT0/0, CLS0/.033; A/BP/SEO100. На mobile снова observed render1940мс того же фона. [Данные](qa/home-lcp-20261029/public-psi-design.json). CrUX отсутствует. Улучшение реального LCP и стабильность PSI не доказаны; визуальная задача завершена, расследование нестабильности остаётся открытым.
 
 ## Разбор нестабильного mobile LCP главной — 29.10.2026
 

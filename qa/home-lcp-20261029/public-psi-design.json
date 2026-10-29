@@ -1,0 +1,51 @@
+{
+  "url": "https://pirogorsk.ru/",
+  "runtime": "e6af7dd",
+  "reportTime": "2026-10-29T09:56:55+02:00",
+  "source": "Public PSI visible report; exact headline timings from visible calculator links, rounded insight timings from UI",
+  "lighthouseVersion": "13.5.0",
+  "browser": "HeadlessChromium 153.0.8010.36",
+  "crux": "No data",
+  "mobile": {
+    "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a0jll2o1fz?form_factor=mobile",
+    "scores": {
+      "performance": 85,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fcpMs": 1033,
+    "lcpMs": 4002,
+    "tbtMs": 0,
+    "cls": 0,
+    "speedIndexMs": 3974,
+    "lcpInsightRoundedMs": {
+      "timeToFirstByte": 10,
+      "resourceLoadDelay": 170,
+      "resourceLoadDuration": 200,
+      "elementRenderDelay": 1940
+    },
+    "lcpElement": "section.tasting-hero > div.tasting-coast > picture > img"
+  },
+  "desktop": {
+    "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a0jll2o1fz?form_factor=desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "fcpMs": 277,
+    "lcpMs": 401,
+    "tbtMs": 0,
+    "cls": 0.033,
+    "speedIndexMs": 436,
+    "lcpInsightRoundedMs": {
+      "timeToFirstByte": 0,
+      "resourceLoadDelay": 310,
+      "resourceLoadDuration": 170,
+      "elementRenderDelay": 70
+    },
+    "lcpElement": "section.tasting-hero > div.tasting-coast > picture > img"
+  }
+}

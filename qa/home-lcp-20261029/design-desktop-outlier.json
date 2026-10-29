@@ -1,0 +1,97 @@
+{
+  "context": "First production desktop CLI run; retained with 2 followups",
+  "timestamp": "2026-10-29T07:55:14.021Z",
+  "warning": [],
+  "diagnostics": [
+    {
+      "numRequests": 56,
+      "numScripts": 6,
+      "numStylesheets": 0,
+      "numFonts": 4,
+      "numTasks": 968,
+      "numTasksOver10ms": 3,
+      "numTasksOver25ms": 1,
+      "numTasksOver50ms": 0,
+      "numTasksOver100ms": 0,
+      "numTasksOver500ms": 0,
+      "rtt": 0.3299999999999983,
+      "throughput": 16816669.371849537,
+      "maxRtt": 4.248119999999998,
+      "maxServerLatency": 3810.106,
+      "totalByteWeight": 652789,
+      "totalTaskTime": 162.48100000000034,
+      "mainDocumentTransferSize": 32998
+    }
+  ],
+  "metrics": {
+    "firstContentfulPaint": 4071,
+    "largestContentfulPaint": 4152,
+    "interactive": 4154,
+    "speedIndex": 4071,
+    "totalBlockingTime": 0,
+    "maxPotentialFID": 16,
+    "cumulativeLayoutShift": 0.006417972092709337,
+    "cumulativeLayoutShiftMainFrame": 0.006417972092709337,
+    "lcpLoadDelay": 3970,
+    "lcpLoadDuration": 4089,
+    "timeToFirstByte": 3970,
+    "observedTimeOrigin": 0,
+    "observedTimeOriginTs": 865621383382,
+    "observedNavigationStart": 0,
+    "observedNavigationStartTs": 865621383382,
+    "observedFirstPaint": 1126,
+    "observedFirstPaintTs": 865622509435,
+    "observedFirstContentfulPaint": 1126,
+    "observedFirstContentfulPaintTs": 865622509435,
+    "observedFirstContentfulPaintAllFrames": 1126,
+    "observedFirstContentfulPaintAllFramesTs": 865622509435,
+    "observedLargestContentfulPaint": 1293,
+    "observedLargestContentfulPaintTs": 865622676697,
+    "observedLargestContentfulPaintAllFrames": 1293,
+    "observedLargestContentfulPaintAllFramesTs": 865622676697,
+    "observedTraceEnd": 8831,
+    "observedTraceEndTs": 865630214328,
+    "observedLoad": 6516,
+    "observedLoadTs": 865627899135,
+    "observedDomContentLoaded": 5104,
+    "observedDomContentLoadedTs": 865626487309,
+    "observedCumulativeLayoutShift": 0.006417972092709337,
+    "observedCumulativeLayoutShiftMainFrame": 0.006417972092709337,
+    "observedFirstVisualChange": 1133,
+    "observedFirstVisualChangeTs": 865622516382,
+    "observedLastVisualChange": 4921,
+    "observedLastVisualChangeTs": 865626304382,
+    "observedSpeedIndex": 1289,
+    "observedSpeedIndexTs": 865622672665
+  },
+  "fontRequests": [
+    {
+      "path": "/fonts/playfair-cyrillic.woff2",
+      "networkRequestTime": 984.0950000286102,
+      "networkEndTime": 4896.175000071526,
+      "transferSize": 18782,
+      "statusCode": 200
+    },
+    {
+      "path": "/fonts/playfair-latin.woff2",
+      "networkRequestTime": 984.4400000572205,
+      "networkEndTime": 4899.172000050545,
+      "transferSize": 9551,
+      "statusCode": 200
+    },
+    {
+      "path": "/fonts/golos-cyrillic.woff2",
+      "networkRequestTime": 984.738000035286,
+      "networkEndTime": 1286.8819999694824,
+      "transferSize": 18828,
+      "statusCode": 200
+    },
+    {
+      "path": "/fonts/golos-latin.woff2",
+      "networkRequestTime": 984.847000002861,
+      "networkEndTime": 1283.1890000104904,
+      "transferSize": 16253,
+      "statusCode": 200
+    }
+  ]
+}

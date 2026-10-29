@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-29T07:59:44.739Z",
+  "runtime": "e6af7ddb7283c8264e90ee22521a4ae47774ef3d",
+  "url": "https://pirogorsk.ru/",
+  "status": 200,
+  "htmlMatchesBuild": true,
+  "htmlSha256": "afc9a051f6a4b66c4950c375762415a269435604237746c15ed9989e06fd6333",
+  "inlineHomeCss": true,
+  "homeClass": true,
+  "workerHealth": {
+    "ok": true,
+    "storage": "d1",
+    "mode": "intent",
+    "apiVersion": 1,
+    "catalogSha256": "1ea559fdc7d353979fd1d19661b410edc8acd77cf18cbdf49e7ebf80d6008473"
+  },
+  "publishedReleaseCheck": "PASS",
+  "ci": {
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/40837674941",
+    "conclusion": "success"
+  }
+}
