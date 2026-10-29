@@ -4,7 +4,7 @@
 
 ## Проверено локально
 
-- Node 24: `check` без ошибок/предупреждений (6 прежних hints), `build` 69 HTML, 32 Node tests, Worker typecheck/API/SQLite, обе browser fixtures PASS.
+- Node 24: `check` без ошибок/предупреждений (7 hints: 6 прежних и рекомендация в QA-скрипте), `build` 69 HTML, 32 Node tests, Worker typecheck/API/SQLite, обе browser fixtures PASS.
 - Четыре валидатора: SEO (67 sitemap URL / 4015 локальных ссылок), expansion, SEO map (23 статьи) и artwork PASS.
 - Worker тестирует каждый из 183 публичных вариантов. Настоящий Astro → Worker → SQLite проверяет смешанную подборку, сумму товаров и сохранение анонимной заявки; production-запросы в тесте запрещены перехватчиком.
 - Все 78 карточек находятся в HTML главной и меню; первые 24 видимы с JS, далее раскрытие по 24. Проверены поиск, все разделы, форматы и ссылка из меню к выбранному товару.
@@ -21,4 +21,27 @@
 
 `local-performance-summary.json` — ранний замер с Python HTTP server без сжатия, до финальных исправлений контраста/доступности. Он не является результатом production. На первом экране не добавлены изображения или шрифты; прежнее исправление font preload сохранено.
 
-Порядок: Worker → проверка catalog SHA → Pages CI → независимая сверка manifest и production UI/скорости. Результат выпуска будет добавлен после фактической проверки.
+Выпущен runtime **`2c535cb7000bcee7514f48373fa805beda9a1017`**; [CI40865213431 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40865213431), снимок `release-ci.json`. Worker **`b82c3c72-8079-4343-8209-0a272561e1b4`** опубликован перед Pages, catalog SHA `c09cb628c9f719a00a7c41180ecaecde707886410e0be864cdc4fefbbd693425`; `verify-release check` и независимый `published https://pirogorsk.ru/` PASS. Контракт API/D1 прежний.
+
+- `production-http-readback.json`: 9 URL HTTP200, SHA256 каждого ответа совпадает с локальной сборкой. Главная 362041 байт декодированного HTML / 48016 байт gzip, меню 215996 / 24974 байт gzip. Для сверки использован non-QA ключ `?release=2c535cb`; публичный PSI ниже проверяет каноническую главную.
+- `production-readback.json` и снимки `production-*`: главная/меню 320 / 390 / 1280 px, 92 позиции, 78 supplier-карточек, фильтр «Тесто» 6 позиций, выбор набора 1050г, доставка Калининград 1900₽ для говядины; без переполнения и JS-ошибок. QA-режим, без отправки формы.
+- `production-indexnow.json`: все 7 изменённых URL приняты api.indexnow.org и Yandex, оба HTTP200. Это приём уведомления, не доказательство индексации.
+
+### Скорость production
+
+`production-performance-summary.json` и `production-performance-ranges.json`: Lighthouse13.5.0 / Chrome156, обычная production-главная с Метрикой, свежий процесс/профиль для каждого замера. Сводка сохраняет все запуски, scores, metrics, observed paint, LCP breakdown и число замечаний без временных tracking URL; полные raw-отчёты остаются в игнорируемых `qa/lighthouse-*`.
+
+| Запуск | Performance | LCP simulated, мс | TBT, мс | CLS | Observed render delay, мс |
+|---|---:|---:|---:|---:|---:|
+| Mobile1 | 99 | 1938 | 82.5 | .00227 | 39.7 |
+| Mobile2 | 100 | 1484 | 0 | .00227 | 40.6 |
+| Mobile3 | 100 | 1552 | 0 | .00496 | 19.2 |
+| Desktop1 | 100 | 546 | 0 | .00707 | 28.9 |
+
+Первый mobile пересекался с началом UI-проверки, остальные — без неё; ни один запуск не исключён. A100/SEO100 во всех CLI-запусках, BP77 — прежние сторонние аудиты Метрики. CLI и публичный PSI имеют разные версии браузера/окружение, их оценки не смешиваются.
+
+Новый публичный [PSI29.10 13:32:38 GMT+2](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/o90u3qnrdl?form_factor=mobile), Chrome153.0.8010.36 / LH13.5.0: **mobile100 / desktop100, A/BP/SEO100**. Mobile LCP1.7с (calculator1726мс), FCP1.1с, TBT30мс, CLS.007; desktop LCP.5с (466мс), FCP.3с, TBT20мс, CLS.014. Видимые показатели и точность calculator отдельно сохранены в `production-public-psi.json`. CrUX «Нет данных»: полевое улучшение и рост спроса этими lab-замерами не подтверждены.
+
+Технический выпуск завершён. До коммерческого старта нужно подтвердить реальные B2B-условия, возможность фасовки, хранение/перевозку и доставку, затем пересчитать рабочие резервы. Форма продолжает собирать интерес.
+
+Сохранённые HTML источников не переформатировались: контрольные суммы относятся к полученным байтам. Их исходные пробелы и CRLF в исследовательских CSV не относятся к проверке whitespace прикладного кода.

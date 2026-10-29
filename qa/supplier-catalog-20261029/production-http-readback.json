@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-29T11:31:35.496579+00:00",
+  "runtimeCommit": "2c535cb7000bcee7514f48373fa805beda9a1017",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "sha256": "0d68dbae3fbc9412645063e68f055ec679caac4ceea492c65312722fbd9742b9",
+      "matchesBuild": true,
+      "encoding": "gzip",
+      "transferredBytes": 48016,
+      "decodedBytes": 362041
+    },
+    {
+      "path": "/menu/",
+      "status": 200,
+      "sha256": "10c365e4959b658f8b5b6d2e372a812b8a90be0c54771e78f48ae04cbf0fcda0",
+      "matchesBuild": true,
+      "encoding": "gzip",
+      "transferredBytes": 24974,
+      "decodedBytes": 215996
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "sha256": "b8e97f06c50d8a639d4733c4637dc635a1bfe67e959aaece2d3f8e4e4f260c98",
+      "matchesBuild": true,
+      "encoding": "gzip",
+      "transferredBytes": 8450,
+      "decodedBytes": 31404
+    },
+    {
+      "path": "/delivery/",
+      "status": 200,
+      "sha256": "f05c62037951ec555ee2119842fac94e363c0af0c75a704e7aa2d6fee022f5be",
+      "matchesBuild": true,
+      "encoding": "gzip",
+      "transferredBytes": 8101,
+      "decodedBytes": 30847
+    },
+    {
+      "path": "/terms/",
+      "status": 200,
+      "sha256": "6a3488f5cd3d60600119a249e6e2f386c778c4648f5d0cc9c6ca98f78f57ed10",
+      "matchesBuild": true,
+      "encoding": "gzip",
+      "transferredBytes": 9134,
+      "decodedBytes": 33944
+    },
+    {
+      "path": "/dostavka/kaliningrad/",
+      "status": 200,
+      "sha256": "05009a25d35c0687e62ad750cb2343d31f8ecf1874f6d20a9a60c8fea243b28b",
+      "matchesBuild": true,
+      "encoding": "gzip",
+      "transferredBytes": 8251,
+      "decodedBytes": 31201
+    },
+    {
+      "path": "/dostavka/zelenogradsk/",
+      "status": 200,
+      "sha256": "cd63379272fa25109bf9d8c9e406abdf895ee953c8220a7f0aabda548eb01f88",
+      "matchesBuild": true,
+      "encoding": "gzip",
+      "transferredBytes": 8188,
+      "decodedBytes": 31200
+    },
+    {
+      "path": "/dostavka/svetlogorsk/",
+      "status": 200,
+      "sha256": "b92c1c54fb3fec0362cd6fd80ce624947feacf325a50bf45d681903db682afd5",
+      "matchesBuild": true,
+      "encoding": "gzip",
+      "transferredBytes": 8218,
+      "decodedBytes": 31154
+    },
+    {
+      "path": "/release.json",
+      "status": 200,
+      "sha256": "9159b11be04721c81559855e00cf906d93645d9bcb685f7fd96570cc4a5cbf99",
+      "matchesBuild": true,
+      "encoding": "identity",
+      "transferredBytes": 109,
+      "decodedBytes": 109
+    }
+  ]
+}

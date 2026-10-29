@@ -1,0 +1,36 @@
+{
+  "status": "received-by-all",
+  "count": 7,
+  "receivers": [
+    {
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "status": "received",
+      "httpStatus": 200,
+      "count": 7,
+      "urls": [
+        "https://pirogorsk.ru/",
+        "https://pirogorsk.ru/about/",
+        "https://pirogorsk.ru/delivery/",
+        "https://pirogorsk.ru/dostavka/kaliningrad/",
+        "https://pirogorsk.ru/dostavka/svetlogorsk/",
+        "https://pirogorsk.ru/dostavka/zelenogradsk/",
+        "https://pirogorsk.ru/menu/"
+      ]
+    },
+    {
+      "endpoint": "https://yandex.com/indexnow",
+      "status": "received",
+      "httpStatus": 200,
+      "count": 7,
+      "urls": [
+        "https://pirogorsk.ru/",
+        "https://pirogorsk.ru/about/",
+        "https://pirogorsk.ru/delivery/",
+        "https://pirogorsk.ru/dostavka/kaliningrad/",
+        "https://pirogorsk.ru/dostavka/svetlogorsk/",
+        "https://pirogorsk.ru/dostavka/zelenogradsk/",
+        "https://pirogorsk.ru/menu/"
+      ]
+    }
+  ]
+}

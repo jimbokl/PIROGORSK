@@ -1,0 +1,60 @@
+{
+  "target": "https://pirogorsk.ru/",
+  "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/o90u3qnrdl?form_factor=mobile",
+  "reportedAt": "2026-10-29T13:32:38+02:00",
+  "capturedAtDisplay": "29 окт. 2026 г., 13:32 GMT+2",
+  "lighthouseVersion": "13.5.0",
+  "browser": "HeadlessChromium 153.0.8010.36 with lr",
+  "source": "Visible public PageSpeed Insights UI, read through browser accessibility tree; calculator links provide rounded milliseconds.",
+  "fieldData": "Нет данных (CrUX)",
+  "mobile": {
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "device": "Moto G Power",
+    "network": "Slow 4G",
+    "initialLoad": true,
+    "metricsDisplay": {
+      "FCP": "1,1 сек.",
+      "LCP": "1,7 сек.",
+      "TBT": "30 мс",
+      "CLS": "0.007",
+      "SI": "1,1 сек."
+    },
+    "calculator": {
+      "FCP_ms": 1079,
+      "LCP_ms": 1726,
+      "TBT_ms": 25,
+      "CLS_rounded": 0.01,
+      "SI_ms": 1079,
+      "TTI_ms": 3226
+    }
+  },
+  "desktop": {
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "initialLoad": true,
+    "metricsDisplay": {
+      "FCP": "0,3 сек.",
+      "LCP": "0,5 сек.",
+      "TBT": "20 мс",
+      "CLS": "0.014",
+      "SI": "0,5 сек."
+    },
+    "calculator": {
+      "FCP_ms": 306,
+      "LCP_ms": 466,
+      "TBT_ms": 15,
+      "CLS_rounded": 0.01,
+      "SI_ms": 533,
+      "TTI_ms": 905
+    }
+  }
+}
