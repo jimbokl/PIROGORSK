@@ -15,7 +15,7 @@ const {
   title, description, canonicalPath = Astro.url.pathname,
   image = '/seo/pirogorsk-og.jpg',
   imageAlt = 'Пирогорск — концепт пирогов с балтийским характером. Готовим запуск.',
-  type = 'website', noindex = false, preloadFonts = true, schema = [],
+  type = 'website', noindex = false, preloadFonts = false, schema = [],
 } = Astro.props;
 const canonical = new URL(canonicalPath, siteOrigin);
 canonical.search = '';

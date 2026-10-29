@@ -16,7 +16,9 @@ interface Props {
   imageAlt?: string;
   preloadFonts?: boolean;
 }
-const { title, description, breadcrumbs = [], schema = [], type, noindex, image, imageAlt, preloadFonts = true } = Astro.props;
+// Let inline @font-face discover the required faces. Font preloads delayed the
+// first frame in Chrome 153 on both the homepage and text-led catalog pages.
+const { title, description, breadcrumbs = [], schema = [], type, noindex, image, imageAlt, preloadFonts = false } = Astro.props;
 const trail = [{ name: 'Главная', href: '/' }, ...breadcrumbs];
 const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
