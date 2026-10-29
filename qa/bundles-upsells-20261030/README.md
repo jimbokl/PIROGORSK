@@ -19,4 +19,8 @@
 
 Локальный Lighthouse на gzip-сервере: mobile97/LCP2408мс, desktop100/LCP610мс; A/BP/SEO100. По одному лабораторному замеру на режим. Несжатый Python HTTP server дал mobile73/LCP5257мс при практически том же наблюдаемом LCP120мс; симуляцию и эти условия нельзя сравнивать с production Pages. Публичный PageSpeed в этом спринте пока не измерялся.
 
-Публикация и независимая проверка production в работе.
+Опубликован runtime **`d4802969ebefce389768a971637df0ce0574eec6`**, [CI40966894511 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40966894511). [Независимая сверка](publication.json): все 229 ресурсов, включая 214 HTML и 153 страницы товаров, HTTP200 и точно совпадают с локальной сборкой. Первый проход получил один HTTP503 для скрипта калькулятора; полный повтор прошёл без ошибок, [сохранён результат первого прохода](publication-initial-failure.json). Published Pages/Worker compatibility PASS.
+
+[Production UI](production/results.json): touch/mobile320/390 и desktop1280 PASS. Проверены три набора, точные суммы, доставка один раз, изменение дополнений, посуда на пять гостей, удаление, сохранение, передача в форму и переход из меню без повторного увеличения количества. JS/HTTP ошибок и горизонтального переполнения нет; запросы POST не отправлялись. Визуально просмотрены [меню390](production/menu-bundles-390.png) и [дополнения320](production/addons-320.png).
+
+[Production CLI Lighthouse](production-performance.json): mobile99/LCP1696мс, desktop100/LCP578мс, Accessibility/SEO100. Best Practices77 из-за прежних сторонних cookies и DevTools Issues Метрики. Один лабораторный замер на режим, одновременно с UI/readback; это не публичный PageSpeed и не CrUX. Изменения опубликованы и проверены; открытых пунктов текущего поручения нет.

@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-29T22:44:24.346Z",
+  "runtime": "d4802969ebefce389768a971637df0ce0574eec6",
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/40966894511",
+  "resources": 229,
+  "failures": [
+    {
+      "path": "/_astro/PartyCalculator.astro_astro_type_script_index_0_lang.DY63zWhM.js",
+      "status": 503,
+      "sha256": "27927b33ebee49d7f096737f4a7dab00e26a6e03c5490c66377bcaf383a247a4",
+      "bytes": 54887,
+      "encoding": null,
+      "matchesBuild": false
+    }
+  ],
+  "followup": "Full repeat passed; see publication.json"
+}
