@@ -204,6 +204,7 @@ all<HTMLAnchorElement>('[data-bundle]').forEach(link => link.addEventListener('c
 all<HTMLSelectElement>('[data-upsell-choice]').forEach(select => select.addEventListener('change', () => {
   const button = document.querySelector<HTMLButtonElement>(`[data-upsell-add="${select.dataset.upsellChoice}"]`)!;
   button.textContent = `Добавить за ${money(Number(select.selectedOptions[0].dataset.price))}`;
+  button.setAttribute('aria-label', `${button.textContent}: ${select.selectedOptions[0].textContent}`);
 }));
 all<HTMLButtonElement>('[data-upsell-add]').forEach(button => button.addEventListener('click', () => {
   const group = addOnGroups.find(group => group.id === button.dataset.upsellAdd);

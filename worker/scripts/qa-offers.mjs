@@ -33,6 +33,7 @@ export async function verifyOffers(page, origin, width, screenshotDir) {
   await page.$eval('[data-upsells]', el => el.scrollIntoView());
   await page.screenshot({ path: `${screenshotDir}/addons-${width}.png` });
   assert.equal(await page.$$eval('.addon-add', buttons => buttons.every(button => button.getBoundingClientRect().height >= 44)), true);
+  assert.equal(await page.$$eval('.addon-add', buttons => buttons.every(button => button.getAttribute('aria-label')?.includes(button.textContent))), true, 'accessible button names include their visible price');
   await page.click('[data-upsell-add=morse]');
   assert.equal(await page.$eval('[data-upsell-group=morse]', el => el.hidden), true);
   await page.select('[data-upsell-choice=sweet]', 'cherry:500:1');

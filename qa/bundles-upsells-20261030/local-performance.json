@@ -1,0 +1,77 @@
+{
+  "scope": "Local laboratory samples; not production or CrUX",
+  "runs": [
+    {
+      "server": "gzip",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4344/",
+      "timestamp": "2026-10-29T22:32:32.078Z",
+      "version": "13.5.0",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "LCP": 2407.980625,
+      "observedLCP": 121,
+      "CLS": 0.005726530005703299,
+      "TBT": 0
+    },
+    {
+      "server": "gzip",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4344/",
+      "timestamp": "2026-10-29T22:32:38.737Z",
+      "version": "13.5.0",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "LCP": 610.29975,
+      "observedLCP": 95,
+      "CLS": 0.002216831056825146,
+      "TBT": 0
+    },
+    {
+      "server": "uncompressed-python",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4343/",
+      "timestamp": "2026-10-29T22:30:42.577Z",
+      "version": "13.5.0",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 73,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "LCP": 5256.7922,
+      "observedLCP": 120,
+      "CLS": 0.005726530005703299,
+      "TBT": 0
+    },
+    {
+      "server": "uncompressed-python",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4343/",
+      "timestamp": "2026-10-29T22:30:49.186Z",
+      "version": "13.5.0",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "LCP": 1111.2257,
+      "observedLCP": 95,
+      "CLS": 0.002216831056825146,
+      "TBT": 0
+    }
+  ]
+}

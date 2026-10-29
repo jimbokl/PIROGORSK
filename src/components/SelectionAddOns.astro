@@ -22,7 +22,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
             return <option value={`${choice.id}:${choice.value}:${choice.quantity}`} data-price={variant.price * choice.quantity}>{label}</option>;
           })}
         </select>
-        <button type="button" class="button addon-add" data-upsell-add={group.id} aria-label={`Добавить: ${group.title}`}>Добавить за {money(catalog.find(product => product.id === group.choices[0].id)!.prices[group.choices[0].value] * group.choices[0].quantity)}</button>
+        <button type="button" class="button addon-add" data-upsell-add={group.id} aria-label={`Добавить за ${money(catalog.find(product => product.id === group.choices[0].id)!.prices[group.choices[0].value] * group.choices[0].quantity)}: ${group.title}`}>Добавить за {money(catalog.find(product => product.id === group.choices[0].id)!.prices[group.choices[0].value] * group.choices[0].quantity)}</button>
       </div>
     </div>
   </article>)}
