@@ -1,0 +1,2432 @@
+[
+  {
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:16:35.114Z",
+    "version": "13.5.0",
+    "performance": 99,
+    "metrics": {
+      "first-contentful-paint": 1242.837,
+      "largest-contentful-paint": 1536.173,
+      "total-blocking-time": 97.5,
+      "cumulative-layout-shift": 0.0058634232187400265,
+      "speed-index": 1659.8840457930428
+    },
+    "observed": {
+      "firstContentfulPaint": 1243,
+      "largestContentfulPaint": 1536,
+      "interactive": 3539,
+      "speedIndex": 1660,
+      "totalBlockingTime": 98,
+      "maxPotentialFID": 211,
+      "cumulativeLayoutShift": 0.0058634232187400265,
+      "cumulativeLayoutShiftMainFrame": 0.0058634232187400265,
+      "lcpLoadDelay": 1276,
+      "lcpLoadDuration": 1478,
+      "timeToFirstByte": 785,
+      "observedTimeOrigin": 0,
+      "observedTimeOriginTs": 863302505819,
+      "observedNavigationStart": 0,
+      "observedNavigationStartTs": 863302505819,
+      "observedFirstPaint": 789,
+      "observedFirstPaintTs": 863303294666,
+      "observedFirstContentfulPaint": 789,
+      "observedFirstContentfulPaintTs": 863303294666,
+      "observedFirstContentfulPaintAllFrames": 789,
+      "observedFirstContentfulPaintAllFramesTs": 863303294666,
+      "observedLargestContentfulPaint": 789,
+      "observedLargestContentfulPaintTs": 863303294666,
+      "observedLargestContentfulPaintAllFrames": 789,
+      "observedLargestContentfulPaintAllFramesTs": 863303294666,
+      "observedTraceEnd": 4728,
+      "observedTraceEndTs": 863307233412,
+      "observedLoad": 2408,
+      "observedLoadTs": 863304914275,
+      "observedDomContentLoaded": 960,
+      "observedDomContentLoadedTs": 863303465637,
+      "observedCumulativeLayoutShift": 0.0058634232187400265,
+      "observedCumulativeLayoutShiftMainFrame": 0.0058634232187400265,
+      "observedFirstVisualChange": 788,
+      "observedFirstVisualChangeTs": 863303293819,
+      "observedLastVisualChange": 1398,
+      "observedLastVisualChangeTs": 863303903819,
+      "observedSpeedIndex": 806,
+      "observedSpeedIndexTs": 863303311680
+    },
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.36 Safari/537.36",
+      "benchmarkIndex": 3848.5,
+      "credits": {}
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 628.91
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 26.005
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 104.195
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 29.737
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "mainThread": [
+      {
+        "group": "scriptEvaluation",
+        "groupLabel": "Script Evaluation",
+        "duration": 324.23199999999974
+      },
+      {
+        "group": "other",
+        "groupLabel": "Other",
+        "duration": 258.0039999999989
+      },
+      {
+        "group": "styleLayout",
+        "groupLabel": "Style & Layout",
+        "duration": 231.23600000000005
+      },
+      {
+        "group": "paintCompositeRender",
+        "groupLabel": "Rendering",
+        "duration": 65.64800000000001
+      },
+      {
+        "group": "parseHTML",
+        "groupLabel": "Parse HTML & CSS",
+        "duration": 60.876000000000005
+      },
+      {
+        "group": "garbageCollection",
+        "groupLabel": "Garbage Collection",
+        "duration": 18.879999999999995
+      },
+      {
+        "group": "scriptParseCompile",
+        "groupLabel": "Script Parsing & Compilation",
+        "duration": 17.9
+      }
+    ],
+    "longTasks": [
+      {
+        "origin": "https://mc.yandex.ru",
+        "startTime": 3798.478680000001,
+        "duration": 211
+      },
+      {
+        "origin": "https://pirogorsk.ru",
+        "startTime": 1218.837,
+        "duration": 91
+      },
+      {
+        "origin": "unattributable",
+        "startTime": 1085.837,
+        "duration": 84
+      }
+    ],
+    "criticalRequests": [
+      {
+        "path": "/",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.8600000143051147,
+        "networkEndTime": 655.5190000534058,
+        "resourceSize": 180979,
+        "priority": "VeryHigh",
+        "resourceType": "Document"
+      },
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "rendererStartTime": 653.2269999980927,
+        "networkRequestTime": 654.3950001001358,
+        "networkEndTime": 774.2270001173019,
+        "resourceSize": 18596,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "rendererStartTime": 654.3010001182556,
+        "networkRequestTime": 654.5490001440048,
+        "networkEndTime": 764.9539999961853,
+        "resourceSize": 9228,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "rendererStartTime": 654.3490000963211,
+        "networkRequestTime": 654.8650000095367,
+        "networkEndTime": 765.0480000972748,
+        "resourceSize": 18676,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "rendererStartTime": 654.8060001134872,
+        "networkRequestTime": 654.9520000219345,
+        "networkEndTime": 956.4690001010895,
+        "resourceSize": 15904,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "rendererStartTime": 654.8400001525879,
+        "networkRequestTime": 655.125,
+        "networkEndTime": 759.0350000858307,
+        "resourceSize": 12589,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/brand/pirogorsk-symbol.svg",
+        "rendererStartTime": 654.8690000772476,
+        "networkRequestTime": 660.7410000562668,
+        "networkEndTime": 774.4410001039505,
+        "resourceSize": 1014,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+        "rendererStartTime": 655.0330001115799,
+        "networkRequestTime": 655.2290000915527,
+        "networkEndTime": 869.4480000734329,
+        "resourceSize": 39291,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/InterestForm.astro_astro_type_script_index_0_lang.DN8uHmlK.js",
+        "rendererStartTime": 673.2880001068115,
+        "networkRequestTime": 675.7000000476837,
+        "networkEndTime": 869.7980000972748,
+        "resourceSize": 8004,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.Di4U5Hyl.js",
+        "rendererStartTime": 673.364000082016,
+        "networkRequestTime": 675.960000038147,
+        "networkEndTime": 774.819000005722,
+        "resourceSize": 32,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/index.astro_astro_type_script_index_0_lang.CG4RGIjQ.js",
+        "rendererStartTime": 673.4470001459122,
+        "networkRequestTime": 676.0980000495911,
+        "networkEndTime": 778.3110001087189,
+        "resourceSize": 10452,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/background.DMEurvcD_Z10U0hT.avif",
+        "rendererStartTime": 769.6720000505447,
+        "networkRequestTime": 769.8720000982285,
+        "networkEndTime": 975.8930000066757,
+        "resourceSize": 8368,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.d61w9KjH_1ymwWx.avif",
+        "rendererStartTime": 769.7300000190735,
+        "networkRequestTime": 770.0130000114441,
+        "networkEndTime": 885.529000043869,
+        "resourceSize": 14622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.C3rRYxI3_nvq9x.avif",
+        "rendererStartTime": 769.7520000934601,
+        "networkRequestTime": 770.1800000667572,
+        "networkEndTime": 977.949000120163,
+        "resourceSize": 10525,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+        "rendererStartTime": 769.767000079155,
+        "networkRequestTime": 770.4170000553131,
+        "networkEndTime": 885.1050001382828,
+        "resourceSize": 14323,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CwMc51iY_ZQwleG.avif",
+        "rendererStartTime": 769.7820000648499,
+        "networkRequestTime": 770.6310000419617,
+        "networkEndTime": 967.0620000362396,
+        "resourceSize": 10024,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CUr0iAWH_2kyYF8.avif",
+        "rendererStartTime": 769.8009999990463,
+        "networkRequestTime": 770.9580000638962,
+        "networkEndTime": 887.1070001125336,
+        "resourceSize": 14905,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.591iKjEd_ZarbJw.avif",
+        "rendererStartTime": 769.8200000524521,
+        "networkRequestTime": 771.085000038147,
+        "networkEndTime": 885.8109999895096,
+        "resourceSize": 7625,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+        "rendererStartTime": 769.8339999914169,
+        "networkRequestTime": 771.2230000495911,
+        "networkEndTime": 882.1890000104904,
+        "resourceSize": 13983,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.dPlBJLpD_ZehP14.avif",
+        "rendererStartTime": 769.8510000705719,
+        "networkRequestTime": 771.404000043869,
+        "networkEndTime": 1105.5140000581741,
+        "resourceSize": 8675,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bo977vUT_ZS6h8W.avif",
+        "rendererStartTime": 769.863000035286,
+        "networkRequestTime": 771.545000076294,
+        "networkEndTime": 966.8140000104904,
+        "resourceSize": 14670,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.DuGp5oBv_z9Ypg.avif",
+        "rendererStartTime": 769.87600004673,
+        "networkRequestTime": 771.6050000190735,
+        "networkEndTime": 870.545000076294,
+        "resourceSize": 6224,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BOtyLgF8_JH6n2.avif",
+        "rendererStartTime": 769.8890000581741,
+        "networkRequestTime": 771.6910001039505,
+        "networkEndTime": 1011.449000120163,
+        "resourceSize": 15213,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+        "rendererStartTime": 769.9100000858307,
+        "networkRequestTime": 771.740000128746,
+        "networkEndTime": 967.2660001516342,
+        "resourceSize": 4761,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+        "rendererStartTime": 769.9259999990463,
+        "networkRequestTime": 771.8860000371933,
+        "networkEndTime": 976.3510000705719,
+        "resourceSize": 15904,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CJgaZJ6N_qPz2Q.avif",
+        "rendererStartTime": 769.9400000572205,
+        "networkRequestTime": 771.9470000267029,
+        "networkEndTime": 1001.768000125885,
+        "resourceSize": 6622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+        "rendererStartTime": 769.9530000686646,
+        "networkRequestTime": 771.9980001449585,
+        "networkEndTime": 961.9870001077652,
+        "resourceSize": 15005,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/cranberry.BeAaUA4p_Z1UiiPj.avif",
+        "rendererStartTime": 769.972000002861,
+        "networkRequestTime": 772.0410001277924,
+        "networkEndTime": 959.2260000705719,
+        "resourceSize": 3697,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/seabuckthorn.5G7nLPtn_Z1S3dh8.avif",
+        "rendererStartTime": 769.9850000143051,
+        "networkRequestTime": 772.0990000963211,
+        "networkEndTime": 1012.2720000743866,
+        "resourceSize": 4461,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/tea.DpNrVaQR_Zfv8p9.avif",
+        "rendererStartTime": 769.9980000257492,
+        "networkRequestTime": 772.1549999713898,
+        "networkEndTime": 1002.0420000553131,
+        "resourceSize": 5309,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/coffee.BZ0rl5Ul_ZPn75y.avif",
+        "rendererStartTime": 770.0470000505447,
+        "networkRequestTime": 772.2319999933243,
+        "networkEndTime": 992.7140001058578,
+        "resourceSize": 4792,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/analytics.C74FYLXv.js",
+        "rendererStartTime": 777.1219999790192,
+        "networkRequestTime": 777.4290000200272,
+        "networkEndTime": 870.1399999856949,
+        "resourceSize": 43200,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/pie-planner.D65GEHih.js",
+        "rendererStartTime": 793.0770000219345,
+        "networkRequestTime": 793.3300000429153,
+        "networkEndTime": 956.8940000534058,
+        "resourceSize": 1283,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 2410.5490000247955,
+        "networkRequestTime": 2411.0199999809265,
+        "networkEndTime": 2554.50100004673,
+        "resourceSize": 0,
+        "priority": "High"
+      },
+      {
+        "path": "/watch/113767847/1",
+        "rendererStartTime": 2554.50100004673,
+        "networkRequestTime": 2554.8160001039505,
+        "networkEndTime": 2701.833000063896,
+        "resourceSize": 619,
+        "priority": "High",
+        "resourceType": "Fetch"
+      }
+    ]
+  },
+  {
+    "run": 2,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:16:43.512Z",
+    "version": "13.5.0",
+    "performance": 100,
+    "metrics": {
+      "first-contentful-paint": 1099.4659000000001,
+      "largest-contentful-paint": 1316.4659000000001,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.005865129843736065,
+      "speed-index": 1099.4659000000001
+    },
+    "observed": {
+      "firstContentfulPaint": 1099,
+      "largestContentfulPaint": 1316,
+      "interactive": 1316,
+      "speedIndex": 1099,
+      "totalBlockingTime": 0,
+      "maxPotentialFID": 26,
+      "cumulativeLayoutShift": 0.005865129843736065,
+      "cumulativeLayoutShiftMainFrame": 0.005865129843736065,
+      "lcpLoadDelay": 716,
+      "lcpLoadDuration": 1144,
+      "timeToFirstByte": 716,
+      "observedTimeOrigin": 0,
+      "observedTimeOriginTs": 863310842535,
+      "observedNavigationStart": 0,
+      "observedNavigationStartTs": 863310842535,
+      "observedFirstPaint": 207,
+      "observedFirstPaintTs": 863311049088,
+      "observedFirstContentfulPaint": 207,
+      "observedFirstContentfulPaintTs": 863311049088,
+      "observedFirstContentfulPaintAllFrames": 207,
+      "observedFirstContentfulPaintAllFramesTs": 863311049088,
+      "observedLargestContentfulPaint": 271,
+      "observedLargestContentfulPaintTs": 863311113677,
+      "observedLargestContentfulPaintAllFrames": 271,
+      "observedLargestContentfulPaintAllFramesTs": 863311113677,
+      "observedTraceEnd": 45012,
+      "observedTraceEndTs": 863355854913,
+      "observedLoad": 796,
+      "observedLoadTs": 863311638473,
+      "observedDomContentLoaded": 583,
+      "observedDomContentLoadedTs": 863311425656,
+      "observedCumulativeLayoutShift": 0.005865129843736065,
+      "observedCumulativeLayoutShiftMainFrame": 0.005865129843736065,
+      "observedFirstVisualChange": 206,
+      "observedFirstVisualChangeTs": 863311048535,
+      "observedLastVisualChange": 817,
+      "observedLastVisualChangeTs": 863311659535,
+      "observedSpeedIndex": 234,
+      "observedSpeedIndexTs": 863311076040
+    },
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.36 Safari/537.36",
+      "benchmarkIndex": 4072.5,
+      "credits": {}
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 87.267
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 4.775
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 143.578
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 35.522
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "mainThread": [
+      {
+        "group": "other",
+        "groupLabel": "Other",
+        "duration": 206.30399999999986
+      },
+      {
+        "group": "styleLayout",
+        "groupLabel": "Style & Layout",
+        "duration": 186.36800000000002
+      },
+      {
+        "group": "scriptEvaluation",
+        "groupLabel": "Script Evaluation",
+        "duration": 106.83199999999985
+      },
+      {
+        "group": "paintCompositeRender",
+        "groupLabel": "Rendering",
+        "duration": 78.70400000000004
+      },
+      {
+        "group": "garbageCollection",
+        "groupLabel": "Garbage Collection",
+        "duration": 39.93999999999999
+      },
+      {
+        "group": "parseHTML",
+        "groupLabel": "Parse HTML & CSS",
+        "duration": 25.211999999999996
+      },
+      {
+        "group": "scriptParseCompile",
+        "groupLabel": "Script Parsing & Compilation",
+        "duration": 17.744000000000003
+      }
+    ],
+    "longTasks": [
+      {
+        "origin": "https://pirogorsk.ru",
+        "startTime": 1025.4659000000001,
+        "duration": 53
+      }
+    ],
+    "criticalRequests": [
+      {
+        "path": "/",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.1809999942779541,
+        "networkEndTime": 95.96099996566772,
+        "resourceSize": 180979,
+        "priority": "VeryHigh",
+        "resourceType": "Document"
+      },
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "rendererStartTime": 91.75899994373322,
+        "networkRequestTime": 92.04699993133545,
+        "networkEndTime": 410.91600000858307,
+        "resourceSize": 18596,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "rendererStartTime": 91.90600001811981,
+        "networkRequestTime": 92.42599999904633,
+        "networkEndTime": 237.94200003147125,
+        "resourceSize": 9228,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "rendererStartTime": 91.93500006198883,
+        "networkRequestTime": 92.58399999141693,
+        "networkEndTime": 238.07599997520447,
+        "resourceSize": 18676,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "rendererStartTime": 91.96399998664856,
+        "networkRequestTime": 92.71399998664856,
+        "networkEndTime": 411.57599997520447,
+        "resourceSize": 15904,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "rendererStartTime": 91.99000000953674,
+        "networkRequestTime": 92.79999995231628,
+        "networkEndTime": 235.567999958992,
+        "resourceSize": 12589,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/brand/pirogorsk-symbol.svg",
+        "rendererStartTime": 92.01799988746643,
+        "networkRequestTime": 94.24399995803833,
+        "networkEndTime": 235.77699995040894,
+        "resourceSize": 1014,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+        "rendererStartTime": 96.24199998378754,
+        "networkRequestTime": 96.37599992752075,
+        "networkEndTime": 300.40000009536743,
+        "resourceSize": 39291,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/InterestForm.astro_astro_type_script_index_0_lang.DN8uHmlK.js",
+        "rendererStartTime": 100.46099996566772,
+        "networkRequestTime": 100.61500000953674,
+        "networkEndTime": 455.14999997615814,
+        "resourceSize": 8004,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.Di4U5Hyl.js",
+        "rendererStartTime": 100.50899994373322,
+        "networkRequestTime": 100.84899997711182,
+        "networkEndTime": 455.42200005054474,
+        "resourceSize": 32,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/index.astro_astro_type_script_index_0_lang.CG4RGIjQ.js",
+        "rendererStartTime": 100.5809999704361,
+        "networkRequestTime": 100.96499991416931,
+        "networkEndTime": 412.114000082016,
+        "resourceSize": 10452,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/background.DMEurvcD_Z10U0hT.avif",
+        "rendererStartTime": 200.1030000448227,
+        "networkRequestTime": 300.654000043869,
+        "networkEndTime": 501.4839999675751,
+        "resourceSize": 8368,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.d61w9KjH_1ymwWx.avif",
+        "rendererStartTime": 200.1710000038147,
+        "networkRequestTime": 412.4249999523163,
+        "networkEndTime": 531.8380000591278,
+        "resourceSize": 14622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.C3rRYxI3_nvq9x.avif",
+        "rendererStartTime": 200.1950000524521,
+        "networkRequestTime": 412.8129999637604,
+        "networkEndTime": 566.607999920845,
+        "resourceSize": 10525,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+        "rendererStartTime": 200.21200001239777,
+        "networkRequestTime": 413.0189999341965,
+        "networkEndTime": 549.3849999904633,
+        "resourceSize": 14323,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CwMc51iY_ZQwleG.avif",
+        "rendererStartTime": 200.2299998998642,
+        "networkRequestTime": 501.652999997139,
+        "networkEndTime": 600.152999997139,
+        "resourceSize": 10024,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CUr0iAWH_2kyYF8.avif",
+        "rendererStartTime": 200.25800001621246,
+        "networkRequestTime": 532.1570000648499,
+        "networkEndTime": 636.2479999065399,
+        "resourceSize": 14905,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.591iKjEd_ZarbJw.avif",
+        "rendererStartTime": 200.35399997234344,
+        "networkRequestTime": 549.7009999752045,
+        "networkEndTime": 663.1299999952316,
+        "resourceSize": 7625,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+        "rendererStartTime": 200.37099993228912,
+        "networkRequestTime": 567.3449999094009,
+        "networkEndTime": 691.1870000362396,
+        "resourceSize": 13983,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.dPlBJLpD_ZehP14.avif",
+        "rendererStartTime": 200.39199995994568,
+        "networkRequestTime": 567.5319999456406,
+        "networkEndTime": 674.6200000047684,
+        "resourceSize": 8675,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bo977vUT_ZS6h8W.avif",
+        "rendererStartTime": 200.4100000858307,
+        "networkRequestTime": 578.7290000915527,
+        "networkEndTime": 714.2590000629425,
+        "resourceSize": 14670,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.DuGp5oBv_z9Ypg.avif",
+        "rendererStartTime": 200.42700004577637,
+        "networkRequestTime": 600.24899995327,
+        "networkEndTime": 721.4470000267029,
+        "resourceSize": 6224,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BOtyLgF8_JH6n2.avif",
+        "rendererStartTime": 200.44399988651276,
+        "networkRequestTime": 636.4159998893738,
+        "networkEndTime": 755.8300000429153,
+        "resourceSize": 15213,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+        "rendererStartTime": 200.46599996089935,
+        "networkRequestTime": 663.3109999895096,
+        "networkEndTime": 767.2350000143051,
+        "resourceSize": 4761,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+        "rendererStartTime": 200.48500001430511,
+        "networkRequestTime": 674.7129999399185,
+        "networkEndTime": 788.5699999332428,
+        "resourceSize": 15904,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CJgaZJ6N_qPz2Q.avif",
+        "rendererStartTime": 200.50499999523163,
+        "networkRequestTime": 691.4279999732971,
+        "networkEndTime": 799.5730000734329,
+        "resourceSize": 6622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+        "rendererStartTime": 200.5219999551773,
+        "networkRequestTime": 714.8019999265671,
+        "networkEndTime": 832.1159999370575,
+        "resourceSize": 15005,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/cranberry.BeAaUA4p_Z1UiiPj.avif",
+        "rendererStartTime": 200.54999995231628,
+        "networkRequestTime": 721.652999997139,
+        "networkEndTime": 856.2170000076294,
+        "resourceSize": 3697,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/seabuckthorn.5G7nLPtn_Z1S3dh8.avif",
+        "rendererStartTime": 200.5770000219345,
+        "networkRequestTime": 756.0460000038147,
+        "networkEndTime": 872.738000035286,
+        "resourceSize": 4461,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/tea.DpNrVaQR_Zfv8p9.avif",
+        "rendererStartTime": 200.5939999818802,
+        "networkRequestTime": 767.6210000514984,
+        "networkEndTime": 873.1699999570847,
+        "resourceSize": 5309,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/coffee.BZ0rl5Ul_ZPn75y.avif",
+        "rendererStartTime": 200.6119999885559,
+        "networkRequestTime": 788.9020000696182,
+        "networkEndTime": 889.6449999809265,
+        "resourceSize": 4792,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/analytics.C74FYLXv.js",
+        "rendererStartTime": 425.5239999294281,
+        "networkRequestTime": 425.88300001621246,
+        "networkEndTime": 578.5339999198914,
+        "resourceSize": 43200,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/pie-planner.D65GEHih.js",
+        "rendererStartTime": 425.59600007534027,
+        "networkRequestTime": 426.1089999675751,
+        "networkEndTime": 567.1629999876022,
+        "resourceSize": 1283,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 794.8249999284744,
+        "networkRequestTime": 795.1159999370575,
+        "networkEndTime": 935.2469999790192,
+        "resourceSize": 611,
+        "priority": "High",
+        "resourceType": "Fetch"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 937.4499999284744,
+        "networkRequestTime": 937.7689999341965,
+        "networkEndTime": 1080.9910000562668,
+        "resourceSize": 611,
+        "priority": "High",
+        "resourceType": "Fetch"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 1303.0069999694824,
+        "networkRequestTime": 1303.4980000257492,
+        "networkEndTime": 1449.7960000038147,
+        "resourceSize": 43,
+        "priority": "High",
+        "resourceType": "Fetch"
+      }
+    ]
+  },
+  {
+    "run": 3,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:17:36.056Z",
+    "version": "13.5.0",
+    "performance": 100,
+    "metrics": {
+      "first-contentful-paint": 1102.4832999999999,
+      "largest-contentful-paint": 1298.5254999999997,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.0058634232187400265,
+      "speed-index": 1102.4915056739655
+    },
+    "observed": {
+      "firstContentfulPaint": 1102,
+      "largestContentfulPaint": 1299,
+      "interactive": 1299,
+      "speedIndex": 1102,
+      "totalBlockingTime": 0,
+      "maxPotentialFID": 27,
+      "cumulativeLayoutShift": 0.0058634232187400265,
+      "cumulativeLayoutShiftMainFrame": 0.0058634232187400265,
+      "lcpLoadDelay": 698,
+      "lcpLoadDuration": 1248,
+      "timeToFirstByte": 698,
+      "observedTimeOrigin": 0,
+      "observedTimeOriginTs": 863363370616,
+      "observedNavigationStart": 0,
+      "observedNavigationStartTs": 863363370616,
+      "observedFirstPaint": 255,
+      "observedFirstPaintTs": 863363626106,
+      "observedFirstContentfulPaint": 255,
+      "observedFirstContentfulPaintTs": 863363626106,
+      "observedFirstContentfulPaintAllFrames": 255,
+      "observedFirstContentfulPaintAllFramesTs": 863363626106,
+      "observedLargestContentfulPaint": 282,
+      "observedLargestContentfulPaintTs": 863363652832,
+      "observedLargestContentfulPaintAllFrames": 282,
+      "observedLargestContentfulPaintAllFramesTs": 863363652832,
+      "observedTraceEnd": 45004,
+      "observedTraceEndTs": 863408374987,
+      "observedLoad": 527,
+      "observedLoadTs": 863363897969,
+      "observedDomContentLoaded": 342,
+      "observedDomContentLoadedTs": 863363712585,
+      "observedCumulativeLayoutShift": 0.0058634232187400265,
+      "observedCumulativeLayoutShiftMainFrame": 0.0058634232187400265,
+      "observedFirstVisualChange": 255,
+      "observedFirstVisualChangeTs": 863363625616,
+      "observedLastVisualChange": 420,
+      "observedLastVisualChangeTs": 863363790616,
+      "observedSpeedIndex": 271,
+      "observedSpeedIndexTs": 863363642023
+    },
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.36 Safari/537.36",
+      "benchmarkIndex": 4042,
+      "credits": {}
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 134.984
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 5.962
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 130.32
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 10.95
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "mainThread": [
+      {
+        "group": "styleLayout",
+        "groupLabel": "Style & Layout",
+        "duration": 189.72400000000005
+      },
+      {
+        "group": "other",
+        "groupLabel": "Other",
+        "duration": 153.78800000000103
+      },
+      {
+        "group": "scriptEvaluation",
+        "groupLabel": "Script Evaluation",
+        "duration": 78.5639999999998
+      },
+      {
+        "group": "paintCompositeRender",
+        "groupLabel": "Rendering",
+        "duration": 74.93600000000002
+      },
+      {
+        "group": "garbageCollection",
+        "groupLabel": "Garbage Collection",
+        "duration": 47.53999999999993
+      },
+      {
+        "group": "parseHTML",
+        "groupLabel": "Parse HTML & CSS",
+        "duration": 19.683999999999997
+      },
+      {
+        "group": "scriptParseCompile",
+        "groupLabel": "Script Parsing & Compilation",
+        "duration": 13.424000000000001
+      }
+    ],
+    "longTasks": [
+      {
+        "origin": "https://pirogorsk.ru",
+        "startTime": 1020.4832999999999,
+        "duration": 61
+      }
+    ],
+    "criticalRequests": [
+      {
+        "path": "/",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.24800002574920654,
+        "networkEndTime": 137.6159999370575,
+        "resourceSize": 180979,
+        "priority": "VeryHigh",
+        "resourceType": "Document"
+      },
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "rendererStartTime": 140.65899991989136,
+        "networkRequestTime": 140.97200000286102,
+        "networkEndTime": 290.97000002861023,
+        "resourceSize": 18596,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "rendererStartTime": 140.79399991035461,
+        "networkRequestTime": 141.2519999742508,
+        "networkEndTime": 288.6100000143051,
+        "resourceSize": 9228,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "rendererStartTime": 140.8200000524521,
+        "networkRequestTime": 141.42499995231628,
+        "networkEndTime": 288.90700006484985,
+        "resourceSize": 18676,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "rendererStartTime": 140.85599994659424,
+        "networkRequestTime": 141.56400001049042,
+        "networkEndTime": 405.595999956131,
+        "resourceSize": 15904,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "rendererStartTime": 140.88100004196167,
+        "networkRequestTime": 141.80000007152557,
+        "networkEndTime": 271.20099997520447,
+        "resourceSize": 12589,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/brand/pirogorsk-symbol.svg",
+        "rendererStartTime": 140.9099999666214,
+        "networkRequestTime": 177.73399996757507,
+        "networkEndTime": 323.84100008010864,
+        "resourceSize": 1014,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+        "rendererStartTime": 140.93799996376038,
+        "networkRequestTime": 142.12399995326996,
+        "networkEndTime": 323.28400003910065,
+        "resourceSize": 39291,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/InterestForm.astro_astro_type_script_index_0_lang.DN8uHmlK.js",
+        "rendererStartTime": 140.97000002861023,
+        "networkRequestTime": 142.33399999141693,
+        "networkEndTime": 271.527999997139,
+        "resourceSize": 8004,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.Di4U5Hyl.js",
+        "rendererStartTime": 141.00400006771088,
+        "networkRequestTime": 142.53200006484985,
+        "networkEndTime": 271.722000002861,
+        "resourceSize": 32,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/index.astro_astro_type_script_index_0_lang.CG4RGIjQ.js",
+        "rendererStartTime": 141.02600002288818,
+        "networkRequestTime": 142.62199997901917,
+        "networkEndTime": 238.7039999961853,
+        "resourceSize": 10452,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/analytics.C74FYLXv.js",
+        "rendererStartTime": 239.84500002861023,
+        "networkRequestTime": 240.07400000095367,
+        "networkEndTime": 338.027999997139,
+        "resourceSize": 43200,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/pie-planner.D65GEHih.js",
+        "rendererStartTime": 239.88999998569489,
+        "networkRequestTime": 240.24799990653992,
+        "networkEndTime": 324.26199996471405,
+        "resourceSize": 1283,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/background.DMEurvcD_Z10U0hT.avif",
+        "rendererStartTime": 248.15000009536743,
+        "networkRequestTime": 291.2960000038147,
+        "networkEndTime": 462.59500002861023,
+        "resourceSize": 8368,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.d61w9KjH_1ymwWx.avif",
+        "rendererStartTime": 248.2260000705719,
+        "networkRequestTime": 324.4850000143051,
+        "networkEndTime": 416.336000084877,
+        "resourceSize": 14622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.C3rRYxI3_nvq9x.avif",
+        "rendererStartTime": 248.25,
+        "networkRequestTime": 324.69200003147125,
+        "networkEndTime": 506.4839999675751,
+        "resourceSize": 10525,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+        "rendererStartTime": 248.2720000743866,
+        "networkRequestTime": 324.807000041008,
+        "networkEndTime": 423.902999997139,
+        "resourceSize": 14323,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CwMc51iY_ZQwleG.avif",
+        "rendererStartTime": 248.29499995708466,
+        "networkRequestTime": 338.49000000953674,
+        "networkEndTime": 462.2129999399185,
+        "resourceSize": 10024,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CUr0iAWH_2kyYF8.avif",
+        "rendererStartTime": 248.3090000152588,
+        "networkRequestTime": 405.87600004673004,
+        "networkEndTime": 490.81900000572205,
+        "resourceSize": 14905,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.591iKjEd_ZarbJw.avif",
+        "rendererStartTime": 248.33000004291534,
+        "networkRequestTime": 416.7450000047684,
+        "networkEndTime": 501.7459999322891,
+        "resourceSize": 7625,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+        "rendererStartTime": 248.3439999818802,
+        "networkRequestTime": 424.1980000734329,
+        "networkEndTime": 512.7730000019073,
+        "resourceSize": 13983,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.dPlBJLpD_ZehP14.avif",
+        "rendererStartTime": 248.35599994659424,
+        "networkRequestTime": 462.69200003147125,
+        "networkEndTime": 549.4830000400543,
+        "resourceSize": 8675,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bo977vUT_ZS6h8W.avif",
+        "rendererStartTime": 248.37000000476837,
+        "networkRequestTime": 462.8090000152588,
+        "networkEndTime": 663.0220000743866,
+        "resourceSize": 14670,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.DuGp5oBv_z9Ypg.avif",
+        "rendererStartTime": 248.38699996471405,
+        "networkRequestTime": 490.91100001335144,
+        "networkEndTime": 572.1519999504089,
+        "resourceSize": 6224,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BOtyLgF8_JH6n2.avif",
+        "rendererStartTime": 248.39999997615814,
+        "networkRequestTime": 502.1269999742508,
+        "networkEndTime": 594.3479999303818,
+        "resourceSize": 15213,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+        "rendererStartTime": 248.4170000553131,
+        "networkRequestTime": 506.8310000896454,
+        "networkEndTime": 707.8589999675751,
+        "resourceSize": 4761,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+        "rendererStartTime": 248.44700002670288,
+        "networkRequestTime": 512.9129999876022,
+        "networkEndTime": 603.4680000543594,
+        "resourceSize": 15904,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CJgaZJ6N_qPz2Q.avif",
+        "rendererStartTime": 248.47000002861023,
+        "networkRequestTime": 549.7130000591278,
+        "networkEndTime": 639.2519999742508,
+        "resourceSize": 6622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+        "rendererStartTime": 248.49300003051758,
+        "networkRequestTime": 572.2530000209808,
+        "networkEndTime": 758.0820000171661,
+        "resourceSize": 15005,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/cranberry.BeAaUA4p_Z1UiiPj.avif",
+        "rendererStartTime": 248.50800001621246,
+        "networkRequestTime": 594.6779999732971,
+        "networkEndTime": 686.045000076294,
+        "resourceSize": 3697,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/seabuckthorn.5G7nLPtn_Z1S3dh8.avif",
+        "rendererStartTime": 248.5369999408722,
+        "networkRequestTime": 603.6219999790192,
+        "networkEndTime": 687.6470000743866,
+        "resourceSize": 4461,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/tea.DpNrVaQR_Zfv8p9.avif",
+        "rendererStartTime": 248.5549999475479,
+        "networkRequestTime": 639.4830000400543,
+        "networkEndTime": 720.988000035286,
+        "resourceSize": 5309,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/coffee.BZ0rl5Ul_ZPn75y.avif",
+        "rendererStartTime": 248.5789999961853,
+        "networkRequestTime": 663.7519999742508,
+        "networkEndTime": 936.694000005722,
+        "resourceSize": 4792,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 526.2139999866486,
+        "networkRequestTime": 526.4049999713898,
+        "networkEndTime": 663.6699999570847,
+        "resourceSize": 611,
+        "priority": "High",
+        "resourceType": "Fetch"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 666.0329999923706,
+        "networkRequestTime": 666.345999956131,
+        "networkEndTime": 804.6610000133514,
+        "resourceSize": 611,
+        "priority": "High",
+        "resourceType": "Fetch"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 666.4659999608994,
+        "networkRequestTime": 666.8260000944138,
+        "networkEndTime": 804.1970001459122,
+        "resourceSize": 43,
+        "priority": "High",
+        "resourceType": "Fetch"
+      }
+    ]
+  },
+  {
+    "run": 4,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:18:28.436Z",
+    "version": "13.5.0",
+    "performance": 100,
+    "metrics": {
+      "first-contentful-paint": 1115.1441,
+      "largest-contentful-paint": 1459.2164,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.002264982974171519,
+      "speed-index": 1115.1441
+    },
+    "observed": {
+      "firstContentfulPaint": 1115,
+      "largestContentfulPaint": 1459,
+      "interactive": 1459,
+      "speedIndex": 1115,
+      "totalBlockingTime": 0,
+      "maxPotentialFID": 49,
+      "cumulativeLayoutShift": 0.002264982974171519,
+      "cumulativeLayoutShiftMainFrame": 0.002264982974171519,
+      "lcpLoadDelay": 825,
+      "lcpLoadDuration": 1359,
+      "timeToFirstByte": 709,
+      "observedTimeOrigin": 0,
+      "observedTimeOriginTs": 863415769016,
+      "observedNavigationStart": 0,
+      "observedNavigationStartTs": 863415769016,
+      "observedFirstPaint": 293,
+      "observedFirstPaintTs": 863416062439,
+      "observedFirstContentfulPaint": 293,
+      "observedFirstContentfulPaintTs": 863416062439,
+      "observedFirstContentfulPaintAllFrames": 293,
+      "observedFirstContentfulPaintAllFramesTs": 863416062439,
+      "observedLargestContentfulPaint": 310,
+      "observedLargestContentfulPaintTs": 863416078959,
+      "observedLargestContentfulPaintAllFrames": 310,
+      "observedLargestContentfulPaintAllFramesTs": 863416078959,
+      "observedTraceEnd": 45009,
+      "observedTraceEndTs": 863460778432,
+      "observedLoad": 692,
+      "observedLoadTs": 863416460650,
+      "observedDomContentLoaded": 461,
+      "observedDomContentLoadedTs": 863416230205,
+      "observedCumulativeLayoutShift": 0.002264982974171519,
+      "observedCumulativeLayoutShiftMainFrame": 0.002264982974171519,
+      "observedFirstVisualChange": 293,
+      "observedFirstVisualChangeTs": 863416062016,
+      "observedLastVisualChange": 899,
+      "observedLastVisualChangeTs": 863416668016,
+      "observedSpeedIndex": 311,
+      "observedSpeedIndexTs": 863416079694
+    },
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.36 Safari/537.36",
+      "benchmarkIndex": 4072.5,
+      "credits": {}
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 168.038
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 6.017
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 114.518
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 21.37
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-1-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "mainThread": [
+      {
+        "group": "styleLayout",
+        "groupLabel": "Style & Layout",
+        "duration": 211.38400000000001
+      },
+      {
+        "group": "other",
+        "groupLabel": "Other",
+        "duration": 169.3839999999983
+      },
+      {
+        "group": "paintCompositeRender",
+        "groupLabel": "Rendering",
+        "duration": 84.62799999999999
+      },
+      {
+        "group": "scriptEvaluation",
+        "groupLabel": "Script Evaluation",
+        "duration": 82.59199999999984
+      },
+      {
+        "group": "garbageCollection",
+        "groupLabel": "Garbage Collection",
+        "duration": 27.55599999999998
+      },
+      {
+        "group": "parseHTML",
+        "groupLabel": "Parse HTML & CSS",
+        "duration": 21.456000000000003
+      },
+      {
+        "group": "scriptParseCompile",
+        "groupLabel": "Script Parsing & Compilation",
+        "duration": 12.367999999999999
+      }
+    ],
+    "longTasks": [
+      {
+        "origin": "https://pirogorsk.ru",
+        "startTime": 1017.1441,
+        "duration": 73
+      }
+    ],
+    "criticalRequests": [
+      {
+        "path": "/",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.47800004482269287,
+        "networkEndTime": 176.7810000181198,
+        "resourceSize": 180979,
+        "priority": "VeryHigh",
+        "resourceType": "Document"
+      },
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "rendererStartTime": 173.75200009346008,
+        "networkRequestTime": 174.06900012493134,
+        "networkEndTime": 321.55800008773804,
+        "resourceSize": 18596,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "rendererStartTime": 173.8990000486374,
+        "networkRequestTime": 174.51700007915497,
+        "networkEndTime": 312.0610001087189,
+        "resourceSize": 9228,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "rendererStartTime": 173.93300008773804,
+        "networkRequestTime": 174.7370001077652,
+        "networkEndTime": 337.6160001754761,
+        "resourceSize": 18676,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "rendererStartTime": 173.97100007534027,
+        "networkRequestTime": 174.9720001220703,
+        "networkEndTime": 312.296000123024,
+        "resourceSize": 15904,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "rendererStartTime": 173.9960001707077,
+        "networkRequestTime": 175.08500003814697,
+        "networkEndTime": 288.51400005817413,
+        "resourceSize": 12589,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/brand/pirogorsk-symbol.svg",
+        "rendererStartTime": 174.02800011634827,
+        "networkRequestTime": 215.03900003433228,
+        "networkEndTime": 339.5660001039505,
+        "resourceSize": 1014,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+        "rendererStartTime": 174.06200003623962,
+        "networkRequestTime": 175.23600018024445,
+        "networkEndTime": 306.277999997139,
+        "resourceSize": 39291,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/InterestForm.astro_astro_type_script_index_0_lang.DN8uHmlK.js",
+        "rendererStartTime": 181.15700006484985,
+        "networkRequestTime": 181.4060001373291,
+        "networkEndTime": 338.53000009059906,
+        "resourceSize": 8004,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.Di4U5Hyl.js",
+        "rendererStartTime": 181.22500014305115,
+        "networkRequestTime": 181.6579999923706,
+        "networkEndTime": 339.1860001087189,
+        "resourceSize": 32,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/index.astro_astro_type_script_index_0_lang.CG4RGIjQ.js",
+        "rendererStartTime": 181.3090000152588,
+        "networkRequestTime": 181.8490000963211,
+        "networkEndTime": 339.29500007629395,
+        "resourceSize": 10452,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/background.DMEurvcD_Z10U0hT.avif",
+        "rendererStartTime": 287.0220000743866,
+        "networkRequestTime": 321.6930000782013,
+        "networkEndTime": 404.70700001716614,
+        "resourceSize": 8368,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.d61w9KjH_1ymwWx.avif",
+        "rendererStartTime": 287.13499999046326,
+        "networkRequestTime": 339.6840000152588,
+        "networkEndTime": 438.42000007629395,
+        "resourceSize": 14622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.C3rRYxI3_nvq9x.avif",
+        "rendererStartTime": 287.2170000076294,
+        "networkRequestTime": 339.8120000362396,
+        "networkEndTime": 447.603000164032,
+        "resourceSize": 10525,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+        "rendererStartTime": 287.23400008678436,
+        "networkRequestTime": 339.87600004673004,
+        "networkEndTime": 449.8090000152588,
+        "resourceSize": 14323,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CwMc51iY_ZQwleG.avif",
+        "rendererStartTime": 287.24900007247925,
+        "networkRequestTime": 339.932000041008,
+        "networkEndTime": 459.95300006866455,
+        "resourceSize": 10024,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CUr0iAWH_2kyYF8.avif",
+        "rendererStartTime": 287.2770000696182,
+        "networkRequestTime": 340.0810000896454,
+        "networkEndTime": 466.1520000696182,
+        "resourceSize": 14905,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.591iKjEd_ZarbJw.avif",
+        "rendererStartTime": 287.296000123024,
+        "networkRequestTime": 447.75999999046326,
+        "networkEndTime": 557.2710000276566,
+        "resourceSize": 7625,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+        "rendererStartTime": 287.3090000152588,
+        "networkRequestTime": 450.46000015735626,
+        "networkEndTime": 569.5150001049042,
+        "resourceSize": 13983,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.dPlBJLpD_ZehP14.avif",
+        "rendererStartTime": 287.335000038147,
+        "networkRequestTime": 450.59100008010864,
+        "networkEndTime": 644.7040001153946,
+        "resourceSize": 8675,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bo977vUT_ZS6h8W.avif",
+        "rendererStartTime": 287.4099999666214,
+        "networkRequestTime": 458.2310000658035,
+        "networkEndTime": 654.212000131607,
+        "resourceSize": 14670,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.DuGp5oBv_z9Ypg.avif",
+        "rendererStartTime": 287.44600009918213,
+        "networkRequestTime": 460.1400001049042,
+        "networkEndTime": 645.0210001468658,
+        "resourceSize": 6224,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BOtyLgF8_JH6n2.avif",
+        "rendererStartTime": 287.4670001268387,
+        "networkRequestTime": 466.335000038147,
+        "networkEndTime": 560.1160000562668,
+        "resourceSize": 15213,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+        "rendererStartTime": 287.48200011253357,
+        "networkRequestTime": 557.4990000724792,
+        "networkEndTime": 660.1319999694824,
+        "resourceSize": 4761,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+        "rendererStartTime": 287.49900007247925,
+        "networkRequestTime": 560.3450000286102,
+        "networkEndTime": 660.3970000743866,
+        "resourceSize": 15904,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CJgaZJ6N_qPz2Q.avif",
+        "rendererStartTime": 287.51400005817413,
+        "networkRequestTime": 569.6740000247955,
+        "networkEndTime": 663.7910000085831,
+        "resourceSize": 6622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+        "rendererStartTime": 287.55200004577637,
+        "networkRequestTime": 645.2350001335144,
+        "networkEndTime": 846.1250001192093,
+        "resourceSize": 15005,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/cranberry.BeAaUA4p_Z1UiiPj.avif",
+        "rendererStartTime": 287.5680000782013,
+        "networkRequestTime": 645.3710000514984,
+        "networkEndTime": 739.9910000562668,
+        "resourceSize": 3697,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/seabuckthorn.5G7nLPtn_Z1S3dh8.avif",
+        "rendererStartTime": 287.5840001106262,
+        "networkRequestTime": 654.9920001029968,
+        "networkEndTime": 842.4130001068115,
+        "resourceSize": 4461,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/tea.DpNrVaQR_Zfv8p9.avif",
+        "rendererStartTime": 287.60200011730194,
+        "networkRequestTime": 660.5609999895096,
+        "networkEndTime": 842.670000076294,
+        "resourceSize": 5309,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/coffee.BZ0rl5Ul_ZPn75y.avif",
+        "rendererStartTime": 287.61800014972687,
+        "networkRequestTime": 660.6750000715256,
+        "networkEndTime": 964.9800001382828,
+        "resourceSize": 4792,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/analytics.C74FYLXv.js",
+        "rendererStartTime": 341.5070000886917,
+        "networkRequestTime": 341.80400013923645,
+        "networkEndTime": 457.9810000658035,
+        "resourceSize": 43200,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/pie-planner.D65GEHih.js",
+        "rendererStartTime": 341.57400012016296,
+        "networkRequestTime": 341.9630000591278,
+        "networkEndTime": 450.29900002479553,
+        "resourceSize": 1283,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 690.1390000581741,
+        "networkRequestTime": 690.3740000724792,
+        "networkEndTime": 840.9150000810623,
+        "resourceSize": 611,
+        "priority": "High",
+        "resourceType": "Fetch"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 843.711000084877,
+        "networkRequestTime": 843.9520000219345,
+        "networkEndTime": 990.154000043869,
+        "resourceSize": 611,
+        "priority": "High",
+        "resourceType": "Fetch"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 844.1550000905991,
+        "networkRequestTime": 844.472000002861,
+        "networkEndTime": 989.4259999990463,
+        "resourceSize": 43,
+        "priority": "High",
+        "resourceType": "Fetch"
+      }
+    ]
+  },
+  {
+    "run": 5,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:19:20.839Z",
+    "version": "13.5.0",
+    "performance": 100,
+    "metrics": {
+      "first-contentful-paint": 1086.6559,
+      "largest-contentful-paint": 1752.6679000000001,
+      "total-blocking-time": 0,
+      "cumulative-layout-shift": 0.002106102346120048,
+      "speed-index": 1086.6559
+    },
+    "observed": {
+      "firstContentfulPaint": 1087,
+      "largestContentfulPaint": 1753,
+      "interactive": 1753,
+      "speedIndex": 1087,
+      "totalBlockingTime": 0,
+      "maxPotentialFID": 44,
+      "cumulativeLayoutShift": 0.002106102346120048,
+      "cumulativeLayoutShiftMainFrame": 0.002106102346120048,
+      "lcpLoadDelay": 703,
+      "lcpLoadDuration": 1606,
+      "timeToFirstByte": 703,
+      "observedTimeOrigin": 0,
+      "observedTimeOriginTs": 863468162406,
+      "observedNavigationStart": 0,
+      "observedNavigationStartTs": 863468162406,
+      "observedFirstPaint": 261,
+      "observedFirstPaintTs": 863468423103,
+      "observedFirstContentfulPaint": 261,
+      "observedFirstContentfulPaintTs": 863468423103,
+      "observedFirstContentfulPaintAllFrames": 261,
+      "observedFirstContentfulPaintAllFramesTs": 863468423103,
+      "observedLargestContentfulPaint": 354,
+      "observedLargestContentfulPaintTs": 863468516626,
+      "observedLargestContentfulPaintAllFrames": 354,
+      "observedLargestContentfulPaintAllFramesTs": 863468516626,
+      "observedTraceEnd": 45012,
+      "observedTraceEndTs": 863513173914,
+      "observedLoad": 641,
+      "observedLoadTs": 863468803103,
+      "observedDomContentLoaded": 442,
+      "observedDomContentLoadedTs": 863468604812,
+      "observedCumulativeLayoutShift": 0.002106102346120048,
+      "observedCumulativeLayoutShiftMainFrame": 0.002106102346120048,
+      "observedFirstVisualChange": 260,
+      "observedFirstVisualChangeTs": 863468422406,
+      "observedLastVisualChange": 354,
+      "observedLastVisualChangeTs": 863468516406,
+      "observedSpeedIndex": 284,
+      "observedSpeedIndexTs": 863468446510
+    },
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.36 Safari/537.36",
+      "benchmarkIndex": 4088.5,
+      "credits": {}
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 99.525
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 7.347
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 217.631
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 29.717
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-1-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "mainThread": [
+      {
+        "group": "styleLayout",
+        "groupLabel": "Style & Layout",
+        "duration": 202.78799999999995
+      },
+      {
+        "group": "other",
+        "groupLabel": "Other",
+        "duration": 167.93199999999953
+      },
+      {
+        "group": "scriptEvaluation",
+        "groupLabel": "Script Evaluation",
+        "duration": 93.78799999999985
+      },
+      {
+        "group": "paintCompositeRender",
+        "groupLabel": "Rendering",
+        "duration": 63.69599999999993
+      },
+      {
+        "group": "parseHTML",
+        "groupLabel": "Parse HTML & CSS",
+        "duration": 26.572000000000003
+      },
+      {
+        "group": "garbageCollection",
+        "groupLabel": "Garbage Collection",
+        "duration": 26.028
+      },
+      {
+        "group": "scriptParseCompile",
+        "groupLabel": "Script Parsing & Compilation",
+        "duration": 15.356
+      }
+    ],
+    "longTasks": [
+      {
+        "origin": "https://pirogorsk.ru",
+        "startTime": 1010.6559,
+        "duration": 76
+      }
+    ],
+    "criticalRequests": [
+      {
+        "path": "/",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.17400002479553223,
+        "networkEndTime": 210.3420000076294,
+        "resourceSize": 180979,
+        "priority": "VeryHigh",
+        "resourceType": "Document"
+      },
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "rendererStartTime": 106.58200001716614,
+        "networkRequestTime": 107.06400001049042,
+        "networkEndTime": 216.06500005722046,
+        "resourceSize": 18596,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "rendererStartTime": 106.7279999256134,
+        "networkRequestTime": 107.40499997138977,
+        "networkEndTime": 215.82699990272522,
+        "resourceSize": 9228,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "rendererStartTime": 106.75800001621246,
+        "networkRequestTime": 107.58700001239777,
+        "networkEndTime": 323.9490000009537,
+        "resourceSize": 18676,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "rendererStartTime": 106.7940000295639,
+        "networkRequestTime": 107.692999958992,
+        "networkEndTime": 324.18500006198883,
+        "resourceSize": 15904,
+        "priority": "High",
+        "resourceType": "Font"
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "rendererStartTime": 106.82400000095367,
+        "networkRequestTime": 108.08699989318848,
+        "networkEndTime": 324.45499992370605,
+        "resourceSize": 12589,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/brand/pirogorsk-symbol.svg",
+        "rendererStartTime": 106.85399997234344,
+        "networkRequestTime": 216.73500001430511,
+        "networkEndTime": 328.2760000228882,
+        "resourceSize": 1014,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+        "rendererStartTime": 106.88999998569489,
+        "networkRequestTime": 108.35800004005432,
+        "networkEndTime": 323.3439999818802,
+        "resourceSize": 39291,
+        "priority": "High",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/InterestForm.astro_astro_type_script_index_0_lang.DN8uHmlK.js",
+        "rendererStartTime": 215.43299996852875,
+        "networkRequestTime": 216.30799996852875,
+        "networkEndTime": 327.79900002479553,
+        "resourceSize": 8004,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.Di4U5Hyl.js",
+        "rendererStartTime": 215.50200009346008,
+        "networkRequestTime": 216.5329999923706,
+        "networkEndTime": 327.970999956131,
+        "resourceSize": 32,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/index.astro_astro_type_script_index_0_lang.CG4RGIjQ.js",
+        "rendererStartTime": 215.60399997234344,
+        "networkRequestTime": 216.66200006008148,
+        "networkEndTime": 328.13699996471405,
+        "resourceSize": 10452,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/background.DMEurvcD_Z10U0hT.avif",
+        "rendererStartTime": 253.125,
+        "networkRequestTime": 325.13900005817413,
+        "networkEndTime": 445.96400010585785,
+        "resourceSize": 8368,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.d61w9KjH_1ymwWx.avif",
+        "rendererStartTime": 253.1909999847412,
+        "networkRequestTime": 325.4980000257492,
+        "networkEndTime": 451.22499990463257,
+        "resourceSize": 14622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.C3rRYxI3_nvq9x.avif",
+        "rendererStartTime": 253.2170000076294,
+        "networkRequestTime": 328.38300001621246,
+        "networkEndTime": 459.79299998283386,
+        "resourceSize": 10525,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+        "rendererStartTime": 253.23400008678436,
+        "networkRequestTime": 328.46599996089935,
+        "networkEndTime": 472.04299998283386,
+        "resourceSize": 14323,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CwMc51iY_ZQwleG.avif",
+        "rendererStartTime": 253.2539999485016,
+        "networkRequestTime": 328.52300000190735,
+        "networkEndTime": 460.13899993896484,
+        "resourceSize": 10024,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CUr0iAWH_2kyYF8.avif",
+        "rendererStartTime": 253.27799999713898,
+        "networkRequestTime": 328.5659999847412,
+        "networkEndTime": 465.6449999809265,
+        "resourceSize": 14905,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.591iKjEd_ZarbJw.avif",
+        "rendererStartTime": 253.30299997329712,
+        "networkRequestTime": 446.20299994945526,
+        "networkEndTime": 543.3200000524521,
+        "resourceSize": 7625,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+        "rendererStartTime": 253.3400000333786,
+        "networkRequestTime": 451.45700001716614,
+        "networkEndTime": 542.0289999246597,
+        "resourceSize": 13983,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.dPlBJLpD_ZehP14.avif",
+        "rendererStartTime": 253.35600006580353,
+        "networkRequestTime": 460.3309999704361,
+        "networkEndTime": 552.1080000400543,
+        "resourceSize": 8675,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.Bo977vUT_ZS6h8W.avif",
+        "rendererStartTime": 253.3769999742508,
+        "networkRequestTime": 460.4079999923706,
+        "networkEndTime": 564.7189999818802,
+        "resourceSize": 14670,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.DuGp5oBv_z9Ypg.avif",
+        "rendererStartTime": 253.39399993419647,
+        "networkRequestTime": 465.86099994182587,
+        "networkEndTime": 565.0889999866486,
+        "resourceSize": 6224,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BOtyLgF8_JH6n2.avif",
+        "rendererStartTime": 253.41299998760223,
+        "networkRequestTime": 472.18300008773804,
+        "networkEndTime": 567.5629999637604,
+        "resourceSize": 15213,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+        "rendererStartTime": 253.42799997329712,
+        "networkRequestTime": 542.3250000476837,
+        "networkEndTime": 631.3339999914169,
+        "resourceSize": 4761,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+        "rendererStartTime": 253.4450000524521,
+        "networkRequestTime": 543.6180000305176,
+        "networkEndTime": 641.8079999685287,
+        "resourceSize": 15904,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/background.CJgaZJ6N_qPz2Q.avif",
+        "rendererStartTime": 253.45899999141693,
+        "networkRequestTime": 552.3759999275208,
+        "networkEndTime": 642.1969999074936,
+        "resourceSize": 6622,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+        "rendererStartTime": 253.47699999809265,
+        "networkRequestTime": 565.4910000562668,
+        "networkEndTime": 662.5890001058578,
+        "resourceSize": 15005,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/cranberry.BeAaUA4p_Z1UiiPj.avif",
+        "rendererStartTime": 253.49199998378754,
+        "networkRequestTime": 565.6579999923706,
+        "networkEndTime": 715.4749999046326,
+        "resourceSize": 3697,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/seabuckthorn.5G7nLPtn_Z1S3dh8.avif",
+        "rendererStartTime": 253.50800001621246,
+        "networkRequestTime": 567.7540000677109,
+        "networkEndTime": 657.0770000219345,
+        "resourceSize": 4461,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/tea.DpNrVaQR_Zfv8p9.avif",
+        "rendererStartTime": 253.5349999666214,
+        "networkRequestTime": 631.6349999904633,
+        "networkEndTime": 715.8769999742508,
+        "resourceSize": 5309,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/coffee.BZ0rl5Ul_ZPn75y.avif",
+        "rendererStartTime": 253.55799996852875,
+        "networkRequestTime": 642.2630000114441,
+        "networkEndTime": 841.0579999685287,
+        "resourceSize": 4792,
+        "priority": "Low",
+        "resourceType": "Image"
+      },
+      {
+        "path": "/_astro/analytics.C74FYLXv.js",
+        "rendererStartTime": 334.89599990844727,
+        "networkRequestTime": 335.125,
+        "networkEndTime": 438.74199998378754,
+        "resourceSize": 43200,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/_astro/pie-planner.D65GEHih.js",
+        "rendererStartTime": 334.96200001239777,
+        "networkRequestTime": 335.364000082016,
+        "networkEndTime": 438.9450000524521,
+        "resourceSize": 1283,
+        "priority": "High",
+        "resourceType": "Script"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 639.3839999437332,
+        "networkRequestTime": 639.7310000658035,
+        "networkEndTime": 779.7109999656677,
+        "resourceSize": 611,
+        "priority": "High",
+        "resourceType": "Fetch"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 781.819000005722,
+        "networkRequestTime": 782.0920000076294,
+        "networkEndTime": 923.0099999904633,
+        "resourceSize": 611,
+        "priority": "High",
+        "resourceType": "Fetch"
+      },
+      {
+        "path": "/watch/113767847",
+        "rendererStartTime": 1148.0960000753403,
+        "networkRequestTime": 1148.5789999961853,
+        "networkEndTime": 1292.3029999732971,
+        "resourceSize": 43,
+        "priority": "High",
+        "resourceType": "Fetch"
+      }
+    ]
+  }
+]

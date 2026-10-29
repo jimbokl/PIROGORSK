@@ -1,0 +1,338 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:28:50.121Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1103,
+      "lcp": 1103
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 947.211,
+      "resourceLoadDelay": 12.037,
+      "resourceLoadDuration": 88.966,
+      "elementRenderDelay": 55.146
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1328.7320000000002,
+        "display": "1.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1684.7600000000002,
+        "display": "1.7 s"
+      },
+      "total-blocking-time": {
+        "value": 39.5,
+        "display": "40 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0009616585489488429,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 2110.4740780430316,
+        "display": "2.1 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names."
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 357 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 22 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:29:00.958Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 896,
+      "lcp": 902
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 739.68,
+      "resourceLoadDelay": 3.607,
+      "resourceLoadDuration": 108.327,
+      "elementRenderDelay": 50.35
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1127.7399999999998,
+        "display": "1.1 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1367.5679999999998,
+        "display": "1.4 s"
+      },
+      "total-blocking-time": {
+        "value": 17,
+        "display": "20 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.002264982974171519,
+        "display": "0.002"
+      },
+      "speed-index": {
+        "value": 1733.123151953697,
+        "display": "1.7 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names."
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 357 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 22 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:29:10.900Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1404,
+      "lcp": 1488
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1255.013,
+      "resourceLoadDelay": 24.169,
+      "resourceLoadDuration": 193.765,
+      "elementRenderDelay": 15.44
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1205.667,
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1705.667,
+        "display": "1.7 s"
+      },
+      "total-blocking-time": {
+        "value": 3,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0030909862763566754,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 2490.5220280406947,
+        "display": "2.5 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names."
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 357 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 22 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:29:21.523Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1306,
+      "lcp": 1452
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1129.474,
+      "resourceLoadDelay": 11.323,
+      "resourceLoadDuration": 289.05,
+      "elementRenderDelay": 22.518
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 387.37600000000015,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 505.7840000000003,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0009266151533724426,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 988.191504444979,
+        "display": "1.0 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "14 cookies found"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names."
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 538 KiB"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 71 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  }
+]

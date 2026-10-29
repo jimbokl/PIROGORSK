@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/muq2oa2yop?form_factor=mobile",
+    "time": "2026-10-29T09:02:44+02:00",
+    "mode": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcp": 953,
+    "lcp": 1651,
+    "tbt": 0,
+    "cls": 0.003,
+    "si": 953,
+    "lcpSelector": ".tasting-coast img",
+    "breakdown": {
+      "ttfb": 0,
+      "loadDelay": 210,
+      "load": 160,
+      "render": 40
+    }
+  },
+  {
+    "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/53r5t65xi7?form_factor=mobile",
+    "time": "2026-10-29T09:09:04+02:00",
+    "mode": "mobile",
+    "performance": 85,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcp": 1048,
+    "lcp": 4007,
+    "tbt": 2,
+    "cls": 0,
+    "si": 3955,
+    "lcpSelector": ".tasting-coast img",
+    "breakdown": {
+      "ttfb": 10,
+      "loadDelay": 180,
+      "load": 130,
+      "render": 2000
+    }
+  },
+  {
+    "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/mis322ten8?form_factor=mobile",
+    "time": "2026-10-29T09:18:57+02:00",
+    "mode": "mobile",
+    "performance": 94,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcp": 1011,
+    "lcp": 3101,
+    "tbt": 23,
+    "cls": 0,
+    "si": 1011,
+    "lcpSelector": ".tasting-coast img",
+    "breakdown": {
+      "ttfb": 0,
+      "loadDelay": 80,
+      "load": 140,
+      "render": 50
+    }
+  },
+  {
+    "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/mis322ten8?form_factor=desktop",
+    "time": "2026-10-29T09:18:57+02:00",
+    "mode": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcp": 277,
+    "lcp": 421,
+    "tbt": 0,
+    "cls": 0.019,
+    "si": 404
+  }
+]

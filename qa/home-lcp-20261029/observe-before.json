@@ -1,0 +1,886 @@
+[
+  {
+    "delayed": "none",
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-10-29T07:09:01.710Z",
+    "lcp": [
+      {
+        "time": 1432,
+        "render": 1432,
+        "load": 0,
+        "size": 47334,
+        "path": "",
+        "element": "H1",
+        "rect": {
+          "x": 18,
+          "y": 151.59375,
+          "width": 354,
+          "height": 138.234375
+        }
+      },
+      {
+        "time": 1724,
+        "render": 1724,
+        "load": 1698.1999999284744,
+        "size": 177060,
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "element": "coast",
+        "rect": {
+          "x": 0,
+          "y": 389.59375,
+          "width": 390,
+          "height": 471.25
+        }
+      }
+    ],
+    "shifts": [
+      {
+        "time": 2293.100000023842,
+        "value": 0.001385892997628892,
+        "sources": [
+          {
+            "element": "DIV",
+            "before": {
+              "x": 210.765625,
+              "y": 21.296875,
+              "width": 161.234375,
+              "height": 44,
+              "top": 21.296875,
+              "right": 372,
+              "bottom": 65.296875,
+              "left": 210.765625
+            },
+            "after": {
+              "x": 204.59375,
+              "y": 21.296875,
+              "width": 167.40625,
+              "height": 44,
+              "top": 21.296875,
+              "right": 372,
+              "bottom": 65.296875,
+              "left": 204.59375
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 132.96875,
+              "y": 79.59375,
+              "width": 91,
+              "height": 44,
+              "top": 79.59375,
+              "right": 223.96875,
+              "bottom": 123.59375,
+              "left": 132.96875
+            },
+            "after": {
+              "x": 138.796875,
+              "y": 79.59375,
+              "width": 99,
+              "height": 44,
+              "top": 79.59375,
+              "right": 237.796875,
+              "bottom": 123.59375,
+              "left": 138.796875
+            }
+          },
+          {
+            "element": "BUTTON",
+            "before": {
+              "x": 74.46875,
+              "y": 781.84375,
+              "width": 71.671875,
+              "height": 44,
+              "top": 781.84375,
+              "right": 146.140625,
+              "bottom": 825.84375,
+              "left": 74.46875
+            },
+            "after": {
+              "x": 70.984375,
+              "y": 781.84375,
+              "width": 73.234375,
+              "height": 44,
+              "top": 781.84375,
+              "right": 144.21875,
+              "bottom": 825.84375,
+              "left": 70.984375
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 241.46875,
+              "y": 79.59375,
+              "width": 36,
+              "height": 44,
+              "top": 79.59375,
+              "right": 277.46875,
+              "bottom": 123.59375,
+              "left": 241.46875
+            },
+            "after": {
+              "x": 255.203125,
+              "y": 79.59375,
+              "width": 39,
+              "height": 44,
+              "top": 79.59375,
+              "right": 294.203125,
+              "bottom": 123.59375,
+              "left": 255.203125
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 74.453125,
+              "y": 79.59375,
+              "width": 41,
+              "height": 44,
+              "top": 79.59375,
+              "right": 115.453125,
+              "bottom": 123.59375,
+              "left": 74.453125
+            },
+            "after": {
+              "x": 78.109375,
+              "y": 79.59375,
+              "width": 43,
+              "height": 44,
+              "top": 79.59375,
+              "right": 121.109375,
+              "bottom": 123.59375,
+              "left": 78.109375
+            }
+          }
+        ]
+      }
+    ],
+    "geometry": [
+      {
+        "time": 2480.2999999523163,
+        "selector": ".tasting-hero",
+        "rect": {
+          "x": 18,
+          "y": 129.59375,
+          "width": 354,
+          "height": 731.25
+        }
+      },
+      {
+        "time": 2480.2999999523163,
+        "selector": ".tasting-coast img",
+        "rect": {
+          "x": 0,
+          "y": 389.59375,
+          "width": 390,
+          "height": 471.25
+        }
+      },
+      {
+        "time": 2480.2999999523163,
+        "selector": ".tasting-copy h1",
+        "rect": {
+          "x": 18,
+          "y": 151.59375,
+          "width": 354,
+          "height": 138.234375
+        }
+      }
+    ],
+    "fonts": [
+      {
+        "time": 2439.399999976158,
+        "fonts": [
+          "Playfair",
+          "Golos",
+          "Golos",
+          "Playfair"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "start": 1136.5,
+        "end": 2425.5,
+        "size": 18596
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "start": 1136.6000000238419,
+        "end": 1674.1999999284744,
+        "size": 9228
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "start": 1137.5,
+        "end": 2275.600000023842,
+        "size": 18676
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "start": 1137.6000000238419,
+        "end": 2198.399999976158,
+        "size": 15904
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "start": 1137.6999999284744,
+        "end": 1696.5,
+        "size": 12589
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_lbezt.avif",
+        "start": 1195.7999999523163,
+        "end": 2702.6999999284744,
+        "size": 24057
+      }
+    ],
+    "coast": {
+      "src": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+      "naturalWidth": 390,
+      "naturalHeight": 259
+    },
+    "media": {
+      "coarse": true,
+      "reduced": false
+    }
+  },
+  {
+    "delayed": "fonts",
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-10-29T07:09:09.785Z",
+    "lcp": [
+      {
+        "time": 1564,
+        "render": 1564,
+        "load": 0,
+        "size": 4350,
+        "path": "",
+        "element": "SPAN",
+        "rect": {
+          "x": 64,
+          "y": 14,
+          "width": 143.359375,
+          "height": 26
+        }
+      },
+      {
+        "time": 1616,
+        "render": 1616,
+        "load": 0,
+        "size": 47334,
+        "path": "",
+        "element": "H1",
+        "rect": {
+          "x": 18,
+          "y": 151.59375,
+          "width": 354,
+          "height": 138.234375
+        }
+      },
+      {
+        "time": 1804,
+        "render": 1804,
+        "load": 1785.3999999761581,
+        "size": 177060,
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "element": "coast",
+        "rect": {
+          "x": 0,
+          "y": 389.59375,
+          "width": 390,
+          "height": 471.25
+        }
+      }
+    ],
+    "shifts": [
+      {
+        "time": 3953.899999976158,
+        "value": 0.001385892997628892,
+        "sources": [
+          {
+            "element": "DIV",
+            "before": {
+              "x": 210.765625,
+              "y": 21.296875,
+              "width": 161.234375,
+              "height": 44,
+              "top": 21.296875,
+              "right": 372,
+              "bottom": 65.296875,
+              "left": 210.765625
+            },
+            "after": {
+              "x": 204.59375,
+              "y": 21.296875,
+              "width": 167.40625,
+              "height": 44,
+              "top": 21.296875,
+              "right": 372,
+              "bottom": 65.296875,
+              "left": 204.59375
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 132.96875,
+              "y": 79.59375,
+              "width": 91,
+              "height": 44,
+              "top": 79.59375,
+              "right": 223.96875,
+              "bottom": 123.59375,
+              "left": 132.96875
+            },
+            "after": {
+              "x": 138.796875,
+              "y": 79.59375,
+              "width": 99,
+              "height": 44,
+              "top": 79.59375,
+              "right": 237.796875,
+              "bottom": 123.59375,
+              "left": 138.796875
+            }
+          },
+          {
+            "element": "BUTTON",
+            "before": {
+              "x": 74.46875,
+              "y": 781.84375,
+              "width": 71.671875,
+              "height": 44,
+              "top": 781.84375,
+              "right": 146.140625,
+              "bottom": 825.84375,
+              "left": 74.46875
+            },
+            "after": {
+              "x": 70.984375,
+              "y": 781.84375,
+              "width": 73.234375,
+              "height": 44,
+              "top": 781.84375,
+              "right": 144.21875,
+              "bottom": 825.84375,
+              "left": 70.984375
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 241.46875,
+              "y": 79.59375,
+              "width": 36,
+              "height": 44,
+              "top": 79.59375,
+              "right": 277.46875,
+              "bottom": 123.59375,
+              "left": 241.46875
+            },
+            "after": {
+              "x": 255.203125,
+              "y": 79.59375,
+              "width": 39,
+              "height": 44,
+              "top": 79.59375,
+              "right": 294.203125,
+              "bottom": 123.59375,
+              "left": 255.203125
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 74.453125,
+              "y": 79.59375,
+              "width": 41,
+              "height": 44,
+              "top": 79.59375,
+              "right": 115.453125,
+              "bottom": 123.59375,
+              "left": 74.453125
+            },
+            "after": {
+              "x": 78.109375,
+              "y": 79.59375,
+              "width": 43,
+              "height": 44,
+              "top": 79.59375,
+              "right": 121.109375,
+              "bottom": 123.59375,
+              "left": 78.109375
+            }
+          }
+        ]
+      }
+    ],
+    "geometry": [
+      {
+        "time": 2716,
+        "selector": ".tasting-hero",
+        "rect": {
+          "x": 18,
+          "y": 129.59375,
+          "width": 354,
+          "height": 731.25
+        }
+      },
+      {
+        "time": 2716.100000023842,
+        "selector": ".tasting-coast img",
+        "rect": {
+          "x": 0,
+          "y": 389.59375,
+          "width": 390,
+          "height": 471.25
+        }
+      },
+      {
+        "time": 2716.100000023842,
+        "selector": ".tasting-copy h1",
+        "rect": {
+          "x": 18,
+          "y": 151.59375,
+          "width": 354,
+          "height": 138.234375
+        }
+      }
+    ],
+    "fonts": [
+      {
+        "time": 3979.100000023842,
+        "fonts": [
+          "Playfair",
+          "Golos",
+          "Golos",
+          "Playfair"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "start": 1440.2999999523163,
+        "end": 3942.5,
+        "size": 18596
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "start": 1440.3999999761581,
+        "end": 3799.6999999284744,
+        "size": 9228
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "start": 1440.3999999761581,
+        "end": 3934.399999976158,
+        "size": 18676
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "start": 1441.2999999523163,
+        "end": 1780.3999999761581,
+        "size": 12589
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "start": 1441.2999999523163,
+        "end": 3904.6999999284744,
+        "size": 15904
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_lbezt.avif",
+        "start": 1538.6000000238419,
+        "end": 2897.7999999523163,
+        "size": 24057
+      }
+    ],
+    "coast": {
+      "src": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+      "naturalWidth": 390,
+      "naturalHeight": 259
+    },
+    "media": {
+      "coarse": true,
+      "reduced": false
+    }
+  },
+  {
+    "delayed": "golos",
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-10-29T07:09:17.633Z",
+    "lcp": [
+      {
+        "time": 1636,
+        "render": 1636,
+        "load": 0,
+        "size": 47334,
+        "path": "",
+        "element": "H1",
+        "rect": {
+          "x": 18,
+          "y": 151.59375,
+          "width": 354,
+          "height": 138.234375
+        }
+      },
+      {
+        "time": 1752,
+        "render": 1752,
+        "load": 1742.3000000715256,
+        "size": 177060,
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "element": "coast",
+        "rect": {
+          "x": 0,
+          "y": 389.59375,
+          "width": 390,
+          "height": 471.25
+        }
+      }
+    ],
+    "shifts": [
+      {
+        "time": 3732.5,
+        "value": 0.001385892997628892,
+        "sources": [
+          {
+            "element": "DIV",
+            "before": {
+              "x": 210.765625,
+              "y": 21.296875,
+              "width": 161.234375,
+              "height": 44,
+              "top": 21.296875,
+              "right": 372,
+              "bottom": 65.296875,
+              "left": 210.765625
+            },
+            "after": {
+              "x": 204.59375,
+              "y": 21.296875,
+              "width": 167.40625,
+              "height": 44,
+              "top": 21.296875,
+              "right": 372,
+              "bottom": 65.296875,
+              "left": 204.59375
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 132.96875,
+              "y": 79.59375,
+              "width": 91,
+              "height": 44,
+              "top": 79.59375,
+              "right": 223.96875,
+              "bottom": 123.59375,
+              "left": 132.96875
+            },
+            "after": {
+              "x": 138.796875,
+              "y": 79.59375,
+              "width": 99,
+              "height": 44,
+              "top": 79.59375,
+              "right": 237.796875,
+              "bottom": 123.59375,
+              "left": 138.796875
+            }
+          },
+          {
+            "element": "BUTTON",
+            "before": {
+              "x": 74.46875,
+              "y": 781.84375,
+              "width": 71.671875,
+              "height": 44,
+              "top": 781.84375,
+              "right": 146.140625,
+              "bottom": 825.84375,
+              "left": 74.46875
+            },
+            "after": {
+              "x": 70.984375,
+              "y": 781.84375,
+              "width": 73.234375,
+              "height": 44,
+              "top": 781.84375,
+              "right": 144.21875,
+              "bottom": 825.84375,
+              "left": 70.984375
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 241.46875,
+              "y": 79.59375,
+              "width": 36,
+              "height": 44,
+              "top": 79.59375,
+              "right": 277.46875,
+              "bottom": 123.59375,
+              "left": 241.46875
+            },
+            "after": {
+              "x": 255.203125,
+              "y": 79.59375,
+              "width": 39,
+              "height": 44,
+              "top": 79.59375,
+              "right": 294.203125,
+              "bottom": 123.59375,
+              "left": 255.203125
+            }
+          },
+          {
+            "element": "A",
+            "before": {
+              "x": 74.453125,
+              "y": 79.59375,
+              "width": 41,
+              "height": 44,
+              "top": 79.59375,
+              "right": 115.453125,
+              "bottom": 123.59375,
+              "left": 74.453125
+            },
+            "after": {
+              "x": 78.109375,
+              "y": 79.59375,
+              "width": 43,
+              "height": 44,
+              "top": 79.59375,
+              "right": 121.109375,
+              "bottom": 123.59375,
+              "left": 78.109375
+            }
+          }
+        ]
+      }
+    ],
+    "geometry": [
+      {
+        "time": 2585.100000023842,
+        "selector": ".tasting-hero",
+        "rect": {
+          "x": 18,
+          "y": 129.59375,
+          "width": 354,
+          "height": 731.25
+        }
+      },
+      {
+        "time": 2585.100000023842,
+        "selector": ".tasting-coast img",
+        "rect": {
+          "x": 0,
+          "y": 389.59375,
+          "width": 390,
+          "height": 471.25
+        }
+      },
+      {
+        "time": 2585.7000000476837,
+        "selector": ".tasting-copy h1",
+        "rect": {
+          "x": 18,
+          "y": 151.59375,
+          "width": 354,
+          "height": 138.234375
+        }
+      }
+    ],
+    "fonts": [
+      {
+        "time": 3737.100000023842,
+        "fonts": [
+          "Playfair",
+          "Playfair",
+          "Golos",
+          "Golos"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "start": 1357.2000000476837,
+        "end": 1892.1000000238419,
+        "size": 18596
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "start": 1357.3000000715256,
+        "end": 1688.9000000953674,
+        "size": 9228
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "start": 1357.3000000715256,
+        "end": 3692.9000000953674,
+        "size": 18676
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "start": 1357.4000000953674,
+        "end": 3677.5,
+        "size": 15904
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "start": 1361.7000000476837,
+        "end": 1741.4000000953674,
+        "size": 12589
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_lbezt.avif",
+        "start": 1428.8000000715256,
+        "end": 2626.600000023842,
+        "size": 24057
+      }
+    ],
+    "coast": {
+      "src": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+      "naturalWidth": 390,
+      "naturalHeight": 259
+    },
+    "media": {
+      "coarse": true,
+      "reduced": false
+    }
+  },
+  {
+    "delayed": "playfair",
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-10-29T07:09:25.027Z",
+    "lcp": [
+      {
+        "time": 1256,
+        "render": 1256,
+        "load": 0,
+        "size": 47334,
+        "path": "",
+        "element": "H1",
+        "rect": {
+          "x": 18,
+          "y": 151.59375,
+          "width": 354,
+          "height": 138.234375
+        }
+      },
+      {
+        "time": 1368,
+        "render": 1368,
+        "load": 1361.6000000238419,
+        "size": 177060,
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "element": "coast",
+        "rect": {
+          "x": 0,
+          "y": 389.59375,
+          "width": 390,
+          "height": 471.25
+        }
+      }
+    ],
+    "shifts": [],
+    "geometry": [
+      {
+        "time": 2125.7999999523163,
+        "selector": ".tasting-hero",
+        "rect": {
+          "x": 18,
+          "y": 129.59375,
+          "width": 354,
+          "height": 731.25
+        }
+      },
+      {
+        "time": 2125.7999999523163,
+        "selector": ".tasting-coast img",
+        "rect": {
+          "x": 0,
+          "y": 389.59375,
+          "width": 390,
+          "height": 471.25
+        }
+      },
+      {
+        "time": 2125.7999999523163,
+        "selector": ".tasting-copy h1",
+        "rect": {
+          "x": 18,
+          "y": 151.59375,
+          "width": 354,
+          "height": 138.234375
+        }
+      }
+    ],
+    "fonts": [
+      {
+        "time": 3273.600000023842,
+        "fonts": [
+          "Golos",
+          "Golos",
+          "Playfair",
+          "Playfair"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "path": "/fonts/playfair-cyrillic.woff2",
+        "start": 946.6000000238419,
+        "end": 3258.399999976158,
+        "size": 18596
+      },
+      {
+        "path": "/fonts/playfair-latin.woff2",
+        "start": 947.3999999761581,
+        "end": 3213.600000023842,
+        "size": 9228
+      },
+      {
+        "path": "/fonts/golos-cyrillic.woff2",
+        "start": 947.5,
+        "end": 1450.8999999761581,
+        "size": 18676
+      },
+      {
+        "path": "/fonts/golos-latin.woff2",
+        "start": 947.6000000238419,
+        "end": 1397.2999999523163,
+        "size": 15904
+      },
+      {
+        "path": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+        "start": 951,
+        "end": 1360.8999999761581,
+        "size": 12589
+      },
+      {
+        "path": "/_astro/pie.CiXI4zfL_lbezt.avif",
+        "start": 1017.7999999523163,
+        "end": 2185.2999999523163,
+        "size": 24057
+      }
+    ],
+    "coast": {
+      "src": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+      "naturalWidth": 390,
+      "naturalHeight": 259
+    },
+    "media": {
+      "coarse": true,
+      "reduced": false
+    }
+  }
+]

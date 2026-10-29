@@ -1,5 +1,15 @@
 # Скорость production-сборки
 
+## Разбор нестабильного mobile LCP главной — 29.10.2026
+
+Неизменённый runtime `e3cbdaf`, три публичных PSI mobile: **P100/LCP1651мс**, **P85/LCP4007мс**, **P94/LCP3101мс**. Наблюдаемый render delay соответственно40/2000/50мс. Последний [mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/mis322ten8?form_factor=mobile) и [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/mis322ten8?form_factor=desktop):94/100; desktop LCP421мс, все A/BP/SEO100. CrUX нет. Headline Lighthouse — симуляция; insight breakdown — наблюдаемая трасса, поэтому большое первое значение не всегда означает долгий paint.
+
+В полном new-headless Chrome153.0.8010.36 воспроизведён delayed first frame: один stock из4 — render2249мс, остальные326–341мс; четыре control с RenderDocument —303–364мс, та же production/Метрика и свежие профили. Это согласуется с [известной проблемой Lighthouse/Chromium](https://github.com/GoogleChrome/lighthouse/issues/17148), но не доказывает единственную причину всех скачков удалённого PSI. Задержка шрифтов на2с не задержала фоновый LCP; повторной загрузки изображения и входной мобильной анимации нет. Неподтверждённая правка дизайна не выпускалась.
+
+Проверка проекта исправлена: три независимых холодных mobile-запуска, версия браузера, observed/simulated LCP и диапазоны отдельно. По публичному домену в Chrome156,09:28–09:29 GMT+2: **P99/100/99**, LCP1685/1368/1706мс, render55/50/15мс; desktop P100/LCP506мс. CLI BP77 относится к сохранённой Метрике; это не PSI. [Полный протокол и все результаты](qa/home-lcp-20261029/README.md).
+
+**Стабильность публичного mobile PSI не закрыта.** Код первого экрана не менялся, улучшение пользовательского LCP и устойчивые100 не заявляются. Разделены воспроизведённая headless-задержка и пока необъяснённое расхождение модели Lantern. Следующая проверка должна сравнить версии Chromium/трассу плохого запуска или полевые данные.
+
 ## Контроль архитектурного спринта — 29.10.2026
 
 CLI Lighthouse 13.5.0 по публичной главной с обычной Метрикой, 06:16 UTC: mobile **P99 / A100 / BP77 / SEO100**, LCP **1776 мс**, TBT 60 мс, CLS 0,0059; desktop **P100 / A100 / BP77 / SEO100**, LCP **507 мс**, TBT 0, CLS 0,0003. [Обезличенные показатели](.egm/architecture-20261029/evidence/performance-summary.json).

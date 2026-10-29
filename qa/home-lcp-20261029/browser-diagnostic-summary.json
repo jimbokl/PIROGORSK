@@ -1,0 +1,1262 @@
+[
+  {
+    "label": "browser-1-stock",
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:23:53.531Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3920,
+      "credits": {}
+    },
+    "flags": [
+      "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4,RenderDocument",
+      "--disable-extensions",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--disable-component-update",
+      "--disable-client-side-phishing-detection",
+      "--disable-sync",
+      "--metrics-recording-only",
+      "--disable-default-apps",
+      "--mute-audio",
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-background-timer-throttling",
+      "--disable-ipc-flooding-protection",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--force-fieldtrials=*BackgroundTracing/default/",
+      "--disable-hang-monitor",
+      "--disable-prompt-on-repost",
+      "--disable-domain-reliability",
+      "--propagate-iph-for-testing",
+      "--headless=new"
+    ],
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 5250,
+      "pauseAfterLoadMs": 5250,
+      "networkQuietThresholdMs": 5250,
+      "cpuQuietThresholdMs": 5250,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 6.27
+      },
+      "throttlingMethod": "devtools",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": [
+        "cc",
+        "viz",
+        "renderer.scheduler",
+        "disabled-by-default-cc.debug"
+      ],
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "observed": {
+      "fcp": 3262,
+      "lcp": 3262,
+      "load": 3575,
+      "dcl": 1609
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 778.4050001220703
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 57.71099987792969
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 177.562
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 2248.572
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "tbt": 0
+  },
+  {
+    "label": "browser-2-render-document",
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:24:18.890Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+      "benchmarkIndex": 4029.5,
+      "credits": {}
+    },
+    "flags": [
+      "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4",
+      "--disable-extensions",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--disable-component-update",
+      "--disable-client-side-phishing-detection",
+      "--disable-sync",
+      "--metrics-recording-only",
+      "--disable-default-apps",
+      "--mute-audio",
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-background-timer-throttling",
+      "--disable-ipc-flooding-protection",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--force-fieldtrials=*BackgroundTracing/default/",
+      "--disable-hang-monitor",
+      "--disable-prompt-on-repost",
+      "--disable-domain-reliability",
+      "--propagate-iph-for-testing",
+      "--enable-features=RenderDocument",
+      "--headless=new"
+    ],
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 5250,
+      "pauseAfterLoadMs": 5250,
+      "networkQuietThresholdMs": 5250,
+      "cpuQuietThresholdMs": 5250,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 6.27
+      },
+      "throttlingMethod": "devtools",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": [
+        "cc",
+        "viz",
+        "renderer.scheduler",
+        "disabled-by-default-cc.debug"
+      ],
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "observed": {
+      "fcp": 1462,
+      "lcp": 1462,
+      "load": 3464,
+      "dcl": 1584
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 940.734
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 54.06
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 103.418
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 363.531
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "tbt": 43.427000000000135
+  },
+  {
+    "label": "browser-3-stock",
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:24:44.057Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+      "benchmarkIndex": 4030,
+      "credits": {}
+    },
+    "flags": [
+      "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4,RenderDocument",
+      "--disable-extensions",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--disable-component-update",
+      "--disable-client-side-phishing-detection",
+      "--disable-sync",
+      "--metrics-recording-only",
+      "--disable-default-apps",
+      "--mute-audio",
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-background-timer-throttling",
+      "--disable-ipc-flooding-protection",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--force-fieldtrials=*BackgroundTracing/default/",
+      "--disable-hang-monitor",
+      "--disable-prompt-on-repost",
+      "--disable-domain-reliability",
+      "--propagate-iph-for-testing",
+      "--headless=new"
+    ],
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 5250,
+      "pauseAfterLoadMs": 5250,
+      "networkQuietThresholdMs": 5250,
+      "cpuQuietThresholdMs": 5250,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 6.27
+      },
+      "throttlingMethod": "devtools",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": [
+        "cc",
+        "viz",
+        "renderer.scheduler",
+        "disabled-by-default-cc.debug"
+      ],
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "observed": {
+      "fcp": 1316,
+      "lcp": 1316,
+      "load": 3431,
+      "dcl": 1443
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 831.5610001220704
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 26.683999877929686
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 117.333
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 340.763
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "tbt": 42.75799999999981
+  },
+  {
+    "label": "browser-4-render-document",
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:25:10.490Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3952,
+      "credits": {}
+    },
+    "flags": [
+      "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4",
+      "--disable-extensions",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--disable-component-update",
+      "--disable-client-side-phishing-detection",
+      "--disable-sync",
+      "--metrics-recording-only",
+      "--disable-default-apps",
+      "--mute-audio",
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-background-timer-throttling",
+      "--disable-ipc-flooding-protection",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--force-fieldtrials=*BackgroundTracing/default/",
+      "--disable-hang-monitor",
+      "--disable-prompt-on-repost",
+      "--disable-domain-reliability",
+      "--propagate-iph-for-testing",
+      "--enable-features=RenderDocument",
+      "--headless=new"
+    ],
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 5250,
+      "pauseAfterLoadMs": 5250,
+      "networkQuietThresholdMs": 5250,
+      "cpuQuietThresholdMs": 5250,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 6.27
+      },
+      "throttlingMethod": "devtools",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": [
+        "cc",
+        "viz",
+        "renderer.scheduler",
+        "disabled-by-default-cc.debug"
+      ],
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "observed": {
+      "fcp": 1665,
+      "lcp": 1665,
+      "load": 3830,
+      "dcl": 1924
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 1147.525
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 50.655
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 164.387
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 302.545
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "tbt": 45.73199999999997
+  },
+  {
+    "label": "browser-5-render-document",
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:26:27.519Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+      "benchmarkIndex": 4023.5,
+      "credits": {}
+    },
+    "flags": [
+      "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4",
+      "--disable-extensions",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--disable-component-update",
+      "--disable-client-side-phishing-detection",
+      "--disable-sync",
+      "--metrics-recording-only",
+      "--disable-default-apps",
+      "--mute-audio",
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-background-timer-throttling",
+      "--disable-ipc-flooding-protection",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--force-fieldtrials=*BackgroundTracing/default/",
+      "--disable-hang-monitor",
+      "--disable-prompt-on-repost",
+      "--disable-domain-reliability",
+      "--propagate-iph-for-testing",
+      "--enable-features=RenderDocument",
+      "--headless=new"
+    ],
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 5250,
+      "pauseAfterLoadMs": 5250,
+      "networkQuietThresholdMs": 5250,
+      "cpuQuietThresholdMs": 5250,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 6.27
+      },
+      "throttlingMethod": "devtools",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": [
+        "cc",
+        "viz",
+        "renderer.scheduler",
+        "disabled-by-default-cc.debug"
+      ],
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "observed": {
+      "fcp": 1329,
+      "lcp": 1329,
+      "load": 3346,
+      "dcl": 1548
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 733.683
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 69.26
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 203.236
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 323.073
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "tbt": 79.01700000000028
+  },
+  {
+    "label": "browser-6-stock",
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:26:52.458Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+      "benchmarkIndex": 4004,
+      "credits": {}
+    },
+    "flags": [
+      "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4,RenderDocument",
+      "--disable-extensions",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--disable-component-update",
+      "--disable-client-side-phishing-detection",
+      "--disable-sync",
+      "--metrics-recording-only",
+      "--disable-default-apps",
+      "--mute-audio",
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-background-timer-throttling",
+      "--disable-ipc-flooding-protection",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--force-fieldtrials=*BackgroundTracing/default/",
+      "--disable-hang-monitor",
+      "--disable-prompt-on-repost",
+      "--disable-domain-reliability",
+      "--propagate-iph-for-testing",
+      "--headless=new"
+    ],
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 5250,
+      "pauseAfterLoadMs": 5250,
+      "networkQuietThresholdMs": 5250,
+      "cpuQuietThresholdMs": 5250,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 6.27
+      },
+      "throttlingMethod": "devtools",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": [
+        "cc",
+        "viz",
+        "renderer.scheduler",
+        "disabled-by-default-cc.debug"
+      ],
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "observed": {
+      "fcp": 1342,
+      "lcp": 1342,
+      "load": 3815,
+      "dcl": 1467
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 875.4
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 27.672
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 112.884
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 326.137
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "tbt": 45.50799999999981
+  },
+  {
+    "label": "browser-7-render-document",
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:27:18.866Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+      "benchmarkIndex": 4080,
+      "credits": {}
+    },
+    "flags": [
+      "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4",
+      "--disable-extensions",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--disable-component-update",
+      "--disable-client-side-phishing-detection",
+      "--disable-sync",
+      "--metrics-recording-only",
+      "--disable-default-apps",
+      "--mute-audio",
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-background-timer-throttling",
+      "--disable-ipc-flooding-protection",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--force-fieldtrials=*BackgroundTracing/default/",
+      "--disable-hang-monitor",
+      "--disable-prompt-on-repost",
+      "--disable-domain-reliability",
+      "--propagate-iph-for-testing",
+      "--enable-features=RenderDocument",
+      "--headless=new"
+    ],
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 5250,
+      "pauseAfterLoadMs": 5250,
+      "networkQuietThresholdMs": 5250,
+      "cpuQuietThresholdMs": 5250,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 6.27
+      },
+      "throttlingMethod": "devtools",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": [
+        "cc",
+        "viz",
+        "renderer.scheduler",
+        "disabled-by-default-cc.debug"
+      ],
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "observed": {
+      "fcp": 1417,
+      "lcp": 1417,
+      "load": 3733,
+      "dcl": 1547
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 903.087
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 36.583
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 136.886
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 340.563
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "tbt": 47.30400000000009
+  },
+  {
+    "label": "browser-8-stock",
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T07:27:44.947Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+      "benchmarkIndex": 3940.5,
+      "credits": {}
+    },
+    "flags": [
+      "--disable-features=Translate,OptimizationHints,MediaRouter,DialMediaRouteProvider,CalculateNativeWinOcclusion,InterestFeedContentSuggestions,CertificateTransparencyComponentUpdater,AutofillServerCommunication,PrivacySandboxSettings4,RenderDocument",
+      "--disable-extensions",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-background-networking",
+      "--disable-component-update",
+      "--disable-client-side-phishing-detection",
+      "--disable-sync",
+      "--metrics-recording-only",
+      "--disable-default-apps",
+      "--mute-audio",
+      "--no-default-browser-check",
+      "--no-first-run",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-background-timer-throttling",
+      "--disable-ipc-flooding-protection",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--force-fieldtrials=*BackgroundTracing/default/",
+      "--disable-hang-monitor",
+      "--disable-prompt-on-repost",
+      "--disable-domain-reliability",
+      "--propagate-iph-for-testing",
+      "--headless=new"
+    ],
+    "settings": {
+      "output": "json",
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 5250,
+      "pauseAfterLoadMs": 5250,
+      "networkQuietThresholdMs": 5250,
+      "cpuQuietThresholdMs": 5250,
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 6.27
+      },
+      "throttlingMethod": "devtools",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "node",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": [
+        "cc",
+        "viz",
+        "renderer.scheduler",
+        "disabled-by-default-cc.debug"
+      ],
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": [
+        "performance"
+      ],
+      "skipAudits": null
+    },
+    "observed": {
+      "fcp": 1678,
+      "lcp": 1678,
+      "load": 4012,
+      "dcl": 1807
+    },
+    "lcp": [
+      {
+        "type": "table",
+        "headings": [
+          {
+            "key": "label",
+            "valueType": "text",
+            "label": "Subpart"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 1186.3969998779296
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 28.69200012207031
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 133.058
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 329.371
+          }
+        ]
+      },
+      {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+        "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+        "boundingRect": {
+          "top": 390,
+          "bottom": 876,
+          "left": 0,
+          "right": 412,
+          "width": 412,
+          "height": 486
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1536\" height=\"1024\">",
+        "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+      }
+    ],
+    "tbt": 47.5
+  }
+]
