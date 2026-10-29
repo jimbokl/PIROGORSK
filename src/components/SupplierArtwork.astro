@@ -5,7 +5,7 @@ import '../styles/product-artwork.css';
 interface Props { id: string; hero?: boolean; decorative?: boolean }
 const { id, hero = false, decorative = false } = Astro.props;
 const art = supplierArtwork(id);
-const sizes = hero ? '(max-width: 760px) 250px, (max-width: 1100px) 46vw, 520px' : '(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px';
+const sizes = hero ? '(max-width: 420px) min(calc(100vw - 54px), 302px), (max-width: 760px) 302px, (max-width: 1000px) calc(50vw - 56px), min(calc(50vw - 78px), 502px)' : '(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px';
 const srcset = (extension: string) => art.widths.map(width => `${art.base}-${width}.${extension} ${width}w`).join(', ');
 ---
 <div class:list={['supplier-artwork', 'product-artwork', { 'product-artwork--hero': hero }]} data-supplier-artwork={id}>

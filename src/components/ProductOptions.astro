@@ -14,7 +14,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
 <div class="product-options" data-product-options data-price-prefix={from}>
   <fieldset>
     <legend>Выберите {product.kind === 'pie' ? 'размер' : 'формат'}</legend>
-    <div class="product-options-sizes">
+    <div class="product-options-sizes" style={`--option-count:${product.variants.length}`}>
       {product.variants.map(variant => <label>
         <input type="radio" name={`product-size-${product.id}`} value={variant.value} checked={variant.value === selected.value} data-price={variant.price} data-href={selectionHref(variant.value)} />
         <span>{variant.label}</span>
@@ -46,27 +46,28 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
   });
 </script>
 <style>
-  .product-options{max-width:440px}
+  .product-options{width:100%;padding:20px;border:1px solid var(--card-line);border-radius:18px;background:var(--paper-raised)}
   fieldset{border:0;margin:0;padding:0}
-  legend{font-size:12px;color:var(--ed-muted);margin-bottom:9px}
-  .product-options-sizes{display:flex;flex-wrap:wrap;gap:8px}
-  label{position:relative;flex:1 1 auto;cursor:pointer}
+  legend{font-size:12px;font-weight:500;color:var(--ed-muted);margin-bottom:10px}
+  .product-options-sizes{display:grid;grid-template-columns:repeat(var(--option-count),minmax(0,1fr));gap:8px}
+  label{position:relative;min-width:0;cursor:pointer}
   input{position:absolute;opacity:0;width:1px;height:1px}
-  label span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:10px 16px;border:1px solid var(--ed-line);border-radius:30px;font-size:13px;transition:background .15s,border-color .15s,color .15s}
+  label span{display:flex;align-items:center;justify-content:center;height:100%;min-height:48px;padding:10px 12px;border:1px solid var(--ed-line);border-radius:26px;font-size:13px;line-height:1.4;text-align:center;transition:background .15s,border-color .15s,color .15s}
   input:checked+span{border-color:var(--action);background:var(--action);color:white;font-weight:600}
   input:focus-visible+span{outline:2px solid var(--focus);outline-offset:3px}
-  .product-options-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:20px}
-  .product-options-price{margin:0;flex-shrink:0}
-  strong{display:block;font-family:var(--ed-serif);font-size:30px;line-height:1.15;font-weight:500}
+  .product-options-bottom{display:grid;grid-template-columns:minmax(0,1fr) 160px;align-items:center;gap:16px;margin-top:20px}
+  .product-options-price{margin:0;min-width:0}
+  strong{display:block;font-family:var(--ed-sans);font-size:32px;line-height:1.15;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.035em;white-space:nowrap}
   small{display:block;font-size:11px;color:var(--ed-muted);line-height:1.5;margin-top:5px}
-  .product-options-bottom .ed-button{width:auto;min-width:156px;gap:20px}
+  .product-options-bottom .ed-button{width:100%;min-height:48px;gap:14px;justify-content:center;padding:14px 18px;font-weight:600}
   .product-options-note{font-size:12px;line-height:1.7;color:var(--ed-muted);margin-top:15px;max-width:52ch}
-  .product-menu-back{display:inline-flex;align-items:center;min-height:44px;font-size:12px;text-underline-offset:4px}
-  .product-delivery{margin-top:20px;border-top:1px solid var(--ed-line);padding-top:16px;font-size:12px;line-height:1.6}
-  .product-delivery summary{cursor:pointer;padding-block:6px;font-weight:600}
+  .product-menu-back{display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:1.5;text-underline-offset:4px}
+  .product-delivery{margin-top:12px;border-top:1px solid var(--ed-line);padding-top:8px;font-size:12px;line-height:1.6}
+  .product-delivery summary{cursor:pointer;min-height:44px;padding-block:12px;font-weight:600}
+  .product-delivery summary:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:4px}
   .product-delivery p{color:var(--ed-muted)}
   .product-delivery dl{margin:16px 0}.product-delivery dl>div{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid var(--ed-line)}
   .product-delivery dd{margin:0;align-self:center;white-space:nowrap;font-variant-numeric:tabular-nums}.product-delivery small{margin:0;font-size:10px}
-  @media(max-width:360px){.product-options-bottom{gap:12px}.product-options-bottom .ed-button{min-width:0;padding-inline:16px;gap:12px}strong{font-size:27px}}
+  @media(max-width:760px){.product-options{padding:18px}.product-options-bottom{grid-template-columns:minmax(0,1fr);gap:16px}strong{font-size:30px}.product-options-sizes{gap:6px}label span{padding-inline:8px;font-size:12px}}
   @media(prefers-reduced-motion:reduce){label span{transition:none}}
 </style>

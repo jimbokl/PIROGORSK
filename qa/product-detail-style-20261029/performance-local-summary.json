@@ -1,0 +1,96 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/?qa=1",
+    "timestamp": "2026-10-29T20:45:42.398Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 74,
+      "lcp": 80
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 5.34,
+      "resourceLoadDelay": 8.84,
+      "resourceLoadDuration": 10.006,
+      "elementRenderDelay": 56.015
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1434.1871,
+        "display": "1.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1813.7806500000002,
+        "display": "1.8 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1434.1871,
+        "display": "1.4 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/?qa=1",
+    "timestamp": "2026-10-29T20:45:48.507Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 67,
+      "lcp": 67
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 3.558,
+      "resourceLoadDelay": 5.611,
+      "resourceLoadDuration": 8.825,
+      "elementRenderDelay": 48.519
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 329.313125,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 451.17575,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 329.313125,
+        "display": "0.3 s"
+      }
+    }
+  }
+]

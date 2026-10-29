@@ -43,7 +43,7 @@ const imageWidths = layout === 'hero' ? [320, 480, 640, 700, 800, 1200] : [240, 
 // only part of that slot, so it needs its own sizes rather than the background's.
 type Slot = [breakpoint: number, vw: number, pixels: number];
 const slots: Slot[] = layout === 'hero'
-  ? [[420, 100, -36], [760, 100, -48], [1000, 51.9231, -39.4615], [1300, 51.9231, -69.5769], [Infinity, 0, 605.4231]]
+  ? [[420, 100, -54], [760, 0, 302], [1000, 50, -56], [Infinity, 50, -78]]
   : layout === 'menu'
     ? [[420, 100, -36], [760, 50, -33], [1000, 100 / 3, -88 / 3], [1300, 100 / 3, -136 / 3], [Infinity, 0, 388]]
     : [[380, 100, -36], [600, 50, -28], [850, 50, -51], [1060, 100 / 3, -44],
@@ -53,7 +53,7 @@ const slots: Slot[] = layout === 'hero'
 const slotSizes = (scale = 1) => slots.map(([breakpoint, vw, pixels]) => {
   const length = vw === 0 ? `${+(pixels * scale).toFixed(3)}px`
     : `calc(${+(vw * scale).toFixed(3)}vw - ${+(-pixels * scale).toFixed(3)}px)`;
-  const boundedLength = layout === 'hero' ? `min(${length}, ${+(520 * scale).toFixed(3)}px)` : length;
+  const boundedLength = layout === 'hero' ? `min(${length}, ${+(502 * scale).toFixed(3)}px)` : length;
   return `${Number.isFinite(breakpoint) ? `(max-width: ${breakpoint}px) ` : ''}${boundedLength}`;
 }).join(', ');
 const accessoryThumbnail = product.kind === 'accessory' && layout === 'catalog';

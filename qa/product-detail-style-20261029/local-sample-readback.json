@@ -1,0 +1,1933 @@
+{
+  "checkedAt": "2026-10-29T20:44:52.388Z",
+  "origin": "http://127.0.0.1:4322",
+  "scope": "samples",
+  "samples": [
+    {
+      "width": 320,
+      "id": "meat",
+      "route": "/pirogi/myasnoy-pirog/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 18,
+        "y": 414.375,
+        "width": 284,
+        "height": 284,
+        "right": 302,
+        "bottom": 698.375
+      },
+      "title": {
+        "x": 18,
+        "y": 249.59375,
+        "width": 284,
+        "height": 33.59375,
+        "right": 302,
+        "bottom": 283.1875
+      },
+      "panel": {
+        "x": 18,
+        "y": 761.375,
+        "width": 284,
+        "height": 414.78125,
+        "right": 302,
+        "bottom": 1176.15625
+      },
+      "price": {
+        "x": 37,
+        "y": 872.375,
+        "width": 246,
+        "height": 34.5,
+        "right": 283,
+        "bottom": 906.875
+      },
+      "button": {
+        "x": 37,
+        "y": 944.375,
+        "width": 246,
+        "height": 48,
+        "right": 283,
+        "bottom": 992.375
+      },
+      "bottom": {
+        "x": 37,
+        "y": 872.375,
+        "width": 246,
+        "height": 120,
+        "right": 283,
+        "bottom": 992.375
+      },
+      "variants": [
+        {
+          "width": 120,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 120,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/pirogi/myasnoy-pirog/"
+    },
+    {
+      "width": 320,
+      "id": "apple",
+      "route": "/pirogi/pirog-s-yablokom-i-brusnikoy/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 18,
+        "y": 447.96875,
+        "width": 284,
+        "height": 284,
+        "right": 302,
+        "bottom": 731.96875
+      },
+      "title": {
+        "x": 18,
+        "y": 249.59375,
+        "width": 284,
+        "height": 67.1875,
+        "right": 302,
+        "bottom": 316.78125
+      },
+      "panel": {
+        "x": 18,
+        "y": 794.96875,
+        "width": 284,
+        "height": 414.78125,
+        "right": 302,
+        "bottom": 1209.75
+      },
+      "price": {
+        "x": 37,
+        "y": 905.96875,
+        "width": 246,
+        "height": 34.5,
+        "right": 283,
+        "bottom": 940.46875
+      },
+      "button": {
+        "x": 37,
+        "y": 977.96875,
+        "width": 246,
+        "height": 48,
+        "right": 283,
+        "bottom": 1025.96875
+      },
+      "bottom": {
+        "x": 37,
+        "y": 905.96875,
+        "width": 246,
+        "height": 120,
+        "right": 283,
+        "bottom": 1025.96875
+      },
+      "variants": [
+        {
+          "width": 120,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 120,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/pirogi/pirog-s-yablokom-i-brusnikoy/"
+    },
+    {
+      "width": 320,
+      "id": "cranberry",
+      "route": "/catalog/klyukvennyy-mors/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 18,
+        "y": 424.171875,
+        "width": 284,
+        "height": 284,
+        "right": 302,
+        "bottom": 708.171875
+      },
+      "title": {
+        "x": 18,
+        "y": 249.59375,
+        "width": 284,
+        "height": 67.1875,
+        "right": 302,
+        "bottom": 316.78125
+      },
+      "panel": {
+        "x": 18,
+        "y": 771.171875,
+        "width": 284,
+        "height": 414.78125,
+        "right": 302,
+        "bottom": 1185.953125
+      },
+      "price": {
+        "x": 37,
+        "y": 882.171875,
+        "width": 246,
+        "height": 34.5,
+        "right": 283,
+        "bottom": 916.671875
+      },
+      "button": {
+        "x": 37,
+        "y": 954.171875,
+        "width": 246,
+        "height": 48,
+        "right": 283,
+        "bottom": 1002.171875
+      },
+      "bottom": {
+        "x": 37,
+        "y": 882.171875,
+        "width": 246,
+        "height": 120,
+        "right": 283,
+        "bottom": 1002.171875
+      },
+      "variants": [
+        {
+          "width": 120,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 120,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/klyukvennyy-mors/"
+    },
+    {
+      "width": 320,
+      "id": "tableware",
+      "route": "/catalog/nabor-posudy/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 18,
+        "y": 414.375,
+        "width": 284,
+        "height": 284,
+        "right": 302,
+        "bottom": 698.375
+      },
+      "title": {
+        "x": 18,
+        "y": 249.59375,
+        "width": 284,
+        "height": 33.59375,
+        "right": 302,
+        "bottom": 283.1875
+      },
+      "panel": {
+        "x": 18,
+        "y": 761.375,
+        "width": 284,
+        "height": 414.78125,
+        "right": 302,
+        "bottom": 1176.15625
+      },
+      "price": {
+        "x": 37,
+        "y": 872.375,
+        "width": 246,
+        "height": 34.5,
+        "right": 283,
+        "bottom": 906.875
+      },
+      "button": {
+        "x": 37,
+        "y": 944.375,
+        "width": 246,
+        "height": 48,
+        "right": 283,
+        "bottom": 992.375
+      },
+      "bottom": {
+        "x": 37,
+        "y": 872.375,
+        "width": 246,
+        "height": 120,
+        "right": 283,
+        "bottom": 992.375
+      },
+      "variants": [
+        {
+          "width": 246,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/nabor-posudy/"
+    },
+    {
+      "width": 320,
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "route": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "variantsChecked": 3,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 18,
+        "y": 457.765625,
+        "width": 284,
+        "height": 284,
+        "right": 302,
+        "bottom": 741.765625
+      },
+      "title": {
+        "x": 18,
+        "y": 249.59375,
+        "width": 284,
+        "height": 100.78125,
+        "right": 302,
+        "bottom": 350.375
+      },
+      "panel": {
+        "x": 18,
+        "y": 763.765625,
+        "width": 284,
+        "height": 422.375,
+        "right": 302,
+        "bottom": 1186.140625
+      },
+      "price": {
+        "x": 37,
+        "y": 882.359375,
+        "width": 246,
+        "height": 34.5,
+        "right": 283,
+        "bottom": 916.859375
+      },
+      "button": {
+        "x": 37,
+        "y": 954.359375,
+        "width": 246,
+        "height": 48,
+        "right": 283,
+        "bottom": 1002.359375
+      },
+      "bottom": {
+        "x": 37,
+        "y": 882.359375,
+        "width": 246,
+        "height": 120,
+        "right": 283,
+        "bottom": 1002.359375
+      },
+      "variants": [
+        {
+          "width": 78,
+          "height": 55.59375,
+          "overflow": false
+        },
+        {
+          "width": 78,
+          "height": 55.59375,
+          "overflow": false
+        },
+        {
+          "width": 78,
+          "height": 55.59375,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/"
+    },
+    {
+      "width": 320,
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "route": "/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 18,
+        "y": 524.953125,
+        "width": 284,
+        "height": 284,
+        "right": 302,
+        "bottom": 808.953125
+      },
+      "title": {
+        "x": 18,
+        "y": 249.59375,
+        "width": 284,
+        "height": 167.96875,
+        "right": 302,
+        "bottom": 417.5625
+      },
+      "panel": {
+        "x": 18,
+        "y": 830.953125,
+        "width": 284,
+        "height": 414.78125,
+        "right": 302,
+        "bottom": 1245.734375
+      },
+      "price": {
+        "x": 37,
+        "y": 941.953125,
+        "width": 246,
+        "height": 34.5,
+        "right": 283,
+        "bottom": 976.453125
+      },
+      "button": {
+        "x": 37,
+        "y": 1013.953125,
+        "width": 246,
+        "height": 48,
+        "right": 283,
+        "bottom": 1061.953125
+      },
+      "bottom": {
+        "x": 37,
+        "y": 941.953125,
+        "width": 246,
+        "height": 120,
+        "right": 283,
+        "bottom": 1061.953125
+      },
+      "variants": [
+        {
+          "width": 246,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/"
+    },
+    {
+      "width": 320,
+      "id": "p39-497",
+      "route": "/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 18,
+        "y": 457.765625,
+        "width": 284,
+        "height": 284,
+        "right": 302,
+        "bottom": 741.765625
+      },
+      "title": {
+        "x": 18,
+        "y": 249.59375,
+        "width": 284,
+        "height": 100.78125,
+        "right": 302,
+        "bottom": 350.375
+      },
+      "panel": {
+        "x": 18,
+        "y": 763.765625,
+        "width": 284,
+        "height": 414.78125,
+        "right": 302,
+        "bottom": 1178.546875
+      },
+      "price": {
+        "x": 37,
+        "y": 874.765625,
+        "width": 246,
+        "height": 34.5,
+        "right": 283,
+        "bottom": 909.265625
+      },
+      "button": {
+        "x": 37,
+        "y": 946.765625,
+        "width": 246,
+        "height": 48,
+        "right": 283,
+        "bottom": 994.765625
+      },
+      "bottom": {
+        "x": 37,
+        "y": 874.765625,
+        "width": 246,
+        "height": 120,
+        "right": 283,
+        "bottom": 994.765625
+      },
+      "variants": [
+        {
+          "width": 246,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/"
+    },
+    {
+      "width": 390,
+      "id": "meat",
+      "route": "/pirogi/myasnoy-pirog/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 35,
+        "y": 396.796875,
+        "width": 320,
+        "height": 320,
+        "right": 355,
+        "bottom": 716.796875
+      },
+      "title": {
+        "x": 18,
+        "y": 253.59375,
+        "width": 354,
+        "height": 35.8125,
+        "right": 372,
+        "bottom": 289.40625
+      },
+      "panel": {
+        "x": 18,
+        "y": 779.796875,
+        "width": 354,
+        "height": 414.78125,
+        "right": 372,
+        "bottom": 1194.578125
+      },
+      "price": {
+        "x": 37,
+        "y": 890.796875,
+        "width": 316,
+        "height": 34.5,
+        "right": 353,
+        "bottom": 925.296875
+      },
+      "button": {
+        "x": 37,
+        "y": 962.796875,
+        "width": 316,
+        "height": 48,
+        "right": 353,
+        "bottom": 1010.796875
+      },
+      "bottom": {
+        "x": 37,
+        "y": 890.796875,
+        "width": 316,
+        "height": 120,
+        "right": 353,
+        "bottom": 1010.796875
+      },
+      "variants": [
+        {
+          "width": 155,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 155,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/pirogi/myasnoy-pirog/",
+      "selectionJourney": true
+    },
+    {
+      "width": 390,
+      "id": "apple",
+      "route": "/pirogi/pirog-s-yablokom-i-brusnikoy/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 35,
+        "y": 432.609375,
+        "width": 320,
+        "height": 320,
+        "right": 355,
+        "bottom": 752.609375
+      },
+      "title": {
+        "x": 18,
+        "y": 253.59375,
+        "width": 354,
+        "height": 71.625,
+        "right": 372,
+        "bottom": 325.21875
+      },
+      "panel": {
+        "x": 18,
+        "y": 815.609375,
+        "width": 354,
+        "height": 414.78125,
+        "right": 372,
+        "bottom": 1230.390625
+      },
+      "price": {
+        "x": 37,
+        "y": 926.609375,
+        "width": 316,
+        "height": 34.5,
+        "right": 353,
+        "bottom": 961.109375
+      },
+      "button": {
+        "x": 37,
+        "y": 998.609375,
+        "width": 316,
+        "height": 48,
+        "right": 353,
+        "bottom": 1046.609375
+      },
+      "bottom": {
+        "x": 37,
+        "y": 926.609375,
+        "width": 316,
+        "height": 120,
+        "right": 353,
+        "bottom": 1046.609375
+      },
+      "variants": [
+        {
+          "width": 155,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 155,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/pirogi/pirog-s-yablokom-i-brusnikoy/"
+    },
+    {
+      "width": 390,
+      "id": "cranberry",
+      "route": "/catalog/klyukvennyy-mors/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 35,
+        "y": 396.796875,
+        "width": 320,
+        "height": 320,
+        "right": 355,
+        "bottom": 716.796875
+      },
+      "title": {
+        "x": 18,
+        "y": 253.59375,
+        "width": 354,
+        "height": 35.8125,
+        "right": 372,
+        "bottom": 289.40625
+      },
+      "panel": {
+        "x": 18,
+        "y": 779.796875,
+        "width": 354,
+        "height": 414.78125,
+        "right": 372,
+        "bottom": 1194.578125
+      },
+      "price": {
+        "x": 37,
+        "y": 890.796875,
+        "width": 316,
+        "height": 34.5,
+        "right": 353,
+        "bottom": 925.296875
+      },
+      "button": {
+        "x": 37,
+        "y": 962.796875,
+        "width": 316,
+        "height": 48,
+        "right": 353,
+        "bottom": 1010.796875
+      },
+      "bottom": {
+        "x": 37,
+        "y": 890.796875,
+        "width": 316,
+        "height": 120,
+        "right": 353,
+        "bottom": 1010.796875
+      },
+      "variants": [
+        {
+          "width": 155,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 155,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/klyukvennyy-mors/"
+    },
+    {
+      "width": 390,
+      "id": "tableware",
+      "route": "/catalog/nabor-posudy/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 35,
+        "y": 396.796875,
+        "width": 320,
+        "height": 320,
+        "right": 355,
+        "bottom": 716.796875
+      },
+      "title": {
+        "x": 18,
+        "y": 253.59375,
+        "width": 354,
+        "height": 35.8125,
+        "right": 372,
+        "bottom": 289.40625
+      },
+      "panel": {
+        "x": 18,
+        "y": 779.796875,
+        "width": 354,
+        "height": 414.78125,
+        "right": 372,
+        "bottom": 1194.578125
+      },
+      "price": {
+        "x": 37,
+        "y": 890.796875,
+        "width": 316,
+        "height": 34.5,
+        "right": 353,
+        "bottom": 925.296875
+      },
+      "button": {
+        "x": 37,
+        "y": 962.796875,
+        "width": 316,
+        "height": 48,
+        "right": 353,
+        "bottom": 1010.796875
+      },
+      "bottom": {
+        "x": 37,
+        "y": 890.796875,
+        "width": 316,
+        "height": 120,
+        "right": 353,
+        "bottom": 1010.796875
+      },
+      "variants": [
+        {
+          "width": 316,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/nabor-posudy/"
+    },
+    {
+      "width": 390,
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "route": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "variantsChecked": 3,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 35,
+        "y": 408.8125,
+        "width": 320,
+        "height": 320,
+        "right": 355,
+        "bottom": 728.8125
+      },
+      "title": {
+        "x": 18,
+        "y": 253.59375,
+        "width": 354,
+        "height": 71.625,
+        "right": 372,
+        "bottom": 325.21875
+      },
+      "panel": {
+        "x": 18,
+        "y": 750.8125,
+        "width": 354,
+        "height": 414.78125,
+        "right": 372,
+        "bottom": 1165.59375
+      },
+      "price": {
+        "x": 37,
+        "y": 861.8125,
+        "width": 316,
+        "height": 34.5,
+        "right": 353,
+        "bottom": 896.3125
+      },
+      "button": {
+        "x": 37,
+        "y": 933.8125,
+        "width": 316,
+        "height": 48,
+        "right": 353,
+        "bottom": 981.8125
+      },
+      "bottom": {
+        "x": 37,
+        "y": 861.8125,
+        "width": 316,
+        "height": 120,
+        "right": 353,
+        "bottom": 981.8125
+      },
+      "variants": [
+        {
+          "width": 101.328125,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 101.328125,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 101.34375,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "selectionJourney": true
+    },
+    {
+      "width": 390,
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "route": "/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 35,
+        "y": 504.234375,
+        "width": 320,
+        "height": 320,
+        "right": 355,
+        "bottom": 824.234375
+      },
+      "title": {
+        "x": 18,
+        "y": 253.59375,
+        "width": 354,
+        "height": 143.25,
+        "right": 372,
+        "bottom": 396.84375
+      },
+      "panel": {
+        "x": 18,
+        "y": 846.234375,
+        "width": 354,
+        "height": 414.78125,
+        "right": 372,
+        "bottom": 1261.015625
+      },
+      "price": {
+        "x": 37,
+        "y": 957.234375,
+        "width": 316,
+        "height": 34.5,
+        "right": 353,
+        "bottom": 991.734375
+      },
+      "button": {
+        "x": 37,
+        "y": 1029.234375,
+        "width": 316,
+        "height": 48,
+        "right": 353,
+        "bottom": 1077.234375
+      },
+      "bottom": {
+        "x": 37,
+        "y": 957.234375,
+        "width": 316,
+        "height": 120,
+        "right": 353,
+        "bottom": 1077.234375
+      },
+      "variants": [
+        {
+          "width": 316,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/"
+    },
+    {
+      "width": 390,
+      "id": "p39-497",
+      "route": "/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 35,
+        "y": 468.421875,
+        "width": 320,
+        "height": 320,
+        "right": 355,
+        "bottom": 788.421875
+      },
+      "title": {
+        "x": 18,
+        "y": 253.59375,
+        "width": 354,
+        "height": 107.4375,
+        "right": 372,
+        "bottom": 361.03125
+      },
+      "panel": {
+        "x": 18,
+        "y": 810.421875,
+        "width": 354,
+        "height": 414.78125,
+        "right": 372,
+        "bottom": 1225.203125
+      },
+      "price": {
+        "x": 37,
+        "y": 921.421875,
+        "width": 316,
+        "height": 34.5,
+        "right": 353,
+        "bottom": 955.921875
+      },
+      "button": {
+        "x": 37,
+        "y": 993.421875,
+        "width": 316,
+        "height": 48,
+        "right": 353,
+        "bottom": 1041.421875
+      },
+      "bottom": {
+        "x": 37,
+        "y": 921.421875,
+        "width": 316,
+        "height": 120,
+        "right": 353,
+        "bottom": 1041.421875
+      },
+      "variants": [
+        {
+          "width": 316,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/",
+      "selectionJourney": true
+    },
+    {
+      "width": 768,
+      "id": "meat",
+      "route": "/pirogi/myasnoy-pirog/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 24,
+        "y": 228.296875,
+        "width": 346,
+        "height": 346,
+        "right": 370,
+        "bottom": 574.296875
+      },
+      "title": {
+        "x": 398,
+        "y": 256.296875,
+        "width": 346,
+        "height": 40.3125,
+        "right": 744,
+        "bottom": 296.609375
+      },
+      "panel": {
+        "x": 398,
+        "y": 417.359375,
+        "width": 346,
+        "height": 357.078125,
+        "right": 744,
+        "bottom": 774.4375
+      },
+      "price": {
+        "x": 419,
+        "y": 530.359375,
+        "width": 128,
+        "height": 36.796875,
+        "right": 547,
+        "bottom": 567.15625
+      },
+      "button": {
+        "x": 563,
+        "y": 535.5,
+        "width": 160,
+        "height": 48,
+        "right": 723,
+        "bottom": 583.5
+      },
+      "bottom": {
+        "x": 419,
+        "y": 530.359375,
+        "width": 304,
+        "height": 58.296875,
+        "right": 723,
+        "bottom": 588.65625
+      },
+      "variants": [
+        {
+          "width": 148,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 148,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/pirogi/myasnoy-pirog/"
+    },
+    {
+      "width": 768,
+      "id": "apple",
+      "route": "/pirogi/pirog-s-yablokom-i-brusnikoy/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 24,
+        "y": 228.296875,
+        "width": 346,
+        "height": 346,
+        "right": 370,
+        "bottom": 574.296875
+      },
+      "title": {
+        "x": 398,
+        "y": 256.296875,
+        "width": 346,
+        "height": 80.625,
+        "right": 744,
+        "bottom": 336.921875
+      },
+      "panel": {
+        "x": 398,
+        "y": 483.921875,
+        "width": 346,
+        "height": 357.078125,
+        "right": 744,
+        "bottom": 841
+      },
+      "price": {
+        "x": 419,
+        "y": 596.921875,
+        "width": 128,
+        "height": 36.796875,
+        "right": 547,
+        "bottom": 633.71875
+      },
+      "button": {
+        "x": 563,
+        "y": 602.0625,
+        "width": 160,
+        "height": 48,
+        "right": 723,
+        "bottom": 650.0625
+      },
+      "bottom": {
+        "x": 419,
+        "y": 596.921875,
+        "width": 304,
+        "height": 58.296875,
+        "right": 723,
+        "bottom": 655.21875
+      },
+      "variants": [
+        {
+          "width": 148,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 148,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/pirogi/pirog-s-yablokom-i-brusnikoy/"
+    },
+    {
+      "width": 768,
+      "id": "cranberry",
+      "route": "/catalog/klyukvennyy-mors/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 24,
+        "y": 228.296875,
+        "width": 346,
+        "height": 346,
+        "right": 370,
+        "bottom": 574.296875
+      },
+      "title": {
+        "x": 398,
+        "y": 256.296875,
+        "width": 346,
+        "height": 80.625,
+        "right": 744,
+        "bottom": 336.921875
+      },
+      "panel": {
+        "x": 398,
+        "y": 457.671875,
+        "width": 346,
+        "height": 357.078125,
+        "right": 744,
+        "bottom": 814.75
+      },
+      "price": {
+        "x": 419,
+        "y": 570.671875,
+        "width": 128,
+        "height": 36.796875,
+        "right": 547,
+        "bottom": 607.46875
+      },
+      "button": {
+        "x": 563,
+        "y": 575.8125,
+        "width": 160,
+        "height": 48,
+        "right": 723,
+        "bottom": 623.8125
+      },
+      "bottom": {
+        "x": 419,
+        "y": 570.671875,
+        "width": 304,
+        "height": 58.296875,
+        "right": 723,
+        "bottom": 628.96875
+      },
+      "variants": [
+        {
+          "width": 148,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 148,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/klyukvennyy-mors/"
+    },
+    {
+      "width": 768,
+      "id": "tableware",
+      "route": "/catalog/nabor-posudy/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 24,
+        "y": 228.296875,
+        "width": 346,
+        "height": 346,
+        "right": 370,
+        "bottom": 574.296875
+      },
+      "title": {
+        "x": 398,
+        "y": 256.296875,
+        "width": 346,
+        "height": 40.3125,
+        "right": 744,
+        "bottom": 296.609375
+      },
+      "panel": {
+        "x": 398,
+        "y": 417.359375,
+        "width": 346,
+        "height": 357.078125,
+        "right": 744,
+        "bottom": 774.4375
+      },
+      "price": {
+        "x": 419,
+        "y": 530.359375,
+        "width": 128,
+        "height": 36.796875,
+        "right": 547,
+        "bottom": 567.15625
+      },
+      "button": {
+        "x": 563,
+        "y": 535.5,
+        "width": 160,
+        "height": 48,
+        "right": 723,
+        "bottom": 583.5
+      },
+      "bottom": {
+        "x": 419,
+        "y": 530.359375,
+        "width": 304,
+        "height": 58.296875,
+        "right": 723,
+        "bottom": 588.65625
+      },
+      "variants": [
+        {
+          "width": 304,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/nabor-posudy/"
+    },
+    {
+      "width": 768,
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "route": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "variantsChecked": 3,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 24,
+        "y": 228.296875,
+        "width": 346,
+        "height": 346,
+        "right": 370,
+        "bottom": 574.296875
+      },
+      "title": {
+        "x": 398,
+        "y": 256.296875,
+        "width": 346,
+        "height": 80.625,
+        "right": 744,
+        "bottom": 336.921875
+      },
+      "panel": {
+        "x": 398,
+        "y": 457.671875,
+        "width": 346,
+        "height": 367.453125,
+        "right": 744,
+        "bottom": 825.125
+      },
+      "price": {
+        "x": 419,
+        "y": 581.046875,
+        "width": 128,
+        "height": 36.796875,
+        "right": 547,
+        "bottom": 617.84375
+      },
+      "button": {
+        "x": 563,
+        "y": 586.1875,
+        "width": 160,
+        "height": 48,
+        "right": 723,
+        "bottom": 634.1875
+      },
+      "bottom": {
+        "x": 419,
+        "y": 581.046875,
+        "width": 304,
+        "height": 58.296875,
+        "right": 723,
+        "bottom": 639.34375
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 58.375,
+          "overflow": false
+        },
+        {
+          "width": 96,
+          "height": 58.375,
+          "overflow": false
+        },
+        {
+          "width": 96,
+          "height": 58.375,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/"
+    },
+    {
+      "width": 768,
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "route": "/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 24,
+        "y": 228.296875,
+        "width": 346,
+        "height": 346,
+        "right": 370,
+        "bottom": 574.296875
+      },
+      "title": {
+        "x": 398,
+        "y": 256.296875,
+        "width": 346,
+        "height": 201.5625,
+        "right": 744,
+        "bottom": 457.859375
+      },
+      "panel": {
+        "x": 398,
+        "y": 578.609375,
+        "width": 346,
+        "height": 357.078125,
+        "right": 744,
+        "bottom": 935.6875
+      },
+      "price": {
+        "x": 419,
+        "y": 691.609375,
+        "width": 128,
+        "height": 36.796875,
+        "right": 547,
+        "bottom": 728.40625
+      },
+      "button": {
+        "x": 563,
+        "y": 696.75,
+        "width": 160,
+        "height": 48,
+        "right": 723,
+        "bottom": 744.75
+      },
+      "bottom": {
+        "x": 419,
+        "y": 691.609375,
+        "width": 304,
+        "height": 58.296875,
+        "right": 723,
+        "bottom": 749.90625
+      },
+      "variants": [
+        {
+          "width": 304,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/"
+    },
+    {
+      "width": 768,
+      "id": "p39-497",
+      "route": "/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 24,
+        "y": 228.296875,
+        "width": 346,
+        "height": 346,
+        "right": 370,
+        "bottom": 574.296875
+      },
+      "title": {
+        "x": 398,
+        "y": 256.296875,
+        "width": 346,
+        "height": 120.9375,
+        "right": 744,
+        "bottom": 377.234375
+      },
+      "panel": {
+        "x": 398,
+        "y": 497.984375,
+        "width": 346,
+        "height": 357.078125,
+        "right": 744,
+        "bottom": 855.0625
+      },
+      "price": {
+        "x": 419,
+        "y": 610.984375,
+        "width": 128,
+        "height": 36.796875,
+        "right": 547,
+        "bottom": 647.78125
+      },
+      "button": {
+        "x": 563,
+        "y": 616.125,
+        "width": 160,
+        "height": 48,
+        "right": 723,
+        "bottom": 664.125
+      },
+      "bottom": {
+        "x": 419,
+        "y": 610.984375,
+        "width": 304,
+        "height": 58.296875,
+        "right": 723,
+        "bottom": 669.28125
+      },
+      "variants": [
+        {
+          "width": 304,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/"
+    },
+    {
+      "width": 1280,
+      "id": "meat",
+      "route": "/pirogi/myasnoy-pirog/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 70,
+        "y": 206,
+        "width": 520,
+        "height": 520,
+        "right": 590,
+        "bottom": 726
+      },
+      "title": {
+        "x": 660,
+        "y": 234,
+        "width": 580,
+        "height": 51.59375,
+        "right": 1240,
+        "bottom": 285.59375
+      },
+      "panel": {
+        "x": 660,
+        "y": 406.34375,
+        "width": 580,
+        "height": 357.078125,
+        "right": 1240,
+        "bottom": 763.421875
+      },
+      "price": {
+        "x": 681,
+        "y": 519.34375,
+        "width": 362,
+        "height": 36.796875,
+        "right": 1043,
+        "bottom": 556.140625
+      },
+      "button": {
+        "x": 1059,
+        "y": 524.484375,
+        "width": 160,
+        "height": 48,
+        "right": 1219,
+        "bottom": 572.484375
+      },
+      "bottom": {
+        "x": 681,
+        "y": 519.34375,
+        "width": 538,
+        "height": 58.296875,
+        "right": 1219,
+        "bottom": 577.640625
+      },
+      "variants": [
+        {
+          "width": 265,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 265,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/pirogi/myasnoy-pirog/"
+    },
+    {
+      "width": 1280,
+      "id": "apple",
+      "route": "/pirogi/pirog-s-yablokom-i-brusnikoy/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 70,
+        "y": 206,
+        "width": 520,
+        "height": 520,
+        "right": 590,
+        "bottom": 726
+      },
+      "title": {
+        "x": 660,
+        "y": 234,
+        "width": 580,
+        "height": 103.1875,
+        "right": 1240,
+        "bottom": 337.1875
+      },
+      "panel": {
+        "x": 660,
+        "y": 431.6875,
+        "width": 580,
+        "height": 357.078125,
+        "right": 1240,
+        "bottom": 788.765625
+      },
+      "price": {
+        "x": 681,
+        "y": 544.6875,
+        "width": 362,
+        "height": 36.796875,
+        "right": 1043,
+        "bottom": 581.484375
+      },
+      "button": {
+        "x": 1059,
+        "y": 549.828125,
+        "width": 160,
+        "height": 48,
+        "right": 1219,
+        "bottom": 597.828125
+      },
+      "bottom": {
+        "x": 681,
+        "y": 544.6875,
+        "width": 538,
+        "height": 58.296875,
+        "right": 1219,
+        "bottom": 602.984375
+      },
+      "variants": [
+        {
+          "width": 265,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 265,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/pirogi/pirog-s-yablokom-i-brusnikoy/"
+    },
+    {
+      "width": 1280,
+      "id": "cranberry",
+      "route": "/catalog/klyukvennyy-mors/",
+      "variantsChecked": 2,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 70,
+        "y": 206,
+        "width": 520,
+        "height": 520,
+        "right": 590,
+        "bottom": 726
+      },
+      "title": {
+        "x": 660,
+        "y": 234,
+        "width": 580,
+        "height": 51.59375,
+        "right": 1240,
+        "bottom": 285.59375
+      },
+      "panel": {
+        "x": 660,
+        "y": 380.09375,
+        "width": 580,
+        "height": 357.078125,
+        "right": 1240,
+        "bottom": 737.171875
+      },
+      "price": {
+        "x": 681,
+        "y": 493.09375,
+        "width": 362,
+        "height": 36.796875,
+        "right": 1043,
+        "bottom": 529.890625
+      },
+      "button": {
+        "x": 1059,
+        "y": 498.234375,
+        "width": 160,
+        "height": 48,
+        "right": 1219,
+        "bottom": 546.234375
+      },
+      "bottom": {
+        "x": 681,
+        "y": 493.09375,
+        "width": 538,
+        "height": 58.296875,
+        "right": 1219,
+        "bottom": 551.390625
+      },
+      "variants": [
+        {
+          "width": 265,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 265,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/klyukvennyy-mors/"
+    },
+    {
+      "width": 1280,
+      "id": "tableware",
+      "route": "/catalog/nabor-posudy/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 70,
+        "y": 206,
+        "width": 520,
+        "height": 520,
+        "right": 590,
+        "bottom": 726
+      },
+      "title": {
+        "x": 660,
+        "y": 234,
+        "width": 580,
+        "height": 51.59375,
+        "right": 1240,
+        "bottom": 285.59375
+      },
+      "panel": {
+        "x": 660,
+        "y": 406.34375,
+        "width": 580,
+        "height": 357.078125,
+        "right": 1240,
+        "bottom": 763.421875
+      },
+      "price": {
+        "x": 681,
+        "y": 519.34375,
+        "width": 362,
+        "height": 36.796875,
+        "right": 1043,
+        "bottom": 556.140625
+      },
+      "button": {
+        "x": 1059,
+        "y": 524.484375,
+        "width": 160,
+        "height": 48,
+        "right": 1219,
+        "bottom": 572.484375
+      },
+      "bottom": {
+        "x": 681,
+        "y": 519.34375,
+        "width": 538,
+        "height": 58.296875,
+        "right": 1219,
+        "bottom": 577.640625
+      },
+      "variants": [
+        {
+          "width": 538,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/nabor-posudy/"
+    },
+    {
+      "width": 1280,
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "route": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "variantsChecked": 3,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 70,
+        "y": 206,
+        "width": 520,
+        "height": 520,
+        "right": 590,
+        "bottom": 726
+      },
+      "title": {
+        "x": 660,
+        "y": 234,
+        "width": 580,
+        "height": 103.1875,
+        "right": 1240,
+        "bottom": 337.1875
+      },
+      "panel": {
+        "x": 660,
+        "y": 431.6875,
+        "width": 580,
+        "height": 357.078125,
+        "right": 1240,
+        "bottom": 788.765625
+      },
+      "price": {
+        "x": 681,
+        "y": 544.6875,
+        "width": 362,
+        "height": 36.796875,
+        "right": 1043,
+        "bottom": 581.484375
+      },
+      "button": {
+        "x": 1059,
+        "y": 549.828125,
+        "width": 160,
+        "height": 48,
+        "right": 1219,
+        "bottom": 597.828125
+      },
+      "bottom": {
+        "x": 681,
+        "y": 544.6875,
+        "width": 538,
+        "height": 58.296875,
+        "right": 1219,
+        "bottom": 602.984375
+      },
+      "variants": [
+        {
+          "width": 174,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 174,
+          "height": 48,
+          "overflow": false
+        },
+        {
+          "width": 174,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/"
+    },
+    {
+      "width": 1280,
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "route": "/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 70,
+        "y": 206,
+        "width": 520,
+        "height": 520,
+        "right": 590,
+        "bottom": 726
+      },
+      "title": {
+        "x": 660,
+        "y": 234,
+        "width": 580,
+        "height": 154.78125,
+        "right": 1240,
+        "bottom": 388.78125
+      },
+      "panel": {
+        "x": 660,
+        "y": 483.28125,
+        "width": 580,
+        "height": 357.078125,
+        "right": 1240,
+        "bottom": 840.359375
+      },
+      "price": {
+        "x": 681,
+        "y": 596.28125,
+        "width": 362,
+        "height": 36.796875,
+        "right": 1043,
+        "bottom": 633.078125
+      },
+      "button": {
+        "x": 1059,
+        "y": 601.421875,
+        "width": 160,
+        "height": 48,
+        "right": 1219,
+        "bottom": 649.421875
+      },
+      "bottom": {
+        "x": 681,
+        "y": 596.28125,
+        "width": 538,
+        "height": 58.296875,
+        "right": 1219,
+        "bottom": 654.578125
+      },
+      "variants": [
+        {
+          "width": 538,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/"
+    },
+    {
+      "width": 1280,
+      "id": "p39-497",
+      "route": "/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/",
+      "variantsChecked": 1,
+      "overflow": false,
+      "headingCount": 1,
+      "art": {
+        "x": 70,
+        "y": 206,
+        "width": 520,
+        "height": 520,
+        "right": 590,
+        "bottom": 726
+      },
+      "title": {
+        "x": 660,
+        "y": 234,
+        "width": 580,
+        "height": 154.78125,
+        "right": 1240,
+        "bottom": 388.78125
+      },
+      "panel": {
+        "x": 660,
+        "y": 483.28125,
+        "width": 580,
+        "height": 357.078125,
+        "right": 1240,
+        "bottom": 840.359375
+      },
+      "price": {
+        "x": 681,
+        "y": 596.28125,
+        "width": 362,
+        "height": 36.796875,
+        "right": 1043,
+        "bottom": 633.078125
+      },
+      "button": {
+        "x": 1059,
+        "y": 601.421875,
+        "width": 160,
+        "height": 48,
+        "right": 1219,
+        "bottom": 649.421875
+      },
+      "bottom": {
+        "x": 681,
+        "y": 596.28125,
+        "width": 538,
+        "height": 58.296875,
+        "right": 1219,
+        "bottom": 654.578125
+      },
+      "variants": [
+        {
+          "width": 538,
+          "height": 48,
+          "overflow": false
+        }
+      ],
+      "headingFont": "Playfair, Georgia, \"Times New Roman\", serif",
+      "canonical": "https://pirogorsk.ru/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/"
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "posts": []
+}
