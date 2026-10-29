@@ -13,13 +13,13 @@ const title = 'Меню — целые пироги, хлеб и выпечка 
 const description = '153 позиции перед запуском Пирогорска: 61 пирог а-ля Русс, 78 продуктов Holland Bakery, наши идеи и дополнения. Сравните форматы и предварительные цены, отметьте интерес.';
 ---
 <ContentLayout {title} {description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }]}>
-  <EditorialHero eyebrow="153 позиции · готовим запуск" title="Выберите свой вкус" intro="Начинаем с подбора выпечки местных пекарен и доставки через Пирогорск. Сохранили первые восемь идей пирогов, добавили 61 целый пирог «Пироги а-ля Русс», 78 позиций Holland Bakery и шесть напитков и дополнений. Цены и форматы предварительные." />
+  <EditorialHero eyebrow="153 позиции · готовим запуск" title="Меню пирогов, хлеба и выпечки" intro="Начинаем с подбора выпечки местных пекарен и доставки через Пирогорск. Сохранили первые восемь идей пирогов, добавили 61 целый пирог «Пироги а-ля Русс», 78 позиций Holland Bakery и шесть напитков и дополнений. Цены и форматы предварительные." />
   <div class="ed-note"><strong>Сейчас проверяем интерес.</strong> Продажи и производство ещё не запущены. {conceptCaption} Состав и аллергены опубликуем до начала заказов.</div>
   <p class="menu-planner-link"><a href="/podbor/">Сколько пирогов нужно на вашу компанию? Рассчитать вес ↗</a></p>
-  <section class="ed-catalog" aria-label="Концепты пирогов">{editorialProducts.map(product => <article class="ed-product-card"><a class="product-visual-link" href={productHref(product)}><ProductVisual {product} layout="menu" /><p class="ed-eyebrow">{product.sweet ? 'К чаю' : 'К общему столу'} · концепт</p><h2>{product.name}</h2><p>{product.editorial.intro}</p><span class="ed-product-more">О вкусе и статусе рецепта ↗</span></a></article>)}</section>
+  <section class="ed-catalog" id="pirogi" aria-label="Концепты пирогов">{editorialProducts.map(product => <article class="ed-product-card"><a class="product-visual-link" href={productHref(product)}><ProductVisual {product} layout="menu" /><p class="ed-eyebrow">{product.sweet ? 'К чаю' : 'К общему столу'} · концепт</p><h2>{product.name}</h2><p>{product.editorial.intro}</p><span class="ed-product-more">О вкусе и статусе рецепта ↗</span></a></article>)}</section>
   <SupplierCatalog fresh interactive={false} />
   <SupplierCatalog interactive={false} />
-  <section class="ed-links-section menu-extras" aria-labelledby="menu-extras-title">
+  <section id="extras" class="ed-links-section menu-extras" aria-labelledby="menu-extras-title">
     <h2 id="menu-extras-title">Напитки и дополнения</h2>
     <div class="ed-catalog">{extras.map(product => <article class="ed-product-card"><a class="product-visual-link" href={catalogProductHref(product)}><ProductVisual {product} layout="menu" decorative /><p class="ed-eyebrow">От {Math.min(...product.variants.map(v => v.price)).toLocaleString('ru-RU')} ₽ · предварительно</p><h3>{product.name}</h3><p>{productPage(product).intro}</p><span class="ed-product-more">Подробнее о позиции ↗</span></a></article>)}</div>
   </section>

@@ -6,7 +6,12 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
   let group = 'all';
   let limit = 24;
   const normalize = (text: string) => text.toLocaleLowerCase('ru-RU').replaceAll('ё', 'е').trim();
-  const initialId = new URLSearchParams(location.search).get('interest');
+  const params = new URLSearchParams(location.search);
+  const initialId = params.get('interest');
+  const requestedGroup = params.get('group');
+  if (location.hash === `#${root.id}` && filters.some(button => button.dataset.supplierFilter === requestedGroup)) {
+    group = requestedGroup!;
+  }
   function render() {
     const query = normalize(search.value);
     const matches = cards.filter(card => (group === 'all' || card.dataset.supplierGroup === group) && normalize(card.dataset.supplierName || '').includes(query));

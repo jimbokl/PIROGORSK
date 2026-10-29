@@ -11,12 +11,13 @@ const matrix = JSON.parse(await read('src/data/seo-matrix.json'));
 const sitemap = await read('site/sitemap.xml');
 const home = await read('site/index.html');
 const menu = await read('site/menu/index.html');
+assert.ok(home.includes('href="/menu/"'), 'homepage links to complete menu');
+assert.equal((home.match(/data-product="/g) ?? []).length, 4, 'homepage keeps a short four-product storefront');
 assert.equal(art.length, 139);
 assert.equal(new Set(art.map(a => a.sourceSha256)).size, 139, '139 separately generated images');
 assert.equal(matrix.filter(row => row.cohort === 'product-pages-20261029').length, 84);
 for (const product of catalog) {
   const route = catalogProductHref(product);
-  assert.ok(home.includes(`href="${route}"`), `home links to ${route}`);
   assert.ok(menu.includes(`href="${route}"`), `menu links to ${route}`);
   assert.ok(sitemap.includes(`https://pirogorsk.ru${route}</loc>`), `sitemap: ${route}`);
   const html = await read(`site${route}index.html`);
@@ -45,6 +46,6 @@ for (const product of catalog) {
   }
   assert.ok((await stat(`public${image.ogImage}`)).size > 1000);
 }
-assert.equal((home.match(/class="supplier-art-link"/g) ?? []).length, 139, 'all supplier cards illustrated');
+assert.equal((menu.match(/class="supplier-art-link"/g) ?? []).length, 139, 'all supplier cards illustrated in the complete menu');
 assert.equal(matrix.filter(row => row.cohort === 'pirogi39-20261029').length, 61);
 console.log('Product pages verified: 153 routes, 145 SEO owners, 139 imagegen originals and 1112 responsive assets.');

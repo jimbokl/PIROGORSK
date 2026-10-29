@@ -1,76 +1,44 @@
-/* One static, useful first frame. Motion enhances the separate food layers. */
-.tasting-hero{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;min-height:578px;padding-top:34px;padding-bottom:54px;margin-bottom:28px}
-.tasting-coast{position:absolute;inset:0 -60px 0;z-index:-2;overflow:hidden;pointer-events:none;}
-.tasting-coast::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,var(--paper),transparent 18%,transparent 96%,var(--paper))}
-.tasting-coast img{transform:translate3d(calc(var(--hero-x,0px) * -.25),calc(var(--hero-y,0px) * -.25),0) scale(1.02);transition:transform 600ms;height:100%;width:100%;object-fit:cover;object-position:center 60%;opacity:.64;mix-blend-mode:multiply}
-.tasting-copy{position:relative;z-index:2;align-self:center;padding-bottom:15px}
-.tasting-copy h1{font-size:clamp(54px,6.4vw,90px);line-height:.96;letter-spacing:-.055em;margin-bottom:25px;font-weight:600}
-.tasting-description{font-size:18px;line-height:1.55;margin-bottom:23px;letter-spacing:-.02em}
-.tasting-cities{font-size:11px;line-height:1.6;color:var(--muted);margin-top:22px}
-.tasting-stage::before{content:"";position:absolute;inset:8% 2% 20%;border-radius:50%;background:radial-gradient(ellipse,var(--fish-wash),transparent 68%);transition:background 400ms;z-index:-1}
-.tasting-hero[data-flavor=meat] .tasting-stage::before{background:radial-gradient(ellipse,var(--meat-wash),transparent 68%)}
-.tasting-hero[data-flavor=cherry] .tasting-stage::before{background:radial-gradient(ellipse,var(--cherry-wash),transparent 68%)}
-.tasting-stage{position:relative;align-self:center;min-width:0;padding-top:6px}
-.tasting-orbit{position:absolute;inset:13% 6% 16%;border:1px solid var(--orbit-line);border-radius:50%;transform:rotate(-17deg);pointer-events:none}
-.tasting-orbit::before{content:'';position:absolute;inset:-13px 11px;border:1px dashed var(--orbit-inner-line);border-radius:50%}
-.tasting-seal{position:absolute;z-index:2;right:-8px;top:0;width:109px;aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;background:var(--navy);color:var(--paper);outline:1px solid var(--navy);outline-offset:5px;transform:rotate(10deg);box-shadow:0 8px 25px var(--seal-shadow)}
-.tasting-seal span{font-size:11px;letter-spacing:0;line-height:1.6}.tasting-seal strong{font:500 47px/1 var(--serif);margin:1px 0 3px}
-.tasting-art{aspect-ratio:1.18;position:relative;transform:translate3d(var(--hero-x,0px),var(--hero-y,0px),0);transition:transform 500ms cubic-bezier(.2,.7,.2,1)}
-/* Optically center the food on the coastal oval, leaving room for the caption. */
-.tasting-scene{position:absolute;inset:16% 0 -8%;transform-origin:50% 65%}.tasting-scene[hidden]{display:none}
-.tasting-scene>a{display:block;width:100%;height:100%;border-radius:50%}.tasting-scene picture{display:contents}
-.tasting-scene img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 20px 14px var(--food-shadow))}
-.tasting-caption{position:relative;display:flex;align-items:center;gap:15px;padding:11px 0 14px;border-bottom:1px solid var(--caption-line);margin:0 10px}
-.tasting-caption>span:first-child{font-size:11px;color:var(--muted);align-self:center;white-space:nowrap;font-variant-numeric:tabular-nums}
-.tasting-caption>div{flex:1}.tasting-caption a{font:500 25px/1.25 var(--serif);letter-spacing:-.02em;text-underline-offset:5px}.tasting-caption a:hover{text-decoration:underline}
-.tasting-caption small{font-size:11px;color:var(--muted);display:block;margin-top:5px;line-height:1.4}
-.tasting-weight{font-size:11px;line-height:1.6;white-space:nowrap;text-align:right}.tasting-weight b{font-weight:400;color:var(--muted)}
-.tasting-controls{display:flex;justify-content:center;gap:7px;margin-top:10px}.tasting-controls button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:9px 13px;border-radius:30px;font-size:11px;transition:background 200ms,color 200ms}
-.tasting-controls button:hover{background:var(--soft)}.tasting-controls button[aria-pressed=true]{background:var(--navy);color:var(--paper)}
-.tasting-wave{position:absolute;z-index:-1;left:-30px;bottom:0;width:calc(100% + 60px);height:40px;stroke:var(--navy);stroke-width:1;opacity:.26;pointer-events:none}
-.tasting-wave path:last-child{opacity:.5}
-/* Touch visitors get the complete first frame immediately; flavor changes and
-   scroll reveals still animate after interaction, without a loading sequence. */
-@media(prefers-reduced-motion:no-preference) and (hover:hover) and (pointer:fine){
- .tasting-scene:first-child{animation:tasting-breeze 1200ms cubic-bezier(.3,0,.3,1) 1}
- .tasting-seal{animation:seal-settle 900ms cubic-bezier(.2,.7,.2,1) 1}
- .tasting-wave{animation:wave-sway 1100ms ease-out 1}
-}
-@keyframes tasting-breeze{0%,100%{transform:translateY(0) rotate(0)}40%{transform:translateY(-14px) rotate(-2deg)}75%{transform:translateY(3px) rotate(1deg)}}
-@keyframes seal-settle{0%{transform:rotate(-10deg)}65%{transform:rotate(14deg)}100%{transform:rotate(10deg)}}
-@keyframes wave-sway{0%,100%{transform:translateX(0)}45%{transform:translateX(-10px)}}
-@media(min-width:1500px){.tasting-hero{min-height:650px}.tasting-copy h1{font-size:96px}}
-@media(max-width:1100px){.tasting-hero{min-height:540px;padding-top:25px;gap:8px}.tasting-copy h1{font-size:clamp(52px,6.8vw,75px)}.tasting-description{font-size:16px}.tasting-seal{width:86px;right:0;top:-10px}.tasting-seal strong{font-size:37px}.tasting-seal span{font-size:11px}.tasting-caption a{font-size:22px}.tasting-caption{gap:10px}.tasting-coast{inset:0 -36px}.tasting-controls button{padding-inline:10px}}
-@media(max-width:760px){.tasting-hero{grid-template-columns:minmax(0,1fr);gap:4px;padding-top:22px;padding-bottom:35px;margin-bottom:16px}.tasting-copy{padding-bottom:0}.tasting-copy h1{font-size:clamp(48px,10.8vw,78px);margin-bottom:19px}.tasting-description{font-size:15px;margin-bottom:16px}.tasting-cities{margin-top:15px;font-size:10px}.tasting-stage{width:min(510px,100%);justify-self:center;margin-top:4px}.tasting-art{aspect-ratio:1.45}.tasting-seal{width:75px;right:3px;top:16px}.tasting-seal strong{font-size:33px}.tasting-seal span{font-size:11px}.tasting-orbit{inset:18% 10% 25%}.tasting-caption{margin:0;gap:11px;padding-block:4px 11px}.tasting-caption a{font-size:24px}.tasting-caption small{font-size:11px}.tasting-controls{gap:8px;margin-top:8px}.tasting-controls button{padding-inline:15px;font-size:11px}.tasting-coast{inset:260px -18px 0}.tasting-coast::after{background:linear-gradient(to bottom,var(--paper),transparent 20%,transparent 75%,var(--paper))}.tasting-coast img{transform:translate3d(calc(var(--hero-x,0px) * -.25),calc(var(--hero-y,0px) * -.25),0) scale(1.02);transition:transform 600ms;object-position:70% center;opacity:.4}.tasting-wave{left:-18px;width:calc(100% + 36px);height:28px}.tasting-copy .hero-eyebrow{margin-bottom:16px;font-size:10px}}
-@media(max-width:370px){.tasting-copy h1{font-size:12.1vw}.tasting-caption a{font-size:21px}.tasting-caption small{font-size:11px}.tasting-weight{font-size:11px}.tasting-seal{width:62px;right:3px;top:16px;outline-offset:3px}.tasting-seal strong{font-size:26px}.tasting-seal span{font-size:11px}.tasting-controls{gap:3px}.tasting-controls button{font-size:10px;padding-inline:11px}.tasting-copy .hero-eyebrow{font-size:9px}}
-
-@media(prefers-reduced-motion:reduce){.tasting-art,.tasting-coast img,.tasting-controls button,.tasting-stage::before{transition:none;transform:none}}
-@media(max-width:760px){
- .tasting-copy .hero-actions{gap:10px 15px}
- .tasting-copy .hero-cta{min-width:190px;padding-inline:22px;font-size:14px}
- .tasting-copy .hero-planner{font-size:11px;gap:7px}
-}
-@media(max-width:370px){
- .tasting-copy .hero-actions{gap:8px 12px}
- .tasting-copy .hero-cta{min-width:174px;padding-inline:17px;font-size:13px}
- .tasting-copy .hero-planner{font-size:10px}
-}
-@media(hover:none), (pointer:coarse){
- .tasting-art{transform:none;transition:none}
- .tasting-coast img{transform:none;transition:none;mix-blend-mode:normal}
- .tasting-scene img{filter:none}
-}
-
-/* Keep the flavor controls visible on common laptop screens. */
-@media(min-width:761px) and (max-height:850px){
- .tasting-hero{padding-top:20px;padding-bottom:35px}
- .tasting-art{aspect-ratio:1.48}
- .tasting-coast img{object-position:center 28%}
-}
-
-/* Labels remain legible beside the illustration at every viewport. */
-@media(max-width:1100px){.tasting-seal{width:100px}.tasting-seal strong{font-size:37px}.tasting-seal span{font-size:10px}}
-@media(max-width:760px){.tasting-seal{width:94px;right:0;top:4px}.tasting-seal strong{font-size:33px}.tasting-seal span{font-size:10px}.tasting-caption small,.tasting-weight,.tasting-caption>span:first-child{font-size:11px}.tasting-cities{font-size:11px}.tasting-copy .hero-planner{font-size:12px}}
-
-.tasting-seal{padding:10px;text-align:center}.tasting-seal span{font-size:11px;line-height:1.3}.tasting-seal strong{font-size:39px;margin:0}.tasting-caption small,.tasting-weight,.tasting-caption>span:first-child{font-size:12px}
-@media(max-width:760px){.tasting-seal{width:104px}.tasting-seal strong{font-size:34px}}
+/* The still first frame remains complete in HTML; the carousel is an enhancement. */
+.tasting-hero{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(18px,4vw,54px);min-height:450px;padding-block:28px 34px;margin-bottom:24px;overflow:hidden}
+.tasting-coast{position:absolute;inset:0 -50px;z-index:-2;overflow:hidden;pointer-events:none}
+.tasting-coast::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper),transparent 16%,transparent 90%,var(--paper))}
+.tasting-coast img{height:100%;width:100%;object-fit:cover;object-position:center 56%;opacity:.48;mix-blend-mode:multiply}
+.tasting-copy{position:relative;z-index:2;align-self:center;max-width:580px;padding-block:10px}
+.tasting-copy .hero-eyebrow{font-size:10px;letter-spacing:.13em;color:var(--muted);margin:0 0 15px}
+.tasting-copy h1{font-size:clamp(48px,5.6vw,78px);line-height:.97;letter-spacing:-.05em;margin:0 0 20px;font-weight:600}
+.tasting-description{max-width:420px;font-size:17px;line-height:1.5;margin:0 0 20px;letter-spacing:-.015em}
+.tasting-copy .hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.tasting-copy .hero-cta{min-width:182px;padding-inline:20px}
+.tasting-cities{font-size:11px;line-height:1.5;color:var(--muted);margin:17px 0 0}
+.tasting-stage{position:relative;align-self:center;min-width:0;max-width:610px;width:100%;justify-self:center;padding:8px 12px 0}
+.tasting-stage::before{content:"";position:absolute;inset:8% 4% 20%;border-radius:50%;background:radial-gradient(ellipse,var(--fish-wash),transparent 70%);transition:background 300ms;z-index:-1}
+.tasting-hero[data-flavor=company] .tasting-stage::before{background:radial-gradient(ellipse,var(--meat-wash),transparent 70%)}
+.tasting-hero[data-flavor=tea] .tasting-stage::before{background:radial-gradient(ellipse,var(--cherry-wash),transparent 70%)}
+.tasting-orbit{position:absolute;inset:12% 8% 19%;border:1px solid var(--orbit-line);border-radius:50%;transform:rotate(-14deg);pointer-events:none}
+.tasting-orbit::before{content:"";position:absolute;inset:-10px 9px;border:1px dashed var(--orbit-inner-line);border-radius:50%}
+.tasting-art{position:relative;aspect-ratio:1.48;overflow:hidden}
+.tasting-scene{position:absolute;inset:0;display:grid;place-items:center}
+.tasting-scene[hidden]{display:none}
+.tasting-scene picture{display:contents}
+.tasting-scene img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 16px 14px var(--food-shadow))}
+.tasting-scene[data-tasting-scene=company] img{object-fit:cover;border-radius:48% 48% 42% 42%;mix-blend-mode:multiply}
+.tasting-caption{position:relative;display:flex;align-items:center;gap:14px;padding:10px 3px 12px;border-bottom:1px solid var(--caption-line);margin:0 8px}
+.tasting-caption>span:first-child{font-size:11px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tasting-caption>div{flex:1;min-width:0}
+.tasting-caption strong{font:500 24px/1.2 var(--serif);letter-spacing:-.02em}
+.tasting-caption small{font-size:11px;color:var(--muted);display:block;margin-top:4px;line-height:1.4}
+.tasting-weight{font-size:10px;line-height:1.5;white-space:nowrap;text-align:right}.tasting-weight b{font-weight:400;color:var(--muted)}
+.tasting-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:9px}
+.tasting-controls{display:flex;align-items:center;justify-content:center;gap:8px}
+.tasting-controls button,.tasting-arrow{width:40px;height:40px;border:1px solid var(--orbit-line);border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--paper) 88%,transparent);color:var(--navy);cursor:pointer;transition:background 180ms,color 180ms,transform 180ms}
+.tasting-controls button{width:32px;height:40px;padding:0;border:0;background:transparent}
+.tasting-controls button::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--orbit-line)}
+.tasting-controls button:hover::before,.tasting-arrow:hover{background:var(--soft)}
+.tasting-controls button[aria-pressed=true]::before{background:var(--navy);box-shadow:0 0 0 3px var(--paper),0 0 0 4px var(--navy)}
+.tasting-arrow span{font:400 26px/1 var(--serif);transform:translateY(-1px)}
+.tasting-controls button:focus-visible,.tasting-arrow:focus-visible,.hero-actions a:focus-visible{outline:2px solid var(--navy);outline-offset:4px}
+@media(max-width:1000px){.tasting-hero{min-height:430px;gap:14px}.tasting-copy h1{font-size:clamp(45px,6vw,65px)}.tasting-description{font-size:15px}.tasting-caption strong{font-size:21px}.tasting-stage{padding-inline:0}}
+@media(max-width:760px){.tasting-hero{grid-template-columns:minmax(0,1fr);gap:0;min-height:0;padding:25px 0 28px;margin-bottom:16px}.tasting-copy{padding:0}.tasting-copy .hero-eyebrow{font-size:9px;margin-bottom:12px}.tasting-copy h1{font-size:clamp(45px,10.4vw,70px);margin-bottom:13px}.tasting-description{font-size:15px;max-width:440px;margin-bottom:16px}.tasting-copy .hero-actions{gap:10px 16px}.tasting-copy .hero-cta{min-width:170px;padding-inline:17px;font-size:13px}.tasting-copy .hero-planner{font-size:11px}.tasting-cities{margin-top:12px;font-size:10px}.tasting-stage{width:min(520px,100%);margin-top:4px;padding:0}.tasting-art{aspect-ratio:1.65}.tasting-orbit{inset:15% 10% 24%}.tasting-caption{margin:0;gap:10px;padding-block:3px 9px}.tasting-caption strong{font-size:22px}.tasting-caption small,.tasting-weight,.tasting-caption>span:first-child{font-size:10px}.tasting-nav{margin-top:7px;gap:12px}.tasting-arrow{width:36px;height:36px}.tasting-controls{gap:0}.tasting-coast{inset:210px -18px 0}.tasting-coast::after{background:linear-gradient(180deg,var(--paper),transparent 18%,transparent 82%,var(--paper))}.tasting-coast img{object-position:70% center;opacity:.34;mix-blend-mode:normal}}
+@media(max-width:370px){.tasting-copy .hero-eyebrow{font-size:8px}.tasting-copy h1{font-size:12vw}.tasting-copy .hero-actions{gap:8px 12px}.tasting-copy .hero-cta{min-width:158px;padding-inline:14px;font-size:12px}.tasting-caption{gap:7px}.tasting-caption strong{font-size:19px}.tasting-caption small{font-size:9px}.tasting-weight{font-size:9px}}
+@media(hover:none),(pointer:coarse){.tasting-scene img{filter:none}}
+@media(prefers-reduced-motion:reduce){.tasting-stage::before,.tasting-controls button,.tasting-arrow{transition:none}}

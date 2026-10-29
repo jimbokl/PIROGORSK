@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import ProductVisual from './ProductVisual.astro';
+import SupplierArtwork from './SupplierArtwork.astro';
 import type { Product } from '../data/catalog';
 import { catalogProductHref } from '../lib/product-paths';
 import '../styles/catalog.css';
@@ -11,7 +12,7 @@ const selectedVariant = product.variants.find(({ value }) => value === product.d
 const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Объём' : 'Комплект';
 ---
 <article class:list={['product-card', 'catalog-card', `catalog-card--${product.kind}`]} data-product={product.id} data-category={product.category} data-kind={product.kind} data-unit={product.unit} aria-labelledby={`product-${product.id}`}>
-  <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}><ProductVisual product={product} decorative /></a>
+  <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative /> : <ProductVisual product={product} decorative />}</a>
   <div class="product-copy">
     <h3 id={`product-${product.id}`}><a class="product-title-link" href={catalogProductHref(product)}>{product.name}</a></h3>
     <p class="product-description">{product.description}</p>

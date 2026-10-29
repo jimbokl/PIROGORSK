@@ -1,10 +1,9 @@
 ---
-import { Picture } from 'astro:assets';
 import Icon from '../components/Icon.astro';
 import ProductCard from '../components/ProductCard.astro';
-import ExtrasSection from '../components/ExtrasSection.astro';
+import HomeDepartments from '../components/HomeDepartments.astro';
+import HomeOffers from '../components/HomeOffers.astro';
 import InterestForm from '../components/InterestForm.astro';
-import SupplierCatalog from '../components/SupplierCatalog.astro';
 import Analytics from '../components/Analytics.astro';
 import SeoHead from '../components/SeoHead.astro';
 import LcpImagePreload from '../components/LcpImagePreload.astro';
@@ -12,12 +11,10 @@ import Brand from '../components/Brand.astro';
 import SiteNavigation from '../components/SiteNavigation.astro';
 import BlogCards from '../components/BlogCards.astro';
 import { blogEntries } from '../data/blog';
-import { cities, products, catalog, filters } from '../data/catalog';
+import { cities, products, catalog } from '../data/catalog';
 import TastingHero from '../components/TastingHero.astro';
 import heroBackground from '../../design/layered-assets-v2/hero/background.png';
-import bundle from '../../design/assets-source/bundle.png';
-import dinner from '../../design/assets-source/dinner.png';
-import company from '../../design/assets-source/company.png';
+const featured = [products[0]!, products[5]!, catalog.find(p => p.supplier?.name === 'Пироги а-ля Русс')!, catalog.find(p => p.category === 'mini-pies')!].filter(Boolean);
 import '../styles/global.css';
 import '../styles/home.css';
 const faqs = [
@@ -34,7 +31,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
   <head>
     <!-- Inline font-face + swap lets the first frame render while the fonts load.
          Preloading all four subsets delayed the hero's first frame in Chrome 153. -->
-    <SeoHead title="Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске" description="153 позиции для проверки спроса: целые пироги а-ля Русс, мини-пироги, хлеб и выпечка Holland Bakery. Соберите подборку с расчётом доставки. Готовим запуск, цены предварительные." canonicalPath="/" schema={[faqSchema]} preloadFonts={false} />
+    <SeoHead title="Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске" description="Пироги с балтийским характером: целые и мини-пироги, хлеб, десерты и наборы к общему столу. Посмотрите меню и соберите подборку с расчётом доставки. Готовим запуск." canonicalPath="/" schema={[faqSchema]} preloadFonts={false} />
     <LcpImagePreload src={heroBackground} widths={[480, 800, 1200, 1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} />
   </head>
   <body class="home-page">
@@ -49,36 +46,14 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
     </header>
     <main id="top">
       <TastingHero />
-      <section class="catalog container" id="pirogi" aria-labelledby="catalog-heading">
-        <div class="catalog-top">
-          <h2 id="catalog-heading">Выберите начинку</h2>
-          <div class="filters" role="group" aria-label="Начинка пирога">{filters.map(([id, title]) => <button data-filter={id} aria-pressed={id === 'all'}>{title}</button>)}</div>
-        </div>
-        <p class="catalog-launch">Наши первые восемь идей — сохраняем их в меню. Цены ориентировочные, изображения — концепты. <a href="#holland">78 позиций Голландской пекарни ↓</a> · <a href="#pirogi39">61 целый пирог а-ля Русс ↓</a></p>
-        <div class="product-grid">{products.map(product => <ProductCard product={product} />)}</div>
-      </section>
-      <ExtrasSection />
-      <div class="container"><SupplierCatalog fresh /><SupplierCatalog /></div>
-      <section class="bundle-section" id="nabory" aria-labelledby="bundle-heading">
-        <Picture src={bundle} formats={['avif', 'webp']} widths={[640, 1120, 1680]} sizes="100vw" width={1680} height={672} quality={48} alt="Мясной и капустный пироги на деревянной доске у моря" loading="lazy" class="bundle-art" />
-        <div class="container bundle-content">
-          <h2 id="bundle-heading">Соберите свой набор</h2>
-          <p>Разные начинки. Два размера. Одна компания.</p>
-          <button class="button" data-open="bundle-dialog">Выбрать набор<Icon name="arrow" /></button>
-        </div>
-      </section>
-      <section class="occasions container" aria-labelledby="occasion-heading">
-        <h2 id="occasion-heading">Пироги к вашему случаю</h2>
-        <div class="occasion-grid">
-          <button class="occasion-card" data-preset="dinner">
-            <Picture src={dinner} formats={['avif', 'webp']} widths={[480, 800, 1200]} sizes="(max-width: 650px) 90vw, 46vw" width={780} height={200} quality={70} alt="Мясной пирог на уютном столе в апартаментах" loading="lazy" />
-            <span>Ужин<br />в апартаментах<Icon name="arrow" /></span>
-          </button>
-          <button class="occasion-card" data-preset="company">
-            <Picture src={company} formats={['avif', 'webp']} widths={[480, 800, 1200]} sizes="(max-width: 650px) 90vw, 46vw" width={780} height={200} quality={70} alt="Несколько пирогов на столе для компании у моря" loading="lazy" />
-            <span>На компанию<Icon name="arrow" /></span>
-          </button>
-        </div>
+      <p class="home-status container"><span>Готовим запуск</span> Выбирайте вкусы и отмечайте интерес. Цены предварительные, заказ и оплата пока недоступны.</p>
+      <HomeDepartments />
+      <HomeOffers />
+      <section class="catalog home-featured container" id="pirogi" aria-labelledby="catalog-heading">
+        <div class="home-section-heading"><div><p class="eyebrow">Начните знакомство</p><h2 id="catalog-heading">Четыре вкуса из меню</h2></div><a href="/menu/">Все {catalog.length} позиции<Icon name="arrow" /></a></div>
+        <p class="home-section-intro">Наши первые идеи и выпечка местных пекарен. Выберите формат — добавьте в свою подборку.</p>
+        <div class="product-grid">{featured.map(product => <ProductCard product={product} />)}</div>
+        <nav class="home-range-links" aria-label="Полный ассортимент"><a id="pirogi39" href="/menu/#pirogi39">61 целый пирог а-ля Русс<Icon name="arrow" /></a><a id="holland" href="/menu/#holland">78 позиций Holland Bakery<Icon name="arrow" /></a><a id="extras" href="/menu/#extras">Напитки и посуда<Icon name="arrow" /></a></nav>
       </section>
       <section class="discovery container" aria-labelledby="discovery-heading">
         <div><h2 id="discovery-heading">Пироги в балтийских городах</h2><p>Пироги после прогулки у моря, к ужину в апартаментах или встрече с друзьями. Изучаем спрос в трёх городах — выберите свой.</p></div>

@@ -3,7 +3,7 @@ import '../styles/navigation.css';
 interface Props { home?: boolean }
 const { home = false } = Astro.props;
 const links = home
-  ? [{ href: '#pirogi', name: 'Пироги' }, { href: '#nabory', name: 'Наборы' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/delivery/', name: 'Города' }, { href: '/blog/', name: 'Блог' }]
+  ? [{ href: '/menu/', name: 'Всё меню' }, { href: '#nabory', name: 'Предложения' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/delivery/', name: 'Доставка' }, { href: '/blog/', name: 'Блог' }]
   : [{ href: '/menu/', name: 'Пироги' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/delivery/', name: 'Города' }, { href: '/blog/', name: 'Блог' }, { href: '/about/', name: 'О проекте' }];
 const path = Astro.url.pathname;
 const isCurrent = (href: string) => path === href || (href === '/menu/' && path.startsWith('/pirogi/')) || (href === '/blog/' && path.startsWith('/journal/')) || (href === '/delivery/' && path.startsWith('/dostavka/'));

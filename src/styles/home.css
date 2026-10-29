@@ -80,3 +80,17 @@
   .home-page .tasting-copy h1,
   .home-page main h2 { background-image: none; -webkit-text-fill-color: currentColor; }
 }
+
+/* A short storefront; the complete assortment lives in /menu/. */
+.home-status{display:flex;gap:12px;align-items:baseline;font-size:12px;line-height:1.7;color:var(--muted);margin-block:18px 0}
+.home-status>span{font-weight:600;white-space:nowrap;color:var(--ink)}
+.home-section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:16px}
+.home-section-heading h2{margin:0;font-size:clamp(30px,4vw,44px)}
+.home-section-heading .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 10px}
+.home-section-heading>a{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:13px;white-space:nowrap}
+.home-section-intro{max-width:620px;font-size:13px;line-height:1.7;color:var(--muted);margin-bottom:24px}
+.home-featured{padding-block:38px 50px}
+.home-featured .supplier-artwork{aspect-ratio:1.2;border-radius:12px;width:100%}
+.home-range-links{display:flex;flex-wrap:wrap;gap:12px 28px;border-top:1px solid var(--line);margin-top:24px;padding-top:16px}
+.home-range-links a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:12px}
+@media(max-width:650px){.home-status{display:block;font-size:11px;line-height:1.6}.home-status>span{display:block;margin-bottom:3px}.home-section-heading{align-items:start;gap:8px;flex-direction:column}.home-section-heading h2{font-size:31px}.home-featured{padding-block:25px 30px}.home-featured .product-grid{display:flex;overflow-x:auto;scroll-snap-type:x proximity;gap:14px;padding:3px 2px 18px;background:none}.home-featured .product-card{flex:0 0 min(78vw,300px);scroll-snap-align:start}.home-range-links{gap:0 16px;margin-top:12px}.home-range-links a{font-size:11px}}

@@ -1,0 +1,62 @@
+---
+import { Picture } from 'astro:assets';
+import { products } from '../data/catalog';
+import dinner from '../../design/assets-source/dinner.png';
+import company from '../../design/assets-source/company.png';
+import Icon from './Icon.astro';
+
+const priceFor = (id: string, weight: number) => products.find(product => product.id === id)?.variants.find(variant => variant.value === weight)?.price ?? 0;
+const dinnerPrice = priceFor('meat', 500) + priceFor('cheese', 500);
+const companyPrice = priceFor('meat', 1000) + priceFor('fish', 1000) + priceFor('cabbage', 1000);
+const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
+const offers = [
+  { id: 'dinner', title: 'Ужин в апартаментах', detail: 'Мясной 500 г + сырный 500 г', price: dinnerPrice, image: dinner, alt: 'Пирог на столе для ужина в апартаментах', href: '/nabor/uzhin-v-apartamentah/', action: 'В подборку: ужин в апартаментах' },
+  { id: 'company', title: 'На компанию', detail: 'Мясной + рыбный + с капустой, по 1 кг', price: companyPrice, image: company, alt: 'Пироги для общего стола', href: '/nabor/na-kompaniyu/', action: 'В подборку: набор на компанию' },
+];
+---
+<section class="home-offers container" id="nabory" aria-labelledby="home-offers-heading">
+  <div class="offers-heading">
+    <div><span class="offers-kicker">ДЛЯ ОБЩЕГО СТОЛА</span><h2 id="home-offers-heading">Предложения к вашему столу</h2></div>
+    <p>Готовые сочетания для начала. Состав можно изменить в подборке.</p>
+  </div>
+  <div class="offers-grid">
+    {offers.map((offer) => <article class="offer-card">
+      <Picture src={offer.image} formats={['avif','webp']} widths={[320,480,640,800]} sizes="(max-width: 700px) 38vw, (max-width: 1100px) 32vw, 270px" width={offer.image.width} height={offer.image.height} quality={55} alt={offer.alt} loading="lazy" class="offer-art" />
+      <div class="offer-body">
+        <a class="offer-title" href={offer.href}>{offer.title}<Icon name="arrow" /></a>
+        <p>{offer.detail}</p>
+        <div class="offer-bottom"><div><strong>{money(offer.price)}</strong><small>предварительная цена</small></div><button class="button offer-add" type="button" data-preset={offer.id} aria-label={offer.action}>В подборку<Icon name="arrow" /></button></div>
+      </div>
+    </article>)}
+  </div>
+  <div class="offers-footnote"><span>Доставка считается один раз для всей подборки. Цены и условия предварительные.</span><nav aria-label="Подробнее о выборе пирогов"><a href="/povody/">Подобрать к случаю<Icon name="arrow" /></a><a href="/podbor/">Сколько взять?<Icon name="arrow" /></a></nav></div>
+</section>
+
+<style>
+  .home-offers{padding:34px 0 30px}
+  .offers-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:17px}
+  .offers-kicker{display:block;color:var(--muted);font-size:9px;letter-spacing:.13em;margin-bottom:6px}
+  .offers-heading h2{font-size:clamp(27px,3vw,38px);line-height:1.08;margin:0;letter-spacing:-.035em}
+  .offers-heading>p{font-size:12px;line-height:1.45;color:var(--muted);max-width:270px;margin:0 0 2px}
+  .offers-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .offer-card{min-height:208px;display:grid;grid-template-columns:minmax(130px,.78fr) minmax(0,1.3fr);align-items:stretch;overflow:hidden;background:var(--paper-raised,var(--paper));border:1px solid var(--caption-line);border-radius:var(--radius-card,18px)}
+  .offer-art{display:block;width:100%;height:100%;min-height:208px;object-fit:cover;object-position:center;mix-blend-mode:multiply}
+  .offer-body{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:15px 17px}
+  .offer-title{display:flex;align-items:center;gap:7px;width:fit-content;font:500 20px/1.15 var(--serif);letter-spacing:-.02em;text-decoration:none}
+  .offer-title:hover{text-decoration:underline;text-underline-offset:4px}
+  .offer-title .icon{width:16px;height:16px;flex:0 0 16px}
+  .offer-body>p{font-size:11px;line-height:1.4;color:var(--muted);margin:7px 0 11px}
+  .offer-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
+  .offer-bottom>div{display:flex;flex-direction:column;gap:2px;white-space:nowrap}
+  .offer-bottom strong{font-size:17px;font-variant-numeric:tabular-nums}
+  .offer-bottom small{font-size:9px;color:var(--muted)}
+  .offer-add{min-height:40px;padding:8px 12px;font-size:11px;white-space:nowrap}
+  .offer-add .icon{width:14px;height:14px}
+  .offers-footnote{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:12px;font-size:10px;color:var(--muted)}
+  .offers-footnote nav{display:flex;gap:18px;flex:0 0 auto}
+  .offers-footnote a{display:inline-flex;align-items:center;gap:5px;color:var(--navy);text-underline-offset:3px}
+  .offers-footnote .icon{width:13px;height:13px}
+  @media(max-width:1000px){.offer-card{grid-template-columns:minmax(105px,.7fr) minmax(0,1.3fr);min-height:205px}.offer-art{min-height:205px}.offer-body{padding:12px}.offer-title{font-size:18px}.offer-bottom{align-items:flex-start;flex-direction:column;gap:8px}.offer-add{min-height:36px}.offers-footnote{align-items:flex-start;flex-direction:column}.offers-footnote nav{gap:14px}}
+  @media(max-width:700px){.home-offers{padding:26px 0 23px}.offers-heading{display:block;margin-bottom:13px}.offers-heading h2{font-size:27px}.offers-heading>p{font-size:11px;margin-top:7px}.offers-grid{grid-template-columns:minmax(0,1fr);gap:10px}.offer-card{grid-template-columns:minmax(100px,34%) minmax(0,1fr);min-height:210px}.offer-art{min-height:210px}.offer-body{padding:13px 14px}.offer-title{font-size:20px}.offer-body>p{font-size:11px}.offer-bottom{align-items:center;flex-direction:row;flex-wrap:wrap;gap:8px}.offer-add{min-height:40px;padding:8px 13px}.offers-footnote{font-size:10px;gap:8px}.offers-footnote nav{flex-wrap:wrap}}
+  @media(max-width:380px){.offer-card{grid-template-columns:minmax(90px,31%) minmax(0,1fr);min-height:205px}.offer-art{min-height:205px}.offer-body{padding:11px}.offer-title{font-size:18px}.offer-bottom{align-items:flex-start;flex-direction:column;gap:7px}.offer-add{min-height:36px}.offer-bottom strong{font-size:16px}.offers-footnote nav{gap:10px}}
+</style>

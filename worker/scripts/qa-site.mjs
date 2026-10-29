@@ -33,7 +33,7 @@ try {
   assert.deepEqual(await (await worker.fetch(new Request(new URL('/health', endpoint)), env)).json(), { ok: true, storage: 'd1', mode: 'intent', ...releaseManifest() });
   chrome = await launch({ chromeFlags: ['--headless=new', '--no-first-run', '--disable-extensions', '--disable-dev-shm-usage'] });
   browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
-  for (const width of [320, 1280]) {
+  for (const width of [320, 390, 1280]) {
     const context = await browser.createBrowserContext();
     const page = await context.newPage();
     page.on('pageerror', error => errors.push(error.message));
@@ -102,8 +102,43 @@ try {
     assert.deepEqual(await selection(), []);
     assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), false);
     assert.equal(posts.length, before + 1, 'malformed transfer must not submit');
+    // The homepage is a short editorial entry point; the complete 153-item
+    // catalogue belongs to /menu, while the JSON catalogue still powers selection.
+    assert.equal(await page.$$eval('.catalog-card[data-product]', cards => cards.length), 4);
+    assert.equal(await page.$('[data-supplier-catalog]'), null);
+    assert.equal(await page.$('.extras-section'), null);
+    assert.equal(await page.$eval('#catalog-data', script => JSON.parse(script.textContent).length), 153);
+    assert.equal(await page.$$eval('.offer-card', cards => cards.every(card => card.scrollWidth <= card.clientWidth)), true, `offer content overflow at ${width}`);
+    assert.equal(await page.$$eval('.offer-add', buttons => buttons.every(button => { const a = button.getBoundingClientRect(), b = button.closest('.offer-card').getBoundingClientRect(); return a.right <= b.right && a.left >= b.left; })), true, `offer button clipped at ${width}`);
+    assert.equal(await page.$$eval('[data-tasting-scene]', scenes => scenes.length), 3);
+    assert.equal(await page.$eval('[data-tasting-hero]', hero => hero.dataset.flavor), 'pies');
+    await page.click('[data-tasting-next]');
+    await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'company');
+    assert.equal(await page.$eval('[data-tasting-cta]', link => link.getAttribute('href')), '#nabory');
+    await page.click('[data-tasting-prev]');
+    await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'pies');
+    await page.focus('[data-tasting-cta]');
+    await page.keyboard.press('ArrowRight');
+    await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'company');
+    await page.click('[data-tasting-select=tea]');
+    await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'tea');
+
+    // The departments card preserves its group in the menu URL.
+    const miniProduct = catalog.find(item => item.category === 'mini-pies');
+    assert.ok(miniProduct, 'catalog has a mini-pie product');
+    const miniDepartment = `a[href="/menu/?group=mini-pies#holland"]`;
+    assert.equal(await page.$(miniDepartment) !== null, true, 'homepage mini-pies department links to its menu group');
+    await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click(miniDepartment)]);
+    assert.equal(new URL(page.url()).pathname, '/menu/');
+    assert.equal(new URL(page.url()).searchParams.get('group'), 'mini-pies');
+    assert.equal(await page.$eval('#holland [data-supplier-filter=mini-pies]', button => button.getAttribute('aria-pressed')), 'true');
+    assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.every(card => card.dataset.supplierGroup === 'mini-pies')), true);
+    assert.ok(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length > 0));
+
+    // All producer catalogue controls remain available on the full menu page.
     assert.equal(await page.$$eval('#holland [data-supplier-id]', cards => cards.length), 78);
     assert.equal(await page.$$eval('#pirogi39 [data-supplier-id]', cards => cards.length), 61);
+    await page.goto(`${origin}/menu/`, { waitUntil: 'networkidle0' });
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 24);
     await page.type('#holland [data-supplier-search]', 'вишн');
     assert.ok(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length >= 3 && cards.every(card => card.dataset.supplierName.includes('вишн'))));
@@ -116,24 +151,39 @@ try {
       assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), count);
     }
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => button.hidden), true);
-    await page.click('#holland [data-supplier-filter=mini-pies]');
+    await page.goto(`${origin}/menu/?group=dough#holland`, { waitUntil: 'networkidle0' });
+    assert.equal(await page.$eval('#holland [data-supplier-filter=dough]', button => button.getAttribute('aria-pressed')), 'true');
+    assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 6);
+    await page.goto(`${origin}/menu/?group=invalid#holland`, { waitUntil: 'networkidle0' });
+    assert.equal(await page.$eval('#holland [data-supplier-filter=all]', button => button.getAttribute('aria-pressed')), 'true');
+    assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 24);
+    await page.goto(`${origin}/menu/?group=ossetian-pies#pirogi39`, { waitUntil: 'networkidle0' });
+    assert.equal(await page.$eval('#pirogi39 [data-supplier-filter=ossetian-pies]', button => button.getAttribute('aria-pressed')), 'true');
+    assert.equal(await page.$$eval('#pirogi39 [data-supplier-id]:not([hidden])', cards => cards.every(card => card.dataset.supplierGroup === 'ossetian-pies')), true);
+    await page.goto(`${origin}/`, { waitUntil: 'networkidle0' });
     await page.click('[data-open=city-dialog]');
     await page.click('#city-dialog [data-select-city="Калининград"]');
-    const beefId = 'hb-osetinskiy-pirog-s-govyadinoy';
-    await page.click(`[data-product="${beefId}"] [data-add]`);
+    const miniId = miniProduct.id;
+    const miniDefault = miniProduct.variants.find(item => item.value === miniProduct.defaultVariant);
+    const meatDefault = catalog.find(item => item.id === 'meat').variants.find(item => item.value === 500);
+    const mixedTotal = miniDefault.price + meatDefault.price;
+    await page.click(`[data-product="${miniId}"] [data-add]`);
     await page.click('[data-product=meat] [data-add]');
     await page.click('[data-open=selection-dialog]');
-    assert.match(await page.$eval('[data-total]', el => el.textContent), /2\s*240/);
-    assert.match(await page.$eval('[data-selection-grand-total]', el => el.textContent), /2\s*590/);
+    const formattedMixedTotal = mixedTotal.toLocaleString('ru-RU').replaceAll('\u00a0', ' ');
+    assert.ok((await page.$eval('[data-total]', el => el.textContent)).replaceAll('\u00a0', ' ').includes(formattedMixedTotal));
+    const kaliningradDeliveryTotal = mixedTotal + 350;
+    const formattedDeliveryTotal = kaliningradDeliveryTotal.toLocaleString('ru-RU').replaceAll('\u00a0', ' ');
+    assert.ok((await page.$eval('[data-selection-grand-total]', el => el.textContent)).replaceAll('\u00a0', ' ').includes(formattedDeliveryTotal));
     await page.click('[data-order]');
     await page.select('#interest-delivery', 'delivery');
-    assert.match(await page.$eval('[data-interest-grand-total]', el => el.textContent), /2\s*590/);
+    assert.ok((await page.$eval('[data-interest-grand-total]', el => el.textContent)).replaceAll('\u00a0', ' ').includes(formattedDeliveryTotal));
     await page.select('#interest-city', 'Зеленоградск');
-    assert.match(await page.$eval('[data-interest-grand-total]', el => el.textContent), /2\s*740/);
+    assert.ok((await page.$eval('[data-interest-grand-total]', el => el.textContent)).replaceAll('\u00a0', ' ').includes((mixedTotal + 500).toLocaleString('ru-RU').replaceAll('\u00a0', ' ')));
     await page.select('#interest-city', 'Светлогорск');
-    assert.match(await page.$eval('[data-interest-grand-total]', el => el.textContent), /2\s*890/);
+    assert.ok((await page.$eval('[data-interest-grand-total]', el => el.textContent)).replaceAll('\u00a0', ' ').includes((mixedTotal + 650).toLocaleString('ru-RU').replaceAll('\u00a0', ' ')));
     await page.select('#interest-delivery', 'pickup');
-    assert.match(await page.$eval('[data-interest-grand-total]', el => el.textContent), /2\s*240/);
+    assert.ok((await page.$eval('[data-interest-grand-total]', el => el.textContent)).replaceAll('\u00a0', ' ').includes(formattedMixedTotal));
     await page.select('#interest-delivery', 'undecided');
     assert.match(await page.$eval('[data-interest-grand-total]', el => el.textContent), /\+ получение/);
     await page.select('#interest-city', 'Калининград');
@@ -145,25 +195,29 @@ try {
     await page.waitForFunction(() => !document.querySelector('[data-interest-success]').hidden);
     const mixed = posts.at(-1);
     const mixedRow = sqlite.prepare('SELECT * FROM interests WHERE request_id = ?').get(mixed.requestId);
-    assert.deepEqual(mixed.items, [{ id: beefId, value: '1050', quantity: 1 }, { id: 'meat', value: '500', quantity: 1 }]);
-    assert.equal(mixedRow.value_total, 2240, 'DB and goal value remain the product subtotal; receiving is stored separately');
+    assert.deepEqual(mixed.items, [{ id: miniId, value: String(miniDefault.value), quantity: 1 }, { id: 'meat', value: '500', quantity: 1 }]);
+    assert.equal(mixedRow.value_total, mixedTotal, 'DB and goal value remain the product subtotal; receiving is stored separately');
     assert.equal(mixedRow.delivery, 'delivery');
     await page.click('[data-interest-success] [data-interest-close]');
-    await page.click('#holland [data-supplier-filter=bake]');
+    await page.goto(`${origin}/menu/?group=bake#holland`, { waitUntil: 'networkidle0' });
+    assert.equal(await page.$eval('#holland [data-supplier-filter=bake]', button => button.getAttribute('aria-pressed')), 'true');
     assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true, `catalog overflow at ${width}`);
     await page.$eval('#holland', section => section.scrollIntoView());
     await page.screenshot({ path: new URL(`../dist/qa-supplier-${width}.png`, import.meta.url).pathname });
     // A menu variant must transfer the selected format, including cards after page 1.
-    await page.goto(`${origin}/menu/`, { waitUntil: 'networkidle0' });
-    await page.click('#holland [data-supplier-filter=dough]');
+    await page.goto(`${origin}/menu/?group=dough#holland`, { waitUntil: 'networkidle0' });
+    assert.equal(await page.$eval('#holland [data-supplier-filter=dough]', button => button.getAttribute('aria-pressed')), 'true');
     const doughCard = '#holland [data-supplier-id=hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up]';
     await page.click(`${doughCard} label:last-of-type`);
     const link = await page.$eval(`${doughCard} [data-supplier-link]`, el => el.href);
     assert.equal(new URL(link).searchParams.get('variant'), '9000');
     await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click(`${doughCard} [data-supplier-link]`)]);
+    assert.equal(new URL(page.url()).pathname, '/');
+    assert.equal(new URL(page.url()).searchParams.get('interest'), 'hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up');
     assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
-    assert.equal(await page.$eval('[data-product=hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up]', card => card.hidden), false);
-    assert.ok((await selection()).some(item => item.value === 9000));
+    const doughId = 'hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up';
+    assert.ok((await selection()).some(item => item.id === doughId && item.value === 9000));
+    assert.ok((await page.$eval('[data-selection-items]', el => el.textContent)).includes(catalog.find(item => item.id === doughId).name));
     // The newly added producer also reaches the real Worker/SQLite fixture.
     await page.evaluate(() => localStorage.removeItem('pirogorsk-selection'));
     await page.goto(`${origin}/?interest=p39-483&variant=2000#pirogi39`, { waitUntil: 'networkidle0' });
@@ -181,9 +235,9 @@ try {
     assert.equal(freshRow.delivery, 'pickup');
     await context.close();
   }
-  assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 6);
+  assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 9);
   assert.deepEqual(errors, []); assert.deepEqual(failedResources, []);
-  console.log('PASS: built Astro calculator, mixed selection and fresh 2kg pie → Worker/SQLite; 139 supplier cards, scoped filters and menu variant transfer at 320/1280px; no production requests.');
+  console.log('PASS: built Astro calculator, home → menu group → supplier product → home selection, mixed selection and fresh 2kg pie → Worker/SQLite; 139 producer cards, menu-scoped filters and selected variant transfer at 320/390/1280px; no production requests.');
 } finally {
   await browser?.close(); chrome?.kill(); sqlite.close();
 }
