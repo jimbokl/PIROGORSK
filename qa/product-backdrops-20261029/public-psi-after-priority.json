@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-29T16:44:40+02:00",
+  "runtime": "fa84c22f8efc6f00d3f77e062c2e8e1bc86af032",
+  "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-catalog-osetinskiy-pirog-s-kuritsey-i-syrom/jupwbxur21?form_factor=mobile",
+  "lighthouseVersion": "13.5.0",
+  "chromiumVersion": "153.0.8010.36",
+  "crux": "No data",
+  "mobile": {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"lcpMs":1207,"fcpMs":793,"tbtMs":14,"cls":0,"speedIndexMs":793,"ttiMs":2681},
+  "desktop": {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"lcpMs":369,"fcpMs":244,"tbtMs":16,"cls":0,"speedIndexMs":331,"ttiMs":762},
+  "lcpElement": "figure.ed-hero-art > div.supplier-artwork > picture.product-backdrop > img",
+  "priority": "high",
+  "loading": "eager",
+  "decoding": "async",
+  "mobileObservedBreakdownMs": {"ttfb":0,"loadDelay":150,"download":130,"renderDelay":10},
+  "lcpDiscoveryAudit": "passed: eager, fetchpriority=high, request discoverable in source HTML",
+  "interpretation": "The priority finding is resolved and this repeat has lower LCP/render delay. A single repeat is not proof of field stability or that priority explains all prior timing variability. The separate homepage PSI discrepancy remains recorded."
+}
