@@ -3,11 +3,14 @@ import { writeFile } from 'node:fs/promises';
 import { launch } from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
 
-const [origin = 'http://127.0.0.1:4322', label = 'local'] = process.argv.slice(2);
+const [origin = 'http://127.0.0.1:4322', label = 'local', selectedWidths = '320,390,650,768,1280,1920'] = process.argv.slice(2);
+const widths = selectedWidths.split(',').map(Number);
+assert.ok(widths.length && widths.every(width => Number.isInteger(width) && width >= 320));
 const directory = new URL('./', import.meta.url);
 const samples = [], errors = [], failedResources = [], posts = [];
 const chrome = await launch({ chromeFlags: ['--headless=new', '--disable-extensions'] });
 const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
+let currentPage, currentWidth, failure;
 const geometry = (cards, selectors) => cards.map(card => {
   const rect = el => { const r = el.getBoundingClientRect(); return { top: r.top + scrollY, left: r.left, width: r.width, height: r.height, bottom: r.bottom + scrollY }; };
   return { id: card.dataset.product || card.dataset.supplierId, card: rect(card), ...Object.fromEntries(Object.entries(selectors).map(([key, selector]) => [key, rect(card.querySelector(selector))])) };
@@ -22,12 +25,13 @@ function aligned(cards, keys, columns) {
   }
 }
 try {
-  for (const width of [320, 390, 650, 768, 1280, 1920]) {
+  for (const width of widths) {
     const context = await browser.createBrowserContext();
     const page = await context.newPage();
+    currentPage = page; currentWidth = width;
     await page.setViewport({ width, height: 980, deviceScaleFactor: 1 });
     page.on('pageerror', error => errors.push(error.message));
-    page.on('response', response => { if (response.status() >= 400 && new URL(response.url()).origin === origin) failedResources.push(response.url()); });
+    page.on('response', response => { if (response.status() >= 400 && new URL(response.url()).origin === origin) failedResources.push({ url: response.url(), status: response.status() }); });
     await page.setRequestInterception(true);
     page.on('request', async request => {
       if (request.method() === 'POST') { posts.push(request.url()); await request.abort(); }
@@ -92,8 +96,15 @@ try {
     }
     samples.push({ width, home, menu: { alignedCards: menu.length }, selections: true, keyboard: true, reducedMotion: true, overflow: false });
     await context.close();
+    currentPage = undefined;
     console.log(`PASS ${label} ${width}px: aligned homepage and ${menu.length} supplier cards; variants, selection, reduced motion`);
   }
   assert.deepEqual(errors, []); assert.deepEqual(failedResources, []); assert.deepEqual(posts, []);
-  await writeFile(new URL(`${label}-readback.json`, directory), JSON.stringify({ checkedAt: new Date().toISOString(), origin, samples, errors, failedResources, posts }, null, 2) + '\n');
-} finally { await browser.close(); await Promise.resolve(chrome.kill()); }
+} catch (error) {
+  failure = { width: currentWidth, message: error.message };
+  if (currentPage) failure.incompleteImages = await currentPage.$$eval('.home-featured img', images => images.filter(img => !img.complete || !img.naturalWidth).map(img => ({ src: img.currentSrc, complete: img.complete, naturalWidth: img.naturalWidth }))).catch(() => []);
+  throw error;
+} finally {
+  await writeFile(new URL(`${label}-readback.json`, directory), JSON.stringify({ checkedAt: new Date().toISOString(), origin, widths, samples, errors, failedResources, posts, failure }, null, 2) + '\n');
+  await browser.close(); await Promise.resolve(chrome.kill());
+}

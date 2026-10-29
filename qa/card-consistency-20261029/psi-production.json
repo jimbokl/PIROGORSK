@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-29T19:41:45.423786+00:00",
+  "runtime": "09df183cf9cc8ca201d731ce8473377237933712",
+  "method": "Public PageSpeed Insights UI; visible scores/metrics and calculator links; canonical homepage, QA disabled",
+  "testedUrl": "https://pirogorsk.ru/",
+  "capturedAt": "2026-10-29T19:39:48Z",
+  "lighthouseVersion": "13.5.0",
+  "browser": "HeadlessChromium 153.0.8010.36",
+  "crux": "No data",
+  "runs": [
+    {
+      "mode": "mobile",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ye5k9o55eh?form_factor=mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcpMs": 932,
+        "lcpMs": 1651,
+        "tbtMs": 16,
+        "cls": 0.004,
+        "speedIndexMs": 932
+      },
+      "calculator": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=932&LCP=1651&TBT=16&CLS=0&SI=932&TTI=3132&device=mobile&version=13.5.0"
+    },
+    {
+      "mode": "desktop",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ye5k9o55eh?form_factor=desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcpMs": 272,
+        "lcpMs": 461,
+        "tbtMs": 13,
+        "cls": 0.005,
+        "speedIndexMs": 403
+      },
+      "calculator": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=272&LCP=461&TBT=13&CLS=0.01&SI=403&TTI=842&device=desktop&version=13.5.0"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+PASS production 320px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 390px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 650px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 768px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 1280px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/common/WaitTask.js:46
+            this.#timeoutError = new TimeoutError(`Waiting failed: ${options.timeout}ms exceeded`);
+                                 ^
+
+TimeoutError: Waiting failed: 30000ms exceeded
+    at new WaitTask (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/common/WaitTask.js:46:34)
+    at IsolatedWorld.waitForFunction (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/Realm.js:49:26)
+    at CdpFrame.waitForFunction (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/Frame.js:585:43)
+    at CdpFrame.<anonymous> (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/util/decorators.js:101:27)
+    at CdpPage.waitForFunction (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:1542:37)
+    at file:///Volumes/DevSim/Projects/PIROGORSK/qa/card-consistency-20261029/verify-ui.mjs:43:18
+
+Node.js v25.9.0

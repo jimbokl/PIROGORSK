@@ -1,0 +1,30 @@
+PASS production 320px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 390px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 650px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 768px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 1280px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+PASS production 1920px: aligned homepage and 139 supplier cards; variants, selection, reduced motion
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   'https://pirogorsk.ru/product-backdrops/hb-bulochka-smak-dlya-gamburgera-mini-30-gr-400.avif'
++ ]
+- []
+
+    at file:///Volumes/DevSim/Projects/PIROGORSK/qa/card-consistency-20261029/verify-ui.mjs:97:40 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [
+    'https://pirogorsk.ru/product-backdrops/hb-bulochka-smak-dlya-gamburgera-mini-30-gr-400.avif'
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0
