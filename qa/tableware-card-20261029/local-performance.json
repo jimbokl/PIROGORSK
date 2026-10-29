@@ -1,0 +1,96 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4323/",
+    "timestamp": "2026-10-29T16:07:27.493Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 124,
+      "lcp": 124
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 11.691000122070312,
+      "resourceLoadDelay": 12.976999877929687,
+      "resourceLoadDuration": 4.207,
+      "elementRenderDelay": 95.278
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1654.7044,
+        "display": "1.7 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2404.7043999999996,
+        "display": "2.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.005005052328920851,
+        "display": "0.005"
+      },
+      "speed-index": {
+        "value": 1654.7044,
+        "display": "1.7 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4323/",
+    "timestamp": "2026-10-29T16:07:35.987Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 131,
+      "lcp": 131
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 7.2219998779296875,
+      "resourceLoadDelay": 5.349000122070312,
+      "resourceLoadDuration": 4.371,
+      "elementRenderDelay": 113.657
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 427.41615,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 528.4756,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.007341983763462043,
+        "display": "0.007"
+      },
+      "speed-index": {
+        "value": 427.41615,
+        "display": "0.4 s"
+      }
+    }
+  }
+]

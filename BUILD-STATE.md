@@ -4,7 +4,7 @@
 
 Исправлена сетка «Набор посуды» на главной: четыре именованные области вместо трёх колонок на четыре элемента. Миниатюра 80px на телефоне, 96px на планшете, 112px на компьютере; согласованы responsive sizes. Раньше изображение достигало 792px, карточка — 899px высоты. Сохранены отдельная страница, иллюстрация, движение и подборка.
 
-Локальные check/build/SEO/product pages/backdrops PASS. UI320/390/768/1280: без overflow/JS-ошибок, добавление в подборку работает. Публикация и production readback ожидаются. [QA](qa/tableware-card-20261029/README.md).
+Локальные check/build/SEO/product pages/backdrops PASS. UI320/390/768/1280: без overflow/JS-ошибок, добавление в подборку работает. Runtime `dfd074e`, [CI40908423329 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40908423329), опубликовано. Production UI320/390/768/1280 и подборка PASS, главная/меню/страница посуды HTTP200 и точное SHA сборки, Pages/Worker compatibility PASS. Публичный PSI18:16: mobile99/LCP1951мс, desktop100/453мс, A/BP/SEO100, CLS0,007; один лабораторный замер, CrUX нет. [QA](qa/tableware-card-20261029/README.md).
 
 ## Пироги pirogi39.ru — 29.10.2026
 

@@ -1,0 +1,96 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T16:08:00.562Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1074,
+      "lcp": 1115
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1004.08,
+      "resourceLoadDelay": 5.559,
+      "resourceLoadDuration": 85.877,
+      "elementRenderDelay": 19.066
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1370.8329999999996,
+        "display": "1.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1602.9869999999996,
+        "display": "1.6 s"
+      },
+      "total-blocking-time": {
+        "value": 27.999999999999773,
+        "display": "30 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.006223270822112115,
+        "display": "0.006"
+      },
+      "speed-index": {
+        "value": 2142.07631672938,
+        "display": "2.1 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-29T16:08:12.966Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1170,
+      "lcp": 1289
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1035.578,
+      "resourceLoadDelay": 11.02,
+      "resourceLoadDuration": 221.099,
+      "elementRenderDelay": 21.802
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 581.769,
+        "display": "0.6 s"
+      },
+      "largest-contentful-paint": {
+        "value": 637.769,
+        "display": "0.6 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.007124747158013017,
+        "display": "0.007"
+      },
+      "speed-index": {
+        "value": 1018.0637715348332,
+        "display": "1.0 s"
+      }
+    }
+  }
+]

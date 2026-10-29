@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-29T16:16:24.016Z",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "expectedSha256": "c92023388e2df90ca9b0ce9985061982fc3ebccfed5e998c720c116d711af29f",
+      "actualSha256": "c92023388e2df90ca9b0ce9985061982fc3ebccfed5e998c720c116d711af29f",
+      "match": true
+    },
+    {
+      "path": "/menu/",
+      "status": 200,
+      "expectedSha256": "12187559aa82161596a89cda58ef444d6228fe1e0cafae17386c90a306e085fd",
+      "actualSha256": "12187559aa82161596a89cda58ef444d6228fe1e0cafae17386c90a306e085fd",
+      "match": true
+    },
+    {
+      "path": "/catalog/nabor-posudy/",
+      "status": 200,
+      "expectedSha256": "ba3f6d1eb532c01eb32b184d1062caa9a841c31cb5dd5df8071ae3cb12227926",
+      "actualSha256": "ba3f6d1eb532c01eb32b184d1062caa9a841c31cb5dd5df8071ae3cb12227926",
+      "match": true
+    }
+  ]
+}

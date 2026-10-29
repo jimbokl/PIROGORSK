@@ -1,0 +1,43 @@
+{
+  "observedAt": "2026-10-29T18:16:07+02:00",
+  "source": "Public PageSpeed UI readback",
+  "runtimeCommit": "dfd074e1fe12a3dd93036c6d4aa46b759b271dcf",
+  "crux": "No data",
+  "lighthouseVersion": "13.5.0",
+  "browser": "HeadlessChromium 153.0.8010.36",
+  "samples": [
+    {
+      "mode": "mobile",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/uzy09q2ogt?form_factor=mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "displayedMetrics": {
+        "lcpSeconds": 2.0,
+        "cls": 0.007,
+        "tbtMs": 60
+      },
+      "calculatorLinkLcpMs": 1951
+    },
+    {
+      "mode": "desktop",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/uzy09q2ogt?form_factor=desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "displayedMetrics": {
+        "lcpSeconds": 0.5,
+        "cls": 0.007,
+        "tbtMs": 10
+      },
+      "calculatorLinkLcpMs": 453
+    }
+  ],
+  "note": "One laboratory run, no claim of field stability. Displayed metrics are rounded; precise calculator link LCP is recorded separately."
+}
