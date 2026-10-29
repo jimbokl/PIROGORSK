@@ -1,0 +1,67 @@
+import assert from 'node:assert/strict';
+import { launch } from 'chrome-launcher';
+import puppeteer from 'puppeteer-core';
+import { writeFile } from 'node:fs/promises';
+import { freshProducts } from '../../src/data/pirogi39-catalog.ts';
+import { supplierProducts } from '../../src/data/holland-catalog.ts';
+const [origin = 'http://127.0.0.1:4323', label = 'local'] = process.argv.slice(2);
+const chrome = await launch({ chromeFlags: ['--headless=new', '--disable-extensions'] });
+const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
+const errors = [], samples = [];
+const count = (page, section) => page.$$eval(`${section} [data-supplier-id]:not([hidden])`, nodes => nodes.length);
+const number = text => Number(text.replace(/[^0-9]/g, ''));
+try {
+  for (const width of [320, 390, 1280]) {
+    const context = await browser.createBrowserContext();
+    const page = await context.newPage();
+    page.on('pageerror', error => errors.push(error.message));
+    await page.setViewport({ width, height: 900 });
+    await page.goto(`${origin}/?qa=1`, { waitUntil: 'networkidle0' });
+    assert.equal(await page.$$eval('[data-product]', nodes => nodes.length), 153);
+    assert.equal(await count(page, '#pirogi39'), 24);
+    assert.equal(await count(page, '#holland'), 24);
+    await page.type('#pirogi39 [data-supplier-search]', 'палтус');
+    assert.equal(await count(page, '#pirogi39'), 1);
+    assert.equal(await count(page, '#holland'), 24, 'fresh search does not filter Holland');
+    await page.$eval('#pirogi39 [data-supplier-search]', el => { el.value = ''; el.dispatchEvent(new Event('input', { bubbles: true })); });
+    await page.click('#pirogi39 [data-supplier-filter=ossetian-pies]');
+    assert.equal(await count(page, '#pirogi39'), 14);
+    await page.click('#pirogi39 [data-supplier-filter=all]');
+    await page.click('#pirogi39 [data-supplier-more]');
+    assert.equal(await count(page, '#pirogi39'), 48);
+    await page.click('#pirogi39 [data-supplier-more]');
+    assert.equal(await count(page, '#pirogi39'), 61);
+    await page.click('[data-open=city-dialog]');
+    await page.click('#city-dialog [data-select-city="Калининград"]');
+    const product = freshProducts.find(p => p.id === 'p39-483');
+    const selected = product.variants.find(v => v.value === 2000);
+    await page.click('[data-product=p39-483] input[value="2000"] + span');
+    assert.equal(number(await page.$eval('[data-product=p39-483] [data-price]', el => el.textContent)), selected.price);
+    await page.click('[data-product=p39-483] [data-add]');
+    await page.click('#holland [data-supplier-filter=mini-pies]');
+    const holland = supplierProducts.find(p => p.id === 'hb-osetinskiy-pirog-s-govyadinoy');
+    const hollandPrice = holland.prices[holland.defaultVariant];
+    await page.click('[data-product=hb-osetinskiy-pirog-s-govyadinoy] [data-add]');
+    await page.click('[data-open=selection-dialog]');
+    const total = number(await page.$eval('[data-selection-grand-total]', el => el.textContent));
+    assert.equal(total, selected.price + hollandPrice + 350, 'one delivery allowance for both suppliers');
+    await page.screenshot({ path: new URL(`${label}-mixed-selection-${width}.png`, import.meta.url).pathname });
+    await page.click('[data-order]');
+    await page.select('#interest-delivery', 'delivery');
+    assert.equal(number(await page.$eval('[data-interest-grand-total]', el => el.textContent)), total);
+    assert.equal(await page.$eval('#interest-dialog', el => el.scrollWidth <= el.clientWidth), true);
+    await page.keyboard.press('Tab');
+    await page.keyboard.press('Escape');
+    assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true);
+    // A fresh link beyond the initial 24 cards must reveal the target and open selection.
+    await page.goto(`${origin}/?interest=p39-252&variant=850&qa=1#pirogi39`, { waitUntil: 'networkidle0' });
+    await page.waitForSelector('#selection-dialog[open]');
+    assert.equal(await page.$eval('[data-product=p39-252]', el => el.hidden), false);
+    assert.match(await page.$eval('#selection-dialog', el => el.textContent), /яблоком и корицей/);
+    samples.push({ width, products: 153, fresh: 61, independentFilters: true, bothSuppliers: true, grandTotal: total, delivery: 350, deepLink: true, overflow: false });
+    await context.close();
+  }
+  assert.deepEqual(errors, []);
+  await writeFile(new URL(`${label}-selection-readback.json`, import.meta.url), JSON.stringify({ origin, samples, errors, note: 'QA mode; no form submission or production goals.' }, null, 2) + '\n');
+  console.log(JSON.stringify({ origin, samples: samples.length, errors }));
+} finally { await browser.close(); await chrome.kill(); }

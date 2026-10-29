@@ -1,10 +1,12 @@
 // Build-time editorial data. Keep descriptions and artwork out of the order payload.
 import { catalog, extras, type Product } from './catalog.ts';
 import { supplierProducts, supplierGroups, supplierSource } from './holland-catalog.ts';
+import { freshProducts, freshGroups, freshSource } from './pirogi39-catalog.ts';
+import freshContent from './pirogi39-content.json' with { type: 'json' };
 import content from './supplier-content.json' with { type: 'json' };
 import { catalogProductHref } from '../lib/product-paths.ts';
 
-export const newPageProducts = [...supplierProducts, ...extras];
+export const newPageProducts = [...supplierProducts, ...extras, ...freshProducts];
 export const formatWeight = (g: number) => g < 1000 ? `${g} г` : `${(g / 1000).toLocaleString('ru-RU')} кг`;
 const extraCopy: Record<string, { intro: string; serving: string }> = {
   cranberry: { intro: 'Клюквенный морс в двух объёмах: 500 мл и 1 л. Планируем ягодный напиток с кислинкой к сытным и сладким пирогам.', serving: 'Пол-литра можно выбрать для небольшой подборки, литр — для общего стола. Рецепт, количество сахара и условия хранения опубликуем перед продажами.' },
@@ -16,15 +18,17 @@ const extraCopy: Record<string, { intro: string; serving: string }> = {
 };
 
 export function productPage(product: Product) {
-  const source = supplierSource.find(item => item.id === product.id);
-  const facts = content.find(item => item.id === product.id);
+  const fresh = product.id.startsWith('p39-');
+  const source = [...supplierSource, ...freshSource].find(item => item.id === product.id);
+  const freshFacts = freshContent.find(item => item.id === product.id);
+  const facts = freshFacts ?? content.find(item => item.id === product.id);
   const copy = facts ?? extraCopy[product.id]!;
   const duplicate = catalog.filter(item => item.name === product.name).length > 1;
-  const heading = duplicate && source ? `${product.name} · ${source.packCount > 1 ? `${source.unitWeightG} г` : formatWeight(source.packWeightG)}` : product.name;
+  const heading = fresh ? `${product.name} · ${product.variants.map(v => formatWeight(v.value)).join(' / ')}` : duplicate && source ? `${product.name} · ${source.packCount > 1 ? `${source.unitWeightG} г` : formatWeight(source.packWeightG)}` : product.name;
   const selected = product.variants.find(v => v.value === product.defaultVariant)!;
-  const group = supplierGroups.find(([key]) => key === product.category)?.[1] ?? (product.kind === 'drink' ? 'Напитки' : 'К общему столу');
+  const group = [...supplierGroups, ...freshGroups].find(([key]) => key === product.category)?.[1] ?? (product.kind === 'drink' ? 'Напитки' : 'К общему столу');
   const description = `${heading}. ${selected.label}, ${product.supplier?.priceFrom ? 'от ' : ''}${selected.price.toLocaleString('ru-RU')} ₽ предварительно. ${source ? product.description + '. ' : ''}Форматы и подборка к запуску Пирогорска.`;
-  const prep = !source ? 'Условия подачи и хранения пока уточняются. Перед началом продаж укажем состав, упаковку и необходимые сведения о продукте.'
+  const prep = fresh ? `Это готовый пирог. ${freshFacts?.storage ? 'Производитель указывает условия хранения: ' + freshFacts.storage + '. ' : ''}Условия получения и температуру при передаче уточним перед продажами; сверяйте маркировку конкретной партии.` : !source ? 'Условия подачи и хранения пока уточняются. Перед началом продаж укажем состав, упаковку и необходимые сведения о продукте.'
     : product.category === 'mini-pies' ? 'Это готовый замороженный пирог. Перед подачей его нужно разморозить и разогреть по инструкции производителя. Доставку горячих пирогов сейчас не предлагаем.'
     : product.category === 'desserts' ? 'Замороженный десерт нужно подготовить заранее по инструкции на упаковке. Время размораживания и срок после него зависят от изделия; сверяйте маркировку конкретной партии.'
     : product.category === 'dough' ? 'Это сырое тесто для самостоятельной выпечки. Размораживание, формовка, необходимость расстойки и режим духовки зависят от типа теста и выбранного изделия. Следуйте инструкции производителя.'
@@ -32,7 +36,7 @@ export function productPage(product: Product) {
     : facts?.needsProofing ? 'Это сырая дрожжевая заготовка. По описанию производителя, перед выпечкой нужны размораживание и расстойка. Оставьте время на оба этапа и следуйте инструкции на упаковке.'
     : facts?.prebaked ? 'Производитель указывает предварительную выпечку. Замороженное изделие нужно подготовить и при необходимости допечь по его инструкции; это не готовая горячая выпечка.'
     : 'Замороженная заготовка требует выпечки. По описанию производителя, отдельная расстойка не нужна. Размораживайте и выпекайте по инструкции на упаковке.';
-  return { source, facts, heading, selected, group, description, intro: copy.intro, serving: copy.serving, prep,
+  return { source, facts, fresh, heading, selected, group, description, intro: copy.intro, serving: copy.serving, prep,
     related: newPageProducts.filter(other => other.id !== product.id && other.category === product.category).slice(0, 3),
     href: catalogProductHref(product) };
 }

@@ -1,0 +1,40 @@
+{
+  "origin": "http://127.0.0.1:4323",
+  "samples": [
+    {
+      "width": 320,
+      "products": 153,
+      "fresh": 61,
+      "independentFilters": true,
+      "bothSuppliers": true,
+      "grandTotal": 4990,
+      "delivery": 350,
+      "deepLink": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "products": 153,
+      "fresh": 61,
+      "independentFilters": true,
+      "bothSuppliers": true,
+      "grandTotal": 4990,
+      "delivery": 350,
+      "deepLink": true,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "products": 153,
+      "fresh": 61,
+      "independentFilters": true,
+      "bothSuppliers": true,
+      "grandTotal": 4990,
+      "delivery": 350,
+      "deepLink": true,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "note": "QA mode; no form submission or production goals."
+}

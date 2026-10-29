@@ -1,5 +1,4 @@
-const root = document.querySelector<HTMLElement>('[data-supplier-catalog]');
-if (root) {
+for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalog]')) {
   const cards = [...root.querySelectorAll<HTMLElement>('[data-supplier-id]')];
   const search = root.querySelector<HTMLInputElement>('[data-supplier-search]')!;
   const more = root.querySelector<HTMLButtonElement>('[data-supplier-more]')!;
@@ -33,6 +32,6 @@ if (root) {
   cards.forEach(card => card.addEventListener('change', () => {
     const selected = card.querySelector<HTMLInputElement>('input:checked')!;
     card.querySelector('[data-supplier-price]')!.textContent = `${Number(selected.dataset.supplierUnitPrice).toLocaleString('ru-RU')} ₽`;
-    card.querySelector<HTMLAnchorElement>('[data-supplier-link]')?.setAttribute('href', `/?interest=${card.dataset.supplierId}&variant=${selected.value}#holland`);
+    card.querySelector<HTMLAnchorElement>('[data-supplier-link]')?.setAttribute('href', `/?interest=${card.dataset.supplierId}&variant=${selected.value}#${root.id}`);
   }));
 }

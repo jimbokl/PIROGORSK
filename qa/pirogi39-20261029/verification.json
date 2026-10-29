@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-29T15:46:33.385734+00:00",
+  "astroCheck": {
+    "errors": 0,
+    "warnings": 0,
+    "hints": 10,
+    "files": 143
+  },
+  "buildHtml": 214,
+  "sitemapUrls": 212,
+  "catalogPositions": 153,
+  "existingPositionsPreserved": 92,
+  "newWholePies": 61,
+  "newSizeVariants": 63,
+  "nodeTests": {
+    "passed": 36,
+    "failed": 0
+  },
+  "seoValidators": [
+    "verify-seo",
+    "verify-expansion",
+    "verify-seo-map",
+    "verify-article-artwork",
+    "verify-product-pages",
+    "verify-product-backdrops"
+  ],
+  "workerTests": [
+    "typecheck",
+    "browser-script-typecheck",
+    "API-and-real-SQLite-integration"
+  ],
+  "browserFixtures": {
+    "status": "PASS",
+    "widths": [
+      320,
+      1280
+    ],
+    "sqliteSubmissions": 6,
+    "newPieVariant": {
+      "id": "p39-483",
+      "weightG": 2000
+    },
+    "productionSubmissions": 0
+  },
+  "localUi": {
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "productSamples": 24,
+    "supplierImageDecodeCount": 139,
+    "selectionSamples": 3,
+    "errors": []
+  },
+  "registryStrict": "PASS"
+}

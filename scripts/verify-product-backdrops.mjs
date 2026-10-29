@@ -8,10 +8,13 @@ const manifest = JSON.parse(await readFile('src/data/product-backdrops.json', 'u
 const retained = JSON.parse(await readFile('research/product-backdrops-20261029/retained-backgrounds.json', 'utf8'));
 const prompts = JSON.parse(await readFile('research/product-backdrops-20261029/prompts.json', 'utf8'));
 const hash = data => createHash('sha256').update(data).digest('hex');
+const fresh = JSON.parse(await readFile('src/data/pirogi39-backdrops.json', 'utf8'));
+assert.equal(fresh.length,61);
+for (const item of fresh) assert.ok(manifest.some(original => original.id === item.reusedFrom && original.sourceSha256 === item.sourceSha256), `${item.id} reuses a verified original backdrop`);
 const expected = catalog.map(product => product.id).sort();
 assert.equal(manifest.length, 84);
 assert.equal(retained.length, 8);
-assert.deepEqual([...manifest, ...retained].map(item => item.id).sort(), expected);
+assert.deepEqual([...manifest, ...retained, ...fresh].map(item => item.id).sort(), expected);
 assert.deepEqual(prompts.map(item => item.id).sort(), manifest.map(item => item.id).sort());
 assert.equal(new Set(manifest.map(item => item.sourceSha256)).size, manifest.length, 'each new product has its own generated source');
 const assets = [];
@@ -29,11 +32,11 @@ assert.equal(assets.length, 672);
 for(const item of retained) await stat(item.source);
 const menu = await readFile('site/menu/index.html','utf8');
 const menuIds = [...menu.matchAll(/data-product-backdrop="([^"]+)"/g)].map(match=>match[1]).sort();
-assert.deepEqual(menuIds, manifest.map(item=>item.id).sort());
+assert.deepEqual(menuIds, [...manifest, ...fresh].map(item=>item.id).sort());
 for (const product of catalog) {
   const route = catalogProductHref(product);
   const html = await readFile(`site${route}index.html`,'utf8');
-  if (manifest.some(item => item.id === product.id)) {
+  if ([...manifest, ...fresh].some(item => item.id === product.id)) {
     assert.ok(html.includes(`data-product-backdrop="${product.id}"`), `${route} backdrop`);
     assert.match(html, /data-product-backdrop="[^"]+"[^>]*aria-hidden="true"/, `${route} decorative layer`);
     const heroBackdrop = html.match(new RegExp(`<picture[^>]*data-product-backdrop="${product.id}"[^>]*>[\\s\\S]*?</picture>`))?.[0];
@@ -44,5 +47,5 @@ for (const product of catalog) {
 const tableware = await sharp('design/product-backdrops-source/tableware-product.png').metadata();
 assert.equal(tableware.hasAlpha,true,'tableware foreground is a separate transparent layer');
 const statistics = { checkedAt:new Date().toISOString(), positions:catalog.length, generated:manifest.length, retained:retained.length, responsiveFiles:assets.length, totalBytes:assets.reduce((sum,item)=>sum+item.bytes,0), maxFileBytes:Math.max(...assets.map(item=>item.bytes)), perWidth:Object.fromEntries([256,400,640,960].map(width=>{const selected=assets.filter(item=>item.width===width);return[width,{files:selected.length,averageBytes:Math.round(selected.reduce((sum,item)=>sum+item.bytes,0)/selected.length),maxBytes:Math.max(...selected.map(item=>item.bytes))}]})) };
-await writeFile('qa/product-backdrops-20261029/asset-integrity.json',JSON.stringify(statistics,null,2)+'\n');
+await writeFile('qa/pirogi39-20261029/backdrop-integrity.json',JSON.stringify({...statistics, reused: fresh.length},null,2)+'\n');
 console.log(JSON.stringify(statistics));

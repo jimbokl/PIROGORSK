@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "check": "astro check && tsc --noEmit",
     "audit:performance": "node scripts/audit-performance.mjs",
-    "test": "node --test scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs scripts/release.test.mjs scripts/supplier-catalog.test.mjs scripts/product-pages.test.mjs",
+    "test": "node --test scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs scripts/release.test.mjs scripts/supplier-catalog.test.mjs scripts/product-pages.test.mjs scripts/pirogi39-catalog.test.mjs",
     "test:worker": "node worker/scripts/verify.mjs",
     "test:browser": "node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs"
   },

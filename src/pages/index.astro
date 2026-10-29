@@ -23,7 +23,7 @@ import '../styles/home.css';
 const faqs = [
   ['Можно уже заказать пирог?', 'Мы готовим запуск. Сейчас можно выбрать пироги и оставить анонимную заявку по предварительной цене. Это поможет определить меню и города. Заказ и оплата пока не подтверждаются.'],
   ['Чем отличаются 500 г и 1 кг?', 'Это два варианта веса одного пирога. Можно взять несколько небольших пирогов с разными начинками или большой пирог к общему столу. Вес готового продукта уточним перед открытием.'],
-  ['Что добавилось в ассортимент?', 'К восьми концептам пирогов и шести дополнениям добавили 78 позиций из публичного каталога Holland Bakery: мини-пироги, хлеб, десерты, замороженные заготовки и тесто. Продукты поставщика отмечены отдельно; фасовку, состав и аллергены подтвердим до продаж.'],
+  ['Что добавилось в ассортимент?', 'К восьми первым идеям и шести дополнениям добавили 61 целый пирог «Пироги а-ля Русс» и 78 позиций Holland Bakery: мини-пироги, хлеб, десерты, замороженные заготовки и тесто. Веса и формы поставщиков отмечены отдельно; наличие и условия подтвердим до продаж.'],
   ['Сколько будет стоить доставка?', 'Для проверки спроса считаем доставку один раз за всю подборку: ориентир 350 ₽ по Калининграду, 500 ₽ по Зеленоградску и 650 ₽ по Светлогорску. Это расчётные суммы, а не подтверждённые тарифы курьера. Адреса, интервалы и окончательные условия появятся до начала продаж.'],
   ['Нужно оставлять телефон?', 'Нет. Заявка анонимная: мы сохраняем город, выбранные товары, количество, желаемый день и способ получения. Связаться с вами по такой заявке не получится.'],
 ];
@@ -34,7 +34,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
   <head>
     <!-- Inline font-face + swap lets the first frame render while the fonts load.
          Preloading all four subsets delayed the hero's first frame in Chrome 153. -->
-    <SeoHead title="Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске" description="92 позиции для проверки спроса: пироги, хлеб, десерты и замороженная выпечка Holland Bakery. Соберите подборку с расчётом доставки. Готовим запуск, цены предварительные." canonicalPath="/" schema={[faqSchema]} preloadFonts={false} />
+    <SeoHead title="Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске" description="153 позиции для проверки спроса: целые пироги а-ля Русс, мини-пироги, хлеб и выпечка Holland Bakery. Соберите подборку с расчётом доставки. Готовим запуск, цены предварительные." canonicalPath="/" schema={[faqSchema]} preloadFonts={false} />
     <LcpImagePreload src={heroBackground} widths={[480, 800, 1200, 1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} />
   </head>
   <body class="home-page">
@@ -54,11 +54,11 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
           <h2 id="catalog-heading">Выберите начинку</h2>
           <div class="filters" role="group" aria-label="Начинка пирога">{filters.map(([id, title]) => <button data-filter={id} aria-pressed={id === 'all'}>{title}</button>)}</div>
         </div>
-        <p class="catalog-launch">Наши первые восемь идей — сохраняем их в меню. Цены ориентировочные, изображения — концепты. <a href="#holland">Ещё 78 позиций Голландской пекарни ↓</a></p>
+        <p class="catalog-launch">Наши первые восемь идей — сохраняем их в меню. Цены ориентировочные, изображения — концепты. <a href="#holland">78 позиций Голландской пекарни ↓</a> · <a href="#pirogi39">61 целый пирог а-ля Русс ↓</a></p>
         <div class="product-grid">{products.map(product => <ProductCard product={product} />)}</div>
       </section>
       <ExtrasSection />
-      <div class="container"><SupplierCatalog /></div>
+      <div class="container"><SupplierCatalog fresh /><SupplierCatalog /></div>
       <section class="bundle-section" id="nabory" aria-labelledby="bundle-heading">
         <Picture src={bundle} formats={['avif', 'webp']} widths={[640, 1120, 1680]} sizes="100vw" width={1680} height={672} quality={48} alt="Мясной и капустный пироги на деревянной доске у моря" loading="lazy" class="bundle-art" />
         <div class="container bundle-content">
@@ -132,7 +132,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
     </dialog>
     <dialog id="about-dialog" class="dialog info-dialog" aria-labelledby="about-heading">
       <div class="dialog-header"><span class="eyebrow">Пирогорск</span><button data-close class="icon-button" aria-label="Закрыть информацию о проекте"><Icon name="close" /></button></div>
-      <h2 id="about-heading">С балтийским характером</h2><p class="dialog-intro">Пирог, за которым хочется собраться.</p><p>Начинаем с подбора ассортимента местных пекарен и изучения спроса на доставку. Первые восемь идей пирогов остаются; рядом — 78 позиций публичного каталога Holland Bakery.</p><p>Поставки пока не согласованы. Изображения наших пирогов — концепты, продукты поставщика подписаны по формату. Сейчас можно оставить анонимную заявку по расчётной цене.</p><button class="button" data-go-catalog>Посмотреть пироги<Icon name="arrow" /></button>
+      <h2 id="about-heading">С балтийским характером</h2><p class="dialog-intro">Пирог, за которым хочется собраться.</p><p>Начинаем с подбора ассортимента местных пекарен и изучения спроса на доставку. Первые восемь идей пирогов остаются; рядом — 61 целый пирог «Пироги а-ля Русс» и 78 позиций Holland Bakery.</p><p>Поставки пока не согласованы. Изображения наших пирогов — концепты, продукты поставщика подписаны по формату. Сейчас можно оставить анонимную заявку по расчётной цене.</p><button class="button" data-go-catalog>Посмотреть пироги<Icon name="arrow" /></button>
     </dialog>
     <InterestForm />
     <Analytics />

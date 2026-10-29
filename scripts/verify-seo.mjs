@@ -1,5 +1,7 @@
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
+import { catalog } from '../src/data/catalog.ts';
+import { catalogProductHref, selectionHref } from '../src/lib/product-paths.ts';
 
 // Verify emitted HTML, rather than source templates. No network or account access.
 // Usage: node scripts/verify-seo.mjs [--scope editorial] [--dir site]
@@ -82,7 +84,9 @@ try {
     }
     if (isEditorial(route)) {
       assert(/(?:готовим запуск|готовится к запуску|перед запуском|пока не запущен)/i.test(html), `${route}: missing visible launch status.`);
-      assert(tags(html, 'a').some(item => item.href?.startsWith('/?interest=') && item.href.endsWith(route.startsWith('/catalog/') ? (route.includes('mors') || /\/(chay|kofe|pitevaya-voda|nabor-posudy)\//.test(route) ? '#extras' : '#holland') : '#pirogi')), `${route}: missing interest CTA.`);
+      const product = catalog.find(item => catalogProductHref(item) === route);
+      const section = product ? `#${selectionHref(product, product.defaultVariant).split('#')[1]}` : '#pirogi';
+      assert(tags(html, 'a').some(item => item.href?.startsWith('/?interest=') && item.href.endsWith(section)), `${route}: missing interest CTA.`);
     }
     const ids = tags(html, '[a-z][\\w:-]*').map(item => item.id).filter(id => id !== undefined);
     assert(new Set(ids).size === ids.length, `${route}: duplicate HTML ids.`);

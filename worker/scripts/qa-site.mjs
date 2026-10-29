@@ -102,20 +102,21 @@ try {
     assert.deepEqual(await selection(), []);
     assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), false);
     assert.equal(posts.length, before + 1, 'malformed transfer must not submit');
-    assert.equal(await page.$$eval('[data-supplier-id]', cards => cards.length), 78);
-    assert.equal(await page.$$eval('[data-supplier-id]:not([hidden])', cards => cards.length), 24);
-    await page.type('[data-supplier-search]', 'вишн');
-    assert.ok(await page.$$eval('[data-supplier-id]:not([hidden])', cards => cards.length >= 3 && cards.every(card => card.dataset.supplierName.includes('вишн'))));
-    await page.$eval('[data-supplier-search]', input => { input.value = ''; input.dispatchEvent(new Event('input', { bubbles: true })); });
-    await page.click('[data-supplier-filter=dough]');
-    assert.equal(await page.$$eval('[data-supplier-id]:not([hidden])', cards => cards.length), 6);
-    await page.click('[data-supplier-filter=all]');
+    assert.equal(await page.$$eval('#holland [data-supplier-id]', cards => cards.length), 78);
+    assert.equal(await page.$$eval('#pirogi39 [data-supplier-id]', cards => cards.length), 61);
+    assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 24);
+    await page.type('#holland [data-supplier-search]', 'вишн');
+    assert.ok(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length >= 3 && cards.every(card => card.dataset.supplierName.includes('вишн'))));
+    await page.$eval('#holland [data-supplier-search]', input => { input.value = ''; input.dispatchEvent(new Event('input', { bubbles: true })); });
+    await page.click('#holland [data-supplier-filter=dough]');
+    assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 6);
+    await page.click('#holland [data-supplier-filter=all]');
     for (const count of [48, 72, 78]) {
-      await page.click('[data-supplier-more]');
-      assert.equal(await page.$$eval('[data-supplier-id]:not([hidden])', cards => cards.length), count);
+      await page.click('#holland [data-supplier-more]');
+      assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), count);
     }
-    assert.equal(await page.$eval('[data-supplier-more]', button => button.hidden), true);
-    await page.click('[data-supplier-filter=mini-pies]');
+    assert.equal(await page.$eval('#holland [data-supplier-more]', button => button.hidden), true);
+    await page.click('#holland [data-supplier-filter=mini-pies]');
     await page.click('[data-open=city-dialog]');
     await page.click('#city-dialog [data-select-city="Калининград"]');
     const beefId = 'hb-osetinskiy-pirog-s-govyadinoy';
@@ -148,14 +149,14 @@ try {
     assert.equal(mixedRow.value_total, 2240, 'DB and goal value remain the product subtotal; receiving is stored separately');
     assert.equal(mixedRow.delivery, 'delivery');
     await page.click('[data-interest-success] [data-interest-close]');
-    await page.click('[data-supplier-filter=bake]');
+    await page.click('#holland [data-supplier-filter=bake]');
     assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true, `catalog overflow at ${width}`);
     await page.$eval('#holland', section => section.scrollIntoView());
     await page.screenshot({ path: new URL(`../dist/qa-supplier-${width}.png`, import.meta.url).pathname });
     // A menu variant must transfer the selected format, including cards after page 1.
     await page.goto(`${origin}/menu/`, { waitUntil: 'networkidle0' });
-    await page.click('[data-supplier-filter=dough]');
-    const doughCard = '[data-supplier-id=hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up]';
+    await page.click('#holland [data-supplier-filter=dough]');
+    const doughCard = '#holland [data-supplier-id=hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up]';
     await page.click(`${doughCard} label:last-of-type`);
     const link = await page.$eval(`${doughCard} [data-supplier-link]`, el => el.href);
     assert.equal(new URL(link).searchParams.get('variant'), '9000');
@@ -163,11 +164,26 @@ try {
     assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
     assert.equal(await page.$eval('[data-product=hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up]', card => card.hidden), false);
     assert.ok((await selection()).some(item => item.value === 9000));
+    // The newly added producer also reaches the real Worker/SQLite fixture.
+    await page.evaluate(() => localStorage.removeItem('pirogorsk-selection'));
+    await page.goto(`${origin}/?interest=p39-483&variant=2000#pirogi39`, { waitUntil: 'networkidle0' });
+    assert.deepEqual(await selection(), [{ id: 'p39-483', value: 2000, quantity: 1 }]);
+    await page.click('[data-order]');
+    await page.select('#interest-delivery', 'pickup');
+    await page.$eval('#interest-day', input => { input.value = '2099-12-12'; input.dispatchEvent(new Event('input', { bubbles: true })); });
+    await page.click('[name=priceConsent]');
+    await page.$eval('#interest-form', form => form.requestSubmit());
+    await page.waitForFunction(() => !document.querySelector('[data-interest-success]').hidden);
+    const freshRequest = posts.at(-1);
+    assert.deepEqual(freshRequest.items, [{ id: 'p39-483', value: '2000', quantity: 1 }]);
+    const freshRow = sqlite.prepare('SELECT * FROM interests WHERE request_id = ?').get(freshRequest.requestId);
+    assert.equal(freshRow.value_total, catalog.find(p => p.id === 'p39-483').prices[2000]);
+    assert.equal(freshRow.delivery, 'pickup');
     await context.close();
   }
-  assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 4);
+  assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 6);
   assert.deepEqual(errors, []); assert.deepEqual(failedResources, []);
-  console.log('PASS: built Astro calculator and mixed supplier/original selection → receiving estimates → Worker/SQLite; search, all 78 cards, category filters and menu variant transfer at 320/1280px; no production requests.');
+  console.log('PASS: built Astro calculator, mixed selection and fresh 2kg pie → Worker/SQLite; 139 supplier cards, scoped filters and menu variant transfer at 320/1280px; no production requests.');
 } finally {
   await browser?.close(); chrome?.kill(); sqlite.close();
 }

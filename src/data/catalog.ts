@@ -1,9 +1,10 @@
+import { freshProducts } from './pirogi39-catalog.ts';
 import { supplierProducts } from './holland-catalog.ts';
 export const cities = ['Зеленоградск', 'Калининград', 'Светлогорск'] as const;
 
 export type ProductKind = 'pie' | 'drink' | 'accessory' | 'bakery';
 export type ProductUnit = 'g' | 'ml' | 'pcs';
-export type ProductCategory = 'meat' | 'fish' | 'cabbage' | 'cheese' | 'sweet' | 'drinks' | 'accessories' | 'bread' | 'desserts' | 'bake' | 'mini-pies' | 'dough';
+export type ProductCategory = 'meat' | 'fish' | 'cabbage' | 'cheese' | 'sweet' | 'drinks' | 'accessories' | 'bread' | 'desserts' | 'bake' | 'mini-pies' | 'dough' | 'hearty-pies' | 'sweet-pies' | 'siberian-pies' | 'kurniki' | 'prussian-pies' | 'ossetian-pies';
 export type ProductBadgeKind = 'hearty' | 'sweet' | 'tea' | 'vegetable' | 'cheese' | 'refreshing' | 'promotion' | 'bestseller';
 export type ProductVariant = { value: number; label: string; price: number };
 
@@ -61,7 +62,7 @@ export const extras: Product[] = [
   draftProduct({ id: 'tableware', name: 'Набор посуды', description: 'Тарелка, вилка и салфетка на одного гостя', category: 'accessories', kind: 'accessory', unit: 'pcs', variants: [{ value: 1, label: '1 набор', price: 35 }], defaultVariant: 1, slug: 'nabor-posudy' }),
 ];
 
-export const catalog: Product[] = [...products, ...extras, ...supplierProducts];
+export const catalog: Product[] = [...products, ...extras, ...supplierProducts, ...freshProducts];
 
 // These filters belong to the pie section; ExtrasSection has its own heading.
 export const filters = [

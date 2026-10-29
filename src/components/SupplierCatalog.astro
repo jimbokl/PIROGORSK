@@ -2,17 +2,23 @@
 import Icon from './Icon.astro';
 import SupplierArtwork from './SupplierArtwork.astro';
 import { catalogProductHref } from '../lib/product-paths';
-import { supplierProducts, supplierGroups } from '../data/holland-catalog';
+import { freshProducts, freshGroups } from '../data/pirogi39-catalog';
+import { supplierProducts as hollandProducts, supplierGroups as hollandGroups } from '../data/holland-catalog';
 import '../styles/supplier-catalog.css';
-interface Props { interactive?: boolean }
-const { interactive = true } = Astro.props;
+interface Props { interactive?: boolean; fresh?: boolean }
+const { interactive = true, fresh = false } = Astro.props;
+const supplierProducts = fresh ? freshProducts : hollandProducts;
+const supplierGroups = fresh ? freshGroups : hollandGroups;
+const sectionId = fresh ? 'pirogi39' : 'holland';
+const producer = fresh ? 'Пироги а-ля Русс' : 'Holland Bakery';
+const sourceUrl = fresh ? 'https://pirogi39.ru/' : 'https://hollandbakery.ru/';
 const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
 ---
-<section id="holland" class="supplier-catalog" aria-labelledby="supplier-heading" data-supplier-catalog>
-  <header class="supplier-heading"><div><p class="eyebrow">Ещё {supplierProducts.length} вкусов и форматов</p><h2 id="supplier-heading">Из Голландской пекарни</h2></div><a href="https://hollandbakery.ru/" target="_blank" rel="noopener">О производителе ↗</a></header>
-  <p class="supplier-intro">Добавляем к нашим идеям ассортимент Holland Bakery: мини-пироги, хлеб, десерты и выпечку. Выберите то, что хотели бы получать через Пирогорск.</p>
-  <div class="supplier-note"><strong>Пока изучаем спрос.</strong> Здесь замороженные продукты и заготовки для домашней выпечки. Небольшие наборы — планируемый формат Пирогорска из заводских упаковок. Наличие, фасовку, состав и условия хранения подтвердим до начала продаж. Цены предварительные, доставка считается отдельно за всю подборку.</div>
-  <div class="supplier-tools"><label class="supplier-search">Найти в ассортименте<input type="search" data-supplier-search placeholder="Например, вишня или круассан" autocomplete="off" /></label><p class="supplier-count" data-supplier-count role="status" aria-live="polite">{supplierProducts.length} позиций</p></div>
+<section id={sectionId} class="supplier-catalog" aria-labelledby={`${sectionId}-heading`} data-supplier-catalog>
+  <header class="supplier-heading"><div><p class="eyebrow">Ещё {supplierProducts.length} вкусов и форматов</p><h2 id={`${sectionId}-heading`}>{fresh ? 'Пироги а-ля Русс' : 'Из Голландской пекарни'}</h2></div><a href={sourceUrl} target="_blank" rel="noopener">О производителе ↗</a></header>
+  <p class="supplier-intro">{fresh ? 'Ещё 61 целый пирог из каталога pirogi39.ru: от ржаных и лоранских до сибирских, прусских и осетинских. Выбирайте начинки и размеры, которые хотели бы видеть у Пирогорска.' : 'Добавляем к нашим идеям ассортимент Holland Bakery: мини-пироги, хлеб, десерты и выпечку. Выберите то, что хотели бы получать через Пирогорск.'}</p>
+  <div class="supplier-note"><strong>Пока изучаем спрос.</strong> {fresh ? 'Здесь готовые целые пироги в весах производителя. Можно сравнить их с нашими первыми идеями и мини-пирогами ниже.' : 'Здесь замороженные продукты и заготовки для домашней выпечки. Небольшие наборы — планируемый формат Пирогорска из заводских упаковок.'} Наличие, фасовку, состав и условия хранения подтвердим до начала продаж. Цены предварительные, доставка считается отдельно за всю подборку.</div>
+  <div class="supplier-tools"><label class="supplier-search">Найти в ассортименте<input type="search" data-supplier-search placeholder={fresh ? 'Например, курник или палтус' : 'Например, вишня или круассан'} autocomplete="off" /></label><p class="supplier-count" data-supplier-count role="status" aria-live="polite">{supplierProducts.length} позиций</p></div>
   <div class="supplier-filters" role="group" aria-label="Раздел ассортимента">{supplierGroups.map(([id, label]) => <button type="button" data-supplier-filter={id} aria-pressed={id === 'all'}>{label} <span>{id === 'all' ? supplierProducts.length : supplierProducts.filter(p => p.category === id).length}</span></button>)}</div>
   <div class="supplier-grid">{supplierProducts.map((product, index) => {
     const selected = product.variants.find(v => v.value === product.defaultVariant)!;
@@ -22,11 +28,11 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
       <a class="supplier-art-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}><SupplierArtwork id={product.id} decorative /></a>
       <h3 id={`name-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3><p class="supplier-format">{product.description}</p>
       <fieldset class="supplier-variants"><legend class="sr-only">Формат: {product.name}</legend>{product.variants.map(variant => <label><input type="radio" name={`format-${product.id}`} value={variant.value} data-supplier-unit-price={variant.price} checked={variant.value === product.defaultVariant} /><span>{variant.label}</span></label>)}</fieldset>
-      <div class="supplier-card-bottom"><div>{product.supplier!.priceFrom && <span class="supplier-from">от </span>}<strong data-price={interactive ? '' : undefined} data-supplier-price>{money(selected.price)}</strong><small>Предварительно</small></div>{interactive ? <button type="button" class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button> : <a class="button button-small" data-supplier-link href={`/?interest=${product.id}&variant=${selected.value}#holland`}>В подборку<Icon name="arrow" /></a>}</div>
+      <div class="supplier-card-bottom"><div>{product.supplier!.priceFrom && <span class="supplier-from">от </span>}<strong data-price={interactive ? '' : undefined} data-supplier-price>{money(selected.price)}</strong><small>Предварительно</small></div>{interactive ? <button type="button" class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button> : <a class="button button-small" data-supplier-link href={`/?interest=${product.id}&variant=${selected.value}#${sectionId}`}>В подборку<Icon name="arrow" /></a>}</div>
     </article>;
   })}</div>
   <p class="supplier-empty" data-supplier-empty hidden>Такой позиции пока нет. Попробуйте другое название или раздел.</p>
   <button type="button" class="button button-secondary supplier-more" data-supplier-more hidden>Показать ещё</button>
-  <p class="supplier-footnote">Ассортимент и заводские форматы — по <a href="https://hollandbakery.ru/" target="_blank" rel="noopener">публичному каталогу Holland Bakery</a>, проверенному 29 октября 2026. Розничные цены и наборы рассчитывает Пирогорск. Это не подтверждение поставок или партнёрства.</p>
+  <p class="supplier-footnote">Ассортимент и заводские форматы — по <a href={sourceUrl} target="_blank" rel="noopener">публичному каталогу {producer}</a>, проверенному 29 октября 2026. Розничные цены и наборы рассчитывает Пирогорск. Это не подтверждение поставок или партнёрства.</p>
 </section>
 <script>import '../scripts/supplier-catalog';</script>

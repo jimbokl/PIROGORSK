@@ -6,13 +6,13 @@ import { newPageProducts, productPage } from '../src/data/product-pages.ts';
 import { catalogProductHref } from '../src/lib/product-paths.ts';
 
 const read = file => readFile(file, 'utf8');
-const art = JSON.parse(await read('src/data/supplier-artwork.json'));
+const art = [...JSON.parse(await read('src/data/supplier-artwork.json')), ...JSON.parse(await read('src/data/pirogi39-artwork.json'))];
 const matrix = JSON.parse(await read('src/data/seo-matrix.json'));
 const sitemap = await read('site/sitemap.xml');
 const home = await read('site/index.html');
 const menu = await read('site/menu/index.html');
-assert.equal(art.length, 78);
-assert.equal(new Set(art.map(a => a.sourceSha256)).size, 78, '78 separately generated images');
+assert.equal(art.length, 139);
+assert.equal(new Set(art.map(a => a.sourceSha256)).size, 139, '139 separately generated images');
 assert.equal(matrix.filter(row => row.cohort === 'product-pages-20261029').length, 84);
 for (const product of catalog) {
   const route = catalogProductHref(product);
@@ -45,5 +45,6 @@ for (const product of catalog) {
   }
   assert.ok((await stat(`public${image.ogImage}`)).size > 1000);
 }
-assert.equal((home.match(/class="supplier-art-link"/g) ?? []).length, 78, 'all supplier cards illustrated');
-console.log('Product pages verified: 92 routes, 84 new SEO owners, 78 unique imagegen originals and 624 responsive assets.');
+assert.equal((home.match(/class="supplier-art-link"/g) ?? []).length, 139, 'all supplier cards illustrated');
+assert.equal(matrix.filter(row => row.cohort === 'pirogi39-20261029').length, 61);
+console.log('Product pages verified: 153 routes, 145 SEO owners, 139 imagegen originals and 1112 responsive assets.');

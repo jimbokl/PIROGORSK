@@ -4,10 +4,10 @@ import { catalog, products, extras } from '../src/data/catalog.ts';
 import { supplierProducts, supplierSource } from '../src/data/holland-catalog.ts';
 import { estimatePrice, estimateDelivery } from '../src/data/pricing.ts';
 
-test('all 78 supplier positions augment the 14 original products without ID collisions', () => {
+test('all 78 Holland positions remain in the expanded catalog without ID collisions', () => {
   assert.equal(products.length, 8); assert.equal(extras.length, 6);
-  assert.equal(supplierProducts.length, 78); assert.equal(catalog.length, 92);
-  assert.equal(new Set(catalog.map(p => p.id)).size, 92);
+  assert.equal(supplierProducts.length, 78); assert.equal(catalog.length, 153);
+  assert.equal(new Set(catalog.map(p => p.id)).size, 153);
   assert.deepEqual(products.map(p => p.variants.map(v => v.price)), [[690,1290],[790,1490],[390,690],[590,1090],[590,1090],[490,890],[590,1090],[590,1090]]);
   assert.deepEqual(extras.map(p => p.variants.map(v => v.price)), [[200,350],[200,350],[100],[160],[80],[35]]);
   for (const item of supplierSource) {
