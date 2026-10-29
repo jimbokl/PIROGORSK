@@ -1,0 +1,70 @@
+
+> pirogorsk@0.1.0 check
+> astro check && tsc --noEmit
+
+21:07:28 [types] Generated 58ms
+21:07:28 [check] Getting diagnostics for Astro files in /Volumes/DevSim/Projects/PIROGORSK...
+[96mqa/home-lcp-20261029/audit.mjs[0m:[93m25[0m:[93m10[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m25[0m }finally{await chrome.kill();}
+[7m  [0m [93m         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/browser-diagnostic.mjs[0m:[93m33[0m:[93m13[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m33[0m  } finally {await chrome.kill();}
+[7m  [0m [93m            ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/render-variants.mjs[0m:[93m53[0m:[93m41[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m53[0m   } finally {await browser.disconnect();await chrome.kill();}
+[7m  [0m [93m                                        ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/raw/font-fix-audit.mjs[0m:[93m56[0m:[93m7[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m56[0m       await chrome.kill();
+[7m  [0m [93m      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/raw/font-fix-production-audit.mjs[0m:[93m56[0m:[93m7[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m56[0m       await chrome.kill();
+[7m  [0m [93m      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pirogi39-20261029/verify-selection.mjs[0m:[93m67[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m67[0m } finally { await browser.close(); await chrome.kill(); }
+[7m  [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pirogi39-20261029/verify-ui.mjs[0m:[93m78[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m78[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261029/probe-render.mjs[0m:[93m34[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m34[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261029/render-font-control.mjs[0m:[93m53[0m:[93m41[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m53[0m   } finally {await browser.disconnect();await chrome.kill();}
+[7m  [0m [93m                                        ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/product-pages-20261029/verify-ui.mjs[0m:[93m78[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m78[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/supplier-catalog-20261029/verify-ui.mjs[0m:[93m57[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m57[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/audit-performance.mjs[0m:[93m57[0m:[93m7[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m57[0m       await chrome.kill();
+[7m  [0m [93m      ~~~~~~~~~~~~~~~~~~~[0m
+
+Result (155 files):
+- 0 errors
+- 0 warnings
+- 12 hints

@@ -1,0 +1,130 @@
+[
+  {
+    "label": "render-menu-render-isolation-1-noPreloads",
+    "variant": "noPreloads",
+    "timestamp": "2026-10-29T19:09:31.458Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 288,
+      "lcp": 288
+    },
+    "breakdown": {
+      "timeToFirstByte": 2.004,
+      "elementRenderDelay": 285.788
+    },
+    "tbt": 130.42199999999968,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-render-isolation-2-noPreloadsSwap",
+    "variant": "noPreloadsSwap",
+    "timestamp": "2026-10-29T19:09:55.075Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1273,
+      "lcp": 1273
+    },
+    "breakdown": {
+      "timeToFirstByte": 2.208,
+      "elementRenderDelay": 1271.106
+    },
+    "tbt": 36.33600000000001,
+    "cls": 0.002713446396752567
+  },
+  {
+    "label": "render-menu-render-isolation-3-noPreloadsScripts",
+    "variant": "noPreloadsScripts",
+    "timestamp": "2026-10-29T19:10:16.244Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1237,
+      "lcp": 1237
+    },
+    "breakdown": {
+      "timeToFirstByte": 4.059,
+      "elementRenderDelay": 1232.941
+    },
+    "tbt": 0,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-render-isolation-4-noPreloadsContained",
+    "variant": "noPreloadsContained",
+    "timestamp": "2026-10-29T19:10:34.168Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1289,
+      "lcp": 1289
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.213,
+      "elementRenderDelay": 1287.7
+    },
+    "tbt": 39.29199987792981,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-render-isolation-5-noPreloadsContained",
+    "variant": "noPreloadsContained",
+    "timestamp": "2026-10-29T19:10:55.619Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1287,
+      "lcp": 1287
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.582,
+      "elementRenderDelay": 1285.473
+    },
+    "tbt": 33.10500000000002,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-render-isolation-6-noPreloadsScripts",
+    "variant": "noPreloadsScripts",
+    "timestamp": "2026-10-29T19:11:17.884Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1257,
+      "lcp": 1257
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.375,
+      "elementRenderDelay": 1255.356
+    },
+    "tbt": 0,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-render-isolation-7-noPreloadsSwap",
+    "variant": "noPreloadsSwap",
+    "timestamp": "2026-10-29T19:11:39.647Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1281,
+      "lcp": 1281
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.3370001220703125,
+      "elementRenderDelay": 1279.7429998779296
+    },
+    "tbt": 40.48900000000003,
+    "cls": 0.002713446396752567
+  },
+  {
+    "label": "render-menu-render-isolation-8-noPreloads",
+    "variant": "noPreloads",
+    "timestamp": "2026-10-29T19:12:01.069Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1261,
+      "lcp": 1261
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.4880001220703125,
+      "elementRenderDelay": 1259.1119998779297
+    },
+    "tbt": 36.830999999999676,
+    "cls": 0
+  }
+]

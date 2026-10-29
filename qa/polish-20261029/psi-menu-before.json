@@ -1,0 +1,28 @@
+{
+  "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-menu/xpys4l5mwp?form_factor=mobile",
+  "runtime": "83fa9703f99159ae816f00454a2e11ec6c730e75",
+  "capturedAtUI": "2026-10-29 21:00:29 GMT+2",
+  "browser": "HeadlessChromium153.0.8010.36",
+  "lighthouse": "13.5.0",
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 87,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100
+  },
+  "simulated": {
+    "fcp": 1236,
+    "lcp": 3687,
+    "tbt": 14,
+    "cls": 0.001,
+    "si": 4408
+  },
+  "observedLcpBreakdownUI": {
+    "ttfb": 10,
+    "elementRenderDelay": 2360
+  },
+  "lcpElement": "p.ed-intro",
+  "criticalNetworkPathMs": 561,
+  "crux": "No data"
+}

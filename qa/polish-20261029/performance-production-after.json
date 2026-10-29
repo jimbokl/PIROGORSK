@@ -1,0 +1,182 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/menu/",
+    "timestamp": "2026-10-29T19:16:40.629Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1173,
+      "lcp": 1173
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1074.422,
+      "elementRenderDelay": 98.919
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1294.3890000000001,
+        "display": "1.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1294.3890000000001,
+        "display": "1.3 s"
+      },
+      "total-blocking-time": {
+        "value": 35,
+        "display": "40 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 2182.0964038727184,
+        "display": "2.2 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "https://pirogorsk.ru/menu/",
+    "timestamp": "2026-10-29T19:16:53.255Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1150,
+      "lcp": 1150
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1052.86,
+      "elementRenderDelay": 97.478
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1382.794,
+        "display": "1.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1382.794,
+        "display": "1.4 s"
+      },
+      "total-blocking-time": {
+        "value": 13.5,
+        "display": "10 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 2212.5797620233584,
+        "display": "2.2 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "https://pirogorsk.ru/menu/",
+    "timestamp": "2026-10-29T19:17:07.736Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1154,
+      "lcp": 1154
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1072.31,
+      "elementRenderDelay": 81.586
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1268.632,
+        "display": "1.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1284.132,
+        "display": "1.3 s"
+      },
+      "total-blocking-time": {
+        "value": 27,
+        "display": "30 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 2155.37285141161,
+        "display": "2.2 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/menu/",
+    "timestamp": "2026-10-29T19:17:20.924Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1022,
+      "lcp": 1022
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 929.132,
+      "elementRenderDelay": 93.305
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 451.85699999999997,
+        "display": "0.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 457.85699999999997,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 816.3803894488149,
+        "display": "0.8 s"
+      }
+    }
+  }
+]

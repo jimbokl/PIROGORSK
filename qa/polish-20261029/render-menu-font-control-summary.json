@@ -1,0 +1,98 @@
+[
+  {
+    "label": "render-menu-font-control-1-baseline",
+    "variant": "baseline",
+    "timestamp": "2026-10-29T19:06:51.999Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2264,
+      "lcp": 2264
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.86,
+      "elementRenderDelay": 2262.541
+    },
+    "tbt": 103.38599999999997,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-font-control-2-noPreloads",
+    "variant": "noPreloads",
+    "timestamp": "2026-10-29T19:07:14.100Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 314,
+      "lcp": 314
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.653,
+      "elementRenderDelay": 312.362
+    },
+    "tbt": 77.89100000000008,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-font-control-3-noPreloads",
+    "variant": "noPreloads",
+    "timestamp": "2026-10-29T19:07:35.692Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1305,
+      "lcp": 1305
+    },
+    "breakdown": {
+      "timeToFirstByte": 0.9779998779296875,
+      "elementRenderDelay": 1304.5070001220704
+    },
+    "tbt": 63.845000000000255,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-font-control-4-baseline",
+    "variant": "baseline",
+    "timestamp": "2026-10-29T19:07:56.912Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1311,
+      "lcp": 1311
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.698,
+      "elementRenderDelay": 1308.808
+    },
+    "tbt": 36.38799999999992,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-font-control-5-baseline",
+    "variant": "baseline",
+    "timestamp": "2026-10-29T19:08:18.092Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2208,
+      "lcp": 2208
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.88,
+      "elementRenderDelay": 2205.994
+    },
+    "tbt": 39.21399999999994,
+    "cls": 0
+  },
+  {
+    "label": "render-menu-font-control-6-noPreloads",
+    "variant": "noPreloads",
+    "timestamp": "2026-10-29T19:08:39.016Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 1200,
+      "lcp": 1200
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.626,
+      "elementRenderDelay": 1197.996
+    },
+    "tbt": 38.294000000000096,
+    "cls": 0
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "results": [
+    {
+      "runtime": "07c3b9486997ec3e82b66c39ea4df6bab0a5a618",
+      "browser": "HeadlessChromium153.0.8010.36",
+      "lighthouse": "13.5.0",
+      "crux": "No data",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-menu/o2cbvn72af?form_factor=mobile",
+      "testedUrl": "https://pirogorsk.ru/menu/",
+      "capturedAtUI": "2026-10-29 21:15:12 GMT+2",
+      "formFactor": "mobile",
+      "simulated": {
+        "fcp": 1501,
+        "lcp": 1501,
+        "tbt": 41,
+        "cls": 0,
+        "si": 1501
+      },
+      "observedLcpBreakdownUI": {
+        "ttfb": 10,
+        "elementRenderDelay": 210
+      },
+      "lcpElement": "p.ed-intro"
+    },
+    {
+      "runtime": "07c3b9486997ec3e82b66c39ea4df6bab0a5a618",
+      "browser": "HeadlessChromium153.0.8010.36",
+      "lighthouse": "13.5.0",
+      "crux": "No data",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-menu/o2cbvn72af?form_factor=desktop",
+      "testedUrl": "https://pirogorsk.ru/menu/",
+      "capturedAtUI": "2026-10-29 21:15:12 GMT+2",
+      "formFactor": "desktop",
+      "simulated": {
+        "fcp": 317,
+        "lcp": 323,
+        "tbt": 2,
+        "cls": 0,
+        "si": 372
+      }
+    },
+    {
+      "runtime": "07c3b9486997ec3e82b66c39ea4df6bab0a5a618",
+      "browser": "HeadlessChromium153.0.8010.36",
+      "lighthouse": "13.5.0",
+      "crux": "No data",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-menu/kin9gkxmqc?form_factor=mobile",
+      "testedUrl": "https://pirogorsk.ru/menu/?lcpcheck=20261029b",
+      "capturedAtUI": "2026-10-29 21:16:25 GMT+2",
+      "formFactor": "mobile",
+      "simulated": {
+        "fcp": 1101,
+        "lcp": 1109,
+        "tbt": 14,
+        "cls": 0,
+        "si": 1101
+      },
+      "observedLcpBreakdownUI": {
+        "ttfb": 10,
+        "elementRenderDelay": 270
+      },
+      "lcpElement": "p.ed-intro"
+    },
+    {
+      "runtime": "07c3b9486997ec3e82b66c39ea4df6bab0a5a618",
+      "browser": "HeadlessChromium153.0.8010.36",
+      "lighthouse": "13.5.0",
+      "crux": "No data",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-menu/aarvapdnp8?form_factor=mobile",
+      "testedUrl": "https://pirogorsk.ru/menu/?lcpcheck=20261029c",
+      "capturedAtUI": "2026-10-29 21:17:17 GMT+2",
+      "formFactor": "mobile",
+      "simulated": {
+        "fcp": 1091,
+        "lcp": 1091,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1091
+      },
+      "observedLcpBreakdownUI": {
+        "ttfb": 10,
+        "elementRenderDelay": 320
+      },
+      "lcpElement": "p.ed-intro"
+    }
+  ]
+}
