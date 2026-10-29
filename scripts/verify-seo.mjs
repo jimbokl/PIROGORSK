@@ -22,7 +22,7 @@ const htmlFiles = async directory => {
 };
 const routeFor = file => `/${path.relative(output, file).split(path.sep).join('/')}`.replace(/index\.html$/, '');
 const fileFor = pathname => path.join(output, pathname.endsWith('/') ? `${pathname}index.html` : pathname);
-const isEditorial = route => /^\/(menu|delivery|partners|about|podbor|povody|blog)\/$|^\/(pirogi|nabor|dostavka|journal|povody)\/[^/]+\/$|^\/povody\/(kaliningrad|zelenogradsk|svetlogorsk)\/[^/]+\/$/.test(route);
+const isEditorial = route => /^\/(menu|delivery|partners|about|podbor|povody|blog)\/$|^\/(pirogi|catalog|nabor|dostavka|journal|povody)\/[^/]+\/$|^\/povody\/(kaliningrad|zelenogradsk|svetlogorsk)\/[^/]+\/$/.test(route);
 
 try {
   const all = await htmlFiles(output);
@@ -82,7 +82,7 @@ try {
     }
     if (isEditorial(route)) {
       assert(/(?:готовим запуск|готовится к запуску|перед запуском|пока не запущен)/i.test(html), `${route}: missing visible launch status.`);
-      assert(tags(html, 'a').some(item => item.href?.startsWith('/?interest=') && item.href.endsWith('#pirogi')), `${route}: missing interest CTA.`);
+      assert(tags(html, 'a').some(item => item.href?.startsWith('/?interest=') && item.href.endsWith(route.startsWith('/catalog/') ? (route.includes('mors') || /\/(chay|kofe|pitevaya-voda|nabor-posudy)\//.test(route) ? '#extras' : '#holland') : '#pirogi')), `${route}: missing interest CTA.`);
     }
     const ids = tags(html, '[a-z][\\w:-]*').map(item => item.id).filter(id => id !== undefined);
     assert(new Set(ids).size === ids.length, `${route}: duplicate HTML ids.`);

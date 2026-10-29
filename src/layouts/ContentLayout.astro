@@ -14,8 +14,9 @@ interface Props {
   noindex?: boolean;
   image?: string;
   imageAlt?: string;
+  preloadFonts?: boolean;
 }
-const { title, description, breadcrumbs = [], schema = [], type, noindex, image, imageAlt } = Astro.props;
+const { title, description, breadcrumbs = [], schema = [], type, noindex, image, imageAlt, preloadFonts = true } = Astro.props;
 const trail = [{ name: 'Главная', href: '/' }, ...breadcrumbs];
 const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
@@ -24,7 +25,7 @@ const breadcrumbSchema = {
 ---
 <!doctype html>
 <html lang="ru">
-  <head><SeoHead {title} {description} {type} {noindex} {image} {imageAlt} schema={[breadcrumbSchema, ...schema]} /><slot name="head" /></head>
+  <head><SeoHead {title} {description} {type} {noindex} {image} {imageAlt} {preloadFonts} schema={[breadcrumbSchema, ...schema]} /><slot name="head" /></head>
   <body class="editorial-site">
     <Analytics />
     <a class="ed-skip" href="#content">Перейти к содержанию</a>

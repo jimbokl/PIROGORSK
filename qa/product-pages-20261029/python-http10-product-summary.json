@@ -1,0 +1,504 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4324/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+    "timestamp": "2026-10-29T12:35:04.424Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 46,
+      "lcp": 46
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1.524,
+      "resourceLoadDelay": 4.216,
+      "resourceLoadDuration": 4.934,
+      "elementRenderDelay": 34.994
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1801.7733749999998,
+        "display": "1.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2327.12805,
+        "display": "2.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1801.7733749999998,
+        "display": "1.8 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 17 KiB",
+        "items": [
+          {
+            "url": ".pirogorsk-brand[data-astro-cid-6bctqxxv]{color:var(--navy);flex-shrink:0;align-items:center; … } …",
+            "wastedBytes": 17463,
+            "wastedPercent": 53.91978262883256,
+            "totalBytes": 32387
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 190 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:4324/_astro/analytics.wwK3Ddm3.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 102082,
+            "wastedBytes": 102082
+          },
+          {
+            "url": "http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 27398,
+            "wastedBytes": 27398
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18865,
+            "wastedBytes": 18865
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18785,
+            "wastedBytes": 18785
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16093,
+            "wastedBytes": 16093
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 9416,
+            "wastedBytes": 9416
+          },
+          {
+            "url": "http://127.0.0.1:4324/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1205,
+            "wastedBytes": 1205
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 223,
+            "wastedBytes": 223
+          }
+        ]
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 34 KiB",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 1 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 23 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,1,FIGURE,0,PICTURE,1,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture.supplier-artwork > img",
+              "boundingRect": {
+                "top": 417,
+                "bottom": 667,
+                "left": 81,
+                "right": 331,
+                "width": 250,
+                "height": 250
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-6…\" srcset=\"/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-256.webp 256w, /catalo…\" sizes=\"(max-width: 760px) 250px, (max-width: 1100px) 46vw, 520px\" width=\"960\" height=\"960\" alt=\"Осетинский пирог с курицей и сыром — авторская иллюстрация по описанию про…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" data-astro-cid-qgjzhhet=\"\">",
+              "nodeLabel": "Осетинский пирог с курицей и сыром — авторская иллюстрация по описанию производ…"
+            },
+            "url": "http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "totalBytes": 27209,
+            "wastedBytes": 23057,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (250x250). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 23057
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "C75050F8A83BE33FF4754FEBF43688A2": {
+                  "url": "http://127.0.0.1:4324/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+                  "navStartToEndTime": 8,
+                  "transferSize": 52399,
+                  "isLongest": true,
+                  "children": {
+                    "21573.13": {
+                      "url": "http://127.0.0.1:4324/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 40,
+                      "transferSize": 18865,
+                      "isLongest": true,
+                      "children": {}
+                    },
+                    "21573.11": {
+                      "url": "http://127.0.0.1:4324/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 39,
+                      "transferSize": 18785,
+                      "children": {}
+                    },
+                    "21573.14": {
+                      "url": "http://127.0.0.1:4324/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 37,
+                      "transferSize": 16093,
+                      "children": {}
+                    },
+                    "21573.12": {
+                      "url": "http://127.0.0.1:4324/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 36,
+                      "transferSize": 9416,
+                      "children": {}
+                    },
+                    "21573.2": {
+                      "url": "http://127.0.0.1:4324/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+                      "navStartToEndTime": 10,
+                      "transferSize": 223,
+                      "children": {
+                        "21573.10": {
+                          "url": "http://127.0.0.1:4324/_astro/analytics.wwK3Ddm3.js",
+                          "navStartToEndTime": 14,
+                          "transferSize": 102082,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 40
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4324/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+    "timestamp": "2026-10-29T12:35:10.411Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 56,
+      "lcp": 56
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1.476,
+      "resourceLoadDelay": 2.572,
+      "resourceLoadDuration": 4.108,
+      "elementRenderDelay": 48.269
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 441.3505,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 561.6206,
+        "display": "0.6 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 441.3505,
+        "display": "0.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 21 KiB",
+        "items": [
+          {
+            "url": ".pirogorsk-brand[data-astro-cid-6bctqxxv]{color:var(--navy);flex-shrink:0;align-items:center; … } …",
+            "wastedBytes": 21821,
+            "wastedPercent": 67.37579893167012,
+            "totalBytes": 32387
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 190 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:4324/_astro/analytics.wwK3Ddm3.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 102082,
+            "wastedBytes": 102082
+          },
+          {
+            "url": "http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 27398,
+            "wastedBytes": 27398
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18865,
+            "wastedBytes": 18865
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18785,
+            "wastedBytes": 18785
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16093,
+            "wastedBytes": 16093
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 9416,
+            "wastedBytes": 9416
+          },
+          {
+            "url": "http://127.0.0.1:4324/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1205,
+            "wastedBytes": 1205
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 223,
+            "wastedBytes": 223
+          }
+        ]
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 34 KiB",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 0 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 12 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,1,FIGURE,0,PICTURE,1,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture.supplier-artwork > img",
+              "boundingRect": {
+                "top": 222,
+                "bottom": 692,
+                "left": 680,
+                "right": 1285,
+                "width": 605,
+                "height": 470
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-6…\" srcset=\"/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-256.webp 256w, /catalo…\" sizes=\"(max-width: 760px) 250px, (max-width: 1100px) 46vw, 520px\" width=\"960\" height=\"960\" alt=\"Осетинский пирог с курицей и сыром — авторская иллюстрация по описанию про…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" data-astro-cid-qgjzhhet=\"\">",
+              "nodeLabel": "Осетинский пирог с курицей и сыром — авторская иллюстрация по описанию производ…"
+            },
+            "url": "http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "totalBytes": 27209,
+            "wastedBytes": 12535,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (470x470). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 12535
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "A09C282CF3E313D23FFBEDE0718AEAE8": {
+                  "url": "http://127.0.0.1:4324/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+                  "navStartToEndTime": 7,
+                  "transferSize": 52399,
+                  "isLongest": true,
+                  "children": {
+                    "21639.12": {
+                      "url": "http://127.0.0.1:4324/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 19,
+                      "transferSize": 9416,
+                      "isLongest": true,
+                      "children": {}
+                    },
+                    "21639.11": {
+                      "url": "http://127.0.0.1:4324/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 18,
+                      "transferSize": 18785,
+                      "children": {}
+                    },
+                    "21639.14": {
+                      "url": "http://127.0.0.1:4324/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 18,
+                      "transferSize": 16093,
+                      "children": {}
+                    },
+                    "21639.2": {
+                      "url": "http://127.0.0.1:4324/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+                      "navStartToEndTime": 8,
+                      "transferSize": 223,
+                      "children": {
+                        "21639.10": {
+                          "url": "http://127.0.0.1:4324/_astro/analytics.wwK3Ddm3.js",
+                          "navStartToEndTime": 10,
+                          "transferSize": 102082,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 19
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

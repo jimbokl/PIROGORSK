@@ -1,0 +1,1314 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4324/",
+    "timestamp": "2026-10-29T12:34:31.107Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 94,
+      "lcp": 94
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1.167,
+      "resourceLoadDelay": 5.92,
+      "resourceLoadDuration": 4.269,
+      "elementRenderDelay": 82.307
+    },
+    "scores": {
+      "performance": 71,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 3982.8824999999997,
+        "display": "4.0 s"
+      },
+      "largest-contentful-paint": {
+        "value": 5335.51,
+        "display": "5.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.004960035727302905,
+        "display": "0.005"
+      },
+      "speed-index": {
+        "value": 3982.8824999999997,
+        "display": "4.0 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "errors-in-console",
+        "title": "Browser errors were logged to the console",
+        "items": [
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/_astro/pie.CUr0iAWH_2kyYF8.avif",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/_astro/background.591iKjEd_ZarbJw.avif",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/_astro/background.dPlBJLpD_ZehP14.avif",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/_astro/pie.Bo977vUT_ZS6h8W.avif",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,0,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1151,
+                "bottom": 1321,
+                "left": 24,
+                "right": 194,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/myasnoy-pirog/\" aria-label=\"Подробнее: мясной пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,1,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1151,
+                "bottom": 1321,
+                "left": 218,
+                "right": 388,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/rybnyy-pirog/\" aria-label=\"Подробнее: рыбный пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-2-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,2,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1591,
+                "bottom": 1761,
+                "left": 24,
+                "right": 194,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-kapustoy/\" aria-label=\"Подробнее: пирог с капустой\">",
+              "nodeLabel": "Овощной",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-3-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,4,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2031,
+                "bottom": 2201,
+                "left": 24,
+                "right": 194,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-kuritsey-i-gribami/\" aria-label=\"Подробнее: пирог с курицей и грибами\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-4-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,5,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2031,
+                "bottom": 2201,
+                "left": 218,
+                "right": 388,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-yablokom-i-brusnikoy/\" aria-label=\"Подробнее: пирог с яблоком и брусникой\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-5-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,6,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2510,
+                "bottom": 2680,
+                "left": 24,
+                "right": 194,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-vishney/\" aria-label=\"Подробнее: пирог с вишней\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,7,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2510,
+                "bottom": 2680,
+                "left": 218,
+                "right": 388,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-tvorogom-i-malinoy/\" aria-label=\"Подробнее: пирог с творогом и малиной\">",
+              "nodeLabel": "К чаю",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-7-A",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,0,ARTICLE,0,A",
+              "selector": "section#extras > div.extras-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 3101,
+                "bottom": 3279,
+                "left": 18,
+                "right": 196,
+                "width": 178,
+                "height": 178
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/catalog/klyukvennyy-mors/\" aria-label=\"Подробнее: клюквенный морс\">",
+              "nodeLabel": "Освежает",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-8-A",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,1,ARTICLE,0,A",
+              "selector": "section#extras > div.extras-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 3101,
+                "bottom": 3279,
+                "left": 216,
+                "right": 394,
+                "width": 178,
+                "height": 178
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/catalog/oblepikhovyy-mors/\" aria-label=\"Подробнее: облепиховый морс\">",
+              "nodeLabel": "Освежает",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 20 KiB",
+        "items": [
+          {
+            "url": ".catalog .catalog-top{flex-wrap:wrap;align-items:baseline;gap:16px 28px;margin-bottom:20px} …",
+            "wastedBytes": 20643,
+            "wastedPercent": 31.864349222030132,
+            "totalBytes": 64784
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 377 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:4324/_astro/analytics.wwK3Ddm3.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 102082,
+            "wastedBytes": 102082
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 39939,
+            "wastedBytes": 39939
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18865,
+            "wastedBytes": 18865
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 18785,
+            "wastedBytes": 18785
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16398,
+            "wastedBytes": 16398
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16093,
+            "wastedBytes": 16093
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.BOtyLgF8_JH6n2.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 15664,
+            "wastedBytes": 15664
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 15405,
+            "wastedBytes": 15405
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.d61w9KjH_1ymwWx.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 14983,
+            "wastedBytes": 14983
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 14803,
+            "wastedBytes": 14803
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.CF7ZZ9Af_285HE2.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 12945,
+            "wastedBytes": 12945
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/index.astro_astro_type_script_index_0_lang.DNe8BchT.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 11226,
+            "wastedBytes": 11226
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.C3rRYxI3_nvq9x.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 10794,
+            "wastedBytes": 10794
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.CwMc51iY_ZQwleG.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 10372,
+            "wastedBytes": 10372
+          },
+          {
+            "url": "http://127.0.0.1:4324/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 9416,
+            "wastedBytes": 9416
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/InterestForm.astro_astro_type_script_index_0_lang.CwU-524x.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 8637,
+            "wastedBytes": 8637
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.DMEurvcD_Z10U0hT.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 8554,
+            "wastedBytes": 8554
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.CJgaZJ6N_qPz2Q.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 6908,
+            "wastedBytes": 6908
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.DuGp5oBv_z9Ypg.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 6485,
+            "wastedBytes": 6485
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/tea.DpNrVaQR_Zfv8p9.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 5713,
+            "wastedBytes": 5713
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/coffee.BZ0rl5Ul_ZPn75y.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 5231,
+            "wastedBytes": 5231
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4997,
+            "wastedBytes": 4997
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/seabuckthorn.5G7nLPtn_Z1S3dh8.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4876,
+            "wastedBytes": 4876
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/cranberry.BeAaUA4p_Z1UiiPj.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4049,
+            "wastedBytes": 4049
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie-planner.D65GEHih.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1476,
+            "wastedBytes": 1476
+          },
+          {
+            "url": "http://127.0.0.1:4324/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1205,
+            "wastedBytes": 1205
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pricing.uFphHH5q.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 362,
+            "wastedBytes": 362
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 223,
+            "wastedBytes": 223
+          }
+        ]
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 306 KiB",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 0 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 33 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-4-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,2,DIV,2,DIV,0,DIV,0,A,0,PICTURE,2,IMG",
+              "selector": "div.tasting-scene > a > picture > img",
+              "boundingRect": {
+                "top": 516,
+                "bottom": 755,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 239
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4324/_astro/pie.CiXI4zfL_Z2fLupv.avif\" srcset=\"/_astro/pie.CiXI4zfL_18fk5t.webp 320w, /_astro/pie.CiXI4zfL_136R10.webp 48…\" sizes=\"(max-width: 760px) 68vw, (max-width: 1060px) 40vw, (max-width: 1500px) 39v…\" alt=\"Рыбный пирог: пирог и кусочек с начинкой. Визуальный концепт.\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"900\" height=\"900\">",
+              "nodeLabel": "Рыбный пирог: пирог и кусочек с начинкой. Визуальный концепт."
+            },
+            "url": "http://127.0.0.1:4324/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "totalBytes": 39750,
+            "wastedBytes": 34228,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (239x239). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 34228
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "3F6082A01283630ED674BB4598FF12ED": {
+                  "url": "http://127.0.0.1:4324/",
+                  "navStartToEndTime": 17,
+                  "transferSize": 468162,
+                  "isLongest": true,
+                  "children": {
+                    "21437.8": {
+                      "url": "http://127.0.0.1:4324/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+                      "navStartToEndTime": 63,
+                      "transferSize": 223,
+                      "isLongest": true,
+                      "children": {
+                        "21437.150": {
+                          "url": "http://127.0.0.1:4324/_astro/analytics.wwK3Ddm3.js",
+                          "navStartToEndTime": 92,
+                          "transferSize": 102082,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "21437.9": {
+                      "url": "http://127.0.0.1:4324/_astro/index.astro_astro_type_script_index_0_lang.DNe8BchT.js",
+                      "navStartToEndTime": 63,
+                      "transferSize": 11226,
+                      "children": {
+                        "21437.152": {
+                          "url": "http://127.0.0.1:4324/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 91,
+                          "transferSize": 1476,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "21437.7": {
+                      "url": "http://127.0.0.1:4324/_astro/InterestForm.astro_astro_type_script_index_0_lang.CwU-524x.js",
+                      "navStartToEndTime": 63,
+                      "transferSize": 8637,
+                      "children": {
+                        "21437.151": {
+                          "url": "http://127.0.0.1:4324/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 91,
+                          "transferSize": 362,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "21437.126": {
+                      "url": "http://127.0.0.1:4324/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 73,
+                      "transferSize": 9416,
+                      "children": {}
+                    },
+                    "21437.127": {
+                      "url": "http://127.0.0.1:4324/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 72,
+                      "transferSize": 18865,
+                      "children": {}
+                    },
+                    "21437.125": {
+                      "url": "http://127.0.0.1:4324/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 72,
+                      "transferSize": 18785,
+                      "children": {}
+                    },
+                    "21437.128": {
+                      "url": "http://127.0.0.1:4324/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 72,
+                      "transferSize": 16093,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 92
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4324/",
+    "timestamp": "2026-10-29T12:34:38.254Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 101,
+      "lcp": 101
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1.416,
+      "resourceLoadDelay": 4.301,
+      "resourceLoadDuration": 4.763,
+      "elementRenderDelay": 90.577
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 708.3328000000001,
+        "display": "0.7 s"
+      },
+      "largest-contentful-paint": {
+        "value": 824.7616,
+        "display": "0.8 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 708.3328000000001,
+        "display": "0.7 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "errors-in-console",
+        "title": "Browser errors were logged to the console",
+        "items": [
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/fonts/golos-latin.woff2",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/fonts/playfair-cyrillic.woff2",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/fonts/playfair-latin.woff2",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/fonts/golos-cyrillic.woff2",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/_astro/analytics.wwK3Ddm3.js",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          },
+          {
+            "source": "network",
+            "description": "Failed to load resource: net::ERR_CONNECTION_RESET",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://127.0.0.1:4324/_astro/pricing.uFphHH5q.js",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,0,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1015,
+                "bottom": 1281,
+                "left": 70,
+                "right": 337,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/myasnoy-pirog/\" aria-label=\"Подробнее: мясной пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,1,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1015,
+                "bottom": 1281,
+                "left": 385,
+                "right": 651,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/rybnyy-pirog/\" aria-label=\"Подробнее: рыбный пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-2-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,2,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1015,
+                "bottom": 1281,
+                "left": 699,
+                "right": 966,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-kapustoy/\" aria-label=\"Подробнее: пирог с капустой\">",
+              "nodeLabel": "Овощной",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-3-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,4,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1532,
+                "bottom": 1799,
+                "left": 70,
+                "right": 337,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-kuritsey-i-gribami/\" aria-label=\"Подробнее: пирог с курицей и грибами\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-4-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,5,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1532,
+                "bottom": 1799,
+                "left": 385,
+                "right": 651,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-yablokom-i-brusnikoy/\" aria-label=\"Подробнее: пирог с яблоком и брусникой\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-5-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,6,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1532,
+                "bottom": 1799,
+                "left": 699,
+                "right": 966,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-vishney/\" aria-label=\"Подробнее: пирог с вишней\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,7,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1532,
+                "bottom": 1799,
+                "left": 1014,
+                "right": 1280,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-tvorogom-i-malinoy/\" aria-label=\"Подробнее: пирог с творогом и малиной\">",
+              "nodeLabel": "К чаю",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-7-A",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,0,ARTICLE,0,A",
+              "selector": "section#extras > div.extras-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2163,
+                "bottom": 2391,
+                "left": 60,
+                "right": 288,
+                "width": 228,
+                "height": 228
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/catalog/klyukvennyy-mors/\" aria-label=\"Подробнее: клюквенный морс\">",
+              "nodeLabel": "Освежает",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-8-A",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,1,ARTICLE,0,A",
+              "selector": "section#extras > div.extras-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2163,
+                "bottom": 2391,
+                "left": 310,
+                "right": 539,
+                "width": 228,
+                "height": 228
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/catalog/oblepikhovyy-mors/\" aria-label=\"Подробнее: облепиховый морс\">",
+              "nodeLabel": "Освежает",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 35 KiB",
+        "items": [
+          {
+            "url": ".catalog .catalog-top{flex-wrap:wrap;align-items:baseline;gap:16px 28px;margin-bottom:20px} …",
+            "wastedBytes": 35462,
+            "wastedPercent": 54.73882440108668,
+            "totalBytes": 64784
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 321 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 39939,
+            "wastedBytes": 39939
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.CF7ZZ9Af_Z21m32J.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 38228,
+            "wastedBytes": 38228
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 16398,
+            "wastedBytes": 16398
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.BOtyLgF8_JH6n2.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 15664,
+            "wastedBytes": 15664
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 15405,
+            "wastedBytes": 15405
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.CUr0iAWH_2kyYF8.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 15329,
+            "wastedBytes": 15329
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.Bo977vUT_ZS6h8W.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 15170,
+            "wastedBytes": 15170
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.d61w9KjH_1ymwWx.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 14983,
+            "wastedBytes": 14983
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 14803,
+            "wastedBytes": 14803
+          },
+          {
+            "url": "http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-tykvoy-i-syrom-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 11868,
+            "wastedBytes": 11868
+          },
+          {
+            "url": "http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 11643,
+            "wastedBytes": 11643
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/index.astro_astro_type_script_index_0_lang.DNe8BchT.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 11226,
+            "wastedBytes": 11226
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.C3rRYxI3_nvq9x.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 10794,
+            "wastedBytes": 10794
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.CwMc51iY_ZQwleG.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 10372,
+            "wastedBytes": 10372
+          },
+          {
+            "url": "http://127.0.0.1:4324/catalog-art/hb-osetinskiy-pirog-s-kartofelem-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 9490,
+            "wastedBytes": 9490
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.dPlBJLpD_ZehP14.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 8956,
+            "wastedBytes": 8956
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/InterestForm.astro_astro_type_script_index_0_lang.CwU-524x.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 8637,
+            "wastedBytes": 8637
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.DMEurvcD_Z10U0hT.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 8554,
+            "wastedBytes": 8554
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.591iKjEd_ZarbJw.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 7982,
+            "wastedBytes": 7982
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.CJgaZJ6N_qPz2Q.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 6908,
+            "wastedBytes": 6908
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.DuGp5oBv_z9Ypg.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 6485,
+            "wastedBytes": 6485
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4997,
+            "wastedBytes": 4997
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/tea.DpNrVaQR_1Fpthj.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4983,
+            "wastedBytes": 4983
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/coffee.BZ0rl5Ul_Z1hoTJW.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4410,
+            "wastedBytes": 4410
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/water.BZa4wDUV_Z21vVLE.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4185,
+            "wastedBytes": 4185
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/seabuckthorn.5G7nLPtn_29j41h.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4122,
+            "wastedBytes": 4122
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/cranberry.BeAaUA4p_ewaKL.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 3763,
+            "wastedBytes": 3763
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/pie-planner.D65GEHih.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1476,
+            "wastedBytes": 1476
+          },
+          {
+            "url": "http://127.0.0.1:4324/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 1205,
+            "wastedBytes": 1205
+          },
+          {
+            "url": "http://127.0.0.1:4324/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 223,
+            "wastedBytes": 223
+          }
+        ]
+      },
+      {
+        "id": "document-latency-insight",
+        "title": "Document request latency",
+        "displayValue": "Est savings of 306 KiB",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 0 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 18 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,2,DIV,2,DIV,0,DIV,0,A,0,PICTURE,2,IMG",
+              "selector": "div.tasting-scene > a > picture > img",
+              "boundingRect": {
+                "top": 210,
+                "bottom": 682,
+                "left": 685,
+                "right": 1290,
+                "width": 605,
+                "height": 472
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4324/_astro/pie.CiXI4zfL_Z2fLupv.avif\" srcset=\"/_astro/pie.CiXI4zfL_18fk5t.webp 320w, /_astro/pie.CiXI4zfL_136R10.webp 48…\" sizes=\"(max-width: 760px) 68vw, (max-width: 1060px) 40vw, (max-width: 1500px) 39v…\" alt=\"Рыбный пирог: пирог и кусочек с начинкой. Визуальный концепт.\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"900\" height=\"900\">",
+              "nodeLabel": "Рыбный пирог: пирог и кусочек с начинкой. Визуальный концепт."
+            },
+            "url": "http://127.0.0.1:4324/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "totalBytes": 39750,
+            "wastedBytes": 18158,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (472x472). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18158
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "ABF8C4806A7EFD493A906499B112ED7E": {
+                  "url": "http://127.0.0.1:4324/",
+                  "navStartToEndTime": 15,
+                  "transferSize": 468162,
+                  "isLongest": true,
+                  "children": {
+                    "21477.9": {
+                      "url": "http://127.0.0.1:4324/_astro/index.astro_astro_type_script_index_0_lang.DNe8BchT.js",
+                      "navStartToEndTime": 56,
+                      "transferSize": 11226,
+                      "isLongest": true,
+                      "children": {
+                        "21477.156": {
+                          "url": "http://127.0.0.1:4324/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 80,
+                          "transferSize": 1476,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "21477.7": {
+                      "url": "http://127.0.0.1:4324/_astro/InterestForm.astro_astro_type_script_index_0_lang.CwU-524x.js",
+                      "navStartToEndTime": 15,
+                      "transferSize": 8637,
+                      "children": {
+                        "21477.155": {
+                          "url": "http://127.0.0.1:4324/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 64,
+                          "transferSize": 0,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "21477.8": {
+                      "url": "http://127.0.0.1:4324/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+                      "navStartToEndTime": 15,
+                      "transferSize": 223,
+                      "children": {
+                        "21477.154": {
+                          "url": "http://127.0.0.1:4324/_astro/analytics.wwK3Ddm3.js",
+                          "navStartToEndTime": 64,
+                          "transferSize": 0,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "21477.127": {
+                      "url": "http://127.0.0.1:4324/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 0,
+                      "children": {}
+                    },
+                    "21477.126": {
+                      "url": "http://127.0.0.1:4324/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 0,
+                      "children": {}
+                    },
+                    "21477.125": {
+                      "url": "http://127.0.0.1:4324/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 0,
+                      "children": {}
+                    },
+                    "21477.128": {
+                      "url": "http://127.0.0.1:4324/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 0,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 80
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

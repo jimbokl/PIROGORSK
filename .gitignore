@@ -23,3 +23,8 @@ qa/metrica-20261024/
 qa/seo-expansion-20261026/local-*.json
 qa/seo-expansion-20261026/local-*.html
 !qa/seo-expansion-20261026/local-*-summary.json
+
+# Supplier photography is retained locally as an imagegen reference only.
+research/supplier-artwork-20261029/references/
+research/supplier-artwork-20261029/reference-contact-*.jpg
+scripts/__pycache__/

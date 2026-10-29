@@ -1,0 +1,51 @@
+---
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
+import EditorialLinks from '../../components/EditorialLinks.astro';
+import ProductOptions from '../../components/ProductOptions.astro';
+import ProductVisual from '../../components/ProductVisual.astro';
+import SupplierArtwork from '../../components/SupplierArtwork.astro';
+import { newPageProducts, productPage, formatWeight } from '../../data/product-pages';
+import { supplierArtwork } from '../../data/supplier-artwork';
+import { catalogProductHref } from '../../lib/product-paths';
+import { siteOrigin } from '../../data/editorial';
+import type { Product } from '../../data/catalog';
+
+export function getStaticPaths() {
+  return newPageProducts.map(product => ({ params: { slug: product.slug.replace(/^hb-/, '') }, props: { product } }));
+}
+interface Props { product: Product }
+const { product } = Astro.props;
+const page = productPage(product);
+const art = product.supplier ? supplierArtwork(product.id) : undefined;
+const title = `${page.heading} — форматы и цены | Пирогорск`;
+const schema = [{ '@type': 'ItemPage', '@id': `${siteOrigin}${page.href}#page`, url: `${siteOrigin}${page.href}`, name: page.heading, description: page.intro,
+  ...(art ? { primaryImageOfPage: { '@type': 'ImageObject', url: `${siteOrigin}${art.ogImage}`, width: 1200, height: 630, caption: art.alt } } : {}) }];
+const guide = product.category === 'mini-pies' ? { href: '/journal/skolko-piroga-na-cheloveka/', title: 'Сколько пирога нужно на человека', text: 'Считайте общий вес: один мини-пирог — 210 г, пять — 1,05 кг. Порция зависит от остального меню.', label: 'Расчёт стола' }
+  : { href: '/menu/', title: 'Сравнить с остальным меню', text: 'Пироги, хлеб, выпечка и дополнения с предварительными ценами и разными форматами.', label: 'Весь ассортимент' };
+---
+<ContentLayout {title} description={page.description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }, { name: page.heading, href: page.href }]} {schema} image={art?.ogImage} imageAlt={art?.alt} preloadFonts={false}>
+  <EditorialHero eyebrow={`${page.group} · изучаем спрос`} title={page.heading} intro={page.intro} compact={product.kind === 'accessory'} caption={art ? 'Авторская иллюстрация по референсу. Внешний вид продукта может отличаться.' : undefined}>
+    {art ? <SupplierArtwork slot="visual" id={product.id} hero /> : product.kind !== 'accessory' && <ProductVisual slot="visual" {product} layout="hero" />}
+    <ProductOptions slot="actions" {product} showDelivery />
+  </EditorialHero>
+  <section class="catalog-details" aria-labelledby="product-details">
+    <div class="catalog-story"><p class="ed-eyebrow">Выбрать осознанно</p><h2 id="product-details">{page.source ? 'Что за продукт' : 'К вашей подборке'}</h2><p>{page.serving}</p><h3>Как подготовить к подаче</h3><p>{page.prep}</p>
+      {page.source && <p class="catalog-cold">Планируем поставку замороженного продукта с соблюдением условий хранения. Способ получения и температурный режим подтвердим перед продажами. Размороженный продукт повторно не замораживают.</p>}
+    </div>
+    <aside class="catalog-facts" aria-label="Формат и происхождение"><h2>Коротко о позиции</h2><dl><div><dt>Статус</dt><dd>Изучаем спрос, продажи не начались</dd></div>
+      {page.source ? <><div><dt>Производитель</dt><dd>Holland Bakery</dd></div><div><dt>Одна единица</dt><dd>{formatWeight(page.source.unitWeightG)}</dd></div><div><dt>Заводская упаковка</dt><dd>{page.source.sourceLabel}</dd></div><div><dt>Формат продукта</dt><dd>{product.description}</dd></div></> : <div><dt>Формат</dt><dd>{product.variants.map(v => v.label).join(' или ')}</dd></div>}
+      <div><dt>Наша подборка</dt><dd>{page.source ? 'Небольшие наборы — планируемая фасовка Пирогорска из заводской упаковки.' : 'Количество можно изменить в общей подборке.'}</dd></div><div><dt>Цена и доставка</dt><dd>Предварительно. Доставка считается отдельно за всю подборку.</dd></div></dl></aside>
+  </section>
+  {page.facts?.ingredients && <section class="catalog-composition" aria-labelledby="composition-heading"><h2 id="composition-heading">Состав по данным производителя</h2><p>{page.facts.ingredients}</p><p class="catalog-source">Источник: <a href={page.facts.sourceUrl} target="_blank" rel="noopener">публичная карточка Holland Bakery</a>, проверена 29 октября 2026. Перед продажами сверим полный состав, аллергены, возможные следы и условия хранения с маркировкой поставляемой партии. Ассорти требует отдельного подтверждения состава каждого вида.</p></section>}
+  {page.source && !page.facts?.ingredients && <section class="catalog-composition"><h2>Что уточним перед продажами</h2><p>Для ассорти подтвердим выбранные виды, состав каждого продукта и итоговую цену. Данные о производителе и фасовке взяты из <a href={page.source.sourceUrl} target="_blank" rel="noopener">публичного каталога Holland Bakery</a>, проверенного 29 октября 2026.</p></section>}
+  <EditorialLinks title="Сравнить перед выбором" links={[...page.related.map(other => ({ href: catalogProductHref(other), title: productPage(other).heading, text: productPage(other).intro, label: 'Рядом в меню' })), guide, { href: '/delivery/', title: 'Города и условия', text: 'Планируем Калининград, Зеленоградск и Светлогорск. Условия получения и цены пока предварительные.', label: 'Доставка' }]} />
+</ContentLayout>
+<style>
+  .catalog-details{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,6vw,90px);padding-block:48px 64px;border-top:1px solid var(--ed-line)}
+  .catalog-story h2,.catalog-facts h2,.catalog-composition h2{font-family:var(--ed-serif);font-weight:500;font-size:clamp(26px,3vw,36px);line-height:1.15;margin:12px 0 22px}.catalog-story h3{font-size:17px;margin-top:30px}
+  .catalog-story p,.catalog-composition p{font-size:15px;line-height:1.85;max-width:76ch}.catalog-cold,.catalog-source{color:var(--ed-muted)}
+  .catalog-facts{border:1px solid var(--ed-line);border-radius:14px;padding:26px;align-self:start}.catalog-facts h2{font-size:25px;margin-top:0}.catalog-facts dl{margin:0}.catalog-facts dl>div{padding:12px 0;border-top:1px solid var(--ed-line)}.catalog-facts dt{font-size:11px;color:var(--ed-muted);margin-bottom:5px}.catalog-facts dd{margin:0;font-size:13px;line-height:1.65}
+  .catalog-composition{padding-block:32px 54px;border-top:1px solid var(--ed-line)}.catalog-composition .catalog-source{font-size:12px}.catalog-composition a{color:inherit;text-underline-offset:4px}
+  @media(max-width:760px){.catalog-details{grid-template-columns:1fr;gap:28px;padding-block:30px 42px}.catalog-facts{padding:20px}.catalog-composition{padding-bottom:30px}}
+</style>

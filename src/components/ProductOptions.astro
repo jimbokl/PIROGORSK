@@ -1,13 +1,16 @@
 ---
 import type { Product } from '../data/catalog';
-interface Props { product: Product }
-const { product } = Astro.props;
+import { selectionHref as productSelectionHref } from '../lib/product-paths';
+import { deliveryEstimates } from '../data/pricing';
+interface Props { product: Product; showDelivery?: boolean }
+const { product, showDelivery = false } = Astro.props;
 const selected = product.variants.find(variant => variant.value === product.defaultVariant) ?? product.variants[0]!;
-const selectionHref = (value: number) => `/?interest=${encodeURIComponent(product.id)}&variant=${value}#pirogi`;
+const selectionHref = (value: number) => productSelectionHref(product, value);
+const from = product.supplier?.priceFrom ? 'от ' : '';
 ---
-<div class="product-options" data-product-options>
+<div class="product-options" data-product-options data-price-prefix={from}>
   <fieldset>
-    <legend>Выберите размер</legend>
+    <legend>Выберите {product.kind === 'pie' ? 'размер' : 'формат'}</legend>
     <div class="product-options-sizes">
       {product.variants.map(variant => <label>
         <input type="radio" name={`product-size-${product.id}`} value={variant.value} checked={variant.value === selected.value} data-price={variant.price} data-href={selectionHref(variant.value)} />
@@ -16,10 +19,11 @@ const selectionHref = (value: number) => `/?interest=${encodeURIComponent(produc
     </div>
   </fieldset>
   <div class="product-options-bottom">
-    <p class="product-options-price"><strong data-option-price aria-live="polite">{selected.price.toLocaleString('ru-RU')} ₽</strong><small>Предварительная цена</small></p>
+    <p class="product-options-price"><strong data-option-price aria-live="polite">{from}{selected.price.toLocaleString('ru-RU')} ₽</strong><small>Предварительная цена</small></p>
     <a class="ed-button" data-option-link href={selectionHref(selected.value)}>В подборку<span aria-hidden="true">↗</span></a>
   </div>
   <p class="product-options-note">Готовим запуск. Подборка поможет нам узнать ваши вкусы; это ещё не заказ.</p>
+  {showDelivery && <details class="product-delivery"><summary>Сколько получится с доставкой</summary><p>Если в подборке только выбранный формат этой позиции. Доставка учитывается один раз за всю подборку.</p><dl>{Object.entries(deliveryEstimates).map(([city, cost]) => <div><dt>{city}<small>Доставка {cost} ₽</small></dt><dd data-option-total data-delivery-cost={cost}>{from}{(selected.price + cost).toLocaleString('ru-RU')} ₽</dd></div>)}<div><dt>Самовывоз<small>Место ещё уточняется</small></dt><dd data-option-total data-delivery-cost="0">{from}{selected.price.toLocaleString('ru-RU')} ₽</dd></div></dl><p>Плановый расчёт, не тариф перевозчика. Города, условия и стоимость подтвердим до начала продаж.</p></details>}
 </div>
 <script>
   document.querySelectorAll<HTMLElement>('[data-product-options]').forEach(options => {
@@ -28,8 +32,12 @@ const selectionHref = (value: number) => `/?interest=${encodeURIComponent(produc
       if (!(input instanceof HTMLInputElement) || input.type !== 'radio') return;
       const price = options.querySelector<HTMLElement>('[data-option-price]');
       const link = options.querySelector<HTMLAnchorElement>('[data-option-link]');
-      if (price) price.textContent = `${Number(input.dataset.price).toLocaleString('ru-RU')} ₽`;
+      const prefix = options.dataset.pricePrefix ?? '';
+      if (price) price.textContent = `${prefix}${Number(input.dataset.price).toLocaleString('ru-RU')} ₽`;
       if (link && input.dataset.href) link.href = input.dataset.href;
+      options.querySelectorAll<HTMLElement>('[data-option-total]').forEach(total => {
+        total.textContent = `${prefix}${(Number(input.dataset.price) + Number(total.dataset.deliveryCost)).toLocaleString('ru-RU')} ₽`;
+      });
     });
   });
 </script>
@@ -37,8 +45,8 @@ const selectionHref = (value: number) => `/?interest=${encodeURIComponent(produc
   .product-options{max-width:440px}
   fieldset{border:0;margin:0;padding:0}
   legend{font-size:12px;color:var(--ed-muted);margin-bottom:9px}
-  .product-options-sizes{display:flex;gap:8px}
-  label{position:relative;flex:1;cursor:pointer}
+  .product-options-sizes{display:flex;flex-wrap:wrap;gap:8px}
+  label{position:relative;flex:1 1 auto;cursor:pointer}
   input{position:absolute;opacity:0;width:1px;height:1px}
   label span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:10px 16px;border:1px solid var(--ed-line);border-radius:30px;font-size:13px;transition:background .15s,border-color .15s,color .15s}
   input:checked+span{border-color:var(--action);background:var(--action);color:white;font-weight:600}
@@ -49,6 +57,11 @@ const selectionHref = (value: number) => `/?interest=${encodeURIComponent(produc
   small{display:block;font-size:11px;color:var(--ed-muted);line-height:1.5;margin-top:5px}
   .product-options-bottom .ed-button{width:auto;min-width:156px;gap:20px}
   .product-options-note{font-size:12px;line-height:1.7;color:var(--ed-muted);margin-top:15px;max-width:52ch}
+  .product-delivery{margin-top:20px;border-top:1px solid var(--ed-line);padding-top:16px;font-size:12px;line-height:1.6}
+  .product-delivery summary{cursor:pointer;padding-block:6px;font-weight:600}
+  .product-delivery p{color:var(--ed-muted)}
+  .product-delivery dl{margin:16px 0}.product-delivery dl>div{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid var(--ed-line)}
+  .product-delivery dd{margin:0;align-self:center;white-space:nowrap;font-variant-numeric:tabular-nums}.product-delivery small{margin:0;font-size:10px}
   @media(max-width:360px){.product-options-bottom{gap:12px}.product-options-bottom .ed-button{min-width:0;padding-inline:16px;gap:12px}strong{font-size:27px}}
   @media(prefers-reduced-motion:reduce){label span{transition:none}}
 </style>
