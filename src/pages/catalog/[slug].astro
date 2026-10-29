@@ -25,7 +25,7 @@ const guide = product.category === 'mini-pies' ? { href: '/journal/skolko-piroga
   : { href: '/menu/', title: 'Сравнить с остальным меню', text: 'Пироги, хлеб, выпечка и дополнения с предварительными ценами и разными форматами.', label: 'Весь ассортимент' };
 ---
 <ContentLayout {title} description={page.description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }, { name: page.heading, href: page.href }]} {schema} image={art?.ogImage} imageAlt={art?.alt} preloadFonts={false}>
-  <EditorialHero eyebrow={`${page.group} · изучаем спрос`} title={page.heading} intro={page.intro} caption={art ? 'Авторская иллюстрация по референсу. Внешний вид продукта может отличаться.' : product.kind === 'accessory' ? 'Авторская иллюстрация. Комплектацию уточним перед запуском.' : 'Изображение концепта. Внешний вид напитка ещё предстоит утвердить.'}>
+  <EditorialHero eyebrow={`${page.group} · изучаем спрос`} title={page.heading} intro={page.intro} caption={art ? '' : product.kind === 'accessory' ? 'Авторская иллюстрация. Комплектацию уточним перед запуском.' : 'Изображение концепта. Внешний вид напитка ещё предстоит утвердить.'}>
     {art ? <SupplierArtwork slot="visual" id={product.id} hero /> : <ProductVisual slot="visual" {product} layout="hero" />}
     <ProductOptions slot="actions" {product} showDelivery />
   </EditorialHero>
