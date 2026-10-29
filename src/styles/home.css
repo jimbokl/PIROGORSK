@@ -9,3 +9,74 @@
 .hero-planner .icon{font-size:14px;transition:transform 160ms ease}
 .hero-planner:hover .icon{transform:translateX(3px)}
 @media(max-width:370px){.hero-actions{gap:5px 12px}.hero-cta{min-width:170px;padding-inline:18px}.hero-planner{font-size:10px}.hero-planner .icon{display:none}.hero-eyebrow{font-size:9px}}
+
+/* Paper glass: the reference's materials, in the existing Baltic palette. */
+.home-page {
+  --surface-ease: cubic-bezier(.16, 1, .3, 1);
+  --glass-surface: linear-gradient(150deg, #fffdf9d9, #fffdf999);
+}
+.home-page .tasting-copy h1,
+.home-page main h2 {
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+@supports (background-clip: text) {
+  .home-page .tasting-copy h1,
+  .home-page main h2 {
+    background-image: linear-gradient(180deg, var(--navy-deep), #426574);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.home-page .catalog .catalog-card--pie {
+  background: var(--glass-surface);
+  border-top-color: #fff;
+  box-shadow: inset 0 1px 0 #ffffffb3, 0 4px 18px #123b4a05;
+  transition: transform 500ms var(--surface-ease),
+    border-color 500ms var(--surface-ease), box-shadow 500ms var(--surface-ease);
+}
+.home-page .catalog-card--pie::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: .02;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23000' filter='url(%23grain)' d='M0 0h160v160H0z'/%3E%3C/svg%3E");
+}
+.home-page .button,
+.home-page .occasion-card {
+  transition: transform 500ms var(--surface-ease),
+    background-color 500ms var(--surface-ease), border-color 500ms var(--surface-ease),
+    box-shadow 500ms var(--surface-ease);
+}
+@media (min-width: 761px) and (hover: hover) and (pointer: fine) {
+  .home-page .catalog .product-grid {
+    background: radial-gradient(ellipse at 0 30%, #c8dfe650, transparent 50%),
+      radial-gradient(ellipse at 100% 80%, #f0d5ad50, transparent 45%);
+  }
+  .home-page .catalog .catalog-card--pie {
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .home-page .catalog .catalog-card--pie:hover {
+    transform: translateY(-4px);
+    border-color: #ffffffb3;
+    box-shadow: 0 16px 35px #123b4a14, 0 0 0 1px #123b4a1f;
+  }
+  .home-page .button:hover,
+  .home-page .occasion-card:hover { transform: translateY(-4px); }
+}
+.home-page .catalog .catalog-card--pie:focus-within { border-color: var(--focus); }
+@media (prefers-reduced-motion: reduce) {
+  .home-page .catalog .catalog-card--pie,
+  .home-page .button,
+  .home-page .occasion-card { transform: none; transition: none; }
+}
+@media (forced-colors: active), (prefers-contrast: more), print {
+  .home-page .tasting-copy h1,
+  .home-page main h2 { background-image: none; -webkit-text-fill-color: currentColor; }
+}

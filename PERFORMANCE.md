@@ -1,5 +1,9 @@
 # Скорость production-сборки
 
+## Визуальный референс — 29.10, локальный контроль
+
+После диагностики пользователь поручил попробовать стеклянные поверхности, журнальные заголовки и плавный hover. Эффекты ограничены главной, blur — desktop fine pointer, reduced motion учтён. Это визуальная задача, не подтверждённое лечение LCP. Preview4322, Chrome156, три свежих mobile-профиля: P98/99/98, LCP2368/2201/2287мс, observed render63–101мс; desktop100/LCP524мс. A/BP/SEO100. [Данные](qa/home-lcp-20261029/design-local-summary.json). Локальная среда отличается от production; публичная перепроверка выполняется после CI.
+
 ## Разбор нестабильного mobile LCP главной — 29.10.2026
 
 Неизменённый runtime `e3cbdaf`, три публичных PSI mobile: **P100/LCP1651мс**, **P85/LCP4007мс**, **P94/LCP3101мс**. Наблюдаемый render delay соответственно40/2000/50мс. Последний [mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/mis322ten8?form_factor=mobile) и [desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/mis322ten8?form_factor=desktop):94/100; desktop LCP421мс, все A/BP/SEO100. CrUX нет. Headline Lighthouse — симуляция; insight breakdown — наблюдаемая трасса, поэтому большое первое значение не всегда означает долгий paint.
