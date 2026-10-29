@@ -1,0 +1,77 @@
+{
+  "runtime": "bf26eb4285ccad26abb7d80ad9f27ec9cd27991f",
+  "source": "Visible public PageSpeed Insights UI, accessibility text and score calculator links; one report per URL, both device tabs.",
+  "fieldData": "Нет данных (CrUX)",
+  "lighthouseVersion": "13.5.0",
+  "browser": "HeadlessChromium 153.0.8010.36 with lr",
+  "home": {
+    "target": "https://pirogorsk.ru/",
+    "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/xtdsdnlmtc?form_factor=mobile",
+    "reportedAt": "2026-10-29T14:45:10+02:00",
+    "mobile": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp_ms": 1351,
+        "lcp_ms": 1726,
+        "tbt_ms": 26,
+        "cls": 0.007,
+        "si_ms": 1351
+      }
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp_ms": 326,
+        "lcp_ms": 441,
+        "tbt_ms": 4,
+        "cls": 0.007,
+        "si_ms": 447
+      }
+    }
+  },
+  "product": {
+    "target": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+    "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-catalog-osetinskiy-pirog-s-kuritsey-i-syrom/j50udkn00t?form_factor=mobile",
+    "reportedAt": "2026-10-29T14:45:18+02:00",
+    "mobile": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp_ms": 910,
+        "lcp_ms": 1215,
+        "tbt_ms": 12,
+        "cls": 0,
+        "si_ms": 918
+      }
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp_ms": 228,
+        "lcp_ms": 288,
+        "tbt_ms": 5,
+        "cls": 0,
+        "si_ms": 282
+      }
+    }
+  }
+}

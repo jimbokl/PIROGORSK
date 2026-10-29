@@ -4,7 +4,9 @@
 
 Текущий спринт: созданы 78 отдельных авторских иллюстраций встроенного imagegen по фото Holland Bakery; фото служат только локальными референсами. Для сайта — 624 AVIF/WebP и 78 OG JPEG. Каждая из 92 позиций имеет отдельный адрес: 8 прежних страниц сохранены, добавлены 84 страницы с собственным текстом, фактами производителя, форматами/ценой, подготовкой, плановым расчётом доставки и CTA в подборку. Цены/ID/API v1 прежние; продажи и оплата не открывались.
 
-Сборка153HTML / sitemap151URL, все SEO-валидаторы и карта интентов PASS; 34tests, Worker/API/SQLite/browser fixtures PASS. UI320/390/1280: 78 изображений, 27 товарных проверок, цены/варианты/доставка/подборка, без overflow/JS-ошибок. Worker compatibility PASS. Выпуск и production-проверки выполняются. [QA](qa/product-pages-20261029/README.md), [checkpoint](research/supplier-artwork-20261029/STATE.md).
+Сборка153HTML / sitemap151URL, все SEO-валидаторы и карта интентов PASS; 34tests, Worker/API/SQLite/browser fixtures PASS. Runtime **`bf26eb4`**, [CI40875203722 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40875203722). Production: 253 URL/файла HTTP200 и точные SHA256 сборки, published Worker compatibility PASS. UI320/390/1280: все78 изображений, 27 товарных проверок, цены/варианты/доставка/подборка, без overflow/JS-ошибок.
+
+Публичный PSI29.10,14:45 GMT+2: **главная mobile100/LCP1726мс, товар100/1215мс; desktop100/441мс и100/288мс; A/BP/SEO100 везде**. Независимая CLI-серия главной P99/100/100 и LCP1899/1541/1606мс; desktop100/509мс. Товар CLI100/1093мс, desktop100/379мс; A100/SEO100, прежний CLI BP77 Метрики. IndexNow151URL принят обоими получателями HTTP200; это не подтверждение индексации. CrUX нет. Все четыре спринта завершены; следующий этап — реальные показы, переходы и подборки, согласование условий поставок. [QA и публичные отчёты](qa/product-pages-20261029/README.md), [checkpoint](research/supplier-artwork-20261029/STATE.md).
 
 ## Партнёрский ассортимент — выпуск 29.10.2026
 

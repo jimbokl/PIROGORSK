@@ -1,0 +1,746 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+    "timestamp": "2026-10-29T12:47:44.265Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1380,
+      "lcp": 1545
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1310.933,
+      "resourceLoadDelay": 12.32,
+      "resourceLoadDuration": 201.522,
+      "elementRenderDelay": 20.56
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1046.932,
+        "display": "1.0 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1093.138,
+        "display": "1.1 s"
+      },
+      "total-blocking-time": {
+        "value": 16.5,
+        "display": "20 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 2403.142656024981,
+        "display": "2.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found",
+        "items": [
+          {
+            "name": "bh",
+            "url": "https://mc.yandex.ru/metrika/tag.js"
+          },
+          {
+            "name": "bh",
+            "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)"
+          },
+          {
+            "name": "sync_cookie_csrf",
+            "url": "https://mc.yandex.com/sync_cookie_image_check?scid=3a52510c-6419-45dc-72d1-6a5c6361c228&cid=113767847"
+          },
+          {
+            "name": "sync_cookie_csrf",
+            "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=3a52510c-6419-45dc-72d1-6a5c6361c228&token=11187.vjdnZSizNLvhfXBDl1LvgVJb2ao_i9Vht28g4zKqT3u3WA5R4l-X5xzusFRNovwc.tiNpZB9PE-RW-AOGJqeEwmevaMU%2C"
+          },
+          {
+            "name": "yabs-sid",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A830899745889%3Ahid%3A506206602%3Az%3A120%3Ai%3A20261029144747%3Aet%3A1793278068%3Aetms%3A1793278067599%3Ac%3A1%3Arn%3A794398606%3Au%3A1793278068201280591%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278064343%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278068%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1419)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "i",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A830899745889%3Ahid%3A506206602%3Az%3A120%3Ai%3A20261029144747%3Aet%3A1793278068%3Aetms%3A1793278067599%3Ac%3A1%3Arn%3A794398606%3Au%3A1793278068201280591%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278064343%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278068%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1419)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "yandexuid",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A830899745889%3Ahid%3A506206602%3Az%3A120%3Ai%3A20261029144747%3Aet%3A1793278068%3Aetms%3A1793278067599%3Ac%3A1%3Arn%3A794398606%3Au%3A1793278068201280591%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278064343%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278068%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1419)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "yuidss",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A830899745889%3Ahid%3A506206602%3Az%3A120%3Ai%3A20261029144747%3Aet%3A1793278068%3Aetms%3A1793278067599%3Ac%3A1%3Arn%3A794398606%3Au%3A1793278068201280591%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278064343%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278068%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1419)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "ymex",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A830899745889%3Ahid%3A506206602%3Az%3A120%3Ai%3A20261029144747%3Aet%3A1793278068%3Aetms%3A1793278067599%3Ac%3A1%3Arn%3A794398606%3Au%3A1793278068201280591%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278064343%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278068%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1419)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "sync_cookie_ok",
+            "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=7ba512fb-6706-c38d-85fc-50e63559e307&token=11187.BziYbcJcRirQXRjogmVoTUXa_nd1TI2nqCxDP7PGpD0P3-CEYApo38aHNlVuu0RpWsJO6HKPRaT2uEGiYgfHlLx99LBlGNy7snr8IKnkAnA%2C.np3VOdXta-Xxw9nFHS66LRm4dqM%2C"
+          },
+          {
+            "name": "yandexuid",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=7ba512fb-6706-c38d-85fc-50e63559e307&token=11187.cdsOyx6nm8AZW-9TZCItvB05ZHHgcPkBVCWrMC2Ck4cdUtHL90fx_vt_I5VZFxW7sZ9CFeFPvShT5NdkXLoy5N6HcN_hXiNZn35PJP12FlITgo2royYQJzG2KtkBrdZVP0NFXaJ5NPGdOMnwwawifilG-5kw3Yv04_cj9fC6OzyIqSmcgSvhQ50jvR0lk3ChLJyFOCtP_Nd4rLH_lyEFbA%2C%2C.svguSxiY31IEuhHJK2JfqQu3a-0%2C"
+          },
+          {
+            "name": "yuidss",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=7ba512fb-6706-c38d-85fc-50e63559e307&token=11187.cdsOyx6nm8AZW-9TZCItvB05ZHHgcPkBVCWrMC2Ck4cdUtHL90fx_vt_I5VZFxW7sZ9CFeFPvShT5NdkXLoy5N6HcN_hXiNZn35PJP12FlITgo2royYQJzG2KtkBrdZVP0NFXaJ5NPGdOMnwwawifilG-5kw3Yv04_cj9fC6OzyIqSmcgSvhQ50jvR0lk3ChLJyFOCtP_Nd4rLH_lyEFbA%2C%2C.svguSxiY31IEuhHJK2JfqQu3a-0%2C"
+          },
+          {
+            "name": "i",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=7ba512fb-6706-c38d-85fc-50e63559e307&token=11187.cdsOyx6nm8AZW-9TZCItvB05ZHHgcPkBVCWrMC2Ck4cdUtHL90fx_vt_I5VZFxW7sZ9CFeFPvShT5NdkXLoy5N6HcN_hXiNZn35PJP12FlITgo2royYQJzG2KtkBrdZVP0NFXaJ5NPGdOMnwwawifilG-5kw3Yv04_cj9fC6OzyIqSmcgSvhQ50jvR0lk3ChLJyFOCtP_Nd4rLH_lyEFbA%2C%2C.svguSxiY31IEuhHJK2JfqQu3a-0%2C"
+          }
+        ]
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js",
+            "totalBytes": 69861,
+            "wastedBytes": 39229,
+            "wastedPercent": 56.15277917764563
+          }
+        ]
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "items": [
+          {
+            "issueType": "Cookie",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "url": "https://mc.yandex.ru/metrika/tag.js"
+                },
+                {
+                  "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_check?scid=3a52510c-6419-45dc-72d1-6a5c6361c228&cid=113767847"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=3a52510c-6419-45dc-72d1-6a5c6361c228&token=11187.vjdnZSizNLvhfXBDl1LvgVJb2ao_i9Vht28g4zKqT3u3WA5R4l-X5xzusFRNovwc.tiNpZB9PE-RW-AOGJqeEwmevaMU%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=3a52510c-6419-45dc-72d1-6a5c6361c228&token=11187.Jck8YJis5W53c9dKMYoDZaLBfGNI-9dpw9CJdrTS7ninq6huS5Hl6R9VoMb8JdqXTgW7-N2xZsIO6skmdUwetrb3KNi_sOACG0WyPMtQOC8%2C.sDTHbNl4FLuH_cF3VwUoYnQdd3s%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A830899745889%3Ahid%3A506206602%3Az%3A120%3Ai%3A20261029144747%3Aet%3A1793278068%3Aetms%3A1793278067599%3Ac%3A1%3Arn%3A794398606%3Au%3A1793278068201280591%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278064343%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278068%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1419)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847/1?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20%282022%29%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A830899745889%3Ahid%3A506206602%3Az%3A120%3Ai%3A20261029144747%3Aet%3A1793278068%3Aetms%3A1793278067599%3Ac%3A1%3Arn%3A794398606%3Au%3A1793278068201280591%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278064343%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278068%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt%281419%29gdpr%2814%29clc%280-0-0%29aw%281%29nvt%280%29rcm%281%29cdl%28na%29eco%281851520%29ti%281%29&redirnss=1"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_check?scid=7ba512fb-6706-c38d-85fc-50e63559e307&cid=113767847"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=7ba512fb-6706-c38d-85fc-50e63559e307&token=11187.vhiwtRckoa2uiH-TBmTRTI5au9nMcj2S0H0wFt1XHo5WoH5dEOT8fFLSD2lhxUzR.9393Z-HEe7aein7LcCyf_9zCRG0%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=7ba512fb-6706-c38d-85fc-50e63559e307&token=11187.BziYbcJcRirQXRjogmVoTUXa_nd1TI2nqCxDP7PGpD0P3-CEYApo38aHNlVuu0RpWsJO6HKPRaT2uEGiYgfHlLx99LBlGNy7snr8IKnkAnA%2C.np3VOdXta-Xxw9nFHS66LRm4dqM%2C"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=7ba512fb-6706-c38d-85fc-50e63559e307&token=11187.cdsOyx6nm8AZW-9TZCItvB05ZHHgcPkBVCWrMC2Ck4cdUtHL90fx_vt_I5VZFxW7sZ9CFeFPvShT5NdkXLoy5N6HcN_hXiNZn35PJP12FlITgo2royYQJzG2KtkBrdZVP0NFXaJ5NPGdOMnwwawifilG-5kw3Yv04_cj9fC6OzyIqSmcgSvhQ50jvR0lk3ChLJyFOCtP_Nd4rLH_lyEFbA%2C%2C.svguSxiY31IEuhHJK2JfqQu3a-0%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&hittoken=1793278068_bbdae8b5f0dbe4f97e49b5ed43b5dabfeb4c1923766300626c9151148044c553&browser-info=pv%3A1%3Aar%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A830899745889%3Ahid%3A506206602%3Az%3A120%3Ai%3A20261029144748%3Aet%3A1793278069%3Aetms%3A1793278068796%3Ac%3A1%3Arn%3A267418808%3Arqn%3A1%3Au%3A1793278068201280591%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Afp%3A1380%3Ads%3A362%2C707%2C241%2C1%2C0%2C0%2C%2C58%2C0%2C4046%2C4046%2C0%2C1835%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278064343%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278069%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=gdpr(14)mc(h-1)clc(0-0-0)rqnt(1)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+                },
+                {
+                  "url": "https://mc.yandex.com/ytm-config/113767847?wmode=7"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 148 KiB",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 70548,
+            "wastedBytes": 56438.4
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 27369,
+            "wastedBytes": 25088.25
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 19050,
+            "wastedBytes": 17462.5
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18770,
+            "wastedBytes": 17205.833333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 16046,
+            "wastedBytes": 14708.833333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/analytics.wwK3Ddm3.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 10987,
+            "wastedBytes": 10071.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9371,
+            "wastedBytes": 8590.083333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 670,
+            "wastedBytes": 614.1666666666666
+          },
+          {
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=7ba512fb-6706-c38d-85fc-50e63559e307&token=11187.cdsOyx6nm8AZW-9TZCItvB05ZHHgcPkBVCWrMC2Ck4cdUtHL90fx_vt_I5VZFxW7sZ9CFeFPvShT5NdkXLoy5N6HcN_hXiNZn35PJP12FlITgo2royYQJzG2KtkBrdZVP0NFXaJ5NPGdOMnwwawifilG-5kw3Yv04_cj9fC6OzyIqSmcgSvhQ50jvR0lk3ChLJyFOCtP_Nd4rLH_lyEFbA%2C%2C.svguSxiY31IEuhHJK2JfqQu3a-0%2C",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 401,
+            "wastedBytes": 401
+          },
+          {
+            "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 375,
+            "wastedBytes": 300
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 224,
+            "wastedBytes": 205.33333333333331
+          },
+          {
+            "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=3a52510c-6419-45dc-72d1-6a5c6361c228&token=11187.Jck8YJis5W53c9dKMYoDZaLBfGNI-9dpw9CJdrTS7ninq6huS5Hl6R9VoMb8JdqXTgW7-N2xZsIO6skmdUwetrb3KNi_sOACG0WyPMtQOC8%2C.sDTHbNl4FLuH_cF3VwUoYnQdd3s%2C",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 66,
+            "wastedBytes": 66
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 14 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,1,FIGURE,0,PICTURE,1,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture.supplier-artwork > img",
+              "boundingRect": {
+                "top": 417,
+                "bottom": 667,
+                "left": 81,
+                "right": 331,
+                "width": 250,
+                "height": 250
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-64…\" srcset=\"/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-256.webp 256w, /catalo…\" sizes=\"(max-width: 760px) 250px, (max-width: 1100px) 46vw, 520px\" width=\"960\" height=\"960\" alt=\"Осетинский пирог с курицей и сыром — авторская иллюстрация по описанию про…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" data-astro-cid-qgjzhhet=\"\">",
+              "nodeLabel": "Осетинский пирог с курицей и сыром — авторская иллюстрация по описанию производ…"
+            },
+            "url": "https://pirogorsk.ru/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "totalBytes": 27209,
+            "wastedBytes": 14494,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (438x438). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 14494
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "2DF8824AB7F5E5F5CC8B6405AF756CAD": {
+                  "url": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+                  "navStartToEndTime": 1369,
+                  "transferSize": 12666,
+                  "isLongest": true,
+                  "children": {
+                    "23297.2": {
+                      "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+                      "navStartToEndTime": 1526,
+                      "transferSize": 224,
+                      "isLongest": true,
+                      "children": {
+                        "23297.14": {
+                          "url": "https://pirogorsk.ru/_astro/analytics.wwK3Ddm3.js",
+                          "navStartToEndTime": 1827,
+                          "transferSize": 10987,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "23297.13": {
+                      "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 1638,
+                      "transferSize": 16046,
+                      "children": {}
+                    },
+                    "23297.11": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 1637,
+                      "transferSize": 9371,
+                      "children": {}
+                    },
+                    "23297.10": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 1564,
+                      "transferSize": 18770,
+                      "children": {}
+                    },
+                    "23297.12": {
+                      "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 1558,
+                      "transferSize": 19050,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 1827
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+    "timestamp": "2026-10-29T12:47:54.621Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 801,
+      "lcp": 899
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 760.026,
+      "resourceLoadDelay": 6.946,
+      "resourceLoadDuration": 116.779,
+      "elementRenderDelay": 15.117
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 312.62199999999996,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 379.1399999999999,
+        "display": "0.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 625.3860101724902,
+        "display": "0.6 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found",
+        "items": [
+          {
+            "name": "bh",
+            "url": "https://mc.yandex.ru/metrika/tag.js"
+          },
+          {
+            "name": "bh",
+            "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)"
+          },
+          {
+            "name": "sync_cookie_csrf",
+            "url": "https://mc.yandex.com/sync_cookie_image_check?scid=cde1a3ee-4a75-9651-dc8f-d233b8c15fb2&cid=113767847"
+          },
+          {
+            "name": "sync_cookie_csrf",
+            "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=cde1a3ee-4a75-9651-dc8f-d233b8c15fb2&token=11187.oBtu9rHvZMWQMwQnrokgOMpW-D-NfyeuaM02VHt5BCp22DnykL2IlMUd2cPLBKIU.Hd8qR5D8qeBx8qQy-bHU6tLdyKw%2C"
+          },
+          {
+            "name": "yabs-sid",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A1141864774419%3Ahid%3A985510402%3Az%3A120%3Ai%3A20261029144756%3Aet%3A1793278077%3Aetms%3A1793278076900%3Ac%3A1%3Arn%3A771007284%3Au%3A1793278077844048190%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278074683%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278078%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1255)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "i",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A1141864774419%3Ahid%3A985510402%3Az%3A120%3Ai%3A20261029144756%3Aet%3A1793278077%3Aetms%3A1793278076900%3Ac%3A1%3Arn%3A771007284%3Au%3A1793278077844048190%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278074683%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278078%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1255)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "yandexuid",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A1141864774419%3Ahid%3A985510402%3Az%3A120%3Ai%3A20261029144756%3Aet%3A1793278077%3Aetms%3A1793278076900%3Ac%3A1%3Arn%3A771007284%3Au%3A1793278077844048190%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278074683%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278078%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1255)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "yuidss",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A1141864774419%3Ahid%3A985510402%3Az%3A120%3Ai%3A20261029144756%3Aet%3A1793278077%3Aetms%3A1793278076900%3Ac%3A1%3Arn%3A771007284%3Au%3A1793278077844048190%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278074683%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278078%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1255)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "ymex",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A1141864774419%3Ahid%3A985510402%3Az%3A120%3Ai%3A20261029144756%3Aet%3A1793278077%3Aetms%3A1793278076900%3Ac%3A1%3Arn%3A771007284%3Au%3A1793278077844048190%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278074683%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278078%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1255)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "sync_cookie_ok",
+            "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&token=11187.KEOwhn0dOtM-NX1F2Lk0KGBeC8Y0RDZqDwAL5K0YuUxe51Z-vDZt0j9Ii2zc-PQU4Aa8Rmh12atxCEQO2oNSZEaS4JlG8yMkchHjhAYvgSs%2C.lVPARbeWu557FFSLiDHpmtrXLAM%2C"
+          },
+          {
+            "name": "yandexuid",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&token=11187.rhLFey8lMehNmg9l-RyFXzDvjlHDGWYXJbZFYeUtMwZiTvfxV65nIuoB_LewfhaC30FINg_gjwV_YE9ZnVJU5qnPrqGbr_1gwdn_Es_XDYKqJQhlZlUdXjGt7usE-xG4Aq9N_Ngchk-QhyV8f4VGtYNLDYmgQ31QthZzQ4qgZNBifEESYxGcCzJvTgHYdpnSW9syD_zLlKhWrSsk0jkhfA%2C%2C.LyrBMDC2O1GzOR6F7EuiMH1P13w%2C"
+          },
+          {
+            "name": "yuidss",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&token=11187.rhLFey8lMehNmg9l-RyFXzDvjlHDGWYXJbZFYeUtMwZiTvfxV65nIuoB_LewfhaC30FINg_gjwV_YE9ZnVJU5qnPrqGbr_1gwdn_Es_XDYKqJQhlZlUdXjGt7usE-xG4Aq9N_Ngchk-QhyV8f4VGtYNLDYmgQ31QthZzQ4qgZNBifEESYxGcCzJvTgHYdpnSW9syD_zLlKhWrSsk0jkhfA%2C%2C.LyrBMDC2O1GzOR6F7EuiMH1P13w%2C"
+          },
+          {
+            "name": "i",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&token=11187.rhLFey8lMehNmg9l-RyFXzDvjlHDGWYXJbZFYeUtMwZiTvfxV65nIuoB_LewfhaC30FINg_gjwV_YE9ZnVJU5qnPrqGbr_1gwdn_Es_XDYKqJQhlZlUdXjGt7usE-xG4Aq9N_Ngchk-QhyV8f4VGtYNLDYmgQ31QthZzQ4qgZNBifEESYxGcCzJvTgHYdpnSW9syD_zLlKhWrSsk0jkhfA%2C%2C.LyrBMDC2O1GzOR6F7EuiMH1P13w%2C"
+          }
+        ]
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js",
+            "totalBytes": 69870,
+            "wastedBytes": 39395,
+            "wastedPercent": 56.383637384630894
+          }
+        ]
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "items": [
+          {
+            "issueType": "Cookie",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "url": "https://mc.yandex.ru/metrika/tag.js"
+                },
+                {
+                  "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_check?scid=cde1a3ee-4a75-9651-dc8f-d233b8c15fb2&cid=113767847"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=cde1a3ee-4a75-9651-dc8f-d233b8c15fb2&token=11187.oBtu9rHvZMWQMwQnrokgOMpW-D-NfyeuaM02VHt5BCp22DnykL2IlMUd2cPLBKIU.Hd8qR5D8qeBx8qQy-bHU6tLdyKw%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=cde1a3ee-4a75-9651-dc8f-d233b8c15fb2&token=11187._HIkkLwmQfG5qYuz_UZjDj71IuFM68TpX8T1cH8MqreeOCBu4JB3xVoFc3IPbm4uJC6j9873wBAq2DkikDuoH6r8ZIeGYGwSgD7-rRCtmns%2C.rce1W0ltuI4Rh1h5unHcqFT47NY%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A1141864774419%3Ahid%3A985510402%3Az%3A120%3Ai%3A20261029144756%3Aet%3A1793278077%3Aetms%3A1793278076900%3Ac%3A1%3Arn%3A771007284%3Au%3A1793278077844048190%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278074683%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278078%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1255)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847/1?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A1141864774419%3Ahid%3A985510402%3Az%3A120%3Ai%3A20261029144756%3Aet%3A1793278077%3Aetms%3A1793278076900%3Ac%3A1%3Arn%3A771007284%3Au%3A1793278077844048190%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278074683%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278078%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt%281255%29gdpr%2814%29clc%280-0-0%29aw%281%29nvt%280%29rcm%281%29cdl%28na%29eco%281851520%29ti%281%29&redirnss=1"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_check?scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&cid=113767847"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&token=11187.CPtk-gIWcOHLnhStR9IEuu8326SaIOyaWSkwKruFImoZGpgBWFTxm9JsGUkaFjJg.SFQNffCBO-I-jkMCUkU3ynriNCs%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&token=11187.KEOwhn0dOtM-NX1F2Lk0KGBeC8Y0RDZqDwAL5K0YuUxe51Z-vDZt0j9Ii2zc-PQU4Aa8Rmh12atxCEQO2oNSZEaS4JlG8yMkchHjhAYvgSs%2C.lVPARbeWu557FFSLiDHpmtrXLAM%2C"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&token=11187.rhLFey8lMehNmg9l-RyFXzDvjlHDGWYXJbZFYeUtMwZiTvfxV65nIuoB_LewfhaC30FINg_gjwV_YE9ZnVJU5qnPrqGbr_1gwdn_Es_XDYKqJQhlZlUdXjGt7usE-xG4Aq9N_Ngchk-QhyV8f4VGtYNLDYmgQ31QthZzQ4qgZNBifEESYxGcCzJvTgHYdpnSW9syD_zLlKhWrSsk0jkhfA%2C%2C.LyrBMDC2O1GzOR6F7EuiMH1P13w%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fcatalog%2Fosetinskiy-pirog-s-kuritsey-i-syrom%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.73%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.73%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&hittoken=1793278078_4ecf60d38cb368bc61781a7eab2738dcaeada21ee097ff1b06c2b0d8ebe349f1&browser-info=pv%3A1%3Aar%3A1%3Avf%3A4tvkupd2vg89dmol442xtyxqm3p1wb%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2672%3Acn%3A1%3Adp%3A0%3Als%3A1141864774419%3Ahid%3A985510402%3Az%3A120%3Ai%3A20261029144758%3Aet%3A1793278078%3Aetms%3A1793278078228%3Ac%3A1%3Arn%3A535902808%3Arqn%3A1%3Au%3A1793278077844048190%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Afp%3A804%3Ads%3A294%2C366%2C99%2C4%2C1%2C0%2C%2C25%2C0%2C3187%2C3187%2C0%2C957%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793278074683%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793278079%3At%3A%D0%9E%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%E2%80%94%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D1%8B%20%D0%B8%20%D1%86%D0%B5%D0%BD%D1%8B%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=gdpr(14)mc(h-1)clc(0-0-0)rqnt(1)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+                },
+                {
+                  "url": "https://mc.yandex.com/ytm-config/113767847?wmode=7"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 147 KiB",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 70545,
+            "wastedBytes": 56436
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 27565,
+            "wastedBytes": 25267.916666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18842,
+            "wastedBytes": 17271.833333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18768,
+            "wastedBytes": 17204
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 16053,
+            "wastedBytes": 14715.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/analytics.wwK3Ddm3.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 10786,
+            "wastedBytes": 9887.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9577,
+            "wastedBytes": 8778.916666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 646,
+            "wastedBytes": 592.1666666666666
+          },
+          {
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=4fa6034d-4d43-e164-1edb-e4f5782a959f&token=11187.rhLFey8lMehNmg9l-RyFXzDvjlHDGWYXJbZFYeUtMwZiTvfxV65nIuoB_LewfhaC30FINg_gjwV_YE9ZnVJU5qnPrqGbr_1gwdn_Es_XDYKqJQhlZlUdXjGt7usE-xG4Aq9N_Ngchk-QhyV8f4VGtYNLDYmgQ31QthZzQ4qgZNBifEESYxGcCzJvTgHYdpnSW9syD_zLlKhWrSsk0jkhfA%2C%2C.LyrBMDC2O1GzOR6F7EuiMH1P13w%2C",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 402,
+            "wastedBytes": 402
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 247,
+            "wastedBytes": 226.41666666666666
+          },
+          {
+            "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 187,
+            "wastedBytes": 149.6
+          },
+          {
+            "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=cde1a3ee-4a75-9651-dc8f-d233b8c15fb2&token=11187._HIkkLwmQfG5qYuz_UZjDj71IuFM68TpX8T1cH8MqreeOCBu4JB3xVoFc3IPbm4uJC6j9873wBAq2DkikDuoH6r8ZIeGYGwSgD7-rRCtmns%2C.rce1W0ltuI4Rh1h5unHcqFT47NY%2C",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 66,
+            "wastedBytes": 66
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 12 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,1,FIGURE,0,PICTURE,1,IMG",
+              "selector": "section.ed-hero > figure.ed-hero-art > picture.supplier-artwork > img",
+              "boundingRect": {
+                "top": 222,
+                "bottom": 692,
+                "left": 680,
+                "right": 1285,
+                "width": 605,
+                "height": 470
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-64…\" srcset=\"/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-256.webp 256w, /catalo…\" sizes=\"(max-width: 760px) 250px, (max-width: 1100px) 46vw, 520px\" width=\"960\" height=\"960\" alt=\"Осетинский пирог с курицей и сыром — авторская иллюстрация по описанию про…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" data-astro-cid-qgjzhhet=\"\">",
+              "nodeLabel": "Осетинский пирог с курицей и сыром — авторская иллюстрация по описанию производ…"
+            },
+            "url": "https://pirogorsk.ru/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "totalBytes": 27209,
+            "wastedBytes": 12535,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (470x470). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 12535
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "0BFFFAB2FEFF3100A6CBF315DCA64BB2": {
+                  "url": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+                  "navStartToEndTime": 788,
+                  "transferSize": 12664,
+                  "isLongest": true,
+                  "children": {
+                    "23313.2": {
+                      "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+                      "navStartToEndTime": 860,
+                      "transferSize": 247,
+                      "isLongest": true,
+                      "children": {
+                        "23313.10": {
+                          "url": "https://pirogorsk.ru/_astro/analytics.wwK3Ddm3.js",
+                          "navStartToEndTime": 953,
+                          "transferSize": 10786,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "23313.6": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 918,
+                      "transferSize": 18768,
+                      "children": {}
+                    },
+                    "23313.7": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 917,
+                      "transferSize": 9577,
+                      "children": {}
+                    },
+                    "23313.8": {
+                      "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 889,
+                      "transferSize": 18842,
+                      "children": {}
+                    },
+                    "23313.9": {
+                      "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 889,
+                      "transferSize": 16053,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 953
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
