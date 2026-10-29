@@ -1,8 +1,9 @@
+import { supplierProducts } from './holland-catalog.ts';
 export const cities = ['Зеленоградск', 'Калининград', 'Светлогорск'] as const;
 
-export type ProductKind = 'pie' | 'drink' | 'accessory';
+export type ProductKind = 'pie' | 'drink' | 'accessory' | 'bakery';
 export type ProductUnit = 'g' | 'ml' | 'pcs';
-export type ProductCategory = 'meat' | 'fish' | 'cabbage' | 'cheese' | 'sweet' | 'drinks' | 'accessories';
+export type ProductCategory = 'meat' | 'fish' | 'cabbage' | 'cheese' | 'sweet' | 'drinks' | 'accessories' | 'bread' | 'desserts' | 'bake' | 'mini-pies' | 'dough';
 export type ProductBadgeKind = 'hearty' | 'sweet' | 'tea' | 'vegetable' | 'cheese' | 'refreshing' | 'promotion' | 'bestseller';
 export type ProductVariant = { value: number; label: string; price: number };
 
@@ -21,6 +22,7 @@ export type Product = {
   priceStatus: 'draft';
   badge?: ProductBadgeKind;
   visualKey?: string;
+  supplier?: { name: string; url: string; packLabel: string; group: string; priceFrom: boolean; form: string };
 };
 
 type ProductDraft = Omit<Product, 'prices' | 'priceStatus'>;
@@ -59,7 +61,7 @@ export const extras: Product[] = [
   draftProduct({ id: 'tableware', name: 'Набор посуды', description: 'Тарелка, вилка и салфетка на одного гостя', category: 'accessories', kind: 'accessory', unit: 'pcs', variants: [{ value: 1, label: '1 набор', price: 35 }], defaultVariant: 1, slug: 'nabor-posudy' }),
 ];
 
-export const catalog: Product[] = [...products, ...extras];
+export const catalog: Product[] = [...products, ...extras, ...supplierProducts];
 
 // These filters belong to the pie section; ExtrasSection has its own heading.
 export const filters = [

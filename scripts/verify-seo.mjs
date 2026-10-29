@@ -84,7 +84,7 @@ try {
       assert(/(?:готовим запуск|готовится к запуску|перед запуском|пока не запущен)/i.test(html), `${route}: missing visible launch status.`);
       assert(tags(html, 'a').some(item => item.href?.startsWith('/?interest=') && item.href.endsWith('#pirogi')), `${route}: missing interest CTA.`);
     }
-    const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+    const ids = tags(html, '[a-z][\\w:-]*').map(item => item.id).filter(id => id !== undefined);
     assert(new Set(ids).size === ids.length, `${route}: duplicate HTML ids.`);
     const references = [...tags(html, 'a').map(item => ({ url: item.href, anchor: true })), ...tags(html, 'img').map(item => ({ url: item.src })), ...[...tags(html, 'img'), ...tags(html, 'source')].flatMap(item => (item.srcset ?? '').split(',').map(candidate => ({ url: candidate.trim().split(/\s+/)[0] }))), ...meta('og:image', true).map(item => ({ url: item.content }))];
     for (const image of tags(html, 'img')) {

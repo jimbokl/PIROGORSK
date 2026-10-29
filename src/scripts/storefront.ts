@@ -2,6 +2,7 @@ import type { Product } from '../data/catalog';
 import { trackGoal } from './analytics';
 import { editorialCityIntents, editorialScenarioIntents } from '../data/editorial-intents';
 import { parsePlan } from '../lib/pie-planner';
+import { estimateDelivery } from '../data/pricing';
 
 type Selection = { id: string; value: number; quantity: number };
 const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
@@ -60,6 +61,7 @@ function setCity(value: string, announce = true) {
   });
   try { localStorage.setItem('pirogorsk-city', city); } catch { /* The city still works when storage is unavailable. */ }
   document.querySelector<HTMLDialogElement>('#city-dialog')?.close();
+  if (document.querySelector<HTMLDialogElement>('#selection-dialog')?.open) renderSelection();
   if (announce) toast(`Ваш город — ${city}`);
 }
 
@@ -113,11 +115,14 @@ function renderSelection() {
     itemContainer.append(element);
   }
   const total = selection.reduce((sum, item) => sum + products.find(product => product.id === item.id)!.prices[item.value] * item.quantity, 0);
-  const totalWeight = selection.reduce((sum, item) => sum + (productFor(item).kind === 'pie' ? item.value * item.quantity : 0), 0);
+  const totalWeight = selection.reduce((sum, item) => sum + (productFor(item).unit === 'g' ? item.value * item.quantity : 0), 0);
   const drinks = selection.reduce((sum, item) => sum + (productFor(item).kind === 'drink' ? item.value * item.quantity : 0), 0);
   const accessories = selection.reduce((sum, item) => sum + (productFor(item).kind === 'accessory' ? item.quantity : 0), 0);
   document.querySelector('[data-total]')!.textContent = money(total);
-  document.querySelector('[data-total-weight]')!.textContent = [totalWeight ? `Пироги — ${weightLabel(totalWeight)}` : '', drinks ? `Напитки — ${(drinks / 1000).toLocaleString('ru-RU')} л` : '', accessories ? `Посуда — ${accessories} наб.` : ''].filter(Boolean).join(' · ');
+  const delivery = estimateDelivery(city, 'delivery')!;
+  document.querySelector('[data-selection-delivery]')!.textContent = money(delivery);
+  document.querySelector('[data-selection-grand-total]')!.textContent = money(total + delivery);
+  document.querySelector('[data-total-weight]')!.textContent = [totalWeight ? `Пироги и выпечка — ${weightLabel(totalWeight)}` : '', drinks ? `Напитки — ${(drinks / 1000).toLocaleString('ru-RU')} л` : '', accessories ? `Посуда — ${accessories} наб.` : ''].filter(Boolean).join(' · ');
 }
 
 all('[data-open]').forEach(button => button.addEventListener('click', () => openDialog(button.dataset.open!)));
@@ -195,7 +200,7 @@ document.querySelector('[data-copy]')!.addEventListener('click', async () => {
     const product = products.find(product => product.id === item.id)!;
     return `${product.name} · ${variantLabel(product, item.value)} × ${item.quantity} — ${money(product.prices[item.value] * item.quantity)}`;
   });
-  const text = `Пирогорск · ${city}\n\n${lines.join('\n')}\n\nИтого: ${document.querySelector('[data-total]')!.textContent}\nЦены предварительные. Приём заказов пока не открыт.\nhttps://pirogorsk.ru/`;
+  const text = `Пирогорск · ${city}\n\n${lines.join('\n')}\n\nТовары: ${document.querySelector('[data-total]')!.textContent}\nДоставка, ориентир: ${document.querySelector('[data-selection-delivery]')!.textContent}\nС доставкой ≈ ${document.querySelector('[data-selection-grand-total]')!.textContent}\nЦены и доставка предварительные. Приём заказов пока не открыт.\nhttps://pirogorsk.ru/`;
   try {
     await navigator.clipboard.writeText(text);
     document.querySelector<HTMLElement>('[data-copy] span:not(.icon)')!.textContent = 'Подборка скопирована';
@@ -243,6 +248,7 @@ if (interestId === 'calculator') {
   const product = products.find(product => product.id === interestId)!;
   const variant = Number(interestParams.get('variant'));
   const card = all('[data-product]').find(card => card.dataset.product === interestId);
+  document.dispatchEvent(new CustomEvent('pirogorsk:reveal-product', { detail: interestId }));
   if (product.variants.some(item => item.value === variant)) {
     // The product-page CTA explicitly adds this size. Reloading that URL keeps
     // the same selection instead of increasing its quantity again.

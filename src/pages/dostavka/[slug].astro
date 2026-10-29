@@ -5,6 +5,7 @@ import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialInterest from '../../components/EditorialInterest.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import { locations, scenarios } from '../../data/editorial';
+import { deliveryEstimates } from '../../data/pricing';
 export function getStaticPaths() {
   return locations.map(item => ({ params: { slug: item.slug }, props: { item } }));
 }
@@ -15,6 +16,7 @@ const cityGuide = item.slug === 'svetlogorsk' ? { href: '/journal/gde-poest-v-sv
 ---
 <ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }, { name: item.city, href: `/dostavka/${item.slug}/` }]}>
   <EditorialHero eyebrow={`${item.city} · направление в планах`} title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} compact />
+  <div class="ed-note"><strong>Доставка, ориентир: {deliveryEstimates[item.city]} ₽ за всю подборку.</strong> Это расчёт для проверки спроса, тариф курьера ещё не согласован. <a href="/delivery/">Как считаем доставку</a>. В <a href="/menu/#holland">меню Holland Bakery</a> есть замороженные продукты и заготовки для выпечки.</div>
   <EditorialBody sections={item.sections} />
   <EditorialInterest interest={item.interest} title={`Интересен Пирогорск: ${item.city}?`} text={`На главной выберем город «${item.city}». Дальше можно собрать вкусы и отметить предпочтения в анонимной форме. Сейчас это проверка спроса: заказ, бронь дня и доставка ещё недоступны.`} label={`Выбрать ${item.city}`} />
   <EditorialLinks title="Продумать ваш стол" links={[...(cityGuide ? [cityGuide] : []), { href: `/nabor/${scenario.slug}/`, title: scenario.title, text: scenario.description, label: 'Сценарий' }, { href: '/menu/', title: 'Будущее меню', text: 'Сравните начинки и узнайте, что ещё предстоит уточнить о пирогах.', label: 'Вкусы' }, { href: '/delivery/', title: 'Планы и условия доставки', text: 'Что опубликуем до начала работы и как сейчас выразить интерес.', label: 'Перед запуском' }]} />

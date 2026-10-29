@@ -1,14 +1,14 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { plainJavaScript } from './transpile.mjs';
+import { catalog as sourceCatalog } from '../../src/data/catalog.ts';
 const output = fileURLToPath(new URL('../dist/worker.js', import.meta.url));
-const publicSource = await readFile(new URL('../../src/data/catalog.ts', import.meta.url), 'utf8');
 const contractSource = await readFile(new URL('../../src/data/catalog-contract.ts', import.meta.url), 'utf8');
 const workerSource = await readFile(new URL('../src/index.ts', import.meta.url), 'utf8');
-const catalogScript = plainJavaScript(publicSource);
 const contractScript = plainJavaScript(contractSource, ['./catalog.ts']);
 const workerScript = plainJavaScript(workerSource, ['./catalog.ts', '../../src/data/catalog-contract.ts'], false);
-const bundled = `// Generated locally. No credentials.\nconst sourceCatalog = (() => {\n${catalogScript}\nreturn catalog;\n})();\nconst catalog = Object.fromEntries(sourceCatalog.map(product => [product.id, Object.fromEntries(product.variants.map(variant => [String(variant.value), variant.price]))]));\n${contractScript}\n${workerScript}`;
+const priceCatalog = sourceCatalog.map(({ id, variants }) => ({ id, variants: variants.map(({ value, price }) => ({ value, price })) }));
+const bundled = `// Generated locally. No credentials.\nconst sourceCatalog = ${JSON.stringify(priceCatalog)};\nconst catalog = Object.fromEntries(sourceCatalog.map(product => [product.id, Object.fromEntries(product.variants.map(variant => [String(variant.value), variant.price]))]));\n${contractScript}\n${workerScript}`;
 await mkdir(new URL('../dist/', import.meta.url), { recursive: true });
 await writeFile(output, bundled);
 process.stdout.write(`${output}\n`);

@@ -6,6 +6,7 @@ import meat from '../../design/layered-assets-v2/meat/pie.png';
 import cherry from '../../design/layered-assets-v2/cherry/pie.png';
 import coast from '../../design/layered-assets-v2/hero/background.png';
 import '../styles/tasting-hero.css';
+import { catalog } from '../data/catalog';
 const scenes = [
   { id: 'fish', label: 'Рыбный', name: 'Рыбный пирог', note: 'Начинка с морским настроением', href: '/pirogi/rybnyy-pirog/', image: fish },
   { id: 'meat', label: 'Мясной', name: 'Мясной пирог', note: 'Сытный вкус для общего стола', href: '/pirogi/myasnoy-pirog/', image: meat },
@@ -16,13 +17,13 @@ const scenes = [
   <div class="tasting-coast" aria-hidden="true"><Picture src={coast} formats={['avif','webp']} fallbackFormat="webp" widths={[480,800,1200,1600]} sizes="(max-width: 600px) 100vw, 95vw" width={1536} height={1024} quality={40} alt="" loading="eager" fetchpriority="high" decoding="sync" /></div>
   <div class="tasting-copy">
     <h1 id="hero-heading">Пироги<br />с балтийским<br />характером</h1>
-    <p class="tasting-description">Изучаем ваши вкусы перед запуском:<br />сытные пироги к ужину, сладкие к чаю.</p>
+    <p class="tasting-description">Пироги, хлеб и десерты к вашему столу.<br />Собираем вкусы перед запуском доставки.</p>
     <div class="hero-actions"><a class="button hero-cta" href="#pirogi">Выбрать пирог<Icon name="arrow" /></a><a class="hero-planner" href="/podbor/">Сколько взять?<Icon name="arrow" /></a></div>
     <p class="tasting-cities">Зеленоградск, Светлогорск, Калининград</p>
   </div>
   <div class="tasting-stage">
     <div class="tasting-orbit" aria-hidden="true"></div>
-    <div class="tasting-seal" aria-label="Восемь начинок, два размера"><span>к вашему столу</span><strong>8</strong><span>начинок<br />2 размера</span></div>
+    <div class="tasting-seal" aria-label={`${catalog.length} позиции для проверки спроса`}><span>к вашему столу</span><strong>{catalog.length}</strong><span>позиции<br />на выбор</span></div>
     <div class="tasting-art" data-tasting-art>
       {scenes.map((scene,i) => <div class="tasting-scene" data-tasting-scene={scene.id} hidden={i !== 0}>
         <a href={scene.href} aria-label={`Рассмотреть: ${scene.name.toLowerCase()}`} tabindex={i === 0 ? 0 : -1}>

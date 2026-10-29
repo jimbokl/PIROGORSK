@@ -10,7 +10,7 @@ const selectedVariant = product.variants.find(({ value }) => value === product.d
 const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Объём' : 'Комплект';
 ---
 <article class:list={['product-card', 'catalog-card', `catalog-card--${product.kind}`]} data-product={product.id} data-category={product.category} data-kind={product.kind} data-unit={product.unit} aria-labelledby={`product-${product.id}`}>
-  {product.kind === 'pie' ? <a class="product-visual-link" href={`/pirogi/${product.slug}/`} aria-label={`Подробнее: ${product.name.toLowerCase()}`}><ProductVisual product={product} /></a> : product.kind !== 'accessory' && <ProductVisual product={product} />}
+  {product.kind === 'pie' ? <a class="product-visual-link" href={`/pirogi/${product.slug}/`} aria-label={`Подробнее: ${product.name.toLowerCase()}`}><ProductVisual product={product} decorative /></a> : product.kind !== 'accessory' && <ProductVisual product={product} />}
   <div class="product-copy">
     <h3 id={`product-${product.id}`}>{product.kind === 'pie' ? <a class="product-title-link" href={`/pirogi/${product.slug}/`}>{product.name}</a> : product.name}</h3>
     <p class="product-description">{product.description}</p>

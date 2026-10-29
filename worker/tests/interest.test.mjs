@@ -58,16 +58,20 @@ test('manual retry and simultaneous double submit retain one record and one rate
 test('every public catalog variant is accepted with its canonical price snapshot', async () => {
   const db = storage();
   const items = publicCatalog.flatMap(product => product.variants.map(variant => ({ id: product.id, value: String(variant.value), quantity: 1 })));
-  const data = payload({ items });
-  const res = await worker.fetch(request(data), db);
-  assert.equal(res.status, 200);
-  const row = db.sqlite.prepare('SELECT items_json, value_total FROM interests').get();
-  const saved = JSON.parse(row.items_json);
+  const saved = [];
+  let total = 0;
+  for (let offset = 0; offset < items.length; offset += 24) {
+    const data = payload({ items: items.slice(offset, offset + 24) });
+    const res = await worker.fetch(request(data, 'https://pirogorsk.ru', { 'CF-Connecting-IP': `192.0.2.${10 + offset / 24}` }), db);
+    assert.equal(res.status, 200);
+    const row = db.sqlite.prepare('SELECT items_json, value_total FROM interests WHERE request_id = ?').get(data.requestId);
+    saved.push(...JSON.parse(row.items_json)); total += row.value_total;
+  }
   assert.equal(saved.length, items.length);
   for (const product of publicCatalog) for (const variant of product.variants) {
     assert.equal(saved.find(item => item.id === product.id && item.value === String(variant.value)).unitPrice, variant.price);
   }
-  assert.equal(row.value_total, publicCatalog.reduce((sum, product) => sum + product.variants.reduce((a, v) => a + v.price, 0), 0));
+  assert.equal(total, publicCatalog.reduce((sum, product) => sum + product.variants.reduce((a, v) => a + v.price, 0), 0));
 });
 
 test('reusing a request ID for a changed selection returns conflict without overwriting', async () => {

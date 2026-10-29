@@ -6,7 +6,7 @@ import type { Product } from '../data/catalog';
 import ProductBadge from './ProductBadge.astro';
 import '../styles/catalog.css';
 
-interface Props { product: Product; layout?: 'catalog' | 'menu' | 'hero' }
+interface Props { product: Product; layout?: 'catalog' | 'menu' | 'hero'; decorative?: boolean }
 type AssetFile = { path?: string; status?: string; alpha?: boolean };
 type AssetEntry = {
   status?: string;
@@ -16,7 +16,7 @@ type AssetEntry = {
     product_css_height_percent?: number; product_center_x_percent?: number; product_center_y_percent?: number;
   };
 };
-const { product, layout = 'catalog' } = Astro.props;
+const { product, layout = 'catalog', decorative = false } = Astro.props;
 const manifest = manifestData as { pairs?: Record<string, AssetEntry>; drinks?: Record<string, AssetEntry> };
 const images = import.meta.glob<ImageMetadata>('../../design/layered-assets-v2/**/*.{png,webp,avif}', { eager: true, import: 'default' });
 const legacyImages = import.meta.glob<ImageMetadata>('../../design/assets-source/{meat,fish,cabbage,cheese}.png', { eager: true, import: 'default' });
@@ -57,7 +57,7 @@ const subjectSizes = slotSizes(subjectWidth / 100);
 const loading = layout === 'hero' ? 'eager' : 'lazy';
 const fetchpriority = layout === 'hero' ? 'high' : 'auto';
 ---
-<div class:list={['product-visual', `product-visual--${product.kind}`, { 'product-visual--pending': imageState === 'pending' }]} data-image-state={imageState} style={position}>
+<div class:list={['product-visual', `product-visual--${product.kind}`, { 'product-visual--pending': imageState === 'pending' }]} data-image-state={imageState} style={position} aria-hidden={decorative ? 'true' : undefined}>
   {layered ? <>
     {background && <Picture src={background} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={600} quality={44} alt="" class="product-visual-background" loading={loading} fetchpriority={fetchpriority} decoding="async" />}
     <Picture src={subject!} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={subjectSizes} width={600} height={600} quality={58} alt={product.kind === 'pie' ? `${product.name}: пирог и кусочек с начинкой` : product.name} class="product-visual-subject" loading={loading} fetchpriority={fetchpriority} decoding="async" />

@@ -1,0 +1,74 @@
+{
+  "retrieved_at_utc": "2026-10-29T10:48:01.755840+00:00",
+  "purpose": "Public supplier catalog and resale feasibility research; no orders or contacts sent",
+  "sources": [
+    {
+      "url": "https://pirogi39.ru/",
+      "file": "sources/pirogi39-catalog.html",
+      "sha256": "caa079c26409361c292ac7d8f9277edec8306e5afc068f7650062ce94cce609e",
+      "bytes": 660427
+    },
+    {
+      "url": "https://pirogi39.ru/dostavka/",
+      "file": "sources/pirogi39-delivery.html",
+      "sha256": "c47f3c1b1a0739657a3b3c7d60ef0ef43010e1a4ea655da59300ad71537253e6",
+      "bytes": 48190
+    },
+    {
+      "url": "https://pirogi39.ru/kontaktyi/",
+      "file": "sources/pirogi39-contacts.html",
+      "sha256": "59254aed94fda49f74a0bab37efa1fe2211cb2f90313cca68387b44ddf3be4a3",
+      "bytes": 29570
+    },
+    {
+      "url": "https://hollandbakery.ru/",
+      "file": "sources/hollandbakery-catalog.html",
+      "sha256": "4de5a9f40ba2f370c334812ead161c48ec83aadcbe027f779157b58c7734314f",
+      "bytes": 702339
+    }
+  ],
+  "product_pages": [
+    {
+      "url": "https://pirogi39.ru/pirog-c-tvorogom-i-izyumom/",
+      "http_status": 200,
+      "file": "pirog-c-tvorogom-i-izyumom.html",
+      "sha256": "b580688e2ae8463be9b20f5a0b9fcbb43b22f6ac962e7285bff7cf95bdbe332e",
+      "bytes": 47763
+    },
+    {
+      "url": "https://pirogi39.ru/pirog-s-kroshkoy-i-chernoy-smorodinoy/",
+      "http_status": 200,
+      "file": "pirog-s-kroshkoy-i-chernoy-smorodinoy.html",
+      "sha256": "f11f57c32e431b53dff5e8d2924539103ae21e782c40fdcb948ce9706352b9ea",
+      "bytes": 48413
+    },
+    {
+      "url": "https://pirogi39.ru/pirog-s-kartofelem-i-bekonom/",
+      "http_status": 200,
+      "file": "pirog-s-kartofelem-i-bekonom.html",
+      "sha256": "3beed50ad697e9f279f4e3962da6d3dde104492a9883069be4702f8f29f282be",
+      "bytes": 48473
+    },
+    {
+      "url": "https://pirogi39.ru/osetinskij-pirog-s-myasom-govyadina/",
+      "http_status": 200,
+      "file": "osetinskij-pirog-s-myasom-govyadina.html",
+      "sha256": "09b6cce62728a62fd2405ec0ef85e3c2db1bac26d0aee1464d72715eb519c2fb",
+      "bytes": 48411
+    },
+    {
+      "url": "https://pirogi39.ru/osetinskij-pirog-s-syirom/",
+      "http_status": 200,
+      "file": "osetinskij-pirog-s-syirom.html",
+      "sha256": "95930d310e2db122725743547294a125e975bfc35c52bf0c6a55af195c1f7b44",
+      "bytes": 47951
+    },
+    {
+      "url": "https://pirogi39.ru/osetinskij-pirog-s-kartofelem-i-syirom/",
+      "http_status": 200,
+      "file": "osetinskij-pirog-s-kartofelem-i-syirom.html",
+      "sha256": "49da79734f525d9e7c845c898bed9c55dba7f3f12894bc17f387600b7b9eb7a5",
+      "bytes": 48372
+    }
+  ]
+}

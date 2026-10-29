@@ -1,5 +1,6 @@
 import { analyticsConfig } from '../config/analytics';
 import { trackGoal, type GoalParams } from './analytics';
+import { estimateDelivery } from '../data/pricing';
 
 export type InterestSelection = { id: string; value?: string | number; weight?: number; quantity: number };
 type Item = { id: string; value: string; quantity: number };
@@ -36,6 +37,14 @@ function money(value: number): string { return `${value.toLocaleString('ru-RU')}
 function totals(): number {
   const products = catalog();
   return selected.reduce((sum, item) => sum + (products.find(p => p.id === item.id)?.variants.find(v => v.value === item.value)?.price || 0) * item.quantity, 0);
+}
+function updateEstimate(): void {
+  const delivery = estimateDelivery(field<HTMLSelectElement>('city')?.value || '', field<HTMLSelectElement>('delivery')?.value || '');
+  const subtotal = totals();
+  const receiving = dialog?.querySelector<HTMLElement>('[data-interest-delivery]');
+  const total = dialog?.querySelector<HTMLElement>('[data-interest-grand-total]');
+  if (receiving) receiving.textContent = delivery === null ? 'Ещё не выбран способ' : delivery === 0 ? 'Самовывоз · без доплаты' : `Доставка ≈ ${money(delivery)}`;
+  if (total) total.textContent = delivery === null ? `${money(subtotal)} + получение` : money(subtotal + delivery);
 }
 function params(requestId?: string): GoalParams {
   return { city: field<HTMLSelectElement>('city')?.value, productid: selected.map(i => i.id), variant: selected.map(i => i.value), qty: selected.map(i => i.quantity), value: totals(), ...(requestId ? { requestId } : {}) };
@@ -99,8 +108,9 @@ export function openInterestForm(selection: InterestSelection[], city = 'Зел�
   }
   const total = dialog.querySelector<HTMLElement>('[data-interest-total]');
   if (total) total.textContent = money(totals());
+  updateEstimate();
   clearErrors();
-  if (!selected.length) showErrors({ items: 'В подборке нет доступных пирогов. Вернитесь в каталог и выберите пирог.' });
+  if (!selected.length) showErrors({ items: 'В подборке нет доступных товаров. Вернитесь в каталог и выберите товары.' });
   status(analyticsConfig.interestEndpoint ? '' : 'Сохранение заявок пока не подключено. Вернитесь позже.');
   const button = dialog.querySelector<HTMLButtonElement>('[data-interest-submit]');
   if (button) { button.disabled = !analyticsConfig.interestEndpoint || !selected.length; button.textContent = 'Оставить заявку'; }
@@ -110,7 +120,7 @@ export function openInterestForm(selection: InterestSelection[], city = 'Зел�
 
 function validate(): Record<string, string> {
   const errors: Record<string, string> = {};
-  if (!selected.length) errors.items = 'Выберите хотя бы один пирог в каталоге.';
+  if (!selected.length) errors.items = 'Выберите хотя бы один товар в каталоге.';
   if (!cities.includes(field<HTMLSelectElement>('city')?.value || '')) errors.city = 'Выберите город из списка.';
   const date = field<HTMLInputElement>('desiredDate')?.value || '';
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date < today() || !Number.isFinite(Date.parse(`${date}T12:00:00Z`))) errors.desiredDate = 'Выберите сегодняшний или будущий день.';
@@ -179,6 +189,7 @@ async function submit(event: SubmitEvent): Promise<void> {
 
 form?.addEventListener('submit', submit);
 function start(event: Event): void {
+  updateEstimate();
   const target = event.target;
   if (target instanceof HTMLInputElement || target instanceof HTMLSelectElement) {
     target.removeAttribute('aria-invalid');

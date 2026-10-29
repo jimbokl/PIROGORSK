@@ -4,12 +4,12 @@ import '../styles/interest.css';
 ---
 <dialog id="interest-dialog" class="dialog interest-dialog" aria-labelledby="interest-heading" aria-describedby="interest-intro">
   <div class="interest-top"><span class="eyebrow">Готовим запуск</span><button type="button" class="interest-close" data-interest-close aria-label="Закрыть заявку">×</button></div>
-  <h2 id="interest-heading">Какие пироги вам нужны?</h2>
+  <h2 id="interest-heading">Что выберете к столу?</h2>
   <p id="interest-intro" class="interest-intro">Готовим запуск. Заявка показывает интерес, заказ и оплата пока не подтверждаются.</p>
   <form id="interest-form" class="ym-disable-submit" novalidate>
     <fieldset data-interest-fields>
       <legend class="sr-only">Ваша заявка</legend>
-      <section class="interest-basket" aria-label="Состав заявки"><ul data-interest-items></ul><p>Предварительная сумма <strong data-interest-total></strong></p><small>Меню и цены могут измениться к запуску.</small></section>
+      <section class="interest-basket" aria-label="Состав заявки"><ul data-interest-items></ul><p>Товары <strong data-interest-total></strong></p><p>Получение <strong data-interest-delivery>Выберите способ ниже</strong></p><p>Всего, ориентир <strong data-interest-grand-total></strong></p><small>Доставка считается один раз за подборку. Тарифы расчётные, адрес самовывоза ещё не определён. Меню и цены могут измениться к запуску.</small></section>
       <div class="interest-grid">
         <div class="interest-field"><label for="interest-city">Город</label><select name="city" id="interest-city" required aria-describedby="interest-city-error"><option>Зеленоградск</option><option>Калининград</option><option>Светлогорск</option></select><span id="interest-city-error" class="interest-error" data-error="city"></span></div>
         <div class="interest-field"><label for="interest-day">Желаемый день</label><input type="date" name="desiredDate" id="interest-day" required aria-describedby="interest-day-error" /><span id="interest-day-error" class="interest-error" data-error="desiredDate"></span></div>
