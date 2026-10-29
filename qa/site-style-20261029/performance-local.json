@@ -1,0 +1,170 @@
+{
+  "home": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-10-29T21:25:28.466Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1667.0237000000002,
+          "display": "1.7 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2267.0237,
+          "display": "2.3 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.005726530005703299,
+          "display": "0.006"
+        },
+        "speed-index": {
+          "value": 1667.0237000000002,
+          "display": "1.7 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 14.3,
+        "resourceLoadDelay": 8.557,
+        "resourceLoadDuration": 6.007,
+        "elementRenderDelay": 93.756
+      }
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-10-29T21:25:35.019Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 405.98785,
+          "display": "0.4 s"
+        },
+        "largest-contentful-paint": {
+          "value": 597.1255,
+          "display": "0.6 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.002216831056825146,
+          "display": "0.002"
+        },
+        "speed-index": {
+          "value": 405.98785,
+          "display": "0.4 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 7.184,
+        "resourceLoadDelay": 2.556,
+        "resourceLoadDuration": 3.28,
+        "elementRenderDelay": 80.729
+      }
+    }
+  ],
+  "article": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/journal/skolko-piroga-na-cheloveka/",
+      "timestamp": "2026-10-29T21:29:37.989Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1514.189625,
+          "display": "1.5 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2117.02755,
+          "display": "2.1 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1514.189625,
+          "display": "1.5 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 10.078,
+        "resourceLoadDelay": 10.801,
+        "resourceLoadDuration": 14.422,
+        "elementRenderDelay": 51.494
+      }
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/journal/skolko-piroga-na-cheloveka/",
+      "timestamp": "2026-10-29T21:29:44.232Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 365.678125,
+          "display": "0.4 s"
+        },
+        "largest-contentful-paint": {
+          "value": 524.5425,
+          "display": "0.5 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 365.678125,
+          "display": "0.4 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 7.077,
+        "resourceLoadDelay": 2.655,
+        "resourceLoadDuration": 10.019,
+        "elementRenderDelay": 53.03
+      }
+    }
+  ]
+}
