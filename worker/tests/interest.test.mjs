@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import worker from '../src/index.ts';
 import { catalog as publicCatalog } from '../../src/data/catalog.ts';
+import { releaseManifest } from '../../scripts/verify-release.mjs';
 
 const migration = readFileSync(new URL('../migrations/0001_interests.sql', import.meta.url), 'utf8');
 function storage() {
@@ -164,7 +165,7 @@ test('an interrupted database transaction cannot acknowledge success or spend a 
 });
 
 test('health confirms schema access, and a missing binding returns storage unavailable', async () => {
-  assert.deepEqual(await (await worker.fetch(new Request('https://interest.example/health'), storage())).json(), { ok: true, storage: 'd1', mode: 'intent' });
+  assert.deepEqual(await (await worker.fetch(new Request('https://interest.example/health'), storage())).json(), { ok: true, storage: 'd1', mode: 'intent', ...releaseManifest() });
   const failed = { DB: { prepare: () => ({ all: async () => ({ success: false, results: [] }) }) } };
   assert.equal((await worker.fetch(new Request('https://interest.example/health'), failed)).status, 503);
   assert.equal((await worker.fetch(new Request('https://interest.example/health'), {})).status, 503);

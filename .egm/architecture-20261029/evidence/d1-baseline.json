@@ -1,0 +1,200 @@
+{
+  "checkedAt": "2026-10-29T06:25:20.694Z",
+  "result": "Schema and indexes match 0001; d1_migrations absent; read only",
+  "schema": [
+    [
+      {
+        "type": "table",
+        "name": "_cf_KV",
+        "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+      },
+      {
+        "type": "table",
+        "name": "interests",
+        "sql": "CREATE TABLE interests (   request_id TEXT PRIMARY KEY NOT NULL,   payload_hash TEXT NOT NULL,   city TEXT NOT NULL CHECK (city IN ('Зеленоградск', 'Калининград', 'Светлогорск')),   items_json TEXT NOT NULL CHECK (json_valid(items_json)),   desired_date TEXT NOT NULL,   delivery TEXT NOT NULL CHECK (delivery IN ('pickup', 'delivery', 'undecided')),   price_consent INTEGER NOT NULL CHECK (price_consent = 1),   value_total INTEGER NOT NULL CHECK (value_total >= 0),   created_at INTEGER NOT NULL )"
+      },
+      {
+        "type": "index",
+        "name": "interests_created_at",
+        "sql": "CREATE INDEX interests_created_at ON interests(created_at)"
+      },
+      {
+        "type": "index",
+        "name": "interests_city_day",
+        "sql": "CREATE INDEX interests_city_day ON interests(city, desired_date)"
+      },
+      {
+        "type": "table",
+        "name": "submission_tokens",
+        "sql": "CREATE TABLE submission_tokens (   request_id TEXT PRIMARY KEY NOT NULL,   rate_key TEXT NOT NULL,   window_start INTEGER NOT NULL,   slot INTEGER NOT NULL CHECK (slot BETWEEN 1 AND 6),   expires_at INTEGER NOT NULL,   UNIQUE (rate_key, window_start, slot) )"
+      },
+      {
+        "type": "index",
+        "name": "submission_tokens_expiry",
+        "sql": "CREATE INDEX submission_tokens_expiry ON submission_tokens(expires_at)"
+      }
+    ],
+    [
+      {
+        "cid": 0,
+        "name": "request_id",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 1
+      },
+      {
+        "cid": 1,
+        "name": "payload_hash",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "city",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "items_json",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "desired_date",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "delivery",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "price_consent",
+        "type": "INTEGER",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 7,
+        "name": "value_total",
+        "type": "INTEGER",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 8,
+        "name": "created_at",
+        "type": "INTEGER",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    [
+      {
+        "cid": 0,
+        "name": "request_id",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 1
+      },
+      {
+        "cid": 1,
+        "name": "rate_key",
+        "type": "TEXT",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "window_start",
+        "type": "INTEGER",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "slot",
+        "type": "INTEGER",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "expires_at",
+        "type": "INTEGER",
+        "notnull": 1,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    [
+      {
+        "seq": 0,
+        "name": "interests_city_day",
+        "unique": 0,
+        "origin": "c",
+        "partial": 0
+      },
+      {
+        "seq": 1,
+        "name": "interests_created_at",
+        "unique": 0,
+        "origin": "c",
+        "partial": 0
+      },
+      {
+        "seq": 2,
+        "name": "sqlite_autoindex_interests_1",
+        "unique": 1,
+        "origin": "pk",
+        "partial": 0
+      }
+    ],
+    [
+      {
+        "seq": 0,
+        "name": "submission_tokens_expiry",
+        "unique": 0,
+        "origin": "c",
+        "partial": 0
+      },
+      {
+        "seq": 1,
+        "name": "sqlite_autoindex_submission_tokens_2",
+        "unique": 1,
+        "origin": "u",
+        "partial": 0
+      },
+      {
+        "seq": 2,
+        "name": "sqlite_autoindex_submission_tokens_1",
+        "unique": 1,
+        "origin": "pk",
+        "partial": 0
+      }
+    ]
+  ]
+}

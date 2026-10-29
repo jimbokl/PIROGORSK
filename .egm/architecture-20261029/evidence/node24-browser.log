@@ -1,0 +1,19 @@
+v24.22.2
+
+> pirogorsk@0.1.0 check
+> astro check && tsc --noEmit
+
+08:28:26 [types] Generated 60ms
+08:28:26 [check] Getting diagnostics for Astro files in /Volumes/DevSim/Projects/PIROGORSK...
+Result (101 files):
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> pirogorsk@0.1.0 test:browser
+> node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs
+
+/Volumes/DevSim/Projects/PIROGORSK/worker/dist/worker.js
+PASS: actual form + deployed bundle, 320px layout, validation/focus, double submit, lost acknowledgement, idempotent retry, one goal/event, empty endpoint, QA/local analytics suppression.
+PASS: built Astro article → calculator → exact selection/reload → form → Worker/SQLite/one goal at 320/1280px; malformed transfer rejected; no production requests.

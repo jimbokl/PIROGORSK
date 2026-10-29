@@ -1,4 +1,5 @@
 import { catalog } from './catalog.ts';
+import { INTEREST_API_VERSION, serializeCatalog } from '../../src/data/catalog-contract.ts';
 
 type DbResult<T = Record<string, unknown>> = { success: boolean; results: T[]; meta?: { changes?: number } };
 interface Statement {
@@ -133,7 +134,7 @@ export default {
       try {
         const result = await env.DB.prepare('SELECT request_id FROM interests LIMIT 1').all();
         if (result.success !== true) throw new Error('storage_failed');
-        return response({ ok: true, storage: 'd1', mode: 'intent' }, 200);
+        return response({ ok: true, storage: 'd1', mode: 'intent', apiVersion: INTEREST_API_VERSION, catalogSha256: await digest(serializeCatalog()) }, 200);
       }
       catch { return response({ ok: false, code: 'storage_unavailable' }, 503); }
     }

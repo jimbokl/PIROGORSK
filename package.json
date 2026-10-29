@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/verify-release.mjs manifest",
     "preview": "astro preview",
     "check": "astro check && tsc --noEmit",
-    "audit:performance": "node scripts/audit-performance.mjs"
+    "audit:performance": "node scripts/audit-performance.mjs",
+    "test": "node --test scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs scripts/release.test.mjs",
+    "test:worker": "node worker/scripts/verify.mjs",
+    "test:browser": "node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs"
   },
   "dependencies": {
     "@fontsource-variable/golos-text": "^5.3.0",
@@ -20,6 +23,7 @@
     "@astrojs/check": "^0.9.12",
     "chrome-launcher": "^1.2.2",
     "lighthouse": "^13.5.0",
+    "puppeteer-core": "25.16.0",
     "typescript": "^6.0.3"
   }
 }

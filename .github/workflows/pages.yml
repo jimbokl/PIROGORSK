@@ -29,7 +29,11 @@ jobs:
       - run: node scripts/verify-expansion.mjs
       - run: node scripts/verify-seo-map.mjs
       - run: node scripts/verify-article-artwork.mjs
-      - run: node --test scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs
+      - run: npm test
+      - run: npm run test:worker
+      - run: npm run test:browser
+      - name: Check deployed Worker against Pages artifact
+        run: node scripts/verify-release.mjs check
       - run: node scripts/indexnow.mjs manifest
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -37,6 +41,8 @@ jobs:
           path: site
       - uses: actions/deploy-pages@v5
         id: deployment
+      - name: Verify published Pages and Worker compatibility
+        run: node scripts/verify-release.mjs published https://pirogorsk.ru/
       - uses: actions/cache/restore@v4
         with:
           path: .indexnow/state.json

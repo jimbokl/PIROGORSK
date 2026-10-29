@@ -1,5 +1,11 @@
 # Interest form checkpoint
 
+## Текущий архитектурный спринт — 29.10.2026
+
+Пауза снята пользователем. Канонический каталог сейчас содержит **14 товаров / 24 варианта** (8 пирогов и 6 дополнений). В `/health` добавлены `apiVersion: 1` и `catalogSha256`; старые поля и ошибки D1 сохранены. POST v1, серверные цены, UUID/retry и анонимность не меняются. Сайт сравнивает этот hash до и после выпуска Pages; [порядок и восстановление](RELEASE.md).
+
+Read-only проверка D1 29 октября: прикладные таблицы, ограничения и индексы совпадают с `0001`; `d1_migrations` отсутствует, схема применена вручную. Новые migrations не применялись. Check101 без диагностик, Node29, Worker/API/SQLite и обе браузерные проверки, включая весь путь на сборке Astro 320/1280, прошли. Фактическая версия нового Worker и Pages фиксируется после readback в `../BUILD-STATE.md`. Ниже — историческое свидетельство 23–24 октября, его числа не описывают текущий каталог.
+
 Updated: 2026-10-24 after scheduled cleanup canary verification.
 
 Objective: persisted anonymous prelaunch demand. The user postponed owner details and contact collection. The form/API have no name, phone, email, Telegram, address or comments. This is intent, not payment or confirmed delivery.

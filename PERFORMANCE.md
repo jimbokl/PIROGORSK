@@ -1,5 +1,11 @@
 # Скорость production-сборки
 
+## Контроль архитектурного спринта — 29.10.2026
+
+CLI Lighthouse 13.5.0 по публичной главной с обычной Метрикой, 06:16 UTC: mobile **P99 / A100 / BP77 / SEO100**, LCP **1776 мс**, TBT 60 мс, CLS 0,0059; desktop **P100 / A100 / BP77 / SEO100**, LCP **507 мс**, TBT 0, CLS 0,0003. [Обезличенные показатели](.egm/architecture-20261029/evidence/performance-summary.json).
+
+BP77 связан с аудитами `third-party-cookies` и `inspector-issues` сторонней Метрики. Интеграция сохранена. Это CLI-измерение публичного URL, отдельное от PageSpeed Insights и CrUX. Оно не воспроизвело прежнюю задержку главной в PSI; причина того результата остаётся открытой. Развитие возобновлено 29 октября по прямому поручению пользователя.
+
 ## Финальный выпуск перед паузой — 27.10, 09:12 Калининград
 
 Runtime `5a24752`, [CI40465096292 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40465096292). Hallmark polish и `decoding="sync"` у eager-обложек EditorialHero. Все67 sitemap URL и3 служебных файла совпали со сборкой; обычная Метрика сохранена.

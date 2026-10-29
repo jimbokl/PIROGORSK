@@ -1,0 +1,42 @@
+
+> pirogorsk@0.1.0 test
+> node --test scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs scripts/release.test.mjs
+
+✔ prepared placements retain their exact UTM tuple while dropping extra data (1.365792ms)
+✔ unknown, partial, duplicate and tampered campaign values cannot reach analytics (0.258375ms)
+✔ content micro-goals keep the saved-request gate and only measure marked editorial links (1.638042ms)
+✔ real analytics initializer queues one explicit pageview and no goal (0.758083ms)
+✔ local previews and QA tabs never load Metrica or send goals (0.962292ms)
+✔ QA exclusion follows navigation in the same tab; other sessions still count (0.10175ms)
+Waiting for public release (1/2): Published IndexNow key is not ready
+✔ initial submission, unchanged release, updates and removals (2.24525ms)
+✔ reject cross-host URLs and invalid hashes from cached state (0.15875ms)
+✔ unchanged content sends no HTTP request (0.225833ms)
+✔ verify live release, then make one batch to one endpoint (33.978125ms)
+✔ wrong live release, missing key and 429 fail without success (1.427ms)
+✔ wait for Pages propagation with GET retries, then submit only once (1.825417ms)
+✔ both IndexNow receivers must acknowledge the same published batch (0.969916ms)
+✔ rounds up to 500 g, distributes flavours, and prices the actual variants (4.038916ms)
+✔ every supported guest/portion combination preserves mass and bounded rounding (9.575333ms)
+✔ a 50-person table with eight flavours transfers without losing rows or mass (0.126375ms)
+✔ invalid input and empty/unknown/duplicate flavours fail (0.162333ms)
+✔ URL transfer rejects tampering, unsupported products, duplicate rows, and oversized values (0.077333ms)
+✔ every published occasion has a usable, distinct calculator preset (0.098ms)
+✔ catalog contract ignores display order but detects added products, variants and prices (2.37075ms)
+✔ health URL derives its path from API config and discards query/hash (0.207ms)
+✔ release checks Worker and published artifact together (21.367625ms)
+✔ release rejects unavailable, outdated, malformed and incompatible services (0.994333ms)
+✔ release timeout aborts a hung fetch (11.724291ms)
+✔ editorial attribution allows only registered routes and strips all URL payloads (1.8115ms)
+✔ quantity article continues to sizing and selection rather than unrelated city guides (0.232083ms)
+✔ coverage audit accepts complete ownership and ignores noindex legal pages (0.759209ms)
+✔ coverage audit catches missing owners, unreachable pages, duplicate queries and invented demand (0.12825ms)
+✔ coverage audit checks actual emitted recommendations and measured next step (0.149292ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 353.222334
