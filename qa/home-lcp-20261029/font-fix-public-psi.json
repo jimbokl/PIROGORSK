@@ -1,0 +1,127 @@
+{
+  "runtime": "8ecb92d8656c6ba405190642d8171133bb6f6c7e",
+  "browser": "HeadlessChromium 153.0.8010.36",
+  "lighthouse": "13.5.0",
+  "crux": false,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 100,
+  "note": "Score calculator timings are milliseconds; its CLS is rounded to 2 decimals. clsDisplay is the more precise visible metric. Breakdown is observed trace; headline timings use Lighthouse simulation. Non-QA query URLs bypass PSI trace reuse and have exactly the canonical production HTML SHA256, with normal analytics.",
+  "mobile": [
+    {
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/tg5bxelz0p?form_factor=mobile",
+      "reportedAt": "2026-10-29T10:43:50+02:00",
+      "testedUrl": "https://pirogorsk.ru/",
+      "mode": "mobile",
+      "performance": 100,
+      "scoreCalculator": {
+        "fcp": 932,
+        "lcp": 1651,
+        "tbt": 2,
+        "cls": 0.01,
+        "si": 932,
+        "tti": 3107
+      },
+      "clsDisplay": 0.011,
+      "breakdown": {
+        "ttfb": 10,
+        "loadDelay": 180,
+        "load": 150,
+        "render": 80
+      }
+    },
+    {
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/h6dgv1n8wo?form_factor=mobile",
+      "reportedAt": "2026-10-29T10:45:57+02:00",
+      "testedUrl": "https://pirogorsk.ru/?lcp-check=20261029-a",
+      "mode": "mobile",
+      "performance": 100,
+      "scoreCalculator": {
+        "fcp": 947,
+        "lcp": 1651,
+        "tbt": 0,
+        "cls": 0,
+        "si": 947,
+        "tti": 1651
+      },
+      "clsDisplay": 0.003,
+      "breakdown": {
+        "ttfb": 10,
+        "loadDelay": 160,
+        "load": 130,
+        "render": 30
+      }
+    },
+    {
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/f6avn6j6lb?form_factor=mobile",
+      "reportedAt": "2026-10-29T10:46:22+02:00",
+      "testedUrl": "https://pirogorsk.ru/?lcp-check=20261029-b",
+      "mode": "mobile",
+      "performance": 99,
+      "scoreCalculator": {
+        "fcp": 1501,
+        "lcp": 1801,
+        "tbt": 13,
+        "cls": 0.01,
+        "si": 1501,
+        "tti": 3132
+      },
+      "clsDisplay": 0.006,
+      "breakdown": {
+        "ttfb": 0,
+        "loadDelay": 30,
+        "load": 120,
+        "render": 80
+      }
+    }
+  ],
+  "desktop": {
+    "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/tg5bxelz0p?form_factor=desktop",
+    "reportedAt": "2026-10-29T10:43:50+02:00",
+    "testedUrl": "https://pirogorsk.ru/",
+    "mode": "desktop",
+    "performance": 100,
+    "scoreCalculator": {
+      "fcp": 321,
+      "lcp": 421,
+      "tbt": 23,
+      "cls": 0.01,
+      "si": 439,
+      "tti": 809
+    },
+    "clsDisplay": 0.007,
+    "breakdown": {
+      "ttfb": 0,
+      "loadDelay": 160,
+      "load": 180,
+      "render": 230
+    }
+  },
+  "cachedRepeats": [
+    {
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/qdjmjb4797?form_factor=mobile",
+      "reportedAt": "2026-10-29T10:44:37+02:00",
+      "testedUrl": "https://pirogorsk.ru/",
+      "mode": "mobile",
+      "performance": 100,
+      "scoreCalculator": {
+        "fcp": 932,
+        "lcp": 1651,
+        "tbt": 2,
+        "cls": 0.01,
+        "si": 932,
+        "tti": 3107
+      },
+      "clsDisplay": 0.011,
+      "breakdown": {
+        "ttfb": 10,
+        "loadDelay": 180,
+        "load": 150,
+        "render": 80
+      },
+      "independent": false,
+      "capturedAt": "2026-10-29T10:43+02:00",
+      "note": "Same captured minute, score calculator values and breakdown as first; conservatively excluded as a cached trace."
+    }
+  ]
+}

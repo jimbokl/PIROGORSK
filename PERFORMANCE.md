@@ -1,5 +1,21 @@
 # Скорость production-сборки
 
+## Mobile LCP: устранение font preload — 29.10.2026
+
+На прежнем runtime `e6af7dd` два новых публичных контроля дали **P100/LCP1651мс** и **P86/LCP3859мс**, во втором observed render delay2000мс. [Оба результата](qa/home-lcp-20261029/font-fix-psi-controls.json). Причина скачка не в весе фонового AVIF: при сохранённых изображениях, HTML body, скриптах и шрифтах удаление только четырёх font preload воспроизводимо устранило ожидание первого кадра в полном Chrome153. В контролируемой серии A/B/A baseline FCP2216–2307мс, без preload128–131мс; observed LCP963–1157мс, render86–124мс. Возврат preload вернул задержку. [Все восемь опытов](qa/home-lcp-20261029/render-font-priority-summary.json); это диагностический devtools-throttling, не публичные PSI scores. Внутренний механизм задержки Chromium не установлен.
+
+Главная передаёт `preloadFonts={false}` в `SeoHead`; другие страницы сохраняют прежнее поведение. Inline `@font-face`, локальные Playfair/Golos и `font-display:swap` остаются. Локальная стандартная симуляция Chrome156/LH13.5, три свежих mobile-профиля: **P98/99/98, LCP2201/2037/2262мс**, observed render51–61мс, CLS0.0049–0.0062. Desktop **P100/LCP484мс**. [Данные](qa/home-lcp-20261029/font-fix-local-summary.json), [диапазоны](qa/home-lcp-20261029/font-fix-local-ranges.json). Check/build/SEO/artwork/29tests и registry strict PASS; responsive320/390/1280 без переполнения. Runtime **`8ecb92d`** опубликован, [CI40843668833 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40843668833). Worker/API/SQL и обе browser fixtures PASS; production HTML совпал со сборкой, font preload0, контрольная статья4, published compatibility PASS. [Readback](qa/home-lcp-20261029/font-fix-production-readback.json).
+
+| Независимый публичный PSI mobile | P | LCP | TBT | CLS (видимый) | Observed render |
+| --- | --- | --- | --- | --- | --- |
+| [10:43:50, canonical](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/tg5bxelz0p?form_factor=mobile) | 100 | 1651мс | 2мс | 0.011 | 80мс |
+| [10:45:57, cache key A](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/h6dgv1n8wo?form_factor=mobile) | 100 | 1651мс | 0мс | 0.003 | 30мс |
+| [10:46:22, cache key B](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/f6avn6j6lb?form_factor=mobile) | 99 | 1801мс | 13мс | 0.006 | 80мс |
+
+Lighthouse13.5/Chrome153, GMT+2. A/BP/SEO100 во всех. Повторный canonical запрос10:44:37 вернул ту же captured10:43 трассу, сохранён, но исключён из независимой тройки. Два non-QA query URL имеют [побайтово тот же production HTML](qa/home-lcp-20261029/font-fix-query-readback.json), обычную Метрику и иной cache key только для PSI. [Все результаты, включая повтор](qa/home-lcp-20261029/font-fix-public-psi.json). [Desktop canonical](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/tg5bxelz0p?form_factor=desktop): **P100/LCP421мс/TBT23мс/CLS0.007**, A/BP/SEO100.
+
+[Production CLI](qa/home-lcp-20261029/font-fix-production-summary.json), стандартная симуляция Chrome156: mobile **P100/99/100**, LCP1558/1550/1544мс, observed render12/26/12мс, CLS0.0023; desktop **P100/LCP571мс/CLS0.0026**. A100/SEO100, BP77 из-за сохранённой Метрики. [Диапазоны](qa/home-lcp-20261029/font-fix-production-ranges.json). Mobile UI production390px без переполнения, шрифт Playfair. В проверенной публичной серии задержка около2с исчезла; это подтверждает устранение воспроизводимого lab-триггера. CrUX пока нет, полевое улучшение и безусловная стабильность всех будущих PSI не заявляются.
+
 ## Визуальный референс — 29.10, опубликован и проверен
 
 После диагностики пользователь поручил попробовать стеклянные поверхности, журнальные заголовки и плавный hover. Эффекты ограничены главной, blur — desktop fine pointer, reduced motion учтён. Это визуальная задача, не подтверждённое лечение LCP. Preview4322, Chrome156, три свежих mobile-профиля: P98/99/98, LCP2368/2201/2287мс, observed render63–101мс; desktop100/LCP524мс. A/BP/SEO100. [Локальные данные](qa/home-lcp-20261029/design-local-summary.json); среда отличается от production.

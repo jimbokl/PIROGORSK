@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-29T08:45:52.059Z",
+  "note": "Non-QA cache keys for independent PSI runs; identical production HTML and normal analytics.",
+  "checks": [
+    {
+      "url": "https://pirogorsk.ru/?lcp-check=20261029-a",
+      "status": 200,
+      "htmlSha256": "372c604024dcc94c8ee2795bce3c4d1e65a18aa55082f5a1a8e055b70cb836a8",
+      "matchesLocalBuild": true
+    },
+    {
+      "url": "https://pirogorsk.ru/?lcp-check=20261029-b",
+      "status": 200,
+      "htmlSha256": "372c604024dcc94c8ee2795bce3c4d1e65a18aa55082f5a1a8e055b70cb836a8",
+      "matchesLocalBuild": true
+    }
+  ]
+}

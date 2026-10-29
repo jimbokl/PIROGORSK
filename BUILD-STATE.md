@@ -1,10 +1,12 @@
 # Пирогорск — рабочий checkpoint
 
-## Mobile LCP: предзагрузка шрифтов — 29.10.2026
+## Mobile LCP: исправлено и проверено на production — 29.10.2026
 
-Новый контролируемый эксперимент выявил фактор на стороне страницы: четыре font preload в SeoHead. При том же production HTML e6af7dd/Метрике и свежем Chrome153 baseline FCP/LCP2216–2307мс, без только этих preload FCP128–131мс/LCP963–1157мс/render86–124мс; возврат preload возвращает задержку. CSS @font-face/font-display:swap и сами Playfair/Golos сохранены. Удаление Latin preload, смена display на optional, JS, слои и content-visibility проблему не убрали. [Все серии](qa/home-lcp-20261029/render-font-priority-summary.json).
+Runtime **`8ecb92d`**, [CI40843668833 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40843668833). Четыре font preload воспроизводимо задерживали первый кадр в Chrome153; без них при прежних Playfair/Golos FCP128–131мс вместо2216–2307мс, возврат preload возвращает задержку. Главная отключает только эти hints; inline font-face/swap и приоритет hero AVIF сохранены. Локально check/build/SEO/artwork/29tests/registry strict PASS, UI320/390/1280 без overflow. В CI также прошли Worker/API/SQL и обе настоящие browser fixtures.
 
-На главной SeoHead получает preloadFonts=false; остальные страницы сохраняют прежнее поведение. Check/build/SEO/expansion/map/artwork/29tests PASS. UI320/390/1280 без overflow. Local стандартный LH Chrome156: mobile98/99/98, LCP2201/2037/2262мс, render51–61мс, CLS≤.0063; desktop100/LCP484мс. Публикация и три независимых публичных PSI + desktop ещё предстоят; локальный выигрыш не объявлен окончательным исправлением PSI.
+Production HTML побайтово совпал со сборкой (`372c6040…`), home font preloads0, контрольная статья4; published compatibility PASS и D1 health200. **Три независимые публичные PSI mobile,10:43–10:46 GMT+2: P100/100/99, LCP1651/1651/1801мс, observed render80/30/80мс, видимый CLS0.011/0.003/0.006.** Desktop канонической главной P100/LCP421мс, CLS0.007. Везде A/BP/SEO100. Повторный canonical PSI вернул ту же трассу и сохранён отдельно, в тройку не включён; два новых запуска использовали non-QA cache key с идентичным production HTML и обычной Метрикой. [Все публичные результаты](qa/home-lcp-20261029/font-fix-public-psi.json).
+
+Стандартный CLI production Chrome156, три свежих mobile-профиля: P100/99/100, LCP1544–1558мс, render12–26мс; desktop100/LCP571мс. A100/SEO100, CLI BP77 — сохранённая Метрика. [Протокол](qa/home-lcp-20261029/README.md). В проверенной серии прежняя двухсекундная задержка исчезла. CrUX пока нет; полевое улучшение не измерено. Задача устранения воспроизводимого lab LCP-скачка завершена; дальнейшее подтверждение — реальные полевые данные по мере появления.
 
 ## Визуальная доработка по референсу — 29.10.2026
 

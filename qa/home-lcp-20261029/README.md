@@ -1,5 +1,7 @@
 # Мобильный LCP главной — 29.10.2026
 
+Актуальный итог: runtime `8ecb92d`, CI PASS; три независимые public PSI mobile **100/100/99**, LCP **1651/1651/1801мс**. [Выпуск и production-проверка](#выпуск-и-production-проверка--10431048-gmt2). Предыдущие разделы сохраняют хронологию расследования.
+
 Задача: устранить причину переменного LCP главной, сохранить композицию, переключение вкусов, калькулятор, форму и Метрику. Сырые отчёты с идентификаторами сторонних запросов остаются в ignored raw/.
 
 ## До изменения
@@ -89,4 +91,16 @@ Runtime `e6af7ddb7283c8264e90ee22521a4ae47774ef3d`, [CI40837674941 SUCCESS](http
 
 Выбрана узкая правка: главная передаёт SeoHead preloadFonts=false. Шрифты загружаются из уже встроенного @font-face с прежним swap и unicode-range. LCP image preload/eager/high, оформление, содержимое и Метрика сохранены. Остальные страницы сохраняют прежние четыре font preload. Это устраняет воспроизведённый триггер; точный внутренний Chromium surface-throttling path этим опытом не доказан.
 
-Check/build/SEO/expansion/map/artwork и29 Node tests PASS, UI320/390/1280 overflow0. [Local стандартный Lighthouse](font-fix-local-summary.json), [диапазоны](font-fix-local-ranges.json): mobile98/99/98, LCP2201/2037/2262мс, render51–61мс, CLS≤.0063; desktop100/LCP484мс. Публикация/публичные PSI ещё ожидаются.
+Check/build/SEO/expansion/map/artwork и29 Node tests PASS, UI320/390/1280 overflow0. [Local стандартный Lighthouse](font-fix-local-summary.json), [диапазоны](font-fix-local-ranges.json): mobile98/99/98, LCP2201/2037/2262мс, render51–61мс, CLS≤.0063; desktop100/LCP484мс. Опубликован и проверен далее; результаты production — в следующем разделе.
+
+### Выпуск и production-проверка — 10:43–10:48 GMT+2
+
+`8ecb92d`, [CI40843668833 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40843668833): check/build, SEO69HTML, expansion/map/artwork,29tests, Worker typechecks/API/SQL, обе browser fixtures и published compatibility PASS. Registry strict PASS (`hasDrift:false`). [Production readback](font-fix-production-readback.json): HTML SHA256 совпал со сборкой, font preload0 на главной и4 в статье; D1 health200, manifest совместим. [Мобильный вид390px](font-fix-production-390.png), без overflow, Playfair сохранён; подборка6шт./город не сбрасывались, заявок не отправляли.
+
+[Три независимых public PSI mobile](font-fix-public-psi.json), Chrome153/LH13.5: **P100/100/99, LCP1651/1651/1801мс, TBT2/0/13мс, CLS0.011/0.003/0.006**. Observed render80/30/80мс вместо прежних2000мс. [Первый canonical](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/tg5bxelz0p?form_factor=mobile), [второй](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/h6dgv1n8wo?form_factor=mobile), [третий](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/f6avn6j6lb?form_factor=mobile). Повторный canonical запрос [qdjmjb4797](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/qdjmjb4797?form_factor=mobile) дал те же captured minute/метрики/breakdown и сохранён отдельно как повтор, не независимый запуск. Для следующих использованы `?lcp-check=20261029-a/b`: [проверено побайтовое совпадение HTML](font-fix-query-readback.json), обычная Метрика, без QA-режима. Видимый CLS точнее округлённого до2знаков параметра калькулятора; оба сохранены. Headline симуляция и observed breakdown не смешиваются.
+
+[Desktop canonical](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/tg5bxelz0p?form_factor=desktop): **P100/LCP421мс/TBT23мс/CLS0.007**. A/BP/SEO100 в каждом public режиме. Скриншоты [mobile](font-fix-psi-mobile.png), [desktop](font-fix-psi-desktop.png).
+
+[CLI production](font-fix-production-summary.json), свежий профиль на каждый запуск, Chrome156/LH13.5 стандартная симуляция: mobile **P100/99/100, LCP1558/1550/1544мс**, desktop **P100/LCP571мс**. [Диапазоны](font-fix-production-ranges.json); mobile observed render12–26мс. A100/SEO100, CLI BP77 относится к cookies/issues сохранённой Метрики. Все3mobile+desktop сохранены, выбросы не отбрасывались. Это отдельное измерение от PSI.
+
+**Вывод:** устранён воспроизводимый site-side триггер задержки первого кадра в Chrome153, и после выкладки прежняя пауза не повторилась в трёх независимых публичных трассах. Исчезновение4с в этой серии подтверждено. Внутренний путь Chromium и полевое изменение LCP не установлены; CrUX отсутствует. Старые неудачные результаты выше остаются историческими данными прежнего runtime.
