@@ -3,6 +3,9 @@ import Icon from '../components/Icon.astro';
 import ProductCard from '../components/ProductCard.astro';
 import HomeDepartments from '../components/HomeDepartments.astro';
 import HomeOffers from '../components/HomeOffers.astro';
+import SelectionAddOns from '../components/SelectionAddOns.astro';
+import { bundles } from '../data/bundles';
+import { selectionPrice } from '../lib/selection-offers';
 import InterestForm from '../components/InterestForm.astro';
 import Analytics from '../components/Analytics.astro';
 import SeoHead from '../components/SeoHead.astro';
@@ -82,6 +85,8 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <div class="dialog-header"><span class="eyebrow" data-city>Зеленоградск</span><button data-close class="icon-button" aria-label="Закрыть подборку"><Icon name="close" /></button></div>
       <h2 id="selection-heading">Ваша подборка</h2>
       <div data-selection-items></div>
+      <p class="selection-feedback" data-selection-feedback role="status" aria-live="polite"></p>
+      <SelectionAddOns />
       <div class="selection-summary" hidden>
         <div class="selection-total"><span>Товары</span><strong data-total>0 ₽</strong></div>
         <p class="selection-weight">Доставка, ориентир: <strong data-selection-delivery></strong></p>
@@ -98,8 +103,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
     <dialog id="bundle-dialog" class="dialog bundle-dialog" aria-labelledby="bundle-dialog-heading">
       <div class="dialog-header"><span class="eyebrow">Вместе вкуснее</span><button data-close class="icon-button" aria-label="Закрыть наборы"><Icon name="close" /></button></div>
       <h2 id="bundle-dialog-heading">На всех хватит</h2><p class="dialog-intro">Начните с набора — состав и количество можно изменить в подборке.</p>
-      <button class="preset-option" data-preset="dinner"><span><strong>Ужин в апартаментах</strong><small>Мясной + сырный · по 500 г</small></span><span>1 280 ₽<Icon name="arrow" /></span></button>
-      <button class="preset-option" data-preset="company"><span><strong>На компанию</strong><small>Мясной + рыбный + с капустой · по 1 кг</small></span><span>3 470 ₽<Icon name="arrow" /></span></button>
+      {bundles.map(bundle => <button class="preset-option" data-preset={bundle.id}><span><strong>{bundle.title}</strong><small>{bundle.items.map(item => { const product = catalog.find(product => product.id === item.id)!; return `${product.name} · ${product.variants.find(variant => variant.value === item.value)!.label}`; }).join(' + ')}</small></span><span>{selectionPrice(bundle.items, catalog).toLocaleString('ru-RU')} ₽<Icon name="arrow" /></span></button>)}
       <button class="text-button" data-custom-bundle>Соберу свой набор<Icon name="arrow" /></button>
     </dialog>
     <dialog id="delivery-dialog" class="dialog info-dialog" aria-labelledby="delivery-heading">
@@ -117,7 +121,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <div><h3></h3><small></small></div><strong class="item-price" data-item-price></strong>
       <div class="item-details"><div class="item-controls"><button data-decrease><Icon name="minus" /></button><output></output><button data-increase><Icon name="plus" /></button></div></div><button class="item-remove" data-remove>Убрать</button>
     </template>
-    <script id="catalog-data" type="application/json" set:html={JSON.stringify(catalog.map(({ id, name, kind, unit, variants, prices, defaultVariant }) => ({ id, name, kind, unit, variants, prices, defaultVariant })))} />
+    <script id="catalog-data" type="application/json" set:html={JSON.stringify(catalog.map(({ id, name, kind, unit, category, variants, prices, defaultVariant }) => ({ id, name, kind, unit, category, variants, prices, defaultVariant })))} />
     <script>import '../scripts/storefront.ts';</script>
   </body>
 </html>

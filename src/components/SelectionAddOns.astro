@@ -1,0 +1,47 @@
+---
+import { catalog } from '../data/catalog';
+import { addOnGroups } from '../data/bundles';
+import ProductVisual from './ProductVisual.astro';
+const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
+---
+<section class="selection-addons" data-upsells hidden aria-labelledby="addons-heading">
+  <h3 id="addons-heading" tabindex="-1">К пирогам на стол</h3>
+  <p>Добавьте по желанию — всё можно изменить.</p>
+  {addOnGroups.map(group => <article class="addon-card" data-upsell-group={group.id}>
+    <div class="addon-art" aria-hidden="true"><ProductVisual product={catalog.find(product => product.id === group.imageId)!} decorative /></div>
+    <div class="addon-body">
+      <h4>{group.title}</h4><p>{group.description}</p>
+      <label for={`addon-${group.id}`} class="addon-label">{group.id === 'tableware' ? 'На сколько гостей' : group.id === 'sweet' ? 'Начинка · 500 г' : 'Вкус и объём'}</label>
+      <div class="addon-controls">
+        <select id={`addon-${group.id}`} data-upsell-choice={group.id}>
+          {group.choices.map(choice => {
+            const product = catalog.find(product => product.id === choice.id)!;
+            const variant = product.variants.find(variant => variant.value === choice.value)!;
+            const shortName: Record<string, string> = { cranberry: 'Клюква', seabuckthorn: 'Облепиха', apple: 'Яблоко и брусника', cherry: 'Вишня', curd: 'Творог и малина' };
+            const label = group.id === 'tableware' ? `${choice.quantity} ${choice.quantity === 1 ? 'набор' : 'наборов'}` : group.id === 'sweet' ? shortName[choice.id] : `${shortName[choice.id]} · ${variant.label}`;
+            return <option value={`${choice.id}:${choice.value}:${choice.quantity}`} data-price={variant.price * choice.quantity}>{label}</option>;
+          })}
+        </select>
+        <button type="button" class="button addon-add" data-upsell-add={group.id} aria-label={`Добавить: ${group.title}`}>Добавить за {money(catalog.find(product => product.id === group.choices[0].id)!.prices[group.choices[0].value] * group.choices[0].quantity)}</button>
+      </div>
+    </div>
+  </article>)}
+</section>
+<style>
+  .selection-addons{padding-block:22px;border-bottom:1px solid var(--line)}
+  .selection-addons h3{font:600 25px/1.2 var(--serif);letter-spacing:-.025em;margin:0}
+  .selection-addons>p{font-size:12px;color:var(--muted);margin:8px 0 16px;line-height:1.6}
+  .addon-card{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;padding:16px 0;border-top:1px solid var(--line)}
+  .addon-card[hidden]{display:none}
+  .addon-art{align-self:start;border-radius:12px;overflow:hidden;background:var(--paper-raised)}
+  .addon-art :global(.product-visual-badge){display:none}
+  .addon-art :global(.product-visual){width:100%;height:auto;aspect-ratio:1;margin:0!important}
+  .addon-body{min-width:0}.addon-body h4{font:600 18px/1.3 var(--serif);margin:0}
+  .addon-body p{font:400 12px/1.6 var(--sans);color:var(--muted);margin:5px 0 10px}
+  .addon-label{display:block;font-size:11px;margin-bottom:5px;color:var(--muted)}
+  .addon-controls{display:grid;gap:8px;grid-template-columns:minmax(0,1fr) auto;align-items:center}
+  .addon-controls select{min-width:0;width:100%;min-height:48px;padding:10px 24px 10px 10px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--navy);font:400 12px/1.5 var(--sans)}
+  .addon-controls .addon-add{padding:10px 14px;min-height:48px;font-size:12px}
+  .addon-controls :is(select,button):focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+  @media(max-width:600px){.addon-card{grid-template-columns:56px minmax(0,1fr);gap:10px}.addon-controls{grid-template-columns:minmax(0,1fr)}.addon-add{width:100%}.addon-body h4{font-size:18px}}
+</style>

@@ -94,3 +94,7 @@
 .home-range-links{display:flex;flex-wrap:wrap;gap:12px 28px;border-top:1px solid var(--line);margin-top:24px;padding-top:16px}
 .home-range-links a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:12px}
 @media(max-width:650px){.home-status{display:block;font-size:11px;line-height:1.6}.home-status>span{display:block;margin-bottom:3px}.home-section-heading{align-items:start;gap:8px;flex-direction:column}.home-section-heading h2{font-size:31px}.home-featured{padding-block:25px 30px}.catalog.home-featured .product-grid{display:grid;grid-auto-flow:column;grid-auto-columns:min(78vw,300px);grid-template-columns:none;grid-template-rows:repeat(5,auto);overflow-x:auto;scroll-snap-type:x proximity;gap:14px;padding:3px 2px 18px;background:none}.catalog.home-featured .product-card.catalog-card{grid-row:1 / span 5;scroll-snap-align:start}.catalog.home-featured .product-card.catalog-card h3{font-size:23px;text-wrap:balance}.home-range-links{gap:0 16px;margin-top:12px}.home-range-links a{font-size:11px}}
+
+/* Inline confirmation remains inside the modal's accessible tree. */
+.selection-feedback{font:400 12px/1.7 var(--sans);color:var(--muted);margin-top:14px}.selection-feedback:empty{display:none}
+.selection-dialog .item-controls button{min-width:44px;min-height:44px}.selection-dialog .item-remove{min-height:44px}

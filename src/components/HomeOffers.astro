@@ -1,62 +1,60 @@
 ---
-import { Picture } from 'astro:assets';
-import { products } from '../data/catalog';
-import dinner from '../../design/assets-source/dinner.png';
-import company from '../../design/assets-source/company.png';
+import { catalog } from '../data/catalog';
+import { bundles } from '../data/bundles';
+import { selectionPrice } from '../lib/selection-offers';
+import { catalogProductHref } from '../lib/product-paths';
+import SupplierArtwork from './SupplierArtwork.astro';
+import ProductVisual from './ProductVisual.astro';
 import Icon from './Icon.astro';
-
-const priceFor = (id: string, weight: number) => products.find(product => product.id === id)?.variants.find(variant => variant.value === weight)?.price ?? 0;
-const dinnerPrice = priceFor('meat', 500) + priceFor('cheese', 500);
-const companyPrice = priceFor('meat', 1000) + priceFor('fish', 1000) + priceFor('cabbage', 1000);
+interface Props { embedded?: boolean }
+const { embedded = false } = Astro.props;
 const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
-const offers = [
-  { id: 'dinner', title: 'Ужин в апартаментах', detail: 'Мясной 500 г + сырный 500 г', price: dinnerPrice, image: dinner, alt: 'Пирог на столе для ужина в апартаментах', href: '/nabor/uzhin-v-apartamentah/', action: 'В подборку: ужин в апартаментах' },
-  { id: 'company', title: 'На компанию', detail: 'Мясной + рыбный + с капустой, по 1 кг', price: companyPrice, image: company, alt: 'Пироги для общего стола', href: '/nabor/na-kompaniyu/', action: 'В подборку: набор на компанию' },
-];
 ---
-<section class="home-offers container" id="nabory" aria-labelledby="home-offers-heading">
+<section class:list={['home-offers', { container: !embedded }]} id="nabory" aria-labelledby="home-offers-heading">
   <div class="offers-heading">
-    <div><span class="offers-kicker">ДЛЯ ОБЩЕГО СТОЛА</span><h2 id="home-offers-heading">Предложения к вашему столу</h2></div>
-    <p>Готовые сочетания для начала. Состав можно изменить в подборке.</p>
+    <div><span class="offers-kicker">ДЛЯ ОБЩЕГО СТОЛА</span><h2 id="home-offers-heading">Начните с набора</h2></div>
+    <p>Выберите сочетание, а морс и посуду добавьте по желанию. Состав можно изменить.</p>
   </div>
   <div class="offers-grid">
-    {offers.map((offer) => <article class="offer-card">
-      <Picture src={offer.image} formats={['avif','webp']} widths={[320,480,640,800]} sizes="(max-width: 700px) 38vw, (max-width: 1100px) 32vw, 270px" width={offer.image.width} height={offer.image.height} quality={55} alt={offer.alt} loading="lazy" class="offer-art" />
+    {bundles.map(bundle => <article class="offer-card">
+      <div class="offer-art" aria-hidden="true">{bundle.items.map(item => item.id.startsWith('p39-') ? <SupplierArtwork id={item.id} sizes="(max-width:700px) 90px, 180px" decorative /> : <ProductVisual product={catalog.find(product => product.id === item.id)!} decorative />)}</div>
       <div class="offer-body">
-        <a class="offer-title" href={offer.href}>{offer.title}<Icon name="arrow" /></a>
-        <p>{offer.detail}</p>
-        <div class="offer-bottom"><div><strong>{money(offer.price)}</strong><small>предварительная цена</small></div><button class="button offer-add" type="button" data-preset={offer.id} aria-label={offer.action}>В подборку<Icon name="arrow" /></button></div>
+        <p class="offer-note">{bundle.note}</p>
+        <h3><a class="offer-title" href={bundle.href}>{bundle.title}</a></h3>
+        <ul>{bundle.items.map(item => {
+          const product = catalog.find(product => product.id === item.id)!;
+          const variant = product.variants.find(variant => variant.value === item.value)!;
+          return <li><a href={catalogProductHref(product)}>{product.name}</a><span>{variant.label.replace('Целый · ', '')}</span></li>;
+        })}</ul>
+        <div class="offer-bottom"><div><strong>{money(selectionPrice(bundle.items, catalog))}</strong><small>сумма позиций · предварительно</small></div><a class="button offer-add" data-bundle={bundle.id} href={`/?interest=bundle&bundle=${bundle.id}#nabory`} aria-label={`В подборку: ${bundle.title}`}>В подборку<Icon name="arrow" /></a></div>
       </div>
     </article>)}
   </div>
-  <div class="offers-footnote"><span>Доставка считается один раз для всей подборки. Цены и условия предварительные.</span><nav aria-label="Подробнее о выборе пирогов"><a href="/povody/">Подобрать к случаю<Icon name="arrow" /></a><a href="/podbor/">Сколько взять?<Icon name="arrow" /></a></nav></div>
+  <div class="offers-footnote"><span>Доставка один раз за всю подборку, отдельно от цены набора. Заказы пока не принимаем.</span><nav aria-label="Подробнее о выборе пирогов"><a href="/povody/">Подобрать к случаю<Icon name="arrow" /></a><a href="/podbor/">Сколько взять?<Icon name="arrow" /></a></nav></div>
 </section>
-
 <style>
   .home-offers{padding:34px 0 30px}
-  .offers-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:17px}
-  .offers-kicker{display:block;color:var(--muted);font-size:9px;letter-spacing:.13em;margin-bottom:6px}
-  .offers-heading h2{font-size:clamp(27px,3vw,38px);line-height:1.08;margin:0;letter-spacing:-.035em}
-  .offers-heading>p{font-size:12px;line-height:1.45;color:var(--muted);max-width:270px;margin:0 0 2px}
-  .offers-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-  .offer-card{min-height:208px;display:grid;grid-template-columns:minmax(130px,.78fr) minmax(0,1.3fr);align-items:stretch;overflow:hidden;background:var(--paper-raised,var(--paper));border:1px solid var(--caption-line);border-radius:var(--radius-card,18px)}
-  .offer-art{display:block;width:100%;height:100%;min-height:208px;object-fit:cover;object-position:center;mix-blend-mode:multiply}
-  .offer-body{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:15px 17px}
-  .offer-title{display:flex;align-items:center;gap:7px;width:fit-content;font:500 20px/1.15 var(--serif);letter-spacing:-.02em;text-decoration:none}
-  .offer-title:hover{text-decoration:underline;text-underline-offset:4px}
-  .offer-title .icon{width:16px;height:16px;flex:0 0 16px}
-  .offer-body>p{font-size:11px;line-height:1.4;color:var(--muted);margin:7px 0 11px}
-  .offer-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
-  .offer-bottom>div{display:flex;flex-direction:column;gap:2px;white-space:nowrap}
-  .offer-bottom strong{font-size:17px;font-variant-numeric:tabular-nums}
-  .offer-bottom small{font-size:9px;color:var(--muted)}
-  .offer-add{min-height:40px;padding:8px 12px;font-size:11px;white-space:nowrap}
-  .offer-add .icon{width:14px;height:14px}
-  .offers-footnote{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:12px;font-size:10px;color:var(--muted)}
-  .offers-footnote nav{display:flex;gap:18px;flex:0 0 auto}
-  .offers-footnote a{display:inline-flex;align-items:center;gap:5px;color:var(--navy);text-underline-offset:3px}
-  .offers-footnote .icon{width:13px;height:13px}
-  @media(max-width:1000px){.offer-card{grid-template-columns:minmax(105px,.7fr) minmax(0,1.3fr);min-height:205px}.offer-art{min-height:205px}.offer-body{padding:12px}.offer-title{font-size:18px}.offer-bottom{align-items:flex-start;flex-direction:column;gap:8px}.offer-add{min-height:36px}.offers-footnote{align-items:flex-start;flex-direction:column}.offers-footnote nav{gap:14px}}
-  @media(max-width:700px){.home-offers{padding:26px 0 23px}.offers-heading{display:block;margin-bottom:13px}.offers-heading h2{font-size:27px}.offers-heading>p{font-size:11px;margin-top:7px}.offers-grid{grid-template-columns:minmax(0,1fr);gap:10px}.offer-card{grid-template-columns:minmax(100px,34%) minmax(0,1fr);min-height:210px}.offer-art{min-height:210px}.offer-body{padding:13px 14px}.offer-title{font-size:20px}.offer-body>p{font-size:11px}.offer-bottom{align-items:center;flex-direction:row;flex-wrap:wrap;gap:8px}.offer-add{min-height:40px;padding:8px 13px}.offers-footnote{font-size:10px;gap:8px}.offers-footnote nav{flex-wrap:wrap}}
-  @media(max-width:380px){.offer-card{grid-template-columns:minmax(90px,31%) minmax(0,1fr);min-height:205px}.offer-art{min-height:205px}.offer-body{padding:11px}.offer-title{font-size:18px}.offer-bottom{align-items:flex-start;flex-direction:column;gap:7px}.offer-add{min-height:36px}.offer-bottom strong{font-size:16px}.offers-footnote nav{gap:10px}}
+  .offers-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:20px}
+  .offers-kicker{display:block;color:var(--muted);font-size:10px;letter-spacing:.13em;margin-bottom:8px}
+  .offers-heading h2{font:600 var(--heading-section)/1.12 var(--serif);margin:0;letter-spacing:-.035em}
+  .offers-heading>p{font-size:13px;line-height:1.7;color:var(--muted);max-width:320px;margin:0}
+  .offers-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .offer-card{display:flex;flex-direction:column;overflow:hidden;background:var(--paper-raised,var(--paper));border:1px solid var(--line);border-radius:var(--radius-card)}
+  .offer-art{display:flex;align-items:center;aspect-ratio:2.5;padding:8px;background:var(--paper);overflow:hidden}
+  .offer-art :global(.product-visual-badge){display:none}
+  .offer-art :global(:is(.product-visual,.product-artwork)){flex:1;min-width:0;width:0;aspect-ratio:1;height:auto;margin:0!important}
+  .offer-body{display:flex;flex:1;flex-direction:column;min-width:0;padding:20px}
+  .offer-note{font:400 11px/1.6 var(--sans);color:var(--muted);margin:0 0 10px;min-height:36px}
+  .offer-body h3{font:600 26px/1.2 var(--serif);letter-spacing:-.025em;margin:0 0 16px;min-height:63px}
+  .offer-title{text-decoration:none}.offer-title:hover{text-decoration:underline;text-underline-offset:4px}
+  .offer-body ul{list-style:none;padding:0;margin:0 0 20px;font:400 12px/1.6 var(--sans)}
+  .offer-body li{display:flex;justify-content:space-between;gap:12px;margin-bottom:8px}.offer-body li a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}.offer-body li span{white-space:nowrap;color:var(--muted)}
+  .offer-bottom{display:flex;flex-direction:column;gap:16px;margin-top:auto}
+  .offer-bottom>div{display:flex;flex-direction:column;gap:4px}.offer-bottom strong{font:600 24px/1.3 var(--sans);font-variant-numeric:tabular-nums}.offer-bottom small{font-size:11px;color:var(--muted)}
+  .offer-add{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;width:100%;padding:12px 20px;border-radius:var(--radius-pill);background:var(--navy);color:var(--paper);font:600 14px/1.4 var(--sans);text-decoration:none;text-align:center}
+  .offer-add:hover{background:var(--navy-deep)}.offer-add:focus-visible,.offer-body a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.offer-add .icon{width:16px;height:16px}
+  .offers-footnote{display:flex;justify-content:space-between;gap:16px;margin-top:16px;font:400 12px/1.7 var(--sans);color:var(--muted)}.offers-footnote>span{max-width:600px}
+  .offers-footnote nav{display:flex;flex-wrap:wrap;align-items:start;gap:18px;flex-shrink:0}.offers-footnote a{display:inline-flex;align-items:center;gap:5px;min-height:44px;color:var(--navy);text-underline-offset:3px}.offers-footnote .icon{width:14px;height:14px}
+  @media(max-width:1000px){.offers-grid{gap:12px}.offer-body{padding:16px}.offer-body h3{font-size:23px;min-height:56px}.offers-footnote{flex-direction:column}}
+  @media(max-width:700px){.home-offers{padding:26px 0}.offers-heading{display:block}.offers-heading>p{margin-top:12px}.offers-grid{grid-template-columns:minmax(0,1fr)}.offer-card{display:grid;grid-template-columns:28% minmax(0,1fr)}.offer-art{flex-direction:column;aspect-ratio:auto;padding:6px;justify-content:center}.offer-art :global(:is(.product-visual,.product-artwork)){width:100%;flex:0 0 auto}.offer-body h3{min-height:0;font-size:24px;margin-bottom:12px}.offer-note{min-height:0;margin-bottom:8px}.offer-body ul{margin-bottom:14px}.offer-body li{flex-wrap:wrap;gap:0 8px}.offer-bottom{gap:12px}.offers-footnote nav{gap:14px}}
 </style>

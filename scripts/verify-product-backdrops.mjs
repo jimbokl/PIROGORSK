@@ -31,7 +31,11 @@ for (const item of manifest) {
 assert.equal(assets.length, 672);
 for(const item of retained) await stat(item.source);
 const menu = await readFile('site/menu/index.html','utf8');
-const menuIds = [...menu.matchAll(/data-product-backdrop="([^"]+)"/g)].map(match=>match[1]).sort();
+// Bundles reuse artwork; catalog coverage is checked on product cards only.
+const menuCards = [...menu.matchAll(/<article\b[^>]*>[\s\S]*?<\/article>/g)]
+  .filter(match => /\bdata-(?:product|supplier-id|menu-product)(?:=|\s|>)/.test(match[0].slice(0, match[0].indexOf('>') + 1)));
+assert.equal(menuCards.length, catalog.length, 'every catalog item has its own menu card');
+const menuIds = menuCards.flatMap(card => [...card[0].matchAll(/data-product-backdrop="([^"]+)"/g)].map(match=>match[1])).sort();
 assert.deepEqual(menuIds, [...manifest, ...fresh].map(item=>item.id).sort());
 for (const product of catalog) {
   const route = catalogProductHref(product);

@@ -10,6 +10,7 @@ import { catalog } from '../../src/data/catalog.ts';
 import { cityMenu } from '../../src/data/city-menu.ts';
 import { releaseManifest } from '../../scripts/verify-release.mjs';
 import worker from '../dist/worker.js';
+import { verifyOffers } from './qa-offers.mjs';
 
 // Actual Astro output and production origins; every request is intercepted.
 // Only the local in-memory database receives applications and Metrica is a queue.
@@ -299,6 +300,9 @@ try {
     const freshRow = sqlite.prepare('SELECT * FROM interests WHERE request_id = ?').get(freshRequest.requestId);
     assert.equal(freshRow.value_total, catalog.find(p => p.id === 'p39-483').prices[2000]);
     assert.equal(freshRow.delivery, 'pickup');
+    await page.goto(`${origin}/?qa=1`, { waitUntil: 'networkidle0' });
+    await page.evaluate(() => { localStorage.removeItem('pirogorsk-city'); localStorage.removeItem('pirogorsk-selection'); });
+    await verifyOffers(page, origin, width, fileURLToPath(new URL('../dist/qa-offers/', import.meta.url)));
     await context.close();
   }
   assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 9);

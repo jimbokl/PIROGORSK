@@ -1,4 +1,5 @@
 ---
+import HomeOffers from '../components/HomeOffers.astro';
 import ProductVisual from '../components/ProductVisual.astro';
 import ContentLayout from '../layouts/ContentLayout.astro';
 import EditorialHero from '../components/EditorialHero.astro';
@@ -16,7 +17,7 @@ const sections = [
   { id: 'pirogi39', title: 'Целые пироги', text: 'Готовые пироги в весах производителя', count: freshProducts.length },
   { id: 'holland', title: 'Выпечка и мини-пироги', text: 'Замороженные продукты и заготовки', count: supplierProducts.length },
   { id: 'pirogi', title: 'Идеи Пирогорска', text: 'Восемь концептов · 500 г и 1 кг', count: editorialProducts.length },
-  { id: 'extras', title: 'К столу', text: 'Напитки, соусы и посуда', count: extras.length },
+  { id: 'extras', title: 'К столу', text: 'Напитки и посуда', count: extras.length },
 ];
 const searchText = (product: typeof catalog[number]) => [product.name, product.description, ...product.variants.map(v => v.label)].join(' ');
 const title = 'Меню — целые пироги, хлеб и выпечка | Пирогорск';
@@ -32,7 +33,8 @@ const description = `${catalog.length} позиции перед запуско�
   </form>
   <nav class="menu-sections" aria-label="Разделы меню">{sections.map(section => <a href={`#${section.id}`} data-menu-jump={section.id}><strong>{section.title}</strong><small>{section.text}</small><span>Позиций: <b data-menu-section-count>{section.count}</b></span></a>)}</nav>
   <p class="menu-empty" data-menu-empty hidden>Пока ничего не нашлось. Попробуйте другое название, часть слова или сбросьте поиск и фильтры.</p>
-  <p class="menu-planner-link"><a href="/podbor/">Сколько пирогов нужно на вашу компанию? Рассчитать вес ↗</a></p>
+  <p class="menu-planner-link"><a href="/podbor/">Сколько пирогов нужно на вашу компанию? Рассчитать вес ↗</a> · <a href="#nabory">Выбрать готовое сочетание ↗</a></p>
+  <HomeOffers embedded />
   <SupplierCatalog fresh interactive={false} />
   <SupplierCatalog interactive={false} />
   <section class="menu-originals" id="pirogi" data-menu-section aria-labelledby="menu-originals-title">

@@ -3,6 +3,8 @@ import { trackGoal } from './analytics';
 import { editorialCityIntents, editorialScenarioIntents } from '../data/editorial-intents';
 import { parsePlan } from '../lib/pie-planner';
 import { estimateDelivery } from '../data/pricing';
+import { bundles, addOnGroups } from '../data/bundles';
+import { mergeSelection, availableAddOns } from '../lib/selection-offers';
 
 type Selection = { id: string; value: number; quantity: number };
 const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
@@ -78,6 +80,32 @@ function addProduct(id: string, value: number) {
   return true;
 }
 
+function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add') {
+  const merged = mergeSelection(selection, items, products, mode);
+  if (!merged) {
+    const message = 'Не удалось добавить всё: максимум 24 варианта и 99 штук одного варианта. Уменьшите подборку и повторите.';
+    toast(message);
+    document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = message;
+    return false;
+  }
+  for (const item of merged) {
+    const added = item.quantity - (selection.find(entry => entry.id === item.id && entry.value === item.value)?.quantity || 0);
+    if (added) trackGoal('catalog_add', { city, productid: item.id, variant: String(item.value), qty: added, value: productFor(item).prices[item.value] * added });
+  }
+  selection.splice(0, selection.length, ...merged);
+  updateBadge();
+  return true;
+}
+
+function chooseBundle(id: string, mode: 'add' | 'ensure' = 'add') {
+  const bundle = bundles.find(bundle => bundle.id === id);
+  if (!bundle) return;
+  if (addItems(bundle.items, mode)) {
+    openDialog('selection-dialog');
+    document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = `«${bundle.title}» в подборке. Состав и количество можно изменить.`;
+  }
+}
+
 function updateBadge() {
   try { localStorage.setItem('pirogorsk-selection', JSON.stringify(selection)); } catch { /* In-memory selection remains available. */ }
   const count = selection.reduce((sum, item) => sum + item.quantity, 0);
@@ -87,6 +115,9 @@ function updateBadge() {
 
 function renderSelection() {
   itemContainer.replaceChildren();
+  const available = availableAddOns(selection, products);
+  document.querySelector<HTMLElement>('[data-upsells]')!.hidden = available.length === 0;
+  all('[data-upsell-group]').forEach(group => { group.hidden = !available.includes(group.dataset.upsellGroup!); });
   const summary = document.querySelector<HTMLElement>('.selection-summary')!;
   summary.hidden = selection.length === 0;
   document.querySelector<HTMLElement>('[data-copy-fallback]')!.hidden = true;
@@ -164,12 +195,26 @@ all('[data-product]').forEach(card => {
   });
 });
 
-all('[data-preset]').forEach(button => button.addEventListener('click', () => {
-  const preset: [string, 500 | 1000][] = button.dataset.preset === 'dinner'
-    ? [['meat', 500], ['cheese', 500]]
-    : [['meat', 1000], ['fish', 1000], ['cabbage', 1000]];
-  preset.forEach(([id, weight]) => addProduct(id, weight));
-  openDialog('selection-dialog');
+all('[data-preset]').forEach(button => button.addEventListener('click', () => chooseBundle(button.dataset.preset!)));
+all<HTMLAnchorElement>('[data-bundle]').forEach(link => link.addEventListener('click', event => {
+  if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  chooseBundle(link.dataset.bundle!);
+}));
+all<HTMLSelectElement>('[data-upsell-choice]').forEach(select => select.addEventListener('change', () => {
+  const button = document.querySelector<HTMLButtonElement>(`[data-upsell-add="${select.dataset.upsellChoice}"]`)!;
+  button.textContent = `Добавить за ${money(Number(select.selectedOptions[0].dataset.price))}`;
+}));
+all<HTMLButtonElement>('[data-upsell-add]').forEach(button => button.addEventListener('click', () => {
+  const group = addOnGroups.find(group => group.id === button.dataset.upsellAdd);
+  const select = document.querySelector<HTMLSelectElement>(`[data-upsell-choice="${group?.id}"]`);
+  if (!group || !select || !availableAddOns(selection, products).includes(group.id)) return;
+  const choice = group.choices.find(item => `${item.id}:${item.value}:${item.quantity}` === select.value);
+  if (!choice || !addItems([choice])) return;
+  renderSelection();
+  document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = `Добавлено: ${productFor(choice).name}, ${variantLabel(productFor(choice), choice.value)}${choice.quantity > 1 ? ` × ${choice.quantity}` : ''}.`;
+  const next = availableAddOns(selection, products).length ? document.getElementById('addons-heading') : document.querySelector<HTMLElement>('[data-order]');
+  next?.focus({ preventScroll: true });
 }));
 
 function goToCatalog() {
@@ -222,7 +267,9 @@ all('[data-order]').forEach(button => button.addEventListener('click', () => {
 }));
 const interestParams = new URLSearchParams(location.search);
 const interestId = interestParams.get('interest');
-if (interestId === 'calculator') {
+if (interestId === 'bundle') {
+  chooseBundle(interestParams.get('bundle') || '', 'ensure');
+} else if (interestId === 'calculator') {
   const planned = parsePlan(interestParams.get('items'), products);
   if (planned) {
     const cityNames: Record<string, string> = { zelenogradsk: 'Зеленоградск', kaliningrad: 'Калининград', svetlogorsk: 'Светлогорск' };
