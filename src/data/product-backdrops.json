@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "cranberry",
+    "source": "design/product-backdrops-source/cranberry.png",
+    "sourceSha256": "50d604d7b0b01d73c92705c20b4af6f23195890b079ddae0ee47fa75549c727d",
+    "base": "/product-backdrops/cranberry",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "seabuckthorn",
+    "source": "design/product-backdrops-source/seabuckthorn.png",
+    "sourceSha256": "89133e5c44f7e9b12120aa3765101c28eb20687227e708b6f877214b6ef5032f",
+    "base": "/product-backdrops/seabuckthorn",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "tea",
+    "source": "design/product-backdrops-source/tea.png",
+    "sourceSha256": "67df779877d0a62f708d579415c164c4c3c354cb8d404e0d52fc0e5953b827a2",
+    "base": "/product-backdrops/tea",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "coffee",
+    "source": "design/product-backdrops-source/coffee.png",
+    "sourceSha256": "7218beecc3043b46d0b35539389146431cfd95d837ddb12ce5b075ee0fa1a108",
+    "base": "/product-backdrops/coffee",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "water",
+    "source": "design/product-backdrops-source/water.png",
+    "sourceSha256": "7448468667a6a1195b248e84855566c90c81ec4eb77c96e67c048be74ba5a785",
+    "base": "/product-backdrops/water",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "tableware",
+    "source": "design/product-backdrops-source/tableware.png",
+    "sourceSha256": "f717829e222a2797cfe0322ceef5c6fa2a293d81c88260ecb3f31bf639165ee2",
+    "base": "/product-backdrops/tableware",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-kuritsey-i-syrom.png",
+    "sourceSha256": "d5c0a586efc8b6fb22793262bd1f7d6cc424d8634f7ec761d95ec25f8a5c347c",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-tykvoy-i-syrom",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-tykvoy-i-syrom.png",
+    "sourceSha256": "026746e72c9b27c9257a5201863e70230ea5f60fca8092e395039b4b7f4e1b43",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-tykvoy-i-syrom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kartofelem",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-kartofelem.png",
+    "sourceSha256": "e519f1e1777007dcf862061895060bc03fffcc9f061c733faafdf7c85bc77e1a",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-kartofelem",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kartofelem-i-zelenyu",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-kartofelem-i-zelenyu.png",
+    "sourceSha256": "a32238e366a0e53a7b76c5f50fc417c5870ccca4ad154417bf92e550d6e786fc",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-kartofelem-i-zelenyu",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kapustoy-i-gretskim-orehom",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-kapustoy-i-gretskim-orehom.png",
+    "sourceSha256": "59406a59079798ae5d992b218dcc9668fb592058e486c1e95fa653b535318975",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-kapustoy-i-gretskim-orehom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kartofelem-i-syrom",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-kartofelem-i-syrom.png",
+    "sourceSha256": "1966eebe65f73d7c8a076fff13c721434caa9872e73af28d2b9f9217f7c263fe",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-kartofelem-i-syrom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-govyadinoy",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-govyadinoy.png",
+    "sourceSha256": "4f2598a736213a3be2819486a15c7a77b8326af1710d7d03128916440229afca",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-govyadinoy",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-govyadinoy-i-svininoy",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-govyadinoy-i-svininoy.png",
+    "sourceSha256": "311c5a9845de6da6defdeb6c34da5a9cacb3417a38f28d6b8bb8352d618b2da1",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-govyadinoy-i-svininoy",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-syrom-i-zelenyu",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-syrom-i-zelenyu.png",
+    "sourceSha256": "36ab48cde7adc1a71fd3f678480c37cf0e7616c6fb62494c7eeef712db1dba0c",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-syrom-i-zelenyu",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-yablokom-i-koritsey",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-yablokom-i-koritsey.png",
+    "sourceSha256": "1e871fd94092acc2b8fcc54661e351743b33883c2d0b3f53055683a5fdc08b9f",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-yablokom-i-koritsey",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-syrom",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-syrom.png",
+    "sourceSha256": "351bd71afdf5f90200a4042e3842f6d3c6f1e91ef3759fa02534857316199eb6",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-syrom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-vishney-i-gretskim-orehom",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-vishney-i-gretskim-orehom.png",
+    "sourceSha256": "492aba4cdcb2cbcaa8e75a22400e6a046fc8f58f75404d34e7a79bab94093721",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-vishney-i-gretskim-orehom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-so-shpinatom-i-syrom",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-so-shpinatom-i-syrom.png",
+    "sourceSha256": "a16568b8d79c3cb04785832a0b7f876719cfad768827c44d92fd4b605c65d275",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-so-shpinatom-i-syrom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-apelsinom-i-limonom",
+    "source": "design/product-backdrops-source/hb-osetinskiy-pirog-s-apelsinom-i-limonom.png",
+    "sourceSha256": "71bcc97986774b07082ac6fa2dbdbedb0753aff123e84d330e17a7d3c878cebf",
+    "base": "/product-backdrops/hb-osetinskiy-pirog-s-apelsinom-i-limonom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-rogalik-zernovoy-kornshpits",
+    "source": "design/product-backdrops-source/hb-rogalik-zernovoy-kornshpits.png",
+    "sourceSha256": "18b85ae4e64ea50657c3bcd736544ddca77192004b8a7823ef09834adf36fbdc",
+    "base": "/product-backdrops/hb-rogalik-zernovoy-kornshpits",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-s-kunzhutom-bolshaya",
+    "source": "design/product-backdrops-source/hb-bulochka-dlya-gamburgera-s-kunzhutom-bolshaya.png",
+    "sourceSha256": "18a7e03218814cc3637cf8e1d75458de2452d1c846c74b0fd41fb39584cb5e31",
+    "base": "/product-backdrops/hb-bulochka-dlya-gamburgera-s-kunzhutom-bolshaya",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-s-kunzhutom",
+    "source": "design/product-backdrops-source/hb-bulochka-dlya-gamburgera-s-kunzhutom.png",
+    "sourceSha256": "3c12e2a50eb76c5c142dff1a4be3ece0737a2c00d16adb9dfc1856e602cce5bf",
+    "base": "/product-backdrops/hb-bulochka-dlya-gamburgera-s-kunzhutom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-chiabatta-pshenichnaya-pryamougolnaya",
+    "source": "design/product-backdrops-source/hb-chiabatta-pshenichnaya-pryamougolnaya.png",
+    "sourceSha256": "31642096b622afe8c095d8b9bf9771d2b07ae493288ba9ecac50e15351671c30",
+    "base": "/product-backdrops/hb-chiabatta-pshenichnaya-pryamougolnaya",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-chiabatta-pshenichnaya-kvadratnaya",
+    "source": "design/product-backdrops-source/hb-chiabatta-pshenichnaya-kvadratnaya.png",
+    "sourceSha256": "ae221f434ef0874675a26e43694bbfae6ba15bbe4dbb4f194ac5583c7f10779b",
+    "base": "/product-backdrops/hb-chiabatta-pshenichnaya-kvadratnaya",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-lepeshka-pshenichnaya-kruglaya",
+    "source": "design/product-backdrops-source/hb-lepeshka-pshenichnaya-kruglaya.png",
+    "sourceSha256": "add8478fc2f53044aede0a593764b48260208964721975f5c0c27ed61e7a9bab",
+    "base": "/product-backdrops/hb-lepeshka-pshenichnaya-kruglaya",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-briosh-bolshaya-80-g",
+    "source": "design/product-backdrops-source/hb-bulochka-dlya-gamburgera-briosh-bolshaya-80-g.png",
+    "sourceSha256": "fd639e8d25bbd0649cbdc6ac727b804d134aa892a2b32f6df37ac7912020a579",
+    "base": "/product-backdrops/hb-bulochka-dlya-gamburgera-briosh-bolshaya-80-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-briosh-55-g",
+    "source": "design/product-backdrops-source/hb-bulochka-dlya-gamburgera-briosh-55-g.png",
+    "sourceSha256": "1bd5c683c163b1c6b59b24f6a142655177575b4f6fd84cc90ee8d53aaa2b04f2",
+    "base": "/product-backdrops/hb-bulochka-dlya-gamburgera-briosh-55-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-zernovaya-kornshpits-70-g",
+    "source": "design/product-backdrops-source/hb-bulochka-zernovaya-kornshpits-70-g.png",
+    "sourceSha256": "d7cb189553bf325b8577c4d9674e773075d11e653ebe48527cdea702f3083c62",
+    "base": "/product-backdrops/hb-bulochka-zernovaya-kornshpits-70-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-chiabatta-mini-30-gr",
+    "source": "design/product-backdrops-source/hb-chiabatta-mini-30-gr.png",
+    "sourceSha256": "6cba528fd2599afab1188542233534cba3a54f7024f4e6bda9309801fabc9092",
+    "base": "/product-backdrops/hb-chiabatta-mini-30-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-vitushka-s-syrom-90-gr",
+    "source": "design/product-backdrops-source/hb-vitushka-s-syrom-90-gr.png",
+    "sourceSha256": "4fe40cbdf521170431b032db53ddbc3adc351dcc815926d6098430424ac78de7",
+    "base": "/product-backdrops/hb-vitushka-s-syrom-90-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-chiabatta-solodovaya-mini-30-gr",
+    "source": "design/product-backdrops-source/hb-chiabatta-solodovaya-mini-30-gr.png",
+    "sourceSha256": "052a9172308166409db122ba291ea169e9a68885852d4e6403ee410ca876fdb7",
+    "base": "/product-backdrops/hb-chiabatta-solodovaya-mini-30-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-smak-dlya-gamburgera-mini-30-gr",
+    "source": "design/product-backdrops-source/hb-bulochka-smak-dlya-gamburgera-mini-30-gr.png",
+    "sourceSha256": "4649ec4058c176bc2eb6ecb7d786c196facb0a605ce86ae1ac960b00cfaa336a",
+    "base": "/product-backdrops/hb-bulochka-smak-dlya-gamburgera-mini-30-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-dieticheskaya-s-otrubyami-30-gr",
+    "source": "design/product-backdrops-source/hb-bulochka-dieticheskaya-s-otrubyami-30-gr.png",
+    "sourceSha256": "17500f42f8aefa5a454392919afa37bbf5e4bc5ea1a88d43e4b518a93bf3c872",
+    "base": "/product-backdrops/hb-bulochka-dieticheskaya-s-otrubyami-30-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-zernovaya-30-gr",
+    "source": "design/product-backdrops-source/hb-bulochka-zernovaya-30-gr.png",
+    "sourceSha256": "e78b2df20ad0d5308a03d825072dc4442485b830ef0c5268057b46e092ff5b40",
+    "base": "/product-backdrops/hb-bulochka-zernovaya-30-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-litovskaya-30gr",
+    "source": "design/product-backdrops-source/hb-bulochka-litovskaya-30gr.png",
+    "sourceSha256": "4d612a387019ad0fc881b0c9a5a9742f0eeba040c7a4bbe89cbffc55fc66de11",
+    "base": "/product-backdrops/hb-bulochka-litovskaya-30gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-supnaya-chasha-390-gr",
+    "source": "design/product-backdrops-source/hb-supnaya-chasha-390-gr.png",
+    "sourceSha256": "af05ad6fd52dcc50a32abc024edd59e350f337d7e7cd49ceef1f21824dc979cd",
+    "base": "/product-backdrops/hb-supnaya-chasha-390-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-hlebnaya-korzina-1-8-kg",
+    "source": "design/product-backdrops-source/hb-hlebnaya-korzina-1-8-kg.png",
+    "sourceSha256": "47527aeeb1adc3249109bad2a5c942dd5cb6e2dccc81f5f6f9c0ed704f0f0682",
+    "base": "/product-backdrops/hb-hlebnaya-korzina-1-8-kg",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulka-dlya-gamburgera-maksi-190-g",
+    "source": "design/product-backdrops-source/hb-bulka-dlya-gamburgera-maksi-190-g.png",
+    "sourceSha256": "83bc6dc025854ac95a0dc94260caa465a34142a52cfd63b34679dbf150b6bfb4",
+    "base": "/product-backdrops/hb-bulka-dlya-gamburgera-maksi-190-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-smak-gollandskaya-40-gr",
+    "source": "design/product-backdrops-source/hb-bulochka-smak-gollandskaya-40-gr.png",
+    "sourceSha256": "a0f1deac4266bcd934fd6ab4a18e240c7fbe4ec3bb4a34c72ec644555cd78d5d",
+    "base": "/product-backdrops/hb-bulochka-smak-gollandskaya-40-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-solodovaya-75-gr",
+    "source": "design/product-backdrops-source/hb-bulochka-dlya-gamburgera-solodovaya-75-gr.png",
+    "sourceSha256": "b9e95dcd33ab0e98e039e9a799996d9bdd799f267099bac4106192d4b9d85227",
+    "base": "/product-backdrops/hb-bulochka-dlya-gamburgera-solodovaya-75-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-vitaya-75-g",
+    "source": "design/product-backdrops-source/hb-bulochka-dlya-gamburgera-vitaya-75-g.png",
+    "sourceSha256": "02bcb81e949ea2352dc493ba239a59316a5b06959d68be2b54dc30eb4072a7f0",
+    "base": "/product-backdrops/hb-bulochka-dlya-gamburgera-vitaya-75-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-chiabatta-solodovaya-70-gr",
+    "source": "design/product-backdrops-source/hb-chiabatta-solodovaya-70-gr.png",
+    "sourceSha256": "8b3e8d9ae2cf749197292c415c159dfb235522e7f6f7f6de54dbde6373274666",
+    "base": "/product-backdrops/hb-chiabatta-solodovaya-70-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-s-bazilikom-i-maslinami-80-gr",
+    "source": "design/product-backdrops-source/hb-bulochka-s-bazilikom-i-maslinami-80-gr.png",
+    "sourceSha256": "5c6c692ea061f2cd91fe4674001c4bd5bf3f9dd0890e37484ff6de0e7394342a",
+    "base": "/product-backdrops/hb-bulochka-s-bazilikom-i-maslinami-80-gr",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-tort-napoleon-2-0-kg-18-sht-po-110-g",
+    "source": "design/product-backdrops-source/hb-tort-napoleon-2-0-kg-18-sht-po-110-g.png",
+    "sourceSha256": "a948a11a4389f6584521dea0ea19e6e09e67448a00915339a5a908ca5aefb9f3",
+    "base": "/product-backdrops/hb-tort-napoleon-2-0-kg-18-sht-po-110-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-tort-morkovnyy-1-98-kg-18-sht-po-110-g",
+    "source": "design/product-backdrops-source/hb-tort-morkovnyy-1-98-kg-18-sht-po-110-g.png",
+    "sourceSha256": "0908daff2d489c8efd292b0dc57f017c981d5e0c654afba25638629a80f9b824",
+    "base": "/product-backdrops/hb-tort-morkovnyy-1-98-kg-18-sht-po-110-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-flay-zimnyaya-vishnya-2-34-kg-18-sht-po-130-g",
+    "source": "design/product-backdrops-source/hb-flay-zimnyaya-vishnya-2-34-kg-18-sht-po-130-g.png",
+    "sourceSha256": "85737e691f2f4d304d914d6442f51749791709f030c112481a80069fbba558ca",
+    "base": "/product-backdrops/hb-flay-zimnyaya-vishnya-2-34-kg-18-sht-po-130-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-tort-medovyy-1-62-kg-18-sht-po-90-g",
+    "source": "design/product-backdrops-source/hb-tort-medovyy-1-62-kg-18-sht-po-90-g.png",
+    "sourceSha256": "377d747f3b2cb7f5bec76aadcc73ca7073f58fd865797edbd0d9dd0f2b8013d6",
+    "base": "/product-backdrops/hb-tort-medovyy-1-62-kg-18-sht-po-90-g",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-maffin-apelsin-s-shokoladom",
+    "source": "design/product-backdrops-source/hb-maffin-apelsin-s-shokoladom.png",
+    "sourceSha256": "8a207cbd44b280abc504488775254a6b3c245c46743c0e5af8b60dfd3f8f059f",
+    "base": "/product-backdrops/hb-maffin-apelsin-s-shokoladom",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-maffin-chernichnyy",
+    "source": "design/product-backdrops-source/hb-maffin-chernichnyy.png",
+    "sourceSha256": "5272a28f40c360ceed060cde3720d055af27e2088a54da6b783ea31ca9934e4d",
+    "base": "/product-backdrops/hb-maffin-chernichnyy",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-maffin-troynoy-shokolad",
+    "source": "design/product-backdrops-source/hb-maffin-troynoy-shokolad.png",
+    "sourceSha256": "2b1b61974423b39e318ca1de805c69347ea4b522a724f3c74dc690aea4dd5f4c",
+    "base": "/product-backdrops/hb-maffin-troynoy-shokolad",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-maffin-gretskiy-oreh",
+    "source": "design/product-backdrops-source/hb-maffin-gretskiy-oreh.png",
+    "sourceSha256": "14b190e5afe32d8344b4856729344880f59ad359491d5789e2d671575da31a4b",
+    "base": "/product-backdrops/hb-maffin-gretskiy-oreh",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-assorti-maffinov-16-sht-po-80-gr-po-4-sht-kazhdogo-vida",
+    "source": "design/product-backdrops-source/hb-assorti-maffinov-16-sht-po-80-gr-po-4-sht-kazhdogo-vida.png",
+    "sourceSha256": "c23a77f722f1b110487ceade53f9173900f9a5e4bd554cb50b9fab9222242f49",
+    "base": "/product-backdrops/hb-assorti-maffinov-16-sht-po-80-gr-po-4-sht-kazhdogo-vida",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-pirozhnoe-lesnoy-oreh-60-gr-h-18-sht-up",
+    "source": "design/product-backdrops-source/hb-pirozhnoe-lesnoy-oreh-60-gr-h-18-sht-up.png",
+    "sourceSha256": "4e30615445bdf7e4e0e6f72c5be70841ced7fbaf3388723fa1de732b6b39de27",
+    "base": "/product-backdrops/hb-pirozhnoe-lesnoy-oreh-60-gr-h-18-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-pirozhnoe-prezent-55-gr-h-18-sht-up",
+    "source": "design/product-backdrops-source/hb-pirozhnoe-prezent-55-gr-h-18-sht-up.png",
+    "sourceSha256": "340ea2c162878cf4679c3abf25431cce06cf02cc6d6dbf0fbd6047d64ed0bd81",
+    "base": "/product-backdrops/hb-pirozhnoe-prezent-55-gr-h-18-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-sloyka-bezdrozhzhevaya-s-syrom-i-vetchinoy-100-gr-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-sloyka-bezdrozhzhevaya-s-syrom-i-vetchinoy-100-gr-h-100-sht-up.png",
+    "sourceSha256": "38b0f6d504be133a4822d143fbf0738ae3330931e2300352dd35348ebeb7e211",
+    "base": "/product-backdrops/hb-sloyka-bezdrozhzhevaya-s-syrom-i-vetchinoy-100-gr-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-sloyka-lukovaya-s-kartofelem-90-gr-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-sloyka-lukovaya-s-kartofelem-90-gr-h-100-sht-up.png",
+    "sourceSha256": "891e6a5ac9d662c6bc2d96bee5e7a6825d1c64b1e28636e857e3f593847d2cd5",
+    "base": "/product-backdrops/hb-sloyka-lukovaya-s-kartofelem-90-gr-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-sloyka-lukovaya-s-pechenyu-90-gr-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-sloyka-lukovaya-s-pechenyu-90-gr-h-100-sht-up.png",
+    "sourceSha256": "260450e3b9af7e723350892cd5c814372ce50baa315ec7e4a6ae023c713bd92c",
+    "base": "/product-backdrops/hb-sloyka-lukovaya-s-pechenyu-90-gr-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-sloyka-s-tvorogom-i-izyumom-85-gr-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-sloyka-s-tvorogom-i-izyumom-85-gr-h-100-sht-up.png",
+    "sourceSha256": "2cb82ddbae56a957244229cf1a7649d4a2f21dfb81ba9584b62b290bf0ad3445",
+    "base": "/product-backdrops/hb-sloyka-s-tvorogom-i-izyumom-85-gr-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-bulochka-k-kofe-85-gr-h-100-sht-v-up",
+    "source": "design/product-backdrops-source/hb-bulochka-k-kofe-85-gr-h-100-sht-v-up.png",
+    "sourceSha256": "5387594633975abfa456aed0a321b8af84bf7c12e672bdd957a0172758274a3e",
+    "base": "/product-backdrops/hb-bulochka-k-kofe-85-gr-h-100-sht-v-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-vitushka-s-makom-85-gr-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-vitushka-s-makom-85-gr-h-100-sht-up.png",
+    "sourceSha256": "9c20b9c28b09d8b343ff47395ae49d377abe3c196e6ff8e0a4aa5eff4ffa40b5",
+    "base": "/product-backdrops/hb-vitushka-s-makom-85-gr-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-yazychok-s-konfityurom-60-gr-h-150-sht-up",
+    "source": "design/product-backdrops-source/hb-yazychok-s-konfityurom-60-gr-h-150-sht-up.png",
+    "sourceSha256": "a86ce3329451ba69ce8ff3b5a6908862469d88b9af889dbeef66fd557fb9d867",
+    "base": "/product-backdrops/hb-yazychok-s-konfityurom-60-gr-h-150-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-yazychok-s-kremom-60-gr-h-150-sht-up",
+    "source": "design/product-backdrops-source/hb-yazychok-s-kremom-60-gr-h-150-sht-up.png",
+    "sourceSha256": "ddc863720c7bcfd8991d2e598969521c240f0abb35b2a5e5236d6ce2c1479391",
+    "base": "/product-backdrops/hb-yazychok-s-kremom-60-gr-h-150-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-konvert-yablokom-i-izyumom-100-gr-h-80-sht-up",
+    "source": "design/product-backdrops-source/hb-konvert-yablokom-i-izyumom-100-gr-h-80-sht-up.png",
+    "sourceSha256": "29f9f3384c3b5c99b6b5349b44364c7072500a22db3cd47d447858e52c996c6b",
+    "base": "/product-backdrops/hb-konvert-yablokom-i-izyumom-100-gr-h-80-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-konvert-s-abrikosom-100-gr-h-80-sht-up",
+    "source": "design/product-backdrops-source/hb-konvert-s-abrikosom-100-gr-h-80-sht-up.png",
+    "sourceSha256": "4bd3722021bda0af4340b05607b80d37e1d0e13064b54d84f250391db2e218c0",
+    "base": "/product-backdrops/hb-konvert-s-abrikosom-100-gr-h-80-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-konvert-s-vishney-100-gr-h-80-sht-up",
+    "source": "design/product-backdrops-source/hb-konvert-s-vishney-100-gr-h-80-sht-up.png",
+    "sourceSha256": "7faac08ce93c1d59ca2256608859befe3f5a07fd3f5175b2092a8c2cd09c79d3",
+    "base": "/product-backdrops/hb-konvert-s-vishney-100-gr-h-80-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-konvert-s-persikom-i-yablokom-100-gr-h-80-sht-up",
+    "source": "design/product-backdrops-source/hb-konvert-s-persikom-i-yablokom-100-gr-h-80-sht-up.png",
+    "sourceSha256": "511cd8e5339ec245994f0b3c9141dc22a9fe8ba48288eb66134324612a95373c",
+    "base": "/product-backdrops/hb-konvert-s-persikom-i-yablokom-100-gr-h-80-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-kruassan-zernovoy-30-gr-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-kruassan-zernovoy-30-gr-h-100-sht-up.png",
+    "sourceSha256": "d3dd3523ce7460d5e6201dd051ee5b46dc184501d67b883aaa8625c3c965ce93",
+    "base": "/product-backdrops/hb-kruassan-zernovoy-30-gr-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-kruassan-mini-30-g-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-kruassan-mini-30-g-h-100-sht-up.png",
+    "sourceSha256": "90e90109f531490690b85dda0ac2af2e2b5ad4758963b64ca4fc252979c09b1d",
+    "base": "/product-backdrops/hb-kruassan-mini-30-g-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-assorti-na-vybor-kruassanov-mini-30-g-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-assorti-na-vybor-kruassanov-mini-30-g-h-100-sht-up.png",
+    "sourceSha256": "9ec2e08819c34a054de94fab31cf0ca467748e0b00620dd8cc7e48409e341866",
+    "base": "/product-backdrops/hb-assorti-na-vybor-kruassanov-mini-30-g-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-kruassan-60-g-h-50-sht-up",
+    "source": "design/product-backdrops-source/hb-kruassan-60-g-h-50-sht-up.png",
+    "sourceSha256": "56aa6411fbf47623babd62d7cf26f570cb311176b353367685cec404a1be0a9d",
+    "base": "/product-backdrops/hb-kruassan-60-g-h-50-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up.png",
+    "sourceSha256": "75060acb62ba0d33d0162ba062c053c69b0b395cc5ee4c386785791141aefcde",
+    "base": "/product-backdrops/hb-sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-sloyka-s-myasom-90-g-90-gr-h-100-sht-up",
+    "source": "design/product-backdrops-source/hb-sloyka-s-myasom-90-g-90-gr-h-100-sht-up.png",
+    "sourceSha256": "a1a20e1a07abc9b9a9835ae11c252f958190ec46d0125f697627f9759228decf",
+    "base": "/product-backdrops/hb-sloyka-s-myasom-90-g-90-gr-h-100-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-kruassan-s-vishnevoy-nachinkoy-70-g-h-20-sht-up",
+    "source": "design/product-backdrops-source/hb-kruassan-s-vishnevoy-nachinkoy-70-g-h-20-sht-up.png",
+    "sourceSha256": "2bf9d53568ad8c6aaf97bbe5af2df4ccacbe2eab5d9eb59e45e513018407d65f",
+    "base": "/product-backdrops/hb-kruassan-s-vishnevoy-nachinkoy-70-g-h-20-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-kruassan-s-shokoladnoy-nachinkoy-70-g-h-20-sht-up",
+    "source": "design/product-backdrops-source/hb-kruassan-s-shokoladnoy-nachinkoy-70-g-h-20-sht-up.png",
+    "sourceSha256": "0478a47b543e7b80b3cb517b8f4f6550d8b31ae57bb54ef46e4cbf2fdb3bec0c",
+    "base": "/product-backdrops/hb-kruassan-s-shokoladnoy-nachinkoy-70-g-h-20-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-kruassan-s-klenovym-siropom-i-gretskim-orehom-70-g-h-20-sht-up",
+    "source": "design/product-backdrops-source/hb-kruassan-s-klenovym-siropom-i-gretskim-orehom-70-g-h-20-sht-up.png",
+    "sourceSha256": "879b84f29dc46bec9ebfc470d46dfdfd1e396aa0898f92d58455f2365112e687",
+    "base": "/product-backdrops/hb-kruassan-s-klenovym-siropom-i-gretskim-orehom-70-g-h-20-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-kruassan-s-mindalnoy-nachinkoy-70-g-h-20-sht-up",
+    "source": "design/product-backdrops-source/hb-kruassan-s-mindalnoy-nachinkoy-70-g-h-20-sht-up.png",
+    "sourceSha256": "194acc3fc8837e1f7a6f1ba18bb257cd2f57ae59e449765ac7090b43a23b69a5",
+    "base": "/product-backdrops/hb-kruassan-s-mindalnoy-nachinkoy-70-g-h-20-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-sloyka-s-kremom-pashteysh-70-g-h-20-sht-up",
+    "source": "design/product-backdrops-source/hb-sloyka-s-kremom-pashteysh-70-g-h-20-sht-up.png",
+    "sourceSha256": "71f62054e232e0ae44909eec84611a0aa0c7c9886b8e65376a0d6052cdae6864",
+    "base": "/product-backdrops/hb-sloyka-s-kremom-pashteysh-70-g-h-20-sht-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+    "source": "design/product-backdrops-source/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg.png",
+    "sourceSha256": "c34fe2bcb13cbe7714f4c278c07c5ef526f7497d8fc95597e26a601c4dc62610",
+    "base": "/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+    "source": "design/product-backdrops-source/hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg.png",
+    "sourceSha256": "a268d9b28d7040471880b80f585b7cc21b75803f9b4db494945e2bbff16226c2",
+    "base": "/product-backdrops/hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up",
+    "source": "design/product-backdrops-source/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up.png",
+    "sourceSha256": "9261637228edb9070cfd8a4398533f45e22d8de3c65312b928e6e9befa7dbd58",
+    "base": "/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up",
+    "source": "design/product-backdrops-source/hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up.png",
+    "sourceSha256": "fc97123043773ea70016cd565e4995b43f3468f24b8cae34eee7bf5f807bccea",
+    "base": "/product-backdrops/hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-testo-drozhzhevoe-sdobnoe-zamorozhennoe-ot-5-kg",
+    "source": "design/product-backdrops-source/hb-testo-drozhzhevoe-sdobnoe-zamorozhennoe-ot-5-kg.png",
+    "sourceSha256": "699d7c8ae985c5d1fdbfbee944105a225cd5e8859db5468c922dd8a09eb61dee",
+    "base": "/product-backdrops/hb-testo-drozhzhevoe-sdobnoe-zamorozhennoe-ot-5-kg",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "hb-testo-pesochnoe-zamorozhennoe-ot-5-kg",
+    "source": "design/product-backdrops-source/hb-testo-pesochnoe-zamorozhennoe-ot-5-kg.png",
+    "sourceSha256": "add04aa05bfef70539c3f92eb24d445a3b8855ab8e268bb5f27b75b8ecc75948",
+    "base": "/product-backdrops/hb-testo-pesochnoe-zamorozhennoe-ot-5-kg",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-10-29"
+  }
+]

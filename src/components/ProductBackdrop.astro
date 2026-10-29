@@ -1,0 +1,15 @@
+---
+import { productBackdrop } from '../data/product-backdrops';
+interface Props { id: string; sizes?: string; hero?: boolean }
+const { id, sizes = '(max-width:650px) calc(100vw - 80px), (max-width:1050px) 42vw, 360px', hero = false } = Astro.props;
+const backdrop = productBackdrop(id);
+const srcset = (extension: string) => backdrop!.widths.map(width => `${backdrop!.base}-${width}.${extension} ${width}w`).join(', ');
+---
+{backdrop && <picture class="product-backdrop" data-product-backdrop={id} aria-hidden="true">
+  <source type="image/avif" srcset={srcset('avif')} {sizes} />
+  <img src={`${backdrop.base}-400.webp`} srcset={srcset('webp')} {sizes} width="960" height="960" alt="" loading={hero ? 'eager' : 'lazy'} fetchpriority="low" decoding="async" />
+</picture>}
+<style>
+  .product-backdrop{display:block;position:absolute;inset:0;pointer-events:none}
+  .product-backdrop img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:1}
+</style>

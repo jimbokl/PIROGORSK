@@ -4,9 +4,10 @@ import { launch } from 'chrome-launcher';
 import { mkdir, writeFile } from 'node:fs/promises';
 
 const url = process.argv[2] || 'http://127.0.0.1:4322/';
+const outputDirectory = process.env.LIGHTHOUSE_OUTPUT_DIR || 'qa';
 const mobileRuns = Number(process.env.LIGHTHOUSE_MOBILE_RUNS || 3);
 if (!Number.isInteger(mobileRuns) || mobileRuns < 1) throw new Error('LIGHTHOUSE_MOBILE_RUNS must be a positive integer');
-await mkdir('qa', { recursive: true });
+await mkdir(outputDirectory, { recursive: true });
 const summaries = [];
 for (const mode of ['mobile', 'desktop']) {
   for (let run = 1; run <= (mode === 'mobile' ? mobileRuns : 1); run++) {
@@ -21,12 +22,12 @@ for (const mode of ['mobile', 'desktop']) {
       }, mode === 'desktop' ? desktopConfig : undefined);
       if (!result) throw new Error(`No Lighthouse result for ${mode}`);
       const report = result.lhr;
-      const stem = `qa/lighthouse-${mode}-${run}`;
+      const stem = `${outputDirectory}/lighthouse-${mode}-${run}`;
       await writeFile(`${stem}.json`, result.report[0]);
       await writeFile(`${stem}.html`, result.report[1]);
       // Retain the existing paths for the final sample, with every sample saved above.
-      await writeFile(`qa/lighthouse-${mode}.json`, result.report[0]);
-      await writeFile(`qa/lighthouse-${mode}.html`, result.report[1]);
+      await writeFile(`${outputDirectory}/lighthouse-${mode}.json`, result.report[0]);
+      await writeFile(`${outputDirectory}/lighthouse-${mode}.html`, result.report[1]);
       const measured = report.audits.metrics.details.items[0];
       const summary = {
         mode,
@@ -51,7 +52,7 @@ for (const mode of ['mobile', 'desktop']) {
       };
       summaries.push(summary);
       console.log(JSON.stringify({ mode, run, scores: summary.scores, metrics: summary.metrics, observed: summary.observed, lcpBreakdown: summary.lcpBreakdown }, null, 2));
-      await writeFile('qa/performance-summary.json', JSON.stringify(summaries, null, 2));
+      await writeFile(`${outputDirectory}/performance-summary.json`, JSON.stringify(summaries, null, 2));
     } finally {
       await chrome.kill();
     }
@@ -71,5 +72,5 @@ const aggregate = ['mobile', 'desktop'].map(mode => {
     observedRenderDelay: range(samples.map(sample => sample.lcpBreakdown.elementRenderDelay)),
   };
 });
-await writeFile('qa/performance-ranges.json', JSON.stringify(aggregate, null, 2));
+await writeFile(`${outputDirectory}/performance-ranges.json`, JSON.stringify(aggregate, null, 2));
 console.log(JSON.stringify({ ranges: aggregate }, null, 2));

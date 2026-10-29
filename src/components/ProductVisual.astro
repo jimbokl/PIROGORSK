@@ -2,8 +2,11 @@
 import { Picture } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import manifestData from '../../design/layered-assets-v2/manifest.json';
+import tablewareProduct from '../../design/product-backdrops-source/tableware-product.png';
 import type { Product } from '../data/catalog';
 import ProductBadge from './ProductBadge.astro';
+import ProductBackdrop from './ProductBackdrop.astro';
+import { productBackdrop } from '../data/product-backdrops';
 import '../styles/catalog.css';
 
 interface Props { product: Product; layout?: 'catalog' | 'menu' | 'hero'; decorative?: boolean }
@@ -24,12 +27,13 @@ const asset = (file?: AssetFile) => file?.path && file.status === 'READY' ? imag
 const entry = (product.kind === 'pie' ? manifest.pairs : manifest.drinks)?.[product.visualKey ?? product.id];
 const ready = entry?.status === 'READY';
 const background = ready ? asset(entry.files?.background) : undefined;
+const generatedBackdrop = productBackdrop(product.id);
 const subjectFile = entry?.files?.pie ?? entry?.files?.product ?? entry?.files?.image ?? entry?.files?.cutout;
-const subject = ready && subjectFile?.alpha === true ? asset(subjectFile) : undefined;
+const subject = product.id === 'tableware' ? tablewareProduct : ready && subjectFile?.alpha === true ? asset(subjectFile) : undefined;
 const layered = subject && (product.kind !== 'pie' || background);
 const legacy = product.kind === 'pie' ? legacyImages[`../../design/assets-source/${product.id}.png`] : undefined;
 const composition = entry?.composition;
-const imageState = layered ? 'ready' : legacy ? 'legacy' : 'pending';
+const imageState = layered || generatedBackdrop ? 'ready' : legacy ? 'legacy' : 'pending';
 const subjectWidth = product.kind === 'pie' ? composition?.pie_css_width_percent ?? 88 : composition?.product_css_height_percent ?? 88;
 const subjectX = product.kind === 'pie' ? composition?.pie_center_x_percent ?? 50 : composition?.product_center_x_percent ?? 50;
 const subjectY = product.kind === 'pie' ? composition?.pie_center_y_percent ?? 54 : composition?.product_center_y_percent ?? 50;
@@ -57,14 +61,16 @@ const subjectSizes = slotSizes(subjectWidth / 100);
 const loading = layout === 'hero' ? 'eager' : 'lazy';
 const fetchpriority = layout === 'hero' ? 'high' : 'auto';
 ---
-<div class:list={['product-visual', `product-visual--${product.kind}`, { 'product-visual--pending': imageState === 'pending' }]} data-image-state={imageState} style={position} aria-hidden={decorative ? 'true' : undefined}>
+<div class:list={['product-visual', `product-visual--${product.kind}`, { 'product-visual--pending': imageState === 'pending', 'product-visual--hero': layout === 'hero' }]} data-image-state={imageState} style={position} aria-hidden={decorative ? 'true' : undefined}>
+  {generatedBackdrop && <ProductBackdrop id={product.id} {sizes} hero={layout === 'hero'} />}
   {layered ? <>
     {background && <Picture src={background} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={600} quality={44} alt="" class="product-visual-background" loading={loading} fetchpriority={fetchpriority} decoding="async" />}
     <Picture src={subject!} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={subjectSizes} width={600} height={600} quality={58} alt={product.kind === 'pie' ? `${product.name}: пирог и кусочек с начинкой` : product.name} class="product-visual-subject" loading={loading} fetchpriority={fetchpriority} decoding="async" />
-  </> : legacy ? <Picture src={legacy} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={532} quality={48} alt={`${product.name} и кусочек с начинкой`} class="product-visual-legacy" loading="lazy" decoding="async" /> : <div class="product-visual-placeholder" aria-hidden="true">
+  </> : legacy ? <Picture src={legacy} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={532} quality={48} alt={`${product.name} и кусочек с начинкой`} class="product-visual-legacy" loading="lazy" decoding="async" /> : !generatedBackdrop && <div class="product-visual-placeholder" aria-hidden="true">
     <span class="product-placeholder-caption">Скоро в Пирогорске</span>
     <span class="product-placeholder-name">{product.kind === 'pie' ? 'Кусочек' : 'К вашему'}<br />{product.kind === 'pie' ? 'сладкого' : 'пирогу'}</span>
     <span class="product-placeholder-note">Изображение готовится</span>
   </div>}
   {product.badge && <ProductBadge kind={product.badge} class="product-visual-badge" />}
 </div>
+<script>import '../scripts/product-artwork';</script>

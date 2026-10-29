@@ -16,10 +16,13 @@ const description = '92 позиции перед запуском Пирого�
   <EditorialHero eyebrow="92 позиции · готовим запуск" title="Выберите свой вкус" intro="Начинаем с подбора выпечки местных пекарен и доставки через Пирогорск. Сохранили первые восемь идей пирогов, добавили 78 позиций Holland Bakery и шесть напитков и дополнений. Цены и форматы предварительные." />
   <div class="ed-note"><strong>Сейчас проверяем интерес.</strong> Продажи и производство ещё не запущены. {conceptCaption} Состав и аллергены опубликуем до начала заказов.</div>
   <p class="menu-planner-link"><a href="/podbor/">Сколько пирогов нужно на вашу компанию? Рассчитать вес ↗</a></p>
-  <section class="ed-catalog" aria-label="Концепты пирогов">{editorialProducts.map(product => <article class="ed-product-card"><a href={productHref(product)}><ProductVisual {product} layout="menu" /><p class="ed-eyebrow">{product.sweet ? 'К чаю' : 'К общему столу'} · концепт</p><h2>{product.name}</h2><p>{product.editorial.intro}</p><span class="ed-product-more">О вкусе и статусе рецепта ↗</span></a></article>)}</section>
+  <section class="ed-catalog" aria-label="Концепты пирогов">{editorialProducts.map(product => <article class="ed-product-card"><a class="product-visual-link" href={productHref(product)}><ProductVisual {product} layout="menu" /><p class="ed-eyebrow">{product.sweet ? 'К чаю' : 'К общему столу'} · концепт</p><h2>{product.name}</h2><p>{product.editorial.intro}</p><span class="ed-product-more">О вкусе и статусе рецепта ↗</span></a></article>)}</section>
   <SupplierCatalog interactive={false} />
-  <EditorialLinks title="Напитки и дополнения" links={extras.map(product => ({ href: catalogProductHref(product), title: product.name, text: productPage(product).intro, label: `От ${Math.min(...product.variants.map(v => v.price)).toLocaleString('ru-RU')} ₽ · предварительно` }))} />
+  <section class="ed-links-section menu-extras" aria-labelledby="menu-extras-title">
+    <h2 id="menu-extras-title">Напитки и дополнения</h2>
+    <div class="ed-catalog">{extras.map(product => <article class="ed-product-card"><a class="product-visual-link" href={catalogProductHref(product)}><ProductVisual {product} layout="menu" decorative /><p class="ed-eyebrow">От {Math.min(...product.variants.map(v => v.price)).toLocaleString('ru-RU')} ₽ · предварительно</p><h3>{product.name}</h3><p>{productPage(product).intro}</p><span class="ed-product-more">Подробнее о позиции ↗</span></a></article>)}</div>
+  </section>
   <EditorialInterest interest="menu" title="Какие пироги вам интересны?" text="На главной можно собрать анонимную подборку и отметить город. Это поможет нам оценить спрос перед запуском; заказ и оплата пока недоступны." label="Выбрать интересные пироги" />
   <EditorialLinks title="Собираете стол к случаю?" links={scenarios.map(item => ({ href: `/nabor/${item.slug}/`, title: item.title, text: item.intro, label: 'Сценарий' }))} />
 </ContentLayout>
-<style>.menu-planner-link{margin:25px 0;font-size:13px;line-height:1.8}.menu-planner-link a{display:inline-block;min-height:44px;padding-block:10px;text-underline-offset:4px}</style>
+<style>.menu-planner-link{margin:25px 0;font-size:13px;line-height:1.8}.menu-planner-link a{display:inline-block;min-height:44px;padding-block:10px;text-underline-offset:4px}.menu-extras h3{font-size:clamp(23px,2.2vw,28px);line-height:1.2;margin-top:7px}</style>

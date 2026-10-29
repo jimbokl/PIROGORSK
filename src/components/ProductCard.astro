@@ -11,7 +11,7 @@ const selectedVariant = product.variants.find(({ value }) => value === product.d
 const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Объём' : 'Комплект';
 ---
 <article class:list={['product-card', 'catalog-card', `catalog-card--${product.kind}`]} data-product={product.id} data-category={product.category} data-kind={product.kind} data-unit={product.unit} aria-labelledby={`product-${product.id}`}>
-  {product.kind !== 'accessory' && <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}><ProductVisual product={product} decorative /></a>}
+  <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}><ProductVisual product={product} decorative /></a>
   <div class="product-copy">
     <h3 id={`product-${product.id}`}><a class="product-title-link" href={catalogProductHref(product)}>{product.name}</a></h3>
     <p class="product-description">{product.description}</p>

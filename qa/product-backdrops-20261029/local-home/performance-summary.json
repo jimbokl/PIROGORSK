@@ -1,0 +1,1333 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4325/",
+    "timestamp": "2026-10-29T14:15:18.706Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 98,
+      "lcp": 98
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 7.904,
+      "resourceLoadDelay": 7.022,
+      "resourceLoadDuration": 3.59,
+      "elementRenderDelay": 79.144
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1807.8532500000001,
+        "display": "1.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2406.2826000000005,
+        "display": "2.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.004960035727302905,
+        "display": "0.005"
+      },
+      "speed-index": {
+        "value": 1807.8532500000001,
+        "display": "1.8 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,0,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1151,
+                "bottom": 1321,
+                "left": 24,
+                "right": 194,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/myasnoy-pirog/\" aria-label=\"Подробнее: мясной пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,1,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1151,
+                "bottom": 1321,
+                "left": 218,
+                "right": 388,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/rybnyy-pirog/\" aria-label=\"Подробнее: рыбный пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-2-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,2,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1591,
+                "bottom": 1761,
+                "left": 24,
+                "right": 194,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-kapustoy/\" aria-label=\"Подробнее: пирог с капустой\">",
+              "nodeLabel": "Овощной",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-3-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,4,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2031,
+                "bottom": 2201,
+                "left": 24,
+                "right": 194,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-kuritsey-i-gribami/\" aria-label=\"Подробнее: пирог с курицей и грибами\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-4-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,5,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2031,
+                "bottom": 2201,
+                "left": 218,
+                "right": 388,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-yablokom-i-brusnikoy/\" aria-label=\"Подробнее: пирог с яблоком и брусникой\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-5-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,6,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2510,
+                "bottom": 2680,
+                "left": 24,
+                "right": 194,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-vishney/\" aria-label=\"Подробнее: пирог с вишней\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,7,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2510,
+                "bottom": 2680,
+                "left": 218,
+                "right": 388,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-tvorogom-i-malinoy/\" aria-label=\"Подробнее: пирог с творогом и малиной\">",
+              "nodeLabel": "К чаю",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-7-A",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,0,ARTICLE,0,A",
+              "selector": "section#extras > div.extras-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 3101,
+                "bottom": 3279,
+                "left": 18,
+                "right": 196,
+                "width": 178,
+                "height": 178
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/catalog/klyukvennyy-mors/\" aria-label=\"Подробнее: клюквенный морс\">",
+              "nodeLabel": "Освежает",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-8-A",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,1,ARTICLE,0,A",
+              "selector": "section#extras > div.extras-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 3101,
+                "bottom": 3279,
+                "left": 216,
+                "right": 394,
+                "width": 178,
+                "height": 178
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/catalog/oblepikhovyy-mors/\" aria-label=\"Подробнее: облепиховый морс\">",
+              "nodeLabel": "Освежает",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 314 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 39939,
+            "wastedBytes": 31951.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 18865,
+            "wastedBytes": 15092
+          },
+          {
+            "url": "http://127.0.0.1:4325/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 18785,
+            "wastedBytes": 15028
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 16398,
+            "wastedBytes": 13118.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 16093,
+            "wastedBytes": 12874.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.BOtyLgF8_JH6n2.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 15664,
+            "wastedBytes": 12531.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 15405,
+            "wastedBytes": 12324
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.CUr0iAWH_2kyYF8.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 15329,
+            "wastedBytes": 12263.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.Bo977vUT_ZS6h8W.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 15170,
+            "wastedBytes": 12136
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.d61w9KjH_1ymwWx.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 14983,
+            "wastedBytes": 11986.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 14803,
+            "wastedBytes": 11842.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/seabuckthorn-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 11488,
+            "wastedBytes": 11488
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 14355,
+            "wastedBytes": 11484
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/cranberry-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 11468,
+            "wastedBytes": 11468
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/coffee-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 11228,
+            "wastedBytes": 11228
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/tea-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 10986,
+            "wastedBytes": 10986
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.CF7ZZ9Af_285HE2.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 12945,
+            "wastedBytes": 10356
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.C3rRYxI3_nvq9x.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 10794,
+            "wastedBytes": 8635.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/analytics.wwK3Ddm3.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 10631,
+            "wastedBytes": 8504.800000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.CwMc51iY_ZQwleG.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 10372,
+            "wastedBytes": 8297.6
+          },
+          {
+            "url": "http://127.0.0.1:4325/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 9416,
+            "wastedBytes": 7532.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.dPlBJLpD_ZehP14.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 8956,
+            "wastedBytes": 7164.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.DMEurvcD_Z10U0hT.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 8554,
+            "wastedBytes": 6843.200000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.591iKjEd_ZarbJw.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 7982,
+            "wastedBytes": 6385.6
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.CJgaZJ6N_qPz2Q.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 6908,
+            "wastedBytes": 5526.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.DuGp5oBv_z9Ypg.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 6485,
+            "wastedBytes": 5188
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/tea.DpNrVaQR_Zfv8p9.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 5713,
+            "wastedBytes": 4570.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/coffee.BZ0rl5Ul_ZPn75y.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 5231,
+            "wastedBytes": 4184.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4997,
+            "wastedBytes": 3997.6000000000004
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/seabuckthorn.5G7nLPtn_Z1S3dh8.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4876,
+            "wastedBytes": 3900.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/index.astro_astro_type_script_index_0_lang.DNe8BchT.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4247,
+            "wastedBytes": 3397.6000000000004
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/cranberry.BeAaUA4p_Z1UiiPj.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4049,
+            "wastedBytes": 3239.2000000000003
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/InterestForm.astro_astro_type_script_index_0_lang.CwU-524x.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 3984,
+            "wastedBytes": 3187.2000000000003
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie-planner.D65GEHih.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 999,
+            "wastedBytes": 799.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 692,
+            "wastedBytes": 692
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 514,
+            "wastedBytes": 411.20000000000005
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pricing.uFphHH5q.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 409,
+            "wastedBytes": 327.20000000000005
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 296,
+            "wastedBytes": 236.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 296,
+            "wastedBytes": 236.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 290,
+            "wastedBytes": 232
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 33 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-4-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,2,DIV,2,DIV,0,DIV,0,A,0,PICTURE,2,IMG",
+              "selector": "div.tasting-scene > a > picture > img",
+              "boundingRect": {
+                "top": 516,
+                "bottom": 755,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 239
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4325/_astro/pie.CiXI4zfL_Z2fLupv.avif\" srcset=\"/_astro/pie.CiXI4zfL_18fk5t.webp 320w, /_astro/pie.CiXI4zfL_136R10.webp 48…\" sizes=\"(max-width: 760px) 68vw, (max-width: 1060px) 40vw, (max-width: 1500px) 39v…\" alt=\"Рыбный пирог: пирог и кусочек с начинкой. Визуальный концепт.\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"900\" height=\"900\">",
+              "nodeLabel": "Рыбный пирог: пирог и кусочек с начинкой. Визуальный концепт."
+            },
+            "url": "http://127.0.0.1:4325/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "totalBytes": 39750,
+            "wastedBytes": 34228,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (239x239). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 34228
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "8F3A8F780A482728859A32C7E40A6237": {
+                  "url": "http://127.0.0.1:4325/",
+                  "navStartToEndTime": 73,
+                  "transferSize": 58367,
+                  "isLongest": true,
+                  "children": {
+                    "29145.11": {
+                      "url": "http://127.0.0.1:4325/_astro/index.astro_astro_type_script_index_0_lang.DNe8BchT.js",
+                      "navStartToEndTime": 74,
+                      "transferSize": 4247,
+                      "isLongest": true,
+                      "children": {
+                        "29145.246": {
+                          "url": "http://127.0.0.1:4325/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 103,
+                          "transferSize": 999,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29145.10": {
+                      "url": "http://127.0.0.1:4325/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+                      "navStartToEndTime": 74,
+                      "transferSize": 290,
+                      "children": {
+                        "29145.244": {
+                          "url": "http://127.0.0.1:4325/_astro/analytics.wwK3Ddm3.js",
+                          "navStartToEndTime": 103,
+                          "transferSize": 10631,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29145.9": {
+                      "url": "http://127.0.0.1:4325/_astro/InterestForm.astro_astro_type_script_index_0_lang.CwU-524x.js",
+                      "navStartToEndTime": 74,
+                      "transferSize": 3984,
+                      "children": {
+                        "29145.245": {
+                          "url": "http://127.0.0.1:4325/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 103,
+                          "transferSize": 409,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29145.6": {
+                      "url": "http://127.0.0.1:4325/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 74,
+                      "transferSize": 296,
+                      "children": {
+                        "29145.243": {
+                          "url": "http://127.0.0.1:4325/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 102,
+                          "transferSize": 514,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29145.216": {
+                      "url": "http://127.0.0.1:4325/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 80,
+                      "transferSize": 18865,
+                      "children": {}
+                    },
+                    "29145.215": {
+                      "url": "http://127.0.0.1:4325/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 80,
+                      "transferSize": 9416,
+                      "children": {}
+                    },
+                    "29145.214": {
+                      "url": "http://127.0.0.1:4325/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 80,
+                      "transferSize": 18785,
+                      "children": {}
+                    },
+                    "29145.217": {
+                      "url": "http://127.0.0.1:4325/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 79,
+                      "transferSize": 16093,
+                      "children": {}
+                    },
+                    "29145.7": {
+                      "url": "http://127.0.0.1:4325/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 74,
+                      "transferSize": 296,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 103
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4325/",
+    "timestamp": "2026-10-29T14:15:26.346Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 113,
+      "lcp": 113
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 4.592,
+      "resourceLoadDelay": 4.729,
+      "resourceLoadDuration": 5.389,
+      "elementRenderDelay": 97.853
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 427.39392499999997,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 528.4502,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.007327856981291773,
+        "display": "0.007"
+      },
+      "speed-index": {
+        "value": 427.39392499999997,
+        "display": "0.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,0,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1018,
+                "bottom": 1284,
+                "left": 70,
+                "right": 337,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/myasnoy-pirog/\" aria-label=\"Подробнее: мясной пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,1,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1018,
+                "bottom": 1284,
+                "left": 385,
+                "right": 651,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/rybnyy-pirog/\" aria-label=\"Подробнее: рыбный пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-2-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,2,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1018,
+                "bottom": 1284,
+                "left": 699,
+                "right": 966,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-kapustoy/\" aria-label=\"Подробнее: пирог с капустой\">",
+              "nodeLabel": "Овощной",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-3-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,4,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1535,
+                "bottom": 1802,
+                "left": 70,
+                "right": 337,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-kuritsey-i-gribami/\" aria-label=\"Подробнее: пирог с курицей и грибами\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-4-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,5,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1535,
+                "bottom": 1802,
+                "left": 385,
+                "right": 651,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-yablokom-i-brusnikoy/\" aria-label=\"Подробнее: пирог с яблоком и брусникой\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-5-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,6,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1535,
+                "bottom": 1802,
+                "left": 699,
+                "right": 966,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-vishney/\" aria-label=\"Подробнее: пирог с вишней\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-A",
+              "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,2,DIV,7,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1535,
+                "bottom": 1802,
+                "left": 1014,
+                "right": 1280,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-tvorogom-i-malinoy/\" aria-label=\"Подробнее: пирог с творогом и малиной\">",
+              "nodeLabel": "К чаю",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-7-A",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,0,ARTICLE,0,A",
+              "selector": "section#extras > div.extras-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2166,
+                "bottom": 2394,
+                "left": 60,
+                "right": 288,
+                "width": 228,
+                "height": 228
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/catalog/klyukvennyy-mors/\" aria-label=\"Подробнее: клюквенный морс\">",
+              "nodeLabel": "Освежает",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-8-A",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,DIV,1,ARTICLE,0,A",
+              "selector": "section#extras > div.extras-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2166,
+                "bottom": 2394,
+                "left": 310,
+                "right": 539,
+                "width": 228,
+                "height": 228
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/catalog/oblepikhovyy-mors/\" aria-label=\"Подробнее: облепиховый морс\">",
+              "nodeLabel": "Освежает",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 335 KiB",
+        "items": [
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 39939,
+            "wastedBytes": 31951.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.CF7ZZ9Af_Z21m32J.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 38228,
+            "wastedBytes": 30582.4
+          },
+          {
+            "url": "http://127.0.0.1:4325/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 18865,
+            "wastedBytes": 15092
+          },
+          {
+            "url": "http://127.0.0.1:4325/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 18785,
+            "wastedBytes": 15028
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.DL6DiK4v_Z1Pnhm4.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 16398,
+            "wastedBytes": 13118.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 16093,
+            "wastedBytes": 12874.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.BOtyLgF8_JH6n2.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 15664,
+            "wastedBytes": 12531.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.BeTQd9tN_ZI9Krz.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 15405,
+            "wastedBytes": 12324
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.CUr0iAWH_2kyYF8.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 15329,
+            "wastedBytes": 12263.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.Bo977vUT_ZS6h8W.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 15170,
+            "wastedBytes": 12136
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.d61w9KjH_1ymwWx.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 14983,
+            "wastedBytes": 11986.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.Bp1vJZAV_1Jyz63.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 14803,
+            "wastedBytes": 11842.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie.CoMDhDYZ_Z9Y9oa.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 14355,
+            "wastedBytes": 11484
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/tableware-400.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 11336,
+            "wastedBytes": 11336
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.C3rRYxI3_nvq9x.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 10794,
+            "wastedBytes": 8635.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/analytics.wwK3Ddm3.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 10631,
+            "wastedBytes": 8504.800000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.CwMc51iY_ZQwleG.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 10372,
+            "wastedBytes": 8297.6
+          },
+          {
+            "url": "http://127.0.0.1:4325/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 9416,
+            "wastedBytes": 7532.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.dPlBJLpD_ZehP14.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 8956,
+            "wastedBytes": 7164.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.DMEurvcD_Z10U0hT.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 8554,
+            "wastedBytes": 6843.200000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/tableware-product.BM6h_pJP_H1rdL.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 8539,
+            "wastedBytes": 6831.200000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.591iKjEd_ZarbJw.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 7982,
+            "wastedBytes": 6385.6
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/seabuckthorn-256.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 5988,
+            "wastedBytes": 5988
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.CJgaZJ6N_qPz2Q.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 6908,
+            "wastedBytes": 5526.400000000001
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/cranberry-256.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 5490,
+            "wastedBytes": 5490
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/tea-256.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 5435,
+            "wastedBytes": 5435
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/coffee-256.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 5375,
+            "wastedBytes": 5375
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.DuGp5oBv_z9Ypg.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 6485,
+            "wastedBytes": 5188
+          },
+          {
+            "url": "http://127.0.0.1:4325/product-backdrops/water-256.avif",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 4926,
+            "wastedBytes": 4926
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/background.Bv6zT-OE_Z26mwNB.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4997,
+            "wastedBytes": 3997.6000000000004
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/tea.DpNrVaQR_1Fpthj.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4983,
+            "wastedBytes": 3986.4
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/coffee.BZ0rl5Ul_Z1hoTJW.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4410,
+            "wastedBytes": 3528
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/index.astro_astro_type_script_index_0_lang.DNe8BchT.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4247,
+            "wastedBytes": 3397.6000000000004
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/water.BZa4wDUV_Z21vVLE.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4185,
+            "wastedBytes": 3348
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/seabuckthorn.5G7nLPtn_29j41h.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 4122,
+            "wastedBytes": 3297.6000000000004
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/InterestForm.astro_astro_type_script_index_0_lang.CwU-524x.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 3984,
+            "wastedBytes": 3187.2000000000003
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/cranberry.BeAaUA4p_ewaKL.avif",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 3763,
+            "wastedBytes": 3010.4
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pie-planner.D65GEHih.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 999,
+            "wastedBytes": 799.2
+          },
+          {
+            "url": "http://127.0.0.1:4325/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 692,
+            "wastedBytes": 692
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 514,
+            "wastedBytes": 411.20000000000005
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/pricing.uFphHH5q.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 409,
+            "wastedBytes": 327.20000000000005
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 296,
+            "wastedBytes": 236.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 296,
+            "wastedBytes": 236.8
+          },
+          {
+            "url": "http://127.0.0.1:4325/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 290,
+            "wastedBytes": 232
+          }
+        ]
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": [
+              {
+                "source": {
+                  "type": "source-location",
+                  "url": "http://127.0.0.1:4325/",
+                  "urlProvider": "network",
+                  "line": 8,
+                  "column": 12413
+                },
+                "reflowTime": 31.919
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 18 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-4-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,2,DIV,2,DIV,0,DIV,0,A,0,PICTURE,2,IMG",
+              "selector": "div.tasting-scene > a > picture > img",
+              "boundingRect": {
+                "top": 210,
+                "bottom": 682,
+                "left": 685,
+                "right": 1290,
+                "width": 605,
+                "height": 472
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4325/_astro/pie.CiXI4zfL_Z2fLupv.avif\" srcset=\"/_astro/pie.CiXI4zfL_18fk5t.webp 320w, /_astro/pie.CiXI4zfL_136R10.webp 48…\" sizes=\"(max-width: 760px) 68vw, (max-width: 1060px) 40vw, (max-width: 1500px) 39v…\" alt=\"Рыбный пирог: пирог и кусочек с начинкой. Визуальный концепт.\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"900\" height=\"900\">",
+              "nodeLabel": "Рыбный пирог: пирог и кусочек с начинкой. Визуальный концепт."
+            },
+            "url": "http://127.0.0.1:4325/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "totalBytes": 39750,
+            "wastedBytes": 18158,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (472x472). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18158
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "A2F1B1D58BAE54846E36349270600D86": {
+                  "url": "http://127.0.0.1:4325/",
+                  "navStartToEndTime": 21,
+                  "transferSize": 58367,
+                  "isLongest": true,
+                  "children": {
+                    "29163.9": {
+                      "url": "http://127.0.0.1:4325/_astro/InterestForm.astro_astro_type_script_index_0_lang.CwU-524x.js",
+                      "navStartToEndTime": 21,
+                      "transferSize": 3984,
+                      "isLongest": true,
+                      "children": {
+                        "29163.248": {
+                          "url": "http://127.0.0.1:4325/_astro/analytics.wwK3Ddm3.js",
+                          "navStartToEndTime": 92,
+                          "transferSize": 10631,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "29163.249": {
+                          "url": "http://127.0.0.1:4325/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 92,
+                          "transferSize": 409,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29163.11": {
+                      "url": "http://127.0.0.1:4325/_astro/index.astro_astro_type_script_index_0_lang.DNe8BchT.js",
+                      "navStartToEndTime": 21,
+                      "transferSize": 4247,
+                      "children": {
+                        "29163.250": {
+                          "url": "http://127.0.0.1:4325/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 92,
+                          "transferSize": 999,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29163.7": {
+                      "url": "http://127.0.0.1:4325/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 21,
+                      "transferSize": 296,
+                      "children": {
+                        "29163.247": {
+                          "url": "http://127.0.0.1:4325/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 92,
+                          "transferSize": 514,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "29163.214": {
+                      "url": "http://127.0.0.1:4325/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 18785,
+                      "children": {}
+                    },
+                    "29163.216": {
+                      "url": "http://127.0.0.1:4325/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 18865,
+                      "children": {}
+                    },
+                    "29163.217": {
+                      "url": "http://127.0.0.1:4325/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 16093,
+                      "children": {}
+                    },
+                    "29163.215": {
+                      "url": "http://127.0.0.1:4325/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 63,
+                      "transferSize": 9416,
+                      "children": {}
+                    },
+                    "29163.10": {
+                      "url": "http://127.0.0.1:4325/_astro/Analytics.astro_astro_type_script_index_0_lang.D4DeSlNz.js",
+                      "navStartToEndTime": 21,
+                      "transferSize": 290,
+                      "children": {}
+                    },
+                    "29163.6": {
+                      "url": "http://127.0.0.1:4325/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 21,
+                      "transferSize": 296,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 92
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
