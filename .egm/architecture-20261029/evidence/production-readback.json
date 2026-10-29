@@ -1,0 +1,677 @@
+{
+  "checkedAt": "2026-10-29T06:37:53.849Z",
+  "runtimeCommit": "e3cbdafead3dc45b6ade36c0b1155fe96d05c157",
+  "ciRun": "https://github.com/jimbokl/PIROGORSK/actions/runs/40829728685",
+  "htmlCount": 69,
+  "serviceCount": 5,
+  "total": 74,
+  "matched": 74,
+  "results": [
+    {
+      "url": "https://pirogorsk.ru/",
+      "file": "index.html",
+      "status": 200,
+      "expectedSha256": "77828d495884e5e5236b840d1b6928a12ba1b2664e050ac409ea538f570e95d7",
+      "actualSha256": "77828d495884e5e5236b840d1b6928a12ba1b2664e050ac409ea538f570e95d7",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/82ddd92ad17884189d57e659c825269c.txt",
+      "file": "82ddd92ad17884189d57e659c825269c.txt",
+      "status": 200,
+      "expectedSha256": "efbdf36bc1faeaedd3e7a789edd4aa2b2b173dec7d120892a0278f82bc93a3be",
+      "actualSha256": "efbdf36bc1faeaedd3e7a789edd4aa2b2b173dec7d120892a0278f82bc93a3be",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/about/",
+      "file": "about/index.html",
+      "status": 200,
+      "expectedSha256": "ab3fca04e922f2ee26ec3f4b6eb5b200f58c16e1b521aae674855c359f99be40",
+      "actualSha256": "ab3fca04e922f2ee26ec3f4b6eb5b200f58c16e1b521aae674855c359f99be40",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/blog/",
+      "file": "blog/index.html",
+      "status": 200,
+      "expectedSha256": "c1d8f4880e9744ad0f60b9c443f82fb3d9bf9348d3c4eb7e44f379d7887b095f",
+      "actualSha256": "c1d8f4880e9744ad0f60b9c443f82fb3d9bf9348d3c4eb7e44f379d7887b095f",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/delivery/",
+      "file": "delivery/index.html",
+      "status": 200,
+      "expectedSha256": "ca4d1b5ff00fd1574ed4b2ed4fc6167a96aa22924a23ea984d44fdcc462352f5",
+      "actualSha256": "ca4d1b5ff00fd1574ed4b2ed4fc6167a96aa22924a23ea984d44fdcc462352f5",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/dostavka/kaliningrad/",
+      "file": "dostavka/kaliningrad/index.html",
+      "status": 200,
+      "expectedSha256": "7be1b6fff652220e531f93a11a1aad62617337ea99fea4db7adc5d73f476e6a9",
+      "actualSha256": "7be1b6fff652220e531f93a11a1aad62617337ea99fea4db7adc5d73f476e6a9",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/dostavka/svetlogorsk/",
+      "file": "dostavka/svetlogorsk/index.html",
+      "status": 200,
+      "expectedSha256": "96f3f649ed3c7fbaf5b32602b811e679028208a14c79b6c19b27fb2354ae0e51",
+      "actualSha256": "96f3f649ed3c7fbaf5b32602b811e679028208a14c79b6c19b27fb2354ae0e51",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/dostavka/zelenogradsk/",
+      "file": "dostavka/zelenogradsk/index.html",
+      "status": 200,
+      "expectedSha256": "0ab871cd5641b4838fb36bb66bf8696b54b0700983972f2a8f7e56fd3b290191",
+      "actualSha256": "0ab871cd5641b4838fb36bb66bf8696b54b0700983972f2a8f7e56fd3b290191",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/indexnow-manifest.json",
+      "file": "indexnow-manifest.json",
+      "status": 200,
+      "expectedSha256": "76df46570620f50631d00ac4b656d3e36b17f2331c8dab671b467aa87f26f3a1",
+      "actualSha256": "76df46570620f50631d00ac4b656d3e36b17f2331c8dab671b467aa87f26f3a1",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/chto-pit-s-pirogami/",
+      "file": "journal/chto-pit-s-pirogami/index.html",
+      "status": 200,
+      "expectedSha256": "9cfac592b50320c55d0b6d47c787dde3f03cb51024111dc72d262fc8833c416d",
+      "actualSha256": "9cfac592b50320c55d0b6d47c787dde3f03cb51024111dc72d262fc8833c416d",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/dostavka-edy-v-zelenogradske/",
+      "file": "journal/dostavka-edy-v-zelenogradske/index.html",
+      "status": 200,
+      "expectedSha256": "2e27272671ec89ad651444b2943ecd1897efa77ed95bee73065501706cab8cec",
+      "actualSha256": "2e27272671ec89ad651444b2943ecd1897efa77ed95bee73065501706cab8cec",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/dostavka-pirogov-v-kaliningrade-sravnenie/",
+      "file": "journal/dostavka-pirogov-v-kaliningrade-sravnenie/index.html",
+      "status": 200,
+      "expectedSha256": "d9f1b73e15133a173243116b6fffae80b3794a239ca8aa7080488d9c41a54720",
+      "actualSha256": "d9f1b73e15133a173243116b6fffae80b3794a239ca8aa7080488d9c41a54720",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/eda-s-soboy-v-svetlogorske/",
+      "file": "journal/eda-s-soboy-v-svetlogorske/index.html",
+      "status": 200,
+      "expectedSha256": "ff24f2fa999885a817a35d14c3917c82172e8824ffeb8c327e885f0901640d21",
+      "actualSha256": "ff24f2fa999885a817a35d14c3917c82172e8824ffeb8c327e885f0901640d21",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/gde-poest-s-detmi-v-zelenogradske/",
+      "file": "journal/gde-poest-s-detmi-v-zelenogradske/index.html",
+      "status": 200,
+      "expectedSha256": "3675e055c5109281f9605fcf77705e546aba12cd9a43f7a1b167dff02abaad95",
+      "actualSha256": "3675e055c5109281f9605fcf77705e546aba12cd9a43f7a1b167dff02abaad95",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/gde-poest-v-kaliningrade/",
+      "file": "journal/gde-poest-v-kaliningrade/index.html",
+      "status": 200,
+      "expectedSha256": "709ffcb9c9e1dc695c9b11d26c32de09907a70a6d0c98e4905c5ea692872b7ee",
+      "actualSha256": "709ffcb9c9e1dc695c9b11d26c32de09907a70a6d0c98e4905c5ea692872b7ee",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/gde-poest-v-svetlogorske/",
+      "file": "journal/gde-poest-v-svetlogorske/index.html",
+      "status": 200,
+      "expectedSha256": "44aaa590fd2127bef7e0ccce47df7bfd062b5d70caa5be7e94bda0f37530f954",
+      "actualSha256": "44aaa590fd2127bef7e0ccce47df7bfd062b5d70caa5be7e94bda0f37530f954",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+      "file": "journal/gde-poest-v-zelenogradske/index.html",
+      "status": 200,
+      "expectedSha256": "5be48e16215784140fa994624cedf985a29ee6b3783a03b23fda9c6e0edcb3cf",
+      "actualSha256": "5be48e16215784140fa994624cedf985a29ee6b3783a03b23fda9c6e0edcb3cf",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/gde-pozavtrakat-v-zelenogradske/",
+      "file": "journal/gde-pozavtrakat-v-zelenogradske/index.html",
+      "status": 200,
+      "expectedSha256": "db36a3ebe5e887df9a1a64dffe6e005cc766574ddd8cdd66f102a7a5f7b87e9d",
+      "actualSha256": "db36a3ebe5e887df9a1a64dffe6e005cc766574ddd8cdd66f102a7a5f7b87e9d",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/kak-razogret-pirog-v-apartamentah/",
+      "file": "journal/kak-razogret-pirog-v-apartamentah/index.html",
+      "status": 200,
+      "expectedSha256": "50e7fe857cc9499860db837e3c0d55a2a2cb1598ed8b6b44a5d2a6150dd1eb31",
+      "actualSha256": "50e7fe857cc9499860db837e3c0d55a2a2cb1598ed8b6b44a5d2a6150dd1eb31",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/kak-vybrat-pirogi-na-kompaniyu/",
+      "file": "journal/kak-vybrat-pirogi-na-kompaniyu/index.html",
+      "status": 200,
+      "expectedSha256": "16ca0fca5892291d980452ac9b7ce249e740ce0bf1ade891730129f86d0b2d04",
+      "actualSha256": "16ca0fca5892291d980452ac9b7ce249e740ce0bf1ade891730129f86d0b2d04",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/myasnoy-pirog-nachinka-i-testo/",
+      "file": "journal/myasnoy-pirog-nachinka-i-testo/index.html",
+      "status": 200,
+      "expectedSha256": "a05e52452ea3d28998e8666cff63b4b92607eb35042544c91bf059b1ea10f358",
+      "actualSha256": "a05e52452ea3d28998e8666cff63b4b92607eb35042544c91bf059b1ea10f358",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/nedorogo-poest-semey-v-svetlogorske/",
+      "file": "journal/nedorogo-poest-semey-v-svetlogorske/index.html",
+      "status": 200,
+      "expectedSha256": "fcfbe4087c9649bd399e0ab0cab13c4e9bba7d48ca889d2bccbfb0b12d8d1fc0",
+      "actualSha256": "fcfbe4087c9649bd399e0ab0cab13c4e9bba7d48ca889d2bccbfb0b12d8d1fc0",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/obed-v-ofis-v-kaliningrade/",
+      "file": "journal/obed-v-ofis-v-kaliningrade/index.html",
+      "status": 200,
+      "expectedSha256": "048909e2df9e124aea64d74599680f648cd11382927172ea7982a8c8974ecf2c",
+      "actualSha256": "048909e2df9e124aea64d74599680f648cd11382927172ea7982a8c8974ecf2c",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/osetinskiy-ili-zakrytyy-pirog-kaliningrad/",
+      "file": "journal/osetinskiy-ili-zakrytyy-pirog-kaliningrad/index.html",
+      "status": 200,
+      "expectedSha256": "2579fe3babf8da2c074aa968991dac92fd4b6becc116f573e38ba65a17fcb30b",
+      "actualSha256": "2579fe3babf8da2c074aa968991dac92fd4b6becc116f573e38ba65a17fcb30b",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/pekarni-i-pirogi-v-zelenogradske/",
+      "file": "journal/pekarni-i-pirogi-v-zelenogradske/index.html",
+      "status": 200,
+      "expectedSha256": "22fb5e725727b584d0dbe6b9511ec4c3ed4c2649343e01adc66ab40a34f1aa9c",
+      "actualSha256": "22fb5e725727b584d0dbe6b9511ec4c3ed4c2649343e01adc66ab40a34f1aa9c",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+      "file": "journal/pekarni-kaliningrada-pirogi-na-vynos/index.html",
+      "status": 200,
+      "expectedSha256": "284babe771505462bff37bd1fb6d6b73257f58e70b2a15b33091a42e391ba01d",
+      "actualSha256": "284babe771505462bff37bd1fb6d6b73257f58e70b2a15b33091a42e391ba01d",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/piknik-s-pirogom-chto-vzyat/",
+      "file": "journal/piknik-s-pirogom-chto-vzyat/index.html",
+      "status": 200,
+      "expectedSha256": "b8dd29d6a4653e8a2db71e313e878f423ec6a9378777601f834a1c45a6b65159",
+      "actualSha256": "b8dd29d6a4653e8a2db71e313e878f423ec6a9378777601f834a1c45a6b65159",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/pirog-500-g-ili-1-kg/",
+      "file": "journal/pirog-500-g-ili-1-kg/index.html",
+      "status": 200,
+      "expectedSha256": "70a50b12131ea7ada37f9222b543bde88e1d49aff3980b047b6c022b5a89123e",
+      "actualSha256": "70a50b12131ea7ada37f9222b543bde88e1d49aff3980b047b6c022b5a89123e",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/rybnaya-nachinka-dlya-piroga/",
+      "file": "journal/rybnaya-nachinka-dlya-piroga/index.html",
+      "status": 200,
+      "expectedSha256": "3c58d2eae7eba183002857b3b07ba7974317e392074a6fdcb847b7500c0acd36",
+      "actualSha256": "3c58d2eae7eba183002857b3b07ba7974317e392074a6fdcb847b7500c0acd36",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/rybnye-pirogi-v-kaliningrade/",
+      "file": "journal/rybnye-pirogi-v-kaliningrade/index.html",
+      "status": 200,
+      "expectedSha256": "fe19e8fa4f0690af2209452ddf4a8c3a9e66d3993eea131ea2f3dd71c4f6fffb",
+      "actualSha256": "fe19e8fa4f0690af2209452ddf4a8c3a9e66d3993eea131ea2f3dd71c4f6fffb",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/skolko-piroga-na-cheloveka/",
+      "file": "journal/skolko-piroga-na-cheloveka/index.html",
+      "status": 200,
+      "expectedSha256": "4c59ad4f1cdecb578c167ac25576d4795965e81aadfdc718f85ffbeb61944606",
+      "actualSha256": "4c59ad4f1cdecb578c167ac25576d4795965e81aadfdc718f85ffbeb61944606",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/journal/uzhin-v-semnyh-apartamentah/",
+      "file": "journal/uzhin-v-semnyh-apartamentah/index.html",
+      "status": 200,
+      "expectedSha256": "45a829e8b4719be9902858e155bcf5127cc4eb37a303bcdd40911f741cbedb4d",
+      "actualSha256": "45a829e8b4719be9902858e155bcf5127cc4eb37a303bcdd40911f741cbedb4d",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/menu/",
+      "file": "menu/index.html",
+      "status": 200,
+      "expectedSha256": "e10408b582663ad4b2dbcb4125aa1d5dab1ace9a0b5fa51bd37bb0fa061b9234",
+      "actualSha256": "e10408b582663ad4b2dbcb4125aa1d5dab1ace9a0b5fa51bd37bb0fa061b9234",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/nabor/na-kompaniyu/",
+      "file": "nabor/na-kompaniyu/index.html",
+      "status": 200,
+      "expectedSha256": "68f92d0d8afc38f72cbc3a5cb63c76debc661207ba0df2302eed7b4728393460",
+      "actualSha256": "68f92d0d8afc38f72cbc3a5cb63c76debc661207ba0df2302eed7b4728393460",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/nabor/piknik-u-morya/",
+      "file": "nabor/piknik-u-morya/index.html",
+      "status": 200,
+      "expectedSha256": "aeeaacfcc24b5d908003427806e366da7b8f988a97c5cb25e3428954ecae7640",
+      "actualSha256": "aeeaacfcc24b5d908003427806e366da7b8f988a97c5cb25e3428954ecae7640",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/nabor/uzhin-v-apartamentah/",
+      "file": "nabor/uzhin-v-apartamentah/index.html",
+      "status": 200,
+      "expectedSha256": "b5d6599ccc0038d769758f5c1be4419a260bcb47fe9dcb0661027b490e09bf09",
+      "actualSha256": "b5d6599ccc0038d769758f5c1be4419a260bcb47fe9dcb0661027b490e09bf09",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/partners/",
+      "file": "partners/index.html",
+      "status": 200,
+      "expectedSha256": "a608d4d965c22f131800e60844dc0ca324726e3c4b89719ddf4a12abbb3dcf5d",
+      "actualSha256": "a608d4d965c22f131800e60844dc0ca324726e3c4b89719ddf4a12abbb3dcf5d",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/myasnoy-pirog/",
+      "file": "pirogi/myasnoy-pirog/index.html",
+      "status": 200,
+      "expectedSha256": "15748c34cddb4be924aea2b432f7f01c3caa37873c3cc901d7123ed95e243a17",
+      "actualSha256": "15748c34cddb4be924aea2b432f7f01c3caa37873c3cc901d7123ed95e243a17",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/pirog-s-kapustoy/",
+      "file": "pirogi/pirog-s-kapustoy/index.html",
+      "status": 200,
+      "expectedSha256": "f21126e622f63ea3420588dcdb508216367d30d17aa4b8111003533440e69e01",
+      "actualSha256": "f21126e622f63ea3420588dcdb508216367d30d17aa4b8111003533440e69e01",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/pirog-s-kuritsey-i-gribami/",
+      "file": "pirogi/pirog-s-kuritsey-i-gribami/index.html",
+      "status": 200,
+      "expectedSha256": "a5a346ae8552a5fb93d717910f07c5b3e1f8d826f30b01ea79f15611371963c3",
+      "actualSha256": "a5a346ae8552a5fb93d717910f07c5b3e1f8d826f30b01ea79f15611371963c3",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/pirog-s-tvorogom-i-malinoy/",
+      "file": "pirogi/pirog-s-tvorogom-i-malinoy/index.html",
+      "status": 200,
+      "expectedSha256": "3b3f1fcb13a7e910596c0456865d8cf951c2ec8fc1f64d07f551bce8af9cb79e",
+      "actualSha256": "3b3f1fcb13a7e910596c0456865d8cf951c2ec8fc1f64d07f551bce8af9cb79e",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/pirog-s-vishney/",
+      "file": "pirogi/pirog-s-vishney/index.html",
+      "status": 200,
+      "expectedSha256": "2e68f04f388726d08790c3c3b704c69564ef290b2cfc7675ec3ce819791ef80f",
+      "actualSha256": "2e68f04f388726d08790c3c3b704c69564ef290b2cfc7675ec3ce819791ef80f",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/pirog-s-yablokom-i-brusnikoy/",
+      "file": "pirogi/pirog-s-yablokom-i-brusnikoy/index.html",
+      "status": 200,
+      "expectedSha256": "67aee2cc5a44334f93e486ce2d977921976402980b23ebf950530a654278e056",
+      "actualSha256": "67aee2cc5a44334f93e486ce2d977921976402980b23ebf950530a654278e056",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/rybnyy-pirog/",
+      "file": "pirogi/rybnyy-pirog/index.html",
+      "status": 200,
+      "expectedSha256": "2841e5faf461fe489ecb6ca33edda7f7cff670b2c4fb01c0eda5084236127833",
+      "actualSha256": "2841e5faf461fe489ecb6ca33edda7f7cff670b2c4fb01c0eda5084236127833",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/pirogi/syrnyy-pirog/",
+      "file": "pirogi/syrnyy-pirog/index.html",
+      "status": 200,
+      "expectedSha256": "72577fac377f244e572c9cfce187544c83289d0eb8a0f29988d1025b5f1d1fe3",
+      "actualSha256": "72577fac377f244e572c9cfce187544c83289d0eb8a0f29988d1025b5f1d1fe3",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/podbor/",
+      "file": "podbor/index.html",
+      "status": 200,
+      "expectedSha256": "6d0c9e029dfe1ee8bffa4dbb0a8c8ea71496a950729734cb470046b935a6bda0",
+      "actualSha256": "6d0c9e029dfe1ee8bffa4dbb0a8c8ea71496a950729734cb470046b935a6bda0",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/",
+      "file": "povody/index.html",
+      "status": 200,
+      "expectedSha256": "af5696928b79b97be0b2b63603816d29329724964f4bcf97b637a2fc292d9a49",
+      "actualSha256": "af5696928b79b97be0b2b63603816d29329724964f4bcf97b637a2fc292d9a49",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/eda-na-vypisku/",
+      "file": "povody/eda-na-vypisku/index.html",
+      "status": 200,
+      "expectedSha256": "6a3d88c4838c89e45cedaaed4953d9c2c29e7539f40752e3148aa37ccd8b7803",
+      "actualSha256": "6a3d88c4838c89e45cedaaed4953d9c2c29e7539f40752e3148aa37ccd8b7803",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/furshet-na-korporativ/",
+      "file": "povody/furshet-na-korporativ/index.html",
+      "status": 200,
+      "expectedSha256": "82e23da48ec4efe91bcf0cefe805930539357c513ca744851124041084fe770e",
+      "actualSha256": "82e23da48ec4efe91bcf0cefe805930539357c513ca744851124041084fe770e",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/kaliningrad/furshet-na-korporativ/",
+      "file": "povody/kaliningrad/furshet-na-korporativ/index.html",
+      "status": 200,
+      "expectedSha256": "69aa774a8378601f65a13640a1742e95e5aa94b8561e16f5137e2e51bcd1001e",
+      "actualSha256": "69aa774a8378601f65a13640a1742e95e5aa94b8561e16f5137e2e51bcd1001e",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/kaliningrad/na-pominki/",
+      "file": "povody/kaliningrad/na-pominki/index.html",
+      "status": 200,
+      "expectedSha256": "c61dac2234e082a529bb22a58d538d9ac7b1c107001f6d9e6e8757892c577a70",
+      "actualSha256": "c61dac2234e082a529bb22a58d538d9ac7b1c107001f6d9e6e8757892c577a70",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/kaliningrad/semeynyy-uzhin/",
+      "file": "povody/kaliningrad/semeynyy-uzhin/index.html",
+      "status": 200,
+      "expectedSha256": "4aacf03b74402b8405ac085a50daf775da1e2fc9a9bb9b2ff7deabe7a3d283e8",
+      "actualSha256": "4aacf03b74402b8405ac085a50daf775da1e2fc9a9bb9b2ff7deabe7a3d283e8",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/kaliningrad/uzhin-v-apartamentah/",
+      "file": "povody/kaliningrad/uzhin-v-apartamentah/index.html",
+      "status": 200,
+      "expectedSha256": "63798398ac83cea5bbc28f92b5de54ed5c705cafbe36af9560f999a512e2644d",
+      "actualSha256": "63798398ac83cea5bbc28f92b5de54ed5c705cafbe36af9560f999a512e2644d",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/kaliningrad/v-ofis-na-den-rozhdeniya/",
+      "file": "povody/kaliningrad/v-ofis-na-den-rozhdeniya/index.html",
+      "status": 200,
+      "expectedSha256": "0b17f729e95af3c53a56b3837ba691f7d0c9d99579bb02d33b7e65f340def52c",
+      "actualSha256": "0b17f729e95af3c53a56b3837ba691f7d0c9d99579bb02d33b7e65f340def52c",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/na-pominki/",
+      "file": "povody/na-pominki/index.html",
+      "status": 200,
+      "expectedSha256": "a9f00f44d1e7c0ce64f423a683bf7a07c01876639a3cc345dbd81513364c2f02",
+      "actualSha256": "a9f00f44d1e7c0ce64f423a683bf7a07c01876639a3cc345dbd81513364c2f02",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/svetlogorsk/furshet-na-korporativ/",
+      "file": "povody/svetlogorsk/furshet-na-korporativ/index.html",
+      "status": 200,
+      "expectedSha256": "663db2f8dc78a87cbb40de0ad6f8ed536efab809234d358b34cc2444405303c5",
+      "actualSha256": "663db2f8dc78a87cbb40de0ad6f8ed536efab809234d358b34cc2444405303c5",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/svetlogorsk/na-pominki/",
+      "file": "povody/svetlogorsk/na-pominki/index.html",
+      "status": 200,
+      "expectedSha256": "04c93567fb98d584d2668ca121a470354aba6045f1d479634900ea733d4fd589",
+      "actualSha256": "04c93567fb98d584d2668ca121a470354aba6045f1d479634900ea733d4fd589",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/svetlogorsk/semeynyy-uzhin/",
+      "file": "povody/svetlogorsk/semeynyy-uzhin/index.html",
+      "status": 200,
+      "expectedSha256": "c8d9464c27d28e942beb5477630ad93e05b9852d16e7ba73ba640387d62059e2",
+      "actualSha256": "c8d9464c27d28e942beb5477630ad93e05b9852d16e7ba73ba640387d62059e2",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/svetlogorsk/uzhin-v-apartamentah/",
+      "file": "povody/svetlogorsk/uzhin-v-apartamentah/index.html",
+      "status": 200,
+      "expectedSha256": "400393b1fdf50057cf6271ac17dbfa798ce11458263efc806f8a48ba9302e573",
+      "actualSha256": "400393b1fdf50057cf6271ac17dbfa798ce11458263efc806f8a48ba9302e573",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/svetlogorsk/v-ofis-na-den-rozhdeniya/",
+      "file": "povody/svetlogorsk/v-ofis-na-den-rozhdeniya/index.html",
+      "status": 200,
+      "expectedSha256": "386932d6d17d3843fa2e7619fecbcd925b5580b3c38118739df80a5b72b044f3",
+      "actualSha256": "386932d6d17d3843fa2e7619fecbcd925b5580b3c38118739df80a5b72b044f3",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/sytnyj-obed-na-strojku/",
+      "file": "povody/sytnyj-obed-na-strojku/index.html",
+      "status": 200,
+      "expectedSha256": "b4629f6fa4d63e2c1909ec8d50ee34396bbc3288b38dbc559a1249efd3242231",
+      "actualSha256": "b4629f6fa4d63e2c1909ec8d50ee34396bbc3288b38dbc559a1249efd3242231",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/v-banyu-s-druzyami/",
+      "file": "povody/v-banyu-s-druzyami/index.html",
+      "status": 200,
+      "expectedSha256": "dbd06b453aaffeacc7f85b0bd9f103f97a6ac567a2d582f478658be6af508bd8",
+      "actualSha256": "dbd06b453aaffeacc7f85b0bd9f103f97a6ac567a2d582f478658be6af508bd8",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/v-ofis-na-den-rozhdeniya/",
+      "file": "povody/v-ofis-na-den-rozhdeniya/index.html",
+      "status": 200,
+      "expectedSha256": "12d8ed45e75968c1f0f860c2ddcc1a8fe464a0bea62b4081e63b35460418bcf3",
+      "actualSha256": "12d8ed45e75968c1f0f860c2ddcc1a8fe464a0bea62b4081e63b35460418bcf3",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/zelenogradsk/eda-na-kurshskuyu-kosu/",
+      "file": "povody/zelenogradsk/eda-na-kurshskuyu-kosu/index.html",
+      "status": 200,
+      "expectedSha256": "a57ed3cdbfa021d6d72d6cfff465034236f3aa0dfd4db2981820d0b5fda00750",
+      "actualSha256": "a57ed3cdbfa021d6d72d6cfff465034236f3aa0dfd4db2981820d0b5fda00750",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/zelenogradsk/furshet-na-korporativ/",
+      "file": "povody/zelenogradsk/furshet-na-korporativ/index.html",
+      "status": 200,
+      "expectedSha256": "a34990d6315bd9b97d62862d92688428d767e280b936096ad8f55a547482954b",
+      "actualSha256": "a34990d6315bd9b97d62862d92688428d767e280b936096ad8f55a547482954b",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/zelenogradsk/na-pominki/",
+      "file": "povody/zelenogradsk/na-pominki/index.html",
+      "status": 200,
+      "expectedSha256": "d1a70a77c96a9edba06467bf6400a0e1625bed61151c805c52988562f18dacc8",
+      "actualSha256": "d1a70a77c96a9edba06467bf6400a0e1625bed61151c805c52988562f18dacc8",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/zelenogradsk/semeynyy-uzhin/",
+      "file": "povody/zelenogradsk/semeynyy-uzhin/index.html",
+      "status": 200,
+      "expectedSha256": "fda8760f0302921fb03c6d4e7a652b1db313a6fbb4deb3f3d0bea010db7d9bb6",
+      "actualSha256": "fda8760f0302921fb03c6d4e7a652b1db313a6fbb4deb3f3d0bea010db7d9bb6",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/zelenogradsk/uzhin-v-apartamentah/",
+      "file": "povody/zelenogradsk/uzhin-v-apartamentah/index.html",
+      "status": 200,
+      "expectedSha256": "3d3ee91d07eae9aae953f4c0c10a383acf71dd0741cbd8f134d312c0c64620fe",
+      "actualSha256": "3d3ee91d07eae9aae953f4c0c10a383acf71dd0741cbd8f134d312c0c64620fe",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/povody/zelenogradsk/v-ofis-na-den-rozhdeniya/",
+      "file": "povody/zelenogradsk/v-ofis-na-den-rozhdeniya/index.html",
+      "status": 200,
+      "expectedSha256": "e99467feee705824ec1acd58c84fbc6a29548e1ec90ae97202c9113ca4405558",
+      "actualSha256": "e99467feee705824ec1acd58c84fbc6a29548e1ec90ae97202c9113ca4405558",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/privacy/",
+      "file": "privacy/index.html",
+      "status": 200,
+      "expectedSha256": "ec0fcea822894d33a3fbf09d0a2abfdd8b1569795fc7c1ef6ded0c2a91d77f1b",
+      "actualSha256": "ec0fcea822894d33a3fbf09d0a2abfdd8b1569795fc7c1ef6ded0c2a91d77f1b",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/release.json",
+      "file": "release.json",
+      "status": 200,
+      "expectedSha256": "88f6bfd0c569ce8b4c4e5433d51df913b8c3ce29dda928a0a0fcf9152b116d35",
+      "actualSha256": "88f6bfd0c569ce8b4c4e5433d51df913b8c3ce29dda928a0a0fcf9152b116d35",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/robots.txt",
+      "file": "robots.txt",
+      "status": 200,
+      "expectedSha256": "b2e07420eabce1080465b074218c9ed9ec4e310d53db0cc192cdbd3dc70b1d62",
+      "actualSha256": "b2e07420eabce1080465b074218c9ed9ec4e310d53db0cc192cdbd3dc70b1d62",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/sitemap.xml",
+      "file": "sitemap.xml",
+      "status": 200,
+      "expectedSha256": "f1234e8ff9bfe6b9c8c89eb240c9b62c060c1da19bab11565980b866a69c9e59",
+      "actualSha256": "f1234e8ff9bfe6b9c8c89eb240c9b62c060c1da19bab11565980b866a69c9e59",
+      "matches": true,
+      "attempts": 1
+    },
+    {
+      "url": "https://pirogorsk.ru/terms/",
+      "file": "terms/index.html",
+      "status": 200,
+      "expectedSha256": "be0f20878da7580ce2835f1e2b8dce74d53413b8826d0c4938741a799736f6ee",
+      "actualSha256": "be0f20878da7580ce2835f1e2b8dce74d53413b8826d0c4938741a799736f6ee",
+      "matches": true,
+      "attempts": 1
+    }
+  ]
+}
