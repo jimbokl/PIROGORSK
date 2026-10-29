@@ -179,6 +179,39 @@ try {
     }
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => button.hidden), true);
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'the last catalogue page hides pagination through CSS');
+    // One search covers all 153 products, including concepts and extras. It
+    // resets local filters and survives reload without making another URL owner.
+    const menuSearch = async query => page.$eval('[data-menu-search]', (input, query) => {
+      input.value = query; input.dispatchEvent(new Event('input', { bubbles: true }));
+    }, query);
+    await page.click('#holland [data-supplier-filter=dough]');
+    await menuSearch('сЫроМ курицей');
+    assert.ok(await page.$$eval('[data-supplier-id]:not([hidden])', cards => cards.length > 0 && cards.every(card => {
+      const text = card.dataset.supplierSearch.toLocaleLowerCase('ru-RU');
+      return text.includes('сыром') && text.includes('курицей');
+    })), 'search is case-insensitive and matches words in any order');
+    assert.equal(await page.$eval('#holland [data-supplier-filter=all]', button => button.getAttribute('aria-pressed')), 'true');
+    assert.equal(new URL(page.url()).searchParams.get('q'), 'сЫроМ курицей');
+    await page.reload({ waitUntil: 'networkidle0' });
+    assert.equal(await page.$eval('[data-menu-search]', input => input.value), 'сЫроМ курицей');
+    assert.equal(await page.$eval('link[rel=canonical]', link => link.href), `${origin}/menu/`);
+    await menuSearch('850');
+    assert.ok(await page.$$eval('[data-supplier-id]:not([hidden])', cards => cards.length > 0 && cards.every(card => card.dataset.supplierSearch.includes('850'))), 'weights are searchable');
+    await menuSearch('НЕСУЩЕСТВУЮЩИЙпирог');
+    assert.equal(await page.$$eval('[data-menu-section]:not([hidden])', sections => sections.length), 0);
+    assert.equal(await page.$eval('[data-menu-empty]', el => el.hidden), false);
+    await page.click('[data-menu-reset]');
+    assert.equal(await page.$eval('[data-menu-search]', input => document.activeElement === input), true, 'reset restores keyboard focus');
+    assert.equal(new URL(page.url()).searchParams.has('q'), false);
+    assert.equal(await page.$eval('[data-menu-status]', el => el.textContent), 'Позиций по вашему выбору: 153');
+    assert.equal(await page.$$eval('[data-menu-jump]:not([hidden])', links => links.length), 4);
+    await menuSearch('Морс');
+    assert.equal(await page.$eval('#extras', section => section.hidden), false, 'extras participate in search');
+    assert.ok(await page.$$eval('#extras [data-menu-product]:not([hidden])', cards => cards.length > 0));
+    await page.click('[data-menu-reset]');
+    assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true, `menu search overflow at ${width}`);
+    await page.$eval('[data-menu-finder]', form => form.scrollIntoView({ block: 'start' }));
+    await page.screenshot({ path: new URL(`../dist/qa-menu-${width}.png`, import.meta.url).pathname });
     await page.goto(`${origin}/menu/?group=dough#holland`, { waitUntil: 'networkidle0' });
     assert.equal(await page.$eval('#holland [data-supplier-filter=dough]', button => button.getAttribute('aria-pressed')), 'true');
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 6);
@@ -240,6 +273,10 @@ try {
     await page.click(`${doughCard} label:last-of-type`);
     const link = await page.$eval(`${doughCard} [data-supplier-link]`, el => el.href);
     assert.equal(new URL(link).searchParams.get('variant'), '9000');
+    // Changing a group collapses a long section above this card. Finish the
+    // programmatic scroll before the physical click; CSS smooth scrolling can
+    // otherwise move the target while Puppeteer dispatches pointer events.
+    await page.$eval(`${doughCard} [data-supplier-link]`, el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
     await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click(`${doughCard} [data-supplier-link]`)]);
     assert.equal(new URL(page.url()).pathname, '/');
     assert.equal(new URL(page.url()).searchParams.get('interest'), 'hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up');

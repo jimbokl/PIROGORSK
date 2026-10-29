@@ -1,0 +1,925 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/menu/",
+    "timestamp": "2026-10-29T18:45:03.504Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 150,
+      "lcp": 150
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 58.257,
+      "elementRenderDelay": 91.928
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1231.3813,
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1831.3813,
+        "display": "1.8 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1231.3813,
+        "display": "1.2 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 49 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,1,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2759,
+                "bottom": 3044,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-498-640.avif\" srcset=\"/catalog-art/p39-498-256.webp 256w, /catalog-art/p39-498-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-498-640.avif",
+            "totalBytes": 47064,
+            "wastedBytes": 18375,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (500x500). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18375
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,0,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2076,
+                "bottom": 2361,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-497-640.avif\" srcset=\"/catalog-art/p39-497-256.webp 256w, /catalog-art/p39-497-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-497-640.avif",
+            "totalBytes": 44806,
+            "wastedBytes": 17494,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (500x500). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 17494
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-3-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,2,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 3442,
+                "bottom": 3727,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-496-640.avif\" srcset=\"/catalog-art/p39-496-256.webp 256w, /catalog-art/p39-496-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-496-640.avif",
+            "totalBytes": 36470,
+            "wastedBytes": 14239,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (500x500). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 14239
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "33B969FFFD3C9A47032A4E8BD4130A69": {
+                  "url": "http://127.0.0.1:4322/menu/",
+                  "navStartToEndTime": 76,
+                  "transferSize": 51516,
+                  "isLongest": true,
+                  "children": {
+                    "57625.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 138,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "57625.341": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 257,
+                          "transferSize": 13614,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57625.9": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierCatalog.astro_astro_type_script_index_0_lang.DooXymnf.js",
+                      "navStartToEndTime": 138,
+                      "transferSize": 1286,
+                      "children": {
+                        "57625.342": {
+                          "url": "http://127.0.0.1:4322/_astro/catalog-search.CmJMF--A.js",
+                          "navStartToEndTime": 253,
+                          "transferSize": 485,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57625.10": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 138,
+                      "transferSize": 357,
+                      "children": {
+                        "57625.340": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 243,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57625.11": {
+                      "url": "http://127.0.0.1:4322/_astro/menu.astro_astro_type_script_index_0_lang.DWvQuG_2.js",
+                      "navStartToEndTime": 138,
+                      "transferSize": 1182,
+                      "children": {}
+                    },
+                    "57625.8": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 138,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 257
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "http://127.0.0.1:4322/menu/",
+    "timestamp": "2026-10-29T18:45:11.831Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 103,
+      "lcp": 103
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 19.725000122070313,
+      "elementRenderDelay": 83.04799987792968
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1375.524125,
+        "display": "1.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1891.0385999999999,
+        "display": "1.9 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1375.524125,
+        "display": "1.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 142 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,1,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2759,
+                "bottom": 3044,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-498-640.avif\" srcset=\"/catalog-art/p39-498-256.webp 256w, /catalog-art/p39-498-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-498-640.avif",
+            "totalBytes": 47064,
+            "wastedBytes": 37696,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (286x286). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 37696
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,0,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2076,
+                "bottom": 2361,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-497-640.avif\" srcset=\"/catalog-art/p39-497-256.webp 256w, /catalog-art/p39-497-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-497-640.avif",
+            "totalBytes": 44806,
+            "wastedBytes": 35888,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (286x286). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 35888
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-3-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,2,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 3442,
+                "bottom": 3727,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-496-640.avif\" srcset=\"/catalog-art/p39-496-256.webp 256w, /catalog-art/p39-496-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-496-640.avif",
+            "totalBytes": 36470,
+            "wastedBytes": 29211,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (286x286). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 29211
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-4-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,3,ARTICLE,1,A,0,DIV,0,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-backdrop > img",
+              "boundingRect": {
+                "top": 4102,
+                "bottom": 4434,
+                "left": 40,
+                "right": 372,
+                "width": 332,
+                "height": 332
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/product-backdrops/hb-sloyka-s-kapustoy-85-g-85-gr-h-…\" srcset=\"/product-backdrops/hb-sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up-256.webp 2…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"low\" decoding=\"async\" data-astro-cid-wwfkf4zy=\"\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-backdrop > img"
+            },
+            "url": "http://127.0.0.1:4322/product-backdrops/hb-sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up-640.avif",
+            "totalBytes": 30820,
+            "wastedBytes": 22526,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (332x332). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 22526
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-5-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,7,ARTICLE,1,A,0,DIV,0,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-backdrop > img",
+              "boundingRect": {
+                "top": 6742,
+                "bottom": 7074,
+                "left": 40,
+                "right": 372,
+                "width": 332,
+                "height": 332
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamor…\" srcset=\"/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-1…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"low\" decoding=\"async\" data-astro-cid-wwfkf4zy=\"\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-backdrop > img"
+            },
+            "url": "http://127.0.0.1:4322/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg-640.avif",
+            "totalBytes": 27546,
+            "wastedBytes": 20133,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (332x332). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 20133
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "179ED3210773A4A5A2D19D0D49A4A053": {
+                  "url": "http://127.0.0.1:4322/menu/",
+                  "navStartToEndTime": 34,
+                  "transferSize": 51516,
+                  "isLongest": true,
+                  "children": {
+                    "57644.138": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierCatalog.astro_astro_type_script_index_0_lang.DooXymnf.js",
+                      "navStartToEndTime": 89,
+                      "transferSize": 1286,
+                      "isLongest": true,
+                      "children": {
+                        "57644.338": {
+                          "url": "http://127.0.0.1:4322/_astro/catalog-search.CmJMF--A.js",
+                          "navStartToEndTime": 102,
+                          "transferSize": 485,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57644.8": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 34,
+                      "transferSize": 357,
+                      "children": {
+                        "57644.337": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 101,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57644.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 34,
+                      "transferSize": 351,
+                      "children": {
+                        "57644.326": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 90,
+                          "transferSize": 13614,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57644.324": {
+                      "url": "http://127.0.0.1:4322/_astro/menu.astro_astro_type_script_index_0_lang.DWvQuG_2.js",
+                      "navStartToEndTime": 89,
+                      "transferSize": 1182,
+                      "children": {}
+                    },
+                    "57644.297": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 89,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 102
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "http://127.0.0.1:4322/menu/",
+    "timestamp": "2026-10-29T18:45:19.876Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 106,
+      "lcp": 106
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 20.655,
+      "elementRenderDelay": 85.464
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1376.189375,
+        "display": "1.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2043.8272500000003,
+        "display": "2.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1376.189375,
+        "display": "1.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 49 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,1,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2759,
+                "bottom": 3044,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-498-640.avif\" srcset=\"/catalog-art/p39-498-256.webp 256w, /catalog-art/p39-498-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-498-640.avif",
+            "totalBytes": 47064,
+            "wastedBytes": 18375,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (500x500). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18375
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,0,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2076,
+                "bottom": 2361,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-497-640.avif\" srcset=\"/catalog-art/p39-497-256.webp 256w, /catalog-art/p39-497-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-497-640.avif",
+            "totalBytes": 44806,
+            "wastedBytes": 17494,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (500x500). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 17494
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-3-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,7,SECTION,5,DIV,2,ARTICLE,1,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 3442,
+                "bottom": 3727,
+                "left": 63,
+                "right": 349,
+                "width": 286,
+                "height": 286
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-496-640.avif\" srcset=\"/catalog-art/p39-496-256.webp 256w, /catalog-art/p39-496-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.supplier-art-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-496-640.avif",
+            "totalBytes": 36470,
+            "wastedBytes": 14239,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (500x500). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 14239
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "B694244A863F5DE0EA9094D69AA50D92": {
+                  "url": "http://127.0.0.1:4322/menu/",
+                  "navStartToEndTime": 36,
+                  "transferSize": 51516,
+                  "isLongest": true,
+                  "children": {
+                    "57681.138": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierCatalog.astro_astro_type_script_index_0_lang.DooXymnf.js",
+                      "navStartToEndTime": 93,
+                      "transferSize": 1286,
+                      "isLongest": true,
+                      "children": {
+                        "57681.338": {
+                          "url": "http://127.0.0.1:4322/_astro/catalog-search.CmJMF--A.js",
+                          "navStartToEndTime": 104,
+                          "transferSize": 485,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57681.8": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 93,
+                      "transferSize": 357,
+                      "children": {
+                        "57681.337": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 104,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57681.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 36,
+                      "transferSize": 351,
+                      "children": {
+                        "57681.326": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 94,
+                          "transferSize": 13614,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57681.324": {
+                      "url": "http://127.0.0.1:4322/_astro/menu.astro_astro_type_script_index_0_lang.DWvQuG_2.js",
+                      "navStartToEndTime": 94,
+                      "transferSize": 1182,
+                      "children": {}
+                    },
+                    "57681.297": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 93,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 104
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/menu/",
+    "timestamp": "2026-10-29T18:45:27.903Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 105,
+      "lcp": 105
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 17.239,
+      "elementRenderDelay": 88.001
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 328.59400000000005,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 408.59400000000005,
+        "display": "0.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 328.59400000000005,
+        "display": "0.3 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "56C6DBACAAA9130C8AF520D4CAEB0F1D": {
+                  "url": "http://127.0.0.1:4322/menu/",
+                  "navStartToEndTime": 35,
+                  "transferSize": 51516,
+                  "isLongest": true,
+                  "children": {
+                    "57716.6": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 35,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "57716.354": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 122,
+                          "transferSize": 13614,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57716.138": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierCatalog.astro_astro_type_script_index_0_lang.DooXymnf.js",
+                      "navStartToEndTime": 35,
+                      "transferSize": 1286,
+                      "children": {
+                        "57716.356": {
+                          "url": "http://127.0.0.1:4322/_astro/catalog-search.CmJMF--A.js",
+                          "navStartToEndTime": 112,
+                          "transferSize": 485,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57716.8": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 35,
+                      "transferSize": 357,
+                      "children": {
+                        "57716.355": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 111,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "57716.324": {
+                      "url": "http://127.0.0.1:4322/_astro/menu.astro_astro_type_script_index_0_lang.DWvQuG_2.js",
+                      "navStartToEndTime": 91,
+                      "transferSize": 1182,
+                      "children": {}
+                    },
+                    "57716.297": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 91,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 122
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

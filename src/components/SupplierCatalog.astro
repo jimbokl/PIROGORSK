@@ -14,8 +14,8 @@ const producer = fresh ? 'Пироги а-ля Русс' : 'Holland Bakery';
 const sourceUrl = fresh ? 'https://pirogi39.ru/' : 'https://hollandbakery.ru/';
 const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
 ---
-<section id={sectionId} class="supplier-catalog" aria-labelledby={`${sectionId}-heading`} data-supplier-catalog>
-  <header class="supplier-heading"><div><p class="eyebrow">Ещё {supplierProducts.length} вкусов и форматов</p><h2 id={`${sectionId}-heading`}>{fresh ? 'Пироги а-ля Русс' : 'Из Голландской пекарни'}</h2></div><a href={sourceUrl} target="_blank" rel="noopener">О производителе ↗</a></header>
+<section id={sectionId} class="supplier-catalog" aria-labelledby={`${sectionId}-heading`} data-supplier-catalog data-menu-section>
+  <header class="supplier-heading"><div><p class="eyebrow">{fresh ? 'Целые пироги' : 'Выпечка и заготовки'} · позиций: {supplierProducts.length}</p><h2 id={`${sectionId}-heading`}>{fresh ? 'Пироги а-ля Русс' : 'Из Голландской пекарни'}</h2></div><a href={sourceUrl} target="_blank" rel="noopener">О производителе ↗</a></header>
   <p class="supplier-intro">{fresh ? 'Ещё 61 целый пирог из каталога pirogi39.ru: от ржаных и лоранских до сибирских, прусских и осетинских. Выбирайте начинки и размеры, которые хотели бы видеть у Пирогорска.' : 'Добавляем к нашим идеям ассортимент Holland Bakery: мини-пироги, хлеб, десерты и выпечку. Выберите то, что хотели бы получать через Пирогорск.'}</p>
   <div class="supplier-note"><strong>Пока изучаем спрос.</strong> {fresh ? 'Здесь готовые целые пироги в весах производителя. Можно сравнить их с нашими первыми идеями и мини-пирогами ниже.' : 'Здесь замороженные продукты и заготовки для домашней выпечки. Небольшие наборы — планируемый формат Пирогорска из заводских упаковок.'} Наличие, фасовку, состав и условия хранения подтвердим до начала продаж. Цены предварительные, доставка считается отдельно за всю подборку.</div>
   <div class="supplier-tools"><label class="supplier-search">Найти в ассортименте<input type="search" data-supplier-search placeholder={fresh ? 'Например, курник или палтус' : 'Например, вишня или круассан'} autocomplete="off" /></label><p class="supplier-count" data-supplier-count role="status" aria-live="polite">{supplierProducts.length} позиций</p></div>
@@ -23,7 +23,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
   <div class="supplier-grid">{supplierProducts.map((product, index) => {
     const selected = product.variants.find(v => v.value === product.defaultVariant)!;
     const groupLabel = supplierGroups.find(([id]) => id === product.category)![1];
-    return <article id={product.id} class="supplier-card" data-supplier-id={product.id} data-supplier-group={product.category} data-supplier-name={product.name.toLocaleLowerCase('ru-RU')} data-product={interactive ? product.id : undefined} data-kind={interactive ? product.kind : undefined} aria-labelledby={`name-${product.id}`}>
+    return <article id={product.id} class="supplier-card" data-supplier-id={product.id} data-supplier-group={product.category} data-supplier-name={product.name.toLocaleLowerCase('ru-RU')} data-supplier-search={[product.name, product.description, groupLabel, producer, ...product.variants.map(v => v.label)].join(' ')} data-product={interactive ? product.id : undefined} data-kind={interactive ? product.kind : undefined} aria-labelledby={`name-${product.id}`}>
       <div class="supplier-card-top"><span>{groupLabel}</span><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span></div>
       <a class="supplier-art-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}><SupplierArtwork id={product.id} decorative /></a>
       <h3 id={`name-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3><p class="supplier-format">{product.description}</p>

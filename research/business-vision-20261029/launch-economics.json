@@ -1,0 +1,59 @@
+{
+  "asOf": "2026-10-29",
+  "status": "planning, not agreed supplier terms or net profit",
+  "assumptionsSource": [
+    "src/data/pricing.ts",
+    "src/data/pirogi39-catalog.ts"
+  ],
+  "lastMile": "Customer pays the same last-mile fee as our courier cost in this example; any shortfall reduces contribution.",
+  "examples": [
+    {
+      "id": "p39-256",
+      "name": "Осетинский пирог с говядиной",
+      "weightG": 850,
+      "supplierPublicPriceRub": 1149,
+      "planningPickupDiscountRate": 0.1,
+      "purchaseAfterDiscountRub": 1034.1,
+      "planningInboundPerPieRub": 60,
+      "planningPackingPerPieRub": 40,
+      "planningReserveRate": 0.1,
+      "targetContributionRate": 0.35,
+      "planningRetailRub": 2070,
+      "contributionAt1500Rub": 215.9,
+      "productUrl": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-myasom-govyadina-850-g/",
+      "supplierUrl": "https://pirogi39.ru/osetinskij-pirog-s-myasom-govyadina/"
+    },
+    {
+      "id": "p39-249",
+      "name": "Осетинский пирог с сыром",
+      "weightG": 850,
+      "supplierPublicPriceRub": 1049,
+      "planningPickupDiscountRate": 0.1,
+      "purchaseAfterDiscountRub": 944.1,
+      "planningInboundPerPieRub": 60,
+      "planningPackingPerPieRub": 40,
+      "planningReserveRate": 0.1,
+      "targetContributionRate": 0.35,
+      "planningRetailRub": 1900,
+      "contributionAt1500Rub": 305.9,
+      "productUrl": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-syirom-850-g/",
+      "supplierUrl": "https://pirogi39.ru/osetinskij-pirog-s-syirom/"
+    },
+    {
+      "id": "p39-247",
+      "name": "Осетинский пирог с картофелем и сыром",
+      "weightG": 850,
+      "supplierPublicPriceRub": 999,
+      "planningPickupDiscountRate": 0.1,
+      "purchaseAfterDiscountRub": 899.1,
+      "planningInboundPerPieRub": 60,
+      "planningPackingPerPieRub": 40,
+      "planningReserveRate": 0.1,
+      "targetContributionRate": 0.35,
+      "planningRetailRub": 1820,
+      "contributionAt1500Rub": 350.9,
+      "productUrl": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-kartofelem-i-syirom-850-g/",
+      "supplierUrl": "https://pirogi39.ru/osetinskij-pirog-s-kartofelem-i-syirom/"
+    }
+  ]
+}

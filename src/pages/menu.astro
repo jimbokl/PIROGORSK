@@ -5,25 +5,46 @@ import EditorialHero from '../components/EditorialHero.astro';
 import EditorialInterest from '../components/EditorialInterest.astro';
 import EditorialLinks from '../components/EditorialLinks.astro';
 import SupplierCatalog from '../components/SupplierCatalog.astro';
-import { extras } from '../data/catalog';
+import { catalog, extras } from '../data/catalog';
+import { freshProducts } from '../data/pirogi39-catalog';
+import { supplierProducts } from '../data/holland-catalog';
+import '../styles/menu.css';
 import { productPage } from '../data/product-pages';
 import { catalogProductHref } from '../lib/product-paths';
-import { editorialProducts, productHref, scenarios, conceptCaption } from '../data/editorial';
+import { editorialProducts, productHref, scenarios } from '../data/editorial';
+const sections = [
+  { id: 'pirogi39', title: 'Целые пироги', text: 'Готовые пироги в весах производителя', count: freshProducts.length },
+  { id: 'holland', title: 'Выпечка и мини-пироги', text: 'Замороженные продукты и заготовки', count: supplierProducts.length },
+  { id: 'pirogi', title: 'Идеи Пирогорска', text: 'Восемь концептов · 500 г и 1 кг', count: editorialProducts.length },
+  { id: 'extras', title: 'К столу', text: 'Напитки, соусы и посуда', count: extras.length },
+];
+const searchText = (product: typeof catalog[number]) => [product.name, product.description, ...product.variants.map(v => v.label)].join(' ');
 const title = 'Меню — целые пироги, хлеб и выпечка | Пирогорск';
-const description = '153 позиции перед запуском Пирогорска: 61 пирог а-ля Русс, 78 продуктов Holland Bakery, наши идеи и дополнения. Сравните форматы и предварительные цены, отметьте интерес.';
+const description = `${catalog.length} позиции перед запуском Пирогорска: 61 пирог а-ля Русс, 78 продуктов Holland Bakery, наши идеи и дополнения. Сравните форматы и предварительные цены, отметьте интерес.`;
 ---
 <ContentLayout {title} {description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }]}>
-  <EditorialHero eyebrow="153 позиции · готовим запуск" title="Меню пирогов, хлеба и выпечки" intro="Начинаем с подбора выпечки местных пекарен и доставки через Пирогорск. Сохранили первые восемь идей пирогов, добавили 61 целый пирог «Пироги а-ля Русс», 78 позиций Holland Bakery и шесть напитков и дополнений. Цены и форматы предварительные." />
-  <div class="ed-note"><strong>Сейчас проверяем интерес.</strong> Продажи и производство ещё не запущены. {conceptCaption} Состав и аллергены опубликуем до начала заказов.</div>
+  <EditorialHero eyebrow={`${catalog.length} позиции · готовим запуск`} title="Меню пирогов, хлеба и выпечки" intro="Собираем пироги и выпечку местных пекарен для будущей доставки. Здесь целые пироги, небольшие наборы, наши первые идеи и дополнения к столу. Выберите раздел или найдите любимую начинку. Цены и форматы предварительные." />
+  <div class="ed-note"><strong>Сейчас изучаем спрос.</strong> Подборка не становится заказом. Состав, наличие и условия получения подтвердим до начала продаж.</div>
+  <form class="menu-finder" role="search" aria-label="Поиск по всему меню" data-menu-finder>
+    <label for="menu-search">Что хочется попробовать?</label>
+    <div class="menu-search-row"><input id="menu-search" type="search" name="q" maxlength="100" data-menu-search placeholder="Начинка, название или вес" autocomplete="off" enterkeyhint="search" /><button class="ed-button" type="submit">Найти</button></div>
+    <div class="menu-search-meta"><p data-menu-status role="status" aria-live="polite" aria-atomic="true">В меню {catalog.length} позиции</p><button type="button" data-menu-reset hidden>Сбросить поиск и фильтры</button></div>
+  </form>
+  <nav class="menu-sections" aria-label="Разделы меню">{sections.map(section => <a href={`#${section.id}`} data-menu-jump={section.id}><strong>{section.title}</strong><small>{section.text}</small><span>Позиций: <b data-menu-section-count>{section.count}</b></span></a>)}</nav>
+  <p class="menu-empty" data-menu-empty hidden>Пока ничего не нашлось. Попробуйте другое название, часть слова или сбросьте поиск и фильтры.</p>
   <p class="menu-planner-link"><a href="/podbor/">Сколько пирогов нужно на вашу компанию? Рассчитать вес ↗</a></p>
-  <section class="ed-catalog" id="pirogi" aria-label="Концепты пирогов">{editorialProducts.map(product => <article class="ed-product-card"><a class="product-visual-link" href={productHref(product)}><ProductVisual {product} layout="menu" /><p class="ed-eyebrow">{product.sweet ? 'К чаю' : 'К общему столу'} · концепт</p><h2>{product.name}</h2><p>{product.editorial.intro}</p><span class="ed-product-more">О вкусе и статусе рецепта ↗</span></a></article>)}</section>
   <SupplierCatalog fresh interactive={false} />
   <SupplierCatalog interactive={false} />
-  <section id="extras" class="ed-links-section menu-extras" aria-labelledby="menu-extras-title">
+  <section class="menu-originals" id="pirogi" data-menu-section aria-labelledby="menu-originals-title">
+    <header><p class="ed-eyebrow">Первые восемь идей</p><h2 id="menu-originals-title">Пироги Пирогорска</h2><p>Наши концепты для будущего меню, отдельно от ассортимента пекарен. Планируем два размера: 500 г и 1 кг. Рецепты ещё разрабатываются.</p></header>
+    <div class="ed-catalog">{editorialProducts.map(product => <article class="ed-product-card" data-menu-product data-menu-search={searchText(product)}><a class="product-visual-link" href={productHref(product)}><ProductVisual {product} layout="menu" /><p class="ed-eyebrow">{product.sweet ? 'К чаю' : 'К общему столу'} · концепт</p><h3>{product.name}</h3><p>{product.editorial.intro}</p><p class="menu-original-price">От {Math.min(...product.variants.map(v => v.price)).toLocaleString('ru-RU')} ₽<small>500 г или 1 кг · предварительно</small></p><span class="ed-product-more">О вкусе и статусе рецепта ↗</span></a></article>)}</div>
+  </section>
+  <section id="extras" data-menu-section class="ed-links-section menu-extras" aria-labelledby="menu-extras-title">
     <h2 id="menu-extras-title">Напитки и дополнения</h2>
-    <div class="ed-catalog">{extras.map(product => <article class="ed-product-card"><a class="product-visual-link" href={catalogProductHref(product)}><ProductVisual {product} layout="menu" decorative /><p class="ed-eyebrow">От {Math.min(...product.variants.map(v => v.price)).toLocaleString('ru-RU')} ₽ · предварительно</p><h3>{product.name}</h3><p>{productPage(product).intro}</p><span class="ed-product-more">Подробнее о позиции ↗</span></a></article>)}</div>
+    <div class="ed-catalog">{extras.map(product => <article class="ed-product-card" data-menu-product data-menu-search={searchText(product)}><a class="product-visual-link" href={catalogProductHref(product)}><ProductVisual {product} layout="menu" decorative /><p class="ed-eyebrow">От {Math.min(...product.variants.map(v => v.price)).toLocaleString('ru-RU')} ₽ · предварительно</p><h3>{product.name}</h3><p>{productPage(product).intro}</p><span class="ed-product-more">Подробнее о позиции ↗</span></a></article>)}</div>
   </section>
   <EditorialInterest interest="menu" title="Какие пироги вам интересны?" text="На главной можно собрать анонимную подборку и отметить город. Это поможет нам оценить спрос перед запуском; заказ и оплата пока недоступны." label="Выбрать интересные пироги" />
   <EditorialLinks title="Собираете стол к случаю?" links={scenarios.map(item => ({ href: `/nabor/${item.slug}/`, title: item.title, text: item.intro, label: 'Сценарий' }))} />
+  <script>import '../scripts/menu-finder';</script>
 </ContentLayout>
 <style>.menu-planner-link{margin:25px 0;font-size:13px;line-height:1.8}.menu-planner-link a{display:inline-block;min-height:44px;padding-block:10px;text-underline-offset:4px}.menu-extras h3{font-size:clamp(23px,2.2vw,28px);line-height:1.2;margin-top:7px}</style>

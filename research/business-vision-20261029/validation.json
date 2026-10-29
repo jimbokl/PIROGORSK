@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-10-29T18:20:04.181455+00:00",
+  "status": "PASS",
+  "scope": "Planning documents and arithmetic; read-only HTTP. No app code changed and no runtime tests required for this documentation change.",
+  "economics": [
+    {
+      "id": "p39-256",
+      "status": "PASS",
+      "purchaseRub": 1034.1,
+      "retailRub": 2070.0,
+      "contributionAt1500Rub": 215.9
+    },
+    {
+      "id": "p39-249",
+      "status": "PASS",
+      "purchaseRub": 944.1,
+      "retailRub": 1900.0,
+      "contributionAt1500Rub": 305.9
+    },
+    {
+      "id": "p39-247",
+      "status": "PASS",
+      "purchaseRub": 899.1,
+      "retailRub": 1820.0,
+      "contributionAt1500Rub": 350.9
+    }
+  ],
+  "dailyContributionCheckRub": 3509,
+  "snapshotPagesChecked": 7,
+  "snapshotCatalogCount": 153,
+  "localLinks": [
+    {
+      "file": "docs/strategy/launch-30-days-20261029.md",
+      "target": "../../research/business-vision-20261029/user-vision.txt",
+      "status": "PASS"
+    },
+    {
+      "file": "docs/strategy/launch-30-days-20261029.md",
+      "target": "../../research/business-vision-20261029/README.md",
+      "status": "PASS"
+    },
+    {
+      "file": "docs/strategy/launch-30-days-20261029.md",
+      "target": "../../research/local-seo-sprint-20261029/README.md",
+      "status": "PASS"
+    },
+    {
+      "file": "docs/strategy/launch-30-days-20261029.md",
+      "target": "../../research/suppliers-20261029/README.md",
+      "status": "PASS"
+    },
+    {
+      "file": "docs/strategy/launch-30-days-20261029.md",
+      "target": "../../research/recipe-costing-20261029/README.md",
+      "status": "PASS"
+    },
+    {
+      "file": "docs/strategy/launch-30-days-20261029.md",
+      "target": "../../research/business-vision-20261029/launch-economics.json",
+      "status": "PASS"
+    },
+    {
+      "file": "research/business-vision-20261029/README.md",
+      "target": "../../docs/strategy/launch-30-days-20261029.md",
+      "status": "PASS"
+    },
+    {
+      "file": "research/business-vision-20261029/README.md",
+      "target": "user-vision.txt",
+      "status": "PASS"
+    },
+    {
+      "file": "research/business-vision-20261029/README.md",
+      "target": "live-site-facts.json",
+      "status": "PASS"
+    },
+    {
+      "file": "research/business-vision-20261029/README.md",
+      "target": "launch-economics.json",
+      "status": "PASS"
+    },
+    {
+      "file": "research/business-vision-20261029/README.md",
+      "target": "../suppliers-20261029/README.md",
+      "status": "PASS"
+    },
+    {
+      "file": "research/business-vision-20261029/README.md",
+      "target": "../recipe-costing-20261029/README.md",
+      "status": "PASS"
+    },
+    {
+      "file": "research/business-vision-20261029/README.md",
+      "target": "../local-seo-sprint-20261029/README.md",
+      "status": "PASS"
+    },
+    {
+      "file": "research/business-vision-20261029/README.md",
+      "target": "validation.json",
+      "status": "PASS"
+    }
+  ],
+  "productionLinks": [
+    {
+      "url": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-kartofelem-i-syirom-850-g/",
+      "status": 200,
+      "finalUrl": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-kartofelem-i-syirom-850-g/"
+    },
+    {
+      "url": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-myasom-govyadina-850-g/",
+      "status": 200,
+      "finalUrl": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-myasom-govyadina-850-g/"
+    },
+    {
+      "url": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-syirom-850-g/",
+      "status": 200,
+      "finalUrl": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-syirom-850-g/"
+    },
+    {
+      "url": "https://pirogorsk.ru/dostavka/kaliningrad/",
+      "status": 200,
+      "finalUrl": "https://pirogorsk.ru/dostavka/kaliningrad/"
+    },
+    {
+      "url": "https://pirogorsk.ru/dostavka/svetlogorsk/",
+      "status": 200,
+      "finalUrl": "https://pirogorsk.ru/dostavka/svetlogorsk/"
+    },
+    {
+      "url": "https://pirogorsk.ru/dostavka/zelenogradsk/",
+      "status": 200,
+      "finalUrl": "https://pirogorsk.ru/dostavka/zelenogradsk/"
+    }
+  ],
+  "gitDiffCheck": "PASS",
+  "markdownWhitespace": "PASS",
+  "documentsCheckedAt": "2026-10-29T18:20:55.919306+00:00",
+  "originalVisionCopy": "byte-for-byte PASS",
+  "documentSha256": {
+    "docs/strategy/launch-30-days-20261029.md": "55e10000a6dead748287437ff0d2383e74bbc23e8c2b16f9d7c19b3f4dbbdd0c",
+    "research/business-vision-20261029/README.md": "72380fcaf62941e75264fb74cb8e47e88230e9b27d56f1eb4033ff9385c0cc2a"
+  }
+}

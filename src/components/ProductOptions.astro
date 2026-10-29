@@ -7,6 +7,9 @@ const { product, showDelivery = false } = Astro.props;
 const selected = product.variants.find(variant => variant.value === product.defaultVariant) ?? product.variants[0]!;
 const selectionHref = (value: number) => productSelectionHref(product, value);
 const from = product.supplier?.priceFrom ? 'от ' : '';
+const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.category}#pirogi39`
+  : product.kind === 'bakery' ? `/menu/?group=${product.category}#holland`
+  : product.kind === 'pie' ? '/menu/#pirogi' : '/menu/#extras';
 ---
 <div class="product-options" data-product-options data-price-prefix={from}>
   <fieldset>
@@ -23,6 +26,7 @@ const from = product.supplier?.priceFrom ? 'от ' : '';
     <a class="ed-button" data-option-link href={selectionHref(selected.value)}>В подборку<span aria-hidden="true">↗</span></a>
   </div>
   <p class="product-options-note">Готовим запуск. Подборка поможет нам узнать ваши вкусы; это ещё не заказ.</p>
+  <a class="product-menu-back" href={menuHref}>Сравнить в этом разделе меню ↗</a>
   {showDelivery && <details class="product-delivery"><summary>Сколько получится с доставкой</summary><p>Если в подборке только выбранный формат этой позиции. Доставка учитывается один раз за всю подборку.</p><dl>{Object.entries(deliveryEstimates).map(([city, cost]) => <div><dt>{city}<small>Доставка {cost} ₽</small></dt><dd data-option-total data-delivery-cost={cost}>{from}{(selected.price + cost).toLocaleString('ru-RU')} ₽</dd></div>)}<div><dt>Самовывоз<small>Место ещё уточняется</small></dt><dd data-option-total data-delivery-cost="0">{from}{selected.price.toLocaleString('ru-RU')} ₽</dd></div></dl><p>Плановый расчёт, не тариф перевозчика. Города, условия и стоимость подтвердим до начала продаж.</p></details>}
 </div>
 <script>
@@ -57,6 +61,7 @@ const from = product.supplier?.priceFrom ? 'от ' : '';
   small{display:block;font-size:11px;color:var(--ed-muted);line-height:1.5;margin-top:5px}
   .product-options-bottom .ed-button{width:auto;min-width:156px;gap:20px}
   .product-options-note{font-size:12px;line-height:1.7;color:var(--ed-muted);margin-top:15px;max-width:52ch}
+  .product-menu-back{display:inline-flex;align-items:center;min-height:44px;font-size:12px;text-underline-offset:4px}
   .product-delivery{margin-top:20px;border-top:1px solid var(--ed-line);padding-top:16px;font-size:12px;line-height:1.6}
   .product-delivery summary{cursor:pointer;padding-block:6px;font-weight:600}
   .product-delivery p{color:var(--ed-muted)}
