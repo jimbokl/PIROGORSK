@@ -1,0 +1,759 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-29T19:28:14.361Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 110,
+      "lcp": 110
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 10.544999877929687,
+      "resourceLoadDelay": 6.443000122070313,
+      "resourceLoadDuration": 9.606,
+      "elementRenderDelay": 83.292
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1746.540125,
+        "display": "1.7 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2359.4642,
+        "display": "2.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.005811978613969518,
+        "display": "0.006"
+      },
+      "speed-index": {
+        "value": 1746.540125,
+        "display": "1.7 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,0,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2157,
+                "bottom": 2445,
+                "left": 24,
+                "right": 312,
+                "width": 288,
+                "height": 288
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/myasnoy-pirog/\" aria-label=\"Подробнее: мясной пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-A",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,1,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 2157,
+                "bottom": 2445,
+                "left": 338,
+                "right": 626,
+                "width": 288,
+                "height": 288
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-yablokom-i-brusnikoy/\" aria-label=\"Подробнее: пирог с яблоком и брусникой\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 200 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-4-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,2,ARTICLE,0,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.product-visual-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2177,
+                "bottom": 2425,
+                "left": 672,
+                "right": 920,
+                "width": 248,
+                "height": 248
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-497-640.avif\" srcset=\"/catalog-art/p39-497-256.webp 256w, /catalog-art/p39-497-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.product-visual-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-497-640.avif",
+            "totalBytes": 44806,
+            "wastedBytes": 38095,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (248x248). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 38095
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-5-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,NAV,2,A,0,SPAN,0,DIV,0,PICTURE,1,IMG",
+              "selector": "span.department-art > div.supplier-artwork > picture.product-backdrop > img",
+              "boundingRect": {
+                "top": 1078,
+                "bottom": 1188,
+                "left": 315,
+                "right": 451,
+                "width": 136,
+                "height": 110
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/product-backdrops/hb-tort-napoleon-2-0-kg-18-sht-po-…\" srcset=\"/product-backdrops/hb-tort-napoleon-2-0-kg-18-sht-po-110-g-256.webp 256w, …\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"low\" decoding=\"async\" data-astro-cid-wwfkf4zy=\"\">",
+              "nodeLabel": "span.department-art > div.supplier-artwork > picture.product-backdrop > img"
+            },
+            "url": "http://127.0.0.1:4322/product-backdrops/hb-tort-napoleon-2-0-kg-18-sht-po-110-g-640.avif",
+            "totalBytes": 30721,
+            "wastedBytes": 29006,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x518) for its displayed dimensions (136x136). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 29006
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-6-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,2,DIV,1,DIV,0,DIV,0,PICTURE,2,IMG",
+              "selector": "div.tasting-art > div.tasting-scene > picture > img",
+              "boundingRect": {
+                "top": 471,
+                "bottom": 847,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 376
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/pie.CiXI4zfL_Z2fLupv.avif\" srcset=\"/_astro/pie.CiXI4zfL_18fk5t.webp 320w, /_astro/pie.CiXI4zfL_136R10.webp 48…\" sizes=\"(max-width: 760px) 76vw, (max-width: 1200px) 42vw, 540px\" alt=\"Визуальный концепт рыбного пирога с кусочком и начинкой\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"900\" height=\"900\">",
+              "nodeLabel": "Визуальный концепт рыбного пирога с кусочком и начинкой"
+            },
+            "url": "http://127.0.0.1:4322/_astro/pie.CiXI4zfL_Z2fLupv.avif",
+            "totalBytes": 39750,
+            "wastedBytes": 26030,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (376x376). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 26030
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-7-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,3,SECTION,1,NAV,2,A,0,SPAN,0,DIV,1,PICTURE,1,IMG",
+              "selector": "span.department-art > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 1078,
+                "bottom": 1188,
+                "left": 315,
+                "right": 451,
+                "width": 136,
+                "height": 110
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/hb-tort-napoleon-2-0-kg-18-sht-po-110-g-…\" srcset=\"/catalog-art/hb-tort-napoleon-2-0-kg-18-sht-po-110-g-256.webp 256w, /catal…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "span.department-art > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/hb-tort-napoleon-2-0-kg-18-sht-po-110-g-640.avif",
+            "totalBytes": 27036,
+            "wastedBytes": 25527,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x518) for its displayed dimensions (136x136). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 25527
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-8-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,3,ARTICLE,0,A,0,DIV,0,PICTURE,1,IMG",
+              "selector": "a.product-visual-link > div.supplier-artwork > picture.product-backdrop > img",
+              "boundingRect": {
+                "top": 2157,
+                "bottom": 2445,
+                "left": 966,
+                "right": 1254,
+                "width": 288,
+                "height": 288
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/product-backdrops/hb-osetinskiy-pirog-s-kuritsey-i-s…\" srcset=\"/product-backdrops/hb-osetinskiy-pirog-s-kuritsey-i-syrom-256.webp 256w, /…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"low\" decoding=\"async\" data-astro-cid-wwfkf4zy=\"\">",
+              "nodeLabel": "a.product-visual-link > div.supplier-artwork > picture.product-backdrop > img"
+            },
+            "url": "http://127.0.0.1:4322/product-backdrops/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "totalBytes": 29673,
+            "wastedBytes": 23664,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (288x288). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 23664
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-9-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,3,ARTICLE,0,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.product-visual-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2177,
+                "bottom": 2425,
+                "left": 986,
+                "right": 1234,
+                "width": 248,
+                "height": 248
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-6…\" srcset=\"/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-256.webp 256w, /catalo…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.product-visual-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+            "totalBytes": 27209,
+            "wastedBytes": 23134,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (248x248). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 23134
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-10-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,2,ARTICLE,0,A,0,DIV,0,PICTURE,1,IMG",
+              "selector": "a.product-visual-link > div.supplier-artwork > picture.product-backdrop > img",
+              "boundingRect": {
+                "top": 2157,
+                "bottom": 2445,
+                "left": 652,
+                "right": 940,
+                "width": 288,
+                "height": 288
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamor…\" srcset=\"/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-1…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"low\" decoding=\"async\" data-astro-cid-wwfkf4zy=\"\">",
+              "nodeLabel": "a.product-visual-link > div.supplier-artwork > picture.product-backdrop > img"
+            },
+            "url": "http://127.0.0.1:4322/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg-640.avif",
+            "totalBytes": 27546,
+            "wastedBytes": 21968,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (640x640) for its displayed dimensions (288x288). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 21968
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-11-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,7,SECTION,1,DIV,0,ARTICLE,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a > div.blog-card-image > picture > img",
+              "boundingRect": {
+                "top": 3374,
+                "bottom": 3625,
+                "left": 18,
+                "right": 394,
+                "width": 376,
+                "height": 251
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/pekarni-i-pirogi-v-zelenogradske.Csa2d4a0_Z22…\" srcset=\"/_astro/pekarni-i-pirogi-v-zelenogradske.Csa2d4a0_rMKUU.webp 360w, /_astro…\" sizes=\"(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 360px, (max-wid…\" alt=\"Целый пирог и порционная выпечка на прилавке вымышленной приморской пекарни\" loading=\"lazy\" decoding=\"async\" data-astro-cid-o6plht5k=\"true\" width=\"640\" height=\"427\">",
+              "nodeLabel": "Целый пирог и порционная выпечка на прилавке вымышленной приморской пекарни"
+            },
+            "url": "http://127.0.0.1:4322/_astro/pekarni-i-pirogi-v-zelenogradske.Csa2d4a0_Z227r4H.avif",
+            "totalBytes": 24325,
+            "wastedBytes": 16888,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (680x454) for its displayed dimensions (376x251). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 16888
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "231C95AD1EE20AD3DD664E1B4A8CA1E9": {
+                  "url": "http://127.0.0.1:4322/",
+                  "navStartToEndTime": 74,
+                  "transferSize": 38756,
+                  "isLongest": true,
+                  "children": {
+                    "65661.10": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 76,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "65661.70": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 113,
+                          "transferSize": 13614,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "65661.11": {
+                      "url": "http://127.0.0.1:4322/_astro/index.astro_astro_type_script_index_0_lang.Ch4l4jBG.js",
+                      "navStartToEndTime": 76,
+                      "transferSize": 4341,
+                      "children": {
+                        "65661.72": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 109,
+                          "transferSize": 1121,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "65661.9": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.BQ0k9M5Z.js",
+                      "navStartToEndTime": 76,
+                      "transferSize": 4059,
+                      "children": {
+                        "65661.71": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 109,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "65661.53": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 95,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "65661.6": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 76,
+                      "transferSize": 357,
+                      "children": {
+                        "65661.69": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 95,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "65661.52": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 92,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "65661.54": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 92,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "65661.51": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 92,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "65661.7": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 76,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 113
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-29T19:28:21.549Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 245,
+      "lcp": 245
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 8.898,
+      "resourceLoadDelay": 2.864,
+      "resourceLoadDuration": 9.569,
+      "elementRenderDelay": 223.47
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 403.9288,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 601.0208,
+        "display": "0.6 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.002281818689256633,
+        "display": "0.002"
+      },
+      "speed-index": {
+        "value": 403.9288,
+        "display": "0.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,0,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1695,
+                "bottom": 1962,
+                "left": 70,
+                "right": 337,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/myasnoy-pirog/\" aria-label=\"Подробнее: мясной пирог\">",
+              "nodeLabel": "Сытно",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-A",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,1,ARTICLE,0,A",
+              "selector": "section#pirogi > div.product-grid > article.product-card > a.product-visual-link",
+              "boundingRect": {
+                "top": 1695,
+                "bottom": 1962,
+                "left": 385,
+                "right": 651,
+                "width": 267,
+                "height": 267
+              },
+              "snippet": "<a class=\"product-visual-link\" href=\"/pirogi/pirog-s-yablokom-i-brusnikoy/\" aria-label=\"Подробнее: пирог с яблоком и брусникой\">",
+              "nodeLabel": "Сладкий",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": [
+              {
+                "source": {
+                  "type": "source-location",
+                  "url": "http://127.0.0.1:4322/",
+                  "urlProvider": "network",
+                  "line": 7,
+                  "column": 13040
+                },
+                "reflowTime": 31.146
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 13 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-4-IMG",
+              "path": "1,HTML,1,BODY,2,MAIN,5,SECTION,2,DIV,2,ARTICLE,0,A,0,DIV,1,PICTURE,1,IMG",
+              "selector": "a.product-visual-link > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 1714,
+                "bottom": 1943,
+                "left": 718,
+                "right": 947,
+                "width": 229,
+                "height": 229
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-497-400.avif\" srcset=\"/catalog-art/p39-497-256.webp 256w, /catalog-art/p39-497-400.webp 400w, /c…\" sizes=\"(max-width: 650px) calc(100vw - 80px), (max-width: 1050px) 42vw, 360px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "a.product-visual-link > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-497-400.avif",
+            "totalBytes": 20023,
+            "wastedBytes": 13448,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (400x400) for its displayed dimensions (229x229). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 13448
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "FE78F588A5752644320546CECF24B7D3": {
+                  "url": "http://127.0.0.1:4322/",
+                  "navStartToEndTime": 19,
+                  "transferSize": 38756,
+                  "isLongest": true,
+                  "children": {
+                    "65718.44": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.BQ0k9M5Z.js",
+                      "navStartToEndTime": 57,
+                      "transferSize": 4059,
+                      "isLongest": true,
+                      "children": {
+                        "65718.80": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.eAhNn6I9.js",
+                          "navStartToEndTime": 99,
+                          "transferSize": 13614,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "65718.81": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 91,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "65718.46": {
+                      "url": "http://127.0.0.1:4322/_astro/index.astro_astro_type_script_index_0_lang.Ch4l4jBG.js",
+                      "navStartToEndTime": 57,
+                      "transferSize": 4341,
+                      "children": {
+                        "65718.82": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 91,
+                          "transferSize": 1121,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "65718.6": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 57,
+                      "transferSize": 357,
+                      "children": {
+                        "65718.79": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 88,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "65718.49": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 58,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "65718.50": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 58,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "65718.47": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 58,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "65718.48": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 58,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "65718.45": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CLiSAyV5.js",
+                      "navStartToEndTime": 57,
+                      "transferSize": 351,
+                      "children": {}
+                    },
+                    "65718.7": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 57,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 99
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

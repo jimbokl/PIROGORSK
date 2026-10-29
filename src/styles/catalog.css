@@ -5,12 +5,21 @@
 .catalog .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px 28px; align-items: stretch; }
 .product-card.catalog-card { display: flex; flex-direction: column; min-width: 0; position: relative; }
 .product-card.catalog-card[hidden] { display: none; }
-.catalog .catalog-card--pie { padding: 9px 9px 17px; border: 1px solid var(--card-line); border-radius: 15px; background: var(--paper-raised); transition: box-shadow 280ms ease, border-color 280ms ease; }
-.catalog .catalog-card--pie .product-visual { border-radius: 9px; }
-.catalog .catalog-card--pie .product-copy { padding: 13px 5px 0; }
-.catalog .catalog-card--pie .variant-switch, .catalog .catalog-card--pie .product-bottom { margin-inline: 5px; }
-.catalog .catalog-card--pie .product-bottom { gap: 10px 5px; }
-.catalog .catalog-card--pie .button-small { padding-inline: 12px; }
+.catalog .product-card.catalog-card { padding: 9px 9px 17px; border: 1px solid var(--card-line); border-radius: 15px; background: var(--paper-raised); transition: box-shadow 280ms ease, border-color 280ms ease; }
+.catalog .product-card.catalog-card .product-visual, .catalog .product-card.catalog-card .supplier-artwork { aspect-ratio: 1; border-radius: 9px; }
+/* Five shared tracks keep artwork, titles, descriptions, formats and actions
+   aligned within each row, even when a product name or format wraps. */
+.catalog .product-card.catalog-card { display: grid; grid-template-rows: subgrid; grid-row: span 5; row-gap: 0; }
+.catalog .product-card.catalog-card .product-copy { display: grid; grid-template-rows: subgrid; grid-row: span 2; row-gap: 7px; padding: 13px 5px 0; }
+.catalog .product-card.catalog-card h3 { margin: 0; }
+.catalog .product-card.catalog-card .product-description { margin: 0 0 18px; }
+.catalog .product-card.catalog-card .variant-switch { min-height: 48px; }
+.catalog .product-card.catalog-card .variant-switch span { height: 100%; min-height: 48px; }
+.catalog .product-card.catalog-card .product-bottom { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+.catalog .product-card.catalog-card .button-small { min-height: 44px; width: 116px; }
+.catalog .product-card.catalog-card .variant-switch, .catalog .product-card.catalog-card .product-bottom { margin-inline: 5px; }
+.catalog .product-card.catalog-card .product-bottom { gap: 10px 5px; }
+.catalog .product-card.catalog-card .button-small { padding-inline: 12px; }
 .catalog-card .product-copy { flex: 1; padding-top: 10px; }
 .product-card.catalog-card h3 { font-size: clamp(21px, 1.7vw, 25px); line-height: 1.2; letter-spacing: -.025em; white-space: normal; text-wrap: balance; min-height: 0; }
 .catalog-card .product-title-link { color: inherit; text-decoration: none; text-underline-offset: .15em; }
@@ -28,18 +37,18 @@
 .catalog-card .product-price { font-size: 23px; line-height: 1.2; font-variant-numeric: tabular-nums; }
 .catalog-card .product-price-note { font-size: 12px; line-height: 1.5; color: var(--muted); }
 .catalog-card .button-small { min-height: 44px; padding: 10px 17px; font-size: 12px; white-space: nowrap; width: auto; }
-.catalog-card .button-small.added { padding-inline: 13px; }
+.catalog .product-card.catalog-card .button-small.added { padding-inline: 12px; }
 .product-visual-link { display: block; border-radius: 7px; }
 .product-visual-link:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
 .product-visual-link .product-visual-subject { transition: transform 600ms cubic-bezier(.16,1,.3,1), filter 600ms ease; }
 .product-visual-link .product-visual-background { transition: transform 700ms cubic-bezier(.16,1,.3,1); }
 @media (hover: hover) {
-  .catalog-card--pie:hover { border-color: var(--card-line-hover); box-shadow: 0 13px 32px var(--card-shadow); }
+  .catalog .catalog-card:hover { border-color: var(--card-line-hover); box-shadow: 0 13px 32px var(--card-shadow); }
   .product-visual-link:hover .product-visual-subject { transform: translate(-50%, -53%) rotate(-3deg) scale(1.045); filter: drop-shadow(0 10px 6px var(--food-shadow-hover)); }
   .product-visual-link:hover .product-visual-background { transform: scale(1.035) rotate(2deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .catalog .catalog-card--pie, .product-visual-link .product-visual-subject, .product-visual-link .product-visual-background { transition: none; }
+  .catalog .product-card.catalog-card, .product-visual-link .product-visual-subject, .product-visual-link .product-visual-background { transition: none; }
   .product-visual-link:hover .product-visual-subject { transform: translate(-50%, -50%); }
   .product-visual-link:hover .product-visual-background { transform: none; }
 }
@@ -141,9 +150,9 @@
   .catalog .filters button { min-height: 44px; padding: 10px 15px; }
   .catalog .product-grid, .extras-section .extras-grid { gap: 28px 20px; }
   .catalog .product-grid { gap: 20px 12px; }
-  .catalog .catalog-card--pie { padding: 5px 5px 12px; border-radius: 11px; }
-  .catalog .catalog-card--pie .product-copy { padding-inline: 3px; }
-  .catalog .catalog-card--pie .variant-switch, .catalog .catalog-card--pie .product-bottom { margin-inline: 3px; }
+  .catalog .product-card.catalog-card { padding: 5px 5px 12px; border-radius: 11px; }
+  .catalog .product-card.catalog-card .product-copy { padding-inline: 3px; }
+  .catalog .product-card.catalog-card .variant-switch, .catalog .product-card.catalog-card .product-bottom { margin-inline: 3px; }
   .product-card.catalog-card h3 { font-size: 21px; line-height: 1.2; min-height: 0; }
   .catalog-card .product-description { font-size: 12px; min-height: 0; margin-bottom: 16px; }
   .catalog-card .product-bottom { align-items: start; }

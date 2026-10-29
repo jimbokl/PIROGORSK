@@ -87,7 +87,8 @@ if (hero) {
 }
 
 // Keep content visible in CSS: a script/network failure can never hide the menu.
-const cards = document.querySelectorAll<HTMLElement>('.catalog-card--pie, .occasion-card, .home-journal > header');
+// Reveal the featured row together so the different product kinds never drift apart.
+const cards = document.querySelectorAll<HTMLElement>('.home-featured .product-grid, .occasion-card, .home-journal > header');
 if ('IntersectionObserver' in window && !reducedMotion.matches) {
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {

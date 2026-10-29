@@ -6,17 +6,17 @@
 .product-artwork-subject img{display:block;width:100%;height:100%;object-fit:contain;aspect-ratio:1}
 .supplier-art-link .product-artwork{aspect-ratio:1}
 .supplier-card{transition:box-shadow 280ms ease,border-color 280ms ease}
-.supplier-art-link:focus-visible .product-artwork-subject{transform:translateY(-3%) rotate(-3deg) scale(1.045)}
-.supplier-art-link:focus-visible .product-backdrop{transform:scale(1.035) rotate(2deg)}
+:is(.supplier-art-link,.product-visual-link):focus-visible .product-artwork-subject{transform:translateY(-3%) rotate(-3deg) scale(1.045)}
+:is(.supplier-art-link,.product-visual-link):focus-visible .product-backdrop{transform:scale(1.035) rotate(2deg)}
 @media(hover:hover){
   .supplier-card:hover{border-color:var(--card-line-hover,#18384755);box-shadow:0 13px 32px var(--card-shadow,#18384712)}
-  .supplier-art-link:hover .product-artwork-subject,.product-artwork--hero:hover .product-artwork-subject{transform:translateY(-3%) rotate(-3deg) scale(1.045)}
-  .supplier-art-link:hover .product-backdrop,.product-artwork--hero:hover .product-backdrop{transform:scale(1.035) rotate(2deg)}
+  :is(.supplier-art-link,.product-visual-link):hover .product-artwork-subject,.product-artwork--hero:hover .product-artwork-subject{transform:translateY(-3%) rotate(-3deg) scale(1.045)}
+  :is(.supplier-art-link,.product-visual-link):hover .product-backdrop,.product-artwork--hero:hover .product-backdrop{transform:scale(1.035) rotate(2deg)}
 }
 /* A short press response also works on touch; it never intercepts the link. */
-.supplier-art-link:is(:active,[data-artwork-pressed]) .product-artwork-subject,.product-artwork--hero:is(:active,[data-artwork-pressed]) .product-artwork-subject{transform:translateY(-1%) scale(1.02)}
-.supplier-art-link:is(:active,[data-artwork-pressed]) .product-backdrop,.product-artwork--hero:is(:active,[data-artwork-pressed]) .product-backdrop{transform:scale(1.02)}
+:is(.supplier-art-link,.product-visual-link):is(:active,[data-artwork-pressed]) .product-artwork-subject,.product-artwork--hero:is(:active,[data-artwork-pressed]) .product-artwork-subject{transform:translateY(-1%) scale(1.02)}
+:is(.supplier-art-link,.product-visual-link):is(:active,[data-artwork-pressed]) .product-backdrop,.product-artwork--hero:is(:active,[data-artwork-pressed]) .product-backdrop{transform:scale(1.02)}
 @media(prefers-reduced-motion:reduce){
   .supplier-card,.product-artwork .product-backdrop,.product-artwork-subject{transition:none}
-  .supplier-art-link:hover .product-artwork-subject,.supplier-art-link:focus-visible .product-artwork-subject,.supplier-art-link:is(:active,[data-artwork-pressed]) .product-artwork-subject,.supplier-art-link:hover .product-backdrop,.supplier-art-link:focus-visible .product-backdrop,.supplier-art-link:is(:active,[data-artwork-pressed]) .product-backdrop,.product-artwork--hero:hover .product-artwork-subject,.product-artwork--hero:is(:active,[data-artwork-pressed]) .product-artwork-subject,.product-artwork--hero:hover .product-backdrop,.product-artwork--hero:is(:active,[data-artwork-pressed]) .product-backdrop{transform:none}
+  :is(.supplier-art-link,.product-visual-link):hover .product-artwork-subject,:is(.supplier-art-link,.product-visual-link):focus-visible .product-artwork-subject,:is(.supplier-art-link,.product-visual-link):is(:active,[data-artwork-pressed]) .product-artwork-subject,:is(.supplier-art-link,.product-visual-link):hover .product-backdrop,:is(.supplier-art-link,.product-visual-link):focus-visible .product-backdrop,:is(.supplier-art-link,.product-visual-link):is(:active,[data-artwork-pressed]) .product-backdrop,.product-artwork--hero:hover .product-artwork-subject,.product-artwork--hero:is(:active,[data-artwork-pressed]) .product-artwork-subject,.product-artwork--hero:hover .product-backdrop,.product-artwork--hero:is(:active,[data-artwork-pressed]) .product-backdrop{transform:none}
 }
