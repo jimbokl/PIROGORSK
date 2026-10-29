@@ -7,7 +7,7 @@ const srcset = (extension: string) => backdrop!.widths.map(width => `${backdrop!
 ---
 {backdrop && <picture class="product-backdrop" data-product-backdrop={id} aria-hidden="true">
   <source type="image/avif" srcset={srcset('avif')} {sizes} />
-  <img src={`${backdrop.base}-400.webp`} srcset={srcset('webp')} {sizes} width="960" height="960" alt="" loading={hero ? 'eager' : 'lazy'} fetchpriority="low" decoding="async" />
+  <img src={`${backdrop.base}-400.webp`} srcset={srcset('webp')} {sizes} width="960" height="960" alt="" loading={hero ? 'eager' : 'lazy'} fetchpriority={hero ? 'high' : 'low'} decoding="async" />
 </picture>}
 <style>
   .product-backdrop{display:block;position:absolute;inset:0;pointer-events:none}

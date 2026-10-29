@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-29T16:29:00+02:00",
+  "runtime": "26e1852c3b2c1f839062420eaff55ebf75ae7ca4",
+  "lighthouseVersion": "13.5.0",
+  "chromiumVersion": "153.0.8010.36",
+  "crux": "No data",
+  "home": {
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/fxsfqowvci?form_factor=mobile",
+    "mobile": {"performance":86,"accessibility":100,"bestPractices":100,"seo":100,"lcpMs":4061,"fcpMs":1651,"tbtMs":12,"cls":0.007},
+    "desktop": {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"lcpMs":441,"fcpMs":346,"tbtMs":27,"cls":0.041},
+    "lcpElement": "section.tasting-hero > div.tasting-coast > picture > img",
+    "lcpResource": "/_astro/background.CF7ZZ9Af_285HE2.avif",
+    "priority": "high",
+    "mobileObservedBreakdownMs": {"ttfb":10,"loadDelay":210,"download":370,"renderDelay":810}
+  },
+  "product": {
+    "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-catalog-osetinskiy-pirog-s-kuritsey-i-syrom/jrt9dy1vep?form_factor=mobile",
+    "mobile": {"performance":90,"accessibility":100,"bestPractices":100,"seo":100,"lcpMs":3573,"fcpMs":1207,"tbtMs":51,"cls":0},
+    "desktop": {"performance":100,"accessibility":100,"bestPractices":100,"seo":100,"lcpMs":331,"fcpMs":244,"tbtMs":10,"cls":0},
+    "lcpElement": "figure.ed-hero-art > div.supplier-artwork > picture.product-backdrop > img",
+    "priority": "low",
+    "loading": "eager",
+    "mobileObservedBreakdownMs": {"ttfb":0,"loadDelay":150,"download":140,"renderDelay":1030},
+    "finding": "PSI LCP discovery audit requires fetchpriority=high. Correct hero backdrop priority; this does not establish that priority explains the entire LCP delay."
+  }
+}

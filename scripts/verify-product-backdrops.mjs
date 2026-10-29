@@ -36,6 +36,9 @@ for (const product of catalog) {
   if (manifest.some(item => item.id === product.id)) {
     assert.ok(html.includes(`data-product-backdrop="${product.id}"`), `${route} backdrop`);
     assert.match(html, /data-product-backdrop="[^"]+"[^>]*aria-hidden="true"/, `${route} decorative layer`);
+    const heroBackdrop = html.match(new RegExp(`<picture[^>]*data-product-backdrop="${product.id}"[^>]*>[\\s\\S]*?</picture>`))?.[0];
+    assert.match(heroBackdrop, /loading="eager"/, `${route} hero backdrop loads eagerly`);
+    assert.match(heroBackdrop, /fetchpriority="high"/, `${route} hero backdrop has LCP priority`);
   } else assert.ok(html.includes('product-visual-background'), `${route} retained backdrop`);
 }
 const tableware = await sharp('design/product-backdrops-source/tableware-product.png').metadata();

@@ -23,3 +23,11 @@
 UI: 24 сочетания страницы и ширины320/390/1280, на каждой ширине декодированы все162 слоя меню; девять проверок hover/focus/press/reduced motion, включая напиток и касание. Переполнения и JS-ошибок нет. [Readback](local-readback.json).
 
 Локальный Lighthouse (по одному mobile/desktop): главная P97/100, LCP2406/528мс; товар P100/100, LCP1727/404мс; A/BP/SEO100. Все результаты сохранены в `local-home/` и `local-product/`; production проверяется после публикации. Изменений цен, ID, API, формы и оплаты нет.
+
+## Первая публикация и исправление приоритета
+
+Runtime `26e1852`, [CI40890541811 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/40890541811). Production: все421 проверенных URL/файла HTTP200 и точно совпадают с локальной сборкой; Worker compatibility PASS. UI:24 сочетания маршрута/ширины, девять проверок движения,162 декодированных слоя на каждой ширине; без overflow/JS-ошибок. См. `production-byte-readback.json`, `production-readback.json`, `runtime-ci.json`.
+
+Публичный PSI29.10,16:29 GMT+2: [главная mobile86/LCP4061мс](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/fxsfqowvci?form_factor=mobile), [товар90/3573мс](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-catalog-osetinskiy-pirog-s-kuritsey-i-syrom/jrt9dy1vep?form_factor=mobile); desktop100/441мс и100/331мс; A/BP/SEO100 везде. Полные записанные показатели и LCP breakdown — `public-psi-before-priority.json`. CrUX нет. На главной LCP — прежняя иллюстрация берега с high priority; стабильные4с не считаем исправленными.
+
+На товаре PSI выбрал подложку как LCP и потребовал fetchpriority=high. Hero исправлен на eager/high; меню остаётся lazy/low. Соответствие проверяется в построенном HTML всех84 новых страниц. Одно исправление приоритета не доказывает устранение всей задержки; финальные замеры следуют после публикации.
