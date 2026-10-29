@@ -1,0 +1,218 @@
+[
+  {
+    "label": "render-variants-1-baseline",
+    "variant": "baseline",
+    "timestamp": "2026-10-29T08:22:00.446Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2454,
+      "lcp": 2462
+    },
+    "breakdown": {
+      "timeToFirstByte": 2.486,
+      "resourceLoadDelay": 67.45,
+      "resourceLoadDuration": 1340.878,
+      "elementRenderDelay": 1050.743
+    },
+    "tbt": 70.6880000000001,
+    "cls": 0.004902514514124419
+  },
+  {
+    "label": "render-variants-2-layers",
+    "variant": "layers",
+    "timestamp": "2026-10-29T08:22:21.023Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2291,
+      "lcp": 2291
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.94,
+      "resourceLoadDelay": 31.267,
+      "resourceLoadDuration": 1006.787,
+      "elementRenderDelay": 1251.347
+    },
+    "tbt": 0,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-3-async",
+    "variant": "async",
+    "timestamp": "2026-10-29T08:22:39.939Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2259,
+      "lcp": 2259
+    },
+    "breakdown": {
+      "timeToFirstByte": 2.3070001220703125,
+      "resourceLoadDelay": 38.22799987792969,
+      "resourceLoadDuration": 758.136,
+      "elementRenderDelay": 1460.417
+    },
+    "tbt": 0,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-4-fonts",
+    "variant": "fonts",
+    "timestamp": "2026-10-29T08:22:59.506Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2268,
+      "lcp": 2268
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.227,
+      "resourceLoadDelay": 31.336,
+      "resourceLoadDuration": 927.061,
+      "elementRenderDelay": 1308.26
+    },
+    "tbt": 28.996999999999844,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-5-fonts",
+    "variant": "fonts",
+    "timestamp": "2026-10-29T08:23:18.716Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2217,
+      "lcp": 2223
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.6729998779296875,
+      "resourceLoadDelay": 33.419000122070315,
+      "resourceLoadDuration": 1157.928,
+      "elementRenderDelay": 1029.88
+    },
+    "tbt": 41.009000000000015,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-6-async",
+    "variant": "async",
+    "timestamp": "2026-10-29T08:23:38.182Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2197,
+      "lcp": 2197
+    },
+    "breakdown": {
+      "timeToFirstByte": 2.118,
+      "resourceLoadDelay": 35.787,
+      "resourceLoadDuration": 950.425,
+      "elementRenderDelay": 1208.98
+    },
+    "tbt": 0,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-7-layers",
+    "variant": "layers",
+    "timestamp": "2026-10-29T08:23:57.211Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2325,
+      "lcp": 2325
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.666,
+      "resourceLoadDelay": 32.923,
+      "resourceLoadDuration": 769.083,
+      "elementRenderDelay": 1521.109
+    },
+    "tbt": 0,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-8-baseline",
+    "variant": "baseline",
+    "timestamp": "2026-10-29T08:24:16.350Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2236,
+      "lcp": 2236
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.409,
+      "resourceLoadDelay": 32.57,
+      "resourceLoadDuration": 999.284,
+      "elementRenderDelay": 1202.674
+    },
+    "tbt": 54.17899999999963,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-9-baseline",
+    "variant": "baseline",
+    "timestamp": "2026-10-29T08:24:36.270Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2296,
+      "lcp": 2296
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.28,
+      "resourceLoadDelay": 30.879,
+      "resourceLoadDuration": 1074.287,
+      "elementRenderDelay": 1189.89
+    },
+    "tbt": 12.853000000000065,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-10-layers",
+    "variant": "layers",
+    "timestamp": "2026-10-29T08:24:55.474Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2323,
+      "lcp": 2323
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.762,
+      "resourceLoadDelay": 32.537,
+      "resourceLoadDuration": 1028.49,
+      "elementRenderDelay": 1260.585
+    },
+    "tbt": 41.159999999999854,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-11-async",
+    "variant": "async",
+    "timestamp": "2026-10-29T08:25:14.604Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2309,
+      "lcp": 2309
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.397,
+      "resourceLoadDelay": 30.307,
+      "resourceLoadDuration": 823.28,
+      "elementRenderDelay": 1454.359
+    },
+    "tbt": 0,
+    "cls": 0
+  },
+  {
+    "label": "render-variants-12-fonts",
+    "variant": "fonts",
+    "timestamp": "2026-10-29T08:25:33.661Z",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "observed": {
+      "fcp": 2222,
+      "lcp": 2222
+    },
+    "breakdown": {
+      "timeToFirstByte": 1.368,
+      "resourceLoadDelay": 29.864,
+      "resourceLoadDuration": 819.038,
+      "elementRenderDelay": 1371.419
+    },
+    "tbt": 0,
+    "cls": 0
+  }
+]

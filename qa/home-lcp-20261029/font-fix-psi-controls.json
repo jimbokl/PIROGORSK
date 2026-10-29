@@ -1,0 +1,45 @@
+{
+  "browser": "HeadlessChromium 153.0.8010.36",
+  "lighthouse": "13.5.0",
+  "url": "https://pirogorsk.ru/",
+  "crux": false,
+  "accessibility": 100,
+  "bestPractices": 100,
+  "seo": 100,
+  "runs": [
+    {
+      "runtime": "e6af7dd",
+      "timestamp": "2026-10-29T10:26:38+02:00",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/pwu5wnhf2m?form_factor=mobile",
+      "performance": 100,
+      "fcp": 1013,
+      "lcp": 1651,
+      "tbt": 11,
+      "cls": 0,
+      "si": 1013,
+      "breakdown": {
+        "ttfb": 0,
+        "loadDelay": 30,
+        "load": 140,
+        "render": 70
+      }
+    },
+    {
+      "runtime": "e6af7dd",
+      "timestamp": "2026-10-29T10:27:51+02:00",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/c0alhxd5b1?form_factor=mobile",
+      "performance": 86,
+      "fcp": 1013,
+      "lcp": 3859,
+      "tbt": 0,
+      "cls": 0,
+      "si": 3983,
+      "breakdown": {
+        "ttfb": 0,
+        "loadDelay": 180,
+        "load": 140,
+        "render": 2000
+      }
+    }
+  ]
+}

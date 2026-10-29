@@ -1,0 +1,190 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-29T08:34:32.686Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 86,
+      "lcp": 86
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 15.178999877929687,
+      "resourceLoadDelay": 4.4720001220703125,
+      "resourceLoadDuration": 5.628,
+      "elementRenderDelay": 60.636
+    },
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1517.1055,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2200.65825,
+        "display": "2.2 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0062006150671170025,
+        "display": "0.006"
+      },
+      "speed-index": {
+        "value": 1517.1055,
+        "display": "1.5 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-29T08:34:39.320Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 69,
+      "lcp": 69
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 6.693,
+      "resourceLoadDelay": 4.669,
+      "resourceLoadDuration": 3.917,
+      "elementRenderDelay": 53.886
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1512.1816,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2037.1816,
+        "display": "2.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.004902514514124419,
+        "display": "0.005"
+      },
+      "speed-index": {
+        "value": 1512.1816,
+        "display": "1.5 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-29T08:34:45.802Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 64,
+      "lcp": 64
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 5.900999877929688,
+      "resourceLoadDelay": 4.095000122070313,
+      "resourceLoadDuration": 3.937,
+      "elementRenderDelay": 50.541
+    },
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1586.7774999999997,
+        "display": "1.6 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2261.7774999999997,
+        "display": "2.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.004902514514124419,
+        "display": "0.005"
+      },
+      "speed-index": {
+        "value": 1586.7774999999997,
+        "display": "1.6 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-29T08:34:52.283Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 98,
+      "lcp": 98
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 7.905,
+      "resourceLoadDelay": 3.139,
+      "resourceLoadDuration": 9.232,
+      "elementRenderDelay": 77.931
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 384.0075,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 484.0075,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.00729312755377521,
+        "display": "0.007"
+      },
+      "speed-index": {
+        "value": 384.0075,
+        "display": "0.4 s"
+      }
+    }
+  }
+]

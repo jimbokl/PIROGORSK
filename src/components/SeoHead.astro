@@ -8,13 +8,14 @@ interface Props {
   imageAlt?: string;
   type?: 'website' | 'article';
   noindex?: boolean;
+  preloadFonts?: boolean;
   schema?: Record<string, unknown>[];
 }
 const {
   title, description, canonicalPath = Astro.url.pathname,
   image = '/seo/pirogorsk-og.jpg',
   imageAlt = 'Пирогорск — концепт пирогов с балтийским характером. Готовим запуск.',
-  type = 'website', noindex = false, schema = [],
+  type = 'website', noindex = false, preloadFonts = true, schema = [],
 } = Astro.props;
 const canonical = new URL(canonicalPath, siteOrigin);
 canonical.search = '';
@@ -40,10 +41,12 @@ const graph = {
 <link rel="icon" type="image/png" href="/favicon-32.png?v=20261025-4" sizes="32x32" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20261025-4" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261025-4" sizes="180x180" />
-<link rel="preload" href="/fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/golos-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/golos-latin.woff2" as="font" type="font/woff2" crossorigin />
+{preloadFonts && <>
+  <link rel="preload" href="/fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/golos-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/golos-latin.woff2" as="font" type="font/woff2" crossorigin />
+</>}
 <meta property="og:locale" content="ru_RU" />
 <meta property="og:site_name" content="Пирогорск" />
 <meta property="og:title" content={title} />

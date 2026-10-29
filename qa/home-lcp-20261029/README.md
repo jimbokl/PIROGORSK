@@ -71,3 +71,22 @@ Runtime `e6af7ddb7283c8264e90ee22521a4ae47774ef3d`, [CI40837674941 SUCCESS](http
 [Публичный PSI](public-psi-design.json), отчёт09:56:55 GMT+2, LH13.5.0 / HeadlessChromium153.0.8010.36: [mobile85](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a0jll2o1fz?form_factor=mobile), LCP4002/FCP1033/TBT0/SI3974мс, CLS0; [desktop100](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/a0jll2o1fz?form_factor=desktop), LCP401/FCP277/TBT0/SI436мс, CLS.033. Остальные категории100, CrUX нет. Mobile insight: TTFB10/loadDelay170/load200/render1940мс (округлённые значения UI), тот же `.tasting-coast img`.
 
 Визуальное поручение реализовано и опубликовано. **Публичная mobile-задержка воспроизводится после изменений; исправление нестабильного LCP не заявлено.** Сайт проверен без искусственной задержки/подавления production-аналитики и без специальных launcher flags.
+
+## Повторное расследование: font preload — 10:26–10:36 GMT+2
+
+На неизменённом e6af7dd публичный PSI вновь дал [100/LCP1651мс](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/pwu5wnhf2m?form_factor=mobile) и [86/LCP3859мс/render2000мс](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/c0alhxd5b1?form_factor=mobile). [Данные контрольных запусков](font-fix-psi-controls.json).
+
+Дополнительные контролируемые серии: один production HTML, перехвачен только ответ главной; оригинальные ресурсы и Метрика, каждый раз новый полный Chrome153.0.8010.36/profile, CPU6.27, сеть без ограничения. **Это observed диагностика, а не публичный PSI и не стандартные performance scores.** [Скрипт](render-variants.mjs), [слои/decode/системные шрифты с preload](render-variants-summary.json), [изоляция DOM/JS/fonts](render-isolation-summary.json), [предзагрузка шрифтов](render-font-priority-summary.json).
+
+| Вариант | FCP, мс | LCP, мс | Render delay, мс |
+| --- | --- | --- | --- |
+| Исходный, в начале/конце | 2216 / 2307 | 2216 / 2307 | 1099 / 1401 |
+| Только без font preload, прямой/обратный порядок | 131 / 128 | 1157 / 963 | 86 / 124 |
+| Только Cyrillic preload | 2330 / 2302 | 2330 / 2302 | 1627 / 1197 |
+| Только font-display:optional | 2316 / 2267 | 2316 / 2273 | 1472 / 1020 |
+
+Возврат исходного HTML возвращает задержку. NoFonts тоже ускорял FCP, однако подмена только CSS-переменных шрифтов с сохранёнными preload задержку не убирала. Bare обрезает основное содержимое и тоже ускоряется, но не является допустимой продуктовой правкой. NoScripts, content-visibility, положительные z-index и async decode не устраняют задержку.
+
+Выбрана узкая правка: главная передаёт SeoHead preloadFonts=false. Шрифты загружаются из уже встроенного @font-face с прежним swap и unicode-range. LCP image preload/eager/high, оформление, содержимое и Метрика сохранены. Остальные страницы сохраняют прежние четыре font preload. Это устраняет воспроизведённый триггер; точный внутренний Chromium surface-throttling path этим опытом не доказан.
+
+Check/build/SEO/expansion/map/artwork и29 Node tests PASS, UI320/390/1280 overflow0. [Local стандартный Lighthouse](font-fix-local-summary.json), [диапазоны](font-fix-local-ranges.json): mobile98/99/98, LCP2201/2037/2262мс, render51–61мс, CLS≤.0063; desktop100/LCP484мс. Публикация/публичные PSI ещё ожидаются.
