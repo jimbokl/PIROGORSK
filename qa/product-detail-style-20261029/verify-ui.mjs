@@ -18,7 +18,7 @@ try {
   for (const width of selectedWidths.split(',').map(Number)) {
     const context = await browser.createBrowserContext();
     const page = await context.newPage();
-    await page.setViewport({ width, height: 980, deviceScaleFactor: 1 });
+    await page.setViewport({ width, height: 980, deviceScaleFactor: 1, isMobile: width <= 760, hasTouch: width <= 760 });
     page.on('pageerror', error => errors.push({ ...active, message: error.message }));
     page.on('response', response => {
       if (response.status() >= 400 && new URL(response.url()).origin === origin) failedResources.push({ url: response.url(), status: response.status() });
@@ -51,6 +51,7 @@ try {
             const r = el.getBoundingClientRect(); return { width: r.width, height: r.height, overflow: el.scrollWidth > el.clientWidth };
           }),
           headingFont: getComputedStyle(document.querySelector('h1')).fontFamily,
+          touch: navigator.maxTouchPoints > 0,
           canonical: document.querySelector('link[rel="canonical"]').href,
         };
       });
