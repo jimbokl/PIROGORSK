@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { catalog } from '../src/data/catalog.ts';
 import { bundles, addOnGroups } from '../src/data/bundles.ts';
-import { selectionPrice, mergeSelection, availableAddOns } from '../src/lib/selection-offers.ts';
+import { selectionPrice, mergeSelection, availableAddOns, readSavedSelection } from '../src/lib/selection-offers.ts';
 
 test('published sets and add-ons use existing variants and their exact price', () => {
   assert.deepEqual(bundles.map(bundle => selectionPrice(bundle.items, catalog)), [1280, 3470, 5350]);
@@ -36,4 +36,12 @@ test('recommendations follow contents, including supplier sweet pies and drinks'
   assert.deepEqual(availableAddOns(bundles[0].items, catalog), ['morse', 'sweet', 'tableware']);
   assert.deepEqual(availableAddOns(bundles[2].items, catalog), ['morse', 'tableware']);
   assert.deepEqual(availableAddOns([...bundles[0].items, { id: 'apple' }, { id: 'seabuckthorn' }, { id: 'tableware' }], catalog), []);
+});
+
+
+test('saved selection normalizes legacy weights, duplicates and stale or invalid entries', () => {
+  const saved = [null, { id: 'meat', weight: '500', quantity: 2 }, { id: 'meat', value: 500, quantity: 98 }, { id: 'cherry', value: 500, quantity: 1 }, { id: 'removed', value: 500, quantity: 1 }, { id: 'meat', value: 42, quantity: 1 }, { id: 'tableware', value: 1, quantity: -1 }, { id: 'tableware', value: 1, quantity: 1.5 }];
+  assert.deepEqual(readSavedSelection(saved, catalog), [{ id: 'meat', value: 500, quantity: 99 }, { id: 'cherry', value: 500, quantity: 1 }]);
+  assert.deepEqual(readSavedSelection({ items: saved }, catalog), []);
+  assert.equal(readSavedSelection(catalog.slice(0, 30).map(p => ({ id: p.id, value: p.variants[0].value, quantity: 1 })), catalog).length, 24);
 });

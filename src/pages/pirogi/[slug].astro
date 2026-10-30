@@ -1,6 +1,7 @@
 ---
 import { getImage } from 'astro:assets';
 import ProductVisual from '../../components/ProductVisual.astro';
+import ProductAddOns from '../../components/ProductAddOns.astro';
 import ProductOptions from '../../components/ProductOptions.astro';
 import ContentLayout from '../../layouts/ContentLayout.astro';
 import ProductHero from '../../components/ProductHero.astro';
@@ -23,6 +24,7 @@ const scenario = scenarios.find(item => item.slug === product.editorial.scenario
 ---
 <ContentLayout {title} {description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }, { name: product.name, href: productHref(product) }]} {schema}>
   <ProductHero eyebrow={`${product.sweet ? 'Сладкий' : 'Сытный'} пирог · будущее меню`} title={product.name} intro={product.editorial.intro}><ProductVisual slot="visual" {product} layout="hero" /><ProductOptions slot="actions" {product} showDelivery /></ProductHero>
+  <ProductAddOns {product} />
   <EditorialBody sections={[
     { title: 'О начинке', paragraphs: [product.editorial.question] },
     { title: 'С чем поставить на стол', paragraphs: [product.editorial.pairing] },

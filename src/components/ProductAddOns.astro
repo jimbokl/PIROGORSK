@@ -1,0 +1,11 @@
+---
+import type { Product } from '../data/catalog';
+import { catalog } from '../data/catalog';
+import SelectionAddOns from './SelectionAddOns.astro';
+interface Props { product: Product }
+const { product } = Astro.props;
+const prices = catalog.map(({ id, name, variants }) => ({ id, name, variants }));
+---
+<SelectionAddOns mode="product" {product} />
+<script type="application/json" id="product-addons-catalog" set:html={JSON.stringify(prices).replaceAll('<', '\\u003c')} />
+<script>import '../scripts/product-addons';</script>

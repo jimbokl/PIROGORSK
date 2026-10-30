@@ -10,6 +10,7 @@ import { catalog } from '../../src/data/catalog.ts';
 import { cityMenu } from '../../src/data/city-menu.ts';
 import { releaseManifest } from '../../scripts/verify-release.mjs';
 import worker from '../dist/worker.js';
+import { verifyProductAddOns } from './qa-product-addons.mjs';
 import { verifyOffers } from './qa-offers.mjs';
 
 // Actual Astro output and production origins; every request is intercepted.
@@ -303,6 +304,7 @@ try {
     await page.goto(`${origin}/?qa=1`, { waitUntil: 'networkidle0' });
     await page.evaluate(() => { localStorage.removeItem('pirogorsk-city'); localStorage.removeItem('pirogorsk-selection'); });
     await verifyOffers(page, origin, width, fileURLToPath(new URL('../dist/qa-offers/', import.meta.url)));
+    await verifyProductAddOns(page, origin, width, fileURLToPath(new URL('../dist/qa-product-addons/', import.meta.url)));
     await context.close();
   }
   assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 9);

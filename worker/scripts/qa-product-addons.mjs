@@ -1,0 +1,101 @@
+import assert from 'node:assert/strict';
+import { mkdir } from 'node:fs/promises';
+import { catalog } from '../../src/data/catalog.ts';
+import { catalogProductHref } from '../../src/lib/product-paths.ts';
+import { selectionPrice } from '../../src/lib/selection-offers.ts';
+
+export async function verifyProductAddOns(page, origin, width, output) {
+  await mkdir(output, { recursive: true });
+  const selection = () => page.evaluate(() => JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]'));
+  const visit = async id => {
+    const product = catalog.find(product => product.id === id);
+    await page.goto(`${origin}${catalogProductHref(product)}?qa=1`, { waitUntil: 'networkidle0' });
+    return product;
+  };
+  await visit('meat');
+  await page.evaluate(() => { localStorage.removeItem('pirogorsk-selection'); localStorage.setItem('pirogorsk-city', 'Зеленоградск'); });
+  await page.reload({ waitUntil: 'networkidle0' });
+  const inspect = async name => {
+    assert.equal(await page.$$eval('[data-product-addons] .addon-card', cards => cards.length), 3);
+    assert.equal(await page.$eval('#product-addons-heading', heading => heading.textContent), 'С этим берут');
+    assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true, `${name}: overflow ${width}`);
+    assert.equal(await page.$$eval('[data-product-addons] select, [data-product-addons] button, [data-addon-selection]', controls => controls.every(control => control.getBoundingClientRect().height >= 48)), true, `${name}: touch targets`);
+    assert.equal(await page.$$eval('[data-product-addons] button', buttons => buttons.every(button => button.getAttribute('aria-label').includes(button.textContent))), true);
+    await page.$eval('[data-product-addons]', section => section.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    await page.evaluate(async () => { await Promise.all([...document.querySelectorAll('[data-product-addons] img')].map(image => image.decode().catch(() => {}))); });
+    await page.screenshot({ path: `${output}/${name}-${width}.png` });
+  };
+  await inspect('meat');
+  await page.select('[data-upsell-choice=morse]', 'seabuckthorn:1000:1');
+  assert.match(await page.$eval('[data-upsell-add=morse]', el => el.textContent), /350/);
+  const url = page.url();
+  const click = async group => {
+    await page.$eval(`[data-upsell-add=${group}]`, button => button.scrollIntoView({ block: 'center', behavior: 'instant' }));
+    await page.click(`[data-upsell-add=${group}]`);
+  };
+  await click('morse');
+  assert.equal(page.url(), url, 'add remains on product page');
+  assert.match(await page.$eval('[data-addon-feedback]', el => el.textContent), /Добавлено.*Облепиховый морс/);
+  await page.select('[data-upsell-choice=sweet]', 'cherry:500:1');
+  await click('sweet');
+  await page.select('[data-upsell-choice=tableware]', 'tableware:1:5');
+  await click('tableware');
+  const extras = [{ id: 'seabuckthorn', value: 1000, quantity: 1 }, { id: 'cherry', value: 500, quantity: 1 }, { id: 'tableware', value: 1, quantity: 5 }];
+  assert.deepEqual(await selection(), extras);
+  assert.match(await page.$eval('[data-addon-selection]', el => el.textContent), /\(7\)/);
+  assert.match(await page.$eval('[data-addon-saved=tableware]', el => el.textContent), /5 шт/);
+  await page.reload({ waitUntil: 'networkidle0' });
+  assert.deepEqual(await selection(), extras, 'reload does not add twice');
+  assert.match(await page.$eval('[data-addon-selection]', el => el.textContent), /\(7\)/);
+  await page.$eval('[data-addon-selection]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+  await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-addon-selection]')]);
+  assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
+  assert.deepEqual(await selection(), extras, 'view selection never adds main product');
+  // Changing the main format transfers that format while keeping all extras.
+  await visit('meat');
+  await page.click('[data-product-options] label:last-of-type');
+  assert.equal(new URL(await page.$eval('[data-option-link]', el => el.href)).searchParams.get('variant'), '1000');
+  await page.$eval('[data-option-link]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+  await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-option-link]')]);
+  const expected = [...extras, { id: 'meat', value: 1000, quantity: 1 }];
+  assert.deepEqual(await selection(), expected);
+  assert.equal(await page.$eval('[data-total]', el => Number(el.textContent.replace(/\D/g, ''))), selectionPrice(expected, catalog));
+  assert.equal(await page.$eval('[data-selection-grand-total]', el => Number(el.textContent.replace(/\D/g, ''))), selectionPrice(expected, catalog) + 500);
+  await page.click('[data-order]');
+  assert.equal(await page.$eval('#interest-dialog', dialog => dialog.open), true);
+  await page.select('#interest-city', 'Зеленоградск');
+  await page.select('#interest-delivery', 'delivery');
+  assert.equal(await page.$eval('[data-interest-grand-total]', el => Number(el.textContent.replace(/\D/g, ''))), selectionPrice(expected, catalog) + 500);
+  await page.reload({ waitUntil: 'networkidle0' });
+  assert.deepEqual(await selection(), expected, 'main product URL reload is idempotent');
+  await visit('apple');
+  assert.equal(await page.$$eval('[data-upsell-choice=sweet] option', options => options.some(option => option.value.startsWith('apple:'))), false, 'do not recommend same sweet pie');
+  await inspect('sweet');
+  const supplier = catalog.find(product => product.category === 'ossetian-pies');
+  await visit(supplier.id);
+  await inspect('supplier');
+  const fresh = catalog.find(product => product.id.startsWith('p39-'));
+  await visit(fresh.id);
+  await inspect('fresh');
+  // A full variant cannot overflow silently. A failed storage write is never announced as saved.
+  await page.evaluate(() => localStorage.setItem('pirogorsk-selection', JSON.stringify([{ id: 'cranberry', value: 500, quantity: 99 }])));
+  await page.reload({ waitUntil: 'networkidle0' });
+  await click('morse');
+  assert.match(await page.$eval('[data-addon-feedback]', el => el.textContent), /до 99/);
+  assert.deepEqual(await selection(), [{ id: 'cranberry', value: 500, quantity: 99 }]);
+  await page.evaluate(() => { localStorage.removeItem('pirogorsk-selection'); const write = Storage.prototype.setItem; Storage.prototype.setItem = function(key, value) { if (key === 'pirogorsk-selection') throw new DOMException('QA storage denied', 'QuotaExceededError'); return write.call(this, key, value); }; });
+  await click('morse');
+  assert.match(await page.$eval('[data-addon-feedback]', el => el.textContent), /не сохранил/);
+  assert.deepEqual(await selection(), []);
+  await page.reload({ waitUntil: 'networkidle0' });
+  await page.keyboard.press('Tab');
+  await page.focus('[data-upsell-add=morse]');
+  assert.equal(await page.$eval('[data-upsell-add=morse]', button => button.matches(':focus-visible')), true);
+  await page.keyboard.press('Enter');
+  assert.deepEqual(await selection(), [{ id: 'cranberry', value: 500, quantity: 1 }]);
+  for (const id of ['tableware', 'cranberry', catalog.find(product => product.category === 'bread').id]) {
+    await visit(id);
+    assert.equal(await page.$('[data-product-addons]'), null, `${id} is not a pie page`);
+  }
+  console.log(`PASS: product add-ons, direct save, variants, totals, form handoff, storage errors and touch layout at ${width}px`);
+}

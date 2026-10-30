@@ -3,6 +3,21 @@ import type { Product } from '../data/catalog.ts';
 export type SelectionItem = { id: string; value: number; quantity: number };
 type PricedProduct = Pick<Product, 'id' | 'variants'>;
 
+/** Normalize persisted selections, including the original `weight` field. */
+export function readSavedSelection(saved: unknown, catalog: PricedProduct[]): SelectionItem[] {
+  const selection: SelectionItem[] = [];
+  if (!Array.isArray(saved)) return selection;
+  for (const item of saved) {
+    if (!item || typeof item !== 'object') continue;
+    const value = Number(item.value ?? item.weight);
+    if (!catalog.some(product => product.id === item.id && product.variants.some(variant => variant.value === value)) || !Number.isSafeInteger(item.quantity) || item.quantity < 1 || item.quantity > 99) continue;
+    const existing = selection.find(entry => entry.id === item.id && entry.value === value);
+    if (existing) existing.quantity = Math.min(99, existing.quantity + item.quantity);
+    else if (selection.length < 24) selection.push({ id: item.id, value, quantity: item.quantity });
+  }
+  return selection;
+}
+
 export function selectionPrice(items: SelectionItem[], catalog: PricedProduct[]) {
   return items.reduce((total, item) => {
     const variant = catalog.find(product => product.id === item.id)?.variants.find(variant => variant.value === item.value);

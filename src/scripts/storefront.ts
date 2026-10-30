@@ -4,24 +4,14 @@ import { editorialCityIntents, editorialScenarioIntents } from '../data/editoria
 import { parsePlan } from '../lib/pie-planner';
 import { estimateDelivery } from '../data/pricing';
 import { bundles, addOnGroups } from '../data/bundles';
-import { mergeSelection, availableAddOns } from '../lib/selection-offers';
+import { mergeSelection, availableAddOns, readSavedSelection } from '../lib/selection-offers';
 
 type Selection = { id: string; value: number; quantity: number };
 const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
 const selection: Selection[] = [];
 try {
   const saved: unknown = JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]');
-  if (Array.isArray(saved)) {
-    for (const item of saved) {
-      if (!item || typeof item !== 'object') continue;
-      const value = Number(item.value ?? item.weight);
-      const product = products.find(product => product.id === item.id);
-      if (!product?.variants.some(variant => variant.value === value) || !Number.isSafeInteger(item.quantity) || item.quantity < 1 || item.quantity > 99) continue;
-      const existing = selection.find(entry => entry.id === item.id && entry.value === value);
-      if (existing) existing.quantity = Math.min(99, existing.quantity + item.quantity);
-      else if (selection.length < 24) selection.push({ id: item.id, value, quantity: item.quantity });
-    }
-  }
+  selection.push(...readSavedSelection(saved, products));
 } catch { /* A fresh selection is available when storage is unavailable or invalid. */ }
 const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
 const weightLabel = (weight: number) => weight < 1000 ? `${weight} г` : `${(weight / 1000).toLocaleString('ru-RU')} кг`;
@@ -268,7 +258,9 @@ all('[data-order]').forEach(button => button.addEventListener('click', () => {
 }));
 const interestParams = new URLSearchParams(location.search);
 const interestId = interestParams.get('interest');
-if (interestId === 'bundle') {
+if (interestId === 'selection') {
+  openDialog('selection-dialog');
+} else if (interestId === 'bundle') {
   chooseBundle(interestParams.get('bundle') || '', 'ensure');
 } else if (interestId === 'calculator') {
   const planned = parsePlan(interestParams.get('items'), products);

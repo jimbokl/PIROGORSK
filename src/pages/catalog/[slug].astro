@@ -2,6 +2,7 @@
 import ContentLayout from '../../layouts/ContentLayout.astro';
 import ProductHero from '../../components/ProductHero.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
+import ProductAddOns from '../../components/ProductAddOns.astro';
 import ProductOptions from '../../components/ProductOptions.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
 import SupplierArtwork from '../../components/SupplierArtwork.astro';
@@ -29,6 +30,7 @@ const guide = product.category === 'mini-pies' ? { href: '/journal/skolko-piroga
     {art ? <SupplierArtwork slot="visual" id={product.id} hero /> : <ProductVisual slot="visual" {product} layout="hero" />}
     <ProductOptions slot="actions" {product} showDelivery />
   </ProductHero>
+  {['mini-pies', 'hearty-pies', 'sweet-pies', 'siberian-pies', 'kurniki', 'prussian-pies', 'ossetian-pies'].includes(product.category) && <ProductAddOns {product} />}
   <section class="catalog-details" aria-labelledby="product-details">
     <div class="catalog-story"><p class="ed-eyebrow">Выбрать осознанно</p><h2 id="product-details">{page.source ? 'Что за продукт' : 'К вашей подборке'}</h2><p>{page.serving}</p><h3>Как подготовить к подаче</h3><p>{page.prep}</p>
       {page.source && !page.fresh && <p class="catalog-cold">Планируем поставку замороженного продукта с соблюдением условий хранения. Способ получения и температурный режим подтвердим перед продажами. Размороженный продукт повторно не замораживают.</p>}
