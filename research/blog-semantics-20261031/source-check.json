@@ -24,12 +24,13 @@
     "verificationMethod": "direct_http"
   },
   {
-    "url": "https://www.bbcgoodfood.com/recipes/mini-cheese-onion-pasties",
-    "status": 200,
-    "final": "https://www.bbcgoodfood.com/recipes/mini-cheese-onion-pasties",
-    "title": "Cheese &amp; onion pasties recipe | Good Food",
+    "url": "https://www.gastronom.ru/recipe/43686/osetinskij-pirog-s-syrom",
     "checkedAt": "2026-10-31",
-    "verificationMethod": "direct_http"
+    "verificationMethod": "direct_http_and_web_read",
+    "webReadSuccessful": true,
+    "verifiedContent": "Авторский рецепт msdarine, опубликован 06.03.2024: 500 г муки, 200 г сулугуни и 200 г зелени, молочное дрожжевое тесто с яйцом. Использован как атрибутированный пример домашней рецептуры, без заявления об испытании редакцией.",
+    "status": 200,
+    "final": "https://www.gastronom.ru/recipe/43686/osetinskij-pirog-s-syrom"
   },
   {
     "url": "https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
