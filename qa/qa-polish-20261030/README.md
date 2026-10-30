@@ -24,4 +24,6 @@
 
 ## Публикация
 
-Локальная проверка завершена. Ожидает CI и production readback. Production-аудит выполняет только GET: подборка меняется в браузере, production-формы не отправляются.
+Runtime `ec62e55244e386d2020f53c91a409be742639a41`, [CI41029774439 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41029774439). Все проверки CI, deploy Pages, published compatibility и IndexNow завершились успешно. Независимая production compatibility тоже PASS. Production UI: восемь страниц ×320/390/768/1280px и четыре состояния диалогов PASS, все 13 сценариев PASS, ошибок JS/HTTP и overflow нет; автоматический WCAG A/AA — без находок. [Production-результат](production/results.json), [CI-результат](ci-result.json). Production readback: все241 ресурса, включая214 HTML и153 страницы товаров, ответили200 и побайтно совпали с GitHub Actions Pages artifact. [Результат сравнения](publication.json). Спринт завершён, открытых пунктов этого поручения нет. Production-аудит выполняет только GET: подборка меняется в браузере, production-формы не отправляются.
+
+Выборочные production-скриншоты: [главная390](production/home-390.jpg), [меню390](production/menu-390.jpg), [товар320](production/product-320.jpg), [доставка390](production/delivery-390.jpg), [блог390](production/blog-390.jpg), [уведомление меню](production/menu-feedback-390.jpg), [большая подборка320](production/selection-large-320.jpg), [форма320](production/interest-large-320.jpg).
