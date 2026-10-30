@@ -3612,5 +3612,665 @@
       "path": "/menu/",
       "label": "Сравнить пироги и форматы"
     }
+  },
+  {
+    "path": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Осетинский пирог с сыром: вкус, состав и выбор начинки",
+    "query": "осетинский пирог с сыром как выбрать",
+    "intent": "Как выбрать сырную начинку осетинского пирога: рассольный сыр, смеси, зелень, солёность и тесто. Таблица вопросов к составу и идеи подачи.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pirog-s-kartoshkoy-i-syrom/",
+      "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-s-kartoshkoy-i-syrom/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог с картошкой и сыром: чем отличаются начинки",
+    "query": "пирог с картошкой и сыром",
+    "intent": "Картофельно-сырная начинка: пюре или кусочки, зелень, солёность и подача. Сравнение вариантов и вопросы перед выбором пирога.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "/journal/pirog-s-kapustoy-i-yaytsom/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-so-svekolnoy-botvoy-i-syrom/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог со свекольной ботвой и сыром: что ждать от вкуса",
+    "query": "пирог со свекольной ботвой и сыром",
+    "intent": "Какой вкус у пирога со свекольной ботвой и сыром, чем листья отличаются от корнеплода и какие вопросы задать о составе. Таблица выбора зелени.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "/journal/pirog-s-lukom-i-yaytsom/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-s-kapustoy-i-yaytsom/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог с капустой и яйцом: как выбрать сочную начинку",
+    "query": "пирог с капустой и яйцом",
+    "intent": "Капустный пирог с яйцом: свежая или квашеная капуста, текстура, дополнительные ингредиенты и подача. Таблица вариантов и список вопросов к составу.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pirog-s-lukom-i-yaytsom/",
+      "/journal/postnye-pirogi-kak-proverit-sostav/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-s-lukom-i-yaytsom/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог с луком и яйцом: зелёный или репчатый лук",
+    "query": "пирог с луком и яйцом",
+    "intent": "Пирог с луком и яйцом: чем отличаются зелёный, репчатый лук и порей, как читать состав и выбрать формат для перекуса или общего стола.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pirog-s-kapustoy-i-yaytsom/",
+      "/journal/postnye-pirogi-kak-proverit-sostav/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-s-kuritsey-i-gribami-vybor/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог с курицей и грибами: сливочная начинка и тесто",
+    "query": "пирог с курицей и грибами состав",
+    "intent": "Как выбрать пирог с курицей и грибами: кусочки или рубленая начинка, соус, виды грибов, тесто и подача. Сравнение трёх вариантов состава.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pochemu-u-piroga-syroe-dno/",
+      "/journal/sostav-piroga-i-allergeny/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог с творогом: сладкая и солёная начинка",
+    "query": "пирог с творогом сладкий или соленый",
+    "intent": "Творожный пирог бывает десертным и несладким: ягоды, зелень, текстура творога и состав заливки. Таблица выбора и идеи для общего стола.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/sladkie-pirogi-k-chayu/",
+      "/journal/kak-hranit-pirogi/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог с тыквой: сладкий десерт или сытный ужин",
+    "query": "пирог с тыквой сладкий и сытный",
+    "intent": "Как выбрать пирог с тыквой: пюре или кусочки, пряности, сыр и сладкие добавки. Таблица различий между десертной и сытной начинкой.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pochemu-pirog-treskaetsya/",
+      "/journal/sladkie-pirogi-k-chayu/"
+    ]
+  },
+  {
+    "path": "/journal/yabloki-dlya-piroga/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Какие яблоки выбрать для пирога: плотность, кислинка и нарезка",
+    "query": "какие яблоки для пирога",
+    "intent": "Как выбирать яблоки для пирога по плотности и кислинке, зачем смешивать сорта и учитывать нарезку. Практическая таблица без привязки к одному сорту.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pirog-s-brusnikoy-sochetaniya/",
+      "/journal/pochemu-u-piroga-syroe-dno/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-s-vishney-nachinka/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог с вишней: как выбрать и не получить жидкую начинку",
+    "query": "пирог с вишней начинка",
+    "intent": "Вишнёвый пирог: свежая и замороженная ягода, косточки, сок, загуститель и остывание. Таблица причин жидкой начинки и вопросы к готовому продукту.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pochemu-u-piroga-syroe-dno/",
+      "/journal/sladkie-pirogi-k-chayu/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-s-brusnikoy-sochetaniya/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог с брусникой: яблоко, творог и другие сочетания",
+    "query": "пирог с брусникой сочетания",
+    "intent": "С чем сочетается брусника в пироге: яблоко, творог, сладкие и сытные варианты. Таблица сочетаний и вопросы о составе ягодной начинки.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/yabloki-dlya-piroga/",
+      "/journal/sladkie-pirogi-k-chayu/"
+    ]
+  },
+  {
+    "path": "/journal/postnye-pirogi-kak-proverit-sostav/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Постные пироги: как проверить тесто, начинку и смазку",
+    "query": "постные пироги состав",
+    "intent": "Как выбирать постные пироги: проверка теста, начинки и покрытия, отличия от овощных и вегетарианских вариантов. Таблица ингредиентов и вопросов.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/sostav-piroga-i-allergeny/",
+      "/journal/pirog-s-kapustoy-i-yaytsom/"
+    ]
+  },
+  {
+    "path": "/journal/drozhzhevoe-testo-dlya-pirogov/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Дрожжевое тесто для пирогов: подъём, сдоба и частые ошибки",
+    "query": "дрожжевое тесто для пирогов",
+    "intent": "Что важно в дрожжевом тесте для пирогов: тип дрожжей, сдоба, температура и расстойка. Таблица диагностики плотного теста без случайного добавления муки.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/sloenoe-ili-drozhzhevoe-testo/",
+      "/journal/pochemu-pirog-treskaetsya/"
+    ]
+  },
+  {
+    "path": "/journal/sloenoe-ili-drozhzhevoe-testo/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Слоёное или дрожжевое тесто: какой пирог выбрать",
+    "query": "слоеное или дрожжевое тесто для пирога",
+    "intent": "Чем слоёное тесто отличается от дрожжевого в пирогах: структура корочки, удобство подачи, начинки и состав. Сравнительная таблица без оценки «лучше для всех».",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/drozhzhevoe-testo-dlya-pirogov/",
+      "/journal/pesochnoe-testo-dlya-kisha/"
+    ]
+  },
+  {
+    "path": "/journal/pesochnoe-testo-dlya-kisha/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Песочное тесто для киша: рассыпчатая основа без мокрого дна",
+    "query": "песочное тесто для киша",
+    "intent": "Песочная основа киша: зачем нужен холод, как читать этап предварительной выпечки и выбирать форму. Таблица ошибок и ориентиры по готовому пирогу.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pochemu-u-piroga-syroe-dno/",
+      "/journal/pochemu-pirog-treskaetsya/"
+    ]
+  },
+  {
+    "path": "/journal/zalivnoy-pirog-na-kefire/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Заливной пирог на кефире: как выбрать рецепт и форму",
+    "query": "заливной пирог на кефире",
+    "intent": "Заливной пирог на кефире: как читать рецепт, выбирать форму и понимать разрыхление. Отличия от дрожжевого теста и таблица частых ошибок.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pirog-na-skovorode-ili-v-duhovke/",
+      "/journal/pochemu-u-piroga-syroe-dno/"
+    ]
+  },
+  {
+    "path": "/journal/pirog-na-skovorode-ili-v-duhovke/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пирог на сковороде или в духовке: что меняется",
+    "query": "пирог на сковороде или в духовке",
+    "intent": "Чем отличаются пироги на сковороде и в духовке: высота, крышка, начинка и выбор рецепта. Таблица оборудования и безопасной подготовки.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/zalivnoy-pirog-na-kefire/",
+      "/journal/pochemu-u-piroga-syroe-dno/"
+    ]
+  },
+  {
+    "path": "/journal/pochemu-u-piroga-syroe-dno/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Почему у пирога сырое дно: форма, начинка и нагрев",
+    "query": "почему у пирога сырое дно",
+    "intent": "Причины мокрого дна пирога: влажная начинка, форма, толщина и порядок выпечки. Таблица диагностики и проверки перед следующей попыткой.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pesochnoe-testo-dlya-kisha/",
+      "/journal/pirog-s-vishney-nachinka/"
+    ]
+  },
+  {
+    "path": "/journal/pochemu-pirog-treskaetsya/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Почему пирог трескается и начинка вытекает",
+    "query": "почему пирог трескается и вытекает начинка",
+    "intent": "Почему трескается пирог: шов закрытого изделия, сухое тесто или открытая заливка. Таблица разных причин и действия перед следующей выпечкой.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pochemu-u-piroga-syroe-dno/",
+      "/journal/drozhzhevoe-testo-dlya-pirogov/"
+    ]
+  },
+  {
+    "path": "/journal/kak-zamorozit-pirog/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Как заморозить пирог: целиком, кусочками или до выпечки",
+    "query": "как заморозить пирог",
+    "intent": "Как заморозить готовый пирог или заготовку: порционная упаковка, подписи, размораживание и проверка инструкции. Таблица решений для разных форматов.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/kak-hranit-pirogi/",
+      "/journal/kak-perevezti-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/kak-hranit-pirogi/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Как хранить пироги с разными начинками",
+    "query": "как хранить пироги",
+    "intent": "Как хранить мясные, сырные, ягодные и творожные пироги: маркировка, холодильник, остатки после стола и ошибки. Без универсальных сроков на все начинки.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/kak-zamorozit-pirog/",
+      "/journal/kak-perevezti-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/kak-narezat-pirog/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Как нарезать круглый и прямоугольный пирог на равные куски",
+    "query": "как нарезать пирог на равные куски",
+    "intent": "Как разрезать круглый пирог на 6, 8, 10 или 12 частей и прямоугольный на ровные порции. Схемы в таблице, выбор ножа и расчёт среднего веса.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/mini-pirogi-ili-tselyy-pirog/",
+      "/journal/kak-sravnit-tseny-na-pirogi/"
+    ]
+  },
+  {
+    "path": "/journal/mini-pirogi-ili-tselyy-pirog/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Мини-пироги или целый пирог: выбор для фуршета и ужина",
+    "query": "мини пироги или целый пирог",
+    "intent": "Мини-пироги или целый пирог для компании: сравнение нарезки, порций, вкусов, упаковки и цены за килограмм. Примеры расчёта без привязки к брендам.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/kak-sravnit-tseny-na-pirogi/",
+      "/journal/kak-narezat-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/sladkie-pirogi-k-chayu/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Сладкие пироги к чаю: как собрать несколько разных вкусов",
+    "query": "сладкие пироги к чаю",
+    "intent": "Какие сладкие пироги выбрать к чаю: яблочные, ягодные, творожные и тыквенные начинки. Таблица сочетаний и план чаепития без лишнего веса.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/pirog-s-brusnikoy-sochetaniya/",
+      "/journal/pirogi-na-den-rozhdeniya/"
+    ]
+  },
+  {
+    "path": "/journal/pirogi-na-den-rozhdeniya/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пироги на день рождения: сытное, сладкое и план подачи",
+    "query": "пироги на день рождения",
+    "intent": "Как собрать пироги на день рождения: сытные и сладкие вкусы, расчёт общего веса, этапы подачи и сервировка. Таблица плана для домашнего праздника.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/sladkie-pirogi-k-chayu/",
+      "/journal/kak-narezat-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/pirogi-na-kofe-breyk/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пироги на кофе-брейк: порции, сервировка и список покупок",
+    "query": "пироги на кофе брейк",
+    "intent": "Пироги на кофе-брейк: короткая подача, порции, напитки, маркировка начинок и список посуды. Расчёт количества кусков для деловой встречи.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/mini-pirogi-ili-tselyy-pirog/",
+      "/journal/kak-sravnit-tseny-na-pirogi/"
+    ]
+  },
+  {
+    "path": "/journal/pirogi-na-svadebnyy-furshet/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Пироги на свадебный фуршет: как подать без очереди",
+    "query": "пироги на свадебный фуршет",
+    "intent": "Пироги на свадебный фуршет: порционная подача, подписи начинок, согласование с площадкой и расчёт пробных кусочков. План стола без очередей.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/kak-narezat-pirog/",
+      "/journal/sostav-piroga-i-allergeny/"
+    ]
+  },
+  {
+    "path": "/journal/sostav-piroga-i-allergeny/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Состав пирога и аллергены: что читать на этикетке",
+    "query": "состав пирога аллергены",
+    "intent": "Как читать состав пирога: тесто, начинка, декор и аллергены. Что спрашивать изготовителя и почему названия «постный» или «овощной» недостаточно.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/postnye-pirogi-kak-proverit-sostav/",
+      "/journal/kak-hranit-pirogi/"
+    ]
+  },
+  {
+    "path": "/journal/kak-sravnit-tseny-na-pirogi/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Как сравнить цены на пироги: килограмм, порция и вся корзина",
+    "query": "как сравнить цены на пироги",
+    "intent": "Как сравнить цены на пироги: формулы стоимости килограмма и порции, доставка и упаковка. Таблица условных примеров и расчёт полной корзины.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/kak-narezat-pirog/",
+      "/journal/mini-pirogi-ili-tselyy-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/kak-perevezti-pirog/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "semantic-20261031",
+    "pageType": "article",
+    "title": "Как перевезти пирог: коробка, дорога и подача",
+    "query": "как перевезти пирог",
+    "intent": "Как перевезти пирог без повреждения: коробка, ровная поверхность, фиксация и условия хранения в дороге. Чек-лист для поездки по Калининградской области.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "semantic_brief_informational_intent",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги в меню"
+    },
+    "relatedArticles": [
+      "/journal/kak-hranit-pirogi/",
+      "/journal/kak-zamorozit-pirog/"
+    ]
   }
 ]

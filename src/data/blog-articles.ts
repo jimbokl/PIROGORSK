@@ -1,3 +1,4 @@
+import { semanticArticles } from './semantic-articles';
 import company from '../../design/blog-source/company-table.png';
 import { deliveryGuide } from './delivery-guide';
 import { breakfastGuide } from './breakfast-guide';
@@ -7,6 +8,8 @@ import svetlogorskBreakfast from '../../design/blog-source/svetlogorsk-breakfast
 import kaliningradLunch from '../../design/blog-source/kaliningrad-lunch.png';
 import type { ImageMetadata } from 'astro';
 
+export type BlogCategory = 'Расчёты' | 'За столом' | 'Зеленоградск' | 'Светлогорск' | 'Калининград' | 'Начинки' | 'Тесто и выпечка' | 'Хранение и подача' | 'Выбор и расчёты';
+export interface ArticleSource { href: string; title: string; checked: string }
 export interface BlogSection {
   title: string;
   paragraphs?: readonly string[];
@@ -16,12 +19,14 @@ export interface BlogSection {
 }
 export interface BlogArticle {
   slug: string; title: string; description: string; intro: string;
-  category: 'Расчёты' | 'За столом' | 'Зеленоградск' | 'Светлогорск' | 'Калининград'; date: string; image: ImageMetadata; imageAlt: string;
+  category: BlogCategory; date: string; image: ImageMetadata; imageAlt: string;
   takeaway: string; sections: readonly BlogSection[];
   related: string; relatedTitle: string;
+  sources?: readonly ArticleSource[];
 }
 
 export const blogArticles: readonly BlogArticle[] = [
+  ...semanticArticles,
   breakfastGuide,
   deliveryGuide,
   {

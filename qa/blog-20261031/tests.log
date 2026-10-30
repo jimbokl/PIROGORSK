@@ -1,0 +1,54 @@
+
+> pirogorsk@0.1.0 test
+> node --test scripts/selection-offers.test.mjs scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs scripts/release.test.mjs scripts/supplier-catalog.test.mjs scripts/product-pages.test.mjs scripts/pirogi39-catalog.test.mjs
+
+✔ prepared placements retain their exact UTM tuple while dropping extra data (1.287875ms)
+✔ unknown, partial, duplicate and tampered campaign values cannot reach analytics (0.283958ms)
+✔ content micro-goals keep the saved-request gate and only measure marked editorial links (1.752ms)
+✔ real analytics initializer queues one explicit pageview and no goal (0.691084ms)
+✔ local previews and QA tabs never load Metrica or send goals (0.942625ms)
+✔ QA exclusion follows navigation in the same tab; other sessions still count (0.102ms)
+Waiting for public release (1/2): Published IndexNow key is not ready
+✔ initial submission, unchanged release, updates and removals (3.37625ms)
+✔ reject cross-host URLs and invalid hashes from cached state (0.270417ms)
+✔ unchanged content sends no HTTP request (1.258792ms)
+✔ verify live release, then make one batch to one endpoint (35.525208ms)
+✔ wrong live release, missing key and 429 fail without success (1.744333ms)
+✔ wait for Pages propagation with GET retries, then submit only once (0.905209ms)
+✔ both IndexNow receivers must acknowledge the same published batch (0.8245ms)
+✔ rounds up to 500 g, distributes flavours, and prices the actual variants (2.272292ms)
+✔ every supported guest/portion combination preserves mass and bounded rounding (16.497042ms)
+✔ a 50-person table with eight flavours transfers without losing rows or mass (0.122917ms)
+✔ invalid input and empty/unknown/duplicate flavours fail (0.145125ms)
+✔ URL transfer rejects tampering, unsupported products, duplicate rows, and oversized values (0.076917ms)
+✔ every published occasion has a usable, distinct calculator preset (0.101ms)
+✔ all 61 fresh whole pies and their 63 real size variants are selectable (6.842458ms)
+✔ pickup discount never stacks with a supplier promotion and each planned price covers the model (0.417ms)
+✔ every catalog position has one unique page and the eight published pie URLs stay stable (6.425875ms)
+✔ every variant links to the actual interest selection with the correct section (1.191792ms)
+✔ catalog contract ignores display order but detects added products, variants and prices (5.024125ms)
+✔ health URL derives its path from API config and discards query/hash (0.2335ms)
+✔ release checks Worker and published artifact together (21.89825ms)
+✔ release rejects unavailable, outdated, malformed and incompatible services (1.754208ms)
+✔ release timeout aborts a hung fetch (11.904083ms)
+✔ published sets and add-ons use existing variants and their exact price (2.2705ms)
+✔ sets merge matching variants; followed URLs preserve selection on reload (0.135709ms)
+✔ limit or invalid variant rejects entire set without partial additions (0.105042ms)
+✔ recommendations follow contents, including supplier sweet pies and drinks (0.354416ms)
+✔ saved selection normalizes legacy weights, duplicates and stale or invalid entries (0.538042ms)
+✔ editorial attribution allows only registered routes and strips all URL payloads (1.459125ms)
+✔ quantity article continues to sizing and selection rather than unrelated city guides (0.197042ms)
+✔ coverage audit accepts complete ownership and ignores noindex legal pages (0.764834ms)
+✔ coverage audit catches missing owners, unreachable pages, duplicate queries and invented demand (0.148459ms)
+✔ coverage audit checks actual emitted recommendations and measured next step (0.158875ms)
+✔ all 78 Holland positions remain in the expanded catalog without ID collisions (1.522834ms)
+✔ mini pies retain real 210g units and the 5-piece 1.05kg bundle (0.100042ms)
+✔ price covers procurement, inbound, packaging, variable reserve and 35% contribution (0.117292ms)
+ℹ tests 41
+ℹ suites 0
+ℹ pass 41
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 381.712584

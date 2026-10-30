@@ -1,0 +1,7 @@
+
+> pirogorsk@0.1.0 test:worker
+> node worker/scripts/verify.mjs
+
+Worker typecheck: PASS
+Browser script typecheck: PASS
+API and SQL integration tests: PASS
