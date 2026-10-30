@@ -1,0 +1,38 @@
+---
+import type { Product } from '../data/catalog';
+import { catalogProductHref } from '../lib/product-paths';
+import ProductVisual from './ProductVisual.astro';
+import SupplierArtwork from './SupplierArtwork.astro';
+interface Props { products: readonly Product[]; title?: string }
+const { products, title = 'Ещё вкусы рядом' } = Astro.props;
+---
+{products.length > 0 && <section class="product-recommendations" aria-labelledby="recommendations-heading">
+  <header><div><p class="ed-eyebrow">Продолжить выбирать</p><h2 id="recommendations-heading">{title}</h2></div><a href="/menu/">Всё меню <span aria-hidden="true">↗</span></a></header>
+  <div class="recommendation-grid">{products.map(product => {
+    const selected = product.variants.find(variant => variant.value === product.defaultVariant) ?? product.variants[0]!;
+    return <a class="recommendation-card" href={catalogProductHref(product)}>
+      <div class="recommendation-art">{product.supplier ? <SupplierArtwork id={product.id} decorative sizes="(max-width: 600px) 230px, (max-width: 1000px) 28vw, 360px" /> : <ProductVisual {product} decorative layout="menu" sizes="(max-width: 600px) 230px, (max-width: 1000px) 28vw, 360px" />}</div>
+      <h3>{product.name}</h3><p>{selected.label}</p><div class="recommendation-bottom"><strong>{product.supplier?.priceFrom ? 'от ' : ''}{selected.price.toLocaleString('ru-RU')} ₽ <small>предварительно</small></strong><span class="recommendation-arrow" aria-hidden="true">↗</span></div>
+    </a>;
+  })}</div>
+</section>}
+<style>
+ .product-recommendations{padding-block:40px 52px;border-top:1px solid var(--line)}
+ header{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}
+ h2{font:500 var(--heading-section)/1.15 var(--serif);letter-spacing:-.035em;margin:10px 0 0}
+ header>a{display:inline-flex;align-items:center;gap:14px;min-height:44px;flex-shrink:0;font-size:12px;text-underline-offset:4px}
+ .recommendation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+ .recommendation-card{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);border-radius:var(--radius-card);padding:16px 20px;color:var(--navy);text-decoration:none;transition:border-color .2s,background .2s}
+ .recommendation-card:hover{border-color:var(--card-line-hover);background:var(--soft)}
+ .recommendation-art{aspect-ratio:1;min-width:0;margin:0 -4px 16px;border-radius:18px;overflow:hidden}
+ .recommendation-art :global(.product-visual),.recommendation-art :global(.supplier-artwork){width:100%;height:100%;aspect-ratio:1;margin:0;border-radius:18px}
+ h3{font:500 clamp(19px,2.3vw,25px)/1.25 var(--serif);letter-spacing:-.025em;margin:0 0 10px;text-wrap:pretty}
+ .recommendation-card>p{font:400 12px/1.6 var(--sans);margin:0 0 18px;color:var(--muted)}
+ .recommendation-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;min-height:44px}
+ strong{font:600 20px/1.3 var(--sans);font-variant-numeric:tabular-nums;letter-spacing:-.025em}small{display:block;font:400 10px/1.5 var(--sans);letter-spacing:0;color:var(--muted);margin-top:4px}
+ .recommendation-arrow{display:grid;place-items:center;width:36px;height:36px;flex-shrink:0;border-radius:50%;background:var(--soft);font-size:20px}
+ a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+ @media(max-width:760px){.recommendation-grid{gap:14px}.recommendation-card{padding:12px}.recommendation-art{margin:0 0 14px}header{align-items:center}h2{font-size:29px}}
+ @media(max-width:600px){.product-recommendations{padding-block:30px 34px}.recommendation-grid{display:flex;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding:4px;gap:14px;padding:5px 4px 14px;margin-inline:-4px;scrollbar-width:thin;scrollbar-color:var(--card-line-hover) transparent}.recommendation-card{flex:0 0 min(78vw,270px);scroll-snap-align:start;padding:16px}.recommendation-art{width:100%}h3{font-size:23px}header{gap:12px}header>a{font-size:11px}h2{font-size:28px}}
+ @media(prefers-reduced-motion:reduce){.recommendation-card{transition:none}}
+</style>

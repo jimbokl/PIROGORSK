@@ -113,3 +113,50 @@ body.editorial-site .menu-feed .supplier-card-bottom .button .icon{display:none}
 .menu-page .menu-finder{max-width:860px;margin-top:0}
 .menu-page .menu-sections a:hover{background:var(--accent-soft);color:var(--accent)}
 @media(max-width:760px){.menu-page .ed-hero.ed-hero-text{padding-block:24px}.menu-page .ed-note{padding:14px 16px;margin-bottom:20px}.menu-page .menu-finder{padding:18px}.menu-page .menu-sections{margin-block:16px 20px}}
+
+/* Menu is a shopping hub: one search, then the products. */
+.menu-page .town-hero{min-height:0;grid-template-columns:minmax(0,1fr) 170px;padding:26px 32px;margin-bottom:24px;row-gap:12px}
+.menu-page .town-hero h1{max-width:24ch;font-size:clamp(30px,3.8vw,46px)}
+.menu-page .town-hero-art{max-width:170px}
+.menu-page .menu-finder{max-width:none;padding:20px 24px;margin-bottom:0;background:var(--paper);border-color:var(--line);border-radius:20px}
+.menu-page .menu-finder label{font-size:14px}
+.menu-stage{font:400 11px/1.6 var(--sans);color:var(--muted);margin:6px 0 0}
+.menu-page .menu-search-meta{margin-top:8px;min-height:20px}
+.menu-page .menu-search-meta button{min-height:32px;padding-block:4px}
+body.editorial-site.menu-page .menu-sections{margin-block:16px 0;scroll-padding-inline:4px}
+body.editorial-site.menu-page .menu-sections a{display:flex;flex-direction:row;align-items:center;gap:9px;padding:10px 16px;border:1px solid transparent}
+body.editorial-site.menu-page .menu-sections span{display:block;margin:0;font-size:11px}
+body.editorial-site.menu-page .menu-sections span b{color:inherit}
+body.editorial-site.menu-page .menu-sections a[aria-current]{background:var(--navy);color:var(--paper)}
+body.editorial-site.menu-page .menu-sections a[aria-current] span{color:var(--paper)}
+body.editorial-site.menu-page .menu-planner-link{display:flex;gap:4px 20px;flex-wrap:wrap;margin:0;padding-block:4px;font-size:11px}
+body.editorial-site.menu-page .menu-planner-link a{min-height:44px;padding-block:12px}
+.menu-page .menu-feed .supplier-catalog{padding-block:24px 48px}
+.menu-page .supplier-heading h2{font-size:clamp(28px,3.6vw,40px);margin-top:8px}
+.menu-page .supplier-intro{font-size:13px;line-height:1.7;margin:14px 0 4px;max-width:76ch}
+.menu-page .supplier-tools{margin-top:0}
+.menu-page .supplier-count{margin:0;font-size:11px;color:var(--muted)}
+.menu-page .supplier-info{margin-bottom:4px}
+.menu-page .supplier-filters{margin:14px 0 4px}
+.menu-page .menu-empty{padding:28px;margin:24px 0;border:1px solid var(--line);border-radius:20px;background:var(--soft)}
+.menu-empty h2{font:500 clamp(25px,4vw,34px)/1.2 var(--serif);margin:0 0 12px}
+.menu-empty p{font-size:14px;max-width:54ch;margin-bottom:20px}
+.menu-empty .ed-button{width:fit-content}
+@media(max-width:760px){
+ .menu-page .town-hero{grid-template-columns:minmax(0,1fr) 64px;grid-template-areas:'eyebrow art' 'title art' 'intro intro';padding:18px;gap:10px;margin-bottom:16px}
+ .menu-page .town-hero h1{font-size:clamp(25px,6.4vw,30px);text-wrap:pretty;letter-spacing:-.035em}
+ .menu-page .town-hero-art{max-width:64px}
+ .menu-page .town-hero-eyebrow{font-size:9px;letter-spacing:.04em}
+ .menu-page .town-hero-eyebrow::before{display:none}
+ .menu-page .town-hero-intro{font-size:12px;line-height:1.7;max-width:55ch}
+ .menu-page .menu-finder{padding:16px}
+ .menu-page .supplier-heading{display:flex;align-items:center;gap:10px}
+ .menu-page .supplier-heading>a{font-size:10px;white-space:normal;flex:0 0 80px;text-align:right;margin:0}
+ .menu-page .supplier-heading h2{font-size:28px}
+ .menu-page .supplier-heading .eyebrow{font-size:9px}
+ .menu-page .supplier-filters{flex-wrap:nowrap;overflow-x:auto;padding:4px 2px 12px;scrollbar-width:thin;scrollbar-color:var(--card-line-hover) transparent}
+ .menu-page .supplier-filters button{flex-shrink:0}
+ .menu-page .menu-feed .supplier-catalog{padding-block:20px 32px}
+ body.editorial-site.menu-page .menu-sections a{padding:10px 13px}
+ .menu-page .menu-empty{padding:22px 18px}
+}

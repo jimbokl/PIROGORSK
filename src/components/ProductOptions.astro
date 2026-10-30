@@ -1,5 +1,6 @@
 ---
 import type { Product } from '../data/catalog';
+import { catalog } from '../data/catalog';
 import { selectionHref as productSelectionHref } from '../lib/product-paths';
 import { deliveryEstimates } from '../data/pricing';
 interface Props { product: Product; showDelivery?: boolean }
@@ -23,25 +24,97 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
   </fieldset>
   <div class="product-options-bottom">
     <p class="product-options-price"><strong data-option-price aria-live="polite">{from}{selected.price.toLocaleString('ru-RU')} ₽</strong><small>Предварительная цена</small></p>
+    <div class="product-quantity" data-option-quantity-control hidden>
+      <button type="button" data-option-decrease aria-label={`Уменьшить количество: ${product.name}`} disabled>−</button>
+      <input type="number" data-option-quantity min="1" max="99" step="1" value="1" inputmode="numeric" aria-label={`Количество: ${product.name}`} />
+      <button type="button" data-option-increase aria-label={`Увеличить количество: ${product.name}`}>+</button>
+    </div>
     <a class="ed-button" data-option-link href={selectionHref(selected.value)}>В подборку<span aria-hidden="true">↗</span></a>
   </div>
+  <p class="product-options-feedback" data-option-feedback role="status" aria-live="polite" aria-atomic="true"></p>
+  <a class="product-selection-link" data-option-selection href="/?interest=selection" hidden>Открыть подборку →</a>
   <p class="product-options-note">Готовим запуск. Подборка поможет нам узнать ваши вкусы; это ещё не заказ.</p>
   <a class="product-menu-back" href={menuHref}>Сравнить в этом разделе меню ↗</a>
   {showDelivery && <details class="product-delivery"><summary>Сколько получится с доставкой</summary><p>Если в подборке только выбранный формат этой позиции. Доставка учитывается один раз за всю подборку.</p><dl>{Object.entries(deliveryEstimates).map(([city, cost]) => <div><dt>{city}<small>Доставка {cost} ₽</small></dt><dd data-option-total data-delivery-cost={cost}>{from}{(selected.price + cost).toLocaleString('ru-RU')} ₽</dd></div>)}<div><dt>Самовывоз<small>Место ещё уточняется</small></dt><dd data-option-total data-delivery-cost="0">{from}{selected.price.toLocaleString('ru-RU')} ₽</dd></div></dl><p>Плановый расчёт, не тариф перевозчика. Города, условия и стоимость подтвердим до начала продаж.</p></details>}
 </div>
+<script type="application/json" id="product-options-catalog" set:html={JSON.stringify(catalog.map(({ id, name, variants }) => ({ id, name, variants }))).replaceAll('<', '\\u003c')} />
 <script>
+  import type { Product } from '../data/catalog';
+  import { mergeSelection, readSavedSelection } from '../lib/selection-offers';
+  import { trackGoal } from '../scripts/analytics';
+  const products = JSON.parse(document.querySelector('#product-options-catalog')?.textContent || '[]');
   document.querySelectorAll<HTMLElement>('[data-product-options]').forEach(options => {
-    options.addEventListener('change', event => {
-      const input = event.target;
-      if (!(input instanceof HTMLInputElement) || input.type !== 'radio') return;
+    const quantityInput = options.querySelector<HTMLInputElement>('[data-option-quantity]')!;
+    const decrease = options.querySelector<HTMLButtonElement>('[data-option-decrease]')!;
+    const increase = options.querySelector<HTMLButtonElement>('[data-option-increase]')!;
+    const link = options.querySelector<HTMLAnchorElement>('[data-option-link]')!;
+    const feedback = options.querySelector<HTMLElement>('[data-option-feedback]')!;
+    const selection = options.querySelector<HTMLAnchorElement>('[data-option-selection]')!;
+    const id = new URL(link.href).searchParams.get('interest')!;
+    const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
+    function refreshSelection() {
+      try {
+        const saved = readSavedSelection(JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]'), products);
+        const count = saved.reduce((sum, item) => sum + item.quantity, 0);
+        selection.hidden = count === 0;
+        selection.textContent = `Открыть подборку · ${count} шт. →`;
+      } catch { /* The fallback link remains available when browser storage is unavailable. */ }
+    }
+    function update() {
+      const input = options.querySelector<HTMLInputElement>('input[type="radio"]:checked')!;
+      const requested = Number(quantityInput.value);
+      const quantity = Number.isFinite(requested) ? Math.max(1, Math.min(99, Math.trunc(requested))) : 1;
+      quantityInput.value = String(quantity);
+      decrease.disabled = quantity === 1;
+      increase.disabled = quantity === 99;
       const price = options.querySelector<HTMLElement>('[data-option-price]');
-      const link = options.querySelector<HTMLAnchorElement>('[data-option-link]');
       const prefix = options.dataset.pricePrefix ?? '';
-      if (price) price.textContent = `${prefix}${Number(input.dataset.price).toLocaleString('ru-RU')} ₽`;
-      if (link && input.dataset.href) link.href = input.dataset.href;
+      const total = Number(input.dataset.price) * quantity;
+      if (price) price.textContent = `${prefix}${money(total)}`;
+      options.querySelector<HTMLElement>('.product-options-price small')!.textContent = quantity > 1 ? `${money(Number(input.dataset.price))} / шт. · предварительно` : 'Предварительная цена';
+      const url = new URL(input.dataset.href!, location.href);
+      url.searchParams.set('quantity', String(quantity));
+      link.href = url.href;
+      link.textContent = 'В подборку';
       options.querySelectorAll<HTMLElement>('[data-option-total]').forEach(total => {
-        total.textContent = `${prefix}${(Number(input.dataset.price) + Number(total.dataset.deliveryCost)).toLocaleString('ru-RU')} ₽`;
+        total.textContent = `${prefix}${money(Number(input.dataset.price) * quantity + Number(total.dataset.deliveryCost))}`;
       });
+      feedback.textContent = '';
+    }
+    options.querySelector<HTMLElement>('[data-option-quantity-control]')!.hidden = false;
+    decrease.addEventListener('click', () => { quantityInput.stepDown(); update(); });
+    increase.addEventListener('click', () => { quantityInput.stepUp(); update(); });
+    quantityInput.addEventListener('input', () => { if (quantityInput.value !== '' && quantityInput.validity.valid) update(); });
+    options.addEventListener('change', update);
+    window.addEventListener('pirogorsk:catalog-updated', refreshSelection);
+    window.addEventListener('storage', refreshSelection);
+    window.addEventListener('pageshow', refreshSelection);
+    update();
+    refreshSelection();
+    link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      update();
+      const value = Number(options.querySelector<HTMLInputElement>('input[type="radio"]:checked')!.value);
+      const quantity = Number(quantityInput.value);
+      try {
+        let saved: unknown;
+        try { saved = JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]'); }
+        catch (error) { if (error instanceof SyntaxError) saved = []; else throw error; }
+        const next = mergeSelection(readSavedSelection(saved, products), [{ id, value, quantity }], products);
+        selection.hidden = false;
+        if (!next) { feedback.textContent = 'Подборка заполнена. Измените количество в подборке.'; return; }
+        localStorage.setItem('pirogorsk-selection', JSON.stringify(next));
+        const count = next.reduce((sum, item) => sum + item.quantity, 0);
+        feedback.textContent = `Добавлено в подборку: ${quantity} шт.`;
+        selection.textContent = `Открыть подборку · ${count} шт. →`;
+        link.textContent = 'Добавить ещё';
+        window.dispatchEvent(new Event('pirogorsk:catalog-updated'));
+        const product = products.find((product: Product) => product.id === id)!;
+        trackGoal('catalog_add', { productid: id, variant: String(value), qty: quantity, value: product.variants.find((variant: Product['variants'][number]) => variant.value === value)!.price * quantity });
+      } catch {
+        location.assign(link.href);
+      }
     });
   });
 </script>
@@ -55,11 +128,22 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
   label span{display:flex;align-items:center;justify-content:center;height:100%;min-height:var(--control-height);padding:10px 12px;border:1px solid var(--ed-line);border-radius:var(--radius-control);font-size:13px;line-height:1.4;text-align:center;transition:background .15s,border-color .15s,color .15s}
   input:checked+span{border-color:var(--action);background:var(--action);color:white;font-weight:600}
   input:focus-visible+span{outline:2px solid var(--focus);outline-offset:3px}
-  .product-options-bottom{display:grid;grid-template-columns:minmax(0,1fr) 160px;align-items:center;gap:16px;margin-top:20px}
+  .product-options-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px;margin-top:20px}
   .product-options-price{margin:0;min-width:0}
   strong{display:block;font-family:var(--ed-sans);font-size:32px;line-height:1.15;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.035em;white-space:nowrap}
   small{display:block;font-size:11px;color:var(--ed-muted);line-height:1.5;margin-top:5px}
-  .product-options-bottom .ed-button{width:100%;min-height:var(--control-height);gap:14px;justify-content:center;padding:14px 18px;font-weight:600}
+  .product-options-bottom .ed-button{grid-column:1/-1;width:100%;min-height:var(--control-height);gap:14px;justify-content:center;padding:14px 18px;font-weight:600}
+  .product-quantity{display:flex;align-items:center;border:1px solid var(--line);border-radius:var(--radius-pill)}
+  .product-quantity[hidden],.product-selection-link[hidden]{display:none}
+  .product-quantity button{display:grid;place-items:center;width:44px;min-height:44px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--navy);font:400 21px/1 var(--sans);cursor:pointer;touch-action:manipulation}
+  .product-quantity button:hover:not(:disabled){background:var(--soft)}
+  .product-quantity button:disabled{opacity:.3;cursor:default}
+  .product-quantity input{position:static;opacity:1;width:24px;min-width:0;height:44px;padding:0;border:0;background:transparent;color:var(--navy);text-align:center;font:500 14px/1 var(--sans);font-variant-numeric:tabular-nums;appearance:textfield;-moz-appearance:textfield}
+  .product-quantity input::-webkit-inner-spin-button,.product-quantity input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+  .product-quantity :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  .product-options-feedback{font:400 12px/1.6 var(--sans);margin:12px 0 0;color:var(--navy)}
+  .product-options-feedback:empty{display:none}
+  .product-selection-link{display:inline-flex;align-items:center;min-height:44px;font:500 12px/1.5 var(--sans);text-underline-offset:4px}
   .product-options-note{font-size:12px;line-height:1.7;color:var(--ed-muted);margin-top:15px;max-width:52ch}
   .product-menu-back{display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:1.5;text-underline-offset:4px}
   .product-delivery{margin-top:12px;border-top:1px solid var(--ed-line);padding-top:8px;font-size:12px;line-height:1.6}
@@ -68,6 +152,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
   .product-delivery p{color:var(--ed-muted)}
   .product-delivery dl{margin:16px 0}.product-delivery dl>div{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid var(--ed-line)}
   .product-delivery dd{margin:0;align-self:center;white-space:nowrap;font-variant-numeric:tabular-nums}.product-delivery small{margin:0;font-size:10px}
-  @media(max-width:760px){.product-options{padding:18px}.product-options-bottom{grid-template-columns:minmax(0,1fr);gap:16px}strong{font-size:30px}.product-options-sizes{gap:6px}label span{padding-inline:8px;font-size:12px}}
+  @media(max-width:760px){.product-options{padding:18px}strong{font-size:30px}.product-options-sizes{gap:6px}label span{padding-inline:8px;font-size:12px}}
+  @media(max-width:360px){.product-options{padding:14px}.product-options-bottom{gap:14px 8px}strong{font-size:22px}.product-quantity button{width:44px}.product-quantity input{width:20px}}
   @media(prefers-reduced-motion:reduce){label span{transition:none}}
 </style>

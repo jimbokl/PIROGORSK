@@ -51,14 +51,24 @@ export async function verifyProductAddOns(page, origin, width, output) {
   await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-addon-selection]')]);
   assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
   assert.deepEqual(await selection(), extras, 'view selection never adds main product');
-  // Changing the main format transfers that format while keeping all extras.
+  // Main formats and quantities save on this page while preserving all extras.
   await visit('meat');
   await page.click('[data-product-options] label:last-of-type');
   assert.equal(new URL(await page.$eval('[data-option-link]', el => el.href)).searchParams.get('variant'), '1000');
+  await page.click('[data-option-increase]');
+  assert.equal(await page.$eval('[data-option-quantity]', el => el.value), '2');
+  const mainPrice = catalog.find(product => product.id === 'meat').variants.find(variant => variant.value === 1000).price * 2;
+  assert.equal(await page.$eval('[data-option-price]', el => Number(el.textContent.replace(/\D/g, ''))), mainPrice);
+  assert.equal(await page.$eval('[data-option-total][data-delivery-cost="500"]', el => Number(el.textContent.replace(/\D/g, ''))), mainPrice + 500);
   await page.$eval('[data-option-link]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-  await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-option-link]')]);
-  const expected = [...extras, { id: 'meat', value: 1000, quantity: 1 }];
+  const productUrl = page.url();
+  await page.click('[data-option-link]');
+  assert.equal(page.url(), productUrl, 'adding main product stays on product page');
+  const expected = [...extras, { id: 'meat', value: 1000, quantity: 2 }];
   assert.deepEqual(await selection(), expected);
+  assert.match(await page.$eval('[data-option-feedback]', el => el.textContent), /2 шт/);
+  assert.match(await page.$eval('[data-addon-selection]', el => el.textContent), /\(9\)/);
+  await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-option-selection]')]);
   assert.equal(await page.$eval('[data-total]', el => Number(el.textContent.replace(/\D/g, ''))), selectionPrice(expected, catalog));
   assert.equal(await page.$eval('[data-selection-grand-total]', el => Number(el.textContent.replace(/\D/g, ''))), selectionPrice(expected, catalog) + 500);
   await page.click('[data-order]');

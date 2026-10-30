@@ -55,5 +55,6 @@ if (section) {
     }
   }));
   window.addEventListener('storage', event => { if (event.key === storageKey || event.key === null) refresh(); });
+  window.addEventListener('pirogorsk:catalog-updated', refresh);
   window.addEventListener('pageshow', refresh);
 }

@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-30T21:52:58.440293+00:00",
+  "checks": [
+    {
+      "command": "npm run check",
+      "status": "PASS"
+    },
+    {
+      "command": "npm run build",
+      "status": "PASS"
+    },
+    {
+      "command": "npm test (41/41)",
+      "status": "PASS"
+    },
+    {
+      "command": "npm run test:worker",
+      "status": "PASS"
+    },
+    {
+      "command": "npm run test:browser (320/390/1280)",
+      "status": "PASS"
+    },
+    {
+      "command": "verify-seo/expansion/seo-map/city-pages/article-artwork/product-pages/product-backdrops",
+      "status": "PASS"
+    },
+    {
+      "command": "verify-polish.mjs (50 views,12 functional groups)",
+      "status": "PASS"
+    },
+    {
+      "command": "verify-feed-anchor.mjs (439.59→439.53px)",
+      "status": "PASS"
+    },
+    {
+      "command": "skill_harness_manager check --strict",
+      "status": "PASS"
+    },
+    {
+      "command": "git diff --check",
+      "status": "PASS"
+    }
+  ]
+}

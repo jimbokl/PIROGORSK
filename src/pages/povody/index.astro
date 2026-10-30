@@ -1,6 +1,7 @@
 ---
 import ContentLayout from '../../layouts/ContentLayout.astro';
-import EditorialHero from '../../components/EditorialHero.astro';
+import PieTownHero from '../../components/PieTownHero.astro';
+import town from '../../../design/pie-city-banners-20261030/pie-islands.png';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import EditorialInterest from '../../components/EditorialInterest.astro';
 import { occasions } from '../../data/occasions';
@@ -9,10 +10,24 @@ import {cityNames,type CitySlug} from '../../data/local-data';
 const title = 'Пироги к случаю: офис, общий стол и встреча друзей | Пирогорск';
 const description = 'Планирование стола для разных встреч: день рождения в офисе, фуршет, обед для бригады и семейный подарок. Чек-листы и редактируемые расчёты веса.';
 ---
-<ContentLayout {title} {description} breadcrumbs={[{ name: 'К случаю', href: '/povody/' }]}>
-  <EditorialHero eyebrow="К случаю · готовим запуск" title="У каждого стола свой повод" intro="Где-то нужна еда на обед, где-то — небольшой кусок к чаю. Выберите ситуацию: внутри — вопросы для организатора и пример расчёта, который можно изменить." compact />
-  {(Object.keys(cityNames) as CitySlug[]).map(city=><EditorialLinks title={cityNames[city]} links={localOccasions.filter(p=>p.city===city).map(p=>({href:occasionHref(p),title:p.h1,text:`Пример: ${p.defaultGuestsCount} гостей × ${p.gramsPerGuest} г. Измените расчёт под свой стол.`,label:cityNames[city]}))}/>)}
+<ContentLayout {title} {description} bodyClass="occasion-hub" breadcrumbs={[{ name: 'К случаю', href: '/povody/' }]}>
+  <PieTownHero eyebrow="К случаю · готовим запуск" title="У каждого стола свой повод" intro="Обед с коллегами, вечер с друзьями или чай после прогулки. Выберите повод, посчитайте гостей и соберите свои вкусы." image={town} imageAlt="Острова пирогового города с сытными и сладкими пирогами для общего стола">
+    <a slot="actions" class="ed-button" href="/podbor/">Рассчитать на компанию <span aria-hidden="true">↗</span></a>
+  </PieTownHero>
+  <nav class="occasion-city-nav" aria-label="Поводы по городам"><span>Планы для вашего города</span>{(Object.keys(cityNames) as CitySlug[]).map(city => <a href={`#occasions-${city}`}>{cityNames[city]} <span aria-hidden="true">↗</span></a>)}</nav>
   <EditorialLinks title="Что вы планируете?" links={occasions.map(item => ({ href: `/povody/${item.slug}/`, title: item.title, text: item.takeaway, label: 'План встречи' }))} />
+  {(Object.keys(cityNames) as CitySlug[]).map(city=><EditorialLinks id={`occasions-${city}`} title={cityNames[city]} links={localOccasions.filter(p=>p.city===city).map(p=>({href:occasionHref(p),title:p.h1,text:`Пример: ${p.defaultGuestsCount} гостей × ${p.gramsPerGuest} г. Измените расчёт под свой стол.`,label:cityNames[city]}))}/>)}
   <p class="ed-note">Это материалы для подготовки. Пирогорск изучает интерес к запуску в Калининграде, Зеленоградске и Светлогорске. Производство, обслуживание мероприятий и условия доставки пока не подтверждены.</p>
   <EditorialInterest interest="occasions" title="Уже знаете, что хочется к столу?" text="Соберите вкусы в подборку и отметьте анонимный интерес. Окончательные рецептуры и цены определим перед началом продаж." label="Выбрать вкусы" />
 </ContentLayout>
+<style>
+ .occasion-city-nav{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-block:28px 8px}
+ .occasion-city-nav>span{font:400 12px/1.6 var(--sans);color:var(--muted);margin-right:auto;padding-block:12px}
+ .occasion-city-nav a{display:inline-flex;align-items:center;gap:16px;padding:12px 16px;min-height:44px;border:1px solid var(--line);border-radius:var(--radius-pill);font:500 12px/1.5 var(--sans);text-decoration:none}
+ .occasion-city-nav a:hover{background:var(--soft);border-color:var(--card-line-hover)}
+ .occasion-city-nav a:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+ :global(.occasion-hub [id^="occasions-"]){scroll-margin-top:24px}
+ :global(.occasion-hub .ed-link-card h3){font-size:clamp(21px,2.1vw,26px);line-height:1.25}
+ @media(min-width:601px) and (max-width:1000px){:global(.occasion-hub .ed-link-grid){grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:600px){.occasion-city-nav{gap:8px}.occasion-city-nav>span{flex-basis:100%;padding:0 0 4px}.occasion-city-nav a{font-size:11px;padding-inline:13px;gap:10px}}
+</style>

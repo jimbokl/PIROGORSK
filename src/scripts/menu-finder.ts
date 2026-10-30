@@ -48,10 +48,29 @@ if (form) {
   document.addEventListener('pirogorsk:catalog-updated', summarize);
   input.addEventListener('input', search);
   reset.addEventListener('click', () => { input.value = ''; search(); input.focus(); });
+  document.querySelector('[data-menu-empty-reset]')?.addEventListener('click', () => reset.click());
   form.addEventListener('submit', event => {
     event.preventDefault();
     sections.find(section => !section.hidden && Number(section.dataset.matchCount ?? section.querySelectorAll('[data-menu-product]:not([hidden])').length) > 0)?.scrollIntoView({ block: 'start' });
   });
   if (initial) { input.value = initial; search(); }
   else summarize();
+
+  // Keep the current section apparent while browsing the continuous catalogue.
+  const jumps = [...document.querySelectorAll<HTMLAnchorElement>('[data-menu-jump]')];
+  let scheduled = false;
+  const markSection = () => {
+    scheduled = false;
+    const visible = sections.filter(section => !section.hidden);
+    const active = visible.filter(section => section.getBoundingClientRect().top <= 150).at(-1) ?? visible[0];
+    jumps.forEach(link => {
+      if (active?.id === link.dataset.menuJump) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  };
+  const schedule = () => { if (!scheduled) { scheduled = true; requestAnimationFrame(markSection); } };
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule);
+  document.addEventListener('pirogorsk:catalog-updated', schedule);
+  markSection();
 }

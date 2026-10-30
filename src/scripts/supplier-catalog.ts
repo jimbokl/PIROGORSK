@@ -48,7 +48,18 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
   // In the menu feed the next batch appears as its end approaches the viewport.
   if (root.hasAttribute('data-menu-feed') && 'IntersectionObserver' in window) {
     feedObserver = new IntersectionObserver(entries => {
-      if (entries.some(entry => entry.isIntersecting) && !more.hidden) { limit += 24; render(); }
+      // An entry can arrive after a jump to a later producer. Keep that
+      // section in place if it is already visible when the batch arrives.
+      const box = more.getBoundingClientRect();
+      if (entries.some(entry => entry.isIntersecting) && !more.hidden && box.bottom >= 0 && box.top <= innerHeight + 500) {
+        const anchor = [...document.querySelectorAll<HTMLElement>('[data-menu-section]')].find(section => {
+          const top = section.getBoundingClientRect().top;
+          return Boolean(root.compareDocumentPosition(section) & Node.DOCUMENT_POSITION_FOLLOWING) && top >= 0 && top < innerHeight;
+        });
+        const top = anchor?.getBoundingClientRect().top;
+        limit += 24; render();
+        if (anchor && top !== undefined) window.scrollBy({ top: anchor.getBoundingClientRect().top - top, behavior: 'instant' });
+      }
     }, { rootMargin: '0px 0px 500px 0px' });
     feedObserver.observe(more);
   }

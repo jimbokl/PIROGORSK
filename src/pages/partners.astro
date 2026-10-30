@@ -1,15 +1,15 @@
 ---
 import ContentLayout from '../layouts/ContentLayout.astro';
-import EditorialHero from '../components/EditorialHero.astro';
+import PieTownHero from '../components/PieTownHero.astro';
+import town from '../../design/pie-city-banners-20261030/pie-islands.png';
 import EditorialBody from '../components/EditorialBody.astro';
 import EditorialInterest from '../components/EditorialInterest.astro';
 import EditorialLinks from '../components/EditorialLinks.astro';
-import { editorialImages } from '../data/editorial';
 const title = 'Владельцам апартаментов — идея сотрудничества | Пирогорск';
 const description = 'Пирогорск изучает формат пирогов для гостей апартаментов. Что потребуется для сотрудничества и какие условия пока не утверждены.';
 ---
 <ContentLayout {title} {description} breadcrumbs={[{ name: 'Партнёрам', href: '/partners/' }]}>
-  <EditorialHero eyebrow="Владельцам апартаментов" title="Ужин для гостей — идея для будущего запуска" intro="Если вы принимаете гостей у моря, вопрос еды в день приезда вам знаком. Изучаем формат пирогов для ужина в апартаментах и хотим понять, нужен ли он хозяевам и гостям." image={editorialImages.dinner} imageAlt="Ужин с пирогами в апартаментах" />
+  <PieTownHero eyebrow="Владельцам апартаментов" title="Ужин для гостей — идея для будущего запуска" intro="Если вы принимаете гостей у моря, вопрос еды в день приезда вам знаком. Изучаем формат пирогов для ужина в апартаментах и хотим понять, нужен ли он хозяевам и гостям." image={town} imageAlt="Пироговый город с островами сытных и сладких пирогов для общего стола" />
   <EditorialBody sections={[
     { title: 'Какой формат рассматриваем', paragraphs: ['Гость мог бы заранее посмотреть меню, узнать подтверждённые условия и самостоятельно выбрать еду. Для хозяина это могло бы стать ещё одной полезной подсказкой в памятке к заселению. Пока это идея: действующей партнёрской программы нет.', 'QR-код или ссылка имеют смысл после запуска заказа и проверки доставки к конкретному жилью. Сейчас нельзя обещать гостям работающую услугу или определённое время приезда.'] },
     { title: 'Что важно проверить вместе', items: ['Город, расположение жилья и возможность обслуживать конкретный адрес.', 'Понятный вход и способ передачи еды гостю.', 'Время заселения, наличие посуды и техники в квартире.', 'Условия ссылки или QR-кода и понятный для гостя порядок заказа.'] },

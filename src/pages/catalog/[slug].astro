@@ -4,11 +4,11 @@ import ProductHero from '../../components/ProductHero.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import ProductAddOns from '../../components/ProductAddOns.astro';
 import ProductOptions from '../../components/ProductOptions.astro';
+import ProductRecommendations from '../../components/ProductRecommendations.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
 import SupplierArtwork from '../../components/SupplierArtwork.astro';
 import { newPageProducts, productPage, formatWeight } from '../../data/product-pages';
 import { supplierArtwork } from '../../data/supplier-artwork';
-import { catalogProductHref } from '../../lib/product-paths';
 import { siteOrigin } from '../../data/editorial';
 import type { Product } from '../../data/catalog';
 
@@ -41,7 +41,8 @@ const guide = product.category === 'mini-pies' ? { href: '/journal/skolko-piroga
   </section>
   {page.facts?.ingredients && <section class="catalog-composition" aria-labelledby="composition-heading"><h2 id="composition-heading">Состав по данным производителя</h2><p>{page.facts.ingredients}</p><p class="catalog-source">Источник: <a href={page.facts.sourceUrl} target="_blank" rel="noopener">публичная карточка {product.supplier?.name}</a>, проверена 29 октября 2026. Перед продажами сверим полный состав, аллергены, возможные следы и условия хранения с маркировкой поставляемой партии. Ассорти требует отдельного подтверждения состава каждого вида.</p></section>}
   {page.source && !page.facts?.ingredients && <section class="catalog-composition"><h2>Что уточним перед продажами</h2><p>Для ассорти подтвердим выбранные виды, состав каждого продукта и итоговую цену. Данные о производителе и фасовке взяты из <a href={page.source.sourceUrl} target="_blank" rel="noopener">публичного каталога {product.supplier?.name}</a>, проверенного 29 октября 2026.</p></section>}
-  <EditorialLinks title="Сравнить перед выбором" links={[...page.related.map(other => ({ href: catalogProductHref(other), title: productPage(other).heading, text: productPage(other).intro, label: 'Рядом в меню' })), guide, { href: '/delivery/', title: 'Города и условия', text: 'Планируем Калининград, Зеленоградск и Светлогорск. Условия получения и цены пока предварительные.', label: 'Доставка' }]} />
+  <ProductRecommendations products={page.related} />
+  <EditorialLinks title="Для вашего стола" links={[guide, { href: '/delivery/', title: 'Города и условия', text: 'Планируем Калининград, Зеленоградск и Светлогорск. Условия получения и цены пока предварительные.', label: 'Доставка' }]} />
 </ContentLayout>
 <style>
   .catalog-details{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,6vw,90px);padding-block:48px 64px;border-top:1px solid var(--ed-line)}

@@ -6,3 +6,9 @@
 
 /* Keep the non-feed card tracks unchanged by the shared purchase wrapper. */
 .supplier-purchase{display:contents}
+.supplier-search[hidden]{display:none}
+.supplier-info{margin-block:12px 8px;color:var(--muted);font:400 12px/1.7 var(--sans)}
+.supplier-info summary{width:fit-content;min-height:44px;display:list-item;align-content:center;cursor:pointer;text-underline-offset:4px}
+.supplier-info summary:hover{color:var(--accent)}
+.supplier-info summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.supplier-info .supplier-note{margin-bottom:12px}

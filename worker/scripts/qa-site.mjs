@@ -191,9 +191,10 @@ try {
     assert.equal(await page.$$eval('#pirogi39 [data-supplier-id]', cards => cards.length), 61);
     await page.goto(`${origin}/menu/`, { waitUntil: 'networkidle0' });
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 24);
-    await page.type('#holland [data-supplier-search]', 'вишн');
+    assert.equal(await page.$$eval('.supplier-search', labels => labels.every(label => label.hidden)), true, 'feed uses one visible global search');
+    await page.type('#menu-search', 'вишн');
     assert.ok(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length >= 3 && cards.every(card => card.dataset.supplierName.includes('вишн'))));
-    await page.$eval('#holland [data-supplier-search]', input => { input.value = ''; input.dispatchEvent(new Event('input', { bubbles: true })); });
+    await page.click('[data-menu-reset]');
     await page.click('#holland [data-supplier-filter=dough]');
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 6);
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'short categories hide pagination through CSS');
