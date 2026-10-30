@@ -58,6 +58,7 @@ try{
   }
   await page.goto(`${origin}/menu/?qa=1`,{waitUntil:'networkidle0'});
   await page.evaluate(()=>localStorage.removeItem('pirogorsk-selection'));
+  assert.equal(await page.$$eval('.menu-feed [data-supplier-id][hidden]', cards=>cards.every(card=>getComputedStyle(card).display==='none')),true,'hidden batches must also be visually hidden');
   const first='#pirogi39 [data-supplier-id]:first-child';
   await page.$eval(first,e=>e.scrollIntoView({block:'start',behavior:'instant'}));await pause(300);
   await page.screenshot({path:`${output}/feed-${width}.jpg`,type:'jpeg',quality:85});
@@ -65,6 +66,8 @@ try{
   assert.equal(new URL(page.url()).pathname,'/menu/');
   assert.equal(await page.$eval('.masthead [data-count]',e=>e.textContent),'1');
   assert.equal(await page.$eval('[data-feed-feedback]',e=>e.hidden),false);
+  assert.equal(await page.$eval('[data-feed-feedback]',e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight&&r.left>=0&&r.right<=innerWidth}),true,'selection feedback stays in the viewport');
+  await page.screenshot({path:`${output}/added-${width}.jpg`,type:'jpeg',quality:85});
   await page.$eval('#holland [data-supplier-filter=dough]',e=>e.click());
   const card='#holland [data-supplier-id]:not([hidden])';
   await page.$eval(`${card} label:last-of-type input`,e=>e.click());

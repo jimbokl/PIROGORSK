@@ -21,4 +21,22 @@
 
 ## Публикация
 
-Ожидает завершения локальных проверок и CI. После деплоя — тот же UI-прогон на production, сравнение ресурсов с CI artifact и мобильные замеры Lighthouse.
+- Runtime: `b512643c7ec3374360b427d979adfba7dec70c6c`.
+- [CI 41023270980 — SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41023270980), включая browser fixtures, сборку, проверки и публикацию.
+- Production readback: все 241 ресурс (214 HTML, 153 страницы товаров) HTTP 200 и побайтово совпадают с Pages artifact этого CI. Published Worker compatibility PASS. [Результат](publication.json).
+- Production UI: 25 сочетаний страниц и ширин PASS; JS/HTTP ошибок и overflow нет. Проверены скрытие ещё не раскрытых партий, автоматическая подгрузка, точный вариант, сохранение и переход в подборку, счётчик шапки, нижнее уведомление в пределах экрана, меню/город/Escape/возврат фокуса. [Результат](production/results.json).
+
+## Скорость production
+
+Lighthouse CLI 13.5.0 / Headless Chrome 156, три отдельных mobile-профиля с simulated throttling и один desktop. Это лабораторные измерения, не публичный PageSpeed или CrUX.
+
+| Режим | Performance | LCP | CLS | TBT |
+| --- | --- | --- | --- | --- |
+| Mobile 1 | 89 | 1,87 с | 0,019 | 409 мс |
+| Mobile 2 | 100 | 1,74 с | 0,016 | 2 мс |
+| Mobile 3 | 100 | 1,74 с | 0,019 | 5 мс |
+| Desktop | 99 | 0,64 с | 0,002 | 0 мс |
+
+Accessibility/SEO — 100 во всех четырёх прогонах. Best Practices — 77: прежние third-party cookies/Issues Метрики. Первый mobile-прогон получил всплеск Style & Layout (1178 мс) и TBT; два следующих его не повторили. В отчёте сохранены все результаты, без исключения первого. LCP остался ниже 1,9 с; observed задержка отрисовки LCP 28–33 мс. [Все замеры](performance/performance-summary.json), [диапазоны](performance/performance-ranges.json).
+
+Реализация опубликована и проверена. Локальные снимки внешнего Chrome и загруженный CI artifact оставлены вне коммита; в репозитории — протокол наблюдений и выбранные снимки самого Пирогорска.
