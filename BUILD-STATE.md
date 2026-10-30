@@ -1,5 +1,9 @@
 # Пирогорск — рабочий checkpoint
 
+## Пересборка визуальной системы — 30.10.2026
+
+Обновляются главная, меню, товары, доставка/города и блог: единая типографика, спокойные поверхности, меньше рамок и декоративной плотности, компактные наборы и адаптивное листание. Встроенный Imagegen создал общий референс и новую hero-композицию пирога на керамике/льне; учтены Apple HIG Layout/Typography. Сохранены153 позиции, URL/SEO, цены, подборка, дополнения и форма. Check/build/41 Node/Worker/browser/SEO/product/artwork/release/strict registry PASS. UI320/390/768/1280:28 сочетаний PASS. Lighthouse local mobile×3:98,LCP2.12–2.19s,CLS0.019,TBT0; desktop100,LCP0.47s. Публикация, CI и production-проверки впереди. [Протокол](qa/visual-redesign-20261030/README.md).
+
 ## Дополнения на страницах пирогов — 30.10.2026
 
 Блок «С этим берут» на83 страницах пирогов: морс500мл/1л, сладкий пирог500г (текущая позиция исключена), посуда1/5/10 гостей. Прямое сохранение без перехода, статус количества, открытие общей подборки. Оригинальные и обе линейки поставщиков; общий компонент и нормализация saved selection, прежняя форма. Локальные check/build/41 Node/Worker/SEO/153 product pages/release/strict registry PASS. Touch320/390 и desktop1280: сохранение, reload, основной формат, точные суммы, доставка один раз, передача в форму, клавиатура, storage error PASS. Общий browser test PASS, включая прежние наборы и Worker/SQLite. Runtime **`c0e578a42423099ae3a771eea78238ca68ef8ea1`**, [CI41013684450 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41013684450). Production: все230 ресурсов (214HTML) HTTP200 и совпадают со сборкой, published compatibility PASS. Touch320/390 и desktop1280: все сценарии PASS, JS/HTTP ошибок и overflow нет; реальные формы не отправлялись. Опубликовано и проверено, поручение завершено. [Протокол](qa/product-addons-20261030/README.md).

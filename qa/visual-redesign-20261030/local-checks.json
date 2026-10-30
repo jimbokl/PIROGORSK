@@ -1,0 +1,155 @@
+{
+  "checks": {
+    "astro": "177 files; 0 errors; 0 warnings",
+    "nodeTests": "41/41 PASS",
+    "worker": "PASS",
+    "browser": "PASS: forms, bundles, product addons, selection, Worker SQLite",
+    "seo": "214 HTML / 212 sitemap / 22944 local references PASS",
+    "products": "153 routes PASS",
+    "artwork": "139 ImageGen / 1112 responsive variants PASS",
+    "registry": "strict PASS; errors 0; drift false; 99 existing warnings",
+    "ui": "28 page/viewport combinations PASS; widths 320,390,768,1280"
+  },
+  "performance": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-10-30T06:58:14.255Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1668.5331,
+          "display": "1.7 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2193.5331,
+          "display": "2.2 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.01851177342622228,
+          "display": "0.019"
+        },
+        "speed-index": {
+          "value": 1668.5331,
+          "display": "1.7 s"
+        }
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 2,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-10-30T06:58:20.991Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1665.8091,
+          "display": "1.7 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2190.8091,
+          "display": "2.2 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.01851177342622228,
+          "display": "0.019"
+        },
+        "speed-index": {
+          "value": 1665.8091,
+          "display": "1.7 s"
+        }
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 3,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-10-30T06:58:27.476Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1669.6427000000003,
+          "display": "1.7 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2119.6427000000003,
+          "display": "2.1 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.01851177342622228,
+          "display": "0.019"
+        },
+        "speed-index": {
+          "value": 1669.6427000000003,
+          "display": "1.7 s"
+        }
+      }
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-10-30T06:58:34.279Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 298.3298,
+          "display": "0.3 s"
+        },
+        "largest-contentful-paint": {
+          "value": 473.32449999999994,
+          "display": "0.5 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.001850638626214867,
+          "display": "0.002"
+        },
+        "speed-index": {
+          "value": 298.3298,
+          "display": "0.3 s"
+        }
+      }
+    }
+  ]
+}

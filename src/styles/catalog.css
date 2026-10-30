@@ -44,7 +44,7 @@
 .product-visual-link .product-visual-background { transition: transform 700ms cubic-bezier(.16,1,.3,1); }
 @media (hover: hover) {
   .catalog .catalog-card:hover { border-color: var(--card-line-hover); box-shadow: 0 13px 32px var(--card-shadow); }
-  .product-visual-link:hover .product-visual-subject { transform: translate(-50%, -53%) rotate(-3deg) scale(1.045); filter: drop-shadow(0 10px 6px var(--food-shadow-hover)); }
+  .product-visual-link:hover .product-visual-subject { transform: translate(-50%, -51.5%) scale(1.025); filter: drop-shadow(0 10px 6px var(--food-shadow-hover)); }
   .product-visual-link:hover .product-visual-background { transform: scale(1.035) rotate(2deg); }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -72,12 +72,12 @@
 .product-visual--hero .product-visual-background { transition: transform 700ms cubic-bezier(.16,1,.3,1); }
 .product-visual--hero .product-backdrop { transition: transform 700ms cubic-bezier(.16,1,.3,1); }
 .product-visual-link .product-backdrop { transition: transform 700ms cubic-bezier(.16,1,.3,1); }
-.product-visual-link:focus-visible .product-visual-subject { transform: translate(-50%, -53%) rotate(-3deg) scale(1.045); }
+.product-visual-link:focus-visible .product-visual-subject { transform: translate(-50%, -51.5%) scale(1.025); }
 .product-visual-link:focus-visible .product-visual-background,
 .product-visual-link:focus-visible .product-backdrop { transform: scale(1.035) rotate(2deg); }
 @media (hover: hover) {
   .product-visual-link:hover .product-backdrop { transform: scale(1.035) rotate(2deg); }
-  .product-visual--hero:hover .product-visual-subject { transform: translate(-50%, -53%) rotate(-3deg) scale(1.045); }
+  .product-visual--hero:hover .product-visual-subject { transform: translate(-50%, -51.5%) scale(1.025); }
   .product-visual--hero:hover .product-visual-background,
   .product-visual--hero:hover .product-backdrop { transform: scale(1.035) rotate(2deg); }
 }

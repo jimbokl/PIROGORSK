@@ -15,16 +15,20 @@
   --focus: #277c91;
   --serif: Playfair, Georgia, 'Times New Roman', serif;
   --sans: Golos, Arial, sans-serif;
-  --page-width: 1280px;
-  --page-gutter: clamp(18px, 4.7vw, 60px);
-  --heading-page: clamp(34px, 4.3vw, 48px);
-  --heading-section: clamp(28px, 3.5vw, 40px);
-  --heading-card: clamp(23px, 2.2vw, 28px);
+  --page-width: 1240px;
+  --page-gutter: clamp(20px, 4.5vw, 64px);
+  --heading-page: clamp(34px, 4.5vw, 56px);
+  --heading-section: clamp(28px, 3.3vw, 40px);
+  --heading-card: clamp(21px, 2vw, 25px);
   --control-height: 48px;
-  --radius-card: 18px;
-  --radius-image: 10px;
+  --radius-card: 24px;
+  --radius-image: 20px;
   --radius-pill: 999px;
   --card-gap: 24px;
+  --surface-oat: #f2eee5;
+  --surface-sage: #edf0e8;
+  --surface-berry: #f5ece8;
+  --ease-out: cubic-bezier(.2,.7,.2,1);
   /* Existing component materials, collected into shared roles. */
   --card-line: #123b4a16;
   --paper-raised: #fffdf9;

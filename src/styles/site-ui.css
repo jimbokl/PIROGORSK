@@ -1,23 +1,22 @@
-/* Shared page rhythm. Product artwork keeps its own aspect ratio; editorial
-   covers use 3:2, with the same paper, border and inset as product frames. */
+/* Shared visual roles: quiet surfaces, food first, one clear action. */
 body:is(.home-page,.editorial-site) .container,body:is(.home-page,.editorial-site) .ed-container{width:min(var(--page-width),calc(100% - var(--page-gutter)*2))}
 body:is(.home-page,.editorial-site) .site-header,body:is(.home-page,.editorial-site) .ed-header{min-height:88px;height:auto;padding-block:18px;border-bottom:1px solid var(--line)}
 body:is(.home-page,.editorial-site) .button,body:is(.home-page,.editorial-site) .ed-button{min-height:var(--control-height);padding:12px 22px;border-radius:var(--radius-pill);gap:12px;font:600 14px/1.4 var(--sans);text-align:center;justify-content:center}
 body:is(.home-page,.editorial-site) .button:focus-visible,body:is(.home-page,.editorial-site) .ed-button:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
-body:is(.home-page,.editorial-site) .ed-hero h1,body:is(.home-page,.editorial-site) .blog-article .ed-hero h1,body:is(.home-page,.editorial-site) .blog-heading h1{font-family:var(--serif);font-size:var(--heading-page);font-weight:600;line-height:1.12;letter-spacing:-.035em;text-wrap:pretty}
+body:is(.home-page,.editorial-site) .ed-hero h1,body:is(.home-page,.editorial-site) .blog-article .ed-hero h1,body:is(.home-page,.editorial-site) .blog-heading h1{font-family:var(--serif);font-size:var(--heading-page);font-weight:500;line-height:1.08;letter-spacing:-.035em;text-wrap:pretty}
 body:is(.home-page,.editorial-site) .ed-hero,body:is(.home-page,.editorial-site) .blog-article .ed-hero{padding-block:32px 48px;gap:32px 40px}
 body:is(.home-page,.editorial-site) .ed-hero-text .ed-hero-copy{max-width:850px}
 body:is(.home-page,.editorial-site) .ed-hero .ed-intro{font-size:15px;line-height:1.75;margin-top:18px}
-body:is(.home-page,.editorial-site) .ed-hero-art img,body:is(.home-page,.editorial-site) .blog-guide-context img{border:1px solid var(--card-line);border-radius:var(--radius-card);background:var(--paper-raised);padding:8px}
+body:is(.home-page,.editorial-site) .ed-hero-art img,body:is(.home-page,.editorial-site) .blog-guide-context img{border:0;border-radius:var(--radius-card);background:var(--surface-oat);padding:8px}
 body:is(.home-page,.editorial-site) .ed-eyebrow{font-size:11px;line-height:1.6}
-body:is(.home-page,.editorial-site) .ed-links-section>h2,body:is(.home-page,.editorial-site) .ed-interest h2,body:is(.home-page,.editorial-site) .ed-article-section h2,body:is(.home-page,.editorial-site) .blog-category>header h2,body:is(.home-page,.editorial-site) .blog-feature h2,body:is(.home-page,.editorial-site) .blog-takeaway h2,body:is(.home-page,.editorial-site) .menu-originals>header h2,body.home-page .home-section-heading h2,body.home-page .departments-heading h2,body.home-page .offers-heading h2,body.home-page .discovery h2,body.home-page .home-faq h2,body.home-page .journal h2{font:600 var(--heading-section)/1.15 var(--serif);letter-spacing:-.035em}
+body:is(.home-page,.editorial-site) .ed-links-section>h2,body:is(.home-page,.editorial-site) .ed-interest h2,body:is(.home-page,.editorial-site) .ed-article-section h2,body:is(.home-page,.editorial-site) .blog-category>header h2,body:is(.home-page,.editorial-site) .blog-feature h2,body:is(.home-page,.editorial-site) .blog-takeaway h2,body:is(.home-page,.editorial-site) .menu-originals>header h2,body.home-page .home-section-heading h2,body.home-page .departments-heading h2,body.home-page .offers-heading h2,body.home-page .discovery h2,body.home-page .home-faq h2,body.home-page .journal h2{font:500 var(--heading-section)/1.15 var(--serif);letter-spacing:-.035em}
 body:is(.home-page,.editorial-site) .ed-links-section{margin-block:40px 56px}
 body:is(.home-page,.editorial-site) .ed-link-grid{align-items:stretch;gap:var(--card-gap)}
-body:is(.home-page,.editorial-site) .ed-link-card{display:grid;grid-template-rows:auto auto 1fr;gap:12px;padding:24px;border:1px solid var(--card-line);border-radius:var(--radius-card);background:var(--paper-raised)}
-body:is(.home-page,.editorial-site) .ed-link-card h3{font:600 var(--heading-card)/1.2 var(--serif);letter-spacing:-.035em;margin:0}
+body:is(.home-page,.editorial-site) .ed-link-card{display:grid;grid-template-rows:auto auto 1fr;gap:12px;padding:24px;border:0;border-radius:var(--radius-card);background:var(--surface-oat)}
+body:is(.home-page,.editorial-site) .ed-link-card h3{font:500 var(--heading-card)/1.2 var(--serif);letter-spacing:-.035em;margin:0}
 body:is(.home-page,.editorial-site) .ed-link-card p{font-size:14px;line-height:1.75;margin:0}
 body:is(.home-page,.editorial-site) .ed-link-card:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
-body:is(.home-page,.editorial-site) .ed-interest{padding:32px;border:1px solid var(--card-line);border-radius:var(--radius-card);gap:32px;margin-block:40px 56px}
+body:is(.home-page,.editorial-site) .ed-interest{padding:32px;border:0;border-radius:var(--radius-card);background:var(--surface-sage);gap:32px;margin-block:40px 56px}
 body:is(.home-page,.editorial-site) .ed-interest p:not(.ed-eyebrow){font-size:14px;line-height:1.75}
 body:is(.home-page,.editorial-site) .ed-interest .ed-button{flex-shrink:0;max-width:100%;white-space:normal}
 body:is(.home-page,.editorial-site) .ed-article-section p,body:is(.home-page,.editorial-site) .ed-article-section li{font-size:15px;line-height:1.85}
@@ -25,7 +24,7 @@ body:is(.home-page,.editorial-site) .ed-note{border-radius:0 var(--radius-card) 
 body:is(.home-page,.editorial-site) .blog-heading{padding-block:32px 40px;gap:40px;align-items:start}
 body:is(.home-page,.editorial-site) .blog-heading h1{margin-top:12px}
 body:is(.home-page,.editorial-site) .blog-heading>p{font-size:15px;line-height:1.75}
-body:is(.home-page,.editorial-site) .blog-feature-image{border:1px solid var(--card-line);border-radius:var(--radius-card);padding:8px;background:var(--paper-raised)}
+body:is(.home-page,.editorial-site) .blog-feature-image{border:0;border-radius:var(--radius-card);padding:0;background:var(--surface-oat)}
 body:is(.home-page,.editorial-site) .blog-feature-image img{border-radius:var(--radius-image)}
 body:is(.home-page,.editorial-site) .blog-feature-copy>p:not(.ed-eyebrow),body:is(.home-page,.editorial-site) .blog-category>header p{font-size:14px;line-height:1.75}
 body:is(.home-page,.editorial-site) .blog-text-link{font-size:14px;font-weight:600;gap:16px}
@@ -34,12 +33,12 @@ body:is(.home-page,.editorial-site) .blog-guide-context img{display:block}
 body:is(.home-page,.editorial-site) .menu-finder,body:is(.home-page,.editorial-site) .menu-sections a{border-radius:var(--radius-card);background:var(--paper-raised)}
 body:is(.home-page,.editorial-site) .menu-sections small,body:is(.home-page,.editorial-site) .menu-sections span{font-size:12px}
 body:is(.home-page,.editorial-site) .menu-originals .ed-catalog,body:is(.home-page,.editorial-site) .menu-extras .ed-catalog{gap:var(--card-gap);align-items:stretch}
-body:is(.home-page,.editorial-site) .menu-originals .ed-product-card,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card{display:grid;grid-template-rows:subgrid;grid-row:span 6;gap:0;padding:8px 8px 20px;border:1px solid var(--card-line);border-radius:var(--radius-card);background:var(--paper-raised)}
+body:is(.home-page,.editorial-site) .menu-originals .ed-product-card,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card{display:grid;grid-template-rows:subgrid;grid-row:span 6;gap:0;padding:0 0 20px;border:0;border-radius:var(--radius-card);background:var(--surface-oat)}
 body:is(.home-page,.editorial-site) .menu-extras .ed-product-card{grid-row:span 5}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card>a,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card>a{display:grid;grid-template-rows:subgrid;grid-row:span 6;gap:0;min-width:0;height:100%}
 body:is(.home-page,.editorial-site) .menu-extras .ed-product-card>a{grid-row:span 5}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .product-visual,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card .product-visual{aspect-ratio:1;width:100%;border-radius:var(--radius-image);margin:0}
-body:is(.home-page,.editorial-site) .menu-originals .ed-product-card h3,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card h3{font:600 var(--heading-card)/1.2 var(--serif);letter-spacing:-.035em;margin:0;padding:8px 12px 12px}
+body:is(.home-page,.editorial-site) .menu-originals .ed-product-card h3,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card h3{font:500 var(--heading-card)/1.2 var(--serif);letter-spacing:-.035em;margin:0;padding:8px 12px 12px}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card p,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card p{margin:0;padding:0 12px 16px;font-size:14px;line-height:1.65}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .ed-eyebrow,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card .ed-eyebrow{font-size:11px;padding-top:18px;padding-bottom:0}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .menu-original-price{font-size:20px;font-weight:600}
@@ -68,3 +67,73 @@ body.home-page .catalog .product-card.catalog-card .button-small{min-height:var(
   body.home-page .home-featured{padding-block:32px 40px}
 }
 @media(max-width:420px){body:is(.home-page,.editorial-site) .ed-button{justify-content:center}body:is(.home-page,.editorial-site) .menu-search-row .ed-button{width:auto}body:is(.home-page,.editorial-site) .ed-interest .ed-button span{flex-shrink:0}body:is(.home-page,.editorial-site) .menu-originals .ed-product-more,body:is(.home-page,.editorial-site) .menu-extras .ed-product-more{font-size:13px}}
+
+/* Product imagery: transparent food on a calm surface. The engraving is a
+   restrained texture, never a second frame competing with the product. */
+body:is(.home-page,.editorial-site) :is(.product-visual,.product-artwork){background:var(--surface-oat);border-radius:20px}
+body:is(.home-page,.editorial-site) .product-backdrop{opacity:.07;mix-blend-mode:multiply}
+body:is(.home-page,.editorial-site) .product-visual-background{opacity:.07;mix-blend-mode:multiply}
+body:is(.home-page,.editorial-site) .product-artwork{isolation:auto}
+body:is(.home-page,.editorial-site) .product-artwork-subject{mask-image:none;mix-blend-mode:darken}
+body:is(.home-page,.editorial-site) .product-visual-badge{display:none}
+body:is(.home-page,.editorial-site) .product-visual-subject{top:50%}
+body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card{border:0;border-radius:24px;background:transparent;padding:0 0 16px;box-shadow:none}
+body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card .product-copy{padding:20px 0 0;row-gap:10px}
+body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card h3{font-weight:500;text-wrap:pretty;font-size:24px;line-height:1.18}
+body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card :is(.variant-switch,.product-bottom){margin-inline:0}
+body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card .product-description{font-size:12px;line-height:1.6}
+body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card .button-small{font-size:12px;width:auto;padding-inline:17px;font-weight:500}
+body:is(.home-page,.editorial-site) .variant-switch{background:var(--surface-oat)}
+body:is(.home-page,.editorial-site) .variant-switch span{font-size:12px}
+body:is(.home-page,.editorial-site) .product-price-note{font-size:10px}
+body:is(.home-page,.editorial-site) .product-hero-frame :is(.product-visual,.product-artwork){background:transparent}
+body:is(.home-page,.editorial-site) .product-options{padding:24px;border:0;background:#fffdf9;border-radius:24px}
+body:is(.home-page,.editorial-site) .supplier-heading h2{font:500 var(--heading-section)/1.15 var(--serif);letter-spacing:-.035em}
+body:is(.home-page,.editorial-site) .supplier-intro{font-size:14px;max-width:650px;color:var(--muted)}
+body:is(.home-page,.editorial-site) .supplier-grid{gap:40px 24px}
+body:is(.home-page,.editorial-site) .supplier-card{border:0;background:transparent;padding:0;box-shadow:none}
+body:is(.home-page,.editorial-site) .supplier-card-top{font-size:10px;text-transform:none;letter-spacing:0}
+body:is(.home-page,.editorial-site) .supplier-card-top>span:last-child{display:none}
+body:is(.home-page,.editorial-site) .supplier-art-link{margin-top:12px;border-radius:22px}
+body:is(.home-page,.editorial-site) .supplier-card h3{font:500 25px/1.2 var(--serif);letter-spacing:-.025em;margin:20px 0 12px}
+body:is(.home-page,.editorial-site) .supplier-format{font-size:12px}
+body:is(.home-page,.editorial-site) .supplier-variants span{border-radius:12px;border-color:var(--line);font-size:11px}
+body:is(.home-page,.editorial-site) :is(.supplier-search input,.menu-search-row input){background:#fffdf9;border:1px solid var(--line);border-radius:14px}
+body:is(.home-page,.editorial-site) .supplier-filters{gap:6px}
+body:is(.home-page,.editorial-site) .supplier-filters button{border:0;background:var(--surface-oat);font-size:12px;min-height:44px;padding-inline:16px}
+body:is(.home-page,.editorial-site) .supplier-filters button[aria-pressed=true]{background:var(--navy);color:var(--paper)}
+body:is(.home-page,.editorial-site) .supplier-card-bottom .button{min-height:48px}
+body:is(.home-page,.editorial-site) .supplier-note{font-size:12px;color:var(--muted);padding-block:16px}
+body:is(.home-page,.editorial-site) .menu-finder{border:0;background:var(--surface-oat);padding:28px}
+body:is(.home-page,.editorial-site) .menu-sections a{border:0;background:var(--surface-oat);padding:22px}
+body:is(.home-page,.editorial-site) .ed-product-card .product-visual{border-radius:22px}
+body:is(.home-page,.editorial-site) .product-addons .addon-card{border:0;border-radius:22px;background:#fffdf9;padding:22px}
+body:is(.home-page,.editorial-site) .product-addons .addon-title{font-weight:500}
+body:is(.home-page,.editorial-site) .product-addons .addons-heading{font-weight:500}
+body:is(.home-page,.editorial-site) .blog-feature-number{display:none}
+body:is(.home-page,.editorial-site) .blog-feature{gap:40px}
+body:is(.home-page,.editorial-site) .blog-topics{border-block:1px solid var(--line);padding-block:12px}
+body:is(.home-page,.editorial-site) .blog-topics a{background:transparent;border:0;border-radius:0}
+body:is(.home-page,.editorial-site) .ed-link-card{transition:background 200ms var(--ease-out),transform 200ms var(--ease-out)}
+body:is(.home-page,.editorial-site) .ed-link-card:hover{background:#e9e6dc;transform:translateY(-2px)}
+body:is(.home-page,.editorial-site) .home-section-heading h2{font-weight:500}
+body.home-page .home-status{margin-block:0 44px;padding:16px 0;border-block:1px solid var(--line);font-size:11px}
+body.home-page .home-journal{margin-block:64px}
+body.home-page .home-journal h2{font-size:var(--heading-section);font-weight:500;letter-spacing:-.035em}
+body:is(.home-page,.editorial-site) :is(.site-footer,.ed-footer){padding-block:36px;border-top:1px solid var(--line)}
+body:is(.home-page,.editorial-site) .selection-dialog{border:0;border-radius:28px;background:var(--paper);box-shadow:0 30px 100px #123b4a25}
+@media(min-width:761px){body:is(.home-page,.editorial-site) .ed-hero-text{padding-block:56px 64px}body:is(.home-page,.editorial-site) .ed-hero-text .ed-intro{max-width:680px}body:is(.home-page,.editorial-site) .menu-sections{gap:14px}}
+@media(max-width:760px){
+ body:is(.home-page,.editorial-site) .product-options{padding:20px}
+ body:is(.home-page,.editorial-site) .menu-finder{padding:20px}
+ body:is(.home-page,.editorial-site) .menu-sections a{padding:18px}
+ body:is(.home-page,.editorial-site) .supplier-grid{gap:32px 18px}
+ body:is(.home-page,.editorial-site) .supplier-card h3{font-size:26px}
+ body:is(.home-page,.editorial-site) .blog-feature{gap:24px}
+ body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card h3{font-size:23px}
+ body.home-page .home-status{margin-bottom:32px}
+ body.home-page .home-featured{padding-block:44px}
+ body:is(.home-page,.editorial-site) .product-addons .addon-card{padding:18px}
+ body:is(.home-page,.editorial-site) .selection-dialog{border-radius:24px 24px 0 0}
+}
+@media(prefers-reduced-motion:reduce){body:is(.home-page,.editorial-site) .ed-link-card{transition:none;transform:none}}
