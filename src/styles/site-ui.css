@@ -1,13 +1,13 @@
-/* Shared visual roles: quiet surfaces, food first, one clear action. */
+/* Shared storefront system: porcelain, midnight ink, Baltic blue. */
 body:is(.home-page,.editorial-site) .container,body:is(.home-page,.editorial-site) .ed-container{width:min(var(--page-width),calc(100% - var(--page-gutter)*2))}
 body:is(.home-page,.editorial-site) .site-header,body:is(.home-page,.editorial-site) .ed-header{min-height:88px;height:auto;padding-block:18px;border-bottom:1px solid var(--line)}
-body:is(.home-page,.editorial-site) .button,body:is(.home-page,.editorial-site) .ed-button{min-height:var(--control-height);padding:12px 22px;border-radius:var(--radius-pill);gap:12px;font:600 14px/1.4 var(--sans);text-align:center;justify-content:center}
+body:is(.home-page,.editorial-site) .button,body:is(.home-page,.editorial-site) .ed-button{min-height:var(--control-height);padding:12px 22px;border-radius:var(--radius-control);gap:12px;font:500 14px/1.4 var(--sans);text-align:center;justify-content:center}
 body:is(.home-page,.editorial-site) .button:focus-visible,body:is(.home-page,.editorial-site) .ed-button:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
 body:is(.home-page,.editorial-site) .ed-hero h1,body:is(.home-page,.editorial-site) .blog-article .ed-hero h1,body:is(.home-page,.editorial-site) .blog-heading h1{font-family:var(--serif);font-size:var(--heading-page);font-weight:500;line-height:1.08;letter-spacing:-.035em;text-wrap:pretty}
 body:is(.home-page,.editorial-site) .ed-hero,body:is(.home-page,.editorial-site) .blog-article .ed-hero{padding-block:32px 48px;gap:32px 40px}
 body:is(.home-page,.editorial-site) .ed-hero-text .ed-hero-copy{max-width:850px}
 body:is(.home-page,.editorial-site) .ed-hero .ed-intro{font-size:15px;line-height:1.75;margin-top:18px}
-body:is(.home-page,.editorial-site) .ed-hero-art img,body:is(.home-page,.editorial-site) .blog-guide-context img{border:0;border-radius:var(--radius-card);background:var(--surface-oat);padding:8px}
+body:is(.home-page,.editorial-site) .ed-hero-art img,body:is(.home-page,.editorial-site) .blog-guide-context img{border:0;border-radius:var(--radius-card);background:var(--surface-oat);padding:0}
 body:is(.home-page,.editorial-site) .ed-eyebrow{font-size:11px;line-height:1.6}
 body:is(.home-page,.editorial-site) .ed-links-section>h2,body:is(.home-page,.editorial-site) .ed-interest h2,body:is(.home-page,.editorial-site) .ed-article-section h2,body:is(.home-page,.editorial-site) .blog-category>header h2,body:is(.home-page,.editorial-site) .blog-feature h2,body:is(.home-page,.editorial-site) .blog-takeaway h2,body:is(.home-page,.editorial-site) .menu-originals>header h2,body.home-page .home-section-heading h2,body.home-page .departments-heading h2,body.home-page .offers-heading h2,body.home-page .discovery h2,body.home-page .home-faq h2,body.home-page .journal h2{font:500 var(--heading-section)/1.15 var(--serif);letter-spacing:-.035em}
 body:is(.home-page,.editorial-site) .ed-links-section{margin-block:40px 56px}
@@ -42,11 +42,11 @@ body:is(.home-page,.editorial-site) .menu-originals .ed-product-card h3,body:is(
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card p,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card p{margin:0;padding:0 12px 16px;font-size:14px;line-height:1.65}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .ed-eyebrow,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card .ed-eyebrow{font-size:11px;padding-top:18px;padding-bottom:0}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .menu-original-price{font-size:20px;font-weight:600}
-body:is(.home-page,.editorial-site) .menu-originals .ed-product-more,body:is(.home-page,.editorial-site) .menu-extras .ed-product-more{display:flex;align-items:center;justify-content:center;min-height:var(--control-height);margin:6px 12px 0;padding:12px 16px;border:1px solid var(--navy);border-radius:var(--radius-pill);font:600 13px/1.4 var(--sans);color:var(--navy);text-align:center}
+body:is(.home-page,.editorial-site) .menu-originals .ed-product-more,body:is(.home-page,.editorial-site) .menu-extras .ed-product-more{display:flex;align-items:center;justify-content:center;min-height:var(--control-height);margin:6px 12px 0;padding:12px 16px;border:1px solid var(--navy);border-radius:var(--radius-control);font:500 13px/1.4 var(--sans);color:var(--navy);text-align:center}
 body.home-page .department-card{border-radius:var(--radius-card)}
 body.home-page .offers-kicker{font-size:11px;line-height:1.6}
 body.home-page .offers-heading>p{font-size:14px;line-height:1.6}
-body.home-page .offers-footnote{font-size:12px;line-height:1.6}
+body.home-page .offers-footnote{font-size:14px;line-height:1.65}
 body.home-page .offers-footnote a{min-height:44px}
 body.home-page .home-section-intro{font-size:14px;line-height:1.75}
 body.home-page .home-featured{padding-block:40px 56px}
@@ -81,13 +81,13 @@ body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card{border:0
 body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card .product-copy{padding:20px 0 0;row-gap:10px}
 body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card h3{font-weight:500;text-wrap:pretty;font-size:24px;line-height:1.18}
 body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card :is(.variant-switch,.product-bottom){margin-inline:0}
-body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card .product-description{font-size:12px;line-height:1.6}
+body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card .product-description{font-size:14px;line-height:1.65}
 body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card .button-small{font-size:12px;width:auto;padding-inline:17px;font-weight:500}
 body:is(.home-page,.editorial-site) .variant-switch{background:var(--surface-oat)}
 body:is(.home-page,.editorial-site) .variant-switch span{font-size:12px}
-body:is(.home-page,.editorial-site) .product-price-note{font-size:10px}
+body:is(.home-page,.editorial-site) .product-price-note{font-size:11px}
 body:is(.home-page,.editorial-site) .product-hero-frame :is(.product-visual,.product-artwork){background:transparent}
-body:is(.home-page,.editorial-site) .product-options{padding:24px;border:0;background:#fffdf9;border-radius:24px}
+body:is(.home-page,.editorial-site) .product-options{padding:24px;border:1px solid var(--line);background:var(--paper-raised);border-radius:24px}
 body:is(.home-page,.editorial-site) .supplier-heading h2{font:500 var(--heading-section)/1.15 var(--serif);letter-spacing:-.035em}
 body:is(.home-page,.editorial-site) .supplier-intro{font-size:14px;max-width:650px;color:var(--muted)}
 body:is(.home-page,.editorial-site) .supplier-grid{gap:40px 24px}
@@ -98,7 +98,7 @@ body:is(.home-page,.editorial-site) .supplier-art-link{margin-top:12px;border-ra
 body:is(.home-page,.editorial-site) .supplier-card h3{font:500 25px/1.2 var(--serif);letter-spacing:-.025em;margin:20px 0 12px}
 body:is(.home-page,.editorial-site) .supplier-format{font-size:12px}
 body:is(.home-page,.editorial-site) .supplier-variants span{border-radius:12px;border-color:var(--line);font-size:11px}
-body:is(.home-page,.editorial-site) :is(.supplier-search input,.menu-search-row input){background:#fffdf9;border:1px solid var(--line);border-radius:14px}
+body:is(.home-page,.editorial-site) :is(.supplier-search input,.menu-search-row input){background:var(--paper-raised);border:1px solid var(--line);border-radius:14px}
 body:is(.home-page,.editorial-site) .supplier-filters{gap:6px}
 body:is(.home-page,.editorial-site) .supplier-filters button{border:0;background:var(--surface-oat);font-size:12px;min-height:44px;padding-inline:16px}
 body:is(.home-page,.editorial-site) .supplier-filters button[aria-pressed=true]{background:var(--navy);color:var(--paper)}
@@ -107,7 +107,7 @@ body:is(.home-page,.editorial-site) .supplier-note{font-size:12px;color:var(--mu
 body:is(.home-page,.editorial-site) .menu-finder{border:0;background:var(--surface-oat);padding:28px}
 body:is(.home-page,.editorial-site) .menu-sections a{border:0;background:var(--surface-oat);padding:22px}
 body:is(.home-page,.editorial-site) .ed-product-card .product-visual{border-radius:22px}
-body:is(.home-page,.editorial-site) .product-addons .addon-card{border:0;border-radius:22px;background:#fffdf9;padding:22px}
+body:is(.home-page,.editorial-site) .product-addons .addon-card{border:1px solid var(--line);border-radius:22px;background:var(--paper-raised);padding:22px}
 body:is(.home-page,.editorial-site) .product-addons .addon-title{font-weight:500}
 body:is(.home-page,.editorial-site) .product-addons .addons-heading{font-weight:500}
 body:is(.home-page,.editorial-site) .blog-feature-number{display:none}
@@ -115,13 +115,13 @@ body:is(.home-page,.editorial-site) .blog-feature{gap:40px}
 body:is(.home-page,.editorial-site) .blog-topics{border-block:1px solid var(--line);padding-block:12px}
 body:is(.home-page,.editorial-site) .blog-topics a{background:transparent;border:0;border-radius:0}
 body:is(.home-page,.editorial-site) .ed-link-card{transition:background 200ms var(--ease-out),transform 200ms var(--ease-out)}
-body:is(.home-page,.editorial-site) .ed-link-card:hover{background:#e9e6dc;transform:translateY(-2px)}
+body:is(.home-page,.editorial-site) .ed-link-card:hover{background:var(--control-hover);transform:translateY(-2px)}
 body:is(.home-page,.editorial-site) .home-section-heading h2{font-weight:500}
 body.home-page .home-status{margin-block:0 44px;padding:16px 0;border-block:1px solid var(--line);font-size:11px}
 body.home-page .home-journal{margin-block:64px}
 body.home-page .home-journal h2{font-size:var(--heading-section);font-weight:500;letter-spacing:-.035em}
 body:is(.home-page,.editorial-site) :is(.site-footer,.ed-footer){padding-block:36px;border-top:1px solid var(--line)}
-body:is(.home-page,.editorial-site) .selection-dialog{border:0;border-radius:28px;background:var(--paper);box-shadow:0 30px 100px #123b4a25}
+body:is(.home-page,.editorial-site) .selection-dialog{border:0;border-radius:28px;background:var(--paper);box-shadow:0 30px 100px var(--dialog-shadow)}
 @media(min-width:761px){body:is(.home-page,.editorial-site) .ed-hero-text{padding-block:56px 64px}body:is(.home-page,.editorial-site) .ed-hero-text .ed-intro{max-width:680px}body:is(.home-page,.editorial-site) .menu-sections{gap:14px}}
 @media(max-width:760px){
  body:is(.home-page,.editorial-site) .product-options{padding:20px}
@@ -137,3 +137,24 @@ body:is(.home-page,.editorial-site) .selection-dialog{border:0;border-radius:28p
  body:is(.home-page,.editorial-site) .selection-dialog{border-radius:24px 24px 0 0}
 }
 @media(prefers-reduced-motion:reduce){body:is(.home-page,.editorial-site) .ed-link-card{transition:none;transform:none}}
+
+/* Shared detail and interaction roles across every page family. */
+body:is(.home-page,.editorial-site) :is(.button,.ed-button){border:1px solid transparent;transition:background 180ms var(--ease-out),transform 180ms var(--ease-out)}
+body:is(.home-page,.editorial-site) :is(.button,.ed-button):hover{background:var(--action-hover);color:var(--paper)}
+body:is(.home-page,.editorial-site) .ed-eyebrow{color:var(--accent);font-weight:500;letter-spacing:.12em}
+body:is(.home-page,.editorial-site) :is(.variant-switch,.product-options-sizes){border-radius:16px;background:var(--soft);padding:4px;gap:4px}
+body:is(.home-page,.editorial-site) .variant-switch span{border-radius:12px}
+body:is(.home-page,.editorial-site) .product-options-sizes label span{border:0;border-radius:12px}
+body:is(.home-page,.editorial-site) .product-menu-back{color:var(--accent)}
+body:is(.home-page,.editorial-site) .blog-feature .ed-eyebrow{font-size:11px}
+body:is(.home-page,.editorial-site) .blog-feature-image{overflow:hidden}
+body:is(.home-page,.editorial-site) .blog-topics{gap:8px;padding-block:16px}
+body:is(.home-page,.editorial-site) .blog-topics a{min-height:44px;padding:12px 16px;border-radius:var(--radius-control);background:var(--soft)}
+body:is(.home-page,.editorial-site) .blog-topics a:hover{background:var(--accent-soft);color:var(--accent)}
+body:is(.home-page,.editorial-site) .ed-link-card{border:1px solid var(--line);background:var(--paper)}
+body:is(.home-page,.editorial-site) .ed-link-card:hover{background:var(--soft)}
+body:is(.home-page,.editorial-site) :is(.site-footer,.ed-footer){margin-top:48px}
+body:is(.home-page,.editorial-site) :is(.site-footer,.ed-footer) nav a{display:inline-flex;align-items:center;min-height:44px;font-size:13px}
+body:is(.home-page,.editorial-site) :is(input,select,textarea){accent-color:var(--accent)}
+body:is(.home-page,.editorial-site) :is(button,a,input,select,textarea,summary):focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){body:is(.home-page,.editorial-site) :is(.button,.ed-button){transition:none;transform:none}}

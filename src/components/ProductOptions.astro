@@ -52,14 +52,14 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
   .product-options-sizes{display:grid;grid-template-columns:repeat(var(--option-count),minmax(0,1fr));gap:8px}
   label{position:relative;min-width:0;cursor:pointer}
   input{position:absolute;opacity:0;width:1px;height:1px}
-  label span{display:flex;align-items:center;justify-content:center;height:100%;min-height:48px;padding:10px 12px;border:1px solid var(--ed-line);border-radius:26px;font-size:13px;line-height:1.4;text-align:center;transition:background .15s,border-color .15s,color .15s}
+  label span{display:flex;align-items:center;justify-content:center;height:100%;min-height:var(--control-height);padding:10px 12px;border:1px solid var(--ed-line);border-radius:var(--radius-control);font-size:13px;line-height:1.4;text-align:center;transition:background .15s,border-color .15s,color .15s}
   input:checked+span{border-color:var(--action);background:var(--action);color:white;font-weight:600}
   input:focus-visible+span{outline:2px solid var(--focus);outline-offset:3px}
   .product-options-bottom{display:grid;grid-template-columns:minmax(0,1fr) 160px;align-items:center;gap:16px;margin-top:20px}
   .product-options-price{margin:0;min-width:0}
   strong{display:block;font-family:var(--ed-sans);font-size:32px;line-height:1.15;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.035em;white-space:nowrap}
   small{display:block;font-size:11px;color:var(--ed-muted);line-height:1.5;margin-top:5px}
-  .product-options-bottom .ed-button{width:100%;min-height:48px;gap:14px;justify-content:center;padding:14px 18px;font-weight:600}
+  .product-options-bottom .ed-button{width:100%;min-height:var(--control-height);gap:14px;justify-content:center;padding:14px 18px;font-weight:600}
   .product-options-note{font-size:12px;line-height:1.7;color:var(--ed-muted);margin-top:15px;max-width:52ch}
   .product-menu-back{display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:1.5;text-underline-offset:4px}
   .product-delivery{margin-top:12px;border-top:1px solid var(--ed-line);padding-top:8px;font-size:12px;line-height:1.6}

@@ -16,10 +16,10 @@ const { eyebrow, title, intro } = Astro.props;
 <style>
   .product-hero{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto 1fr;grid-template-areas:'art copy' 'art actions';column-gap:40px;align-items:start;padding-block:32px 56px}
   .product-hero-copy{grid-area:copy;min-width:0}
-  .product-hero h1{font:500 clamp(34px,3.6vw,48px)/1.12 var(--ed-serif);letter-spacing:-.035em;text-wrap:pretty;overflow-wrap:anywhere;margin-top:12px}
+  .product-hero h1{font:500 clamp(34px,3.9vw,52px)/1.1 var(--ed-serif);letter-spacing:-.035em;text-wrap:pretty;overflow-wrap:anywhere;margin-top:12px}
   .product-hero-intro{font-size:15px;line-height:1.75;color:var(--ed-muted);margin-top:18px;max-width:58ch}
   .product-hero-art{grid-area:art;width:100%;max-width:520px;min-width:0;justify-self:center}
-  .product-hero-frame{padding:18px;border:0;border-radius:28px;background:var(--surface-oat)}
+  .product-hero-frame{padding:18px;border:0;border-radius:var(--radius-card);background:var(--surface-oat)}
   .product-hero-frame :global(.product-visual),.product-hero-frame :global(.product-artwork){width:100%;aspect-ratio:1;border-radius:20px}
   .product-hero-actions{grid-area:actions;min-width:0;padding-top:24px}
   @media(max-width:1000px){.product-hero{column-gap:28px}.product-hero h1{font-size:36px}}

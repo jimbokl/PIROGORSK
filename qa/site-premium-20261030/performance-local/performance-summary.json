@@ -1,0 +1,523 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-30T11:58:47.736Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 121,
+      "lcp": 138
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 58.534,
+      "resourceLoadDelay": 43.57,
+      "resourceLoadDuration": 19.735,
+      "elementRenderDelay": 16.415
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1229.9172,
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1904.9171999999999,
+        "display": "1.9 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.01853941380819552,
+        "display": "0.019"
+      },
+      "speed-index": {
+        "value": 1229.9172,
+        "display": "1.2 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 26 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-5-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,3,SECTION,1,NAV,0,A,0,SPAN,0,DIV,1,PICTURE,1,IMG",
+              "selector": "span.department-art > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 1073,
+                "bottom": 1201,
+                "left": 26,
+                "right": 176,
+                "width": 150,
+                "height": 128
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/catalog-art/p39-497-400.avif\" srcset=\"/catalog-art/p39-497-256.webp 256w, /catalog-art/p39-497-400.webp 400w, /c…\" sizes=\"(max-width: 650px) 170px, 280px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "span.department-art > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4322/catalog-art/p39-497-400.avif",
+            "totalBytes": 20023,
+            "wastedBytes": 13744,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (400x400) for its displayed dimensions (224x224). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 13744
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-6-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,2,DIV,1,DIV,0,DIV,0,PICTURE,2,IMG",
+              "selector": "div.tasting-art > div.tasting-scene > picture > img",
+              "boundingRect": {
+                "top": 486,
+                "bottom": 734,
+                "left": 20,
+                "right": 392,
+                "width": 372,
+                "height": 248
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/hero-fish-scene.DhPqnTxT_FLprt.avif\" srcset=\"/_astro/hero-fish-scene.DhPqnTxT_55vUS.webp 320w, /_astro/hero-fish-scene.…\" sizes=\"(max-width: 760px) 90vw, (max-width: 1200px) 42vw, 540px\" alt=\"Рыбный пирог с открытой начинкой на керамическом блюде\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"900\" height=\"600\">",
+              "nodeLabel": "Рыбный пирог с открытой начинкой на керамическом блюде"
+            },
+            "url": "http://127.0.0.1:4322/_astro/hero-fish-scene.DhPqnTxT_FLprt.avif",
+            "totalBytes": 37665,
+            "wastedBytes": 12693,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (800x533) for its displayed dimensions (651x434). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 12693
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery",
+        "items": [
+          {
+            "type": "checklist",
+            "items": {
+              "priorityHinted": {
+                "label": "fetchpriority=high should be applied",
+                "value": false
+              },
+              "requestDiscoverable": {
+                "label": "Request is discoverable in initial document",
+                "value": true
+              },
+              "eagerlyLoaded": {
+                "label": "LCP resources should not use loading=lazy",
+                "value": false
+              }
+            }
+          },
+          {
+            "type": "node",
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+            "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+            "boundingRect": {
+              "top": 428,
+              "bottom": 862,
+              "left": -10,
+              "right": 422,
+              "width": 432,
+              "height": 434
+            },
+            "snippet": "<img src=\"http://127.0.0.1:4322/_astro/background.CF7ZZ9Af_285HE2.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"lazy\" fetchpriority=\"low\" decoding=\"async\" width=\"1536\" height=\"1024\">",
+            "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "4085FF4F850CE2041BF942591464ABB2": {
+                  "url": "http://127.0.0.1:4322/",
+                  "navStartToEndTime": 104,
+                  "transferSize": 45844,
+                  "isLongest": true,
+                  "children": {
+                    "95902.8": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+                      "navStartToEndTime": 107,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "95902.77": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.aMArJC5-.js",
+                          "navStartToEndTime": 155,
+                          "transferSize": 13602,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "95902.9": {
+                      "url": "http://127.0.0.1:4322/_astro/index.astro_astro_type_script_index_0_lang.JNpce-RW.js",
+                      "navStartToEndTime": 107,
+                      "transferSize": 5549,
+                      "children": {
+                        "95902.80": {
+                          "url": "http://127.0.0.1:4322/_astro/selection-offers.7u71x7WM.js",
+                          "navStartToEndTime": 155,
+                          "transferSize": 937,
+                          "children": {}
+                        },
+                        "95902.79": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 155,
+                          "transferSize": 1121,
+                          "children": {}
+                        },
+                        "95902.78": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 152,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "95902.4": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 106,
+                      "transferSize": 357,
+                      "children": {
+                        "95902.76": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 141,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "95902.60": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 141,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "95902.63": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 141,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "95902.61": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 141,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "95902.62": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 141,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "95902.7": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.CeIliwuy.js",
+                      "navStartToEndTime": 121,
+                      "transferSize": 4059,
+                      "children": {}
+                    },
+                    "95902.5": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 106,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 155
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-30T11:58:54.346Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 61,
+      "lcp": 84
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 9.327,
+      "resourceLoadDelay": 37.667,
+      "resourceLoadDuration": 17.192,
+      "elementRenderDelay": 19.924
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 348.3932,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 518.483,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.00304330743075621,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 348.3932,
+        "display": "0.3 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 11 KiB",
+        "items": [
+          {
+            "url": ".selection-addons[data-astro-cid-5ksqn4x5]{border-bottom:1px solid var(--line);padding-block:22px} …",
+            "wastedBytes": 11136,
+            "wastedPercent": 65.78193925037537,
+            "totalBytes": 16928
+          }
+        ]
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery",
+        "items": [
+          {
+            "type": "checklist",
+            "items": {
+              "priorityHinted": {
+                "label": "fetchpriority=high should be applied",
+                "value": false
+              },
+              "requestDiscoverable": {
+                "label": "Request is discoverable in initial document",
+                "value": true
+              },
+              "eagerlyLoaded": {
+                "label": "LCP resources should not use loading=lazy",
+                "value": false
+              }
+            }
+          },
+          {
+            "type": "node",
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,0,DIV,0,PICTURE,2,IMG",
+            "selector": "section.tasting-hero > div.tasting-coast > picture > img",
+            "boundingRect": {
+              "top": 172,
+              "bottom": 860,
+              "left": 11,
+              "right": 1339,
+              "width": 1329,
+              "height": 688
+            },
+            "snippet": "<img src=\"http://127.0.0.1:4322/_astro/background.CF7ZZ9Af_Z21m32J.avif\" srcset=\"/_astro/background.CF7ZZ9Af_2w16Xi.webp 480w, /_astro/background.CF7ZZ9Af_…\" sizes=\"(max-width: 600px) 100vw, 95vw\" alt=\"\" loading=\"lazy\" fetchpriority=\"low\" decoding=\"async\" width=\"1536\" height=\"1024\">",
+            "nodeLabel": "section.tasting-hero > div.tasting-coast > picture > img"
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "D1C3E1EC06E552E4F74535DE02D9EA79": {
+                  "url": "http://127.0.0.1:4322/",
+                  "navStartToEndTime": 18,
+                  "transferSize": 45844,
+                  "isLongest": true,
+                  "children": {
+                    "95949.51": {
+                      "url": "http://127.0.0.1:4322/_astro/index.astro_astro_type_script_index_0_lang.JNpce-RW.js",
+                      "navStartToEndTime": 49,
+                      "transferSize": 5549,
+                      "isLongest": true,
+                      "children": {
+                        "95949.83": {
+                          "url": "http://127.0.0.1:4322/_astro/selection-offers.7u71x7WM.js",
+                          "navStartToEndTime": 85,
+                          "transferSize": 937,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "95949.82": {
+                          "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 84,
+                          "transferSize": 1121,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "95949.50": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+                      "navStartToEndTime": 49,
+                      "transferSize": 351,
+                      "children": {
+                        "95949.80": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.aMArJC5-.js",
+                          "navStartToEndTime": 82,
+                          "transferSize": 13602,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "95949.49": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.CeIliwuy.js",
+                      "navStartToEndTime": 49,
+                      "transferSize": 4059,
+                      "children": {
+                        "95949.81": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 79,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "95949.54": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 68,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "95949.53": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 68,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "95949.55": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 68,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "95949.52": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 68,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "95949.9": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 49,
+                      "transferSize": 357,
+                      "children": {
+                        "95949.79": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 67,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "95949.18": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 49,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 85
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -42,8 +42,8 @@ const countLabel = new Intl.PluralRules('ru').select(count) === 'one' ? 'поз�
 .departments-all{display:inline-flex;align-items:center;gap:10px;min-height:48px;font-size:13px;font-weight:500;text-decoration:none}
 .departments-all :global(svg){width:17px;height:17px}
 .departments-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
-.department-card{position:relative;display:block;min-width:0;overflow:hidden;border:0;border-radius:22px;background:var(--surface-oat);color:var(--ink);text-decoration:none;transition:transform .25s var(--ease-out),background .25s}
-.department-card--sea{background:var(--surface-sage)}.department-card--berry{background:var(--surface-berry)}
+.department-card{position:relative;display:block;min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-card);background:var(--soft);color:var(--ink);text-decoration:none;transition:transform .25s var(--ease-out),background .25s}
+.department-card--sea,.department-card--berry{background:var(--soft)}
 .department-art{display:block;height:184px;padding:10px 24px 0}
 .department-art :global(:is(.product-artwork,.product-visual)){height:100%;width:100%;aspect-ratio:auto;background:transparent;isolation:auto;overflow:visible}
 .department-art :global(.product-backdrop),.department-art :global(.product-visual-background),.department-art :global(.product-visual-badge){display:none}

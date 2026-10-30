@@ -11,24 +11,24 @@
 .masthead-city small{font-size:10px;font-weight:400;color:var(--muted)}
 .masthead-city>.icon:first-child{width:19px;height:19px}
 .masthead-city>.icon:last-child{width:12px;height:12px;margin-left:2px}
-.masthead-catalog{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:52px;padding:14px 22px;border-radius:16px;background:#efc77a;font:600 13px/1.4 var(--sans);text-decoration:none;white-space:nowrap}
+.masthead-catalog{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:52px;padding:14px 22px;border-radius:var(--radius-control);background:var(--action);color:var(--paper);font:600 13px/1.4 var(--sans);text-decoration:none;white-space:nowrap}
 .masthead-catalog .icon{width:18px;height:18px}
 .masthead-selection{background:var(--navy);color:var(--paper)}
-.masthead-count{position:absolute;right:-5px;top:-5px;min-width:21px;height:21px;display:grid;place-items:center;padding-inline:4px;border:2px solid var(--paper);border-radius:20px;background:#efc77a;color:var(--navy);font:600 10px/1 var(--sans)}
+.masthead-count{position:absolute;right:-5px;top:-5px;min-width:21px;height:21px;display:grid;place-items:center;padding-inline:4px;border:2px solid var(--paper);border-radius:20px;background:var(--accent-soft);color:var(--navy);font:600 10px/1 var(--sans)}
 .masthead-count[hidden]{display:none}
 .masthead-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:55px;border-block:1px solid var(--line)}
 .masthead-bottom>.site-navigation{gap:clamp(22px,2.8vw,40px);margin:0;padding:0;overflow:visible;width:auto}
 .masthead-bottom .site-navigation a{min-height:54px;font-size:13px;font-weight:500}
 .masthead-bottom .site-navigation a::after{bottom:9px;background:var(--navy);height:1px}
 .masthead-status{display:inline-flex;align-items:center;gap:7px;font:400 11px/1.4 var(--sans);color:var(--muted);white-space:nowrap;text-decoration:none}
-.masthead-status>span{display:block;width:6px;height:6px;border-radius:50%;background:#8c9c7e}
+.masthead-status>span{display:block;width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .masthead-city--mobile{display:none}
 .masthead :is(a,button):focus-visible,.masthead-dialog :is(a,button):focus-visible{outline:3px solid var(--focus);outline-offset:4px}
-.masthead-square:hover{background:#e6e7df;transform:translateY(-1px)}
-.masthead-selection:hover{background:var(--navy-deep)}
-.masthead-catalog:hover{background:#e9bc65}
+.masthead-square:hover{background:var(--control-hover);transform:translateY(-1px)}
+.masthead-selection:hover{background:var(--action-hover)}
+.masthead-catalog:hover{background:var(--action-hover)}
 .masthead-dialog{box-sizing:border-box;color:var(--navy);background:var(--paper);border:0;font-family:var(--sans);padding:32px;width:min(440px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow-y:auto;border-radius:28px}
-.masthead-dialog::backdrop{background:#092c3966}
+.masthead-dialog::backdrop{background:var(--backdrop)}
 html:has(.masthead-dialog[open]){overflow:hidden}
 .masthead-drawer{margin:16px auto 16px max(16px,calc((100vw - var(--page-width))/2));min-height:calc(100dvh - 32px)}
 .masthead-dialog-top{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;line-height:1.6;color:var(--muted)}
@@ -46,7 +46,7 @@ html:has(.masthead-dialog[open]){overflow:hidden}
 .masthead-city-dialog h2{margin-top:24px;margin-bottom:8px}
 .masthead-cities{display:grid;gap:10px;margin-top:24px}
 .masthead-cities button{display:flex;align-items:center;gap:12px;min-height:60px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:transparent;color:var(--navy);font:500 14px/1.4 var(--sans);text-align:left;cursor:pointer}
-.masthead-cities button[aria-pressed=true]{background:var(--surface-sage);border-color:var(--navy)}
+.masthead-cities button[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent)}
 .masthead-cities button>.icon:last-child{margin-left:auto;opacity:0;width:18px;height:18px}
 .masthead-cities button[aria-pressed=true]>.icon:last-child{opacity:1}
 @media(max-width:1100px){.masthead-start,.masthead-end{gap:14px}.masthead-catalog{display:none}.masthead-bottom>.site-navigation{gap:24px}.masthead-bottom .site-navigation a{font-size:12px}.masthead-bottom>.masthead-status{display:none}}

@@ -1,11 +1,5 @@
 /* White porcelain, midnight ink and one clear Baltic blue. */
-body.delivery-page{--navy:#14263d;--navy-deep:#0c1b2e;--paper:#fff;--ink:var(--navy);--muted:#586779;--line:#e1e6ed;--surface-oat:#f3f6fa;--paper-raised:#fff;--ed-paper:var(--paper);--ed-ink:var(--ink);--ed-muted:var(--muted);--ed-line:var(--line);--delivery-blue:#2656b8;--focus:#2656b8;background:var(--paper);color:var(--ink)}
-.delivery-page .masthead-catalog{background:var(--navy);color:white}
-.delivery-page .masthead-catalog:hover{background:var(--delivery-blue)}
-.delivery-page .masthead-square:not(.masthead-selection):hover{background:#e7edf6}
-.delivery-page .masthead-count{background:#dce8ff;color:var(--navy)}
-.delivery-page .masthead-status>span{background:var(--delivery-blue)}
-.delivery-page .site-navigation--drawer a[aria-current]{color:var(--delivery-blue)}
+body.delivery-page{--delivery-blue:var(--accent)}
 .delivery-page .ed-breadcrumbs{padding-top:18px}
 .delivery-page :is(.delivery-hero,.delivery-cities,.delivery-principle,.delivery-steps,.delivery-faq,.delivery-finale){min-width:0}
 .delivery-page .delivery-kicker{display:flex;align-items:center;gap:9px;font:500 10px/1.6 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--delivery-blue)}

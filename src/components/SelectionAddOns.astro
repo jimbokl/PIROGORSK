@@ -44,19 +44,19 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
 </section>
 <style>
   .selection-addons{padding-block:22px;border-bottom:1px solid var(--line)}
-  .selection-addons .addons-heading{font:600 25px/1.2 var(--serif);letter-spacing:-.025em;margin:0}
+  .selection-addons .addons-heading{font:500 25px/1.2 var(--serif);letter-spacing:-.025em;margin:0}
   .selection-addons>p{font-size:12px;color:var(--muted);margin:8px 0 16px;line-height:1.6}
   .addon-card{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;padding:16px 0;border-top:1px solid var(--line)}
   .addon-card[hidden]{display:none}
-  .addon-art{align-self:start;border-radius:12px;overflow:hidden;background:var(--paper-raised)}
+  .addon-art{align-self:start;border-radius:var(--radius-control);overflow:hidden;background:var(--paper-raised)}
   .addon-art :global(.product-visual-badge){display:none}
   .addon-art :global(.product-visual){width:100%;height:auto;aspect-ratio:1;margin:0!important}
-  .addon-body{min-width:0}.addon-body .addon-title{font:600 18px/1.3 var(--serif);margin:0}
+  .addon-body{min-width:0}.addon-body .addon-title{font:500 18px/1.3 var(--serif);margin:0}
   .addon-body p{font:400 12px/1.6 var(--sans);color:var(--muted);margin:5px 0 10px}
   .addon-label{display:block;font-size:11px;margin-bottom:5px;color:var(--muted)}
   .addon-controls{display:grid;gap:8px;grid-template-columns:minmax(0,1fr) auto;align-items:center}
-  .addon-controls select{min-width:0;width:100%;min-height:48px;padding:10px 24px 10px 10px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--navy);font:400 12px/1.5 var(--sans)}
-  .addon-controls .addon-add{padding:10px 14px;min-height:48px;font-size:12px}
+  .addon-controls select{min-width:0;width:100%;min-height:var(--control-height);padding:10px 24px 10px 10px;border:1px solid var(--line);border-radius:var(--radius-control);background:var(--paper);color:var(--navy);font:400 12px/1.5 var(--sans)}
+  .addon-controls .addon-add{padding:10px 14px;min-height:var(--control-height);font-size:12px}
   .addon-controls :is(select,button):focus-visible{outline:3px solid var(--focus);outline-offset:3px}
   @media(max-width:600px){.addon-card{grid-template-columns:56px minmax(0,1fr);gap:10px}.addon-controls{grid-template-columns:minmax(0,1fr)}.addon-add{width:100%}.addon-body .addon-title{font-size:18px}}
   .product-addons{padding-block:32px;margin-bottom:40px;border-block:1px solid var(--line)}
@@ -66,7 +66,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
   .product-addons .addon-card{grid-template-columns:76px minmax(0,1fr);gap:14px;padding:20px 16px 14px;border:1px solid var(--line);border-radius:20px;background:var(--paper-raised)}
   .product-addons .addon-body{display:flex;flex-direction:column}
   .product-addons .addon-body>p:not(.addon-saved){min-height:58px;font-size:12px}
-  .product-addons .addon-title{min-height:48px;font-size:20px;line-height:1.2}
+  .product-addons .addon-title{min-height:var(--control-height);font-size:20px;line-height:1.2}
   .product-addons .addon-controls{grid-template-columns:minmax(0,1fr);margin-top:auto}
   .product-addons .addon-add{width:100%;border:0;font-family:var(--sans);cursor:pointer;justify-content:center}
   .product-addons .addon-saved{min-height:20px;margin:8px 0 0;font-size:11px}
@@ -74,7 +74,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
   .addons-footer p{font-size:12px;line-height:1.6;color:var(--muted)}
   .addons-feedback{min-height:22px;margin-top:6px}
   .addons-footer>a{flex-shrink:0}
-  @media(max-width:1100px){.product-addons .addon-card{grid-template-columns:1fr}.product-addons .addon-art{width:76px}.product-addons .addon-title{min-height:48px}}
+  @media(max-width:1100px){.product-addons .addon-card{grid-template-columns:1fr}.product-addons .addon-art{width:76px}.product-addons .addon-title{min-height:var(--control-height)}}
   @media(max-width:700px){.product-addons .addons-grid{grid-template-columns:1fr;gap:12px}.product-addons .addon-card{grid-template-columns:76px minmax(0,1fr);padding:18px 14px}.product-addons .addon-title{min-height:0}.product-addons .addon-body>p:not(.addon-saved){min-height:0}.addons-footer{align-items:stretch;flex-direction:column;gap:10px}.addons-footer>a{width:100%}}
   @media(max-width:600px){.product-addons .addon-card{grid-template-columns:56px minmax(0,1fr);gap:10px}.product-addons .addon-art{width:56px}}
 </style>
