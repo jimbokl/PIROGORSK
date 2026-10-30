@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-10-30T12:03:04.111Z",
+  "production": false,
+  "baseline": false,
+  "results": [
+    {
+      "path": "/menu/",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://pirogorsk.ru/menu/",
+      "background": "rgba(0, 0, 0, 0)",
+      "ink": "#14263d",
+      "violations": []
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://pirogorsk.ru/menu/",
+      "background": "rgba(0, 0, 0, 0)",
+      "ink": "#14263d",
+      "violations": []
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://pirogorsk.ru/menu/",
+      "background": "rgba(0, 0, 0, 0)",
+      "ink": "#14263d",
+      "violations": []
+    },
+    {
+      "path": "/menu/",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://pirogorsk.ru/menu/",
+      "background": "rgba(0, 0, 0, 0)",
+      "ink": "#14263d",
+      "violations": []
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://pirogorsk.ru/menu/",
+      "background": "rgba(0, 0, 0, 0)",
+      "ink": "#14263d",
+      "violations": []
+    }
+  ],
+  "flows": [
+    {
+      "width": 320,
+      "feed": true,
+      "navigation": true,
+      "city": true,
+      "focusReturn": true
+    },
+    {
+      "width": 390,
+      "feed": true,
+      "navigation": true,
+      "city": true,
+      "focusReturn": true
+    },
+    {
+      "width": 768,
+      "feed": true,
+      "navigation": true,
+      "city": true,
+      "focusReturn": true
+    },
+    {
+      "width": 1024,
+      "feed": true,
+      "navigation": true,
+      "city": true,
+      "focusReturn": true
+    },
+    {
+      "width": 1280,
+      "feed": true,
+      "navigation": true,
+      "city": true,
+      "focusReturn": true
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

@@ -3,7 +3,7 @@ import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {resolve,extname,sep} from 'node:path';
 import {launch} from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
-const baseline=process.argv.includes('--baseline'), production=baseline||process.argv.includes('--production');
+const baseline=process.argv.includes('--baseline'), production=baseline||process.argv.includes('--production'), headerOnly=process.argv.includes('--header-only');
 const origin='https://pirogorsk.ru',site=resolve('site');
 const output=resolve('qa/site-premium-20261030',baseline?'baseline':production?'production':'local');
 const types={'.html':'text/html','.js':'application/javascript','.css':'text/css','.json':'application/json','.woff2':'font/woff2','.avif':'image/avif','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.ico':'image/x-icon','.jpg':'image/jpeg'};
@@ -52,20 +52,31 @@ async function visit(page,path,width){
 try{
  for(const width of baseline?[390,768,1280]:[320,390,768,1024,1280]){
   const {context,page}=await pageFor(width);
-  for(const path of baseline?paths.slice(0,6):paths)await visit(page,path,width);
+  for(const path of headerOnly?[]:baseline?paths.slice(0,6):paths)await visit(page,path,width);
   if(!baseline){
    await visit(page,'/menu/',width);
    await page.screenshot({path:`${output}/menu-start-${width}.jpg`,type:'jpeg',quality:85});
    const row=await page.$('.menu-feed-item');assert.ok(row,'Menu feed exists');
    await row.scrollIntoView();
    await page.screenshot({path:`${output}/menu-feed-${width}.jpg`,type:'jpeg',quality:85});
-   flows.push({width,feed:true});
+   await page.evaluate(()=>scrollTo(0,0));
+   await page.click('[data-menu-open]');
+   assert.equal(await page.$eval('#site-menu-dialog',el=>el.open&&el.contains(document.activeElement)),true);
+   await page.screenshot({path:`${output}/navigation-${width}.jpg`,type:'jpeg',quality:85});
+   await page.keyboard.press('Escape');
+   assert.equal(await page.$eval('[data-menu-open]',el=>document.activeElement===el),true);
+   const citySelector=width<=1000?'.masthead-city--mobile':'.masthead-city--desktop';
+   await page.click(citySelector);
+   await page.click('#city-dialog [data-select-city="Калининград"]');
+   assert.equal(await page.evaluate(()=>localStorage.getItem('pirogorsk-city')),'Калининград');
+   assert.equal(await page.$eval(citySelector,el=>document.activeElement===el),true);
+   flows.push({width,feed:true,navigation:true,city:true,focusReturn:true});
   }
   await context.close();
  }
  assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
  console.log(`${baseline?'BASELINE':production?'PRODUCTION':'LOCAL'} PASS: ${results.length} page/viewport checks, no overflow, JS/HTTP errors${baseline?'':', or automated WCAG A/AA violations'}.`);
 }finally{
- await writeFile(`${output}/results.json`,JSON.stringify({checkedAt:new Date().toISOString(),production,baseline,results,flows,errors,failed},null,2)+'\n');
+ await writeFile(`${output}/${headerOnly?'header-results':'results'}.json`,JSON.stringify({checkedAt:new Date().toISOString(),production,baseline,results,flows,errors,failed},null,2)+'\n');
  await browser.close();await chrome.kill();
 }

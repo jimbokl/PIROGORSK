@@ -31,10 +31,34 @@
 - Семь SEO/artwork/product/city validators и shared registry `check --strict` — PASS.
 - `audit.mjs`: 50 сочетаний страниц и ширин 320/390/768/1024/1280, без overflow, JS/HTTP errors и автоматических WCAG A/AA violations. Проверены главная, меню, два типа товарных страниц, блог, статья, доставка, город и калькулятор.
 - `flows.mjs`: 390/768/1024, количество/клавиатура/форматы/точные суммы/город/перезагрузка/storage errors/дополнения/передача в форму — PASS; без реальных отправок.
+- Навигация шапки и выбор города: 320/390/768/1024/1280 — PASS, включая закрытие Escape и возврат фокуса.
 - Просмотрены загруженные разделы на скриншотах телефона и планшета; их файлы в `local/`.
 - Lighthouse CLI local, один cold sample на режим: mobile99/LCP1905ms, desktop100/518ms, A/BP/SEO100; CLS0.019/0.003. Это локальный lab, не публичный PSI.
 - Локальный системный DNS вернул ENOTFOUND для workers.dev; Google DoH разрешил адрес, фактический `/health` получен curl с `--resolve`, API/catalog/storage совпали с manifest. Результат и DNS сохранены отдельно.
 
 ## Публикация
 
-Ожидает CI и независимой проверки production после push.
+Runtime **`8b98a3d6b88cd74e2d88e9e914e47c54e05d2e42`**. [CI41052127566 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41052127566), включая стандартные проверки совместимости Pages/Worker до и после развёртывания. Локальная проблема DNS не повторилась в CI.
+
+- Независимая сверка с выгруженным GitHub Actions Pages artifact: все 255 ресурсов HTTP200 и побайтово совпадают. Включены все 217 HTML и 153 товарные страницы, общие JS/CSS, шрифты и responsive hero assets. [Результат](publication.json).
+- Production responsive QA: 50 сочетаний страниц/ширин320/390/768/1024/1280 PASS, без overflow, JS/HTTP errors и автоматических WCAG A/AA violations. Навигация/Escape/город/возврат фокуса PASS на пяти ширинах. [Результат](production/results.json).
+- Количество/форматы/точные суммы/доставка/дополнения/сохранение/передача в форму PASS на390/768/1024. Без реальных отправок. [Результат](flows-production/results.json).
+- Проверка выполнена в отдельном headless Chrome с responsive/touch эмуляцией; внешний Chrome пользователя не использовался.
+- IndexNow: 212 URL приняты обоими получателями HTTP200; это подтверждение приёма уведомления, не индексации. [Отчёт](indexnow/report.json).
+
+Визуально проверены загруженные страницы и разделы. Сохранённые примеры с production: [главная · телефон](production/home-390.jpg), [меню · планшет](production/menu-feed-1024.jpg), [товар · телефон](production/catalog-osetinskiy-pirog-s-kuritsey-i-syrom-390.jpg), [блог · планшет](production/blog-768.jpg).
+
+## Скорость production
+
+Публичный PageSpeed Insights mobile и desktop вернул «Не удалось перейти по адресу https://pirogorsk.ru/». Полные ответы и скриншоты сохранены; этот результат не подменён данными CLI. [Попытки](public-psi.json).
+
+Lighthouse CLI опубликованной главной, Chrome156: три холодных mobile samples и один desktop, каждый в новом процессе/profile, после завершения остальных браузерных проверок.
+
+- Mobile performance99/100/100; LCP1817/1595/1295ms, медиана1595ms, CLS0.015–0.016.
+- Desktop performance100, LCP563ms, CLS0.003.
+- Accessibility/SEO100 во всех запусках. Best Practices77: сторонние cookie и Chrome Issues от Метрики; тот же результат был у production до изменений.
+- До изменений: один cold mobile sample99/LCP1871ms/CLS0.015; desktop100/LCP521ms. Нового ухудшения mobile LCP в этой серии не выявлено. Это лабораторные замеры, не полевые данные или публичный PSI.
+
+[Сокращённое свидетельство замеров](performance-evidence.json), [диапазоны](performance-production/performance-ranges.json). Полные Lighthouse JSON/HTML сохранены локально в `performance-production/`.
+
+Спринт опубликован и проверен. По визуальному объёму и функциональной регрессии открытых пунктов нет; публичный PSI в этой попытке не выдал отчёт.

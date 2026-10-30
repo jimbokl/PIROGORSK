@@ -2,7 +2,9 @@
 
 Общие токены опубликованной доставки распространены на главную, меню, товары, блог/статьи, шапку, подвал, формы и калькулятор. Кнопки54px/радиус14px, единые карточки, варианты, фоны и состояния. Меню компактнее, изображения и заголовки согласованы; ассортимент/цены/SEO/предзапусковая модель сохранены.
 
-Локальные check/build217HTML/41Node/Worker/API/SQLite/полный browser QA/семь validators/strict registry PASS. UI: 50 сочетаний страниц/ширин320/390/768/1024/1280 без overflow, JS/HTTP errors и автоматических WCAG A/AA violations. Дополнительно количество/дополнения/город/суммы/передача в форму390/768/1024 PASS. Публикация и production verification в процессе. [Протокол](qa/site-premium-20261030/README.md).
+Локальные check/build217HTML/41Node/Worker/API/SQLite/полный browser QA/семь validators/strict registry PASS. Runtime **`8b98a3d6b88cd74e2d88e9e914e47c54e05d2e42`**, [CI41052127566 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41052127566), обе стандартные проверки Pages/Worker PASS. Production: все255 ресурсов HTTP200 и совпали с CI artifact, включая217 HTML и153 товара. Responsive/touch эмуляция: 50 сочетаний страниц/ширин320/390/768/1024/1280 без overflow, JS/HTTP errors и автоматических WCAG A/AA violations. Меню/Escape/город/фокус на пяти ширинах, количество/дополнения/суммы/передача в форму390/768/1024 PASS. Визуально просмотрены production-скриншоты телефона и планшета.
+
+Production Lighthouse CLI: mobile99/100/100, LCP1817/1595/1295мс (медиана1595мс), desktop100/LCP563мс, CLS0.015–0.016/0.003, A/SEO100. Best Practices77 из-за сторонних cookie/Issues Метрики, как до изменений. Публичный PSI mobile/desktop «Не удалось перейти по адресу», отчёт не выдал; CLI указан отдельно. IndexNow212 URL приняты обоими получателями HTTP200. Визуальный спринт завершён, изменения опубликованы и проверены. [Протокол](qa/site-premium-20261030/README.md).
 
 ## Полировка доставки и подписей — 30.10.2026
 
