@@ -109,17 +109,20 @@ try {
       if (id !== 'pies') await page.click(`[data-tasting-select="${id}"]`);
       await selected(page, id); await inspect(page, width, id, scale);
     }
-    // Touch pointer sequence exercises the production swipe handler.
-    await page.$eval('[data-tasting-hero]', el => {
-      el.dispatchEvent(new PointerEvent('pointerdown', { bubbles:true, pointerType:'touch', clientX:250, clientY:120 }));
-      el.dispatchEvent(new PointerEvent('pointerup', { bubbles:true, pointerType:'touch', clientX:150, clientY:125 }));
-    });
+    // Chrome's touch input exercises browser gesture routing and the swipe handler.
+    const art = await (await page.$('[data-tasting-art]')).boundingBox();
+    const touch = await page.createCDPSession();
+    const point = { x:art.x + art.width - 12, y:art.y + art.height / 2 };
+    await touch.send('Input.dispatchTouchEvent', { type:'touchStart', touchPoints:[point] });
+    for (const dx of [25,50,75,100]) await touch.send('Input.dispatchTouchEvent', { type:'touchMove', touchPoints:[{ x:point.x - dx, y:point.y + 2 }] });
+    await touch.send('Input.dispatchTouchEvent', { type:'touchEnd', touchPoints:[] });
+    await touch.detach();
     await selected(page, 'pies');
     const menu = await page.goto('https://pirogorsk.ru/menu/?qa=1', { waitUntil:'domcontentloaded' });
     assert.equal(menu.status(), 200);
     const cherry = await page.goto('https://pirogorsk.ru/pirogi/pirog-s-vishney/?qa=1', { waitUntil:'domcontentloaded' });
     assert.equal(cherry.status(), 200);
-    flows.push({ width, scale, normalMotion:true, swipeHandler:true, destinations:true });
+    flows.push({ width, scale, normalMotion:true, browserTouchSwipe:true, destinations:true });
     await context.close();
   }
   const { page, context } = await makePage(390, 1, false);
@@ -129,5 +132,5 @@ try {
   await context.close();
   assert.deepEqual(errors, []);
   await writeFile(`${root}/${stage}-results.json`, JSON.stringify({ checkedAt:new Date().toISOString(), stage, errors, flows, results }, null, 2)+'\n');
-  console.log(`PASS: ${results.length} slide/layout checks; phone/tablet Retina, controls, keyboard, swipe handler, destinations, reduced/normal motion, no-JS, no overflow/overlap/JS or HTTP errors (${stage}).`);
+  console.log(`PASS: ${results.length} slide/layout checks; phone/tablet Retina, controls, keyboard, browser touch swipe, destinations, reduced/normal motion, no-JS, no overflow/overlap/JS or HTTP errors (${stage}).`);
 } finally { await browser.close(); await chrome.kill(); }

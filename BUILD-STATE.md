@@ -7,8 +7,19 @@
 на существующую страницу товара. Check/build217HTML/41Node/SEO/product/registry
 strict PASS.27 browser-проверок слайд×экран320–1280 и Retina390@3/768@2 PASS:
 нет перекрытий, overflow, JS/HTTP ошибок; клавиатура, normal/reduced motion,
-synthetic touch handler, no-JS и ссылки PASS. Телефон/планшет просмотрены.
-Сравнение скорости и публикация с CI/prod-проверкой в работе.
+Chrome CDP touch swipe, no-JS и ссылки PASS. Телефон/планшет просмотрены.
+Runtime **`b93272bb83dc35488cd0e27b6961b4cf9e4d4080`**,
+[CI41119062743 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41119062743).
+Production: все267 ресурсов, включая217HTML/33новых изображения/16JS/release.json,
+HTTP200 и побайтово совпадают с независимым CI Pages artifact.27 production
+slide/layout проверок, browser touch swipe, normal/reduced motion/no-JS и ссылки
+PASS; production-снимки телефона/планшета просмотрены. Local Lighthouse до/после:
+mobile95→96/LCP2724→2559ms, desktop100→100/LCP506→509ms. Production Lighthouse
+CLI: mobile98/LCP2346ms/CLS0.006/TBT47ms, desktop99/LCP591ms/CLS0.002/TBT0;
+A/SEO100, BP77 из-за cookies/Issues Метрики. По одному холодному запуску каждого
+режима. Public PSI mobile/desktop не выдал отчёт («Не удалось перейти по адресу
+https://pirogorsk.ru/. Проверьте правильность URL.»); это не CLI-замеры.
+Опубликовано и проверено, открытых пунктов поручения нет.
 [Протокол](qa/pie-city-banners-20261030/README.md).
 
 ## Внедрение выбранного пирогового города — 30.10.2026

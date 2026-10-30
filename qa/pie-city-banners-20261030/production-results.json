@@ -1,0 +1,1532 @@
+{
+  "checkedAt": "2026-10-30T20:06:11.770Z",
+  "stage": "production",
+  "errors": [],
+  "flows": [
+    {
+      "width": 320,
+      "controls": true,
+      "keyboard": true,
+      "companyAnchor": true
+    },
+    {
+      "width": 390,
+      "controls": true,
+      "keyboard": true,
+      "companyAnchor": true
+    },
+    {
+      "width": 600,
+      "controls": true,
+      "keyboard": true,
+      "companyAnchor": true
+    },
+    {
+      "width": 601,
+      "controls": true,
+      "keyboard": true,
+      "companyAnchor": true
+    },
+    {
+      "width": 768,
+      "controls": true,
+      "keyboard": true,
+      "companyAnchor": true
+    },
+    {
+      "width": 1024,
+      "controls": true,
+      "keyboard": true,
+      "companyAnchor": true
+    },
+    {
+      "width": 1280,
+      "controls": true,
+      "keyboard": true,
+      "companyAnchor": true
+    },
+    {
+      "width": 390,
+      "scale": 3,
+      "normalMotion": true,
+      "browserTouchSwipe": true,
+      "destinations": true
+    },
+    {
+      "width": 768,
+      "scale": 2,
+      "normalMotion": true,
+      "browserTouchSwipe": true,
+      "destinations": true
+    },
+    {
+      "noJavascript": {
+        "title": "Пироги к общему столу",
+        "href": "/menu/",
+        "visible": [
+          "pies"
+        ]
+      }
+    }
+  ],
+  "results": [
+    {
+      "width": 320,
+      "scale": 1,
+      "id": "pies",
+      "hero": {
+        "x": 20,
+        "right": 300,
+        "top": 135.359375,
+        "bottom": 343.53125,
+        "width": 280,
+        "height": 208.171875
+      },
+      "title": {
+        "x": 34,
+        "right": 166,
+        "top": 172.359375,
+        "bottom": 251.53125,
+        "width": 132,
+        "height": 79.171875
+      },
+      "cta": {
+        "x": 34,
+        "right": 204,
+        "top": 255.53125,
+        "bottom": 299.53125,
+        "width": 170,
+        "height": 44
+      },
+      "art": {
+        "x": 168.390625,
+        "right": 292,
+        "top": 143.359375,
+        "bottom": 307.53125,
+        "width": 123.609375,
+        "height": 164.171875
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_2eq9oQ.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 745.6875,
+      "motion": 0
+    },
+    {
+      "width": 320,
+      "scale": 1,
+      "id": "company",
+      "hero": {
+        "x": 20,
+        "right": 300,
+        "top": 135.359375,
+        "bottom": 331.359375,
+        "width": 280,
+        "height": 196
+      },
+      "title": {
+        "x": 34,
+        "right": 166,
+        "top": 179.46875,
+        "bottom": 232.25,
+        "width": 132,
+        "height": 52.78125
+      },
+      "cta": {
+        "x": 34,
+        "right": 204,
+        "top": 236.25,
+        "bottom": 280.25,
+        "width": 170,
+        "height": 44
+      },
+      "art": {
+        "x": 168.390625,
+        "right": 292,
+        "top": 143.359375,
+        "bottom": 295.359375,
+        "width": 123.609375,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_ZHTqy7.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 733.515625,
+      "motion": 0
+    },
+    {
+      "width": 320,
+      "scale": 1,
+      "id": "tea",
+      "hero": {
+        "x": 20,
+        "right": 300,
+        "top": 135.359375,
+        "bottom": 331.359375,
+        "width": 280,
+        "height": 196
+      },
+      "title": {
+        "x": 34,
+        "right": 166,
+        "top": 179.46875,
+        "bottom": 232.25,
+        "width": 132,
+        "height": 52.78125
+      },
+      "cta": {
+        "x": 34,
+        "right": 204,
+        "top": 236.25,
+        "bottom": 280.25,
+        "width": 170,
+        "height": 44
+      },
+      "art": {
+        "x": 168.390625,
+        "right": 292,
+        "top": 143.359375,
+        "bottom": 295.359375,
+        "width": 123.609375,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_2aNum2.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 733.515625,
+      "motion": 0
+    },
+    {
+      "width": 390,
+      "scale": 1,
+      "id": "pies",
+      "hero": {
+        "x": 20,
+        "right": 370,
+        "top": 152.625,
+        "bottom": 348.625,
+        "width": 350,
+        "height": 196
+      },
+      "title": {
+        "x": 38,
+        "right": 202.46875,
+        "top": 194.1875,
+        "bottom": 253.5625,
+        "width": 164.46875,
+        "height": 59.375
+      },
+      "cta": {
+        "x": 38,
+        "right": 255,
+        "top": 257.5625,
+        "bottom": 301.5625,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 205.5,
+        "right": 362,
+        "top": 160.625,
+        "bottom": 312.625,
+        "width": 156.5,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_2eq9oQ.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 722.9375,
+      "motion": 0
+    },
+    {
+      "width": 390,
+      "scale": 1,
+      "id": "company",
+      "hero": {
+        "x": 20,
+        "right": 370,
+        "top": 152.625,
+        "bottom": 348.625,
+        "width": 350,
+        "height": 196
+      },
+      "title": {
+        "x": 38,
+        "right": 202.46875,
+        "top": 194.1875,
+        "bottom": 253.5625,
+        "width": 164.46875,
+        "height": 59.375
+      },
+      "cta": {
+        "x": 38,
+        "right": 255,
+        "top": 257.5625,
+        "bottom": 301.5625,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 205.5,
+        "right": 362,
+        "top": 160.625,
+        "bottom": 312.625,
+        "width": 156.5,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_ZHTqy7.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 722.9375,
+      "motion": 0
+    },
+    {
+      "width": 390,
+      "scale": 1,
+      "id": "tea",
+      "hero": {
+        "x": 20,
+        "right": 370,
+        "top": 152.625,
+        "bottom": 348.625,
+        "width": 350,
+        "height": 196
+      },
+      "title": {
+        "x": 38,
+        "right": 202.46875,
+        "top": 194.1875,
+        "bottom": 253.5625,
+        "width": 164.46875,
+        "height": 59.375
+      },
+      "cta": {
+        "x": 38,
+        "right": 255,
+        "top": 257.5625,
+        "bottom": 301.5625,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 205.5,
+        "right": 362,
+        "top": 160.625,
+        "bottom": 312.625,
+        "width": 156.5,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_2aNum2.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 722.9375,
+      "motion": 0
+    },
+    {
+      "width": 600,
+      "scale": 1,
+      "id": "pies",
+      "hero": {
+        "x": 27,
+        "right": 573,
+        "top": 152.625,
+        "bottom": 348.625,
+        "width": 546,
+        "height": 196
+      },
+      "title": {
+        "x": 45,
+        "right": 312.140625,
+        "top": 194.1875,
+        "bottom": 253.5625,
+        "width": 267.140625,
+        "height": 59.375
+      },
+      "cta": {
+        "x": 45,
+        "right": 262,
+        "top": 257.5625,
+        "bottom": 301.5625,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 316.375,
+        "right": 565,
+        "top": 160.625,
+        "bottom": 312.625,
+        "width": 248.625,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_Z20Nfly.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 734.25,
+      "motion": 0
+    },
+    {
+      "width": 600,
+      "scale": 1,
+      "id": "company",
+      "hero": {
+        "x": 27,
+        "right": 573,
+        "top": 152.625,
+        "bottom": 348.625,
+        "width": 546,
+        "height": 196
+      },
+      "title": {
+        "x": 45,
+        "right": 312.140625,
+        "top": 209.03125,
+        "bottom": 238.71875,
+        "width": 267.140625,
+        "height": 29.6875
+      },
+      "cta": {
+        "x": 45,
+        "right": 262,
+        "top": 242.71875,
+        "bottom": 286.71875,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 316.375,
+        "right": 565,
+        "top": 160.625,
+        "bottom": 312.625,
+        "width": 248.625,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_1OEcke.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 734.25,
+      "motion": 0
+    },
+    {
+      "width": 600,
+      "scale": 1,
+      "id": "tea",
+      "hero": {
+        "x": 27,
+        "right": 573,
+        "top": 152.625,
+        "bottom": 348.625,
+        "width": 546,
+        "height": 196
+      },
+      "title": {
+        "x": 45,
+        "right": 312.140625,
+        "top": 209.03125,
+        "bottom": 238.71875,
+        "width": 267.140625,
+        "height": 29.6875
+      },
+      "cta": {
+        "x": 45,
+        "right": 262,
+        "top": 242.71875,
+        "bottom": 286.71875,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 316.375,
+        "right": 565,
+        "top": 160.625,
+        "bottom": 312.625,
+        "width": 248.625,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_13ynfp.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 734.25,
+      "motion": 0
+    },
+    {
+      "width": 601,
+      "scale": 1,
+      "id": "pies",
+      "hero": {
+        "x": 27.046875,
+        "right": 573.953125,
+        "top": 184.796875,
+        "bottom": 441.046875,
+        "width": 546.90625,
+        "height": 256.25
+      },
+      "title": {
+        "x": 55.046875,
+        "right": 300.5,
+        "top": 232.296875,
+        "bottom": 310.046875,
+        "width": 245.453125,
+        "height": 77.75
+      },
+      "cta": {
+        "x": 55.046875,
+        "right": 297.046875,
+        "top": 357.046875,
+        "bottom": 401.046875,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 311.4375,
+        "right": 549.953125,
+        "top": 194.796875,
+        "bottom": 401.046875,
+        "width": 238.515625,
+        "height": 206.25
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_2eq9oQ.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 840.140625,
+      "motion": 0
+    },
+    {
+      "width": 601,
+      "scale": 1,
+      "id": "company",
+      "hero": {
+        "x": 27.046875,
+        "right": 573.953125,
+        "top": 184.796875,
+        "bottom": 441.046875,
+        "width": 546.90625,
+        "height": 256.25
+      },
+      "title": {
+        "x": 55.046875,
+        "right": 300.5,
+        "top": 232.296875,
+        "bottom": 310.046875,
+        "width": 245.453125,
+        "height": 77.75
+      },
+      "cta": {
+        "x": 55.046875,
+        "right": 297.046875,
+        "top": 357.046875,
+        "bottom": 401.046875,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 311.4375,
+        "right": 549.953125,
+        "top": 194.796875,
+        "bottom": 401.046875,
+        "width": 238.515625,
+        "height": 206.25
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_ZHTqy7.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 840.140625,
+      "motion": 0
+    },
+    {
+      "width": 601,
+      "scale": 1,
+      "id": "tea",
+      "hero": {
+        "x": 27.046875,
+        "right": 573.953125,
+        "top": 184.796875,
+        "bottom": 441.046875,
+        "width": 546.90625,
+        "height": 256.25
+      },
+      "title": {
+        "x": 55.046875,
+        "right": 300.5,
+        "top": 232.296875,
+        "bottom": 310.046875,
+        "width": 245.453125,
+        "height": 77.75
+      },
+      "cta": {
+        "x": 55.046875,
+        "right": 297.046875,
+        "top": 357.046875,
+        "bottom": 401.046875,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 311.4375,
+        "right": 549.953125,
+        "top": 194.796875,
+        "bottom": 401.046875,
+        "width": 238.515625,
+        "height": 206.25
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_2aNum2.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 840.140625,
+      "motion": 0
+    },
+    {
+      "width": 768,
+      "scale": 1,
+      "id": "pies",
+      "hero": {
+        "x": 34.5625,
+        "right": 733.4375,
+        "top": 184.796875,
+        "bottom": 421.546875,
+        "width": 698.875,
+        "height": 236.75
+      },
+      "title": {
+        "x": 62.5625,
+        "right": 384,
+        "top": 232.296875,
+        "bottom": 310.046875,
+        "width": 321.4375,
+        "height": 77.75
+      },
+      "cta": {
+        "x": 62.5625,
+        "right": 304.5625,
+        "top": 337.546875,
+        "bottom": 381.546875,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 397.96875,
+        "right": 709.4375,
+        "top": 194.796875,
+        "bottom": 381.546875,
+        "width": 311.46875,
+        "height": 186.75
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_2eq9oQ.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 820.640625,
+      "motion": 0
+    },
+    {
+      "width": 768,
+      "scale": 1,
+      "id": "company",
+      "hero": {
+        "x": 34.5625,
+        "right": 733.4375,
+        "top": 184.796875,
+        "bottom": 421.546875,
+        "width": 698.875,
+        "height": 236.75
+      },
+      "title": {
+        "x": 62.5625,
+        "right": 384,
+        "top": 232.296875,
+        "bottom": 310.046875,
+        "width": 321.4375,
+        "height": 77.75
+      },
+      "cta": {
+        "x": 62.5625,
+        "right": 304.5625,
+        "top": 337.546875,
+        "bottom": 381.546875,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 397.96875,
+        "right": 709.4375,
+        "top": 194.796875,
+        "bottom": 381.546875,
+        "width": 311.46875,
+        "height": 186.75
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_ZHTqy7.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 820.640625,
+      "motion": 0
+    },
+    {
+      "width": 768,
+      "scale": 1,
+      "id": "tea",
+      "hero": {
+        "x": 34.5625,
+        "right": 733.4375,
+        "top": 184.796875,
+        "bottom": 404.796875,
+        "width": 698.875,
+        "height": 220
+      },
+      "title": {
+        "x": 62.5625,
+        "right": 384,
+        "top": 243.359375,
+        "bottom": 282.234375,
+        "width": 321.4375,
+        "height": 38.875
+      },
+      "cta": {
+        "x": 62.5625,
+        "right": 304.5625,
+        "top": 309.734375,
+        "bottom": 353.734375,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 397.96875,
+        "right": 709.4375,
+        "top": 194.796875,
+        "bottom": 364.796875,
+        "width": 311.46875,
+        "height": 170
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_2aNum2.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 803.890625,
+      "motion": 0
+    },
+    {
+      "width": 1024,
+      "scale": 1,
+      "id": "pies",
+      "hero": {
+        "x": 46.078125,
+        "right": 977.90625,
+        "top": 200.796875,
+        "bottom": 440.796875,
+        "width": 931.828125,
+        "height": 240
+      },
+      "title": {
+        "x": 86.078125,
+        "right": 393.265625,
+        "top": 255.625,
+        "bottom": 321.96875,
+        "width": 307.1875,
+        "height": 66.34375
+      },
+      "cta": {
+        "x": 86.078125,
+        "right": 328.078125,
+        "top": 349.46875,
+        "bottom": 393.46875,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 511.984375,
+        "right": 953.90625,
+        "top": 210.796875,
+        "bottom": 400.796875,
+        "width": 441.921875,
+        "height": 190
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_2eq9oQ.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 883.890625,
+      "motion": 0
+    },
+    {
+      "width": 1024,
+      "scale": 1,
+      "id": "company",
+      "hero": {
+        "x": 46.078125,
+        "right": 977.90625,
+        "top": 200.796875,
+        "bottom": 440.796875,
+        "width": 931.828125,
+        "height": 240
+      },
+      "title": {
+        "x": 86.078125,
+        "right": 393.265625,
+        "top": 272.203125,
+        "bottom": 305.375,
+        "width": 307.1875,
+        "height": 33.171875
+      },
+      "cta": {
+        "x": 86.078125,
+        "right": 328.078125,
+        "top": 332.875,
+        "bottom": 376.875,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 511.984375,
+        "right": 953.90625,
+        "top": 210.796875,
+        "bottom": 400.796875,
+        "width": 441.921875,
+        "height": 190
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_ZHTqy7.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 883.890625,
+      "motion": 0
+    },
+    {
+      "width": 1024,
+      "scale": 1,
+      "id": "tea",
+      "hero": {
+        "x": 46.078125,
+        "right": 977.90625,
+        "top": 200.796875,
+        "bottom": 440.796875,
+        "width": 931.828125,
+        "height": 240
+      },
+      "title": {
+        "x": 86.078125,
+        "right": 393.265625,
+        "top": 272.203125,
+        "bottom": 305.375,
+        "width": 307.1875,
+        "height": 33.171875
+      },
+      "cta": {
+        "x": 86.078125,
+        "right": 328.078125,
+        "top": 332.875,
+        "bottom": 376.875,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 511.984375,
+        "right": 953.90625,
+        "top": 210.796875,
+        "bottom": 400.796875,
+        "width": 441.921875,
+        "height": 190
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_2aNum2.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 883.890625,
+      "motion": 0
+    },
+    {
+      "width": 1280,
+      "scale": 1,
+      "id": "pies",
+      "hero": {
+        "x": 57.59375,
+        "right": 1222.390625,
+        "top": 212.3125,
+        "bottom": 519.5,
+        "width": 1164.796875,
+        "height": 307.1875
+      },
+      "title": {
+        "x": 105.59375,
+        "right": 553.59375,
+        "top": 286.78125,
+        "bottom": 383.53125,
+        "width": 448,
+        "height": 96.75
+      },
+      "cta": {
+        "x": 105.59375,
+        "right": 347.59375,
+        "top": 412.53125,
+        "bottom": 456.53125,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 616.6875,
+        "right": 1198.390625,
+        "top": 222.3125,
+        "bottom": 479.5,
+        "width": 581.703125,
+        "height": 257.1875
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_Z20Nfly.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 1242.796875,
+      "motion": 0
+    },
+    {
+      "width": 1280,
+      "scale": 1,
+      "id": "company",
+      "hero": {
+        "x": 57.59375,
+        "right": 1222.390625,
+        "top": 212.3125,
+        "bottom": 519.5,
+        "width": 1164.796875,
+        "height": 307.1875
+      },
+      "title": {
+        "x": 105.59375,
+        "right": 553.59375,
+        "top": 310.96875,
+        "bottom": 359.34375,
+        "width": 448,
+        "height": 48.375
+      },
+      "cta": {
+        "x": 105.59375,
+        "right": 347.59375,
+        "top": 388.34375,
+        "bottom": 432.34375,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 616.6875,
+        "right": 1198.390625,
+        "top": 222.3125,
+        "bottom": 479.5,
+        "width": 581.703125,
+        "height": 257.1875
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_1OEcke.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 1242.796875,
+      "motion": 0
+    },
+    {
+      "width": 1280,
+      "scale": 1,
+      "id": "tea",
+      "hero": {
+        "x": 57.59375,
+        "right": 1222.390625,
+        "top": 212.3125,
+        "bottom": 519.5,
+        "width": 1164.796875,
+        "height": 307.1875
+      },
+      "title": {
+        "x": 105.59375,
+        "right": 553.59375,
+        "top": 310.96875,
+        "bottom": 359.34375,
+        "width": 448,
+        "height": 48.375
+      },
+      "cta": {
+        "x": 105.59375,
+        "right": 347.59375,
+        "top": 388.34375,
+        "bottom": 432.34375,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 616.6875,
+        "right": 1198.390625,
+        "top": 222.3125,
+        "bottom": 479.5,
+        "width": 581.703125,
+        "height": 257.1875
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_13ynfp.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 1242.796875,
+      "motion": 0
+    },
+    {
+      "width": 390,
+      "scale": 3,
+      "id": "pies",
+      "hero": {
+        "x": 20,
+        "right": 370,
+        "top": 152.71875,
+        "bottom": 348.71875,
+        "width": 350,
+        "height": 196
+      },
+      "title": {
+        "x": 38,
+        "right": 202.46875,
+        "top": 194.28125,
+        "bottom": 253.65625,
+        "width": 164.46875,
+        "height": 59.375
+      },
+      "cta": {
+        "x": 38,
+        "right": 255,
+        "top": 257.65625,
+        "bottom": 301.65625,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 205.5,
+        "right": 362,
+        "top": 160.71875,
+        "bottom": 312.71875,
+        "width": 156.5,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_ZVsQcQ.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 723.03125,
+      "motion": 0
+    },
+    {
+      "width": 390,
+      "scale": 3,
+      "id": "company",
+      "hero": {
+        "x": 20,
+        "right": 370,
+        "top": 152.71875,
+        "bottom": 348.71875,
+        "width": 350,
+        "height": 196
+      },
+      "title": {
+        "x": 38,
+        "right": 202.46875,
+        "top": 194.28125,
+        "bottom": 253.65625,
+        "width": 164.46875,
+        "height": 59.375
+      },
+      "cta": {
+        "x": 38,
+        "right": 255,
+        "top": 257.65625,
+        "bottom": 301.65625,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 205.5,
+        "right": 362,
+        "top": 160.71875,
+        "bottom": 312.71875,
+        "width": 156.5,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_ZG963d.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 723.03125,
+      "motion": 0
+    },
+    {
+      "width": 390,
+      "scale": 3,
+      "id": "tea",
+      "hero": {
+        "x": 20,
+        "right": 370,
+        "top": 152.71875,
+        "bottom": 348.71875,
+        "width": 350,
+        "height": 196
+      },
+      "title": {
+        "x": 38,
+        "right": 202.46875,
+        "top": 194.28125,
+        "bottom": 253.65625,
+        "width": 164.46875,
+        "height": 59.375
+      },
+      "cta": {
+        "x": 38,
+        "right": 255,
+        "top": 257.65625,
+        "bottom": 301.65625,
+        "width": 217,
+        "height": 44
+      },
+      "art": {
+        "x": 205.5,
+        "right": 362,
+        "top": 160.71875,
+        "bottom": 312.71875,
+        "width": 156.5,
+        "height": 152
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_1XKCjQ.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 723.03125,
+      "motion": 0
+    },
+    {
+      "width": 768,
+      "scale": 2,
+      "id": "pies",
+      "hero": {
+        "x": 34.5625,
+        "right": 733.4375,
+        "top": 185.0625,
+        "bottom": 421.8125,
+        "width": 698.875,
+        "height": 236.75
+      },
+      "title": {
+        "x": 62.5625,
+        "right": 384,
+        "top": 232.5625,
+        "bottom": 310.3125,
+        "width": 321.4375,
+        "height": 77.75
+      },
+      "cta": {
+        "x": 62.5625,
+        "right": 304.5625,
+        "top": 337.8125,
+        "bottom": 381.8125,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 397.96875,
+        "right": 709.4375,
+        "top": 195.0625,
+        "bottom": 381.8125,
+        "width": 311.46875,
+        "height": 186.75
+      },
+      "overflow": false,
+      "href": "/menu/",
+      "heading": "Пироги к общему столу",
+      "flavor": "pies",
+      "visible": 1,
+      "pressed": [
+        "pies"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_Z1aPvi2.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "firstAdd": 820.90625,
+      "motion": 0
+    },
+    {
+      "width": 768,
+      "scale": 2,
+      "id": "company",
+      "hero": {
+        "x": 34.5625,
+        "right": 733.4375,
+        "top": 185.0625,
+        "bottom": 421.8125,
+        "width": 698.875,
+        "height": 236.75
+      },
+      "title": {
+        "x": 62.5625,
+        "right": 384,
+        "top": 232.5625,
+        "bottom": 310.3125,
+        "width": 321.4375,
+        "height": 77.75
+      },
+      "cta": {
+        "x": 62.5625,
+        "right": 304.5625,
+        "top": 337.8125,
+        "bottom": 381.8125,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 397.96875,
+        "right": 709.4375,
+        "top": 195.0625,
+        "bottom": 381.8125,
+        "width": 311.46875,
+        "height": 186.75
+      },
+      "overflow": false,
+      "href": "#nabory",
+      "heading": "Соберите общий стол",
+      "flavor": "company",
+      "visible": 1,
+      "pressed": [
+        "company"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/pie-islands.B_yt5wp5_ZGXiAm.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Три пироговых острова с домиками из выпечки и приморской башней"
+      },
+      "firstAdd": 820.90625,
+      "motion": 0
+    },
+    {
+      "width": 768,
+      "scale": 2,
+      "id": "tea",
+      "hero": {
+        "x": 34.5625,
+        "right": 733.4375,
+        "top": 185.0625,
+        "bottom": 405.0625,
+        "width": 698.875,
+        "height": 220
+      },
+      "title": {
+        "x": 62.5625,
+        "right": 384,
+        "top": 243.625,
+        "bottom": 282.5,
+        "width": 321.4375,
+        "height": 38.875
+      },
+      "cta": {
+        "x": 62.5625,
+        "right": 304.5625,
+        "top": 310,
+        "bottom": 354,
+        "width": 242,
+        "height": 44
+      },
+      "art": {
+        "x": 397.96875,
+        "right": 709.4375,
+        "top": 195.0625,
+        "bottom": 365.0625,
+        "width": 311.46875,
+        "height": 170
+      },
+      "overflow": false,
+      "href": "/pirogi/pirog-s-vishney/",
+      "heading": "Ягодный квартал",
+      "flavor": "tea",
+      "visible": 1,
+      "pressed": [
+        "tea"
+      ],
+      "image": {
+        "src": "https://pirogorsk.ru/_astro/berry-quarter.BEzRSIP6_Z3FIQd.avif",
+        "loaded": true,
+        "ratio": 1,
+        "fit": "contain",
+        "alt": "Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней"
+      },
+      "firstAdd": 804.15625,
+      "motion": 0
+    }
+  ]
+}

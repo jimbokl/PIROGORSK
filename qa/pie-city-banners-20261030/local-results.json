@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30T19:53:17.968Z",
+  "checkedAt": "2026-10-30T19:55:43.360Z",
   "stage": "local",
   "errors": [],
   "flows": [
@@ -49,14 +49,14 @@
       "width": 390,
       "scale": 3,
       "normalMotion": true,
-      "swipeHandler": true,
+      "browserTouchSwipe": true,
       "destinations": true
     },
     {
       "width": 768,
       "scale": 2,
       "normalMotion": true,
-      "swipeHandler": true,
+      "browserTouchSwipe": true,
       "destinations": true
     },
     {

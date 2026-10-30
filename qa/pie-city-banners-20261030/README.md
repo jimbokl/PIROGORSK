@@ -13,10 +13,19 @@
 
 - `npm run check`:0 errors /0 warnings; сборка217HTML;41 Node tests PASS. SEO проверил29869 внутренних ссылок,217HTML и212 sitemap URL. Product validator PASS. Shared registry strict PASS.
 - [27 сочетаний слайда и экрана](local-results.json): все три сюжета ×320/390/600/601/768/1024/1280px и Retina390@3x/768@2x. Изображения загружены, квадратные, в границах баннера, текст не перекрывает рисунок, CTA не обрезается; нет overflow, JS/HTTP ошибок. Просмотрены полные экраны телефона, планшета и desktop и все три иллюстрации.
-- Стрелки, точки, клавиатура, якорь наборов, страницы назначения, нормальная анимация и `prefers-reduced-motion`, первый слайд без JavaScript PASS. Свайп проверен синтетической последовательностью touch PointerEvent через production handler; это эмуляция браузера, не физическое устройство.
+- Стрелки, точки, клавиатура, якорь наборов, страницы назначения, нормальная анимация и `prefers-reduced-motion`, первый слайд без JavaScript PASS. После первого прогона проверка свайпа усилена: Chrome CDP Touch Input с реальным для браузера touchStart/move/end проходит маршрутизацию жеста и production handler на390@3/768@2. Это эмуляция браузера, не физическое устройство. Полный повтор27 проверок PASS.
 - На390×740 первая товарная кнопка помещается на722.94px. На320×740 с безопасным переносом заголовка —745.69px, примерно6px ниже края экрана. На планшете768×1024 первая карточка и кнопка целиком видны. Ассортимент остаётся сразу после баннера.
 - Первые прогоны verifier выявили320px overlap и неверный адрес вишнёвого пирога; оба исправлены, полный повтор PASS.
 
 - Локальный Lighthouse на одном gzip-сервере4323, холодный Chrome, по одному запуску до/после: mobile95→96, LCP2724→2559ms, CLS0.0062→0.0060; desktop100→100, LCP506→509ms, CLS0.0034; TBT0 и A/BP/SEO100. Сервер перезапущен после сборки, чтобы не читать старый кеш. [До](performance-before/performance-summary.json), [после](performance-after/performance-summary.json). Это лабораторное сравнение, одиночные измерения не доказывают стабильность или изменение реальных пользовательских метрик.
 
-CI и production-проверка — в работе.
+## Публикация и production
+
+- Runtime **`b93272bb83dc35488cd0e27b6961b4cf9e4d4080`**, [CI41119062743 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41119062743), [машинный результат](ci-result.json).
+- Из независимо скачанного CI Pages artifact извлечены217HTML,33новых AVIF/WebP,16JS и release.json. Все267 ресурсов на production отвечают HTTP200 и побайтово совпадают с artifact: [проверка публикации](publication.json), [верификатор](verify-publication.mjs). CSS встроен в HTML, отдельных CSS в artifact нет.
+- [Production UI](production-results.json): все27 сочетаний слайдов/экранов PASS. Управление, клавиатура, browser touch swipe на Retina390@3/768@2, normal/reduced motion, no-JS, якорь и три назначения PASS. Нет overflow, наложений, JS/HTTP ошибок. Production-снимки телефона и планшета просмотрены: город целиком виден, текст читается, каталог сразу под баннером.
+- [Оригиналы и33экспорта](asset-checks.json) сохранили квадратные пропорции и прозрачность; [реальные запросы](image-requests.json) подтверждают адаптивные варианты. Первый AVIF на Retina390@3 —72.6KB, на768@2 —47.0KB.
+- [Production Lighthouse CLI](performance-production/performance-summary.json), холодный Chrome, по одному запуску: mobile98, LCP2346ms, CLS0.0060, TBT47ms; desktop99, LCP591ms, CLS0.0021, TBT0. Accessibility/SEO100; Best Practices77 из-за third-party cookies/Issues существующей Яндекс.Метрики. Это отдельные лабораторные измерения, не полевые Core Web Vitals и не доказательство стабильности.
+- [Public PageSpeed Insights](public-psi.json) проверен для mobile и desktop после публикации. Оба режима не выдали отчёт: «Не удалось перейти по адресу https://pirogorsk.ru/. Проверьте правильность URL.» Причина со стороны сервиса не установлена; оценок PSI нет. Production UI, HTTP и Lighthouse CLI проверены отдельно.
+
+Опубликовано и проверено. Открытых пунктов этого поручения нет.
