@@ -23,22 +23,73 @@
 предыдущей пекарни; положение кнопок сохраняется с допуском 2 CSS px.
 
 Локально: check/build (217 HTML), 41 Node-тест, Worker/API/SQL, семь SEO/artwork
-валидаторов и registry strict PASS. Полный browser-прогон и публикация отражаются
-в `STATE.md`; итоговые сведения о CI и production будут внесены после проверки.
+валидаторов, registry strict и полный `npm run test:browser` PASS.
+
+`verify-all-products.mjs` отдельно обходит все 153 товарные страницы на 390 и
+768 px (306 представлений): загрузка иллюстраций, заголовок, отсутствие
+переполнений и обрезанного текста, последний формат × 2 и кнопки минимум
+44 × 44 px. Локальный и production результаты PASS; заголовки учитывают вес, отличающий
+одноимённые позиции поставщиков.
 
 Первый товар меню на 390 px: **2593 → 998 px**, на 768 px: **2402 → 1123 px**.
 Это положение относительно начала страницы; измерения сохранены в baseline и
 `local/results.json`. Проверка экрана — эмуляция Chromium, не физические устройства.
+
+## Публикация и production
+
+Runtime **`2585b5d1158df9933d88ae986a22c623d065dd7c`**,
+[CI 41134283582 — SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41134283582).
+Проверка опубликованного Pages и совместимости Worker также успешна.
+
+- Все **235 ресурсов** HTTP 200 и побайтово совпадают с отдельно скачанным
+  артефактом CI: **217 HTML**, runtime JS/CSS и release manifest. Проверка не
+  заявляет побайтовое сопоставление изображений.
+- Production: **50 представлений / 12 групп сценариев**, без JS/HTTP ошибок.
+- Дополнительный обход всех **153 товаров × телефон/планшет = 306 представлений**,
+  без ошибок иллюстраций, заголовков, форматов, количества, сумм и размеров кнопок.
+- Регрессия подгрузки: положение фильтров **439,59 → 439,53 px**; реальные клики
+  продолжают работать. Навигация не сдвигается из-за предыдущей партии товаров.
+- Просмотрены production-снимки меню 390/1280, поводов 768, выбора формата 390/768
+  и рекомендаций 390. Формы на production не отправлялись.
+
+Машиночитаемые результаты: `ci-result.json`, `publication.json`,
+`production/results.json`, `all-products-production.json`,
+`feed-anchor-production.json`. Контрольные снимки сохранены в `production/`.
+
+## Скорость после публикации
+
+Lighthouse CLI, новый Chrome-профиль на каждый холодный запуск, simulated
+throttling. Это лабораторные измерения, не публичный PageSpeed и не полевые CWV.
+
+| Страница | Мобильные замеры | Performance | LCP | CLS |
+| --- | --- | --- | --- | --- |
+| Меню | 3 | 99 / 99 / 99 | 1,67–1,98 с; медиана 1,75 с | 0 |
+| Товар Holland | 1 | 99 | 2,0 с | 0 |
+
+Desktop: меню 99, LCP 0,61 с; товар 100, LCP 0,49 с. Accessibility/SEO 100.
+Best Practices 77: cookie/Issues существующей Яндекс Метрики, как и до спринта.
+Компактные результаты всех шести запусков — `performance-production.json`;
+исходные Lighthouse HTML/JSON сохранены локально в `performance-production-*`.
+
+Контрольные снимки: [меню на телефоне](production/menu-390.jpg),
+[поводы на планшете](production/occasions-768.jpg),
+[формат и количество на телефоне](production/product-options-390.jpg),
+[на планшете](production/product-options-768.jpg),
+[рекомендации](production/recommendations-390.jpg).
 
 ## Воспроизведение
 
 ```sh
 node qa/polish-20261030/verify-polish.mjs
 node qa/polish-20261030/verify-feed-anchor.mjs
+node qa/polish-20261030/verify-all-products.mjs
 node qa/polish-20261030/verify-polish.mjs --production
 node qa/polish-20261030/verify-feed-anchor.mjs --production
+node qa/polish-20261030/verify-all-products.mjs --production
 python3 qa/polish-20261030/extract-artifact.py
 node qa/polish-20261030/verify-publication.mjs
+LIGHTHOUSE_MOBILE_RUNS=3 LIGHTHOUSE_OUTPUT_DIR=qa/polish-20261030/performance-production-menu node scripts/audit-performance.mjs https://pirogorsk.ru/menu/
+LIGHTHOUSE_MOBILE_RUNS=1 LIGHTHOUSE_OUTPUT_DIR=qa/polish-20261030/performance-production-product node scripts/audit-performance.mjs https://pirogorsk.ru/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/
 ```
 
 Локальные сценарии используют уже запущенный Astro preview на порту 4322.

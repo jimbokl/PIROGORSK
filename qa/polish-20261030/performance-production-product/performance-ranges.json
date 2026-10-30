@@ -1,0 +1,40 @@
+[
+  {
+    "mode": "mobile",
+    "samples": 1,
+    "simulatedLcp": {
+      "min": 2018.8575000000005,
+      "median": 2018.8575000000005,
+      "max": 2018.8575000000005
+    },
+    "observedLcp": {
+      "min": 1292,
+      "median": 1292,
+      "max": 1292
+    },
+    "observedRenderDelay": {
+      "min": 27.209,
+      "median": 27.209,
+      "max": 27.209
+    }
+  },
+  {
+    "mode": "desktop",
+    "samples": 1,
+    "simulatedLcp": {
+      "min": 488.904,
+      "median": 488.904,
+      "max": 488.904
+    },
+    "observedLcp": {
+      "min": 1242,
+      "median": 1242,
+      "max": 1242
+    },
+    "observedRenderDelay": {
+      "min": 15.506,
+      "median": 15.506,
+      "max": 15.506
+    }
+  }
+]

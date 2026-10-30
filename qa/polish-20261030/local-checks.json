@@ -40,6 +40,10 @@
     {
       "command": "git diff --check",
       "status": "PASS"
+    },
+    {
+      "command": "verify-all-products.mjs (153 products × 390/768 = 306 views)",
+      "status": "PASS"
     }
   ]
 }
