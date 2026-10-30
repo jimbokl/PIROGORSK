@@ -1,0 +1,73 @@
+{
+  "production": true,
+  "results": [
+    {
+      "width": 390,
+      "layout": "feed",
+      "products": 153,
+      "geometry": 153,
+      "firstAddBottom": 694.3125,
+      "categories": 8,
+      "accessibility": "PASS",
+      "quantity": "PASS",
+      "hashesReload": "PASS"
+    },
+    {
+      "width": 768,
+      "layout": "feed",
+      "products": 153,
+      "geometry": 153,
+      "firstAddBottom": 779.140625,
+      "categories": 8,
+      "accessibility": "PASS",
+      "quantity": "PASS",
+      "hashesReload": "PASS"
+    },
+    {
+      "width": 1280,
+      "layout": "gallery",
+      "products": 153,
+      "geometry": 153,
+      "firstAddBottom": 1195.78125,
+      "categories": 8,
+      "accessibility": "PASS",
+      "quantity": "PASS",
+      "hashesReload": "PASS"
+    },
+    {
+      "mode": "smooth-motion",
+      "width": 390,
+      "categories": "PASS",
+      "quantity": "PASS"
+    },
+    {
+      "mode": "smooth-motion",
+      "width": 768,
+      "categories": "PASS",
+      "quantity": "PASS"
+    },
+    {
+      "mode": "smooth-motion",
+      "width": 1280,
+      "categories": "PASS",
+      "quantity": "PASS"
+    },
+    {
+      "mode": "auto",
+      "products": 153,
+      "status": "PASS"
+    },
+    {
+      "mode": "manual",
+      "products": 153,
+      "status": "PASS"
+    },
+    {
+      "mode": "no-js",
+      "products": 153,
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "failures": []
+}
