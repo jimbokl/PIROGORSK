@@ -16,10 +16,11 @@ interface Props {
   image?: string;
   imageAlt?: string;
   preloadFonts?: boolean;
+  bodyClass?: string;
 }
 // Let inline @font-face discover the required faces. Font preloads delayed the
 // first frame in Chrome 153 on both the homepage and text-led catalog pages.
-const { title, description, breadcrumbs = [], schema = [], type, noindex, image, imageAlt, preloadFonts = false } = Astro.props;
+const { title, description, breadcrumbs = [], schema = [], type, noindex, image, imageAlt, preloadFonts = false, bodyClass } = Astro.props;
 const trail = [{ name: 'Главная', href: '/' }, ...breadcrumbs];
 const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
@@ -29,7 +30,7 @@ const breadcrumbSchema = {
 <!doctype html>
 <html lang="ru">
   <head><SeoHead {title} {description} {type} {noindex} {image} {imageAlt} {preloadFonts} schema={[breadcrumbSchema, ...schema]} /><slot name="head" /></head>
-  <body class="editorial-site">
+  <body class:list={['editorial-site', bodyClass]}>
     <Analytics />
     <a class="ed-skip" href="#content">Перейти к содержанию</a>
     <SiteHeader />
@@ -40,7 +41,6 @@ const breadcrumbSchema = {
     <footer class="ed-footer ed-container">
       <div><Brand footer /><p>Готовим запуск. Сейчас изучаем интерес<br class="ed-desktop-break" /> к вкусам, городам и форматам.</p></div>
       <nav aria-label="Дополнительная навигация"><a href="/menu/">Будущее меню</a><a href="/povody/">К случаю</a><a href="/delivery/">Города и условия</a><a href="/blog/">Блог</a><a href="/#pirogi">Отметить интерес</a></nav>
-      <p class="ed-footnote">Изображения на сайте — иллюстрации концептов. Производство и продажи ещё не запущены.</p>
     </footer>
   </body>
 </html>

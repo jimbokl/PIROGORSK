@@ -1,0 +1,655 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/delivery/",
+    "timestamp": "2026-10-30T09:52:45.220Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1539,
+      "lcp": 1539
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1388.745,
+      "elementRenderDelay": 150.616
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1208.722,
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1208.722,
+        "display": "1.2 s"
+      },
+      "total-blocking-time": {
+        "value": 46.5,
+        "display": "50 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 2650.7641620169165,
+        "display": "2.7 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found",
+        "items": [
+          {
+            "name": "bh",
+            "url": "https://mc.yandex.ru/metrika/tag.js"
+          },
+          {
+            "name": "bh",
+            "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)"
+          },
+          {
+            "name": "sync_cookie_csrf",
+            "url": "https://mc.yandex.com/sync_cookie_image_check?scid=9cbc4b35-2fc5-fda3-2ae0-07872850145e&cid=113767847"
+          },
+          {
+            "name": "sync_cookie_csrf",
+            "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=9cbc4b35-2fc5-fda3-2ae0-07872850145e&token=11187.muwkOMB_hutZBOsTCN8Osuxtmyl-5vXkLs_Ru2xuzupc-Yf8ZWrAoiAA0y6yJc0S.IEI0BMYir9loIGVjm5ww6SB3iog%2C"
+          },
+          {
+            "name": "yabs-sid",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A661041899577%3Ahid%3A1000421562%3Az%3A120%3Ai%3A20261030115248%3Aet%3A1793353968%3Aetms%3A1793353968255%3Ac%3A1%3Arn%3A308843034%3Au%3A1793353968530839392%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353965516%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353969%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1124)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "i",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A661041899577%3Ahid%3A1000421562%3Az%3A120%3Ai%3A20261030115248%3Aet%3A1793353968%3Aetms%3A1793353968255%3Ac%3A1%3Arn%3A308843034%3Au%3A1793353968530839392%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353965516%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353969%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1124)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "yandexuid",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A661041899577%3Ahid%3A1000421562%3Az%3A120%3Ai%3A20261030115248%3Aet%3A1793353968%3Aetms%3A1793353968255%3Ac%3A1%3Arn%3A308843034%3Au%3A1793353968530839392%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353965516%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353969%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1124)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "yuidss",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A661041899577%3Ahid%3A1000421562%3Az%3A120%3Ai%3A20261030115248%3Aet%3A1793353968%3Aetms%3A1793353968255%3Ac%3A1%3Arn%3A308843034%3Au%3A1793353968530839392%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353965516%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353969%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1124)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "ymex",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A661041899577%3Ahid%3A1000421562%3Az%3A120%3Ai%3A20261030115248%3Aet%3A1793353968%3Aetms%3A1793353968255%3Ac%3A1%3Arn%3A308843034%3Au%3A1793353968530839392%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353965516%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353969%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1124)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "sync_cookie_ok",
+            "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&token=11187.jIjcBcm5a8nXWdJlg4vMQaqvtgOAoIaHZ7C82YGr_ZDWswkPNtasC4qwwF1nwCSsLudV5HR4MH7wyStS6htGxqRM7I201mU6sBtxXOoCjp8%2C.LpGD1ocioS-sA16mJ_C_aU7wcvA%2C"
+          },
+          {
+            "name": "yandexuid",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&token=11187.4z1_Zpe7GIbfbWcvgkWTTuZwJLVt0eoYzUASxkm1EIzCd58igtaHz4pgHue6OnI_MJ0BREnE0nFPzIcjKkyrZHian2fg_j4Iu1CGhVc2VRTDvu9THKmESn-TFYMQC-HKs46KT3SDtTW0EguD_xkSL2W6N2Mi8lLA4zmWEZMxEvIj29tmKGUZjFbtKl_af8uD0XQO7kK47aopmww8bJz5eA%2C%2C.v16rX0hhdpdmzTSKrCVrl6bl-sQ%2C"
+          },
+          {
+            "name": "yuidss",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&token=11187.4z1_Zpe7GIbfbWcvgkWTTuZwJLVt0eoYzUASxkm1EIzCd58igtaHz4pgHue6OnI_MJ0BREnE0nFPzIcjKkyrZHian2fg_j4Iu1CGhVc2VRTDvu9THKmESn-TFYMQC-HKs46KT3SDtTW0EguD_xkSL2W6N2Mi8lLA4zmWEZMxEvIj29tmKGUZjFbtKl_af8uD0XQO7kK47aopmww8bJz5eA%2C%2C.v16rX0hhdpdmzTSKrCVrl6bl-sQ%2C"
+          },
+          {
+            "name": "i",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&token=11187.4z1_Zpe7GIbfbWcvgkWTTuZwJLVt0eoYzUASxkm1EIzCd58igtaHz4pgHue6OnI_MJ0BREnE0nFPzIcjKkyrZHian2fg_j4Iu1CGhVc2VRTDvu9THKmESn-TFYMQC-HKs46KT3SDtTW0EguD_xkSL2W6N2Mi8lLA4zmWEZMxEvIj29tmKGUZjFbtKl_af8uD0XQO7kK47aopmww8bJz5eA%2C%2C.v16rX0hhdpdmzTSKrCVrl6bl-sQ%2C"
+          }
+        ]
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js",
+            "totalBytes": 69981,
+            "wastedBytes": 39243,
+            "wastedPercent": 56.077028912208704
+          }
+        ]
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "items": [
+          {
+            "issueType": "Cookie",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "url": "https://mc.yandex.ru/metrika/tag.js"
+                },
+                {
+                  "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_check?scid=9cbc4b35-2fc5-fda3-2ae0-07872850145e&cid=113767847"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=9cbc4b35-2fc5-fda3-2ae0-07872850145e&token=11187.muwkOMB_hutZBOsTCN8Osuxtmyl-5vXkLs_Ru2xuzupc-Yf8ZWrAoiAA0y6yJc0S.IEI0BMYir9loIGVjm5ww6SB3iog%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=9cbc4b35-2fc5-fda3-2ae0-07872850145e&token=11187.lK7PU08dqGA1mWfGym6Z8Y1umA0W2NUkZN8W0igEigmjPuwU6R9tQk4GYNoyHA4Vo5Nv-RGIYrZhIm1zrKAcSdo_oorxkNfzOe6LRE6xK4U%2C.5Os_xSXM-9Va-BQr_9xEDZj2fSs%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A661041899577%3Ahid%3A1000421562%3Az%3A120%3Ai%3A20261030115248%3Aet%3A1793353968%3Aetms%3A1793353968255%3Ac%3A1%3Arn%3A308843034%3Au%3A1793353968530839392%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353965516%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353969%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(1124)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847/1?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20%282022%29%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A661041899577%3Ahid%3A1000421562%3Az%3A120%3Ai%3A20261030115248%3Aet%3A1793353968%3Aetms%3A1793353968255%3Ac%3A1%3Arn%3A308843034%3Au%3A1793353968530839392%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353965516%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353969%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt%281124%29gdpr%2814%29clc%280-0-0%29aw%281%29nvt%280%29rcm%281%29cdl%28na%29eco%281851520%29ti%281%29&redirnss=1"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_check?scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&cid=113767847"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&token=11187.8YvsjjomhaloJDaO81JrkGTnLngjeE3q78_WDacLo0DJZ_LKXCF3au5DacuAtkEb.HlK0E-uY-JpbqnHuEcbBPmFV0zI%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&token=11187.jIjcBcm5a8nXWdJlg4vMQaqvtgOAoIaHZ7C82YGr_ZDWswkPNtasC4qwwF1nwCSsLudV5HR4MH7wyStS6htGxqRM7I201mU6sBtxXOoCjp8%2C.LpGD1ocioS-sA16mJ_C_aU7wcvA%2C"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&token=11187.4z1_Zpe7GIbfbWcvgkWTTuZwJLVt0eoYzUASxkm1EIzCd58igtaHz4pgHue6OnI_MJ0BREnE0nFPzIcjKkyrZHian2fg_j4Iu1CGhVc2VRTDvu9THKmESn-TFYMQC-HKs46KT3SDtTW0EguD_xkSL2W6N2Mi8lLA4zmWEZMxEvIj29tmKGUZjFbtKl_af8uD0XQO7kK47aopmww8bJz5eA%2C%2C.v16rX0hhdpdmzTSKrCVrl6bl-sQ%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&hittoken=1793353969_d30213f70983e91601032ef59dd3f684fc32a62ff7d5fabae07ceb4cc5968bf5&browser-info=pv%3A1%3Aar%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A661041899577%3Ahid%3A1000421562%3Az%3A120%3Ai%3A20261030115249%3Aet%3A1793353969%3Aetms%3A1793353969038%3Ac%3A1%3Arn%3A534848066%3Arqn%3A1%3Au%3A1793353968530839392%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.75%3Afp%3A1540%3Ads%3A398%2C764%2C224%2C1%2C1%2C0%2C%2C125%2C0%2C3257%2C3257%2C0%2C1612%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353965516%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353970%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=gdpr(14)mc(h-1)clc(0-0-0)rqnt(1)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+                },
+                {
+                  "url": "https://mc.yandex.com/ytm-config/113767847?wmode=7"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 126 KiB",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 70667,
+            "wastedBytes": 56533.600000000006
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18919,
+            "wastedBytes": 17342.416666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18796,
+            "wastedBytes": 17229.666666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 16138,
+            "wastedBytes": 14793.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/analytics.aMArJC5-.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 13858,
+            "wastedBytes": 12703.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9441,
+            "wastedBytes": 8654.25
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 646,
+            "wastedBytes": 592.1666666666666
+          },
+          {
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=0ae70f29-0bf5-c011-01d0-4e79a5aa4a1b&token=11187.4z1_Zpe7GIbfbWcvgkWTTuZwJLVt0eoYzUASxkm1EIzCd58igtaHz4pgHue6OnI_MJ0BREnE0nFPzIcjKkyrZHian2fg_j4Iu1CGhVc2VRTDvu9THKmESn-TFYMQC-HKs46KT3SDtTW0EguD_xkSL2W6N2Mi8lLA4zmWEZMxEvIj29tmKGUZjFbtKl_af8uD0XQO7kK47aopmww8bJz5eA%2C%2C.v16rX0hhdpdmzTSKrCVrl6bl-sQ%2C",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 405,
+            "wastedBytes": 405
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 268,
+            "wastedBytes": 245.66666666666666
+          },
+          {
+            "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 139,
+            "wastedBytes": 111.2
+          },
+          {
+            "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=9cbc4b35-2fc5-fda3-2ae0-07872850145e&token=11187.lK7PU08dqGA1mWfGym6Z8Y1umA0W2NUkZN8W0igEigmjPuwU6R9tQk4GYNoyHA4Vo5Nv-RGIYrZhIm1zrKAcSdo_oorxkNfzOe6LRE6xK4U%2C.5Os_xSXM-9Va-BQr_9xEDZj2fSs%2C",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 66,
+            "wastedBytes": 66
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "1042D54F7B352AAA880FA100F3A9F10A": {
+                  "url": "https://pirogorsk.ru/delivery/",
+                  "navStartToEndTime": 1514,
+                  "transferSize": 14806,
+                  "isLongest": true,
+                  "children": {
+                    "64408.10": {
+                      "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 1735,
+                      "transferSize": 18919,
+                      "isLongest": true,
+                      "children": {}
+                    },
+                    "64408.2": {
+                      "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+                      "navStartToEndTime": 1515,
+                      "transferSize": 268,
+                      "children": {
+                        "64408.12": {
+                          "url": "https://pirogorsk.ru/_astro/analytics.aMArJC5-.js",
+                          "navStartToEndTime": 1603,
+                          "transferSize": 13858,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "64408.8": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 1602,
+                      "transferSize": 18796,
+                      "children": {}
+                    },
+                    "64408.9": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 1595,
+                      "transferSize": 9441,
+                      "children": {}
+                    },
+                    "64408.11": {
+                      "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 1594,
+                      "transferSize": 16138,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 1735
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/delivery/",
+    "timestamp": "2026-10-30T09:52:58.355Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1169,
+      "lcp": 1169
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1058.807,
+      "elementRenderDelay": 110.349
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 359.97749999999985,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 359.97749999999985,
+        "display": "0.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 868.1977140096126,
+        "display": "0.9 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found",
+        "items": [
+          {
+            "name": "bh",
+            "url": "https://mc.yandex.ru/metrika/tag.js"
+          },
+          {
+            "name": "bh",
+            "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)"
+          },
+          {
+            "name": "sync_cookie_csrf",
+            "url": "https://mc.yandex.com/sync_cookie_image_check?scid=eb8b3d1c-6582-2d89-498a-ab99647da574&cid=113767847"
+          },
+          {
+            "name": "sync_cookie_csrf",
+            "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=eb8b3d1c-6582-2d89-498a-ab99647da574&token=11187.q4QmAZiUP3V0Gjk-URBXRElTgdmiDeBpICbLcjb_oPsIrwkJQ6njPvzgVBbAQ6Zl.hJdD0i4H5s3AKpcIh4VlpyZfZks%2C"
+          },
+          {
+            "name": "yabs-sid",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A530779544832%3Ahid%3A306645142%3Az%3A120%3Ai%3A20261030115300%3Aet%3A1793353981%3Aetms%3A1793353980737%3Ac%3A1%3Arn%3A79114897%3Au%3A1793353981708268973%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353978496%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353981%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(951)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "i",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A530779544832%3Ahid%3A306645142%3Az%3A120%3Ai%3A20261030115300%3Aet%3A1793353981%3Aetms%3A1793353980737%3Ac%3A1%3Arn%3A79114897%3Au%3A1793353981708268973%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353978496%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353981%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(951)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "yandexuid",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A530779544832%3Ahid%3A306645142%3Az%3A120%3Ai%3A20261030115300%3Aet%3A1793353981%3Aetms%3A1793353980737%3Ac%3A1%3Arn%3A79114897%3Au%3A1793353981708268973%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353978496%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353981%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(951)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "yuidss",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A530779544832%3Ahid%3A306645142%3Az%3A120%3Ai%3A20261030115300%3Aet%3A1793353981%3Aetms%3A1793353980737%3Ac%3A1%3Arn%3A79114897%3Au%3A1793353981708268973%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353978496%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353981%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(951)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "ymex",
+            "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A530779544832%3Ahid%3A306645142%3Az%3A120%3Ai%3A20261030115300%3Aet%3A1793353981%3Aetms%3A1793353980737%3Ac%3A1%3Arn%3A79114897%3Au%3A1793353981708268973%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353978496%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353981%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(951)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+          },
+          {
+            "name": "sync_cookie_ok",
+            "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&token=11187.j1r5fewWj6W9h8SnVAFmvdqd_KtlQCGMvJNWorzKwYfdIdBrRZZXM_d0SjdR5I6jRVRovY4zwWOp6ugzuoMnlisA6LwBw-33tOAkwXEwgJs%2C.DfL1fI52WhGhgBVaxlw-7muUoo8%2C"
+          },
+          {
+            "name": "yandexuid",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&token=11187.cVIwCz-cRWWtTZS2gFAUR-1B9uwuVZzVwPVqER2u72dctAtxQQoP_-IrGkTmIomSeSG8XV5He45nPvncVp5TtGFWmp2TenhynOBki-rKIr4Q7N3S4TCwosNXQuTA7RA0vPdAhxxE1Vfkl6bK1TlcywpikjgU1vKewZ35HqqOmHZQ14yBcpBBGp3ByDDOTLyrlLbAJt0l_wAHXUhHbHXDlA%2C%2C.SUzzrTM6mQ4j7NDxFsR6tZzvt5I%2C"
+          },
+          {
+            "name": "yuidss",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&token=11187.cVIwCz-cRWWtTZS2gFAUR-1B9uwuVZzVwPVqER2u72dctAtxQQoP_-IrGkTmIomSeSG8XV5He45nPvncVp5TtGFWmp2TenhynOBki-rKIr4Q7N3S4TCwosNXQuTA7RA0vPdAhxxE1Vfkl6bK1TlcywpikjgU1vKewZ35HqqOmHZQ14yBcpBBGp3ByDDOTLyrlLbAJt0l_wAHXUhHbHXDlA%2C%2C.SUzzrTM6mQ4j7NDxFsR6tZzvt5I%2C"
+          },
+          {
+            "name": "i",
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&token=11187.cVIwCz-cRWWtTZS2gFAUR-1B9uwuVZzVwPVqER2u72dctAtxQQoP_-IrGkTmIomSeSG8XV5He45nPvncVp5TtGFWmp2TenhynOBki-rKIr4Q7N3S4TCwosNXQuTA7RA0vPdAhxxE1Vfkl6bK1TlcywpikjgU1vKewZ35HqqOmHZQ14yBcpBBGp3ByDDOTLyrlLbAJt0l_wAHXUhHbHXDlA%2C%2C.SUzzrTM6mQ4j7NDxFsR6tZzvt5I%2C"
+          }
+        ]
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js",
+            "totalBytes": 69981,
+            "wastedBytes": 39287,
+            "wastedPercent": 56.13935003859116
+          }
+        ]
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "items": [
+          {
+            "issueType": "Cookie",
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "url": "https://mc.yandex.ru/metrika/tag.js"
+                },
+                {
+                  "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_check?scid=eb8b3d1c-6582-2d89-498a-ab99647da574&cid=113767847"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=eb8b3d1c-6582-2d89-498a-ab99647da574&token=11187.q4QmAZiUP3V0Gjk-URBXRElTgdmiDeBpICbLcjb_oPsIrwkJQ6njPvzgVBbAQ6Zl.hJdD0i4H5s3AKpcIh4VlpyZfZks%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=eb8b3d1c-6582-2d89-498a-ab99647da574&token=11187.uiY4Okdfv82sAW_uqK8UGCM7JyTlSpijfeumaAd_DEgKFgKnnhItofb3qBFrUzFDs2ugiYxmB3ah-9wgnuF4FqiY_2jTsfLXu32JW-Rq848%2C.C5c2RBM-2eecq9Eg6grW2_2oDho%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A530779544832%3Ahid%3A306645142%3Az%3A120%3Ai%3A20261030115300%3Aet%3A1793353981%3Aetms%3A1793353980737%3Ac%3A1%3Arn%3A79114897%3Au%3A1793353981708268973%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353978496%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353981%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt(951)gdpr(14)clc(0-0-0)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847/1?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&nohit=1&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&browser-info=pv%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A530779544832%3Ahid%3A306645142%3Az%3A120%3Ai%3A20261030115300%3Aet%3A1793353981%3Aetms%3A1793353980737%3Ac%3A1%3Arn%3A79114897%3Au%3A1793353981708268973%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353978496%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353981%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=clt%28951%29gdpr%2814%29clc%280-0-0%29aw%281%29nvt%280%29rcm%281%29cdl%28na%29eco%281851520%29ti%281%29&redirnss=1"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_check?scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&cid=113767847"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_start?cid=113767847&redirect_domain=mc.yandex.com&scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&token=11187.0DwqG1cmT-mYhAqe-1WRWbVCun6Kgpy25lraKmrzP1wtpmg58aqyDhnwiFKCY3wb.nvKKxUOM0TltHGNOAhylrzrx4jA%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&token=11187.j1r5fewWj6W9h8SnVAFmvdqd_KtlQCGMvJNWorzKwYfdIdBrRZZXM_d0SjdR5I6jRVRovY4zwWOp6ugzuoMnlisA6LwBw-33tOAkwXEwgJs%2C.DfL1fI52WhGhgBVaxlw-7muUoo8%2C"
+                },
+                {
+                  "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&token=11187.cVIwCz-cRWWtTZS2gFAUR-1B9uwuVZzVwPVqER2u72dctAtxQQoP_-IrGkTmIomSeSG8XV5He45nPvncVp5TtGFWmp2TenhynOBki-rKIr4Q7N3S4TCwosNXQuTA7RA0vPdAhxxE1Vfkl6bK1TlcywpikjgU1vKewZ35HqqOmHZQ14yBcpBBGp3ByDDOTLyrlLbAJt0l_wAHXUhHbHXDlA%2C%2C.SUzzrTM6mQ4j7NDxFsR6tZzvt5I%2C"
+                },
+                {
+                  "url": "https://mc.yandex.com/ytm-config/113767847?wmode=7"
+                },
+                {
+                  "url": "https://mc.yandex.com/watch/113767847?wmode=7&page-url=https%3A%2F%2Fpirogorsk.ru%2Fdelivery%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22156%22%2C%22Google%20Chrome%22%3Bv%3D%22156%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A156.0.0.0%0Achl%0A%22Not%3AA-Brand%22%3Bv%3D%228.0.0.0%22%2C%22Chromium%22%3Bv%3D%22156.0.8078.74%22%2C%22Google%20Chrome%22%3Bv%3D%22156.0.8078.74%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10.15.7&hittoken=1793353981_e6fee836b6b5835ba6088c46a9e8cc01d1462724ae42f3a77e2eee7f2a868670&browser-info=pv%3A1%3Aar%3A1%3Avf%3A4tvkupd2vg89dwekd16jpvfdqys7vf%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2681%3Acn%3A1%3Adp%3A0%3Als%3A530779544832%3Ahid%3A306645142%3Az%3A120%3Ai%3A20261030115301%3Aet%3A1793353982%3Aetms%3A1793353981734%3Ac%3A1%3Arn%3A144669248%3Arqn%3A1%3Au%3A1793353981708268973%3Aw%3A1350x940%3As%3A800x600x24%3Ask%3A1%3Afp%3A1172%3Ads%3A314%2C657%2C85%2C19%2C1%2C0%2C%2C1%2C0%2C2980%2C2980%2C0%2C1284%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Ans%3A1793353978496%3Aadb%3A2%3Arqnl%3A1%3Ast%3A1793353982%3At%3A%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%20%E2%80%94%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%7C%20%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA&t=gdpr(14)mc(h-1)clc(0-0-0)rqnt(1)aw(1)nvt(0)rcm(1)cdl(na)eco(1851520)ti(1)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 126 KiB",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 70655,
+            "wastedBytes": 56524
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18826,
+            "wastedBytes": 17257.166666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18769,
+            "wastedBytes": 17204.916666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 16191,
+            "wastedBytes": 14841.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/analytics.aMArJC5-.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 13858,
+            "wastedBytes": 12703.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9425,
+            "wastedBytes": 8639.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-symbol.svg?v=4",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 646,
+            "wastedBytes": 592.1666666666666
+          },
+          {
+            "url": "https://mc.yandex.ru/sync_cookie_image_finish?cid=113767847&redirect_domain=mc.yandex.com&scid=5e1aef19-ab5a-ddeb-aae7-285e4136bfc8&token=11187.cVIwCz-cRWWtTZS2gFAUR-1B9uwuVZzVwPVqER2u72dctAtxQQoP_-IrGkTmIomSeSG8XV5He45nPvncVp5TtGFWmp2TenhynOBki-rKIr4Q7N3S4TCwosNXQuTA7RA0vPdAhxxE1Vfkl6bK1TlcywpikjgU1vKewZ35HqqOmHZQ14yBcpBBGp3ByDDOTLyrlLbAJt0l_wAHXUhHbHXDlA%2C%2C.SUzzrTM6mQ4j7NDxFsR6tZzvt5I%2C",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 402,
+            "wastedBytes": 402
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 245,
+            "wastedBytes": 224.58333333333331
+          },
+          {
+            "url": "https://mc.yandex.com/metrika/advert.gif?t=gdpr(14)ti(4)",
+            "cacheLifetimeMs": 3600000,
+            "totalBytes": 187,
+            "wastedBytes": 149.6
+          },
+          {
+            "url": "https://mc.yandex.com/sync_cookie_image_decide?cid=113767847&scid=eb8b3d1c-6582-2d89-498a-ab99647da574&token=11187.uiY4Okdfv82sAW_uqK8UGCM7JyTlSpijfeumaAd_DEgKFgKnnhItofb3qBFrUzFDs2ugiYxmB3ah-9wgnuF4FqiY_2jTsfLXu32JW-Rq848%2C.C5c2RBM-2eecq9Eg6grW2_2oDho%2C",
+            "cacheLifetimeMs": 0,
+            "totalBytes": 66,
+            "wastedBytes": 66
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "ECB677A894125F48F17EE94E5A34A01D": {
+                  "url": "https://pirogorsk.ru/delivery/",
+                  "navStartToEndTime": 1078,
+                  "transferSize": 14806,
+                  "isLongest": true,
+                  "children": {
+                    "64702.2": {
+                      "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+                      "navStartToEndTime": 1161,
+                      "transferSize": 245,
+                      "isLongest": true,
+                      "children": {
+                        "64702.11": {
+                          "url": "https://pirogorsk.ru/_astro/analytics.aMArJC5-.js",
+                          "navStartToEndTime": 1271,
+                          "transferSize": 13858,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "64702.9": {
+                      "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 1242,
+                      "transferSize": 18826,
+                      "children": {}
+                    },
+                    "64702.7": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 1240,
+                      "transferSize": 18769,
+                      "children": {}
+                    },
+                    "64702.10": {
+                      "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 1236,
+                      "transferSize": 16191,
+                      "children": {}
+                    },
+                    "64702.8": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 1235,
+                      "transferSize": 9425,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 1271
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

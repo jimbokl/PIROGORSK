@@ -1,22 +1,66 @@
 ---
+import { Picture } from 'astro:assets';
 import ContentLayout from '../layouts/ContentLayout.astro';
-import EditorialHero from '../components/EditorialHero.astro';
-import EditorialBody from '../components/EditorialBody.astro';
-import EditorialInterest from '../components/EditorialInterest.astro';
-import EditorialLinks from '../components/EditorialLinks.astro';
-import { locations } from '../data/editorial';
+import Icon from '../components/Icon.astro';
 import { deliveryEstimates } from '../data/pricing';
-const title = 'Доставка пирогов — города и планы запуска | Пирогорск';
-const description = 'Ориентиры доставки Пирогорска: Калининград 350 ₽, Зеленоградск 500 ₽, Светлогорск 650 ₽ за подборку. Проверяем спрос, окончательные тарифы ещё не согласованы.';
+import { interestHref } from '../data/editorial';
+import pie from '../../design/art-direction-20261030/hero-fish-scene.png';
+import '../styles/delivery.css';
+const cities = [
+  { slug: 'kaliningrad', name: 'Калининград', note: 'К ужину дома. К встрече в офисе.', stage: 'Первый этап' },
+  { slug: 'zelenogradsk', name: 'Зеленоградск', note: 'К общему столу после моря.', stage: 'Первый этап' },
+  { slug: 'svetlogorsk', name: 'Светлогорск', note: 'К неспешному вечеру на побережье.', stage: 'Следующий этап' },
+];
+const questions = [
+  { title: 'Когда можно будет заказать?', answer: 'Готовим запуск в Калининграде и Зеленоградске. К Светлогорску вернёмся после первых 30 дней работы. Пока можно собрать подборку и отметить интерес. Дату открытия, интервалы, способы оплаты и минимальную сумму опубликуем перед началом продаж.' },
+  { title: 'Как считается доставка?', answer: 'Один раз за всю подборку: 350 ₽ в Калининграде, 500 ₽ в Зеленоградске и 650 ₽ в Светлогорске. Это суммы для предварительного расчёта; окончательные тарифы и доступные адреса сообщим перед запуском. При изменении числа пирогов доставка повторно не добавляется.' },
+  { title: 'Будет ли самовывоз?', answer: 'Планируем самовывоз без доплаты за получение. Адрес и часы работы опубликуем, когда выберем точку.' },
+  { title: 'Все пироги готовы к подаче?', answer: 'В меню есть целые пироги, замороженные продукты и заготовки для выпечки. Формат указан в каждой карточке: выбирайте готовый пирог или выпечку для домашней духовки. Условия хранения, перевозки и подачи уточним до продаж.' },
+  { title: 'А за пределы этих городов?', answer: 'Сначала определим границы доставки в трёх городах. Куршскую косу и другие населённые пункты рассматриваем отдельно. На странице города можно отметить интерес — это поможет выбрать направления.' },
+];
+const title = 'Доставка пирогов в Калининграде, Зеленоградске и Светлогорске | Пирогорск';
+const description = 'Доставка пирогов Пирогорска: Калининград — 350 ₽, Зеленоградск — 500 ₽, Светлогорск — 650 ₽ за всю подборку. Меню по городам и условия будущего запуска.';
 ---
-<ContentLayout {title} {description} breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }]}>
-  <EditorialHero eyebrow="Города · готовим запуск" title="Доставка начинается с понятных условий" intro="Первый этап планируем в Калининграде и Зеленоградске. К Светлогорску вернёмся после первых 30 дней работы. Заказы пока не принимаем: на страницах городов можно сравнить пироги, расчёт с доставкой и отметить интерес." />
-  <EditorialLinks title="Выберите свой город" links={locations.map(item => ({ href: `/${item.slug}/`, title: item.city, text: item.intro, label: 'Направление в планах' }))} />
-  <EditorialBody sections={[
-    { title: 'Расчёт для проверки спроса', items: Object.entries(deliveryEstimates).map(([city, price]) => `${city} — ориентир ${price} ₽ за всю подборку.`), paragraphs: ['Стоимость товаров и доставка показаны отдельно. Число пирогов не умножает стоимость доставки: в форме она добавляется один раз. Эти суммы — рабочая оценка Пирогорска, а не подтверждённые тарифы курьера.', 'Самовывоз рассматриваем без доплаты; адрес ещё не выбран. Если способ получения пока не определён, показываем только стоимость товаров.'] },
-    { title: 'Целый пирог или набор выпечки', paragraphs: ['Начинаем с подбора продукции местных пекарен: целых пирогов «Пироги а-ля Русс» и выпечки Holland Bakery. Своя пекарня — следующий возможный шаг, когда станет понятен спрос.', 'В ассортименте Holland Bakery есть замороженные продукты и заготовки для выпечки. Они отличаются от готового целого пирога: формат указан в карточках. До продаж проверим условия хранения и перевозки, состав, маркировку и фасовку. Горячую доставку этих продуктов пока не обещаем.'] },
-    { title: 'Что сообщим до первого заказа', items: ['Адреса и границы, по которым действительно сможем доставлять.', 'Доступные дни и интервалы, стоимость и минимальную сумму заказа.', 'Порядок оплаты, изменения заказа и связи с проектом.', 'Подтверждённый состав, вес, условия хранения и подачи каждого пирога.'] },
-    { title: 'Как сейчас выразить интерес', paragraphs: ['На главной можно выбрать город, начинки и желаемый формат получения. Это анонимная проверка спроса перед запуском. Выбор дня или пирога не резервирует продукцию и время доставки.', 'Конкретных сроков запуска пока нет. Доставка на Куршскую косу и по всей области также не подтверждена: упоминание города не означает обслуживание соседних населённых пунктов.'] },
-  ]} />
-  <EditorialInterest interest="delivery" title="В каком городе вы бы выбрали пироги?" text="Отметьте город и интересные вкусы в анонимной форме на главной. Эти ответы помогут оценить направления запуска." label="Отметить город и вкусы" />
+<ContentLayout {title} {description} bodyClass="delivery-page" breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }]}>
+  <section class="delivery-hero" aria-labelledby="delivery-heading">
+    <div class="delivery-hero-copy">
+      <p class="delivery-kicker"><span aria-hidden="true"></span>Пирогорск · доставка пирогов</p>
+      <h1 id="delivery-heading">К вашему столу.<br /><em>В вашем городе.</em></h1>
+      <p class="delivery-lead">Ужин после моря, встреча друзей или обед в офисе. Выбирайте пироги, а доставку считайте один раз — за всю подборку.</p>
+      <a class="delivery-button" href="#delivery-cities">Выбрать город<Icon name="arrow" /></a>
+      <p class="delivery-launch">Готовим запуск. Сейчас можно собрать подборку и отметить интерес.</p>
+    </div>
+    <figure class="delivery-hero-visual">
+      <Picture src={pie} formats={['avif', 'webp']} fallbackFormat="webp" widths={[320, 480, 640, 800, 1120]} sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1100px) 45vw, 548px" width={900} height={600} quality={50} alt="Рыбный пирог с золотистой корочкой на керамическом блюде" loading="eager" fetchpriority="high" decoding="async" />
+      <figcaption class="delivery-visual-note"><Icon name="bag" /><span>Всё к одному столу<strong>Одна доставка на всю подборку</strong></span></figcaption>
+    </figure>
+  </section>
+  <section class="delivery-cities" id="delivery-cities" aria-labelledby="delivery-cities-heading">
+    <header class="delivery-section-heading"><div><p class="delivery-kicker">Ближе, чем кажется</p><h2 id="delivery-cities-heading">Выберите свой город</h2></div><p>Меню, начинки и расчёт<br /> для вашего стола.</p></header>
+    <div class="delivery-city-grid">
+      {cities.map((city, index) => <a class="delivery-city-card" href={`/${city.slug}/`} data-delivery-city={city.slug}>
+        <div class="delivery-city-top"><span class="delivery-city-number">0{index + 1}</span><span class="delivery-city-stage">{city.stage}</span><Icon name="pin" /></div>
+        <h3>{city.name}</h3><p>{city.note}</p>
+        <div class="delivery-city-bottom"><div><span class="delivery-city-price">{deliveryEstimates[city.name]}<span> ₽</span></span><small>за всю подборку</small></div><span class="delivery-city-arrow"><Icon name="arrow" /></span></div>
+      </a>)}
+    </div>
+    <p class="delivery-price-note">Стоимость для предварительного расчёта. Окончательные тарифы и границы доставки опубликуем перед запуском.</p>
+  </section>
+  <section class="delivery-principle" aria-labelledby="delivery-principle-heading">
+    <div><p class="delivery-kicker">Один стол. Одна доставка.</p><h2 id="delivery-principle-heading">Больше пирогов.<br /><em>Та же доставка.</em></h2></div>
+    <div class="delivery-principle-copy"><p>Сытный к ужину, сладкий к чаю, морс и посуда — собирайте всё вместе. Стоимость доставки зависит от города, а не от количества пирогов.</p><a class="delivery-text-link" href="/menu/#nabory">Начать с набора<Icon name="arrow" /></a></div>
+  </section>
+  <section class="delivery-steps" aria-labelledby="delivery-steps-heading">
+    <header class="delivery-section-heading"><div><p class="delivery-kicker">От начинки до общего стола</p><h2 id="delivery-steps-heading">Собрать — просто</h2></div></header>
+    <ol>
+      <li><span class="delivery-step-number">01</span><h3>Найдите свои вкусы</h3><p>Сытные и сладкие пироги, выпечка и дополнения. Выберите начинку, размер и количество.</p><a class="delivery-text-link" href="/menu/">Выбрать пироги<Icon name="arrow" /></a></li>
+      <li><span class="delivery-step-number">02</span><h3>Соберите подборку</h3><p>Добавьте морс и посуду. Город и способ получения помогут рассчитать общую сумму.</p><a class="delivery-text-link" href="/?interest=selection">Открыть подборку<Icon name="arrow" /></a></li>
+      <li><span class="delivery-step-number">03</span><h3>Отметьте интерес</h3><p>Расскажите, что выбрали бы. Анонимные ответы помогут подготовить меню и доставку к открытию.</p><a class="delivery-text-link" href={interestHref('delivery')}>Перейти к форме<Icon name="arrow" /></a></li>
+    </ol>
+  </section>
+  <section class="delivery-faq" aria-labelledby="delivery-faq-heading">
+    <div><p class="delivery-kicker">Всё по делу</p><h2 id="delivery-faq-heading">Хорошие<br /> вопросы</h2><p class="delivery-faq-intro">Про запуск, получение<br /> и пироги к вашему столу.</p></div>
+    <div class="delivery-faq-list">{questions.map(question => <details><summary>{question.title}<span class="delivery-faq-plus" aria-hidden="true"><Icon name="plus" /></span></summary><p>{question.answer}</p></details>)}</div>
+  </section>
+  <aside class="delivery-finale" aria-labelledby="delivery-finale-heading"><Icon name="wave" /><p class="delivery-kicker">У самого Балтийского моря</p><h2 id="delivery-finale-heading">У хорошего вечера<br />есть свой пирог.</h2><a class="delivery-button" href="/menu/">Найти свой<Icon name="arrow" /></a></aside>
 </ContentLayout>

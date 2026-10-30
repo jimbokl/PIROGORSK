@@ -37,13 +37,13 @@ const graph=[...schema,faqSchema(faq),isCity?placesSchema(city):{'@type':'ItemLi
 ---
 <ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} schema={graph} {image} imageAlt={entry.imageAlt} type="article">
   <article class:list={['blog-article',{'blog-city-guide':isCity}]}>
-    <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={isCity ? undefined : item.intro} image={isCity ? undefined : entry.image} imageAlt={entry.imageAlt} caption="Обложка создана с помощью ИИ для иллюстрации статьи. Она не показывает конкретное заведение или готовую продукцию." compact>
+    <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={isCity ? undefined : item.intro} image={isCity ? undefined : entry.image} imageAlt={entry.imageAlt} compact>
       {!isCity && <p class="blog-byline">Пирогорск{isNew && <> · <time datetime={item.date}>{dateLabel}</time></>} · ≈ {entry.minutes} мин чтения</p>}
     </EditorialHero>
     {isCity && <>
       <GuideSummary {city} />
       <div class="blog-guide-context"><div><p class="blog-guide-intro">{item.intro}</p><p class="blog-byline">Пирогорск{isNew && <> · <time datetime={item.date}>{dateLabel}</time></>} · ≈ {entry.minutes} мин чтения</p></div>
-        <figure><Picture src={entry.image} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*entry.image.height/entry.image.width)} quality={58} alt={entry.imageAlt} loading="lazy" decoding="async" /><figcaption>Иллюстрация концепта, созданная с помощью ИИ. Не фотография заведения или готовой продукции.</figcaption></figure>
+        <figure><Picture src={entry.image} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*entry.image.height/entry.image.width)} quality={58} alt={entry.imageAlt} loading="lazy" decoding="async" /></figure>
       </div>
     </>}
     {isNew && <aside class="blog-takeaway" aria-labelledby="takeaway-title"><h2 id="takeaway-title">Если коротко</h2><p>{item.takeaway}</p></aside>}

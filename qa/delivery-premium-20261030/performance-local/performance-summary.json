@@ -1,0 +1,263 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/delivery/",
+    "timestamp": "2026-10-30T09:54:33.046Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 261,
+      "lcp": 261
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 175.439,
+      "resourceLoadDelay": 11.909,
+      "resourceLoadDuration": 24.833,
+      "elementRenderDelay": 48.693
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1543.9763750000002,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1985.1811000000002,
+        "display": "2.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1543.9763750000002,
+        "display": "1.5 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "5AE66094504B95E45403C92D79DD300C": {
+                  "url": "http://127.0.0.1:4322/delivery/",
+                  "navStartToEndTime": 224,
+                  "transferSize": 16902,
+                  "isLongest": true,
+                  "children": {
+                    "65320.2": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+                      "navStartToEndTime": 225,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "65320.14": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.aMArJC5-.js",
+                          "navStartToEndTime": 250,
+                          "transferSize": 13602,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "65320.12": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 247,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "65320.10": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 236,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "65320.13": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 234,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "65320.11": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 233,
+                      "transferSize": 9546,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 250
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/delivery/",
+    "timestamp": "2026-10-30T09:54:39.853Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 78,
+      "lcp": 95
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 12.820999877929687,
+      "resourceLoadDelay": 3.8520001220703124,
+      "resourceLoadDuration": 15.004,
+      "elementRenderDelay": 63.632
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 357.151375,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 420.58164999999997,
+        "display": "0.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 357.151375,
+        "display": "0.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "D173FDFEBBE31020F442DE27D7993A7D": {
+                  "url": "http://127.0.0.1:4322/delivery/",
+                  "navStartToEndTime": 22,
+                  "transferSize": 16902,
+                  "isLongest": true,
+                  "children": {
+                    "65349.13": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 70,
+                      "transferSize": 18996,
+                      "isLongest": true,
+                      "children": {}
+                    },
+                    "65349.12": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 70,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "65349.11": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 70,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "65349.14": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 69,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "65349.2": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+                      "navStartToEndTime": 27,
+                      "transferSize": 351,
+                      "children": {
+                        "65349.10": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.aMArJC5-.js",
+                          "navStartToEndTime": 58,
+                          "transferSize": 13602,
+                          "children": {}
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 70
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

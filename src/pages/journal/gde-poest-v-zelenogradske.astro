@@ -41,7 +41,7 @@ schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
   <section class="guide-context" aria-label="Об этом гиде"><div><p>После пляжа — кесадилья у моря, на ужин — паста или горячее, на Курортном — пироги с рыбными начинками. Собрали три варианта под разные прогулки и посчитали четыре блюда по двум официальным меню.</p>
     <p class="guide-date">Редакция Пирогорска · Обновлено <time datetime={foodGuide.updatedAt}>{foodGuide.updatedLabel}</time><br />Цены двух меню проверены <time datetime={foodGuide.checkedAt}>{foodGuide.checkedLabel}</time></p>
     <nav class="guide-jumps" aria-label="Кафе в гиде">{[...menuVenues, localPieCafe].map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav></div>
-    <figure><Picture src={foodGuideImage} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*foodGuideImage.height/foodGuideImage.width)} quality={58} alt={foodGuideImageAlt} loading="lazy" decoding="async" /><figcaption>Иллюстрация создана с помощью ИИ. Это вымышленное кафе, а не интерьер одного из мест в гиде.</figcaption></figure>
+    <figure><Picture src={foodGuideImage} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*foodGuideImage.height/foodGuideImage.width)} quality={58} alt={foodGuideImageAlt} loading="lazy" decoding="async" /></figure>
   </section>
 
   <EditorialNextStep path={path} />

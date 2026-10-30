@@ -1,7 +1,6 @@
 ---
-import { conceptCaption } from '../data/editorial';
-interface Props { eyebrow: string; title: string; intro: string; caption?: string }
-const { eyebrow, title, intro, caption = conceptCaption } = Astro.props;
+interface Props { eyebrow: string; title: string; intro: string }
+const { eyebrow, title, intro } = Astro.props;
 ---
 <section class="product-hero" aria-labelledby="product-heading">
   <div class="product-hero-copy">
@@ -11,7 +10,6 @@ const { eyebrow, title, intro, caption = conceptCaption } = Astro.props;
   </div>
   <figure class="product-hero-art">
     <div class="product-hero-frame"><slot name="visual" /></div>
-    {caption && <figcaption>{caption}</figcaption>}
   </figure>
   <div class="product-hero-actions"><slot name="actions" /></div>
 </section>
@@ -23,7 +21,6 @@ const { eyebrow, title, intro, caption = conceptCaption } = Astro.props;
   .product-hero-art{grid-area:art;width:100%;max-width:520px;min-width:0;justify-self:center}
   .product-hero-frame{padding:18px;border:0;border-radius:28px;background:var(--surface-oat)}
   .product-hero-frame :global(.product-visual),.product-hero-frame :global(.product-artwork){width:100%;aspect-ratio:1;border-radius:20px}
-  .product-hero-art figcaption{font-size:11px;line-height:1.6;color:var(--ed-muted);margin:12px 10px 0;max-width:52ch}
   .product-hero-actions{grid-area:actions;min-width:0;padding-top:24px}
   @media(max-width:1000px){.product-hero{column-gap:28px}.product-hero h1{font-size:36px}}
   @media(max-width:760px){
@@ -31,7 +28,6 @@ const { eyebrow, title, intro, caption = conceptCaption } = Astro.props;
     .product-hero h1{font-size:clamp(30px,8.2vw,36px)}
     .product-hero-intro{font-size:14px;line-height:1.7;margin-top:14px}
     .product-hero-art{max-width:380px}
-    .product-hero-art figcaption{font-size:10px;text-align:center;margin-top:9px}
     .product-hero-actions{padding-top:0}
   }
 </style>
