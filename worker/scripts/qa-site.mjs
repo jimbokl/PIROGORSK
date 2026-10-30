@@ -251,8 +251,28 @@ try {
     const mixedTotal = miniDefault.price + meatDefault.price;
     await page.click('[data-home-category="holland"]');
     await page.waitForFunction(id => !document.querySelector(`[data-product="${id}"]`).hidden, {}, miniId);
-    await page.click(`[data-product="${miniId}"] [data-add]`);
-    await page.click('[data-product=meat] [data-add]');
+    // Visibility changes synchronously, but the category scroll is animated.
+    // Wait for arrival before clicking: page.click otherwise targets a moving row.
+    await page.waitForFunction(() => {
+      const top = document.getElementById('holland').getBoundingClientRect().top;
+      const edge = document.querySelector('[data-home-catalog-nav]').getBoundingClientRect().bottom;
+      return top >= edge - 2 && top < edge + 80;
+    });
+    await page.evaluate(() => new Promise(resolve => {
+      let previous = scrollY, stable = 0;
+      function frame() {
+        stable = Math.abs(scrollY - previous) < .5 ? stable + 1 : 0;
+        previous = scrollY;
+        if (stable >= 6) resolve(); else requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    }));
+    for (const id of [miniId, 'meat']) {
+      const button = `[data-product="${id}"] [data-add]`;
+      await page.$eval(button, el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+      await page.locator(button).click();
+      assert.ok((await selection()).some(item => item.id === id && item.quantity === 1), `mixed selection contains ${id} at ${width}px`);
+    }
     await page.click('[data-open=selection-dialog]');
     const formattedMixedTotal = mixedTotal.toLocaleString('ru-RU').replaceAll('\u00a0', ' ');
     assert.ok((await page.$eval('[data-total]', el => el.textContent)).replaceAll('\u00a0', ' ').includes(formattedMixedTotal));

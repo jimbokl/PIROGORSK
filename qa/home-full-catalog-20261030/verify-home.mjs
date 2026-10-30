@@ -12,10 +12,10 @@ const axe = await readFile('node_modules/axe-core/axe.min.js', 'utf8');
 await mkdir(output, { recursive: true });
 const chrome = await launch({ chromeFlags: ['--headless=new', '--no-first-run', '--disable-extensions'] });
 const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
-async function setup(width, { js = true, observer = true } = {}) {
+async function setup(width, { js = true, observer = true, motion = 'reduce' } = {}) {
  const context = await browser.createBrowserContext(), page = await context.newPage();
  await page.setViewport({ width, height: width < 600 ? 740 : 1024, deviceScaleFactor: 1, isMobile: width < 600, hasTouch: width < 1100 });
- await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
+ await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: motion }]);
  if (!js) await page.setJavaScriptEnabled(false);
  if (!observer) await page.evaluateOnNewDocument(() => { delete window.IntersectionObserver; });
  page.on('pageerror', error => errors.push(error.message));
@@ -125,6 +125,34 @@ try {
   assert.equal(await page.evaluate(() => JSON.parse(localStorage.getItem('pirogorsk-selection')).length), 4);
   assert.equal(await page.$eval('#holland', el => el.hidden), false);
   results.push({ width, products: ids.length, geometry: geometry.length, firstAddBottom: first, categories: sections.length, accessibility: 'PASS', quantity: 'PASS', hashesReload: 'PASS' });
+  await context.close();
+ }
+ // Normal animation must arrive before pointer coordinates are used for a row.
+ for (const width of [390, 768, 1280]) {
+  const {context, page} = await setup(width, {motion: 'no-preference'});
+  await page.goto(`${origin}/?qa=1`, {waitUntil: 'networkidle0'});
+  const miniId = await page.$eval('#catalog-data', el => JSON.parse(el.textContent).find(p => p.category === 'mini-pies').id);
+  for (const [category, id] of [['holland', miniId], ['extras', 'cranberry']]) {
+   await page.click(`[data-home-category="${category}"]`);
+   await page.waitForFunction(id => {
+    const top = document.getElementById(id).getBoundingClientRect().top;
+    const edge = document.querySelector('[data-home-catalog-nav]').getBoundingClientRect().bottom;
+    return top >= edge - 2 && top < edge + 80;
+   }, {}, category);
+   await page.evaluate(() => new Promise(resolve => {
+    let previous = scrollY, stable = 0;
+    function frame() {
+     stable = Math.abs(scrollY - previous) < .5 ? stable + 1 : 0;
+     previous = scrollY;
+     if (stable >= 6) resolve(); else requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+   }));
+   await click(page, `[data-product="${id}"] [data-feed-increase]`);
+   await click(page, `[data-product="${id}"] [data-add]`);
+   assert.equal(await page.evaluate(id => JSON.parse(localStorage.getItem('pirogorsk-selection')).find(item => item.id === id)?.quantity, id), 2);
+  }
+  results.push({mode: 'smooth-motion', width, categories: 'PASS', quantity: 'PASS'});
   await context.close();
  }
  // Automatic loading, keyboard fallback without IntersectionObserver, complete no-JS HTML.
