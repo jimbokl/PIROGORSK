@@ -150,7 +150,7 @@ try {
     assert.equal(await page.$eval('#catalog-data', script => JSON.parse(script.textContent).length), 153);
     assert.equal(await page.$$eval('.offer-card', cards => cards.every(card => card.scrollWidth <= card.clientWidth)), true, `offer content overflow at ${width}`);
     assert.equal(await page.$$eval('.offer-add', buttons => buttons.every(button => { const a = button.getBoundingClientRect(), b = button.closest('.offer-card').getBoundingClientRect(); return a.right <= b.right && a.left >= b.left; })), true, `offer button clipped at ${width}`);
-    assert.equal(await page.$$eval('[data-tasting-scene]', scenes => scenes.length), 3);
+    assert.deepEqual(await page.$$eval('[data-tasting-scene]', scenes => scenes.map(scene => scene.dataset.tastingScene)), ['pies', 'company', 'tea', 'mini', 'seaside', 'bake']);
     assert.equal(await page.$eval('[data-tasting-hero]', hero => hero.dataset.flavor), 'pies');
     await page.click('[data-tasting-next]');
     await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'company');
@@ -162,6 +162,15 @@ try {
     await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'company');
     await page.click('[data-tasting-select=tea]');
     await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'tea');
+    for (const [id, target] of [['mini', '#holland'], ['seaside', '#pirogi39'], ['bake', '#bake']]) {
+      await page.click(`[data-tasting-select=${id}]`);
+      await page.waitForFunction(id => document.querySelector('[data-tasting-hero]')?.dataset.flavor === id, {}, id);
+      assert.equal(await page.$eval('[data-tasting-cta]', link => link.getAttribute('href')), target);
+    }
+    await page.click('[data-tasting-next]');
+    await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'pies');
+    await page.click('[data-tasting-prev]');
+    await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'bake');
 
     // The departments card preserves its group in the menu URL.
     const miniProduct = catalog.find(item => item.category === 'mini-pies');
