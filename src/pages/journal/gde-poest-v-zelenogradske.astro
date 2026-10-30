@@ -1,5 +1,6 @@
 ---
 import ContentLayout from '../../layouts/ContentLayout.astro';
+import JournalMasthead from '../../components/JournalMasthead.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
@@ -35,7 +36,8 @@ const schema:Record<string,unknown>[] = [{
 }];
 schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
 ---
-<ContentLayout title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article" image="/seo/blog/gde-poest-v-zelenogradske.jpg" imageAlt={foodGuideImageAlt}>
+<ContentLayout bodyClass="journal-page" title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article" image="/seo/blog/gde-poest-v-zelenogradske.jpg" imageAlt={foodGuideImageAlt}>
+  <JournalMasthead />
   <div class="guide-lead"><EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} compact /></div>
   <GuideSummary city="zelenogradsk" />
   <section class="guide-context" aria-label="Об этом гиде"><div><p>После пляжа — кесадилья у моря, на ужин — паста или горячее, на Курортном — пироги с рыбными начинками. Собрали три варианта под разные прогулки и посчитали четыре блюда по двум официальным меню.</p>

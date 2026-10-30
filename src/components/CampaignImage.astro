@@ -1,0 +1,23 @@
+---
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Props { image: ImageMetadata; alt: string; priority?: boolean }
+const { image, alt, priority = false } = Astro.props;
+// The phone shows the right-hand scene. Export that crop rather than downloading
+// a wide panorama and discarding most of it with CSS.
+const render = (phone: boolean, format: 'avif' | 'webp') => getImage({
+  src: image, format, width: phone ? 800 : 1920, height: phone ? 534 : 640,
+  widths: phone ? [320, 480, 640, 720, 800, 960] : [640, 960, 1280, 1600, 1920],
+  fit: 'cover', position: 'right', quality: phone ? 42 : 60,
+});
+const [phoneAvif, phoneWebp, wideAvif, wideWebp] = await Promise.all([
+  render(true, 'avif'), render(true, 'webp'), render(false, 'avif'), render(false, 'webp'),
+]);
+const wideSizes = '(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px';
+---
+<picture>
+  <source media="(max-width: 480px)" type="image/avif" srcset={phoneAvif.srcSet.attribute} sizes="calc(100vw - 40px)" />
+  <source media="(max-width: 480px)" type="image/webp" srcset={phoneWebp.srcSet.attribute} sizes="calc(100vw - 40px)" />
+  <source type="image/avif" srcset={wideAvif.srcSet.attribute} sizes={wideSizes} />
+  <img src={wideWebp.src} srcset={wideWebp.srcSet.attribute} sizes={wideSizes} width={1920} height={640} alt={alt} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'low'} decoding="async" />
+</picture>

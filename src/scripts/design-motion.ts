@@ -36,17 +36,19 @@ if (hero) {
       for (const item of controls) item.setAttribute('aria-pressed', String(item === button));
       hero.dataset.flavor = button.dataset.tastingSelect;
       const title = hero.querySelector<HTMLElement>('[data-tasting-title]');
+      const eyebrow = hero.querySelector('[data-tasting-eyebrow]');
+      if (eyebrow) eyebrow.textContent = button.dataset.eyebrow ?? '';
       const note = hero.querySelector('[data-tasting-note]');
       const count = hero.querySelector('[data-tasting-count]');
       if (title) title.textContent = button.dataset.name ?? '';
       if (note) note.textContent = button.dataset.note ?? '';
-      if (count) count.textContent = `0${index + 1} / 03`;
+      if (count) count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(controls.length).padStart(2, '0')}`;
       const cta = hero.querySelector<HTMLAnchorElement>('[data-tasting-cta]');
       if (cta) { const label = [...cta.childNodes].find(node => node.nodeType === Node.TEXT_NODE); if (label) label.textContent = button.dataset.cta ?? 'Смотреть меню'; cta.href = button.dataset.href ?? '/menu/'; }
       activeIndex = index;
       animate(scene, [
-        { opacity: 0, transform: 'translate(24px, 16px) rotate(5deg) scale(.94)' },
-        { opacity: 1, transform: 'translate(0, 0) rotate(0deg) scale(1)' },
+        { opacity: 0, transform: 'translateX(12px)' },
+        { opacity: 1, transform: 'translateX(0)' },
       ], { duration: 620, easing: 'cubic-bezier(.16,1,.3,1)' });
   }
   controls.forEach((button, index) => button.addEventListener('click', () => { void selectSlide(index); }));

@@ -1,6 +1,7 @@
 ---
 import { Picture } from 'astro:assets';
-import LcpImagePreload from '../components/LcpImagePreload.astro';
+import PieTownHero from '../components/PieTownHero.astro';
+import town from '../../design/pie-city-site-20261030/journal-town.png';
 import ContentLayout from '../layouts/ContentLayout.astro';
 import BlogCards from '../components/BlogCards.astro';
 import EditorialInterest from '../components/EditorialInterest.astro';
@@ -11,11 +12,10 @@ const featured = blogEntries.find(entry => entry.slug === 'gde-poest-v-zelenogra
 const otherCategories = blogCategories.map(category => ({ ...category, entries: blogEntries.filter(entry => entry.category === category.name && entry.slug !== featured.slug) })).filter(category => category.entries.length > 0);
 const schema = [{ '@type': 'Blog', '@id': `${siteOrigin}/blog/#blog`, name: 'Блог Пирогорска', url: `${siteOrigin}/blog/`, inLanguage: 'ru-RU', publisher: { '@id': `${siteOrigin}/#organization` }, blogPost: blogEntries.map(entry => ({ '@type': 'BlogPosting', headline: entry.title, url: `${siteOrigin}${articleHref(entry.slug)}` })) }];
 ---
-<ContentLayout title="Блог Пирогорска — пироги и еда в Калининграде и на побережье" description="Сколько пирога взять, как выбрать 500 г или 1 кг и что подать к чаю. Расчёты и гиды по еде в Калининграде, Зеленоградске и Светлогорске." breadcrumbs={[{ name: 'Блог', href: '/blog/' }]} {schema}>
-  <LcpImagePreload slot="head" src={featured.image} widths={[360, 480, 680, 960, 1200]} sizes="(max-width: 760px) calc(100vw - 36px), (min-width: 1240px) 660px, 55vw" width={900} height={600} quality={48} />
-  <header class="blog-heading"><div><p class="ed-eyebrow">Блог Пирогорска · {blogEntries.length} материалов</p><h1>К общему<br /><em>столу</em></h1></div><p>Сколько взять, с чем подать, где поесть после моря. Разбираем вопросы, с которых начинается хороший ужин.</p></header>
+<ContentLayout bodyClass="blog-page" title="Блог Пирогорска — пироги и еда в Калининграде и на побережье" description="Сколько пирога взять, как выбрать 500 г или 1 кг и что подать к чаю. Расчёты и гиды по еде в Калининграде, Зеленоградске и Светлогорске." breadcrumbs={[{ name: 'Блог', href: '/blog/' }]} {schema}>
+  <PieTownHero eyebrow={`Журнал пирогового города · ${blogEntries.length} материалов`} title="К общему столу" intro="Сколько взять, с чем подать, где поесть после моря. Разбираем вопросы, с которых начинается хороший ужин." image={town} imageAlt="Пироговый город на страницах раскрытой книги, пирог и балтийские волны" />
   <section class="blog-feature" aria-labelledby="feature-title">
-    <a class="blog-feature-image" href={articleHref(featured.slug)} aria-label={`Читать: ${featured.title}`}><Picture src={featured.image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[360, 480, 680, 960, 1200]} sizes="(max-width: 760px) calc(100vw - 36px), (min-width: 1240px) 660px, 55vw" width={900} height={600} quality={48} alt={featured.imageAlt} loading="eager" fetchpriority="high" decoding="async" /></a>
+    <a class="blog-feature-image" href={articleHref(featured.slug)} aria-label={`Читать: ${featured.title}`}><Picture src={featured.image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[360, 480, 680, 960, 1200]} sizes="(max-width: 760px) calc(100vw - 36px), (min-width: 1240px) 660px, 55vw" width={900} height={600} quality={48} alt={featured.imageAlt} loading="lazy" fetchpriority="low" decoding="async" /></a>
     <div class="blog-feature-copy"><span class="blog-feature-number" aria-hidden="true">01</span><p class="ed-eyebrow">{featured.category} · ≈ {featured.minutes} мин</p><h2 id="feature-title"><a href={articleHref(featured.slug)}>{featured.title}</a></h2><p>Обед у моря, горячее за столом или пироги на Курортном. Выберите место под свою прогулку и посчитайте четыре блюда по официальному меню.</p><a class="blog-text-link" href={articleHref(featured.slug)}>Выбрать кафе<span aria-hidden="true">↗</span></a></div>
   </section>
   <nav class="blog-topics" aria-label="Темы блога"><span>Ещё почитать</span>{otherCategories.map(category => <a href={`#${category.id}`}>{category.name}<small>{category.entries.length}</small></a>)}</nav>

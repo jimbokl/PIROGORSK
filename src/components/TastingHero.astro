@@ -1,19 +1,25 @@
 ---
-import { Picture } from 'astro:assets';
+import CampaignImage from './CampaignImage.astro';
 import Icon from './Icon.astro';
-import city from '../../design/pie-city-banners-20261030/pie-city.png';
-import islands from '../../design/pie-city-banners-20261030/pie-islands.png';
-import berries from '../../design/pie-city-banners-20261030/berry-quarter.png';
+import city from '../../design/pie-city-site-20261030/banner-city.png';
+import islands from '../../design/pie-city-site-20261030/banner-company.png';
+import berries from '../../design/pie-city-site-20261030/banner-berry.png';
+import mini from '../../design/pie-city-site-20261030/banner-mini.png';
+import seaside from '../../design/pie-city-site-20261030/banner-seaside.png';
+import bake from '../../design/pie-city-site-20261030/banner-bake.png';
 import '../styles/tasting-hero.css';
 const slides = [
-  { id: 'pies', eyebrow: 'ПИРОГИ К ВАШЕМУ СТОЛУ', title: 'Пироги к общему столу', note: 'Сытные, сладкие — целый город вкусов.', href: '/menu/', cta: 'Смотреть меню', image: city, alt: 'Пироговый город: золотистые приморские домики на большом пироге с синими волнами' },
-  { id: 'company', eyebrow: 'КОГДА СОБИРАЕТСЯ КОМПАНИЯ', title: 'Соберите общий стол', note: 'Несколько пирогов с разными начинками.', href: '#nabory', cta: 'Подобрать набор', image: islands, alt: 'Три пироговых острова с домиками из выпечки и приморской башней' },
-  { id: 'tea', eyebrow: 'К ЧАЮ И МОРСКОЙ ПРОГУЛКЕ', title: 'Ягодный квартал', note: 'Сладкий пирог с сочной вишнёвой начинкой.', href: '/pirogi/pirog-s-vishney/', cta: 'Выбрать вишнёвый', image: berries, alt: 'Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней' },
+  { id: 'pies', eyebrow: 'ПИРОГИ К ВАШЕМУ СТОЛУ', title: 'Целый город вкусных пирогов', note: 'Золотистая корочка. Любимые начинки. Выбирайте свой пирог к общему столу.', href: '/menu/', cta: 'Смотреть меню', image: city, alt: 'Пироговый город: золотистые приморские домики на большом пироге с синими волнами' },
+  { id: 'company', eyebrow: 'КОГДА СОБИРАЕТСЯ КОМПАНИЯ', title: 'Больше вкусов за одним столом', note: 'Сытный к ужину, сладкий к чаю. Соберите сочетание для своей компании.', href: '#nabory', cta: 'Подобрать набор', image: islands, alt: 'Три пироговых острова с домиками из выпечки и приморской башней' },
+  { id: 'tea', eyebrow: 'К ЧАЮ И МОРСКОЙ ПРОГУЛКЕ', title: 'Ягодный квартал', note: 'Сочная вишня под золотистой корочкой. Пусть у вашей встречи будет сладкое продолжение.', href: '/pirogi/pirog-s-vishney/', cta: 'Выбрать вишнёвый', image: berries, alt: 'Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней' },
+  { id: 'mini', eyebrow: 'МАЛЕНЬКИЙ ФОРМАТ · БОЛЬШОЙ ВЫБОР', title: 'Каждому свой мини-пирог', note: 'Курица с сыром, мясо или овощи. Выбирайте разные начинки — пусть каждый найдёт любимую.', href: '#holland', cta: 'Выбрать мини-пироги', image: mini, alt: 'Мини-пироги с золотистой корочкой на фарфоровом блюде у маленького пирогового города' },
+  { id: 'seaside', eyebrow: 'С БАЛТИЙСКИМ ХАРАКТЕРОМ', title: 'Пироги. Море. Ваша компания.', note: 'Сытный пирог, ягодный морс и время вместе. Соберите свой стол с настроением побережья.', href: '#pirogi39', cta: 'Выбрать целый пирог', image: seaside, alt: 'Большой пирог и ягодный морс на льняной скатерти у моря и сказочного города из выпечки' },
+  { id: 'bake', eyebrow: 'ТЁПЛЫЙ ДОМ · ЗОЛОТИСТАЯ КОРОЧКА', title: 'Уют начинается с духовки', note: 'Румяные слойки и любимые начинки. Выберите заготовки для домашней выпечки.', href: '#bake', cta: 'Для домашней выпечки', image: bake, alt: 'Слойки с ягодной и сырной начинкой на синем противне у печи в пироговом городе' },
 ];
 ---
 <section class="tasting-hero container" aria-labelledby="hero-heading" data-tasting-hero data-flavor="pies" aria-live="polite" aria-atomic="false">
   <div class="tasting-copy">
-    <p class="hero-eyebrow">С БАЛТИЙСКИМ ХАРАКТЕРОМ</p>
+    <p class="hero-eyebrow" data-tasting-eyebrow>{slides[0]!.eyebrow}</p>
     <h1 id="hero-heading" data-tasting-title>{slides[0]!.title}</h1>
     <p class="tasting-description" data-tasting-note>{slides[0]!.note}</p>
     <a class="hero-cta" data-tasting-cta href="/menu/">Смотреть меню<Icon name="arrow" /></a>
@@ -21,13 +27,13 @@ const slides = [
   <div class="tasting-stage">
     <div class="tasting-art" data-tasting-art>
       {slides.map((slide, i) => <div class="tasting-scene" data-tasting-scene={slide.id} hidden={i !== 0}>
-        <Picture src={slide.image} formats={['avif','webp']} fallbackFormat="webp" widths={[240,360,480,640,800]} sizes="(max-width: 600px) 44vw, (max-width: 1000px) 220px, (max-width: 1100px) 240px, (max-width: 1400px) 22vw, 300px" width={1280} height={1280} quality={60} alt={slide.alt} loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : 'low'} />
+        <CampaignImage image={slide.image} alt={slide.alt} priority={i === 0} />
       </div>)}
     </div>
     <div class="tasting-nav" role="group" aria-label="Слайды главной страницы">
       <button class="tasting-arrow" type="button" data-tasting-prev aria-label="Предыдущий слайд"><span aria-hidden="true">‹</span></button>
       <div class="tasting-controls" role="group" aria-label="Выбрать раздел">
-        {slides.map((slide,i) => <button type="button" data-tasting-select={slide.id} data-name={slide.title} data-note={slide.note} data-href={slide.href} data-cta={slide.cta} aria-label={`Слайд ${i + 1}: ${slide.eyebrow.toLowerCase()}`} aria-pressed={i === 0}><span class="sr-only">{slide.eyebrow}</span></button>)}
+        {slides.map((slide,i) => <button type="button" data-tasting-select={slide.id} data-eyebrow={slide.eyebrow} data-name={slide.title} data-note={slide.note} data-href={slide.href} data-cta={slide.cta} aria-label={`Слайд ${i + 1}: ${slide.eyebrow.toLowerCase()}`} aria-pressed={i === 0}><span class="sr-only">{slide.eyebrow}</span></button>)}
       </div>
       <button class="tasting-arrow" type="button" data-tasting-next aria-label="Следующий слайд"><span aria-hidden="true">›</span></button>
     </div>

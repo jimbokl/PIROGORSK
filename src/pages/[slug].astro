@@ -1,6 +1,9 @@
 ---
 import ContentLayout from '../layouts/ContentLayout.astro';
-import EditorialHero from '../components/EditorialHero.astro';
+import PieTownHero from '../components/PieTownHero.astro';
+import kaliningradTown from '../../design/pie-city-site-20261030/kaliningrad-town.png';
+import zelenogradskTown from '../../design/pie-city-site-20261030/zelenogradsk-town.png';
+import svetlogorskTown from '../../design/pie-city-site-20261030/svetlogorsk-town.png';
 import EditorialBody from '../components/EditorialBody.astro';
 import EditorialInterest from '../components/EditorialInterest.astro';
 import EditorialLinks from '../components/EditorialLinks.astro';
@@ -15,14 +18,16 @@ export function getStaticPaths() {
 interface Props { item: (typeof locations)[number] }
 const { item } = Astro.props;
 const menu = cityMenu(item.slug);
+const townImages = {kaliningrad: kaliningradTown, zelenogradsk: zelenogradskTown, svetlogorsk: svetlogorskTown};
+const townImage = townImages[item.slug as keyof typeof townImages];
 const occasionSlugs = new Set<string>(menu.occasionSlugs);
 const occasionLinks = localOccasions.filter(page => page.city === item.slug && occasionSlugs.has(page.slug)).map(page => ({ href: occasionHref(page), title: page.title, text: page.h1, label: 'Повод' }));
 const schema = [{ '@type': 'ItemList', name: `${menu.heading} · ${item.city}`, itemListElement: menu.entries.map((entry, index) => ({ '@type': 'ListItem', position: index + 1, name: entry.product.name, url: `https://pirogorsk.ru${entry.href}` })) }];
 const scenario = scenarios.find(scenario => scenario.slug === item.scenario)!;
 const cityGuide = item.slug === 'svetlogorsk' ? { href: '/journal/gde-poest-v-svetlogorske/', title: 'Где поесть в Светлогорске', text: 'Три адреса и расчёт завтрака на четверых по открытому меню.', label: 'Гид по городу' } : item.slug === 'zelenogradsk' ? { href: '/journal/gde-poest-v-zelenogradske/', title: 'Где поесть в Зеленоградске', text: 'Меню кафе и расчёт четырёх блюд с датой проверки цен.', label: 'Гид по городу' } : { href: '/journal/gde-poest-v-kaliningrade/', title: 'Где поесть в центре Калининграда', text: 'Обед семьёй, еда с собой и расчёт по меню с датой проверки.', label: 'Гид по городу' };
 ---
-<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} {schema} breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }, { name: item.city, href: `/${item.slug}/` }]}>
-  <EditorialHero eyebrow={`${item.city} · направление в планах`} title={item.heading} intro={item.intro} image={item.image} imageAlt={item.imageAlt} compact />
+<ContentLayout bodyClass="city-page" title={`${item.title} | Пирогорск`} description={item.description} {schema} breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }, { name: item.city, href: `/${item.slug}/` }]}>
+  <PieTownHero eyebrow={`${item.city} · Пирогорск у Балтики`} title={item.heading} intro={item.intro} image={townImage} imageAlt={`Пироговый ${item.city}: балтийская архитектура из золотистой выпечки у синих волн`}><a slot="actions" class="ed-button" href="#city-menu">Выбрать пироги <span aria-hidden="true">↗</span></a></PieTownHero>
   <section class="city-delivery" aria-labelledby="city-delivery-title"><h2 id="city-delivery-title">Доставка пирогов {item.deliveryArea}</h2><p class="city-stage"><strong>{item.slug === 'svetlogorsk' ? 'Следующий этап.' : 'Первый этап запуска.'}</strong> {item.slug === 'svetlogorsk' ? 'Рассмотрим Светлогорск после первых 30 дней работы в Калининграде и Зеленоградске. Пока можно отметить интерес к городу.' : 'Начать планируем с Калининграда и Зеленоградска: с продукцией местных пекарен и доставкой через Пирогорск. Дату начала и доступность заказов объявим после подготовки.'}</p>
   <div class="ed-note"><strong>Доставка, ориентир: {deliveryEstimates[item.city]} ₽ за всю подборку.</strong> Это расчёт для проверки спроса, тариф курьера ещё не согласован. <a href="/delivery/">Как считаем доставку</a>. В <a href="/menu/#holland">меню Holland Bakery</a> есть замороженные продукты и заготовки для выпечки.</div>
   </section>

@@ -1,0 +1,23 @@
+---
+import { Picture } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Props { eyebrow: string; title: string; intro?: string; image: ImageMetadata; imageAlt: string }
+const { eyebrow, title, intro, image, imageAlt } = Astro.props;
+---
+<section class="town-hero">
+  <p class="town-hero-eyebrow">{eyebrow}</p>
+  <h1><slot name="title">{title}</slot></h1>
+  {intro && <p class="town-hero-intro">{intro}</p>}
+  <figure class="town-hero-art"><Picture src={image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[160, 240, 360, 480, 640, 800]} sizes="(max-width: 600px) 32vw, (max-width: 1000px) 34vw, 380px" width={640} height={640} quality={58} alt={imageAlt} loading="eager" fetchpriority="high" decoding="async" /></figure>
+  {Astro.slots.has('actions') && <div class="town-hero-actions"><slot name="actions" /></div>}
+</section>
+<style>
+  .town-hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr);grid-template-areas:'eyebrow art' 'title art' 'intro art' 'actions art';align-content:center;column-gap:36px;row-gap:18px;min-height:330px;padding:36px 42px;margin:20px 0 40px;border:1px solid #e7ebf0;border-radius:30px;background:linear-gradient(115deg,#f7f9fc,#fdfaf4);isolation:isolate}
+  .town-hero>*{min-width:0;margin:0}.town-hero-eyebrow{grid-area:eyebrow;display:flex;align-items:center;gap:12px;font:500 10px/1.7 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.town-hero-eyebrow::before{content:'';width:24px;height:2px;background:#b97c2b;flex-shrink:0}
+  .town-hero h1{grid-area:title;max-width:19ch;font:500 clamp(34px,4.1vw,54px)/1.1 var(--serif);letter-spacing:-.045em;text-wrap:balance;color:var(--navy)}
+  .town-hero h1 :global(em){font-weight:400}.town-hero-intro{grid-area:intro;max-width:52ch;font:400 14px/1.8 var(--sans);color:var(--muted)}
+  .town-hero-art{grid-area:art;align-self:center;width:100%;max-width:380px;justify-self:center}.town-hero-art :global(picture){display:block}.town-hero-art :global(img){display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 12px 12px #14263d0d)}
+  .town-hero-actions{grid-area:actions;display:flex;align-items:start;gap:16px;flex-wrap:wrap}.town-hero-actions :global(.ed-button){min-height:48px}.town-hero-actions :global(p){font:400 11px/1.75 var(--sans);color:var(--muted);max-width:35ch;align-self:center;margin:0}
+  @media(max-width:1000px){.town-hero{padding:28px;column-gap:22px;min-height:290px}.town-hero h1{font-size:40px}.town-hero-intro{font-size:13px}}
+  @media(max-width:600px){.town-hero{grid-template-columns:minmax(0,1fr) 90px;grid-template-areas:'eyebrow eyebrow' 'title title' 'intro art' 'actions actions';padding:23px 20px;gap:18px 12px;margin:16px 0 28px;min-height:0;border-radius:23px}.town-hero h1{font-size:clamp(29px,7.8vw,36px);line-height:1.13;letter-spacing:-.04em}.town-hero-eyebrow{font-size:9px;letter-spacing:.08em;gap:8px}.town-hero-eyebrow::before{width:16px}.town-hero-intro{font-size:12px;line-height:1.85}.town-hero-actions{gap:12px}.town-hero-actions :global(.ed-button){font-size:12px}.town-hero-art{align-self:center}}
+</style>

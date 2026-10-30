@@ -4,12 +4,16 @@ import ContentLayout from '../layouts/ContentLayout.astro';
 import Icon from '../components/Icon.astro';
 import { deliveryEstimates } from '../data/pricing';
 import { interestHref } from '../data/editorial';
-import pie from '../../design/art-direction-20261030/hero-fish-scene.png';
+import PieTownHero from '../components/PieTownHero.astro';
+import pie from '../../design/pie-city-site-20261030/delivery-town.png';
+import kaliningradTown from '../../design/pie-city-site-20261030/kaliningrad-town.png';
+import zelenogradskTown from '../../design/pie-city-site-20261030/zelenogradsk-town.png';
+import svetlogorskTown from '../../design/pie-city-site-20261030/svetlogorsk-town.png';
 import '../styles/delivery.css';
 const cities = [
-  { slug: 'kaliningrad', name: 'Калининград', note: 'К ужину дома. К встрече в офисе.', stage: 'Первый этап' },
-  { slug: 'zelenogradsk', name: 'Зеленоградск', note: 'К общему столу после моря.', stage: 'Первый этап' },
-  { slug: 'svetlogorsk', name: 'Светлогорск', note: 'К неспешному вечеру на побережье.', stage: 'Следующий этап' },
+  { image: kaliningradTown, slug: 'kaliningrad', name: 'Калининград', note: 'К ужину дома. К встрече в офисе.', stage: 'Первый этап' },
+  { image: zelenogradskTown, slug: 'zelenogradsk', name: 'Зеленоградск', note: 'К общему столу после моря.', stage: 'Первый этап' },
+  { image: svetlogorskTown, slug: 'svetlogorsk', name: 'Светлогорск', note: 'К неспешному вечеру на побережье.', stage: 'Следующий этап' },
 ];
 const questions = [
   { title: 'Когда можно будет заказать?', answer: 'Готовим запуск в Калининграде и Зеленоградске. К Светлогорску вернёмся после первых 30 дней работы. Пока можно собрать подборку и отметить интерес. Дату открытия, интервалы, способы оплаты и минимальную сумму опубликуем перед началом продаж.' },
@@ -22,24 +26,16 @@ const title = 'Доставка пирогов в Калининграде, Зе
 const description = 'Доставка пирогов Пирогорска: Калининград — 350 ₽, Зеленоградск — 500 ₽, Светлогорск — 650 ₽ за всю подборку. Меню по городам и условия будущего запуска.';
 ---
 <ContentLayout {title} {description} bodyClass="delivery-page" breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }]}>
-  <section class="delivery-hero" aria-labelledby="delivery-heading">
-    <div class="delivery-hero-copy">
-      <p class="delivery-kicker"><span aria-hidden="true"></span>Пирогорск · доставка пирогов</p>
-      <h1 id="delivery-heading">К вашему столу.<br /><em>В вашем городе.</em></h1>
-      <p class="delivery-lead">Ужин после моря, встреча друзей или обед в офисе. Выбирайте пироги, а доставку считайте один раз — за всю подборку.</p>
-      <a class="delivery-button" href="#delivery-cities">Выбрать город<Icon name="arrow" /></a>
-      <p class="delivery-launch">Готовим запуск. Сейчас можно собрать подборку и отметить интерес.</p>
-    </div>
-    <figure class="delivery-hero-visual">
-      <Picture src={pie} formats={['avif', 'webp']} fallbackFormat="webp" widths={[320, 480, 640, 800, 1120]} sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1100px) 45vw, 548px" width={900} height={600} quality={50} alt="Рыбный пирог с золотистой корочкой на керамическом блюде" loading="eager" fetchpriority="high" decoding="async" />
-      <figcaption class="delivery-visual-note"><Icon name="bag" /><span>Всё к одному столу<strong>Одна доставка на всю подборку</strong></span></figcaption>
-    </figure>
-  </section>
+  <PieTownHero eyebrow="Пирогорск · доставка пирогов" title="К вашему столу. В вашем городе." intro="Ужин после моря, встреча друзей или обед в офисе. Выбирайте пироги, а доставку считайте один раз — за всю подборку." image={pie} imageAlt="Пироговый город с мостом, синей дорогой и велосипедом для доставки">
+    <span slot="title">К вашему столу.<br /><em>В вашем городе.</em></span>
+    <Fragment slot="actions"><a class="ed-button" href="#delivery-cities">Выбрать город<Icon name="arrow" /></a><p>Готовим запуск. Сейчас можно собрать подборку и отметить интерес.</p></Fragment>
+  </PieTownHero>
   <section class="delivery-cities" id="delivery-cities" aria-labelledby="delivery-cities-heading">
     <header class="delivery-section-heading"><div><p class="delivery-kicker">Ближе, чем кажется</p><h2 id="delivery-cities-heading">Выберите свой город</h2></div><p>Меню, начинки и расчёт<br /> для вашего стола.</p></header>
     <div class="delivery-city-grid">
       {cities.map((city, index) => <a class="delivery-city-card" href={`/${city.slug}/`} data-delivery-city={city.slug}>
         <div class="delivery-city-top"><span class="delivery-city-number">0{index + 1}</span><span class="delivery-city-stage">{city.stage}</span><Icon name="pin" /></div>
+        <Picture class="delivery-city-art" src={city.image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[160,240,360,480]} sizes="(max-width: 760px) 100px, 220px" width={240} height={240} quality={55} alt="" loading="lazy" />
         <h3>{city.name}</h3><p>{city.note}</p>
         <div class="delivery-city-bottom"><div><span class="delivery-city-price">{deliveryEstimates[city.name]}<span> ₽</span></span><small>за всю подборку</small></div><span class="delivery-city-arrow"><Icon name="arrow" /></span></div>
       </a>)}

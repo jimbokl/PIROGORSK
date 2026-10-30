@@ -3,7 +3,8 @@ import HomeOffers from '../components/HomeOffers.astro';
 import Icon from '../components/Icon.astro';
 import MenuFeedItem from '../components/MenuFeedItem.astro';
 import ContentLayout from '../layouts/ContentLayout.astro';
-import EditorialHero from '../components/EditorialHero.astro';
+import PieTownHero from '../components/PieTownHero.astro';
+import town from '../../design/pie-city-banners-20261030/pie-city.png';
 import EditorialInterest from '../components/EditorialInterest.astro';
 import EditorialLinks from '../components/EditorialLinks.astro';
 import SupplierCatalog from '../components/SupplierCatalog.astro';
@@ -23,7 +24,7 @@ const title = 'Меню — целые пироги, хлеб и выпечка 
 const description = `${catalog.length} позиции перед запуском Пирогорска: 61 пирог а-ля Русс, 78 продуктов Holland Bakery, наши идеи и дополнения. Сравните форматы и предварительные цены, отметьте интерес.`;
 ---
 <ContentLayout {title} {description} bodyClass="menu-page" breadcrumbs={[{ name: 'Меню', href: '/menu/' }]}>
-  <EditorialHero eyebrow={`${catalog.length} позиции · готовим запуск`} title="Меню пирогов, хлеба и выпечки" intro="Целые пироги, мини-форматы, хлеб и сладкое от местных пекарен. Выбирайте начинки и собирайте свой стол." />
+  <PieTownHero image={town} imageAlt="Пироговый город: золотистые балтийские домики на пироге у синих волн" eyebrow={`${catalog.length} позиции · готовим запуск`} title="Меню пирогов, хлеба и выпечки" intro="Целые пироги, мини-форматы, хлеб и сладкое от местных пекарен. Выбирайте начинки и собирайте свой стол." />
   <div class="ed-note"><strong>Готовим запуск.</strong> Цены предварительные. Подборка помогает выбрать будущее меню и пока не является заказом.</div>
   <form class="menu-finder" role="search" aria-label="Поиск по всему меню" data-menu-finder>
     <label for="menu-search">Что хочется попробовать?</label>

@@ -1,0 +1,9 @@
+---
+import { Picture } from 'astro:assets';
+import town from '../../design/pie-city-site-20261030/journal-town.png';
+---
+<a class="journal-masthead" href="/blog/"><Picture src={town} formats={['avif', 'webp']} fallbackFormat="webp" widths={[80, 160]} sizes="64px" width={64} height={64} quality={55} loading="eager" fetchpriority="low" alt="" /><span>Журнал пирогового города<small>Начинки, встречи и Балтийское море</small></span><span class="journal-masthead-arrow" aria-hidden="true">↗</span></a>
+<style>
+  .journal-masthead{display:flex;align-items:center;gap:14px;width:fit-content;max-width:100%;margin:18px 0 5px;padding:8px 20px 8px 9px;border:1px solid var(--ed-line);border-radius:18px;text-decoration:none;color:var(--ed-ink);background:#fafbfd;font:500 12px/1.5 var(--sans)}.journal-masthead :global(picture){width:64px;flex-shrink:0}.journal-masthead :global(img){display:block;width:64px;height:64px;object-fit:contain}.journal-masthead small{display:block;margin-top:4px;color:var(--ed-muted);font-size:10px;font-weight:400}.journal-masthead-arrow{margin-left:12px;font-size:20px}.journal-masthead:hover{border-color:#aab7c7}.journal-masthead:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+  @media(max-width:420px){.journal-masthead{font-size:10px;gap:10px;padding-right:14px;margin-top:14px}.journal-masthead :global(picture),.journal-masthead :global(img){width:48px;height:48px}.journal-masthead small{font-size:9px}.journal-masthead-arrow{margin-left:0}}
+</style>

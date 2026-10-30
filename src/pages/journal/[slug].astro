@@ -1,5 +1,6 @@
 ---
 import ContentLayout from '../../layouts/ContentLayout.astro';
+import JournalMasthead from '../../components/JournalMasthead.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
 import EditorialInterest from '../../components/EditorialInterest.astro';
@@ -35,7 +36,8 @@ const dateLabel = isNew ? new Intl.DateTimeFormat('ru-RU', { day: 'numeric', mon
 const schema = [{ '@type': 'BlogPosting', '@id': `${siteOrigin}${articleHref(item.slug)}#article`, headline: item.title, description: item.description, inLanguage: 'ru-RU', mainEntityOfPage: `${siteOrigin}${articleHref(item.slug)}`, isPartOf: { '@id': `${siteOrigin}/blog/#blog` }, image: `${siteOrigin}${image}`, ...(isNew ? { datePublished: item.date, dateModified: item.date } : {}), author: { '@type': 'Organization', '@id': `${siteOrigin}/#organization`, name: 'Пирогорск', url: `${siteOrigin}/about/` }, publisher: { '@id': `${siteOrigin}/#organization` } }];
 const graph=[...schema,faqSchema(faq),isCity?placesSchema(city):{'@type':'ItemList',name:'Подборки для общего стола',itemListElement:contextualLinks(city).slice(0,2).map((link,i)=>({'@type':'ListItem',position:i+1,name:link.title,url:`${siteOrigin}${link.href}`}))}];
 ---
-<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} schema={graph} {image} imageAlt={entry.imageAlt} type="article">
+<ContentLayout bodyClass="journal-page" title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} schema={graph} {image} imageAlt={entry.imageAlt} type="article">
+  <JournalMasthead />
   <article class:list={['blog-article',{'blog-city-guide':isCity}]}>
     <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={isCity ? undefined : item.intro} image={isCity ? undefined : entry.image} imageAlt={entry.imageAlt} compact>
       {!isCity && <p class="blog-byline">Пирогорск{isNew && <> · <time datetime={item.date}>{dateLabel}</time></>} · ≈ {entry.minutes} мин чтения</p>}
