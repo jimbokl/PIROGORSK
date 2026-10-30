@@ -27,3 +27,7 @@
 /* Inline confirmation remains inside the modal's accessible tree. */
 .selection-feedback{font:400 12px/1.7 var(--sans);color:var(--muted);margin-top:14px}.selection-feedback:empty{display:none}
 .selection-dialog .item-controls button{min-width:44px;min-height:44px}.selection-dialog .item-remove{min-height:44px}
+.selection-dialog .selection-total{flex-wrap:wrap;align-items:baseline;gap:8px 16px}
+.selection-dialog .selection-total>span,.selection-dialog .selection-total strong{white-space:nowrap}
+.selection-dialog .selection-total strong{margin-left:auto}
+.home-page .toast{white-space:normal;text-align:center;overflow-wrap:anywhere}

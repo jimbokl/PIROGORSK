@@ -44,20 +44,23 @@ function openDialog(id: string) {
   dialog.showModal();
 }
 
-function setCity(value: string, announce = true) {
+function setCity(value: string, announce = true, persist = true) {
   if (!['Зеленоградск', 'Калининград', 'Светлогорск'].includes(value)) return;
   city = value;
   all('[data-city]').forEach(element => element.textContent = city);
   all('[data-select-city]').forEach(element => {
     if (element.closest('#city-dialog')) element.setAttribute('aria-pressed', String(element.dataset.selectCity === city));
   });
-  try { localStorage.setItem('pirogorsk-city', city); } catch { /* The city still works when storage is unavailable. */ }
-  document.querySelector<HTMLDialogElement>('#city-dialog')?.close();
+  if (persist) {
+    try { localStorage.setItem('pirogorsk-city', city); } catch { /* The city still works when storage is unavailable. */ }
+    document.querySelector<HTMLDialogElement>('#city-dialog')?.close();
+  }
   if (document.querySelector<HTMLDialogElement>('#selection-dialog')?.open) renderSelection();
   if (announce) toast(`Ваш город — ${city}`);
 }
 
 function addProduct(id: string, value: number) {
+  syncSavedState();
   const product = products.find(product => product.id === id);
   if (!product?.variants.some(variant => variant.value === value)) return false;
   const existing = selection.find(item => item.id === id && item.value === value);
@@ -71,6 +74,7 @@ function addProduct(id: string, value: number) {
 }
 
 function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add') {
+  syncSavedState();
   const merged = mergeSelection(selection, items, products, mode);
   if (!merged) {
     const message = 'Не удалось добавить всё: максимум 24 варианта и 99 штук одного варианта. Уменьшите подборку и повторите.';
@@ -96,14 +100,35 @@ function chooseBundle(id: string, mode: 'add' | 'ensure' = 'add') {
   }
 }
 
-function updateBadge() {
-  try { localStorage.setItem('pirogorsk-selection', JSON.stringify(selection)); } catch { /* In-memory selection remains available. */ }
+function updateBadge(persist = true) {
+  if (persist) {
+    try { localStorage.setItem('pirogorsk-selection', JSON.stringify(selection)); } catch { /* In-memory selection remains available. */ }
+  }
   const count = selection.reduce((sum, item) => sum + item.quantity, 0);
   all('[data-count]').forEach(element => { element.textContent = String(count); element.hidden = count === 0; });
   document.querySelector('[data-open="selection-dialog"]')?.setAttribute('aria-label', count ? `Подборка: ${count} шт.` : 'Подборка, открыть');
 }
 
+function syncSavedState() {
+  try {
+    const savedCity = localStorage.getItem('pirogorsk-city') || 'Зеленоградск';
+    const saved: unknown = JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]');
+    const next = readSavedSelection(saved, products);
+    const changed = JSON.stringify(selection) !== JSON.stringify(next);
+    if (changed) selection.splice(0, selection.length, ...next);
+    updateBadge(false);
+    if (savedCity !== city) setCity(savedCity, false, false);
+    else if (changed && document.querySelector<HTMLDialogElement>('#selection-dialog')?.open) renderSelection();
+  } catch { /* Preserve this visit's selection when browser storage is unavailable. */ }
+}
+
 function renderSelection() {
+  const active = document.activeElement as HTMLElement | null;
+  const activeRow = active?.closest<HTMLElement>('[data-item]');
+  const focusedAction = activeRow && itemContainer.contains(activeRow)
+    ? ['increase', 'decrease', 'remove'].find(action => active?.hasAttribute(`data-${action}`)) : undefined;
+  const focusedIndex = activeRow ? [...itemContainer.children].indexOf(activeRow) : -1;
+  const focusedId = activeRow?.dataset.item;
   itemContainer.replaceChildren();
   const available = availableAddOns(selection, products);
   document.querySelector<HTMLElement>('[data-upsells]')!.hidden = available.length === 0;
@@ -117,6 +142,7 @@ function renderSelection() {
     empty.className = 'empty-selection';
     empty.innerHTML = '<p>Здесь будут ваши пироги</p><p>Начните с любимой начинки.<br>А размер выберем под компанию.</p><button class="button" data-go-catalog>Выбрать пирог</button>';
     itemContainer.append(empty);
+    if (focusedAction) empty.querySelector<HTMLButtonElement>('button')?.focus({ preventScroll: true });
     return;
   }
   for (const item of selection) {
@@ -144,6 +170,11 @@ function renderSelection() {
   document.querySelector('[data-selection-delivery]')!.textContent = money(delivery);
   document.querySelector('[data-selection-grand-total]')!.textContent = money(total + delivery);
   document.querySelector('[data-total-weight]')!.textContent = [totalWeight ? `Пироги и выпечка — ${weightLabel(totalWeight)}` : '', drinks ? `Напитки — ${(drinks / 1000).toLocaleString('ru-RU')} л` : '', accessories ? `Посуда — ${accessories} наб.` : ''].filter(Boolean).join(' · ');
+  if (focusedAction) {
+    const rows = [...itemContainer.children] as HTMLElement[];
+    const next = rows.find(row => row.dataset.item === focusedId) || rows[Math.min(focusedIndex, rows.length - 1)];
+    next?.querySelector<HTMLButtonElement>(`[data-${focusedAction}]`)?.focus({ preventScroll: true });
+  }
 }
 
 all('[data-open]').forEach(button => button.addEventListener('click', () => openDialog(button.dataset.open!)));
@@ -218,17 +249,15 @@ document.addEventListener('click', event => {
   const control = target.closest<HTMLElement>('[data-decrease], [data-increase], [data-remove]');
   if (!control) return;
   const row = control.closest<HTMLElement>('[data-item]')!;
+  syncSavedState();
   const itemIndex = selection.findIndex(item => `${item.id}-${item.value}` === row.dataset.item);
   if (itemIndex < 0) return;
   const action = control.hasAttribute('data-increase') ? 'increase' : control.hasAttribute('data-decrease') ? 'decrease' : 'remove';
-  const rowIndex = [...itemContainer.children].indexOf(row);
   if (action === 'remove' || (action === 'decrease' && selection[itemIndex].quantity === 1)) selection.splice(itemIndex, 1);
   else if (action === 'increase' && selection[itemIndex].quantity >= 99) { toast('Можно выбрать до 99 таких товаров'); return; }
   else selection[itemIndex].quantity += action === 'increase' ? 1 : -1;
   updateBadge();
   renderSelection();
-  const nextRow = itemContainer.children[Math.min(rowIndex, itemContainer.children.length - 1)];
-  (nextRow?.querySelector(`[data-${action}]`) as HTMLButtonElement | null)?.focus();
 });
 
 document.querySelector('[data-copy]')!.addEventListener('click', async () => {
@@ -251,6 +280,12 @@ document.querySelector('[data-copy]')!.addEventListener('click', async () => {
 });
 
 updateBadge();
+window.addEventListener('storage', event => {
+  if (event.key === null || event.key === 'pirogorsk-selection' || event.key === 'pirogorsk-city') syncSavedState();
+});
+window.addEventListener('pageshow', syncSavedState);
+window.addEventListener('focus', syncSavedState);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) syncSavedState(); });
 
 all('[data-order]').forEach(button => button.addEventListener('click', () => {
   if (!selection.length) { goToCatalog(); return; }

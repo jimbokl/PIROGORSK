@@ -13,6 +13,7 @@ import worker from '../dist/worker.js';
 import { verifyProductAddOns } from './qa-product-addons.mjs';
 import { verifyOffers } from './qa-offers.mjs';
 import { verifyMenuQuantity } from './qa-menu-quantity.mjs';
+import { verifyStorefrontSync } from './qa-storefront-sync.mjs';
 
 // Actual Astro output and production origins; every request is intercepted.
 // Only the local in-memory database receives applications and Metrica is a queue.
@@ -43,7 +44,7 @@ try {
     page.on('pageerror', error => errors.push(error.message));
     await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
     await page.setRequestInterception(true);
-    page.on('request', async request => {
+    const interceptRequest = async request => {
       const url = new URL(request.url());
       try {
         if (url.protocol === 'data:') { await request.continue(); return; }
@@ -62,7 +63,8 @@ try {
         assert.ok(path.startsWith(site.endsWith(sep) ? site : site + sep), 'static path must stay in site/');
         await request.respond({ status: 200, contentType: types[extname(path)] || 'application/octet-stream', body: await readFile(path) });
       } catch (error) { failedResources.push(`${url.pathname}: ${error.message}`); await request.abort(); }
-    });
+    };
+    page.on('request', interceptRequest);
     const goals = () => page.evaluate(() => (window.ym?.a || []).filter(args => args[1] === 'reachGoal').map(args => ({ goal: args[2], params: args[3] })));
     const selection = () => page.evaluate(() => JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]'));
     // City landing pages share the real catalog, keep delivery once, and route
@@ -314,6 +316,11 @@ try {
     await verifyOffers(page, origin, width, fileURLToPath(new URL('../dist/qa-offers/', import.meta.url)));
     await verifyProductAddOns(page, origin, width, fileURLToPath(new URL('../dist/qa-product-addons/', import.meta.url)));
     await verifyMenuQuantity(page, origin, width, fileURLToPath(new URL('../dist/qa-menu-quantity/', import.meta.url)));
+    await verifyStorefrontSync(page, origin, width, async other => {
+      other.on('pageerror', error => errors.push(error.message));
+      await other.setRequestInterception(true);
+      other.on('request', interceptRequest);
+    });
     await context.close();
   }
   assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 9);

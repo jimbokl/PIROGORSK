@@ -8,6 +8,11 @@ if (feed && feedback) {
   const products: Product[] = JSON.parse(document.querySelector('#menu-feed-catalog')?.textContent || '[]');
   const message = feedback.querySelector<HTMLElement>('[data-feed-message]')!;
   const selectionLink = feedback.querySelector<HTMLAnchorElement>('[data-feed-selection]')!;
+  let lastAdd: HTMLAnchorElement | undefined;
+  feedback.querySelector('[data-feed-dismiss]')?.addEventListener('click', () => {
+    feedback.hidden = true;
+    lastAdd?.focus({ preventScroll: true });
+  });
   for (const card of feed.querySelectorAll<HTMLElement>('[data-supplier-id], [data-feed-id]')) {
     const id = card.dataset.supplierId || card.dataset.feedId!;
     const button = card.querySelector<HTMLAnchorElement>('[data-supplier-link], [data-feed-add]')!;
@@ -42,11 +47,16 @@ if (feed && feedback) {
       update();
     });
     card.addEventListener('change', update);
+    quantityInput.addEventListener('input', () => {
+      // Reprice while typing a valid quantity; leave an unfinished edit until blur.
+      if (quantityInput.value !== '' && quantityInput.validity.valid) update();
+    });
     update();
     button.addEventListener('click', event => {
       // Preserve opening the working fallback URL in another tab.
       if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
+      lastAdd = button;
       update();
       const value = Number(card.querySelector<HTMLInputElement>('input:checked')!.value);
       const quantity = Number(quantityInput.value);

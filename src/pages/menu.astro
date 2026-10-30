@@ -1,5 +1,6 @@
 ---
 import HomeOffers from '../components/HomeOffers.astro';
+import Icon from '../components/Icon.astro';
 import MenuFeedItem from '../components/MenuFeedItem.astro';
 import ContentLayout from '../layouts/ContentLayout.astro';
 import EditorialHero from '../components/EditorialHero.astro';
@@ -45,7 +46,7 @@ const description = `${catalog.length} позиции перед запуско�
     <div class="menu-feed-list">{extras.map(product => <MenuFeedItem {product} />)}</div>
   </section>
   </div>
-  <aside class="menu-feed-feedback" data-feed-feedback hidden aria-label="Ваша подборка"><p role="status" aria-live="polite" data-feed-message></p><a href="/?interest=selection" data-feed-selection>Открыть подборку</a></aside>
+  <aside class="menu-feed-feedback" data-feed-feedback hidden aria-label="Ваша подборка"><p role="status" aria-live="polite" data-feed-message></p><a href="/?interest=selection" data-feed-selection>Открыть подборку</a><button type="button" class="menu-feedback-close" data-feed-dismiss aria-label="Скрыть уведомление о подборке"><Icon name="close" /></button></aside>
   <script type="application/json" id="menu-feed-catalog" set:html={JSON.stringify(feedPrices).replaceAll("<", "\\u003c")} />
   <EditorialInterest interest="menu" title="Какие пироги вам интересны?" text="На главной можно собрать анонимную подборку и отметить город. Это поможет нам оценить спрос перед запуском; заказ и оплата пока недоступны." label="Выбрать интересные пироги" />
   <EditorialLinks title="Собираете стол к случаю?" links={scenarios.map(item => ({ href: `/nabor/${item.slug}/`, title: item.title, text: item.intro, label: 'Сценарий' }))} />

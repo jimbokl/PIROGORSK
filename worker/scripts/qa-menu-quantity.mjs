@@ -53,6 +53,19 @@ export async function verifyMenuQuantity(page, origin, width, output) {
   await click('[data-feed-id=meat] [data-feed-add]');
   expected.at(-1).quantity = 6;
   assert.deepEqual(await selection(), expected);
+  await click('[data-feed-dismiss]');
+  assert.equal(await page.$eval('[data-feed-feedback]', el => el.hidden), true);
+  assert.equal(await page.$eval('[data-feed-id=meat] [data-feed-add]', el => document.activeElement === el), true);
+  // A valid typed value reprices before blur; an unfinished edit remains editable.
+  await page.$eval('[data-feed-id=meat] [data-feed-quantity]', input => {
+    input.value = '7'; input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  const unit = catalog.find(p => p.id === 'meat').variants.find(v => v.value === expected.at(-1).value).price;
+  assert.equal(await page.$eval('[data-feed-id=meat] [data-feed-price-label]', el => Number(el.textContent.replace(/\D/g, ''))), unit * 7);
+  await page.$eval('[data-feed-id=meat] [data-feed-quantity]', input => {
+    input.value = ''; input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  assert.equal(await page.$eval('[data-feed-id=meat] [data-feed-quantity]', el => el.value), '');
   await page.goto(`${origin}/?interest=selection&qa=1`, { waitUntil: 'networkidle0' });
   assert.equal(await page.$eval('#selection-dialog', el => el.open), true);
   assert.equal(await page.$eval('[data-total]', el => Number(el.textContent.replace(/\D/g, ''))), selectionPrice(expected, catalog));
