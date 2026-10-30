@@ -1,42 +1,24 @@
 ---
-import ContentLayout from '../../layouts/ContentLayout.astro';
-import EditorialHero from '../../components/EditorialHero.astro';
-import EditorialBody from '../../components/EditorialBody.astro';
-import EditorialInterest from '../../components/EditorialInterest.astro';
-import EditorialLinks from '../../components/EditorialLinks.astro';
-import CityMenu from '../../components/CityMenu.astro';
-import { locations, scenarios } from '../../data/editorial';
-import { deliveryEstimates } from '../../data/pricing';
-import { cityMenu } from '../../data/city-menu';
-import { localOccasions, occasionHref } from '../../data/seo-occasions';
+import { locations } from '../../data/editorial';
 export function getStaticPaths() {
   return locations.map(item => ({ params: { slug: item.slug }, props: { item } }));
 }
 interface Props { item: (typeof locations)[number] }
 const { item } = Astro.props;
-const menu = cityMenu(item.slug);
-const occasionSlugs = new Set<string>(menu.occasionSlugs);
-const occasionLinks = localOccasions.filter(page => page.city === item.slug && occasionSlugs.has(page.slug)).map(page => ({ href: occasionHref(page), title: page.title, text: page.h1, label: 'Повод' }));
-const schema = [{ '@type': 'ItemList', name: `${menu.heading} · ${item.city}`, itemListElement: menu.entries.map((entry, index) => ({ '@type': 'ListItem', position: index + 1, name: entry.product.name, url: `https://pirogorsk.ru${entry.href}` })) }];
-const scenario = scenarios.find(scenario => scenario.slug === item.scenario)!;
-const cityGuide = item.slug === 'svetlogorsk' ? { href: '/journal/gde-poest-v-svetlogorske/', title: 'Где поесть в Светлогорске', text: 'Три адреса и расчёт завтрака на четверых по открытому меню.', label: 'Гид по городу' } : item.slug === 'zelenogradsk' ? { href: '/journal/gde-poest-v-zelenogradske/', title: 'Где поесть в Зеленоградске', text: 'Меню кафе и расчёт четырёх блюд с датой проверки цен.', label: 'Гид по городу' } : { href: '/journal/gde-poest-v-kaliningrade/', title: 'Где поесть в центре Калининграда', text: 'Обед семьёй, еда с собой и расчёт по меню с датой проверки.', label: 'Гид по городу' };
+const target = `/${item.slug}/`;
+// GitHub Pages is static: an immediate meta refresh is the permanent redirect
+// supported by this host. Keep a canonical and a usable link without JavaScript.
 ---
-<ContentLayout title={`${item.title} | Пирогорск`} description={item.description} {schema} breadcrumbs={[{ name: 'Доставка', href: '/delivery/' }, { name: item.city, href: `/dostavka/${item.slug}/` }]}>
-  <EditorialHero eyebrow={`${item.city} · направление в планах`} title={item.title} intro={item.intro} image={item.image} imageAlt={item.imageAlt} compact />
-  <p class="city-stage"><strong>{item.slug === 'svetlogorsk' ? 'Следующий этап.' : 'Первый этап запуска.'}</strong> {item.slug === 'svetlogorsk' ? 'Рассмотрим Светлогорск после первых 30 дней работы в Калининграде и Зеленоградске. Пока можно отметить интерес к городу.' : 'Начать планируем с Калининграда и Зеленоградска: с продукцией местных пекарен и доставкой через Пирогорск. Дату начала и доступность заказов объявим после подготовки.'}</p>
-  <div class="ed-note"><strong>Доставка, ориентир: {deliveryEstimates[item.city]} ₽ за всю подборку.</strong> Это расчёт для проверки спроса, тариф курьера ещё не согласован. <a href="/delivery/">Как считаем доставку</a>. В <a href="/menu/#holland">меню Holland Bakery</a> есть замороженные продукты и заготовки для выпечки.</div>
-  <nav class="city-sections" aria-label="На этой странице"><a href="#city-menu">Пироги и цены</a><a href="#city-budget">Расчёт с доставкой</a><a href="#city-questions">Вопросы о доставке</a></nav>
-  <CityMenu slug={item.slug} />
-  <EditorialLinks title="Под ваш повод" links={occasionLinks} />
-  <EditorialBody sections={item.sections} />
-  <section class="city-questions" id="city-questions" aria-labelledby="city-questions-title">
-    <h2 id="city-questions-title">О доставке: {item.city}</h2>
-    {menu.faq.map(faq => <div><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}
-  </section>
-  <EditorialInterest interest={item.interest} title={`Интересен Пирогорск: ${item.city}?`} text={`На главной выберем город «${item.city}». Дальше можно собрать вкусы и отметить предпочтения в анонимной форме. Сейчас это проверка спроса: заказ, бронь дня и доставка ещё недоступны.`} label={`Выбрать ${item.city}`} />
-  <EditorialLinks title="Продумать ваш стол" links={[...(cityGuide ? [cityGuide] : []), { href: `/nabor/${scenario.slug}/`, title: scenario.title, text: scenario.description, label: 'Сценарий' }, { href: '/menu/', title: 'Будущее меню', text: 'Сравните начинки и узнайте, что ещё предстоит уточнить о пирогах.', label: 'Вкусы' }, { href: '/delivery/', title: 'Планы и условия доставки', text: 'Что опубликуем до начала работы и как сейчас выразить интерес.', label: 'Перед запуском' }]} />
-</ContentLayout>
-<style>
-  .city-stage{font-size:13px;line-height:1.8;max-width:80ch;margin:0 0 24px;color:var(--ed-muted)}.city-stage strong{color:var(--ed-ink)}
-  .city-sections{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:22px}.city-sections a{display:flex;align-items:center;min-height:44px;font-size:12px;text-underline-offset:4px}.city-questions{margin-block:40px 50px;max-width:850px;scroll-margin-top:24px}.city-questions h2{font-size:clamp(28px,4vw,38px);margin-bottom:24px}.city-questions>div{border-top:1px solid var(--ed-line);padding-block:24px}.city-questions h3{font-size:23px;line-height:1.35}.city-questions p{font-size:13px;line-height:1.85;color:var(--ed-muted);margin-top:12px}
-</style>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{item.heading} — новый адрес | Пирогорск</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href={`https://pirogorsk.ru${target}`} />
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <script is:inline define:vars={{ target }}>location.replace(target + location.search + location.hash);</script>
+  </head>
+  <body><main><h1>{item.heading}</h1><p>Страница переехала. <a href={target}>Перейти к меню и планам доставки</a>.</p></main></body>
+</html>

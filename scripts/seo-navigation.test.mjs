@@ -11,7 +11,10 @@ test('editorial attribution allows only registered routes and strips all URL pay
   for (const badSource of ['https://evil.example/blog/', 'https://pirogorsk.ru/private-email/', 'https://[']) assert.equal(guideTransition(badSource, '/podbor/'), undefined);
   assert.equal(canonicalSeoPath('/missing/'), undefined);
   assert.equal(isConversionHref('/povody/kaliningrad/semeynyy-uzhin/'), true);
-  assert.equal(isConversionHref('/dostavka/kaliningrad/'), true);
+  for (const city of ['kaliningrad', 'zelenogradsk', 'svetlogorsk']) {
+    assert.equal(isConversionHref(`/${city}/`), true);
+    assert.equal(canonicalSeoPath(`/dostavka/${city}/`), undefined);
+  }
   assert.equal(isConversionHref('/journal/rybnye-pirogi-v-kaliningrade/'), false);
 });
 

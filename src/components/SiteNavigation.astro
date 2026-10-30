@@ -1,10 +1,11 @@
 ---
 import '../styles/navigation.css';
+import { locations } from '../data/editorial';
 interface Props { home?: boolean; drawer?: boolean }
 const { home = false, drawer = false } = Astro.props;
 const links = [{ href: '/menu/', name: 'Все пироги' }, { href: home ? '#nabory' : '/menu/#nabory', name: 'Наборы к столу' }, { href: '/delivery/', name: 'Доставка' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/blog/', name: 'Блог' }, { href: '/about/', name: 'О Пирогорске' }];
 const path = Astro.url.pathname;
-const isCurrent = (href: string) => path === href || (href === '/menu/' && (path.startsWith('/pirogi/') || path.startsWith('/catalog/'))) || (href === '/blog/' && path.startsWith('/journal/')) || (href === '/delivery/' && path.startsWith('/dostavka/'));
+const isCurrent = (href: string) => path === href || (href === '/menu/' && (path.startsWith('/pirogi/') || path.startsWith('/catalog/'))) || (href === '/blog/' && path.startsWith('/journal/')) || (href === '/delivery/' && locations.some(city => path === `/${city.slug}/`));
 ---
 <nav class:list={['site-navigation', { 'site-navigation--drawer': drawer }]} aria-label={drawer ? 'Разделы сайта' : 'Основная навигация'}>
   {links.map(link => <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>{link.name}</a>)}

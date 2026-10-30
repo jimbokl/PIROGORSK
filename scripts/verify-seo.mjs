@@ -24,7 +24,7 @@ const htmlFiles = async directory => {
 };
 const routeFor = file => `/${path.relative(output, file).split(path.sep).join('/')}`.replace(/index\.html$/, '');
 const fileFor = pathname => path.join(output, pathname.endsWith('/') ? `${pathname}index.html` : pathname);
-const isEditorial = route => /^\/(menu|delivery|partners|about|podbor|povody|blog)\/$|^\/(pirogi|catalog|nabor|dostavka|journal|povody)\/[^/]+\/$|^\/povody\/(kaliningrad|zelenogradsk|svetlogorsk)\/[^/]+\/$/.test(route);
+const isEditorial = route => /^\/(menu|delivery|partners|about|podbor|povody|blog|kaliningrad|zelenogradsk|svetlogorsk)\/$|^\/(pirogi|catalog|nabor|dostavka|journal|povody)\/[^/]+\/$|^\/povody\/(kaliningrad|zelenogradsk|svetlogorsk)\/[^/]+\/$/.test(route);
 
 try {
   const all = await htmlFiles(output);
@@ -39,6 +39,15 @@ try {
   for (const file of files) {
     const route = routeFor(file);
     const html = routes.get(route);
+    const cityAlias = route.match(/^\/dostavka\/(kaliningrad|zelenogradsk|svetlogorsk)\/$/);
+    if (cityAlias) {
+      const target = `/${cityAlias[1]}/`;
+      assert(tags(html, 'meta').some(item => item.name === 'robots' && item.content === 'noindex, follow'), `${route}: redirect must be noindex.`);
+      assert(tags(html, 'meta').some(item => item['http-equiv'] === 'refresh' && item.content === `0;url=${target}`), `${route}: missing immediate redirect.`);
+      assert(tags(html, 'link').some(item => item.rel === 'canonical' && item.href === `${origin}${target}`), `${route}: wrong redirect canonical.`);
+      assert(routes.has(target), `${route}: redirect target missing.`);
+      continue;
+    }
     const title = decode(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] ?? '');
     const metas = tags(html, 'meta');
     const meta = (name, property = false) => metas.filter(item => item[property ? 'property' : 'name'] === name);

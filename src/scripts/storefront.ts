@@ -325,6 +325,8 @@ if (interestId === 'selection') {
   const card = all('[data-product]').find(card => card.dataset.product === interestId);
   document.dispatchEvent(new CustomEvent('pirogorsk:reveal-product', { detail: interestId }));
   if (product.variants.some(item => item.value === variant)) {
+    const cityIntent = `city-${interestParams.get('city')}`;
+    if (Object.hasOwn(editorialCityIntents, cityIntent)) setCity(editorialCityIntents[cityIntent as keyof typeof editorialCityIntents], false);
     // The product-page CTA explicitly adds this size. Reloading that URL keeps
     // the same selection instead of increasing its quantity again.
     const input = card?.querySelector<HTMLInputElement>(`input[value="${variant}"]`);

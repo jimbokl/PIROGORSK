@@ -71,7 +71,11 @@ try {
     // into the existing city intent without adding products to the selection.
     for (const slug of ['kaliningrad', 'zelenogradsk', 'svetlogorsk']) {
       const menu = cityMenu(slug);
-      await page.goto(`${origin}/dostavka/${slug}/`, { waitUntil: 'networkidle0' });
+      await page.goto(`${origin}/dostavka/${slug}/?source=legacy#city-menu`, { waitUntil: 'networkidle0' });
+      await page.waitForFunction(slug => location.pathname === `/${slug}/`, {}, slug);
+      assert.equal(new URL(page.url()).searchParams.get('source'), 'legacy');
+      assert.equal(new URL(page.url()).hash, '#city-menu');
+      await page.goto(`${origin}/${slug}/`, { waitUntil: 'networkidle0' });
       assert.equal(await page.$$eval('[data-city-product]', cards => cards.length), 3);
       assert.equal(await page.$eval('[data-city-total]', el => Number(el.dataset.cityTotal)), menu.total);
       assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true, `city ${slug} overflow at ${width}`);
@@ -89,6 +93,14 @@ try {
       assert.equal(await page.$$eval('[data-city]', elements => elements.every(el => el.textContent === document.querySelector('[data-city]').textContent)), true);
       assert.equal(await page.$eval('[data-city]', el => el.textContent), menu.city);
       assert.deepEqual(await selection(), [], 'city intent preserves the empty selection');
+      await page.goto(`${origin}/${slug}/`, { waitUntil: 'networkidle0' });
+      await page.evaluate(city => localStorage.setItem('pirogorsk-city', city === 'Светлогорск' ? 'Калининград' : 'Светлогорск'), menu.city);
+      const entry = menu.entries[0];
+      await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-city-add]')]);
+      assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
+      assert.equal(await page.$eval('[data-city]', el => el.textContent), menu.city);
+      assert.deepEqual(await selection(), [{ id: entry.product.id, value: entry.variant.value, quantity: 1 }]);
+      await page.evaluate(() => localStorage.removeItem('pirogorsk-selection'));
     }
     await page.goto(`${origin}/journal/skolko-piroga-na-cheloveka/`, { waitUntil: 'networkidle0' });
     await page.waitForSelector('[data-party-apply]');

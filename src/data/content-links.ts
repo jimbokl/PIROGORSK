@@ -3,6 +3,7 @@ import {placesForCity,cityNames,type CitySlug} from './local-data';
 import type {EditorialLink} from './editorial';
 export const cityForArticle=(slug:string):CitySlug=>slug.includes('svetlogorsk')?'svetlogorsk':slug.includes('kaliningrad')?'kaliningrad':'zelenogradsk';
 export const contextualLinks=(city:CitySlug):EditorialLink[]=>[
+ {href:`/${city}/`,title:`Пироги: ${cityNames[city]}`,text:'Меню, предварительные цены и планы доставки для города.',label:'Ваш город'},
  {href:'/nabor/uzhin-v-apartamentah/',title:'Собрать семейный ужин',text:'500 г и 1 кг: два формата для разных вкусов.',label:'Подборка'},
  {href:'/nabor/na-kompaniyu/',title:'Стол на компанию',text:'Сытные и сладкие варианты; количество считает калькулятор.',label:'Подборка'},
  ...localOccasions.filter(p=>p.city===city&&['v-ofis-na-den-rozhdeniya','semeynyy-uzhin'].includes(p.slug)).map(p=>({href:occasionHref(p),title:p.h1,text:`Расчёт для встречи · ${cityNames[city]}.`,label:'К случаю'})),

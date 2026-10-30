@@ -141,7 +141,7 @@
     "serpValidated": false,
     "ownershipBasis": "existing_content",
     "nextStep": {
-      "path": "/dostavka/kaliningrad/",
+      "path": "/kaliningrad/",
       "label": "Узнать о планах Пирогорска в городе"
     },
     "relatedArticles": [
@@ -990,40 +990,40 @@
     "ownershipBasis": "existing_content"
   },
   {
-    "path": "/dostavka/zelenogradsk/",
+    "path": "/zelenogradsk/",
     "cluster": "city",
     "pageType": "city",
-    "title": "Доставка пирогов в Зеленоградске — готовим запуск",
+    "title": "Пироги в Зеленоградске — меню, цены и доставка",
     "query": "доставка пирогов зеленоградск",
     "intent": "Сравнить начинки, предварительные цены и расчёт доставки; проверить статус запуска в городе.",
     "monthlySearches": null,
     "demandSource": null,
     "serpValidated": false,
-    "ownershipBasis": "existing_content"
+    "ownershipBasis": "existing_content_migrated_20261030"
   },
   {
-    "path": "/dostavka/kaliningrad/",
+    "path": "/kaliningrad/",
     "cluster": "city",
     "pageType": "city",
-    "title": "Доставка пирогов в Калининграде — изучаем спрос",
+    "title": "Пироги в Калининграде — меню, цены и доставка",
     "query": "доставка пирогов калининград",
     "intent": "Сравнить начинки, предварительные цены и расчёт доставки; проверить статус запуска в городе.",
     "monthlySearches": null,
     "demandSource": null,
     "serpValidated": false,
-    "ownershipBasis": "existing_content"
+    "ownershipBasis": "existing_content_migrated_20261030"
   },
   {
-    "path": "/dostavka/svetlogorsk/",
+    "path": "/svetlogorsk/",
     "cluster": "city",
     "pageType": "city",
-    "title": "Доставка пирогов в Светлогорске — планы Пирогорска",
+    "title": "Пироги в Светлогорске — меню, цены и доставка",
     "query": "доставка пирогов светлогорск",
     "intent": "Сравнить начинки, предварительные цены и расчёт доставки; проверить статус запуска в городе.",
     "monthlySearches": null,
     "demandSource": null,
     "serpValidated": false,
-    "ownershipBasis": "existing_content"
+    "ownershipBasis": "existing_content_migrated_20261030"
   },
   {
     "path": "/journal/uzhin-v-semnyh-apartamentah/",
