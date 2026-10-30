@@ -19,4 +19,11 @@
 
 ## Публикация
 
-Ожидается CI и независимая проверка production.
+- Runtime **`4e5053a5c4281b4b43538d750c288276d03bb9f6`**, [CI41114556169 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41114556169), [полный результат](ci-result.json). Check/build, все validators, Node/Worker/browser tests, опубликованные Pages/Worker compatibility и IndexNow прошли.
+- [Независимая сверка публикации](publication.json): 229 ресурсов HTTP200, SHA256 каждого совпадает с отдельно скачанным CI Pages artifact. Включены все217 HTML, семь брендовых файлов, четыре иконки и release.json. Все212 страниц с общей шапкой используют новый Brand; все214 страниц с SeoHead имеют новые иконки и Organization logo. Три исторических HTML-редиректа проверены как редиректы.
+- [31 production layout](production-results.json) PASS: загрузка логотипа, пропорции, доступное название ссылки, favicon URL, отсутствие наложений, overflow и JS/HTTP ошибок. Меню/подборка и подвал работают. Production-снимки главной390/768/1280px просмотрены целиком.
+- [Retina](retina-results.json): телефон390@3x, планшет768@2x и desktop1440@2x — загрузка подходящей версии WebP и корректные пропорции PASS.
+- Шапка на [телефоне](production/header-390-retina.png), [планшете](production/header-768.png), [компьютере](production/header-1280.png). [Иконка в размерах16/32/48 и Apple180](icon-preview.png) просмотрена.
+- Production Lighthouse CLI, один холодный запуск на режим: mobile99 / LCP1816ms / CLS0.005; desktop100 / LCP565ms / CLS0.003. Accessibility/SEO100. Best Practices77: сторонние cookies и Chrome Issues Яндекс Метрики, как в предыдущей базе. [Замер](performance-production/performance-summary.json), [диапазоны](performance-production/performance-ranges.json). Это лабораторный Lighthouse, не публичный PageSpeed/CrUX; один запуск не измеряет разброс скорости.
+
+Опубликовано и проверено. Открытых пунктов этого поручения нет.

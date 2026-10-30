@@ -70,6 +70,7 @@ try {
     if (primary.includes(width)) {
       await page.screenshot({ path:`${root}/${stage}/${slug}-${width}.png` });
       if (path === '/') {
+        await (await page.$('.masthead')).screenshot({ path:`${root}/${stage}/header-${width}.png` });
         await page.click('[data-menu-open]');
         await page.waitForSelector('#site-menu-dialog[open]');
         await page.keyboard.press('Escape');
