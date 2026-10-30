@@ -7,13 +7,14 @@ import { catalogProductHref } from '../../src/lib/product-paths.ts';
 
 const runtime = execFileSync('git', ['rev-parse', process.argv[2] || 'HEAD'], { encoding: 'utf8' }).trim();
 const origin = 'https://pirogorsk.ru';
-const emitted = await readdir(new URL('../../site/', import.meta.url), { recursive: true });
+const emitted = await readdir(process.env.PUBLICATION_BUILD_DIR || new URL('../../site/', import.meta.url), { recursive: true });
 const htmlPaths = emitted.filter(path => path.endsWith('.html')).map(path => `/${path}`.replace(/index\.html$/, ''));
 const paths = new Set([...htmlPaths, '/sitemap.xml', '/release.json',
   ...['playfair-cyrillic', 'playfair-latin', 'golos-cyrillic', 'golos-latin'].map(face => `/fonts/${face}.woff2`)]);
 // Product image components are also used by the home/menu: compare every emitted HTML document.
 for (const product of catalog) paths.add(catalogProductHref(product));
-const file = path => new URL(`../../site${path}${path.endsWith('/') ? 'index.html' : ''}`, import.meta.url);
+const buildDirectory = process.env.PUBLICATION_BUILD_DIR ? new URL(`file://${process.env.PUBLICATION_BUILD_DIR.replace(/\/$/, '')}/`) : new URL('../../site/', import.meta.url);
+const file = path => new URL(`.${path}${path.endsWith('/') ? 'index.html' : ''}`, buildDirectory);
 for (const path of htmlPaths) {
   const html = await readFile(file(path), 'utf8');
   for (const match of html.matchAll(/(?:src|href)="(\/_astro\/[^"?]+\.(?:js|css))"/g)) paths.add(match[1]);
@@ -36,6 +37,6 @@ await Promise.all(Array.from({ length: 4 }, async () => {
 }));
 files.sort((a, b) => a.path.localeCompare(b.path));
 await writeFile(new URL('./publication.json', import.meta.url), JSON.stringify({ checkedAt: new Date().toISOString(), runtime,
-  ci: process.argv[3] || null, htmlPages: htmlPaths.length, productPages: catalog.length, files }, null, 2) + '\n');
+  ci: process.argv[3] || null, buildSource: process.env.PUBLICATION_BUILD_DIR ? 'GitHub Actions Pages artifact' : 'local build', htmlPages: htmlPaths.length, productPages: catalog.length, files }, null, 2) + '\n');
 assert.ok(files.every(file => file.status === 200 && file.matchesBuild), JSON.stringify(files.filter(file => file.status !== 200 || !file.matchesBuild)));
-console.log(`Production readback PASS: ${files.length} HTML/XML/JSON/JS/CSS resources match the local build, runtime ${runtime}`);
+console.log(`Production readback PASS: ${files.length} resources match the reference build, runtime ${runtime}`);

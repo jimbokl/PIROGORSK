@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-30T07:14:33.923Z",
+  "production": true,
+  "results": [
+    {
+      "width": 320,
+      "touch": true,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "touch": true,
+      "passed": true
+    },
+    {
+      "width": 1280,
+      "touch": false,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

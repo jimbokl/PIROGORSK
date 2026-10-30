@@ -1,0 +1,35 @@
+{
+  "method": "Decode local macOS and Linux CI AVIF with the same sharp runtime, compare raw pixels",
+  "comparisons": [
+    {
+      "path": "/_astro/hero-fish-scene.DhPqnTxT_2wNvQ5.avif",
+      "dimensionsMatch": true,
+      "maxChannelDifference": 117,
+      "meanSquaredError": 49.566323916861826
+    },
+    {
+      "path": "/_astro/hero-fish-scene.DhPqnTxT_FLprt.avif",
+      "dimensionsMatch": true,
+      "maxChannelDifference": 104,
+      "meanSquaredError": 48.844926516572855
+    },
+    {
+      "path": "/_astro/hero-fish-scene.DhPqnTxT_Z1eisF1.avif",
+      "dimensionsMatch": true,
+      "maxChannelDifference": 83,
+      "meanSquaredError": 44.59958920187793
+    },
+    {
+      "path": "/_astro/hero-fish-scene.DhPqnTxT_Z27NTAR.avif",
+      "dimensionsMatch": true,
+      "maxChannelDifference": 109,
+      "meanSquaredError": 45.73622088955522
+    },
+    {
+      "path": "/_astro/hero-fish-scene.DhPqnTxT_Z2lKYiQ.avif",
+      "dimensionsMatch": true,
+      "maxChannelDifference": 81,
+      "meanSquaredError": 47.666315104166664
+    }
+  ]
+}
