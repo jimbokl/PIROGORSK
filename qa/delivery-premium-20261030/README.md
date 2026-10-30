@@ -1,6 +1,6 @@
 # Доставка: дизайн и очистка подписей — 30.10.2026
 
-Статус: локальные проверки завершены, подготовлена публикация.
+Статус: опубликовано, CI и production проверены.
 
 1. Цель: быстро понять направления и стоимость доставки, выбрать город и собрать пироги. Модель подготовки к запуску сохранена.
 2. Характер: собранный, светлый, гастрономический.
@@ -18,8 +18,27 @@
 - `audit.mjs`: 26 сочетаний страниц/ширин; доставка 320/390/768/1024/1280/1536, 18 переходов к городам, смена города в шапке, якорь, FAQ мышью и клавиатурой. Ещё десять затронутых шаблонов проверены на 390/1280. Без overflow, ошибок JS/HTTP и автоматических нарушений WCAG A/AA. Проверены все 217 HTML на удалённые подписи об изображениях.
 - Визуально просмотрены телефон, планшет и desktop: иерархия, переносы, единая геометрия тарифов, видимые состояния действий.
 - Lighthouse CLI до изменений (production): mobile 100, LCP 1.2 s; desktop 100, LCP 0.4 s. Новая локальная страница: mobile 99, LCP 2.0 s, TBT 0, CLS 0; desktop 100, LCP 0.4 s. Это разные среды и по одному прогону; production измеряется отдельно после выкладки. Нового JavaScript нет.
-- Локальный DNS для Worker отвечает ENOTFOUND. Google DNS-over-HTTPS разрешает адрес; HTTPS `/health` через curl `--resolve` ответил 200, каталог/API/D1 совместимы (`release-resolved.json`). Обычная неизменённая проверка повторяется в CI.
+- Локальный DNS для Worker отвечает ENOTFOUND. Google DNS-over-HTTPS разрешает адрес; HTTPS `/health` через curl `--resolve` ответил 200, каталог/API/D1 совместимы (`release-resolved.json`). Обе обычные неизменённые проверки API в CI впоследствии прошли.
 
 Удалены только подписи об иллюстрациях и их упоминания в alt/метаданных. Предварительные цены, стадия запуска и фактический смысл заявки сохранены.
 
-Доказательство CI и production readback будет добавлено после публикации.
+Опубликованный runtime: **`de054bfad9e6465b1b72238e1bcf640fb210f976`**. [GitHub Actions41036987324](https://github.com/jimbokl/PIROGORSK/actions/runs/41036987324) — SUCCESS, включая Pages/Worker compatibility до и после публикации (`ci-state.json`).
+
+Production:
+
+- `production/results.json`: повторён полный UI-аудит на реальном сайте, 26 сочетаний страниц/ширин, шесть сценариев доставки, 18 переходов к городам. Ошибок JS/HTTP, горизонтального переполнения и автоматических нарушений WCAG A/AA нет. Просмотрены production screenshots390/1280; телефон, планшет и desktop проверены локально до публикации.
+- `publication.json`: скачан GitHub Actions Pages artifact именно этого runtime; все255 ресурсов, включая217 HTML,153 страницы каталога, общие JS/CSS/fonts и responsive hero главной и доставки, ответили200 и побайтно совпали с артефактом. Проверка: `PUBLICATION_BUILD_DIR=... PUBLICATION_ASSET_PAGES='/,/delivery/' PUBLICATION_REPORT_PATH=... node qa/header-reference-20261030/verify-publication.mjs <runtime> <CI URL>`.
+- `indexnow/report.json`:212 URL приняты обоими получателями HTTP200. Это подтверждает приём уведомления, не индексацию.
+
+Production Lighthouse CLI13.5.0 / Chrome156: три независимых mobile-прогона с новым Chrome/profile на каждый и один desktop (`performance-production/performance-summary.json`, `performance-ranges.json`).
+
+| Режим | Performance | LCP | TBT | CLS |
+| --- | --- | --- | --- | --- |
+| Mobile1 | 100 | 1595мс | 25,5мс | 0 |
+| Mobile2 | 100 | 1333мс | 4мс | 0 |
+| Mobile3 | 100 | 1592мс | 10,5мс | 0 |
+| Desktop | 100 | 453мс | 0мс | 0 |
+
+Mobile LCP: диапазон1,33–1,60с, медиана1,59с. Accessibility/SEO100 во всех прогонах. Best Practices77: сторонние cookie и DevTools Issues Яндекс.Метрики; аналитика сохранена. CLI использует моделирование мобильного замедления; это лабораторные замеры, не полевые данные посетителей.
+
+Публичный PageSpeed проверен отдельно через интерфейс для mobile/desktop (`verify-pagespeed.mjs`, `public-psi.json`): оба раза «Не удалось перейти по адресу https://pirogorsk.ru/delivery/. Проверьте правильность URL.». API fallback вернул HTTP429, дневная квота общей API project исчерпана (`pagespeed-api.json`). Публичного PSI score в этом спринте нет; данные CLI не подменяют его.

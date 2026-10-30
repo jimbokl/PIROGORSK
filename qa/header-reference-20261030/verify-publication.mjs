@@ -19,9 +19,12 @@ for (const path of htmlPaths) {
   const html = await readFile(file(path), 'utf8');
   for (const match of html.matchAll(/(?:src|href)="(\/_astro\/[^"?]+\.(?:js|css))"/g)) paths.add(match[1]);
 }
-// Read back every responsive hero scene asset as well as shared code and pages.
-const home = await readFile(file('/'), 'utf8');
-for (const asset of home.matchAll(/\/_astro\/hero-fish-scene[^\s"<>]+\.(?:avif|webp)/g)) paths.add(asset[0]);
+// Include the responsive scenes on the pages changed by the current release.
+const assetPages = (process.env.PUBLICATION_ASSET_PAGES || '/').split(',');
+for (const path of assetPages) {
+  const html = await readFile(file(path), 'utf8');
+  for (const asset of html.matchAll(/\/_astro\/hero-fish-scene[^\s"<>]+\.(?:avif|webp)/g)) paths.add(asset[0]);
+}
 const files = [];
 const queue = [...paths];
 await Promise.all(Array.from({ length: 4 }, async () => {
@@ -37,6 +40,6 @@ await Promise.all(Array.from({ length: 4 }, async () => {
 }));
 files.sort((a, b) => a.path.localeCompare(b.path));
 await writeFile(process.env.PUBLICATION_REPORT_PATH || new URL('./publication.json', import.meta.url), JSON.stringify({ checkedAt: new Date().toISOString(), runtime,
-  ci: process.argv[3] || null, buildSource: process.env.PUBLICATION_BUILD_DIR ? 'GitHub Actions Pages artifact' : 'local build', htmlPages: htmlPaths.length, productPages: catalog.length, files }, null, 2) + '\n');
+  ci: process.argv[3] || null, buildSource: process.env.PUBLICATION_BUILD_DIR ? 'GitHub Actions Pages artifact' : 'local build', assetPages, htmlPages: htmlPaths.length, productPages: catalog.length, files }, null, 2) + '\n');
 assert.ok(files.every(file => file.status === 200 && file.matchesBuild), JSON.stringify(files.filter(file => file.status !== 200 || !file.matchesBuild)));
 console.log(`Production readback PASS: ${files.length} resources match the reference build, runtime ${runtime}`);
