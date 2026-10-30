@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-30T09:32:17.991Z",
+  "status": "received-by-all",
+  "count": 215,
+  "receivers": [
+    {
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "status": "received",
+      "httpStatus": 200,
+      "count": 215,
+      "cityUrls": [
+        "https://pirogorsk.ru/dostavka/kaliningrad/",
+        "https://pirogorsk.ru/dostavka/svetlogorsk/",
+        "https://pirogorsk.ru/dostavka/zelenogradsk/",
+        "https://pirogorsk.ru/kaliningrad/",
+        "https://pirogorsk.ru/svetlogorsk/",
+        "https://pirogorsk.ru/zelenogradsk/"
+      ]
+    },
+    {
+      "endpoint": "https://yandex.com/indexnow",
+      "status": "received",
+      "httpStatus": 200,
+      "count": 215,
+      "cityUrls": [
+        "https://pirogorsk.ru/dostavka/kaliningrad/",
+        "https://pirogorsk.ru/dostavka/svetlogorsk/",
+        "https://pirogorsk.ru/dostavka/zelenogradsk/",
+        "https://pirogorsk.ru/kaliningrad/",
+        "https://pirogorsk.ru/svetlogorsk/",
+        "https://pirogorsk.ru/zelenogradsk/"
+      ]
+    }
+  ],
+  "note": "HTTP200 confirms receipt, not indexing."
+}
