@@ -12,4 +12,6 @@
 
 Локально все перечисленные проверки PASS; SEO и shared registry strict также PASS. Пять ширин320/390/768/1024/1280px: суммы, варианты, клавиатура, повторное добавление, fallback/reload, размеры touch-кнопок и отсутствие overflow/JS/HTTP ошибок PASS. Результаты: `local/results.json`, снимки `local/quantity-*.jpg`.
 
-Публикация и production-проверка выполняются; результат CI и readback будет записан после завершения.
+Runtime **`e0e117724252f88c79fdd9f18ce200a337276d11`**, [CI41025862006 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41025862006). Production UI на всех пяти ширинах PASS: точные суммы и партии, выбор формата, клавиатура, повторное добавление, fallback/reload; JS/HTTP ошибок и overflow нет. Снимки `production/quantity-*.jpg`, результат `production/results.json`; формы на production не отправлялись.
+
+Все241 проверенных ресурса (214HTML, включая153 товара, JS/CSS, шрифты и hero assets) совпадают с опубликованным artifact CI. Один первый ответ503 на странице теста повторно проверен адресно: HTTP200 и точное совпадение. Исходный и итоговый readback сохранены в `publication-initial.json` и `publication.json`. Published Pages/Worker compatibility PASS. Изменения опубликованы и проверены, открытых пунктов поручения нет. Новые Lighthouse-замеры не запускались: hero, загрузка изображений и шрифтов не менялись.
