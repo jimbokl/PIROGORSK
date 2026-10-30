@@ -1,0 +1,16 @@
+---
+import ProductVisual from './ProductVisual.astro';
+import type { Product } from '../data/catalog';
+import { catalogProductHref } from '../lib/product-paths';
+interface Props { product: Product; concept?: boolean }
+const { product, concept = false } = Astro.props;
+const selected = product.variants.find(v => v.value === product.defaultVariant)!;
+---
+<article class="menu-feed-item" data-menu-product data-feed-id={product.id} data-menu-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(' ')} aria-labelledby={`feed-${product.id}`}>
+  <a class="menu-feed-art" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}><ProductVisual {product} layout="menu" decorative sizes="(max-width: 600px) 112px, (max-width: 1000px) 176px, 220px" /></a>
+  <div class="menu-feed-label">{concept ? 'Идея Пирогорска · рецепт в разработке' : 'К вашему столу'}</div>
+  <h3 id={`feed-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3>
+  <p class="menu-feed-description">{product.description}</p>
+  <fieldset class="menu-feed-variants"><legend class="sr-only">Формат: {product.name}</legend>{product.variants.map(v => <label><input type="radio" name={`feed-format-${product.id}`} value={v.value} data-feed-price={v.price} checked={v.value === selected.value} /><span>{v.label}</span></label>)}</fieldset>
+  <div class="menu-feed-bottom"><div><strong data-feed-price-label>{selected.price.toLocaleString('ru-RU')} ₽</strong><small>Предварительно</small></div><a class="menu-feed-add" data-feed-add href={`/?interest=${product.id}&variant=${selected.value}`}>В подборку</a></div>
+</article>

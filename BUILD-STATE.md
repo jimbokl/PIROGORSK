@@ -1,5 +1,9 @@
 # Пирогорск — рабочий checkpoint
 
+## Центрированная шапка и непрерывная лента — 30.10.2026
+
+Изучена открытая вкладка Машенькиных пирогов во внешнем Chrome: шапка, desktop/tablet каталог, категории и переключение веса. В Пирогорске общий центрированный SiteHeader, меню/город/подборка; 153 позиции меню в единой ленте с автоматическим раскрытием по 24 и добавлением точного формата без ухода со страницы. Локальные check/build/41 Node/Worker/browser/SEO/25 UI сочетаний PASS; публикация и production-проверки выполняются. [Протокол](qa/header-reference-20261030/README.md).
+
 ## Пересборка визуальной системы — 30.10.2026
 
 Пересобраны главная, меню, товары, доставка/города и блог: единая типографика, спокойные поверхности, меньше рамок и декоративной плотности, компактные наборы и адаптивное листание. Встроенный Imagegen создал общий референс и hero-композицию пирога на керамике/льне; учтены Apple HIG Layout/Typography. Сохранены153 позиции, URL/SEO, цены, подборка, дополнения и форма. Check/build/41 Node/Worker/browser/SEO/product/artwork/release/strict registry PASS. Runtime **`d272f8884428351a221bd5defbb9523fea974812`**, [CI41017902221 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41017902221). Production:241 ресурс совпадает с CI artifact, published compatibility PASS;40 сочетаний UI320/390/768/1280 и дополнения touch320/390/desktop1280 PASS. Lighthouse CLI production mobile×3:99/99/100,LCP1.44–1.89s,CLS0.015–0.019,TBT0–12ms; desktop100,LCP0.55s. Accessibility/SEO100; Best Practices77 из-за third-party cookies/Issues существующей Метрики. Public PSI не выдал отчёт mobile/desktop («Не удалось перейти по адресу»), API429 shared daily quota; не смешивать с CLI-результатами. Реализация опубликована и проверена. [Протокол](qa/visual-redesign-20261030/README.md).

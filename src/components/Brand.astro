@@ -1,8 +1,8 @@
 ---
-interface Props { href?: string; footer?: boolean }
-const { href = '/', footer = false } = Astro.props;
+interface Props { href?: string; footer?: boolean; masthead?: boolean }
+const { href = '/', footer = false, masthead = false } = Astro.props;
 ---
-<a class:list={['pirogorsk-brand', { 'pirogorsk-brand--footer': footer }]} href={href}>
+<a class:list={['pirogorsk-brand', { 'pirogorsk-brand--footer': footer, 'pirogorsk-brand--masthead': masthead }]} href={href}>
   <img src="/brand/pirogorsk-symbol.svg?v=4" width="56" height="56" alt="" aria-hidden="true" class="pirogorsk-brand-symbol" decoding="async" />
   <span class="pirogorsk-brand-copy"><span class="pirogorsk-brand-name">Пирогорск</span><span class="pirogorsk-brand-tagline">Пироги с балтийским характером</span></span>
 </a>
@@ -19,4 +19,12 @@ const { href = '/', footer = false } = Astro.props;
   @media(max-width:370px){.pirogorsk-brand{gap:5px}.pirogorsk-brand-symbol{width:33px;height:33px}.pirogorsk-brand-name{font-size:22px}.pirogorsk-brand-tagline{font-size:11px}}
 @media(max-width:600px){.pirogorsk-brand-tagline{max-width:135px}}
 @media(max-width:370px){.pirogorsk-brand-tagline{max-width:110px}}
+  .pirogorsk-brand--masthead{gap:12px;min-height:52px}
+  .pirogorsk-brand--masthead .pirogorsk-brand-symbol{width:64px;height:64px}
+  .pirogorsk-brand--masthead .pirogorsk-brand-name{font-size:44px;font-weight:600;letter-spacing:-.045em}
+  .pirogorsk-brand--masthead .pirogorsk-brand-copy{gap:7px}
+  .pirogorsk-brand--masthead .pirogorsk-brand-tagline{max-width:none;font-size:11px;white-space:nowrap}
+  @media(max-width:1000px){.pirogorsk-brand--masthead .pirogorsk-brand-symbol{width:52px;height:52px}.pirogorsk-brand--masthead .pirogorsk-brand-name{font-size:38px}}
+  @media(max-width:600px){.pirogorsk-brand--masthead .pirogorsk-brand-symbol{display:none}.pirogorsk-brand--masthead .pirogorsk-brand-copy{align-items:center;gap:5px}.pirogorsk-brand--masthead .pirogorsk-brand-name{font-size:31px}.pirogorsk-brand--masthead .pirogorsk-brand-tagline{font-size:9px;max-width:none}}
+  @media(max-width:370px){.pirogorsk-brand--masthead .pirogorsk-brand-name{font-size:27px}.pirogorsk-brand--masthead .pirogorsk-brand-tagline{font-size:8px}}
 </style>

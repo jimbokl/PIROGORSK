@@ -1,0 +1,47 @@
+---
+import Brand from './Brand.astro';
+import Icon from './Icon.astro';
+import SiteNavigation from './SiteNavigation.astro';
+import { cities } from '../data/catalog';
+import '../styles/site-header.css';
+interface Props { home?: boolean }
+const { home = false } = Astro.props;
+---
+<header class="masthead" data-site-header data-storefront={String(home)}>
+  <div class="masthead-main">
+    <div class="masthead-start">
+      <button class="masthead-square masthead-menu" data-menu-open aria-label="Открыть меню" aria-haspopup="dialog" aria-controls="site-menu-dialog" aria-expanded="false"><Icon name="menu" /></button>
+      <button class="masthead-city masthead-city--desktop" data-open="city-dialog" aria-haspopup="dialog" aria-controls="city-dialog"><Icon name="pin" /><span><small>Выбираем город</small><span data-city>Зеленоградск</span></span><Icon name="caret" /></button>
+    </div>
+    <Brand href={home ? '#top' : '/'} masthead />
+    <div class="masthead-end">
+      <a class="masthead-catalog" href="/menu/">Выбрать пироги<Icon name="arrow" /></a>
+      {home
+        ? <button class="masthead-square masthead-selection" data-open="selection-dialog" aria-label="Открыть подборку" aria-haspopup="dialog"><Icon name="bag" /><span class="masthead-count" data-count hidden>0</span></button>
+        : <a class="masthead-square masthead-selection" data-header-selection href="/?interest=selection" aria-label="Открыть подборку"><Icon name="bag" /><span class="masthead-count" data-count hidden>0</span></a>}
+    </div>
+  </div>
+  <div class="masthead-bottom">
+    <button class="masthead-city masthead-city--mobile" data-open="city-dialog" aria-haspopup="dialog" aria-controls="city-dialog"><Icon name="pin" /><span data-city>Зеленоградск</span><Icon name="caret" /></button>
+    <SiteNavigation {home} />
+    <a class="masthead-status" href="/about/"><span aria-hidden="true"></span>Готовим запуск</a>
+  </div>
+</header>
+
+<dialog id="site-menu-dialog" class="masthead-dialog masthead-drawer" aria-labelledby="site-menu-heading">
+  <div class="masthead-dialog-top"><span>Пирогорск · у Балтийского моря</span><button class="masthead-square" data-menu-close aria-label="Закрыть меню"><Icon name="close" /></button></div>
+  <h2 id="site-menu-heading">К вашему столу</h2>
+  <SiteNavigation {home} drawer />
+  <a class="masthead-drawer-selection" href="/?interest=selection"><Icon name="bag" />Ваша подборка<Icon name="arrow" /></a>
+  <div class="masthead-drawer-note"><span class="masthead-status"><span aria-hidden="true"></span>Готовим запуск</span><p>Выбирайте вкусы и отмечайте интерес.<br />Заказ и оплата пока недоступны.</p></div>
+</dialog>
+
+<dialog id="city-dialog" class="masthead-dialog masthead-city-dialog" aria-labelledby="city-heading">
+  <div class="masthead-dialog-top"><span>У самого Балтийского моря</span><button class="masthead-square" data-close aria-label="Закрыть выбор города"><Icon name="close" /></button></div>
+  <h2 id="city-heading">Ваш город</h2>
+  <p>Где будем выбирать пироги?</p>
+  <div class="masthead-cities">{cities.map(city => <button data-select-city={city} aria-pressed={city === 'Зеленоградск'}><Icon name="pin" /><span>{city}</span><Icon name="check" /></button>)}</div>
+</dialog>
+<script>
+  import '../scripts/site-header';
+</script>

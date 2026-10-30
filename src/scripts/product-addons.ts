@@ -43,6 +43,7 @@ if (section) {
       const next = mergeSelection(current, [{ id, value, quantity }], products);
       if (!next) { feedback.textContent = 'В подборке до 24 разных вариантов и до 99 штук каждого. Измените количество в подборке.'; return; }
       localStorage.setItem(storageKey, JSON.stringify(next));
+      window.dispatchEvent(new Event('pirogorsk:catalog-updated'));
       render(next);
       const product = products.find(product => product.id === id)!;
       feedback.textContent = `Добавлено: ${product.name}, ${select.selectedOptions[0].textContent}, ${quantity} шт.`;

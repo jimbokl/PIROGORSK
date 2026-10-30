@@ -5,8 +5,8 @@ import { catalogProductHref } from '../lib/product-paths';
 import { freshProducts, freshGroups } from '../data/pirogi39-catalog';
 import { supplierProducts as hollandProducts, supplierGroups as hollandGroups } from '../data/holland-catalog';
 import '../styles/supplier-catalog.css';
-interface Props { interactive?: boolean; fresh?: boolean }
-const { interactive = true, fresh = false } = Astro.props;
+interface Props { interactive?: boolean; fresh?: boolean; feed?: boolean }
+const { interactive = true, fresh = false, feed = false } = Astro.props;
 const supplierProducts = fresh ? freshProducts : hollandProducts;
 const supplierGroups = fresh ? freshGroups : hollandGroups;
 const sectionId = fresh ? 'pirogi39' : 'holland';
@@ -14,7 +14,7 @@ const producer = fresh ? 'Пироги а-ля Русс' : 'Holland Bakery';
 const sourceUrl = fresh ? 'https://pirogi39.ru/' : 'https://hollandbakery.ru/';
 const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
 ---
-<section id={sectionId} class="supplier-catalog" aria-labelledby={`${sectionId}-heading`} data-supplier-catalog data-menu-section>
+<section id={sectionId} class="supplier-catalog" aria-labelledby={`${sectionId}-heading`} data-supplier-catalog data-menu-section data-menu-feed={feed || undefined}>
   <header class="supplier-heading"><div><p class="eyebrow">{fresh ? 'Целые пироги' : 'Выпечка и заготовки'} · позиций: {supplierProducts.length}</p><h2 id={`${sectionId}-heading`}>{fresh ? 'Пироги а-ля Русс' : 'Из Голландской пекарни'}</h2></div><a href={sourceUrl} target="_blank" rel="noopener">О производителе ↗</a></header>
   <p class="supplier-intro">{fresh ? 'Ещё 61 целый пирог из каталога pirogi39.ru: от ржаных и лоранских до сибирских, прусских и осетинских. Выбирайте начинки и размеры, которые хотели бы видеть у Пирогорска.' : 'Добавляем к нашим идеям ассортимент Holland Bakery: мини-пироги, хлеб, десерты и выпечку. Выберите то, что хотели бы получать через Пирогорск.'}</p>
   <div class="supplier-note"><strong>Пока изучаем спрос.</strong> {fresh ? 'Здесь готовые целые пироги в весах производителя. Можно сравнить их с нашими первыми идеями и мини-пирогами ниже.' : 'Здесь замороженные продукты и заготовки для домашней выпечки. Небольшие наборы — планируемый формат Пирогорска из заводских упаковок.'} Наличие, фасовку, состав и условия хранения подтвердим до начала продаж. Цены предварительные, доставка считается отдельно за всю подборку.</div>
@@ -25,7 +25,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
     const groupLabel = supplierGroups.find(([id]) => id === product.category)![1];
     return <article id={product.id} class="supplier-card" data-supplier-id={product.id} data-supplier-group={product.category} data-supplier-name={product.name.toLocaleLowerCase('ru-RU')} data-supplier-search={[product.name, product.description, groupLabel, producer, ...product.variants.map(v => v.label)].join(' ')} data-product={interactive ? product.id : undefined} data-kind={interactive ? product.kind : undefined} aria-labelledby={`name-${product.id}`}>
       <div class="supplier-card-top"><span>{groupLabel}</span><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span></div>
-      <a class="supplier-art-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}><SupplierArtwork id={product.id} decorative /></a>
+      <a class="supplier-art-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}><SupplierArtwork id={product.id} decorative sizes={feed ? '(max-width: 600px) 112px, (max-width: 1000px) 176px, 220px' : undefined} /></a>
       <h3 id={`name-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3><p class="supplier-format">{product.description}</p>
       <fieldset class="supplier-variants"><legend class="sr-only">Формат: {product.name}</legend>{product.variants.map(variant => <label><input type="radio" name={`format-${product.id}`} value={variant.value} data-supplier-unit-price={variant.price} checked={variant.value === product.defaultVariant} /><span>{variant.label}</span></label>)}</fieldset>
       <div class="supplier-card-bottom"><div>{product.supplier!.priceFrom && <span class="supplier-from">от </span>}<strong data-price={interactive ? '' : undefined} data-supplier-price>{money(selected.price)}</strong><small>Предварительно</small></div>{interactive ? <button type="button" class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button> : <a class="button button-small" data-supplier-link href={`/?interest=${product.id}&variant=${selected.value}#${sectionId}`}>В подборку<Icon name="arrow" /></a>}</div>

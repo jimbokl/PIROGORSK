@@ -9,7 +9,7 @@ import ProductBackdrop from './ProductBackdrop.astro';
 import { productBackdrop } from '../data/product-backdrops';
 import '../styles/catalog.css';
 
-interface Props { product: Product; layout?: 'catalog' | 'menu' | 'hero'; decorative?: boolean; thumbnail?: boolean }
+interface Props { product: Product; layout?: 'catalog' | 'menu' | 'hero'; decorative?: boolean; thumbnail?: boolean; sizes?: string }
 type AssetFile = { path?: string; status?: string; alpha?: boolean };
 type AssetEntry = {
   status?: string;
@@ -19,7 +19,7 @@ type AssetEntry = {
     product_css_height_percent?: number; product_center_x_percent?: number; product_center_y_percent?: number;
   };
 };
-const { product, layout = 'catalog', decorative = false, thumbnail = false } = Astro.props;
+const { product, layout = 'catalog', decorative = false, thumbnail = false, sizes: customSizes } = Astro.props;
 const manifest = manifestData as { pairs?: Record<string, AssetEntry>; drinks?: Record<string, AssetEntry> };
 const images = import.meta.glob<ImageMetadata>('../../design/layered-assets-v2/**/*.{png,webp,avif}', { eager: true, import: 'default' });
 const legacyImages = import.meta.glob<ImageMetadata>('../../design/assets-source/{meat,fish,cabbage,cheese}.png', { eager: true, import: 'default' });
@@ -59,8 +59,8 @@ const slotSizes = (scale = 1) => slots.map(([breakpoint, vw, pixels]) => {
 const accessoryThumbnail = product.kind === 'accessory' && layout === 'catalog';
 const accessorySizes = (scale = 1) => `(max-width: 600px) ${80 * scale}px, (max-width: 850px) ${96 * scale}px, ${112 * scale}px`;
 const compactSizes = (scale = 1) => `(max-width: 600px) ${56 * scale}px, ${76 * scale}px`;
-const sizes = thumbnail ? compactSizes() : accessoryThumbnail ? accessorySizes() : slotSizes();
-const subjectSizes = thumbnail ? compactSizes(subjectWidth / 100) : accessoryThumbnail ? accessorySizes(subjectWidth / 100) : slotSizes(subjectWidth / 100);
+const sizes = customSizes ?? (thumbnail ? compactSizes() : accessoryThumbnail ? accessorySizes() : slotSizes());
+const subjectSizes = customSizes ?? (thumbnail ? compactSizes(subjectWidth / 100) : accessoryThumbnail ? accessorySizes(subjectWidth / 100) : slotSizes(subjectWidth / 100));
 const loading = layout === 'hero' ? 'eager' : 'lazy';
 const fetchpriority = layout === 'hero' ? 'high' : 'auto';
 ---

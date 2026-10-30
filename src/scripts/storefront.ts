@@ -49,7 +49,7 @@ function setCity(value: string, announce = true) {
   city = value;
   all('[data-city]').forEach(element => element.textContent = city);
   all('[data-select-city]').forEach(element => {
-    if (element.closest('.city-options')) element.setAttribute('aria-pressed', String(element.dataset.selectCity === city));
+    if (element.closest('#city-dialog')) element.setAttribute('aria-pressed', String(element.dataset.selectCity === city));
   });
   try { localStorage.setItem('pirogorsk-city', city); } catch { /* The city still works when storage is unavailable. */ }
   document.querySelector<HTMLDialogElement>('#city-dialog')?.close();

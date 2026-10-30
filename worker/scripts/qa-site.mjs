@@ -175,9 +175,13 @@ try {
     assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), 6);
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'short categories hide pagination through CSS');
     await page.click('#holland [data-supplier-filter=all]');
-    for (const count of [48, 72, 78]) {
-      await page.click('#holland [data-supplier-more]');
-      assert.equal(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length), count);
+    // The menu also reveals these batches automatically when the end approaches.
+    // Exercise its keyboard/fallback control without scrolling into the observer.
+    for (let step = 0; step < 3; step++) {
+      const before = await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length);
+      if (before === 78) break;
+      await page.$eval('#holland [data-supplier-more]', button => button.click());
+      assert.ok(await page.$$eval('#holland [data-supplier-id]:not([hidden])', cards => cards.length) > before);
     }
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => button.hidden), true);
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'the last catalogue page hides pagination through CSS');
@@ -225,7 +229,7 @@ try {
     assert.equal(await page.$eval('#pirogi39 [data-supplier-filter=ossetian-pies]', button => button.getAttribute('aria-pressed')), 'true');
     assert.equal(await page.$$eval('#pirogi39 [data-supplier-id]:not([hidden])', cards => cards.every(card => card.dataset.supplierGroup === 'ossetian-pies')), true);
     await page.goto(`${origin}/`, { waitUntil: 'networkidle0' });
-    await page.click('[data-open=city-dialog]');
+    await page.click(width <= 1000 ? '.masthead-city--mobile' : '.masthead-city--desktop');
     await page.click('#city-dialog [data-select-city="Калининград"]');
     const miniId = miniProduct.id;
     const miniDefault = miniProduct.variants.find(item => item.value === miniProduct.defaultVariant);
@@ -279,9 +283,12 @@ try {
     // programmatic scroll before the physical click; CSS smooth scrolling can
     // otherwise move the target while Puppeteer dispatches pointer events.
     await page.$eval(`${doughCard} [data-supplier-link]`, el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-    await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click(`${doughCard} [data-supplier-link]`)]);
+    await page.click(`${doughCard} [data-supplier-link]`);
+    assert.equal(new URL(page.url()).pathname, '/menu/', 'adding to the feed keeps the current position');
+    await page.$eval('[data-header-selection]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+    await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-header-selection]')]);
     assert.equal(new URL(page.url()).pathname, '/');
-    assert.equal(new URL(page.url()).searchParams.get('interest'), 'hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up');
+    assert.equal(new URL(page.url()).searchParams.get('interest'), 'selection');
     assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
     const doughId = 'hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up';
     assert.ok((await selection()).some(item => item.id === doughId && item.value === 9000));

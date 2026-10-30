@@ -7,6 +7,7 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
   const filters = [...root.querySelectorAll<HTMLButtonElement>('[data-supplier-filter]')];
   let group = 'all';
   let limit = 24;
+  let feedObserver: IntersectionObserver | null = null;
   let globalQuery = new URLSearchParams(location.search).get('q')?.slice(0, 100) ?? '';
   const params = new URLSearchParams(location.search);
   const initialId = params.get('interest');
@@ -25,6 +26,12 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
     more.textContent = `Показать ещё ${Math.max(0, Math.min(24, matches.length - limit))}`;
     root.dataset.matchCount = String(matches.length);
     root.dataset.searchActive = String(group !== 'all' || Boolean(search.value.trim()));
+    // Re-arm after layout changes, including filters and a newly revealed batch.
+    // Scroll anchoring can otherwise keep the button intersecting without a new entry.
+    if (feedObserver) {
+      feedObserver.unobserve(more);
+      requestAnimationFrame(() => { if (!more.hidden) feedObserver?.observe(more); });
+    }
     document.dispatchEvent(new Event('pirogorsk:catalog-updated'));
   }
   function reveal(id: string | null) {
@@ -37,6 +44,14 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
   search.addEventListener('input', () => { limit = 24; render(); });
   filters.forEach(button => button.addEventListener('click', () => { group = button.dataset.supplierFilter!; limit = 24; render(); }));
   more.addEventListener('click', () => { limit += 24; render(); });
+  // HTML contains every product; the button remains a keyboard/fallback control.
+  // In the menu feed the next batch appears as its end approaches the viewport.
+  if (root.hasAttribute('data-menu-feed') && 'IntersectionObserver' in window) {
+    feedObserver = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting) && !more.hidden) { limit += 24; render(); }
+    }, { rootMargin: '0px 0px 500px 0px' });
+    feedObserver.observe(more);
+  }
   document.addEventListener('pirogorsk:menu-search', event => {
     globalQuery = (event as CustomEvent<string>).detail;
     group = 'all'; search.value = ''; limit = 24; render();

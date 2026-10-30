@@ -2,7 +2,7 @@
 import SeoHead from '../components/SeoHead.astro';
 import Analytics from '../components/Analytics.astro';
 import Brand from '../components/Brand.astro';
-import SiteNavigation from '../components/SiteNavigation.astro';
+import SiteHeader from '../components/SiteHeader.astro';
 import { siteOrigin } from '../data/editorial';
 import '../styles/editorial.css';
 import '../styles/site-ui.css';
@@ -32,10 +32,7 @@ const breadcrumbSchema = {
   <body class="editorial-site">
     <Analytics />
     <a class="ed-skip" href="#content">Перейти к содержанию</a>
-    <header class="ed-header ed-container">
-      <Brand />
-      <SiteNavigation />
-    </header>
+    <SiteHeader />
     <main id="content" class="ed-container">
       <nav class="ed-breadcrumbs" aria-label="Хлебные крошки"><ol>{trail.map((item, index) => <li>{index === trail.length - 1 ? <span aria-current="page">{item.name}</span> : <a href={item.href}>{item.name}</a>}</li>)}</ol></nav>
       <slot />

@@ -10,10 +10,10 @@ import InterestForm from '../components/InterestForm.astro';
 import Analytics from '../components/Analytics.astro';
 import SeoHead from '../components/SeoHead.astro';
 import Brand from '../components/Brand.astro';
-import SiteNavigation from '../components/SiteNavigation.astro';
+import SiteHeader from '../components/SiteHeader.astro';
 import BlogCards from '../components/BlogCards.astro';
 import { blogEntries } from '../data/blog';
-import { cities, products, catalog } from '../data/catalog';
+import { products, catalog } from '../data/catalog';
 import TastingHero from '../components/TastingHero.astro';
 const featured = [products[0]!, products[5]!, catalog.find(p => p.supplier?.name === 'Пироги а-ля Русс')!, catalog.find(p => p.category === 'mini-pies')!].filter(Boolean);
 import '../styles/global.css';
@@ -37,14 +37,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
   </head>
   <body class="home-page">
     <a class="skip-link" href="#pirogi">Перейти к пирогам</a>
-    <header class="site-header container">
-      <Brand href="#top" />
-      <SiteNavigation home />
-      <div class="header-actions">
-        <button class="city-trigger" data-open="city-dialog" aria-haspopup="dialog"><Icon name="pin" /><span data-city>Зеленоградск</span><Icon name="caret" /></button>
-        <button class="selection-trigger" data-open="selection-dialog" aria-haspopup="dialog"><span class="bag-wrap"><Icon name="bag" /><span class="bag-count" data-count hidden>0</span></span><span class="selection-label">Подборка</span></button>
-      </div>
-    </header>
+    <SiteHeader home />
     <main id="top">
       <TastingHero />
       <p class="home-status container"><span>Готовим запуск</span> Выбирайте вкусы и отмечайте интерес. Цены предварительные, заказ и оплата пока недоступны.</p>
@@ -73,11 +66,6 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <p class="launch-note">Готовимся к открытию. Меню, цены и изображения предварительные. Можно оставить анонимную заявку. Приём заказов и оплата пока не открыты.</p>
     </footer>
 
-    <dialog id="city-dialog" class="dialog city-dialog" aria-labelledby="city-heading">
-      <div class="dialog-header"><span class="eyebrow">У самого Балтийского моря</span><button data-close class="icon-button" aria-label="Закрыть выбор города"><Icon name="close" /></button></div>
-      <h2 id="city-heading">Ваш город</h2><p class="dialog-intro">Где будем выбирать пироги?</p>
-      <div class="city-options">{cities.map(city => <button data-select-city={city} aria-pressed={city === 'Зеленоградск'}><Icon name="pin" /><span>{city}</span><Icon name="check" class="city-check" /></button>)}</div>
-    </dialog>
     <dialog id="selection-dialog" class="dialog selection-dialog" aria-labelledby="selection-heading">
       <div class="dialog-header"><span class="eyebrow" data-city>Зеленоградск</span><button data-close class="icon-button" aria-label="Закрыть подборку"><Icon name="close" /></button></div>
       <h2 id="selection-heading">Ваша подборка</h2>

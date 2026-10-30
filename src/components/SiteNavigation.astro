@@ -1,13 +1,11 @@
 ---
 import '../styles/navigation.css';
-interface Props { home?: boolean }
-const { home = false } = Astro.props;
-const links = home
-  ? [{ href: '/menu/', name: 'Всё меню' }, { href: '#nabory', name: 'Предложения' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/delivery/', name: 'Доставка' }, { href: '/blog/', name: 'Блог' }]
-  : [{ href: '/menu/', name: 'Пироги' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/delivery/', name: 'Города' }, { href: '/blog/', name: 'Блог' }, { href: '/about/', name: 'О проекте' }];
+interface Props { home?: boolean; drawer?: boolean }
+const { home = false, drawer = false } = Astro.props;
+const links = [{ href: '/menu/', name: 'Все пироги' }, { href: home ? '#nabory' : '/menu/#nabory', name: 'Наборы к столу' }, { href: '/delivery/', name: 'Доставка' }, { href: '/podbor/', name: 'Сколько пирогов?' }, { href: '/blog/', name: 'Блог' }, { href: '/about/', name: 'О Пирогорске' }];
 const path = Astro.url.pathname;
-const isCurrent = (href: string) => path === href || (href === '/menu/' && path.startsWith('/pirogi/')) || (href === '/blog/' && path.startsWith('/journal/')) || (href === '/delivery/' && path.startsWith('/dostavka/'));
+const isCurrent = (href: string) => path === href || (href === '/menu/' && (path.startsWith('/pirogi/') || path.startsWith('/catalog/'))) || (href === '/blog/' && path.startsWith('/journal/')) || (href === '/delivery/' && path.startsWith('/dostavka/'));
 ---
-<nav class="site-navigation" aria-label="Основная навигация">
+<nav class:list={['site-navigation', { 'site-navigation--drawer': drawer }]} aria-label={drawer ? 'Разделы сайта' : 'Основная навигация'}>
   {links.map(link => <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>{link.name}</a>)}
 </nav>
