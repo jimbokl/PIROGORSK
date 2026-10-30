@@ -9,7 +9,7 @@ import ProductBackdrop from './ProductBackdrop.astro';
 import { productBackdrop } from '../data/product-backdrops';
 import '../styles/catalog.css';
 
-interface Props { product: Product; layout?: 'catalog' | 'menu' | 'hero'; decorative?: boolean; thumbnail?: boolean; sizes?: string }
+interface Props { product: Product; layout?: 'catalog' | 'menu' | 'hero'; decorative?: boolean; thumbnail?: boolean; sizes?: string; priority?: boolean }
 type AssetFile = { path?: string; status?: string; alpha?: boolean };
 type AssetEntry = {
   status?: string;
@@ -19,7 +19,7 @@ type AssetEntry = {
     product_css_height_percent?: number; product_center_x_percent?: number; product_center_y_percent?: number;
   };
 };
-const { product, layout = 'catalog', decorative = false, thumbnail = false, sizes: customSizes } = Astro.props;
+const { product, layout = 'catalog', decorative = false, thumbnail = false, sizes: customSizes, priority = false } = Astro.props;
 const manifest = manifestData as { pairs?: Record<string, AssetEntry>; drinks?: Record<string, AssetEntry> };
 const images = import.meta.glob<ImageMetadata>('../../design/layered-assets-v2/**/*.{png,webp,avif}', { eager: true, import: 'default' });
 const legacyImages = import.meta.glob<ImageMetadata>('../../design/assets-source/{meat,fish,cabbage,cheese}.png', { eager: true, import: 'default' });
@@ -61,11 +61,11 @@ const accessorySizes = (scale = 1) => `(max-width: 600px) ${80 * scale}px, (max-
 const compactSizes = (scale = 1) => `(max-width: 600px) ${56 * scale}px, ${76 * scale}px`;
 const sizes = customSizes ?? (thumbnail ? compactSizes() : accessoryThumbnail ? accessorySizes() : slotSizes());
 const subjectSizes = customSizes ?? (thumbnail ? compactSizes(subjectWidth / 100) : accessoryThumbnail ? accessorySizes(subjectWidth / 100) : slotSizes(subjectWidth / 100));
-const loading = layout === 'hero' ? 'eager' : 'lazy';
-const fetchpriority = layout === 'hero' ? 'high' : 'auto';
+const loading = layout === 'hero' || priority ? 'eager' : 'lazy';
+const fetchpriority = layout === 'hero' || priority ? 'high' : 'auto';
 ---
 <div class:list={['product-visual', `product-visual--${product.kind}`, { 'product-visual--pending': imageState === 'pending', 'product-visual--hero': layout === 'hero' }]} data-image-state={imageState} style={position} aria-hidden={decorative ? 'true' : undefined}>
-  {generatedBackdrop && <ProductBackdrop id={product.id} {sizes} hero={layout === 'hero'} />}
+  {generatedBackdrop && <ProductBackdrop id={product.id} {sizes} hero={layout === 'hero' || priority} />}
   {layered ? <>
     {background && <Picture src={background} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={sizes} width={600} height={600} quality={44} alt="" class="product-visual-background" loading={loading} fetchpriority={fetchpriority} decoding="async" />}
     <Picture src={subject!} formats={['avif', 'webp']} fallbackFormat="webp" widths={imageWidths} sizes={subjectSizes} width={600} height={600} quality={58} alt={product.kind === 'pie' ? `${product.name}: пирог и кусочек с начинкой` : product.name} class="product-visual-subject" loading={loading} fetchpriority={fetchpriority} decoding="async" />

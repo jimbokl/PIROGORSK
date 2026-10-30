@@ -19,6 +19,7 @@ const featured = [products[0]!, products[5]!, catalog.find(p => p.supplier?.name
 import '../styles/global.css';
 import '../styles/home.css';
 import '../styles/site-ui.css';
+import '../styles/menu.css';
 const faqs = [
   ['Можно уже заказать пирог?', 'Мы готовим запуск. Сейчас можно выбрать пироги и оставить анонимную заявку по предварительной цене. Это поможет определить меню и города. Заказ и оплата пока не подтверждаются.'],
   ['Чем отличаются 500 г и 1 кг?', 'Это два варианта веса одного пирога. Можно взять несколько небольших пирогов с разными начинками или большой пирог к общему столу. Вес готового продукта уточним перед открытием.'],
@@ -40,15 +41,15 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
     <SiteHeader home />
     <main id="top">
       <TastingHero />
+      <section class="catalog home-featured container" id="pirogi" aria-labelledby="catalog-heading">
+        <div class="home-section-heading"><h2 id="catalog-heading">Выберите свой пирог</h2><a href="/menu/">Всё меню · {catalog.length}<Icon name="arrow" /></a></div>
+        <nav class="home-menu-shortcuts" aria-label="Разделы меню"><a href="/menu/#pirogi39">Целые пироги</a><a href="/menu/?group=mini-pies#holland">Мини-пироги</a><a href="/menu/?group=desserts#holland">К чаю</a><a href="#nabory">Наборы</a></nav>
+        <div class="menu-feed-list home-product-feed">{featured.map((product, i) => <ProductCard product={product} feed priority={i === 0} />)}</div>
+        <nav class="home-range-links" aria-label="Полный ассортимент"><a id="pirogi39" href="/menu/#pirogi39">61 целый пирог а-ля Русс<Icon name="arrow" /></a><a id="holland" href="/menu/#holland">78 позиций Holland Bakery<Icon name="arrow" /></a><a id="extras" href="/menu/#extras">Напитки и посуда<Icon name="arrow" /></a></nav>
+      </section>
       <p class="home-status container"><span>Готовим запуск</span> Выбирайте вкусы и отмечайте интерес. Цены предварительные, заказ и оплата пока недоступны.</p>
       <HomeDepartments />
       <HomeOffers />
-      <section class="catalog home-featured container" id="pirogi" aria-labelledby="catalog-heading">
-        <div class="home-section-heading"><div><p class="eyebrow">Начните знакомство</p><h2 id="catalog-heading">Знакомство со вкусом</h2></div><a href="/menu/">Все {catalog.length} позиции<Icon name="arrow" /></a></div>
-        <p class="home-section-intro">От сытного к сладкому. Выберите пирог, начинку и свой размер.</p>
-        <div class="product-grid">{featured.map(product => <ProductCard product={product} />)}</div>
-        <nav class="home-range-links" aria-label="Полный ассортимент"><a id="pirogi39" href="/menu/#pirogi39">61 целый пирог а-ля Русс<Icon name="arrow" /></a><a id="holland" href="/menu/#holland">78 позиций Holland Bakery<Icon name="arrow" /></a><a id="extras" href="/menu/#extras">Напитки и посуда<Icon name="arrow" /></a></nav>
-      </section>
       <section class="discovery container" aria-labelledby="discovery-heading">
         <div><h2 id="discovery-heading">Пироги в балтийских городах</h2><p>Пироги после прогулки у моря, к ужину в апартаментах или встрече с друзьями. Изучаем спрос в трёх городах — выберите свой.</p></div>
         <nav class="discovery-cities" aria-label="Пироги по городам"><a href="/zelenogradsk/">Зеленоградск<Icon name="arrow" /></a><a href="/kaliningrad/">Калининград<Icon name="arrow" /></a><a href="/svetlogorsk/">Светлогорск<Icon name="arrow" /></a></nav>

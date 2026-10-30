@@ -1,37 +1,27 @@
-/* Complete first frame in HTML; controls enhance the still composition. */
-.tasting-hero{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1.08fr;gap:36px;min-height:530px;padding-block:54px 44px;overflow:hidden}
-.tasting-coast{position:absolute;inset:0 -50px;z-index:-2;pointer-events:none;overflow:hidden}
-.tasting-coast::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 34%,transparent 80%)}
-.tasting-coast img{width:100%;height:100%;object-fit:cover;opacity:.09;mix-blend-mode:multiply}
-.tasting-copy{align-self:center;position:relative;z-index:2;padding-bottom:28px}
-.tasting-copy .hero-eyebrow{font-size:10px;letter-spacing:.12em;margin:0 0 24px;color:var(--muted)}
-.tasting-copy h1{font:500 clamp(48px,5.6vw,78px)/1.04 var(--serif);letter-spacing:-.055em;margin:0 0 24px}
-.tasting-description{font-size:16px;line-height:1.7;max-width:385px;color:var(--muted);margin:0 0 28px}
-.tasting-copy .hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.tasting-copy .hero-cta{min-width:174px}
-.tasting-cities{font-size:11px;line-height:1.6;color:var(--muted);margin:20px 0 0}
-.tasting-stage{position:relative;align-self:center;min-width:0;width:100%;padding-top:14px}
-.tasting-stage::before{content:"";position:absolute;inset:5% 0 18%;border-radius:50%;background:radial-gradient(ellipse,var(--accent-soft),transparent 70%);z-index:-1}
-.tasting-orbit{display:none}
-.tasting-art{position:relative;aspect-ratio:1.38;overflow:hidden}
+/* The banner sets the tone without pushing the actual catalogue off screen. */
+.tasting-hero{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:240px;margin-block:20px 0;padding:20px 40px 36px;overflow:hidden;border-radius:24px;background:var(--surface-oat)}
+.tasting-copy{position:relative;z-index:2;max-width:480px}
+.tasting-copy .hero-eyebrow{font:500 9px/1.5 var(--sans);letter-spacing:.12em;color:var(--muted);margin:0 0 10px}
+.tasting-copy h1{font:500 clamp(30px,3vw,40px)/1.08 var(--serif);letter-spacing:-.045em;margin:0;max-width:10em}
+.tasting-description{font:400 13px/1.5 var(--sans);color:var(--muted);margin:8px 0 0}
+.tasting-copy .hero-cta{display:inline-flex;align-items:center;gap:12px;min-height:44px;font:500 12px/1.5 var(--sans);text-decoration:underline;text-underline-offset:4px}
+.tasting-copy .hero-cta .icon{font-size:16px}
+.tasting-stage{min-width:0;align-self:stretch}
+.tasting-art{position:absolute;inset:0 0 0 50%;overflow:hidden;touch-action:pan-y}
 .tasting-scene{position:absolute;inset:0;display:grid;place-items:center}
 .tasting-scene[hidden]{display:none}.tasting-scene picture{display:contents}
-.tasting-scene img{position:absolute;inset:0;min-height:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 20px 18px var(--food-shadow))}
-.tasting-scene[data-tasting-scene=pies] img{border-radius:28px;object-fit:cover;filter:none}
-.tasting-scene[data-tasting-scene=company] img{object-fit:cover;border-radius:50%;mix-blend-mode:multiply}
-.tasting-caption{display:flex;align-items:center;gap:14px;padding:20px 0 12px;margin:0 26px;border-bottom:1px solid var(--line)}
-.tasting-caption>span:first-child{font:11px/1.4 var(--sans);color:var(--muted)}
-.tasting-caption>div{flex:1;min-width:0}.tasting-caption strong{font:500 21px/1.2 var(--serif);letter-spacing:-.025em}
-.tasting-caption small{display:block;font-size:10px;color:var(--muted);margin-top:5px;line-height:1.4}
-.tasting-weight{font-size:11px;line-height:1.5;text-align:right;white-space:nowrap}.tasting-weight b{font-weight:400;color:var(--muted)}
-.tasting-nav,.tasting-controls{display:flex;align-items:center;justify-content:center;gap:8px}
-.tasting-nav{margin-top:6px}.tasting-controls{gap:0}
-.tasting-arrow,.tasting-controls button{display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:var(--navy);cursor:pointer;transition:background 180ms}
-.tasting-arrow span{font:24px/1 var(--sans)}.tasting-arrow:hover{background:var(--surface-oat)}
-.tasting-controls button{width:32px}.tasting-controls button::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--card-line-hover)}
+.tasting-scene img{position:absolute;inset:0;min-height:0;width:100%;height:100%;object-fit:contain}
+.tasting-scene[data-tasting-scene=pies] img{object-fit:cover;object-position:center 55%;mask-image:linear-gradient(90deg,transparent,#000 14%)}
+.tasting-scene[data-tasting-scene=company] img{object-fit:contain;mix-blend-mode:multiply}
+.tasting-nav,.tasting-controls{display:flex;align-items:center;justify-content:center;gap:4px}
+.tasting-nav{position:absolute;bottom:0;right:24px;z-index:3}
+.tasting-controls{gap:0}
+.tasting-arrow,.tasting-controls button{display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--navy);cursor:pointer}
+.tasting-arrow span{font:24px/1 var(--sans)}
+.tasting-arrow:hover,.tasting-controls button:hover{background:var(--card-shadow)}
+.tasting-controls button::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--card-line-hover)}
 .tasting-controls button[aria-pressed=true]::before{background:var(--navy);width:18px;border-radius:6px}
-.tasting-controls button:focus-visible,.tasting-arrow:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
-@media(max-width:1000px){.tasting-hero{gap:16px;min-height:470px;padding-block:40px}.tasting-copy h1{font-size:6vw}.tasting-description{font-size:15px}.tasting-caption{margin-inline:8px}}
-@media(max-width:760px){.tasting-hero{grid-template-columns:1fr;gap:8px;min-height:0;padding-block:32px 22px}.tasting-copy{padding:0}.tasting-copy .hero-eyebrow{font-size:8px;letter-spacing:.09em;margin-bottom:17px}.tasting-copy h1{font-size:clamp(43px,11.2vw,70px);line-height:1.06;margin-bottom:18px}.tasting-description{font-size:14px;line-height:1.65;margin-bottom:20px;max-width:400px}.tasting-copy .hero-actions{gap:16px}.tasting-copy .hero-cta{font-size:13px;min-width:158px}.tasting-copy .hero-planner{font-size:11px}.tasting-cities{font-size:10px;margin-top:14px}.tasting-stage{max-width:490px;justify-self:center;padding:0}.tasting-art{aspect-ratio:1.5}.tasting-caption{padding-block:7px 12px;margin-inline:0;gap:10px}.tasting-caption strong{font-size:20px}.tasting-caption small{font-size:9px}.tasting-weight{font-size:10px}.tasting-nav{margin-top:0}.tasting-coast{inset:300px -30px 0}.tasting-coast::after{background:linear-gradient(180deg,var(--paper),transparent 40%,var(--paper))}.tasting-coast img{opacity:.1}}
-@media(max-width:350px){.tasting-copy .hero-actions{gap:8px}.tasting-copy .hero-cta{min-width:145px;padding-inline:16px}.tasting-caption strong{font-size:18px}.tasting-weight{font-size:9px}}
-@media(prefers-reduced-motion:reduce){.tasting-arrow,.tasting-controls button{transition:none}}
+.tasting-controls button:focus-visible,.tasting-arrow:focus-visible,.hero-cta:focus-visible{outline:2px solid var(--navy);outline-offset:-3px}
+@media(max-width:1000px){.tasting-hero{min-height:220px;padding:24px 28px 40px}.tasting-art{left:52%}.tasting-copy h1{font-size:36px}}
+@media(max-width:600px){.tasting-hero{min-height:196px;margin-top:12px;padding:20px 18px 44px;border-radius:18px;grid-template-columns:1.1fr 1fr}.tasting-copy .hero-eyebrow{font-size:7px;letter-spacing:.07em;margin-bottom:8px}.tasting-copy h1{font-size:27px;line-height:1.1}.tasting-description{display:none}.tasting-copy .hero-cta{font-size:11px;gap:8px;margin-top:4px}.tasting-art{left:53%;bottom:36px}.tasting-scene[data-tasting-scene=pies] img{object-position:45% center}.tasting-nav{right:50%;transform:translateX(50%)}.tasting-controls button{width:32px}}
+@media(max-width:350px){.tasting-copy h1{font-size:24px}.tasting-copy .hero-eyebrow{font-size:6px}.tasting-hero{padding-inline:14px}}

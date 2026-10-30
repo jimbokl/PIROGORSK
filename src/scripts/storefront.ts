@@ -201,17 +201,36 @@ all('[data-filter]').forEach(button => button.addEventListener('click', () => {
 
 all('[data-product]').forEach(card => {
   const product = products.find(product => product.id === card.dataset.product)!;
-  card.addEventListener('change', () => {
-    const value = card.querySelector<HTMLInputElement>('input:checked')!.value;
-    card.querySelector('[data-price]')!.textContent = money(product.prices[Number(value)]);
+  const quantity = card.querySelector<HTMLInputElement>('[data-feed-quantity]');
+  const decrease = card.querySelector<HTMLButtonElement>('[data-feed-decrease]');
+  const increase = card.querySelector<HTMLButtonElement>('[data-feed-increase]');
+  const readQuantity = () => Math.max(1, Math.min(99, Math.floor(Number(quantity?.value) || 1)));
+  const updatePrice = () => {
+    const count = readQuantity();
+    if (quantity) quantity.value = String(count);
+    if (decrease) decrease.disabled = count === 1;
+    if (increase) increase.disabled = count === 99;
+    const value = Number(card.querySelector<HTMLInputElement>('input:checked')!.value);
+    card.querySelector('[data-price]')!.textContent = money(product.prices[value] * count);
+  };
+  card.querySelector<HTMLElement>('[data-feed-quantity-control]')?.removeAttribute('hidden');
+  decrease?.addEventListener('click', () => { quantity!.value = String(readQuantity() - 1); updatePrice(); });
+  increase?.addEventListener('click', () => { quantity!.value = String(readQuantity() + 1); updatePrice(); });
+  card.addEventListener('change', updatePrice);
+  quantity?.addEventListener('blur', updatePrice);
+  // Keep an empty field editable; normalize and recalculate on change/blur/add.
+  quantity?.addEventListener('input', () => {
+    if (quantity.validity.valid && quantity.value) updatePrice();
   });
   card.querySelector<HTMLButtonElement>('[data-add]')!.addEventListener('click', event => {
     const button = event.currentTarget as HTMLButtonElement;
     const value = Number(card.querySelector<HTMLInputElement>('input:checked')!.value);
-    if (!addProduct(product.id, value)) return;
+    updatePrice();
+    const count = readQuantity();
+    if (!addItems([{ id: product.id, value, quantity: count }])) return;
     button.classList.add('added');
     button.querySelector('span:not(.icon)')!.textContent = 'Добавлен';
-    toast(`${product.name}, ${variantLabel(product, value)} — в подборке`);
+    toast(`${product.name}, ${variantLabel(product, value)}${count > 1 ? ` × ${count}` : ''} — в подборке`);
     setTimeout(() => { button.classList.remove('added'); button.querySelector('span:not(.icon)')!.textContent = 'В подборку'; }, 1500);
   });
 });

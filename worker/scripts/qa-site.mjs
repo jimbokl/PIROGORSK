@@ -145,7 +145,7 @@ try {
     assert.equal(posts.length, before + 1, 'malformed transfer must not submit');
     // The homepage is a short editorial entry point; the complete 153-item
     // catalogue belongs to /menu, while the JSON catalogue still powers selection.
-    assert.equal(await page.$$eval('.catalog-card[data-product]', cards => cards.length), 4);
+    assert.equal(await page.$$eval('.home-product-feed [data-product]', cards => cards.length), 4);
     assert.equal(await page.$('[data-supplier-catalog]'), null);
     assert.equal(await page.$('.extras-section'), null);
     assert.equal(await page.$eval('#catalog-data', script => JSON.parse(script.textContent).length), 153);
