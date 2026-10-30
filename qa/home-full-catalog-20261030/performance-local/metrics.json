@@ -1,0 +1,142 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-30T16:22:59.742Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1216.8064,
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1666.8064,
+        "display": "1.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0026149784458369438,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 1216.8064,
+        "display": "1.2 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-30T16:23:08.995Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1208.6059999999998,
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2262.9089999999997,
+        "display": "2.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0026149784458369438,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 1208.6059999999998,
+        "display": "1.2 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-30T16:23:18.082Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1210.8692,
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2121.7384,
+        "display": "2.1 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0026149784458369438,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 1210.8692,
+        "display": "1.2 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-10-30T16:23:27.128Z",
+    "lighthouseVersion": "13.5.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 285.951,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 451.90200000000004,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.003250842235064064,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 285.951,
+        "display": "0.3 s"
+      }
+    }
+  }
+]

@@ -15,7 +15,7 @@ const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Об�
 ---
 {feed ? <article class="menu-feed-item home-feed-card" data-product={product.id} data-category={product.category} aria-labelledby={`product-${product.id}`}>
   <a class="menu-feed-art" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative sizes={feedSizes} /> : <ProductVisual product={product} decorative sizes={feedSizes} priority={priority} />}</a>
-  <h3 id={`product-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3>
+  <h4 id={`product-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h4>
   <p class="menu-feed-description">{product.description}</p>
   <fieldset class="menu-feed-variants">
     <legend class="sr-only">{measure}: {product.name.toLowerCase()}</legend>

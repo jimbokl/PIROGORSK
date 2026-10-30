@@ -13,9 +13,9 @@ import Brand from '../components/Brand.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import BlogCards from '../components/BlogCards.astro';
 import { blogEntries } from '../data/blog';
-import { products, catalog } from '../data/catalog';
+import { catalog } from '../data/catalog';
+import { homeCatalogGroups } from '../data/home-catalog';
 import TastingHero from '../components/TastingHero.astro';
-const featured = [products[0]!, products[5]!, catalog.find(p => p.supplier?.name === 'Пироги а-ля Русс')!, catalog.find(p => p.category === 'mini-pies')!].filter(Boolean);
 import '../styles/global.css';
 import '../styles/home.css';
 import '../styles/site-ui.css';
@@ -43,9 +43,17 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <TastingHero />
       <section class="catalog home-featured container" id="pirogi" aria-labelledby="catalog-heading">
         <div class="home-section-heading"><h2 id="catalog-heading">Выберите свой пирог</h2><a href="/menu/">Всё меню · {catalog.length}<Icon name="arrow" /></a></div>
-        <nav class="home-menu-shortcuts" aria-label="Разделы меню"><a href="/menu/#pirogi39">Целые пироги</a><a href="/menu/?group=mini-pies#holland">Мини-пироги</a><a href="/menu/?group=desserts#holland">К чаю</a><a href="#nabory">Наборы</a></nav>
-        <div class="menu-feed-list home-product-feed">{featured.map((product, i) => <ProductCard product={product} feed priority={i === 0} />)}</div>
-        <nav class="home-range-links" aria-label="Полный ассортимент"><a id="pirogi39" href="/menu/#pirogi39">61 целый пирог а-ля Русс<Icon name="arrow" /></a><a id="holland" href="/menu/#holland">78 позиций Holland Bakery<Icon name="arrow" /></a><a id="extras" href="/menu/#extras">Напитки и посуда<Icon name="arrow" /></a></nav>
+        <nav class="home-menu-shortcuts home-catalog-nav" aria-label="Разделы меню" data-home-catalog-nav>
+          {homeCatalogGroups.map(group => <a href={`#${group.id}`} data-home-category={group.id}>{group.label}<span>{group.products.length}</span></a>)}
+          <a href="#nabory">Наборы</a>
+        </nav>
+        <div class="home-product-feed" data-home-catalog>
+          {homeCatalogGroups.map((group, groupIndex) => <section class="home-catalog-group" id={group.id} data-home-group aria-labelledby={`heading-${group.id}`}>
+            <header class="home-catalog-heading"><h3 id={`heading-${group.id}`}>{group.label}</h3><span>{group.products.length} поз.</span></header>
+            <div class="menu-feed-list">{group.products.map((product, i) => <ProductCard product={product} feed priority={groupIndex === 0 && i === 0} />)}</div>
+          </section>)}
+        </div>
+        <div class="home-catalog-more" data-home-more-wrap hidden><p data-home-catalog-status role="status" aria-live="polite"></p><button type="button" class="button" data-home-more>Показать ещё</button></div>
       </section>
       <p class="home-status container"><span>Готовим запуск</span> Выбирайте вкусы и отмечайте интерес. Цены предварительные, заказ и оплата пока недоступны.</p>
       <HomeDepartments />
@@ -108,6 +116,6 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <div class="item-details"><div class="item-controls"><button data-decrease><Icon name="minus" /></button><output></output><button data-increase><Icon name="plus" /></button></div></div><button class="item-remove" data-remove>Убрать</button>
     </template>
     <script id="catalog-data" type="application/json" set:html={JSON.stringify(catalog.map(({ id, name, kind, unit, category, variants, prices, defaultVariant }) => ({ id, name, kind, unit, category, variants, prices, defaultVariant })))} />
-    <script>import '../scripts/storefront.ts';</script>
+    <script>import '../scripts/home-catalog.ts'; import '../scripts/storefront.ts';</script>
   </body>
 </html>

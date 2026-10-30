@@ -143,11 +143,10 @@ try {
     assert.deepEqual(await selection(), []);
     assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), false);
     assert.equal(posts.length, before + 1, 'malformed transfer must not submit');
-    // The homepage is a short editorial entry point; the complete 153-item
-    // catalogue belongs to /menu, while the JSON catalogue still powers selection.
-    assert.equal(await page.$$eval('.home-product-feed [data-product]', cards => cards.length), 4);
-    assert.equal(await page.$('[data-supplier-catalog]'), null);
-    assert.equal(await page.$('.extras-section'), null);
+    // Full SSR assortment, progressively revealed in one continuous homepage feed.
+    assert.equal(await page.$$eval('.home-product-feed [data-product]', cards => cards.length), catalog.length);
+    assert.equal(await page.$$eval('[data-home-category]', links => links.length), 8);
+    assert.equal(await page.$$eval('.home-product-feed [data-product]:not([hidden])', cards => cards.length), 12);
     assert.equal(await page.$eval('#catalog-data', script => JSON.parse(script.textContent).length), 153);
     assert.equal(await page.$$eval('.offer-card', cards => cards.every(card => card.scrollWidth <= card.clientWidth)), true, `offer content overflow at ${width}`);
     assert.equal(await page.$$eval('.offer-add', buttons => buttons.every(button => { const a = button.getBoundingClientRect(), b = button.closest('.offer-card').getBoundingClientRect(); return a.right <= b.right && a.left >= b.left; })), true, `offer button clipped at ${width}`);
@@ -250,6 +249,8 @@ try {
     const miniDefault = miniProduct.variants.find(item => item.value === miniProduct.defaultVariant);
     const meatDefault = catalog.find(item => item.id === 'meat').variants.find(item => item.value === 500);
     const mixedTotal = miniDefault.price + meatDefault.price;
+    await page.click('[data-home-category="holland"]');
+    await page.waitForFunction(id => !document.querySelector(`[data-product="${id}"]`).hidden, {}, miniId);
     await page.click(`[data-product="${miniId}"] [data-add]`);
     await page.click('[data-product=meat] [data-add]');
     await page.click('[data-open=selection-dialog]');

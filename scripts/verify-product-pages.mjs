@@ -12,13 +12,15 @@ const sitemap = await read('site/sitemap.xml');
 const home = await read('site/index.html');
 const menu = await read('site/menu/index.html');
 assert.ok(home.includes('href="/menu/"'), 'homepage links to complete menu');
-assert.equal((home.match(/data-product="/g) ?? []).length, 4, 'homepage keeps a short four-product storefront');
+assert.equal((home.match(/data-product="/g) ?? []).length, catalog.length, 'homepage contains the complete SSR assortment');
+assert.deepEqual([...home.matchAll(/data-product="([^"]+)"/g)].map(match => match[1]).sort(), catalog.map(p => p.id).sort(), 'each product appears once on the homepage');
 assert.equal(art.length, 139);
 assert.equal(new Set(art.map(a => a.sourceSha256)).size, 139, '139 separately generated images');
 assert.equal(matrix.filter(row => row.cohort === 'product-pages-20261029').length, 84);
 for (const product of catalog) {
   const route = catalogProductHref(product);
   assert.ok(menu.includes(`href="${route}"`), `menu links to ${route}`);
+  assert.ok(home.includes(`href="${route}"`), `homepage links to ${route}`);
   assert.ok(sitemap.includes(`https://pirogorsk.ru${route}</loc>`), `sitemap: ${route}`);
   const html = await read(`site${route}index.html`);
   assert.ok(html.includes(`href="https://pirogorsk.ru${route}"`), `canonical: ${route}`);

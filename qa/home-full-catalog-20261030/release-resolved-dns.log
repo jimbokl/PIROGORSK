@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "dns": "1.1.1.1 and dns.google resolved host to 188.114.96.0; local system resolver ENOTFOUND, TLS hostname retained",
+  "health": {
+    "ok": true,
+    "storage": "d1",
+    "mode": "intent",
+    "apiVersion": 1,
+    "catalogSha256": "39c63565ad4262d056aa7545c4d2ae2261459e6fa24dd21c9b2342cf04b3cfd8"
+  }
+}
