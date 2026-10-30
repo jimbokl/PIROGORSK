@@ -1,5 +1,6 @@
 import { freshProducts } from './pirogi39-catalog.ts';
 import { supplierProducts } from './holland-catalog.ts';
+import { productDescriptions } from './product-descriptions.ts';
 export const cities = ['Зеленоградск', 'Калининград', 'Светлогорск'] as const;
 
 export type ProductKind = 'pie' | 'drink' | 'accessory' | 'bakery';
@@ -29,6 +30,7 @@ export type Product = {
 type ProductDraft = Omit<Product, 'prices' | 'priceStatus'>;
 const draftProduct = (product: ProductDraft): Product => ({
   ...product,
+  description: productDescriptions[product.id] ?? product.description,
   prices: Object.fromEntries(product.variants.map(({ value, price }) => [value, price])),
   priceStatus: 'draft',
 });

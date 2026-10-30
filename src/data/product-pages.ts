@@ -27,7 +27,7 @@ export function productPage(product: Product) {
   const heading = fresh ? `${product.name} · ${product.variants.map(v => formatWeight(v.value)).join(' / ')}` : duplicate && source ? `${product.name} · ${source.packCount > 1 ? `${source.unitWeightG} г` : formatWeight(source.packWeightG)}` : product.name;
   const selected = product.variants.find(v => v.value === product.defaultVariant)!;
   const group = [...supplierGroups, ...freshGroups].find(([key]) => key === product.category)?.[1] ?? (product.kind === 'drink' ? 'Напитки' : 'К общему столу');
-  const description = `${heading}. ${selected.label}, ${product.supplier?.priceFrom ? 'от ' : ''}${selected.price.toLocaleString('ru-RU')} ₽ предварительно. ${source ? product.description + '. ' : ''}Форматы и подборка к запуску Пирогорска.`;
+  const description = `${product.name}. ${product.description}`;
   const prep = fresh ? `Это готовый пирог. ${freshFacts?.storage ? 'Производитель указывает условия хранения: ' + freshFacts.storage + '. ' : ''}Условия получения и температуру при передаче уточним перед продажами; сверяйте маркировку конкретной партии.` : !source ? 'Условия подачи и хранения пока уточняются. Перед началом продаж укажем состав, упаковку и необходимые сведения о продукте.'
     : product.category === 'mini-pies' ? 'Это готовый замороженный пирог. Перед подачей его нужно разморозить и разогреть по инструкции производителя. Доставку горячих пирогов сейчас не предлагаем.'
     : product.category === 'desserts' ? 'Замороженный десерт нужно подготовить заранее по инструкции на упаковке. Время размораживания и срок после него зависят от изделия; сверяйте маркировку конкретной партии.'
@@ -36,7 +36,7 @@ export function productPage(product: Product) {
     : facts?.needsProofing ? 'Это сырая дрожжевая заготовка. По описанию производителя, перед выпечкой нужны размораживание и расстойка. Оставьте время на оба этапа и следуйте инструкции на упаковке.'
     : facts?.prebaked ? 'Производитель указывает предварительную выпечку. Замороженное изделие нужно подготовить и при необходимости допечь по его инструкции; это не готовая горячая выпечка.'
     : 'Замороженная заготовка требует выпечки. По описанию производителя, отдельная расстойка не нужна. Размораживайте и выпекайте по инструкции на упаковке.';
-  return { source, facts, fresh, heading, selected, group, description, intro: copy.intro, serving: copy.serving, prep,
+  return { source, facts, fresh, heading, selected, group, description, intro: product.description, serving: copy.serving, prep,
     related: newPageProducts.filter(other => other.id !== product.id && other.category === product.category).slice(0, 3),
     href: catalogProductHref(product) };
 }

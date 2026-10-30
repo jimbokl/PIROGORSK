@@ -114,7 +114,7 @@ export const editorialProducts = products.flatMap(product => {
   const image = entry?.status === 'READY' && file?.status === 'READY' && file.path
     ? conceptImages[`../../design/layered-assets-v2/${file.path}`]
     : legacyImages[`../../design/assets-source/${product.id}.png`];
-  return [{ ...product, image, editorial: { ...productNotes[key], slug: product.slug || productNotes[key].slug }, sweet: ['apple', 'cherry', 'curd'].includes(key) }];
+  return [{ ...product, image, editorial: { ...productNotes[key], intro: product.description, slug: product.slug || productNotes[key].slug }, sweet: ['apple', 'cherry', 'curd'].includes(key) }];
 });
 export const productHref = (product: (typeof editorialProducts)[number]) => `/pirogi/${product.editorial.slug}/`;
 

@@ -71,8 +71,8 @@ body.home-page .catalog .product-card.catalog-card .button-small{min-height:var(
 /* Product imagery: transparent food on a calm surface. The engraving is a
    restrained texture, never a second frame competing with the product. */
 body:is(.home-page,.editorial-site) :is(.product-visual,.product-artwork){background:var(--surface-oat);border-radius:20px}
-body:is(.home-page,.editorial-site) .product-backdrop{opacity:.07;mix-blend-mode:multiply}
-body:is(.home-page,.editorial-site) .product-visual-background{opacity:.07;mix-blend-mode:multiply}
+body:is(.home-page,.editorial-site) .product-backdrop{opacity:.22;mix-blend-mode:multiply}
+body:is(.home-page,.editorial-site) .product-visual-background{opacity:.22;mix-blend-mode:multiply}
 body:is(.home-page,.editorial-site) .product-artwork{isolation:auto}
 body:is(.home-page,.editorial-site) .product-artwork-subject{mask-image:none;mix-blend-mode:darken}
 body:is(.home-page,.editorial-site) .product-visual-badge{display:none}

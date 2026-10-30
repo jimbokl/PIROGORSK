@@ -16,7 +16,7 @@ export function getStaticPaths() {
 interface Props { product: (typeof editorialProducts)[number] }
 const { product } = Astro.props;
 const title = `${product.name} — 500 г и 1 кг | Пирогорск`;
-const description = `${product.name}: размеры 500 г и 1 кг, предварительные цены и идеи для общего стола. Выберите вкус в будущем меню Пирогорска и отметьте интерес к запуску.`;
+const description = `${product.name}. ${product.description}`;
 const image = product.image ? await getImage({ src: product.image, width: 1000, format: 'webp', quality: 65 }) : undefined;
 const schema = [{ '@type': 'Product', '@id': `${siteOrigin}${productHref(product)}#product`, name: product.name, description: product.editorial.intro, url: `${siteOrigin}${productHref(product)}`, ...(image ? { image: new URL(image.src, siteOrigin).href } : {}), brand: { '@type': 'Brand', name: 'Пирогорск' }, category: 'Концепт будущего меню' }];
 const otherProducts = editorialProducts.filter(other => other.id !== product.id && other.sweet === product.sweet).slice(0, 2);

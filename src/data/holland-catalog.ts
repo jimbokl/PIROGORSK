@@ -1,6 +1,7 @@
 import source from './holland-source.json' with { type: 'json' };
 import type { Product } from './catalog.ts';
 import { estimatePrice, pricingModel } from './pricing.ts';
+import { productDescriptions } from './product-descriptions.ts';
 
 export const supplierGroups = [
   ['all', 'Весь ассортимент'], ['mini-pies', 'Мини-пироги'], ['bread', 'Хлеб и булочки'],
@@ -26,7 +27,7 @@ export const supplierProducts: Product[] = [...source].sort((a, b) =>
   const form = item.group === 'bake' || item.group === 'dough' ? 'Замороженные заготовки для выпечки'
     : item.group === 'bread' ? 'Замороженная выпечка; подготовка по инструкции производителя' : 'Готовый замороженный продукт';
   return {
-    id: item.id, name: item.name, description: form, category: item.group as Product['category'],
+    id: item.id, name: item.name, description: productDescriptions[item.id] ?? form, category: item.group as Product['category'],
     kind: 'bakery', unit: 'g', variants, defaultVariant: variants[item.group === 'mini-pies' ? 1 : 0].value,
     slug: item.id, prices: Object.fromEntries(variants.map(v => [v.value, v.price])), priceStatus: 'draft',
     supplier: { name: 'Holland Bakery', url: item.sourceUrl, packLabel: item.sourceLabel,
