@@ -10,7 +10,7 @@
 
 ## Состояние
 
-Локальная реализация готова. Публикация и независимая production-проверка — следующий шаг.
+Опубликовано и проверено. Runtime `a3048375e8b14582b1fbf8390be64e9ddd6aa2c5`, [CI41083609332 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41083609332). Открытых пунктов этого поручения нет.
 
 ## Изменения
 
@@ -22,6 +22,15 @@
 
 320/390/768/1024/1280px PASS: картинка слева, покупка справа; без горизонтальной прокрутки, ошибок JS/HTTP и axe WCAG A/AA violations. На телефоне 390×740 первая иллюстрация начиналась на2477px, теперь на467px; нижняя граница кнопки631px, весь первый товар виден без прокрутки. На320×740 —478/640px. Варианты, умножение цены, количество/клавиатура/границы, объединение, диалог/сумма, reload и три сцены слайдера PASS.
 
-Astro check (0 errors/warnings), build217 HTML, 41 Node tests, семь SEO/artwork validators, release compatibility, полный browser QA (включая Worker/SQLite), Worker/client types/API/SQL PASS. Shared registry strict PASS, errors0, driftfalse. Лабораторный Lighthouse CLI локальной preview: mobile100/98/98, LCP1759–2202ms; desktop100/LCP475ms; A/SEO100, CLS≈0.002. Это не публичный PageSpeed; сравнение с production будет выполнено после публикации.
+Astro check (0 errors/warnings), build217 HTML, 41 Node tests, семь SEO/artwork validators, release compatibility, полный browser QA (включая Worker/SQLite), Worker/client types/API/SQL PASS. Shared registry strict PASS, errors0, driftfalse. Лабораторный Lighthouse CLI локальной preview: mobile100/98/98, LCP1759–2202ms; desktop100/LCP475ms; A/SEO100, CLS≈0.002. Это локальный Lighthouse CLI; независимые production-результаты ниже.
 
 Верификаторы: `verify-home.mjs` (локально/--baseline/--production), `verify-pagespeed.mjs` (публичный PSI). Сохранены геометрия, ошибки и снимки, компактные Lighthouse metrics/ranges. Реальных отправок формы на production в этом спринте нет.
+
+## Production
+
+- `verify-home.mjs --production`: 320/390/768/1024/1280px PASS. Положение первого товара совпадает с локальным: 390px — изображение467px, кнопка до631px; 320px —478/640px. Все четыре товара, варианты/количество/суммы/границы/клавиатура, повторное добавление, диалог, сохранение после reload, три сцены слайдера PASS. Нет JS/HTTP errors, overflow и автоматических WCAG A/AA violations. Снимки390/768px просмотрены визуально.
+- `publication.json`: 244 ресурса HTTP200 и побайтно совпали с Pages artifact CI, включая217 HTML и153 товарных страницы. Совместимость опубликованных Pages/Worker и IndexNow прошли в CI.
+- Lighthouse CLI Chrome156: mobile98/99/99; LCP1442/1656/1889ms, медиана1656ms (baseline1751/1889/1775ms, медиана1775ms); desktop99/LCP601ms. Accessibility/SEO100; CLS≈0.002. Best Practices77, как в baseline. Лабораторные колебания не доказывают изменение пользовательских полевых метрик.
+- Публичный PSI mobile/desktop снова вернул «Не удалось перейти по адресу https://pirogorsk.ru/». Баллы публичного PSI не получены; CLI не выдан за него. Ответы и снимки сохранены в `public-psi.json`, `pagespeed-mobile.png`, `pagespeed-desktop.png`.
+
+Свидетельства: `ci.json`, `publication.json`, `production/results.json`, `production/home-390.jpg`, `production/home-768.jpg`, `production-performance/metrics.json`, `production-performance/performance-ranges.json`. Проверки production не отправляли форму и не создавали записи спроса.

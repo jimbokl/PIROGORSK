@@ -1,6 +1,10 @@
 ## Главная: товары сразу после короткого баннера — 30.10.2026
 
-Компактная шапка/баннер, за ними сразу лента четырёх пирогов с иллюстрацией слева, форматами, ценой, количеством1–99 и добавлением. Остальные разделы ниже. На390×740 первый пирог2477→467px, кнопка заканчивается на631px. Пять ширин320–1280, axe, варианты/количество/суммы/merge/reload/слайдер, check/build217/41 Node/семь validators/release/full browser/Worker/API/SQLite/registry strict PASS. Локальный Lighthouse mobile98–100/LCP1.76–2.20s, desktop100/LCP0.48s. Публикация и production QA в работе. [Протокол](qa/home-storefront-20261030/README.md).
+Компактная шапка/баннер, за ними сразу лента четырёх пирогов с иллюстрацией слева, форматами, ценой, количеством1–99 и добавлением. Остальные разделы ниже. На390×740 первый пирог2477→467px, кнопка заканчивается на631px. Пять ширин320–1280, axe, варианты/количество/суммы/merge/reload/слайдер, check/build217/41 Node/семь validators/release/full browser/Worker/API/SQLite/registry strict PASS.
+
+Runtime **`a3048375e8b14582b1fbf8390be64e9ddd6aa2c5`**, [CI41083609332 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41083609332). Production: все244 ресурса HTTP200 и точно совпали с CI artifact, включая217 HTML и153 товара; Pages/Worker compatibility и IndexNow PASS. Responsive320/390/768/1024/1280, количество/клавиатура/форматы/суммы/merge/reload/слайдер и axe PASS, JS/HTTP errors/overflow нет. Production-снимки телефона и планшета просмотрены визуально.
+
+Production Lighthouse CLI: mobile98/99/99, LCP1442/1656/1889ms (медиана1656ms против baseline1775ms), desktop99/LCP601ms, A/SEO100, CLS≈0.002, BP77 как до изменений. Публичный PSI mobile/desktop отчёт не выдал: «Не удалось перейти по адресу»; CLI указан отдельно. Опубликовано и проверено, открытых пунктов поручения нет. [Протокол](qa/home-storefront-20261030/README.md).
 
 ## Карточки меню по мобильному референсу — 30.10.2026
 
