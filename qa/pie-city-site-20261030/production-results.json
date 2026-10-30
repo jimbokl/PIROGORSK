@@ -1,0 +1,3174 @@
+{
+  "checkedAt": "2026-10-30T21:22:49.343Z",
+  "production": true,
+  "results": [
+    {
+      "name": "home",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Целый город вкусных пирогов",
+      "titleBox": {
+        "x": 39,
+        "y": 178.546875,
+        "right": 281,
+        "bottom": 245.484375,
+        "width": 242,
+        "height": 66.9375
+      },
+      "hero": {
+        "x": 20,
+        "y": 135.359375,
+        "right": 300,
+        "bottom": 575.359375,
+        "width": 280,
+        "height": 440
+      },
+      "art": {
+        "x": 20,
+        "y": 365.359375,
+        "right": 300,
+        "bottom": 575.359375,
+        "width": 280,
+        "height": 210,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z19n2mX.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 39,
+        "y": 312.078125,
+        "right": 209.421875,
+        "bottom": 356.578125,
+        "width": 170.421875,
+        "height": 44.5,
+        "href": "/menu/"
+      },
+      "images": [],
+      "flavor": "pies"
+    },
+    {
+      "name": "home",
+      "width": 320,
+      "slide": "company",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Больше вкусов за одним столом",
+      "titleBox": {
+        "x": 39,
+        "y": 178.546875,
+        "right": 281,
+        "bottom": 245.484375,
+        "width": 242,
+        "height": 66.9375
+      },
+      "hero": {
+        "x": 20,
+        "y": 135.359375,
+        "right": 300,
+        "bottom": 586.375,
+        "width": 280,
+        "height": 451.015625
+      },
+      "art": {
+        "x": 20,
+        "y": 376.375,
+        "right": 300,
+        "bottom": 586.375,
+        "width": 280,
+        "height": 210,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-company.BFPehciP_Z1FY1DW.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 39,
+        "y": 331.875,
+        "right": 220.765625,
+        "bottom": 376.375,
+        "width": 181.765625,
+        "height": 44.5,
+        "href": "#nabory"
+      },
+      "images": [],
+      "flavor": "company"
+    },
+    {
+      "name": "home",
+      "width": 320,
+      "slide": "tea",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Ягодный квартал",
+      "titleBox": {
+        "x": 39,
+        "y": 178.546875,
+        "right": 281,
+        "bottom": 212.015625,
+        "width": 242,
+        "height": 33.46875
+      },
+      "hero": {
+        "x": 20,
+        "y": 135.359375,
+        "right": 300,
+        "bottom": 575.359375,
+        "width": 280,
+        "height": 440
+      },
+      "art": {
+        "x": 20,
+        "y": 365.359375,
+        "right": 300,
+        "bottom": 575.359375,
+        "width": 280,
+        "height": 210,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-berry.Bmd7BCif_14SgXa.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 39,
+        "y": 298.40625,
+        "right": 232.53125,
+        "bottom": 342.90625,
+        "width": 193.53125,
+        "height": 44.5,
+        "href": "/pirogi/pirog-s-vishney/"
+      },
+      "images": [],
+      "flavor": "tea"
+    },
+    {
+      "name": "home",
+      "width": 320,
+      "slide": "mini",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Каждому свой мини-пирог",
+      "titleBox": {
+        "x": 39,
+        "y": 178.546875,
+        "right": 281,
+        "bottom": 245.484375,
+        "width": 242,
+        "height": 66.9375
+      },
+      "hero": {
+        "x": 20,
+        "y": 135.359375,
+        "right": 300,
+        "bottom": 586.375,
+        "width": 280,
+        "height": 451.015625
+      },
+      "art": {
+        "x": 20,
+        "y": 376.375,
+        "right": 300,
+        "bottom": 586.375,
+        "width": 280,
+        "height": 210,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-mini.Bed9vNry_C7OAv.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 39,
+        "y": 331.875,
+        "right": 248.3125,
+        "bottom": 376.375,
+        "width": 209.3125,
+        "height": 44.5,
+        "href": "#holland"
+      },
+      "images": [],
+      "flavor": "mini"
+    },
+    {
+      "name": "home",
+      "width": 320,
+      "slide": "seaside",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги. Море. Ваша компания.",
+      "titleBox": {
+        "x": 39,
+        "y": 178.546875,
+        "right": 281,
+        "bottom": 245.484375,
+        "width": 242,
+        "height": 66.9375
+      },
+      "hero": {
+        "x": 20,
+        "y": 135.359375,
+        "right": 300,
+        "bottom": 586.375,
+        "width": 280,
+        "height": 451.015625
+      },
+      "art": {
+        "x": 20,
+        "y": 376.375,
+        "right": 300,
+        "bottom": 586.375,
+        "width": 280,
+        "height": 210,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-seaside.D2tsKatM_uQUEm.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 39,
+        "y": 331.875,
+        "right": 246.390625,
+        "bottom": 376.375,
+        "width": 207.390625,
+        "height": 44.5,
+        "href": "#pirogi39"
+      },
+      "images": [],
+      "flavor": "seaside"
+    },
+    {
+      "name": "home",
+      "width": 320,
+      "slide": "bake",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Уют начинается с духовки",
+      "titleBox": {
+        "x": 39,
+        "y": 178.546875,
+        "right": 281,
+        "bottom": 245.484375,
+        "width": 242,
+        "height": 66.9375
+      },
+      "hero": {
+        "x": 20,
+        "y": 135.359375,
+        "right": 300,
+        "bottom": 586.375,
+        "width": 280,
+        "height": 451.015625
+      },
+      "art": {
+        "x": 20,
+        "y": 376.375,
+        "right": 300,
+        "bottom": 586.375,
+        "width": 280,
+        "height": 210,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-bake.D1eal2c1_Z1GpcVF.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 39,
+        "y": 331.875,
+        "right": 259.109375,
+        "bottom": 376.375,
+        "width": 220.109375,
+        "height": 44.5,
+        "href": "#bake"
+      },
+      "images": [],
+      "flavor": "bake"
+    },
+    {
+      "name": "menu",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Меню пирогов, хлеба и выпечки",
+      "titleBox": {
+        "x": 41,
+        "y": 261.65625,
+        "right": 279,
+        "bottom": 327.1875,
+        "width": 238,
+        "height": 65.53125
+      },
+      "hero": {
+        "x": 20,
+        "y": 204.359375,
+        "right": 300,
+        "bottom": 520.3125,
+        "width": 280,
+        "height": 315.953125
+      },
+      "art": {
+        "x": 189,
+        "y": 366.75,
+        "right": 279,
+        "bottom": 456.75,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_oOPO9.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "delivery",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К вашему столу.В вашем городе.",
+      "titleBox": {
+        "x": 41,
+        "y": 265.65625,
+        "right": 279,
+        "bottom": 331.1875,
+        "width": 238,
+        "height": 65.53125
+      },
+      "hero": {
+        "x": 20,
+        "y": 208.359375,
+        "right": 300,
+        "bottom": 622.8125,
+        "width": 280,
+        "height": 414.453125
+      },
+      "art": {
+        "x": 189,
+        "y": 370.75,
+        "right": 279,
+        "bottom": 460.75,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/delivery-town.xXE7fF_q_Z1sh3U0.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 41,
+        "y": 500.3125,
+        "right": 279,
+        "bottom": 548.3125,
+        "width": 238,
+        "height": 48,
+        "href": "#delivery-cities"
+      },
+      "images": []
+    },
+    {
+      "name": "kaliningrad",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Калининграде",
+      "titleBox": {
+        "x": 41,
+        "y": 277.65625,
+        "right": 279,
+        "bottom": 343.1875,
+        "width": 238,
+        "height": 65.53125
+      },
+      "hero": {
+        "x": 20,
+        "y": 220.359375,
+        "right": 300,
+        "bottom": 673.0625,
+        "width": 280,
+        "height": 452.703125
+      },
+      "art": {
+        "x": 189,
+        "y": 427.125,
+        "right": 279,
+        "bottom": 517.125,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/kaliningrad-town.kIrY5rz3_CPSrq.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 41,
+        "y": 601.0625,
+        "right": 279,
+        "bottom": 649.0625,
+        "width": 238,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "zelenogradsk",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Зеленоградске",
+      "titleBox": {
+        "x": 41,
+        "y": 277.65625,
+        "right": 279,
+        "bottom": 343.1875,
+        "width": 238,
+        "height": 65.53125
+      },
+      "hero": {
+        "x": 20,
+        "y": 220.359375,
+        "right": 300,
+        "bottom": 717.4375,
+        "width": 280,
+        "height": 497.078125
+      },
+      "art": {
+        "x": 189,
+        "y": 449.3125,
+        "right": 279,
+        "bottom": 539.3125,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/zelenogradsk-town.CXchEJWk_Z2tOwwa.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 41,
+        "y": 645.4375,
+        "right": 279,
+        "bottom": 693.4375,
+        "width": 238,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "svetlogorsk",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Светлогорске",
+      "titleBox": {
+        "x": 41,
+        "y": 277.65625,
+        "right": 279,
+        "bottom": 343.1875,
+        "width": 238,
+        "height": 65.53125
+      },
+      "hero": {
+        "x": 20,
+        "y": 220.359375,
+        "right": 300,
+        "bottom": 673.0625,
+        "width": 280,
+        "height": 452.703125
+      },
+      "art": {
+        "x": 189,
+        "y": 427.125,
+        "right": 279,
+        "bottom": 517.125,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/svetlogorsk-town.C7QlTxgC_spCvl.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 41,
+        "y": 601.0625,
+        "right": 279,
+        "bottom": 649.0625,
+        "width": 238,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "blog",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К общему столу",
+      "titleBox": {
+        "x": 41,
+        "y": 276.953125,
+        "right": 279,
+        "bottom": 309.71875,
+        "width": 238,
+        "height": 32.765625
+      },
+      "hero": {
+        "x": 20,
+        "y": 204.359375,
+        "right": 300,
+        "bottom": 502.84375,
+        "width": 280,
+        "height": 298.484375
+      },
+      "art": {
+        "x": 189,
+        "y": 349.28125,
+        "right": 279,
+        "bottom": 439.28125,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_1ar14f.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "article",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Сколько пирога нужно на человека и на компанию",
+      "titleBox": {
+        "x": 20,
+        "y": 344.953125,
+        "right": 300,
+        "bottom": 491.828125,
+        "width": 280,
+        "height": 146.875
+      },
+      "hero": {
+        "x": 20,
+        "y": 289.359375,
+        "right": 300,
+        "bottom": 963.78125,
+        "width": 280,
+        "height": 674.421875
+      },
+      "art": {
+        "x": 20,
+        "y": 741.125,
+        "right": 300,
+        "bottom": 927.78125,
+        "width": 280,
+        "height": 186.65625,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/company-table.B2g0M1uC_1yAK2T.avif",
+        "fit": "cover"
+      },
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "city-guide",
+      "width": 320,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Где поесть в Зеленоградске: три кафе и цены на четверых",
+      "titleBox": {
+        "x": 20,
+        "y": 342.953125,
+        "right": 300,
+        "bottom": 489.828125,
+        "width": 280,
+        "height": 146.875
+      },
+      "hero": {
+        "x": 20,
+        "y": 289.359375,
+        "right": 300,
+        "bottom": 509.828125,
+        "width": 280,
+        "height": 220.46875
+      },
+      "art": null,
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Целый город вкусных пирогов",
+      "titleBox": {
+        "x": 44,
+        "y": 199.421875,
+        "right": 346,
+        "bottom": 272.859375,
+        "width": 302,
+        "height": 73.4375
+      },
+      "hero": {
+        "x": 20,
+        "y": 152.625,
+        "right": 370,
+        "bottom": 618.953125,
+        "width": 350,
+        "height": 466.328125
+      },
+      "art": {
+        "x": 20,
+        "y": 383.953125,
+        "right": 370,
+        "bottom": 618.953125,
+        "width": 350,
+        "height": 235,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_iQriE.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 44,
+        "y": 339.453125,
+        "right": 261,
+        "bottom": 383.953125,
+        "width": 217,
+        "height": 44.5,
+        "href": "/menu/"
+      },
+      "images": [],
+      "flavor": "pies"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "slide": "company",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Больше вкусов за одним столом",
+      "titleBox": {
+        "x": 44,
+        "y": 199.421875,
+        "right": 346,
+        "bottom": 272.859375,
+        "width": 302,
+        "height": 73.4375
+      },
+      "hero": {
+        "x": 20,
+        "y": 152.625,
+        "right": 370,
+        "bottom": 618.953125,
+        "width": 350,
+        "height": 466.328125
+      },
+      "art": {
+        "x": 20,
+        "y": 383.953125,
+        "right": 370,
+        "bottom": 618.953125,
+        "width": 350,
+        "height": 235,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-company.BFPehciP_Z1uUvjE.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 44,
+        "y": 339.453125,
+        "right": 261,
+        "bottom": 383.953125,
+        "width": 217,
+        "height": 44.5,
+        "href": "#nabory"
+      },
+      "images": [],
+      "flavor": "company"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "slide": "tea",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Ягодный квартал",
+      "titleBox": {
+        "x": 44,
+        "y": 199.421875,
+        "right": 346,
+        "bottom": 236.140625,
+        "width": 302,
+        "height": 36.71875
+      },
+      "hero": {
+        "x": 20,
+        "y": 152.625,
+        "right": 370,
+        "bottom": 602.625,
+        "width": 350,
+        "height": 450
+      },
+      "art": {
+        "x": 20,
+        "y": 367.625,
+        "right": 370,
+        "bottom": 602.625,
+        "width": 350,
+        "height": 235,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-berry.Bmd7BCif_Z1mioYw.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 44,
+        "y": 322.53125,
+        "right": 261,
+        "bottom": 367.03125,
+        "width": 217,
+        "height": 44.5,
+        "href": "/pirogi/pirog-s-vishney/"
+      },
+      "images": [],
+      "flavor": "tea"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "slide": "mini",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Каждому свой мини-пирог",
+      "titleBox": {
+        "x": 44,
+        "y": 199.421875,
+        "right": 346,
+        "bottom": 272.859375,
+        "width": 302,
+        "height": 73.4375
+      },
+      "hero": {
+        "x": 20,
+        "y": 152.625,
+        "right": 370,
+        "bottom": 638.75,
+        "width": 350,
+        "height": 486.125
+      },
+      "art": {
+        "x": 20,
+        "y": 403.75,
+        "right": 370,
+        "bottom": 638.75,
+        "width": 350,
+        "height": 235,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-mini.Bed9vNry_25mjh8.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 44,
+        "y": 359.25,
+        "right": 261,
+        "bottom": 403.75,
+        "width": 217,
+        "height": 44.5,
+        "href": "#holland"
+      },
+      "images": [],
+      "flavor": "mini"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "slide": "seaside",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги. Море. Ваша компания.",
+      "titleBox": {
+        "x": 44,
+        "y": 199.421875,
+        "right": 346,
+        "bottom": 272.859375,
+        "width": 302,
+        "height": 73.4375
+      },
+      "hero": {
+        "x": 20,
+        "y": 152.625,
+        "right": 370,
+        "bottom": 638.75,
+        "width": 350,
+        "height": 486.125
+      },
+      "art": {
+        "x": 20,
+        "y": 403.75,
+        "right": 370,
+        "bottom": 638.75,
+        "width": 350,
+        "height": 235,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-seaside.D2tsKatM_FUqYE.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 44,
+        "y": 359.25,
+        "right": 261,
+        "bottom": 403.75,
+        "width": 217,
+        "height": 44.5,
+        "href": "#pirogi39"
+      },
+      "images": [],
+      "flavor": "seaside"
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "slide": "bake",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Уют начинается с духовки",
+      "titleBox": {
+        "x": 44,
+        "y": 199.421875,
+        "right": 346,
+        "bottom": 272.859375,
+        "width": 302,
+        "height": 73.4375
+      },
+      "hero": {
+        "x": 20,
+        "y": 152.625,
+        "right": 370,
+        "bottom": 618.953125,
+        "width": 350,
+        "height": 466.328125
+      },
+      "art": {
+        "x": 20,
+        "y": 383.953125,
+        "right": 370,
+        "bottom": 618.953125,
+        "width": 350,
+        "height": 235,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-bake.D1eal2c1_ZeaIg3.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 44,
+        "y": 339.453125,
+        "right": 264.109375,
+        "bottom": 383.953125,
+        "width": 220.109375,
+        "height": 44.5,
+        "href": "#bake"
+      },
+      "images": [],
+      "flavor": "bake"
+    },
+    {
+      "name": "menu",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Меню пирогов, хлеба и выпечки",
+      "titleBox": {
+        "x": 41,
+        "y": 278.921875,
+        "right": 349,
+        "bottom": 347.671875,
+        "width": 308,
+        "height": 68.75
+      },
+      "hero": {
+        "x": 20,
+        "y": 221.625,
+        "right": 370,
+        "bottom": 497.671875,
+        "width": 350,
+        "height": 276.046875
+      },
+      "art": {
+        "x": 259,
+        "y": 365.671875,
+        "right": 349,
+        "bottom": 455.671875,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_oOPO9.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "delivery",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К вашему столу.В вашем городе.",
+      "titleBox": {
+        "x": 41,
+        "y": 282.921875,
+        "right": 349,
+        "bottom": 351.671875,
+        "width": 308,
+        "height": 68.75
+      },
+      "hero": {
+        "x": 20,
+        "y": 225.625,
+        "right": 370,
+        "bottom": 600.171875,
+        "width": 350,
+        "height": 374.546875
+      },
+      "art": {
+        "x": 259,
+        "y": 369.671875,
+        "right": 349,
+        "bottom": 459.671875,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/delivery-town.xXE7fF_q_Z1sh3U0.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 41,
+        "y": 477.671875,
+        "right": 349,
+        "bottom": 525.671875,
+        "width": 308,
+        "height": 48,
+        "href": "#delivery-cities"
+      },
+      "images": []
+    },
+    {
+      "name": "kaliningrad",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Калининграде",
+      "titleBox": {
+        "x": 41,
+        "y": 294.921875,
+        "right": 349,
+        "bottom": 363.671875,
+        "width": 308,
+        "height": 68.75
+      },
+      "hero": {
+        "x": 20,
+        "y": 237.625,
+        "right": 370,
+        "bottom": 604.796875,
+        "width": 350,
+        "height": 367.171875
+      },
+      "art": {
+        "x": 259,
+        "y": 403.234375,
+        "right": 349,
+        "bottom": 493.234375,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/kaliningrad-town.kIrY5rz3_CPSrq.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 41,
+        "y": 532.796875,
+        "right": 349,
+        "bottom": 580.796875,
+        "width": 308,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "zelenogradsk",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Зеленоградске",
+      "titleBox": {
+        "x": 41,
+        "y": 294.921875,
+        "right": 349,
+        "bottom": 363.671875,
+        "width": 308,
+        "height": 68.75
+      },
+      "hero": {
+        "x": 20,
+        "y": 237.625,
+        "right": 370,
+        "bottom": 626.984375,
+        "width": 350,
+        "height": 389.359375
+      },
+      "art": {
+        "x": 259,
+        "y": 414.328125,
+        "right": 349,
+        "bottom": 504.328125,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/zelenogradsk-town.CXchEJWk_Z2tOwwa.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 41,
+        "y": 554.984375,
+        "right": 349,
+        "bottom": 602.984375,
+        "width": 308,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "svetlogorsk",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Светлогорске",
+      "titleBox": {
+        "x": 41,
+        "y": 294.921875,
+        "right": 349,
+        "bottom": 329.296875,
+        "width": 308,
+        "height": 34.375
+      },
+      "hero": {
+        "x": 20,
+        "y": 237.625,
+        "right": 370,
+        "bottom": 592.609375,
+        "width": 350,
+        "height": 354.984375
+      },
+      "art": {
+        "x": 259,
+        "y": 379.953125,
+        "right": 349,
+        "bottom": 469.953125,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/svetlogorsk-town.C7QlTxgC_spCvl.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 41,
+        "y": 520.609375,
+        "right": 349,
+        "bottom": 568.609375,
+        "width": 308,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "blog",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К общему столу",
+      "titleBox": {
+        "x": 41,
+        "y": 278.921875,
+        "right": 349,
+        "bottom": 313.296875,
+        "width": 308,
+        "height": 34.375
+      },
+      "hero": {
+        "x": 20,
+        "y": 221.625,
+        "right": 370,
+        "bottom": 463.296875,
+        "width": 350,
+        "height": 241.671875
+      },
+      "art": {
+        "x": 259,
+        "y": 331.296875,
+        "right": 349,
+        "bottom": 421.296875,
+        "width": 90,
+        "height": 90,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_1ar14f.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "article",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Сколько пирога нужно на человека и на компанию",
+      "titleBox": {
+        "x": 20,
+        "y": 362.21875,
+        "right": 370,
+        "bottom": 472.375,
+        "width": 350,
+        "height": 110.15625
+      },
+      "hero": {
+        "x": 20,
+        "y": 306.625,
+        "right": 370,
+        "bottom": 966.5,
+        "width": 350,
+        "height": 659.875
+      },
+      "art": {
+        "x": 20,
+        "y": 697.171875,
+        "right": 370,
+        "bottom": 930.5,
+        "width": 350,
+        "height": 233.328125,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/company-table.B2g0M1uC_1yAK2T.avif",
+        "fit": "cover"
+      },
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "city-guide",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Где поесть в Зеленоградске: три кафе и цены на четверых",
+      "titleBox": {
+        "x": 20,
+        "y": 360.21875,
+        "right": 370,
+        "bottom": 507.09375,
+        "width": 350,
+        "height": 146.875
+      },
+      "hero": {
+        "x": 20,
+        "y": 306.625,
+        "right": 370,
+        "bottom": 527.09375,
+        "width": 350,
+        "height": 220.46875
+      },
+      "art": null,
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Целый город вкусных пирогов",
+      "titleBox": {
+        "x": 80.5625,
+        "y": 247.1875,
+        "right": 384,
+        "bottom": 387.0625,
+        "width": 303.4375,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 598.84375,
+        "width": 698.875,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 598.84375,
+        "width": 698.875,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_2kfwnG.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 80.5625,
+        "y": 498.34375,
+        "right": 322.5625,
+        "bottom": 548.84375,
+        "width": 242,
+        "height": 50.5,
+        "href": "/menu/"
+      },
+      "images": [],
+      "flavor": "pies"
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "slide": "company",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Больше вкусов за одним столом",
+      "titleBox": {
+        "x": 80.5625,
+        "y": 247.1875,
+        "right": 384,
+        "bottom": 387.0625,
+        "width": 303.4375,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 598.84375,
+        "width": 698.875,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 598.84375,
+        "width": 698.875,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-company.BFPehciP_Z1jmRgP.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 80.5625,
+        "y": 498.34375,
+        "right": 322.5625,
+        "bottom": 548.84375,
+        "width": 242,
+        "height": 50.5,
+        "href": "#nabory"
+      },
+      "images": [],
+      "flavor": "company"
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "slide": "tea",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Ягодный квартал",
+      "titleBox": {
+        "x": 80.5625,
+        "y": 253.46875,
+        "right": 384,
+        "bottom": 346.71875,
+        "width": 303.4375,
+        "height": 93.25
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 564.796875,
+        "width": 698.875,
+        "height": 380
+      },
+      "art": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 564.796875,
+        "width": 698.875,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-berry.Bmd7BCif_2mVsc5.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 80.5625,
+        "y": 458,
+        "right": 322.5625,
+        "bottom": 508.5,
+        "width": 242,
+        "height": 50.5,
+        "href": "/pirogi/pirog-s-vishney/"
+      },
+      "images": [],
+      "flavor": "tea"
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "slide": "mini",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Каждому свой мини-пирог",
+      "titleBox": {
+        "x": 80.5625,
+        "y": 253.46875,
+        "right": 384,
+        "bottom": 346.71875,
+        "width": 303.4375,
+        "height": 93.25
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 564.796875,
+        "width": 698.875,
+        "height": 380
+      },
+      "art": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 564.796875,
+        "width": 698.875,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-mini.Bed9vNry_ZXqJrL.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 80.5625,
+        "y": 458,
+        "right": 322.5625,
+        "bottom": 508.5,
+        "width": 242,
+        "height": 50.5,
+        "href": "#holland"
+      },
+      "images": [],
+      "flavor": "mini"
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "slide": "seaside",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги. Море. Ваша компания.",
+      "titleBox": {
+        "x": 80.5625,
+        "y": 247.1875,
+        "right": 384,
+        "bottom": 387.0625,
+        "width": 303.4375,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 598.84375,
+        "width": 698.875,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 598.84375,
+        "width": 698.875,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-seaside.D2tsKatM_Rt52t.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 80.5625,
+        "y": 498.34375,
+        "right": 322.5625,
+        "bottom": 548.84375,
+        "width": 242,
+        "height": 50.5,
+        "href": "#pirogi39"
+      },
+      "images": [],
+      "flavor": "seaside"
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "slide": "bake",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Уют начинается с духовки",
+      "titleBox": {
+        "x": 80.5625,
+        "y": 247.1875,
+        "right": 384,
+        "bottom": 387.0625,
+        "width": 303.4375,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 598.84375,
+        "width": 698.875,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 34.5625,
+        "y": 184.796875,
+        "right": 733.4375,
+        "bottom": 598.84375,
+        "width": 698.875,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-bake.D1eal2c1_1MdlNY.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 80.5625,
+        "y": 498.34375,
+        "right": 328.46875,
+        "bottom": 548.84375,
+        "width": 247.90625,
+        "height": 50.5,
+        "href": "#bake"
+      },
+      "images": [],
+      "flavor": "bake"
+    },
+    {
+      "name": "menu",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Меню пирогов, хлеба и выпечки",
+      "titleBox": {
+        "x": 63.5625,
+        "y": 332.796875,
+        "right": 431.9375,
+        "bottom": 420.796875,
+        "width": 368.375,
+        "height": 88
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 268.796875,
+        "right": 733.4375,
+        "bottom": 577.296875,
+        "width": 698.875,
+        "height": 308.5
+      },
+      "art": {
+        "x": 453.9375,
+        "y": 297.796875,
+        "right": 704.4375,
+        "bottom": 548.296875,
+        "width": 250.5,
+        "height": 250.5,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_1lXTUg.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "delivery",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К вашему столу.В вашем городе.",
+      "titleBox": {
+        "x": 63.5625,
+        "y": 326.796875,
+        "right": 431.9375,
+        "bottom": 414.796875,
+        "width": 368.375,
+        "height": 88
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 262.796875,
+        "right": 733.4375,
+        "bottom": 652.46875,
+        "width": 698.875,
+        "height": 389.671875
+      },
+      "art": {
+        "x": 453.9375,
+        "y": 332.375,
+        "right": 704.4375,
+        "bottom": 582.875,
+        "width": 250.5,
+        "height": 250.5,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/delivery-town.xXE7fF_q_Z1yiuqA.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 63.5625,
+        "y": 520.96875,
+        "right": 237.875,
+        "bottom": 568.96875,
+        "width": 174.3125,
+        "height": 48,
+        "href": "#delivery-cities"
+      },
+      "images": []
+    },
+    {
+      "name": "kaliningrad",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Калининграде",
+      "titleBox": {
+        "x": 63.5625,
+        "y": 332.796875,
+        "right": 431.9375,
+        "bottom": 420.796875,
+        "width": 368.375,
+        "height": 88
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 268.796875,
+        "right": 733.4375,
+        "bottom": 627.359375,
+        "width": 698.875,
+        "height": 358.5625
+      },
+      "art": {
+        "x": 453.9375,
+        "y": 322.828125,
+        "right": 704.4375,
+        "bottom": 573.328125,
+        "width": 250.5,
+        "height": 250.5,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/kaliningrad-town.kIrY5rz3_HOl02.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 63.5625,
+        "y": 550.359375,
+        "right": 245.75,
+        "bottom": 598.359375,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "zelenogradsk",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Зеленоградске",
+      "titleBox": {
+        "x": 63.5625,
+        "y": 332.796875,
+        "right": 431.9375,
+        "bottom": 420.796875,
+        "width": 368.375,
+        "height": 88
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 268.796875,
+        "right": 733.4375,
+        "bottom": 650.75,
+        "width": 698.875,
+        "height": 381.953125
+      },
+      "art": {
+        "x": 453.9375,
+        "y": 334.515625,
+        "right": 704.4375,
+        "bottom": 585.015625,
+        "width": 250.5,
+        "height": 250.5,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/zelenogradsk-town.CXchEJWk_Z1Y9T9t.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 63.5625,
+        "y": 573.75,
+        "right": 245.75,
+        "bottom": 621.75,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "svetlogorsk",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Светлогорске",
+      "titleBox": {
+        "x": 63.5625,
+        "y": 332.796875,
+        "right": 431.9375,
+        "bottom": 420.796875,
+        "width": 368.375,
+        "height": 88
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 268.796875,
+        "right": 733.4375,
+        "bottom": 627.359375,
+        "width": 698.875,
+        "height": 358.5625
+      },
+      "art": {
+        "x": 453.9375,
+        "y": 322.828125,
+        "right": 704.4375,
+        "bottom": 573.328125,
+        "width": 250.5,
+        "height": 250.5,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/svetlogorsk-town.C7QlTxgC_xo53W.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 63.5625,
+        "y": 550.359375,
+        "right": 245.75,
+        "bottom": 598.359375,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "blog",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К общему столу",
+      "titleBox": {
+        "x": 63.5625,
+        "y": 332.796875,
+        "right": 431.9375,
+        "bottom": 376.796875,
+        "width": 368.375,
+        "height": 44
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 268.796875,
+        "right": 733.4375,
+        "bottom": 577.296875,
+        "width": 698.875,
+        "height": 308.5
+      },
+      "art": {
+        "x": 453.9375,
+        "y": 297.796875,
+        "right": 704.4375,
+        "bottom": 548.296875,
+        "width": 250.5,
+        "height": 250.5,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZoODho.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "article",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Сколько пирога нужно на человека и на компанию",
+      "titleBox": {
+        "x": 34.5625,
+        "y": 422.390625,
+        "right": 351.328125,
+        "bottom": 534.328125,
+        "width": 316.765625,
+        "height": 111.9375
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 353.796875,
+        "right": 733.4375,
+        "bottom": 797.625,
+        "width": 698.875,
+        "height": 443.828125
+      },
+      "art": {
+        "x": 391.328125,
+        "y": 453.671875,
+        "right": 733.4375,
+        "bottom": 681.734375,
+        "width": 342.109375,
+        "height": 228.0625,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/company-table.B2g0M1uC_1yAK2T.avif",
+        "fit": "cover"
+      },
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "city-guide",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Где поесть в Зеленоградске: три кафе и цены на четверых",
+      "titleBox": {
+        "x": 34.5625,
+        "y": 419.390625,
+        "right": 713.328125,
+        "bottom": 494.015625,
+        "width": 678.765625,
+        "height": 74.625
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 353.796875,
+        "right": 733.4375,
+        "bottom": 518.015625,
+        "width": 698.875,
+        "height": 164.21875
+      },
+      "art": null,
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Целый город вкусных пирогов",
+      "titleBox": {
+        "x": 92.078125,
+        "y": 263.1875,
+        "right": 396.984375,
+        "bottom": 403.0625,
+        "width": 304.90625,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 614.84375,
+        "width": 931.828125,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 614.84375,
+        "width": 931.828125,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_ZvuLfd.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 92.078125,
+        "y": 514.34375,
+        "right": 334.078125,
+        "bottom": 564.84375,
+        "width": 242,
+        "height": 50.5,
+        "href": "/menu/"
+      },
+      "images": [],
+      "flavor": "pies"
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "slide": "company",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Больше вкусов за одним столом",
+      "titleBox": {
+        "x": 92.078125,
+        "y": 263.1875,
+        "right": 396.984375,
+        "bottom": 403.0625,
+        "width": 304.90625,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 614.84375,
+        "width": 931.828125,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 614.84375,
+        "width": 931.828125,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-company.BFPehciP_Z2kdwTS.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 92.078125,
+        "y": 514.34375,
+        "right": 334.078125,
+        "bottom": 564.84375,
+        "width": 242,
+        "height": 50.5,
+        "href": "#nabory"
+      },
+      "images": [],
+      "flavor": "company"
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "slide": "tea",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Ягодный квартал",
+      "titleBox": {
+        "x": 92.078125,
+        "y": 269.46875,
+        "right": 396.984375,
+        "bottom": 362.71875,
+        "width": 304.90625,
+        "height": 93.25
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 580.796875,
+        "width": 931.828125,
+        "height": 380
+      },
+      "art": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 580.796875,
+        "width": 931.828125,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-berry.Bmd7BCif_QHcb2.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 92.078125,
+        "y": 474,
+        "right": 334.078125,
+        "bottom": 524.5,
+        "width": 242,
+        "height": 50.5,
+        "href": "/pirogi/pirog-s-vishney/"
+      },
+      "images": [],
+      "flavor": "tea"
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "slide": "mini",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Каждому свой мини-пирог",
+      "titleBox": {
+        "x": 92.078125,
+        "y": 269.46875,
+        "right": 396.984375,
+        "bottom": 362.71875,
+        "width": 304.90625,
+        "height": 93.25
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 580.796875,
+        "width": 931.828125,
+        "height": 380
+      },
+      "art": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 580.796875,
+        "width": 931.828125,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-mini.Bed9vNry_Z1j0r1K.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 92.078125,
+        "y": 474,
+        "right": 334.078125,
+        "bottom": 524.5,
+        "width": 242,
+        "height": 50.5,
+        "href": "#holland"
+      },
+      "images": [],
+      "flavor": "mini"
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "slide": "seaside",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги. Море. Ваша компания.",
+      "titleBox": {
+        "x": 92.078125,
+        "y": 263.1875,
+        "right": 396.984375,
+        "bottom": 403.0625,
+        "width": 304.90625,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 614.84375,
+        "width": 931.828125,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 614.84375,
+        "width": 931.828125,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-seaside.D2tsKatM_ZpoLJn.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 92.078125,
+        "y": 514.34375,
+        "right": 334.078125,
+        "bottom": 564.84375,
+        "width": 242,
+        "height": 50.5,
+        "href": "#pirogi39"
+      },
+      "images": [],
+      "flavor": "seaside"
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "slide": "bake",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Уют начинается с духовки",
+      "titleBox": {
+        "x": 92.078125,
+        "y": 263.1875,
+        "right": 396.984375,
+        "bottom": 403.0625,
+        "width": 304.90625,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 614.84375,
+        "width": 931.828125,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 46.078125,
+        "y": 200.796875,
+        "right": 977.90625,
+        "bottom": 614.84375,
+        "width": 931.828125,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-bake.D1eal2c1_Z230Hqg.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 92.078125,
+        "y": 514.34375,
+        "right": 339.984375,
+        "bottom": 564.84375,
+        "width": 247.90625,
+        "height": 50.5,
+        "href": "#bake"
+      },
+      "images": [],
+      "flavor": "bake"
+    },
+    {
+      "name": "menu",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Меню пирогов, хлеба и выпечки",
+      "titleBox": {
+        "x": 89.078125,
+        "y": 356.796875,
+        "right": 571.109375,
+        "bottom": 449.140625,
+        "width": 482.03125,
+        "height": 92.34375
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 284.796875,
+        "right": 977.90625,
+        "bottom": 686.59375,
+        "width": 931.828125,
+        "height": 401.796875
+      },
+      "art": {
+        "x": 607.109375,
+        "y": 321.796875,
+        "right": 934.90625,
+        "bottom": 649.59375,
+        "width": 327.796875,
+        "height": 327.796875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_2bVDXM.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "delivery",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К вашему столу.В вашем городе.",
+      "titleBox": {
+        "x": 89.078125,
+        "y": 361.015625,
+        "right": 571.109375,
+        "bottom": 463.578125,
+        "width": 482.03125,
+        "height": 102.5625
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 278.796875,
+        "right": 977.90625,
+        "bottom": 680.59375,
+        "width": 931.828125,
+        "height": 401.796875
+      },
+      "art": {
+        "x": 607.109375,
+        "y": 315.796875,
+        "right": 934.90625,
+        "bottom": 643.59375,
+        "width": 327.796875,
+        "height": 327.796875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/delivery-town.xXE7fF_q_2oDwgI.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 89.078125,
+        "y": 585.359375,
+        "right": 263.390625,
+        "bottom": 633.359375,
+        "width": 174.3125,
+        "height": 48,
+        "href": "#delivery-cities"
+      },
+      "images": []
+    },
+    {
+      "name": "kaliningrad",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Калининграде",
+      "titleBox": {
+        "x": 89.078125,
+        "y": 372.265625,
+        "right": 571.109375,
+        "bottom": 433.90625,
+        "width": 482.03125,
+        "height": 61.640625
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 284.796875,
+        "right": 977.90625,
+        "bottom": 686.59375,
+        "width": 931.828125,
+        "height": 401.796875
+      },
+      "art": {
+        "x": 607.109375,
+        "y": 321.796875,
+        "right": 934.90625,
+        "bottom": 649.59375,
+        "width": 327.796875,
+        "height": 327.796875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/kaliningrad-town.kIrY5rz3_ZMzQCH.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 89.078125,
+        "y": 586.125,
+        "right": 271.265625,
+        "bottom": 634.125,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "zelenogradsk",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Зеленоградске",
+      "titleBox": {
+        "x": 89.078125,
+        "y": 372.265625,
+        "right": 571.109375,
+        "bottom": 433.90625,
+        "width": 482.03125,
+        "height": 61.640625
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 284.796875,
+        "right": 977.90625,
+        "bottom": 686.59375,
+        "width": 931.828125,
+        "height": 401.796875
+      },
+      "art": {
+        "x": 607.109375,
+        "y": 321.796875,
+        "right": 934.90625,
+        "bottom": 649.59375,
+        "width": 327.796875,
+        "height": 327.796875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/zelenogradsk-town.CXchEJWk_Z18NRpd.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 89.078125,
+        "y": 586.125,
+        "right": 271.265625,
+        "bottom": 634.125,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "svetlogorsk",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Светлогорске",
+      "titleBox": {
+        "x": 89.078125,
+        "y": 372.265625,
+        "right": 571.109375,
+        "bottom": 433.90625,
+        "width": 482.03125,
+        "height": 61.640625
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 284.796875,
+        "right": 977.90625,
+        "bottom": 686.59375,
+        "width": 931.828125,
+        "height": 401.796875
+      },
+      "art": {
+        "x": 607.109375,
+        "y": 321.796875,
+        "right": 934.90625,
+        "bottom": 649.59375,
+        "width": 327.796875,
+        "height": 327.796875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/svetlogorsk-town.C7QlTxgC_ZX17yM.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 89.078125,
+        "y": 586.125,
+        "right": 271.265625,
+        "bottom": 634.125,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "blog",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К общему столу",
+      "titleBox": {
+        "x": 89.078125,
+        "y": 356.796875,
+        "right": 571.109375,
+        "bottom": 402.96875,
+        "width": 482.03125,
+        "height": 46.171875
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 284.796875,
+        "right": 977.90625,
+        "bottom": 686.59375,
+        "width": 931.828125,
+        "height": 401.796875
+      },
+      "art": {
+        "x": 607.109375,
+        "y": 321.796875,
+        "right": 934.90625,
+        "bottom": 649.59375,
+        "width": 327.796875,
+        "height": 327.796875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZF32GW.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "article",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Сколько пирога нужно на человека и на компанию",
+      "titleBox": {
+        "x": 46.078125,
+        "y": 438.390625,
+        "right": 474.828125,
+        "bottom": 587.640625,
+        "width": 428.75,
+        "height": 149.25
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 369.796875,
+        "right": 977.90625,
+        "bottom": 824.6875,
+        "width": 931.828125,
+        "height": 454.890625
+      },
+      "art": {
+        "x": 514.828125,
+        "y": 435,
+        "right": 977.90625,
+        "bottom": 743.484375,
+        "width": 463.078125,
+        "height": 308.484375,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/company-table.B2g0M1uC_1xizT7.avif",
+        "fit": "cover"
+      },
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "city-guide",
+      "width": 1024,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Где поесть в Зеленоградске: три кафе и цены на четверых",
+      "titleBox": {
+        "x": 46.078125,
+        "y": 435.390625,
+        "right": 896.078125,
+        "bottom": 534.890625,
+        "width": 850,
+        "height": 99.5
+      },
+      "hero": {
+        "x": 46.078125,
+        "y": 369.796875,
+        "right": 977.90625,
+        "bottom": 558.890625,
+        "width": 931.828125,
+        "height": 189.09375
+      },
+      "art": null,
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Целый город вкусных пирогов",
+      "titleBox": {
+        "x": 121.59375,
+        "y": 286.3125,
+        "right": 476.40625,
+        "bottom": 449.109375,
+        "width": 354.8125,
+        "height": 162.796875
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 650.203125,
+        "width": 1164.796875,
+        "height": 437.890625
+      },
+      "art": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 650.203125,
+        "width": 1164.796875,
+        "height": 437.890625,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_ZvuLfd.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 121.59375,
+        "y": 541.703125,
+        "right": 363.59375,
+        "bottom": 592.203125,
+        "width": 242,
+        "height": 50.5,
+        "href": "/menu/"
+      },
+      "images": [],
+      "flavor": "pies"
+    },
+    {
+      "name": "home",
+      "width": 1280,
+      "slide": "company",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Больше вкусов за одним столом",
+      "titleBox": {
+        "x": 121.59375,
+        "y": 286.3125,
+        "right": 476.40625,
+        "bottom": 449.109375,
+        "width": 354.8125,
+        "height": 162.796875
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 650.203125,
+        "width": 1164.796875,
+        "height": 437.890625
+      },
+      "art": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 650.203125,
+        "width": 1164.796875,
+        "height": 437.890625,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-company.BFPehciP_Z2kdwTS.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 121.59375,
+        "y": 541.703125,
+        "right": 363.59375,
+        "bottom": 592.203125,
+        "width": 242,
+        "height": 50.5,
+        "href": "#nabory"
+      },
+      "images": [],
+      "flavor": "company"
+    },
+    {
+      "name": "home",
+      "width": 1280,
+      "slide": "tea",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Ягодный квартал",
+      "titleBox": {
+        "x": 121.59375,
+        "y": 292.59375,
+        "right": 476.40625,
+        "bottom": 401.125,
+        "width": 354.8125,
+        "height": 108.53125
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 632.3125,
+        "width": 1164.796875,
+        "height": 420
+      },
+      "art": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 632.3125,
+        "width": 1164.796875,
+        "height": 420,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-berry.Bmd7BCif_QHcb2.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 121.59375,
+        "y": 517.515625,
+        "right": 363.59375,
+        "bottom": 568.015625,
+        "width": 242,
+        "height": 50.5,
+        "href": "/pirogi/pirog-s-vishney/"
+      },
+      "images": [],
+      "flavor": "tea"
+    },
+    {
+      "name": "home",
+      "width": 1280,
+      "slide": "mini",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Каждому свой мини-пирог",
+      "titleBox": {
+        "x": 121.59375,
+        "y": 292.59375,
+        "right": 476.40625,
+        "bottom": 401.125,
+        "width": 354.8125,
+        "height": 108.53125
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 632.3125,
+        "width": 1164.796875,
+        "height": 420
+      },
+      "art": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 632.3125,
+        "width": 1164.796875,
+        "height": 420,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-mini.Bed9vNry_Z1j0r1K.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 121.59375,
+        "y": 517.515625,
+        "right": 363.59375,
+        "bottom": 568.015625,
+        "width": 242,
+        "height": 50.5,
+        "href": "#holland"
+      },
+      "images": [],
+      "flavor": "mini"
+    },
+    {
+      "name": "home",
+      "width": 1280,
+      "slide": "seaside",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги. Море. Ваша компания.",
+      "titleBox": {
+        "x": 121.59375,
+        "y": 286.3125,
+        "right": 476.40625,
+        "bottom": 449.109375,
+        "width": 354.8125,
+        "height": 162.796875
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 674,
+        "width": 1164.796875,
+        "height": 461.6875
+      },
+      "art": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 674,
+        "width": 1164.796875,
+        "height": 461.6875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-seaside.D2tsKatM_ZpoLJn.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 121.59375,
+        "y": 565.5,
+        "right": 363.59375,
+        "bottom": 616,
+        "width": 242,
+        "height": 50.5,
+        "href": "#pirogi39"
+      },
+      "images": [],
+      "flavor": "seaside"
+    },
+    {
+      "name": "home",
+      "width": 1280,
+      "slide": "bake",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Уют начинается с духовки",
+      "titleBox": {
+        "x": 121.59375,
+        "y": 286.3125,
+        "right": 476.40625,
+        "bottom": 449.109375,
+        "width": 354.8125,
+        "height": 162.796875
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 674,
+        "width": 1164.796875,
+        "height": 461.6875
+      },
+      "art": {
+        "x": 57.59375,
+        "y": 212.3125,
+        "right": 1222.390625,
+        "bottom": 674,
+        "width": 1164.796875,
+        "height": 461.6875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-bake.D1eal2c1_Z230Hqg.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 121.59375,
+        "y": 565.5,
+        "right": 369.5,
+        "bottom": 616,
+        "width": 247.90625,
+        "height": 50.5,
+        "href": "#bake"
+      },
+      "images": [],
+      "flavor": "bake"
+    },
+    {
+      "name": "menu",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Меню пирогов, хлеба и выпечки",
+      "titleBox": {
+        "x": 100.59375,
+        "y": 368.3125,
+        "right": 712.59375,
+        "bottom": 483.75,
+        "width": 612,
+        "height": 115.4375
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 296.3125,
+        "right": 1222.390625,
+        "bottom": 750.3125,
+        "width": 1164.796875,
+        "height": 454
+      },
+      "art": {
+        "x": 778.34375,
+        "y": 333.3125,
+        "right": 1158.34375,
+        "bottom": 713.3125,
+        "width": 380,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/pie-city.Dbh0IDcT_2bVDXM.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "delivery",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К вашему столу.В вашем городе.",
+      "titleBox": {
+        "x": 100.59375,
+        "y": 379.8125,
+        "right": 712.59375,
+        "bottom": 512.75,
+        "width": 612,
+        "height": 132.9375
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 290.3125,
+        "right": 1222.390625,
+        "bottom": 744.3125,
+        "width": 1164.796875,
+        "height": 454
+      },
+      "art": {
+        "x": 778.34375,
+        "y": 327.3125,
+        "right": 1158.34375,
+        "bottom": 707.3125,
+        "width": 380,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/delivery-town.xXE7fF_q_2oDwgI.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 100.59375,
+        "y": 641.8125,
+        "right": 274.90625,
+        "bottom": 689.8125,
+        "width": 174.3125,
+        "height": 48,
+        "href": "#delivery-cities"
+      },
+      "images": []
+    },
+    {
+      "name": "kaliningrad",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Калининграде",
+      "titleBox": {
+        "x": 100.59375,
+        "y": 393.9375,
+        "right": 712.59375,
+        "bottom": 477.28125,
+        "width": 612,
+        "height": 83.34375
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 296.3125,
+        "right": 1222.390625,
+        "bottom": 750.3125,
+        "width": 1164.796875,
+        "height": 454
+      },
+      "art": {
+        "x": 778.34375,
+        "y": 333.3125,
+        "right": 1158.34375,
+        "bottom": 713.3125,
+        "width": 380,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/kaliningrad-town.kIrY5rz3_ZMzQCH.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 100.59375,
+        "y": 639.671875,
+        "right": 282.78125,
+        "bottom": 687.671875,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "zelenogradsk",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Зеленоградске",
+      "titleBox": {
+        "x": 100.59375,
+        "y": 393.9375,
+        "right": 712.59375,
+        "bottom": 477.28125,
+        "width": 612,
+        "height": 83.34375
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 296.3125,
+        "right": 1222.390625,
+        "bottom": 750.3125,
+        "width": 1164.796875,
+        "height": 454
+      },
+      "art": {
+        "x": 778.34375,
+        "y": 333.3125,
+        "right": 1158.34375,
+        "bottom": 713.3125,
+        "width": 380,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/zelenogradsk-town.CXchEJWk_Z18NRpd.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 100.59375,
+        "y": 639.671875,
+        "right": 282.78125,
+        "bottom": 687.671875,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "svetlogorsk",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Светлогорске",
+      "titleBox": {
+        "x": 100.59375,
+        "y": 393.9375,
+        "right": 712.59375,
+        "bottom": 477.28125,
+        "width": 612,
+        "height": 83.34375
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 296.3125,
+        "right": 1222.390625,
+        "bottom": 750.3125,
+        "width": 1164.796875,
+        "height": 454
+      },
+      "art": {
+        "x": 778.34375,
+        "y": 333.3125,
+        "right": 1158.34375,
+        "bottom": 713.3125,
+        "width": 380,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/svetlogorsk-town.C7QlTxgC_ZX17yM.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 100.59375,
+        "y": 639.671875,
+        "right": 282.78125,
+        "bottom": 687.671875,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    },
+    {
+      "name": "blog",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "К общему столу",
+      "titleBox": {
+        "x": 100.59375,
+        "y": 368.3125,
+        "right": 712.59375,
+        "bottom": 426.03125,
+        "width": 612,
+        "height": 57.71875
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 296.3125,
+        "right": 1222.390625,
+        "bottom": 750.3125,
+        "width": 1164.796875,
+        "height": 454
+      },
+      "art": {
+        "x": 778.34375,
+        "y": 333.3125,
+        "right": 1158.34375,
+        "bottom": 713.3125,
+        "width": 380,
+        "height": 380,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZF32GW.avif",
+        "fit": "contain"
+      },
+      "cta": null,
+      "images": []
+    },
+    {
+      "name": "article",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Сколько пирога нужно на человека и на компанию",
+      "titleBox": {
+        "x": 57.59375,
+        "y": 454.03125,
+        "right": 598.359375,
+        "bottom": 635.4375,
+        "width": 540.765625,
+        "height": 181.40625
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 381.3125,
+        "right": 1222.390625,
+        "bottom": 850.375,
+        "width": 1164.796875,
+        "height": 469.0625
+      },
+      "art": {
+        "x": 638.359375,
+        "y": 413.3125,
+        "right": 1222.390625,
+        "bottom": 802.375,
+        "width": 584.03125,
+        "height": 389.0625,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/company-table.B2g0M1uC_1xizT7.avif",
+        "fit": "cover"
+      },
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "city-guide",
+      "width": 1280,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Где поесть в Зеленоградске: три кафе и цены на четверых",
+      "titleBox": {
+        "x": 57.59375,
+        "y": 446.90625,
+        "right": 907.59375,
+        "bottom": 567.84375,
+        "width": 850,
+        "height": 120.9375
+      },
+      "hero": {
+        "x": 57.59375,
+        "y": 381.3125,
+        "right": 1222.390625,
+        "bottom": 591.84375,
+        "width": 1164.796875,
+        "height": 210.53125
+      },
+      "art": null,
+      "cta": null,
+      "images": [
+        {
+          "src": "https://pirogorsk.ru/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "home-retina",
+      "width": 390,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Целый город вкусных пирогов",
+      "titleBox": {
+        "x": 44,
+        "y": 199.515625,
+        "right": 346,
+        "bottom": 272.953125,
+        "width": 302,
+        "height": 73.4375
+      },
+      "hero": {
+        "x": 20,
+        "y": 152.71875,
+        "right": 370,
+        "bottom": 619.046875,
+        "width": 350,
+        "height": 466.328125
+      },
+      "art": {
+        "x": 20,
+        "y": 384.046875,
+        "right": 370,
+        "bottom": 619.046875,
+        "width": 350,
+        "height": 235,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1b1gfg.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 44,
+        "y": 339.546875,
+        "right": 261,
+        "bottom": 384.046875,
+        "width": 217,
+        "height": 44.5,
+        "href": "/menu/"
+      },
+      "images": [],
+      "flavor": "pies"
+    },
+    {
+      "name": "home-retina",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Целый город вкусных пирогов",
+      "titleBox": {
+        "x": 80.5625,
+        "y": 247.453125,
+        "right": 384,
+        "bottom": 387.328125,
+        "width": 303.4375,
+        "height": 139.875
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 185.0625,
+        "right": 733.4375,
+        "bottom": 599.109375,
+        "width": 698.875,
+        "height": 414.046875
+      },
+      "art": {
+        "x": 34.5625,
+        "y": 185.0625,
+        "right": 733.4375,
+        "bottom": 599.109375,
+        "width": 698.875,
+        "height": 414.046875,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_ZhlaVH.avif",
+        "fit": "cover"
+      },
+      "cta": {
+        "x": 80.5625,
+        "y": 498.609375,
+        "right": 322.5625,
+        "bottom": 549.109375,
+        "width": 242,
+        "height": 50.5,
+        "href": "/menu/"
+      },
+      "images": [],
+      "flavor": "pies"
+    },
+    {
+      "name": "zelenogradsk-retina",
+      "width": 768,
+      "slide": "main",
+      "overflow": false,
+      "h1s": 1,
+      "title": "Пироги в Зеленоградске",
+      "titleBox": {
+        "x": 63.5625,
+        "y": 333.0625,
+        "right": 431.9375,
+        "bottom": 421.0625,
+        "width": 368.375,
+        "height": 88
+      },
+      "hero": {
+        "x": 34.5625,
+        "y": 269.0625,
+        "right": 733.4375,
+        "bottom": 651.015625,
+        "width": 698.875,
+        "height": 381.953125
+      },
+      "art": {
+        "x": 453.9375,
+        "y": 334.78125,
+        "right": 704.4375,
+        "bottom": 585.28125,
+        "width": 250.5,
+        "height": 250.5,
+        "loaded": true,
+        "src": "https://pirogorsk.ru/_astro/zelenogradsk-town.CXchEJWk_Z1OaF9m.avif",
+        "fit": "contain"
+      },
+      "cta": {
+        "x": 63.5625,
+        "y": 574.015625,
+        "right": 245.75,
+        "bottom": 622.015625,
+        "width": 182.1875,
+        "height": 48,
+        "href": "#city-menu"
+      },
+      "images": []
+    }
+  ],
+  "flows": [
+    "delivery FAQ expands",
+    "header dialog + Escape",
+    "menu search filters products",
+    "quantity 2 added to selection",
+    "slider arrow + keyboard",
+    "reduced motion",
+    "browser touch swipe",
+    "no-JS first banner + menu link"
+  ],
+  "errors": []
+}

@@ -1,7 +1,9 @@
-# Pie-town site rollout — publication pending
+# Pie-town site rollout — complete
 
-Objective: approved pie-town identity across menu, delivery, all three cities, blog/articles; six full-bleed campaigns on home including the requested three extra banners. Eleven imagegen originals and exact prompts saved in design/pie-city-site-20261030.
+Objective: approved pie-town identity across menu, delivery, three city pages, blog/articles; six full-bleed homepage campaigns including three requested extra banners.
 
-Done: shared PieTownHero/CampaignImage/JournalMasthead, six slides with live text/CTA, phone crop320–960 quality42 vs panorama640–1920 quality60, touch-action fix. Original153-product catalog and URLs/selection preserved. Check0errors/0warnings; build217HTML; validators,41Node/Worker/browser tests passed. Fresh SEO30714references/212sitemap. Assets232 incl11 originals verified. Responsive73+8 and three CTA destinations passed before final export quality change; final repeat underway. Local LH main96→95, LCP2554→2637ms; desktop100→100,506→683ms. Other family comparisons saved. Phone/tablet visuals reviewed.
+Done: 11 imagegen originals and exact prompts, shared responsive heroes/masthead, six live-text campaigns, mobile AVIF crops, touch-action fix. Catalog153, URLs/SEO, quantities/selection preserved. Build217HTML; seven validators;41Node/Worker/full browser tests; registry strict PASS.
 
-Next: commit/push runtime, wait CI; download independent Pages artifact and verify live hashes; production73+8/CTA checks, LH and public PSI; inspect final screenshots, update README/BUILD-STATE with exact SHA/evidence, proof-only commit. Owned server4323 session36947. Never unscoped git status due to old QA noise.
+Runtime: fcad040d5f272f68ebeb403048b5140e92322190. CI41128188161 SUCCESS. Initial CI's obsolete3-slide expectation corrected to six IDs, CTA destinations and wraparound. Independent Pages artifact vs live455/455resources HTTP200 + SHA256 match. Local and production73 layouts/slides +8flows and three CTA destinations PASS. Production harness now waits for slide decode before swipe. Phone/tablet screenshots reviewed; Chromium emulation, not physical devices.
+
+Production Lighthouse CLI, one cold sample/device/page: home98/100 LCP2210/501ms; menu99/100 LCP2037/457ms; delivery100/100 LCP1486/413ms; Zelenogradsk100/100 LCP1107/450ms; blog100/100 LCP1444/406ms. A/SEO100. Public PSI mobile/desktop returned no report, exact inability-to-navigate message saved separately. No unfinished implementation/publication items. Owned local QA server stopped. See README.md for evidence and caveats. Never unscoped git status due to old QA noise.
