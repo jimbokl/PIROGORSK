@@ -42,10 +42,9 @@ try {
    document.querySelectorAll('.menu-feed img').forEach(img => { img.loading = 'eager'; });
    await Promise.all([...document.querySelectorAll('.menu-feed img')].map(img => img.decode().catch(() => {})));
   });
-  for (const [name, selector] of [['whole', '#pirogi39 .supplier-card'], ['mini', '#holland .supplier-card'], ['original', '[data-feed-id="meat"]'], ['extras', '[data-feed-id="mors-cranberry"]']]) {
-   let target = selector;
-   if (!(await page.$(selector))) target = '.menu-feed-list:last-child article';
-   await page.$eval(target, el => window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 90, behavior: 'instant' }));
+  for (const [name, selector] of [['whole', '#pirogi39 .supplier-card'], ['mini', '#holland .supplier-card'], ['original', '[data-feed-id="meat"]'], ['extras', '[data-feed-id="cranberry"]']]) {
+   assert.ok(await page.$(selector), `Screenshot target exists: ${name}`);
+   await page.$eval(selector, el => window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - 90, behavior: 'instant' }));
    await page.screenshot({ path: `${output}/${name}-${width}.jpg`, type: 'jpeg', quality: 90 });
   }
   // Exercise automatic loading, then include every supplier row in geometry checks.
@@ -97,5 +96,5 @@ try {
   console.log(`PASS: ${width}px, 153 rows${screenshotsOnly ? '' : ', accessibility and interaction checks'}`);
  }
  assert.deepEqual(errors, []); assert.deepEqual(failed, []);
- await writeFile(`${output}/results.json`, JSON.stringify({ checkedAt: new Date().toISOString(), baseline, production, results, errors, failed }, null, 2));
+ await writeFile(`${output}/${screenshotsOnly ? 'screenshots' : 'results'}.json`, JSON.stringify({ checkedAt: new Date().toISOString(), baseline, production, results, errors, failed }, null, 2));
 } finally { await browser.close(); await chrome.kill(); }
