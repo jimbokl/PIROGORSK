@@ -1,0 +1,49 @@
+
+=== concept-a-v2.svg  (364 bytes)
+viewBox 0 0 256 256 · aspect 1.0 (square)
+colours 1: #111111 · gradients 0 · anchors 16
+margins L40.0 R40.0 T24.0 B18.5 · bbox fill 0.573
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== concept-b-v2.svg  (1933 bytes)
+viewBox 0 0 256 256 · aspect 1.0 (square)
+colours 1: #111111 · gradients 0 · anchors 48
+margins L20.0 R20.0 T20.0 B20.0 · bbox fill 0.712
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== concept-c-v2.svg  (308 bytes)
+viewBox 0 0 256 256 · aspect 1.0 (square)
+colours 1: #111111 · gradients 0 · anchors 11
+margins L40.0 R40.0 T32.0 B32.0 · bbox fill 0.516
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== concept-a-lockup-v2.svg  (13143 bytes)
+viewBox 0 0 1059 256 · aspect 4.137 (horizontal)
+colours 1: #111111 · gradients 0 · anchors 803
+margins L40.0 R17.7 T24.0 B18.5 · bbox fill 0.789
+▲ WARN [complex] 803 anchor points — more than 95% of comparable reference logos (median 75.0). Simplify: fewer points, merged shapes, less detail.
+▲ WARN [near-miss-angle] 2 straight edge(s) are 0.3–3° off a clean angle — they read as mistakes. Snap them: 120.6° (→120°) len 66.9 at (474,114); 120.6° (→120°) len 66.9 at (437,171). (Expected — and fine — for type set on a curve or deliberately rotated elements.)
+▲ WARN [tiny-detail] 8 sub-shape(s) smaller than 1/32 of the lockup height (≈1 px at 32 px tall): 6.7×5.5 at (331,203); 7.0×5.3 at (437,209); 4.8×6.7 at (453,204); 7.7×3.4 at (520,196) …. They vanish when small — enlarge, merge or remove them, or provide a small-size version.
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+production-readiness score: 75/100 (heuristic)
+
+=== concept-b-lockup-v2.svg  (55792 bytes)
+viewBox 0 0 1054 256 · aspect 4.117 (horizontal)
+colours 1: #111111 · gradients 0 · anchors 1489
+margins L20.0 R18.3 T20.0 B20.0 · bbox fill 0.813
+▲ WARN [complex] 1489 anchor points — more than 95% of comparable reference logos (median 75.0). Simplify: fewer points, merged shapes, less detail.
+▲ WARN [tiny-detail] 5 sub-shape(s) smaller than 1/32 of the lockup height (≈1 px at 32 px tall): 4.8×7.4 at (463,201); 6.2×7.1 at (626,203); 5.9×6.8 at (634,196); 4.8×7.4 at (645,201) …. They vanish when small — enlarge, merge or remove them, or provide a small-size version.
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+production-readiness score: 83/100 (heuristic)
+
+=== concept-c-lockup-v2.svg  (10973 bytes)
+viewBox 0 0 1069 256 · aspect 4.176 (horizontal)
+colours 1: #111111 · gradients 0 · anchors 654
+margins L40.0 R17.4 T32.0 B32.0 · bbox fill 0.71
+▲ WARN [complex] 654 anchor points — more than 95% of comparable reference logos (median 75.0). Simplify: fewer points, merged shapes, less detail.
+▲ WARN [tiny-detail] 8 sub-shape(s) smaller than 1/32 of the lockup height (≈1 px at 32 px tall): 6.7×5.5 at (331,203); 7.0×5.3 at (437,209); 4.8×6.7 at (453,204); 7.7×3.4 at (520,196) …. They vanish when small — enlarge, merge or remove them, or provide a small-size version.
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+production-readiness score: 83/100 (heuristic)

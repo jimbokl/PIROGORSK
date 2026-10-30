@@ -1,0 +1,46 @@
+
+=== concept-a-v3.svg  (364 bytes)
+viewBox 0 0 256 256 · aspect 1.0 (square)
+colours 1: #111111 · gradients 0 · anchors 16
+margins L40.0 R40.0 T24.0 B18.5 · bbox fill 0.573
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== concept-b-v3.svg  (1933 bytes)
+viewBox 0 0 256 256 · aspect 1.0 (square)
+colours 1: #111111 · gradients 0 · anchors 48
+margins L20.0 R20.0 T20.0 B20.0 · bbox fill 0.712
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== concept-c-v3.svg  (308 bytes)
+viewBox 0 0 256 256 · aspect 1.0 (square)
+colours 1: #111111 · gradients 0 · anchors 11
+margins L40.0 R40.0 T32.0 B32.0 · bbox fill 0.516
+✔ no issues found
+production-readiness score: 100/100 (heuristic)
+
+=== concept-a-lockup-v3.svg  (5698 bytes)
+viewBox 0 0 1059 256 · aspect 4.137 (horizontal)
+colours 1: #111111 · gradients 0 · anchors 348
+margins L40.0 R17.7 T24.0 B18.5 · bbox fill 0.789
+▲ WARN [near-miss-angle] 2 straight edge(s) are 0.3–3° off a clean angle — they read as mistakes. Snap them: 120.6° (→120°) len 66.9 at (474,114); 120.6° (→120°) len 66.9 at (437,171). (Expected — and fine — for type set on a curve or deliberately rotated elements.)
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+· INFO [complexity] 348 anchor points (library median 75.0, p75 155.0). Check every point earns its place.
+production-readiness score: 90/100 (heuristic)
+
+=== concept-b-lockup-v3.svg  (10788 bytes)
+viewBox 0 0 1054 256 · aspect 4.117 (horizontal)
+colours 1: #111111 · gradients 0 · anchors 228
+margins L20.0 R18.3 T20.0 B20.0 · bbox fill 0.813
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+· INFO [complexity] 228 anchor points (library median 75.0, p75 155.0). Check every point earns its place.
+production-readiness score: 98/100 (heuristic)
+
+=== concept-c-lockup-v3.svg  (3528 bytes)
+viewBox 0 0 1069 256 · aspect 4.176 (horizontal)
+colours 1: #111111 · gradients 0 · anchors 199
+margins L40.0 R17.4 T32.0 B32.0 · bbox fill 0.71
+· INFO [precision] Coordinates with 4+ decimals: round to 0–2 decimals to reduce size and reveal misalignments.
+· INFO [complexity] 199 anchor points (library median 75.0, p75 155.0). Check every point earns its place.
+production-readiness score: 98/100 (heuristic)
