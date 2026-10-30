@@ -1,0 +1,9 @@
+---
+interface Props { name: string }
+const { name } = Astro.props;
+---
+<div class="menu-quantity" data-feed-quantity-control hidden>
+  <button type="button" data-feed-decrease aria-label={`Уменьшить количество: ${name}`} disabled>−</button>
+  <input type="number" data-feed-quantity min="1" max="99" step="1" value="1" inputmode="numeric" aria-label={`Количество: ${name}`} />
+  <button type="button" data-feed-increase aria-label={`Увеличить количество: ${name}`}>+</button>
+</div>

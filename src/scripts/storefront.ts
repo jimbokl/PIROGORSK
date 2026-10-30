@@ -294,7 +294,9 @@ if (interestId === 'selection') {
     // the same selection instead of increasing its quantity again.
     const input = card?.querySelector<HTMLInputElement>(`input[value="${variant}"]`);
     if (input) { input.checked = true; input.dispatchEvent(new Event('change', { bubbles: true })); }
-    if (!selection.some(item => item.id === interestId && item.value === variant)) addProduct(interestId, variant);
+    const requestedQuantity = Number(interestParams.get('quantity') ?? 1);
+    const quantity = Number.isSafeInteger(requestedQuantity) && requestedQuantity >= 1 && requestedQuantity <= 99 ? requestedQuantity : 1;
+    addItems([{ id: interestId, value: variant, quantity }], 'ensure');
     openDialog('selection-dialog');
   } else {
     card?.scrollIntoView({ block: 'center' });

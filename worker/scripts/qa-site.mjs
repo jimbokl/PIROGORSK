@@ -12,6 +12,7 @@ import { releaseManifest } from '../../scripts/verify-release.mjs';
 import worker from '../dist/worker.js';
 import { verifyProductAddOns } from './qa-product-addons.mjs';
 import { verifyOffers } from './qa-offers.mjs';
+import { verifyMenuQuantity } from './qa-menu-quantity.mjs';
 
 // Actual Astro output and production origins; every request is intercepted.
 // Only the local in-memory database receives applications and Metrica is a queue.
@@ -312,6 +313,7 @@ try {
     await page.evaluate(() => { localStorage.removeItem('pirogorsk-city'); localStorage.removeItem('pirogorsk-selection'); });
     await verifyOffers(page, origin, width, fileURLToPath(new URL('../dist/qa-offers/', import.meta.url)));
     await verifyProductAddOns(page, origin, width, fileURLToPath(new URL('../dist/qa-product-addons/', import.meta.url)));
+    await verifyMenuQuantity(page, origin, width, fileURLToPath(new URL('../dist/qa-menu-quantity/', import.meta.url)));
     await context.close();
   }
   assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 9);

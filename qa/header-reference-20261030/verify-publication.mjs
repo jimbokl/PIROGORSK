@@ -36,7 +36,7 @@ await Promise.all(Array.from({ length: 4 }, async () => {
   }
 }));
 files.sort((a, b) => a.path.localeCompare(b.path));
-await writeFile(new URL('./publication.json', import.meta.url), JSON.stringify({ checkedAt: new Date().toISOString(), runtime,
+await writeFile(process.env.PUBLICATION_REPORT_PATH || new URL('./publication.json', import.meta.url), JSON.stringify({ checkedAt: new Date().toISOString(), runtime,
   ci: process.argv[3] || null, buildSource: process.env.PUBLICATION_BUILD_DIR ? 'GitHub Actions Pages artifact' : 'local build', htmlPages: htmlPaths.length, productPages: catalog.length, files }, null, 2) + '\n');
 assert.ok(files.every(file => file.status === 200 && file.matchesBuild), JSON.stringify(files.filter(file => file.status !== 200 || !file.matchesBuild)));
 console.log(`Production readback PASS: ${files.length} resources match the reference build, runtime ${runtime}`);

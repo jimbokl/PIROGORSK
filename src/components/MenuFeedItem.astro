@@ -1,5 +1,6 @@
 ---
 import ProductVisual from './ProductVisual.astro';
+import MenuQuantity from './MenuQuantity.astro';
 import type { Product } from '../data/catalog';
 import { catalogProductHref } from '../lib/product-paths';
 interface Props { product: Product; concept?: boolean }
@@ -12,5 +13,5 @@ const selected = product.variants.find(v => v.value === product.defaultVariant)!
   <h3 id={`feed-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3>
   <p class="menu-feed-description">{product.description}</p>
   <fieldset class="menu-feed-variants"><legend class="sr-only">Формат: {product.name}</legend>{product.variants.map(v => <label><input type="radio" name={`feed-format-${product.id}`} value={v.value} data-feed-price={v.price} checked={v.value === selected.value} /><span>{v.label}</span></label>)}</fieldset>
-  <div class="menu-feed-bottom"><div><strong data-feed-price-label>{selected.price.toLocaleString('ru-RU')} ₽</strong><small>Предварительно</small></div><a class="menu-feed-add" data-feed-add href={`/?interest=${product.id}&variant=${selected.value}`}>В подборку</a></div>
+  <div class="menu-feed-bottom"><div><strong data-feed-price-label>{selected.price.toLocaleString('ru-RU')} ₽</strong><small data-feed-price-note>Предварительно</small></div><MenuQuantity name={product.name} /><a class="menu-feed-add" data-feed-add href={`/?interest=${product.id}&variant=${selected.value}`}>В подборку</a></div>
 </article>

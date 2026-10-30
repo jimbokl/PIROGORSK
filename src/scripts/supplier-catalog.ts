@@ -58,6 +58,7 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
   });
   document.addEventListener('pirogorsk:reveal-product', event => reveal((event as CustomEvent<string>).detail));
   cards.forEach(card => card.addEventListener('change', () => {
+    if (root.hasAttribute('data-menu-feed')) return; // The feed owns quantity, total and its fallback URL.
     const selected = card.querySelector<HTMLInputElement>('input:checked')!;
     card.querySelector('[data-supplier-price]')!.textContent = `${Number(selected.dataset.supplierUnitPrice).toLocaleString('ru-RU')} ₽`;
     card.querySelector<HTMLAnchorElement>('[data-supplier-link]')?.setAttribute('href', `/?interest=${card.dataset.supplierId}&variant=${selected.value}#${root.id}`);
