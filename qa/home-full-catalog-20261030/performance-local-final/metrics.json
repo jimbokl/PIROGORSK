@@ -1,0 +1,182 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "timestamp": "2026-10-30T16:44:38.961Z",
+    "lighthouseVersion": "13.5.0",
+    "throttlingMethod": "simulate",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1364.2937000000002,
+        "display": "1.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2653.5874000000003,
+        "display": "2.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0026149784458369438,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 1364.2937000000002,
+        "display": "1.4 s"
+      }
+    },
+    "observed": {
+      "fcp": 92,
+      "lcp": 151
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 20.840999877929686,
+      "resourceLoadDelay": 9.313000122070312,
+      "resourceLoadDuration": 11.084,
+      "elementRenderDelay": 110.124
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "timestamp": "2026-10-30T16:44:49.094Z",
+    "lighthouseVersion": "13.5.0",
+    "throttlingMethod": "simulate",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1814.471,
+        "display": "1.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1978.942,
+        "display": "2.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0026149784458369438,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 1814.471,
+        "display": "1.8 s"
+      }
+    },
+    "observed": {
+      "fcp": 174,
+      "lcp": 174
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 48.381,
+      "resourceLoadDelay": 8.631,
+      "resourceLoadDuration": 6.77,
+      "elementRenderDelay": 110.578
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "timestamp": "2026-10-30T16:44:59.143Z",
+    "lighthouseVersion": "13.5.0",
+    "throttlingMethod": "simulate",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1961.0560999999998,
+        "display": "2.0 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2272.1121999999996,
+        "display": "2.3 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0026149784458369438,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 1961.0560999999998,
+        "display": "2.0 s"
+      }
+    },
+    "observed": {
+      "fcp": 114,
+      "lcp": 114
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 19.975,
+      "resourceLoadDelay": 9.225,
+      "resourceLoadDuration": 3.323,
+      "elementRenderDelay": 81.327
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "timestamp": "2026-10-30T16:45:09.177Z",
+    "lighthouseVersion": "13.5.0",
+    "throttlingMethod": "simulate",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 346.6138,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 469.2276,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.004629431210416484,
+        "display": "0.005"
+      },
+      "speed-index": {
+        "value": 346.6138,
+        "display": "0.3 s"
+      }
+    },
+    "observed": {
+      "fcp": 119,
+      "lcp": 119
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 20.721,
+      "resourceLoadDelay": 9.459,
+      "resourceLoadDuration": 6.543,
+      "elementRenderDelay": 82.319
+    }
+  }
+]

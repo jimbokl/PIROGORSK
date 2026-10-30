@@ -3,6 +3,7 @@
   "results": [
     {
       "width": 320,
+      "layout": "feed",
       "products": 153,
       "geometry": 153,
       "firstAddBottom": 647.78125,
@@ -13,6 +14,7 @@
     },
     {
       "width": 390,
+      "layout": "feed",
       "products": 153,
       "geometry": 153,
       "firstAddBottom": 639,
@@ -23,6 +25,7 @@
     },
     {
       "width": 768,
+      "layout": "feed",
       "products": 153,
       "geometry": 153,
       "firstAddBottom": 779.140625,
@@ -33,6 +36,7 @@
     },
     {
       "width": 1024,
+      "layout": "feed",
       "products": 153,
       "geometry": 153,
       "firstAddBottom": 848.390625,
@@ -42,10 +46,44 @@
       "hashesReload": "PASS"
     },
     {
-      "width": 1280,
+      "width": 1100,
+      "layout": "gallery",
       "products": 153,
       "geometry": 153,
-      "firstAddBottom": 848.390625,
+      "firstAddBottom": 1128.015625,
+      "categories": 8,
+      "accessibility": "PASS",
+      "quantity": "PASS",
+      "hashesReload": "PASS"
+    },
+    {
+      "width": 1279,
+      "layout": "gallery",
+      "products": 153,
+      "geometry": 153,
+      "firstAddBottom": 1195.6875,
+      "categories": 8,
+      "accessibility": "PASS",
+      "quantity": "PASS",
+      "hashesReload": "PASS"
+    },
+    {
+      "width": 1280,
+      "layout": "gallery",
+      "products": 153,
+      "geometry": 153,
+      "firstAddBottom": 1138.21875,
+      "categories": 8,
+      "accessibility": "PASS",
+      "quantity": "PASS",
+      "hashesReload": "PASS"
+    },
+    {
+      "width": 1440,
+      "layout": "gallery",
+      "products": 153,
+      "geometry": 153,
+      "firstAddBottom": 1186.078125,
       "categories": 8,
       "accessibility": "PASS",
       "quantity": "PASS",

@@ -41,7 +41,7 @@ const click = async (page, selector) => {
 };
 const visibleCount = page => page.$$eval('[data-home-catalog] [data-product]:not([hidden])', cards => cards.length);
 try {
- for (const width of [320, 390, 768, 1024, 1280]) {
+ for (const width of [320, 390, 768, 1024, 1100, 1279, 1280, 1440]) {
   const { context, page } = await setup(width);
   await page.goto(`${origin}/?qa=1`, { waitUntil: 'networkidle0' });
   await page.evaluate(() => document.fonts.ready);
@@ -51,7 +51,8 @@ try {
   assert.equal(new Set(ids).size, 153);
   assert.equal(await visibleCount(page), 12);
   const first = await page.$eval('[data-add=meat]', el => el.getBoundingClientRect().bottom);
-  assert.ok(first <= (width < 600 ? 740 : 1024), `first purchase above fold ${width}: ${first}`);
+  if (width < 1100) assert.ok(first <= (width < 600 ? 740 : 1024), `first purchase above fold ${width}: ${first}`);
+  else assert.ok(await page.$eval('[data-product=meat] .menu-feed-art', el => el.getBoundingClientRect().top < innerHeight - 150), `product visible above fold ${width}`);
   await page.screenshot({ path: `${output}/home-${width}.jpg`, type: 'jpeg', quality: 88 });
   // Every category can reveal and reach its first item without loading other pages.
   const sections = await page.$$eval('[data-home-category]', links => links.map(a => a.dataset.homeCategory));
@@ -67,14 +68,32 @@ try {
   }
   assert.equal(await visibleCount(page), 153);
   const geometry = await page.$$eval('[data-home-catalog] [data-product]', cards => cards.map(card => {
-   const r = el => { const a = el.getBoundingClientRect(); return { x: a.x, y: a.y, right: a.right, bottom: a.bottom, height: a.height }; };
-   return { id: card.dataset.product, art: r(card.querySelector('.menu-feed-art')), title: r(card.querySelector('h4')), quantity: r(card.querySelector('[data-feed-quantity-control]')), add: r(card.querySelector('[data-add]')), overflow: card.scrollWidth > card.clientWidth };
+   const r = el => { const a = el.getBoundingClientRect(); return { x: a.x, y: a.y, right: a.right, bottom: a.bottom, width: a.width, height: a.height }; };
+   return { id: card.dataset.product, group: card.closest('[data-home-group]').id, card: r(card), art: r(card.querySelector('.menu-feed-art')), title: r(card.querySelector('h4')), variants: r(card.querySelector('.menu-feed-variants')), quantity: r(card.querySelector('[data-feed-quantity-control]')), add: r(card.querySelector('[data-add]')), overflow: card.scrollWidth > card.clientWidth };
   }));
   for (const row of geometry) {
    assert.equal(row.overflow, false, `${row.id}@${width}: card overflow`);
-   assert.ok(row.art.right <= row.title.x + 1, `${row.id}: image left`);
-   assert.ok(row.quantity.right <= row.title.x + 1, `${row.id}: quantity below image`);
-   assert.ok(row.add.x >= row.title.x - 1 && row.add.height >= 44, `${row.id}: compact action right`);
+   if (width < 1100) {
+    assert.ok(row.art.right <= row.title.x + 1, `${row.id}: image left`);
+    assert.ok(row.quantity.right <= row.title.x + 1, `${row.id}: quantity below image`);
+    assert.ok(row.add.x >= row.title.x - 1, `${row.id}: compact action right`);
+   } else {
+    assert.ok(row.art.bottom <= row.title.y + 1, `${row.id}: image above title`);
+    assert.ok(row.quantity.bottom <= row.add.y + 1, `${row.id}: quantity above purchase`);
+    assert.ok(row.add.right <= row.card.right + 1, `${row.id}: purchase inside card`);
+    const peers = geometry.filter(p => p.group === row.group && Math.abs(p.art.y - row.art.y) < 1);
+    assert.ok(peers.length <= (width >= 1280 ? 5 : 4));
+    for (const peer of peers) for (const key of ['title', 'variants', 'quantity', 'add']) {
+     assert.ok(Math.abs(peer[key].y - row[key].y) < 1, `${row.id}/${peer.id}@${width}: aligned ${key}`);
+    }
+   }
+   assert.ok(row.add.height >= 44, `${row.id}: touch target`);
+  }
+  if (width >= 1100) {
+   const firstRow = geometry.filter(p => p.group === geometry[0].group && Math.abs(p.art.y - geometry[0].art.y) < 1);
+   assert.equal(firstRow.length, width >= 1280 ? 5 : 4);
+   await page.$eval('#our-pies', el => el.scrollIntoView({behavior:'instant',block:'start'}));
+   await page.screenshot({path:`${output}/gallery-${width}.jpg`,type:'jpeg',quality:88});
   }
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
   await page.screenshot({ path: `${output}/extras-${width}.jpg`, type: 'jpeg', quality: 88 });
@@ -124,7 +143,7 @@ try {
   await page.reload({ waitUntil: 'networkidle0' });
   assert.equal(await page.evaluate(() => JSON.parse(localStorage.getItem('pirogorsk-selection')).length), 4);
   assert.equal(await page.$eval('#holland', el => el.hidden), false);
-  results.push({ width, products: ids.length, geometry: geometry.length, firstAddBottom: first, categories: sections.length, accessibility: 'PASS', quantity: 'PASS', hashesReload: 'PASS' });
+  results.push({ width, layout: width >= 1100 ? 'gallery' : 'feed', products: ids.length, geometry: geometry.length, firstAddBottom: first, categories: sections.length, accessibility: 'PASS', quantity: 'PASS', hashesReload: 'PASS' });
   await context.close();
  }
  // Normal animation must arrive before pointer coordinates are used for a row.

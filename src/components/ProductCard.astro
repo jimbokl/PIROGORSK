@@ -9,7 +9,7 @@ import '../styles/catalog.css';
 
 interface Props { product: Product; feed?: boolean; priority?: boolean }
 const { product, feed = false, priority = false } = Astro.props;
-const feedSizes = '(max-width: 600px) max(114px, calc(34vw - 12px)), (max-width: 1000px) 176px, 220px';
+const feedSizes = '(max-width: 600px) max(114px, calc(34vw - 12px)), (max-width: 1000px) 176px, (max-width: 1099px) 220px, (max-width: 1279px) 235px, 230px';
 const selectedVariant = product.variants.find(({ value }) => value === product.defaultVariant) ?? product.variants[0]!;
 const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Объём' : 'Комплект';
 ---
