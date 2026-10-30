@@ -1,14 +1,14 @@
 ---
 import { Picture } from 'astro:assets';
 import Icon from './Icon.astro';
-import fish from '../../design/art-direction-20261030/hero-fish-scene.png';
-import cherry from '../../design/layered-assets-v2/cherry/pie.png';
-import bundle from '../../design/assets-source/bundle.png';
+import city from '../../design/pie-city-banners-20261030/pie-city.png';
+import islands from '../../design/pie-city-banners-20261030/pie-islands.png';
+import berries from '../../design/pie-city-banners-20261030/berry-quarter.png';
 import '../styles/tasting-hero.css';
 const slides = [
-  { id: 'pies', eyebrow: 'ПИРОГИ К ВАШЕМУ СТОЛУ', title: 'Пироги к общему столу', note: 'Сытные, сладкие — выбирайте свой.', href: '/menu/', cta: 'Смотреть меню', image: fish, alt: 'Рыбный пирог с открытой начинкой на керамическом блюде' },
-  { id: 'company', eyebrow: 'КОГДА СОБИРАЕТСЯ КОМПАНИЯ', title: 'Соберите общий стол', note: 'Несколько пирогов с разными начинками.', href: '#nabory', cta: 'Подобрать набор', image: bundle, alt: 'Пироги для общего стола' },
-  { id: 'tea', eyebrow: 'К ЧАЮ И МОРСКОЙ ПРОГУЛКЕ', title: 'Ягодный пирог', note: 'Вишнёвый вкус среди первых идей меню.', href: '/menu/', cta: 'Выбрать пироги', image: cherry, alt: 'Пирог с вишней' },
+  { id: 'pies', eyebrow: 'ПИРОГИ К ВАШЕМУ СТОЛУ', title: 'Пироги к общему столу', note: 'Сытные, сладкие — целый город вкусов.', href: '/menu/', cta: 'Смотреть меню', image: city, alt: 'Пироговый город: золотистые приморские домики на большом пироге с синими волнами' },
+  { id: 'company', eyebrow: 'КОГДА СОБИРАЕТСЯ КОМПАНИЯ', title: 'Соберите общий стол', note: 'Несколько пирогов с разными начинками.', href: '#nabory', cta: 'Подобрать набор', image: islands, alt: 'Три пироговых острова с домиками из выпечки и приморской башней' },
+  { id: 'tea', eyebrow: 'К ЧАЮ И МОРСКОЙ ПРОГУЛКЕ', title: 'Ягодный квартал', note: 'Сладкий пирог с сочной вишнёвой начинкой.', href: '/pirogi/pirog-s-vishney/', cta: 'Выбрать вишнёвый', image: berries, alt: 'Ягодный квартал пирогового города: домики из выпечки над пирогом с вишней' },
 ];
 ---
 <section class="tasting-hero container" aria-labelledby="hero-heading" data-tasting-hero data-flavor="pies" aria-live="polite" aria-atomic="false">
@@ -21,7 +21,7 @@ const slides = [
   <div class="tasting-stage">
     <div class="tasting-art" data-tasting-art>
       {slides.map((slide, i) => <div class="tasting-scene" data-tasting-scene={slide.id} hidden={i !== 0}>
-        {slide.id === 'company' ? <Picture src={slide.image} formats={['avif','webp']} fallbackFormat="webp" widths={[480,640,800,1120]} sizes="(max-width: 600px) 48vw, (max-width: 1000px) 46vw, 540px" width={1680} height={672} quality={48} alt={slide.alt} loading="lazy" fetchpriority="low" /> : <Picture src={slide.image} formats={['avif','webp']} fallbackFormat="webp" widths={[320,480,640,800,1000]} sizes="(max-width: 600px) 48vw, (max-width: 1000px) 46vw, 540px" width={900} height={slide.id === 'pies' ? 600 : 900} quality={48} alt={slide.alt} loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : 'low'} />}
+        <Picture src={slide.image} formats={['avif','webp']} fallbackFormat="webp" widths={[240,360,480,640,800]} sizes="(max-width: 600px) 44vw, (max-width: 1000px) 220px, (max-width: 1100px) 240px, (max-width: 1400px) 22vw, 300px" width={1280} height={1280} quality={60} alt={slide.alt} loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : 'low'} />
       </div>)}
     </div>
     <div class="tasting-nav" role="group" aria-label="Слайды главной страницы">

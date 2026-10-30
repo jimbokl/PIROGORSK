@@ -1,0 +1,468 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4323/",
+    "timestamp": "2026-10-30T19:47:33.779Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 117,
+      "lcp": 117
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 16.484000122070313,
+      "resourceLoadDelay": 7.752999877929687,
+      "resourceLoadDuration": 5.334,
+      "elementRenderDelay": 87.369
+    },
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1963.9088250000002,
+        "display": "2.0 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2723.8437000000004,
+        "display": "2.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.006207188281728314,
+        "display": "0.006"
+      },
+      "speed-index": {
+        "value": 1963.9088250000002,
+        "display": "2.0 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 11 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-6-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 8,
+                "bottom": 89,
+                "left": 94,
+                "right": 318,
+                "width": 224,
+                "height": 81
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4323/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "http://127.0.0.1:4323/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "653697AC3F51163C66930A0041106500": {
+                  "url": "http://127.0.0.1:4323/",
+                  "navStartToEndTime": 96,
+                  "transferSize": 92240,
+                  "isLongest": true,
+                  "children": {
+                    "54271.8": {
+                      "url": "http://127.0.0.1:4323/_astro/InterestForm.astro_astro_type_script_index_0_lang.CeIliwuy.js",
+                      "navStartToEndTime": 96,
+                      "transferSize": 3912,
+                      "isLongest": true,
+                      "children": {
+                        "54271.389": {
+                          "url": "http://127.0.0.1:4323/_astro/analytics.aMArJC5-.js",
+                          "navStartToEndTime": 132,
+                          "transferSize": 13453,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "54271.390": {
+                          "url": "http://127.0.0.1:4323/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 132,
+                          "transferSize": 390,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "54271.10": {
+                      "url": "http://127.0.0.1:4323/_astro/index.astro_astro_type_script_index_0_lang.Dr6c_Nkx.js",
+                      "navStartToEndTime": 96,
+                      "transferSize": 6460,
+                      "children": {
+                        "54271.392": {
+                          "url": "http://127.0.0.1:4323/_astro/selection-offers.7u71x7WM.js",
+                          "navStartToEndTime": 132,
+                          "transferSize": 790,
+                          "children": {}
+                        },
+                        "54271.391": {
+                          "url": "http://127.0.0.1:4323/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 132,
+                          "transferSize": 974,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "54271.6": {
+                      "url": "http://127.0.0.1:4323/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 96,
+                      "transferSize": 280,
+                      "children": {
+                        "54271.388": {
+                          "url": "http://127.0.0.1:4323/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 132,
+                          "transferSize": 499,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "54271.350": {
+                      "url": "http://127.0.0.1:4323/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 107,
+                      "transferSize": 18791,
+                      "children": {}
+                    },
+                    "54271.352": {
+                      "url": "http://127.0.0.1:4323/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 106,
+                      "transferSize": 18871,
+                      "children": {}
+                    },
+                    "54271.353": {
+                      "url": "http://127.0.0.1:4323/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 106,
+                      "transferSize": 16099,
+                      "children": {}
+                    },
+                    "54271.351": {
+                      "url": "http://127.0.0.1:4323/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 106,
+                      "transferSize": 9423,
+                      "children": {}
+                    },
+                    "54271.9": {
+                      "url": "http://127.0.0.1:4323/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+                      "navStartToEndTime": 96,
+                      "transferSize": 274,
+                      "children": {}
+                    },
+                    "54271.7": {
+                      "url": "http://127.0.0.1:4323/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 96,
+                      "transferSize": 280,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 132
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4323/",
+    "timestamp": "2026-10-30T19:47:42.923Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 100,
+      "lcp": 100
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 9.033,
+      "resourceLoadDelay": 6.54,
+      "resourceLoadDuration": 6.522,
+      "elementRenderDelay": 77.432
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 404.4255999999999,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 505.90079999999983,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.003412586281119575,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 404.4255999999999,
+        "display": "0.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 27 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-7-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,4,SECTION,1,NAV,0,A,0,SPAN,0,DIV,1,PICTURE,1,IMG",
+              "selector": "span.department-art > div.supplier-artwork > picture.product-artwork-subject > img",
+              "boundingRect": {
+                "top": 2924,
+                "bottom": 3098,
+                "left": 86,
+                "right": 329,
+                "width": 244,
+                "height": 174
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4323/catalog-art/p39-497-400.avif\" srcset=\"/catalog-art/p39-497-256.webp 256w, /catalog-art/p39-497-400.webp 400w, /c…\" sizes=\"(max-width: 650px) 170px, 280px\" width=\"960\" height=\"960\" alt=\"\" loading=\"lazy\" fetchpriority=\"auto\" decoding=\"async\">",
+              "nodeLabel": "span.department-art > div.supplier-artwork > picture.product-artwork-subject > img"
+            },
+            "url": "http://127.0.0.1:4323/catalog-art/p39-497-400.avif",
+            "totalBytes": 20023,
+            "wastedBytes": 16234,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (400x400) for its displayed dimensions (174x174). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 16234
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-6-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 12,
+                "bottom": 124,
+                "left": 519,
+                "right": 831,
+                "width": 312,
+                "height": 112
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4323/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "http://127.0.0.1:4323/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "E118D7F39B4D621F9978D7CA5E861D28": {
+                  "url": "http://127.0.0.1:4323/",
+                  "navStartToEndTime": 74,
+                  "transferSize": 92240,
+                  "isLongest": true,
+                  "children": {
+                    "54291.10": {
+                      "url": "http://127.0.0.1:4323/_astro/index.astro_astro_type_script_index_0_lang.Dr6c_Nkx.js",
+                      "navStartToEndTime": 77,
+                      "transferSize": 6460,
+                      "isLongest": true,
+                      "children": {
+                        "54291.424": {
+                          "url": "http://127.0.0.1:4323/_astro/selection-offers.7u71x7WM.js",
+                          "navStartToEndTime": 141,
+                          "transferSize": 790,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "54291.423": {
+                          "url": "http://127.0.0.1:4323/_astro/pie-planner.D65GEHih.js",
+                          "navStartToEndTime": 141,
+                          "transferSize": 974,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "54291.8": {
+                      "url": "http://127.0.0.1:4323/_astro/InterestForm.astro_astro_type_script_index_0_lang.CeIliwuy.js",
+                      "navStartToEndTime": 77,
+                      "transferSize": 3912,
+                      "children": {
+                        "54291.421": {
+                          "url": "http://127.0.0.1:4323/_astro/analytics.aMArJC5-.js",
+                          "navStartToEndTime": 141,
+                          "transferSize": 13453,
+                          "children": {}
+                        },
+                        "54291.422": {
+                          "url": "http://127.0.0.1:4323/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 140,
+                          "transferSize": 390,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "54291.6": {
+                      "url": "http://127.0.0.1:4323/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 77,
+                      "transferSize": 280,
+                      "children": {
+                        "54291.420": {
+                          "url": "http://127.0.0.1:4323/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 138,
+                          "transferSize": 499,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "54291.319": {
+                      "url": "http://127.0.0.1:4323/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 109,
+                      "transferSize": 9423,
+                      "children": {}
+                    },
+                    "54291.320": {
+                      "url": "http://127.0.0.1:4323/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 109,
+                      "transferSize": 18871,
+                      "children": {}
+                    },
+                    "54291.318": {
+                      "url": "http://127.0.0.1:4323/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 108,
+                      "transferSize": 18791,
+                      "children": {}
+                    },
+                    "54291.321": {
+                      "url": "http://127.0.0.1:4323/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 81,
+                      "transferSize": 16099,
+                      "children": {}
+                    },
+                    "54291.7": {
+                      "url": "http://127.0.0.1:4323/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 77,
+                      "transferSize": 280,
+                      "children": {}
+                    },
+                    "54291.9": {
+                      "url": "http://127.0.0.1:4323/_astro/Analytics.astro_astro_type_script_index_0_lang.FCvev1hh.js",
+                      "navStartToEndTime": 77,
+                      "transferSize": 274,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 141
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
