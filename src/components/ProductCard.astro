@@ -4,6 +4,7 @@ import Icon from './Icon.astro';
 import ProductVisual from './ProductVisual.astro';
 import SupplierArtwork from './SupplierArtwork.astro';
 import MenuQuantity from './MenuQuantity.astro';
+import PiePortions from './PiePortions.astro';
 import type { Product } from '../data/catalog';
 import { catalogProductHref } from '../lib/product-paths';
 import '../styles/catalog.css';
@@ -17,7 +18,7 @@ const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Об�
 {feed ? <article class="menu-feed-item home-feed-card" data-product={product.id} data-fillings={productFillings(product).join(" ")} data-catalog-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(" ")} data-category={product.category} aria-labelledby={`product-${product.id}`}>
   <a class="menu-feed-art" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative sizes={feedSizes} /> : <ProductVisual product={product} decorative sizes={feedSizes} priority={priority} />}</a>
   <h4 id={`product-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h4>
-  <p class="menu-feed-description">{product.description}</p>
+  <p class="menu-feed-description">{product.description}<PiePortions {product} /></p>
   <fieldset class="menu-feed-variants">
     <legend class="sr-only">{measure}: {product.name.toLowerCase()}</legend>
     {product.variants.map(variant => <label><input type="radio" name={`weight-${product.id}`} value={variant.value} data-variant={variant.value} checked={variant.value === selectedVariant.value} /><span>{variant.label}</span></label>)}
@@ -27,7 +28,7 @@ const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Об�
   <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative /> : <ProductVisual product={product} decorative />}</a>
   <div class="product-copy">
     <h3 id={`product-${product.id}`}><a class="product-title-link" href={catalogProductHref(product)}>{product.name}</a></h3>
-    <p class="product-description">{product.description}</p>
+    <p class="product-description">{product.description}<PiePortions {product} /></p>
   </div>
   <fieldset class:list={['weight-switch', 'variant-switch', { 'variant-switch--single': product.variants.length === 1 }]}>
     <legend class="sr-only">{measure}: {product.name.toLowerCase()}</legend>

@@ -2,6 +2,7 @@
 import { productFillings } from '../lib/catalog-fillings';
 import Icon from './Icon.astro';
 import MenuQuantity from './MenuQuantity.astro';
+import PiePortions from './PiePortions.astro';
 import SupplierArtwork from './SupplierArtwork.astro';
 import { catalogProductHref } from '../lib/product-paths';
 import { freshProducts, freshGroups } from '../data/pirogi39-catalog';
@@ -27,7 +28,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
     return <article id={product.id} class="supplier-card" data-supplier-id={product.id} data-fillings={productFillings(product).join(" ")} data-supplier-group={product.category} data-supplier-name={product.name.toLocaleLowerCase('ru-RU')} data-supplier-search={[product.name, product.description, groupLabel, producer, ...product.variants.map(v => v.label)].join(' ')} data-product={interactive ? product.id : undefined} data-kind={interactive ? product.kind : undefined} aria-labelledby={`name-${product.id}`}>
       <div class="supplier-card-top"><span>{groupLabel}</span><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span></div>
       <a class="supplier-art-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}><SupplierArtwork id={product.id} decorative sizes={feed ? '(max-width: 600px) max(114px, calc(34vw - 12px)), (max-width: 1000px) 176px, 220px' : undefined} /></a>
-      <h3 id={`name-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3><p class="supplier-format">{product.description}</p>
+      <h3 id={`name-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3><p class="supplier-format">{product.description}<PiePortions {product} /></p>
       <fieldset class="supplier-variants"><legend class="sr-only">Формат: {product.name}</legend>{product.variants.map(variant => <label><input type="radio" name={`format-${product.id}`} value={variant.value} data-supplier-unit-price={variant.price} checked={variant.value === product.defaultVariant} /><span>{variant.label}</span></label>)}</fieldset>
       <div class="supplier-card-bottom">{feed && <MenuQuantity name={product.name} />}<div class="supplier-purchase"><div>{product.supplier!.priceFrom && <span class="supplier-from">от </span>}<strong data-price={interactive ? '' : undefined} data-supplier-price>{money(selected.price)}</strong><small data-feed-price-note={feed ? '' : undefined}>Предварительно</small></div>{interactive ? <button type="button" class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button> : <a class="button button-small" data-supplier-link href={`/?interest=${product.id}&variant=${selected.value}#${sectionId}`}>В подборку<Icon name="arrow" /></a>}</div></div>
     </article>;

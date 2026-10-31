@@ -1,0 +1,28 @@
+---
+import type { Product } from '../data/catalog';
+import fresh from '../data/pirogi39-content.json';
+import frozen from '../data/supplier-content.json';
+interface Props { product: Product }
+const { product } = Astro.props;
+const facts = [...fresh, ...frozen].find(item => item.id === product.id);
+const storage = facts && 'storage' in facts && typeof facts.storage === 'string' ? facts.storage : '';
+const checkedOn = facts?.checkedOn;
+const date = checkedOn ? new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${checkedOn}T12:00:00Z`)) : '';
+---
+{facts && <section class="product-facts" aria-labelledby="product-facts-title" data-product-facts>
+  <header><p class="ed-eyebrow">О продукте</p><h2 id="product-facts-title">Состав и хранение</h2><p>{product.supplier?.name}</p></header>
+  <div class="product-facts-grid">
+    <div><h3>Состав</h3>{facts.ingredients ? <p data-product-ingredients>{facts.ingredients}</p> : <p>Ассорти на выбор: состав зависит от выбранных видов.</p>}</div>
+    <div><h3>Хранение</h3><p data-product-storage>{storage || 'Замороженный продукт. Температура и срок хранения — на маркировке конкретной упаковки.'}</p><h3>Аллергены</h3><p>Полный состав приведён {facts.ingredients ? 'рядом' : 'на маркировке выбранных видов'}. Сведения о возможных следах аллергенов проверяют по упаковке.</p></div>
+  </div>
+  <footer>По <a href={facts.sourceUrl} target="_blank" rel="noopener">каталогу производителя ↗</a> · <time datetime={checkedOn}>{date}</time>. Сверяйте сведения с маркировкой конкретной партии.</footer>
+</section>}
+<style>
+  .product-facts{padding-block:36px 48px;border-top:1px solid var(--ed-line);scroll-margin-top:110px}
+  header{margin-bottom:26px}h2{font:500 clamp(28px,3vw,38px)/1.15 var(--ed-serif);letter-spacing:-.025em;margin:12px 0}header>p:last-child{font:400 13px/1.6 var(--sans);color:var(--ed-muted);margin:0}
+  .product-facts-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(24px,5vw,70px)}
+  h3{font:600 14px/1.5 var(--sans);margin:0 0 10px}h3:not(:first-child){margin-top:24px}
+  .product-facts-grid p{font:400 14px/1.9 var(--sans);margin:0;max-width:80ch;overflow-wrap:anywhere}
+  footer{font:400 11px/1.8 var(--sans);color:var(--ed-muted);margin-top:28px;max-width:95ch}a{color:inherit;text-underline-offset:4px}
+  @media(max-width:760px){.product-facts{padding-block:28px 36px}.product-facts-grid{grid-template-columns:1fr;gap:24px}.product-facts-grid p{font-size:13px}}
+</style>

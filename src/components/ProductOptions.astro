@@ -1,4 +1,5 @@
 ---
+import PiePortions from './PiePortions.astro';
 import type { Product } from '../data/catalog';
 import { selectionHref as productSelectionHref } from '../lib/product-paths';
 import { deliveryEstimates } from '../data/pricing';
@@ -21,6 +22,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
       </label>)}
     </div>
   </fieldset>
+  <PiePortions {product} detailed />
   <div class="product-options-bottom">
     <p class="product-options-price"><strong data-option-price aria-live="polite">{from}{selected.price.toLocaleString('ru-RU')} ₽</strong><small>Предварительная цена</small></p>
     <div class="product-quantity" data-option-quantity-control hidden>
@@ -37,6 +39,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
   {showDelivery && <details class="product-delivery"><summary>Сколько получится с доставкой</summary><p>Если в подборке только выбранный формат этой позиции. Доставка учитывается один раз за всю подборку.</p><dl>{Object.entries(deliveryEstimates).map(([city, cost]) => <div><dt>{city}<small>Доставка {cost} ₽</small></dt><dd data-option-total data-delivery-cost={cost}>{from}{(selected.price + cost).toLocaleString('ru-RU')} ₽</dd></div>)}<div><dt>Самовывоз<small>Место ещё уточняется</small></dt><dd data-option-total data-delivery-cost="0">{from}{selected.price.toLocaleString('ru-RU')} ₽</dd></div></dl><p>Плановый расчёт, не тариф перевозчика. Города, условия и стоимость подтвердим до начала продаж.</p></details>}
 </div>
 <script>
+  import { portionSummary } from '../lib/product-portions';
   import { addItems, getSelection } from '../scripts/storefront';
   document.querySelectorAll<HTMLElement>('[data-product-options]').forEach(options => {
     const quantityInput = options.querySelector<HTMLInputElement>('[data-option-quantity]')!;
@@ -62,6 +65,8 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
       quantityInput.value = String(quantity);
       decrease.disabled = quantity === 1;
       increase.disabled = quantity === 99;
+      const portions = options.querySelector<HTMLElement>('[data-pie-portions]');
+      if (portions) portions.textContent = portionSummary(Number(input.value), quantity);
       const price = options.querySelector<HTMLElement>('[data-option-price]');
       const prefix = options.dataset.pricePrefix ?? '';
       const total = Number(input.dataset.price) * quantity;

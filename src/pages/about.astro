@@ -1,4 +1,5 @@
 ---
+import { catalog } from '../data/catalog';
 import ContentLayout from '../layouts/ContentLayout.astro';
 import PieTownHero from '../components/PieTownHero.astro';
 import town from '../../design/pie-city-banners-20261030/pie-city.png';
@@ -12,6 +13,11 @@ const description = 'Пирогорск — проект пирогов для �
 ---
 <ContentLayout {title} {description} breadcrumbs={[{ name: 'О проекте', href: '/about/' }]}>
   <PieTownHero eyebrow="Пирогорск · о проекте" title="Пироги с балтийским характером" intro="Пирогорск начинается с идеи общего стола у моря: ужина в апартаментах, встречи друзей, чая после прогулки. Сейчас разрабатываем проект и проверяем, какие вкусы и форматы нужны людям." image={town} imageAlt="Пироговый город с золотистыми домиками на пироге у балтийских волн" />
+  <section class="assortment-origins" aria-labelledby="origins-title">
+    <p class="ed-eyebrow">Знакомство с меню</p><h2 id="origins-title">Три части одного пирогового города</h2>
+    <div><article><h3>Идеи Пирогорска</h3><strong>8 пирогов</strong><p>Наше направление будущего меню: мясной, рыбный, овощной, сырный и сладкие вкусы. Рецепты ещё в разработке.</p><a href="/menu/#pirogi">Посмотреть идеи ↗</a></article><article><h3>Пироги а-ля Русс</h3><strong>{catalog.filter(p => p.id.startsWith('p39-')).length} целый пирог</strong><p>Публичный каталог pirogi39.ru: сытные и сладкие начинки, целые пироги в форматах производителя.</p><a href="/menu/#pirogi39">Выбрать целый пирог ↗</a><a href="https://pirogi39.ru/" target="_blank" rel="noopener">Источник ассортимента ↗</a></article><article><h3>Holland Bakery</h3><strong>{catalog.filter(p => p.id.startsWith('hb-')).length} позиций</strong><p>Мини-пироги, хлеб, десерты и заготовки. В карточках различаем готовую выпечку и продукты для домашней духовки.</p><a href="/menu/#holland">Сравнить форматы ↗</a><a href="https://hollandbakery.ru/" target="_blank" rel="noopener">Источник ассортимента ↗</a></article></div>
+    <p class="origins-note">Вместе с шестью дополнениями — {catalog.length} позиции. Данные каталогов проверены 29 октября 2026 года. Пирогорск рассчитывает свои цены; поставки и партнёрство ещё не согласованы.</p>
+  </section>
   <EditorialBody sections={[
     { title: 'С чего начинаем', paragraphs: ['Начинаем с подбора ассортимента местных пекарен и проверки спроса на доставку через Пирогорск. Восемь первых концептов пирогов и шесть дополнений сохранили. Добавили 61 целый пирог из каталога «Пироги а-ля Русс» и 78 позиций Holland Bakery: мини-пироги, хлеб, десерты, замороженные заготовки и тесто.', 'Первые восемь пирогов остаются идеями будущего меню. Карточки поставщика показывают название, формат и расчётную цену Пирогорска. Небольшие наборы — план фасовки из заводских упаковок; поставки и доступность пока не подтверждены.'] },
     { title: 'Что ещё впереди', paragraphs: ['Продажи пока не запущены. Предстоит согласовать поставки, фасовку, составы, аллергены и окончательные цены, проверить хранение и перевозку замороженной продукции. Собственную пекарню будем рассматривать после проверки спроса.', 'Реквизиты и контакты для заказов появятся, когда будут готовы продукт и порядок продаж. На этом этапе можно выбрать город, товары и способ получения без оплаты.'] },
@@ -30,4 +36,8 @@ const description = 'Пирогорск — проект пирогов для �
 
 <style>
   .editorial-policy{padding:clamp(24px,4vw,44px);margin-top:40px;border:1px solid var(--ed-line);border-radius:22px;scroll-margin-top:120px}.editorial-policy h2{font:500 clamp(30px,4vw,44px)/1.15 var(--ed-serif);margin:14px 0 24px;letter-spacing:-.025em}.editorial-policy>p:not(.ed-eyebrow){max-width:86ch;font-size:15px;line-height:1.9;color:var(--ed-muted);margin-top:16px}
+</style>
+
+<style>
+.assortment-origins{padding-block:24px 48px}.assortment-origins h2{font:500 clamp(30px,4vw,44px)/1.15 var(--ed-serif);letter-spacing:-.025em;margin:14px 0 28px}.assortment-origins>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.assortment-origins article{display:flex;flex-direction:column;align-items:start;border:1px solid var(--ed-line);border-radius:20px;padding:26px;min-width:0}.assortment-origins h3{font:600 17px/1.4 var(--sans);margin:0 0 12px}.assortment-origins strong{font:500 24px/1.3 var(--ed-serif)}.assortment-origins article p,.origins-note{font:400 13px/1.8 var(--sans);color:var(--ed-muted)}.assortment-origins article p{flex:1;margin-block:16px}.assortment-origins a{display:inline-flex;align-items:center;min-height:44px;font:500 12px/1.5 var(--sans);text-underline-offset:4px}.origins-note{max-width:95ch;margin:22px 0 0}@media(max-width:900px){.assortment-origins>div{grid-template-columns:1fr;gap:16px}.assortment-origins article{padding:24px}}
 </style>

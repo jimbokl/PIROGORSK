@@ -1,0 +1,16 @@
+---
+import type { Product } from '../data/catalog';
+import { hasPiePortions, portionSummary } from '../lib/product-portions';
+interface Props { product: Product; detailed?: boolean }
+const { product, detailed = false } = Astro.props;
+---
+{hasPiePortions(product) && <span class:list={['pie-portions', { 'pie-portions-detailed': detailed }]}>
+  <span data-pie-portions aria-live={detailed ? 'polite' : undefined} aria-atomic={detailed ? 'true' : undefined}>{portionSummary(product.defaultVariant)}</span>
+  {detailed && <span class="pie-portions-basis">Ориентир — 250 г на порцию. Учтите аппетит гостей и другие блюда на столе. <a href="/journal/skolko-piroga-na-cheloveka/">Рассчитать на компанию ↗</a></span>}
+</span>}
+<style>
+  .pie-portions{display:block;margin-top:8px;color:var(--navy);font:500 11px/1.6 var(--sans);font-variant-numeric:tabular-nums}
+  .pie-portions-detailed{padding-block:14px 0;font-size:13px}
+  .pie-portions-basis{display:block;margin-top:5px;color:var(--ed-muted);font:400 11px/1.7 var(--sans);max-width:60ch}
+  a{text-underline-offset:3px}
+</style>

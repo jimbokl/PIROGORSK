@@ -1,3 +1,4 @@
+import { portionSummary } from '../lib/product-portions';
 import type { Product } from '../data/catalog';
 import { trackGoal } from './analytics';
 import { editorialCityIntents, editorialScenarioIntents } from '../data/editorial-intents';
@@ -248,6 +249,8 @@ all('[data-home-catalog] [data-product]').forEach(card => {
     if (increase) increase.disabled = count === 99;
     const value = Number(card.querySelector<HTMLInputElement>('input:checked')!.value);
     card.querySelector('[data-price]')!.textContent = money(product.prices[value] * count);
+    const portions = card.querySelector<HTMLElement>('[data-pie-portions]');
+    if (portions) portions.textContent = portionSummary(value, count);
   };
   card.querySelector<HTMLElement>('[data-feed-quantity-control]')?.removeAttribute('hidden');
   decrease?.addEventListener('click', () => { quantity!.value = String(readQuantity() - 1); updatePrice(); });

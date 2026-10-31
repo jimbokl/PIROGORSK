@@ -1,3 +1,4 @@
+import * as interestContext from '../src/data/interest-context.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -53,6 +54,7 @@ test('content micro-goals keep the saved-request gate and only measure marked ed
   const context = {
     exports: {}, URL, Element: TestElement,
     require(name) {
+      if (name === '../data/interest-context') return interestContext;
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
       if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
@@ -93,6 +95,7 @@ test('real analytics initializer queues one explicit pageview and no goal', () =
   const context = {
     exports: {}, URL,
     require(name) {
+      if (name === '../data/interest-context') return interestContext;
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
       if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
@@ -126,6 +129,7 @@ test('local previews and QA tabs never load Metrica or send goals', () => {
     const context = {
       exports: {}, URL, location: { href },
       require(name) {
+      if (name === '../data/interest-context') return interestContext;
         if (name === '../config/analytics') return { analyticsConfig };
         if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
         if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
@@ -166,6 +170,7 @@ test('selection/filter goals send only closed parameters and never raw search te
   const context = {
     exports: {}, URL, location: { href: 'https://pirogorsk.ru/menu/?q=private' },
     require(name) {
+      if (name === '../data/interest-context') return interestContext;
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
       if (name === '../lib/analytics-session') return { analyticsSessionEnabled };

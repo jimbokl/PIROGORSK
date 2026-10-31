@@ -31,7 +31,11 @@ for (const product of catalog) {
   assert.ok(html.includes('ItemPage'), `page schema: ${route}`);
   assert.ok(html.includes('Готовим запуск'), `prelaunch: ${route}`);
   assert.ok(matrix.some(row => row.path === route), `SEO owner: ${route}`);
-  if (page.facts?.ingredients) assert.ok(html.includes('Состав по данным производителя'), `composition: ${route}`);
+  if (page.facts?.ingredients) {
+    assert.ok(html.includes('data-product-ingredients'), `composition: ${route}`);
+    const ingredients = page.facts.ingredients.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
+    assert.ok(html.includes(ingredients), `actual ingredients: ${route}`);
+  }
   if (!product.supplier) continue;
   const image = art.find(a => a.id === product.id);
   assert.ok(image, `art: ${product.id}`);

@@ -1,4 +1,5 @@
 ---
+import { occasions, preferredTimes, partnerTypes } from '../data/interest-context';
 import { analyticsConfig } from '../config/analytics';
 import '../styles/interest.css';
 ---
@@ -15,6 +16,14 @@ import '../styles/interest.css';
         <div class="interest-field"><label for="interest-day">Желаемый день</label><input type="date" name="desiredDate" id="interest-day" required aria-describedby="interest-day-error" /><span id="interest-day-error" class="interest-error" data-error="desiredDate"></span></div>
       </div>
       <div class="interest-field"><label for="interest-delivery">Как было бы удобнее получить?</label><select name="delivery" id="interest-delivery" required aria-describedby="interest-delivery-error"><option value="">Выберите способ</option><option value="pickup">Самовывоз</option><option value="delivery">Доставка</option><option value="undecided">Пока не решил(а)</option></select><span id="interest-delivery-error" class="interest-error" data-error="delivery"></span></div>
+      <details class="interest-preferences" data-interest-preferences>
+        <summary>Уточнить пожелания <span>необязательно</span></summary>
+        <p id="interest-preferences-help">Для какого стола выбираете и когда было бы удобнее? Это пожелания к будущему запуску.</p>
+        <div class="interest-field"><label for="interest-occasion">Повод</label><select id="interest-occasion" name="occasion" aria-describedby="interest-preferences-help interest-context-error">{occasions.map(([value, label]) => <option {value}>{label}</option>)}</select></div>
+        <div class="interest-field"><label for="interest-time">Удобное время</label><select id="interest-time" name="preferredTime" aria-describedby="interest-preferences-help interest-context-error">{preferredTimes.map(([value, label]) => <option {value}>{label}</option>)}</select></div>
+        <div class="interest-field"><label for="interest-partner">Вы выбираете как…</label><select id="interest-partner" name="partnerType" aria-describedby="interest-context-error">{partnerTypes.map(([value, label]) => <option {value}>{label}</option>)}</select></div>
+        <p id="interest-context-error" class="interest-error" data-error="context"></p>
+      </details>
       <label class="interest-consent"><input type="checkbox" name="priceConsent" required aria-describedby="interest-price-error" /><span>Мне подходит ориентировочная стоимость подборки.</span></label><span id="interest-price-error" class="interest-error" data-error="priceConsent"></span>
       <div class="interest-trap" aria-hidden="true"><label for="interest-website">Ваш сайт</label><input id="interest-website" type="text" name="website" tabindex="-1" autocomplete="off" /></div>
       <p class="interest-error" data-error="items"></p>

@@ -1,6 +1,7 @@
 ---
 import CampaignImage from './CampaignImage.astro';
 import Icon from './Icon.astro';
+import PieMotion from './PieMotion.astro';
 import city from '../../design/pie-city-site-20261030/banner-city.png';
 import islands from '../../design/pie-city-site-20261030/banner-company.png';
 import berries from '../../design/pie-city-site-20261030/banner-berry.png';
@@ -15,6 +16,7 @@ const slides = [
   { id: 'mini', eyebrow: 'МАЛЕНЬКИЙ ФОРМАТ · БОЛЬШОЙ ВЫБОР', title: 'Каждому свой мини-пирог', note: 'Курица с сыром, мясо или овощи. Выбирайте разные начинки — пусть каждый найдёт любимую.', href: '#holland', cta: 'Выбрать мини-пироги', image: mini, alt: 'Мини-пироги с золотистой корочкой на фарфоровом блюде у маленького пирогового города' },
   { id: 'seaside', eyebrow: 'С БАЛТИЙСКИМ ХАРАКТЕРОМ', title: 'Пироги. Море. Ваша компания.', note: 'Сытный пирог, ягодный морс и время вместе. Соберите свой стол с настроением побережья.', href: '#pirogi39', cta: 'Выбрать целый пирог', image: seaside, alt: 'Большой пирог и ягодный морс на льняной скатерти у моря и сказочного города из выпечки' },
   { id: 'bake', eyebrow: 'ТЁПЛЫЙ ДОМ · ЗОЛОТИСТАЯ КОРОЧКА', title: 'Уют начинается с духовки', note: 'Румяные слойки и любимые начинки. Выберите заготовки для домашней выпечки.', href: '#bake', cta: 'Для домашней выпечки', image: bake, alt: 'Слойки с ягодной и сырной начинкой на синем противне у печи в пироговом городе' },
+  { id: 'warm', eyebrow: 'МАЛЕНЬКАЯ ИСТОРИЯ БОЛЬШОГО ПИРОГА', title: 'От корочки до кусочка', note: 'Последний мазок кисточкой, первый кусочек — и можно собираться за столом.', href: '#pirogi', cta: 'Найти свой пирог', image: null, alt: '' },
 ];
 ---
 <section class="tasting-hero container" aria-labelledby="hero-heading" data-tasting-hero data-flavor="pies" aria-live="polite" aria-atomic="false">
@@ -27,7 +29,7 @@ const slides = [
   <div class="tasting-stage">
     <div class="tasting-art" data-tasting-art>
       {slides.map((slide, i) => <div class="tasting-scene" data-tasting-scene={slide.id} hidden={i !== 0}>
-        <CampaignImage image={slide.image} alt={slide.alt} priority={i === 0} />
+        {slide.image ? <CampaignImage image={slide.image} alt={slide.alt} priority={i === 0} /> : <PieMotion />}
       </div>)}
     </div>
     <div class="tasting-nav" role="group" aria-label="Слайды главной страницы">

@@ -10,6 +10,7 @@ const migration = readFileSync(new URL('../migrations/0001_interests.sql', impor
 function storage() {
   const sqlite = new DatabaseSync(':memory:');
   sqlite.exec(migration);
+  sqlite.exec(readFileSync(new URL('../migrations/0002_interest_preferences.sql', import.meta.url), 'utf8'));
   function prepare(sql, values = []) {
     const execute = () => ({ success: true, results: sqlite.prepare(sql).all(...values) });
     return { bind: (...next) => prepare(sql, next), first: async () => execute().results[0] || null, all: async () => execute(), execute };
@@ -52,6 +53,34 @@ test('manual retry and simultaneous double submit retain one record and one rate
   const result = await Promise.all([worker.fetch(request(data), db), worker.fetch(request(data), db)]);
   assert.deepEqual(result.map(r => r.status), [200, 200]);
   assert.equal((await worker.fetch(request(data), db)).status, 200);
+  assert.equal(db.count(), 1); assert.equal(db.tokens(), 1);
+});
+
+test('optional preferences are atomic, idempotent and cannot alter a saved request', async () => {
+  const db = storage();
+  const data = payload({ context: { occasion: 'company', preferredTime: 'evening', partnerType: 'apartments' } });
+  const responses = await Promise.all([worker.fetch(request(data), db), worker.fetch(request(data), db)]);
+  assert.deepEqual(responses.map(response => response.status), [200, 200]);
+  assert.deepEqual({ ...db.sqlite.prepare('SELECT * FROM interest_preferences').get() }, {
+    request_id: data.requestId, occasion: 'company', preferred_time: 'evening', partner_type: 'apartments',
+  });
+  assert.equal(db.count(), 1); assert.equal(db.tokens(), 1);
+  const changed = await worker.fetch(request({ ...data, context: { ...data.context, preferredTime: 'morning' } }), db);
+  assert.equal(changed.status, 409);
+  assert.equal(db.sqlite.prepare('SELECT preferred_time FROM interest_preferences').get().preferred_time, 'evening');
+  db.sqlite.exec("CREATE TRIGGER fail_preferences BEFORE INSERT ON interest_preferences BEGIN SELECT RAISE(ABORT, 'test-preference-failure'); END");
+  assert.equal((await worker.fetch(request(payload({ context: data.context })), db)).status, 503);
+  assert.equal(db.count(), 1); assert.equal(db.tokens(), 1);
+});
+
+test('default preferences preserve the old retry contract; arbitrary preferences are rejected', async () => {
+  const db = storage(); const data = payload();
+  assert.equal((await worker.fetch(request(data), db)).status, 200);
+  assert.equal((await worker.fetch(request({ ...data, context: { occasion: 'undecided', preferredTime: 'undecided', partnerType: 'none' } }), db)).status, 200);
+  assert.equal(db.sqlite.prepare('SELECT count(*) AS n FROM interest_preferences').get().n, 0);
+  for (const context of [null, [], 'company', { occasion: 'unknown' }, { preferredTime: '08:15' }, { partnerType: 'other' }, { phone: 'not-stored' }]) {
+    assert.equal((await worker.fetch(request(payload({ context })), db)).status, 422);
+  }
   assert.equal(db.count(), 1); assert.equal(db.tokens(), 1);
 });
 

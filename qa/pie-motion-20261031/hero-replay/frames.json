@@ -1,0 +1,22 @@
+{
+  "fps": 12,
+  "count": 59,
+  "playbackRate": 1,
+  "preRollMs": 200,
+  "triggerFrame": 2,
+  "clip": {
+    "x": 20,
+    "y": 152,
+    "width": 350,
+    "height": 540
+  },
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scale": 1,
+  "clock": "virtual",
+  "seed": 1,
+  "rafHz": 60,
+  "note": "frame i is exactly the page state at t = i/fps seconds, with t=0 at preRoll before the trigger (virtual clock)"
+}

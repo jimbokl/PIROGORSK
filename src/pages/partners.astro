@@ -5,11 +5,15 @@ import town from '../../design/pie-city-banners-20261030/pie-islands.png';
 import EditorialBody from '../components/EditorialBody.astro';
 import EditorialInterest from '../components/EditorialInterest.astro';
 import EditorialLinks from '../components/EditorialLinks.astro';
-const title = 'Владельцам апартаментов — идея сотрудничества | Пирогорск';
-const description = 'Пирогорск изучает формат пирогов для гостей апартаментов. Что потребуется для сотрудничества и какие условия пока не утверждены.';
+const title = 'Партнёрам: апартаменты и пекарни | Пирогорск';
+const description = 'Два направления Пирогорска: пироги для гостей апартаментов и ассортимент от пекарен Калининградской области. Выберите свой формат.';
 ---
 <ContentLayout {title} {description} breadcrumbs={[{ name: 'Партнёрам', href: '/partners/' }]}>
-  <PieTownHero eyebrow="Владельцам апартаментов" title="Ужин для гостей — идея для будущего запуска" intro="Если вы принимаете гостей у моря, вопрос еды в день приезда вам знаком. Изучаем формат пирогов для ужина в апартаментах и хотим понять, нужен ли он хозяевам и гостям." image={town} imageAlt="Пироговый город с островами сытных и сладких пирогов для общего стола" />
+  <PieTownHero eyebrow="Пирогорск · партнёрам" title="Хороший стол начинается со знакомства" intro="Собираем пироговый город вместе с местными пекарнями и хозяевами апартаментов. Выберите направление и посмотрите, как оно может работать." image={town} imageAlt="Пироговый город с островами сытных и сладких пирогов для общего стола" />
+  <section class="partner-paths" aria-label="Выберите направление сотрудничества">
+    <article id="apartments"><span class="ed-eyebrow">01 · Для гостей у моря</span><h2>Владельцам апартаментов</h2><p>Меню для памятки к заселению: ужин, сладкое к чаю, морс и посуда. Гость сам выбирает сочетание и удобный формат.</p><ul><li>Город и повод — в общей форме интереса.</li><li>Подборку можно сохранить и передать ссылкой.</li><li>Условия программы обсудим к запуску.</li></ul><a class="ed-button" href="/menu/?partner=apartments">Выбрать для гостей <span aria-hidden="true">↗</span></a></article>
+    <article id="bakery"><span class="ed-eyebrow">02 · Для местных пекарен</span><h2>Пекарням и производителям</h2><p>Изучаем интерес к целым пирогам, мини-форматам и выпечке. Важно различать готовый пирог, замороженное изделие и сырое тесто.</p><ul><li>Посмотрите текущий ассортимент и форматы.</li><li>В пожеланиях можно выбрать «Представляю пекарню».</li><li>Закупочные условия и мощности согласуем отдельно.</li></ul><a class="ed-button" href="/menu/?partner=bakery">Посмотреть ассортимент <span aria-hidden="true">↗</span></a></article>
+  </section>
   <EditorialBody sections={[
     { title: 'Какой формат рассматриваем', paragraphs: ['Гость мог бы заранее посмотреть меню, узнать подтверждённые условия и самостоятельно выбрать еду. Для хозяина это могло бы стать ещё одной полезной подсказкой в памятке к заселению. Пока это идея: действующей партнёрской программы нет.', 'QR-код или ссылка имеют смысл после запуска заказа и проверки доставки к конкретному жилью. Сейчас нельзя обещать гостям работающую услугу или определённое время приезда.'] },
     { title: 'Что важно проверить вместе', items: ['Город, расположение жилья и возможность обслуживать конкретный адрес.', 'Понятный вход и способ передачи еды гостю.', 'Время заселения, наличие посуды и техники в квартире.', 'Условия ссылки или QR-кода и понятный для гостя порядок заказа.'] },
@@ -18,3 +22,11 @@ const description = 'Пирогорск изучает формат пирого
   <EditorialInterest interest="partners" title="Такой формат пригодился бы вашим гостям?" text="На главной можно отметить интерес к Пирогорску и выбрать город. Это анонимная проверка спроса, которая не оформляет партнёрство." label="Отметить интерес" />
   <EditorialLinks title="Для памятки гостю" links={[{ href: '/journal/uzhin-v-semnyh-apartamentah/', title: 'Подготовить кухню к ужину', text: 'Что уточнить о посуде, технике и подаче в незнакомой квартире.', label: 'Практический гид' }, { href: '/delivery/', title: 'Планы доставки', text: 'Какие города рассматриваем и что ещё предстоит подтвердить.', label: 'Перед запуском' }, { href: '/nabor/uzhin-v-apartamentah/', title: 'Ужин в апартаментах', text: 'Как выбираем формат будущей подборки для вечернего стола.', label: 'Сценарий' }]} />
 </ContentLayout>
+
+<style>
+.partner-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-block:24px 48px;scroll-margin-top:110px}
+.partner-paths article{display:flex;flex-direction:column;align-items:start;padding:clamp(24px,4vw,40px);border:1px solid var(--ed-line);border-radius:24px;background:var(--paper-raised);min-width:0;scroll-margin-top:110px}
+.partner-paths h2{font:500 clamp(28px,3.4vw,40px)/1.15 var(--ed-serif);letter-spacing:-.025em;margin:18px 0}
+.partner-paths p,.partner-paths li{font:400 14px/1.8 var(--sans);max-width:55ch}.partner-paths ul{padding-left:20px;margin:10px 0 28px;color:var(--ed-muted)}.partner-paths .ed-button{margin-top:auto;width:100%;justify-content:space-between;gap:16px;font-size:12px}
+@media(max-width:760px){.partner-paths{grid-template-columns:1fr;gap:16px}.partner-paths article{padding:24px}.partner-paths h2{font-size:31px}}
+</style>

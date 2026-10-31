@@ -1,4 +1,5 @@
 import { matchesCard } from './catalog-filters';
+import { portionSummary } from '../lib/product-portions';
 import { parseCriteria, type Criteria } from '../lib/catalog-fillings';
 
 for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalog]')) {
@@ -76,6 +77,8 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
     if (root.hasAttribute('data-menu-feed')) return; // The feed owns quantity, total and its fallback URL.
     const selected = card.querySelector<HTMLInputElement>('input:checked')!;
     card.querySelector('[data-supplier-price]')!.textContent = `${Number(selected.dataset.supplierUnitPrice).toLocaleString('ru-RU')} ₽`;
+    const portions = card.querySelector<HTMLElement>('[data-pie-portions]');
+    if (portions) portions.textContent = portionSummary(Number(selected.value));
     card.querySelector<HTMLAnchorElement>('[data-supplier-link]')?.setAttribute('href', `/?interest=${card.dataset.supplierId}&variant=${selected.value}#${root.id}`);
   }));
 }

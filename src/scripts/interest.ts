@@ -1,3 +1,4 @@
+import { parseInterestContext, partnerTypes, type InterestContext } from '../data/interest-context';
 import { analyticsConfig } from '../config/analytics';
 import { trackGoal, type GoalParams } from './analytics';
 import { estimateDelivery } from '../data/pricing';
@@ -6,7 +7,7 @@ export type InterestSelection = { id: string; value?: string | number; weight?: 
 type Item = { id: string; value: string; quantity: number };
 type Variant = { value: string; label: string; price: number };
 type Product = { id: string; name: string; variants: Variant[] };
-type Payload = { version: 1; requestId: string; city: string; items: Item[]; desiredDate: string; delivery: string; priceConsent: true; website: string };
+type Payload = { version: 1; requestId: string; city: string; items: Item[]; desiredDate: string; delivery: string; priceConsent: true; website: string; context?: InterestContext };
 const dialog = document.querySelector<HTMLDialogElement>('#interest-dialog');
 const form = document.querySelector<HTMLFormElement>('#interest-form');
 const cities = ['Зеленоградск', 'Калининград', 'Светлогорск'];
@@ -16,6 +17,7 @@ let pending = false;
 let saved = false;
 let attempt: { fingerprint: string; payload: Payload } | undefined;
 let previousFocus: HTMLElement | null = null;
+let partnerPrefilled = false;
 
 function catalog(): Product[] {
   try {
@@ -47,7 +49,7 @@ function updateEstimate(): void {
   if (total) total.textContent = delivery === null ? `${money(subtotal)} + получение` : money(subtotal + delivery);
 }
 function params(requestId?: string): GoalParams {
-  return { city: field<HTMLSelectElement>('city')?.value, productid: selected.map(i => i.id), variant: selected.map(i => i.value), qty: selected.map(i => i.quantity), value: totals(), ...(requestId ? { requestId } : {}) };
+  return { city: field<HTMLSelectElement>('city')?.value, productid: selected.map(i => i.id), variant: selected.map(i => i.value), qty: selected.map(i => i.quantity), value: totals(), occasion: field<HTMLSelectElement>('occasion')?.value, preferred_time: field<HTMLSelectElement>('preferredTime')?.value, partner_type: field<HTMLSelectElement>('partnerType')?.value, ...(requestId ? { requestId } : {}) };
 }
 function field<T extends HTMLElement = HTMLInputElement>(name: string): T | null { return form?.elements.namedItem(name) as T | null; }
 function status(message: string): void { const el = dialog?.querySelector<HTMLElement>('[data-interest-status]'); if (el) el.textContent = message; }
@@ -61,6 +63,11 @@ function showErrors(errors: Record<string, string>): void {
     const target = form?.querySelector<HTMLElement>(`[data-error="${name}"]`);
     if (target) target.textContent = message;
     field(name)?.setAttribute('aria-invalid', 'true');
+    if (name === 'context') {
+      const preferences = form?.querySelector<HTMLDetailsElement>('[data-interest-preferences]');
+      if (preferences) preferences.open = true;
+      field('occasion')?.setAttribute('aria-invalid', 'true');
+    }
   }
   form?.querySelector<HTMLElement>('[aria-invalid="true"]')?.focus();
 }
@@ -87,7 +94,7 @@ export function openInterestForm(selection: InterestSelection[], city = 'Зел�
   selected = invalid ? [] : [...merged.values()];
   previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
   document.querySelectorAll<HTMLDialogElement>('dialog[open]').forEach(current => { if (current !== dialog) current.close(); });
-  if (saved) { form.reset(); attempt = undefined; }
+  if (saved) { form.reset(); attempt = undefined; partnerPrefilled = false; }
   saved = false;
   started = false;
   form.hidden = false;
@@ -95,6 +102,13 @@ export function openInterestForm(selection: InterestSelection[], city = 'Зел�
   if (success) success.hidden = true;
   const citySelect = field<HTMLSelectElement>('city');
   if (citySelect) citySelect.value = cities.includes(city) ? city : cities[0];
+  const partner = new URL(location.href).searchParams.get('partner');
+  if (!partnerPrefilled && partner && partnerTypes.some(([key]) => key === partner)) {
+    field<HTMLSelectElement>('partnerType')!.value = partner;
+    const preferences = form.querySelector<HTMLDetailsElement>('[data-interest-preferences]');
+    if (preferences) preferences.open = true;
+  }
+  partnerPrefilled = true;
   const day = field<HTMLInputElement>('desiredDate');
   if (day) day.min = today();
   const list = dialog.querySelector('[data-interest-items]');
@@ -136,9 +150,12 @@ async function submit(event: SubmitEvent): Promise<void> {
   if (Object.keys(errors).length) { showErrors(errors); return; }
   clearErrors();
   if (!analyticsConfig.interestEndpoint) { status('Сохранение заявок пока не подключено. Заявка не отправлена.'); return; }
+  const context = parseInterestContext({ occasion: field<HTMLSelectElement>('occasion')!.value, preferredTime: field<HTMLSelectElement>('preferredTime')!.value, partnerType: field<HTMLSelectElement>('partnerType')!.value });
+  if (context === null) { showErrors({ context: 'Выберите пожелания из списка.' }); return; }
   const content = {
     version: 1 as const, city: field<HTMLSelectElement>('city')!.value, items: selected,
     desiredDate: field<HTMLInputElement>('desiredDate')!.value, delivery: field<HTMLSelectElement>('delivery')!.value,
+    ...(context ? { context } : {}),
     priceConsent: true as const, website: field<HTMLInputElement>('website')?.value || '',
   };
   const fingerprint = JSON.stringify(content);

@@ -1,0 +1,236 @@
+{
+  "base": "http://127.0.0.1:4321",
+  "views": [
+    {
+      "width": 320,
+      "overflow": false,
+      "images": true,
+      "hiddenControl": true,
+      "animations": 0,
+      "height": 540,
+      "slides": [
+        {
+          "id": "pies",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "company",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "tea",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "mini",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "seaside",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "bake",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "warm",
+          "height": 540,
+          "ctaInside": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "images": true,
+      "hiddenControl": true,
+      "animations": 0,
+      "height": 540,
+      "slides": [
+        {
+          "id": "pies",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "company",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "tea",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "mini",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "seaside",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "bake",
+          "height": 540,
+          "ctaInside": true
+        },
+        {
+          "id": "warm",
+          "height": 540,
+          "ctaInside": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "images": true,
+      "hiddenControl": true,
+      "animations": 0,
+      "height": 420,
+      "slides": [
+        {
+          "id": "pies",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "company",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "tea",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "mini",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "seaside",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "bake",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "warm",
+          "height": 420,
+          "ctaInside": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "images": true,
+      "hiddenControl": true,
+      "animations": 0,
+      "height": 420,
+      "slides": [
+        {
+          "id": "pies",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "company",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "tea",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "mini",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "seaside",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "bake",
+          "height": 420,
+          "ctaInside": true
+        },
+        {
+          "id": "warm",
+          "height": 420,
+          "ctaInside": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "images": true,
+      "hiddenControl": true,
+      "animations": 0,
+      "height": 470,
+      "slides": [
+        {
+          "id": "pies",
+          "height": 470,
+          "ctaInside": true
+        },
+        {
+          "id": "company",
+          "height": 470,
+          "ctaInside": true
+        },
+        {
+          "id": "tea",
+          "height": 470,
+          "ctaInside": true
+        },
+        {
+          "id": "mini",
+          "height": 470,
+          "ctaInside": true
+        },
+        {
+          "id": "seaside",
+          "height": 470,
+          "ctaInside": true
+        },
+        {
+          "id": "bake",
+          "height": 470,
+          "ctaInside": true
+        },
+        {
+          "id": "warm",
+          "height": 470,
+          "ctaInside": true
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "five widths; all seven slides keep equal height and visible CTA; reduced motion has no active animations",
+    "pause holds position; manual pause survives scrolling; hidden-slide and offscreen pause/resume; finish; replay; live reduced-motion switch",
+    "no-JavaScript original first banner and menu link; seven server-rendered scenes"
+  ],
+  "errors": []
+}

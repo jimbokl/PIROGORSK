@@ -1,0 +1,33 @@
+{
+  "url": "http://127.0.0.1:4321/?qa=1",
+  "out": "/Volumes/DevSim/Projects/PIROGORSK/qa/pie-motion-20261031/hero-replay",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scale": 1,
+  "fps": 12,
+  "rate": 1,
+  "trigger": "click",
+  "target": "[data-pie-replay]",
+  "selector": "[data-tasting-hero]",
+  "clip": {
+    "x": 20,
+    "y": 152,
+    "width": 350,
+    "height": 540
+  },
+  "duration": 4600,
+  "preRoll": 200,
+  "waitBefore": 800,
+  "track": [
+    "[data-tasting-hero]"
+  ],
+  "clock": "virtual",
+  "seed": 1,
+  "rafHz": 60,
+  "gpu": "software",
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)",
+  "gl": false,
+  "capturedAt": "2026-10-31T12:46:13.436Z"
+}

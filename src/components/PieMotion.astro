@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+import wholePie from '../../design/pie-motion-20261031/whole-pie.png';
+import '../styles/pie-motion.css';
+---
+<div class="pie-motion" data-pie-motion>
+  <div class="pie-motion-stage" role="img" aria-label="Золотистый пирог на круглой доске: кисточка смазывает корочку, затем выдвигается кусочек">
+    <div class="pie-motion-orbit" aria-hidden="true"></div>
+    <div class="pie-motion-board" aria-hidden="true"><span>К общему столу</span></div>
+    <div class="pie-motion-shadow" data-pie-shadow aria-hidden="true"></div>
+    <div class="pie-motion-food" data-pie-food aria-hidden="true">
+      <div class="pie-motion-body"><Image src={wholePie} alt="" widths={[280, 440, 640, 800]} sizes="(max-width: 600px) 260px, (max-width: 1100px) 40vw, 440px" format="webp" loading="lazy" /></div>
+      <div class="pie-motion-slice" data-pie-slice><Image src={wholePie} alt="" widths={[280, 440, 640, 800]} sizes="(max-width: 600px) 260px, (max-width: 1100px) 40vw, 440px" format="webp" loading="lazy" /></div>
+      <div class="pie-motion-glaze" data-pie-glaze></div>
+    </div>
+    <div class="pie-motion-brush" data-pie-brush aria-hidden="true">
+      <svg viewBox="0 0 78 260" fill="none">
+        <defs>
+          <linearGradient id="pie-brush-wood" x1="23" y1="0" x2="59" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#b8773d" /><stop offset=".4" stop-color="#e8ba78" /><stop offset="1" stop-color="#c58d4e" /></linearGradient>
+          <linearGradient id="pie-brush-metal" x1="7" y1="0" x2="70" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#777c7b" /><stop offset=".3" stop-color="#e7e7df" /><stop offset=".65" stop-color="#bfc3bd" /><stop offset="1" stop-color="#6d7470" /></linearGradient>
+          <linearGradient id="pie-brush-hair" x1="39" y1="195" x2="39" y2="257" gradientUnits="userSpaceOnUse"><stop stop-color="#a97a39" /><stop offset=".4" stop-color="#d7ad69" /><stop offset="1" stop-color="#efcd8d" /></linearGradient>
+        </defs>
+        <path d="M25 17C25-3 54-3 54 17L51 147C51 165 64 168 65 181H14C15 168 28 165 28 147L25 17Z" fill="url(#pie-brush-wood)" stroke="#9a632f" />
+        <ellipse cx="39.5" cy="21" rx="3.5" ry="6" fill="#85532e" />
+        <path d="M11 199L8 252Q38 265 70 252L67 199Z" fill="url(#pie-brush-hair)" />
+        <path d="M17 204L14 251M23 204L22 256M30 204L30 256M38 204L38 258M46 204L46 258M53 204L54 255M60 204L63 253" stroke="#a87b41" stroke-width="1" opacity=".65" />
+        <path d="M12 179H67L69 207Q40 211 10 207Z" fill="url(#pie-brush-metal)" stroke="#80847d" />
+        <path d="M12 185H66M12 202Q39 205 68 202" stroke="#eef0e8" stroke-width="2" opacity=".7" />
+      </svg>
+    </div>
+    <svg class="pie-motion-steam" data-pie-steam viewBox="0 0 180 100" fill="none" aria-hidden="true"><path d="M35 92C8 65 62 45 34 12M90 84C61 55 119 34 91 3M145 92C118 65 172 45 144 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+    <span class="pie-motion-stamp" aria-hidden="true">В Пирогорске<br />всегда к столу</span>
+  </div>
+  <button class="pie-motion-control" data-pie-replay hidden type="button">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1.5 7M4 4v6h6" /></svg>
+    <span data-pie-control-label>Посмотреть ещё раз</span>
+  </button>
+</div>
+<script>import '../scripts/pie-motion';</script>

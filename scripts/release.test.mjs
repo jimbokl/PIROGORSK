@@ -32,6 +32,10 @@ test('release rejects unavailable, outdated, malformed and incompatible services
     await assert.rejects(verifyRelease(expected, { fetchImpl: async () => response }));
   }
   await assert.rejects(verifyRelease({ ...expected, apiVersion: 2 }));
+  for (const version of [undefined, 0, 2]) {
+    await assert.rejects(verifyRelease({ ...expected, interestContextVersion: version }), /Invalid local release manifest/);
+    await assert.rejects(verifyRelease(expected, { fetchImpl: async () => Response.json({ ...good, interestContextVersion: version }) }));
+  }
   await assert.rejects(verifyRelease(expected, { siteUrl: 'https://pirogorsk.ru', fetchImpl: async url => Response.json(url.pathname === '/health' ? good : { ...expected, catalogSha256: '0'.repeat(64) }) }));
 });
 test('release timeout aborts a hung fetch', async () => {

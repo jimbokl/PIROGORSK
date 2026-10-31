@@ -108,10 +108,8 @@ if ('IntersectionObserver' in window && !reducedMotion.matches) {
 
 function finishMotion() {
   for (const animation of motion) animation.finish();
-  // Also finish the finite CSS introduction when motion is disabled or tab hidden.
-  hero?.getAnimations({ subtree: true }).forEach(animation => {
-    if (animation.playState === 'running') animation.finish();
-  });
+  // The layered pie owns its pause/resume lifecycle independently.
+
 }
 document.addEventListener('visibilitychange', () => { if (document.hidden) finishMotion(); });
 reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) finishMotion(); });
