@@ -1,0 +1,132 @@
+{
+  "auditedOn": "2026-10-31",
+  "catalogSize": 153,
+  "scope": "Named ingredients in the current catalog and saved supplier compositions; not live availability or provenance.",
+  "inputs": [
+    {
+      "path": "src/data/catalog.ts",
+      "sha256": "6fc8c9940f2219f04724f166e24a3bbc2dbcf488946b728ac0826b9c5b165c5c"
+    },
+    {
+      "path": "src/data/product-descriptions.ts",
+      "sha256": "89c155c3af65e61f2ce3753eff6acd58c69755fd7cf0895da62b42a43e3bdbc0"
+    },
+    {
+      "path": "src/data/pirogi39-source.json",
+      "sha256": "daf545f0009ba8982b7430c2a283482c3d319f32a13dd1dd6d0416f27ee1d1a0"
+    },
+    {
+      "path": "src/data/pirogi39-content.json",
+      "sha256": "bdfa65c87db3df9bd82b13d8bfa02575e2d5d890a9fff8fd9133586b363d1823"
+    },
+    {
+      "path": "src/data/holland-source.json",
+      "sha256": "656356d518130df11de4d5578c1477caa821aa5632eec5822a5db4e48a4f892b"
+    },
+    {
+      "path": "src/data/supplier-content.json",
+      "sha256": "73c3fbd8f4419e3a502f8c1b0ab1c4258de1c5a3374c1433cbd92e31e2f0a11b"
+    }
+  ],
+  "counts": {
+    "cod": 0,
+    "zander": 0,
+    "seabuckthorn": 1,
+    "lingonberry": 4,
+    "marzipan": 2
+  },
+  "lingonberryWithMarzipan": 0,
+  "matches": [
+    {
+      "id": "apple",
+      "name": "Пирог с яблоком и брусникой",
+      "href": "/pirogi/pirog-s-yablokom-i-brusnikoy/",
+      "kind": "pie",
+      "terms": [
+        "lingonberry"
+      ],
+      "evidence": "concept-name-only",
+      "ingredients": null,
+      "sourceUrl": null,
+      "checkedOn": null
+    },
+    {
+      "id": "seabuckthorn",
+      "name": "Облепиховый морс",
+      "href": "/catalog/oblepikhovyy-mors/",
+      "kind": "drink",
+      "terms": [
+        "seabuckthorn"
+      ],
+      "evidence": "concept-name-only",
+      "ingredients": null,
+      "sourceUrl": null,
+      "checkedOn": null
+    },
+    {
+      "id": "hb-kruassan-s-mindalnoy-nachinkoy-70-g-h-20-sht-up",
+      "name": "Круассан с миндальной начинкой",
+      "href": "/catalog/kruassan-s-mindalnoy-nachinkoy-70-g-h-20-sht-up/",
+      "kind": "bakery",
+      "terms": [
+        "marzipan"
+      ],
+      "evidence": "supplier-composition-snapshot",
+      "ingredients": "Мука пшеничная хлебопекарная в/с, сахар-песок, маргарин, марципановая паста, концентрат пищевой на основе заварного крема, миндаль, дрожжи х/п, соль поваренная пищевая, яичный порошок, молоко сухое цельное, стружка из миндаля и арахиса, ванилин, улучшитель х/п (пшеничная мука, эмульгатор Е472е, разрыхлитель (фосфат кальция), аскорбиновая кислота, энзимы)",
+      "sourceUrl": "https://hollandbakery.ru/#rec515989182",
+      "checkedOn": "2026-10-29"
+    },
+    {
+      "id": "p39-486",
+      "name": "Лимбургский пирог с яблоками",
+      "href": "/catalog/limburgskii-pirog-s-yablokami-1400-g/",
+      "kind": "bakery",
+      "terms": [
+        "marzipan"
+      ],
+      "evidence": "supplier-composition-snapshot",
+      "ingredients": "Тесто: мука пшеничная в/с, масло сливочное, сахар, яйцо куриное, грецкий орех, цедра лимона, ванилин, соль, разрыхлитель; Начинка: яблоки, крем с марципаном, крем заварной ванильный, абрикосовый конфитюр, лимон, гель фруктовый, корица",
+      "sourceUrl": "https://pirogi39.ru/limburgskii-pirog-s-yablokami/",
+      "checkedOn": "2026-10-29"
+    },
+    {
+      "id": "p39-442",
+      "name": "Пирог с яблоками и брусникой",
+      "href": "/catalog/pirog-s-yablokami-i-brusnikoy-1300-g/",
+      "kind": "bakery",
+      "terms": [
+        "lingonberry"
+      ],
+      "evidence": "supplier-composition-snapshot",
+      "ingredients": "тесто: мука пшеничная в/с, молоко, маргарин молочный, сахар, дрожжи х/п, соль, улучшитель х/п; Начинка: яблоко, брусника, сахар, масло сливочное, ванильный сахар, загуститель",
+      "sourceUrl": "https://pirogi39.ru/pirog-s-yablokami-i-brusnikoy/",
+      "checkedOn": "2026-10-29"
+    },
+    {
+      "id": "p39-43",
+      "name": "Пирог творожный «Флорида с ягодами»",
+      "href": "/catalog/pirog-tvorozhny-florida-s-yagodami-1200-g/",
+      "kind": "bakery",
+      "terms": [
+        "lingonberry"
+      ],
+      "evidence": "supplier-composition-snapshot",
+      "ingredients": "творог , печенье молочное, начинка малиновая, вишня замороженная, спред, сахар, клубника замороженная, малина замороженная, яйцо, сметана, маргарин столовый, гель фруктовый, черная смородина, брусника, черника замороженная, ванильный сахар",
+      "sourceUrl": "https://pirogi39.ru/pirog-tvorozhny-florida-s-yagodami/",
+      "checkedOn": "2026-10-29"
+    },
+    {
+      "id": "p39-366",
+      "name": "Сибирский пирог с брусникой и сметаной",
+      "href": "/catalog/sibirskiy-pirog-s-brusnikoy-i-smetanoy-1600-g/",
+      "kind": "bakery",
+      "terms": [
+        "lingonberry"
+      ],
+      "evidence": "supplier-composition-snapshot",
+      "ingredients": "Брусника, сметана домашняя, мука пшеничная х/п, сахар, молоко, сливки натуральные, маргарин молочный, сахар ванильный, сок лимона, сок апельсина, дрожжи, крахмал кукурузный, сахарная пудра, корица, молоко сухое цельное, желатин пищевой, улучшитель х/п.",
+      "sourceUrl": "https://pirogi39.ru/sibirskiy-pirog-s-brusnikoy-i-smetanoy/",
+      "checkedOn": "2026-10-29"
+    }
+  ]
+}
