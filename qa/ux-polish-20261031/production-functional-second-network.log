@@ -1,0 +1,36 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   'fetch failed',
++   'fetch failed',
++   'fetch failed',
++   'fetch failed',
++   'fetch failed',
++   'fetch failed',
++   'fetch failed'
++ ]
+- []
+
+    at file:///Volumes/DevSim/Projects/PIROGORSK/worker/scripts/qa-ux-polish.mjs:100:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [
+    'fetch failed',
+    'fetch failed',
+    'fetch failed',
+    'fetch failed',
+    'fetch failed',
+    'fetch failed',
+    'fetch failed'
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0

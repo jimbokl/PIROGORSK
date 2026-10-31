@@ -14,22 +14,31 @@ production-приёмка — следующий шаг.
 [календарь](research/content-month-202611/CALENDAR.md),
 [протокол](research/content-month-202611/RELEASE.md).
 
-## UX, аналитика и осетинский хаб — 31.10.2026 · приёмка
+## UX, аналитика и осетинский хаб — 31.10.2026 · опубликовано
 
-Весь каталог 153 SKU и одобренная бесконечная лента сохраняются; сокращение
-до 12–15 исключено прямым уточнением пользователя. Итоговый A4 разобран целиком:
-[31 пункт](research/backlog-intake-20261031/A4-RECONCILIATION.md), 56 уникальных ID в бэклоге.
+Весь каталог 153 SKU и одобренная бесконечная лента сохранены.
 UX-01/03/04: ясные действия интереса/копирования, восстанавливаемая ссылка,
 вход в калькулятор, ширина выбора морса на телефоне. ANA-02: product_view,
-catalog_remove, city_select и изменение количества; QA/local исключаются.
-SEO-02/07: /osetinskie-pirogi/, 28 реальных SKU, сравнение форматов, ItemList,
-canonical, 243 URL в sitemap и переходы из меню/статей/товаров.
-Local check 0 errors/0 warnings; 248 HTML, 49 Node, Worker и семь валидаторов PASS.
-80 responsive views/no-JS/reduced motion; 38 состояний axe без нарушений;
-новые сценарии на пяти ширинах PASS, снимки phone/tablet просмотрены.
-Registry strict и full browser PASS. CI и production-приёмка завершаются.
+catalog_remove, city_select и дельты количества; QA/storage исключены.
+SEO-02/07: /osetinskie-pirogi/, 28 SKU с изображениями, сравнение форматов,
+ItemList/canonical и входящие ссылки. 248 HTML, 243 URL в sitemap, 53 статьи.
+Runtime `bee1439ef6b678babc693b0f5a0e129bd42a173d`;
+[CI 41193364513 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41193364513).
+Все 276 ресурсов, включая 248 HTML и runtime CSS/JS, совпали с независимым
+CI-артефактом. Production: 80 responsive views/no-JS/reduced motion и новые
+функциональные сценарии на 320/390/768/1024/1280 PASS. Phone/tablet просмотрены.
+Local: check 0 errors/0 warnings, 49 Node, Worker, семь валидаторов, full browser
+и registry strict PASS; 38 состояний axe без нарушений.
+CLI mobile: performance 96/96/97, LCP 1,78–2,36 с, median 2,28 с; desktop 99/0,66 с.
 QA-02 остаётся открытой для проверки чтения экранным диктором.
 [Протокол](qa/ux-polish-20261031/README.md).
+
+A4 разобран: [все 31 пункт](research/backlog-intake-20261031/A4-RECONCILIATION.md).
+A5 принят отдельными связанными слоями: [27 Цитадель + 19 Сценарии](research/backlog-intake-20261031/A5-LAYERS.md).
+A6/A7, все 100 тем и ТЗ, переданы в отдельный активный чат с субагентами:
+«Пирогорск — контент на месяц и 100 тем», `01a19184-68d5-70b2-a0bd-e86c57d9eac1`.
+Источник, архив и SHA-256 всех семи вложений — в реестре; CNT-01 в работе.
+В общей очереди 57 уникальных ID. CRM по-прежнему отложена.
 
 ## Следующий функциональный спринт — 31.10.2026
 
@@ -45,7 +54,7 @@ Production: 273/273 ресурсов совпали с независимым CI
 75 responsive views и функциональные сценарии на пяти ширинах PASS.
 Public PSI mobile99/LCP2,10с; desktop100/LCP0,47с. CLI mobile2,07–2,34с,
 median2,19с, P94/98/98; desktop95/1,01с. Лента и153 SKU сохранены.
-DOM-05–08 закрыты. Следующая очередь: UX-01/03/04, ANA-02 и SEO-02/07.
+DOM-05–08 закрыты. Следовавшие UX-01/03/04, ANA-02 и SEO-02/07 завершены выше.
 [Протокол](qa/selection-tools-20261031/README.md).
 
 ## Единый бэклог — 31.10.2026

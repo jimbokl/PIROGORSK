@@ -1,0 +1,190 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T10:59:43.765Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 2252,
+      "lcp": 2513
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 2206.978,
+      "resourceLoadDelay": 22.265,
+      "resourceLoadDuration": 263.579,
+      "elementRenderDelay": 20.52
+    },
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1507.5570000000002,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2280.1520000000005,
+        "display": "2.3 s"
+      },
+      "total-blocking-time": {
+        "value": 29,
+        "display": "30 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.001575905248187387,
+        "display": "0.002"
+      },
+      "speed-index": {
+        "value": 4059.426274191772,
+        "display": "4.1 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T11:00:02.769Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 2501,
+      "lcp": 2611
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 2426.704,
+      "resourceLoadDelay": 24.303,
+      "resourceLoadDuration": 132.944,
+      "elementRenderDelay": 27.306
+    },
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1555.312,
+        "display": "1.6 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1782.3799999999999,
+        "display": "1.8 s"
+      },
+      "total-blocking-time": {
+        "value": 16.5,
+        "display": "20 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.053154904392484714,
+        "display": "0.053"
+      },
+      "speed-index": {
+        "value": 4352.632644579581,
+        "display": "4.4 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T11:00:19.853Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1148,
+      "lcp": 1382
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1080.501,
+      "resourceLoadDelay": 23.069,
+      "resourceLoadDuration": 265.896,
+      "elementRenderDelay": 12.938
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1666.692,
+        "display": "1.7 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2359.4469999999997,
+        "display": "2.4 s"
+      },
+      "total-blocking-time": {
+        "value": 19.5,
+        "display": "20 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0005047010835479459,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 2558.884157584023,
+        "display": "2.6 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T11:00:36.746Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1427,
+      "lcp": 1770
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1356.623,
+      "resourceLoadDelay": 14.814,
+      "resourceLoadDuration": 379.4119998779297,
+      "elementRenderDelay": 19.362000122070313
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 507.64900000000017,
+        "display": "0.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 664.3950000000003,
+        "display": "0.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.014989822640311706,
+        "display": "0.015"
+      },
+      "speed-index": {
+        "value": 1238.6767660971013,
+        "display": "1.2 s"
+      }
+    }
+  }
+]

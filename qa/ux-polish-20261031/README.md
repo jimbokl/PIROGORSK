@@ -30,7 +30,7 @@ Worker/API/SQL и семь SEO/изображений валидаторов PAS
 80 responsive views / no-JS / reduced motion PASS; новый хаб повторно проверен
 после исправления слоя изображения. Phone/tablet screenshots просмотрены.
 После: [38 состояний axe, 0 нарушений](after-accessibility.json).
-Registry strict PASS, drift=false. Full browser PASS: каталог, наборы, дополнения, два окна, калькулятор, Worker/SQLite, новые сценарии. Production-приёмка — в работе.
+Registry strict PASS, drift=false. Full browser PASS: каталог, наборы, дополнения, два окна, калькулятор, Worker/SQLite, новые сценарии. Production-приёмка завершена; подробности ниже.
 
 ## SEO и границы автоматической проверки
 
@@ -45,3 +45,39 @@ Product/Offer с ложной доступностью и рейтингами �
 axe и AX-дерево дополняют проверку клавиатуры и подписей, но не доказывают
 полное соответствие WCAG или качество чтения VoiceOver. QA-02 остаётся открытой
 для проверки с экранным диктором. [WCAG 2.2: размер целей](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html).
+
+## Production-приёмка
+
+Runtime `bee1439ef6b678babc693b0f5a0e129bd42a173d`;
+[CI 41193364513 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41193364513)
+([метаданные](ci.json)). Worker/Pages compatibility PASS, без записи реальных заявок.
+Независимо скачан Pages ZIP (209930547 байт, ZIP CRC проверен); все 276 ресурсов,
+включая все 248 HTML и runtime CSS/JS, совпали с публикацией по SHA-256:
+[полная сверка](publication.json).
+
+[80 адаптивных просмотров](production-responsive.json) — без переполнений,
+HTTP/browser errors; no-JS показывает все 153 позиции, reduced motion PASS.
+[Функциональные сценарии](production-functional.json) на пяти ширинах PASS:
+события/их подавление в QA, копирование/fallback, восстановление ссылки, лимит 99,
+форма/AX-honeypot, 28 изображений товаров, добавление и no-JS ссылки.
+Снимки формы на 390/768 и хаба на 390/768 просмотрены.
+
+Два первых запуска проксирующего функционального теста завершились сетевыми
+`fetch failed` в Node. В диагностике теперь сохраняются URL и код причины;
+последующий полный прогон PASS. Прямые 80 браузерных просмотров и независимая
+HTTP-сверка прошли без ошибок. Сбои раннера не выдаются за дефект интерфейса.
+
+Месячный контент передан в отдельный чат с субагентами, см. CNT-01 в BACKLOG;
+он не включён в состав данного UX-релиза.
+
+## Скорость после публикации
+
+Lighthouse CLI 13.5.0, холодные профили, 3 mobile + 1 desktop, simulated throttling:
+[метрики](performance-after/metrics.json), [диапазоны](performance-after/performance-ranges.json).
+Mobile performance 96/96/97; LCP 1,78–2,36 с, медиана 2,28 с;
+TBT 16,5–29 мс; CLS 0,0005–0,0532. Desktop performance 99, LCP 0,66 с.
+Перед выпуском mobile LCP 2,07–2,34 с, медиана 2,19 с, performance 94/98/98:
+[предыдущие метрики](../selection-tools-20261031/performance-after/metrics.json).
+Observed render delay нового замера 13–27 мс; observed TTFB 1,08–2,43 с.
+Accessibility/SEO — 100; best practices — 77, как в предыдущем CLI-прогоне.
+Это лабораторные результаты, не новый публичный PageSpeed или полевые CrUX.

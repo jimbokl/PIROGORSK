@@ -32,7 +32,7 @@ try {
      const res=await fetch(base+path); if(!res.ok) errors.push(`${res.status} ${path}`);
      await req.respond({status:res.status,contentType:res.headers.get('content-type')||'',body:Buffer.from(await res.arrayBuffer())});
     }
-   } catch(e) {errors.push(e.message);await req.abort();}
+   } catch(e) {errors.push(`${req.url()}: ${e.message}${e.cause?.code ? ` (${e.cause.code})` : ''}`);await req.abort();}
   });
   await page.evaluateOnNewDocument(()=>{
    window.__goals=[]; window.ym=(...args)=>{if(args[1]==='reachGoal')window.__goals.push({name:args[2],params:args[3]});};
