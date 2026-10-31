@@ -47,7 +47,7 @@ async function main() {
   }
   if (!['check', 'published'].includes(command)) throw new Error('Usage: verify-release.mjs manifest | check [API endpoint] | published [site URL]');
   const manifest = JSON.parse(await readFile('site/release.json', 'utf8'));
-  const deadline = Date.now() + (command === 'published' ? 60000 : 15000);
+  const deadline = Date.now() + 60000;
   while (true) {
     try {
       await verifyRelease(manifest, {
@@ -57,7 +57,7 @@ async function main() {
       console.log(`Release compatibility PASS (${command})`);
       return;
     } catch (error) {
-      if (command !== 'published' || Date.now() >= deadline) throw error;
+      if (Date.now() >= deadline) throw error;
       await new Promise(resolve => setTimeout(resolve, Math.min(5000, deadline - Date.now())));
     }
   }

@@ -4,7 +4,7 @@
 
 | Статья | Кластер |
 | --- | --- |
-| [Осетинский пирог с сыром: вкус, состав и выбор начинки](https://pirogorsk.ru/journal/osetinskiy-pirog-s-syrom-kak-vybrat/) | Начинки |
+| [Осетинский пирог: рецепт с сыром и вариант с мясом](https://pirogorsk.ru/journal/osetinskiy-pirog-s-syrom-kak-vybrat/) | Начинки |
 | [Пирог с картошкой и сыром: чем отличаются начинки](https://pirogorsk.ru/journal/pirog-s-kartoshkoy-i-syrom/) | Начинки |
 | [Пирог со свекольной ботвой и сыром: что ждать от вкуса](https://pirogorsk.ru/journal/pirog-so-svekolnoy-botvoy-i-syrom/) | Начинки |
 | [Пирог с капустой и яйцом: как выбрать сочную начинку](https://pirogorsk.ru/journal/pirog-s-kapustoy-i-yaytsom/) | Начинки |
@@ -19,8 +19,8 @@
 | [Дрожжевое тесто для пирогов: подъём, сдоба и частые ошибки](https://pirogorsk.ru/journal/drozhzhevoe-testo-dlya-pirogov/) | Тесто и выпечка |
 | [Слоёное или дрожжевое тесто: какой пирог выбрать](https://pirogorsk.ru/journal/sloenoe-ili-drozhzhevoe-testo/) | Тесто и выпечка |
 | [Песочное тесто для киша: рассыпчатая основа без мокрого дна](https://pirogorsk.ru/journal/pesochnoe-testo-dlya-kisha/) | Тесто и выпечка |
-| [Заливной пирог на кефире: как выбрать рецепт и форму](https://pirogorsk.ru/journal/zalivnoy-pirog-na-kefire/) | Тесто и выпечка |
-| [Пирог на сковороде или в духовке: что меняется](https://pirogorsk.ru/journal/pirog-na-skovorode-ili-v-duhovke/) | Тесто и выпечка |
+| [Пирог на кефире: осетинский рецепт и отличие от заливного](https://pirogorsk.ru/journal/zalivnoy-pirog-na-kefire/) | Тесто и выпечка |
+| [Осетинский пирог на сковороде: рецепт и сравнение с духовкой](https://pirogorsk.ru/journal/pirog-na-skovorode-ili-v-duhovke/) | Тесто и выпечка |
 | [Почему у пирога сырое дно: форма, начинка и нагрев](https://pirogorsk.ru/journal/pochemu-u-piroga-syroe-dno/) | Тесто и выпечка |
 | [Почему пирог трескается и начинка вытекает](https://pirogorsk.ru/journal/pochemu-pirog-treskaetsya/) | Тесто и выпечка |
 | [Как заморозить пирог: целиком, кусочками или до выпечки](https://pirogorsk.ru/journal/kak-zamorozit-pirog/) | Хранение и подача |

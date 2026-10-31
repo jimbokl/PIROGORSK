@@ -13,7 +13,7 @@ export const articleHref = (slug: string) => `/journal/${slug}/`;
 export const readingMinutes = (text: string) => Math.max(1, Math.ceil(text.trim().split(/\s+/).length / 180));
 export const blogEntries: readonly BlogEntry[] = [
   ...expansionGuides.map(article => ({...article, minutes:readingMinutes([article.intro,article.takeaway,...article.sections.flatMap(s=>[...(s.paragraphs??[]),...(s.items??[]),...(s.table?.rows.flat()??[])])].join(' '))})),
-  ...blogArticles.map(article => ({ ...article, minutes: readingMinutes([article.intro, article.takeaway, ...article.sections.flatMap(section => [section.title, ...(section.paragraphs ?? []), ...(section.items ?? []), ...(section.table?.rows.flat() ?? [])])].join(' ')) })),
+  ...blogArticles.map(article => ({ ...article, minutes: readingMinutes([article.intro, article.takeaway, ...article.sections.flatMap(section => [section.title, ...(section.paragraphs ?? []), ...(section.items ?? []), ...(section.steps ?? []), ...(section.table?.rows.flat() ?? [])])].join(' ')) })),
   { ...foodGuide, image: foodGuideImage, imageAlt: foodGuideImageAlt, category: 'Зеленоградск' as const, minutes: 5, date: foodGuide.updatedAt },
   ...guides.map(guide => ({ ...guide, category: 'За столом' as const, minutes: readingMinutes([guide.intro, ...guide.sections.flatMap(section => [...(section.paragraphs ?? []), ...(section.items ?? [])])].join(' ')) })),
 ].map(entry => ({ ...entry, ...articleArtwork(entry.slug) }));

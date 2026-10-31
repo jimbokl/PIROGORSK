@@ -19,6 +19,7 @@ export interface EditorialSection {
   title: string;
   paragraphs?: readonly string[];
   items?: readonly string[];
+  steps?: readonly string[];
   table?: { caption: string; headers: readonly string[]; rows: readonly (readonly string[])[] };
   links?: readonly { href: string; title: string }[];
 }

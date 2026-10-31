@@ -1,0 +1,945 @@
+{
+  "sourcePath": "/Users/dmitrij/.codex/attachments/9d8fb6ff-4bea-4786-aa9c-4dedab65f1e7/Вставленный текст.txt",
+  "sha256": "22903ab3e148427fa396dc074bc7746e429f6bb6f754794017f0ee165e4dd09d",
+  "reviewedAt": "2026-10-31",
+  "targetRegion": "Калининградская область",
+  "measurementStatus": "user_supplied_summary_unverified",
+  "period": null,
+  "sourceGeo": null,
+  "localMonthlyVolume": null,
+  "notes": [
+    "Clicks, demand, competitiveness и in_alice из сводки не подтверждены исходной выгрузкой.",
+    "Числа не перенесены на Калининградскую область и не считаются кликами Google.",
+    "Иностранные гео и запросы с брендами конкурентов исключены; численные значения исключённых строк не используются.",
+    "Повторяющиеся строки сохранены для аудита, их значения не суммируются.",
+    "Рецептурный спрос распределён по трём дополненным материалам; коммерческий спрос остаётся у каталога и региональных страниц."
+  ],
+  "rows": [
+    {
+      "query": "пироги с доставкой",
+      "reportedClicks": 1198,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "заказать пироги",
+      "reportedClicks": 996,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "пироги доставка",
+      "reportedClicks": 943,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "пироги на заказ с доставкой",
+      "reportedClicks": 630,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "доставка пирогов",
+      "reportedClicks": 832,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "пироги на заказ",
+      "reportedClicks": 450,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "заказать пироги в москве с доставкой",
+      "reportedClicks": 461,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги доставка москва",
+      "reportedClicks": 309,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги купить",
+      "reportedClicks": 257,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "пироги домой",
+      "reportedClicks": 161,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "осетинские пироги",
+      "reportedClicks": 29411,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "осетинские пироги заказать",
+      "reportedClicks": 5269,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "осетинские пироги доставка",
+      "reportedClicks": 4580,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "осетинские пироги москва",
+      "reportedClicks": 3791,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги заказать с доставкой москва",
+      "reportedClicks": 3294,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги с доставкой",
+      "reportedClicks": 2717,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "осетинские пироги заказать с доставкой",
+      "reportedClicks": 2615,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "осетинские пироги в москве с доставкой",
+      "reportedClicks": 2532,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "заказать осетинские пироги",
+      "reportedClicks": 2243,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "осетинские пироги спб с доставкой",
+      "reportedClicks": 971,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги недорого",
+      "reportedClicks": 656,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "осетинские пироги на заказ",
+      "reportedClicks": 1135,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги москва",
+      "reportedClicks": 309,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги спб",
+      "reportedClicks": 190,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги екатеринбург",
+      "reportedClicks": 222,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги новосибирск",
+      "reportedClicks": 128,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги красноярск",
+      "reportedClicks": 94,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги иркутск",
+      "reportedClicks": 108,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги тюмень",
+      "reportedClicks": 123,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги сургут",
+      "reportedClicks": 107,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги уфа",
+      "reportedClicks": 16,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги оренбург",
+      "reportedClicks": 849,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги ростов на дону",
+      "reportedClicks": 95,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги нижний новгород",
+      "reportedClicks": 84,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги казань",
+      "reportedClicks": 58,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги воронеж",
+      "reportedClicks": 25,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги самара",
+      "reportedClicks": 32,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "3. Геозапросы (доставка в городах)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пирог с мясом купить",
+      "reportedClicks": 331,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пирог с рыбой доставка",
+      "reportedClicks": 295,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пирог с курицей доставка",
+      "reportedClicks": 202,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пирог с капустой доставка",
+      "reportedClicks": 135,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "сладкие пироги доставка",
+      "reportedClicks": 379,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пирог с вишней доставка",
+      "reportedClicks": 126,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги с картошкой",
+      "reportedClicks": 44,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги с мясом",
+      "reportedClicks": 319,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги с капустой",
+      "reportedClicks": 46,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги с сыром",
+      "reportedClicks": 242,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги с творогом",
+      "reportedClicks": 32,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги с тыквой",
+      "reportedClicks": 58,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги со свекольной ботвой",
+      "reportedClicks": 164,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "постные пироги",
+      "reportedClicks": 48,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "мини пироги на заказ с доставкой",
+      "reportedClicks": 180,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "курник пироги с доставкой",
+      "reportedClicks": 132,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги с рыбой",
+      "reportedClicks": 73,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "4. Виды пирогов (начинки и типы)",
+      "disposition": "catalog_existing_no_dedicated_category_claim",
+      "owner": "/menu/"
+    },
+    {
+      "query": "пироги номер 1",
+      "reportedClicks": 2302,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "машенькины пироги",
+      "reportedClicks": 37,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "штолле пироги",
+      "reportedClicks": 564,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "асса пироги",
+      "reportedClicks": 219,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "ногбон осетинские пироги",
+      "reportedClicks": 126,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "баркад",
+      "reportedClicks": 482,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "пироги даром",
+      "reportedClicks": 228,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "чудо блюдо",
+      "reportedClicks": 250,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "вкусно пироги",
+      "reportedClicks": 67,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "пироговая лавка",
+      "reportedClicks": 41,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "вот такие пироги",
+      "reportedClicks": 38,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "пироги мира",
+      "reportedClicks": 284,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "линдфорс",
+      "reportedClicks": 249,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "кунак кафе",
+      "reportedClicks": 299,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "дон батон",
+      "reportedClicks": 316,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "5. Брендовые запросы конкурентов (для перехвата трафика)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "осетинские пироги рецепт",
+      "reportedClicks": 4182,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+    },
+    {
+      "query": "осетинский пирог рецепт",
+      "reportedClicks": 2771,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+    },
+    {
+      "query": "осетинские пироги рецепт классический",
+      "reportedClicks": 1007,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+    },
+    {
+      "query": "тесто для осетинских пирогов",
+      "reportedClicks": 367,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+    },
+    {
+      "query": "осетинский пирог с сыром",
+      "reportedClicks": 671,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+    },
+    {
+      "query": "осетинский пирог с мясом",
+      "reportedClicks": 602,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+    },
+    {
+      "query": "осетинский пирог с картошкой и сыром",
+      "reportedClicks": 302,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/zalivnoy-pirog-na-kefire/"
+    },
+    {
+      "query": "как приготовить осетинский пирог",
+      "reportedClicks": 142,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+    },
+    {
+      "query": "осетинские пироги на кефире",
+      "reportedClicks": 74,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/zalivnoy-pirog-na-kefire/"
+    },
+    {
+      "query": "осетинский пирог на сковороде",
+      "reportedClicks": 116,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/pirog-na-skovorode-ili-v-duhovke/"
+    },
+    {
+      "query": "осетинский пирог со свекольной ботвой",
+      "reportedClicks": 164,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+    },
+    {
+      "query": "хачапури",
+      "reportedClicks": 8,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "6. Информационные запросы (для блога)",
+      "disposition": "informational_article",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+    },
+    {
+      "query": "пироги на заказ с доставкой в тюмени",
+      "reportedClicks": 285,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги домой",
+      "reportedClicks": 161,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "existing_commercial_owner_prelaunch",
+      "owner": "/"
+    },
+    {
+      "query": "пироги мск",
+      "reportedClicks": 191,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги с доставкой в москве на день рождения",
+      "reportedClicks": 838,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "заказать пироги в москве с доставкой недорого в день рождения",
+      "reportedClicks": 662,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги на заказ в екатеринбурге с доставкой",
+      "reportedClicks": 922,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "доставка пирогов екатеринбург",
+      "reportedClicks": 586,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги штолле на заказ с доставкой в москве",
+      "reportedClicks": 564,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "competitor_brand"
+    },
+    {
+      "query": "пироги с доставкой в москве на день рождения",
+      "reportedClicks": 838,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги на заказ в новосибирске с доставкой",
+      "reportedClicks": 258,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги с доставкой в спб",
+      "reportedClicks": 317,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги на заказ с доставкой в спб",
+      "reportedClicks": 774,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги с доставкой минск",
+      "reportedClicks": 342,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги с доставкой в москве недорого",
+      "reportedClicks": 136,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги на заказ челябинск с доставкой",
+      "reportedClicks": 196,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "пироги на заказ вологда с доставкой",
+      "reportedClicks": 110,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги краснодар с доставкой",
+      "reportedClicks": 312,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги ростов на дону с доставкой",
+      "reportedClicks": 450,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги нижний новгород",
+      "reportedClicks": 387,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги иркутск",
+      "reportedClicks": 365,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги екатеринбург",
+      "reportedClicks": 279,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги ставрополь",
+      "reportedClicks": 265,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги воронеж",
+      "reportedClicks": 292,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги луганск",
+      "reportedClicks": 302,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги ханты-мансийск",
+      "reportedClicks": 226,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги новый уренгой",
+      "reportedClicks": 226,
+      "reportedCompetition": "HIGH",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    },
+    {
+      "query": "осетинские пироги саров",
+      "reportedClicks": 220,
+      "reportedCompetition": "AVERAGE",
+      "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
+      "disposition": "excluded",
+      "owner": null,
+      "exclusionReason": "outside_kaliningrad_region"
+    }
+  ]
+}

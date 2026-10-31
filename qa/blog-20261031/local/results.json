@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-30T22:51:24.251Z",
+  "checkedAt": "2026-10-31T06:34:27.671Z",
   "origin": "http://127.0.0.1:4322",
   "results": [
     {
       "slug": "osetinskiy-pirog-s-syrom-kak-vybrat",
       "width": 390,
-      "heading": "Осетинский пирог с сыром: вкус, состав и выбор начинки",
+      "heading": "Осетинский пирог: рецепт с сыром и вариант с мясом",
       "canonical": "https://pirogorsk.ru/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
       "anchors": [
         {
@@ -33,6 +33,18 @@
           "exists": true
         },
         {
+          "href": "#section-6",
+          "exists": true
+        },
+        {
+          "href": "#section-7",
+          "exists": true
+        },
+        {
+          "href": "#section-8",
+          "exists": true
+        },
+        {
           "href": "#sources",
           "exists": true
         }
@@ -45,13 +57,15 @@
         "current": "http://127.0.0.1:4322/_astro/osetinskiy-pirog-s-syrom-kak-vybrat.BNHTtF1C_ZOpa46.avif"
       },
       "sources": [
-        "https://www.bbcgoodfood.com/recipes/mini-cheese-onion-pasties"
+        "https://www.gastronom.ru/recipe/43686/osetinskij-pirog-s-syrom",
+        "https://www.gastronom.ru/recipe/63729/fydchin-osetinskij-pirog-s-myasom",
+        "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
       ],
       "article": {
         "@type": "BlogPosting",
         "@id": "https://pirogorsk.ru/journal/osetinskiy-pirog-s-syrom-kak-vybrat/#article",
-        "headline": "Осетинский пирог с сыром: вкус, состав и выбор начинки",
-        "description": "Как выбрать сырную начинку осетинского пирога: рассольный сыр, смеси, зелень, солёность и тесто. Таблица вопросов к составу и идеи подачи.",
+        "headline": "Осетинский пирог: рецепт с сыром и вариант с мясом",
+        "description": "Два опубликованных рецепта осетинского пирога: с сулугуни и зеленью, с говядиной. Ингредиенты в таблицах, шаги, температура выпечки и ссылки на авторов.",
         "inLanguage": "ru-RU",
         "mainEntityOfPage": "https://pirogorsk.ru/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
         "isPartOf": {
@@ -71,12 +85,14 @@
         },
         "isAccessibleForFree": true,
         "citation": [
-          "https://www.bbcgoodfood.com/recipes/mini-cheese-onion-pasties"
+          "https://www.gastronom.ru/recipe/43686/osetinskij-pirog-s-syrom",
+          "https://www.gastronom.ru/recipe/63729/fydchin-osetinskij-pirog-s-myasom",
+          "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
         ]
       },
       "table": {
         "width": 348,
-        "scroll": 440,
+        "scroll": 348,
         "font": "13px"
       },
       "headings": [
@@ -87,6 +103,18 @@
         {
           "x": 0,
           "right": 0
+        },
+        {
+          "x": 20,
+          "right": 370
+        },
+        {
+          "x": 20,
+          "right": 370
+        },
+        {
+          "x": 20,
+          "right": 370
         },
         {
           "x": 20,
@@ -138,6 +166,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 9,
       "missingAnchors": []
     },
     {
@@ -276,6 +305,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -414,6 +444,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -552,6 +583,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -690,6 +722,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -828,6 +861,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -966,6 +1000,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -1104,6 +1139,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -1242,6 +1278,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -1380,6 +1417,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -1518,6 +1556,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -1656,6 +1695,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -1794,6 +1834,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -1932,6 +1973,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -2070,12 +2112,13 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
       "slug": "zalivnoy-pirog-na-kefire",
       "width": 390,
-      "heading": "Заливной пирог на кефире: как выбрать рецепт и форму",
+      "heading": "Пирог на кефире: осетинский рецепт и отличие от заливного",
       "canonical": "https://pirogorsk.ru/journal/zalivnoy-pirog-na-kefire/",
       "anchors": [
         {
@@ -2103,6 +2146,14 @@
           "exists": true
         },
         {
+          "href": "#section-6",
+          "exists": true
+        },
+        {
+          "href": "#section-7",
+          "exists": true
+        },
+        {
           "href": "#sources",
           "exists": true
         }
@@ -2115,13 +2166,14 @@
         "current": "http://127.0.0.1:4322/_astro/zalivnoy-pirog-na-kefire.wFGQKk6F_NdIjo.avif"
       },
       "sources": [
+        "https://www.gastronom.ru/recipe/3448/osetinskie-pirogi-na-kefire-s-drozhzhami",
         "https://www.kingarthurbaking.com/blog/2021/09/10/baking-soda-vs-baking-powder-substitutions"
       ],
       "article": {
         "@type": "BlogPosting",
         "@id": "https://pirogorsk.ru/journal/zalivnoy-pirog-na-kefire/#article",
-        "headline": "Заливной пирог на кефире: как выбрать рецепт и форму",
-        "description": "Заливной пирог на кефире: как читать рецепт, выбирать форму и понимать разрыхление. Отличия от дрожжевого теста и таблица частых ошибок.",
+        "headline": "Пирог на кефире: осетинский рецепт и отличие от заливного",
+        "description": "Осетинские пироги на кефире с картофелем и брынзой: таблица ингредиентов на три пирога и шаги. Чем дрожжевое тесто отличается от заливного.",
         "inLanguage": "ru-RU",
         "mainEntityOfPage": "https://pirogorsk.ru/journal/zalivnoy-pirog-na-kefire/",
         "isPartOf": {
@@ -2141,12 +2193,13 @@
         },
         "isAccessibleForFree": true,
         "citation": [
+          "https://www.gastronom.ru/recipe/3448/osetinskie-pirogi-na-kefire-s-drozhzhami",
           "https://www.kingarthurbaking.com/blog/2021/09/10/baking-soda-vs-baking-powder-substitutions"
         ]
       },
       "table": {
         "width": 348,
-        "scroll": 440,
+        "scroll": 348,
         "font": "13px"
       },
       "headings": [
@@ -2157,6 +2210,14 @@
         {
           "x": 0,
           "right": 0
+        },
+        {
+          "x": 20,
+          "right": 370
+        },
+        {
+          "x": 20,
+          "right": 370
         },
         {
           "x": 20,
@@ -2208,12 +2269,13 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 5,
       "missingAnchors": []
     },
     {
       "slug": "pirog-na-skovorode-ili-v-duhovke",
       "width": 390,
-      "heading": "Пирог на сковороде или в духовке: что меняется",
+      "heading": "Осетинский пирог на сковороде: рецепт и сравнение с духовкой",
       "canonical": "https://pirogorsk.ru/journal/pirog-na-skovorode-ili-v-duhovke/",
       "anchors": [
         {
@@ -2241,6 +2303,14 @@
           "exists": true
         },
         {
+          "href": "#section-6",
+          "exists": true
+        },
+        {
+          "href": "#section-7",
+          "exists": true
+        },
+        {
           "href": "#sources",
           "exists": true
         }
@@ -2253,13 +2323,14 @@
         "current": "http://127.0.0.1:4322/_astro/pirog-na-skovorode-ili-v-duhovke.EX76fJ_2_8qu9q.avif"
       },
       "sources": [
+        "https://povar.ru/recipes/osetinskii_pirog_na_skovorode-32532.html",
         "https://www.kingarthurbaking.com/blog/2017/11/13/how-to-get-pie-crust-to-brown-on-the-bottom"
       ],
       "article": {
         "@type": "BlogPosting",
         "@id": "https://pirogorsk.ru/journal/pirog-na-skovorode-ili-v-duhovke/#article",
-        "headline": "Пирог на сковороде или в духовке: что меняется",
-        "description": "Чем отличаются пироги на сковороде и в духовке: высота, крышка, начинка и выбор рецепта. Таблица оборудования и безопасной подготовки.",
+        "headline": "Осетинский пирог на сковороде: рецепт и сравнение с духовкой",
+        "description": "Домашний осетинский пирог на сковороде с картофелем и сыром: ингредиенты, сборка и приготовление под крышкой. Отличия от выпечки в духовке.",
         "inLanguage": "ru-RU",
         "mainEntityOfPage": "https://pirogorsk.ru/journal/pirog-na-skovorode-ili-v-duhovke/",
         "isPartOf": {
@@ -2279,12 +2350,13 @@
         },
         "isAccessibleForFree": true,
         "citation": [
+          "https://povar.ru/recipes/osetinskii_pirog_na_skovorode-32532.html",
           "https://www.kingarthurbaking.com/blog/2017/11/13/how-to-get-pie-crust-to-brown-on-the-bottom"
         ]
       },
       "table": {
         "width": 348,
-        "scroll": 440,
+        "scroll": 348,
         "font": "13px"
       },
       "headings": [
@@ -2295,6 +2367,14 @@
         {
           "x": 0,
           "right": 0
+        },
+        {
+          "x": 20,
+          "right": 370
+        },
+        {
+          "x": 20,
+          "right": 370
         },
         {
           "x": 20,
@@ -2346,6 +2426,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 4,
       "missingAnchors": []
     },
     {
@@ -2484,6 +2565,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -2622,6 +2704,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -2760,6 +2843,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -2898,6 +2982,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -3036,6 +3121,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -3174,6 +3260,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -3312,6 +3399,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -3450,6 +3538,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -3588,6 +3677,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -3726,6 +3816,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -3866,6 +3957,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -4006,6 +4098,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -4144,12 +4237,13 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
       "slug": "osetinskiy-pirog-s-syrom-kak-vybrat",
       "width": 768,
-      "heading": "Осетинский пирог с сыром: вкус, состав и выбор начинки",
+      "heading": "Осетинский пирог: рецепт с сыром и вариант с мясом",
       "canonical": "https://pirogorsk.ru/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
       "anchors": [
         {
@@ -4177,6 +4271,18 @@
           "exists": true
         },
         {
+          "href": "#section-6",
+          "exists": true
+        },
+        {
+          "href": "#section-7",
+          "exists": true
+        },
+        {
+          "href": "#section-8",
+          "exists": true
+        },
+        {
           "href": "#sources",
           "exists": true
         }
@@ -4189,13 +4295,15 @@
         "current": "http://127.0.0.1:4322/_astro/osetinskiy-pirog-s-syrom-kak-vybrat.BNHTtF1C_ZOpa46.avif"
       },
       "sources": [
-        "https://www.bbcgoodfood.com/recipes/mini-cheese-onion-pasties"
+        "https://www.gastronom.ru/recipe/43686/osetinskij-pirog-s-syrom",
+        "https://www.gastronom.ru/recipe/63729/fydchin-osetinskij-pirog-s-myasom",
+        "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
       ],
       "article": {
         "@type": "BlogPosting",
         "@id": "https://pirogorsk.ru/journal/osetinskiy-pirog-s-syrom-kak-vybrat/#article",
-        "headline": "Осетинский пирог с сыром: вкус, состав и выбор начинки",
-        "description": "Как выбрать сырную начинку осетинского пирога: рассольный сыр, смеси, зелень, солёность и тесто. Таблица вопросов к составу и идеи подачи.",
+        "headline": "Осетинский пирог: рецепт с сыром и вариант с мясом",
+        "description": "Два опубликованных рецепта осетинского пирога: с сулугуни и зеленью, с говядиной. Ингредиенты в таблицах, шаги, температура выпечки и ссылки на авторов.",
         "inLanguage": "ru-RU",
         "mainEntityOfPage": "https://pirogorsk.ru/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
         "isPartOf": {
@@ -4215,12 +4323,14 @@
         },
         "isAccessibleForFree": true,
         "citation": [
-          "https://www.bbcgoodfood.com/recipes/mini-cheese-onion-pasties"
+          "https://www.gastronom.ru/recipe/43686/osetinskij-pirog-s-syrom",
+          "https://www.gastronom.ru/recipe/63729/fydchin-osetinskij-pirog-s-myasom",
+          "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures"
         ]
       },
       "table": {
         "width": 430,
-        "scroll": 440,
+        "scroll": 430,
         "font": "14px"
       },
       "headings": [
@@ -4235,6 +4345,18 @@
         {
           "x": 34.5625,
           "right": 351.328125
+        },
+        {
+          "x": 34.5625,
+          "right": 266.90625
+        },
+        {
+          "x": 34.5625,
+          "right": 266.90625
+        },
+        {
+          "x": 34.5625,
+          "right": 266.90625
         },
         {
           "x": 34.5625,
@@ -4282,6 +4404,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 9,
       "missingAnchors": []
     },
     {
@@ -4420,6 +4543,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -4558,6 +4682,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -4696,6 +4821,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -4834,6 +4960,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -4972,6 +5099,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -5110,6 +5238,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -5248,6 +5377,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -5386,6 +5516,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -5524,6 +5655,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -5662,6 +5794,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -5800,6 +5933,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -5938,6 +6072,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -6076,6 +6211,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -6214,12 +6350,13 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
       "slug": "zalivnoy-pirog-na-kefire",
       "width": 768,
-      "heading": "Заливной пирог на кефире: как выбрать рецепт и форму",
+      "heading": "Пирог на кефире: осетинский рецепт и отличие от заливного",
       "canonical": "https://pirogorsk.ru/journal/zalivnoy-pirog-na-kefire/",
       "anchors": [
         {
@@ -6247,6 +6384,14 @@
           "exists": true
         },
         {
+          "href": "#section-6",
+          "exists": true
+        },
+        {
+          "href": "#section-7",
+          "exists": true
+        },
+        {
           "href": "#sources",
           "exists": true
         }
@@ -6259,13 +6404,14 @@
         "current": "http://127.0.0.1:4322/_astro/zalivnoy-pirog-na-kefire.wFGQKk6F_NdIjo.avif"
       },
       "sources": [
+        "https://www.gastronom.ru/recipe/3448/osetinskie-pirogi-na-kefire-s-drozhzhami",
         "https://www.kingarthurbaking.com/blog/2021/09/10/baking-soda-vs-baking-powder-substitutions"
       ],
       "article": {
         "@type": "BlogPosting",
         "@id": "https://pirogorsk.ru/journal/zalivnoy-pirog-na-kefire/#article",
-        "headline": "Заливной пирог на кефире: как выбрать рецепт и форму",
-        "description": "Заливной пирог на кефире: как читать рецепт, выбирать форму и понимать разрыхление. Отличия от дрожжевого теста и таблица частых ошибок.",
+        "headline": "Пирог на кефире: осетинский рецепт и отличие от заливного",
+        "description": "Осетинские пироги на кефире с картофелем и брынзой: таблица ингредиентов на три пирога и шаги. Чем дрожжевое тесто отличается от заливного.",
         "inLanguage": "ru-RU",
         "mainEntityOfPage": "https://pirogorsk.ru/journal/zalivnoy-pirog-na-kefire/",
         "isPartOf": {
@@ -6285,12 +6431,13 @@
         },
         "isAccessibleForFree": true,
         "citation": [
+          "https://www.gastronom.ru/recipe/3448/osetinskie-pirogi-na-kefire-s-drozhzhami",
           "https://www.kingarthurbaking.com/blog/2021/09/10/baking-soda-vs-baking-powder-substitutions"
         ]
       },
       "table": {
         "width": 430,
-        "scroll": 440,
+        "scroll": 430,
         "font": "14px"
       },
       "headings": [
@@ -6305,6 +6452,14 @@
         {
           "x": 34.5625,
           "right": 351.328125
+        },
+        {
+          "x": 34.5625,
+          "right": 266.90625
+        },
+        {
+          "x": 34.5625,
+          "right": 266.90625
         },
         {
           "x": 34.5625,
@@ -6352,12 +6507,13 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 5,
       "missingAnchors": []
     },
     {
       "slug": "pirog-na-skovorode-ili-v-duhovke",
       "width": 768,
-      "heading": "Пирог на сковороде или в духовке: что меняется",
+      "heading": "Осетинский пирог на сковороде: рецепт и сравнение с духовкой",
       "canonical": "https://pirogorsk.ru/journal/pirog-na-skovorode-ili-v-duhovke/",
       "anchors": [
         {
@@ -6385,6 +6541,14 @@
           "exists": true
         },
         {
+          "href": "#section-6",
+          "exists": true
+        },
+        {
+          "href": "#section-7",
+          "exists": true
+        },
+        {
           "href": "#sources",
           "exists": true
         }
@@ -6397,13 +6561,14 @@
         "current": "http://127.0.0.1:4322/_astro/pirog-na-skovorode-ili-v-duhovke.EX76fJ_2_8qu9q.avif"
       },
       "sources": [
+        "https://povar.ru/recipes/osetinskii_pirog_na_skovorode-32532.html",
         "https://www.kingarthurbaking.com/blog/2017/11/13/how-to-get-pie-crust-to-brown-on-the-bottom"
       ],
       "article": {
         "@type": "BlogPosting",
         "@id": "https://pirogorsk.ru/journal/pirog-na-skovorode-ili-v-duhovke/#article",
-        "headline": "Пирог на сковороде или в духовке: что меняется",
-        "description": "Чем отличаются пироги на сковороде и в духовке: высота, крышка, начинка и выбор рецепта. Таблица оборудования и безопасной подготовки.",
+        "headline": "Осетинский пирог на сковороде: рецепт и сравнение с духовкой",
+        "description": "Домашний осетинский пирог на сковороде с картофелем и сыром: ингредиенты, сборка и приготовление под крышкой. Отличия от выпечки в духовке.",
         "inLanguage": "ru-RU",
         "mainEntityOfPage": "https://pirogorsk.ru/journal/pirog-na-skovorode-ili-v-duhovke/",
         "isPartOf": {
@@ -6423,12 +6588,13 @@
         },
         "isAccessibleForFree": true,
         "citation": [
+          "https://povar.ru/recipes/osetinskii_pirog_na_skovorode-32532.html",
           "https://www.kingarthurbaking.com/blog/2017/11/13/how-to-get-pie-crust-to-brown-on-the-bottom"
         ]
       },
       "table": {
         "width": 430,
-        "scroll": 440,
+        "scroll": 430,
         "font": "14px"
       },
       "headings": [
@@ -6443,6 +6609,14 @@
         {
           "x": 34.5625,
           "right": 351.328125
+        },
+        {
+          "x": 34.5625,
+          "right": 266.90625
+        },
+        {
+          "x": 34.5625,
+          "right": 266.90625
         },
         {
           "x": 34.5625,
@@ -6490,6 +6664,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 4,
       "missingAnchors": []
     },
     {
@@ -6628,6 +6803,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -6766,6 +6942,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -6904,6 +7081,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -7042,6 +7220,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -7180,6 +7359,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -7318,6 +7498,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -7456,6 +7637,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -7594,6 +7776,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -7732,6 +7915,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -7870,6 +8054,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -8010,6 +8195,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -8150,6 +8336,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     },
     {
@@ -8288,6 +8475,7 @@
         }
       ],
       "author": "Редакция Пирогорска",
+      "recipeSteps": 0,
       "missingAnchors": []
     }
   ],

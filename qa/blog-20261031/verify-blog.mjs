@@ -38,9 +38,11 @@ try {
      article:schema.find(s=>s['@type']==='BlogPosting'),table:table?{width:table.clientWidth,scroll:table.scrollWidth,font:getComputedStyle(table.querySelector('td')).fontSize}:null,
      headings:[...document.querySelectorAll('h1,h2')].map(el=>({x:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right})),
      author:document.querySelector('.blog-byline a')?.textContent,
+     recipeSteps:document.querySelectorAll('.ed-article-section ol li').length,
      missingAnchors:[...document.querySelectorAll('a[href^="#"]')].filter(el=>el.hash&& !document.getElementById(decodeURIComponent(el.hash.slice(1)))).map(el=>el.hash)
     };
    });
+   assert.equal(result.recipeSteps,article.sections.reduce((n,s)=>n+(s.steps?.length??0),0));
    assert.equal(result.heading,article.title);assert.equal(result.canonical,`https://pirogorsk.ru${path}`);
    assert.equal(result.anchors.length,article.sections.length+1);assert.ok(result.anchors.every(a=>a.exists));
    assert.ok(result.cover?.loaded,`${path} cover`);assert.ok(result.cover.alt.length>20);assert.ok(result.cover.width>200);
@@ -57,8 +59,8 @@ try {
    await page.$eval('.blog-toc a[href="#sources"]',el=>el.click());
    await page.waitForFunction(()=>location.hash==='#sources');
    await page.$eval('#sources',el=>el.scrollIntoView({block:'start',behavior:'instant'}));
-   if([0,14,28].includes(i))await page.screenshot({path:`${root}/sources-${i+1}-${width}.jpg`,type:'jpeg',quality:84});
-   if([0,14,28].includes(i)){
+   if([0,14,15,16,28].includes(i))await page.screenshot({path:`${root}/sources-${i+1}-${width}.jpg`,type:'jpeg',quality:84});
+   if([0,14,15,16,28].includes(i)){
     await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));await page.screenshot({path:`${root}/article-${i+1}-${width}.jpg`,type:'jpeg',quality:84});
     await page.$eval('.ed-table-scroll',el=>{el.scrollLeft=0;el.scrollIntoView({block:'center',behavior:'instant'});});await page.screenshot({path:`${root}/table-${i+1}-${width}.jpg`,type:'jpeg',quality:84});
    }

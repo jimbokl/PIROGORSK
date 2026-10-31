@@ -3,9 +3,12 @@
   "articles": 30,
   "blogTotal": 53,
   "htmlPages": 247,
-  "sectionsPerArticle": 6,
-  "tables": 30,
-  "uniqueParagraphs": 294,
+  "sectionsPerArticle": {
+    "min": 6,
+    "max": 9
+  },
+  "tables": 34,
+  "uniqueParagraphs": 298,
   "duplicateParagraphs": 0,
   "excludedBrandOrLocationTargets": [],
   "sourceAttachmentSha256": "bf8e00bfc8bb9bff8f1a77ee269d25f396da25c0340293b2b95fac2f8d78223c",
@@ -16,6 +19,11 @@
     "Organization author, date, primary sources and transparent editorial policy",
     "No claims of kitchen testing, invented expert credentials, fake ratings or guaranteed ranking",
     "Original imagegen artwork reviewed in contact sheet",
-    "No generic FAQ/Recipe schema on new articles"
-  ]
+    "No generic FAQ/Recipe schema on new articles",
+    "Additional semantic summary reviewed; foreign geographies and competitor queries excluded",
+    "Three articles contain attributed ingredient tables and preparation steps; no invented kitchen testing"
+  ],
+  "additionalSourceAttachmentSha256": "22903ab3e148427fa396dc074bc7746e429f6bb6f754794017f0ee165e4dd09d",
+  "additionalSemanticRows": 108,
+  "additionalSemanticRowsExcluded": 62
 }

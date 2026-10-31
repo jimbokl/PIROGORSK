@@ -1,0 +1,13 @@
+✔ catalog contract ignores display order but detects added products, variants and prices (3.849917ms)
+✔ health URL derives its path from API config and discards query/hash (0.188583ms)
+✔ release checks Worker and published artifact together (24.996541ms)
+✔ release rejects unavailable, outdated, malformed and incompatible services (0.884542ms)
+✔ release timeout aborts a hung fetch (11.022666ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 223.43525
