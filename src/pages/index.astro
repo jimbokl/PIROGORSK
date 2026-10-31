@@ -11,6 +11,7 @@ import Analytics from '../components/Analytics.astro';
 import SeoHead from '../components/SeoHead.astro';
 import Brand from '../components/Brand.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import TownSignature from '../components/TownSignature.astro';
 import BlogCards from '../components/BlogCards.astro';
 import { blogEntries } from '../data/blog';
 import { catalog } from '../data/catalog';
@@ -20,6 +21,7 @@ import '../styles/global.css';
 import '../styles/home.css';
 import '../styles/site-ui.css';
 import '../styles/menu.css';
+import '../styles/brand-details.css';
 const faqs = [
   ['Можно уже заказать пирог?', 'Мы готовим запуск. Сейчас можно выбрать пироги и оставить анонимную заявку по предварительной цене. Это поможет определить меню и города. Заказ и оплата пока не подтверждаются.'],
   ['Чем отличаются 500 г и 1 кг?', 'Это два варианта веса одного пирога. Можно взять несколько небольших пирогов с разными начинками или большой пирог к общему столу. Вес готового продукта уточним перед открытием.'],
@@ -66,6 +68,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <section class="home-faq container" aria-labelledby="faq-heading"><div><h2 id="faq-heading">Перед первым пирогом</h2><a class="home-partner-link" href="/partners/">Владельцам апартаментов и пекарням<Icon name="arrow" /></a></div><div class="home-faq-list">{faqs.map(([question,answer]) => <details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>
     </main>
     <footer class="site-footer container">
+      <TownSignature />
       <div class="footer-main">
         <Brand href="#top" footer />
         <nav aria-label="Выберите город" class="footer-cities">{['Калининград', 'Светлогорск', 'Зеленоградск'].map(city => <button data-select-city={city}>{city}</button>)}</nav>

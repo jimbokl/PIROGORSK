@@ -1,0 +1,98 @@
+{
+  "base": "http://127.0.0.1:4322",
+  "stage": "legal-local",
+  "views": [
+    {
+      "name": "privacy",
+      "path": "/privacy/",
+      "width": 320,
+      "overflow": 0,
+      "signature": true,
+      "gold": "#d39139",
+      "mark": true,
+      "chapterNumbers": null,
+      "errors": []
+    },
+    {
+      "name": "privacy",
+      "path": "/privacy/",
+      "width": 390,
+      "overflow": 0,
+      "signature": true,
+      "gold": "#d39139",
+      "mark": true,
+      "chapterNumbers": null,
+      "legalDialogs": true,
+      "errors": []
+    },
+    {
+      "name": "privacy",
+      "path": "/privacy/",
+      "width": 768,
+      "overflow": 0,
+      "signature": true,
+      "gold": "#d39139",
+      "mark": true,
+      "chapterNumbers": null,
+      "errors": []
+    },
+    {
+      "name": "privacy",
+      "path": "/privacy/",
+      "width": 1280,
+      "overflow": 0,
+      "signature": true,
+      "gold": "#d39139",
+      "mark": true,
+      "chapterNumbers": null,
+      "errors": []
+    },
+    {
+      "name": "terms",
+      "path": "/terms/",
+      "width": 320,
+      "overflow": 0,
+      "signature": true,
+      "gold": "#d39139",
+      "mark": true,
+      "chapterNumbers": null,
+      "errors": []
+    },
+    {
+      "name": "terms",
+      "path": "/terms/",
+      "width": 390,
+      "overflow": 0,
+      "signature": true,
+      "gold": "#d39139",
+      "mark": true,
+      "chapterNumbers": null,
+      "legalDialogs": true,
+      "errors": []
+    },
+    {
+      "name": "terms",
+      "path": "/terms/",
+      "width": 768,
+      "overflow": 0,
+      "signature": true,
+      "gold": "#d39139",
+      "mark": true,
+      "chapterNumbers": null,
+      "errors": []
+    },
+    {
+      "name": "terms",
+      "path": "/terms/",
+      "width": 1280,
+      "overflow": 0,
+      "signature": true,
+      "gold": "#d39139",
+      "mark": true,
+      "chapterNumbers": null,
+      "errors": []
+    }
+  ],
+  "noJs": true,
+  "reducedMotion": true
+}

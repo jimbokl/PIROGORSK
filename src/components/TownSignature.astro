@@ -1,0 +1,20 @@
+<!-- A quiet roofline and the sea: the same signature closes every page. -->
+<div class="town-signature" aria-hidden="true">
+  <span></span>
+  <svg viewBox="0 0 200 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 44V29L26 18L38 29V44M38 44V33L48 25L58 33V44M58 44V22L70 11L82 22V44M82 44V32L94 23L106 32V44M106 44V29L118 18L130 29V44M130 44V14L137 6L144 14V44M144 44V31L156 21L168 31V44M168 44V35L178 27L188 35V44" />
+      <path d="M22 44V35H29V44M67 44V31H74V44M115 44V35H122V44M153 44V34H160V44M26 26V29M70 20V24M137 16V20M137 27V31M156 28V30" />
+      <path d="M8 49C17 44 23 54 32 49S47 44 56 49S71 54 80 49S95 44 104 49S119 54 128 49S143 44 152 49S167 54 176 49S187 47 192 49M21 56C30 51 36 61 45 56S60 51 69 56S84 61 93 56S108 51 117 56S132 61 141 56S156 51 165 56S176 58 181 56" />
+    </g>
+    <circle cx="103" cy="9" r="5" fill="var(--brand-gold)" />
+  </svg>
+  <span></span>
+</div>
+<style>
+  .town-signature{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:24px;width:100%;margin:0 0 8px;color:var(--brand-ink)}
+  .town-signature>span{height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--brand-line))}
+  .town-signature>span:last-child{transform:scaleX(-1)}
+  svg{display:block;width:180px;height:56px;flex-shrink:0}
+  @media(max-width:600px){.town-signature{gap:16px;margin-bottom:0}svg{width:144px;height:45px}}
+</style>

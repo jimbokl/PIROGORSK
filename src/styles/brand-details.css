@@ -1,0 +1,55 @@
+/* The pie city leaves small signatures; the food and the reading stay first. */
+body:is(.home-page,.editorial-site) :is(.ed-hero .ed-eyebrow,.product-hero .ed-eyebrow,.planner-intro>.ed-eyebrow,.interest-document>.ed-eyebrow,.town-hero-eyebrow,.departments-heading .eyebrow,.offers-kicker){
+  display:flex;
+  align-items:center;
+  gap:9px;
+  color:var(--brand-ink);
+}
+body:is(.home-page,.editorial-site) :is(.ed-hero .ed-eyebrow,.product-hero .ed-eyebrow,.planner-intro>.ed-eyebrow,.interest-document>.ed-eyebrow,.town-hero-eyebrow,.departments-heading .eyebrow,.offers-kicker)::before{
+  content:'';
+  display:block;
+  flex:0 0 18px;
+  width:18px;
+  height:18px;
+  background:transparent url('/brand/pirogorsk-symbol.svg?v=20261031-7') center/contain no-repeat;
+}
+body:is(.home-page,.editorial-site) .town-hero{
+  border-color:var(--brand-line);
+  background:linear-gradient(115deg,var(--brand-paper),#f7f9fc);
+}
+body:is(.home-page,.editorial-site) :is(.product-visual,.product-artwork,.product-hero-frame){
+  background:linear-gradient(150deg,var(--brand-paper),var(--soft));
+}
+body:is(.home-page,.editorial-site) .product-hero-frame :is(.product-visual,.product-artwork){background:transparent}
+body:is(.home-page,.editorial-site) :is(.menu-finder,.ed-interest){background:var(--brand-paper);border:1px solid var(--brand-line)}
+body:is(.home-page,.editorial-site) .product-options{border-color:var(--brand-line)}
+
+/* A small crust-coloured edge marks location without replacing the ink CTA. */
+body:is(.home-page,.editorial-site) .site-navigation a::after{background:var(--brand-gold);height:2px}
+body.home-page .home-catalog-nav a[aria-current],body.editorial-site.menu-page .menu-sections a[aria-current]{box-shadow:inset 0 -3px var(--brand-gold)}
+body.home-page .home-catalog-heading h3,body.editorial-site .supplier-heading h2{display:flex;align-items:center;gap:12px}
+body.home-page .home-catalog-heading h3::before,body.editorial-site .supplier-heading h2::before{
+  content:'';
+  width:5px;
+  height:1.1em;
+  flex:0 0 5px;
+  border-radius:var(--radius-pill);
+  background:var(--brand-gold);
+}
+
+/* Numbered chapters echo a baker's notebook; no extra panels around the text. */
+body.editorial-site .blog-toc{counter-reset:chapter;gap:4px 24px;padding-block:16px;border-bottom:1px solid var(--brand-line)}
+body.editorial-site .blog-toc a{counter-increment:chapter;gap:10px;text-decoration:none;color:var(--ink)}
+body.editorial-site .blog-toc a::before{content:counter(chapter,decimal-leading-zero);color:var(--brand-ink);font-size:10px;font-variant-numeric:tabular-nums;flex:0 0 20px}
+body.editorial-site .blog-toc a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+body.editorial-site .blog-takeaway{border-color:var(--brand-line)}
+body.editorial-site .ed-next-step{border-left-color:var(--brand-gold);background:var(--brand-paper)}
+body:is(.home-page,.editorial-site) :is(.site-footer,.ed-footer){border-top:0}
+
+@media(max-width:600px){
+  body:is(.home-page,.editorial-site) :is(.ed-hero .ed-eyebrow,.product-hero .ed-eyebrow,.planner-intro>.ed-eyebrow,.interest-document>.ed-eyebrow,.town-hero-eyebrow,.departments-heading .eyebrow,.offers-kicker)::before{flex-basis:16px;width:16px;height:16px}
+  body.home-page .home-catalog-heading h3,body.editorial-site .supplier-heading h2{gap:9px}
+}
+
+body.document-page .interest-document{width:min(100%,760px);margin:32px auto 56px}
+body.document-page .interest-document h1{font-size:var(--heading-page);font-weight:500;letter-spacing:-.035em;text-wrap:pretty}
