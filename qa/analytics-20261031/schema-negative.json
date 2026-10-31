@@ -1,0 +1,9 @@
+{
+  "exitCode": 1,
+  "expectedFailures": [
+    "/pirogi/myasnoy-pirog/: unsupported prelaunch schema Product.",
+    "/pirogi/myasnoy-pirog/: missing canonical ItemPage with name/description."
+  ],
+  "rejected": true,
+  "stderr": "SEO verification failed (3):\n- /pirogi/myasnoy-pirog/: unsupported prelaunch schema Product.\n- /pirogi/myasnoy-pirog/: missing canonical ItemPage with name/description.\n- /pirogi/myasnoy-pirog/: missing primary ImageObject dimensions/URL."
+}

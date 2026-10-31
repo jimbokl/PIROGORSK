@@ -20,7 +20,7 @@ const { product } = Astro.props;
 const title = `${product.name} — 500 г и 1 кг | Пирогорск`;
 const description = `${product.name}. ${product.description}`;
 const image = product.image ? await getImage({ src: product.image, width: 1000, format: 'webp', quality: 65 }) : undefined;
-const schema = [{ '@type': 'Product', '@id': `${siteOrigin}${productHref(product)}#product`, name: product.name, description: product.editorial.intro, url: `${siteOrigin}${productHref(product)}`, ...(image ? { image: new URL(image.src, siteOrigin).href } : {}), brand: { '@type': 'Brand', name: 'Пирогорск' }, category: 'Концепт будущего меню' }];
+const schema = [{ '@type': 'ItemPage', '@id': `${siteOrigin}${productHref(product)}#page`, name: product.name, description: product.editorial.intro, url: `${siteOrigin}${productHref(product)}`, ...(image ? { primaryImageOfPage: { '@type': 'ImageObject', url: new URL(image.src, siteOrigin).href, width: image.attributes.width, height: image.attributes.height, caption: product.name } } : {}) }];
 const otherProducts = editorialProducts.filter(other => other.id !== product.id && other.sweet === product.sweet).slice(0, 2);
 const scenario = scenarios.find(item => item.slug === product.editorial.scenario)!;
 ---

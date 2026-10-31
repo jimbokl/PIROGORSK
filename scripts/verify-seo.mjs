@@ -83,14 +83,17 @@ try {
     if (isEditorial(route)) assert(entities.some(item => item['@type'] === 'BreadcrumbList'), `${route}: missing BreadcrumbList.`);
     const visitSchema = node => {
       if (!node || typeof node !== 'object') return;
-      assert(!['Offer', 'AggregateOffer', 'LocalBusiness', 'Bakery', 'AggregateRating', 'Review'].includes(node['@type']), `${route}: unsupported prelaunch schema ${node['@type']}.`);
+      assert(!['Product', 'Offer', 'AggregateOffer', 'LocalBusiness', 'Bakery', 'AggregateRating', 'Review'].includes(node['@type']), `${route}: unsupported prelaunch schema ${node['@type']}.`);
       assert(!('availability' in node) && !('offers' in node), `${route}: availability/offers must wait for launch.`);
       Object.values(node).forEach(value => { if (Array.isArray(value)) value.forEach(visitSchema); else visitSchema(value); });
     };
     entities.forEach(visitSchema);
-    if (route.startsWith('/pirogi/')) {
+    if (route.startsWith('/pirogi/') || route.startsWith('/catalog/')) {
       productCount++;
-      assert(entities.some(item => item['@type'] === 'Product'), `${route}: missing Product concept entity.`);
+      const itemPage = entities.find(item => item['@type'] === 'ItemPage');
+      assert(itemPage?.url === `${origin}${route}` && itemPage?.['@id'] === `${origin}${route}#page` && Boolean(itemPage?.name && itemPage?.description), `${route}: missing canonical ItemPage with name/description.`);
+      const image = itemPage?.primaryImageOfPage;
+      if (route.startsWith('/pirogi/') || image) assert(image?.['@type'] === 'ImageObject' && image.url?.startsWith(`${origin}/`) && image.width > 0 && image.height > 0, `${route}: missing primary ImageObject dimensions/URL.`);
     }
     if (isEditorial(route)) {
       assert(/(?:готовим запуск|готовится к запуску|перед запуском|пока не запущен)/i.test(html), `${route}: missing visible launch status.`);
@@ -130,7 +133,7 @@ try {
     const html = routes.get(route);
     assert(Boolean(html) && tags(html ?? '', 'meta').some(item => item.name === 'robots' && /noindex/.test(item.content ?? '')), `${route}: legal document must retain the requested noindex directive.`);
   }
-  assert(productCount >= 4, 'Expected at least the four existing product concepts.');
+  assert(productCount === catalog.length, `Expected one ItemPage for each of ${catalog.length} catalog positions; found ${productCount}.`);
   const sitemap = await readFile(path.join(output, 'sitemap.xml'), 'utf8');
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => decode(match[1]));
   assert(urls.length >= 18 && new Set(urls).size === urls.length, 'Sitemap must contain unique canonical pages.');
@@ -150,7 +153,7 @@ try {
   if (failures.length) {
     console.error(`SEO verification failed (${failures.length}):\n${failures.map(item => `- ${item}`).join('\n')}`);
     process.exitCode = 1;
-  } else console.log(`SEO verification passed: ${files.length} HTML pages, ${productCount} product concepts, ${urls.length} sitemap URLs, ${localChecks.length} local references. Scope: ${scoped ? 'editorial' : 'all'}.`);
+  } else console.log(`SEO verification passed: ${files.length} HTML pages, ${productCount} item pages, ${urls.length} sitemap URLs, ${localChecks.length} local references. Scope: ${scoped ? 'editorial' : 'all'}.`);
 } catch (error) {
   console.error(`SEO verification could not finish: ${error.message}. Build the site first (npm run build).`);
   process.exitCode = 1;

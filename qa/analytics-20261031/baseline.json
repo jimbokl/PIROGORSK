@@ -1,0 +1,273 @@
+{
+  "capturedOn": "2026-10-31",
+  "method": "Authenticated Search Console and Yandex Metrika visible reports via Chrome Apple Events/DOM; selected clean totals, no customer-level export.",
+  "metrica": {
+    "counter": 113767847,
+    "timeZone": null,
+    "yesterday": {
+      "from": "2026-10-30",
+      "to": "2026-10-30",
+      "completeDay": true,
+      "pageviews": 99,
+      "visits": 68,
+      "visitors": 54,
+      "directVisits": 57,
+      "internalVisits": 11,
+      "bounceRatePercent": 75.0,
+      "pageDepth": 1.46,
+      "timeOnSiteSeconds": 145,
+      "goals": {
+        "order_submit": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "catalog_add": {
+          "targetVisits": 2,
+          "achievements": 2,
+          "status": "reported"
+        },
+        "order_form_open": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "order_form_start": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "order_submit_error": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "calculator_interact": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "calc_apply_set": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "guide_to_catalog_click": {
+          "targetVisits": 1,
+          "achievements": 1,
+          "status": "reported"
+        }
+      }
+    },
+    "week": {
+      "from": "2026-10-25",
+      "to": "2026-10-31",
+      "completeDay": false,
+      "pageviews": 432,
+      "visits": 289,
+      "visitors": 222,
+      "directVisits": 256,
+      "internalVisits": 33,
+      "goals": {
+        "order_submit": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "catalog_add": {
+          "targetVisits": 4,
+          "achievements": 4,
+          "status": "reported"
+        },
+        "order_form_open": {
+          "targetVisits": 1,
+          "achievements": 1,
+          "status": "reported"
+        },
+        "order_form_start": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "order_submit_error": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "calculator_interact": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "calc_apply_set": {
+          "targetVisits": null,
+          "achievements": null,
+          "status": "no_data"
+        },
+        "guide_to_catalog_click": {
+          "targetVisits": 1,
+          "achievements": 1,
+          "status": "reported"
+        }
+      },
+      "goalParameters": {
+        "events": 6,
+        "visitors": 2,
+        "catalog_add": {
+          "events": 4,
+          "visitors": 2,
+          "observedFields": [
+            "city",
+            "productid",
+            "qty",
+            "value",
+            "variant"
+          ]
+        },
+        "order_form_open": {
+          "events": 1,
+          "visitors": 1
+        },
+        "guide_to_catalog_click": {
+          "events": 1,
+          "visitors": 1
+        }
+      }
+    },
+    "limitations": [
+      "May include owner visits and QA sessions without qa=1.",
+      "Goal counts are marginal, not an ordered funnel.",
+      "No data in a goal report is recorded as null, not zero.",
+      "Five goals added on 2026-10-31 have no historical backfill.",
+      "Two visitors with goal events cannot establish product demand or winning fillings."
+    ]
+  },
+  "googleSearchConsole": {
+    "property": "sc-domain:pirogorsk.ru",
+    "performance": {
+      "selectedWindow": "3 months",
+      "observedFrom": "2026-10-22",
+      "observedTo": "2026-10-29",
+      "searchType": "Web",
+      "clicks": 0,
+      "impressions": 25,
+      "ctrPercent": 0,
+      "averagePosition": 10.8,
+      "countries": [
+        {
+          "country": "Russia",
+          "clicks": 0,
+          "impressions": 24
+        },
+        {
+          "country": "Kazakhstan",
+          "clicks": 0,
+          "impressions": 1
+        }
+      ],
+      "pages": [
+        {
+          "url": "https://pirogorsk.ru/podbor/",
+          "clicks": 0,
+          "impressions": 13
+        },
+        {
+          "url": "https://pirogorsk.ru/",
+          "clicks": 0,
+          "impressions": 5
+        },
+        {
+          "url": "https://pirogorsk.ru/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+          "clicks": 0,
+          "impressions": 2
+        },
+        {
+          "url": "https://pirogorsk.ru/journal/gde-pozavtrakat-v-zelenogradske/",
+          "clicks": 0,
+          "impressions": 2
+        },
+        {
+          "url": "https://pirogorsk.ru/journal/myasnoy-pirog-nachinka-i-testo/",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "url": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "url": "http://pirogorsk.ru/",
+          "clicks": 0,
+          "impressions": 1
+        }
+      ],
+      "visibleQueries": [
+        {
+          "query": "1 5 кг пирога на сколько человек",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "query": "сколько пирогов надо на 20 человек",
+          "clicks": 0,
+          "impressions": 1
+        },
+        {
+          "query": "где позавтракать в зеленоградске",
+          "clicks": 0,
+          "impressions": 1
+        }
+      ]
+    },
+    "indexing": {
+      "reportUpdatedOn": "2026-10-23",
+      "indexed": 22,
+      "notIndexed": 6,
+      "excluded": {
+        "noindex": [
+          "/terms/",
+          "/privacy/"
+        ],
+        "alternateCanonical": [
+          "/?interest=city-zelenogradsk"
+        ],
+        "crawledNotIndexed": [
+          "/journal/gde-poest-v-zelenogradske/",
+          "/blog/",
+          "/journal/gde-poest-v-kaliningrade/"
+        ]
+      },
+      "note": "Lagged report, not coverage of current 249-URL sitemap."
+    },
+    "sitemap": {
+      "url": "https://pirogorsk.ru/sitemap.xml",
+      "submittedOn": "2026-10-31",
+      "lastProcessedOn": "2026-10-31",
+      "status": "Success",
+      "discoveredUrls": 249,
+      "previousDiscoveredUrls": 212,
+      "previousLastProcessedOn": "2026-10-30",
+      "confirmedAt": "2026-10-31T16:18:52.513Z"
+    },
+    "productIssueBeforeRelease": {
+      "reportUpdatedOn": "2026-10-30",
+      "invalidItems": 4,
+      "issue": "Either offers, review or aggregateRating should be specified.",
+      "affectedExamplePaths": [
+        "/pirogi/pirog-s-tvorogom-i-malinoy/",
+        "/pirogi/pirog-s-kapustoy/",
+        "/pirogi/pirog-s-vishney/",
+        "/pirogi/myasnoy-pirog/"
+      ],
+      "fix": "Use ItemPage on all eight original pie pages consistently with the other 145 catalog items.",
+      "googleValidation": "not_requested_yet"
+    },
+    "limitations": [
+      "Small search sample; no stable ranking or demand conclusions.",
+      "Country split does not identify Kaliningrad Oblast.",
+      "Visible queries do not sum to total impressions.",
+      "Sitemap success is neither indexing nor a ranking guarantee."
+    ]
+  }
+}

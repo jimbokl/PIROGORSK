@@ -1,0 +1,87 @@
+{
+  "counter": 113767847,
+  "verifiedAt": "2026-10-31T16:02:21.426440+00:00",
+  "verification": "Authenticated Chrome UI reloaded after saving; identifiers compared with src/scripts/analytics.ts Goal union.",
+  "sourceIdentifiersMatch": true,
+  "goals": [
+    {
+      "identifier": "order_submit",
+      "id": 674123845,
+      "name": "Сохранил анонимную заявку",
+      "addedOn": null
+    },
+    {
+      "identifier": "catalog_add",
+      "id": 674123931,
+      "name": "Добавил товар в подборку",
+      "addedOn": null
+    },
+    {
+      "identifier": "order_form_open",
+      "id": 674123960,
+      "name": "Открыл форму интереса",
+      "addedOn": null
+    },
+    {
+      "identifier": "order_form_start",
+      "id": 674123969,
+      "name": "Начал заполнять форму",
+      "addedOn": null
+    },
+    {
+      "identifier": "order_submit_error",
+      "id": 674123979,
+      "name": "Не получил подтверждение заявки",
+      "addedOn": null
+    },
+    {
+      "identifier": "calculator_interact",
+      "id": 674741444,
+      "name": "Взаимодействовал с калькулятором",
+      "addedOn": null
+    },
+    {
+      "identifier": "calc_apply_set",
+      "id": 674741510,
+      "name": "Перенёс рассчитанный набор",
+      "addedOn": null
+    },
+    {
+      "identifier": "guide_to_catalog_click",
+      "id": 674741600,
+      "name": "Перешёл из материала в каталог",
+      "addedOn": null
+    },
+    {
+      "identifier": "product_view",
+      "id": 677221319,
+      "name": "Просмотрел страницу товара",
+      "addedOn": "2026-10-31"
+    },
+    {
+      "identifier": "catalog_remove",
+      "id": 677222235,
+      "name": "Удалил товар из подборки",
+      "addedOn": "2026-10-31"
+    },
+    {
+      "identifier": "city_select",
+      "id": 677222268,
+      "name": "Выбрал город",
+      "addedOn": "2026-10-31"
+    },
+    {
+      "identifier": "selection_open",
+      "id": 677222286,
+      "name": "Открыл подборку",
+      "addedOn": "2026-10-31"
+    },
+    {
+      "identifier": "catalog_filter_apply",
+      "id": 677222288,
+      "name": "Применил фильтр каталога",
+      "addedOn": "2026-10-31"
+    }
+  ],
+  "note": "New goals collect prospective data; historical No data values are not backfilled."
+}
