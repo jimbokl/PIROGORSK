@@ -1,0 +1,351 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T15:27:24.566Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1352,
+      "lcp": 1610
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1280.3030001220702,
+      "resourceLoadDelay": 29.950999877929686,
+      "resourceLoadDuration": 281.675,
+      "elementRenderDelay": 17.76
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1672.842,
+        "display": "1.7 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2211.842,
+        "display": "2.2 s"
+      },
+      "total-blocking-time": {
+        "value": 66,
+        "display": "70 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0028790162333022923,
+        "display": "0.003"
+      },
+      "speed-index": {
+        "value": 2894.4305301039212,
+        "display": "2.9 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "displayValue": null
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "displayValue": null
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 353 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 46 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "displayValue": null
+      }
+    ],
+    "sourceReport": "lighthouse-mobile-1.json",
+    "sourceSha256": "651480b402dc348a2728da2668cd1bfcd99ac9772b7d25feb4e738813b151b16"
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T15:27:39.697Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1153,
+      "lcp": 1322
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1114.9670001220702,
+      "resourceLoadDelay": 31.735999877929686,
+      "resourceLoadDuration": 128.544,
+      "elementRenderDelay": 47.186
+    },
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1501.9040000000002,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2310.5660000000003,
+        "display": "2.3 s"
+      },
+      "total-blocking-time": {
+        "value": 24,
+        "display": "20 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0008455556410490566,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 2498.9158477715664,
+        "display": "2.5 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "displayValue": null
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "displayValue": null
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 353 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 11 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "displayValue": null
+      }
+    ],
+    "sourceReport": "lighthouse-mobile-2.json",
+    "sourceSha256": "4134be5954f2f1935bc8b490e969f1f3f1aaca1c320365d6245a1c4822875d2e"
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T15:27:53.274Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1218,
+      "lcp": 1403
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1181.4040001220703,
+      "resourceLoadDelay": 28.09899987792969,
+      "resourceLoadDuration": 139.29499987792968,
+      "elementRenderDelay": 53.84800012207031
+    },
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1503.375,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2304.375,
+        "display": "2.3 s"
+      },
+      "total-blocking-time": {
+        "value": 22,
+        "display": "20 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.013449089636596127,
+        "display": "0.013"
+      },
+      "speed-index": {
+        "value": 2581.9197885826047,
+        "display": "2.6 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "14 cookies found"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "displayValue": null
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "displayValue": null
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 353 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 11 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "displayValue": null
+      }
+    ],
+    "sourceReport": "lighthouse-mobile-3.json",
+    "sourceSha256": "6f879ca391c3a42a1c2bc806c4d04ff51b711320ccbd11cfa34b5428f55723a7"
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T15:28:07.137Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1203,
+      "lcp": 1500
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1102.0879998779296,
+      "resourceLoadDelay": 49.41400012207031,
+      "resourceLoadDuration": 323.0930001220703,
+      "elementRenderDelay": 25.017999877929686
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 510.098,
+        "display": "0.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 652.098,
+        "display": "0.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0020680189818463065,
+        "display": "0.002"
+      },
+      "speed-index": {
+        "value": 1102.2729798994587,
+        "display": "1.1 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "displayValue": "13 cookies found"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "displayValue": null
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 10 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 38 KiB"
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "displayValue": null
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 569 KiB"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 27 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "displayValue": null
+      }
+    ],
+    "sourceReport": "lighthouse-desktop-1.json",
+    "sourceSha256": "6e4cfb67132b0b39359c3527daf9d670f378a610517cd1580ef71b8ad040f7fa"
+  }
+]

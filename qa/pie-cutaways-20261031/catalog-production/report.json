@@ -1,0 +1,47 @@
+{
+  "base": "https://pirogorsk.ru",
+  "stage": "cutaways-production",
+  "views": [
+    {
+      "width": 320,
+      "result": "PASS",
+      "formats": "153 home + 153 menu",
+      "bundles": 5,
+      "editor": true,
+      "noJS": true
+    },
+    {
+      "width": 390,
+      "result": "PASS",
+      "formats": "153 home + 153 menu",
+      "bundles": 5,
+      "editor": true,
+      "noJS": true
+    },
+    {
+      "width": 768,
+      "result": "PASS",
+      "formats": "153 home + 153 menu",
+      "bundles": 5,
+      "editor": true,
+      "noJS": true
+    },
+    {
+      "width": 1024,
+      "result": "PASS",
+      "formats": "153 home + 153 menu",
+      "bundles": 5,
+      "editor": true,
+      "noJS": true
+    },
+    {
+      "width": 1280,
+      "result": "PASS",
+      "formats": "153 home + 153 menu",
+      "bundles": 5,
+      "editor": true,
+      "noJS": true
+    }
+  ],
+  "errors": []
+}
