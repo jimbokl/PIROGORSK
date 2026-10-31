@@ -8,6 +8,15 @@
 Worker dd7253d7-16be-4c2d-b7ea-aee299ee1d16 опубликован, D1 0003 применена.
 check/build/62 Node/Worker, девять валидаторов, полный browser и focused entry PASS.
 Внутренний отчёт: пустой и синтетический срезы, фильтры/суммы/четыре ширины PASS.
-CI и Pages/production-readback ещё выполняются. Отчёты и логи в этой папке.
+Runtime e4937e8139644645a6b4f04537a983e1f23989a2; CI 41235927132 SUCCESS.
+Production compatibility и entry на 320/390/768/1280 PASS; контент 6+4/50 просмотров PASS.
+Телефон/планшет просмотрены; нет JS errors/page overflow. Тестовые записи/события перехвачены.
+CLI mobile P98/98/96, LCP1,85–2,20с, медиана2,04с; desktop99/LCP0,665с.
+A/SEO100, BP77 (cookies Метрики). Не PSI/CrUX; наблюдение остаётся открытым.
+Независимый CI-артефакт скачан; размер и CRC PASS. Все 282 ресурса / 254 HTML /
+153 товара совпали с продом. Первый проход: один 503; три повтора — 200/точные байты.
+Начальная ошибка gh download (unexpected EOF) и оба результата сверки сохранены.
+P0 ATR-01/ANA-04/SCN-02 готовы; P1 семантика/месячный контент и наблюдение
+продолжаются по явным пробелам BACKLOG. Контакты/CRM/операционные факты отложены.
 CodeGraph: Transport closed; использован native search. Посторонние dirty QA
 и untracked не включать; gsc-overview.png — чужой desktop, не доказательство.

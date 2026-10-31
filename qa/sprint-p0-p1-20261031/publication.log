@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Volumes/DevSim/Projects/PIROGORSK/qa/occasion-context-20261031/verify-publication.py", line 49, in <module>
+    assert not failures, failures
+           ^^^^^^^^^^^^
+AssertionError: [{'path': '/catalog/pirog-orehoviy-700-g/', 'error': 'HTTP Error 503: Service Unavailable', 'matchesBuild': False}]
+
+Recheck PASS: isolated 503 returned HTTP 200 and exact artifact bytes in three requests (canonical and QA URL).
+PASS: 282 resources, 254 HTML and 153 product pages match CI artifact. Initial and final results preserved.

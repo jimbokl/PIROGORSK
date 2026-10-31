@@ -1,0 +1,11 @@
+{
+  "artifactId": 13055608388,
+  "archiveBytes": 220741823,
+  "zipCrc": "PASS",
+  "rangeChunks": 4,
+  "initialAttempt": {
+    "tool": "gh run download",
+    "result": "error downloading github-pages: error writing zip archive: unexpected EOF"
+  },
+  "fallback": "Authenticated GitHub API redirect; four validated HTTP 206 byte ranges; archive size and ZIP CRC checked before extracting artifact.tar"
+}

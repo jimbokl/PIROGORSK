@@ -1,5 +1,22 @@
 # Скорость production-сборки
 
+## Метки входа и сценарии — 31.10.2026
+
+Runtime `e4937e8`, [CI 41235927132 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41235927132).
+Три холодных mobile CLI-запуска на production: **P98/98/96**, LCP
+**2,04/1,85/2,20 с**, медиана **2,04 с**; TBT 45,5/46/10 мс,
+CLS 0,001–0,008. Desktop: **P99/LCP665 мс/TBT0/CLS0,001**.
+Observed mobile render delay 10–19 мс: двухсекундная задержка первого кадра
+в этой серии не воспроизвелась. LH13.5/Chrome156, simulated throttling,
+свежий процесс/профиль на каждый запуск; browser QA завершён перед серией.
+Малая лабораторная серия не доказывает полевое улучшение или устойчивый PSI.
+Accessibility/SEO100, Best Practices77 — cookies/issues сохранённой Метрики.
+В официальных настройках не найден подтверждённый выборочный noCookie-флаг;
+интеграция сохранена. [Разбор](qa/sprint-p0-p1-20261031/METRIKA-COOKIES.md),
+[метрики](qa/sprint-p0-p1-20261031/performance/metrics.json),
+[диапазоны](qa/sprint-p0-p1-20261031/performance/performance-ranges.json).
+В этом выпуске нового публичного PSI/CrUX результата нет.
+
 ## Наборы, любимая подборка и обмен ссылкой — 31.10.2026
 
 Runtime `3014165`, [CI 41190033151 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41190033151).
