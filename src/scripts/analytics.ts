@@ -6,7 +6,7 @@ import { guideTransition } from '../lib/seo-navigation';
 export type Goal = 'selection_open' | 'catalog_filter_apply' | 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error' | 'calculator_interact' | 'calc_apply_set' | 'guide_to_catalog_click';
 export type GoalParams = {
   city?: string;
-  source?: 'card' | 'bundle' | 'addon' | 'planner';
+  source?: 'card' | 'bundle' | 'addon' | 'planner' | 'favorite' | 'share';
   surface?: 'home' | 'menu' | 'product' | 'other';
   filling?: string;
   search_used?: boolean;
@@ -35,7 +35,7 @@ const analyticsEnabled = analyticsSessionEnabled(location.href, {
 export function trackGoal(goal: Goal, params: GoalParams = {}): void {
   if (!analyticsEnabled || !goals.has(goal) || !Number.isSafeInteger(analyticsConfig.metricaId) || analyticsConfig.metricaId <= 0) return;
   const safe: GoalParams = {};
-  if (params.source && ['card', 'bundle', 'addon', 'planner'].includes(params.source)) safe.source = params.source;
+  if (params.source && ['card', 'bundle', 'addon', 'planner', 'favorite', 'share'].includes(params.source)) safe.source = params.source;
   if (params.surface && ['home', 'menu', 'product', 'other'].includes(params.surface)) safe.surface = params.surface;
   if (typeof params.filling === 'string' && ['all', 'meat', 'poultry', 'fish', 'cheese', 'vegetables', 'fruit'].includes(params.filling)) safe.filling = params.filling;
   if (typeof params.search_used === 'boolean') safe.search_used = params.search_used;

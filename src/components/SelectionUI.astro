@@ -2,6 +2,8 @@
 import Icon from './Icon.astro';
 import SelectionAddOns from './SelectionAddOns.astro';
 import InterestForm from './InterestForm.astro';
+import SelectionTools from './SelectionTools.astro';
+import CompositionDialogs from './CompositionDialogs.astro';
 import { catalog } from '../data/catalog';
 import '../styles/selection.css';
 ---
@@ -10,6 +12,7 @@ import '../styles/selection.css';
       <h2 id="selection-heading">Ваша подборка</h2>
       <div data-selection-items></div>
       <p class="selection-feedback" data-selection-feedback role="status" aria-live="polite"></p>
+      <SelectionTools />
       <SelectionAddOns />
       <div class="selection-summary" hidden>
         <div class="selection-total"><span>Товары</span><strong data-total>0 ₽</strong></div>
@@ -24,6 +27,7 @@ import '../styles/selection.css';
       </div>
       <p class="selection-note">Готовим запуск. Оставьте заявку, чтобы мы учли ваш выбор. Оплата не требуется; связаться с вами по анонимной заявке не получится.</p>
     </dialog>
+<CompositionDialogs />
 <InterestForm />
 <div class="toast" role="status" aria-live="polite" data-toast></div>
 <aside class="selection-dock" data-selection-dock hidden aria-label="Ваша подборка">

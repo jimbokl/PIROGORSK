@@ -37,3 +37,21 @@ body.has-selection{padding-bottom:124px}body:has(dialog[open]) .selection-dock,b
 @media(max-width:600px){.selection-dialog{padding:20px}.selection-dialog h2{font-size:30px}.selection-dock{left:12px;right:12px;width:auto;padding:10px 12px;bottom:max(10px,env(safe-area-inset-bottom))}.selection-item{gap:10px}.selection-item h3{font-size:19px}.selection-item .item-price{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.toast{transition:none}}
 .menu-feed-notice{display:flex;align-items:center;gap:16px;margin:24px 0;padding:16px 20px;border-radius:16px;background:var(--soft);font:400 13px/1.6 var(--sans)}.menu-feed-notice p{margin:0}.menu-feed-notice a{min-height:44px;display:flex;align-items:center;margin-left:auto;white-space:nowrap}.menu-feed-notice .menu-feedback-close{position:static;width:44px;height:44px;flex-shrink:0}.menu-feed-notice[hidden]{display:none}@media(max-width:600px){.menu-feed-notice{flex-wrap:wrap}.menu-feed-notice a{margin-left:0}}
+/* Composition tools share the existing quiet selection surface. */
+.selection-tools{padding-block:16px;border-bottom:1px solid var(--line)}
+.selection-tool-actions{display:flex;flex-wrap:wrap;gap:8px 20px}
+.selection-tool-actions>button,.selection-favorite>button{display:inline-flex;align-items:center;gap:6px;min-height:44px;font:500 12px/1.5 var(--sans);text-decoration:underline;text-underline-offset:4px}
+.selection-tool-status{font:400 12px/1.6 var(--sans);color:var(--muted);margin:8px 0;overflow-wrap:anywhere}.selection-tool-status:empty{display:none}
+.selection-favorite{display:flex;align-items:center;gap:16px;margin-top:10px;padding:14px 16px;border-radius:16px;background:var(--soft)}.selection-favorite>div{margin-right:auto;min-width:0}.selection-favorite strong{display:block;font:500 13px/1.5 var(--sans)}.selection-favorite small{display:block;font:400 11px/1.6 var(--sans);color:var(--muted)}.selection-favorite>button{flex-shrink:0}
+.guest-tools{border-bottom:1px solid var(--line);padding-block:14px}.guest-tools summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;font:500 14px/1.5 var(--sans);cursor:pointer}.guest-tools summary::marker{content:''}.guest-tools[open] summary .icon{transform:rotate(45deg)}
+.guest-tools p,.composition-intro{font:400 12px/1.7 var(--sans);color:var(--muted);margin:12px 0 18px}.guest-tools form{margin-block:16px 8px}
+.selection-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+:is(.selection-fields,.bundle-edit-row)>label{display:flex;flex-direction:column;gap:6px;min-width:0;font:400 12px/1.5 var(--sans);color:var(--muted)}
+:is(.selection-fields,.bundle-edit-row) :is(input,select){box-sizing:border-box;min-width:0;width:100%;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--sans)}
+.guest-tools .button{margin-top:16px}.selection-dialog button:disabled{opacity:.45;cursor:default}
+.composition-kicker{font:500 11px/1.5 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.composition-dialog h2{margin-bottom:12px}.composition-dialog .composition-intro{margin-bottom:24px}
+.bundle-edit-row{min-width:0;padding:16px 0;border:0;border-bottom:1px solid var(--line);margin:0 0 16px}.bundle-edit-row legend{font:500 16px/1.5 var(--sans);padding:0}.bundle-edit-row>.selection-fields{margin-top:12px;grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+.selection-dialog .composition-text-button{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px;font:400 12px/1.5 var(--sans);color:var(--muted)}
+.composition-preview-items{list-style:none;padding:0;margin:0}.composition-preview-items li{display:flex;align-items:start;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font:400 14px/1.6 var(--sans)}.composition-preview-items li span{min-width:0;overflow-wrap:anywhere}.composition-preview-items strong{font-weight:500;white-space:nowrap}.composition-preview-actions{display:grid;gap:10px;margin-top:20px}
+@media(max-width:370px){.selection-favorite{flex-wrap:wrap;gap:4px 16px}.selection-favorite>div{flex-basis:100%}.selection-fields{gap:8px}.composition-preview-items li{gap:8px;font-size:13px}}

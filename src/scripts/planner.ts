@@ -38,7 +38,7 @@ function update() {
       row.append(name, price);
       return row;
     }));
-    const params = new URLSearchParams({ interest: 'calculator', items: plan.items.map(item => `${item.id}:${item.value}:${item.quantity}`).join(','), city: String(fields.get('city')) });
+    const params = new URLSearchParams({ interest: 'calculator', items: plan.items.map(item => `${item.id}:${item.value}:${item.quantity}`).join(','), city: String(fields.get('city')), guests: String(guests) });
     link.href = `/?${params}#pirogi`;
     link.removeAttribute('aria-disabled');
     error.hidden = true;

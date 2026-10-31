@@ -178,11 +178,15 @@ test('selection/filter goals send only closed parameters and never raw search te
   track('catalog_filter_apply', { surface: 'menu', filling: 'fish', search_used: true, results: 5, q: 'private', email: 'private' });
   track('selection_open', { surface: 'product', city: 'Калининград' });
   track('catalog_add', { source: 'addon', surface: 'home', productid: 'cranberry', qty: 1 });
+  track('catalog_add', { source: 'favorite', surface: 'other', city: 'Калининград', productid: 'fish', qty: 2 });
+  track('catalog_add', { source: 'share', surface: 'home', city: 'Светлогорск', productid: 'apple', qty: 1, link: 'private' });
   track('catalog_filter_apply', { source: 'private', surface: 'private', filling: 'private', search_used: 'private', results: 154, query: 'private' });
   assert.deepEqual(JSON.parse(JSON.stringify(calls.map(call => call[3]))), [
     { surface: 'menu', filling: 'fish', search_used: true, results: 5 },
     { surface: 'product', city: 'Калининград' },
     { source: 'addon', surface: 'home', productid: 'cranberry', qty: 1 },
+    { source: 'favorite', surface: 'other', city: 'Калининград', productid: 'fish', qty: 2 },
+    { source: 'share', surface: 'home', city: 'Светлогорск', productid: 'apple', qty: 1 },
     {},
   ]);
   assert.ok(!JSON.stringify(calls).includes('private'));

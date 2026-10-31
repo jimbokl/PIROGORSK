@@ -21,7 +21,15 @@ DOM-01–04 implemented: shared editable selection on home and internal pages; p
 
 ## Publication
 
-Pending CI deployment and independent production verification. This section will be updated with runtime, CI, responsive/function checks and performance after deployment.
+Runtime `0d7b9ba60de69403ed40b74f6af5b7d0e789d828`; [CI 41186619321 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41186619321).
+
+- [Publication](publication.json): all 273 resources, including 247 HTML and runtime CSS/JS, byte-match the independently downloaded CI artifact.
+- [Responsive](production-responsive.json): 65 views, 13 templates × five widths PASS; no-JS full catalog and reduced motion PASS.
+- [Functional](functional-production.log): 320/390/768/1024/1280 PASS. External requests and non-GET requests blocked; no real interest submissions.
+- [Release compatibility](release-published.log) PASS.
+- [Public PSI](public-pagespeed/report.json): mobile 99/A100/BP100/SEO100, LCP 2.0 s; desktop 100/A100/BP100/SEO100, LCP 0.45 s. No CrUX data. Public API returned 429; fresh public UI reports completed.
+- [CLI metrics](performance-after/metrics.json): mobile P97/99/98, LCP 1.78–2.21 s, median 2.16 s; desktop P99/LCP 0.634 s. Three samples are not a field performance guarantee.
+- Phone/tablet screenshots inspected.
 
 ## Next queue
 

@@ -5,6 +5,7 @@ import { parsePlan } from '../lib/pie-planner';
 import { estimateDelivery } from '../data/pricing';
 import { bundles, addOnGroups } from '../data/bundles';
 import { mergeSelection, availableAddOns, readSavedSelection } from '../lib/selection-offers';
+import { initSelectionTools } from './selection-tools';
 
 type Selection = { id: string; value: number; quantity: number };
 const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
@@ -40,9 +41,10 @@ function openDialog(id: string) {
   if (!dialog) return;
   if (id === 'city-dialog' && document.querySelector<HTMLDialogElement>('#selection-dialog')?.open) returnToSelection = true;
   const active = document.activeElement;
+  const previousDialog = active instanceof HTMLElement ? active.closest('dialog') : null;
   const trigger = active instanceof HTMLElement && active !== document.body && !active.closest('dialog')
     ? active
-    : document.querySelector<HTMLElement>(`[data-open="${id}"]`);
+    : (previousDialog && dialogTriggers.get(previousDialog)) || document.querySelector<HTMLElement>(`[data-open="${id}"]`) || document.querySelector<HTMLElement>('.masthead-selection');
   if (trigger) dialogTriggers.set(dialog, trigger);
   all<HTMLDialogElement>('dialog[open]').forEach(current => current.close());
   if (id === 'selection-dialog') renderSelection();
@@ -65,7 +67,7 @@ function setCity(value: string, announce = true, persist = true) {
   if (announce) toast(`Ваш город — ${city}`);
 }
 
-export function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add', source: 'card' | 'bundle' | 'addon' | 'planner' = 'card') {
+export function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add', source: 'card' | 'bundle' | 'addon' | 'planner' | 'favorite' | 'share' = 'card', targetCity?: string) {
   syncSavedState();
   const merged = mergeSelection(selection, items, products, mode);
   if (!merged) {
@@ -74,6 +76,7 @@ export function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add', sou
     document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = message;
     return false;
   }
+  if (targetCity) setCity(targetCity, false);
   for (const item of merged) {
     const added = item.quantity - (selection.find(entry => entry.id === item.id && entry.value === item.value)?.quantity || 0);
     if (added) trackGoal('catalog_add', { city, source, surface: catalogSurface(), productid: item.id, variant: String(item.value), qty: added, value: productFor(item).prices[item.value] * added });
@@ -81,6 +84,20 @@ export function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add', sou
   selection.splice(0, selection.length, ...merged);
   updateBadge();
   if (document.querySelector<HTMLDialogElement>('#selection-dialog')?.open) renderSelection();
+  return true;
+}
+
+function replaceItems(items: Selection[], source: 'bundle' | 'addon' | 'favorite' | 'share', targetCity?: string) {
+  syncSavedState();
+  const merged = mergeSelection([], items, products);
+  if (!merged) return false;
+  if (targetCity) setCity(targetCity, false);
+  for (const item of merged) {
+    const added = item.quantity - (selection.find(entry => entry.id === item.id && entry.value === item.value)?.quantity || 0);
+    if (added > 0) trackGoal('catalog_add', { city, source, surface: catalogSurface(), productid: item.id, variant: String(item.value), qty: added, value: productFor(item).prices[item.value] * added });
+  }
+  selection.splice(0, selection.length, ...merged);
+  updateBadge();
   return true;
 }
 
@@ -369,3 +386,5 @@ if (interestId === 'selection') {
     card?.querySelector<HTMLButtonElement>('[data-add]')?.focus({ preventScroll: true });
   }
 }
+
+initSelectionTools({ products, getSelection, getCity: () => city, addItems, replaceItems, openDialog });

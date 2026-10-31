@@ -1,3 +1,14 @@
+## Следующий функциональный спринт — 31.10.2026
+
+Пользователь утвердил бесконечную ленту: сохраняем её текущие вид и поведение.
+Цель DOM-05–08: редактировать набор до добавления, явно сохранить любимый состав,
+рассчитать дополнения по гостям и восстановить состав по ссылке.
+Статусы и критерии — в [BACKLOG.md](BACKLOG.md). CRM отложена.
+DOM-05–08 реализованы; check/build/49 Node/семь валидаторов/Worker PASS.
+Новые функциональные сценарии на 320/390/768/1024/1280 PASS.
+Full browser и 75 responsive views/no-JS/reduced-motion PASS. Далее CI и production-приёмка.
+[Протокол](qa/selection-tools-20261031/README.md).
+
 ## Единый бэклог — 31.10.2026
 
 [BACKLOG.md](BACKLOG.md) — общий список задач, приоритетов, статусов и критериев
@@ -17,7 +28,11 @@ URL/Back/reset и события источников выбора без пер
 Local check/build/45 Node/семь валидаторов/Worker/API/full browser PASS.
 65 responsive views (13 шаблонов × 320/390/768/1024/1280), no-JS/reduced motion PASS.
 Браузерные сценарии полного выбора — 320/390/1280. Registry strict PASS, drift=false.
-Публикация и prod QA выполняются; доказательства:
+Runtime `0d7b9ba`; CI 41186619321 SUCCESS. Production: все 273 ресурса,
+включая 247 HTML и runtime CSS/JS, совпали с независимым CI-артефактом.
+65 responsive views и функциональные сценарии на пяти ширинах PASS.
+Публичный PSI: mobile 99/LCP 2,0 с, desktop 100/LCP 0,45 с (lab; CrUX нет).
+CLI mobile 1,78–2,21 с, median 2,16 с; desktop 0,63 с. Доказательства:
 [qa/dominos-sprint-20261031/README.md](qa/dominos-sprint-20261031/README.md).
 [Бэклог и план](DOMINOS-BACKLOG-2026-10-31.md); P1/P2 — следующая очередь, CRM отложена.
 

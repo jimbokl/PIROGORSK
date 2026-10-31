@@ -1,5 +1,27 @@
 # Скорость production-сборки
 
+## Общая подборка и фильтры — 31.10.2026
+
+Runtime `0d7b9ba`, [CI 41186619321 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41186619321).
+Три свежих мобильных CLI-профиля до/после публикации: LCP **1,81–2,06 с**
+(медиана 1,90 с) → **1,78–2,21 с** (медиана 2,16 с); после P97/99/98,
+TBT19–40,5мс, CLS0,004–0,056. Desktop после: P99/LCP634мс/TBT0/CLS0,032.
+Observed render delay после 2–30мс; двухсекундное ожидание первого кадра в этих
+трассах не воспроизвелось. Рост медианы этой небольшой серии не доказывает
+регрессию или улучшение. [До](qa/dominos-sprint-20261031/performance-before/performance-ranges.json),
+[после](qa/dominos-sprint-20261031/performance-after/performance-ranges.json),
+[метрики всех запусков](qa/dominos-sprint-20261031/performance-after/metrics.json).
+CLI BP77 связан с сохранённой Метрикой; A100/SEO100.
+
+Независимый публичный PSI, 31.10, 11:17 GMT+2, LH13.6/Chrome153:
+[mobile](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/g019toaszo?form_factor=mobile)
+**P99/LCP2,0с/TBT20мс/CLS0,001** (LCP1951мс в ссылке калькулятора);
+[desktop](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/g019toaszo?form_factor=desktop)
+**P100/LCP450мс/TBT0/CLS0,004**. A/BP/SEO100 в обоих.
+API отдельно вернул429 из-за дневной квоты; результат получен через публичный UI.
+[Зафиксированные показания и ссылки](qa/dominos-sprint-20261031/public-pagespeed/report.json).
+CrUX: «Нет данных»; лабораторные результаты не означают полевую стабильность.
+
 ## Mobile LCP: устранение font preload — 29.10.2026
 
 На прежнем runtime `e6af7dd` два новых публичных контроля дали **P100/LCP1651мс** и **P86/LCP3859мс**, во втором observed render delay2000мс. [Оба результата](qa/home-lcp-20261029/font-fix-psi-controls.json). Причина скачка не в весе фонового AVIF: при сохранённых изображениях, HTML body, скриптах и шрифтах удаление только четырёх font preload воспроизводимо устранило ожидание первого кадра в полном Chrome153. В контролируемой серии A/B/A baseline FCP2216–2307мс, без preload128–131мс; observed LCP963–1157мс, render86–124мс. Возврат preload вернул задержку. [Все восемь опытов](qa/home-lcp-20261029/render-font-priority-summary.json); это диагностический devtools-throttling, не публичные PSI scores. Внутренний механизм задержки Chromium не установлен.

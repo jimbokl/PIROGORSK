@@ -1,0 +1,1921 @@
+{
+  "checkedAt": "2026-10-31T09:26:57.994087+00:00",
+  "runtime": "0d7b9ba60de69403ed40b74f6af5b7d0e789d828",
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/41186619321",
+  "source": "Independently downloaded GitHub Actions Pages artifact",
+  "htmlPages": 247,
+  "files": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 1054901,
+      "sha256": "63f81be50f1e4a84546c29bfea81f7c2784b9699a3e8737c8ccd216128bed6cc",
+      "matchesBuild": true
+    },
+    {
+      "path": "/82ddd92ad17884189d57e659c825269c.txt",
+      "status": 200,
+      "bytes": 33,
+      "sha256": "efbdf36bc1faeaedd3e7a789edd4aa2b2b173dec7d120892a0278f82bc93a3be",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.CLUYxgcP.js",
+      "status": 200,
+      "bytes": 32,
+      "sha256": "b433f80d06b4906e719127e7b16eb122ad231c3859eba5c415c9aa100108de7f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/InterestForm.astro_astro_type_script_index_0_lang.CB4rhBlS.js",
+      "status": 200,
+      "bytes": 8444,
+      "sha256": "40d2dcbe1beadfec375c78e0d4cf4b7a1e91111d08700314a6bddd5a98614d7c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/PartyCalculator.astro_astro_type_script_index_0_lang.BdSw_P1S.js",
+      "status": 200,
+      "bytes": 1963,
+      "sha256": "69ea2beee5aefc0342ba273c3520846bc38189352e0a658eac5d598c2c51fbe7",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/ProductAddOns.astro_astro_type_script_index_0_lang.CeiahEiA.js",
+      "status": 200,
+      "bytes": 1797,
+      "sha256": "bfd7f9d7641f07a7d115845ae90cc8752e88c6f0b84073f3b8bb767378fbe901",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/ProductOptions.astro_astro_type_script_index_0_lang.CaOPtTca.js",
+      "status": 200,
+      "bytes": 2276,
+      "sha256": "faebcb83a4d322949de067ae61d41203b9c841ddc047457e04d9daf1ef36dc2c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+      "status": 200,
+      "bytes": 38,
+      "sha256": "a1245db7bbe51c23ded02852651413cd1b463891c75f03c974983f3abf8b0a80",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/SelectionUI.astro_astro_type_script_index_0_lang.uT1GiqR6.js",
+      "status": 200,
+      "bytes": 33,
+      "sha256": "787deb1f46fb52dd97eca981f0abf32ed0137cfeca1a57ad30775dd8e696feda",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+      "status": 200,
+      "bytes": 38,
+      "sha256": "a1245db7bbe51c23ded02852651413cd1b463891c75f03c974983f3abf8b0a80",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/SupplierCatalog.astro_astro_type_script_index_0_lang.CUpG2H3J.js",
+      "status": 200,
+      "bytes": 2908,
+      "sha256": "12ab14613d304793ea2c3052613aab02b4f25149f45ed516f3654f092e3a75bf",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/analytics.D4rAawAV.js",
+      "status": 200,
+      "bytes": 179806,
+      "sha256": "704b4b502d46ff0c4377241e624a333f46cb16a7921c949c30993efe51b9784a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/catalog-filters.LmoEp6DR.js",
+      "status": 200,
+      "bytes": 2129,
+      "sha256": "2a05c7f7893d13abdf09c1357a1031e84e784df5971f68527c46cebd5d56ab3c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/index.astro_astro_type_script_index_0_lang.1Z3Lpbx2.js",
+      "status": 200,
+      "bytes": 3319,
+      "sha256": "517a8e95c385bfdad5e5e3884f53ebd45efc7d9a8d3c26283db9bc4ab35666e9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/menu.astro_astro_type_script_index_0_lang.CKmX13Ze.js",
+      "status": 200,
+      "bytes": 4318,
+      "sha256": "7a2c388d75df2dfe0795928a84dc0b38cca36a01fb46972d57a1dc6995b297d4",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/pie-planner.D65GEHih.js",
+      "status": 200,
+      "bytes": 1283,
+      "sha256": "aa2d2be6ffd1060a74fb96bfe0812ff7d0594e006749602dffaaaa25117fdba0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/podbor.astro_astro_type_script_index_0_lang.ijuMTL0_.js",
+      "status": 200,
+      "bytes": 3096,
+      "sha256": "0b191c2b71751848f0a0a87c1c4cfa7c59d908d33557bcc17556fa3d616a623f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/pricing.uFphHH5q.js",
+      "status": 200,
+      "bytes": 170,
+      "sha256": "6ef3682b01b705bac5b5defa53b92b02c0cd3f1a6364c2a1660e735f4ffde861",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/product-artwork.CYLiGMDI.js",
+      "status": 200,
+      "bytes": 536,
+      "sha256": "3e5494129ebce9af731ffa682961b264c9035ef2aa83dfdffca632a5a7f80623",
+      "matchesBuild": true
+    },
+    {
+      "path": "/_astro/storefront.CIsu0cgC.js",
+      "status": 200,
+      "bytes": 17898,
+      "sha256": "e8729b0fba9a38e96bcfcb5ec1749a91e66272f3939524d7574558faa2c72f3c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "bytes": 176494,
+      "sha256": "02964cca61393f67fb021bc65ed59db1612997db60d303f4945a41644628323f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "bytes": 312927,
+      "sha256": "eaed54795adf74063e83db90f2cf64a7f80f72eaa0d0ca45e5ff0f94793afd9e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/brand/pirogorsk-symbol.svg",
+      "status": 200,
+      "bytes": 3301,
+      "sha256": "bbd20a6c7aa899dc93c242877407ae6e3c671862b44289b04f4113fb81585770",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/assorti-maffinov-16-sht-po-80-gr-po-4-sht-kazhdogo-vida/",
+      "status": 200,
+      "bytes": 197102,
+      "sha256": "9e0b38de606629dd77f9043837ab1fee1c405e3de65d76a6419b9f4afdc5b747",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/assorti-na-vybor-kruassanov-mini-30-g-h-100-sht-up/",
+      "status": 200,
+      "bytes": 198206,
+      "sha256": "1036c6a6bf8a2dedd97c2324f2634943719334a73b5c892692142a0eb7b595ae",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulka-dlya-gamburgera-maksi-190-g/",
+      "status": 200,
+      "bytes": 197581,
+      "sha256": "a6a0c45686a3a98bcf5c0eccf2cb5430f77e876ca7a9ecc495ff17e6e15dddf1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-dieticheskaya-s-otrubyami-30-gr/",
+      "status": 200,
+      "bytes": 197871,
+      "sha256": "e64de8d3aed9c9e2a529c6b5e6d587afec91fdfec295e73b94dd2513118b1a24",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-dlya-gamburgera-briosh-55-g/",
+      "status": 200,
+      "bytes": 198178,
+      "sha256": "cf155d5a1cde43fc866297391a2f2ba4f36bf9b1645b0d3dbcdb6aab3511e93b",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-dlya-gamburgera-briosh-bolshaya-80-g/",
+      "status": 200,
+      "bytes": 198772,
+      "sha256": "304d90848bc3853962d4b773a8431a344cb98736ed3a241f2395ad4e452e570d",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-dlya-gamburgera-s-kunzhutom-bolshaya/",
+      "status": 200,
+      "bytes": 198318,
+      "sha256": "e372e081ae28a05c0281a4210d16bb749b7f3bff4c01605912fafd59fcfd247a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-dlya-gamburgera-s-kunzhutom/",
+      "status": 200,
+      "bytes": 197839,
+      "sha256": "49bc427009ef16347553b7e30cca15d7643b72d3e39d475c7e5ec877911ff0a7",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-dlya-gamburgera-solodovaya-75-gr/",
+      "status": 200,
+      "bytes": 198078,
+      "sha256": "f232b845c47bb87cdeef02ebce1c0d3cc2132f196dc713da04623ee46062119e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-dlya-gamburgera-vitaya-75-g/",
+      "status": 200,
+      "bytes": 197674,
+      "sha256": "440d917e22d818b237177e15f44a4e8f0c0bb716aa607f0f0230ed870e4d2e4c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-k-kofe-85-gr-h-100-sht-v-up/",
+      "status": 200,
+      "bytes": 198847,
+      "sha256": "ef1000205a468c644f93bc90bf77e85a98df4624b31add2052d56571a6e548df",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-litovskaya-30gr/",
+      "status": 200,
+      "bytes": 197009,
+      "sha256": "c1ed14a29da572f17560074db8f8e58b836c961aac22c5bae23cdff841a385f6",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-s-bazilikom-i-maslinami-80-gr/",
+      "status": 200,
+      "bytes": 197947,
+      "sha256": "47dcff88a3a899f268e697af86525c6aa481ab5d6d9462616ce0f629758e24b0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-smak-dlya-gamburgera-mini-30-gr/",
+      "status": 200,
+      "bytes": 198126,
+      "sha256": "79f2247e4885b04ae46502cd4007b801922da0018d6d7ed82a91eb4687c14466",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-smak-gollandskaya-40-gr/",
+      "status": 200,
+      "bytes": 197576,
+      "sha256": "c21048a93eec4be9efb050930332fb653952685f554048510b9a36edbbe6faaa",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-zernovaya-30-gr/",
+      "status": 200,
+      "bytes": 196967,
+      "sha256": "77299eb2b138e4ceab0cd07df4106a6b2e348d064b18b9a04d2d7b589ce11697",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/bulochka-zernovaya-kornshpits-70-g/",
+      "status": 200,
+      "bytes": 197948,
+      "sha256": "25f76f489144f89972e2367804d31386bcf99f9294617e0cdc71f85fef7f5a08",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/chay/",
+      "status": 200,
+      "bytes": 194182,
+      "sha256": "74a81e68f56bc205ab20233c68704ac58b312d665933d59e687bf505db4e1978",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/chiabatta-mini-30-gr/",
+      "status": 200,
+      "bytes": 196679,
+      "sha256": "3e7de4ab68b3852d6b34f4ac3a48e9593ee1abdb6dd79a8883b27bba15ba396f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/chiabatta-pshenichnaya-kvadratnaya/",
+      "status": 200,
+      "bytes": 197715,
+      "sha256": "75375d5b57ff405af84bc62a9f6d83604032c0e139167d7975b4565a321ee861",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/chiabatta-pshenichnaya-pryamougolnaya/",
+      "status": 200,
+      "bytes": 197895,
+      "sha256": "c98663cd697ae42a63e20059a310d0f1661dd11fdac1b418bf7145a6d4fa891b",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/chiabatta-solodovaya-70-gr/",
+      "status": 200,
+      "bytes": 197017,
+      "sha256": "dfa65839d255fb4556eb5c99aee587917d18b93161e6f2f3cb5bec1639ed965f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/chiabatta-solodovaya-mini-30-gr/",
+      "status": 200,
+      "bytes": 197391,
+      "sha256": "e7652764a25e038d35e1511591b381bc43dbed6bcc9e5624f3a2b9172aef11b9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/flay-zimnyaya-vishnya-2-34-kg-18-sht-po-130-g/",
+      "status": 200,
+      "bytes": 197121,
+      "sha256": "60d8f48a5e3be1deb53eb3c6182ccfe325199eeb6e0728013dab69cb8119e3f8",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/hlebnaya-korzina-1-8-kg/",
+      "status": 200,
+      "bytes": 195979,
+      "sha256": "b2724e87e0d2a81d53d9fd4711268b7bf29617238d7f8623dd0993bf3b8432b1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/klyukvennyy-mors/",
+      "status": 200,
+      "bytes": 194741,
+      "sha256": "5b6a40ce5f664b06b24ecb1cdf9eb05f60d03985a165d52f20b63d658a2cfd26",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kofe/",
+      "status": 200,
+      "bytes": 194142,
+      "sha256": "42a0adc761898510d538a34f42cbedc99847542e3559b64d26faa9e2ed92aa76",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/konvert-s-abrikosom-100-gr-h-80-sht-up/",
+      "status": 200,
+      "bytes": 198374,
+      "sha256": "10d11c95180f49acc05b4ed4230f76c485279bf3d59b87d34f829d7304e5d146",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/konvert-s-persikom-i-yablokom-100-gr-h-80-sht-up/",
+      "status": 200,
+      "bytes": 198792,
+      "sha256": "0f816e5120c5475813bedd02977e6153d487bb5be886faade9201efc02836ab4",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/konvert-s-vishney-100-gr-h-80-sht-up/",
+      "status": 200,
+      "bytes": 198139,
+      "sha256": "57c934cdcf40a8f05d532f4123adb81230d76519a423e1a90608571f1f82f8ac",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/konvert-yablokom-i-izyumom-100-gr-h-80-sht-up/",
+      "status": 200,
+      "bytes": 198783,
+      "sha256": "2aadce6c567e38cc6d3daf6f1586ac09c89ad84776f573e9b63ed959a6b6dcb6",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kruassan-60-g-h-50-sht-up/",
+      "status": 200,
+      "bytes": 197587,
+      "sha256": "c8981c8dd3b098e00180153a90c0486f01b79904b7422a2e897da496c1699550",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kruassan-mini-30-g-h-100-sht-up/",
+      "status": 200,
+      "bytes": 197978,
+      "sha256": "d3d8fe934080b2463c16937885fb9be59749736d0cfc742abeb107bb7865d8e6",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kruassan-s-klenovym-siropom-i-gretskim-orehom-70-g-h-20-sht-up/",
+      "status": 200,
+      "bytes": 200151,
+      "sha256": "113c9a85b24b67f25f0cfd645e6fb1ea25c7a66c55df729651e826fadc0902e7",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kruassan-s-mindalnoy-nachinkoy-70-g-h-20-sht-up/",
+      "status": 200,
+      "bytes": 199356,
+      "sha256": "67d4ca2749447c582b7d65cd5d4a56dfb07a8f986e5fe176952a508c23d317df",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kruassan-s-shokoladnoy-nachinkoy-70-g-h-20-sht-up/",
+      "status": 200,
+      "bytes": 199258,
+      "sha256": "d8d08d31b05021b4483679c76f699625e0467388c8cebb4b75dfa52bb90e1b3b",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kruassan-s-vishnevoy-nachinkoy-70-g-h-20-sht-up/",
+      "status": 200,
+      "bytes": 199280,
+      "sha256": "ade9f79e436a4062bad33df56b4ec29a7fe47fa248f598ac445437f7b7fe7fcb",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kruassan-zernovoy-30-gr-h-100-sht-up/",
+      "status": 200,
+      "bytes": 198377,
+      "sha256": "56d922f4b272b114c74feb0b2bd6b7a86be611bfc350eca34b4b321d60b61522",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kurnik-s-indyushkoy-2000-g/",
+      "status": 200,
+      "bytes": 238528,
+      "sha256": "f5d4244ce45e91cb796ce907d723c159d243eebecfeee201d92307c107d6eed1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/kurnik-s-makom-i-vishney-1700-g/",
+      "status": 200,
+      "bytes": 238156,
+      "sha256": "66549a2d248b6b71ce04dedbbadbdef9427de9def6a3d19122ecd19baeda236e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/lepeshka-pshenichnaya-kruglaya/",
+      "status": 200,
+      "bytes": 197362,
+      "sha256": "99efde832e2cd1b13ce8058abbe0f9ddf87050600a18703647239865b33e4433",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/limburgskii-pirog-s-vishney-1400-g/",
+      "status": 200,
+      "bytes": 238669,
+      "sha256": "38e808c07a518b8034d0786c026e9bab6301b0e13234594026803c6d7db55e0e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/limburgskii-pirog-s-yablokami-1400-g/",
+      "status": 200,
+      "bytes": 238534,
+      "sha256": "674de5c72109a2dbb131d00d98350829718aa6f175f885084bceafd5f213b38a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/loranskij-pirog-s-gribami-1500-g/",
+      "status": 200,
+      "bytes": 239071,
+      "sha256": "fa1313d25e604548d058621c6b59bb89856bce75d5b6c1d518f9a09f1df82031",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/loranskij-pirog-s-tunczom-1500-g/",
+      "status": 200,
+      "bytes": 238998,
+      "sha256": "d8a5eb4140682e5fce245122dcd828d39137e3c2473b7c96e8da94779462435f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/loranskij-pirog-s-vetchinoj-1500-g/",
+      "status": 200,
+      "bytes": 239057,
+      "sha256": "1c721f129c9a72b0b811768af5aed48afe336b5f7588749f20a2220d792f8057",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/maffin-apelsin-s-shokoladom/",
+      "status": 200,
+      "bytes": 197868,
+      "sha256": "1591209517ac8598600266add9ffaa559c26d44a98cb298181678fffcf16fa1a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/maffin-chernichnyy/",
+      "status": 200,
+      "bytes": 197060,
+      "sha256": "3c16636ed26a0ab81def4b48f5ebc0a05cf38d4a225d295fbddf198953eecb84",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/maffin-gretskiy-oreh/",
+      "status": 200,
+      "bytes": 197050,
+      "sha256": "0f33b282e5df83cb025fe9ad1f4a5df34044ef60e3810fd438d1e959b5e0eb8c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/maffin-troynoy-shokolad/",
+      "status": 200,
+      "bytes": 197224,
+      "sha256": "b2ed3cb5d6ef04a2d923a7efbc1ac77ed119b0b994ce31c2e2e785e2339bb180",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/nabor-posudy/",
+      "status": 200,
+      "bytes": 185379,
+      "sha256": "2b0e3bdcfade287881c344b20043358d036b2af4e5d5fe648918d7cb47938824",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/oblepikhovyy-mors/",
+      "status": 200,
+      "bytes": 194513,
+      "sha256": "743328feff91a136e084acbec92da6092b7575bbdb632858d7d6293db620c9d5",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-kapustoj-i-greczkim-orexom-850-g/",
+      "status": 200,
+      "bytes": 238743,
+      "sha256": "0a9d5fc920108d1d4ef7475e4eecebc1619cd1db0f5c3b51befba5a39b8354f8",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-kartofelem-850-g/",
+      "status": 200,
+      "bytes": 238134,
+      "sha256": "63c41d3f80de018413ce3540bd384a30fe1ce185cf9d776b984d4a41a486850a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-kartofelem-i-syirom-850-g/",
+      "status": 200,
+      "bytes": 238675,
+      "sha256": "6f48bc72b5427bacca3b710cfb87856c5b13f0e946288bd7e578dceb75f22baf",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-kartofelem-i-zelenyu-850-g/",
+      "status": 200,
+      "bytes": 238567,
+      "sha256": "760d034a0f750f1ab6132e84dc729767da0c30ea75f118ddd6e9437ccfab9def",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-myasom-850-g/",
+      "status": 200,
+      "bytes": 238711,
+      "sha256": "8e7f131578086e6216ab818b5fd7cbf44f220846e33ff12a9783aa04dd06c599",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-myasom-govyadina-850-g/",
+      "status": 200,
+      "bytes": 238364,
+      "sha256": "77a6d7334175eaff9aac0f77e0061cf00d70384174c9afb16982c059301ead37",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-syirom-850-g/",
+      "status": 200,
+      "bytes": 238133,
+      "sha256": "8ac872f10104f355320dd32283b3b6fdbb307c164a5d7b639ec07e9962f087b3",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-syirom-i-zelenyu-850-g/",
+      "status": 200,
+      "bytes": 238392,
+      "sha256": "2514305eb3dfcdd1a744f5b95422d08def93451321a10288aaeda06f2a47ca53",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskij-pirog-s-yablokom-i-koriczej-850-g/",
+      "status": 200,
+      "bytes": 238589,
+      "sha256": "0d15ed0a7ed609612ca27f187e554d56346afe8f3655beff409db511809f11e7",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-apelsinlimon-850-g/",
+      "status": 200,
+      "bytes": 238433,
+      "sha256": "9cfb1b7f9eced96f669e78f645b89de9f9bb80e1bd2fa19ad9398912f8e07d06",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-apelsinom-i-limonom/",
+      "status": 200,
+      "bytes": 240995,
+      "sha256": "2098eddd0b087f44fa3ac2d981dd1d52f9866e4f2a9febcac16b7c4e609c4128",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-fasolyu-i-syrom-850-g/",
+      "status": 200,
+      "bytes": 238407,
+      "sha256": "2971951e832e544bb1726118b2349039e4a3dea3f4a5a1d75fa53ade2406e6cc",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-govyadinoy-i-svininoy/",
+      "status": 200,
+      "bytes": 241131,
+      "sha256": "b21c3a5b6fd7f97c09f4009d021e28222619899b7613bc25a790764a1c30822d",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-govyadinoy/",
+      "status": 200,
+      "bytes": 240471,
+      "sha256": "9ca7298a37d527f5cc9f27977ea6507b8fcc6307bc96f631f72961b998109546",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-kapustoy-i-gretskim-orehom/",
+      "status": 200,
+      "bytes": 241465,
+      "sha256": "612ec86746463be9043dc6865aa2a9895f52c2ffdec4f0ddf241138fc45e1af4",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-kartofelem-i-syrom/",
+      "status": 200,
+      "bytes": 241016,
+      "sha256": "072ae41bd24eeebb808d90fa28a735bdc1a1ffec0b6c7c84437a9073aec24b98",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-kartofelem-i-zelenyu/",
+      "status": 200,
+      "bytes": 241055,
+      "sha256": "d9e43d7b3e8ca7a467f44899410ec8c27193a54b3796844b7634dc93fe2ad4d1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-kartofelem/",
+      "status": 200,
+      "bytes": 240668,
+      "sha256": "457f4ef4e7f87d210b85681df411a411f53f31b3b30d11b05f648a5c295b3d95",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "status": 200,
+      "bytes": 240955,
+      "sha256": "e0601abf993f56646fe32f77f18287dd1dac5bb4c0146f473223821b7a5abca9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-syrom-i-zelenyu/",
+      "status": 200,
+      "bytes": 240691,
+      "sha256": "4bc8ea74e8de37953a1bca4bdee069faaa9297ae349c521bf277044275a2eebb",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-syrom/",
+      "status": 200,
+      "bytes": 240016,
+      "sha256": "473bf915d012d3a38e75f2da39bc4c70da12d46d409f67b9154e0a1e8a039548",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-tykvoy-i-syrom-850-g/",
+      "status": 200,
+      "bytes": 238445,
+      "sha256": "133a609c2c58465018001bdda5e4a8651f3e4b80d759e5f934bd33409241f29f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-tykvoy-i-syrom/",
+      "status": 200,
+      "bytes": 240777,
+      "sha256": "5f2fc444cefc21428f1de7fac37441a22600f2e526603f0c8a2b3f3ac2549d1f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-vishney-i-gretskim-orehom-850-g/",
+      "status": 200,
+      "bytes": 238710,
+      "sha256": "f99b44746860ca6be6a9894c7963b1339ed3b8bba9bb60b909b5e071c423b50a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-vishney-i-gretskim-orehom/",
+      "status": 200,
+      "bytes": 241219,
+      "sha256": "3fd2ba2ec1fb3ad73a030abb0deb60eca98a697c70c1b438ab9affa00364fe1a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-yablokom-i-koritsey/",
+      "status": 200,
+      "bytes": 241071,
+      "sha256": "065082802fc15534ecc230e17cc43fb616dbb57b14e042956f4a3feee60699e0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-so-shpinatom-i-syrom-850-g/",
+      "status": 200,
+      "bytes": 238397,
+      "sha256": "ab6fa6c780bff650bac2a69b20bb363e0fb3e2869b4f994f2a12489a162a7256",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-so-shpinatom-i-syrom/",
+      "status": 200,
+      "bytes": 240940,
+      "sha256": "d0c988731c846fa64522b547a9b4ec901a757e56d3484fcf754fdcf39077e473",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-c-tvorogom-i-izyumom-1200-g/",
+      "status": 200,
+      "bytes": 238110,
+      "sha256": "46a27093bdee13486d0475b04de09b90278c0d7778146349069728d085bae0d9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-c-tvorogom-i-vishnej-1300-g/",
+      "status": 200,
+      "bytes": 238268,
+      "sha256": "f3f53edc6304bb5c5cf9be6da94bc7389af0b21b480ae37abcf9c61483eb1a39",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-chizburger-1700-g/",
+      "status": 200,
+      "bytes": 238627,
+      "sha256": "58cb0827ece87456061bc62c4ec51b29b8661b1654b1d214ab738ff2c6b979f2",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-iz-file-kurinogo-bedra-s-bazilikom-i-cherri-1200-g/",
+      "status": 200,
+      "bytes": 239087,
+      "sha256": "d5ec3b770f8c83f5a8592839ab20313161285c1090dacb67429f1bc031fdb556",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-myasnoy-1300-g/",
+      "status": 200,
+      "bytes": 238336,
+      "sha256": "ff351fa26531d6b691e77fb471f4daa58c2ae801dd5b1b2182ede58e129b2979",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-orehoviy-700-g/",
+      "status": 200,
+      "bytes": 237603,
+      "sha256": "4f51c257a3a29804e3851d2798572bde65552b2cd4456651cd2e279fb06edf13",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-prusskiy-lukovyy-1500-g/",
+      "status": 200,
+      "bytes": 236152,
+      "sha256": "e05ad5e3e82d3ccf3b0fbe2ea8f89a0444bdf6c1003d86969b14d6aa4324007a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-rzhanoy-s-ovoshchami-gril-1600-g/",
+      "status": 200,
+      "bytes": 239103,
+      "sha256": "eb272a57598eefcdb2114d8dce115dc4db6782b1b39435fe91f4b596220c0af0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-rzhanoy-zakusochnyy-s-seldyu-1100-g/",
+      "status": 200,
+      "bytes": 239012,
+      "sha256": "f333afc72ea9c2b8b94487af300f9d12558a44238b8fcaa05a7edf24e17b78b1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-abrikosom-1300-g/",
+      "status": 200,
+      "bytes": 238510,
+      "sha256": "b1aabdf710f956fad8bc214612bae083db3378c21d9d1a59aa460cd09adbf733",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-chornoy-smorodinoy-1250-g/",
+      "status": 200,
+      "bytes": 238453,
+      "sha256": "68a1a2c9b8811f436517856e87ceb7fa45d0bfca7a02b9ce9393141a253a50da",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-kapustoj-1200-g/",
+      "status": 200,
+      "bytes": 238153,
+      "sha256": "eb7c1f2fcd9ea1746e5f330955a019b85791205a51ed0d6cf0ad88eed7116447",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-kapustoy-v-slivkah-1200-g/",
+      "status": 200,
+      "bytes": 238743,
+      "sha256": "14934b371c24a2a3cd15dfa1233c0509a9d9ceb7e7f8bf1ea398a1f83945ac55",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-kartofelem-i-bekonom-1200-g/",
+      "status": 200,
+      "bytes": 236317,
+      "sha256": "f92c736aa856cfc2a8045b20b703210df9a9587a451c924f4c21cfb0b54ffd82",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-kartofelem-i-gribami-1200-g/",
+      "status": 200,
+      "bytes": 238595,
+      "sha256": "6ec55c5893a0d25914c38a2a865d4e31fc0f080ec9d15dc8adfa5ff4cc72a848",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-krasnoy-ryboy-1100-g/",
+      "status": 200,
+      "bytes": 238663,
+      "sha256": "9948dc405a0c85aab45726d676edd41406ea176a62f17da51d1031a771dbefee",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-kroshkoy-i-chernoy-smorodinoy-1200-g/",
+      "status": 200,
+      "bytes": 238719,
+      "sha256": "a0f7461dc28cfd426a2fecd272c70afdee1f5d412921911756523dbbd769fff0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-kurinyim-file-gribami-i-lukom-poreem-1200-g/",
+      "status": 200,
+      "bytes": 238611,
+      "sha256": "7c6ed2b9bd55817f58bd031b71ebd9c88a155588828dca0aa6fd601df63596ef",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-limonom-1200-g/",
+      "status": 200,
+      "bytes": 237884,
+      "sha256": "22b48d2ca7c2b6903630e06b19b6bf644bf2b23e04376ec47c3096630687ece3",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-myasom-i-gribami-1200-g/",
+      "status": 200,
+      "bytes": 238649,
+      "sha256": "b0bd1ae0e94aa2e34d1dfbbac61884b92b3bd1231e0c3eab9d1524678e49563f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-nemeczkimi-kolbaskami-1400-g/",
+      "status": 200,
+      "bytes": 236482,
+      "sha256": "869836922d3358aac8f6ad913a08133e10d1ebd7ca08dc064e487789b30d9e55",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-paltusom-1300-g/",
+      "status": 200,
+      "bytes": 238485,
+      "sha256": "36b9c87818d77ab8308ec1e837b11ae59c23c7b89eeefb620d2143f9dd776672",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-pechenyu-1400-g/",
+      "status": 200,
+      "bytes": 238471,
+      "sha256": "987a3e91802b13f9f30368a474bed32f88558db875b6f5c2b3cf2e7aeaa42831",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-vetchinoy-i-syrom-1500-g/",
+      "status": 200,
+      "bytes": 238744,
+      "sha256": "988ce57e328ad9bffe1e151d15321ddf1627090a936d88e4911b047a6b42098a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-vishney-1300-g/",
+      "status": 200,
+      "bytes": 238260,
+      "sha256": "0589fddc44658bfbb5f601964baa6a60b8ae6c4544bf0f450df59d9226bd87fa",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-yablokami-i-brusnikoy-1300-g/",
+      "status": 200,
+      "bytes": 238419,
+      "sha256": "d2dab502715999befcbd6784cb45ef919819946ae6d08f1c6829b0e715d1b0a0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-s-zelenyim-lukom-i-yajczom-1200-g/",
+      "status": 200,
+      "bytes": 238799,
+      "sha256": "4f2ca10230ec441cddc369ee22696ffe7b9ba23516fc3633978deb0074349555",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-so-slivoy-1300-g/",
+      "status": 200,
+      "bytes": 238044,
+      "sha256": "14b030332b7aac94904a9bddd35adaef3147a53152bf01cc455ce89719e5b553",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-tvorozhny-florida-s-yagodami-1200-g/",
+      "status": 200,
+      "bytes": 238922,
+      "sha256": "8d984ade799eed6f2d810c7daa6ab32889880044b956dab3e9bc0e2feab638f1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-tvorozhnyij-florida-lajm-1450-g/",
+      "status": 200,
+      "bytes": 238385,
+      "sha256": "26e3cb8892d03c8f0972b00ed797fcb0c321d2e2d6c38c16a51b60f26dbceae4",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-tvorozhnyij-florida-s-chernikoj-1000-g/",
+      "status": 200,
+      "bytes": 238428,
+      "sha256": "44c5887efcd42109273d925a0ef6fad911e802264d50b66ad1ee30fc6400c221",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirog-tvorozhnyij-florida-s-shokoladom-1650-g/",
+      "status": 200,
+      "bytes": 238484,
+      "sha256": "4c11e33a34baef11c3a96cbf56e86d0caf6c863189b2f5ffa5d7dedd9b5aef07",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirozhnoe-lesnoy-oreh-60-gr-h-18-sht-up/",
+      "status": 200,
+      "bytes": 197527,
+      "sha256": "9ecb67b7cd9b1aee477df8b8a35b47b1e41a16ffe87f5c72e1383f92b8669966",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pirozhnoe-prezent-55-gr-h-18-sht-up/",
+      "status": 200,
+      "bytes": 197353,
+      "sha256": "0c3f8df8aaa019e7a01ca3f56ef91d93fbf3eb55fcd2bbb9ae634ee67d9b1a56",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/pitevaya-voda/",
+      "status": 200,
+      "bytes": 194248,
+      "sha256": "5e5bb96554424e546d15b9d0098645f80658924af5b8a37b3c0201c67c785f26",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/portugalskiy-pirog-pashteysh-900-g/",
+      "status": 200,
+      "bytes": 238566,
+      "sha256": "a1b5faedb4c85432cf6192e243edc586cde1c485172273323c7e837514f5d207",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/rogalik-zernovoy-kornshpits/",
+      "status": 200,
+      "bytes": 198084,
+      "sha256": "1cd2174a71a349f1d10cd2cd2b2f81d94fe572c342c34f5209e75b1d4df990fc",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sibirskiy-pirog-s-brusnikoy-i-smetanoy-1600-g/",
+      "status": 200,
+      "bytes": 238938,
+      "sha256": "965f3c5f8932e6767a9871ca4787650b867a53a550024de5cc78474bf8b77093",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sibirskiy-pirog-s-govyadinoy-1500-g/",
+      "status": 200,
+      "bytes": 238528,
+      "sha256": "6d5505c48a3ebcd727a2b64034afd5578781560f23a21cc2fb384109666f0ae8",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sibirskiy-pirog-s-gribami-i-kartofelem-1500-g/",
+      "status": 200,
+      "bytes": 238616,
+      "sha256": "478a401671ef6ed6f2d78a02f65c8bad455d15321233117f279d8496f94e0826",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sibirskiy-pirog-s-kuricei-1500-g/",
+      "status": 200,
+      "bytes": 238113,
+      "sha256": "1043d85d80a92e2fd443be704d170d5885b16dad1a992131b66c4b639ad9cbd4",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sibirskiy-pirog-so-svininoy-i-gribami-1500-g/",
+      "status": 200,
+      "bytes": 238614,
+      "sha256": "e35397c3c6890da0d40df658692f7ae14a2cf93fe3aa4a2ba1744706acf5443d",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sloyka-bezdrozhzhevaya-s-syrom-i-vetchinoy-100-gr-h-100-sht-up/",
+      "status": 200,
+      "bytes": 199631,
+      "sha256": "c4b4e626d5b10e01aca17b75bc32fc16e303123b7072b031c00028dab6031739",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sloyka-lukovaya-s-kartofelem-90-gr-h-100-sht-up/",
+      "status": 200,
+      "bytes": 199202,
+      "sha256": "68d36af3b07c5f15c0e2ff273932a9f29eb1eafc89bb48bc419c207904adcec9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sloyka-lukovaya-s-pechenyu-90-gr-h-100-sht-up/",
+      "status": 200,
+      "bytes": 198975,
+      "sha256": "af1dcacba93db174f2e8d1b2ac0473bf398fe2148dab7b9066990866fccd1748",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up/",
+      "status": 200,
+      "bytes": 198736,
+      "sha256": "21748540f4ed3b1111523678b1411dc5346331b30ebb428c28eb8598e8652117",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sloyka-s-kremom-pashteysh-70-g-h-20-sht-up/",
+      "status": 200,
+      "bytes": 198750,
+      "sha256": "8f390643958fb0a8a1a7d6800752ae3bbc3541cde5200e86a05b3e1c78aa91c1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sloyka-s-myasom-90-g-90-gr-h-100-sht-up/",
+      "status": 200,
+      "bytes": 198293,
+      "sha256": "323a88e55eee2d578ccc2380c164cec8889d0f7beb363529df1e275011e7596b",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/sloyka-s-tvorogom-i-izyumom-85-gr-h-100-sht-up/",
+      "status": 200,
+      "bytes": 198842,
+      "sha256": "50ef509fba3f1ee1b5a777811aeb7eb703bd2fab1c84e2bc05baab2a86fac964",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/supnaya-chasha-390-gr/",
+      "status": 200,
+      "bytes": 196818,
+      "sha256": "308bc319d68b1526032d0fa812447d9263060cde13a6addcd7f3115e8317ad53",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up/",
+      "status": 200,
+      "bytes": 200042,
+      "sha256": "dad70a61b1c2f78563fb039576de1aa03ad4935ff9206640f265c7a8e088408e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/",
+      "status": 200,
+      "bytes": 199909,
+      "sha256": "55e97fbf873b86d709fe6398e7651ec8444e8ffd085aa8a2fea84cd47ce5c4d5",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/testo-drozhzhevoe-sdobnoe-zamorozhennoe-ot-5-kg/",
+      "status": 200,
+      "bytes": 199605,
+      "sha256": "f973d1726b2cf37166c9935b984e211dc01971eb5dbf7bd76efac351520c7cd1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up/",
+      "status": 200,
+      "bytes": 200287,
+      "sha256": "58fa543c3842a68b69371894c0f85526c2825a3340926bff5b022db6c9b03954",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg/",
+      "status": 200,
+      "bytes": 200288,
+      "sha256": "103ca9c91bb0b4e5272078cfd8619c0f376110e95027275494fda81fd02a0536",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/testo-pesochnoe-zamorozhennoe-ot-5-kg/",
+      "status": 200,
+      "bytes": 198622,
+      "sha256": "a8c40195a9465b269f7bc3dbd20f619169bb21db738a598952f0127ea3162c0a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/tort-medovyy-1-62-kg-18-sht-po-90-g/",
+      "status": 200,
+      "bytes": 196938,
+      "sha256": "cd9e0978b5c16a76d1650de9bc02fbda23aa29cd50b88c9268c526e16ff46df7",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/tort-morkovnyy-1-98-kg-18-sht-po-110-g/",
+      "status": 200,
+      "bytes": 197282,
+      "sha256": "551e7f34335e08c714bfee37c644f182985892ffa3c5c9699903012bcc277727",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/tort-napoleon-2-0-kg-18-sht-po-110-g/",
+      "status": 200,
+      "bytes": 196944,
+      "sha256": "66b4510d526d5ee62c7fe06b9fa480a6571eb5e8113f12dbe6893b3373ff7a71",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/tort-s-kuricey-1500-g/",
+      "status": 200,
+      "bytes": 238305,
+      "sha256": "51aa47c58505e748761d533a39877e19390896d21c6f524f02f592c28086107f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/tort-so-svininoj-1300-g/",
+      "status": 200,
+      "bytes": 238343,
+      "sha256": "aca25229566b0694c5c09fc767b6bd572b775d78f76cb67a814616a2d5e82a98",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/vitushka-s-makom-85-gr-h-100-sht-up/",
+      "status": 200,
+      "bytes": 198110,
+      "sha256": "01186d5e01103ef2c4cf58eb95e5c265b8c006d0311ff314b472fafd0bc83e18",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/vitushka-s-syrom-90-gr/",
+      "status": 200,
+      "bytes": 196962,
+      "sha256": "ae7076c6472fd1374cf9d4dd5b2e657f927baf85922130d82b08b2cbee4d3e90",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/yazychok-s-konfityurom-60-gr-h-150-sht-up/",
+      "status": 200,
+      "bytes": 198215,
+      "sha256": "fe014d8922e918288e05561d1f4109888407aaaccefc4e974392ca500a168d85",
+      "matchesBuild": true
+    },
+    {
+      "path": "/catalog/yazychok-s-kremom-60-gr-h-150-sht-up/",
+      "status": 200,
+      "bytes": 197895,
+      "sha256": "66356d18897fea7c0a055ebaf054bea28f2fb7372e7b962b16eb429a0c2b65c5",
+      "matchesBuild": true
+    },
+    {
+      "path": "/delivery/",
+      "status": 200,
+      "bytes": 190372,
+      "sha256": "0cd67cfd7edb4aaf7a8cb6d236733e63f2d705133cb26fcde00fdff9847bc97e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/dostavka/kaliningrad/",
+      "status": 200,
+      "bytes": 741,
+      "sha256": "cc335c7aa25fe04c8e5ff0a2bf60a9536fb8517f1b87c9b22951aed56bf82040",
+      "matchesBuild": true
+    },
+    {
+      "path": "/dostavka/svetlogorsk/",
+      "status": 200,
+      "bytes": 741,
+      "sha256": "e8c0460948a3ad0f8d45aeb42b9e2ef46ff34956d858f046604e20b3941c57cc",
+      "matchesBuild": true
+    },
+    {
+      "path": "/dostavka/zelenogradsk/",
+      "status": 200,
+      "bytes": 749,
+      "sha256": "348759e95c2c1bd1e2427cf58f5a4b4911a69f649a38e7e499613cb6a1370e03",
+      "matchesBuild": true
+    },
+    {
+      "path": "/fonts/LICENSE-Golos.txt",
+      "status": 200,
+      "bytes": 4392,
+      "sha256": "54dcae300688bccf111e43c818a6ee2261d10fc8d7eb5b9c9aa2a1e9b03189c9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/fonts/LICENSE-Playfair.txt",
+      "status": 200,
+      "bytes": 4630,
+      "sha256": "c052aafd2a71e90bcee6e69f475029d430a10d548c08ffcae350171f0e9668b1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/indexnow-manifest.json",
+      "status": 200,
+      "bytes": 33051,
+      "sha256": "80850a6cf870eb3e3a7d5058aac2488cad779336f0c3dc072c9791afb21d6a82",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/chto-pit-s-pirogami/",
+      "status": 200,
+      "bytes": 209618,
+      "sha256": "29dd5cc897f6d38f603d456eeea86e40cb67574b72e395858eb1f744e8fef006",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/dostavka-edy-v-zelenogradske/",
+      "status": 200,
+      "bytes": 238451,
+      "sha256": "9d6a27ac7db1e9f1cb3d5eeaa02f219dc6cb10c7bef5c6e237cf41ab29dbeac8",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/dostavka-pirogov-v-kaliningrade-sravnenie/",
+      "status": 200,
+      "bytes": 229810,
+      "sha256": "61e805fc7088b0590e31d310efbabf33f023bac4401d9e6bff1ddd62ba9a7bfa",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/drozhzhevoe-testo-dlya-pirogov/",
+      "status": 200,
+      "bytes": 204327,
+      "sha256": "b596cb50d39afdc7230084a3d34a8a1ed37497eed31a887510054af535f33e0c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/eda-s-soboy-v-svetlogorske/",
+      "status": 200,
+      "bytes": 227309,
+      "sha256": "25114a74c7ed1329f0b920859ab0942c4e9d3dba79a7795d4047ac6114c3c89e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/gde-poest-s-detmi-v-zelenogradske/",
+      "status": 200,
+      "bytes": 229328,
+      "sha256": "32ffa1699ad7f40c417ae63fcc3e595aca60579ce27ef569d631fddf7f281820",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/gde-poest-v-kaliningrade/",
+      "status": 200,
+      "bytes": 238294,
+      "sha256": "5e4843d4a2fd9e99b414fffa5228596916900879d56847ec938b3782dc5e5bb0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/gde-poest-v-svetlogorske/",
+      "status": 200,
+      "bytes": 235021,
+      "sha256": "68c01b7d6cfaebf55d4c7c486e7da97dd48a314e7a5c84241245e565da9894cc",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "status": 200,
+      "bytes": 232194,
+      "sha256": "0e1f706716121a7ff044805e77578110b205bd6a0cccaa2fe61dfb7db22ee82a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/gde-pozavtrakat-v-zelenogradske/",
+      "status": 200,
+      "bytes": 235340,
+      "sha256": "91212070fb1924606c0d169a844f4cc250e5212786d9ae4ea8a554ceeef60b0c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/kak-hranit-pirogi/",
+      "status": 200,
+      "bytes": 203850,
+      "sha256": "abbd1faf3093aaaa02c25bfc4918d83712ac31cb81379c3a4952e4f5e06fb628",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/kak-narezat-pirog/",
+      "status": 200,
+      "bytes": 203947,
+      "sha256": "9a6334bf2ebdab648cf8721f94b166b65cc7a2f6b4806d3130104f5c2c25ef5a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/kak-perevezti-pirog/",
+      "status": 200,
+      "bytes": 204044,
+      "sha256": "d84e50772459ea4dd5337f52db9f4a6ae2f8f011c8bb384798e0a5225bec0999",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/kak-razogret-pirog-v-apartamentah/",
+      "status": 200,
+      "bytes": 207259,
+      "sha256": "bf4d553a63f53b87693667acd924f8e7b364e4cc478e90adb20c008a88af1892",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/kak-sravnit-tseny-na-pirogi/",
+      "status": 200,
+      "bytes": 203348,
+      "sha256": "59804484cc8368786b83b8182ee3bfab1b9d5a0ebbc28b8dd3e6a224053d7388",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+      "status": 200,
+      "bytes": 203633,
+      "sha256": "916c998ae02fb886e0e9c334c9f9e03ae93d7f4319bf4a3657d84e3d574190f3",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/kak-zamorozit-pirog/",
+      "status": 200,
+      "bytes": 204585,
+      "sha256": "9638f800f9418aaf27fc47be47bb33ba9bf8120a727477c79e7e6651ab7ad628",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/mini-pirogi-ili-tselyy-pirog/",
+      "status": 200,
+      "bytes": 203571,
+      "sha256": "ae6d87d842aa489fc0a328c8cb517f6301c844619ead774b3746b0ed08742ac0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/myasnoy-pirog-nachinka-i-testo/",
+      "status": 200,
+      "bytes": 209035,
+      "sha256": "064a0d07b2c1fc2e08f3ee4cef60f558d0e7d97d2e40bbf855862f0f7cf8e2e7",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/nedorogo-poest-semey-v-svetlogorske/",
+      "status": 200,
+      "bytes": 227983,
+      "sha256": "55a5b1569c4e82f711db6aadd0e8476d698283318200551bb7fbddef2fee198a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/obed-v-ofis-v-kaliningrade/",
+      "status": 200,
+      "bytes": 229262,
+      "sha256": "bc7d85107e83ff669791daede7ccac8ccd0e9e09a9eaebeb8341c590f848d399",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/osetinskiy-ili-zakrytyy-pirog-kaliningrad/",
+      "status": 200,
+      "bytes": 207639,
+      "sha256": "a1aebcaf282f1c6b0110f0feaa2056f40ee3bc56418217e1946668b831b9b5ef",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "status": 200,
+      "bytes": 212682,
+      "sha256": "5af39d4843bca65d2c4987fb2f162f0f2b4ffcb6d41cc4366d9826a39076f0d5",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pekarni-i-pirogi-v-zelenogradske/",
+      "status": 200,
+      "bytes": 229946,
+      "sha256": "efdbe6479de283b7bc6169d8e753843492fbdfc96be7a2eed1067c09915c13fa",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+      "status": 200,
+      "bytes": 229573,
+      "sha256": "c0e5dcee9c0216849f97f4e45ff58d36cf714d08fed096092c1ee2f3d9b19123",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pesochnoe-testo-dlya-kisha/",
+      "status": 200,
+      "bytes": 204331,
+      "sha256": "6aa13958613ce2056fe54ba7772785138618804b1f6530696cf7dee341ab4777",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/piknik-s-pirogom-chto-vzyat/",
+      "status": 200,
+      "bytes": 202993,
+      "sha256": "848f7385e209798e113b94d200ba678157277fb8ea299bcbf89621f467ed8d40",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-500-g-ili-1-kg/",
+      "status": 200,
+      "bytes": 210551,
+      "sha256": "b50fb8df8e8829c8e0eda5b9f5ba18f322cd41e4f4339ebef7e2d6f3d407d415",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-na-skovorode-ili-v-duhovke/",
+      "status": 200,
+      "bytes": 209569,
+      "sha256": "004bd0f4294642b6a998f83c41c123f1d79e18c1d0cdc37f032d3c8214fb89e1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-s-brusnikoy-sochetaniya/",
+      "status": 200,
+      "bytes": 204130,
+      "sha256": "212cf74f3e345eb8cd1d06fdeb3abf52a49e7c6769235e330d858a31c8a27cd5",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-s-kapustoy-i-yaytsom/",
+      "status": 200,
+      "bytes": 203931,
+      "sha256": "22914dd1438d05ecf9099c35a39929fdbb8a69bb10bfad8ddb2aea383b516a48",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-s-kartoshkoy-i-syrom/",
+      "status": 200,
+      "bytes": 204369,
+      "sha256": "5be52457e128a217536985d747e727768f03bc01f9deede74a0caca09dc1a91a",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-s-kuritsey-i-gribami-vybor/",
+      "status": 200,
+      "bytes": 203119,
+      "sha256": "729c669bb217c83a638e27c446c4d06797477ff161d6b08c763c9b6bbd6542f2",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-s-lukom-i-yaytsom/",
+      "status": 200,
+      "bytes": 203597,
+      "sha256": "6f80c2fa84482316ddf28af45aa6e7c31a220f64489f6066a77d4d9a5c48fa51",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/",
+      "status": 200,
+      "bytes": 203525,
+      "sha256": "7f3e37d31fca28bd4093c2f0b462bf1d54018deb83da1b6eab8b5ddb3a4e296f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/",
+      "status": 200,
+      "bytes": 202826,
+      "sha256": "3b62dd675993dcd4945aeec285e04b2bf3004676bb9f5c6df58733aa66f6e3b8",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-s-vishney-nachinka/",
+      "status": 200,
+      "bytes": 204177,
+      "sha256": "a53ae39748ac2d4d9477b34a97192d5bd6a55c89e3c9b8a7d487c8e6794267f9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirog-so-svekolnoy-botvoy-i-syrom/",
+      "status": 200,
+      "bytes": 204512,
+      "sha256": "c8bedb56c3314ec0a5abc6b09f54f5c1706f4e0a3ec3f4f59c5e1df7e5233121",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirogi-na-den-rozhdeniya/",
+      "status": 200,
+      "bytes": 203703,
+      "sha256": "c95076c6f358bd6ddc9eabbddb58c96777f04c8857197f6b7041caf940c13a79",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirogi-na-kofe-breyk/",
+      "status": 200,
+      "bytes": 203409,
+      "sha256": "f4ecc51728c61d662e260eb4716f65f61b36af91747b2907d818bc19d7e78e2f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pirogi-na-svadebnyy-furshet/",
+      "status": 200,
+      "bytes": 203864,
+      "sha256": "28e39df5902e8d86243aac541eb02a9e9f0e67a1cf4964a6ea22e7688bf31e9c",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pochemu-pirog-treskaetsya/",
+      "status": 200,
+      "bytes": 204188,
+      "sha256": "79cf442ad10db5a0ab2c8f67b46035ee62620b14c3dd0bb1e4b0f6c59bd7e0bf",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/pochemu-u-piroga-syroe-dno/",
+      "status": 200,
+      "bytes": 204167,
+      "sha256": "19cf9d1297a04ad5d320bc78bca6cb98f16ed356f526a437257ab992dd10ac04",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/postnye-pirogi-kak-proverit-sostav/",
+      "status": 200,
+      "bytes": 204506,
+      "sha256": "bbf9139435f49ca95fe6a521dc3086bf490c05c2e456ce08dc1c7f509da29c27",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/rybnaya-nachinka-dlya-piroga/",
+      "status": 200,
+      "bytes": 206834,
+      "sha256": "b5854b6462d1d8c12a64825b19d20357aee92fbc778f0e37da274718425346fc",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/rybnye-pirogi-v-kaliningrade/",
+      "status": 200,
+      "bytes": 229274,
+      "sha256": "303502de50742ed702e155d9f16517cdc8c214c3445d7c79e8c3028296e3f02b",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "status": 200,
+      "bytes": 210956,
+      "sha256": "35e265a3c77b930aab9507c67d8455227e792ae710bf76665f0807542f627ae3",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/sladkie-pirogi-k-chayu/",
+      "status": 200,
+      "bytes": 203450,
+      "sha256": "18dc648847314cf9d2592ff180c9e2f35155a0f4055cd9b84ac2ec89eea705af",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/sloenoe-ili-drozhzhevoe-testo/",
+      "status": 200,
+      "bytes": 204332,
+      "sha256": "25e2a6e23c7e51c53df4529123c382258d66175682fbd890166cb504917e0b7b",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/sostav-piroga-i-allergeny/",
+      "status": 200,
+      "bytes": 204776,
+      "sha256": "7247dd56662f39c8ed0bbd0b81bc5f4588bad6e619a4f531ca369dc0e4714693",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200,
+      "bytes": 203332,
+      "sha256": "17838dfe996affc2556acd49f8f2e30d5c694c730b7d64338de24929b535155e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/yabloki-dlya-piroga/",
+      "status": 200,
+      "bytes": 204235,
+      "sha256": "5ac721278026e0bc297f72103cddf339a258c5d15a38fd12bef749d049b1f4ba",
+      "matchesBuild": true
+    },
+    {
+      "path": "/journal/zalivnoy-pirog-na-kefire/",
+      "status": 200,
+      "bytes": 209138,
+      "sha256": "791302f66e885d4007946ab74227205c1736c79eb558c124199b989f7076a007",
+      "matchesBuild": true
+    },
+    {
+      "path": "/kaliningrad/",
+      "status": 200,
+      "bytes": 204711,
+      "sha256": "f5d1f2f4485ec9a4acfe80c4d4a1a689bf4b9dd55742cd39e40d4892acd10982",
+      "matchesBuild": true
+    },
+    {
+      "path": "/menu/",
+      "status": 200,
+      "bytes": 1052355,
+      "sha256": "688615e4b620ab4417b295b852d167b9b4330c48a302db3a3397ba05194748e4",
+      "matchesBuild": true
+    },
+    {
+      "path": "/nabor/na-kompaniyu/",
+      "status": 200,
+      "bytes": 170895,
+      "sha256": "01c4b0168d6f8dba70492fc67eec850eadbe283abee7049b97c606a1da735165",
+      "matchesBuild": true
+    },
+    {
+      "path": "/nabor/piknik-u-morya/",
+      "status": 200,
+      "bytes": 170717,
+      "sha256": "9a1de29224636ae760e02a9f00ce7a5d5d685f3e72b3de9dbb952778e19933c2",
+      "matchesBuild": true
+    },
+    {
+      "path": "/nabor/uzhin-v-apartamentah/",
+      "status": 200,
+      "bytes": 170951,
+      "sha256": "23ea3a6e4f9b2ee79a5f55d664ba33c68d0631196ba5623fcb58c1d240ebafec",
+      "matchesBuild": true
+    },
+    {
+      "path": "/partners/",
+      "status": 200,
+      "bytes": 172640,
+      "sha256": "df88038170969e43a32bc4dd1ef03bf64a41d7d53784d10cee487eec7d650614",
+      "matchesBuild": true
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "status": 200,
+      "bytes": 243467,
+      "sha256": "41199d83da7eac73308c21c25f57b1a50459ae6fd1c8a5e0f5933801f7952bd3",
+      "matchesBuild": true
+    },
+    {
+      "path": "/pirogi/pirog-s-kapustoy/",
+      "status": 200,
+      "bytes": 243717,
+      "sha256": "768de1cdb023935072ea4cb56a56f0cf85c0b967685b2c5357d67176c0da8803",
+      "matchesBuild": true
+    },
+    {
+      "path": "/pirogi/pirog-s-kuritsey-i-gribami/",
+      "status": 200,
+      "bytes": 243924,
+      "sha256": "021af070e4ac2b6bc6a5965fd677888b98595b599a90fda1baa5807316127e2b",
+      "matchesBuild": true
+    },
+    {
+      "path": "/pirogi/pirog-s-tvorogom-i-malinoy/",
+      "status": 200,
+      "bytes": 241336,
+      "sha256": "c9c843a30700d0f0a94fa59bfc6495e0a28d4ab85b1b824e09c600ecb87649b7",
+      "matchesBuild": true
+    },
+    {
+      "path": "/pirogi/pirog-s-vishney/",
+      "status": 200,
+      "bytes": 240931,
+      "sha256": "600108aa42589b7b8cdcaded9ba833b6d5ef04c95360a827ba15ed18852382ca",
+      "matchesBuild": true
+    },
+    {
+      "path": "/pirogi/pirog-s-yablokom-i-brusnikoy/",
+      "status": 200,
+      "bytes": 241375,
+      "sha256": "81c22f515d3783b732712be757ddca535a0251b544fbfadfc55b8d7a4fff9a1b",
+      "matchesBuild": true
+    },
+    {
+      "path": "/pirogi/rybnyy-pirog/",
+      "status": 200,
+      "bytes": 243666,
+      "sha256": "50a1b577671b7e300af9ca00211a76f7271ad5c781802e108d5b1822ea3c4373",
+      "matchesBuild": true
+    },
+    {
+      "path": "/pirogi/syrnyy-pirog/",
+      "status": 200,
+      "bytes": 243602,
+      "sha256": "1e23a53682d02673d424d91f78024f447cc62f7f410ca0a833fcd46d777eb0b0",
+      "matchesBuild": true
+    },
+    {
+      "path": "/podbor/",
+      "status": 200,
+      "bytes": 179081,
+      "sha256": "eb9986a5ce8230a2fee3af31fadd8136d5e42fcc1e15af3ee99e282352c81ba8",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/",
+      "status": 200,
+      "bytes": 178517,
+      "sha256": "c49698a3a5153839ea4fb7262eba068ef512a4cdf65bc11b2defb36ff67636e7",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/eda-na-vypisku/",
+      "status": 200,
+      "bytes": 183144,
+      "sha256": "3c5f559954d0a65ad404de51f9d335c40f4418046190508259ecc59f00fc5620",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/furshet-na-korporativ/",
+      "status": 200,
+      "bytes": 182999,
+      "sha256": "a08c1b43402e89bba8cac96e99e81480fece2b16f79b0e3285ff1251258cd445",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/kaliningrad/furshet-na-korporativ/",
+      "status": 200,
+      "bytes": 183108,
+      "sha256": "21263afc7bcafa5987da1891e92d1cd59aa6521edcaccff5322df316e028f421",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/kaliningrad/na-pominki/",
+      "status": 200,
+      "bytes": 183428,
+      "sha256": "20f647c565e1bb94407b0a9e4b6674c2983fe1e9ad4aa7c439ddd2f6370356c1",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/kaliningrad/semeynyy-uzhin/",
+      "status": 200,
+      "bytes": 182331,
+      "sha256": "56a5677bc011f1fa59ae5f610b909ebf5252a4156a9a19c9544f8ea73b0b6771",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/kaliningrad/uzhin-v-apartamentah/",
+      "status": 200,
+      "bytes": 182858,
+      "sha256": "ff9bb605af6e09876d9d1331ada4db5e810eed708b6956133cbdb20c34f27fed",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/kaliningrad/v-ofis-na-den-rozhdeniya/",
+      "status": 200,
+      "bytes": 182951,
+      "sha256": "286e65e095024e642254dbfdf519069c63e37ee266967e243848fcf16f16a368",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/na-pominki/",
+      "status": 200,
+      "bytes": 183468,
+      "sha256": "5b2ffb7cf5c4d811d88613d0e337317a1405746ec9577a9e17f5254f977ba670",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/svetlogorsk/furshet-na-korporativ/",
+      "status": 200,
+      "bytes": 183039,
+      "sha256": "7d4bf1ecaf07c5bf55f03b61d3a1732d1a07139ffaf4be9c30089fe81e51f9cc",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/svetlogorsk/na-pominki/",
+      "status": 200,
+      "bytes": 183414,
+      "sha256": "70c734f1494d5c1f39198487ed37ec5e155692f63edf48707ca29b4a8630bb82",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/svetlogorsk/semeynyy-uzhin/",
+      "status": 200,
+      "bytes": 182190,
+      "sha256": "e063287e423edfd0cbf5ebcfb6347277d848a6fd3cab836bd52a8b7e4ad7f2c3",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/svetlogorsk/uzhin-v-apartamentah/",
+      "status": 200,
+      "bytes": 182717,
+      "sha256": "53815b38e11e85416fdb87fb6f12cd97df7116a84b170f0b7f84e995d144e447",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/svetlogorsk/v-ofis-na-den-rozhdeniya/",
+      "status": 200,
+      "bytes": 182882,
+      "sha256": "dcad6584c658c0b87b4d703fd7f5252bc078d4dcca966465c5271f4546165a75",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/sytnyj-obed-na-strojku/",
+      "status": 200,
+      "bytes": 182781,
+      "sha256": "99e19ae90b7f9ddb07c2e79b24d496546508cac6d7be77743d991ca6afd5e5a9",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/v-banyu-s-druzyami/",
+      "status": 200,
+      "bytes": 182332,
+      "sha256": "83a6212eb5f807e28afd1ee945a77ac517642bce2a97cbe2cfd9964fae5847ba",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/v-ofis-na-den-rozhdeniya/",
+      "status": 200,
+      "bytes": 183466,
+      "sha256": "2ef5602bd3243608fcfa67b79cee2c06c49cb5f3d28d63473351dc71457a5f47",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/zelenogradsk/eda-na-kurshskuyu-kosu/",
+      "status": 200,
+      "bytes": 180952,
+      "sha256": "c4c0818d58d0e5ed53bd832bae1e2dcfc2da1530506cfbdb25d6e82d9a7d6562",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/zelenogradsk/furshet-na-korporativ/",
+      "status": 200,
+      "bytes": 183248,
+      "sha256": "166f311fbf2f0bffea1b0e9a381b21c4991273f534784eaa10a8f45b3cf10fd3",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/zelenogradsk/na-pominki/",
+      "status": 200,
+      "bytes": 183549,
+      "sha256": "3c7f5ec1e9f42c345c780da9855b8fb730af0a1f39f9045d023e4e1b4f4623ae",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/zelenogradsk/semeynyy-uzhin/",
+      "status": 200,
+      "bytes": 182406,
+      "sha256": "d08ec71fe6f7210b3eadf1f15634e9f7942b5bcfdb2b211e773fbac4aefcc640",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/zelenogradsk/uzhin-v-apartamentah/",
+      "status": 200,
+      "bytes": 182954,
+      "sha256": "b46e8d01166e57f2cccdb0759102c7cf549f4298198caf81edab31cf135b8d72",
+      "matchesBuild": true
+    },
+    {
+      "path": "/povody/zelenogradsk/v-ofis-na-den-rozhdeniya/",
+      "status": 200,
+      "bytes": 183086,
+      "sha256": "d031888b418b84dc954b613348906832324cd1b20f22fcfa1dd9222d8246f37f",
+      "matchesBuild": true
+    },
+    {
+      "path": "/privacy/",
+      "status": 200,
+      "bytes": 163343,
+      "sha256": "c89c2eeee7cd90ac8e6966afabad2c5432265b451ecf486326357649723e063d",
+      "matchesBuild": true
+    },
+    {
+      "path": "/release.json",
+      "status": 200,
+      "bytes": 109,
+      "sha256": "4cff4cb6af92389d1dd8e30ae464d809b9f76067cb5b6991cb15892dbb2d066e",
+      "matchesBuild": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 195,
+      "sha256": "b2e07420eabce1080465b074218c9ed9ec4e310d53db0cc192cdbd3dc70b1d62",
+      "matchesBuild": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 20030,
+      "sha256": "6ec96c072478b10840436dcaa5b6ac5863b36ecedf3cf5e709258eebadf9ea74",
+      "matchesBuild": true
+    },
+    {
+      "path": "/svetlogorsk/",
+      "status": 200,
+      "bytes": 204729,
+      "sha256": "06b7d99f7f7a0384fa383c61dad308e5fc039adfd4d669afc702298feef5fe21",
+      "matchesBuild": true
+    },
+    {
+      "path": "/terms/",
+      "status": 200,
+      "bytes": 161589,
+      "sha256": "5add714ef44b8f69159d610e52b6a4ba2884c75ebc19f862a5a72446e64a9d90",
+      "matchesBuild": true
+    },
+    {
+      "path": "/zelenogradsk/",
+      "status": 200,
+      "bytes": 204899,
+      "sha256": "66a5e49de1a45363df59a6c8c7d24461328c95e582ac1689eab6d23a6dd6868c",
+      "matchesBuild": true
+    }
+  ],
+  "failures": []
+}

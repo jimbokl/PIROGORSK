@@ -14,6 +14,7 @@ import { verifyProductAddOns } from './qa-product-addons.mjs';
 import { verifyOffers } from './qa-offers.mjs';
 import { verifyMenuQuantity } from './qa-menu-quantity.mjs';
 import { verifyDominos } from './qa-dominos.mjs';
+import { verifySelectionTools } from './qa-selection-tools.mjs';
 import { verifyStorefrontSync } from './qa-storefront-sync.mjs';
 
 // Actual Astro output and production origins; every request is intercepted.
@@ -369,6 +370,7 @@ try {
       other.on('request', interceptRequest);
     });
     await verifyDominos(page, origin, width, fileURLToPath(new URL('../dist/', import.meta.url)));
+    await verifySelectionTools(page, origin, width, fileURLToPath(new URL('../dist/', import.meta.url)));
     await context.close();
   }
   assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 9);

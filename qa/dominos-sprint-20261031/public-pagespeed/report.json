@@ -1,0 +1,48 @@
+{
+  "source": "Observed public PageSpeed Insights UI, not local Lighthouse or quota-limited API",
+  "target": "https://pirogorsk.ru/",
+  "runtime": "0d7b9ba60de69403ed40b74f6af5b7d0e789d828",
+  "capturedAt": "2026-10-31T09:17:17Z",
+  "lighthouseVersion": "13.6.0",
+  "browser": "HeadlessChromium 153.0.8010.36",
+  "fieldData": "No data",
+  "mobile": {
+    "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/g019toaszo?form_factor=mobile",
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "displayedMetrics": {
+      "FCP": "1.4 s",
+      "LCP": "2.0 s",
+      "TBT": "20 ms",
+      "CLS": "0.001",
+      "SI": "1.4 s"
+    },
+    "calculatorUrl": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=1370&LCP=1951&TBT=21&CLS=0&SI=1370&TTI=3290&device=mobile&version=13.6.0"
+  },
+  "desktop": {
+    "reportUrl": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/g019toaszo?form_factor=desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "displayedMetrics": {
+      "FCP": "0.3 s",
+      "LCP": "0.4 s",
+      "TBT": "0 ms",
+      "CLS": "0.004",
+      "SI": "0.6 s"
+    },
+    "calculatorUrl": "https://googlechrome.github.io/lighthouse/scorecalc/#FCP=349&LCP=450&TBT=0&CLS=0&SI=572&TTI=450&device=desktop&version=13.6.0"
+  },
+  "notes": [
+    "API requests returned HTTP 429; successful public UI report is separate evidence.",
+    "Calculator link rounds metrics; displayed CLS is recorded separately.",
+    "Laboratory report is not field performance or guaranteed future stability."
+  ]
+}

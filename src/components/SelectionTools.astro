@@ -1,0 +1,33 @@
+---
+import Icon from './Icon.astro';
+---
+<div class="selection-tools" data-selection-tools>
+  <div class="selection-tool-actions">
+    <button type="button" data-favorite-save>Сохранить любимую</button>
+    <button type="button" data-share-selection>Поделиться ссылкой<Icon name="arrow" /></button>
+  </div>
+  <div class="selection-favorite" data-favorite-bar hidden>
+    <div><strong>Любимая подборка</strong><small data-favorite-caption></small></div>
+    <button type="button" data-favorite-open>Открыть</button>
+    <button type="button" data-favorite-delete aria-label="Удалить любимую подборку">Удалить</button>
+  </div>
+  <p class="selection-tool-status" data-tools-status role="status" aria-live="polite"></p>
+  <textarea class="copy-fallback" data-share-fallback hidden readonly aria-label="Ссылка на подборку"></textarea>
+</div>
+<details class="guest-tools" data-guest-tools hidden>
+  <summary>Морс и посуда по числу гостей<Icon name="plus" /></summary>
+  <p>По одному стакану морса 250 мл и набору посуды на гостя. Уже выбранное учтём, количество можно изменить.</p>
+  <form data-guest-form>
+    <div class="selection-fields">
+      <label>Гостей<input type="number" name="guests" value="4" min="1" step="1" required inputmode="numeric" /></label>
+      <label>Морс<select name="drink"><option value="cranberry:1000">Клюква · 1 л</option><option value="seabuckthorn:1000">Облепиха · 1 л</option><option value="cranberry:500">Клюква · 500 мл</option><option value="seabuckthorn:500">Облепиха · 500 мл</option></select></label>
+    </div>
+    <p data-guest-existing></p>
+    <div class="selection-fields">
+      <label>Добавить бутылок<input type="number" name="bottles" value="1" min="0" max="99" step="1" required inputmode="numeric" /></label>
+      <label>Добавить наборов посуды<input type="number" name="settings" value="4" min="0" max="99" step="1" required inputmode="numeric" /></label>
+    </div>
+    <button type="submit" class="button button-secondary" data-guest-add>Добавить дополнения</button>
+    <p class="selection-tool-status" role="status" aria-live="polite" data-guest-status></p>
+  </form>
+</details>

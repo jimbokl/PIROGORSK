@@ -1,0 +1,31 @@
+---
+import Icon from './Icon.astro';
+---
+<dialog id="bundle-editor" class="selection-dialog composition-dialog" aria-labelledby="bundle-editor-heading">
+  <div class="dialog-header"><span class="composition-kicker">Ваше сочетание</span><button type="button" data-close class="icon-button" aria-label="Закрыть редактор набора"><Icon name="close" /></button></div>
+  <h2 id="bundle-editor-heading">Изменить набор</h2>
+  <p class="composition-intro">Замените пироги, выберите формат и количество. В подборку попадёт только готовый состав.</p>
+  <form data-bundle-form>
+    <div data-bundle-rows></div>
+    <button type="button" class="composition-text-button" data-bundle-row-add>+ Ещё пирог</button>
+    <div class="selection-total"><span>Товары</span><strong data-bundle-total></strong></div>
+    <p class="order-selection-note">Сумма позиций без скидки. Доставка отдельно, один раз за всю подборку.</p>
+    <p class="selection-tool-status" data-bundle-status role="status" aria-live="polite"></p>
+    <button type="submit" class="button">Добавить состав в подборку<Icon name="arrow" /></button>
+  </form>
+</dialog>
+<dialog id="composition-preview" class="selection-dialog composition-dialog" aria-labelledby="composition-preview-heading">
+  <div class="dialog-header"><span class="composition-kicker">К общему столу</span><button type="button" data-close class="icon-button" aria-label="Закрыть просмотр подборки"><Icon name="close" /></button></div>
+  <h2 id="composition-preview-heading">Подборка по ссылке</h2>
+  <p class="composition-intro" data-preview-note></p>
+  <p class="selection-tool-status" data-preview-unavailable></p>
+  <ul class="composition-preview-items" data-preview-items></ul>
+  <div class="selection-total"><span>Товары</span><strong data-preview-total></strong></div>
+  <p class="order-selection-note" data-preview-delivery></p>
+  <p class="selection-tool-status" data-preview-status role="status" aria-live="polite"></p>
+  <div class="composition-preview-actions">
+    <button type="button" class="button" data-preview-apply="ensure">Дополнить текущую</button>
+    <button type="button" class="button button-secondary" data-preview-apply="replace">Заменить текущую</button>
+  </div>
+  <p class="order-selection-note">«Дополнить» добавит только недостающее количество. Повторное открытие ссылки ничего не меняет. Цены пересчитаны по текущему меню.</p>
+</dialog>
