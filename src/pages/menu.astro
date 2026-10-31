@@ -1,5 +1,6 @@
 ---
 import CatalogFillings from '../components/CatalogFillings.astro';
+import CatalogServiceFacts from '../components/CatalogServiceFacts.astro';
 import HomeOffers from '../components/HomeOffers.astro';
 import MenuFeedItem from '../components/MenuFeedItem.astro';
 import ContentLayout from '../layouts/ContentLayout.astro';
@@ -25,6 +26,7 @@ const description = `${catalog.length} позиции перед запуско�
 ---
 <ContentLayout {title} {description} bodyClass="menu-page" breadcrumbs={[{ name: 'Меню', href: '/menu/' }]}>
   <PieTownHero image={town} imageAlt="Пироговый город: золотистые балтийские домики на пироге у синих волн" eyebrow={`${catalog.length} позиции · готовим запуск`} title="Меню пирогов, хлеба и выпечки" intro="Целые пироги, мини-форматы, хлеб и сладкое от местных пекарен. Выбирайте начинки и собирайте свой стол." />
+  <CatalogServiceFacts />
   <form class="menu-finder" role="search" aria-label="Поиск по всему меню" data-menu-finder>
     <label for="menu-search">Что хочется попробовать?</label>
     <div class="menu-search-row"><input id="menu-search" type="search" name="q" maxlength="100" data-menu-search data-catalog-query placeholder="Начинка, название или вес" autocomplete="off" enterkeyhint="search" /><button class="ed-button" type="submit">Найти</button></div>

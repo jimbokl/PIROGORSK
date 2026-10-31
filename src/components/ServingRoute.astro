@@ -1,0 +1,24 @@
+---
+interface Props { slug: string }
+const { slug } = Astro.props;
+const steps = [
+  { slug: 'skolko-piroga-na-cheloveka', label: 'Рассчитать', text: 'Вес на компанию' },
+  { slug: 'kak-narezat-pirog', label: 'Нарезать', text: 'Кусочки и подача' },
+  { slug: 'kak-razogret-pirog-v-apartamentah', label: 'Разогреть', text: 'Духовка и СВЧ' },
+  { slug: 'kak-hranit-pirogi', label: 'Сохранить', text: 'Что делать с остатком' },
+];
+---
+<nav class="serving-route" aria-label="От выбора пирога к общему столу">
+  <p>Пирог на вашем столе</p>
+  <ol>{steps.map((step, i) => <li><a href={`/journal/${step.slug}/`} aria-current={step.slug === slug ? 'page' : undefined}><span aria-hidden="true">0{i + 1}</span><strong>{step.label}</strong><small>{step.text}</small></a></li>)}</ol>
+</nav>
+<style>
+  .serving-route{padding:22px 0;margin:20px 0 30px;border-block:1px solid var(--line)}
+  p{margin:0 0 14px;font:500 11px/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  ol{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;padding:0}
+  a{display:grid;grid-template-columns:24px 1fr;gap:4px 8px;padding:12px 10px;min-height:70px;border:1px solid transparent;border-radius:12px;color:var(--navy);text-decoration:none}
+  a:hover{background:var(--soft)}a[aria-current=page]{border-color:var(--line);background:var(--soft)}
+  span{grid-row:1/3;font:400 11px/1.7 var(--sans);color:var(--muted)}strong{font:500 14px/1.5 var(--sans)}small{font:400 11px/1.5 var(--sans);color:var(--muted)}
+  a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  @media(max-width:700px){ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}a{padding:10px 8px}small{font-size:10px}.serving-route{padding-block:18px;margin-block:14px 24px}}
+</style>

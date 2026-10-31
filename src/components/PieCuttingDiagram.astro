@@ -1,0 +1,38 @@
+---
+const circles = [6, 8];
+---
+<section class="cutting-diagrams" aria-labelledby="cutting-diagrams-heading">
+  <header><p class="ed-eyebrow">Сначала выберите размер кусочка</p><h2 id="cutting-diagrams-heading">Три понятные схемы нарезки</h2><p>Пример для пирога 1,2 кг: делим общий вес на число равных частей. Это вес кусочка, а не число гостей.</p></header>
+  <div class="cutting-grid">
+    {circles.map(count => <figure>
+      <svg viewBox="0 0 240 190" role="img" aria-label={`Круглый пирог: ${count} равных секторов`}>
+        <circle class="crust" cx="120" cy="95" r="76" />
+        <circle class="filling" cx="120" cy="95" r="66" />
+        {Array.from({ length: count }, (_, i) => { const a = (i * 2 * Math.PI / count) - Math.PI / 2; return <line x1="120" y1="95" x2={120 + 76 * Math.cos(a)} y2={95 + 76 * Math.sin(a)} />; })}
+        <circle class="center" cx="120" cy="95" r="4" />
+      </svg>
+      <figcaption><strong>{count} кусочков</strong><span>≈ {1200 / count} г каждый</span></figcaption>
+    </figure>)}
+    <figure>
+      <svg viewBox="0 0 240 190" role="img" aria-label="Прямоугольный пирог: три ряда по четыре равных кусочка">
+        <rect class="crust" x="22" y="28" width="196" height="134" rx="12" />
+        <rect class="filling" x="32" y="38" width="176" height="114" rx="5" />
+        {[1,2,3].map(i => <line x1={22 + i * 49} y1="28" x2={22 + i * 49} y2="162" />)}
+        {[1,2].map(i => <line x1="22" y1={28 + i * 134/3} x2="218" y2={28 + i * 134/3} />)}
+      </svg>
+      <figcaption><strong>12 кусочков</strong><span>≈ 100 г каждый</span></figcaption>
+    </figure>
+  </div>
+  <p class="cutting-note">Для общего стола нарежьте часть пирога, оставив остальные кусочки крупнее. Сытные и сладкие начинки удобно поставить на разные блюда, а лопатку положить рядом с каждым.</p>
+</section>
+<style>
+  .cutting-diagrams{padding-block:30px 36px;margin-block:20px;border-block:1px solid var(--line)}
+  header{max-width:690px}h2{font:500 clamp(27px,3vw,38px)/1.18 var(--serif);letter-spacing:-.03em;margin:8px 0 14px}
+  p{font:400 14px/1.8 var(--sans);color:var(--muted);margin:0}
+  .cutting-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-block:24px}
+  figure{margin:0;padding:12px 14px 20px;border:1px solid var(--line);border-radius:var(--radius-card);background:var(--soft)}
+  svg{display:block;width:100%;height:auto}.crust{fill:#ecd2a4;stroke:#bd8c51;stroke-width:1.5}.filling{fill:#f8edda;stroke:#d5ae76;stroke-width:1}line{stroke:var(--navy);stroke-width:1.5;stroke-linecap:round}.center{fill:var(--navy)}
+  figcaption{display:flex;flex-direction:column;gap:4px;text-align:center}strong{font:500 15px/1.5 var(--sans);color:var(--navy)}span{font:400 12px/1.5 var(--sans);color:var(--muted)}
+  .cutting-note{max-width:720px}
+  @media(max-width:600px){.cutting-grid{grid-template-columns:1fr;gap:12px}figure{display:grid;grid-template-columns:minmax(0,1fr) minmax(90px,.8fr);align-items:center;padding:8px 14px}figcaption{text-align:left}svg{max-width:220px}.cutting-diagrams{padding-block:24px}}
+</style>

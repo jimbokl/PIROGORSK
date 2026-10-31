@@ -1,0 +1,62 @@
+{
+  "stage": "local",
+  "base": "http://127.0.0.1:58657",
+  "views": [
+    {
+      "width": 320,
+      "result": "PASS",
+      "galleries": "6 home + 6 menu + product",
+      "deferredFetch": true,
+      "stableSize": true,
+      "keyboard": true,
+      "retry": true,
+      "noJS": true,
+      "guides": 4
+    },
+    {
+      "width": 390,
+      "result": "PASS",
+      "galleries": "6 home + 6 menu + product",
+      "deferredFetch": true,
+      "stableSize": true,
+      "keyboard": true,
+      "retry": true,
+      "noJS": true,
+      "guides": 4
+    },
+    {
+      "width": 768,
+      "result": "PASS",
+      "galleries": "6 home + 6 menu + product",
+      "deferredFetch": true,
+      "stableSize": true,
+      "keyboard": true,
+      "retry": true,
+      "noJS": true,
+      "guides": 4
+    },
+    {
+      "width": 1024,
+      "result": "PASS",
+      "galleries": "6 home + 6 menu + product",
+      "deferredFetch": true,
+      "stableSize": true,
+      "keyboard": true,
+      "retry": true,
+      "noJS": true,
+      "guides": 4
+    },
+    {
+      "width": 1280,
+      "result": "PASS",
+      "galleries": "6 home + 6 menu + product",
+      "deferredFetch": true,
+      "stableSize": true,
+      "keyboard": true,
+      "retry": true,
+      "noJS": true,
+      "guides": 4
+    }
+  ],
+  "errors": []
+}

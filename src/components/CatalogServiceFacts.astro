@@ -1,0 +1,10 @@
+<nav class="catalog-service-facts" aria-label="Помощь с выбором">
+  <a href="/podbor/"><span aria-hidden="true">↗</span> Расчёт на компанию</a>
+  <span><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 10h4m4 0h4m-2-2v4"/></svg> Количество прямо в карточке</span>
+  <a href="/?interest=selection" data-open="selection-dialog"><span aria-hidden="true">↗</span> Подборка по ссылке</a>
+</nav>
+<style>
+  .catalog-service-facts{display:flex;flex-wrap:wrap;align-items:center;gap:0 22px;margin:8px 0 12px;padding-block:4px;color:var(--muted);font:400 11px/1.5 var(--sans)}
+  a,.catalog-service-facts>span{display:inline-flex;align-items:center;gap:6px;min-height:44px}a{color:var(--navy);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:4px}a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}a>span{font-size:16px}
+  @media(max-width:600px){.catalog-service-facts{gap:0 14px;font-size:10px;margin-block:4px 10px}.catalog-service-facts>span{min-height:30px}}
+</style>

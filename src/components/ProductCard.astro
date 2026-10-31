@@ -3,6 +3,7 @@ import VariantLabel from './VariantLabel.astro';
 import { productFillings } from '../lib/catalog-fillings';
 import Icon from './Icon.astro';
 import ProductVisual from './ProductVisual.astro';
+import PieGallery from './PieGallery.astro';
 import SupplierArtwork from './SupplierArtwork.astro';
 import MenuQuantity from './MenuQuantity.astro';
 import PiePortions from './PiePortions.astro';
@@ -18,7 +19,7 @@ const pricePrefix = product.supplier?.priceFrom ? 'от ' : '';
 const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Объём' : 'Комплект';
 ---
 {feed ? <article class="menu-feed-item home-feed-card" data-product={product.id} data-price-prefix={pricePrefix || undefined} data-fillings={productFillings(product).join(" ")} data-catalog-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(" ")} data-category={product.category} aria-labelledby={`product-${product.id}`}>
-  <a class="menu-feed-art" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative sizes={feedSizes} /> : <ProductVisual product={product} decorative sizes={feedSizes} priority={priority} />}</a>
+  {product.supplier ? <a class="menu-feed-art" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}><SupplierArtwork id={product.id} decorative sizes={feedSizes} /></a> : <PieGallery {product} href={catalogProductHref(product)} class="menu-feed-art" sizes={feedSizes}><ProductVisual {product} decorative sizes={feedSizes} priority={priority} /></PieGallery>}
   <h4 id={`product-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h4>
   <p class="menu-feed-description">{product.description}<PiePortions {product} /></p>
   <fieldset class="menu-feed-variants">
@@ -27,7 +28,7 @@ const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Об�
   </fieldset>
   <div class="menu-feed-bottom"><MenuQuantity name={product.name} /><div class="menu-feed-purchase"><div><strong data-price aria-live="polite">{pricePrefix}{selectedVariant.price.toLocaleString('ru-RU')} ₽</strong><small data-feed-price-note>Предварительно</small></div><button type="button" class="menu-feed-add" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span></button></div></div>
 </article> : <article class:list={['product-card', 'catalog-card', `catalog-card--${product.kind}`]} data-product={product.id} data-price-prefix={pricePrefix || undefined} data-fillings={productFillings(product).join(" ")} data-catalog-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(" ")} data-category={product.category} data-kind={product.kind} data-unit={product.unit} aria-labelledby={`product-${product.id}`}>
-  <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative /> : <ProductVisual product={product} decorative />}</a>
+  {product.supplier ? <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}><SupplierArtwork id={product.id} decorative /></a> : <PieGallery {product} href={catalogProductHref(product)} class="product-visual-link"><ProductVisual {product} decorative /></PieGallery>}
   <div class="product-copy">
     <h3 id={`product-${product.id}`}><a class="product-title-link" href={catalogProductHref(product)}>{product.name}</a></h3>
     <p class="product-description">{product.description}<PiePortions {product} /></p>
