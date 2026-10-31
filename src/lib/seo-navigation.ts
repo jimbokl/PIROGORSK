@@ -16,7 +16,7 @@ export function canonicalSeoPath(value: string, base = origin): string | undefin
 export function isConversionHref(value: string, base = origin): boolean {
   const path = canonicalSeoPath(value, base);
   if (!path) return false;
-  return ['/', '/menu/', '/podbor/'].includes(path) || ['product', 'set', 'scenario', 'city', 'delivery'].includes(pages.get(path)!.pageType);
+  return ['/', '/menu/', '/podbor/'].includes(path) || ['product', 'category', 'set', 'scenario', 'city', 'delivery'].includes(pages.get(path)!.pageType);
 }
 
 export function guideTransition(source: string, destination: string): { source_page: string; destination_page: string } | undefined {

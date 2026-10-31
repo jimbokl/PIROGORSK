@@ -136,6 +136,9 @@ test('local previews and QA tabs never load Metrica or send goals', () => {
       document: { addEventListener() {}, querySelector() { throw new Error('Tracking must not initialize'); } },
     };
     runInNewContext(source, context);
+    context.exports.trackGoal('product_view', { productid: 'fish' });
+    context.exports.trackGoal('catalog_remove', { productid: 'fish', qty: 1 });
+    context.exports.trackGoal('city_select', { city: 'Калининград' });
     context.exports.trackGoal('order_form_open', { city: 'Зеленоградск' });
     context.exports.trackGoal('order_submit', { requestId: '10000000-0000-4000-8000-000000000001' });
     assert.deepEqual(calls, []);
@@ -180,6 +183,10 @@ test('selection/filter goals send only closed parameters and never raw search te
   track('catalog_add', { source: 'addon', surface: 'home', productid: 'cranberry', qty: 1 });
   track('catalog_add', { source: 'favorite', surface: 'other', city: 'Калининград', productid: 'fish', qty: 2 });
   track('catalog_add', { source: 'share', surface: 'home', city: 'Светлогорск', productid: 'apple', qty: 1, link: 'private' });
+  track('product_view', { surface: 'product', productid: 'p39-256', variant: '850', phone: 'private' });
+  track('catalog_remove', { source: 'selection', surface: 'menu', productid: 'fish', variant: '1000', qty: 2, value: 2980, text: 'private' });
+  track('city_select', { city: 'Калининград', surface: 'home', address: 'private' });
+  track('prepay_click', { value: 100 }); // No such action is offered yet.
   track('catalog_filter_apply', { source: 'private', surface: 'private', filling: 'private', search_used: 'private', results: 154, query: 'private' });
   assert.deepEqual(JSON.parse(JSON.stringify(calls.map(call => call[3]))), [
     { surface: 'menu', filling: 'fish', search_used: true, results: 5 },
@@ -187,6 +194,9 @@ test('selection/filter goals send only closed parameters and never raw search te
     { source: 'addon', surface: 'home', productid: 'cranberry', qty: 1 },
     { source: 'favorite', surface: 'other', city: 'Калининград', productid: 'fish', qty: 2 },
     { source: 'share', surface: 'home', city: 'Светлогорск', productid: 'apple', qty: 1 },
+    { surface: 'product', productid: 'p39-256', variant: '850' },
+    { source: 'selection', surface: 'menu', productid: 'fish', variant: '1000', qty: 2, value: 2980 },
+    { city: 'Калининград', surface: 'home' },
     {},
   ]);
   assert.ok(!JSON.stringify(calls).includes('private'));

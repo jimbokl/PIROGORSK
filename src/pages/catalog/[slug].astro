@@ -22,11 +22,11 @@ const art = product.supplier ? supplierArtwork(product.id) : undefined;
 const title = `${page.heading} — форматы и цены | Пирогорск`;
 const schema = [{ '@type': 'ItemPage', '@id': `${siteOrigin}${page.href}#page`, url: `${siteOrigin}${page.href}`, name: page.heading, description: page.intro,
   ...(art ? { primaryImageOfPage: { '@type': 'ImageObject', url: `${siteOrigin}${art.ogImage}`, width: 1200, height: 630, caption: art.alt } } : {}) }];
-const guide = product.category === 'mini-pies' ? { href: '/journal/skolko-piroga-na-cheloveka/', title: 'Сколько пирога нужно на человека', text: 'Считайте общий вес: один мини-пирог — 210 г, пять — 1,05 кг. Порция зависит от остального меню.', label: 'Расчёт стола' }
+const guide = /осетин/i.test(product.name) ? { href: '/osetinskie-pirogi/', title: 'Все осетинские пироги', text: 'Сравните начинки целых пирогов по 850 г и замороженных мини-пирогов по 210 г.', label: 'Выбор формата' } : product.category === 'mini-pies' ? { href: '/journal/skolko-piroga-na-cheloveka/', title: 'Сколько пирога нужно на человека', text: 'Считайте общий вес: один мини-пирог — 210 г, пять — 1,05 кг. Порция зависит от остального меню.', label: 'Расчёт стола' }
   : { href: '/menu/', title: 'Сравнить с остальным меню', text: 'Пироги, хлеб, выпечка и дополнения с предварительными ценами и разными форматами.', label: 'Весь ассортимент' };
 ---
 <ContentLayout {title} description={page.description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }, { name: page.heading, href: page.href }]} {schema} image={art?.ogImage} imageAlt={art?.alt} preloadFonts={false}>
-  <ProductHero eyebrow={`${page.group} · изучаем спрос`} title={page.heading} intro={page.intro}>
+  <ProductHero productId={product.id} eyebrow={`${page.group} · изучаем спрос`} title={page.heading} intro={page.intro}>
     {art ? <SupplierArtwork slot="visual" id={product.id} hero /> : <ProductVisual slot="visual" {product} layout="hero" />}
     <ProductOptions slot="actions" {product} showDelivery />
   </ProductHero>

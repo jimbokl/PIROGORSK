@@ -34,7 +34,7 @@ const description = `${catalog.length} позиции перед запуско�
   </form>
   <nav class="menu-sections" aria-label="Разделы меню">{sections.map(section => <a href={`#${section.id}`} data-menu-jump={section.id}><strong>{section.title}</strong><small>{section.text}</small><span><b data-menu-section-count>{section.count}</b></span></a>)}</nav>
   <div class="menu-empty" data-menu-empty hidden><h2>Такого вкуса пока не нашлось</h2><p>Попробуйте часть названия или другую начинку. Например, «вишня», «сыр» или «рыба».</p><button type="button" class="ed-button" data-menu-empty-reset data-catalog-empty-reset>Показать всё меню</button></div>
-  <p class="menu-planner-link"><a href="/podbor/">Рассчитать на компанию ↗</a><a href="#nabory">Готовые сочетания ↗</a></p>
+  <p class="menu-planner-link"><a href="/podbor/">Рассчитать на компанию ↗</a><a href="#nabory">Готовые сочетания ↗</a><a href="/osetinskie-pirogi/">Осетинские пироги ↗</a></p>
   <div class="menu-feed">
   <SupplierCatalog fresh interactive={false} feed />
   <SupplierCatalog interactive={false} feed />

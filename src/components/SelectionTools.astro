@@ -4,7 +4,7 @@ import Icon from './Icon.astro';
 <div class="selection-tools" data-selection-tools>
   <div class="selection-tool-actions">
     <button type="button" data-favorite-save>Сохранить любимую</button>
-    <button type="button" data-share-selection>Поделиться ссылкой<Icon name="arrow" /></button>
+    <button type="button" data-share-selection>Поделиться подборкой<Icon name="arrow" /></button>
   </div>
   <div class="selection-favorite" data-favorite-bar hidden>
     <div><strong>Любимая подборка</strong><small data-favorite-caption></small></div>
@@ -20,7 +20,7 @@ import Icon from './Icon.astro';
   <form data-guest-form>
     <div class="selection-fields">
       <label>Гостей<input type="number" name="guests" value="4" min="1" step="1" required inputmode="numeric" /></label>
-      <label>Морс<select name="drink"><option value="cranberry:1000">Клюква · 1 л</option><option value="seabuckthorn:1000">Облепиха · 1 л</option><option value="cranberry:500">Клюква · 500 мл</option><option value="seabuckthorn:500">Облепиха · 500 мл</option></select></label>
+      <label class="guest-drink">Морс<select name="drink"><option value="cranberry:1000">Клюква · 1 л</option><option value="seabuckthorn:1000">Облепиха · 1 л</option><option value="cranberry:500">Клюква · 500 мл</option><option value="seabuckthorn:500">Облепиха · 500 мл</option></select></label>
     </div>
     <p data-guest-existing></p>
     <div class="selection-fields">

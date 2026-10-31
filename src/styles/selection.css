@@ -55,3 +55,5 @@ body.has-selection{padding-bottom:124px}body:has(dialog[open]) .selection-dock,b
 .selection-dialog .composition-text-button{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px;font:400 12px/1.5 var(--sans);color:var(--muted)}
 .composition-preview-items{list-style:none;padding:0;margin:0}.composition-preview-items li{display:flex;align-items:start;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font:400 14px/1.6 var(--sans)}.composition-preview-items li span{min-width:0;overflow-wrap:anywhere}.composition-preview-items strong{font-weight:500;white-space:nowrap}.composition-preview-actions{display:grid;gap:10px;margin-top:20px}
 @media(max-width:370px){.selection-favorite{flex-wrap:wrap;gap:4px 16px}.selection-favorite>div{flex-basis:100%}.selection-fields{gap:8px}.composition-preview-items li{gap:8px;font-size:13px}}
+
+@media(max-width:480px){.selection-fields>.guest-drink{grid-column:1/-1}}

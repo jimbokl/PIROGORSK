@@ -125,7 +125,7 @@ function validate(): Record<string, string> {
   const date = field<HTMLInputElement>('desiredDate')?.value || '';
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date < today() || !Number.isFinite(Date.parse(`${date}T12:00:00Z`))) errors.desiredDate = 'Выберите сегодняшний или будущий день.';
   if (!['pickup', 'delivery', 'undecided'].includes(field<HTMLSelectElement>('delivery')?.value || '')) errors.delivery = 'Выберите, как вам удобнее получить пироги.';
-  if (!field<HTMLInputElement>('priceConsent')?.checked) errors.priceConsent = 'Подтвердите, что хотели бы заказать по ориентировочной цене.';
+  if (!field<HTMLInputElement>('priceConsent')?.checked) errors.priceConsent = 'Подтвердите, что вам подходит ориентировочная стоимость.';
   return errors;
 }
 
@@ -168,7 +168,7 @@ async function submit(event: SubmitEvent): Promise<void> {
     const success = dialog.querySelector<HTMLElement>('[data-interest-success]')!;
     success.hidden = false;
     dialog.querySelector<HTMLElement>('[data-interest-request]')!.textContent = payload.requestId;
-    dialog.querySelector<HTMLElement>('[data-interest-success-text]')!.textContent = 'Ваш интерес учтён. Это ещё не подтверждённый заказ: оплату мы не принимаем, а связаться с вами по анонимной заявке не сможем.';
+    dialog.querySelector<HTMLElement>('[data-interest-success-text]')!.textContent = 'Учли ваш выбор для будущего запуска. Номер ниже подтверждает сохранение заявки.';
     success.focus();
     trackGoal('order_submit', params(payload.requestId));
     document.dispatchEvent(new CustomEvent('pirogorsk:order-saved', { detail: { requestId: payload.requestId } }));

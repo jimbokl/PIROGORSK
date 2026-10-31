@@ -256,8 +256,8 @@
     "serpValidated": false,
     "ownershipBasis": "existing_content",
     "nextStep": {
-      "path": "/podbor/",
-      "label": "Рассчитать вес для своего стола"
+      "path": "/osetinskie-pirogi/",
+      "label": "Сравнить осетинские пироги и форматы"
     },
     "relatedArticles": [
       "/journal/myasnoy-pirog-nachinka-i-testo/",
@@ -3627,8 +3627,8 @@
     "serpValidated": false,
     "ownershipBasis": "semantic_brief_informational_intent",
     "nextStep": {
-      "path": "/menu/",
-      "label": "Выбрать пироги в меню"
+      "path": "/osetinskie-pirogi/",
+      "label": "Сравнить осетинские пироги и форматы"
     },
     "relatedArticles": [
       "/journal/pirog-s-kartoshkoy-i-syrom/",
@@ -4272,5 +4272,17 @@
       "/journal/kak-hranit-pirogi/",
       "/journal/kak-zamorozit-pirog/"
     ]
+  },
+  {
+    "path": "/osetinskie-pirogi/",
+    "cluster": "product",
+    "pageType": "category",
+    "title": "Осетинские пироги в Калининградской области — меню и цены",
+    "query": "осетинские пироги калининградская область меню цены",
+    "intent": "Сравнить 28 целых и замороженных мини-пирогов, начинки, массы и предварительные цены; собрать интерес к запуску.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "catalogue_gap"
   }
 ]

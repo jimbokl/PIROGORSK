@@ -1,6 +1,7 @@
 ---
 import { productFillings } from '../lib/catalog-fillings';
 import ProductVisual from './ProductVisual.astro';
+import SupplierArtwork from './SupplierArtwork.astro';
 import MenuQuantity from './MenuQuantity.astro';
 import type { Product } from '../data/catalog';
 import { catalogProductHref } from '../lib/product-paths';
@@ -9,7 +10,7 @@ const { product, concept = false } = Astro.props;
 const selected = product.variants.find(v => v.value === product.defaultVariant)!;
 ---
 <article class="menu-feed-item" data-menu-product data-fillings={productFillings(product).join(" ")} data-feed-id={product.id} data-menu-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(' ')} aria-labelledby={`feed-${product.id}`}>
-  <a class="menu-feed-art" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}><ProductVisual {product} layout="menu" decorative sizes="(max-width: 600px) max(114px, calc(34vw - 12px)), (max-width: 1000px) 176px, 220px" /></a>
+  <a class="menu-feed-art" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative sizes="(max-width: 600px) max(114px, calc(34vw - 12px)), (max-width: 1000px) 176px, 220px" /> : <ProductVisual {product} layout="menu" decorative sizes="(max-width: 600px) max(114px, calc(34vw - 12px)), (max-width: 1000px) 176px, 220px" />}</a>
   <div class="menu-feed-label">{concept ? 'Идея Пирогорска · рецепт в разработке' : 'К вашему столу'}</div>
   <h3 id={`feed-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3>
   <p class="menu-feed-description">{product.description}</p>

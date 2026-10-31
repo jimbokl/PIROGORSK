@@ -1,0 +1,567 @@
+{
+  "base": "http://127.0.0.1:4322",
+  "stage": "after",
+  "results": [
+    {
+      "path": "/",
+      "width": 390,
+      "state": "page",
+      "passes": 29,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "selection",
+      "passes": 17,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "interest",
+      "passes": 23,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "interest-errors",
+      "passes": 24,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "bundle-editor",
+      "passes": 17,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "state": "page",
+      "passes": 30,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/osetinskie-pirogi/",
+      "width": 390,
+      "state": "page",
+      "passes": 30,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "/delivery/",
+      "width": 390,
+      "state": "page",
+      "passes": 22,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 26
+        }
+      ]
+    },
+    {
+      "path": "/zelenogradsk/",
+      "width": 390,
+      "state": "page",
+      "passes": 24,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "width": 390,
+      "state": "page",
+      "passes": 33,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "path": "/blog/",
+      "width": 390,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "width": 390,
+      "state": "page",
+      "passes": 31,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "path": "/about/",
+      "width": 390,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/povody/",
+      "width": 390,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/partners/",
+      "width": 390,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/podbor/",
+      "width": 390,
+      "state": "page",
+      "passes": 24,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "/privacy/",
+      "width": 390,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "/terms/",
+      "width": 390,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "/nabor/uzhin-v-apartamentah/",
+      "width": 390,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "page",
+      "passes": 29,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "selection",
+      "passes": 17,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "interest",
+      "passes": 23,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "interest-errors",
+      "passes": 23,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "bundle-editor",
+      "passes": 17,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "state": "page",
+      "passes": 29,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/osetinskie-pirogi/",
+      "width": 768,
+      "state": "page",
+      "passes": 30,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "/delivery/",
+      "width": 768,
+      "state": "page",
+      "passes": 22,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 26
+        }
+      ]
+    },
+    {
+      "path": "/zelenogradsk/",
+      "width": 768,
+      "state": "page",
+      "passes": 24,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "width": 768,
+      "state": "page",
+      "passes": 32,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "/blog/",
+      "width": 768,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "width": 768,
+      "state": "page",
+      "passes": 30,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "/about/",
+      "width": 768,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/povody/",
+      "width": 768,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/partners/",
+      "width": 768,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "/podbor/",
+      "width": 768,
+      "state": "page",
+      "passes": 24,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "/privacy/",
+      "width": 768,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "/terms/",
+      "width": 768,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "/nabor/uzhin-v-apartamentah/",
+      "width": 768,
+      "state": "page",
+      "passes": 21,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "count": 2
+        },
+        {
+          "id": "color-contrast",
+          "count": 3
+        }
+      ]
+    }
+  ]
+}

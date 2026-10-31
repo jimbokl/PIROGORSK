@@ -3,10 +3,10 @@ import { analyticsPageUrl } from '../lib/analytics-pageview';
 import { analyticsSessionEnabled } from '../lib/analytics-session';
 import { guideTransition } from '../lib/seo-navigation';
 
-export type Goal = 'selection_open' | 'catalog_filter_apply' | 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error' | 'calculator_interact' | 'calc_apply_set' | 'guide_to_catalog_click';
+export type Goal = 'product_view' | 'catalog_remove' | 'city_select' | 'selection_open' | 'catalog_filter_apply' | 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error' | 'calculator_interact' | 'calc_apply_set' | 'guide_to_catalog_click';
 export type GoalParams = {
   city?: string;
-  source?: 'card' | 'bundle' | 'addon' | 'planner' | 'favorite' | 'share';
+  source?: 'card' | 'bundle' | 'addon' | 'planner' | 'favorite' | 'share' | 'selection';
   surface?: 'home' | 'menu' | 'product' | 'other';
   filling?: string;
   search_used?: boolean;
@@ -22,7 +22,7 @@ export type GoalParams = {
 type Metrica = ((...args: unknown[]) => void) & { a?: unknown[][]; l?: number };
 declare global { interface Window { ym?: Metrica } }
 const cities = new Set(['Зеленоградск', 'Калининград', 'Светлогорск']);
-const goals = new Set<Goal>(['selection_open', 'catalog_filter_apply', 'catalog_add', 'order_form_open', 'order_form_start', 'order_submit', 'order_submit_error', 'calculator_interact', 'calc_apply_set', 'guide_to_catalog_click']);
+const goals = new Set<Goal>(['product_view', 'catalog_remove', 'city_select', 'selection_open', 'catalog_filter_apply', 'catalog_add', 'order_form_open', 'order_form_start', 'order_submit', 'order_submit_error', 'calculator_interact', 'calc_apply_set', 'guide_to_catalog_click']);
 const submitted = new Set<string>();
 const idPattern = /^[a-zA-Z0-9_-]{1,48}$/;
 const requestPattern = /^[\da-f]{8}-[\da-f]{4}-4[\da-f]{3}-[89ab][\da-f]{3}-[\da-f]{12}$/i;
@@ -35,7 +35,7 @@ const analyticsEnabled = analyticsSessionEnabled(location.href, {
 export function trackGoal(goal: Goal, params: GoalParams = {}): void {
   if (!analyticsEnabled || !goals.has(goal) || !Number.isSafeInteger(analyticsConfig.metricaId) || analyticsConfig.metricaId <= 0) return;
   const safe: GoalParams = {};
-  if (params.source && ['card', 'bundle', 'addon', 'planner', 'favorite', 'share'].includes(params.source)) safe.source = params.source;
+  if (params.source && ['card', 'bundle', 'addon', 'planner', 'favorite', 'share', 'selection'].includes(params.source)) safe.source = params.source;
   if (params.surface && ['home', 'menu', 'product', 'other'].includes(params.surface)) safe.surface = params.surface;
   if (typeof params.filling === 'string' && ['all', 'meat', 'poultry', 'fish', 'cheese', 'vegetables', 'fruit'].includes(params.filling)) safe.filling = params.filling;
   if (typeof params.search_used === 'boolean') safe.search_used = params.search_used;

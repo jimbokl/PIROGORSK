@@ -1,0 +1,36 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+import PieTownHero from '../components/PieTownHero.astro';
+import MenuFeedItem from '../components/MenuFeedItem.astro';
+import town from '../../design/pie-city-banners-20261030/pie-city.png';
+import { catalog } from '../data/catalog';
+import { catalogProductHref } from '../lib/product-paths';
+import { siteOrigin } from '../data/editorial';
+import '../styles/menu.css';
+const selectedProducts = catalog.filter(product => product.category === 'ossetian-pies' || (product.category === 'mini-pies' && product.name.startsWith('Осетинский')));
+const whole = selectedProducts.filter(product => product.category === 'ossetian-pies');
+const mini = selectedProducts.filter(product => product.category === 'mini-pies');
+const products = [...whole, ...mini];
+const title = 'Осетинские пироги в Калининградской области — меню и цены | Пирогорск';
+const description = `${products.length} осетинских пирогов: целые по 850 г и замороженные мини-пироги по 210 г. Сравните начинки, форматы и предварительные цены, соберите подборку к запуску.`;
+const schema = [{ '@type': 'ItemList', name: 'Осетинские пироги Пирогорска', numberOfItems: products.length, itemListElement: products.map((product, index) => ({ '@type': 'ListItem', position: index + 1, name: product.name, url: new URL(catalogProductHref(product), siteOrigin).href })) }];
+---
+<ContentLayout {title} {description} {schema} bodyClass="menu-page" breadcrumbs={[{name:'Меню',href:'/menu/'},{name:'Осетинские пироги',href:'/osetinskie-pirogi/'}]}>
+  <PieTownHero image={town} imageAlt="Пироговый город у балтийского моря" eyebrow={`${products.length} начинок и форматов`} title="Осетинские пироги в Калининградской области" intro="Сырные, мясные, овощные и сладкие начинки. Сравните целый пирог к столу и мини-формат для порционной подачи. Сейчас собираем интерес к запуску — цены предварительные." />
+  <nav class="ossetian-nav" aria-label="Выбрать формат"><a href="#whole">Целые · 850 г</a><a href="#mini">Мини · 210 г</a><a href="/podbor/">Рассчитать на компанию ↗</a><a href="/delivery/">Города и получение ↗</a></nav>
+  <div class="menu-feed">
+    <section id="whole" class="ossetian-section" aria-labelledby="whole-title"><header><p class="ed-eyebrow">Пироги а-ля Русс · {whole.length} позиций</p><h2 id="whole-title">Целые пироги по 850 г</h2><p>Готовый целый пирог: выберите начинку и количество. Формат производителя — 850 г; масса не переключается на 500 г или 1 кг.</p></header><div class="menu-feed-list">{whole.map(product => <MenuFeedItem {product} />)}</div></section>
+    <section id="mini" class="ossetian-section" aria-labelledby="mini-title"><header><p class="ed-eyebrow">Holland Bakery · {mini.length} позиций</p><h2 id="mini-title">Замороженные мини-пироги по 210 г</h2><p>Готовый замороженный продукт. Один мини-пирог — 210 г; доступны варианты по 1, 5 и 20 штук. Это другой формат получения и подготовки к подаче, чем целый готовый пирог.</p></header><div class="menu-feed-list">{mini.map(product => <MenuFeedItem {product} />)}</div></section>
+  </div>
+  <section class="ossetian-guide" aria-labelledby="formats-title"><h2 id="formats-title">Какой формат выбрать</h2><div class="ossetian-table" role="region" aria-label="Сравнение форматов" tabindex="0"><table><caption class="sr-only">Масса, состояние и варианты осетинских пирогов</caption><thead><tr><th scope="col">Параметр</th><th scope="col">Целый пирог</th><th scope="col">Мини-пирог</th></tr></thead><tbody><tr><th scope="row">Масса одного</th><td>850 г</td><td>210 г</td></tr><tr><th scope="row">Варианты</th><td>Целый · 850 г</td><td>1, 5 или 20 штук</td></tr><tr><th scope="row">Состояние продукта</th><td>Готовый целый пирог</td><td>Готовый замороженный продукт</td></tr><tr><th scope="row">Общая масса</th><td>2 пирога — 1,7 кг</td><td>5 штук — 1,05 кг; 20 — 4,2 кг</td></tr></tbody></table></div><p>Количество порций зависит от аппетита гостей и остальных блюд. Для ориентира используйте <a href="/journal/skolko-piroga-na-cheloveka/">расчёт веса на человека</a> или <a href="/podbor/" data-guide-catalog>подбор на компанию</a>.</p></section>
+  <section class="ossetian-guide" aria-labelledby="ossetian-faq"><h2 id="ossetian-faq">Перед выбором</h2><details><summary>Можно ли уже заказать?</summary><p>Пока можно собрать подборку и отметить интерес. Заказы и оплату ещё не принимаем. Условия получения описаны на <a href="/delivery/">странице доставки</a>.</p></details><details><summary>Чем отличаются похожие начинки?</summary><p>Одинаковое название начинки не означает одинаковый продукт: сравните массу, состояние и сведения на странице каждого пирога. У целых и мини-пирогов разные производители и форматы.</p></details><details><summary>Какие города можно указать?</summary><p>В подборке можно выбрать <a href="/kaliningrad/">Калининград</a>, <a href="/zelenogradsk/">Зеленоградск</a> или <a href="/svetlogorsk/">Светлогорск</a>. Это города изучения спроса; доступные зоны и интервалы доставки ещё уточняются.</p></details><p>Хотите разобраться в отличиях? <a href="/journal/osetinskiy-ili-zakrytyy-pirog-kaliningrad/">Осетинский или закрытый пирог</a> · <a href="/menu/">Всё меню Пирогорска</a>.</p></section>
+  <aside class="menu-feed-notice" data-feed-feedback hidden aria-label="Ваша подборка"><p role="status" aria-live="polite" data-feed-message></p><a href="/?interest=selection" data-feed-selection data-open="selection-dialog">Открыть подборку</a><button type="button" class="menu-feedback-close" data-feed-dismiss aria-label="Скрыть уведомление о подборке">×</button></aside>
+  <script type="application/json" id="menu-feed-catalog" set:html={JSON.stringify(products.map(({id,name,variants}) => ({id,name,variants}))).replaceAll('<','\\u003c')} />
+  <script>import '../scripts/menu-feed';</script>
+</ContentLayout>
+<style>
+.ossetian-nav{display:flex;gap:12px 24px;flex-wrap:wrap;margin:0 0 36px}.ossetian-nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:5px;font-size:14px}
+.ossetian-section{scroll-margin-top:150px;margin-bottom:60px}.ossetian-section header{max-width:68ch;margin-bottom:28px}.ossetian-section h2,.ossetian-guide h2{font:500 clamp(27px,4vw,38px)/1.2 var(--serif);letter-spacing:-.03em;margin:10px 0 16px}.ossetian-section header>p:last-child,.ossetian-guide p{font-size:14px;line-height:1.8;color:var(--muted)}
+.ossetian-guide{margin:48px 0;max-width:900px}.ossetian-guide p{margin:18px 0}.ossetian-guide a{text-decoration:underline;text-underline-offset:4px}.ossetian-table{overflow-x:auto;border:1px solid var(--line);border-radius:18px}.ossetian-table table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.6}.ossetian-table th,.ossetian-table td{text-align:left;padding:16px;border-bottom:1px solid var(--line);vertical-align:top}.ossetian-table th{font-weight:500}.ossetian-table thead{background:var(--surface-oat)}.ossetian-guide details{border-bottom:1px solid var(--line);padding:12px 0}.ossetian-guide summary{min-height:44px;align-content:center;cursor:pointer;font-size:15px}
+@media(max-width:600px){.ossetian-nav{gap:4px 18px;margin-bottom:24px}.ossetian-nav a{font-size:12px}.ossetian-section{scroll-margin-top:120px;margin-bottom:40px}.ossetian-table th,.ossetian-table td{padding:12px 10px;font-size:12px}}
+</style>

@@ -1,8 +1,8 @@
 ---
-interface Props { eyebrow: string; title: string; intro: string }
-const { eyebrow, title, intro } = Astro.props;
+interface Props { eyebrow: string; title: string; intro: string; productId?: string }
+const { eyebrow, title, intro, productId } = Astro.props;
 ---
-<section class="product-hero" aria-labelledby="product-heading">
+<section class="product-hero" aria-labelledby="product-heading" data-product-view={productId}>
   <div class="product-hero-copy">
     <p class="ed-eyebrow">{eyebrow}</p>
     <h1 id="product-heading">{title}</h1>

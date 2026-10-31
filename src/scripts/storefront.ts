@@ -6,6 +6,7 @@ import { estimateDelivery } from '../data/pricing';
 import { bundles, addOnGroups } from '../data/bundles';
 import { mergeSelection, availableAddOns, readSavedSelection } from '../lib/selection-offers';
 import { initSelectionTools } from './selection-tools';
+import { compositionLink } from '../lib/selection-tools';
 
 type Selection = { id: string; value: number; quantity: number };
 const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
@@ -92,6 +93,10 @@ function replaceItems(items: Selection[], source: 'bundle' | 'addon' | 'favorite
   const merged = mergeSelection([], items, products);
   if (!merged) return false;
   if (targetCity) setCity(targetCity, false);
+  for (const item of selection) {
+    const removed = item.quantity - (merged.find(entry => entry.id === item.id && entry.value === item.value)?.quantity || 0);
+    if (removed > 0) trackGoal('catalog_remove', { city, source, surface: catalogSurface(), productid: item.id, variant: String(item.value), qty: removed, value: productFor(item).prices[item.value] * removed });
+  }
   for (const item of merged) {
     const added = item.quantity - (selection.find(entry => entry.id === item.id && entry.value === item.value)?.quantity || 0);
     if (added > 0) trackGoal('catalog_add', { city, source, surface: catalogSurface(), productid: item.id, variant: String(item.value), qty: added, value: productFor(item).prices[item.value] * added });
@@ -153,7 +158,7 @@ function renderSelection() {
   const summary = document.querySelector<HTMLElement>('.selection-summary')!;
   summary.hidden = selection.length === 0;
   document.querySelector<HTMLElement>('[data-copy-fallback]')!.hidden = true;
-  document.querySelector<HTMLElement>('[data-copy] span:not(.icon)')!.textContent = 'Скопировать подборку';
+  document.querySelector<HTMLElement>('[data-copy] span:not(.icon)')!.textContent = 'Скопировать для чата';
   if (!selection.length) {
     const empty = document.createElement('div');
     empty.className = 'empty-selection';
@@ -215,8 +220,15 @@ all<HTMLDialogElement>('dialog').forEach(dialog => {
     if (event.clientX < left || event.clientX > right || event.clientY < top || event.clientY > bottom) dialog.close();
   });
 });
-all('[data-select-city]').forEach(button => button.addEventListener('click', () => setCity(button.dataset.selectCity!)));
+all('[data-select-city]').forEach(button => button.addEventListener('click', () => {
+  const next = button.dataset.selectCity!;
+  const changed = next !== city;
+  setCity(next);
+  if (changed && city === next) trackGoal('city_select', { city, surface: catalogSurface() });
+}));
 try { setCity(localStorage.getItem('pirogorsk-city') || city, false); } catch { /* Default city remains usable. */ }
+const viewedProduct = products.find(product => product.id === document.querySelector<HTMLElement>('[data-product-view]')?.dataset.productView);
+if (viewedProduct) trackGoal('product_view', { city, surface: 'product', productid: viewedProduct.id, variant: String(viewedProduct.defaultVariant) });
 
 all('[data-filter]').forEach(button => button.addEventListener('click', () => {
   all('[data-filter]').forEach(filter => filter.setAttribute('aria-pressed', String(filter === button)));
@@ -297,10 +309,13 @@ document.addEventListener('click', event => {
   syncSavedState();
   const itemIndex = selection.findIndex(item => `${item.id}-${item.value}` === row.dataset.item);
   if (itemIndex < 0) return;
+  const item = { ...selection[itemIndex] };
   const action = control.hasAttribute('data-increase') ? 'increase' : control.hasAttribute('data-decrease') ? 'decrease' : 'remove';
   if (action === 'remove' || (action === 'decrease' && selection[itemIndex].quantity === 1)) selection.splice(itemIndex, 1);
   else if (action === 'increase' && selection[itemIndex].quantity >= 99) { toast('Можно выбрать до 99 таких товаров'); return; }
   else selection[itemIndex].quantity += action === 'increase' ? 1 : -1;
+  const delta = action === 'remove' ? item.quantity : 1;
+  trackGoal(action === 'increase' ? 'catalog_add' : 'catalog_remove', { city, source: 'selection', surface: catalogSurface(), productid: item.id, variant: String(item.value), qty: delta, value: productFor(item).prices[item.value] * delta });
   updateBadge();
   renderSelection();
 });
@@ -310,10 +325,12 @@ document.querySelector('[data-copy]')!.addEventListener('click', async () => {
     const product = products.find(product => product.id === item.id)!;
     return `${product.name} · ${variantLabel(product, item.value)} × ${item.quantity} — ${money(product.prices[item.value] * item.quantity)}`;
   });
-  const text = `Пирогорск · ${city}\n\n${lines.join('\n')}\n\nТовары: ${document.querySelector('[data-total]')!.textContent}\nДоставка, ориентир: ${document.querySelector('[data-selection-delivery]')!.textContent}\nС доставкой ≈ ${document.querySelector('[data-selection-grand-total]')!.textContent}\nЦены и доставка предварительные. Приём заказов пока не открыт.\nhttps://pirogorsk.ru/`;
+  const link = compositionLink({ version: 1, city, items: getSelection() }, 'https://pirogorsk.ru');
+  const text = `Пирогорск · ${city}\n\n${lines.join('\n')}\n\nТовары: ${document.querySelector('[data-total]')!.textContent}\nДоставка, ориентир: ${document.querySelector('[data-selection-delivery]')!.textContent}\nС доставкой ≈ ${document.querySelector('[data-selection-grand-total]')!.textContent}\nЦены и доставка предварительные. Приём заказов пока не открыт.\nОткрыть эту подборку: ${link}`;
   try {
     await navigator.clipboard.writeText(text);
     document.querySelector<HTMLElement>('[data-copy] span:not(.icon)')!.textContent = 'Подборка скопирована';
+    document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = 'Текст подборки скопирован. Вставьте его в чат.';
   } catch {
     const fallback = document.querySelector<HTMLTextAreaElement>('[data-copy-fallback]')!;
     fallback.value = text;
@@ -321,6 +338,7 @@ document.querySelector('[data-copy]')!.addEventListener('click', async () => {
     fallback.focus();
     fallback.select();
     document.querySelector<HTMLElement>('[data-copy] span:not(.icon)')!.textContent = 'Выделили текст — скопируйте';
+    document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = 'Скопируйте выделенный текст и вставьте его в чат.';
   }
 });
 

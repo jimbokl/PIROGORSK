@@ -17,6 +17,7 @@
 .home-section-heading h2{margin:0;font-size:clamp(30px,4vw,44px)}
 .home-section-heading .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 10px}
 .home-section-heading>a{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:13px;white-space:nowrap}
+.home-planner-link{margin:0 0 16px}.home-planner-link a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:4px}
 .home-section-intro{max-width:620px;font-size:13px;line-height:1.7;color:var(--muted);margin-bottom:24px}
 .home-featured{padding-block:38px 50px}
 .home-featured .supplier-artwork{width:100%}

@@ -253,7 +253,7 @@ export const editorialPaths = [
   ...expansionGuides.map(item => `/journal/${item.slug}/`),
   ...localOccasions.map(occasionHref),
   `/journal/${foodGuide.slug}/`,
-  '/menu/', '/delivery/', '/partners/', '/about/', '/podbor/', '/povody/', '/blog/',
+  '/menu/', '/osetinskie-pirogi/', '/delivery/', '/partners/', '/about/', '/podbor/', '/povody/', '/blog/',
   ...blogArticles.map(item => `/journal/${item.slug}/`),
   ...occasions.map(item => `/povody/${item.slug}/`),
   ...editorialProducts.map(productHref),

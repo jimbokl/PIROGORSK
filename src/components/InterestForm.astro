@@ -3,9 +3,9 @@ import { analyticsConfig } from '../config/analytics';
 import '../styles/interest.css';
 ---
 <dialog id="interest-dialog" class="dialog interest-dialog" aria-labelledby="interest-heading" aria-describedby="interest-intro">
-  <div class="interest-top"><span class="eyebrow">Готовим запуск</span><button type="button" class="interest-close" data-interest-close aria-label="Закрыть заявку">×</button></div>
-  <h2 id="interest-heading">Что выберете к столу?</h2>
-  <p id="interest-intro" class="interest-intro">Готовим запуск. Заявка показывает интерес, заказ и оплата пока не подтверждаются.</p>
+  <div class="interest-top"><span class="eyebrow">Ваша подборка</span><button type="button" class="interest-close" data-interest-close aria-label="Закрыть заявку">×</button></div>
+  <h2 id="interest-heading">Интерес к запуску</h2>
+  <p id="interest-intro" class="interest-intro">Сохраним выбранные вкусы, город и пожелания. Это не заказ: оплата и связь с вами не предусмотрены.</p>
   <form id="interest-form" class="ym-disable-submit" novalidate>
     <fieldset data-interest-fields>
       <legend class="sr-only">Ваша заявка</legend>
@@ -15,8 +15,7 @@ import '../styles/interest.css';
         <div class="interest-field"><label for="interest-day">Желаемый день</label><input type="date" name="desiredDate" id="interest-day" required aria-describedby="interest-day-error" /><span id="interest-day-error" class="interest-error" data-error="desiredDate"></span></div>
       </div>
       <div class="interest-field"><label for="interest-delivery">Как было бы удобнее получить?</label><select name="delivery" id="interest-delivery" required aria-describedby="interest-delivery-error"><option value="">Выберите способ</option><option value="pickup">Самовывоз</option><option value="delivery">Доставка</option><option value="undecided">Пока не решил(а)</option></select><span id="interest-delivery-error" class="interest-error" data-error="delivery"></span></div>
-      <label class="interest-consent"><input type="checkbox" name="priceConsent" required aria-describedby="interest-price-error" /><span>Хочу заказать эту подборку по ориентировочной цене, когда Пирогорск начнёт работу.</span></label><span id="interest-price-error" class="interest-error" data-error="priceConsent"></span>
-      <p class="interest-anonymous">Заявка анонимная: имя и контакты не нужны. Связаться с вами по ней не получится.</p>
+      <label class="interest-consent"><input type="checkbox" name="priceConsent" required aria-describedby="interest-price-error" /><span>Мне подходит ориентировочная стоимость подборки.</span></label><span id="interest-price-error" class="interest-error" data-error="priceConsent"></span>
       <div class="interest-trap" aria-hidden="true"><label for="interest-website">Ваш сайт</label><input id="interest-website" type="text" name="website" tabindex="-1" autocomplete="off" /></div>
       <p class="interest-error" data-error="items"></p>
       <p class="interest-status" data-interest-status role="status" aria-live="polite"></p>

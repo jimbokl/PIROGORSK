@@ -45,6 +45,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <TastingHero />
       <section class="catalog home-featured container" id="pirogi" aria-labelledby="catalog-heading">
         <div class="home-section-heading"><h2 id="catalog-heading">Выберите свой пирог</h2><a href="/menu/">Всё меню · {catalog.length}<Icon name="arrow" /></a></div>
+        <p class="home-planner-link"><a href="/podbor/">Сколько пирогов на компанию? <Icon name="arrow" /></a></p>
           <form class="home-finder" role="search" aria-label="Поиск по всему ассортименту" data-home-finder action="/menu/">
             <label for="home-search">Найдите любимый вкус</label>
             <div class="home-search-row"><input id="home-search" type="search" name="q" maxlength="100" data-catalog-query autocomplete="off" placeholder="Начинка или название" enterkeyhint="search" /><button type="submit">Найти</button></div>
