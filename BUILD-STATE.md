@@ -8,7 +8,11 @@ Local check/build/41 Node/семь валидаторов/full browser/registry 
 52 responsive views (13 шаблонов × 320/390/768/1280), no-JS/reduced motion PASS;
 ещё 8 проверок документов с меню/выбором города. Общая айдентика во всех 244
 содержательных HTML; 3 остальных — редиректы. Текст документов/noindex сохранены;
-phone/tablet screenshots просмотрены. Публикация и production QA — следующий шаг.
+phone/tablet screenshots просмотрены.
+Runtime `0071d97594d7ffa76d83da4b4939b29f23c83019`,
+[CI 41181258922 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41181258922).
+Production 52 views PASS; 272 ресурса, включая все 247 HTML и runtime CSS/JS,
+совпали с независимым Pages artifact. Pages/Worker compatibility PASS.
 [Протокол](qa/brand-details-20261031/README.md).
 
 ## 30 тематических статей — 31.10.2026
