@@ -44,8 +44,24 @@
   и новые инструменты на 320/390/1280.
 - 75 адаптивных просмотров (15 шаблонов × пять ширин) без переполнения и ошибок
   браузера; no-JS/reduced-motion PASS, см. `local-responsive.json`.
-- Публикация: ожидает завершения локальной приёмки и CI. Статус «Готово» в
-  каноническом бэклоге будет записан только после подтверждения production.
+- Runtime `3014165084cc05f7a02d981f890ea64643c14c49`,
+  [CI 41190033151 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41190033151).
+- Production: все 273 ресурса HTTP 200 и побайтово совпадают с независимо
+  скачанным CI Pages artifact, включая 247 HTML и runtime CSS/JS;
+  [publication.json](publication.json). Pages/Worker compatibility PASS.
+- Production: те же функциональные сценарии на пяти ширинах и 75 responsive
+  views/no-JS/reduced-motion PASS. Снимки телефона и планшета просмотрены.
+- CLI: три мобильных профиля, LCP 2,07–2,34 с, median 2,19 с, P94/98/98,
+  TBT203/23,5/45мс; desktop P95/LCP1,01с/TBT0. Observed render delay mobile
+  17–81мс. A/SEO100; BP77 из-за сохранённой Метрики. Выброс TBT первого запуска
+  зафиксирован; небольшой набор измерений не доказывает изменение полевой скорости.
+  [Метрики](performance-after/metrics.json), [диапазоны](performance-after/performance-ranges.json).
+- Независимый [public PSI](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ceigdxddtl?form_factor=mobile):
+  mobile P99/LCP2101мс/TBT0/CLS0,03; desktop P100/LCP466мс/TBT20мс/CLS0,004.
+  A/BP/SEO100; captured31.10 12:01 GMT+2. CrUX «Нет данных», это lab-результат.
+  [Записанные показания](public-pagespeed/report.json).
+
+DOM-05–08 опубликованы и закрыты; текущая лента и 153 SKU сохранены.
 
 В QA заблокированы внешние запросы и отправка реальных заявок.
 Скриншоты интерфейса: `local-functional/`, после публикации — `production-functional/`.

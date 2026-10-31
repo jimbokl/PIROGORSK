@@ -1,5 +1,18 @@
 # Скорость production-сборки
 
+## Наборы, любимая подборка и обмен ссылкой — 31.10.2026
+
+Runtime `3014165`, [CI 41190033151 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41190033151).
+Public PSI: [mobile P99/LCP2101мс/TBT0/CLS0,03](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ceigdxddtl?form_factor=mobile),
+[desktop P100/LCP466мс/TBT20мс/CLS0,004](https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ceigdxddtl?form_factor=desktop).
+A/BP/SEO100; LH13.6/Chrome153, captured31.10 12:01 GMT+2; CrUX «Нет данных».
+CLI: mobile P94/98/98, LCP2,07–2,34с, median2,19с, TBT203/23,5/45мс;
+desktop P95/LCP1,01с/TBT0. A/SEO100, BP77. Observed render17–81мс.
+Рост TBT первого запуска записан; в последующих двух он23,5/45мс. Полевое
+изменение этой небольшой серией не установлено. [Метрики](qa/selection-tools-20261031/performance-after/metrics.json),
+[диапазоны](qa/selection-tools-20261031/performance-after/performance-ranges.json),
+[публичные показания](qa/selection-tools-20261031/public-pagespeed/report.json).
+
 ## Общая подборка и фильтры — 31.10.2026
 
 Runtime `0d7b9ba`, [CI 41186619321 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41186619321).

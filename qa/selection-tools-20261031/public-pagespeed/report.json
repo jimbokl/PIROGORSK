@@ -1,0 +1,30 @@
+{
+  "runtime": "3014165084cc05f7a02d981f890ea64643c14c49",
+  "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ceigdxddtl",
+  "capturedAt": "2026-10-31T10:01:26Z",
+  "source": "Public PageSpeed Insights UI; Moto G Power and desktop; Lighthouse 13.6.0 / HeadlessChromium 153.0.8010.36",
+  "crux": "Нет данных",
+  "mobile": {
+    "performance": 99,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 1384,
+    "lcpMs": 2101,
+    "tbtMs": 0,
+    "clsVisible": 0.03
+  },
+  "desktop": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 334,
+    "lcpMs": 466,
+    "tbtMsCalculator": 18,
+    "tbtVisible": "20 мс",
+    "clsCalculator": 0,
+    "clsVisible": 0.004
+  },
+  "note": "Laboratory samples; calculator values and displayed rounded metrics recorded separately. No field performance claim."
+}

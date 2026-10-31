@@ -1,0 +1,190 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T10:02:12.633Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1362,
+      "lcp": 1771
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1303.9090001220702,
+      "resourceLoadDelay": 33.10699987792969,
+      "resourceLoadDuration": 352.918,
+      "elementRenderDelay": 81.403
+    },
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1541.27,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2339.3445,
+        "display": "2.3 s"
+      },
+      "total-blocking-time": {
+        "value": 203,
+        "display": "200 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.003987284059888178,
+        "display": "0.004"
+      },
+      "speed-index": {
+        "value": 2959.8332507716204,
+        "display": "3.0 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T10:02:29.908Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1596,
+      "lcp": 1845
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1541.471,
+      "resourceLoadDelay": 28.977,
+      "resourceLoadDuration": 258.151,
+      "elementRenderDelay": 16.705
+    },
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1635.5169999999998,
+        "display": "1.6 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2066.111,
+        "display": "2.1 s"
+      },
+      "total-blocking-time": {
+        "value": 23.5,
+        "display": "20 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0037018234814169488,
+        "display": "0.004"
+      },
+      "speed-index": {
+        "value": 3191.7784389677854,
+        "display": "3.2 s"
+      }
+    }
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T10:02:46.555Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1504,
+      "lcp": 1685
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1462.887,
+      "resourceLoadDelay": 25.827,
+      "resourceLoadDuration": 153.812,
+      "elementRenderDelay": 42.875
+    },
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1545.9890000000003,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2192.5695000000005,
+        "display": "2.2 s"
+      },
+      "total-blocking-time": {
+        "value": 45,
+        "display": "50 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.028109327807339532,
+        "display": "0.028"
+      },
+      "speed-index": {
+        "value": 2990.3445998359252,
+        "display": "3.0 s"
+      }
+    }
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/",
+    "timestamp": "2026-10-31T10:03:03.989Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 1481,
+      "lcp": 2720
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 1307.311,
+      "resourceLoadDelay": 148.276,
+      "resourceLoadDuration": 1241.931,
+      "elementRenderDelay": 22.942
+    },
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 898.8129999999998,
+        "display": "0.9 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1010.1069999999996,
+        "display": "1.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.013868729314420805,
+        "display": "0.014"
+      },
+      "speed-index": {
+        "value": 1829.8350334681875,
+        "display": "1.8 s"
+      }
+    }
+  }
+]

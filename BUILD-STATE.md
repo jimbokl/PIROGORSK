@@ -6,7 +6,13 @@
 Статусы и критерии — в [BACKLOG.md](BACKLOG.md). CRM отложена.
 DOM-05–08 реализованы; check/build/49 Node/семь валидаторов/Worker PASS.
 Новые функциональные сценарии на 320/390/768/1024/1280 PASS.
-Full browser и 75 responsive views/no-JS/reduced-motion PASS. Далее CI и production-приёмка.
+Full browser и 75 responsive views/no-JS/reduced-motion PASS.
+Runtime `3014165`; [CI 41190033151 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41190033151).
+Production: 273/273 ресурсов совпали с независимым CI artifact, все247 HTML;
+75 responsive views и функциональные сценарии на пяти ширинах PASS.
+Public PSI mobile99/LCP2,10с; desktop100/LCP0,47с. CLI mobile2,07–2,34с,
+median2,19с, P94/98/98; desktop95/1,01с. Лента и153 SKU сохранены.
+DOM-05–08 закрыты. Следующая очередь: UX-01/03/04, ANA-02 и SEO-02/07.
 [Протокол](qa/selection-tools-20261031/README.md).
 
 ## Единый бэклог — 31.10.2026
