@@ -1,0 +1,138 @@
+[main 1b603f4] Publish six Baltic editorial guides and map November content plan
+ Committer: Дмитрий <dmitrij@MacBook-Air-Dmitrij-4.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 135 files changed, 9305 insertions(+), 19 deletions(-)
+ create mode 100644 design/blog-source/month-202611/diagrams/kenigsbergskiy-martsipan-1.png
+ create mode 100644 design/blog-source/month-202611/diagrams/kenigsbergskiy-martsipan-1.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/kenigsbergskiy-martsipan-2.png
+ create mode 100644 design/blog-source/month-202611/diagrams/kenigsbergskiy-martsipan-2.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/piknik-na-kurshskoy-kose-1.png
+ create mode 100644 design/blog-source/month-202611/diagrams/piknik-na-kurshskoy-kose-1.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/piknik-na-kurshskoy-kose-2.png
+ create mode 100644 design/blog-source/month-202611/diagrams/piknik-na-kurshskoy-kose-2.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/regionalnaya-kuhnya-kaliningradskoy-oblasti-1.png
+ create mode 100644 design/blog-source/month-202611/diagrams/regionalnaya-kuhnya-kaliningradskoy-oblasti-1.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/regionalnaya-kuhnya-kaliningradskoy-oblasti-2.png
+ create mode 100644 design/blog-source/month-202611/diagrams/regionalnaya-kuhnya-kaliningradskoy-oblasti-2.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/sedobnye-suveniry-iz-kaliningrada-1.png
+ create mode 100644 design/blog-source/month-202611/diagrams/sedobnye-suveniry-iz-kaliningrada-1.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/sedobnye-suveniry-iz-kaliningrada-2.png
+ create mode 100644 design/blog-source/month-202611/diagrams/sedobnye-suveniry-iz-kaliningrada-2.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/svetlogorsk-kaliningrad-edamarshrut-1.png
+ create mode 100644 design/blog-source/month-202611/diagrams/svetlogorsk-kaliningrad-edamarshrut-1.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/svetlogorsk-kaliningrad-edamarshrut-2.png
+ create mode 100644 design/blog-source/month-202611/diagrams/svetlogorsk-kaliningrad-edamarshrut-2.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/vegetarianskaya-eda-v-kaliningrade-1.png
+ create mode 100644 design/blog-source/month-202611/diagrams/vegetarianskaya-eda-v-kaliningrade-1.svg
+ create mode 100644 design/blog-source/month-202611/diagrams/vegetarianskaya-eda-v-kaliningrade-2.png
+ create mode 100644 design/blog-source/month-202611/diagrams/vegetarianskaya-eda-v-kaliningrade-2.svg
+ create mode 100644 design/blog-source/month-202611/kenigsbergskiy-martsipan.png
+ create mode 100644 design/blog-source/month-202611/piknik-na-kurshskoy-kose.png
+ create mode 100644 design/blog-source/month-202611/regionalnaya-kuhnya-kaliningradskoy-oblasti.png
+ create mode 100644 design/blog-source/month-202611/sedobnye-suveniry-iz-kaliningrada.png
+ create mode 100644 design/blog-source/month-202611/svetlogorsk-kaliningrad-edamarshrut.png
+ create mode 100644 design/blog-source/month-202611/vegetarianskaya-eda-v-kaliningrade.png
+ create mode 100644 public/seo/blog/kenigsbergskiy-martsipan.jpg
+ create mode 100644 public/seo/blog/piknik-na-kurshskoy-kose.jpg
+ create mode 100644 public/seo/blog/regionalnaya-kuhnya-kaliningradskoy-oblasti.jpg
+ create mode 100644 public/seo/blog/sedobnye-suveniry-iz-kaliningrada.jpg
+ create mode 100644 public/seo/blog/svetlogorsk-kaliningrad-edamarshrut.jpg
+ create mode 100644 public/seo/blog/vegetarianskaya-eda-v-kaliningrade.jpg
+ create mode 100644 qa/content-month-202611/README.md
+ create mode 100644 qa/content-month-202611/article-artwork.log
+ create mode 100644 qa/content-month-202611/artwork-contact.png
+ create mode 100644 qa/content-month-202611/artwork.log
+ create mode 100644 qa/content-month-202611/browser-build-race.log
+ create mode 100644 qa/content-month-202611/browser.log
+ create mode 100644 qa/content-month-202611/build.log
+ create mode 100644 qa/content-month-202611/check.log
+ create mode 100644 qa/content-month-202611/city-pages.log
+ create mode 100644 qa/content-month-202611/content.log
+ create mode 100644 qa/content-month-202611/expansion.log
+ create mode 100644 qa/content-month-202611/final-checks.json
+ create mode 100644 qa/content-month-202611/local-kenigsbergskiy-martsipan-1280.png
+ create mode 100644 qa/content-month-202611/local-kenigsbergskiy-martsipan-390.png
+ create mode 100644 qa/content-month-202611/local-kenigsbergskiy-martsipan-diagram-390.png
+ create mode 100644 qa/content-month-202611/local-piknik-na-kurshskoy-kose-1280.png
+ create mode 100644 qa/content-month-202611/local-piknik-na-kurshskoy-kose-390.png
+ create mode 100644 qa/content-month-202611/local-piknik-na-kurshskoy-kose-diagram-390.png
+ create mode 100644 qa/content-month-202611/local-regionalnaya-kuhnya-kaliningradskoy-oblasti-1280.png
+ create mode 100644 qa/content-month-202611/local-regionalnaya-kuhnya-kaliningradskoy-oblasti-390.png
+ create mode 100644 qa/content-month-202611/local-regionalnaya-kuhnya-kaliningradskoy-oblasti-diagram-390.png
+ create mode 100644 qa/content-month-202611/local-report.json
+ create mode 100644 qa/content-month-202611/local-sedobnye-suveniry-iz-kaliningrada-1280.png
+ create mode 100644 qa/content-month-202611/local-sedobnye-suveniry-iz-kaliningrada-390.png
+ create mode 100644 qa/content-month-202611/local-sedobnye-suveniry-iz-kaliningrada-diagram-390.png
+ create mode 100644 qa/content-month-202611/local-svetlogorsk-kaliningrad-edamarshrut-1280.png
+ create mode 100644 qa/content-month-202611/local-svetlogorsk-kaliningrad-edamarshrut-390.png
+ create mode 100644 qa/content-month-202611/local-svetlogorsk-kaliningrad-edamarshrut-diagram-390.png
+ create mode 100644 qa/content-month-202611/local-vegetarianskaya-eda-v-kaliningrade-1280.png
+ create mode 100644 qa/content-month-202611/local-vegetarianskaya-eda-v-kaliningrade-390.png
+ create mode 100644 qa/content-month-202611/local-vegetarianskaya-eda-v-kaliningrade-diagram-390.png
+ create mode 100644 qa/content-month-202611/mobile-contact.png
+ create mode 100644 qa/content-month-202611/product-backdrops.log
+ create mode 100644 qa/content-month-202611/product-pages.log
+ create mode 100644 qa/content-month-202611/registry.log
+ create mode 100644 qa/content-month-202611/seo-map.log
+ create mode 100644 qa/content-month-202611/seo.log
+ create mode 100644 qa/content-month-202611/tests.json
+ create mode 100644 qa/content-month-202611/unit.log
+ create mode 100644 qa/content-month-202611/validators.json
+ create mode 100644 qa/content-month-202611/verify-publication.py
+ create mode 100644 qa/content-month-202611/worker.log
+ create mode 100644 research/content-month-202611/A5-A7-RECONCILIATION.md
+ create mode 100644 research/content-month-202611/CALENDAR.md
+ create mode 100644 research/content-month-202611/README.md
+ create mode 100644 research/content-month-202611/RELEASE.md
+ create mode 100644 research/content-month-202611/STATE.md
+ create mode 100644 research/content-month-202611/TOPIC-MAP.md
+ create mode 100644 research/content-month-202611/build-plan.py
+ create mode 100644 research/content-month-202611/coast/SOURCES.md
+ create mode 100644 research/content-month-202611/coast/STATE.md
+ create mode 100644 research/content-month-202611/coast/articles.json
+ create mode 100644 research/content-month-202611/coast/cluster-map.json
+ create mode 100644 research/content-month-202611/coast/drafts/svetlogorsk-kaliningrad-edamarshrut.md
+ create mode 100644 research/content-month-202611/coast/manifest.json
+ create mode 100644 research/content-month-202611/coast/updates-manifest.json
+ create mode 100644 research/content-month-202611/coast/updates.json
+ create mode 100644 research/content-month-202611/coast/updates/svetlogorsk-apartment-evening-insert.md
+ create mode 100644 research/content-month-202611/coast/updates/svetlogorsk-zima-insert.md
+ create mode 100644 research/content-month-202611/journey/articles.json
+ create mode 100644 research/content-month-202611/kaliningrad/31-vegetarianskaya-eda.md
+ create mode 100644 research/content-month-202611/kaliningrad/36-apartments-owner-update-manifest.json
+ create mode 100644 research/content-month-202611/kaliningrad/36-apartments-owner-update.md
+ create mode 100644 research/content-month-202611/kaliningrad/SOURCES.md
+ create mode 100644 research/content-month-202611/kaliningrad/STATE.md
+ create mode 100644 research/content-month-202611/kaliningrad/articles.json
+ create mode 100644 research/content-month-202611/kaliningrad/cluster-map.json
+ create mode 100644 research/content-month-202611/kaliningrad/manifest.json
+ create mode 100644 research/content-month-202611/kaliningrad/updates.json
+ create mode 100644 research/content-month-202611/prepare-assets.mjs
+ create mode 100644 research/content-month-202611/regional/EDITORIAL-QA.md
+ create mode 100644 research/content-month-202611/regional/SOURCES.md
+ create mode 100644 research/content-month-202611/regional/STATE.md
+ create mode 100644 research/content-month-202611/regional/articles.json
+ create mode 100644 research/content-month-202611/regional/cluster-map.json
+ create mode 100644 research/content-month-202611/regional/ctas.json
+ create mode 100644 research/content-month-202611/regional/drafts/edible-souvenirs.md
+ create mode 100644 research/content-month-202611/regional/drafts/konigsberg-marzipan.md
+ create mode 100644 research/content-month-202611/regional/drafts/regional-food-guide.md
+ create mode 100644 research/content-month-202611/regional/manifest.json
+ create mode 100644 research/content-month-202611/topic-map.json
+ create mode 100644 scripts/verify-content-month.mjs
+ create mode 100644 src/data/article-updates.json
+ create mode 100644 src/data/monthly-article-figures.json
+ create mode 100644 src/data/monthly-article-meta.json
+ create mode 100644 src/data/monthly-article-presentation.ts
+ create mode 100644 src/data/monthly-articles.json
+ create mode 100644 src/data/monthly-articles.ts
