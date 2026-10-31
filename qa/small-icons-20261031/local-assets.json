@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-31",
+  "status": "pass",
+  "svgBytes": 3301,
+  "icoFrames": [
+    {
+      "size": 16,
+      "bytes": 505
+    },
+    {
+      "size": 32,
+      "bytes": 1152
+    },
+    {
+      "size": 48,
+      "bytes": 1771
+    }
+  ],
+  "images": {
+    "apple-touch-icon.png": {
+      "width": 180,
+      "height": 180
+    },
+    "brand/pirogorsk-symbol.png": {
+      "width": 512,
+      "height": 512
+    }
+  },
+  "visualProof": "size-proof.png",
+  "visualReview": "16/32/48 px on white and dark navy: round golden silhouette and five pastry vents remain distinct."
+}
