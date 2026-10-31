@@ -23,6 +23,6 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-party]')) {
     } catch { root.querySelector('[data-party-person]')!.textContent = '—'; root.querySelector('[data-party-summary]')!.textContent = 'Расчёт появится после выбора начинки.'; root.querySelector('[data-party-items]')!.replaceChildren(); error.textContent = 'Выберите хотя бы одну начинку — тогда сможем посчитать набор.'; apply.removeAttribute('href'); apply.setAttribute('aria-disabled','true'); }
   }
   form.addEventListener('submit', e => e.preventDefault());
-  form.addEventListener('input', () => { update(); if (!interacted) { trackGoal('calculator_interact', {city:root.dataset.city}); interacted=true; } });
-  apply.addEventListener('click', () => { if (apply.hasAttribute('href')) trackGoal('calc_apply_set', {city:root.dataset.city}); });
+  form.addEventListener('input', () => { update(); if (!interacted) { trackGoal('calculator_interact', {city:root.dataset.partyCity}); interacted=true; } });
+  apply.addEventListener('click', () => { if (apply.hasAttribute('href')) trackGoal('calc_apply_set', {city:root.dataset.partyCity}); });
 }

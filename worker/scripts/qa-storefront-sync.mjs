@@ -33,7 +33,7 @@ export async function verifyStorefrontSync(page, origin, width, preparePage) {
     assert.equal(await page.evaluate(id => JSON.parse(localStorage.getItem('pirogorsk-selection')).find(item => item.id === id)?.quantity, id), 5);
     await page.click('[data-open="selection-dialog"]');
     while (await page.$('[data-remove]')) await page.click('[data-remove]');
-    assert.equal(await page.$eval('[data-go-catalog]', el => document.activeElement === el), true, 'last removal retains focus inside modal');
+    assert.equal(await page.$eval('#selection-dialog [data-go-catalog]', el => document.activeElement === el), true, 'last removal retains focus inside modal');
     await page.keyboard.press('Escape');
     await other.bringToFront();
     await other.click(width <= 1000 ? '.masthead-city--mobile' : '.masthead-city--desktop');

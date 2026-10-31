@@ -1,4 +1,5 @@
-import { matchesCatalogSearch } from '../lib/catalog-search';
+import { matchesCard } from './catalog-filters';
+import { parseCriteria, type Criteria } from '../lib/catalog-fillings';
 
 for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalog]')) {
   const cards = [...root.querySelectorAll<HTMLElement>('[data-supplier-id]')];
@@ -8,15 +9,15 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
   let group = 'all';
   let limit = 24;
   let feedObserver: IntersectionObserver | null = null;
-  let globalQuery = new URLSearchParams(location.search).get('q')?.slice(0, 100) ?? '';
+  let criteria = parseCriteria(location.search);
   const params = new URLSearchParams(location.search);
   const initialId = params.get('interest');
   const requestedGroup = params.get('group');
-  if (!globalQuery && location.hash === `#${root.id}` && filters.some(button => button.dataset.supplierFilter === requestedGroup)) {
+  if (!criteria.query && location.hash === `#${root.id}` && filters.some(button => button.dataset.supplierFilter === requestedGroup)) {
     group = requestedGroup!;
   }
   function render() {
-    const matches = cards.filter(card => (group === 'all' || card.dataset.supplierGroup === group) && matchesCatalogSearch(card.dataset.supplierSearch || card.dataset.supplierName || '', `${globalQuery} ${search.value}`));
+    const matches = cards.filter(card => (group === 'all' || card.dataset.supplierGroup === group) && matchesCard(card, { ...criteria, query: `${criteria.query} ${search.value}` }));
     cards.forEach(card => { card.hidden = true; });
     matches.slice(0, limit).forEach(card => { card.hidden = false; });
     filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.supplierFilter === group)));
@@ -64,8 +65,11 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
     feedObserver.observe(more);
   }
   document.addEventListener('pirogorsk:menu-search', event => {
-    globalQuery = (event as CustomEvent<string>).detail;
-    group = 'all'; search.value = ''; limit = 24; render();
+    const next = (event as CustomEvent<Criteria & { restoreGroup: boolean }>).detail;
+    criteria = next;
+    const restored = next.restoreGroup && !criteria.query && criteria.filling === 'all' && location.hash === `#${root.id}` ? new URLSearchParams(location.search).get('group') : null;
+    group = filters.some(button => button.dataset.supplierFilter === restored) ? restored! : 'all';
+    search.value = ''; limit = 24; render();
   });
   document.addEventListener('pirogorsk:reveal-product', event => reveal((event as CustomEvent<string>).detail));
   cards.forEach(card => card.addEventListener('change', () => {

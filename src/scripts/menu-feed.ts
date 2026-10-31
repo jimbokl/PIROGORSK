@@ -1,5 +1,4 @@
-import { mergeSelection, readSavedSelection } from '../lib/selection-offers';
-import { trackGoal } from './analytics';
+import { addItems, getSelection } from './storefront';
 
 type Product = { id: string; name: string; variants: { value: number; label: string; price: number }[] };
 const feed = document.querySelector<HTMLElement>('.menu-feed');
@@ -60,26 +59,14 @@ if (feed && feedback) {
       update();
       const value = Number(card.querySelector<HTMLInputElement>('input:checked')!.value);
       const quantity = Number(quantityInput.value);
-      try {
-        let saved: unknown;
-        try { saved = JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]'); }
-        catch (error) { if (error instanceof SyntaxError) saved = []; else throw error; }
-        const next = mergeSelection(readSavedSelection(saved, products), [{ id, value, quantity }], products);
-        feedback.hidden = false;
-        if (!next) { message.textContent = 'Подборка заполнена. Измените количество в подборке.'; return; }
-        localStorage.setItem('pirogorsk-selection', JSON.stringify(next));
-        const count = next.reduce((total, item) => total + item.quantity, 0);
-        const product = products.find(product => product.id === id)!;
-        message.textContent = `Добавлено: ${product.name} · ${quantity} шт.`;
-        selectionLink.textContent = `Подборка · ${count} шт. →`;
-        button.textContent = 'Добавить ещё';
-        button.dataset.added = 'true';
-        window.dispatchEvent(new Event('pirogorsk:catalog-updated'));
-        trackGoal('catalog_add', { productid: id, variant: String(value), qty: quantity, value: product.variants.find(v => v.value === value)!.price * quantity });
-      } catch {
-        // The regular link transfers this exact variant to the selection page.
-        location.assign(button.href);
-      }
+      feedback.hidden = false;
+      if (!addItems([{ id, value, quantity }])) { message.textContent = 'Подборка заполнена. Измените количество в подборке.'; return; }
+      const count = getSelection().reduce((total, item) => total + item.quantity, 0);
+      const product = products.find(product => product.id === id)!;
+      message.textContent = `Добавлено: ${product.name} · ${quantity} шт.`;
+      selectionLink.textContent = `Подборка · ${count} шт. →`;
+      button.textContent = 'Добавить ещё';
+      button.dataset.added = 'true';
     });
   }
 }

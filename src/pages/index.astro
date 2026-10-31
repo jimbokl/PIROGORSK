@@ -1,12 +1,12 @@
 ---
+import CatalogFillings from '../components/CatalogFillings.astro';
 import Icon from '../components/Icon.astro';
 import ProductCard from '../components/ProductCard.astro';
 import HomeDepartments from '../components/HomeDepartments.astro';
 import HomeOffers from '../components/HomeOffers.astro';
-import SelectionAddOns from '../components/SelectionAddOns.astro';
+import SelectionUI from '../components/SelectionUI.astro';
 import { bundles } from '../data/bundles';
 import { selectionPrice } from '../lib/selection-offers';
-import InterestForm from '../components/InterestForm.astro';
 import Analytics from '../components/Analytics.astro';
 import SeoHead from '../components/SeoHead.astro';
 import Brand from '../components/Brand.astro';
@@ -45,6 +45,13 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <TastingHero />
       <section class="catalog home-featured container" id="pirogi" aria-labelledby="catalog-heading">
         <div class="home-section-heading"><h2 id="catalog-heading">Выберите свой пирог</h2><a href="/menu/">Всё меню · {catalog.length}<Icon name="arrow" /></a></div>
+          <form class="home-finder" role="search" aria-label="Поиск по всему ассортименту" data-home-finder action="/menu/">
+            <label for="home-search">Найдите любимый вкус</label>
+            <div class="home-search-row"><input id="home-search" type="search" name="q" maxlength="100" data-catalog-query autocomplete="off" placeholder="Начинка или название" enterkeyhint="search" /><button type="submit">Найти</button></div>
+            <CatalogFillings />
+            <div class="home-search-meta"><p data-home-filter-status role="status" aria-live="polite">В меню {catalog.length} позиции</p><button type="button" data-catalog-reset hidden>Сбросить фильтры</button></div>
+          </form>
+          <div class="home-catalog-empty" data-home-empty hidden><p>Такого вкуса пока не нашлось. Попробуйте другую начинку или часть названия.</p><button type="button" data-catalog-empty-reset>Показать всё меню</button></div>
         <nav class="home-menu-shortcuts home-catalog-nav" aria-label="Разделы меню" data-home-catalog-nav>
           {homeCatalogGroups.map(group => <a href={`#${group.id}`} data-home-category={group.id}>{group.label}<span>{group.products.length}</span></a>)}
           <a href="#nabory">Наборы</a>
@@ -78,25 +85,6 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <p class="launch-note">Готовимся к открытию. Меню и цены предварительные. Можно оставить анонимную заявку. Приём заказов и оплата пока не открыты.</p>
     </footer>
 
-    <dialog id="selection-dialog" class="dialog selection-dialog" aria-labelledby="selection-heading">
-      <div class="dialog-header"><span class="eyebrow" data-city>Зеленоградск</span><button data-close class="icon-button" aria-label="Закрыть подборку"><Icon name="close" /></button></div>
-      <h2 id="selection-heading">Ваша подборка</h2>
-      <div data-selection-items></div>
-      <p class="selection-feedback" data-selection-feedback role="status" aria-live="polite"></p>
-      <SelectionAddOns />
-      <div class="selection-summary" hidden>
-        <div class="selection-total"><span>Товары</span><strong data-total>0 ₽</strong></div>
-        <p class="selection-weight">Доставка, ориентир: <strong data-selection-delivery></strong></p>
-        <div class="selection-total"><span>С доставкой ≈</span><strong data-selection-grand-total></strong></div>
-        <p class="order-selection-note">Доставка один раз за всю подборку. В заявке можно выбрать самовывоз. Тарифы и условия ещё уточняем.</p>
-        <p class="selection-weight" data-total-weight></p>
-        <button class="button order-selection" data-order>Хочу заказать<Icon name="arrow" /></button>
-        <p class="order-selection-note">Анонимная заявка по предварительной цене</p>
-        <button class="button copy-selection button-secondary" data-copy><Icon name="copy" /><span>Скопировать подборку</span></button>
-        <textarea class="copy-fallback" data-copy-fallback hidden readonly aria-label="Текст подборки для копирования"></textarea>
-      </div>
-      <p class="selection-note">Готовим запуск. Оставьте заявку, чтобы мы учли ваш выбор. Оплата не требуется; связаться с вами по анонимной заявке не получится.</p>
-    </dialog>
     <dialog id="bundle-dialog" class="dialog bundle-dialog" aria-labelledby="bundle-dialog-heading">
       <div class="dialog-header"><span class="eyebrow">Вместе вкуснее</span><button data-close class="icon-button" aria-label="Закрыть наборы"><Icon name="close" /></button></div>
       <h2 id="bundle-dialog-heading">На всех хватит</h2><p class="dialog-intro">Начните с набора — состав и количество можно изменить в подборке.</p>
@@ -111,14 +99,8 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
       <div class="dialog-header"><span class="eyebrow">Пирогорск</span><button data-close class="icon-button" aria-label="Закрыть информацию о проекте"><Icon name="close" /></button></div>
       <h2 id="about-heading">С балтийским характером</h2><p class="dialog-intro">Пирог, за которым хочется собраться.</p><p>Начинаем с подбора ассортимента местных пекарен и изучения спроса на доставку. Первые восемь идей пирогов остаются; рядом — 61 целый пирог «Пироги а-ля Русс» и 78 позиций Holland Bakery.</p><p>Поставки пока не согласованы. Сейчас можно оставить анонимную заявку по расчётной цене.</p><button class="button" data-go-catalog>Посмотреть пироги<Icon name="arrow" /></button>
     </dialog>
-    <InterestForm />
+    <SelectionUI />
     <Analytics />
-    <div class="toast" role="status" aria-live="polite" data-toast></div>
-    <template id="selection-item-template">
-      <div><h3></h3><small></small></div><strong class="item-price" data-item-price></strong>
-      <div class="item-details"><div class="item-controls"><button data-decrease><Icon name="minus" /></button><output></output><button data-increase><Icon name="plus" /></button></div></div><button class="item-remove" data-remove>Убрать</button>
-    </template>
-    <script id="catalog-data" type="application/json" set:html={JSON.stringify(catalog.map(({ id, name, kind, unit, category, variants, prices, defaultVariant }) => ({ id, name, kind, unit, category, variants, prices, defaultVariant })))} />
-    <script>import '../scripts/home-catalog.ts'; import '../scripts/storefront.ts';</script>
+    <script>import '../scripts/home-catalog.ts';</script>
   </body>
 </html>

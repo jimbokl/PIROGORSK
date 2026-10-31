@@ -82,7 +82,7 @@ export async function verifyMenuQuantity(page, origin, width, output) {
   await click(`${card} [data-feed-add]`);
   assert.match(await page.$eval('[data-feed-message]', el => el.textContent), /Подборка заполнена/);
   assert.deepEqual(await selection(), expected, 'rejected overflow must preserve the selection');
-  // Storage denial follows the exact quantity URL; reload never doubles it.
+  // Storage denial retains the exact quantity in memory on this page.
   await click(`${card} label:first-of-type`);
   await setQuantity(card, '4');
   await page.evaluate(() => {
@@ -93,11 +93,15 @@ export async function verifyMenuQuantity(page, origin, width, output) {
       return write.call(this, key, value);
     };
   });
-  await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), click(`${card} [data-feed-add]`)]);
-  assert.equal(new URL(page.url()).searchParams.get('quantity'), '4');
-  const transferred = [{ id: 'meat', value: 500, quantity: 4 }];
-  assert.deepEqual(await selection(), transferred);
-  await page.reload({ waitUntil: 'networkidle0' });
-  assert.deepEqual(await selection(), transferred, 'quantity URL reload is idempotent');
+  const menuUrl = page.url();
+  await click(`${card} [data-feed-add]`);
+  assert.equal(page.url(), menuUrl, 'storage denial never interrupts the menu');
+  assert.deepEqual(await selection(), [], 'browser storage remains unavailable');
+  await click('[data-selection-dock] a');
+  assert.equal(await page.$eval('[data-item] output', el => el.textContent), '4');
+  assert.match(await page.$eval('[data-selection-items]', el => el.textContent), /Мясной пирог/);
+  await page.click('[data-increase]');
+  assert.equal(await page.$eval('[data-item] output', el => el.textContent), '5', 'memory selection stays editable');
+  await page.keyboard.press('Escape');
   console.log(`PASS: menu quantity, keyboard, formats, exact totals, merge, bounds, fallback and reload at ${width}px`);
 }

@@ -1,17 +1,17 @@
-import { matchesCatalogSearch } from '../lib/catalog-search';
+import { matchesCard, setupCatalogFilters } from './catalog-filters';
+import { parseCriteria, type Criteria } from '../lib/catalog-fillings';
 
 const form = document.querySelector<HTMLFormElement>('[data-menu-finder]');
 if (form) {
-  const input = form.querySelector<HTMLInputElement>('[data-menu-search]')!;
   const reset = form.querySelector<HTMLButtonElement>('[data-menu-reset]')!;
   const status = form.querySelector<HTMLElement>('[data-menu-status]')!;
   const empty = document.querySelector<HTMLElement>('[data-menu-empty]')!;
   const sections = [...document.querySelectorAll<HTMLElement>('[data-menu-section]')];
-  const initial = new URLSearchParams(location.search).get('q')?.slice(0, input.maxLength) ?? '';
+  let criteria = parseCriteria(location.search);
 
   function summarize() {
     let total = 0;
-    let filtered = Boolean(input.value.trim());
+    let filtered = Boolean(criteria.query.trim()) || criteria.filling !== 'all';
     for (const section of sections) {
       const count = section.hasAttribute('data-supplier-catalog')
         ? Number(section.dataset.matchCount ?? section.querySelectorAll('[data-supplier-id]').length)
@@ -19,7 +19,7 @@ if (form) {
       total += count;
       filtered ||= section.dataset.searchActive === 'true';
       // Keep a local empty state reachable when only that section is filtered.
-      section.hidden = Boolean(input.value.trim()) && count === 0;
+      section.hidden = (Boolean(criteria.query.trim()) || criteria.filling !== 'all') && count === 0;
       const link = document.querySelector<HTMLAnchorElement>(`[data-menu-jump="${section.id}"]`);
       if (link) {
         link.hidden = section.hidden;
@@ -31,30 +31,23 @@ if (form) {
     reset.hidden = !filtered;
   }
 
-  function search() {
+  function search(next: Criteria, mode: 'push' | 'replace' | 'read') {
+    criteria = next;
     for (const card of document.querySelectorAll<HTMLElement>('[data-menu-product]')) {
-      card.hidden = !matchesCatalogSearch(card.dataset.menuSearch ?? '', input.value);
+      card.hidden = !matchesCard(card, criteria);
     }
-    document.dispatchEvent(new CustomEvent('pirogorsk:menu-search', { detail: input.value }));
+    document.dispatchEvent(new CustomEvent('pirogorsk:menu-search', { detail: { ...criteria, restoreGroup: mode === 'read' } }));
     summarize();
-    const url = new URL(location.href);
-    if (input.value.trim()) url.searchParams.set('q', input.value.trim());
-    else url.searchParams.delete('q');
-    // Search resets the section filters; an old deep link must not restore them.
-    url.searchParams.delete('group');
-    history.replaceState(history.state, '', url);
+    return sections.reduce((sum, section) => sum + (section.hasAttribute('data-supplier-catalog') ? Number(section.dataset.matchCount ?? 0) : section.querySelectorAll('[data-menu-product]:not([hidden])').length), 0);
   }
 
   document.addEventListener('pirogorsk:catalog-updated', summarize);
-  input.addEventListener('input', search);
-  reset.addEventListener('click', () => { input.value = ''; search(); input.focus(); });
-  document.querySelector('[data-menu-empty-reset]')?.addEventListener('click', () => reset.click());
+  setupCatalogFilters(form, 'menu', search);
   form.addEventListener('submit', event => {
     event.preventDefault();
     sections.find(section => !section.hidden && Number(section.dataset.matchCount ?? section.querySelectorAll('[data-menu-product]:not([hidden])').length) > 0)?.scrollIntoView({ block: 'start' });
   });
-  if (initial) { input.value = initial; search(); }
-  else summarize();
+  summarize();
 
   // Keep the current section apparent while browsing the continuous catalogue.
   const jumps = [...document.querySelectorAll<HTMLAnchorElement>('[data-menu-jump]')];

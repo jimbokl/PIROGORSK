@@ -1,6 +1,5 @@
 ---
 import type { Product } from '../data/catalog';
-import { catalog } from '../data/catalog';
 import { selectionHref as productSelectionHref } from '../lib/product-paths';
 import { deliveryEstimates } from '../data/pricing';
 interface Props { product: Product; showDelivery?: boolean }
@@ -32,17 +31,13 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
     <a class="ed-button" data-option-link href={selectionHref(selected.value)}>В подборку<span aria-hidden="true">↗</span></a>
   </div>
   <p class="product-options-feedback" data-option-feedback role="status" aria-live="polite" aria-atomic="true"></p>
-  <a class="product-selection-link" data-option-selection href="/?interest=selection" hidden>Открыть подборку →</a>
+  <a class="product-selection-link" data-option-selection data-open="selection-dialog" href="/?interest=selection" hidden>Открыть подборку →</a>
   <p class="product-options-note">Готовим запуск. Подборка поможет нам узнать ваши вкусы; это ещё не заказ.</p>
   <a class="product-menu-back" href={menuHref}>Сравнить в этом разделе меню ↗</a>
   {showDelivery && <details class="product-delivery"><summary>Сколько получится с доставкой</summary><p>Если в подборке только выбранный формат этой позиции. Доставка учитывается один раз за всю подборку.</p><dl>{Object.entries(deliveryEstimates).map(([city, cost]) => <div><dt>{city}<small>Доставка {cost} ₽</small></dt><dd data-option-total data-delivery-cost={cost}>{from}{(selected.price + cost).toLocaleString('ru-RU')} ₽</dd></div>)}<div><dt>Самовывоз<small>Место ещё уточняется</small></dt><dd data-option-total data-delivery-cost="0">{from}{selected.price.toLocaleString('ru-RU')} ₽</dd></div></dl><p>Плановый расчёт, не тариф перевозчика. Города, условия и стоимость подтвердим до начала продаж.</p></details>}
 </div>
-<script type="application/json" id="product-options-catalog" set:html={JSON.stringify(catalog.map(({ id, name, variants }) => ({ id, name, variants }))).replaceAll('<', '\\u003c')} />
 <script>
-  import type { Product } from '../data/catalog';
-  import { mergeSelection, readSavedSelection } from '../lib/selection-offers';
-  import { trackGoal } from '../scripts/analytics';
-  const products = JSON.parse(document.querySelector('#product-options-catalog')?.textContent || '[]');
+  import { addItems, getSelection } from '../scripts/storefront';
   document.querySelectorAll<HTMLElement>('[data-product-options]').forEach(options => {
     const quantityInput = options.querySelector<HTMLInputElement>('[data-option-quantity]')!;
     const decrease = options.querySelector<HTMLButtonElement>('[data-option-decrease]')!;
@@ -54,7 +49,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
     const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
     function refreshSelection() {
       try {
-        const saved = readSavedSelection(JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]'), products);
+        const saved = getSelection();
         const count = saved.reduce((sum, item) => sum + item.quantity, 0);
         selection.hidden = count === 0;
         selection.textContent = `Открыть подборку · ${count} шт. →`;
@@ -86,7 +81,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
     increase.addEventListener('click', () => { quantityInput.stepUp(); update(); });
     quantityInput.addEventListener('input', () => { if (quantityInput.value !== '' && quantityInput.validity.valid) update(); });
     options.addEventListener('change', update);
-    window.addEventListener('pirogorsk:catalog-updated', refreshSelection);
+    window.addEventListener('pirogorsk:selection-updated', refreshSelection);
     window.addEventListener('storage', refreshSelection);
     window.addEventListener('pageshow', refreshSelection);
     update();
@@ -97,24 +92,11 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
       update();
       const value = Number(options.querySelector<HTMLInputElement>('input[type="radio"]:checked')!.value);
       const quantity = Number(quantityInput.value);
-      try {
-        let saved: unknown;
-        try { saved = JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]'); }
-        catch (error) { if (error instanceof SyntaxError) saved = []; else throw error; }
-        const next = mergeSelection(readSavedSelection(saved, products), [{ id, value, quantity }], products);
-        selection.hidden = false;
-        if (!next) { feedback.textContent = 'Подборка заполнена. Измените количество в подборке.'; return; }
-        localStorage.setItem('pirogorsk-selection', JSON.stringify(next));
-        const count = next.reduce((sum, item) => sum + item.quantity, 0);
-        feedback.textContent = `Добавлено в подборку: ${quantity} шт.`;
-        selection.textContent = `Открыть подборку · ${count} шт. →`;
-        link.textContent = 'Добавить ещё';
-        window.dispatchEvent(new Event('pirogorsk:catalog-updated'));
-        const product = products.find((product: Product) => product.id === id)!;
-        trackGoal('catalog_add', { productid: id, variant: String(value), qty: quantity, value: product.variants.find((variant: Product['variants'][number]) => variant.value === value)!.price * quantity });
-      } catch {
-        location.assign(link.href);
-      }
+      selection.hidden = false;
+      if (!addItems([{ id, value, quantity }])) { feedback.textContent = 'Подборка заполнена. Измените количество в подборке.'; return; }
+      refreshSelection();
+      feedback.textContent = `Добавлено в подборку: ${quantity} шт.`;
+      link.textContent = 'Добавить ещё';
     });
   });
 </script>

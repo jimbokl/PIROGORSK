@@ -40,7 +40,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
     </div>
   </article>})}
   </div>
-  {detail && <div class="addons-footer"><div><p>Цены предварительные. Доставка одна на всю подборку.</p><p class="addons-feedback" role="status" aria-live="polite" aria-atomic="true" data-addon-feedback></p></div><a class="ed-button" href="/?interest=selection" data-addon-selection>Открыть подборку</a></div>}
+  {detail && <div class="addons-footer"><div><p>Цены предварительные. Доставка одна на всю подборку.</p><p class="addons-feedback" role="status" aria-live="polite" aria-atomic="true" data-addon-feedback></p></div><a class="ed-button" href="/?interest=selection" data-addon-selection data-open="selection-dialog">Открыть подборку</a></div>}
 </section>
 <style>
   .selection-addons{padding-block:22px;border-bottom:1px solid var(--line)}

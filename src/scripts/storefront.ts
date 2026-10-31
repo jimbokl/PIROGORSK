@@ -19,7 +19,11 @@ const variantLabel = (product: Product, value: number) => product.variants.find(
 const productFor = (item: Selection) => products.find(product => product.id === item.id)!;
 const all = <T extends HTMLElement = HTMLElement>(selector: string) => [...document.querySelectorAll<T>(selector)];
 let city = 'Зеленоградск';
+let memoryOnly = false;
+export const getSelection = () => selection.map(item => ({ ...item }));
+export const catalogSurface = () => location.pathname === '/' ? 'home' as const : location.pathname === '/menu/' ? 'menu' as const : /^\/(catalog|pirogi)\//.test(location.pathname) ? 'product' as const : 'other' as const;
 let toastTimer: ReturnType<typeof setTimeout>;
+let returnToSelection = false;
 const dialogTriggers = new WeakMap<HTMLDialogElement, HTMLElement>();
 const itemContainer = document.querySelector<HTMLElement>('[data-selection-items]')!;
 
@@ -34,6 +38,7 @@ function toast(message: string) {
 function openDialog(id: string) {
   const dialog = document.getElementById(id) as HTMLDialogElement | null;
   if (!dialog) return;
+  if (id === 'city-dialog' && document.querySelector<HTMLDialogElement>('#selection-dialog')?.open) returnToSelection = true;
   const active = document.activeElement;
   const trigger = active instanceof HTMLElement && active !== document.body && !active.closest('dialog')
     ? active
@@ -42,6 +47,7 @@ function openDialog(id: string) {
   all<HTMLDialogElement>('dialog[open]').forEach(current => current.close());
   if (id === 'selection-dialog') renderSelection();
   dialog.showModal();
+  if (id === 'selection-dialog') trackGoal('selection_open', { surface: catalogSurface(), city });
 }
 
 function setCity(value: string, announce = true, persist = true) {
@@ -59,21 +65,7 @@ function setCity(value: string, announce = true, persist = true) {
   if (announce) toast(`Ваш город — ${city}`);
 }
 
-function addProduct(id: string, value: number) {
-  syncSavedState();
-  const product = products.find(product => product.id === id);
-  if (!product?.variants.some(variant => variant.value === value)) return false;
-  const existing = selection.find(item => item.id === id && item.value === value);
-  if (existing && existing.quantity >= 99) { toast('В подборке уже 99 таких товаров'); return false; }
-  if (!existing && selection.length >= 24) { toast('В подборке уже 24 разных варианта'); return false; }
-  if (existing) existing.quantity += 1;
-  else selection.push({ id, value, quantity: 1 });
-  updateBadge();
-  trackGoal('catalog_add', { city, productid: id, variant: String(value), qty: 1, value: product.prices[Number(value)] });
-  return true;
-}
-
-function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add') {
+export function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add', source: 'card' | 'bundle' | 'addon' | 'planner' = 'card') {
   syncSavedState();
   const merged = mergeSelection(selection, items, products, mode);
   if (!merged) {
@@ -84,17 +76,18 @@ function addItems(items: Selection[], mode: 'add' | 'ensure' = 'add') {
   }
   for (const item of merged) {
     const added = item.quantity - (selection.find(entry => entry.id === item.id && entry.value === item.value)?.quantity || 0);
-    if (added) trackGoal('catalog_add', { city, productid: item.id, variant: String(item.value), qty: added, value: productFor(item).prices[item.value] * added });
+    if (added) trackGoal('catalog_add', { city, source, surface: catalogSurface(), productid: item.id, variant: String(item.value), qty: added, value: productFor(item).prices[item.value] * added });
   }
   selection.splice(0, selection.length, ...merged);
   updateBadge();
+  if (document.querySelector<HTMLDialogElement>('#selection-dialog')?.open) renderSelection();
   return true;
 }
 
 function chooseBundle(id: string, mode: 'add' | 'ensure' = 'add') {
   const bundle = bundles.find(bundle => bundle.id === id);
   if (!bundle) return;
-  if (addItems(bundle.items, mode)) {
+  if (addItems(bundle.items, mode, 'bundle')) {
     openDialog('selection-dialog');
     document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = `«${bundle.title}» в подборке. Состав и количество можно изменить.`;
   }
@@ -102,14 +95,21 @@ function chooseBundle(id: string, mode: 'add' | 'ensure' = 'add') {
 
 function updateBadge(persist = true) {
   if (persist) {
-    try { localStorage.setItem('pirogorsk-selection', JSON.stringify(selection)); } catch { /* In-memory selection remains available. */ }
+    try { localStorage.setItem('pirogorsk-selection', JSON.stringify(selection)); memoryOnly = false; } catch { memoryOnly = true; }
   }
   const count = selection.reduce((sum, item) => sum + item.quantity, 0);
   all('[data-count]').forEach(element => { element.textContent = String(count); element.hidden = count === 0; });
-  document.querySelector('[data-open="selection-dialog"]')?.setAttribute('aria-label', count ? `Подборка: ${count} шт.` : 'Подборка, открыть');
+  all('[data-open="selection-dialog"]').forEach(trigger => trigger.setAttribute('aria-label', count ? `Подборка: ${count} шт.` : 'Подборка, открыть'));
+  const dock = document.querySelector<HTMLElement>('[data-selection-dock]')!;
+  dock.hidden = count === 0;
+  dock.querySelector('[data-dock-count]')!.textContent = `· ${count} шт.`;
+  dock.querySelector('[data-dock-total]')!.textContent = money(selection.reduce((sum, item) => sum + productFor(item).prices[item.value] * item.quantity, 0));
+  document.body.classList.toggle('has-selection', count > 0);
+  window.dispatchEvent(new Event('pirogorsk:selection-updated'));
 }
 
 function syncSavedState() {
+  if (memoryOnly) return;
   try {
     const savedCity = localStorage.getItem('pirogorsk-city') || 'Зеленоградск';
     const saved: unknown = JSON.parse(localStorage.getItem('pirogorsk-selection') || '[]');
@@ -132,7 +132,7 @@ function renderSelection() {
   itemContainer.replaceChildren();
   const available = availableAddOns(selection, products);
   document.querySelector<HTMLElement>('[data-upsells]')!.hidden = available.length === 0;
-  all('[data-upsell-group]').forEach(group => { group.hidden = !available.includes(group.dataset.upsellGroup!); });
+  all('#selection-dialog [data-upsell-group]').forEach(group => { group.hidden = !available.includes(group.dataset.upsellGroup!); });
   const summary = document.querySelector<HTMLElement>('.selection-summary')!;
   summary.hidden = selection.length === 0;
   document.querySelector<HTMLElement>('[data-copy-fallback]')!.hidden = true;
@@ -177,10 +177,17 @@ function renderSelection() {
   }
 }
 
-all('[data-open]').forEach(button => button.addEventListener('click', () => openDialog(button.dataset.open!)));
+document.addEventListener('click', event => {
+  const button = event.target instanceof Element ? event.target.closest<HTMLElement>('[data-open]') : null;
+  if (!button || (event instanceof MouseEvent && (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey))) return;
+  if (!document.getElementById(button.dataset.open!)) return;
+  event.preventDefault();
+  openDialog(button.dataset.open!);
+});
 all('[data-close]').forEach(button => button.addEventListener('click', () => button.closest('dialog')?.close()));
 all<HTMLDialogElement>('dialog').forEach(dialog => {
   dialog.addEventListener('close', () => {
+    if (dialog.id === 'city-dialog' && returnToSelection) { returnToSelection = false; openDialog('selection-dialog'); return; }
     if (document.querySelector('dialog[open]')) return;
     const trigger = dialogTriggers.get(dialog);
     if (trigger?.isConnected && trigger.getClientRects().length) trigger.focus({ preventScroll: true });
@@ -199,7 +206,7 @@ all('[data-filter]').forEach(button => button.addEventListener('click', () => {
   all('#pirogi [data-product]').forEach(card => card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter);
 }));
 
-all('[data-product]').forEach(card => {
+all('[data-home-catalog] [data-product]').forEach(card => {
   const product = products.find(product => product.id === card.dataset.product)!;
   const quantity = card.querySelector<HTMLInputElement>('[data-feed-quantity]');
   const decrease = card.querySelector<HTMLButtonElement>('[data-feed-decrease]');
@@ -241,17 +248,17 @@ all<HTMLAnchorElement>('[data-bundle]').forEach(link => link.addEventListener('c
   event.preventDefault();
   chooseBundle(link.dataset.bundle!);
 }));
-all<HTMLSelectElement>('[data-upsell-choice]').forEach(select => select.addEventListener('change', () => {
-  const button = document.querySelector<HTMLButtonElement>(`[data-upsell-add="${select.dataset.upsellChoice}"]`)!;
+all<HTMLSelectElement>('#selection-dialog [data-upsell-choice]').forEach(select => select.addEventListener('change', () => {
+  const button = document.querySelector<HTMLButtonElement>(`#selection-dialog [data-upsell-add="${select.dataset.upsellChoice}"]`)!;
   button.textContent = `Добавить за ${money(Number(select.selectedOptions[0].dataset.price))}`;
   button.setAttribute('aria-label', `${button.textContent}: ${select.selectedOptions[0].textContent}`);
 }));
-all<HTMLButtonElement>('[data-upsell-add]').forEach(button => button.addEventListener('click', () => {
+all<HTMLButtonElement>('#selection-dialog [data-upsell-add]').forEach(button => button.addEventListener('click', () => {
   const group = addOnGroups.find(group => group.id === button.dataset.upsellAdd);
-  const select = document.querySelector<HTMLSelectElement>(`[data-upsell-choice="${group?.id}"]`);
+  const select = document.querySelector<HTMLSelectElement>(`#selection-dialog [data-upsell-choice="${group?.id}"]`);
   if (!group || !select || !availableAddOns(selection, products).includes(group.id)) return;
   const choice = group.choices.find(item => `${item.id}:${item.value}:${item.quantity}` === select.value);
-  if (!choice || !addItems([choice])) return;
+  if (!choice || !addItems([choice], 'add', 'addon')) return;
   renderSelection();
   document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = `Добавлено: ${productFor(choice).name}, ${variantLabel(productFor(choice), choice.value)}${choice.quantity > 1 ? ` × ${choice.quantity}` : ''}.`;
   const next = availableAddOns(selection, products).length ? document.getElementById('addons-heading') : document.querySelector<HTMLElement>('[data-order]');
@@ -260,7 +267,9 @@ all<HTMLButtonElement>('[data-upsell-add]').forEach(button => button.addEventLis
 
 function goToCatalog() {
   all<HTMLDialogElement>('dialog[open]').forEach(dialog => dialog.close());
-  document.querySelector('#pirogi')?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  const catalog = document.querySelector('[data-menu-finder], #pirogi');
+  if (!catalog) { location.assign('/menu/'); return; }
+  catalog.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
 }
 document.addEventListener('click', event => {
   const target = event.target as HTMLElement;
@@ -322,6 +331,7 @@ if (interestId === 'selection') {
     const cityNames: Record<string, string> = { zelenogradsk: 'Зеленоградск', kaliningrad: 'Калининград', svetlogorsk: 'Светлогорск' };
     const plannedCity = interestParams.get('city');
     if (plannedCity && Object.hasOwn(cityNames, plannedCity)) setCity(cityNames[plannedCity], false);
+    if (JSON.stringify(selection) !== JSON.stringify(planned)) trackGoal('catalog_add', { city, surface: catalogSurface(), source: 'planner', productid: planned.map(item => item.id), variant: planned.map(item => String(item.value)), qty: planned.map(item => item.quantity) });
     // Applying a calculated set means the exact displayed composition, including on reload.
     selection.splice(0, selection.length, ...planned);
     updateBadge();
@@ -334,7 +344,7 @@ if (interestId === 'selection') {
   const scenario = editorialScenarioIntents[interestId as keyof typeof editorialScenarioIntents];
   for (const item of scenario.items) {
     if (!selection.some(existing => existing.id === item.id && existing.value === item.value)) {
-      addProduct(item.id, item.value);
+      addItems([{ ...item, quantity: 1 }], 'ensure', 'bundle');
     }
   }
   openDialog('selection-dialog');

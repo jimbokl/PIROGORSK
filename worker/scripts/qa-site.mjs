@@ -13,6 +13,7 @@ import worker from '../dist/worker.js';
 import { verifyProductAddOns } from './qa-product-addons.mjs';
 import { verifyOffers } from './qa-offers.mjs';
 import { verifyMenuQuantity } from './qa-menu-quantity.mjs';
+import { verifyDominos } from './qa-dominos.mjs';
 import { verifyStorefrontSync } from './qa-storefront-sync.mjs';
 
 // Actual Astro output and production origins; every request is intercepted.
@@ -103,7 +104,10 @@ try {
       await page.evaluate(() => localStorage.removeItem('pirogorsk-selection'));
     }
     await page.goto(`${origin}/journal/skolko-piroga-na-cheloveka/`, { waitUntil: 'networkidle0' });
-    await page.waitForSelector('[data-party-apply]');
+    await page.waitForSelector('[data-party-apply]').catch(async error => {
+      console.error('Calculator diagnostic', { width, url: page.url(), errors, failedResources, title: await page.title() });
+      throw error;
+    });
     await page.$eval('[data-party-form] input[name=guests]', input => { input.value = '7'; input.dispatchEvent(new Event('input', { bubbles: true })); });
     const transfer = new URL(await page.$eval('[data-party-apply]', el => el.href));
     const expectedCity = { kaliningrad: 'Калининград', zelenogradsk: 'Зеленоградск', svetlogorsk: 'Светлогорск' }[transfer.searchParams.get('city')];
@@ -332,9 +336,9 @@ try {
     await page.click(`${doughCard} [data-supplier-link]`);
     assert.equal(new URL(page.url()).pathname, '/menu/', 'adding to the feed keeps the current position');
     await page.$eval('[data-header-selection]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-    await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-header-selection]')]);
-    assert.equal(new URL(page.url()).pathname, '/');
-    assert.equal(new URL(page.url()).searchParams.get('interest'), 'selection');
+    const menuSelectionUrl = page.url();
+    await page.click('[data-header-selection]');
+    assert.equal(page.url(), menuSelectionUrl, 'shared selection opens directly in menu');
     assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
     const doughId = 'hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up';
     assert.ok((await selection()).some(item => item.id === doughId && item.value === 9000));
@@ -364,6 +368,7 @@ try {
       await other.setRequestInterception(true);
       other.on('request', interceptRequest);
     });
+    await verifyDominos(page, origin, width, fileURLToPath(new URL('../dist/', import.meta.url)));
     await context.close();
   }
   assert.equal(sqlite.prepare('SELECT count(*) AS n FROM interests').get().n, 9);

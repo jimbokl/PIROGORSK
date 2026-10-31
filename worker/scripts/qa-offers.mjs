@@ -60,11 +60,14 @@ export async function verifyOffers(page, origin, width, screenshotDir) {
   assert.equal(await page.$$eval('[data-bundle]', buttons => buttons.every(button => button.getBoundingClientRect().height >= 48)), true);
   await page.$eval('#nabory', el => el.scrollIntoView());
   await page.screenshot({ path: `${screenshotDir}/menu-bundles-${width}.png` });
-  await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.click('[data-bundle=sweet-table]')]);
+  const bundleUrl = page.url();
+  await page.click('[data-bundle=sweet-table]');
+  assert.equal(page.url(), bundleUrl, 'bundle opens in menu');
+  assert.equal(await page.$eval('#selection-dialog', el => el.open), true);
   assert.deepEqual(await selection(), bundles[2].items);
   await page.reload({ waitUntil: 'networkidle0' });
   assert.deepEqual(await selection(), bundles[2].items, 'bundle link does not add again on reload');
-  await page.click('#selection-dialog [data-close]');
+  await page.$eval('[data-bundle=sweet-table]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
   await page.click('[data-bundle=sweet-table]');
   assert.deepEqual(await selection(), bundles[2].items.map(item => ({ ...item, quantity: 2 })), 'explicit repeat click adds one more complete set');
   console.log(`PASS: bundles, exact totals, contextual add-ons, five place settings, form handoff and reload at ${width}px`);

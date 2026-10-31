@@ -7,7 +7,7 @@ import '../styles/site-header.css';
 interface Props { home?: boolean }
 const { home = false } = Astro.props;
 ---
-<header class="masthead" data-site-header data-storefront={String(home)}>
+<header class="masthead" data-site-header data-storefront="true">
   <div class="masthead-main">
     <div class="masthead-start">
       <button class="masthead-square masthead-menu" data-menu-open aria-label="Открыть меню" aria-haspopup="dialog" aria-controls="site-menu-dialog" aria-expanded="false"><Icon name="menu" /></button>
@@ -18,7 +18,7 @@ const { home = false } = Astro.props;
       <a class="masthead-catalog" href="/menu/">Выбрать пироги<Icon name="arrow" /></a>
       {home
         ? <button class="masthead-square masthead-selection" data-open="selection-dialog" aria-label="Открыть подборку" aria-haspopup="dialog"><Icon name="bag" /><span class="masthead-count" data-count hidden>0</span></button>
-        : <a class="masthead-square masthead-selection" data-header-selection href="/?interest=selection" aria-label="Открыть подборку"><Icon name="bag" /><span class="masthead-count" data-count hidden>0</span></a>}
+        : <a class="masthead-square masthead-selection" data-header-selection data-open="selection-dialog" aria-haspopup="dialog" href="/?interest=selection" aria-label="Открыть подборку"><Icon name="bag" /><span class="masthead-count" data-count hidden>0</span></a>}
     </div>
   </div>
   <div class="masthead-bottom">
@@ -32,7 +32,7 @@ const { home = false } = Astro.props;
   <div class="masthead-dialog-top"><span>Пирогорск · у Балтийского моря</span><button class="masthead-square" data-menu-close aria-label="Закрыть меню"><Icon name="close" /></button></div>
   <h2 id="site-menu-heading">К вашему столу</h2>
   <SiteNavigation {home} drawer />
-  <a class="masthead-drawer-selection" href="/?interest=selection"><Icon name="bag" />Ваша подборка<Icon name="arrow" /></a>
+  <a class="masthead-drawer-selection" data-open="selection-dialog" href="/?interest=selection"><Icon name="bag" />Ваша подборка<Icon name="arrow" /></a>
   <div class="masthead-drawer-note"><span class="masthead-status"><span aria-hidden="true"></span>Готовим запуск</span><p>Выбирайте вкусы и отмечайте интерес.<br />Заказ и оплата пока недоступны.</p></div>
 </dialog>
 

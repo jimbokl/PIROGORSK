@@ -156,3 +156,34 @@ test('QA exclusion follows navigation in the same tab; other sessions still coun
   assert.equal(analyticsSessionEnabled('https://pirogorsk.ru/?qa=1', blockedStore), false);
   assert.equal(analyticsSessionEnabled('https://pirogorsk.ru/', blockedStore), true);
 });
+
+
+test('selection/filter goals send only closed parameters and never raw search text', () => {
+  const calls = [];
+  const context = {
+    exports: {}, URL, location: { href: 'https://pirogorsk.ru/menu/?q=private' },
+    require(name) {
+      if (name === '../config/analytics') return { analyticsConfig };
+      if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
+      if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
+      if (name === '../lib/seo-navigation') return { guideTransition };
+      throw new Error(`Unexpected import: ${name}`);
+    },
+    sessionStorage: { getItem() {}, setItem() {} },
+    window: { ym: (...args) => calls.push(args) },
+    document: { addEventListener() {}, querySelector: () => true },
+  };
+  runInNewContext(source, context);
+  const track = context.exports.trackGoal;
+  track('catalog_filter_apply', { surface: 'menu', filling: 'fish', search_used: true, results: 5, q: 'private', email: 'private' });
+  track('selection_open', { surface: 'product', city: 'Калининград' });
+  track('catalog_add', { source: 'addon', surface: 'home', productid: 'cranberry', qty: 1 });
+  track('catalog_filter_apply', { source: 'private', surface: 'private', filling: 'private', search_used: 'private', results: 154, query: 'private' });
+  assert.deepEqual(JSON.parse(JSON.stringify(calls.map(call => call[3]))), [
+    { surface: 'menu', filling: 'fish', search_used: true, results: 5 },
+    { surface: 'product', city: 'Калининград' },
+    { source: 'addon', surface: 'home', productid: 'cranberry', qty: 1 },
+    {},
+  ]);
+  assert.ok(!JSON.stringify(calls).includes('private'));
+});

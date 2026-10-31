@@ -1,0 +1,8 @@
+---
+import { fillingFilters } from '../lib/catalog-fillings';
+import '../styles/catalog-filters.css';
+---
+<fieldset class="catalog-fillings" data-catalog-fillings hidden>
+  <legend>Выберите начинку</legend>
+  <div>{fillingFilters.map(([id, label]) => <button type="button" data-filling={id} aria-pressed={id === 'all'}>{label}</button>)}</div>
+</fieldset>

@@ -1,0 +1,1138 @@
+[
+  {
+    "id": "meat",
+    "name": "Мясной пирог",
+    "kind": "pie",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "fish",
+    "name": "Рыбный пирог",
+    "kind": "pie",
+    "fillings": [
+      "fish"
+    ]
+  },
+  {
+    "id": "cabbage",
+    "name": "Пирог с капустой",
+    "kind": "pie",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "cheese",
+    "name": "Сырный пирог",
+    "kind": "pie",
+    "fillings": [
+      "cheese"
+    ]
+  },
+  {
+    "id": "chicken",
+    "name": "Пирог с курицей и грибами",
+    "kind": "pie",
+    "fillings": [
+      "poultry",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "apple",
+    "name": "Пирог с яблоком и брусникой",
+    "kind": "pie",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "cherry",
+    "name": "Пирог с вишней",
+    "kind": "pie",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "curd",
+    "name": "Пирог с творогом и малиной",
+    "kind": "pie",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "cranberry",
+    "name": "Клюквенный морс",
+    "kind": "drink",
+    "fillings": []
+  },
+  {
+    "id": "seabuckthorn",
+    "name": "Облепиховый морс",
+    "kind": "drink",
+    "fillings": []
+  },
+  {
+    "id": "tea",
+    "name": "Чай",
+    "kind": "drink",
+    "fillings": []
+  },
+  {
+    "id": "coffee",
+    "name": "Кофе",
+    "kind": "drink",
+    "fillings": []
+  },
+  {
+    "id": "water",
+    "name": "Питьевая вода",
+    "kind": "drink",
+    "fillings": []
+  },
+  {
+    "id": "tableware",
+    "name": "Набор посуды",
+    "kind": "accessory",
+    "fillings": []
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+    "name": "Осетинский пирог с курицей и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "poultry",
+      "cheese"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-tykvoy-i-syrom",
+    "name": "Осетинский пирог с тыквой и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kartofelem",
+    "name": "Осетинский пирог с картофелем",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kartofelem-i-zelenyu",
+    "name": "Осетинский пирог с картофелем и зеленью",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kapustoy-i-gretskim-orehom",
+    "name": "Осетинский пирог с капустой и грецким орехом",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-kartofelem-i-syrom",
+    "name": "Осетинский пирог с картофелем и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-govyadinoy",
+    "name": "Осетинский пирог с говядиной",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-govyadinoy-i-svininoy",
+    "name": "Осетинский пирог с говядиной и свининой",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-syrom-i-zelenyu",
+    "name": "Осетинский пирог с сыром и зеленью",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-yablokom-i-koritsey",
+    "name": "Осетинский пирог с яблоком и корицей",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-syrom",
+    "name": "Осетинский пирог с сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-vishney-i-gretskim-orehom",
+    "name": "Осетинский пирог с вишней и грецким орехом",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-so-shpinatom-i-syrom",
+    "name": "Осетинский пирог со шпинатом и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-osetinskiy-pirog-s-apelsinom-i-limonom",
+    "name": "Осетинский пирог с апельсином и лимоном",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-rogalik-zernovoy-kornshpits",
+    "name": "Рогалик зерновой Корншпиц",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-s-kunzhutom-bolshaya",
+    "name": "Булочка для гамбургера с кунжутом (большая)",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-s-kunzhutom",
+    "name": "Булочка для гамбургера с кунжутом",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-chiabatta-pshenichnaya-pryamougolnaya",
+    "name": "Чиабатта пшеничная (прямоугольная)",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-chiabatta-pshenichnaya-kvadratnaya",
+    "name": "Чиабатта пшеничная (квадратная)",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-lepeshka-pshenichnaya-kruglaya",
+    "name": "Лепешка пшеничная круглая",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-briosh-bolshaya-80-g",
+    "name": "Булочка для гамбургера Бриошь (большая)",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-briosh-55-g",
+    "name": "Булочка для гамбургера Бриошь",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-zernovaya-kornshpits-70-g",
+    "name": "Булочка зерновая Корншпиц",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-chiabatta-mini-30-gr",
+    "name": "Чиабатта мини",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-vitushka-s-syrom-90-gr",
+    "name": "Витушка с сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese"
+    ]
+  },
+  {
+    "id": "hb-chiabatta-solodovaya-mini-30-gr",
+    "name": "Чиабатта солодовая мини",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-smak-dlya-gamburgera-mini-30-gr",
+    "name": "Булочка \"Смак\" для гамбургера мини",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-dieticheskaya-s-otrubyami-30-gr",
+    "name": "Булочка диетическая с отрубями",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-zernovaya-30-gr",
+    "name": "Булочка зерновая",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-litovskaya-30gr",
+    "name": "Булочка литовская",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-supnaya-chasha-390-gr",
+    "name": "Супная чаша",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-hlebnaya-korzina-1-8-kg",
+    "name": "Хлебная корзина",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulka-dlya-gamburgera-maksi-190-g",
+    "name": "Булка для гамбургера МАКСИ",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-smak-gollandskaya-40-gr",
+    "name": "Булочка \"Смак\" голландская",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-solodovaya-75-gr",
+    "name": "Булочка для гамбургера солодовая",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-dlya-gamburgera-vitaya-75-g",
+    "name": "Булочка для гамбургера витая",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-chiabatta-solodovaya-70-gr",
+    "name": "Чиабатта солодовая",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-bulochka-s-bazilikom-i-maslinami-80-gr",
+    "name": "Булочка с базиликом и маслинами",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-tort-napoleon-2-0-kg-18-sht-po-110-g",
+    "name": "Торт Наполеон",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-tort-morkovnyy-1-98-kg-18-sht-po-110-g",
+    "name": "Торт Морковный",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-flay-zimnyaya-vishnya-2-34-kg-18-sht-po-130-g",
+    "name": "Флай Зимняя вишня",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-tort-medovyy-1-62-kg-18-sht-po-90-g",
+    "name": "Торт Медовый",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-maffin-apelsin-s-shokoladom",
+    "name": "Маффин Апельсин с шоколадом",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-maffin-chernichnyy",
+    "name": "Маффин Черничный",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-maffin-troynoy-shokolad",
+    "name": "Маффин Тройной шоколад",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-maffin-gretskiy-oreh",
+    "name": "Маффин Грецкий орех",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-assorti-maffinov-16-sht-po-80-gr-po-4-sht-kazhdogo-vida",
+    "name": "Ассорти маффинов",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-pirozhnoe-lesnoy-oreh-60-gr-h-18-sht-up",
+    "name": "Пирожное Лесной орех",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-pirozhnoe-prezent-55-gr-h-18-sht-up",
+    "name": "Пирожное \"Презент\"",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-sloyka-bezdrozhzhevaya-s-syrom-i-vetchinoy-100-gr-h-100-sht-up",
+    "name": "Слойка бездрожжевая с сыром и ветчиной",
+    "kind": "bakery",
+    "fillings": [
+      "meat",
+      "cheese"
+    ]
+  },
+  {
+    "id": "hb-sloyka-lukovaya-s-kartofelem-90-gr-h-100-sht-up",
+    "name": "Слойка луковая с картофелем",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-sloyka-lukovaya-s-pechenyu-90-gr-h-100-sht-up",
+    "name": "Слойка луковая с печенью",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-sloyka-s-tvorogom-i-izyumom-85-gr-h-100-sht-up",
+    "name": "Слойка с творогом и изюмом",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-bulochka-k-kofe-85-gr-h-100-sht-v-up",
+    "name": "Булочка к кофе",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-vitushka-s-makom-85-gr-h-100-sht-up",
+    "name": "Витушка с маком",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-yazychok-s-konfityurom-60-gr-h-150-sht-up",
+    "name": "Язычок с конфитюром",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-yazychok-s-kremom-60-gr-h-150-sht-up",
+    "name": "Язычок с кремом",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-konvert-yablokom-i-izyumom-100-gr-h-80-sht-up",
+    "name": "Конверт с яблоком и изюмом",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-konvert-s-abrikosom-100-gr-h-80-sht-up",
+    "name": "Конверт с абрикосом",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-konvert-s-vishney-100-gr-h-80-sht-up",
+    "name": "Конверт с вишней",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-konvert-s-persikom-i-yablokom-100-gr-h-80-sht-up",
+    "name": "Конверт с персиком и яблоком",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-kruassan-zernovoy-30-gr-h-100-sht-up",
+    "name": "Круассан зерновой",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-kruassan-mini-30-g-h-100-sht-up",
+    "name": "Круассан мини",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-assorti-na-vybor-kruassanov-mini-30-g-h-100-sht-up",
+    "name": "Ассорти (на выбор) круассанов мини",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-kruassan-60-g-h-50-sht-up",
+    "name": "Круассан",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up",
+    "name": "Слойка с капустой",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "hb-sloyka-s-myasom-90-g-90-gr-h-100-sht-up",
+    "name": "Слойка с мясом",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "hb-kruassan-s-vishnevoy-nachinkoy-70-g-h-20-sht-up",
+    "name": "Круассан с вишневой начинкой",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "hb-kruassan-s-shokoladnoy-nachinkoy-70-g-h-20-sht-up",
+    "name": "Круассан с шоколадной начинкой",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-kruassan-s-klenovym-siropom-i-gretskim-orehom-70-g-h-20-sht-up",
+    "name": "Круассан с кленовым сиропом и грецким орехом",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-kruassan-s-mindalnoy-nachinkoy-70-g-h-20-sht-up",
+    "name": "Круассан с миндальной начинкой",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-sloyka-s-kremom-pashteysh-70-g-h-20-sht-up",
+    "name": "Слойка с кремом \"Паштейш\"",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+    "name": "Тесто дрожжевое слоеное замороженное, весовое",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+    "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up",
+    "name": "Тесто дрожжевое слоеное замороженное",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-450-gr-20-sht-v-up",
+    "name": "Тесто бездрожжевое слоеное замороженное",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-testo-drozhzhevoe-sdobnoe-zamorozhennoe-ot-5-kg",
+    "name": "Тесто дрожжевое сдобное замороженное",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "hb-testo-pesochnoe-zamorozhennoe-ot-5-kg",
+    "name": "Тесто песочное замороженное",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "p39-497",
+    "name": "Пирог ржаной закусочный с сельдью",
+    "kind": "bakery",
+    "fillings": [
+      "fish"
+    ]
+  },
+  {
+    "id": "p39-498",
+    "name": "Пирог ржаной с овощами гриль",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-496",
+    "name": "Пирог с капустой в сливках",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-99",
+    "name": "Пирог с капустой",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-9",
+    "name": "Пирог с мясом и грибами",
+    "kind": "bakery",
+    "fillings": [
+      "meat",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-10",
+    "name": "Пирог с куриным филе",
+    "kind": "bakery",
+    "fillings": [
+      "poultry"
+    ]
+  },
+  {
+    "id": "p39-12",
+    "name": "Пирог с картофелем и грибами",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-122",
+    "name": "Пирог с зеленым луком и яйцом",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-151",
+    "name": "Пирог с печенью",
+    "kind": "bakery",
+    "fillings": [
+      "poultry"
+    ]
+  },
+  {
+    "id": "p39-20",
+    "name": "Пирог с ветчиной и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "meat",
+      "cheese"
+    ]
+  },
+  {
+    "id": "p39-419",
+    "name": "Пирог с куриным бедром и базиликом",
+    "kind": "bakery",
+    "fillings": [
+      "poultry",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-484",
+    "name": "Пирог мясной",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "p39-485",
+    "name": "Пирог Чизбургер",
+    "kind": "bakery",
+    "fillings": [
+      "meat",
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-440",
+    "name": "Пирог с палтусом",
+    "kind": "bakery",
+    "fillings": [
+      "fish"
+    ]
+  },
+  {
+    "id": "p39-441",
+    "name": "Пирог с красной рыбой",
+    "kind": "bakery",
+    "fillings": [
+      "fish"
+    ]
+  },
+  {
+    "id": "p39-162",
+    "name": "Лоранский пирог с тунцом",
+    "kind": "bakery",
+    "fillings": [
+      "fish",
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-163",
+    "name": "Лоранский пирог с грибами",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-166",
+    "name": "Лоранский пирог с ветчиной",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "p39-483",
+    "name": "Пирог с абрикосом",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-482",
+    "name": "Пирог с вишней",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-110",
+    "name": "Пирог с творогом и изюмом",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-176",
+    "name": "Пирог с творогом и вишней",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-492",
+    "name": "Португальский пирог с заварным кремом",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "p39-486",
+    "name": "Лимбургский пирог с яблоками",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-487",
+    "name": "Лимбургский пирог с вишней",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-442",
+    "name": "Пирог с яблоками и брусникой",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-397",
+    "name": "Пирог с крошкой и черной смородиной",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-90",
+    "name": "Пирог с черной смородиной",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-113",
+    "name": "Пирог творожный «Флорида лайм»",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-89",
+    "name": "Пирог творожный «Флорида с шоколадом»",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "p39-109",
+    "name": "Пирог творожный «Флорида с черникой»",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-43",
+    "name": "Пирог творожный «Флорида с ягодами»",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-168",
+    "name": "Пирог лимонный",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-104",
+    "name": "Пирог ореховый",
+    "kind": "bakery",
+    "fillings": []
+  },
+  {
+    "id": "p39-368",
+    "name": "Пирог со сливой",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-308",
+    "name": "Сибирский пирог с говядиной рубленой",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "p39-309",
+    "name": "Сибирский пирог с грибами и картофелем",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-310",
+    "name": "Сибирский пирог с курицей",
+    "kind": "bakery",
+    "fillings": [
+      "poultry"
+    ]
+  },
+  {
+    "id": "p39-311",
+    "name": "Сибирский пирог со свининой и грибами",
+    "kind": "bakery",
+    "fillings": [
+      "meat",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-366",
+    "name": "Сибирский пирог с брусникой и сметаной",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-414",
+    "name": "Курник с индейкой и овощами-гриль",
+    "kind": "bakery",
+    "fillings": [
+      "poultry",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-136",
+    "name": "Курник со свиной корейкой",
+    "kind": "bakery",
+    "fillings": [
+      "meat",
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-102",
+    "name": "Курник с пикантной курицей",
+    "kind": "bakery",
+    "fillings": [
+      "poultry"
+    ]
+  },
+  {
+    "id": "p39-415",
+    "name": "Курник с маком и вишней",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-411",
+    "name": "Пирог прусский луковый",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-146",
+    "name": "Пирог с картофелем и беконом",
+    "kind": "bakery",
+    "fillings": [
+      "meat",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-172",
+    "name": "Пирог с немецкими колбасками",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "p39-256",
+    "name": "Осетинский пирог с говядиной",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "p39-249",
+    "name": "Осетинский пирог с сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese"
+    ]
+  },
+  {
+    "id": "p39-248",
+    "name": "Осетинский пирог с говядиной и свининой",
+    "kind": "bakery",
+    "fillings": [
+      "meat"
+    ]
+  },
+  {
+    "id": "p39-250",
+    "name": "Осетинский пирог с сыром и зеленью",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-420",
+    "name": "Осетинский пирог со шпинатом и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-245",
+    "name": "Осетинский пирог капуста/грецкий орех",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-417",
+    "name": "Осетинский пирог с фасолью и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-253",
+    "name": "Осетинский пирог с картофелем",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-246",
+    "name": "Осетинский пирог с картофелем и зеленью",
+    "kind": "bakery",
+    "fillings": [
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-298",
+    "name": "Осетинский пирог с тыквой и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-247",
+    "name": "Осетинский пирог с картофелем и сыром",
+    "kind": "bakery",
+    "fillings": [
+      "cheese",
+      "vegetables"
+    ]
+  },
+  {
+    "id": "p39-418",
+    "name": "Осетинский пирог вишня/грецкий орех",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-488",
+    "name": "Осетинский пирог с апельсином и лимоном",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "p39-252",
+    "name": "Осетинский пирог с яблоком и корицей",
+    "kind": "bakery",
+    "fillings": [
+      "fruit"
+    ]
+  }
+]

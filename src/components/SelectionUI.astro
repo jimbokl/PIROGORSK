@@ -1,0 +1,38 @@
+---
+import Icon from './Icon.astro';
+import SelectionAddOns from './SelectionAddOns.astro';
+import InterestForm from './InterestForm.astro';
+import { catalog } from '../data/catalog';
+import '../styles/selection.css';
+---
+    <dialog id="selection-dialog" class="dialog selection-dialog" aria-labelledby="selection-heading">
+      <div class="dialog-header"><button class="selection-city" data-open="city-dialog"><Icon name="pin" /><span data-city>Зеленоградск</span><Icon name="caret" /></button><button data-close class="icon-button" aria-label="Закрыть подборку"><Icon name="close" /></button></div>
+      <h2 id="selection-heading">Ваша подборка</h2>
+      <div data-selection-items></div>
+      <p class="selection-feedback" data-selection-feedback role="status" aria-live="polite"></p>
+      <SelectionAddOns />
+      <div class="selection-summary" hidden>
+        <div class="selection-total"><span>Товары</span><strong data-total>0 ₽</strong></div>
+        <p class="selection-weight">Доставка, ориентир: <strong data-selection-delivery></strong></p>
+        <div class="selection-total"><span>С доставкой ≈</span><strong data-selection-grand-total></strong></div>
+        <p class="order-selection-note">Доставка один раз за всю подборку. В заявке можно выбрать самовывоз. Тарифы и условия ещё уточняем.</p>
+        <p class="selection-weight" data-total-weight></p>
+        <button class="button order-selection" data-order>Хочу заказать<Icon name="arrow" /></button>
+        <p class="order-selection-note">Анонимная заявка по предварительной цене</p>
+        <button class="button copy-selection button-secondary" data-copy><Icon name="copy" /><span>Скопировать подборку</span></button>
+        <textarea class="copy-fallback" data-copy-fallback hidden readonly aria-label="Текст подборки для копирования"></textarea>
+      </div>
+      <p class="selection-note">Готовим запуск. Оставьте заявку, чтобы мы учли ваш выбор. Оплата не требуется; связаться с вами по анонимной заявке не получится.</p>
+    </dialog>
+<InterestForm />
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+<aside class="selection-dock" data-selection-dock hidden aria-label="Ваша подборка">
+  <span class="selection-dock-caption">К вашему столу <span data-dock-count></span></span>
+  <a href="/?interest=selection" data-open="selection-dialog" class="selection-dock-open"><span>Подборка</span><strong data-dock-total>0 ₽</strong><Icon name="arrow" /></a>
+</aside>
+    <template id="selection-item-template">
+      <div><h3></h3><small></small></div><strong class="item-price" data-item-price></strong>
+      <div class="item-details"><div class="item-controls"><button data-decrease><Icon name="minus" /></button><output></output><button data-increase><Icon name="plus" /></button></div></div><button class="item-remove" data-remove>Убрать</button>
+    </template>
+    <script id="catalog-data" type="application/json" set:html={JSON.stringify(catalog.map(({ id, name, kind, unit, category, variants, prices, defaultVariant }) => ({ id, name, kind, unit, category, variants, prices, defaultVariant })))} />
+<script>import '../scripts/storefront';</script>

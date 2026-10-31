@@ -8,7 +8,7 @@ const initial = planPies(guests, grams, [...ids], products);
 const portionOptions = [...new Set([350, 200, grams])];
 const transfer = (items: typeof initial.items) => `/?${new URLSearchParams({ interest: 'calculator', city, items: items.map(i => `${i.id}:${i.value}:${i.quantity}`).join(',') })}#pirogi`;
 ---
-<section class="party" data-party data-city={cityNames[city]} data-city-slug={city} aria-label="Калькулятор пирогов для компании">
+<section class="party" data-party data-party-city={cityNames[city]} data-city-slug={city} aria-label="Калькулятор пирогов для компании">
   <header><p class="ed-eyebrow">Ваш стол · предварительный расчёт</p><h2>Сколько взять на компанию?</h2><p>Выберите гостей и вкусы. Вес округляется вверх до 500 г.</p></header>
   <form data-party-form>
     <label class="party-guests">Гостей: <output data-guests>{guests}</output><input name="guests" type="range" min="1" max={max} step="1" value={guests} /></label>

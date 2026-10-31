@@ -3,6 +3,7 @@ import SeoHead from '../components/SeoHead.astro';
 import Analytics from '../components/Analytics.astro';
 import Brand from '../components/Brand.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import SelectionUI from '../components/SelectionUI.astro';
 import TownSignature from '../components/TownSignature.astro';
 import { siteOrigin } from '../data/editorial';
 import '../styles/editorial.css';
@@ -45,5 +46,6 @@ const breadcrumbSchema = {
       <div><Brand footer /><p>Готовим запуск. Сейчас изучаем интерес<br class="ed-desktop-break" /> к вкусам, городам и форматам.</p></div>
       <nav aria-label="Дополнительная навигация"><a href="/menu/">Будущее меню</a><a href="/povody/">К случаю</a><a href="/delivery/">Города и условия</a><a href="/blog/">Блог</a><a href="/#pirogi">Отметить интерес</a></nav>
     </footer>
+    <SelectionUI />
   </body>
 </html>
