@@ -2,13 +2,13 @@ import { parseInterestContext, partnerTypes, type InterestContext } from '../dat
 import { analyticsConfig } from '../config/analytics';
 import { trackGoal, type GoalParams } from './analytics';
 import { estimateDelivery } from '../data/pricing';
-import { occasionMemory } from './occasion';
+import { occasionMemory, attributionMemory } from './occasion';
 
 export type InterestSelection = { id: string; value?: string | number; weight?: number; quantity: number };
 type Item = { id: string; value: string; quantity: number };
 type Variant = { value: string; label: string; price: number };
 type Product = { id: string; name: string; variants: Variant[] };
-type Payload = { version: 1; requestId: string; city: string; items: Item[]; desiredDate: string; delivery: string; priceConsent: true; website: string; context?: InterestContext };
+type Payload = { version: 1; requestId: string; city: string; items: Item[]; desiredDate: string; delivery: string; priceConsent: true; website: string; context?: InterestContext; attribution?: ReturnType<typeof attributionMemory.current> };
 const dialog = document.querySelector<HTMLDialogElement>('#interest-dialog');
 const form = document.querySelector<HTMLFormElement>('#interest-form');
 const cities = ['Зеленоградск', 'Калининград', 'Светлогорск'];
@@ -168,6 +168,7 @@ async function submit(event: SubmitEvent): Promise<void> {
     version: 1 as const, city: field<HTMLSelectElement>('city')!.value, items: selected,
     desiredDate: field<HTMLInputElement>('desiredDate')!.value, delivery: field<HTMLSelectElement>('delivery')!.value,
     ...(context ? { context } : {}),
+    ...(attributionMemory.current() ? { attribution: attributionMemory.current() } : {}),
     priceConsent: true as const, website: field<HTMLInputElement>('website')?.value || '',
   };
   const fingerprint = JSON.stringify(content);

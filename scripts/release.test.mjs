@@ -33,6 +33,8 @@ test('release rejects unavailable, outdated, malformed and incompatible services
   }
   await assert.rejects(verifyRelease({ ...expected, apiVersion: 2 }));
   for (const version of [undefined, 0, 2]) {
+    await assert.rejects(verifyRelease({ ...expected, attributionVersion: version }), /Invalid local release manifest/);
+    await assert.rejects(verifyRelease(expected, { fetchImpl: async () => Response.json({ ...good, attributionVersion: version }) }));
     await assert.rejects(verifyRelease({ ...expected, interestContextVersion: version }), /Invalid local release manifest/);
     await assert.rejects(verifyRelease(expected, { fetchImpl: async () => Response.json({ ...good, interestContextVersion: version }) }));
   }

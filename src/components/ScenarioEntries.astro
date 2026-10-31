@@ -1,0 +1,13 @@
+<nav class="scenario-entries" aria-label="Подобрать пироги к случаю">
+  <span>К какому столу?</span>
+  <a href="/nabor/uzhin-v-apartamentah/?pg_channel=scenario" data-guide-catalog>В апартаменты <span aria-hidden="true">↗</span></a>
+  <a href="/nabor/piknik-u-morya/?pg_channel=scenario" data-guide-catalog>На пикник <span aria-hidden="true">↗</span></a>
+  <a href="/nabor/na-kompaniyu/?pg_channel=scenario" data-guide-catalog>На компанию <span aria-hidden="true">↗</span></a>
+</nav>
+<style>
+  .scenario-entries{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 20px;font:400 12px/1.4 var(--sans)}
+  .scenario-entries>span{color:var(--muted);margin-right:8px}
+  a{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;min-height:44px;padding:10px 16px;border:1px solid var(--line,#dde2e8);border-radius:12px;color:var(--navy);text-decoration:none;background:#fff;transition:background .2s,border-color .2s}
+  a:hover{background:#f3f5f8;border-color:var(--navy)}a:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+  a>span{font-size:16px}@media(max-width:600px){.scenario-entries{gap:6px;margin:6px 0 14px;font-size:11px}.scenario-entries>span{width:100%;margin:0}a{gap:8px;padding:8px 10px;flex:1;white-space:nowrap}}
+</style>

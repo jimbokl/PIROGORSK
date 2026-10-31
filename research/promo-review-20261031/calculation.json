@@ -1,0 +1,256 @@
+{
+  "asOf": "2026-10-31",
+  "model": "Current catalog; procurement snapshot 29 Oct. Assumptions, not approved supply costs. Variable reserve 10%; target contribution 35% before tax/fixed costs/labour; last mile separate once.",
+  "bundles": [
+    {
+      "id": "dinner",
+      "title": "Ужин в апартаментах",
+      "base": 1280,
+      "assumedFixedCost": null,
+      "offers": [
+        {
+          "label": "0%",
+          "price": 1280,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 704
+        },
+        {
+          "label": "10%",
+          "price": 1152,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 633.6
+        },
+        {
+          "label": "15%",
+          "price": 1088,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 598.4
+        },
+        {
+          "label": "20%",
+          "price": 1024,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 563.2
+        },
+        {
+          "label": "30%",
+          "price": 896,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 492.8
+        },
+        {
+          "label": "990 RUB",
+          "price": 990,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 544.5
+        }
+      ]
+    },
+    {
+      "id": "company",
+      "title": "На компанию",
+      "base": 3470,
+      "assumedFixedCost": null,
+      "offers": [
+        {
+          "label": "0%",
+          "price": 3470,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 1908.5
+        },
+        {
+          "label": "10%",
+          "price": 3123,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 1717.65
+        },
+        {
+          "label": "15%",
+          "price": 2950,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 1622.5
+        },
+        {
+          "label": "20%",
+          "price": 2776,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 1526.8
+        },
+        {
+          "label": "30%",
+          "price": 2429,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 1335.95
+        },
+        {
+          "label": "990 RUB",
+          "price": 990,
+          "contribution": null,
+          "contributionRate": null,
+          "maxFixedCostFor35Percent": 544.5
+        }
+      ]
+    },
+    {
+      "id": "sweet-table",
+      "title": "Сытное и сладкое",
+      "base": 5350,
+      "assumedFixedCost": 2934.2,
+      "offers": [
+        {
+          "label": "0%",
+          "price": 5350,
+          "contribution": 1880.8,
+          "contributionRate": 35.16,
+          "maxFixedCostFor35Percent": 2942.5
+        },
+        {
+          "label": "10%",
+          "price": 4815,
+          "contribution": 1399.3,
+          "contributionRate": 29.06,
+          "maxFixedCostFor35Percent": 2648.25
+        },
+        {
+          "label": "15%",
+          "price": 4548,
+          "contribution": 1159,
+          "contributionRate": 25.48,
+          "maxFixedCostFor35Percent": 2501.4
+        },
+        {
+          "label": "20%",
+          "price": 4280,
+          "contribution": 917.8,
+          "contributionRate": 21.44,
+          "maxFixedCostFor35Percent": 2354
+        },
+        {
+          "label": "30%",
+          "price": 3745,
+          "contribution": 436.3,
+          "contributionRate": 11.65,
+          "maxFixedCostFor35Percent": 2059.75
+        },
+        {
+          "label": "990 RUB",
+          "price": 990,
+          "contribution": -2043.2,
+          "contributionRate": -206.38,
+          "maxFixedCostFor35Percent": 544.5
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "title": "Обед в офисе",
+      "base": 5350,
+      "assumedFixedCost": 2934.2,
+      "offers": [
+        {
+          "label": "0%",
+          "price": 5350,
+          "contribution": 1880.8,
+          "contributionRate": 35.16,
+          "maxFixedCostFor35Percent": 2942.5
+        },
+        {
+          "label": "10%",
+          "price": 4815,
+          "contribution": 1399.3,
+          "contributionRate": 29.06,
+          "maxFixedCostFor35Percent": 2648.25
+        },
+        {
+          "label": "15%",
+          "price": 4548,
+          "contribution": 1159,
+          "contributionRate": 25.48,
+          "maxFixedCostFor35Percent": 2501.4
+        },
+        {
+          "label": "20%",
+          "price": 4280,
+          "contribution": 917.8,
+          "contributionRate": 21.44,
+          "maxFixedCostFor35Percent": 2354
+        },
+        {
+          "label": "30%",
+          "price": 3745,
+          "contribution": 436.3,
+          "contributionRate": 11.65,
+          "maxFixedCostFor35Percent": 2059.75
+        },
+        {
+          "label": "990 RUB",
+          "price": 990,
+          "contribution": -2043.2,
+          "contributionRate": -206.38,
+          "maxFixedCostFor35Percent": 544.5
+        }
+      ]
+    },
+    {
+      "id": "birthday",
+      "title": "Ко дню рождения",
+      "base": 8630,
+      "assumedFixedCost": 4734.299999999999,
+      "offers": [
+        {
+          "label": "0%",
+          "price": 8630,
+          "contribution": 3032.7,
+          "contributionRate": 35.14,
+          "maxFixedCostFor35Percent": 4746.5
+        },
+        {
+          "label": "10%",
+          "price": 7767,
+          "contribution": 2256,
+          "contributionRate": 29.05,
+          "maxFixedCostFor35Percent": 4271.85
+        },
+        {
+          "label": "15%",
+          "price": 7336,
+          "contribution": 1868.1,
+          "contributionRate": 25.46,
+          "maxFixedCostFor35Percent": 4034.8
+        },
+        {
+          "label": "20%",
+          "price": 6904,
+          "contribution": 1479.3,
+          "contributionRate": 21.43,
+          "maxFixedCostFor35Percent": 3797.2
+        },
+        {
+          "label": "30%",
+          "price": 6041,
+          "contribution": 702.6,
+          "contributionRate": 11.63,
+          "maxFixedCostFor35Percent": 3322.55
+        },
+        {
+          "label": "990 RUB",
+          "price": 990,
+          "contribution": -3843.3,
+          "contributionRate": -388.21,
+          "maxFixedCostFor35Percent": 544.5
+        }
+      ]
+    }
+  ]
+}

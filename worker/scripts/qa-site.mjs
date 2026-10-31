@@ -27,6 +27,7 @@ const types = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascr
 const sqlite = new DatabaseSync(':memory:');
 sqlite.exec(await readFile(new URL('../migrations/0001_interests.sql', import.meta.url), 'utf8'));
 sqlite.exec(await readFile(new URL('../migrations/0002_interest_preferences.sql', import.meta.url), 'utf8'));
+sqlite.exec(await readFile(new URL('../migrations/0003_interest_attribution.sql', import.meta.url), 'utf8'));
 function prepare(sql, values = []) {
   const execute = () => ({ success: true, results: sqlite.prepare(sql).all(...values) });
   return { bind: (...next) => prepare(sql, next), first: async () => execute().results[0] || null, all: async () => execute(), execute };

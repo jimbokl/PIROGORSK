@@ -21,28 +21,28 @@ ws-019,пирог с курицей доставка,0,2026-09-30,2026-10-30,К�
 ws-020,пирог с капустой доставка,0,2026-09-30,2026-10-30,Калининградская область,all,/menu/,existing_page_by_explicit_intent,false,0,true,raw/020.json
 ws-021,сладкие пироги доставка,1,2026-09-07,2026-10-06,Калининградская область,all,/menu/,existing_page_by_explicit_intent,false,1,true,raw/021.json
 ws-022,пирог с вишней доставка,1,2026-09-30,2026-10-30,Калининградская область,all,/menu/,existing_page_by_explicit_intent,false,0,true,raw/022.json
-ws-023,пироги с картошкой,555,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,200,false,raw/023.json
-ws-024,пироги с мясом,466,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,179,true,raw/024.json
-ws-025,пироги с капустой,1350,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,200,false,raw/025.json
-ws-026,пироги с сыром,471,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,200,false,raw/026.json
-ws-027,пироги с творогом,0,2026-09-30,2026-10-30,Калининградская область,all,,needs_regional_serp,false,0,true,raw/027.json
-ws-028,пироги с тыквой,309,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,100,true,raw/028.json
-ws-029,пироги со свекольной ботвой,3,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,7,true,raw/029.json
-ws-030,постные пироги,65,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,24,true,raw/030.json
+ws-023,пироги с картошкой,555,2026-09-07,2026-10-06,Калининградская область,all,/journal/pirog-s-kartoshkoy-i-syrom/,observed_recipe_content_gap,true,200,false,raw/023.json
+ws-024,пироги с мясом,466,2026-09-07,2026-10-06,Калининградская область,all,/journal/myasnoy-pirog-nachinka-i-testo/,observed_recipe_content_gap,true,179,true,raw/024.json
+ws-025,пироги с капустой,1350,2026-09-07,2026-10-06,Калининградская область,all,/journal/pirog-s-kapustoy-i-yaytsom/,observed_recipe_content_gap,true,200,false,raw/025.json
+ws-026,пироги с сыром,471,2026-09-07,2026-10-06,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,observed_recipe_content_gap,true,200,false,raw/026.json
+ws-027,пироги с творогом,0,2026-09-30,2026-10-30,Калининградская область,all,/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/,observed_recipe_content_gap,true,0,true,raw/027.json
+ws-028,пироги с тыквой,309,2026-09-07,2026-10-06,Калининградская область,all,/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/,observed_recipe_content_gap,true,100,true,raw/028.json
+ws-029,пироги со свекольной ботвой,3,2026-09-07,2026-10-06,Калининградская область,all,/journal/pirog-so-svekolnoy-botvoy-i-syrom/,observed_recipe_content_gap,true,7,true,raw/029.json
+ws-030,постные пироги,65,2026-09-07,2026-10-06,Калининградская область,all,/journal/postnye-pirogi-kak-proverit-sostav/,observed_recipe_content_gap,true,24,true,raw/030.json
 ws-031,мини пироги на заказ с доставкой,0,2026-09-30,2026-10-30,Калининградская область,all,/menu/,existing_page_by_explicit_intent,false,0,true,raw/031.json
 ws-032,курник пироги с доставкой,0,2026-09-30,2026-10-30,Калининградская область,all,/menu/,existing_page_by_explicit_intent,false,0,true,raw/032.json
-ws-033,пироги с рыбой,0,2026-09-30,2026-10-30,Калининградская область,all,,needs_regional_serp,false,0,true,raw/033.json
+ws-033,пироги с рыбой,0,2026-09-30,2026-10-30,Калининградская область,all,/journal/rybnaya-nachinka-dlya-piroga/,observed_recipe_content_gap,true,0,true,raw/033.json
 ws-034,осетинские пироги рецепт,240,2026-09-07,2026-10-06,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,existing_page_by_explicit_intent,false,53,true,raw/034.json
 ws-035,осетинский пирог рецепт,240,2026-09-07,2026-10-06,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,existing_page_by_explicit_intent,false,53,true,raw/035.json
 ws-036,осетинские пироги рецепт классический,46,2026-09-07,2026-10-06,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,existing_page_by_explicit_intent,false,9,true,raw/036.json
 ws-037,тесто для осетинских пирогов,10,2026-09-07,2026-10-06,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,existing_page_by_explicit_intent,false,7,true,raw/037.json
-ws-038,осетинский пирог с сыром,104,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,21,true,raw/038.json
-ws-039,осетинский пирог с мясом,26,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,13,true,raw/039.json
-ws-040,осетинский пирог с картошкой и сыром,17,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,3,true,raw/040.json
+ws-038,осетинский пирог с сыром,104,2026-09-07,2026-10-06,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,observed_recipe_owner,true,21,true,raw/038.json
+ws-039,осетинский пирог с мясом,26,2026-09-07,2026-10-06,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,observed_recipe_owner,true,13,true,raw/039.json
+ws-040,осетинский пирог с картошкой и сыром,17,2026-09-07,2026-10-06,Калининградская область,all,/journal/pirog-s-kartoshkoy-i-syrom/,observed_recipe_content_gap,true,3,true,raw/040.json
 ws-041,как приготовить осетинский пирог,18,2026-09-07,2026-10-06,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,existing_page_by_explicit_intent,false,5,true,raw/041.json
 ws-042,осетинские пироги на кефире,40,2026-09-07,2026-10-06,Калининградская область,all,/journal/zalivnoy-pirog-na-kefire/,existing_page_by_explicit_intent,false,8,true,raw/042.json
 ws-043,осетинский пирог на сковороде,7,2026-09-07,2026-10-06,Калининградская область,all,/journal/pirog-na-skovorode-ili-v-duhovke/,existing_page_by_explicit_intent,false,7,true,raw/043.json
-ws-044,осетинский пирог со свекольной ботвой,2,2026-09-07,2026-10-06,Калининградская область,all,,needs_regional_serp,false,3,true,raw/044.json
+ws-044,осетинский пирог со свекольной ботвой,2,2026-09-07,2026-10-06,Калининградская область,all,/journal/pirog-so-svekolnoy-botvoy-i-syrom/,observed_recipe_content_gap,true,3,true,raw/044.json
 ws-045,хачапури,2533,2026-09-07,2026-10-06,Калининградская область,all,,no_matching_assortment,false,200,false,raw/045.json
 ws-046,осетинские пироги рецепт с сыром и мясом,0,2026-09-30,2026-10-30,Калининградская область,all,/journal/osetinskiy-pirog-s-syrom-kak-vybrat/,existing_page_by_explicit_intent,false,0,true,raw/046.json
 ws-047,пирог с картошкой и сыром,29,2026-09-07,2026-10-06,Калининградская область,all,/journal/pirog-s-kartoshkoy-i-syrom/,existing_page_by_explicit_intent,false,9,true,raw/047.json

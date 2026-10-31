@@ -4,7 +4,7 @@
 
 ## Порядок выпуска
 
-1. `npm ci`, `npm run check`, `npm run build`, `npm test`, `npm run test:worker`, `npm run test:browser`. Все восемь валидаторов из Pages workflow также должны пройти. `build` создаёт `site/release.json`: версия API, версия необязательных пожеланий и SHA-256 отсортированных product ID, variant ID и цен. Подписи, изображения и порядок карточек не меняют этот контракт.
+1. `npm ci`, `npm run check`, `npm run build`, `npm test`, `npm run test:worker`, `npm run test:browser`. Все девять валидаторов из Pages workflow также должны пройти. `build` создаёт `site/release.json`: версия API, версии необязательных пожеланий и атрибуции, SHA-256 отсортированных product ID, variant ID и цен. Подписи, изображения и порядок карточек не меняют этот контракт.
 2. При изменении Worker или каталога сначала проверить целевой аккаунт через `npx wrangler@4.155.0 whoami`, записать текущую версию через `npx wrangler@4.155.0 deployments list --config worker/wrangler.jsonc`, затем `npx wrangler@4.155.0 deploy --config worker/wrangler.jsonc`. Привязка существующей D1 и cron заданы в конфиге. Эта команда не применяет SQL migrations.
 3. `node scripts/verify-release.mjs check` должен подтвердить D1, API v1 и совпадение каталога живого Worker с `site/release.json`. Сначала завершить rollout Worker, затем публиковать Pages. Старая вкладка не фиксирует коммерческую цену: сервер всегда вычисляет предварительную сумму сам; удаление вариантов требует отдельного плана совместимости.
 4. Публикация `main` запускает Pages workflow. Он повторяет проверки, сверяет живой Worker перед upload, публикует Pages, затем сверяет публичные `release.json` и `/health`. Post-check повторяется максимум 60 секунд, учитывая обновление CDN. Только после успеха запускается IndexNow. Успех IndexNow означает приём уведомления, индексация проверяется отдельно.
@@ -52,3 +52,17 @@ npx wrangler@4.155.0 d1 execute pirogorsk-interest --remote --config worker/wran
 ## Прежний bundle и браузерные проверки
 
 `worker/scripts/bundle.mjs` создаёт единый JS для ручного Dashboard deployment из тех же исходников. Он использует общий catalog contract; bundle проходит синтаксическую и браузерную проверки в CI. CLI deploy берёт `worker/src/index.ts` напрямую. Browser QA не отправляет заявки или цели в production: все запросы перехвачены, D1 заменена настоящей SQLite в памяти, Метрика — локальной очередью.
+
+## Переход текущего спринта: атрибуция v1
+
+`0003_interest_attribution.sql` добавляет только таблицу канала и обезличенного
+кода размещения с FK на заявку. Сохранение атомарно с прежними таблицами.
+Старые payload без `attribution` сохраняют прежний hash и повторяются без дублей.
+Невалидная атрибуция возвращает 422, повтор UUID с другим источником — 409.
+
+31.10 перед применением сохранены bookmark Time Travel и схема в
+`qa/sprint-p0-p1-20261031/`. Применён только `0003`, затем опубликован Worker
+`dd7253d7-16be-4c2d-b7ea-aee299ee1d16`; `/health` подтверждает
+`attributionVersion: 1`. Совместимость Pages проверяется по этой версии.
+Откат Pages/Worker не требует удаления дополнительной таблицы.
+Контактов, CRM и публичной административной страницы этот переход не добавляет.

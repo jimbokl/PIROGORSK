@@ -1407,11 +1407,12 @@
       "week": 4,
       "decision": "merge_into_owner",
       "scenario": "апартаменты",
-      "status": "consolidated_partial",
-      "dataGap": "Сценарий дополнен проверкой кухни и общего стола; услуги приготовления/доставки Пирогорска ещё не подтверждены.",
+      "status": "integrated_update",
+      "dataGap": null,
       "cluster": "scenarios",
       "brandReframe": null,
-      "window": "2026-11-22 — 2026-11-30"
+      "window": "2026-11-22 — 2026-11-30",
+      "evidence": "src/data/article-updates.json: пять вариантов без готовки, проверка условий, ссылки на разогрев и выбор для компании; 31.10.2026"
     },
     {
       "number": 95,

@@ -11,6 +11,7 @@ function storage() {
   const sqlite = new DatabaseSync(':memory:');
   sqlite.exec(migration);
   sqlite.exec(readFileSync(new URL('../migrations/0002_interest_preferences.sql', import.meta.url), 'utf8'));
+  sqlite.exec(readFileSync(new URL('../migrations/0003_interest_attribution.sql', import.meta.url), 'utf8'));
   function prepare(sql, values = []) {
     const execute = () => ({ success: true, results: sqlite.prepare(sql).all(...values) });
     return { bind: (...next) => prepare(sql, next), first: async () => execute().results[0] || null, all: async () => execute(), execute };
@@ -71,6 +72,19 @@ test('optional preferences are atomic, idempotent and cannot alter a saved reque
   db.sqlite.exec("CREATE TRIGGER fail_preferences BEFORE INSERT ON interest_preferences BEGIN SELECT RAISE(ABORT, 'test-preference-failure'); END");
   assert.equal((await worker.fetch(request(payload({ context: data.context })), db)).status, 503);
   assert.equal(db.count(), 1); assert.equal(db.tokens(), 1);
+});
+
+test('attribution is atomic, idempotent, optional and strictly validated', async () => {
+  const db = storage(); const data = payload({ attribution: { channel: 'qr', partnerCode: 'p007' } });
+  for (let i = 0; i < 2; i++) assert.equal((await worker.fetch(request(data), db)).status, 200);
+  assert.deepEqual({ ...db.sqlite.prepare('SELECT * FROM interest_attribution').get() }, { request_id: data.requestId, channel: 'qr', partner_code: 'p007' });
+  assert.equal((await worker.fetch(request({ ...data, attribution: { channel: 'telegram' } }), db)).status, 409);
+  for (const attribution of [null, [], { channel: 'private' }, { channel: 'qr', partnerCode: 'private' }, { channel: 'qr', partnerCode: 'p000' }, { channel: 'telegram', partnerCode: 'p007' }, { channel: 'partner', email: 'private' }]) assert.equal((await worker.fetch(request(payload({ attribution })), db)).status, 422);
+  assert.equal(db.count(), 1); assert.equal(db.tokens(), 1);
+  db.sqlite.exec("CREATE TRIGGER fail_attribution BEFORE INSERT ON interest_attribution BEGIN SELECT RAISE(ABORT, 'test-attribution-failure'); END");
+  assert.equal((await worker.fetch(request(payload({ attribution: data.attribution })), db)).status, 503);
+  assert.equal(db.count(), 1); assert.equal(db.tokens(), 1);
+  assert.equal((await worker.fetch(request(payload()), db)).status, 200, 'legacy payload still saves without attribution');
 });
 
 test('default preferences preserve the old retry contract; arbitrary preferences are rejected', async () => {

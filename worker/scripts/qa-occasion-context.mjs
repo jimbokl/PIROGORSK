@@ -8,7 +8,7 @@ import { analyticsConfig } from '../../src/config/analytics.ts';
 const production = process.argv.includes('--production');
 const origin = 'https://pirogorsk.ru';
 const root = new URL('../../site/', import.meta.url).pathname;
-const output = new URL('../../qa/occasion-context-20261031/', import.meta.url).pathname;
+const output = resolve(process.env.PIROGORSK_QA_OUTPUT || new URL('../../qa/occasion-context-20261031/', import.meta.url).pathname) + sep;
 const label = production ? 'production' : 'local';
 const types = { '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.json': 'application/json', '.woff2': 'font/woff2', '.svg': 'image/svg+xml', '.png': 'image/png', '.avif': 'image/avif', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.ico': 'image/x-icon' };
 await mkdir(output, { recursive: true });
@@ -57,10 +57,29 @@ try {
     };
     const value = selector => page.$eval(selector, input => input.value);
     const goals = () => page.evaluate(() => (window.ym?.a || []).filter(args => args[1] === 'reachGoal').map(args => ({ goal: args[2], params: args[3] })));
-    await go('/journal/uzhin-v-semnyh-apartamentah/');
+    for (const path of ['/', '/menu/']) {
+      await go(path);
+      assert.equal(await page.$$eval('[data-product], [data-menu-product], [data-supplier-id]', cards => new Set(cards.map(card => card.dataset.product || card.dataset.feedId || card.dataset.supplierId)).size), 153);
+      assert.equal(await page.$$eval('.scenario-entries a', links => links.length), 3);
+      assert(await page.$$eval('.scenario-entries a', links => links.every(link => {
+        const rect = link.getBoundingClientRect();
+        return rect.height >= 44 && rect.left >= 0 && rect.right <= innerWidth;
+      })));
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    }
+    await page.$eval('.scenario-entries', element => element.scrollIntoView({ block: 'center', behavior: 'instant' }));
+    await page.screenshot({ path: `${output}${label}-scenario-entries-${width}.png` });
+    await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.$eval('.scenario-entries a', link => link.click())]);
+    assert.match(page.url(), /\/nabor\/uzhin-v-apartamentah\//);
+    assert.deepEqual(JSON.parse(await page.evaluate(() => sessionStorage.getItem('pirogorsk:attribution:v1'))), { channel: 'scenario' });
+    assert.deepEqual(JSON.parse(await page.evaluate(() => sessionStorage.getItem('pirogorsk:occasion:v1'))), { value: 'apartments', source: 'entry' });
+    await go('/journal/uzhin-v-semnyh-apartamentah/?pg_channel=qr&pg_partner=p007');
     await Promise.all([page.waitForNavigation({ waitUntil: 'networkidle0' }), page.$eval('a[data-guide-catalog][href*="interest=guide-"]', link => link.click())]);
     await page.$eval('[data-product="meat"] [data-add]', button => button.click());
-    if (!production) assert.equal((await goals()).find(item => item.goal === 'catalog_add').params.occasion, 'apartments');
+    if (!production) {
+      const params = (await goals()).find(item => item.goal === 'catalog_add').params;
+      assert.equal(params.occasion, 'apartments'); assert.equal(params.entry_channel, 'qr'); assert.equal(params.partner_code, 'p007');
+    }
     await open();
     assert.equal(await value('#interest-occasion'), 'apartments');
     assert.equal(await value('#interest-time'), 'undecided');
@@ -93,6 +112,8 @@ try {
     await page.$eval('#interest-form', form => form.requestSubmit());
     await page.waitForFunction(() => !document.querySelector('[data-interest-success]').hidden);
     assert.equal(posts.length, 2); assert.equal(posts[0].requestId, posts[1].requestId);
+    assert.deepEqual(posts[0], posts[1], 'lost acknowledgement retries the exact original payload');
+    assert.deepEqual(posts[0].attribution, { channel: 'qr', partnerCode: 'p007' });
     assert.deepEqual(posts[0].context, { occasion: 'gift', preferredTime: 'evening', partnerType: 'none' });
     if (!production) assert.equal((await goals()).find(item => item.goal === 'order_submit').params.occasion, 'gift');
     else assert.deepEqual(await goals(), []);

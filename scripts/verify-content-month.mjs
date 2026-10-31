@@ -4,7 +4,7 @@ import {createServer} from 'node:http';
 import {resolve,extname} from 'node:path';
 import {launch} from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
-const output='qa/content-month-202611';
+const output=process.env.PIROGORSK_QA_OUTPUT||'qa/content-month-202611';
 const articles=JSON.parse(await readFile('src/data/monthly-articles.json','utf8'));
 const plan=JSON.parse(await readFile('research/content-month-202611/topic-map.json','utf8'));
 const source=await readFile('research/backlog-intake-20261031/A6.txt','utf8');
@@ -92,12 +92,25 @@ try{
  const updates=JSON.parse(await readFile('src/data/article-updates.json','utf8'));
  for(const update of updates){
   await page.goto(base+update.ownerURL,{waitUntil:'networkidle0'});
-  const data=await page.evaluate(()=>({text:document.querySelector('.blog-article').textContent,structured:[...document.querySelectorAll('script[type="application/ld+json"]')].map(x=>x.textContent).join('')}));
+  const data=await page.evaluate(()=>({text:document.querySelector('.blog-article').textContent,structured:[...document.querySelectorAll('script[type="application/ld+json"]')].map(x=>x.textContent).join(''),links:[...document.querySelectorAll('.ed-article a[href^="/"]')].map(a=>a.getAttribute('href'))}));
   for(const section of update.sections)assert.ok(data.text.includes(section.title));
   assert.ok(data.text.includes('Обновлено')&&data.structured.includes('"dateModified":"2026-10-31"'),`Updated date ${update.ownerURL}`);
-  report.updates.push({path:update.ownerURL,sections:update.sections.length,modified:'2026-10-31'});
+  for(const href of data.links){const path=new URL(href,base).pathname;assert.ok((await stat(resolve(site,'.'+path+'index.html'))).isFile(),`Updated internal link ${href}`);}
+  const viewports=[];
+  for(const width of [320,390,768,1024,1280]){
+   await page.setViewport({width,height:900,deviceScaleFactor:1});
+   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);
+   assert.equal(overflow,false,`${update.ownerURL} overflow at ${width}`);viewports.push({width,overflow});
+   if([390,768].includes(width)){
+    await page.screenshot({path:`${output}/${stage}-updated-${update.ownerURL.split('/')[2]}-${width}.png`});
+    await page.$eval('.ed-article table',el=>el.scrollIntoView({block:'center'}));
+    await page.screenshot({path:`${output}/${stage}-updated-${update.ownerURL.split('/')[2]}-table-${width}.png`});
+    await page.evaluate(()=>scrollTo(0,0));
+   }
+  }
+  report.updates.push({path:update.ownerURL,sections:update.sections.length,modified:'2026-10-31',links:data.links,viewports});
  }
  assert.deepEqual(report.errors,[]);
  await writeFile(`${output}/${stage}-report.json`,JSON.stringify(report,null,2)+'\n');
- console.log(`Content month PASS (${stage}): 100 topics; 6 new articles, 2 updated owners; 30 viewport checks.`);
+ console.log(`Content month PASS (${stage}): 100 topics; ${articles.length} new articles, ${updates.length} updated owners; ${(articles.length+updates.length)*5} viewport checks.`);
 }finally{await browser?.disconnect();await chrome?.kill();await new Promise(done=>server.close(done));}

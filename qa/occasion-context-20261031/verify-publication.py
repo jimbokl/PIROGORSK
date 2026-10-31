@@ -9,7 +9,9 @@ import sys
 import tarfile
 import urllib.request
 
-archive_path, runtime, run = sys.argv[1:]
+archive_path, runtime, run = sys.argv[1:4]
+output = Path(sys.argv[4]) if len(sys.argv) > 4 else Path(__file__).resolve().parent
+output.mkdir(parents=True, exist_ok=True)
 expected = {}
 with tarfile.open(archive_path) as archive:
     for member in archive.getmembers():
@@ -43,6 +45,6 @@ result = dict(checkedAt=datetime.now(timezone.utc).isoformat(), runtime=runtime,
               ci='https://github.com/jimbokl/PIROGORSK/actions/runs/' + run,
               source='Independently downloaded GitHub Actions Pages artifact',
               htmlPages=html_pages, productPages=product_pages, files=files, failures=failures)
-(Path(__file__).resolve().parent / 'publication.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
+(output / 'publication.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
 assert not failures, failures
 print(f'PASS: {len(files)} resources, {html_pages} HTML and {product_pages} product pages match CI artifact.')

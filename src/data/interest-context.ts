@@ -1,4 +1,18 @@
 export const INTEREST_CONTEXT_VERSION = 1;
+export const ATTRIBUTION_VERSION = 1;
+export const entryChannels = ['qr', 'telegram', 'partner', 'scenario'] as const;
+export type EntryAttribution = { channel: typeof entryChannels[number]; partnerCode?: string };
+
+/** Anonymous allocation codes p001–p999; no names, free text, URLs or contact data. */
+export function parseAttribution(value: unknown): EntryAttribution | undefined | null {
+  if (value === undefined) return undefined;
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+  const input = value as Record<string, unknown>;
+  if (Object.keys(input).some(key => !['channel', 'partnerCode'].includes(key))) return null;
+  if (!entryChannels.some(channel => channel === input.channel)) return null;
+  if (input.partnerCode !== undefined && (typeof input.partnerCode !== 'string' || !/^p(?!000)\d{3}$/.test(input.partnerCode) || !['qr', 'partner'].includes(String(input.channel)))) return null;
+  return { channel: input.channel as EntryAttribution['channel'], ...(input.partnerCode ? { partnerCode: input.partnerCode as string } : {}) };
+}
 export const occasions = [
   ['undecided', 'Пока не знаю'], ['dinner', 'Ужин дома'], ['apartments', 'Ужин в апартаментах'],
   ['picnic', 'Пикник'], ['company', 'Стол на компанию'], ['gift', 'В подарок'],

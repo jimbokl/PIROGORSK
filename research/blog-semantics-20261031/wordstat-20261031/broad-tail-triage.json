@@ -1,0 +1,17 @@
+{
+  "reviewedAt": "2026-10-31",
+  "method": "Reproducible lexical triage of the seven displayed incomplete tables; candidates require intent review, no new page or metric summation.",
+  "rows": 1400,
+  "uniqueQueries": 1346,
+  "statuses": {
+    "food_editorial_candidate": 1075,
+    "regional_intent_review": 7,
+    "commercial_candidate": 24,
+    "exclude_navigation_or_competitor": 25,
+    "exclude_foreign_geo_candidate": 13,
+    "exclude_nonfood": 59,
+    "no_sku_content_candidate": 189,
+    "ambiguous": 8
+  },
+  "sourceTablesRemainIncomplete": true
+}

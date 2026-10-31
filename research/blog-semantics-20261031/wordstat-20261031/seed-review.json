@@ -980,15 +980,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/pirog-s-kartoshkoy-i-syrom/",
         "candidateOwners": [
-          "/menu/",
           "/journal/pirog-s-kartoshkoy-i-syrom/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-023",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/pirog-s-kartoshkoy-i-syrom/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         44
@@ -1023,15 +1034,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/myasnoy-pirog-nachinka-i-testo/",
         "candidateOwners": [
-          "/menu/",
           "/journal/myasnoy-pirog-nachinka-i-testo/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-024",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/myasnoy-pirog-nachinka-i-testo/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         45
@@ -1066,15 +1088,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/pirog-s-kapustoy-i-yaytsom/",
         "candidateOwners": [
-          "/menu/",
           "/journal/pirog-s-kapustoy-i-yaytsom/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-025",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/pirog-s-kapustoy-i-yaytsom/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         46
@@ -1109,15 +1142,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
         "candidateOwners": [
-          "/menu/",
           "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-026",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         47
@@ -1152,15 +1196,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/",
         "candidateOwners": [
-          "/menu/",
           "/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-027",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         48
@@ -1195,15 +1250,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/",
         "candidateOwners": [
-          "/menu/",
           "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-028",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         49
@@ -1238,15 +1304,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/pirog-so-svekolnoy-botvoy-i-syrom/",
         "candidateOwners": [
-          "/menu/",
           "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-029",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         50
@@ -1281,15 +1358,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/postnye-pirogi-kak-proverit-sostav/",
         "candidateOwners": [
-          "/menu/",
           "/journal/postnye-pirogi-kak-proverit-sostav/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-030",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/postnye-pirogi-kak-proverit-sostav/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         51
@@ -1404,15 +1492,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/rybnaya-nachinka-dlya-piroga/",
         "candidateOwners": [
-          "/menu/",
           "/journal/rybnaya-nachinka-dlya-piroga/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-033",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/menu/",
+            "/journal/rybnaya-nachinka-dlya-piroga/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         54
@@ -1627,15 +1726,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
         "candidateOwners": [
-          "/osetinskie-pirogi/",
           "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_owner",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-038",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/osetinskie-pirogi/",
+            "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         74
@@ -1675,15 +1785,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
         "candidateOwners": [
-          "/osetinskie-pirogi/",
           "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_owner",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-039",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/osetinskie-pirogi/",
+            "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         75
@@ -1723,15 +1844,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/pirog-s-kartoshkoy-i-syrom/",
         "candidateOwners": [
-          "/osetinskie-pirogi/",
-          "/journal/zalivnoy-pirog-na-kefire/"
+          "/journal/pirog-s-kartoshkoy-i-syrom/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-040",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/osetinskie-pirogi/",
+            "/journal/zalivnoy-pirog-na-kefire/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         76
@@ -1901,15 +2033,26 @@
         "zeroProvesNoDemand": false
       },
       "ownerDecision": {
-        "intent": "mixed_recipe_or_purchase",
-        "primaryOwner": null,
+        "intent": "recipe_dominant_in_regional_yandex",
+        "primaryOwner": "/journal/pirog-so-svekolnoy-botvoy-i-syrom/",
         "candidateOwners": [
-          "/osetinskie-pirogi/",
           "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
         ],
-        "status": "needs_regional_serp",
-        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
-        "serpVerified": false
+        "status": "observed_recipe_content_gap",
+        "reason": "В наблюдаемой выдаче преобладают рецепты. Действующий информационный URL — владелец кластера для редакционной доработки; полный ответ рецептурному интенту подтверждён только там, где уже есть рецепт. Каталог владеет вариантами с заказом/доставкой. Это не проверка Google и не доказательство позиции.",
+        "serpVerified": true,
+        "serpEvidence": "regional-serp.json#ws-044",
+        "previousDecision": {
+          "intent": "mixed_recipe_or_purchase",
+          "primaryOwner": null,
+          "candidateOwners": [
+            "/osetinskie-pirogi/",
+            "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+          ],
+          "status": "needs_regional_serp",
+          "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+          "serpVerified": false
+        }
       },
       "userSourceRows": [
         80

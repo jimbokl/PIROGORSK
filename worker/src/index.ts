@@ -1,4 +1,4 @@
-import { parseInterestContext, INTEREST_CONTEXT_VERSION, type InterestContext } from '../../src/data/interest-context.ts';
+import { parseInterestContext, INTEREST_CONTEXT_VERSION, parseAttribution, ATTRIBUTION_VERSION, type EntryAttribution, type InterestContext } from '../../src/data/interest-context.ts';
 import { catalog } from './catalog.ts';
 import { INTEREST_API_VERSION, serializeCatalog } from '../../src/data/catalog-contract.ts';
 
@@ -14,7 +14,7 @@ export interface Env {
   ALLOW_LOCALHOST?: string;
 }
 type Item = { id: string; value: string; quantity: number };
-export type Interest = { version: 1; requestId: string; city: string; items: Item[]; desiredDate: string; delivery: 'pickup' | 'delivery' | 'undecided'; priceConsent: true; context?: InterestContext };
+export type Interest = { version: 1; requestId: string; city: string; items: Item[]; desiredDate: string; delivery: 'pickup' | 'delivery' | 'undecided'; priceConsent: true; context?: InterestContext; attribution?: EntryAttribution };
 type Saved = { request_id: string; payload_hash: string };
 const cities = ['Зеленоградск', 'Калининград', 'Светлогорск'];
 const MAX_BYTES = 16384;
@@ -34,7 +34,7 @@ function keysAllowed(value: Record<string, unknown>, allowed: string[]): boolean
 function localDay(now: number): string { return new Date(now + 2 * 60 * 60 * 1000).toISOString().slice(0, 10); }
 
 export function validateInterest(value: unknown, now = Date.now()): Interest {
-  if (!object(value) || !keysAllowed(value, ['version', 'requestId', 'city', 'items', 'desiredDate', 'delivery', 'priceConsent', 'website', 'context'])) throw new InputError(422, 'invalid_payload');
+  if (!object(value) || !keysAllowed(value, ['version', 'requestId', 'city', 'items', 'desiredDate', 'delivery', 'priceConsent', 'website', 'context', 'attribution'])) throw new InputError(422, 'invalid_payload');
   if (value.version !== 1 || typeof value.requestId !== 'string' || !uuid.test(value.requestId)) throw new InputError(422, 'invalid_request_id');
   if (typeof value.website !== 'string' || value.website.length > 200) throw new InputError(422, 'invalid_payload');
   // A trap never receives a fake success, and never creates a conversion.
@@ -57,8 +57,10 @@ export function validateInterest(value: unknown, now = Date.now()): Interest {
   if (value.priceConsent !== true) fields.priceConsent = 'Подтвердите желание заказать по ориентировочной цене.';
   const context = parseInterestContext(value.context);
   if (context === null) fields.context = 'Выберите пожелания из списка.';
+  const attribution = parseAttribution(value.attribution);
+  if (attribution === null) throw new InputError(422, 'invalid_attribution');
   if (Object.keys(fields).length) throw new InputError(422, 'validation_error', fields);
-  return { version: 1, requestId: value.requestId.toLowerCase(), city: value.city as string, items: items.sort((a, b) => `${a.id}:${a.value}`.localeCompare(`${b.id}:${b.value}`)), desiredDate: date as string, delivery: value.delivery as Interest['delivery'], priceConsent: true, ...(context ? { context } : {}) };
+  return { version: 1, requestId: value.requestId.toLowerCase(), city: value.city as string, items: items.sort((a, b) => `${a.id}:${a.value}`.localeCompare(`${b.id}:${b.value}`)), desiredDate: date as string, delivery: value.delivery as Interest['delivery'], priceConsent: true, ...(context ? { context } : {}), ...(attribution ? { attribution } : {}) };
 }
 
 function allowedOrigin(origin: string | null, env: Env): boolean {
@@ -123,6 +125,9 @@ async function save(interest: Interest, request: Request, env: Env, now: number)
     ...(interest.context ? [env.DB.prepare(`INSERT INTO interest_preferences (request_id, occasion, preferred_time, partner_type)
       SELECT ?, ?, ?, ? WHERE EXISTS (SELECT 1 FROM interests WHERE request_id = ? AND payload_hash = ?)
       ON CONFLICT(request_id) DO NOTHING`).bind(interest.requestId, interest.context.occasion, interest.context.preferredTime, interest.context.partnerType, interest.requestId, payloadHash)] : []),
+    ...(interest.attribution ? [env.DB.prepare(`INSERT INTO interest_attribution (request_id, channel, partner_code)
+      SELECT ?, ?, ? WHERE EXISTS (SELECT 1 FROM interests WHERE request_id = ? AND payload_hash = ?)
+      ON CONFLICT(request_id) DO NOTHING`).bind(interest.requestId, interest.attribution.channel, interest.attribution.partnerCode ?? null, interest.requestId, payloadHash)] : []),
     env.DB.prepare('SELECT request_id, payload_hash FROM interests WHERE request_id = ?').bind(interest.requestId),
   ]);
   if (result.some(item => item.success !== true)) throw new Error('storage_failed');
@@ -142,7 +147,9 @@ export default {
         if (result.success !== true) throw new Error('storage_failed');
         const preferences = await env.DB.prepare('SELECT request_id FROM interest_preferences LIMIT 1').all();
         if (preferences.success !== true) throw new Error('storage_failed');
-        return response({ ok: true, storage: 'd1', mode: 'intent', interestContextVersion: INTEREST_CONTEXT_VERSION, apiVersion: INTEREST_API_VERSION, catalogSha256: await digest(serializeCatalog()) }, 200);
+        const attribution = await env.DB.prepare('SELECT request_id FROM interest_attribution LIMIT 1').all();
+        if (attribution.success !== true) throw new Error('storage_failed');
+        return response({ ok: true, storage: 'd1', mode: 'intent', attributionVersion: ATTRIBUTION_VERSION, interestContextVersion: INTEREST_CONTEXT_VERSION, apiVersion: INTEREST_API_VERSION, catalogSha256: await digest(serializeCatalog()) }, 200);
       }
       catch { return response({ ok: false, code: 'storage_unavailable' }, 503); }
     }

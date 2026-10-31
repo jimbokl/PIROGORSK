@@ -1,4 +1,4 @@
-import { INTEREST_CONTEXT_VERSION } from '../src/data/interest-context.ts';
+import { INTEREST_CONTEXT_VERSION, ATTRIBUTION_VERSION } from '../src/data/interest-context.ts';
 import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
@@ -6,7 +6,7 @@ import { INTEREST_API_VERSION, serializeCatalog } from '../src/data/catalog-cont
 import { analyticsConfig } from '../src/config/analytics.ts';
 
 export function releaseManifest() {
-  return { interestContextVersion: INTEREST_CONTEXT_VERSION, apiVersion: INTEREST_API_VERSION, catalogSha256: createHash('sha256').update(serializeCatalog()).digest('hex') };
+  return { attributionVersion: ATTRIBUTION_VERSION, interestContextVersion: INTEREST_CONTEXT_VERSION, apiVersion: INTEREST_API_VERSION, catalogSha256: createHash('sha256').update(serializeCatalog()).digest('hex') };
 }
 
 export function healthUrl(endpoint) {
@@ -20,12 +20,12 @@ export function healthUrl(endpoint) {
 }
 
 export async function verifyRelease(manifest, { endpoint = analyticsConfig.interestEndpoint, fetchImpl = fetch, timeoutMs = 15000, siteUrl } = {}) {
-  if (manifest?.apiVersion !== INTEREST_API_VERSION || manifest?.interestContextVersion !== INTEREST_CONTEXT_VERSION || !/^[a-f0-9]{64}$/.test(manifest?.catalogSha256 ?? '')) throw new Error('Invalid local release manifest');
+  if (manifest?.attributionVersion !== ATTRIBUTION_VERSION || manifest?.apiVersion !== INTEREST_API_VERSION || manifest?.interestContextVersion !== INTEREST_CONTEXT_VERSION || !/^[a-f0-9]{64}$/.test(manifest?.catalogSha256 ?? '')) throw new Error('Invalid local release manifest');
   const signal = AbortSignal.timeout(timeoutMs);
   const response = await fetchImpl(healthUrl(endpoint), { signal, cache: 'no-store' });
   if (response.status !== 200) throw new Error(`Worker health HTTP ${response.status}`);
   const health = await response.json();
-  if (health.ok !== true || health.storage !== 'd1' || health.mode !== 'intent' || health.apiVersion !== manifest.apiVersion || health.catalogSha256 !== manifest.catalogSha256 || health.interestContextVersion !== manifest.interestContextVersion) {
+  if (health.attributionVersion !== manifest.attributionVersion || health.ok !== true || health.storage !== 'd1' || health.mode !== 'intent' || health.apiVersion !== manifest.apiVersion || health.catalogSha256 !== manifest.catalogSha256 || health.interestContextVersion !== manifest.interestContextVersion) {
     throw new Error('Worker API/catalog differs from the Pages artifact or D1 is unavailable');
   }
   if (siteUrl) {
@@ -34,7 +34,7 @@ export async function verifyRelease(manifest, { endpoint = analyticsConfig.inter
     const published = await fetchImpl(url, { signal, cache: 'no-store' });
     if (published.status !== 200) throw new Error(`Published manifest HTTP ${published.status}`);
     const actual = await published.json();
-    if (actual.apiVersion !== manifest.apiVersion || actual.catalogSha256 !== manifest.catalogSha256 || actual.interestContextVersion !== manifest.interestContextVersion) throw new Error('Published Pages manifest differs from the artifact');
+    if (actual.attributionVersion !== manifest.attributionVersion || actual.apiVersion !== manifest.apiVersion || actual.catalogSha256 !== manifest.catalogSha256 || actual.interestContextVersion !== manifest.interestContextVersion) throw new Error('Published Pages manifest differs from the artifact');
   }
   return health;
 }

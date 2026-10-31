@@ -1,0 +1,32 @@
+{
+  "capturedAt": "2026-10-31",
+  "source": "Google Search Console, authenticated read-only UI",
+  "performance": {
+    "searchType": "Web",
+    "selectedRange": "3 months",
+    "visibleDates": "2026-10-22/2026-10-29",
+    "clicks": 0,
+    "impressions": 25,
+    "ctrPercent": 0,
+    "averagePosition": 10.8,
+    "updated": "4 hours ago",
+    "comparison": "Same earlier slice; no observed growth claim"
+  },
+  "indexing": {
+    "reportDate": "2026-10-23",
+    "indexed": 22,
+    "notIndexed": 6,
+    "reasons": {
+      "noindex": 2,
+      "alternateCanonical": 1,
+      "crawledNotIndexed": 3
+    }
+  },
+  "productValidation": {
+    "reportDate": "2026-10-30",
+    "invalid": 4,
+    "valid": 0,
+    "status": "Started; result pending"
+  },
+  "interpretation": "254 published HTML do not mean 254 indexed pages. No indexing request or settings mutation in this readback."
+}

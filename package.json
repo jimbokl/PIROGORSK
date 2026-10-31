@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "check": "astro check && tsc --noEmit",
     "audit:performance": "node scripts/audit-performance.mjs",
-    "test": "node --test scripts/interest-entry.test.mjs scripts/selection-tools.test.mjs scripts/selection-offers.test.mjs scripts/catalog-fillings.test.mjs scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs scripts/release.test.mjs scripts/supplier-catalog.test.mjs scripts/product-pages.test.mjs scripts/pirogi39-catalog.test.mjs scripts/product-portions.test.mjs",
+    "test": "node --test scripts/entry-attribution.test.mjs scripts/interest-report.test.mjs scripts/interest-entry.test.mjs scripts/selection-tools.test.mjs scripts/selection-offers.test.mjs scripts/catalog-fillings.test.mjs scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs scripts/release.test.mjs scripts/supplier-catalog.test.mjs scripts/product-pages.test.mjs scripts/pirogi39-catalog.test.mjs scripts/product-portions.test.mjs",
     "test:worker": "node worker/scripts/verify.mjs",
     "test:browser": "node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs && node worker/scripts/qa-ux-polish.mjs && node worker/scripts/qa-occasion-context.mjs"
   },
