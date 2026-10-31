@@ -2,6 +2,7 @@ import { parseInterestContext, partnerTypes, type InterestContext } from '../dat
 import { analyticsConfig } from '../config/analytics';
 import { trackGoal, type GoalParams } from './analytics';
 import { estimateDelivery } from '../data/pricing';
+import { occasionMemory } from './occasion';
 
 export type InterestSelection = { id: string; value?: string | number; weight?: number; quantity: number };
 type Item = { id: string; value: string; quantity: number };
@@ -109,6 +110,17 @@ export function openInterestForm(selection: InterestSelection[], city = 'Зел�
     if (preferences) preferences.open = true;
   }
   partnerPrefilled = true;
+  const occasion = occasionMemory.current();
+  if (occasion) {
+    field<HTMLSelectElement>('occasion')!.value = occasion.value;
+    const preferences = form.querySelector<HTMLDetailsElement>('[data-interest-preferences]');
+    if (preferences) preferences.open = true;
+    const note = form.querySelector<HTMLElement>('[data-interest-occasion-note]');
+    if (note) {
+      note.textContent = occasion.source === 'entry' ? 'Повод подставлен по тематической странице. Его можно изменить.' : 'Сохранили ваш выбор повода в этой вкладке. Его можно изменить.';
+      note.hidden = false;
+    }
+  }
   const day = field<HTMLInputElement>('desiredDate');
   if (day) day.min = today();
   const list = dialog.querySelector('[data-interest-items]');
@@ -176,7 +188,7 @@ async function submit(event: SubmitEvent): Promise<void> {
     const response = await fetch(endpoint.href, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload), credentials: 'omit', cache: 'no-store', signal: controller.signal });
     const result: { ok?: boolean; saved?: boolean; requestId?: string; code?: string; fields?: Record<string, string> } = await response.json();
     if (!response.ok || result.ok !== true || result.saved !== true || result.requestId !== payload.requestId) {
-      if (response.status === 422 && result.fields) showErrors(Object.fromEntries(Object.entries(result.fields).filter(([key]) => ['items', 'city', 'desiredDate', 'delivery', 'priceConsent'].includes(key))));
+      if (response.status === 422 && result.fields) showErrors(Object.fromEntries(Object.entries(result.fields).filter(([key]) => ['items', 'city', 'desiredDate', 'delivery', 'priceConsent', 'context'].includes(key))));
       if (response.status === 429) throw new Error('rate_limited');
       throw new Error('unconfirmed');
     }
@@ -209,6 +221,11 @@ function start(event: Event): void {
   updateEstimate();
   const target = event.target;
   if (target instanceof HTMLInputElement || target instanceof HTMLSelectElement) {
+    if (target.name === 'occasion') {
+      occasionMemory.choose(target.value);
+      const note = form?.querySelector<HTMLElement>('[data-interest-occasion-note]');
+      if (note) { note.textContent = 'Сохранили ваш выбор повода в этой вкладке. Его можно изменить.'; note.hidden = false; }
+    }
     target.removeAttribute('aria-invalid');
     form?.querySelectorAll<HTMLElement>('[data-error]').forEach(error => { if (error.dataset.error === target.name) error.textContent = ''; });
   }

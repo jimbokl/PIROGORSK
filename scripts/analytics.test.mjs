@@ -54,6 +54,7 @@ test('content micro-goals keep the saved-request gate and only measure marked ed
   const context = {
     exports: {}, URL, Element: TestElement,
     require(name) {
+      if (name === './occasion') return { occasionMemory: { current: () => undefined } };
       if (name === '../data/interest-context') return interestContext;
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
@@ -95,6 +96,7 @@ test('real analytics initializer queues one explicit pageview and no goal', () =
   const context = {
     exports: {}, URL,
     require(name) {
+      if (name === './occasion') return { occasionMemory: { current: () => undefined } };
       if (name === '../data/interest-context') return interestContext;
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
@@ -129,6 +131,7 @@ test('local previews and QA tabs never load Metrica or send goals', () => {
     const context = {
       exports: {}, URL, location: { href },
       require(name) {
+      if (name === './occasion') return { occasionMemory: { current: () => undefined } };
       if (name === '../data/interest-context') return interestContext;
         if (name === '../config/analytics') return { analyticsConfig };
         if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
@@ -170,6 +173,7 @@ test('selection/filter goals send only closed parameters and never raw search te
   const context = {
     exports: {}, URL, location: { href: 'https://pirogorsk.ru/menu/?q=private' },
     require(name) {
+      if (name === './occasion') return { occasionMemory: { current: () => undefined } };
       if (name === '../data/interest-context') return interestContext;
       if (name === '../config/analytics') return { analyticsConfig };
       if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
@@ -204,5 +208,34 @@ test('selection/filter goals send only closed parameters and never raw search te
     { city: 'Калининград', surface: 'home' },
     {},
   ]);
+  assert.ok(!JSON.stringify(calls).includes('private'));
+});
+
+test('scenario context reaches composition goals and confirmed saves without leaking entry text', () => {
+  const calls = [];
+  const context = {
+    exports: {}, URL, location: { href: 'https://pirogorsk.ru/menu/?private=secret' },
+    require(name) {
+      if (name === './occasion') return { occasionMemory: { current: () => ({ value: 'picnic', source: 'entry' }) } };
+      if (name === '../data/interest-context') return interestContext;
+      if (name === '../config/analytics') return { analyticsConfig };
+      if (name === '../lib/analytics-pageview') return { analyticsPageUrl };
+      if (name === '../lib/analytics-session') return { analyticsSessionEnabled };
+      if (name === '../lib/seo-navigation') return { guideTransition };
+      throw new Error(`Unexpected import: ${name}`);
+    },
+    sessionStorage: { getItem() {}, setItem() {} },
+    window: { ym: (...args) => calls.push(args) },
+    document: { addEventListener() {}, querySelector: () => true },
+  };
+  runInNewContext(source, context);
+  const track = context.exports.trackGoal;
+  track('catalog_add', { productid: 'meat', qty: 1, entry: 'private' });
+  track('catalog_remove', { productid: 'meat', qty: 1 });
+  track('order_submit', { occasion: 'gift' });
+  track('order_submit', { occasion: 'gift', requestId: '10000000-0000-4000-8000-000000000001' });
+  track('order_submit', { occasion: 'gift', requestId: '10000000-0000-4000-8000-000000000001' });
+  assert.deepEqual(calls.map(call => call[2]), ['catalog_add', 'catalog_remove', 'order_submit']);
+  assert.deepEqual(calls.map(call => call[3].occasion), ['picnic', 'picnic', 'gift']);
   assert.ok(!JSON.stringify(calls).includes('private'));
 });

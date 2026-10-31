@@ -11,7 +11,7 @@ import worker from '../dist/worker.js';
 // This fixture uses the actual form, CSS and client scripts, and the deployable Worker bundle.
 // Metrica is intercepted locally. No production service receives a test event or application.
 const read = path => readFile(new URL(path, import.meta.url), 'utf8');
-const [builtPage, styles, globalStyles, tokens, analytics, analyticsPageview, analyticsSession, seoNavigation, seoMatrix, interest, migration, pricing, contextSource, preferenceMigration] = await Promise.all([
+const [builtPage, styles, globalStyles, tokens, analytics, analyticsPageview, analyticsSession, seoNavigation, seoMatrix, interest, migration, pricing, contextSource, preferenceMigration, entrySource, occasionSource] = await Promise.all([
   read('../../site/index.html'), read('../../src/styles/interest.css'),
   read('../../src/styles/global.css'), read('../../src/styles/tokens.css'), read('../../src/scripts/analytics.ts'),
   read('../../src/lib/analytics-pageview.ts'), read('../../src/lib/analytics-session.ts'),
@@ -19,6 +19,7 @@ const [builtPage, styles, globalStyles, tokens, analytics, analyticsPageview, an
   read('../../src/scripts/interest.ts'), read('../migrations/0001_interests.sql'),
   read('../../src/data/pricing.ts'),
   read('../../src/data/interest-context.ts'), read('../migrations/0002_interest_preferences.sql'),
+  read('../../src/lib/interest-entry.ts'), read('../../src/scripts/occasion.ts'),
 ]);
 // Analytics requires a production origin; every request to this origin is served locally below.
 const fixtureOrigin = 'https://pirogorsk.ru';
@@ -27,7 +28,7 @@ const analyticsScript = [
   plainJavaScript(analyticsSession),
   `const matrix = ${JSON.stringify(JSON.parse(seoMatrix))};`,
   plainJavaScript(seoNavigation, ['../data/seo-matrix.json']),
-  plainJavaScript(analytics, ['../config/analytics', '../lib/analytics-pageview', '../lib/analytics-session', '../lib/seo-navigation', '../data/interest-context']),
+  plainJavaScript(analytics, ['../config/analytics', '../lib/analytics-pageview', '../lib/analytics-session', '../lib/seo-navigation', '../data/interest-context', './occasion']),
 ].join('\n');
 const sqlite = new DatabaseSync(':memory:');
 sqlite.exec(migration);
@@ -62,7 +63,7 @@ const server = createServer(async (req, res) => {
     }
     const disabled = url.searchParams.has('disabled');
     const endpoint = disabled ? '' : `${fixtureOrigin}/api/interest`;
-    const script = `const analyticsConfig = ${JSON.stringify({ metricaId: 42, interestEndpoint: endpoint, privacyVersion: '2026-10-23' })};\n${plainJavaScript(contextSource)}\nconst trackGoal = (() => {\n${analyticsScript}\nreturn trackGoal;\n})();\n${plainJavaScript(pricing)}\n${plainJavaScript(interest, ['../config/analytics', './analytics', '../data/pricing', '../data/interest-context'])}\nwindow.fixtureSaved = []; document.addEventListener('pirogorsk:order-saved', e => window.fixtureSaved.push(e.detail));\ndocument.querySelector('#fixture-open').addEventListener('click', () => document.dispatchEvent(new CustomEvent('pirogorsk:order-open', {detail:{items:[{id:'meat',value:'500',quantity:2},{id:'tea',value:'250',quantity:1}],city:'Калининград'}})));`;
+    const script = `const analyticsConfig = ${JSON.stringify({ metricaId: 42, interestEndpoint: endpoint, privacyVersion: '2026-10-23' })};\n${plainJavaScript(contextSource)}\n${plainJavaScript(entrySource, ['../data/interest-context'])}\n${plainJavaScript(occasionSource, ['../lib/interest-entry'])}\nconst trackGoal = (() => {\n${analyticsScript}\nreturn trackGoal;\n})();\n${plainJavaScript(pricing)}\n${plainJavaScript(interest, ['../config/analytics', './analytics', '../data/pricing', '../data/interest-context', './occasion'])}\nwindow.fixtureSaved = []; document.addEventListener('pirogorsk:order-saved', e => window.fixtureSaved.push(e.detail));\ndocument.querySelector('#fixture-open').addEventListener('click', () => document.dispatchEvent(new CustomEvent('pirogorsk:order-open', {detail:{items:[{id:'meat',value:'500',quantity:2},{id:'tea',value:'250',quantity:1}],city:'Калининград'}})));`;
     const markup = formMarkup;
     res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end(`<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>${tokens}\n${globalStyles.replace(/@import[^;]+;/g, '')}\n${styles}</style></head><body><button id="fixture-open">Открыть заявку</button>${markup}<script id="catalog-data" type="application/json">${JSON.stringify(catalog)}</script><script type="module">${script}</script></body></html>`);

@@ -3,6 +3,7 @@ import { analyticsConfig } from '../config/analytics';
 import { analyticsPageUrl } from '../lib/analytics-pageview';
 import { analyticsSessionEnabled } from '../lib/analytics-session';
 import { guideTransition } from '../lib/seo-navigation';
+import { occasionMemory } from './occasion';
 
 export type Goal = 'product_view' | 'catalog_remove' | 'city_select' | 'selection_open' | 'catalog_filter_apply' | 'catalog_add' | 'order_form_open' | 'order_form_start' | 'order_submit' | 'order_submit_error' | 'calculator_interact' | 'calc_apply_set' | 'guide_to_catalog_click';
 export type GoalParams = {
@@ -39,7 +40,8 @@ const analyticsEnabled = analyticsSessionEnabled(location.href, {
 export function trackGoal(goal: Goal, params: GoalParams = {}): void {
   if (!analyticsEnabled || !goals.has(goal) || !Number.isSafeInteger(analyticsConfig.metricaId) || analyticsConfig.metricaId <= 0) return;
   const safe: GoalParams = {};
-  if (occasions.some(([key]) => key === params.occasion)) safe.occasion = params.occasion;
+  const occasion = params.occasion ?? occasionMemory.current()?.value;
+  if (occasions.some(([key]) => key === occasion)) safe.occasion = occasion;
   if (preferredTimes.some(([key]) => key === params.preferred_time)) safe.preferred_time = params.preferred_time;
   if (partnerTypes.some(([key]) => key === params.partner_type)) safe.partner_type = params.partner_type;
   if (params.source && ['card', 'bundle', 'addon', 'planner', 'favorite', 'share', 'selection'].includes(params.source)) safe.source = params.source;
