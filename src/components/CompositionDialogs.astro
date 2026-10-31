@@ -8,6 +8,8 @@ import Icon from './Icon.astro';
   <form data-bundle-form>
     <div data-bundle-rows></div>
     <button type="button" class="composition-text-button" data-bundle-row-add>+ Ещё пирог</button>
+    <p class="selection-weight" data-bundle-summary aria-live="polite" aria-atomic="true"></p>
+    <p class="order-selection-note">Ориентир — 250 г пирога на порцию. Напитки и посуда добавляются в подборке.</p>
     <div class="selection-total"><span>Товары</span><strong data-bundle-total></strong></div>
     <p class="order-selection-note">Сумма позиций без скидки. Доставка отдельно, один раз за всю подборку.</p>
     <p class="selection-tool-status" data-bundle-status role="status" aria-live="polite"></p>
@@ -20,6 +22,7 @@ import Icon from './Icon.astro';
   <p class="composition-intro" data-preview-note></p>
   <p class="selection-tool-status" data-preview-unavailable></p>
   <ul class="composition-preview-items" data-preview-items></ul>
+  <p class="selection-weight" data-preview-summary></p>
   <div class="selection-total"><span>Товары</span><strong data-preview-total></strong></div>
   <p class="order-selection-note" data-preview-delivery></p>
   <p class="selection-tool-status" data-preview-status role="status" aria-live="polite"></p>

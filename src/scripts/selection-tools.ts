@@ -4,6 +4,7 @@ import { estimateDelivery } from '../data/pricing';
 import { mergeSelection, selectionPrice, type SelectionItem } from '../lib/selection-offers';
 import { compositionLink, readComposition, readCompositionLink, guestAdditions, type Composition } from '../lib/selection-tools';
 import { parsePlan } from '../lib/pie-planner';
+import { compositionSummary } from '../lib/composition-summary';
 
 type Source = 'bundle' | 'addon' | 'favorite' | 'share';
 type Tools = {
@@ -132,6 +133,7 @@ export function initSelectionTools(api: Tools) {
       row.append(text, price); list.append(row);
     }
     $('[data-preview-total]').textContent = money(selectionPrice(preview.items, api.products));
+    $('[data-preview-summary]').textContent = compositionSummary(preview.items, api.products)!.text;
     $('[data-preview-delivery]').textContent = `Доставка в ${preview.city}: ориентир ${money(estimateDelivery(preview.city, 'delivery')!)} один раз за итоговую подборку.`;
     document.querySelectorAll<HTMLButtonElement>('[data-preview-apply]').forEach(button => { button.disabled = !preview!.items.length; });
     api.openDialog('composition-preview');
@@ -148,6 +150,7 @@ export function initSelectionTools(api: Tools) {
   function updateBundleTotal() {
     const merged = mergeSelection([], draft, api.products);
     $('[data-bundle-total]').textContent = merged ? money(selectionPrice(merged, api.products)) : 'Проверьте состав';
+    $('[data-bundle-summary]').textContent = merged ? compositionSummary(merged, api.products)!.text : '';
     $('[data-bundle-status]').textContent = merged ? '' : 'В одном варианте может быть до 99 штук. Уменьшите количество.';
   }
   function renderDraft(focus?: { index: number; field: string }) {

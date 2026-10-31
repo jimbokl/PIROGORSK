@@ -8,6 +8,7 @@ import { bundles, addOnGroups } from '../data/bundles';
 import { mergeSelection, availableAddOns, readSavedSelection } from '../lib/selection-offers';
 import { initSelectionTools } from './selection-tools';
 import { compositionLink } from '../lib/selection-tools';
+import { compositionSummary } from '../lib/composition-summary';
 
 type Selection = { id: string; value: number; quantity: number };
 const products: Product[] = JSON.parse(document.querySelector('#catalog-data')?.textContent || '[]');
@@ -17,7 +18,6 @@ try {
   selection.push(...readSavedSelection(saved, products));
 } catch { /* A fresh selection is available when storage is unavailable or invalid. */ }
 const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
-const weightLabel = (weight: number) => weight < 1000 ? `${weight} г` : `${(weight / 1000).toLocaleString('ru-RU')} кг`;
 const variantLabel = (product: Product, value: number) => product.variants.find(variant => variant.value === value)?.label || '';
 const productFor = (item: Selection) => products.find(product => product.id === item.id)!;
 const all = <T extends HTMLElement = HTMLElement>(selector: string) => [...document.querySelectorAll<T>(selector)];
@@ -185,14 +185,11 @@ function renderSelection() {
     itemContainer.append(element);
   }
   const total = selection.reduce((sum, item) => sum + products.find(product => product.id === item.id)!.prices[item.value] * item.quantity, 0);
-  const totalWeight = selection.reduce((sum, item) => sum + (productFor(item).unit === 'g' ? item.value * item.quantity : 0), 0);
-  const drinks = selection.reduce((sum, item) => sum + (productFor(item).kind === 'drink' ? item.value * item.quantity : 0), 0);
-  const accessories = selection.reduce((sum, item) => sum + (productFor(item).kind === 'accessory' ? item.quantity : 0), 0);
   document.querySelector('[data-total]')!.textContent = money(total);
   const delivery = estimateDelivery(city, 'delivery')!;
   document.querySelector('[data-selection-delivery]')!.textContent = money(delivery);
   document.querySelector('[data-selection-grand-total]')!.textContent = money(total + delivery);
-  document.querySelector('[data-total-weight]')!.textContent = [totalWeight ? `Пироги и выпечка — ${weightLabel(totalWeight)}` : '', drinks ? `Напитки — ${(drinks / 1000).toLocaleString('ru-RU')} л` : '', accessories ? `Посуда — ${accessories} наб.` : ''].filter(Boolean).join(' · ');
+  document.querySelector('[data-total-weight]')!.textContent = compositionSummary(selection, products)!.text;
   if (focusedAction) {
     const rows = [...itemContainer.children] as HTMLElement[];
     const next = rows.find(row => row.dataset.item === focusedId) || rows[Math.min(focusedIndex, rows.length - 1)];
@@ -248,7 +245,10 @@ all('[data-home-catalog] [data-product]').forEach(card => {
     if (decrease) decrease.disabled = count === 1;
     if (increase) increase.disabled = count === 99;
     const value = Number(card.querySelector<HTMLInputElement>('input:checked')!.value);
-    card.querySelector('[data-price]')!.textContent = money(product.prices[value] * count);
+    const prefix = card.dataset.pricePrefix ?? '';
+    card.querySelector('[data-price]')!.textContent = `${prefix}${money(product.prices[value] * count)}`;
+    const priceNote = card.querySelector('[data-feed-price-note]');
+    if (priceNote) priceNote.textContent = count > 1 ? `${prefix}${money(product.prices[value])} / шт. · предварительно` : 'Предварительно';
     const portions = card.querySelector<HTMLElement>('[data-pie-portions]');
     if (portions) portions.textContent = portionSummary(value, count);
   };

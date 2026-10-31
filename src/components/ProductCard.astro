@@ -1,4 +1,5 @@
 ---
+import VariantLabel from './VariantLabel.astro';
 import { productFillings } from '../lib/catalog-fillings';
 import Icon from './Icon.astro';
 import ProductVisual from './ProductVisual.astro';
@@ -13,18 +14,19 @@ interface Props { product: Product; feed?: boolean; priority?: boolean }
 const { product, feed = false, priority = false } = Astro.props;
 const feedSizes = '(max-width: 600px) max(114px, calc(34vw - 12px)), (max-width: 1000px) 176px, (max-width: 1099px) 220px, (max-width: 1279px) 235px, 230px';
 const selectedVariant = product.variants.find(({ value }) => value === product.defaultVariant) ?? product.variants[0]!;
+const pricePrefix = product.supplier?.priceFrom ? 'от ' : '';
 const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Объём' : 'Комплект';
 ---
-{feed ? <article class="menu-feed-item home-feed-card" data-product={product.id} data-fillings={productFillings(product).join(" ")} data-catalog-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(" ")} data-category={product.category} aria-labelledby={`product-${product.id}`}>
+{feed ? <article class="menu-feed-item home-feed-card" data-product={product.id} data-price-prefix={pricePrefix || undefined} data-fillings={productFillings(product).join(" ")} data-catalog-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(" ")} data-category={product.category} aria-labelledby={`product-${product.id}`}>
   <a class="menu-feed-art" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative sizes={feedSizes} /> : <ProductVisual product={product} decorative sizes={feedSizes} priority={priority} />}</a>
   <h4 id={`product-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h4>
   <p class="menu-feed-description">{product.description}<PiePortions {product} /></p>
   <fieldset class="menu-feed-variants">
     <legend class="sr-only">{measure}: {product.name.toLowerCase()}</legend>
-    {product.variants.map(variant => <label><input type="radio" name={`weight-${product.id}`} value={variant.value} data-variant={variant.value} checked={variant.value === selectedVariant.value} /><span>{variant.label}</span></label>)}
+    {product.variants.map(variant => <label><input type="radio" name={`weight-${product.id}`} value={variant.value} data-variant={variant.value} checked={variant.value === selectedVariant.value} /><VariantLabel label={variant.label} price={variant.price} from={product.supplier?.priceFrom} /></label>)}
   </fieldset>
-  <div class="menu-feed-bottom"><MenuQuantity name={product.name} /><div class="menu-feed-purchase"><div><strong data-price aria-live="polite">{selectedVariant.price.toLocaleString('ru-RU')} ₽</strong><small>Предварительно</small></div><button type="button" class="menu-feed-add" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span></button></div></div>
-</article> : <article class:list={['product-card', 'catalog-card', `catalog-card--${product.kind}`]} data-product={product.id} data-fillings={productFillings(product).join(" ")} data-catalog-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(" ")} data-category={product.category} data-kind={product.kind} data-unit={product.unit} aria-labelledby={`product-${product.id}`}>
+  <div class="menu-feed-bottom"><MenuQuantity name={product.name} /><div class="menu-feed-purchase"><div><strong data-price aria-live="polite">{pricePrefix}{selectedVariant.price.toLocaleString('ru-RU')} ₽</strong><small data-feed-price-note>Предварительно</small></div><button type="button" class="menu-feed-add" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span></button></div></div>
+</article> : <article class:list={['product-card', 'catalog-card', `catalog-card--${product.kind}`]} data-product={product.id} data-price-prefix={pricePrefix || undefined} data-fillings={productFillings(product).join(" ")} data-catalog-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(" ")} data-category={product.category} data-kind={product.kind} data-unit={product.unit} aria-labelledby={`product-${product.id}`}>
   <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}>{product.supplier ? <SupplierArtwork id={product.id} decorative /> : <ProductVisual product={product} decorative />}</a>
   <div class="product-copy">
     <h3 id={`product-${product.id}`}><a class="product-title-link" href={catalogProductHref(product)}>{product.name}</a></h3>
@@ -34,12 +36,12 @@ const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Об�
     <legend class="sr-only">{measure}: {product.name.toLowerCase()}</legend>
     {product.variants.map((variant) => <label>
       <input type="radio" name={`weight-${product.id}`} value={variant.value} data-variant={variant.value} checked={variant.value === selectedVariant.value} />
-      <span>{variant.label}</span>
+      <VariantLabel label={variant.label} price={variant.price} from={product.supplier?.priceFrom} />
     </label>)}
   </fieldset>
   <div class="product-bottom">
     <div class="product-price-wrap">
-      <span class="product-price" data-price aria-live="polite">{selectedVariant.price.toLocaleString('ru-RU')} ₽</span>
+      <span class="product-price" data-price aria-live="polite">{pricePrefix}{selectedVariant.price.toLocaleString('ru-RU')} ₽</span>
       <small class="product-price-note">Предварительно</small>
     </div>
     <button type="button" class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button>

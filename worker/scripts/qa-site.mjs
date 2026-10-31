@@ -16,6 +16,7 @@ import { verifyMenuQuantity } from './qa-menu-quantity.mjs';
 import { verifyDominos } from './qa-dominos.mjs';
 import { verifySelectionTools } from './qa-selection-tools.mjs';
 import { verifyStorefrontSync } from './qa-storefront-sync.mjs';
+import { verifyCatalogFormats } from './qa-catalog-formats.mjs';
 
 // Actual Astro output and production origins; every request is intercepted.
 // Only the local in-memory database receives applications and Metrica is a queue.
@@ -364,6 +365,7 @@ try {
     assert.equal(freshRow.delivery, 'pickup');
     await page.goto(`${origin}/?qa=1`, { waitUntil: 'networkidle0' });
     await page.evaluate(() => { localStorage.removeItem('pirogorsk-city'); localStorage.removeItem('pirogorsk-selection'); });
+    await verifyCatalogFormats(page, origin, width, fileURLToPath(new URL('../dist/qa-formats/', import.meta.url)));
     await verifyOffers(page, origin, width, fileURLToPath(new URL('../dist/qa-offers/', import.meta.url)));
     await verifyProductAddOns(page, origin, width, fileURLToPath(new URL('../dist/qa-product-addons/', import.meta.url)));
     await verifyMenuQuantity(page, origin, width, fileURLToPath(new URL('../dist/qa-menu-quantity/', import.meta.url)));

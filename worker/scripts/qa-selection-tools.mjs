@@ -31,6 +31,7 @@ export async function verifySelectionTools(page, origin, width, output) {
   await page.select('[data-bundle-row="0"] [data-bundle-field="value"]', '1000');
   await field('[data-bundle-row="0"] [data-bundle-field="quantity"]', 2);
   assert.equal(await amount('[data-bundle-total]'), 3570);
+  assert.match(await page.$eval('[data-bundle-summary]', el => el.textContent), /10 порций.*2,5 кг/);
   await click('[data-bundle-row-add]');
   assert.equal(await page.$$eval('[data-bundle-row]', rows => rows.length), 3);
   await click('[data-bundle-row-remove="2"]');
@@ -47,6 +48,7 @@ export async function verifySelectionTools(page, origin, width, output) {
   const edited = [{ id: 'fish', value: 1000, quantity: 2 }, { id: 'cheese', value: 500, quantity: 1 }];
   assert.deepEqual(await selection(), edited);
   assert.equal(await amount('[data-total]'), 3570);
+  assert.match(await page.$eval('[data-total-weight]', el => el.textContent), /10 порций.*2,5 кг/);
   await click('[data-favorite-save]');
   assert.deepEqual(await page.evaluate(() => JSON.parse(localStorage.getItem('pirogorsk-favorite')).items), edited);
   await click('[data-item="fish-1000"] [data-increase]');
@@ -58,6 +60,7 @@ export async function verifySelectionTools(page, origin, width, output) {
   assert.equal(await page.$eval('#composition-preview', el => el.open), true);
   assert.equal((await selection())[0].quantity, 3, 'preview does not alter current');
   assert.equal(await amount('[data-preview-total]'), 3570);
+  assert.match(await page.$eval('[data-preview-summary]', el => el.textContent), /10 порций.*2,5 кг/);
   await capture('favorite');
   await page.keyboard.press('Escape');
   assert.equal(await page.$eval('.masthead-selection', el => document.activeElement === el), true, 'nested dialog restores the original trigger');

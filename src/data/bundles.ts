@@ -3,6 +3,8 @@ export const bundles = [
   { id: 'dinner', title: 'Ужин в апартаментах', note: 'Идеи Пирогорска · рецепты в разработке', href: '/nabor/uzhin-v-apartamentah/', items: [{ id: 'meat', value: 500, quantity: 1 }, { id: 'cheese', value: 500, quantity: 1 }] },
   { id: 'company', title: 'На компанию', note: 'Идеи Пирогорска · рецепты в разработке', href: '/nabor/na-kompaniyu/', items: [{ id: 'meat', value: 1000, quantity: 1 }, { id: 'fish', value: 1000, quantity: 1 }, { id: 'cabbage', value: 1000, quantity: 1 }] },
   { id: 'sweet-table', title: 'Сытное и сладкое', note: 'Пироги а-ля Русс · целые пироги', href: '/menu/#pirogi39', items: [{ id: 'p39-10', value: 1200, quantity: 1 }, { id: 'p39-110', value: 1200, quantity: 1 }] },
+  { id: 'office', title: 'Обед в офисе', note: 'Курица и капуста · два сытных вкуса', href: '/?interest=edit-bundle&bundle=office', items: [{ id: 'p39-10', value: 1200, quantity: 1 }, { id: 'p39-99', value: 1200, quantity: 1 }] },
+  { id: 'birthday', title: 'Ко дню рождения', note: 'Два сытных пирога и вишня к чаю', href: '/?interest=edit-bundle&bundle=birthday', items: [{ id: 'p39-10', value: 1200, quantity: 1 }, { id: 'p39-99', value: 1200, quantity: 1 }, { id: 'p39-482', value: 1300, quantity: 1 }] },
 ];
 
 export const addOnGroups = [

@@ -2,6 +2,7 @@
 import { catalog } from '../data/catalog';
 import { bundles } from '../data/bundles';
 import { selectionPrice } from '../lib/selection-offers';
+import { compositionSummary } from '../lib/composition-summary';
 import { catalogProductHref } from '../lib/product-paths';
 import SupplierArtwork from './SupplierArtwork.astro';
 import ProductVisual from './ProductVisual.astro';
@@ -26,12 +27,13 @@ const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
           const variant = product.variants.find(variant => variant.value === item.value)!;
           return <li><a href={catalogProductHref(product)}>{product.name}</a><span>{variant.label.replace('Целый · ', '')}</span></li>;
         })}</ul>
+        <p class="offer-portions" data-offer-summary={bundle.id}>{compositionSummary(bundle.items, catalog)!.text}</p>
         <div class="offer-bottom"><div><strong>{money(selectionPrice(bundle.items, catalog))}</strong><small>сумма позиций · предварительно</small></div><a class="button offer-add" data-bundle={bundle.id} href={`/?interest=bundle&bundle=${bundle.id}#nabory`} aria-label={`В подборку: ${bundle.title}`}>В подборку<Icon name="arrow" /></a></div>
         <a class="offer-edit" data-edit-bundle={bundle.id} href={`/?interest=edit-bundle&bundle=${bundle.id}`} aria-label={`Изменить состав: ${bundle.title}`}>Изменить состав</a>
       </div>
     </article>)}
   </div>
-  <div class="offers-footnote"><span>Доставка один раз за всю подборку, отдельно от цены набора. Заказы пока не принимаем.</span><nav aria-label="Подробнее о выборе пирогов"><a href="/povody/">Подобрать к случаю<Icon name="arrow" /></a><a href="/podbor/">Сколько взять?<Icon name="arrow" /></a></nav></div>
+  <div class="offers-footnote"><span>Ориентир — 250 г пирога на порцию. Морс и посуду можно добавить в подборке. Доставка отдельно, один раз за весь состав. Заказы пока не принимаем.</span><nav aria-label="Подробнее о выборе пирогов"><a href="/povody/">Подобрать к случаю<Icon name="arrow" /></a><a href="/podbor/">Сколько взять?<Icon name="arrow" /></a></nav></div>
 </section>
 <style>
 .home-offers{padding:12px 0 48px}
@@ -43,6 +45,7 @@ const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
 .offer-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:none}
 .offer-art{position:relative;display:flex;align-items:center;justify-content:center;height:180px;padding:8px 16px;background:var(--surface-oat);overflow:hidden}
 .offer-card:nth-child(2) .offer-art{background:var(--surface-sage)}.offer-card:nth-child(3) .offer-art{background:var(--surface-berry)}
+.offer-card:nth-child(4) .offer-art{background:var(--surface-sage)}.offer-card:nth-child(5) .offer-art{background:var(--surface-berry)}
 .offer-art :global(.product-visual-badge),.offer-art :global(.product-backdrop),.offer-art :global(.product-visual-background){display:none}
 .offer-art :global(:is(.product-visual,.product-artwork)){flex:1;min-width:0;width:0;aspect-ratio:1;height:auto;max-height:180px;margin:0!important;overflow:visible;background:transparent}
 .offer-art :global(.product-artwork-subject){inset:0;mask-image:none;mix-blend-mode:normal}
@@ -55,7 +58,8 @@ const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
 .offer-note{font:400 12px/1.6 var(--sans);color:var(--muted);margin:0 0 18px;min-height:28px}
 .offer-body ul{list-style:none;padding:0;margin:0 0 24px;font:400 12px/1.6 var(--sans)}
 .offer-body li{display:flex;justify-content:space-between;gap:10px;margin-bottom:8px}.offer-body li a{text-decoration:none}.offer-body li a:hover{text-decoration:underline;text-underline-offset:3px}.offer-body li span{white-space:nowrap;color:var(--muted)}
-.offer-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto}
+.offer-portions{margin:auto 0 18px;padding-top:8px;font:500 12px/1.6 var(--sans);color:var(--navy);font-variant-numeric:tabular-nums}
+.offer-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .offer-bottom>div{display:flex;flex-direction:column;gap:4px}.offer-bottom strong{font:600 23px/1.2 var(--sans);letter-spacing:-.035em;font-variant-numeric:tabular-nums}.offer-bottom small{font-size:10px;line-height:1.5;color:var(--muted);max-width:120px}
 .offer-add{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:var(--control-height);padding:12px 16px;border-radius:var(--radius-control);background:var(--navy);color:var(--paper);font:500 12px/1.4 var(--sans);text-decoration:none;text-align:center;white-space:nowrap}
 .offer-add:hover{background:var(--action-hover)}.offer-add:focus-visible,.offer-body a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.offer-add :global(.icon){width:15px;height:15px}

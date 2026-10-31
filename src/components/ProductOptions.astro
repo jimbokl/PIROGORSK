@@ -1,4 +1,5 @@
 ---
+import VariantLabel from './VariantLabel.astro';
 import PiePortions from './PiePortions.astro';
 import type { Product } from '../data/catalog';
 import { selectionHref as productSelectionHref } from '../lib/product-paths';
@@ -18,7 +19,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
     <div class="product-options-sizes" style={`--option-count:${product.variants.length}`}>
       {product.variants.map(variant => <label>
         <input type="radio" name={`product-size-${product.id}`} value={variant.value} checked={variant.value === selected.value} data-price={variant.price} data-href={selectionHref(variant.value)} />
-        <span>{variant.label}</span>
+        <VariantLabel label={variant.label} price={variant.price} from={product.supplier?.priceFrom} />
       </label>)}
     </div>
   </fieldset>
@@ -71,7 +72,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
       const prefix = options.dataset.pricePrefix ?? '';
       const total = Number(input.dataset.price) * quantity;
       if (price) price.textContent = `${prefix}${money(total)}`;
-      options.querySelector<HTMLElement>('.product-options-price small')!.textContent = quantity > 1 ? `${money(Number(input.dataset.price))} / шт. · предварительно` : 'Предварительная цена';
+      options.querySelector<HTMLElement>('.product-options-price small')!.textContent = quantity > 1 ? `${prefix}${money(Number(input.dataset.price))} / шт. · предварительно` : 'Предварительная цена';
       const url = new URL(input.dataset.href!, location.href);
       url.searchParams.set('quantity', String(quantity));
       link.href = url.href;
@@ -112,9 +113,9 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
   .product-options-sizes{display:grid;grid-template-columns:repeat(var(--option-count),minmax(0,1fr));gap:8px}
   label{position:relative;min-width:0;cursor:pointer}
   input{position:absolute;opacity:0;width:1px;height:1px}
-  label span{display:flex;align-items:center;justify-content:center;height:100%;min-height:var(--control-height);padding:10px 12px;border:1px solid var(--ed-line);border-radius:var(--radius-control);font-size:13px;line-height:1.4;text-align:center;transition:background .15s,border-color .15s,color .15s}
-  input:checked+span{border-color:var(--action);background:var(--action);color:white;font-weight:600}
-  input:focus-visible+span{outline:2px solid var(--focus);outline-offset:3px}
+  label :global(.variant-summary){align-items:center;justify-content:center;height:100%;min-height:var(--control-height);padding:10px 12px;border:1px solid var(--ed-line);border-radius:var(--radius-control);font-size:13px;line-height:1.4;text-align:center;transition:background .15s,border-color .15s,color .15s}
+  input:checked+:global(.variant-summary){border-color:var(--action);background:var(--action);color:white;font-weight:600}
+  input:focus-visible+:global(.variant-summary){outline:2px solid var(--focus);outline-offset:3px}
   .product-options-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px;margin-top:20px}
   .product-options-price{margin:0;min-width:0}
   strong{display:block;font-family:var(--ed-sans);font-size:32px;line-height:1.15;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.035em;white-space:nowrap}
@@ -139,7 +140,7 @@ const menuHref = product.id.startsWith('p39-') ? `/menu/?group=${product.categor
   .product-delivery p{color:var(--ed-muted)}
   .product-delivery dl{margin:16px 0}.product-delivery dl>div{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid var(--ed-line)}
   .product-delivery dd{margin:0;align-self:center;white-space:nowrap;font-variant-numeric:tabular-nums}.product-delivery small{margin:0;font-size:10px}
-  @media(max-width:760px){.product-options{padding:18px}strong{font-size:30px}.product-options-sizes{gap:6px}label span{padding-inline:8px;font-size:12px}}
+  @media(max-width:760px){.product-options{padding:18px}strong{font-size:30px}.product-options-sizes{gap:6px}label :global(.variant-summary){padding-inline:8px;font-size:12px}}
   @media(max-width:360px){.product-options{padding:14px}.product-options-bottom{gap:14px 8px}strong{font-size:22px}.product-quantity button{width:44px}.product-quantity input{width:20px}}
-  @media(prefers-reduced-motion:reduce){label span{transition:none}}
+  @media(prefers-reduced-motion:reduce){label :global(.variant-summary){transition:none}}
 </style>

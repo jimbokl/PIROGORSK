@@ -5,7 +5,7 @@ import { bundles, addOnGroups } from '../src/data/bundles.ts';
 import { selectionPrice, mergeSelection, availableAddOns, readSavedSelection } from '../src/lib/selection-offers.ts';
 
 test('published sets and add-ons use existing variants and their exact price', () => {
-  assert.deepEqual(bundles.map(bundle => selectionPrice(bundle.items, catalog)), [1280, 3470, 5350]);
+  assert.deepEqual(bundles.map(bundle => selectionPrice(bundle.items, catalog)), [1280, 3470, 5350, 5350, 8630]);
   for (const items of [...bundles.map(bundle => bundle.items), ...addOnGroups.map(group => group.choices)]) {
     assert.ok(mergeSelection([], items, catalog));
     assert.ok(selectionPrice(items, catalog) > 0);

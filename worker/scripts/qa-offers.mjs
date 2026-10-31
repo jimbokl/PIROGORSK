@@ -2,7 +2,8 @@ import assert from 'node:assert/strict';
 import { mkdir } from 'node:fs/promises';
 import { bundles } from '../../src/data/bundles.ts';
 import { catalog } from '../../src/data/catalog.ts';
-import { selectionPrice } from '../../src/lib/selection-offers.ts';
+import { selectionPrice, availableAddOns } from '../../src/lib/selection-offers.ts';
+import { compositionSummary } from '../../src/lib/composition-summary.ts';
 
 export async function verifyOffers(page, origin, width, screenshotDir) {
   await mkdir(screenshotDir, { recursive: true });
@@ -12,14 +13,16 @@ export async function verifyOffers(page, origin, width, screenshotDir) {
   for (const bundle of bundles) {
     await clear();
     await page.goto(`${origin}/?qa=1&offer-check=${visit++}#nabory`, { waitUntil: 'networkidle0' });
-    assert.equal(await page.$$eval('.offer-card', cards => cards.length), 3);
-    assert.equal(await page.$$eval('.offer-art [data-supplier-artwork]', images => images.length), 2);
+    assert.equal(await page.$$eval('.offer-card', cards => cards.length), bundles.length);
+    assert.equal(await page.$$eval('.offer-art [data-supplier-artwork]', images => images.length), 7);
+    assert.equal(await page.$eval(`[data-offer-summary="${bundle.id}"]`, el => el.textContent), compositionSummary(bundle.items, catalog).text);
     await page.click(`[data-bundle="${bundle.id}"]`);
     assert.equal(await page.$eval('#selection-dialog', dialog => dialog.open), true);
     assert.deepEqual(await selection(), bundle.items);
     assert.equal(await page.$eval('[data-total]', el => Number(el.textContent.replace(/\D/g, ''))), selectionPrice(bundle.items, catalog));
     assert.equal(await page.$eval('[data-selection-grand-total]', el => Number(el.textContent.replace(/\D/g, ''))), selectionPrice(bundle.items, catalog) + 500);
-    assert.equal(await page.$eval('[data-upsell-group=sweet]', el => el.hidden), bundle.id === 'sweet-table');
+    assert.equal(await page.$eval('[data-upsell-group=sweet]', el => el.hidden), !availableAddOns(bundle.items, catalog).includes('sweet'));
+    assert.equal(await page.$eval('[data-total-weight]', el => el.textContent), compositionSummary(bundle.items, catalog).text);
     assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true);
     assert.equal(await page.$eval('#selection-dialog', el => el.scrollWidth <= el.clientWidth), true);
   }
@@ -42,6 +45,7 @@ export async function verifyOffers(page, origin, width, screenshotDir) {
   await page.click('[data-upsell-add=tableware]');
   const expected = [...bundles[0].items, { id: 'seabuckthorn', value: 1000, quantity: 1 }, { id: 'cherry', value: 500, quantity: 1 }, { id: 'tableware', value: 1, quantity: 5 }];
   assert.deepEqual(await selection(), expected);
+  assert.match(await page.$eval('[data-total-weight]', el => el.textContent), /6 порций.*1,5 кг.*Напитки — 1 л.*Посуда — 5 наб/);
   assert.equal(await page.$eval('[data-upsells]', el => el.hidden), true);
   assert.equal(await page.$eval('[data-total]', el => Number(el.textContent.replace(/\D/g, ''))), 2395);
   assert.equal(await page.$eval('[data-selection-grand-total]', el => Number(el.textContent.replace(/\D/g, ''))), 2895);
