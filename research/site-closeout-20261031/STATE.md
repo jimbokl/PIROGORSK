@@ -31,5 +31,10 @@ Registry strict PASS, drift=false. CodeGraph: Transport closed; использо
 Worker fb7e4c7d-ef35-44ac-93e1-8634bb40e4b9 опубликован после D1 bookmark и
 0002, health/manifest PASS. До миграции схема содержала две прикладные таблицы,
 история Wrangler не заведена; 0001 повторно не применялась.
-Pages CI и независимая production-приёмка — следующий шаг.
+Pages: runtime `779a5ca41d758561c800808d59671b5100596dc0`,
+[CI 41204627205 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41204627205).
+Все 298 проверенных ресурсов совпали с независимо скачанным CI-артефактом,
+включая 254 HTML, runtime CSS/JS и новые изображения сцены.
+Production motion QA на 320/390/768/1024/1280 PASS; опубликованные Pages и
+Worker совместимы. [Протокол](../../qa/pie-motion-baltic-20261031/README.md).
 QA-02: фактическое чтение экранным диктором ещё не проверено.

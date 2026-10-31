@@ -1,0 +1,194 @@
+{
+  "runtime": "779a5ca41d758561c800808d59671b5100596dc0",
+  "method": "Lighthouse CLI, fresh Chrome profiles, simulated throttling; 3 mobile and 1 desktop; production URL",
+  "samples": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "url": "https://pirogorsk.ru/?qa=1",
+      "timestamp": "2026-10-31T13:41:39.156Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1648.175,
+          "display": "1.6 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2363.175,
+          "display": "2.4 s"
+        },
+        "total-blocking-time": {
+          "value": 62,
+          "display": "60 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0004915726132044047,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 2508.9966410816464,
+          "display": "2.5 s"
+        }
+      },
+      "observed": {
+        "fcp": 1035,
+        "lcp": 1362
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 984.854,
+        "resourceLoadDelay": 48.783,
+        "resourceLoadDuration": 277.07700012207033,
+        "elementRenderDelay": 50.854999877929686
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 2,
+      "url": "https://pirogorsk.ru/?qa=1",
+      "timestamp": "2026-10-31T13:41:55.944Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1644.9595,
+          "display": "1.6 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1881.9595,
+          "display": "1.9 s"
+        },
+        "total-blocking-time": {
+          "value": 10,
+          "display": "10 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.004136734912936933,
+          "display": "0.004"
+        },
+        "speed-index": {
+          "value": 3487.6099125702667,
+          "display": "3.5 s"
+        }
+      },
+      "observed": {
+        "fcp": 1870,
+        "lcp": 2054
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 1789.0739998779297,
+        "resourceLoadDelay": 36.605000122070315,
+        "resourceLoadDuration": 204.548,
+        "elementRenderDelay": 24.262
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 3,
+      "url": "https://pirogorsk.ru/?qa=1",
+      "timestamp": "2026-10-31T13:42:09.190Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1602.9904999999999,
+          "display": "1.6 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2443.9905,
+          "display": "2.4 s"
+        },
+        "total-blocking-time": {
+          "value": 7,
+          "display": "10 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0004869284431364448,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 2852.6234705272755,
+          "display": "2.9 s"
+        }
+      },
+      "observed": {
+        "fcp": 1407,
+        "lcp": 1646
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 1270.2529998779296,
+        "resourceLoadDelay": 95.8190001220703,
+        "resourceLoadDuration": 270.7939998779297,
+        "elementRenderDelay": 8.739000122070312
+      }
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "https://pirogorsk.ru/?qa=1",
+      "timestamp": "2026-10-31T13:42:21.595Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 474.0060000000001,
+          "display": "0.5 s"
+        },
+        "largest-contentful-paint": {
+          "value": 619.0060000000001,
+          "display": "0.6 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0011026149198844234,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 1431.6553600963593,
+          "display": "1.4 s"
+        }
+      },
+      "observed": {
+        "fcp": 1859,
+        "lcp": 2115
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 1783.4090001220702,
+        "resourceLoadDelay": 29.13699987792969,
+        "resourceLoadDuration": 281.3250001220703,
+        "elementRenderDelay": 21.367999877929687
+      }
+    }
+  ]
+}

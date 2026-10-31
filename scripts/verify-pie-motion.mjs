@@ -24,6 +24,9 @@ try {
   page.on('pageerror', error => report.errors.push(error.message));
   await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
   for (const width of [320, 390, 768, 1024, 1280]) {
+    // Retire the previous warm scene before resizing: its responsive image
+    // requests must not be counted as requests from the next initial banner.
+    await page.goto('about:blank');
     await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
     imageRequests.length = 0;
     const response = await page.goto(`${base}/?qa=1`, { waitUntil: 'networkidle0' });
