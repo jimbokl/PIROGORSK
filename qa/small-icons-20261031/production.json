@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-10-31T07:18:13.887Z",
+  "status": "pass",
+  "sourceCommit": "f2ba2a7373c65842c272b86c8e018c79badfab56",
+  "ci": {
+    "status": "success",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/41179213100"
+  },
+  "releaseCompatibility": "PASS (published)",
+  "routes": [
+    "/",
+    "/menu/",
+    "/delivery/",
+    "/zelenogradsk/",
+    "/blog/",
+    "/journal/skolko-piroga-na-cheloveka/",
+    "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/"
+  ],
+  "assets": [
+    {
+      "path": "favicon.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 3301,
+      "sha256": "bbd20a6c7aa899dc93c242877407ae6e3c671862b44289b04f4113fb81585770"
+    },
+    {
+      "path": "favicon.ico",
+      "contentType": "image/vnd.microsoft.icon",
+      "bytes": 3482,
+      "sha256": "fe1f50dbf65d8c55a4fc0ec63f242c361922ca1da693f388c2508bc3b954b69b"
+    },
+    {
+      "path": "favicon-16.png",
+      "contentType": "image/png",
+      "bytes": 505,
+      "sha256": "47f71adabfafbf89aaf7978f12789dc997ee4157de6fa5a10fcc503e1bf9cdbe"
+    },
+    {
+      "path": "favicon-32.png",
+      "contentType": "image/png",
+      "bytes": 1152,
+      "sha256": "88def328034cb39cfac0a21c371179df65af407b416e967286cd56fe34da6a9a"
+    },
+    {
+      "path": "favicon-48.png",
+      "contentType": "image/png",
+      "bytes": 1771,
+      "sha256": "94b0a233b3abb946baabc1f8354f50b2f775f496eede9c1db5cd3ff8b0ddac64"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "contentType": "image/png",
+      "bytes": 7601,
+      "sha256": "c95581f5e10a8ebbf70c613cfa9cf8a23f380120dd098dab480d861852a1e78a"
+    },
+    {
+      "path": "brand/pirogorsk-symbol.svg",
+      "contentType": "image/svg+xml",
+      "bytes": 3301,
+      "sha256": "bbd20a6c7aa899dc93c242877407ae6e3c671862b44289b04f4113fb81585770"
+    },
+    {
+      "path": "brand/pirogorsk-symbol.png",
+      "contentType": "image/png",
+      "bytes": 57531,
+      "sha256": "d3d5be4af7986ddd5074245fa491e363eb02692fcb974d2cf81361e81cc1ae03"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "icons": [
+        {
+          "href": "/favicon.ico?v=20261031-7",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "href": "/favicon-32.png?v=20261031-7",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "href": "/favicon.svg?v=20261031-7",
+          "width": 150,
+          "height": 150
+        },
+        {
+          "href": "/apple-touch-icon.png?v=20261031-7",
+          "width": 180,
+          "height": 180
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "icons": [
+        {
+          "href": "/favicon.ico?v=20261031-7",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "href": "/favicon-32.png?v=20261031-7",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "href": "/favicon.svg?v=20261031-7",
+          "width": 150,
+          "height": 150
+        },
+        {
+          "href": "/apple-touch-icon.png?v=20261031-7",
+          "width": 180,
+          "height": 180
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "icons": [
+        {
+          "href": "/favicon.ico?v=20261031-7",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "href": "/favicon-32.png?v=20261031-7",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "href": "/favicon.svg?v=20261031-7",
+          "width": 150,
+          "height": 150
+        },
+        {
+          "href": "/apple-touch-icon.png?v=20261031-7",
+          "width": 180,
+          "height": 180
+        }
+      ]
+    }
+  ],
+  "exporterRegeneration": "13 brand/icon exports remained byte-identical after running the full v6 exporter"
+}
