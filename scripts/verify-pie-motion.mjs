@@ -5,7 +5,7 @@ import puppeteer from 'puppeteer-core';
 
 const base = process.env.QA_BASE || 'http://127.0.0.1:4321';
 const stage = process.env.QA_BASE ? 'production' : 'local';
-const output = `qa/pie-motion-20261031/${stage}`;
+const output = process.env.PIE_MOTION_QA_DIR || `qa/pie-motion-20261031/${stage}`;
 await mkdir(output, { recursive: true });
 const report = { base, views: [], checks: [], errors: [] };
 let chrome, browser;
@@ -13,9 +13,11 @@ try {
   chrome = await launch({ chromeFlags: ['--headless=new', '--disable-extensions', '--no-first-run'] });
   browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
   const page = await browser.newPage();
+  const imageRequests = [];
   await page.setRequestInterception(true);
   page.on('request', request => {
     const url = new URL(request.url());
+    if (/\/(whole-pie|oak-board|baltic-terrace)\./.test(url.pathname)) imageRequests.push(url.pathname);
     if (request.method() !== 'GET' || (['http:', 'https:'].includes(url.protocol) && url.origin !== new URL(base).origin)) request.abort();
     else request.continue();
   });
@@ -23,8 +25,10 @@ try {
   await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
   for (const width of [320, 390, 768, 1024, 1280]) {
     await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
+    imageRequests.length = 0;
     const response = await page.goto(`${base}/?qa=1`, { waitUntil: 'networkidle0' });
     assert.equal(response.status(), 200);
+    assert.deepEqual(imageRequests, [], `seventh-slide images stay lazy on the first banner ${width}`);
     const slides = [];
     for (const id of ['pies', 'company', 'tea', 'mini', 'seaside', 'bake', 'warm']) {
       await page.click(`[data-tasting-select=${id}]`);
@@ -40,11 +44,11 @@ try {
     await page.evaluate(async () => {
       await document.fonts.ready;
       document.querySelector('[data-pie-motion]').scrollIntoView({ block: 'center', behavior: 'instant' });
-      await Promise.all([...document.querySelectorAll('[data-pie-motion] img')].map(image => image.decode()));
+      await Promise.all([...document.querySelectorAll('[data-tasting-scene=warm] img')].map(image => image.decode()));
     });
     const state = await page.evaluate(() => ({
       overflow: document.documentElement.scrollWidth > innerWidth,
-      images: [...document.querySelectorAll('[data-pie-motion] img')].every(image => image.complete && image.naturalWidth > 0),
+      images: [...document.querySelectorAll('[data-tasting-scene=warm] img')].every(image => image.complete && image.naturalWidth > 0),
       hiddenControl: document.querySelector('[data-pie-replay]').hidden,
       animations: document.querySelector('[data-pie-motion]').getAnimations({ subtree: true }).length,
       height: document.querySelector('[data-tasting-hero]').getBoundingClientRect().height,

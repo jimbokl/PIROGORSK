@@ -1,12 +1,15 @@
 ---
 import { Image } from 'astro:assets';
 import wholePie from '../../design/pie-motion-20261031/whole-pie.png';
+import oakBoard from '../../design/pie-motion-20261031/oak-board.png';
+import balticTerrace from '../../design/pie-motion-20261031/baltic-terrace.png';
 import '../styles/pie-motion.css';
 ---
+<Image class="pie-motion-backdrop" src={balticTerrace} alt="" aria-hidden="true" widths={[480, 768, 1100, 1440, 1920]} sizes="(max-width: 600px) 150vw, 100vw" format="webp" quality={80} loading="lazy" />
+<div class="pie-motion-veil" aria-hidden="true"></div>
 <div class="pie-motion" data-pie-motion>
-  <div class="pie-motion-stage" role="img" aria-label="Золотистый пирог на круглой доске: кисточка смазывает корочку, затем выдвигается кусочек">
-    <div class="pie-motion-orbit" aria-hidden="true"></div>
-    <div class="pie-motion-board" aria-hidden="true"><span>К общему столу</span></div>
+  <div class="pie-motion-stage" role="img" aria-label="Пирог на дубовой доске у Балтийского моря: кисточка смазывает золотистую корочку, затем выдвигается кусочек">
+    <div class="pie-motion-board" aria-hidden="true"><Image src={oakBoard} alt="" widths={[280, 440, 640, 800]} sizes="(max-width: 600px) 260px, (max-width: 1100px) 40vw, 440px" format="webp" loading="lazy" /></div>
     <div class="pie-motion-shadow" data-pie-shadow aria-hidden="true"></div>
     <div class="pie-motion-food" data-pie-food aria-hidden="true">
       <div class="pie-motion-body"><Image src={wholePie} alt="" widths={[280, 440, 640, 800]} sizes="(max-width: 600px) 260px, (max-width: 1100px) 40vw, 440px" format="webp" loading="lazy" /></div>

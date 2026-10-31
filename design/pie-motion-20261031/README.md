@@ -46,3 +46,22 @@ motion остаётся статичная композиция с выдвин�
 Astro Image генерирует WebP/srcset. Движение — Web Animations API,
 без Reanimate в runtime. Reanimate используется как скилл и инструмент
 покадровой проверки. Проверки и снимки: `qa/pie-motion-20261031/`.
+
+## Балтийские фотореалистичные слои — MOT-02
+
+Оба слоя созданы встроенным imagegen, оригиналы сохранены рядом:
+`oak-board.png` (1254×1254, RGBA) и `baltic-terrace.png` (2098×749, RGB).
+Доска отдельная, с настоящей прозрачностью; пирог занимает 86% сцены,
+поэтому видны волокна и край дуба. Фон заполняет всю карточку, поверх него
+адаптивная светлая вуаль и живой HTML-текст. Первые шесть сюжетов сохранены.
+Все три изображения lazy: до открытия седьмого слайда запросов к ним нет.
+
+Промпт доски:
+
+> Use case: product-mockup. Asset type: separate photorealistic transparent image layer for a premium food website animation. One empty ROUND OAK SERVING BOARD photographed EXACTLY straight down at 90 degrees, perfectly circular, centered, diameter 90 percent of a square canvas. Warm honey oak, clearly visible natural wood grain and subtle end-grain pores, a few fine knife marks, elegant thin bevelled rim, realistic material depth. No handle. Soft daylight from upper left, natural warm-neutral color, extremely detailed food editorial photography, not an illustration or plastic 3D render. The board must be EMPTY because a golden pie will be composited onto it later. Genuinely transparent background around the entire round board with clean alpha edges. No table, no food, no objects, no lettering, no engraving, no logos, no watermark, no large external cast shadow. Square composition.
+
+Промпт моря:
+
+> Use case: photorealistic-natural. Asset type: panoramic photographic background layer for a premium Russian pie website hero banner, extra-wide horizontal composition about 2.8:1. A serene real-looking Baltic Sea coast in the Kaliningrad region on a clear mild morning. Muted turquoise and slate-blue water, gentle low waves, pale sandy beach and subtle distant dunes with a few Baltic pines at the far right edge, spacious soft pale sky with natural thin clouds. An EMPTY warm pale weathered oak terrace table occupies the lower 30 percent of the frame, edge extending across the width. The sea is visible behind the table; horizon around upper third. On the RIGHT foreground leave generous clear empty tabletop for a separate round board and pie animation to be layered later. The LEFT half should be luminous and visually calm for dark HTML heading and paragraph. Premium editorial lifestyle photography, natural detailed wood grain, realistic light from upper left, restrained fresh Baltic colors, subtle depth of field, photographic not illustrated or cartoon. Fill the entire image edge to edge. No pie, no board, no food, no plates, no props, no people, no buildings, no railings, no text, no logos, no watermark.
+
+[Проверка балтийской сцены](../../qa/pie-motion-baltic-20261031/README.md).

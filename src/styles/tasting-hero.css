@@ -26,6 +26,6 @@
 
 /* The seventh campaign uses layered original artwork rather than a panorama. */
 .tasting-hero[data-flavor=warm]{background:#fcf6ec;--campaign-paper:#fcf6ec}.tasting-hero[data-flavor=warm] h1{color:var(--navy)}.tasting-hero[data-flavor=warm]::after{display:none}
-@media(max-width:600px){.tasting-hero[data-flavor=warm] .tasting-art{height:270px;bottom:44px;mask-image:none}}
+@media(max-width:600px){.tasting-hero[data-flavor=warm] .tasting-art{inset:0;height:auto;mask-image:none}}
 
 @media(max-width:359px){.tasting-controls button{width:38px}}
