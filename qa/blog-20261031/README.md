@@ -26,7 +26,28 @@ BlogPosting/author/date/citation, 53 записи хаба, редакционн
 источниками и редакционной прозрачностью; сертификации «полного соответствия»
 и гарантий позиций нет. Рецепты не представлены как испытанные редакцией.
 
-Публикация и повторная проверка production: ожидаются после CI.
+## Публикация и независимая проверка
+
+Runtime `cb098eb1cee78da33ea34728afe322320ecfa003`,
+[CI 41177200351 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41177200351).
+`ci.json` сохраняет статус и все этапы. `publication.json`: 552 production-ресурса
+совпадают по SHA-256 с независимо скачанным CI Pages artifact, включая все
+247 HTML, runtime CSS/JS и изображения 30 новых статей; failures=[]. Архив и
+распакованные артефакты остаются локальными, в git не добавлены.
+
+`production/results.json`: 60 phone/tablet views + 320/1280 px и хаб, errors=[].
+`production/` — снимки телефона/планшета; визуально просмотрены обложки,
+ингредиенты и источники. `production-release.log`: Pages/Worker compatibility PASS.
+
+`crawler-probe.json`: 30 новых URL без query, HTTP 200, SSR, canonical, sitemap,
+нет noindex; robots/sitemap доступны. Это HTTP-проба с User-Agent Googlebot,
+а не реальный обход или статус индексации Google. `indexnow/report.json`:
+242 URL приняты api.indexnow.org и yandex.com/indexnow, оба HTTP 200.
+
+`lighthouse-production-summary.json`: один production mobile simulated замер —
+Performance 99, Accessibility/Best Practices/SEO 100, LCP 1,99 с, CLS 0, TBT 0.
+QA-параметр отключает аналитику; это лабораторный замер, не CrUX/полевая метрика.
+Полные Lighthouse JSON и локальный контрольный замер сохранены рядом.
 
 Дополнительная семантика: 108 строк сводки; 46 тематических, 62 исключены
 (бренды/география вне области). Все значения метрик остаются непроверенными.

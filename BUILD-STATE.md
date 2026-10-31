@@ -8,7 +8,15 @@
 Локальные check/build/SEO/41 Node/Worker/full browser/60 article views PASS.
 Дополнительная сводка учтена: география только Калининградская область, 46 тематических строк;
 62 строки с чужой географией/брендами исключены. Три статьи усилены четырьмя
-атрибутированными рецептами; 34 таблицы. Публикация и production QA — следующий шаг.
+атрибутированными рецептами; 34 таблицы.
+Runtime `cb098eb1cee78da33ea34728afe322320ecfa003`,
+[CI 41177200351 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41177200351).
+Production: 552 ресурса совпали с независимым артефактом, включая все 247 HTML;
+60 phone/tablet views + 320/1280 PASS, без JS/HTTP ошибок и overflow. Снимки просмотрены.
+30 URL: robots/canonical/sitemap/indexability PASS; IndexNow два HTTP 200.
+Lighthouse production mobile: 99/100/100/100, LCP 1,99 с, CLS 0 (один lab-замер).
+Индексация Google, позиции и локальная частотность не подтверждены;
+отдельный коммерческий хаб осетинских пирогов остаётся пробелом SEO-карты.
 [Протокол](qa/blog-20261031/README.md), [все 30 URL](research/blog-semantics-20261031/CONTENT-MAP.md).
 
 ## Полировка меню, товаров и хабов — 30–31.10.2026
