@@ -13,6 +13,8 @@ import {Picture} from 'astro:assets';
 import { guides, siteOrigin } from '../../data/editorial';
 import { blogArticles, type BlogArticle } from '../../data/blog-articles';
 import { blogEntries, articleHref } from '../../data/blog';
+import articleUpdates from '../../data/article-updates.json';
+import { monthlyPresentation } from '../../data/monthly-article-presentation';
 import {expansionGuides,type ExpansionArticle} from '../../data/expansion-guides';
 import PartyCalculator from '../../components/PartyCalculator.astro';
 import RestaurantVsPiesTable from '../../components/RestaurantVsPiesTable.astro';
@@ -26,42 +28,46 @@ export function getStaticPaths() {
   return [...guides, ...blogArticles, ...expansionGuides].map(item => ({ params: { slug: item.slug }, props: { item } }));
 }
 interface Props { item: (typeof guides)[number] | BlogArticle | ExpansionArticle }
-const { item } = Astro.props;
+const original = Astro.props.item;
+const update = articleUpdates.find(update => update.ownerURL === articleHref(original.slug));
+const item = update ? { ...original, sections: [...original.sections, ...update.sections], sources: [...('sources' in original ? original.sources ?? [] : []), ...update.sources] } : original;
+const monthly = monthlyPresentation(item.slug);
 const entry = blogEntries.find(entry => entry.slug === item.slug)!;
 const isNew = 'date' in item;
 const sources = 'sources' in item ? item.sources : undefined;
 const hasSources = Boolean(sources?.length);
+const hasOriginalSources = 'sources' in original && Boolean(original.sources?.length);
+const useGenericTools = !hasOriginalSources && !monthly;
 const image = entry.ogImage;
 const city='city' in item ? item.city : cityForArticle(item.slug);
 const isCity='cluster' in item ? item.cluster==='city' : ['Калининград','Зеленоградск','Светлогорск'].includes(entry.category);
 const faq='takeaway' in item ? [{question:item.title,answer:item.takeaway},...guideFaq] : guideFaq;
 const dateLabel = isNew ? new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${item.date}T00:00:00Z`)).replace(/\s*г\.$/, '') : undefined;
-const schema = [{ '@type': 'BlogPosting', '@id': `${siteOrigin}${articleHref(item.slug)}#article`, headline: item.title, description: item.description, inLanguage: 'ru-RU', mainEntityOfPage: `${siteOrigin}${articleHref(item.slug)}`, isPartOf: { '@id': `${siteOrigin}/blog/#blog` }, image: `${siteOrigin}${image}`, ...(isNew ? { datePublished: item.date, dateModified: item.date } : {}), author: { '@type': 'Organization', '@id': `${siteOrigin}/#organization`, name: 'Пирогорск', url: `${siteOrigin}/about/` }, publisher: { '@id': `${siteOrigin}/#organization` } }];
-const graph=[...schema.map(post => ({...post, isAccessibleForFree:true, ...(hasSources ? {citation:sources!.map(source => new URL(source.href,siteOrigin).href)} : {})})),...(!hasSources ? [faqSchema(faq),isCity?placesSchema(city):{'@type':'ItemList',name:'Подборки для общего стола',itemListElement:contextualLinks(city).slice(0,2).map((link,i)=>({'@type':'ListItem',position:i+1,name:link.title,url:`${siteOrigin}${link.href}`}))}] : [])];
+const schema = [{ '@type': 'BlogPosting', '@id': `${siteOrigin}${articleHref(item.slug)}#article`, headline: item.title, description: item.description, inLanguage: 'ru-RU', mainEntityOfPage: `${siteOrigin}${articleHref(item.slug)}`, isPartOf: { '@id': `${siteOrigin}/blog/#blog` }, image: `${siteOrigin}${image}`, ...(isNew ? { datePublished: item.date, dateModified: item.date } : {}), ...(update ? { dateModified: '2026-10-31' } : {}), author: { '@type': 'Organization', '@id': `${siteOrigin}/#organization`, name: monthly ? 'Редакция Пирогорска' : 'Пирогорск', url: `${siteOrigin}/about/#redaktsiya` }, publisher: { '@id': `${siteOrigin}/#organization` } }];
+const graph=[...schema.map(post => ({...post, isAccessibleForFree:true, ...(hasSources ? {citation:sources!.map(source => new URL(source.href,siteOrigin).href)} : {})})),...(useGenericTools ? [faqSchema(faq),isCity?placesSchema(city):{'@type':'ItemList',name:'Подборки для общего стола',itemListElement:contextualLinks(city).slice(0,2).map((link,i)=>({'@type':'ListItem',position:i+1,name:link.title,url:`${siteOrigin}${link.href}`}))}] : [])];
 ---
-<ContentLayout bodyClass="journal-page" title={`${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} schema={graph} {image} imageAlt={entry.imageAlt} type="article">
+<ContentLayout bodyClass="journal-page" title={monthly?.seoTitle ?? `${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} schema={graph} {image} imageAlt={entry.imageAlt} type="article">
   <JournalMasthead />
   <article class:list={['blog-article',{'blog-city-guide':isCity}]}>
-    <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={isCity ? undefined : item.intro} image={isCity ? undefined : entry.image} imageAlt={entry.imageAlt} compact>
-      {!isCity && <p class="blog-byline"><a href="/about/#redaktsiya">{hasSources ? 'Редакция Пирогорска' : 'Пирогорск'}</a>{isNew && <> · <time datetime={item.date}>{dateLabel}</time></>} · ≈ {entry.minutes} мин чтения</p>}
+    <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={isCity ? undefined : item.intro} image={isCity ? undefined : entry.image} imageAlt={entry.imageAlt} caption={monthly?.caption} compact>
+      {!isCity && <p class="blog-byline"><a href="/about/#redaktsiya">{hasSources ? 'Редакция Пирогорска' : 'Пирогорск'}</a>{isNew && <> · Опубликовано <time datetime={item.date}>{dateLabel}</time></>}{(monthly || update) && <> · Обновлено <time datetime="2026-10-31">31 октября 2026</time></>} · ≈ {entry.minutes} мин чтения</p>}
     </EditorialHero>
     {isCity && <>
       <GuideSummary {city} />
-      <div class="blog-guide-context"><div><p class="blog-guide-intro">{item.intro}</p><p class="blog-byline">Пирогорск{isNew && <> · <time datetime={item.date}>{dateLabel}</time></>} · ≈ {entry.minutes} мин чтения</p></div>
+      <div class="blog-guide-context"><div><p class="blog-guide-intro">{item.intro}</p><p class="blog-byline"><a href="/about/#redaktsiya">{update ? 'Редакция Пирогорска' : 'Пирогорск'}</a>{isNew && <> · Опубликовано <time datetime={item.date}>{dateLabel}</time></>}{update && <> · Обновлено <time datetime="2026-10-31">31 октября 2026</time></>} · ≈ {entry.minutes} мин чтения</p></div>
         <figure><Picture src={entry.image} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*entry.image.height/entry.image.width)} quality={58} alt={entry.imageAlt} loading="lazy" decoding="async" /></figure>
       </div>
     </>}
     {isNew && <aside class="blog-takeaway" aria-labelledby="takeaway-title"><h2 id="takeaway-title">Если коротко</h2><p>{item.takeaway}</p></aside>}
     <nav class="blog-toc" aria-label="Содержание статьи">{item.sections.map((section, index) => <a href={`#section-${index}`}>{section.title}</a>)}{hasSources && <a href="#sources">Источники и расчёты</a>}</nav>
     <EditorialNextStep path={articleHref(item.slug)} />
-    <EditorialBody sections={item.sections} />
+    <EditorialBody sections={item.sections} figures={monthly?.figures} />
     {'feature' in item && item.feature==='ratio' && <FillingRatioBar />}
     {isCity && <><RestaurantVsPiesTable {city} /><CostComparisonWidget {city} /><PlaceMap {city} /></>}
     {sources && <ArticleSources {sources} />}
-    {!hasSources && <><PartyCalculator {city} /><GuideFaq {faq} /></>}
+    {useGenericTools && <><PartyCalculator {city} /><GuideFaq {faq} /></>}
   </article>
-  <EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" />
-  <EditorialLinks title="Собрать стол в своём городе" links={contextualLinks(city)} />
+  {!monthly && <><EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" /><EditorialLinks title="Собрать стол в своём городе" links={contextualLinks(city)} /></>}
   <EditorialLinks id="related-reading" title="Продолжить по теме" links={articleRecommendations(articleHref(item.slug))} />
   <a class="blog-text-link" href="/blog/">Все материалы блога<span aria-hidden="true">↗</span></a>
 </ContentLayout>

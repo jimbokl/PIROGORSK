@@ -1,0 +1,50 @@
+{
+  "updated": "2026-10-31",
+  "updates": [
+    {
+      "id": "coast-refresh-svetlogorsk-winter-01",
+      "sourceTopics": [
+        67,
+        70,
+        75,
+        77,
+        79
+      ],
+      "file": "updates/svetlogorsk-zima-insert.md",
+      "ownerURL": "/journal/gde-poest-v-svetlogorske/",
+      "insertionIntent": "Добавить после вводного выбора формата еды отдельную сезонную вставку про планирование зимнего дня: официальное расписание ТИЦ и музея «Мышеловка», затем переход к проверке кафе по официальному каталогу. Усиливает информационный интент «где поесть в Светлогорске», без нового URL и неподтверждённых часов заведений.",
+      "wordCount": 442,
+      "primarySources": [
+        "https://www.svetlogorsk-tourism.ru/news/rezhim-raboty-muzeya-myshi-myshelovka-v-osennezimniy-period/",
+        "https://www.svetlogorsk-tourism.ru/eatery/"
+      ],
+      "status": "editorial_update_ready; seasonal hours must be rechecked before publication"
+    },
+    {
+      "id": "coast-refresh-svetlogorsk-apartment-evening-01",
+      "sourceTopics": [
+        73
+      ],
+      "file": "updates/svetlogorsk-apartment-evening-insert.md",
+      "ownerURL": "/povody/svetlogorsk/uzhin-v-apartamentah/",
+      "insertionIntent": "Исследовательская заметка о выборе вечернего сценария для Светлогорска. Не вставлять этот объём в конверсионную посадочную страницу; использовать только как фактическую справку при отдельной редакционной задаче.",
+      "wordCount": 457,
+      "primarySources": [
+        "https://kurhaus-rauschen.ru/",
+        "https://www.svetlogorsk-tourism.ru/eatery/"
+      ],
+      "status": "research_only_not_for_conversion_landing"
+    }
+  ],
+  "topic71Audit": {
+    "file": "drafts/svetlogorsk-kaliningrad-edamarshrut.md",
+    "factCheckDate": "2026-10-31",
+    "factsChecked": [
+      "Текущая страница направления КППК на дату проверки указывает опубликованный график с 1 октября 2026 года; черновик не переносит времена поездов как постоянный факт.",
+      "Официальные материалы КППК подтверждают отдельные станции Светлогорск-1 и Светлогорск-2.",
+      "Уведомление КППК 2026 года описывает изменения курсирования вечерних поездов и отсылает к официальному сайту/приложению для актуальных данных.",
+      "CTA ведёт на существующий сценарий набора ужина и честно указывает на анонимный интерес без заказа, оплаты и подтверждения доставки."
+    ],
+    "publicationReadiness": "Копирайт фактологически согласован и готов к редакционной вычитке; публикационный пакет ещё не готов: ownerURL/canonical не назначены, черновик не встроен в шаблон, не проверены окончательные title/description, внутренняя перелинковка в составе сайта и отображение. Для окончательной публикации ещё раз сверить живое расписание КППК на дату выпуска и поездки."
+  }
+}

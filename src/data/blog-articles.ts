@@ -1,4 +1,5 @@
 import { semanticArticles } from './semantic-articles';
+import { monthlyArticles } from './monthly-articles';
 import company from '../../design/blog-source/company-table.png';
 import { deliveryGuide } from './delivery-guide';
 import { breakfastGuide } from './breakfast-guide';
@@ -27,6 +28,7 @@ export interface BlogArticle {
 }
 
 export const blogArticles: readonly BlogArticle[] = [
+  ...monthlyArticles,
   ...semanticArticles,
   breakfastGuide,
   deliveryGuide,

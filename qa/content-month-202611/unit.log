@@ -1,0 +1,62 @@
+
+> pirogorsk@0.1.0 test
+> node --test scripts/selection-tools.test.mjs scripts/selection-offers.test.mjs scripts/catalog-fillings.test.mjs scripts/indexnow.test.mjs scripts/pie-planner.test.mjs scripts/analytics.test.mjs scripts/seo-navigation.test.mjs scripts/release.test.mjs scripts/supplier-catalog.test.mjs scripts/product-pages.test.mjs scripts/pirogi39-catalog.test.mjs
+
+✔ prepared placements retain their exact UTM tuple while dropping extra data (2.649583ms)
+✔ unknown, partial, duplicate and tampered campaign values cannot reach analytics (0.81ms)
+✔ content micro-goals keep the saved-request gate and only measure marked editorial links (3.55575ms)
+✔ real analytics initializer queues one explicit pageview and no goal (1.369167ms)
+✔ local previews and QA tabs never load Metrica or send goals (2.6165ms)
+✔ QA exclusion follows navigation in the same tab; other sessions still count (0.338625ms)
+✔ selection/filter goals send only closed parameters and never raw search text (1.305541ms)
+✔ filling filters cover every catalog record with unique allowlisted tags (75.956166ms)
+✔ mixed and ambiguous supplier recipes use their actual filling (2.8815ms)
+✔ URL criteria reject unknown filters and bound text while preserving Cyrillic (0.679666ms)
+Waiting for public release (1/2): Published IndexNow key is not ready
+✔ initial submission, unchanged release, updates and removals (6.961125ms)
+✔ reject cross-host URLs and invalid hashes from cached state (4.899292ms)
+✔ unchanged content sends no HTTP request (1.310375ms)
+✔ verify live release, then make one batch to one endpoint (81.289833ms)
+✔ wrong live release, missing key and 429 fail without success (39.288167ms)
+✔ wait for Pages propagation with GET retries, then submit only once (3.696916ms)
+✔ both IndexNow receivers must acknowledge the same published batch (1.917833ms)
+✔ rounds up to 500 g, distributes flavours, and prices the actual variants (14.79825ms)
+✔ every supported guest/portion combination preserves mass and bounded rounding (43.097083ms)
+✔ a 50-person table with eight flavours transfers without losing rows or mass (0.988167ms)
+✔ invalid input and empty/unknown/duplicate flavours fail (0.643084ms)
+✔ URL transfer rejects tampering, unsupported products, duplicate rows, and oversized values (0.159708ms)
+✔ every published occasion has a usable, distinct calculator preset (0.252167ms)
+✔ all 61 fresh whole pies and their 63 real size variants are selectable (9.429875ms)
+✔ pickup discount never stacks with a supplier promotion and each planned price covers the model (4.51775ms)
+✔ every catalog position has one unique page and the eight published pie URLs stay stable (8.228333ms)
+✔ every variant links to the actual interest selection with the correct section (2.599459ms)
+✔ catalog contract ignores display order but detects added products, variants and prices (20.019208ms)
+✔ health URL derives its path from API config and discards query/hash (0.661541ms)
+✔ release checks Worker and published artifact together (87.371708ms)
+✔ release rejects unavailable, outdated, malformed and incompatible services (14.506875ms)
+✔ release timeout aborts a hung fetch (11.882916ms)
+✔ published sets and add-ons use existing variants and their exact price (3.24625ms)
+✔ sets merge matching variants; followed URLs preserve selection on reload (0.322625ms)
+✔ limit or invalid variant rejects entire set without partial additions (21.368542ms)
+✔ recommendations follow contents, including supplier sweet pies and drinks (0.467875ms)
+✔ saved selection normalizes legacy weights, duplicates and stale or invalid entries (0.496875ms)
+✔ a shared composition round trips privately in a fragment and uses current prices (18.199125ms)
+✔ stale products and formats are reported while safe rows remain; empty remains visible (0.313708ms)
+✔ invalid or oversized links and aggregate quantities cannot silently alter selection (0.241916ms)
+✔ guest suggestions subtract all existing morse flavors/formats and place settings (0.235125ms)
+✔ editorial attribution allows only registered routes and strips all URL payloads (3.250125ms)
+✔ quantity article continues to sizing and selection rather than unrelated city guides (0.457625ms)
+✔ coverage audit accepts complete ownership and ignores noindex legal pages (1.547291ms)
+✔ coverage audit catches missing owners, unreachable pages, duplicate queries and invented demand (0.27475ms)
+✔ coverage audit checks actual emitted recommendations and measured next step (0.418541ms)
+✔ all 78 Holland positions remain in the expanded catalog without ID collisions (3.225834ms)
+✔ mini pies retain real 210g units and the 5-piece 1.05kg bundle (0.182916ms)
+✔ price covers procurement, inbound, packaging, variable reserve and 35% contribution (0.214042ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 906.433625

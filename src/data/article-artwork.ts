@@ -25,8 +25,10 @@ import artwork21 from '../../design/blog-source/unique-20261026/kak-vybrat-pirog
 import artwork22 from '../../design/blog-source/unique-20261026/piknik-s-pirogom-chto-vzyat.png';
 
 const semanticArtwork = import.meta.glob<ImageMetadata>('../../design/blog-source/semantic-20261031/*.png', { eager: true, import: 'default' });
+const monthlyArtwork = import.meta.glob<ImageMetadata>('../../design/blog-source/month-202611/*.png', { eager: true, import: 'default' });
 const images: Readonly<Record<string, ImageMetadata>> = {
   ...Object.fromEntries(Object.entries(semanticArtwork).map(([path, image]) => [path.replace('../../', ''), image])),
+  ...Object.fromEntries(Object.entries(monthlyArtwork).map(([path, image]) => [path.replace('../../', ''), image])),
   'design/blog-source/company-table.png': artwork0,
   'design/blog-source/two-sizes.png': artwork1,
   'design/blog-source/drinks-table.png': artwork2,

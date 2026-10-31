@@ -10,6 +10,7 @@ const arg = name => args.includes(name) ? args[args.indexOf(name) + 1] : undefin
 const output = path.resolve(arg('--dir') ?? 'site');
 const scoped = arg('--scope') === 'editorial';
 const origin = 'https://pirogorsk.ru';
+const monthlyRoutes = new Set(Object.keys(JSON.parse(await readFile('src/data/monthly-article-meta.json', 'utf8'))).map(slug => `/journal/${slug}/`));
 const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 const decode = text => text.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
@@ -95,7 +96,13 @@ try {
       assert(/(?:готовим запуск|готовится к запуску|перед запуском|пока не запущен)/i.test(html), `${route}: missing visible launch status.`);
       const product = catalog.find(item => catalogProductHref(item) === route);
       const section = product ? `#${selectionHref(product, product.defaultVariant).split('#')[1]}` : '#pirogi';
-      assert(tags(html, 'a').some(item => item.href?.startsWith('/?interest=') && item.href.endsWith(section)), `${route}: missing interest CTA.`);
+      if (monthlyRoutes.has(route)) {
+        // A7 requires one scenario CTA; the SEO-map audit verifies its actual registered target.
+        const block = html.match(/<aside\b[^>]*class="ed-next-step"[^>]*>(.*?)<\/aside>/s)?.[1] ?? '';
+        assert(tags(block, 'a').length === 1 && block.includes('data-guide-catalog'), `${route}: missing measured scenario CTA.`);
+      } else {
+        assert(tags(html, 'a').some(item => item.href?.startsWith('/?interest=') && item.href.endsWith(section)), `${route}: missing interest CTA.`);
+      }
     }
     const ids = tags(html, '[a-z][\\w:-]*').map(item => item.id).filter(id => id !== undefined);
     assert(new Set(ids).size === ids.length, `${route}: duplicate HTML ids.`);

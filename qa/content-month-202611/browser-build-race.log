@@ -1,0 +1,22 @@
+
+> pirogorsk@0.1.0 test:browser
+> node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs && node worker/scripts/qa-ux-polish.mjs
+
+/Volumes/DevSim/Projects/PIROGORSK/worker/dist/worker.js
+PASS: actual form + deployed bundle, 320px layout, validation/focus, double submit, lost acknowledgement, idempotent retry, one goal/event, empty endpoint, QA/local analytics suppression.
+PASS: bundles, exact totals, contextual add-ons, five place settings, form handoff and reload at 320px
+PASS: product add-ons, direct save, variants, totals, form handoff, storage errors and touch layout at 320px
+PASS: menu quantity, keyboard, formats, exact totals, merge, bounds, fallback and reload at 320px
+PASS: two-tab selection/city sync, no lost items, live dialog and empty-state focus at 320px
+file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/ElementHandle.js:496
+                    throw new Error(`Error: failed to find element matching selector "${selector}"`);
+                          ^
+
+Error: Error: failed to find element matching selector "[data-selection-dock]"
+    at CdpElementHandle.$eval (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/ElementHandle.js:496:27)
+    at async CdpFrame.$eval (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/Frame.js:469:20)
+    at async CdpPage.$eval (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:462:20)
+    at async verifyDominos (file:///Volumes/DevSim/Projects/PIROGORSK/worker/scripts/qa-dominos.mjs:45:16)
+    at async file:///Volumes/DevSim/Projects/PIROGORSK/worker/scripts/qa-site.mjs:372:5
+
+Node.js v25.9.0
