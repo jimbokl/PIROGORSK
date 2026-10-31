@@ -1,0 +1,62 @@
+{
+  "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BA%20%D1%87%D0%B0%D1%8E",
+  "title": "Вордстат",
+  "query": "сладкие пироги к чаю",
+  "regionId": "10857",
+  "view": "table",
+  "regionLabel": "Калининградская область",
+  "devices": [
+    {
+      "value": "desktop",
+      "checked": true
+    },
+    {
+      "value": "phone",
+      "checked": true
+    },
+    {
+      "value": "tablet",
+      "checked": true
+    }
+  ],
+  "input": "сладкие пироги к чаю",
+  "loading": false,
+  "summaryText": "Общее число запросов сладкие пироги к чаю за 07.09.2026 – 06.10.2026: 3",
+  "summaryQuery": "сладкие пироги к чаю",
+  "periodStart": "07.09.2026",
+  "periodEnd": "06.10.2026",
+  "summaryCountText": "3",
+  "tableHeaders": [
+    "Запросы со\nсловами",
+    "Число\nзапросов"
+  ],
+  "rows": [
+    [
+      "сладкий пирог к чаю",
+      "3"
+    ],
+    [
+      "быстрый сладкий пирог к чаю",
+      "1"
+    ],
+    [
+      "быстрый сладкий пирог к чаю в духовке",
+      "1"
+    ],
+    [
+      "сладкий пирог к чаю в духовке",
+      "1"
+    ]
+  ],
+  "hasMore": false,
+  "serviceWarnings": [
+    "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+  ],
+  "restriction": null,
+  "emptyMessage": null,
+  "collectedAt": "2026-10-31T17:06:21.500785+00:00",
+  "method": "visible_dom_table",
+  "seedIndex": 68,
+  "seed": "сладкие пироги к чаю",
+  "rowsScope": "currently displayed rows; more button status preserved"
+}

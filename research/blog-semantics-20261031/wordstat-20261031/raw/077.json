@@ -1,0 +1,58 @@
+{
+  "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA",
+  "title": "Вордстат",
+  "query": "пироги зеленоградск",
+  "regionId": "10857",
+  "view": "table",
+  "regionLabel": "Калининградская область",
+  "devices": [
+    {
+      "value": "desktop",
+      "checked": true
+    },
+    {
+      "value": "phone",
+      "checked": true
+    },
+    {
+      "value": "tablet",
+      "checked": true
+    }
+  ],
+  "input": "пироги зеленоградск",
+  "loading": false,
+  "summaryText": "Общее число запросов пироги зеленоградск за 07.09.2026 – 06.10.2026: 45",
+  "summaryQuery": "пироги зеленоградск",
+  "periodStart": "07.09.2026",
+  "periodEnd": "06.10.2026",
+  "summaryCountText": "45",
+  "tableHeaders": [
+    "Запросы со\nсловами",
+    "Число\nзапросов"
+  ],
+  "rows": [
+    [
+      "пироги в зеленоградске",
+      "30"
+    ],
+    [
+      "пирог заказать в зеленоградске",
+      "7"
+    ],
+    [
+      "кранцевский пирог в зеленоградске",
+      "7"
+    ]
+  ],
+  "hasMore": false,
+  "serviceWarnings": [
+    "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+  ],
+  "restriction": null,
+  "emptyMessage": null,
+  "collectedAt": "2026-10-31T17:06:43.651484+00:00",
+  "method": "visible_dom_table",
+  "seedIndex": 76,
+  "seed": "пироги зеленоградск",
+  "rowsScope": "currently displayed rows; more button status preserved"
+}

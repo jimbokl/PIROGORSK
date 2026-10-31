@@ -1,0 +1,42 @@
+{
+  "status": "recovered",
+  "incident": "Intermediate UI loading timeout; continued polling the same request without duplicate submission",
+  "pendingObservation": {
+    "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D1%80%D1%8B%D0%B1%D0%BE%D0%B9",
+    "title": "Вордстат",
+    "query": "пироги с рыбой",
+    "regionId": "10857",
+    "view": "table",
+    "regionLabel": "Калининградская область",
+    "devices": [
+      {
+        "value": "desktop",
+        "checked": true
+      },
+      {
+        "value": "phone",
+        "checked": true
+      },
+      {
+        "value": "tablet",
+        "checked": true
+      }
+    ],
+    "input": "пироги с рыбой",
+    "loading": true,
+    "summaryText": "",
+    "summaryQuery": null,
+    "periodStart": null,
+    "periodEnd": null,
+    "summaryCountText": null,
+    "tableHeaders": [],
+    "rows": [],
+    "hasMore": false,
+    "serviceWarnings": [
+      "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+    ],
+    "restriction": null,
+    "emptyMessage": "Нет подходящих запросов. Попробуйте изменить формулировку."
+  },
+  "completedSeedCount": 83
+}

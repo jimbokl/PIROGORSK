@@ -20,48 +20,84 @@
       "reportedClicks": 1198,
       "reportedCompetition": "HIGH",
       "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-001",
+        "serpVerified": false
+      }
     },
     {
       "query": "заказать пироги",
       "reportedClicks": 996,
       "reportedCompetition": "HIGH",
       "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-002",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги доставка",
       "reportedClicks": 943,
       "reportedCompetition": "HIGH",
       "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-003",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги на заказ с доставкой",
       "reportedClicks": 630,
       "reportedCompetition": "HIGH",
       "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-004",
+        "serpVerified": false
+      }
     },
     {
       "query": "доставка пирогов",
       "reportedClicks": 832,
       "reportedCompetition": "HIGH",
       "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-005",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги на заказ",
       "reportedClicks": 450,
       "reportedCompetition": "HIGH",
       "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-006",
+        "serpVerified": false
+      }
     },
     {
       "query": "заказать пироги в москве с доставкой",
@@ -86,40 +122,73 @@
       "reportedClicks": 257,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-007",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги домой",
       "reportedClicks": 161,
       "reportedCompetition": "HIGH",
       "sourceSection": "1. Общие коммерческие запросы (доставка, заказ, покупка)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-008",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги",
       "reportedClicks": 29411,
       "reportedCompetition": "HIGH",
       "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_category",
+      "owner": "/osetinskie-pirogi/",
+      "previousOwner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-009",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги заказать",
       "reportedClicks": 5269,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_category",
+      "owner": "/osetinskie-pirogi/",
+      "previousOwner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-010",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги доставка",
       "reportedClicks": 4580,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_category",
+      "owner": "/osetinskie-pirogi/",
+      "previousOwner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-011",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги москва",
@@ -144,16 +213,30 @@
       "reportedClicks": 2717,
       "reportedCompetition": "HIGH",
       "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_category",
+      "owner": "/osetinskie-pirogi/",
+      "previousOwner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-012",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги заказать с доставкой",
       "reportedClicks": 2615,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_category",
+      "owner": "/osetinskie-pirogi/",
+      "previousOwner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-013",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги в москве с доставкой",
@@ -169,8 +252,15 @@
       "reportedClicks": 2243,
       "reportedCompetition": "HIGH",
       "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_category",
+      "owner": "/osetinskie-pirogi/",
+      "previousOwner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-014",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги спб с доставкой",
@@ -186,16 +276,30 @@
       "reportedClicks": 656,
       "reportedCompetition": "HIGH",
       "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_category",
+      "owner": "/osetinskie-pirogi/",
+      "previousOwner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-015",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги на заказ",
       "reportedClicks": 1135,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "2. Осетинские пироги (ключевой сегмент)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_category",
+      "owner": "/osetinskie-pirogi/",
+      "previousOwner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-016",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги москва",
@@ -337,136 +441,274 @@
       "reportedClicks": 331,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-017",
+        "serpVerified": false
+      }
     },
     {
       "query": "пирог с рыбой доставка",
       "reportedClicks": 295,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-018",
+        "serpVerified": false
+      }
     },
     {
       "query": "пирог с курицей доставка",
       "reportedClicks": 202,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-019",
+        "serpVerified": false
+      }
     },
     {
       "query": "пирог с капустой доставка",
       "reportedClicks": 135,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-020",
+        "serpVerified": false
+      }
     },
     {
       "query": "сладкие пироги доставка",
       "reportedClicks": 379,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-021",
+        "serpVerified": false
+      }
     },
     {
       "query": "пирог с вишней доставка",
       "reportedClicks": 126,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-022",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги с картошкой",
       "reportedClicks": 44,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/pirog-s-kartoshkoy-i-syrom/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-023",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги с мясом",
       "reportedClicks": 319,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/myasnoy-pirog-nachinka-i-testo/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-024",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги с капустой",
       "reportedClicks": 46,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/pirog-s-kapustoy-i-yaytsom/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-025",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги с сыром",
       "reportedClicks": 242,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-026",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги с творогом",
       "reportedClicks": 32,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-027",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги с тыквой",
       "reportedClicks": 58,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-028",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги со свекольной ботвой",
       "reportedClicks": 164,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-029",
+        "serpVerified": false
+      }
     },
     {
       "query": "постные пироги",
       "reportedClicks": 48,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/postnye-pirogi-kak-proverit-sostav/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-030",
+        "serpVerified": false
+      }
     },
     {
       "query": "мини пироги на заказ с доставкой",
       "reportedClicks": 180,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-031",
+        "serpVerified": false
+      }
     },
     {
       "query": "курник пироги с доставкой",
       "reportedClicks": 132,
       "reportedCompetition": "HIGH",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/menu/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-032",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги с рыбой",
       "reportedClicks": 73,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "4. Виды пирогов (начинки и типы)",
-      "disposition": "catalog_existing_no_dedicated_category_claim",
-      "owner": "/menu/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/menu/",
+      "candidateOwners": [
+        "/menu/",
+        "/journal/rybnaya-nachinka-dlya-piroga/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-033",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги номер 1",
@@ -608,96 +850,185 @@
       "reportedClicks": 4182,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-034",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинский пирог рецепт",
       "reportedClicks": 2771,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-035",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги рецепт классический",
       "reportedClicks": 1007,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-036",
+        "serpVerified": false
+      }
     },
     {
       "query": "тесто для осетинских пирогов",
       "reportedClicks": 367,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-037",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинский пирог с сыром",
       "reportedClicks": 671,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "candidateOwners": [
+        "/osetinskie-pirogi/",
+        "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-038",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинский пирог с мясом",
       "reportedClicks": 602,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "candidateOwners": [
+        "/osetinskie-pirogi/",
+        "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-039",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинский пирог с картошкой и сыром",
       "reportedClicks": 302,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/zalivnoy-pirog-na-kefire/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/journal/zalivnoy-pirog-na-kefire/",
+      "candidateOwners": [
+        "/osetinskie-pirogi/",
+        "/journal/zalivnoy-pirog-na-kefire/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-040",
+        "serpVerified": false
+      }
     },
     {
       "query": "как приготовить осетинский пирог",
       "reportedClicks": 142,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-041",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинские пироги на кефире",
       "reportedClicks": 74,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/zalivnoy-pirog-na-kefire/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/journal/zalivnoy-pirog-na-kefire/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-042",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинский пирог на сковороде",
       "reportedClicks": 116,
       "reportedCompetition": "AVERAGE",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/pirog-na-skovorode-ili-v-duhovke/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/journal/pirog-na-skovorode-ili-v-duhovke/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-043",
+        "serpVerified": false
+      }
     },
     {
       "query": "осетинский пирог со свекольной ботвой",
       "reportedClicks": 164,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+      "disposition": "needs_regional_serp",
+      "owner": null,
+      "previousOwner": "/journal/pirog-so-svekolnoy-botvoy-i-syrom/",
+      "candidateOwners": [
+        "/osetinskie-pirogi/",
+        "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+      ],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-044",
+        "serpVerified": false
+      }
     },
     {
       "query": "хачапури",
       "reportedClicks": 8,
       "reportedCompetition": "HIGH",
       "sourceSection": "6. Информационные запросы (для блога)",
-      "disposition": "informational_article",
-      "owner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+      "disposition": "no_matching_assortment",
+      "owner": null,
+      "previousOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-045",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги на заказ с доставкой в тюмени",
@@ -713,8 +1044,14 @@
       "reportedClicks": 161,
       "reportedCompetition": "HIGH",
       "sourceSection": "7. Дополнительные важные запросы (из новых файлов)",
-      "disposition": "existing_commercial_owner_prelaunch",
-      "owner": "/"
+      "disposition": "existing_page_by_explicit_intent",
+      "owner": "/",
+      "candidateOwners": [],
+      "ownerReview": {
+        "source": "wordstat-20261031/seed-review.json",
+        "id": "ws-008",
+        "serpVerified": false
+      }
     },
     {
       "query": "пироги мск",
@@ -941,5 +1278,7 @@
       "owner": null,
       "exclusionReason": "outside_kaliningrad_region"
     }
-  ]
+  ],
+  "ownerReviewedAt": "2026-10-31",
+  "regionalWordstatReview": "wordstat-20261031/seed-review.json"
 }

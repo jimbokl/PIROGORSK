@@ -1,0 +1,42 @@
+{
+  "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D1%82%D0%B2%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%D0%BC",
+  "title": "Вордстат",
+  "query": "пироги с творогом",
+  "regionId": "10857",
+  "view": "table",
+  "regionLabel": "Калининградская область",
+  "devices": [
+    {
+      "value": "desktop",
+      "checked": true
+    },
+    {
+      "value": "phone",
+      "checked": true
+    },
+    {
+      "value": "tablet",
+      "checked": true
+    }
+  ],
+  "input": "пироги с творогом",
+  "loading": false,
+  "summaryText": "Общее число запросов пироги с творогом за 30.09.2026 – 30.10.2026: 0",
+  "summaryQuery": "пироги с творогом",
+  "periodStart": "30.09.2026",
+  "periodEnd": "30.10.2026",
+  "summaryCountText": "0",
+  "tableHeaders": [],
+  "rows": [],
+  "hasMore": false,
+  "serviceWarnings": [
+    "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+  ],
+  "restriction": null,
+  "emptyMessage": "Нет подходящих запросов. Попробуйте изменить формулировку.",
+  "collectedAt": "2026-10-31T17:03:17.934573+00:00",
+  "method": "visible_dom_table",
+  "seedIndex": 26,
+  "seed": "пироги с творогом",
+  "rowsScope": "currently displayed rows; more button status preserved"
+}

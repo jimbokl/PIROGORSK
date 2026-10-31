@@ -1,0 +1,3469 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-31T17:10:10.729535+00:00",
+  "scope": "83 seed observations; not the full long-tail corpus; not verified Google rankings or SERP clusters",
+  "metricsAreNotAdditive": true,
+  "sourceSummaryMetricsUnverified": true,
+  "observations": [
+    {
+      "id": "ws-001",
+      "query": "пироги с доставкой",
+      "evidence": {
+        "source": "raw/001.json",
+        "sha256": "083924b5acd9756ae5145de9954e12400cb0b84cde75bbea9078c8ad035d2ab8",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:58:48.559387+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 260,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 47,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пироги с доставкой",
+            "count": 262
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial",
+        "primaryOwner": "/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Общие доставка и заказ: главная с ассортиментом; условия — /delivery/. Реальный приём заказов не заявляется.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        1
+      ]
+    },
+    {
+      "id": "ws-002",
+      "query": "заказать пироги",
+      "evidence": {
+        "source": "raw/002.json",
+        "sha256": "7bb4c68dfd119aeadefa3020cc86fbbead12e01f6bb1c60c3217e186ea82df58",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:58:50.452303+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 490,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 64,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "заказать пироги",
+            "count": 491
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial",
+        "primaryOwner": "/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Общие доставка и заказ: главная с ассортиментом; условия — /delivery/. Реальный приём заказов не заявляется.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        2
+      ]
+    },
+    {
+      "id": "ws-003",
+      "query": "пироги доставка",
+      "evidence": {
+        "source": "raw/003.json",
+        "sha256": "dfdb7656471884f55911d03dda117fd78ce9cdfdae2947ef2a5016491833b3b5",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:58:53.371454+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 311,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 60,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial",
+        "primaryOwner": "/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Общие доставка и заказ: главная с ассортиментом; условия — /delivery/. Реальный приём заказов не заявляется.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        3
+      ]
+    },
+    {
+      "id": "ws-004",
+      "query": "пироги на заказ с доставкой",
+      "evidence": {
+        "source": "raw/004.json",
+        "sha256": "617bf4d1450b7ce4af97426c732f74d83a4c32e89cbe0bdd868de711c4aca39e",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:58:55.285903+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 70,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 6,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пироги на заказ с доставкой",
+            "count": 70
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial",
+        "primaryOwner": "/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Общие доставка и заказ: главная с ассортиментом; условия — /delivery/. Реальный приём заказов не заявляется.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        4
+      ]
+    },
+    {
+      "id": "ws-005",
+      "query": "доставка пирогов",
+      "evidence": {
+        "source": "raw/005.json",
+        "sha256": "3bb32c3efba077c02b73df4b181507b7381b7c8476b47eac9c64e89536806650",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:58:57.185182+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 311,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 60,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial",
+        "primaryOwner": "/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Общие доставка и заказ: главная с ассортиментом; условия — /delivery/. Реальный приём заказов не заявляется.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        5
+      ]
+    },
+    {
+      "id": "ws-006",
+      "query": "пироги на заказ",
+      "evidence": {
+        "source": "raw/006.json",
+        "sha256": "aa3f4e5828ce92482a6ed506a382b87770b1caf20a7effe676e14ab2fb9e5931",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:00.099279+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 518,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 31,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пироги на заказ",
+            "count": 504
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial",
+        "primaryOwner": "/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Общие доставка и заказ: главная с ассортиментом; условия — /delivery/. Реальный приём заказов не заявляется.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        6
+      ]
+    },
+    {
+      "id": "ws-007",
+      "query": "пироги купить",
+      "evidence": {
+        "source": "raw/007.json",
+        "sha256": "cb6b57141b75b00ab48109c3b679fa6f18a56c7159b9dc7ae9168f3919a3de97",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:02.957240+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 207,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 33,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пироги купить",
+            "count": 184
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial",
+        "primaryOwner": "/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Общие доставка и заказ: главная с ассортиментом; условия — /delivery/. Реальный приём заказов не заявляется.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        9
+      ]
+    },
+    {
+      "id": "ws-008",
+      "query": "пироги домой",
+      "evidence": {
+        "source": "raw/008.json",
+        "sha256": "a8afb8152374db3f94f0f635e6d836e6aba57d4dadef78d66e28308331905221",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B4%D0%BE%D0%BC%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:05.797646+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 1,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 1,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пироги домой",
+            "count": 1
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial",
+        "primaryOwner": "/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Общие доставка и заказ: главная с ассортиментом; условия — /delivery/. Реальный приём заказов не заявляется.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        10,
+        83
+      ]
+    },
+    {
+      "id": "ws-009",
+      "query": "осетинские пироги",
+      "evidence": {
+        "source": "raw/009.json",
+        "sha256": "96e341f3a846e569a1c5f4d09881308a22128b4e57ad738f8b514087e46db042",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:08.683584+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 1524,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 200,
+        "tableComplete": false,
+        "matchingTableRows": [
+          {
+            "query": "осетинские пироги",
+            "count": 1505
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_category",
+        "primaryOwner": "/osetinskie-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_category",
+        "reason": "Коммерческий хаб уже опубликован: 28 SKU. Рецептурная статья не заменяет категорию.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        11
+      ]
+    },
+    {
+      "id": "ws-010",
+      "query": "осетинские пироги заказать",
+      "evidence": {
+        "source": "raw/010.json",
+        "sha256": "d85e0e77ecddb7bc5694adaadd92267dec89a9344411e2e1b3fb38d3af704d31",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:37.321978+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 79,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 10,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинские пироги заказать",
+            "count": 78
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_category",
+        "primaryOwner": "/osetinskie-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_category",
+        "reason": "Коммерческий хаб уже опубликован: 28 SKU. Рецептурная статья не заменяет категорию.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        12
+      ]
+    },
+    {
+      "id": "ws-011",
+      "query": "осетинские пироги доставка",
+      "evidence": {
+        "source": "raw/011.json",
+        "sha256": "089125e19da3cbc2b1a4d4e531143b759e60fc3f870e76dbfb3aca099858d92e",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:40.184671+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 123,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 11,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинские пироги доставка",
+            "count": 123
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_category",
+        "primaryOwner": "/osetinskie-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_category",
+        "reason": "Коммерческий хаб уже опубликован: 28 SKU. Рецептурная статья не заменяет категорию.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        13
+      ]
+    },
+    {
+      "id": "ws-012",
+      "query": "осетинские пироги с доставкой",
+      "evidence": {
+        "source": "raw/012.json",
+        "sha256": "09655483a6a898dc7ad2e67864ae57148e429cdab4d801d70187349cd79dc939",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:43.031017+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 106,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 8,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_category",
+        "primaryOwner": "/osetinskie-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_category",
+        "reason": "Коммерческий хаб уже опубликован: 28 SKU. Рецептурная статья не заменяет категорию.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        16
+      ]
+    },
+    {
+      "id": "ws-013",
+      "query": "осетинские пироги заказать с доставкой",
+      "evidence": {
+        "source": "raw/013.json",
+        "sha256": "d309288d2007b4db95324c9ed5833c5618b59968c6ca18c4fa4b81cab782d5b4",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:45.918850+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 55,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 4,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинские пироги заказать с доставкой",
+            "count": 55
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_category",
+        "primaryOwner": "/osetinskie-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_category",
+        "reason": "Коммерческий хаб уже опубликован: 28 SKU. Рецептурная статья не заменяет категорию.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        17
+      ]
+    },
+    {
+      "id": "ws-014",
+      "query": "заказать осетинские пироги",
+      "evidence": {
+        "source": "raw/014.json",
+        "sha256": "7e9844b9dfc3936c83376d3ec9243d560d008d8515f15db26c35d5d3ecb6b12c",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:59:48.803473+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 79,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 10,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_category",
+        "primaryOwner": "/osetinskie-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_category",
+        "reason": "Коммерческий хаб уже опубликован: 28 SKU. Рецептурная статья не заменяет категорию.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        19
+      ]
+    },
+    {
+      "id": "ws-015",
+      "query": "осетинские пироги недорого",
+      "evidence": {
+        "source": "raw/015.json",
+        "sha256": "12f5a6c7c192a2ddc47a01173e5a161a1e8d40ebec5ab95282ef57a7c17af8e3",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:12.685614+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_category",
+        "primaryOwner": "/osetinskie-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_category",
+        "reason": "Коммерческий хаб уже опубликован: 28 SKU. Рецептурная статья не заменяет категорию.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        21
+      ]
+    },
+    {
+      "id": "ws-016",
+      "query": "осетинские пироги на заказ",
+      "evidence": {
+        "source": "raw/016.json",
+        "sha256": "1cd2a128247fe21babfa8af8795efd154d793f412c0b097da4894f90c4cc504e",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:15.602819+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 44,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 2,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинские пироги на заказ",
+            "count": 44
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_category",
+        "primaryOwner": "/osetinskie-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_category",
+        "reason": "Коммерческий хаб уже опубликован: 28 SKU. Рецептурная статья не заменяет категорию.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        22
+      ]
+    },
+    {
+      "id": "ws-017",
+      "query": "пирог с мясом купить",
+      "evidence": {
+        "source": "raw/017.json",
+        "sha256": "9c3b60e6f534a1976a525c0cf9ceb497c5a26e67648061ad15411df4dd420ce0",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BC%D1%8F%D1%81%D0%BE%D0%BC%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:17.490895+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 3,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 1,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пирог с мясом купить",
+            "count": 3
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_assortment",
+        "primaryOwner": "/menu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Выбор актуальных SKU в каталоге; не создавать статью под явное купить/доставка/заказ.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        38
+      ]
+    },
+    {
+      "id": "ws-018",
+      "query": "пирог с рыбой доставка",
+      "evidence": {
+        "source": "raw/018.json",
+        "sha256": "1d972cb6299bab05e84ce0e27e4e385e885bfa396ee9d3d4c23deb1dfb63fd4e",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D1%80%D1%8B%D0%B1%D0%BE%D0%B9%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:19.388822+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_assortment",
+        "primaryOwner": "/menu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Выбор актуальных SKU в каталоге; не создавать статью под явное купить/доставка/заказ.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        39
+      ]
+    },
+    {
+      "id": "ws-019",
+      "query": "пирог с курицей доставка",
+      "evidence": {
+        "source": "raw/019.json",
+        "sha256": "24c4df25f5696decdceffc071642db5dc27e274e3c726b6ef736a7729766cb48",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:22.264517+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_assortment",
+        "primaryOwner": "/menu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Выбор актуальных SKU в каталоге; не создавать статью под явное купить/доставка/заказ.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        40
+      ]
+    },
+    {
+      "id": "ws-020",
+      "query": "пирог с капустой доставка",
+      "evidence": {
+        "source": "raw/020.json",
+        "sha256": "e51fee42d15390bb1b5db880aa14020518a8becd8ac0680104b075538c74d9f9",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%BE%D0%B9%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:25.152711+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_assortment",
+        "primaryOwner": "/menu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Выбор актуальных SKU в каталоге; не создавать статью под явное купить/доставка/заказ.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        41
+      ]
+    },
+    {
+      "id": "ws-021",
+      "query": "сладкие пироги доставка",
+      "evidence": {
+        "source": "raw/021.json",
+        "sha256": "c2f836ed1bc72f3b643c1dcad5c67abe5d96674b081e4e93e5aa545ad1f50807",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:28.035986+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 1,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 1,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "сладкие пироги доставка",
+            "count": 1
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_assortment",
+        "primaryOwner": "/menu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Выбор актуальных SKU в каталоге; не создавать статью под явное купить/доставка/заказ.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        42
+      ]
+    },
+    {
+      "id": "ws-022",
+      "query": "пирог с вишней доставка",
+      "evidence": {
+        "source": "raw/022.json",
+        "sha256": "0af036dede8a869a021407bf5cc07488fb476627c1431819db89a4a8e93e4ffe",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%B2%D0%B8%D1%88%D0%BD%D0%B5%D0%B9%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:30.952501+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 1,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_assortment",
+        "primaryOwner": "/menu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Выбор актуальных SKU в каталоге; не создавать статью под явное купить/доставка/заказ.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        43
+      ]
+    },
+    {
+      "id": "ws-023",
+      "query": "пироги с картошкой",
+      "evidence": {
+        "source": "raw/023.json",
+        "sha256": "05a1c9deaa5cccf723b0b47dae668f04c0fec882592055305839c2aa256fe772",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:33.788013+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 555,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 200,
+        "tableComplete": false,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/pirog-s-kartoshkoy-i-syrom/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        44
+      ]
+    },
+    {
+      "id": "ws-024",
+      "query": "пироги с мясом",
+      "evidence": {
+        "source": "raw/024.json",
+        "sha256": "2c9effacb715f279746dd6681387d7490894d7823b9f6d4b8433213763f8d6a3",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D0%BC%D1%8F%D1%81%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:35.772339+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 466,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 179,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/myasnoy-pirog-nachinka-i-testo/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        45
+      ]
+    },
+    {
+      "id": "ws-025",
+      "query": "пироги с капустой",
+      "evidence": {
+        "source": "raw/025.json",
+        "sha256": "c91c4ed73712f1b1aa6dbb338261053f3d4ef3d7932a6fcac8769fd86b2afd8c",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:38.624532+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 1350,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 200,
+        "tableComplete": false,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/pirog-s-kapustoy-i-yaytsom/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        46
+      ]
+    },
+    {
+      "id": "ws-026",
+      "query": "пироги с сыром",
+      "evidence": {
+        "source": "raw/026.json",
+        "sha256": "c1973d4b04bc62ee9ff40ce3dc8ef0f199df9f18922b677c989b6e5ceafeb085",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:01:41.454951+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 471,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 200,
+        "tableComplete": false,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        47
+      ]
+    },
+    {
+      "id": "ws-027",
+      "query": "пироги с творогом",
+      "evidence": {
+        "source": "raw/027.json",
+        "sha256": "9c1184b743e8ffc0fcc8bc6ba4c020cb28671f41766b15d6e5fe0c7439e06adc",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D1%82%D0%B2%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:03:17.934573+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        48
+      ]
+    },
+    {
+      "id": "ws-028",
+      "query": "пироги с тыквой",
+      "evidence": {
+        "source": "raw/028.json",
+        "sha256": "3a91d446442dd190cdafa6f256b0e123a489925bc984681979e1f7d85a0975ca",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D1%82%D1%8B%D0%BA%D0%B2%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:03:19.873859+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 309,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 100,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        49
+      ]
+    },
+    {
+      "id": "ws-029",
+      "query": "пироги со свекольной ботвой",
+      "evidence": {
+        "source": "raw/029.json",
+        "sha256": "42e88e85df252765cb8756c3a13ff14729c1e4391664ac59984a38219bffd18c",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%D0%BE%20%D1%81%D0%B2%D0%B5%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%B1%D0%BE%D1%82%D0%B2%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:03:22.797287+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 3,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 7,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        50
+      ]
+    },
+    {
+      "id": "ws-030",
+      "query": "постные пироги",
+      "evidence": {
+        "source": "raw/030.json",
+        "sha256": "a022c2735996292fa63f18f14b31b54b5b9579a5efc3bcdf657919a59f39a994",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%BE%D1%81%D1%82%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:03:25.668901+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 65,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 24,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/postnye-pirogi-kak-proverit-sostav/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        51
+      ]
+    },
+    {
+      "id": "ws-031",
+      "query": "мини пироги на заказ с доставкой",
+      "evidence": {
+        "source": "raw/031.json",
+        "sha256": "60d0f9e5530312665c68492b172d333327e7b8b4dcefe6c1022e17a71dcc48d2",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BC%D0%B8%D0%BD%D0%B8%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:03:27.589809+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_assortment",
+        "primaryOwner": "/menu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Выбор актуальных SKU в каталоге; не создавать статью под явное купить/доставка/заказ.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        52
+      ]
+    },
+    {
+      "id": "ws-032",
+      "query": "курник пироги с доставкой",
+      "evidence": {
+        "source": "raw/032.json",
+        "sha256": "17ee08c60b2364ca432076ad59920666c99084a464f60eaf636a02219a775a97",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D1%83%D1%80%D0%BD%D0%B8%D0%BA%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:03:29.501389+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "commercial_assortment",
+        "primaryOwner": "/menu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Выбор актуальных SKU в каталоге; не создавать статью под явное купить/доставка/заказ.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        53
+      ]
+    },
+    {
+      "id": "ws-033",
+      "query": "пироги с рыбой",
+      "evidence": {
+        "source": "raw/033.json",
+        "sha256": "8d261b711c1d31e078d48a2e77086dfad245fb1207e7a7a95f014efeb87648f6",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%20%D1%80%D1%8B%D0%B1%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:04:46.904477+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/menu/",
+          "/journal/rybnaya-nachinka-dlya-piroga/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        54
+      ]
+    },
+    {
+      "id": "ws-034",
+      "query": "осетинские пироги рецепт",
+      "evidence": {
+        "source": "raw/034.json",
+        "sha256": "6e9f0b30b96be5b66f9e29937969f9243a9b0010f2a86710d48468a6c50d820e",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:04:49.921931+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 240,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 53,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинские пироги рецепт",
+            "count": 239
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "recipe",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Рецептура, тесто или приготовление раскрыты существующей статьёй; полноту классической рецептуры дополнительно сверить с SERP.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        70
+      ]
+    },
+    {
+      "id": "ws-035",
+      "query": "осетинский пирог рецепт",
+      "evidence": {
+        "source": "raw/035.json",
+        "sha256": "f4bd3c276b969191650e88b541ad67d32eec60d2824aee4372292fd42fa20571",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:04:52.054699+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 240,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 53,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "recipe",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Рецептура, тесто или приготовление раскрыты существующей статьёй; полноту классической рецептуры дополнительно сверить с SERP.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        71
+      ]
+    },
+    {
+      "id": "ws-036",
+      "query": "осетинские пироги рецепт классический",
+      "evidence": {
+        "source": "raw/036.json",
+        "sha256": "304c4a642c114d11038d1e5a1247e25ec1572645ff1fcbd0362efe809f88f6ff",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:04:55.003536+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 46,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 9,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинские пироги рецепт классический",
+            "count": 46
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "recipe",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Рецептура, тесто или приготовление раскрыты существующей статьёй; полноту классической рецептуры дополнительно сверить с SERP.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        72
+      ]
+    },
+    {
+      "id": "ws-037",
+      "query": "тесто для осетинских пирогов",
+      "evidence": {
+        "source": "raw/037.json",
+        "sha256": "5afea6bf42a730ef5dade518fb1fa89181c30221727cdf8ebe43bdc5326a9df2",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D1%82%D0%B5%D1%81%D1%82%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D1%85%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:04:57.896777+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 10,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 7,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "тесто для осетинских пирогов",
+            "count": 10
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "recipe",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Рецептура, тесто или приготовление раскрыты существующей статьёй; полноту классической рецептуры дополнительно сверить с SERP.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        73
+      ]
+    },
+    {
+      "id": "ws-038",
+      "query": "осетинский пирог с сыром",
+      "evidence": {
+        "source": "raw/038.json",
+        "sha256": "4827cc2dcf629c165be123f14cc9a754f8ada4e0fc2afaa7f037f1a0d5f4cf67",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:04:59.752019+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 104,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 21,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинский пирог с сыром",
+            "count": 104
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/osetinskie-pirogi/",
+          "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        74
+      ]
+    },
+    {
+      "id": "ws-039",
+      "query": "осетинский пирог с мясом",
+      "evidence": {
+        "source": "raw/039.json",
+        "sha256": "7a23b9939fbef70beb3964ae3bba9165d50744633c23698415b80ed17e485ac9",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BC%D1%8F%D1%81%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:02.591043+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 26,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 13,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинский пирог с мясом",
+            "count": 27
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/osetinskie-pirogi/",
+          "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        75
+      ]
+    },
+    {
+      "id": "ws-040",
+      "query": "осетинский пирог с картошкой и сыром",
+      "evidence": {
+        "source": "raw/040.json",
+        "sha256": "07685a0cacfe3fce858e63f11571d6fbcd9d98962ee5edaca9a87d12b5be1f98",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%BE%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:04.450601+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 17,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 3,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинский пирог с картошкой и сыром",
+            "count": 17
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/osetinskie-pirogi/",
+          "/journal/zalivnoy-pirog-na-kefire/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        76
+      ]
+    },
+    {
+      "id": "ws-041",
+      "query": "как приготовить осетинский пирог",
+      "evidence": {
+        "source": "raw/041.json",
+        "sha256": "95cfe7635471f67a24230d7cafa561679bc084148b69c454c943121e4c2873da",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D0%B0%D0%BA%20%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:07.304321+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 18,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 5,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "как приготовить осетинский пирог",
+            "count": 18
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "recipe",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Рецептура, тесто или приготовление раскрыты существующей статьёй; полноту классической рецептуры дополнительно сверить с SERP.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        77
+      ]
+    },
+    {
+      "id": "ws-042",
+      "query": "осетинские пироги на кефире",
+      "evidence": {
+        "source": "raw/042.json",
+        "sha256": "627ef492a190c40a5a88aede8a3e2161d98edebba4d7330ea1c6d5acf2c0e284",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%BA%D0%B5%D1%84%D0%B8%D1%80%D0%B5",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:10.238564+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 40,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 8,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "recipe",
+        "primaryOwner": "/journal/zalivnoy-pirog-na-kefire/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Существующая статья содержит соответствующую рецептуру; без создания дублирующего URL.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        78
+      ]
+    },
+    {
+      "id": "ws-043",
+      "query": "осетинский пирог на сковороде",
+      "evidence": {
+        "source": "raw/043.json",
+        "sha256": "f60df1a605db55d27b15b4039f7d16bf1c982dee057006838d91f313854d39ab",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D0%BD%D0%B0%20%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B4%D0%B5",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:13.118388+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 7,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 7,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинский пирог на сковороде",
+            "count": 7
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "recipe",
+        "primaryOwner": "/journal/pirog-na-skovorode-ili-v-duhovke/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Существующая статья содержит соответствующую рецептуру; без создания дублирующего URL.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        79
+      ]
+    },
+    {
+      "id": "ws-044",
+      "query": "осетинский пирог со свекольной ботвой",
+      "evidence": {
+        "source": "raw/044.json",
+        "sha256": "3cc2615dff6303cef5c565dc5820f92a22bb42d97bfe6b9ec222452cb21da1be",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%D0%BE%20%D1%81%D0%B2%D0%B5%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%B1%D0%BE%D1%82%D0%B2%D0%BE%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:16.039260+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 2,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 3,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинский пирог со свекольной ботвой",
+            "count": 2
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "mixed_recipe_or_purchase",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/osetinskie-pirogi/",
+          "/journal/pirog-so-svekolnoy-botvoy-i-syrom/"
+        ],
+        "status": "needs_regional_serp",
+        "reason": "Без региональной выдачи нельзя выбрать между покупкой, рецептом и обзором начинки. Владение пока не закреплено.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        80
+      ]
+    },
+    {
+      "id": "ws-045",
+      "query": "хачапури",
+      "evidence": {
+        "source": "raw/045.json",
+        "sha256": "59bc7c4202dd3a4f121958b674dd7e8139704071e744e6918db262d601490ab7",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D1%85%D0%B0%D1%87%D0%B0%D0%BF%D1%83%D1%80%D0%B8",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:18.926307+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 2533,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 200,
+        "tableComplete": false,
+        "matchingTableRows": [
+          {
+            "query": "хачапури",
+            "count": 2493
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "unsupported_product",
+        "primaryOwner": null,
+        "candidateOwners": [],
+        "status": "no_matching_assortment",
+        "reason": "Хачапури отсутствует в текущих товарах. Убрано ошибочное назначение статьи про осетинский сырный пирог.",
+        "serpVerified": false
+      },
+      "userSourceRows": [
+        81
+      ]
+    },
+    {
+      "id": "ws-046",
+      "query": "осетинские пироги рецепт с сыром и мясом",
+      "evidence": {
+        "source": "raw/046.json",
+        "sha256": "3e8db74fd747e120219d13f27e8fd7625a6e2e45db880f99cb840f1f6daafb1a",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%20%D1%81%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC%20%D0%B8%20%D0%BC%D1%8F%D1%81%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:20.797570+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/osetinskiy-pirog-s-syrom-kak-vybrat/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-047",
+      "query": "пирог с картошкой и сыром",
+      "evidence": {
+        "source": "raw/047.json",
+        "sha256": "bca2f7306f865e84a97f8553ea95f48244d0d82adafc74fb1dde64d165cfbd06",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%BE%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:22.686810+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 29,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 9,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пирог с картошкой и сыром",
+            "count": 29
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-s-kartoshkoy-i-syrom/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-048",
+      "query": "пирог со свекольной ботвой и сыром",
+      "evidence": {
+        "source": "raw/048.json",
+        "sha256": "22d1bc060851aa634fb555685198bd51a0ab0c7067c2dab7b4fb7cc87901e71c",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%D0%BE%20%D1%81%D0%B2%D0%B5%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%B1%D0%BE%D1%82%D0%B2%D0%BE%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%80%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:25.667877+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 2,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 3,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пирог со свекольной ботвой и сыром",
+            "count": 2
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-so-svekolnoy-botvoy-i-syrom/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-049",
+      "query": "пирог с капустой и яйцом",
+      "evidence": {
+        "source": "raw/049.json",
+        "sha256": "9e60619deaf9404cba002b6ae319b7e1f81b65e9dc6d8e08f1bb009674a39128",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%BE%D0%B9%20%D0%B8%20%D1%8F%D0%B9%D1%86%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:28.556812+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 78,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 17,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пирог с капустой и яйцом",
+            "count": 78
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-s-kapustoy-i-yaytsom/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-050",
+      "query": "пирог с луком и яйцом",
+      "evidence": {
+        "source": "raw/050.json",
+        "sha256": "d5ba916b86943c9e0a7ea7bb534ec7706a4f4c1476ca6f21149c70636140427b",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BB%D1%83%D0%BA%D0%BE%D0%BC%20%D0%B8%20%D1%8F%D0%B9%D1%86%D0%BE%D0%BC",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:30.500314+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 167,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 30,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пирог с луком и яйцом",
+            "count": 169
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-s-lukom-i-yaytsom/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-051",
+      "query": "пирог с курицей и грибами состав",
+      "evidence": {
+        "source": "raw/051.json",
+        "sha256": "fcdb0ced9e3d12a33e6adacc73393800c8823cd7e2387047b809ab350001bd7f",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9%20%D0%B8%20%D0%B3%D1%80%D0%B8%D0%B1%D0%B0%D0%BC%D0%B8%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:33.366757+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-s-kuritsey-i-gribami-vybor/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-052",
+      "query": "пирог с творогом сладкий или соленый",
+      "evidence": {
+        "source": "raw/052.json",
+        "sha256": "de69ba5857123bf0432a1427c5fe390531b8bd0c9d79e70615472909ad3f5d0a",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D1%82%D0%B2%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%D0%BC%20%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8%D0%B9%20%D0%B8%D0%BB%D0%B8%20%D1%81%D0%BE%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:36.236787+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-s-tvorogom-sladkiy-ili-solenyj/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-053",
+      "query": "пирог с тыквой сладкий и сытный",
+      "evidence": {
+        "source": "raw/053.json",
+        "sha256": "7931479ee3d0f84aa9f6a3bbb00d0a4fc574eef6243dde2ab349f925111005b4",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D1%82%D1%8B%D0%BA%D0%B2%D0%BE%D0%B9%20%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8%D0%B9%20%D0%B8%20%D1%81%D1%8B%D1%82%D0%BD%D1%8B%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:39.137267+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-054",
+      "query": "какие яблоки для пирога",
+      "evidence": {
+        "source": "raw/054.json",
+        "sha256": "22b929dd3980c122c23cf73884242d4edb9ed2259ba66fea893ba0b1f84c0479",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5%20%D1%8F%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:42.051454+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 8,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/yabloki-dlya-piroga/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-055",
+      "query": "пирог с вишней начинка",
+      "evidence": {
+        "source": "raw/055.json",
+        "sha256": "67f9e8e89d4be0b352f6cd858aba95cf5daa2ca851a79e3e9e360089766fc45d",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%B2%D0%B8%D1%88%D0%BD%D0%B5%D0%B9%20%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:44.925479+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 12,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-s-vishney-nachinka/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-056",
+      "query": "пирог с брусникой сочетания",
+      "evidence": {
+        "source": "raw/056.json",
+        "sha256": "a6dd3200ed65b3648d665595857530b2d7a2e6d780ffc4cfa76a83c14f142329",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%81%20%D0%B1%D1%80%D1%83%D1%81%D0%BD%D0%B8%D0%BA%D0%BE%D0%B9%20%D1%81%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:47.857840+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-s-brusnikoy-sochetaniya/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-057",
+      "query": "постные пироги состав",
+      "evidence": {
+        "source": "raw/057.json",
+        "sha256": "a4e3e87176ead4e14c73f8339eb91f7c2a835322931006a2b718941872d2b999",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%BE%D1%81%D1%82%D0%BD%D1%8B%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:50.752283+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/postnye-pirogi-kak-proverit-sostav/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-058",
+      "query": "дрожжевое тесто для пирогов",
+      "evidence": {
+        "source": "raw/058.json",
+        "sha256": "1013c96aefbb5171d321753d0e1ed0a148752b784ec99bfdd402cae44426f635",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%B4%D1%80%D0%BE%D0%B6%D0%B6%D0%B5%D0%B2%D0%BE%D0%B5%20%D1%82%D0%B5%D1%81%D1%82%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:53.668852+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 177,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 46,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/drozhzhevoe-testo-dlya-pirogov/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-059",
+      "query": "слоеное или дрожжевое тесто для пирога",
+      "evidence": {
+        "source": "raw/059.json",
+        "sha256": "41d8d090e7f01bf13cf49cb5568a282479e0b9b78de2c0cfb34accb0451f72a4",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D1%81%D0%BB%D0%BE%D0%B5%D0%BD%D0%BE%D0%B5%20%D0%B8%D0%BB%D0%B8%20%D0%B4%D1%80%D0%BE%D0%B6%D0%B6%D0%B5%D0%B2%D0%BE%D0%B5%20%D1%82%D0%B5%D1%81%D1%82%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:56.517383+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 2,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 1,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/sloenoe-ili-drozhzhevoe-testo/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-060",
+      "query": "песочное тесто для киша",
+      "evidence": {
+        "source": "raw/060.json",
+        "sha256": "6c5995698a964c93c25aec79d6cd4196e2ef5792cfc8b9044a894f15f3c04ebb",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%BE%D0%B5%20%D1%82%D0%B5%D1%81%D1%82%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%B8%D1%88%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:05:58.418660+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 8,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 2,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "песочное тесто для киша",
+            "count": 5
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pesochnoe-testo-dlya-kisha/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-061",
+      "query": "осетинские пироги на кефире рецепт",
+      "evidence": {
+        "source": "raw/061.json",
+        "sha256": "0f436e901f8fc204835bdab15a8350ebcd212d5473318e8ba9b867411ae9e5a5",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%BA%D0%B5%D1%84%D0%B8%D1%80%D0%B5%20%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:01.317686+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 25,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 3,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/zalivnoy-pirog-na-kefire/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-062",
+      "query": "осетинский пирог на сковороде рецепт",
+      "evidence": {
+        "source": "raw/062.json",
+        "sha256": "aa96c08633d3d1b22d85c9aa3d2ef471e01b3a6ff02c38f673684d5a85086dfd",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D0%BD%D0%B0%20%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%20%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:03.219140+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 4,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 2,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "осетинский пирог на сковороде рецепт",
+            "count": 4
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirog-na-skovorode-ili-v-duhovke/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-063",
+      "query": "почему у пирога сырое дно",
+      "evidence": {
+        "source": "raw/063.json",
+        "sha256": "072f36a0d6679de3b451a725d94c1458f62ea4bb2e5094ab2ac9d74d5c72cf3d",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83%20%D1%83%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B0%20%D1%81%D1%8B%D1%80%D0%BE%D0%B5%20%D0%B4%D0%BD%D0%BE",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:06.130747+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pochemu-u-piroga-syroe-dno/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-064",
+      "query": "почему пирог трескается и вытекает начинка",
+      "evidence": {
+        "source": "raw/064.json",
+        "sha256": "21bb56dc563eb0e23dfbb659663e494feea05ccc433720134073668ccbc49824",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D1%82%D1%80%D0%B5%D1%81%D0%BA%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%B8%20%D0%B2%D1%8B%D1%82%D0%B5%D0%BA%D0%B0%D0%B5%D1%82%20%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%BA%D0%B0",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:08.037100+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pochemu-pirog-treskaetsya/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-065",
+      "query": "как заморозить пирог",
+      "evidence": {
+        "source": "raw/065.json",
+        "sha256": "2c3d55fa33c99b2bd440f475f25be06fe89984528fff65b4e9b19f9fa5ebfef0",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D0%B0%D0%BA%20%D0%B7%D0%B0%D0%BC%D0%BE%D1%80%D0%BE%D0%B7%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:10.925251+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 15,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 6,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/kak-zamorozit-pirog/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-066",
+      "query": "как хранить пироги",
+      "evidence": {
+        "source": "raw/066.json",
+        "sha256": "763aa58f4c9e2156a803528ba6ac23b21fa0a93d08d14459d8c5ae6755c04209",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D0%B0%D0%BA%20%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:12.797491+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 2,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 1,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "как хранить пироги",
+            "count": 2
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/kak-hranit-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-067",
+      "query": "как нарезать пирог на равные куски",
+      "evidence": {
+        "source": "raw/067.json",
+        "sha256": "6c4b6343cbdf547b954d96af703b50cfb80e7b5530d6bf3fc33eba189b62f30c",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D0%B0%D0%BA%20%D0%BD%D0%B0%D1%80%D0%B5%D0%B7%D0%B0%D1%82%D1%8C%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%20%D0%BD%D0%B0%20%D1%80%D0%B0%D0%B2%D0%BD%D1%8B%D0%B5%20%D0%BA%D1%83%D1%81%D0%BA%D0%B8",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:15.724925+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/kak-narezat-pirog/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-068",
+      "query": "мини пироги или целый пирог",
+      "evidence": {
+        "source": "raw/068.json",
+        "sha256": "9b61d046ccd87bb1b3024da2fba36536c15cfbd0d1d86a27f2bf9cb9b9b993f5",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BC%D0%B8%D0%BD%D0%B8%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B8%D0%BB%D0%B8%20%D1%86%D0%B5%D0%BB%D1%8B%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:18.598800+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/mini-pirogi-ili-tselyy-pirog/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-069",
+      "query": "сладкие пироги к чаю",
+      "evidence": {
+        "source": "raw/069.json",
+        "sha256": "1254a8bbdd306cfe0bac18ea06ac945e09b15a5a27bced47c70b978dc7db5090",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D1%81%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BA%20%D1%87%D0%B0%D1%8E",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:21.500785+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 3,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 4,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/sladkie-pirogi-k-chayu/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-070",
+      "query": "пироги на день рождения",
+      "evidence": {
+        "source": "raw/070.json",
+        "sha256": "8745c87d4185171bf28c42b11c8c2e647468f090987f4c8ec45f32b5878977b3",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%B4%D0%B5%D0%BD%D1%8C%20%D1%80%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:24.421057+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 24,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 5,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirogi-na-den-rozhdeniya/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-071",
+      "query": "пироги на кофе брейк",
+      "evidence": {
+        "source": "raw/071.json",
+        "sha256": "0bb1b2d41c8eec2611da501ff7af801ed07c4fe1684893e8a0a5617742a19f05",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D1%84%D0%B5%20%D0%B1%D1%80%D0%B5%D0%B9%D0%BA",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:27.352788+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirogi-na-kofe-breyk/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-072",
+      "query": "пироги на свадебный фуршет",
+      "evidence": {
+        "source": "raw/072.json",
+        "sha256": "7446ce66ca871f373521fd68eaf6d57107f846816056be78c58b39fce81ea64c",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D1%84%D1%83%D1%80%D1%88%D0%B5%D1%82",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:29.204762+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/pirogi-na-svadebnyy-furshet/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-073",
+      "query": "состав пирога аллергены",
+      "evidence": {
+        "source": "raw/073.json",
+        "sha256": "130d7f97e8b6b20163a9647ac36806822e90b4ef1f447024a0ab8913227e6a56",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B0%20%D0%B0%D0%BB%D0%BB%D0%B5%D1%80%D0%B3%D0%B5%D0%BD%D1%8B",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:32.097325+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/sostav-piroga-i-allergeny/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-074",
+      "query": "как сравнить цены на пироги",
+      "evidence": {
+        "source": "raw/074.json",
+        "sha256": "5a5476f6185ba384599f4373edbf192f2aac5d7a2aef9b94b0f323c6f84515ba",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D0%B0%D0%BA%20%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D1%82%D1%8C%20%D1%86%D0%B5%D0%BD%D1%8B%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:34.897618+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/kak-sravnit-tseny-na-pirogi/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-075",
+      "query": "как перевезти пирог",
+      "evidence": {
+        "source": "raw/075.json",
+        "sha256": "5f8170ab50c6bef0750b85497219cc7e07482f9c882f13ba56dc260413d23a69",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D0%B0%D0%BA%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B5%D0%B7%D1%82%D0%B8%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:37.773936+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 0,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": true,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "informational",
+        "primaryOwner": "/journal/kak-perevezti-pirog/",
+        "candidateOwners": [],
+        "status": "existing_page_by_explicit_intent",
+        "reason": "Тема раскрыта в опубликованной статье из плана 30 материалов; нулевое наблюдение при предупреждении сервиса не причина удалять материал.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-076",
+      "query": "пироги калининград",
+      "evidence": {
+        "source": "raw/076.json",
+        "sha256": "e1b2661491bfb7ac31ea531b55be3c5a0e02a3b82d2b40e55c4e237cfd950ee2",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BA%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:40.718110+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 2918,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 57,
+        "tableComplete": true,
+        "matchingTableRows": [
+          {
+            "query": "пироги калининград",
+            "count": 2876
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "regional_commercial",
+        "primaryOwner": "/kaliningrad/",
+        "candidateOwners": [],
+        "status": "existing_city_page",
+        "reason": "Существующая городская страница. Условия и стадия запуска остаются фактическими, без обещания действующей доставки.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-077",
+      "query": "пироги зеленоградск",
+      "evidence": {
+        "source": "raw/077.json",
+        "sha256": "e058f6e6d55d46a07593bc851f947fec8ef7b8a090b95299353bd284d3edbba6",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:43.651484+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 45,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 3,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "regional_commercial",
+        "primaryOwner": "/zelenogradsk/",
+        "candidateOwners": [],
+        "status": "existing_city_page",
+        "reason": "Существующая городская страница. Условия и стадия запуска остаются фактическими, без обещания действующей доставки.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-078",
+      "query": "пироги светлогорск",
+      "evidence": {
+        "source": "raw/078.json",
+        "sha256": "acf92207363997a78bd3f8bcc98b413bd3917eaa91ceddcfd185e907305bb56a",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:46.589985+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 21,
+        "periodStart": "2026-09-30",
+        "periodEnd": "2026-10-30",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 0,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "regional_commercial",
+        "primaryOwner": "/svetlogorsk/",
+        "candidateOwners": [],
+        "status": "existing_city_page",
+        "reason": "Существующая городская страница. Условия и стадия запуска остаются фактическими, без обещания действующей доставки.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-079",
+      "query": "пироги балтийск",
+      "evidence": {
+        "source": "raw/079.json",
+        "sha256": "11fa1fcf3d1e2bba6767ca547a7baa912bd8841359b4ce582db3fac57d0eb985",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B1%D0%B0%D0%BB%D1%82%D0%B8%D0%B9%D1%81%D0%BA",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:49.467461+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 38,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 1,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "regional_commercial",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/delivery/"
+        ],
+        "status": "city_coverage_gap",
+        "reason": "Город входит в область, но отдельной страницы и подтверждённых условий нет. /delivery/ — справка, не замена городского владельца.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-080",
+      "query": "пироги гурьевск",
+      "evidence": {
+        "source": "raw/080.json",
+        "sha256": "e26e9ee3d500631b2138bbcdc4e3f26bb4e75ac083e6174dc0ff16393038d899",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B3%D1%83%D1%80%D1%8C%D0%B5%D0%B2%D1%81%D0%BA",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:53.426362+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 59,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 2,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "regional_commercial",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/delivery/"
+        ],
+        "status": "city_coverage_gap",
+        "reason": "Город входит в область, но отдельной страницы и подтверждённых условий нет. /delivery/ — справка, не замена городского владельца.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-081",
+      "query": "пироги пионерский",
+      "evidence": {
+        "source": "raw/081.json",
+        "sha256": "434afcb909af7270331c806065029e87cf25ee4bcd6ad08839d47a7920a668c2",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BF%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:56.271126+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 2,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 1,
+        "tableComplete": true,
+        "matchingTableRows": [],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "regional_commercial",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/delivery/"
+        ],
+        "status": "city_coverage_gap",
+        "reason": "Город входит в область, но отдельной страницы и подтверждённых условий нет. /delivery/ — справка, не замена городского владельца.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-082",
+      "query": "пирог",
+      "evidence": {
+        "source": "raw/082.json",
+        "sha256": "86095030df899389cb3f29025d0142282dd30bb1b85a7f255662d1bb36b192b4",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T16:58:45.669363+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 38700,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 200,
+        "tableComplete": false,
+        "matchingTableRows": [
+          {
+            "query": "пирог",
+            "count": 38198
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "broad_discovery",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/",
+          "/blog/"
+        ],
+        "status": "needs_query_disambiguation",
+        "reason": "Широкая лексема смешивает рецепты, покупку и другие значения; первый экран из 200 строк не полное ядро.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    },
+    {
+      "id": "ws-083",
+      "query": "киш",
+      "evidence": {
+        "source": "raw/083.json",
+        "sha256": "ac75cfd54b7d73496e63878c5a6003f9c813756c3be3548469066b787c607057",
+        "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BA%D0%B8%D1%88",
+        "method": "visible_dom_table",
+        "collectedAt": "2026-10-31T17:06:59.155993+00:00",
+        "metric": "seo_frequency",
+        "measure": "displayed_query_summary",
+        "value": 2594,
+        "periodStart": "2026-09-07",
+        "periodEnd": "2026-10-06",
+        "region": "Калининградская область",
+        "regionId": 10857,
+        "devices": "all",
+        "operator": "none_broad_morphology_and_additional_words",
+        "displayedRows": 200,
+        "tableComplete": false,
+        "matchingTableRows": [
+          {
+            "query": "киш",
+            "count": 2574
+          }
+        ],
+        "serviceWarnings": [
+          "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+        ],
+        "reliability": "service_notice_present",
+        "zeroIsObservedUIValue": false,
+        "zeroProvesNoDemand": false
+      },
+      "ownerDecision": {
+        "intent": "ambiguous_lexeme",
+        "primaryOwner": null,
+        "candidateOwners": [
+          "/journal/pesochnoe-testo-dlya-kisha/"
+        ],
+        "status": "needs_query_disambiguation",
+        "reason": "Выдача Wordstat содержит и еду, и музыкальные запросы «слушать», «песни». Общий показатель не считается спросом на пирог.",
+        "serpVerified": false
+      },
+      "userSourceRows": []
+    }
+  ]
+}

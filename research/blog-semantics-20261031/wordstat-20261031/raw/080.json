@@ -1,0 +1,54 @@
+{
+  "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%B3%D1%83%D1%80%D1%8C%D0%B5%D0%B2%D1%81%D0%BA",
+  "title": "Вордстат",
+  "query": "пироги гурьевск",
+  "regionId": "10857",
+  "view": "table",
+  "regionLabel": "Калининградская область",
+  "devices": [
+    {
+      "value": "desktop",
+      "checked": true
+    },
+    {
+      "value": "phone",
+      "checked": true
+    },
+    {
+      "value": "tablet",
+      "checked": true
+    }
+  ],
+  "input": "пироги гурьевск",
+  "loading": false,
+  "summaryText": "Общее число запросов пироги гурьевск за 07.09.2026 – 06.10.2026: 59",
+  "summaryQuery": "пироги гурьевск",
+  "periodStart": "07.09.2026",
+  "periodEnd": "06.10.2026",
+  "summaryCountText": "59",
+  "tableHeaders": [
+    "Запросы со\nсловами",
+    "Число\nзапросов"
+  ],
+  "rows": [
+    [
+      "осетинские пироги гурьевск",
+      "42"
+    ],
+    [
+      "пироги в гурьевске",
+      "16"
+    ]
+  ],
+  "hasMore": false,
+  "serviceWarnings": [
+    "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+  ],
+  "restriction": null,
+  "emptyMessage": null,
+  "collectedAt": "2026-10-31T17:06:53.426362+00:00",
+  "method": "visible_dom_table",
+  "seedIndex": 79,
+  "seed": "пироги гурьевск",
+  "rowsScope": "currently displayed rows; more button status preserved"
+}

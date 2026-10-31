@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "rawFiles": 83,
+  "seeds": 83,
+  "sha256Verified": true,
+  "displayedRows": 2434,
+  "periods": [
+    {
+      "start": "2026-09-07",
+      "end": "2026-10-06",
+      "observations": 56
+    },
+    {
+      "start": "2026-09-30",
+      "end": "2026-10-30",
+      "observations": 27
+    }
+  ],
+  "observedZeros": 23,
+  "sourceWarnings": 83,
+  "incompleteTables": [
+    "ws-009",
+    "ws-023",
+    "ws-025",
+    "ws-026",
+    "ws-045",
+    "ws-082",
+    "ws-083"
+  ],
+  "ownerStatus": {
+    "existing_page_by_explicit_intent": 53,
+    "existing_category": 8,
+    "needs_regional_serp": 13,
+    "no_matching_assortment": 1,
+    "existing_city_page": 3,
+    "city_coverage_gap": 3,
+    "needs_query_disambiguation": 2
+  },
+  "changedLegacyOwners": 22,
+  "userSummaryRows": 108,
+  "keptUserSummaryRows": 46,
+  "excludedUserSummaryRows": 62,
+  "existingHtmlPages": 254,
+  "productPages": 153,
+  "journalPages": 59,
+  "regionalSerpVerified": false
+}

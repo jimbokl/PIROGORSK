@@ -1,0 +1,70 @@
+{
+  "sourceUrl": "https://wordstat.yandex.ru/?region=10857&view=table&words=%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D0%B8%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9",
+  "title": "Вордстат",
+  "query": "пироги на заказ с доставкой",
+  "regionId": "10857",
+  "view": "table",
+  "regionLabel": "Калининградская область",
+  "devices": [
+    {
+      "value": "desktop",
+      "checked": true
+    },
+    {
+      "value": "phone",
+      "checked": true
+    },
+    {
+      "value": "tablet",
+      "checked": true
+    }
+  ],
+  "input": "пироги на заказ с доставкой",
+  "loading": false,
+  "summaryText": "Общее число запросов\n \n \nпироги на заказ с доставкой\n \nза 07.09.2026 – 06.10.2026: 70\n",
+  "summaryQuery": "пироги на заказ с доставкой",
+  "periodStart": "07.09.2026",
+  "periodEnd": "06.10.2026",
+  "summaryCountText": "70",
+  "tableHeaders": [
+    "Запросы со\nсловами",
+    "Число\nзапросов"
+  ],
+  "rows": [
+    [
+      "пироги на заказ с доставкой",
+      "70"
+    ],
+    [
+      "пироги на заказ с доставкой в калининграде",
+      "60"
+    ],
+    [
+      "осетинские пироги на заказ с доставкой",
+      "42"
+    ],
+    [
+      "пироги на заказ с доставкой в москве",
+      "2"
+    ],
+    [
+      "пироги на заказ с доставкой в спб",
+      "2"
+    ],
+    [
+      "пироги штолле на заказ с доставкой",
+      "1"
+    ]
+  ],
+  "hasMore": false,
+  "serviceWarnings": [
+    "Некоторые данные могут быть временно недоступны. Наши инженеры заботятся о том, чтобы скорее восстановить к ним доступ."
+  ],
+  "restriction": null,
+  "emptyMessage": null,
+  "collectedAt": "2026-10-31T16:58:55.285903+00:00",
+  "method": "visible_dom_table",
+  "seedIndex": 3,
+  "seed": "пироги на заказ с доставкой",
+  "rowsScope": "currently displayed rows; more button status preserved"
+}
