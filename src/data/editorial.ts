@@ -11,6 +11,7 @@ import { foodGuide } from './food-guides';
 import { blogArticles } from './blog-articles';
 import { expansionGuides } from './expansion-guides';
 import { localOccasions, occasionHref } from './seo-occasions';
+import { bundles } from './bundles';
 
 export const siteOrigin = 'https://pirogorsk.ru';
 export const interestHref = (id?: string) => id ? `/?interest=${encodeURIComponent(id)}#pirogi` : '/#pirogi';
@@ -253,11 +254,11 @@ export const editorialPaths = [
   ...expansionGuides.map(item => `/journal/${item.slug}/`),
   ...localOccasions.map(occasionHref),
   `/journal/${foodGuide.slug}/`,
-  '/menu/', '/osetinskie-pirogi/', '/delivery/', '/partners/', '/about/', '/podbor/', '/povody/', '/blog/',
+  '/menu/', '/nabory/', '/osetinskie-pirogi/', '/delivery/', '/partners/', '/about/', '/podbor/', '/povody/', '/blog/',
   ...blogArticles.map(item => `/journal/${item.slug}/`),
   ...occasions.map(item => `/povody/${item.slug}/`),
   ...editorialProducts.map(productHref),
-  ...scenarios.map(item => `/nabor/${item.slug}/`),
+  ...new Set([...scenarios.map(item => `/nabor/${item.slug}/`), ...bundles.map(item => item.href)]),
   ...locations.map(item => `/${item.slug}/`),
   ...guides.map(item => `/journal/${item.slug}/`),
 ];

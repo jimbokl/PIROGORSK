@@ -1,0 +1,28 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+import HomeOffers from '../components/HomeOffers.astro';
+import { bundles } from '../data/bundles';
+import { siteOrigin } from '../data/editorial';
+
+const schema = [{
+  '@type': 'ItemList', name: 'Наборы пирогов Пирогорска',
+  itemListElement: bundles.map((bundle, index) => ({
+    '@type': 'ListItem', position: index + 1, name: bundle.title,
+    url: new URL(bundle.href, siteOrigin).href,
+  })),
+}];
+---
+<ContentLayout title="Наборы пирогов для ужина, компании и праздника | Пирогорск" description="Пять сочетаний из меню Пирогорска: для ужина, офиса, компании и дня рождения. Посмотрите состав, вес и сумму каждого набора, измените подборку под себя." breadcrumbs={[{ name: 'Наборы пирогов', href: '/nabory/' }]} {schema}>
+  <header class="bundle-hub-heading">
+    <p class="ed-eyebrow">Несколько вкусов · один стол</p>
+    <h1>Наборы пирогов</h1>
+    <p class="ed-intro">Сытное к ужину, сладкое к чаю и пироги для большой встречи. Начните с готового сочетания — вкусы, вес и количество можно изменить.</p>
+  </header>
+  <HomeOffers embedded listing />
+</ContentLayout>
+<style>
+  .bundle-hub-heading{padding:40px 0 36px;max-width:760px}
+  h1{font-size:clamp(36px,5vw,62px);line-height:1.1;letter-spacing:-.035em;margin-top:14px}
+  .ed-intro{margin-top:18px}
+  @media(max-width:760px){.bundle-hub-heading{padding:25px 0 30px}}
+</style>

@@ -4481,5 +4481,53 @@
       "/journal/sedobnye-suveniry-iz-kaliningrada/",
       "/journal/kak-perevezti-pirog/"
     ]
+  },
+  {
+    "path": "/nabory/",
+    "cluster": "hub",
+    "pageType": "hub",
+    "title": "Наборы пирогов",
+    "query": "наборы пирогов пирогорск",
+    "intent": "Сравнить готовые сочетания из текущего ассортимента и перейти к составу набора.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_bundle_composition"
+  },
+  {
+    "path": "/nabor/sytnoe-i-sladkoe/",
+    "cluster": "set",
+    "pageType": "set",
+    "title": "Сытное и сладкое",
+    "query": "набор пирогов сытное и сладкое",
+    "intent": "Посмотреть состав сочетания куриного и творожного пирогов, вес и сумму; изменить подборку.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_bundle_composition"
+  },
+  {
+    "path": "/nabor/obed-v-ofise/",
+    "cluster": "set",
+    "pageType": "set",
+    "title": "Обед в офисе",
+    "query": "набор пирогов обед в офисе",
+    "intent": "Выбрать сочетание с курицей и капустой для обеда с коллегами.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_bundle_composition"
+  },
+  {
+    "path": "/nabor/ko-dnyu-rozhdeniya/",
+    "cluster": "set",
+    "pageType": "set",
+    "title": "Ко дню рождения",
+    "query": "набор пирогов ко дню рождения",
+    "intent": "Выбрать два сытных и вишнёвый пирог для праздничного стола.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "existing_bundle_composition"
   }
 ]

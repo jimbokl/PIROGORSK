@@ -1,0 +1,93 @@
+---
+import { Image } from 'astro:assets';
+import bundleTown from '../../design/catalog-polish-20261101/bundle-town.png';
+import ContentLayout from '../layouts/ContentLayout.astro';
+import ProductVisual from './ProductVisual.astro';
+import SupplierArtwork from './SupplierArtwork.astro';
+import Icon from './Icon.astro';
+import { bundles } from '../data/bundles';
+import { catalog } from '../data/catalog';
+import { siteOrigin } from '../data/editorial';
+import { selectionPrice } from '../lib/selection-offers';
+import { compositionSummary } from '../lib/composition-summary';
+import { catalogProductHref } from '../lib/product-paths';
+
+interface Props { bundle: (typeof bundles)[number] }
+const { bundle } = Astro.props;
+const items = bundle.items.map(item => {
+  const product = catalog.find(product => product.id === item.id)!;
+  const variant = product.variants.find(variant => variant.value === item.value)!;
+  return { ...item, product, variant };
+});
+const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
+const summary = compositionSummary(bundle.items, catalog)!.text;
+const schema = [{
+  '@type': 'ItemList', name: `Состав набора «${bundle.title}»`,
+  itemListElement: items.map((item, index) => ({
+    '@type': 'ListItem', position: index + 1, name: `${item.product.name} · ${item.variant.label}`,
+    url: new URL(catalogProductHref(item.product), siteOrigin).href,
+  })),
+}];
+---
+<ContentLayout title={`Набор пирогов «${bundle.title}» — состав и цена | Пирогорск`} description={bundle.intro} breadcrumbs={[{ name: 'Наборы пирогов', href: '/nabory/' }, { name: bundle.title, href: bundle.href }]} {schema}>
+  <header class="bundle-heading">
+    <a class="bundle-back" href="/nabory/">Все наборы <span aria-hidden="true">↗</span></a>
+    <h1>{bundle.title}</h1>
+    <p>{bundle.intro}</p>
+  </header>
+  <section class="bundle-detail" aria-label={`Набор «${bundle.title}»`} data-bundle-page={bundle.id}>
+    <div class="bundle-art" role="img" aria-label={`Пироговый город и пироги из набора «${bundle.title}»`}>
+      <Image class="bundle-backdrop" src={bundleTown} alt="" widths={[480,720,960]} sizes="(max-width:760px) calc(100vw - 36px), 50vw" width={960} height={640} format="webp" quality={72} loading="eager" />
+      <div class="bundle-products" aria-hidden="true">{items.map(item => item.id.startsWith('p39-')
+        ? <SupplierArtwork id={item.id} sizes="(max-width:760px) 150px, 230px" hero decorative />
+        : <ProductVisual product={item.product} sizes="(max-width:760px) 150px, 230px" priority decorative />)}</div>
+      <span class="bundle-art-caption">Пирогорск · к общему столу</span>
+    </div>
+    <div class="bundle-composition">
+      <p class="ed-eyebrow">{bundle.items.length} пирога в наборе</p>
+      <h2>Что входит</h2>
+      <ul class="bundle-items">{items.map(item => <li>
+        <a href={catalogProductHref(item.product)}>
+          <span class="bundle-item-name">{item.product.name}<small>{item.quantity} шт. · {item.variant.label.replace('Целый · ', '')}</small></span>
+          <span class="bundle-item-price">{money(item.variant.price * item.quantity)} <span aria-hidden="true">↗</span></span>
+        </a>
+      </li>)}</ul>
+      <p class="bundle-summary" data-bundle-page-summary>{summary}</p>
+      <div class="bundle-price"><strong data-bundle-page-price>{money(selectionPrice(bundle.items, catalog))}</strong><span>Сумма позиций · предварительно</span></div>
+      <div class="bundle-actions">
+        <a class="ed-button" data-bundle={bundle.id} href={`/?interest=bundle&bundle=${bundle.id}#nabory`} aria-label={`В подборку: ${bundle.title}`}>В подборку <Icon name="arrow" /></a>
+        <a class="bundle-edit" data-edit-bundle={bundle.id} href={`/?interest=edit-bundle&bundle=${bundle.id}`}>Изменить состав <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="bundle-help">Морс и посуду можно добавить в подборке. Доставка считается отдельно, один раз за весь состав. Заказы пока не принимаем.</p>
+    </div>
+  </section>
+  <section class="bundle-more" aria-labelledby="bundle-more-title">
+    <div class="bundle-more-heading"><h2 id="bundle-more-title">Ещё к вашему столу</h2><a class="bundle-back" href="/nabory/">Все наборы <span aria-hidden="true">↗</span></a></div>
+    <div class="bundle-more-grid">{bundles.filter(item => item.id !== bundle.id).map(item => <a href={item.href}><span>{item.title}</span><span aria-hidden="true">↗</span></a>)}</div>
+    <p class="bundle-planner"><a href="/podbor/">Рассчитать пироги на компанию <Icon name="arrow" /></a><a href="/menu/">Выбрать другие вкусы <Icon name="arrow" /></a></p>
+  </section>
+</ContentLayout>
+<style>
+.bundle-heading{padding:30px 0;max-width:810px}.bundle-back{display:inline-flex;align-items:center;gap:18px;min-height:44px;font:500 12px/1.5 var(--sans);text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--brand-gold)}
+.bundle-heading h1{font-size:clamp(36px,5vw,62px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 18px;text-wrap:balance}.bundle-heading>p{font:400 15px/1.8 var(--sans);color:var(--muted);max-width:67ch}
+.bundle-detail{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:start;margin-bottom:60px}
+.bundle-art{position:relative;isolation:isolate;display:flex;align-items:center;min-width:0;aspect-ratio:1.15;border-radius:28px;overflow:hidden;background:#f8f0e2;padding:88px 20px 32px}
+.bundle-backdrop{position:absolute;z-index:-1;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;opacity:.9}
+.bundle-products{display:flex;align-items:center;justify-content:center;width:100%}
+.bundle-art :global(.product-visual-badge),.bundle-art :global(.product-backdrop),.bundle-art :global(.product-visual-background){display:none}
+.bundle-art :global(:is(.product-visual,.product-artwork)){position:relative;flex:1;min-width:0;width:0;aspect-ratio:1;height:auto;margin:0!important;overflow:visible;background:transparent}
+.bundle-art :global(.product-artwork-subject){inset:0;mask-image:none;mix-blend-mode:normal}.bundle-art :global(.product-visual-subject){width:112%;top:50%}
+.bundle-art :global(:is(.product-visual,.product-artwork)):nth-child(2){margin-left:-20px!important;transform:translateY(20px)}.bundle-art :global(:is(.product-visual,.product-artwork)):nth-child(3){margin-left:-18px!important;transform:translateY(-8px)}
+.bundle-art-caption{position:absolute;bottom:22px;left:26px;font:500 10px/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:#79572b}
+.bundle-composition{min-width:0;padding:6px 0}.bundle-composition h2{font-size:30px;line-height:1.2;margin:10px 0 22px;letter-spacing:-.025em}
+.bundle-items{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}.bundle-items a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px;padding:15px 18px;border-radius:16px;text-decoration:none;background:#f8f6f0;box-shadow:inset 0 0 0 1px #bc873421;transition:background .2s}.bundle-items a:hover{background:#f2e7d0}
+.bundle-item-name{font:500 14px/1.5 var(--sans);min-width:0}.bundle-item-name small{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:5px}.bundle-item-price{font:500 13px/1.5 var(--sans);white-space:nowrap}.bundle-item-price>span{color:#8d5d21;margin-left:10px}
+.bundle-summary{font:500 12px/1.6 var(--sans);margin:0 0 24px}.bundle-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-bottom:20px}.bundle-price strong{font:600 34px/1.2 var(--sans);letter-spacing:-.04em;font-variant-numeric:tabular-nums}.bundle-price>span{font:400 11px/1.5 var(--sans);color:var(--muted)}
+.bundle-actions{display:flex;align-items:center;gap:14px 24px;flex-wrap:wrap}.bundle-actions .ed-button{min-width:180px;min-height:52px;font-size:14px}.bundle-edit{display:inline-flex;align-items:center;gap:12px;min-height:48px;font:500 12px/1.5 var(--sans);text-underline-offset:5px;text-decoration-color:var(--brand-gold)}
+.bundle-help{font:400 11px/1.8 var(--sans);color:var(--muted);margin-top:20px;max-width:60ch}
+.bundle-more{margin:40px 0}.bundle-more-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.bundle-more-heading h2{font-size:32px;letter-spacing:-.025em}.bundle-more-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.bundle-more-grid>a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 20px;min-height:90px;border:1px solid var(--line);border-radius:18px;font:500 17px/1.35 var(--serif);text-decoration:none}.bundle-more-grid>a:hover{background:#f8f6f0}.bundle-more-grid>a>span:last-child{color:#8d5d21;font-family:var(--sans)}
+.bundle-planner{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:20px}.bundle-planner a{display:inline-flex;align-items:center;gap:16px;min-height:48px;font:500 12px/1.5 var(--sans);text-underline-offset:5px;text-decoration-color:var(--brand-gold)}
+@media(max-width:1000px){.bundle-detail{gap:28px}.bundle-art{aspect-ratio:1;padding-top:65px}.bundle-items a{padding:14px}.bundle-more-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.bundle-heading{padding:18px 0 24px}.bundle-heading>p{font-size:14px}.bundle-detail{grid-template-columns:minmax(0,1fr);gap:26px;margin-bottom:38px}.bundle-art{aspect-ratio:1.3;max-width:520px;width:100%;margin-inline:auto;padding:60px 16px 24px;border-radius:22px}.bundle-art-caption{left:20px;bottom:16px;font-size:8px}.bundle-composition h2{font-size:28px}.bundle-more-heading{align-items:start;flex-direction:column;gap:4px}.bundle-more-heading h2{font-size:29px}.bundle-more-grid{gap:10px}.bundle-more-grid>a{font-size:17px;padding:18px 14px}.bundle-item-price>span{margin-left:4px}}
+@media(max-width:380px){.bundle-items a{gap:8px;padding:12px}.bundle-item-name{font-size:13px}.bundle-item-price{font-size:12px}.bundle-actions{gap:6px;width:100%}.bundle-actions .ed-button{width:100%}.bundle-more-grid{grid-template-columns:1fr}}
+</style>

@@ -1,6 +1,7 @@
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { catalog } from '../src/data/catalog.ts';
+import { bundles } from '../src/data/bundles.ts';
 import { catalogProductHref, selectionHref } from '../src/lib/product-paths.ts';
 
 // Verify emitted HTML, rather than source templates. No network or account access.
@@ -25,7 +26,7 @@ const htmlFiles = async directory => {
 };
 const routeFor = file => `/${path.relative(output, file).split(path.sep).join('/')}`.replace(/index\.html$/, '');
 const fileFor = pathname => path.join(output, pathname.endsWith('/') ? `${pathname}index.html` : pathname);
-const isEditorial = route => /^\/(menu|delivery|partners|about|podbor|povody|blog|kaliningrad|zelenogradsk|svetlogorsk)\/$|^\/(pirogi|catalog|nabor|dostavka|journal|povody)\/[^/]+\/$|^\/povody\/(kaliningrad|zelenogradsk|svetlogorsk)\/[^/]+\/$/.test(route);
+const isEditorial = route => /^\/(menu|nabory|delivery|partners|about|podbor|povody|blog|kaliningrad|zelenogradsk|svetlogorsk)\/$|^\/(pirogi|catalog|nabor|dostavka|journal|povody)\/[^/]+\/$|^\/povody\/(kaliningrad|zelenogradsk|svetlogorsk)\/[^/]+\/$/.test(route);
 
 try {
   const all = await htmlFiles(output);
@@ -99,7 +100,10 @@ try {
       assert(/(?:готовим запуск|готовится к запуску|перед запуском|пока не запущен)/i.test(html), `${route}: missing visible launch status.`);
       const product = catalog.find(item => catalogProductHref(item) === route);
       const section = product ? `#${selectionHref(product, product.defaultVariant).split('#')[1]}` : '#pirogi';
-      if (monthlyRoutes.has(route)) {
+      if (route === '/nabory/' || bundles.some(bundle => bundle.href === route)) {
+        const expected = route === '/nabory/' ? bundles : bundles.filter(bundle => bundle.href === route);
+        for (const bundle of expected) assert(tags(html, 'a').some(item => item['data-bundle'] === bundle.id && item.href === `/?interest=bundle&bundle=${bundle.id}#nabory`), `${route}: missing bundle selection CTA for ${bundle.id}.`);
+      } else if (monthlyRoutes.has(route)) {
         // A7 requires one scenario CTA; the SEO-map audit verifies its actual registered target.
         const block = html.match(/<aside\b[^>]*class="ed-next-step"[^>]*>(.*?)<\/aside>/s)?.[1] ?? '';
         assert(tags(block, 'a').length === 1 && block.includes('data-guide-catalog'), `${route}: missing measured scenario CTA.`);
