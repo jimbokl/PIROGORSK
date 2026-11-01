@@ -1,0 +1,156 @@
+{
+  "runtime": "21d20e72e1fa2cf137bb82ec4ad04d22a2ae641b",
+  "page": "/catalog/baltiyskiy-piknik-set/",
+  "method": "One cold mobile and one desktop Lighthouse sample per version on the same localhost server. Before HTML is the pre-release production response; both use identical current assets except the new backdrop.",
+  "limitations": "Small laboratory sample; mobile variance cannot establish an improvement or regression. Public PageSpeed is recorded separately. No field performance claim.",
+  "results": {
+    "before": [
+      {
+        "mode": "mobile",
+        "timestamp": "2026-11-01T14:51:33.011Z",
+        "url": "http://127.0.0.1:4323/catalog/baltiyskiy-piknik-set/?before=1&qa=1",
+        "lighthouseVersion": "13.5.0",
+        "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "throttlingMethod": "simulate",
+        "scores": {
+          "performance": 76,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 3307.9674999999997,
+            "display": "3.3 s"
+          },
+          "largest-contentful-paint": {
+            "value": 4659.561,
+            "display": "4.7 s"
+          },
+          "total-blocking-time": {
+            "value": 0,
+            "display": "0 ms"
+          },
+          "cumulative-layout-shift": {
+            "value": 0,
+            "display": "0"
+          },
+          "speed-index": {
+            "value": 3307.9674999999997,
+            "display": "3.3 s"
+          }
+        }
+      },
+      {
+        "mode": "desktop",
+        "timestamp": "2026-11-01T14:51:39.235Z",
+        "url": "http://127.0.0.1:4323/catalog/baltiyskiy-piknik-set/?before=1&qa=1",
+        "lighthouseVersion": "13.5.0",
+        "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "throttlingMethod": "simulate",
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 663.78675,
+            "display": "0.7 s"
+          },
+          "largest-contentful-paint": {
+            "value": 905.049,
+            "display": "0.9 s"
+          },
+          "total-blocking-time": {
+            "value": 0,
+            "display": "0 ms"
+          },
+          "cumulative-layout-shift": {
+            "value": 0,
+            "display": "0"
+          },
+          "speed-index": {
+            "value": 663.78675,
+            "display": "0.7 s"
+          }
+        }
+      }
+    ],
+    "after": [
+      {
+        "mode": "mobile",
+        "timestamp": "2026-11-01T14:52:17.808Z",
+        "url": "http://127.0.0.1:4323/catalog/baltiyskiy-piknik-set/?qa=1",
+        "lighthouseVersion": "13.5.0",
+        "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "throttlingMethod": "simulate",
+        "scores": {
+          "performance": 87,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 2651.3264,
+            "display": "2.7 s"
+          },
+          "largest-contentful-paint": {
+            "value": 3456.4352,
+            "display": "3.5 s"
+          },
+          "total-blocking-time": {
+            "value": 0,
+            "display": "0 ms"
+          },
+          "cumulative-layout-shift": {
+            "value": 0,
+            "display": "0"
+          },
+          "speed-index": {
+            "value": 2651.3264,
+            "display": "2.7 s"
+          }
+        }
+      },
+      {
+        "mode": "desktop",
+        "timestamp": "2026-11-01T14:52:24.074Z",
+        "url": "http://127.0.0.1:4323/catalog/baltiyskiy-piknik-set/?qa=1",
+        "lighthouseVersion": "13.5.0",
+        "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "throttlingMethod": "simulate",
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 665.7034500000002,
+            "display": "0.7 s"
+          },
+          "largest-contentful-paint": {
+            "value": 927.6046000000001,
+            "display": "0.9 s"
+          },
+          "total-blocking-time": {
+            "value": 0,
+            "display": "0 ms"
+          },
+          "cumulative-layout-shift": {
+            "value": 0,
+            "display": "0"
+          },
+          "speed-index": {
+            "value": 665.7034500000002,
+            "display": "0.7 s"
+          }
+        }
+      }
+    ]
+  }
+}

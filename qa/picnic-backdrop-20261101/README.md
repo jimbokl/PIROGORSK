@@ -29,5 +29,37 @@ CodeGraph context вернул `Transport closed`; связи компонент
   добавление и reload без дублей PASS. Телефон, планшет и desktop просмотрены.
 - 65 Node tests, Worker typecheck/API/SQL и полный `test:browser` PASS.
 
-Сравнение лабораторной скорости, CI и production:
-результаты будут дописаны после завершения.
+## Скорость и публикация
+
+[Локальное сравнение](performance-comparison.json): по одному cold mobile/desktop
+Lighthouse sample на старом production HTML и новой сборке, один localhost server.
+Mobile LCP 4.66 → 3.46 s, desktop 0.91 → 0.93 s; CLS/TBT = 0 в обоих вариантах.
+Это малая лабораторная выборка: разницу mobile нельзя приписывать подложке.
+[Публичный замер до публикации](public-pagespeed-before.json): mobile/desktop
+100/100, LCP 1.503/0.322 s, CLS 0/0; CrUX данных нет.
+
+Runtime `21d20e72e1fa2cf137bb82ec4ad04d22a2ae641b` опубликован.
+[CI 41318265841](https://github.com/jimbokl/PIROGORSK/actions/runs/41318265841)
+SUCCESS; [состояние CI](ci.json), [published contract](release-production.log).
+
+[Production browser report](production-report.json): 24/24 размещения,
+320/390/768/1280, 154 SKU в каталоге; 350 ₽, 2×350=700, добавление и reload PASS.
+Оба видимых слоя декодированы, фон заполняет поверхность, AVIF/WebP responsive;
+overflow/console errors нет. Визуально просмотрены телефон/планшет/desktop.
+[8/8 публичных assets](production-assets.json) HTTP 200, image content types,
+SHA-256 совпадает с локальными файлами; [read-only verifier](check-production-assets.py).
+
+[PageSpeed после публикации](public-pagespeed-after.json),
+[публичный отчёт](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-catalog-baltiyskiy-piknik-set/fu06r32079):
+mobile/desktop 100/100, LCP 1.352/0.361 s, TBT 9/4 ms, CLS 0/0;
+accessibility/best practices/SEO — 100/100 в обоих режимах. CrUX данных нет.
+Это единичные лабораторные замеры, а не обещание стабильных оценок.
+
+## Визуальные доказательства с production
+
+- [Страница товара, телефон](production-product-390.png).
+- [Страница товара, планшет](production-product-768.png).
+- [Хаб наборов, телефон](production-hub-390.png).
+- [Меню, desktop](production-menu-1280.png).
+
+BRAND-02 закрыт. По этой задаче обязательных действий не осталось.

@@ -1,11 +1,16 @@
-## Подложка пикник-сета · 01.11.2026 · в работе
+## Подложка пикник-сета · 01.11.2026 · опубликовано
 
-BRAND-02: отдельная подложка built-in imagegen подключена через общий
-ProductBackdrop во всех размещениях. Оригинал foreground сохранён;
-исключение без подложки из проверки удалено. Local check/build/SEO,
-154 позиции с фоном, 24 responsive размещения, Node/Worker PASS.
-Публикация и production-проверка ещё не выполнены.
-[Протокол](qa/picnic-backdrop-20261101/README.md).
+BRAND-02: отдельная подложка built-in imagegen — балтийский город, волны,
+облепиха — подключена общим ProductBackdrop во всех размещениях.
+Оригинал foreground и данные 154 товаров сохранены. Исключение без подложки
+удалено: verifier проверяет все 154 товара; регрессия ловится на старой сборке.
+Local check/build/SEO/release, Node/Worker, полный browser suite PASS.
+Runtime `21d20e72e1fa2cf137bb82ec4ad04d22a2ae641b`, CI 41318265841 SUCCESS.
+Production: 24 размещения / 320/390/768/1280, количество/подборка/reload PASS,
+8/8 AVIF/WebP совпали по SHA, release compatibility PASS.
+Public PSI после публикации: mobile/desktop 100/100, LCP 1.352/0.361 s,
+CLS 0/0; единичные лабораторные замеры, CrUX нет.
+[Протокол и визуальные доказательства](qa/picnic-backdrop-20261101/README.md).
 
 ## Айдентика пикник-сета · 01.11.2026 · зафиксирована
 
