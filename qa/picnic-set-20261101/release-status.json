@@ -1,0 +1,43 @@
+{
+  "status": "published-and-verified",
+  "runtime": "945a796ec4424d669234d3247310c2449859b47f",
+  "ciRun": 41295805248,
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/41295805248",
+  "workerVersion": "7c7b062c-ab8c-40ad-93b7-134de498ebb8",
+  "workerCompatibility": "PASS",
+  "localBrowser": "PASS",
+  "localResponsive": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "previousProductsPreserved": 153,
+  "currentProducts": 154,
+  "oracleStatus": "saved-and-deferred",
+  "ciConclusion": "success",
+  "productionRelease": "PASS",
+  "productionPicnic": "PASS",
+  "productionResponsive": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "productionCatalog": "PASS",
+  "productionCatalogWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "visualReview": [
+    "product-390",
+    "hub-768",
+    "catalog-390",
+    "home-cards-390"
+  ],
+  "qaScrollCapture": "reduced-motion plus two animation frames; production repeat PASS"
+}

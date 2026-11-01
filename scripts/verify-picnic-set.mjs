@@ -14,6 +14,8 @@ const types = { '.html':'text/html', '.css':'text/css', '.js':'application/javas
 const chrome = await launch({ chromeFlags: ['--headless=new', '--disable-extensions'] });
 const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
 const page = await browser.newPage();
+// Static captures must not race the category rail's scheduled smooth scroll.
+await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
 const report = { stage, widths: [], errors: [] };
 page.on('pageerror', error => report.errors.push(error.message));
 await page.setRequestInterception(true);
@@ -80,6 +82,7 @@ try {
     assert.equal(await page.$$eval(card, els => els.length), 1);
     await page.locator('[data-home-category="extras"]').click();
     await page.waitForFunction(() => !document.querySelector('[data-product="picnic-set"]').hidden);
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     assert.equal(await page.$eval('[data-home-more]', el => el.hidden && getComputedStyle(el).display === 'none'), true, 'No zero-count load button after the complete catalogue is revealed');
     await view(card);
     await page.$eval(card, el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
