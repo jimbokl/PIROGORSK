@@ -1,4 +1,5 @@
 ---
+import PortionPrice from './PortionPrice.astro';
 import VariantLabel from './VariantLabel.astro';
 import { productFillings } from '../lib/catalog-fillings';
 import Icon from './Icon.astro';
@@ -26,7 +27,7 @@ const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Об�
     <legend class="sr-only">{measure}: {product.name.toLowerCase()}</legend>
     {product.variants.map(variant => <label><input type="radio" name={`weight-${product.id}`} value={variant.value} data-variant={variant.value} checked={variant.value === selectedVariant.value} /><VariantLabel label={variant.label} price={variant.price} from={product.supplier?.priceFrom} /></label>)}
   </fieldset>
-  <div class="menu-feed-bottom"><MenuQuantity name={product.name} /><div class="menu-feed-purchase"><div><strong data-price aria-live="polite">{pricePrefix}{selectedVariant.price.toLocaleString('ru-RU')} ₽</strong><small data-feed-price-note>Предварительно</small></div><button type="button" class="menu-feed-add" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span></button></div></div>
+  <div class="menu-feed-bottom"><MenuQuantity name={product.name} /><div class="menu-feed-purchase"><div><strong data-price aria-live="polite">{pricePrefix}{selectedVariant.price.toLocaleString('ru-RU')} ₽</strong><small data-feed-price-note>Предварительно</small><PortionPrice {product} price={selectedVariant.price} grams={selectedVariant.value} /></div><button type="button" class="menu-feed-add" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span></button></div></div>
 </article> : <article class:list={['product-card', 'catalog-card', `catalog-card--${product.kind}`]} data-product={product.id} data-price-prefix={pricePrefix || undefined} data-fillings={productFillings(product).join(" ")} data-catalog-search={[product.name, product.description, ...product.variants.map(v => v.label)].join(" ")} data-category={product.category} data-kind={product.kind} data-unit={product.unit} aria-labelledby={`product-${product.id}`}>
   {product.supplier ? <a class="product-visual-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name.toLowerCase()}`}><SupplierArtwork id={product.id} decorative /></a> : <PieGallery {product} href={catalogProductHref(product)} class="product-visual-link"><ProductVisual {product} decorative /></PieGallery>}
   <div class="product-copy">
@@ -44,6 +45,7 @@ const measure = product.unit === 'g' ? 'Вес' : product.unit === 'ml' ? 'Об�
     <div class="product-price-wrap">
       <span class="product-price" data-price aria-live="polite">{pricePrefix}{selectedVariant.price.toLocaleString('ru-RU')} ₽</span>
       <small class="product-price-note">Предварительно</small>
+      <PortionPrice {product} price={selectedVariant.price} grams={selectedVariant.value} />
     </div>
     <button type="button" class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name.toLowerCase()}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button>
   </div>

@@ -1,4 +1,4 @@
-import { portionSummary } from '../lib/product-portions';
+import { portionSummary, portionPriceLabel } from '../lib/product-portions';
 import type { Product } from '../data/catalog';
 import { trackGoal } from './analytics';
 import { editorialCityIntents, editorialScenarioIntents } from '../data/editorial-intents';
@@ -251,6 +251,8 @@ all('[data-home-catalog] [data-product]').forEach(card => {
     if (priceNote) priceNote.textContent = count > 1 ? `${prefix}${money(product.prices[value])} / шт.\nПредварительно` : 'Предварительно';
     const portions = card.querySelector<HTMLElement>('[data-pie-portions]');
     if (portions) portions.textContent = portionSummary(value, count);
+    const portionPrice = card.querySelector<HTMLElement>('[data-portion-price]');
+    if (portionPrice) portionPrice.textContent = portionPriceLabel(product.prices[value], value, portionPrice.dataset.portionFrom === 'true');
   };
   card.querySelector<HTMLElement>('[data-feed-quantity-control]')?.removeAttribute('hidden');
   decrease?.addEventListener('click', () => { quantity!.value = String(readQuantity() - 1); updatePrice(); });

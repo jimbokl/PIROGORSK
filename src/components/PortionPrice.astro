@@ -1,0 +1,11 @@
+---
+import type { Product } from '../data/catalog';
+import { hasPortionPrice, portionPriceLabel } from '../lib/product-portions';
+interface Props { product?: Product; price: number; grams: number; from?: boolean }
+const { product, price, grams, from = product?.supplier?.priceFrom ?? false } = Astro.props;
+const label = !product || hasPortionPrice(product) ? portionPriceLabel(price, grams, from) : '';
+---
+{label && <span class="portion-price" data-portion-price data-portion-from={from ? 'true' : undefined}>{label}</span>}
+<style>
+  .portion-price{display:block;max-width:160px;min-height:33px;margin-top:4px;color:var(--muted);font:400 11px/1.5 var(--sans);font-variant-numeric:tabular-nums;text-wrap:pretty}
+</style>

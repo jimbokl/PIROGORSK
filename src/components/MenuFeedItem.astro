@@ -1,4 +1,5 @@
 ---
+import PortionPrice from './PortionPrice.astro';
 import VariantLabel from './VariantLabel.astro';
 import { productFillings } from '../lib/catalog-fillings';
 import ProductVisual from './ProductVisual.astro';
@@ -18,5 +19,5 @@ const selected = product.variants.find(v => v.value === product.defaultVariant)!
   <h3 id={`feed-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3>
   <p class="menu-feed-description">{product.description}<PiePortions {product} /></p>
   <fieldset class="menu-feed-variants"><legend class="sr-only">Формат: {product.name}</legend>{product.variants.map(v => <label><input type="radio" name={`feed-format-${product.id}`} value={v.value} data-feed-price={v.price} checked={v.value === selected.value} /><VariantLabel label={v.label} price={v.price} from={product.supplier?.priceFrom} /></label>)}</fieldset>
-  <div class="menu-feed-bottom"><MenuQuantity name={product.name} /><div class="menu-feed-purchase"><div><strong data-feed-price-label>{selected.price.toLocaleString('ru-RU')} ₽</strong><small data-feed-price-note>Предварительно</small></div><a class="menu-feed-add" data-feed-add href={`/?interest=${product.id}&variant=${selected.value}`}>В подборку</a></div></div>
+  <div class="menu-feed-bottom"><MenuQuantity name={product.name} /><div class="menu-feed-purchase"><div><strong data-feed-price-label>{selected.price.toLocaleString('ru-RU')} ₽</strong><small data-feed-price-note>Предварительно</small><PortionPrice {product} price={selected.price} grams={selected.value} /></div><a class="menu-feed-add" data-feed-add href={`/?interest=${product.id}&variant=${selected.value}`}>В подборку</a></div></div>
 </article>

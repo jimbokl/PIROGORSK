@@ -6,6 +6,18 @@ export function hasPiePortions(product: PortionProduct): boolean {
   return product.unit === 'g' && (product.kind === 'pie' || pieCategories.has(product.category));
 }
 
+/** Compare whole pies on the same basis; individual pastries have their own serving size. */
+export function hasPortionPrice(product: PortionProduct): boolean {
+  return hasPiePortions(product) && product.category !== 'mini-pies';
+}
+
+/** Use weight rather than the rounded portion count, so different formats stay comparable. */
+export function portionPriceLabel(price: number, grams: number, from = false): string {
+  if (!Number.isFinite(price) || price <= 0 || !Number.isSafeInteger(grams) || grams <= 0) return '';
+  const cost = Math.round(price * 250 / grams);
+  return `${from ? 'от' : '≈'} ${cost.toLocaleString('ru-RU')} ₽ за порцию 250 г`;
+}
+
 export function portionSummary(grams: number, quantity = 1): string {
   if (!Number.isSafeInteger(grams) || grams <= 0 || !Number.isSafeInteger(quantity) || quantity < 1 || quantity > 99) return '';
   const weight = grams * quantity;

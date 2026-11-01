@@ -162,7 +162,7 @@ try {
     assert.equal(await page.$eval('[data-tasting-hero]', hero => hero.dataset.flavor), 'pies');
     await page.click('[data-tasting-next]');
     await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'company');
-    assert.equal(await page.$eval('[data-tasting-cta]', link => link.getAttribute('href')), '#nabory');
+    assert.equal(await page.$eval('[data-tasting-cta]', link => link.getAttribute('href')), '/nabory/');
     await page.click('[data-tasting-prev]');
     await page.waitForFunction(() => document.querySelector('[data-tasting-hero]')?.dataset.flavor === 'pies');
     await page.focus('[data-tasting-cta]');

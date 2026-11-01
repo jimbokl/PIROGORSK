@@ -4,6 +4,8 @@ import {resolve,extname} from 'node:path';
 import {launch} from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
 import {catalog} from '../src/data/catalog.ts';
+import {hasPortionPrice,portionPriceLabel} from '../src/lib/product-portions.ts';
+import {catalogProductHref} from '../src/lib/product-paths.ts';
 import {verifyCatalogFormats} from '../worker/scripts/qa-catalog-formats.mjs';
 const stage=process.env.QA_BASE?'production':'local';
 const output=process.env.QA_OUTPUT||'qa/catalog-polish-20261101';
@@ -33,7 +35,7 @@ try{
    await page.goto(origin+(surface==='home'?'/':'/menu/')+'?qa=1#nabory',{waitUntil:'networkidle0'});
    await page.evaluate(()=>document.fonts.ready);
    const selector=surface==='home'?'[data-home-catalog] [data-product]':'.menu-feed [data-feed-id],.menu-feed [data-supplier-id]';
-   const data=await page.evaluate(selector=>{
+   const data=await page.evaluate(({selector,products})=>{
     const cards=[...document.querySelectorAll(selector)];
     const errors=[];let checked=0;
     const box=el=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height};};
@@ -42,20 +44,34 @@ try{
      if(!card.getBoundingClientRect().height)continue;
      const input=card.querySelector('[data-feed-quantity]');
      const id=card.dataset.product||card.dataset.feedId||card.dataset.supplierId;
+     const product=products.find(p=>p.id===id);
+     const estimate=card.querySelector('[data-portion-price]');
+     if(Boolean(estimate)!==product.eligible)errors.push({id,portionPricePresence:true});
+     const checkEstimate=()=>{
+      if(!estimate)return;
+      const selected=Number(card.querySelector('input[type="radio"]:checked').value);
+      if(estimate.textContent!==product.labels[selected])errors.push({id,selected,portionPrice:estimate.textContent,expected:product.labels[selected]});
+     };
      const set=q=>{input.value=String(q);input.dispatchEvent(new Event('input',{bubbles:true}));};
      set(1);const before=snapshot(card);
      for(const q of [2,99,1]){
       set(q);const after=snapshot(card);
+      checkEstimate();
       for(const key of ['card','purchase','button'])for(const prop of ['y','width','height'])if(Math.abs(after[key][prop]-before[key][prop])>1)errors.push({id,q,key,prop,before:before[key][prop],after:after[key][prop]});
       const price=card.querySelector('[data-price],[data-feed-price-label],[data-supplier-price]').getBoundingClientRect();
       const button=card.querySelector('[data-add],[data-feed-add],[data-supplier-link]').getBoundingClientRect();
       if(price.right>button.left-3&&price.bottom>button.top&&price.top<button.bottom)errors.push({id,q,overlap:true,priceRight:price.right,buttonLeft:button.left});
       if(card.scrollWidth>card.clientWidth+1)errors.push({id,q,overflow:true});
      }
+     for(const radio of card.querySelectorAll('input[type="radio"]')){
+      radio.checked=true;radio.dispatchEvent(new Event('change',{bubbles:true}));checkEstimate();
+     }
+     const initial=card.querySelector(`input[type="radio"][value="${product.defaultVariant}"]`);
+     initial.checked=true;initial.dispatchEvent(new Event('change',{bubbles:true}));
      checked++;
     }
     return {ids:cards.map(c=>c.dataset.product||c.dataset.feedId||c.dataset.supplierId),checked,errors,overflow:document.documentElement.scrollWidth>innerWidth+1};
-   },selector);
+   },{selector,products:catalog.map(product=>({id:product.id,defaultVariant:product.defaultVariant,eligible:hasPortionPrice(product),labels:Object.fromEntries(product.variants.map(v=>[v.value,portionPriceLabel(v.price,v.value,product.supplier?.priceFrom)]))}))});
    assert.deepEqual(data.ids.slice().sort(),catalog.map(p=>p.id).sort(),`${surface}: 153 SKU`);
    row.surfaces.push({surface,...data});
    // Save failure details before asserting so geometry regressions remain inspectable.
@@ -75,11 +91,34 @@ try{
    assert.equal(links.length,3);assert(links.every(a=>a.measured&&a.height>=44));
    const ingredients=await page.$$eval('.offer-body li a',els=>els.map(a=>({href:a.getAttribute('href'),height:a.getBoundingClientRect().height,overflow:a.scrollWidth>a.clientWidth+1})));
    assert.deepEqual(ingredients.filter(a=>!a.href.startsWith('/')||a.height<44||a.overflow),[],`Bundle links ${surface} ${width}`);
+   const estimates=await page.$$eval('.offer-card [data-portion-price]',els=>els.map(el=>el.textContent));
+   assert.deepEqual(estimates,['≈ 320 ₽ за порцию 250 г','≈ 289 ₽ за порцию 250 г','≈ 557 ₽ за порцию 250 г','≈ 557 ₽ за порцию 250 г','≈ 583 ₽ за порцию 250 г']);
+  }
+  for(const id of ['meat','p39-10',catalog.find(p=>p.category==='mini-pies').id]){
+   const product=catalog.find(p=>p.id===id);
+   await page.goto(origin+catalogProductHref(product)+'?qa=1',{waitUntil:'networkidle0'});
+   assert.equal(await page.$eval('html',el=>el.scrollWidth<=innerWidth+1),true,`Product overflow ${width} ${id}`);
+   const expected=hasPortionPrice(product);
+   assert.equal(await page.$$eval('[data-product-options] [data-portion-price]',els=>els.length),expected?1:0);
+   for(const variant of product.variants){
+    await page.$eval(`[data-product-options] input[type="radio"][value="${variant.value}"]`,el=>{el.checked=true;el.dispatchEvent(new Event('change',{bubbles:true}));});
+    for(const quantity of [1,2,99]){
+     await page.$eval('[data-option-quantity]',(el,q)=>{el.value=String(q);el.dispatchEvent(new Event('input',{bubbles:true}));},quantity);
+     if(expected)assert.equal(await page.$eval('[data-product-options] [data-portion-price]',el=>el.textContent),portionPriceLabel(variant.price,variant.value,product.supplier?.priceFrom));
+     const total=await page.$eval('[data-option-price]',el=>Number(el.textContent.replace(/[^0-9]/g,'')));
+     assert.equal(total,variant.price*quantity);
+    }
+   }
+   if(id==='meat'&&[390,768].includes(width)){
+    await page.$eval('[data-option-quantity]',el=>{el.value='1';el.dispatchEvent(new Event('input',{bubbles:true}));});
+    await page.$eval('[data-product-options]',el=>el.scrollIntoView({block:'center',behavior:'instant'}));
+    await page.screenshot({path:`${output}/${stage}-portion-product-${width}.png`});
+   }
   }
   if([390,768,1280].includes(width))await verifyCatalogFormats(page,origin,width,`${output}/${stage}-formats`);
   report.widths.push(row);await context.close();
  }
  assert.deepEqual(report.errors,[]);
  await writeFile(`${output}/${stage}-report.json`,JSON.stringify(report,null,2)+'\n');
- console.log(`Catalog polish PASS (${stage}): 153 SKU on home/menu; 1→2→99→1 geometry on six widths; links, bundles, format/price/add synchronization.`);
+ console.log(`Catalog polish PASS (${stage}): 153 SKU on home/menu; 1→2→99→1 geometry on six widths; portion prices across variants/quantities on cards, bundles and product pages; links, format/price/add synchronization.`);
 }finally{await browser.disconnect();await chrome.kill();}

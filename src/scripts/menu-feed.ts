@@ -1,4 +1,4 @@
-import { portionSummary } from '../lib/product-portions';
+import { portionSummary, portionPriceLabel } from '../lib/product-portions';
 import { addItems, getSelection } from './storefront';
 
 type Product = { id: string; name: string; variants: { value: number; label: string; price: number }[] };
@@ -30,6 +30,8 @@ if (feed && feedback) {
       const portions = card.querySelector<HTMLElement>('[data-pie-portions]');
       if (portions) portions.textContent = portionSummary(Number(selected.value), quantity);
       const price = Number(selected.dataset.feedPrice ?? selected.dataset.supplierUnitPrice);
+      const portionPrice = card.querySelector<HTMLElement>('[data-portion-price]');
+      if (portionPrice) portionPrice.textContent = portionPriceLabel(price, Number(selected.value), portionPrice.dataset.portionFrom === 'true');
       card.querySelector('[data-feed-price-label], [data-supplier-price]')!.textContent = money(price * quantity);
       const prefix = card.querySelector('.supplier-from')?.textContent ?? '';
       card.querySelector('[data-feed-price-note]')!.textContent = quantity > 1 ? `${prefix}${money(price)} / шт.\nПредварительно` : 'Предварительно';

@@ -1,4 +1,5 @@
 ---
+import PortionPrice from './PortionPrice.astro';
 import { Image } from 'astro:assets';
 import bundleTown from '../../design/catalog-polish-20261101/bundle-town.png';
 import ContentLayout from '../layouts/ContentLayout.astro';
@@ -53,7 +54,7 @@ const schema = [{
         </a>
       </li>)}</ul>
       <p class="bundle-summary" data-bundle-page-summary>{summary}</p>
-      <div class="bundle-price"><strong data-bundle-page-price>{money(selectionPrice(bundle.items, catalog))}</strong><span>Сумма позиций · предварительно</span></div>
+      <div class="bundle-price"><strong data-bundle-page-price>{money(selectionPrice(bundle.items, catalog))}</strong><div><span>Сумма позиций · предварительно</span><PortionPrice price={selectionPrice(bundle.items, catalog)} grams={compositionSummary(bundle.items, catalog)!.pieGrams} /></div></div>
       <div class="bundle-actions">
         <a class="ed-button" data-bundle={bundle.id} href={`/?interest=bundle&bundle=${bundle.id}#nabory`} aria-label={`В подборку: ${bundle.title}`}>В подборку <Icon name="arrow" /></a>
         <a class="bundle-edit" data-edit-bundle={bundle.id} href={`/?interest=edit-bundle&bundle=${bundle.id}`}>Изменить состав <span aria-hidden="true">↗</span></a>
@@ -82,7 +83,7 @@ const schema = [{
 .bundle-composition{min-width:0;padding:6px 0}.bundle-composition h2{font-size:30px;line-height:1.2;margin:10px 0 22px;letter-spacing:-.025em}
 .bundle-items{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:10px}.bundle-items a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px;padding:15px 18px;border-radius:16px;text-decoration:none;background:#f8f6f0;box-shadow:inset 0 0 0 1px #bc873421;transition:background .2s}.bundle-items a:hover{background:#f2e7d0}
 .bundle-item-name{font:500 14px/1.5 var(--sans);min-width:0}.bundle-item-name small{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:5px}.bundle-item-price{font:500 13px/1.5 var(--sans);white-space:nowrap}.bundle-item-price>span{color:#8d5d21;margin-left:10px}
-.bundle-summary{font:500 12px/1.6 var(--sans);margin:0 0 24px}.bundle-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-bottom:20px}.bundle-price strong{font:600 34px/1.2 var(--sans);letter-spacing:-.04em;font-variant-numeric:tabular-nums}.bundle-price>span{font:400 11px/1.5 var(--sans);color:var(--muted)}
+.bundle-summary{font:500 12px/1.6 var(--sans);margin:0 0 24px}.bundle-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-bottom:20px}.bundle-price strong{font:600 34px/1.2 var(--sans);letter-spacing:-.04em;font-variant-numeric:tabular-nums}.bundle-price>div>span{font:400 11px/1.5 var(--sans);color:var(--muted)}
 .bundle-actions{display:flex;align-items:center;gap:14px 24px;flex-wrap:wrap}.bundle-actions .ed-button{min-width:180px;min-height:52px;font-size:14px}.bundle-edit{display:inline-flex;align-items:center;gap:12px;min-height:48px;font:500 12px/1.5 var(--sans);text-underline-offset:5px;text-decoration-color:var(--brand-gold)}
 .bundle-help{font:400 11px/1.8 var(--sans);color:var(--muted);margin-top:20px;max-width:60ch}
 .bundle-more{margin:40px 0}.bundle-more-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.bundle-more-heading h2{font-size:32px;letter-spacing:-.025em}.bundle-more-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.bundle-more-grid>a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 20px;min-height:90px;border:1px solid var(--line);border-radius:18px;font:500 17px/1.35 var(--serif);text-decoration:none}.bundle-more-grid>a:hover{background:#f8f6f0}.bundle-more-grid>a>span:last-child{color:#8d5d21;font-family:var(--sans)}

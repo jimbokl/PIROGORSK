@@ -1,9 +1,28 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { hasPiePortions, portionSummary } from '../src/lib/product-portions.ts';
+import { hasPiePortions, hasPortionPrice, portionSummary, portionPriceLabel } from '../src/lib/product-portions.ts';
 import { compositionSummary } from '../src/lib/composition-summary.ts';
 import { catalog } from '../src/data/catalog.ts';
 import { bundles } from '../src/data/bundles.ts';
+
+test('portion prices compare actual grams, preserve from prices and ignore the number of pies', () => {
+  assert.equal(portionPriceLabel(690, 500), '≈ 345 ₽ за порцию 250 г');
+  assert.equal(portionPriceLabel(1290, 1000), '≈ 323 ₽ за порцию 250 г');
+  assert.equal(portionPriceLabel(5350, 2400), '≈ 557 ₽ за порцию 250 г');
+  assert.equal(portionPriceLabel(1290, 1000, true), 'от 323 ₽ за порцию 250 г');
+  for (const quantity of [1, 2, 99]) assert.equal(portionPriceLabel(1290 * quantity, 1000 * quantity), portionPriceLabel(1290, 1000));
+  for (const args of [[0, 500], [-1, 500], [NaN, 500], [Infinity, 500], [690, 0], [690, 1.5], [690, Infinity]]) assert.equal(portionPriceLabel(...args), '');
+});
+
+test('only whole pies get a 250 g price; catalog prices and bundle totals remain unchanged', () => {
+  const eligible = catalog.filter(hasPortionPrice);
+  assert.equal(eligible.length, 69);
+  for (const product of catalog.filter(p => ['mini-pies', 'drinks', 'accessories', 'bread', 'desserts', 'bake', 'dough'].includes(p.category))) assert.equal(hasPortionPrice(product), false, product.id);
+  assert(eligible.every(p => p.variants.every(v => portionPriceLabel(v.price, v.value).endsWith('за порцию 250 г'))));
+  const prices = bundles.map(bundle => bundle.items.reduce((sum, item) => sum + catalog.find(p => p.id === item.id).prices[item.value] * item.quantity, 0));
+  assert.deepEqual(prices, [1280, 3470, 5350, 5350, 8630]);
+  assert.deepEqual(prices.map((price, i) => portionPriceLabel(price, compositionSummary(bundles[i].items, catalog).pieGrams)), ['≈ 320 ₽ за порцию 250 г', '≈ 289 ₽ за порцию 250 г', '≈ 557 ₽ за порцию 250 г', '≈ 557 ₽ за порцию 250 г', '≈ 583 ₽ за порцию 250 г']);
+});
 
 test('pie portions use combined selected weight, round boundaries and Russian labels', () => {
   assert.equal(portionSummary(500), '≈ 2 порции · 500 г');

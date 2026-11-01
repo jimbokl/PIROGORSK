@@ -1,4 +1,5 @@
 ---
+import PortionPrice from './PortionPrice.astro';
 import { Image } from 'astro:assets';
 import bundleTown from '../../design/catalog-polish-20261101/bundle-town.png';
 import { catalog } from '../data/catalog';
@@ -30,7 +31,7 @@ const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
           return <li><a href={catalogProductHref(product)}><span class="offer-item-name">{product.name}<small> · {variant.label.replace('Целый · ', '')}</small></span><span class="offer-item-arrow" aria-hidden="true">↗</span></a></li>;
         })}</ul>
         <p class="offer-portions" data-offer-summary={bundle.id}>{compositionSummary(bundle.items, catalog)!.text}</p>
-        <div class="offer-bottom"><div><strong>{money(selectionPrice(bundle.items, catalog))}</strong><small>сумма позиций · предварительно</small></div><a class="button offer-add" data-bundle={bundle.id} href={`/?interest=bundle&bundle=${bundle.id}#nabory`} aria-label={`В подборку: ${bundle.title}`}>В подборку<Icon name="arrow" /></a></div>
+        <div class="offer-bottom"><div><strong>{money(selectionPrice(bundle.items, catalog))}</strong><small>сумма позиций · предварительно</small><PortionPrice price={selectionPrice(bundle.items, catalog)} grams={compositionSummary(bundle.items, catalog)!.pieGrams} /></div><a class="button offer-add" data-bundle={bundle.id} href={`/?interest=bundle&bundle=${bundle.id}#nabory`} aria-label={`В подборку: ${bundle.title}`}>В подборку<Icon name="arrow" /></a></div>
         <a class="offer-edit" data-edit-bundle={bundle.id} href={`/?interest=edit-bundle&bundle=${bundle.id}`} aria-label={`Изменить состав: ${bundle.title}`}>Изменить состав</a>
       </div>
     </article>)}
