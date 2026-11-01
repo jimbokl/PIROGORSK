@@ -1,0 +1,2049 @@
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  * Run actions/checkout@v4
+  * Run actions/setup-node@v4
+  * Run npm ci
+  * Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  * Run npm ci
+  * Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  * Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  * Run npm run build
+  * Run node scripts/verify-seo.mjs
+  * Run node scripts/verify-expansion.mjs
+  * Run node scripts/verify-seo-map.mjs
+  * Run node scripts/verify-city-pages.mjs
+  * Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  ✓ Run npm run build
+  ✓ Run node scripts/verify-seo.mjs
+  ✓ Run node scripts/verify-expansion.mjs
+  ✓ Run node scripts/verify-seo-map.mjs
+  ✓ Run node scripts/verify-city-pages.mjs
+  ✓ Run node scripts/verify-article-artwork.mjs
+  * Run node scripts/verify-content-month.mjs
+  * Run node scripts/verify-product-pages.mjs
+  * Run node scripts/verify-product-backdrops.mjs
+  * Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  ✓ Run npm run build
+  ✓ Run node scripts/verify-seo.mjs
+  ✓ Run node scripts/verify-expansion.mjs
+  ✓ Run node scripts/verify-seo-map.mjs
+  ✓ Run node scripts/verify-city-pages.mjs
+  ✓ Run node scripts/verify-article-artwork.mjs
+  ✓ Run node scripts/verify-content-month.mjs
+  ✓ Run node scripts/verify-product-pages.mjs
+  ✓ Run node scripts/verify-product-backdrops.mjs
+  ✓ Run npm test
+  * Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  ✓ Run npm run build
+  ✓ Run node scripts/verify-seo.mjs
+  ✓ Run node scripts/verify-expansion.mjs
+  ✓ Run node scripts/verify-seo-map.mjs
+  ✓ Run node scripts/verify-city-pages.mjs
+  ✓ Run node scripts/verify-article-artwork.mjs
+  ✓ Run node scripts/verify-content-month.mjs
+  ✓ Run node scripts/verify-product-pages.mjs
+  ✓ Run node scripts/verify-product-backdrops.mjs
+  ✓ Run npm test
+  ✓ Run npm run test:worker
+  * Run npm run test:browser
+  * Run node scripts/verify-bundle-pages.mjs
+  * Run node scripts/verify-catalog-polish.mjs
+  * Run node scripts/verify-pie-cutaways.mjs
+  * Check deployed Worker against Pages artifact
+  * Run node scripts/indexnow.mjs manifest
+  * Run actions/configure-pages@v5
+  * Run actions/upload-pages-artifact@v3
+  * Run actions/deploy-pages@v5
+  * Verify published Pages and Worker compatibility
+  * Run actions/cache/restore@v4
+  * Notify IndexNow after publication
+  * Run actions/cache/save@v4
+  * Run actions/upload-artifact@v4
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 15 seconds. Press Ctrl+C to quit.
+
+* main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+X deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  ✓ Run npm run build
+  ✓ Run node scripts/verify-seo.mjs
+  ✓ Run node scripts/verify-expansion.mjs
+  ✓ Run node scripts/verify-seo-map.mjs
+  ✓ Run node scripts/verify-city-pages.mjs
+  ✓ Run node scripts/verify-article-artwork.mjs
+  ✓ Run node scripts/verify-content-month.mjs
+  ✓ Run node scripts/verify-product-pages.mjs
+  ✓ Run node scripts/verify-product-backdrops.mjs
+  ✓ Run npm test
+  ✓ Run npm run test:worker
+  X Run npm run test:browser
+  - Run node scripts/verify-bundle-pages.mjs
+  - Run node scripts/verify-catalog-polish.mjs
+  - Run node scripts/verify-pie-cutaways.mjs
+  - Check deployed Worker against Pages artifact
+  - Run node scripts/indexnow.mjs manifest
+  - Run actions/configure-pages@v5
+  - Run actions/upload-pages-artifact@v3
+  - Run actions/deploy-pages@v5
+  - Verify published Pages and Worker compatibility
+  - Run actions/cache/restore@v4
+  - Notify IndexNow after publication
+  - Run actions/cache/save@v4
+  ✓ Run actions/upload-artifact@v4
+  - Post Run actions/setup-node@v4
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy: .github#4
+
+X Process completed with exit code 1.
+deploy: .github#31
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+deploy: .github#1
+
+X main Deploy Pages · 41290394905
+Triggered via push less than a minute ago
+
+JOBS
+X deploy (ID 124800250136)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Run npm ci
+  ✓ Run npm run check
+  ✓ Run npm run build
+  ✓ Run node scripts/verify-seo.mjs
+  ✓ Run node scripts/verify-expansion.mjs
+  ✓ Run node scripts/verify-seo-map.mjs
+  ✓ Run node scripts/verify-city-pages.mjs
+  ✓ Run node scripts/verify-article-artwork.mjs
+  ✓ Run node scripts/verify-content-month.mjs
+  ✓ Run node scripts/verify-product-pages.mjs
+  ✓ Run node scripts/verify-product-backdrops.mjs
+  ✓ Run npm test
+  ✓ Run npm run test:worker
+  X Run npm run test:browser
+  - Run node scripts/verify-bundle-pages.mjs
+  - Run node scripts/verify-catalog-polish.mjs
+  - Run node scripts/verify-pie-cutaways.mjs
+  - Check deployed Worker against Pages artifact
+  - Run node scripts/indexnow.mjs manifest
+  - Run actions/configure-pages@v5
+  - Run actions/upload-pages-artifact@v3
+  - Run actions/deploy-pages@v5
+  - Verify published Pages and Worker compatibility
+  - Run actions/cache/restore@v4
+  - Notify IndexNow after publication
+  - Run actions/cache/save@v4
+  ✓ Run actions/upload-artifact@v4
+  - Post Run actions/setup-node@v4
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy: .github#4
+
+X Process completed with exit code 1.
+deploy: .github#31
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+deploy: .github#1
+

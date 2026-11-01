@@ -29,7 +29,14 @@ UX-07. Общая цена остаётся основной, под ней — 
   PASS. Телефон и планшет просмотрены по скриншотам.
 - `verify-bundle-pages`: пять наборов, переходы, добавление, редактор,
   reload, no-JS, четыре ширины, PASS.
-- Полный browser и production: выполняются.
+- Полный `npm run test:browser`: PASS — формы, подборка, количество,
+  все 153 товара, наборы, синхронизация вкладок, сценарии и адаптивность.
+- SSR: проверены все 153 страницы товаров; 69 целых пирогов с правильной
+  подписью цены порции, остальные 84 позиции без неё.
+- Runtime `73cc37c255eebfa44e84708835671cdbcffe56a6`; [CI 41291757954 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41291757954).
+- Production: тот же catalog-polish на шести ширинах и bundle-pages на четырёх, PASS; все 153 SKU, форматы, количество, арифметика и геометрия.
+- `verify-release published https://pirogorsk.ru/`: PASS.
+- Скриншоты production товара 390 px, наборов 390/768 px просмотрены. [Отчёт](production-report.json), [CI](ci.json), [совместимость](published.log).
 
 Старое ожидание `#nabory` в browser QA заменено на `/nabory/`,
 соответственно новому переходу баннера на хаб наборов. Production-проверки

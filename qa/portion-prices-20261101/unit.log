@@ -1,0 +1,14 @@
+✔ portion prices compare actual grams, preserve from prices and ignore the number of pies (0.643125ms)
+✔ only whole pies get a 250 g price; catalog prices and bundle totals remain unchanged (1.414917ms)
+✔ pie portions use combined selected weight, round boundaries and Russian labels (0.115709ms)
+✔ drinks, flour and pastry dough do not inherit a finished pie portion estimate (0.055333ms)
+✔ set summaries distinguish edible pie weight, dough, drinks and place settings (0.211125ms)
+✔ all five sets have catalog-backed weight and portions; edits recalculate total mass (0.231084ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 178.280541

@@ -1,0 +1,31 @@
+deploy	Run npm run test:browser	﻿2026-11-01T09:02:20.3999673Z ##[group]Run npm run test:browser
+deploy	Run npm run test:browser	2026-11-01T09:02:20.4000020Z ^[[36;1mnpm run test:browser^[[0m
+deploy	Run npm run test:browser	2026-11-01T09:02:20.4019577Z shell: /usr/bin/bash -e {0}
+deploy	Run npm run test:browser	2026-11-01T09:02:20.4019835Z ##[endgroup]
+deploy	Run npm run test:browser	2026-11-01T09:02:20.4977062Z 
+deploy	Run npm run test:browser	2026-11-01T09:02:20.4977892Z > pirogorsk@0.1.0 test:browser
+deploy	Run npm run test:browser	2026-11-01T09:02:20.4979244Z > node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs && node worker/scripts/qa-ux-polish.mjs && node worker/scripts/qa-occasion-context.mjs
+deploy	Run npm run test:browser	2026-11-01T09:02:20.4980183Z 
+deploy	Run npm run test:browser	2026-11-01T09:02:20.9552964Z /home/runner/work/PIROGORSK/PIROGORSK/worker/dist/worker.js
+deploy	Run npm run test:browser	2026-11-01T09:02:29.3682957Z PASS: actual form + deployed bundle, 320px layout, validation/focus, double submit, lost acknowledgement, idempotent retry, one goal/event, empty endpoint, QA/local analytics suppression.
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4398824Z node:internal/modules/run_main:107
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4399890Z     triggerUncaughtException(
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4400651Z     ^
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4400885Z 
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4401427Z AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4402209Z + actual - expected
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4402454Z 
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4402677Z + '/nabory/'
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4403167Z - '#nabory'
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4403409Z 
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4403998Z     at file:///home/runner/work/PIROGORSK/PIROGORSK/worker/scripts/qa-site.mjs:165:12 {
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4404845Z   generatedMessage: true,
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4405258Z   code: 'ERR_ASSERTION',
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4405678Z   actual: '/nabory/',
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4406054Z   expected: '#nabory',
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4406431Z   operator: 'strictEqual',
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4406810Z   diff: 'simple'
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4407131Z }
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4407295Z 
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4407836Z Node.js v24.22.1
+deploy	Run npm run test:browser	2026-11-01T09:02:51.4679846Z ##[error]Process completed with exit code 1.
