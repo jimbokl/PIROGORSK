@@ -1,0 +1,210 @@
+{
+  "mode": "mobile",
+  "run": 1,
+  "scores": {
+    "performance": 96,
+    "accessibility": 100,
+    "best-practices": 77,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 1650.5304999999998,
+      "display": "1.7 s"
+    },
+    "largest-contentful-paint": {
+      "value": 2433.5305,
+      "display": "2.4 s"
+    },
+    "total-blocking-time": {
+      "value": 108,
+      "display": "110 ms"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.0008455556410490566,
+      "display": "0.001"
+    },
+    "speed-index": {
+      "value": 2612.128518959887,
+      "display": "2.6 s"
+    }
+  },
+  "observed": {
+    "fcp": 1148,
+    "lcp": 1423
+  },
+  "lcpBreakdown": {
+    "timeToFirstByte": 1092.597,
+    "resourceLoadDelay": 29.849,
+    "resourceLoadDuration": 276.866,
+    "elementRenderDelay": 23.329
+  }
+}
+{
+  "mode": "mobile",
+  "run": 2,
+  "scores": {
+    "performance": 97,
+    "accessibility": 100,
+    "best-practices": 77,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 1515.7910000000002,
+      "display": "1.5 s"
+    },
+    "largest-contentful-paint": {
+      "value": 2317.791,
+      "display": "2.3 s"
+    },
+    "total-blocking-time": {
+      "value": 36.5,
+      "display": "40 ms"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.0005647392326457864,
+      "display": "0.001"
+    },
+    "speed-index": {
+      "value": 2881.517905145716,
+      "display": "2.9 s"
+    }
+  },
+  "observed": {
+    "fcp": 1409,
+    "lcp": 1585
+  },
+  "lcpBreakdown": {
+    "timeToFirstByte": 1344.1569997558595,
+    "resourceLoadDelay": 54.404000244140626,
+    "resourceLoadDuration": 140.941,
+    "elementRenderDelay": 45.178
+  }
+}
+{
+  "mode": "mobile",
+  "run": 3,
+  "scores": {
+    "performance": 97,
+    "accessibility": 100,
+    "best-practices": 77,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 1514.4079999999994,
+      "display": "1.5 s"
+    },
+    "largest-contentful-paint": {
+      "value": 2324.8064999999992,
+      "display": "2.3 s"
+    },
+    "total-blocking-time": {
+      "value": 32.5,
+      "display": "30 ms"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.013033636193662865,
+      "display": "0.013"
+    },
+    "speed-index": {
+      "value": 3166.194792655007,
+      "display": "3.2 s"
+    }
+  },
+  "observed": {
+    "fcp": 1577,
+    "lcp": 1757
+  },
+  "lcpBreakdown": {
+    "timeToFirstByte": 1530.433,
+    "resourceLoadDelay": 38.439,
+    "resourceLoadDuration": 145.426,
+    "elementRenderDelay": 42.706
+  }
+}
+{
+  "mode": "desktop",
+  "run": 1,
+  "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 77,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 590.278,
+      "display": "0.6 s"
+    },
+    "largest-contentful-paint": {
+      "value": 744.278,
+      "display": "0.7 s"
+    },
+    "total-blocking-time": {
+      "value": 0,
+      "display": "0 ms"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.0009205634357762017,
+      "display": "0.001"
+    },
+    "speed-index": {
+      "value": 1101.661348145644,
+      "display": "1.1 s"
+    }
+  },
+  "observed": {
+    "fcp": 1100,
+    "lcp": 1426
+  },
+  "lcpBreakdown": {
+    "timeToFirstByte": 1058.536,
+    "resourceLoadDelay": 34.591,
+    "resourceLoadDuration": 262.612,
+    "elementRenderDelay": 69.912
+  }
+}
+{
+  "ranges": [
+    {
+      "mode": "mobile",
+      "samples": 3,
+      "simulatedLcp": {
+        "min": 2317.791,
+        "median": 2324.8064999999992,
+        "max": 2433.5305
+      },
+      "observedLcp": {
+        "min": 1423,
+        "median": 1585,
+        "max": 1757
+      },
+      "observedRenderDelay": {
+        "min": 23.329,
+        "median": 42.706,
+        "max": 45.178
+      }
+    },
+    {
+      "mode": "desktop",
+      "samples": 1,
+      "simulatedLcp": {
+        "min": 744.278,
+        "median": 744.278,
+        "max": 744.278
+      },
+      "observedLcp": {
+        "min": 1426,
+        "median": 1426,
+        "max": 1426
+      },
+      "observedRenderDelay": {
+        "min": 69.912,
+        "median": 69.912,
+        "max": 69.912
+      }
+    }
+  ]
+}

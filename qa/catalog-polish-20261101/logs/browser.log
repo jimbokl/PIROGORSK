@@ -1,0 +1,30 @@
+
+> pirogorsk@0.1.0 test:browser
+> node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs && node worker/scripts/qa-ux-polish.mjs && node worker/scripts/qa-occasion-context.mjs
+
+/Volumes/DevSim/Projects/PIROGORSK/worker/dist/worker.js
+PASS: actual form + deployed bundle, 320px layout, validation/focus, double submit, lost acknowledgement, idempotent retry, one goal/event, empty endpoint, QA/local analytics suppression.
+PASS: all 153 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 320px
+PASS: bundles, exact totals, contextual add-ons, five place settings, form handoff and reload at 320px
+PASS: product add-ons, direct save, variants, totals, form handoff, storage errors and touch layout at 320px
+PASS: menu quantity, keyboard, formats, exact totals, merge, bounds, fallback and reload at 320px
+PASS: two-tab selection/city sync, no lost items, live dialog and empty-state focus at 320px
+PASS: global 153-product filling/search/reset/history, shared dialog, dock/totals, focus/city handoff and corrupted storage at 320px
+PASS: editable/atomic bundles, independent favorite, safe share preview/reapply/stale/fallback, guest top-ups and denied persistence at 320px
+PASS: all 153 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 390px
+PASS: bundles, exact totals, contextual add-ons, five place settings, form handoff and reload at 390px
+PASS: product add-ons, direct save, variants, totals, form handoff, storage errors and touch layout at 390px
+PASS: menu quantity, keyboard, formats, exact totals, merge, bounds, fallback and reload at 390px
+PASS: two-tab selection/city sync, no lost items, live dialog and empty-state focus at 390px
+PASS: global 153-product filling/search/reset/history, shared dialog, dock/totals, focus/city handoff and corrupted storage at 390px
+PASS: editable/atomic bundles, independent favorite, safe share preview/reapply/stale/fallback, guest top-ups and denied persistence at 390px
+PASS: all 153 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 1280px
+PASS: bundles, exact totals, contextual add-ons, five place settings, form handoff and reload at 1280px
+PASS: product add-ons, direct save, variants, totals, form handoff, storage errors and touch layout at 1280px
+PASS: menu quantity, keyboard, formats, exact totals, merge, bounds, fallback and reload at 1280px
+PASS: two-tab selection/city sync, no lost items, live dialog and empty-state focus at 1280px
+PASS: global 153-product filling/search/reset/history, shared dialog, dock/totals, focus/city handoff and corrupted storage at 1280px
+PASS: editable/atomic bundles, independent favorite, safe share preview/reapply/stale/fallback, guest top-ups and denied persistence at 1280px
+PASS: built Astro calculator, home → menu group → supplier product → home selection, mixed selection and fresh 2kg pie → Worker/SQLite; 139 producer cards, menu-scoped filters and selected variant transfer at 320/390/1280px; no production requests.
+{"stage":"local","results":[{"width":320,"hubItems":28,"analyticsAndCopy":"PASS","noJS":"PASS","errors":[]},{"width":390,"hubItems":28,"analyticsAndCopy":"PASS","noJS":"PASS","errors":[]},{"width":768,"hubItems":28,"analyticsAndCopy":"PASS","noJS":"PASS","errors":[]},{"width":1024,"hubItems":28,"analyticsAndCopy":"PASS","noJS":"PASS","errors":[]},{"width":1280,"hubItems":28,"analyticsAndCopy":"PASS","noJS":"PASS","errors":[]}]}
+PASS: local, four widths, scenario entry/correction/reload/planner, blocked storage, retry and confirmed save.
