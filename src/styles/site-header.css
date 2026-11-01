@@ -21,17 +21,18 @@
 .masthead-bottom .site-navigation a{min-height:54px;font-size:13px;font-weight:500}
 .masthead-bottom .site-navigation a::after{bottom:9px;background:var(--navy);height:1px}
 .masthead-status{display:inline-flex;align-items:center;gap:7px;font:400 11px/1.4 var(--sans);color:var(--muted);white-space:nowrap;text-decoration:none}
+.masthead-bottom>a.masthead-status{min-height:44px}
 .masthead-status>span{display:block;width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .masthead-city--mobile{display:none}
 .masthead :is(a,button):focus-visible,.masthead-dialog :is(a,button):focus-visible{outline:3px solid var(--focus);outline-offset:4px}
 .masthead-square:hover{background:var(--control-hover);transform:translateY(-1px)}
 .masthead-selection:hover{background:var(--action-hover)}
 .masthead-catalog:hover{background:var(--action-hover)}
-.masthead-dialog{box-sizing:border-box;color:var(--navy);background:var(--paper);border:0;font-family:var(--sans);padding:32px;width:min(440px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow-y:auto;border-radius:28px}
+.masthead-dialog{--dialog-padding:32px;box-sizing:border-box;color:var(--navy);background:var(--paper);border:0;font-family:var(--sans);padding:var(--dialog-padding);width:min(440px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow-y:auto;border-radius:28px;scroll-padding-top:calc(44px + var(--dialog-padding)*2)}
 .masthead-dialog::backdrop{background:var(--backdrop)}
 html:has(.masthead-dialog[open]){overflow:hidden}
 .masthead-drawer{margin:16px auto 16px max(16px,calc((100vw - var(--page-width))/2));min-height:calc(100dvh - 32px)}
-.masthead-dialog-top{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;line-height:1.6;color:var(--muted)}
+.masthead-dialog-top{position:sticky;top:calc(-1 * var(--dialog-padding));z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:calc(-1 * var(--dialog-padding)) calc(-1 * var(--dialog-padding)) 0;padding:var(--dialog-padding);background:var(--paper);border-bottom:1px solid var(--line);font-size:10px;line-height:1.6;color:var(--muted)}
 .masthead-dialog-top .masthead-square{width:44px;height:44px;border-radius:14px}
 .masthead-dialog h2{font:500 34px/1.15 var(--serif);letter-spacing:-.035em;margin:32px 0 24px;color:var(--navy)}
 .masthead-dialog>.site-navigation--drawer{display:flex;flex-direction:column;align-items:stretch;gap:0;overflow:visible;padding:0;width:100%}
@@ -51,5 +52,5 @@ html:has(.masthead-dialog[open]){overflow:hidden}
 .masthead-cities button[aria-pressed=true]>.icon:last-child{opacity:1}
 @media(max-width:1100px){.masthead-start,.masthead-end{gap:14px}.masthead-catalog{display:none}.masthead-bottom>.site-navigation{gap:24px}.masthead-bottom .site-navigation a{font-size:12px}.masthead-bottom>.masthead-status{display:none}}
 @media(max-width:1000px){.masthead-main{min-height:96px;padding-block:18px;gap:16px}.masthead-city--desktop{display:none}.masthead-bottom>.site-navigation{display:none}.masthead-bottom{min-height:44px;gap:12px;border-top:0}.masthead-bottom>.masthead-status{display:inline-flex}.masthead-city--mobile{display:flex;font-size:11px;gap:6px;min-height:43px}.masthead-city--mobile>.icon:first-child{width:15px;height:15px}.masthead-city--mobile>.icon:last-child{width:10px;height:10px}.masthead-square{width:48px;height:48px;border-radius:14px}.masthead-status{font-size:10px}}
-@media(max-width:600px){.masthead-main{min-height:84px;padding-block:16px;gap:8px}.masthead-square{width:44px;height:44px;border-radius:14px}.masthead .masthead-menu .icon{width:23px;height:23px}.masthead .masthead-selection .icon{width:23px;height:23px}.masthead-dialog{padding:24px;border-radius:24px}.masthead-dialog h2{font-size:30px}.masthead-dialog-top{font-size:9px}.site-navigation--drawer a{font-size:17px;min-height:56px}}
+@media(max-width:600px){.masthead-main{min-height:84px;padding-block:16px;gap:8px}.masthead-square{width:44px;height:44px;border-radius:14px}.masthead .masthead-menu .icon{width:23px;height:23px}.masthead .masthead-selection .icon{width:23px;height:23px}.masthead-dialog{--dialog-padding:24px;border-radius:24px}.masthead-dialog h2{font-size:30px}.masthead-dialog-top{font-size:9px}.site-navigation--drawer a{font-size:17px;min-height:56px}}
 @media(prefers-reduced-motion:reduce){.masthead-square{transition:none}.masthead-square:hover{transform:none}}

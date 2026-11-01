@@ -47,17 +47,21 @@ async function view(id, width) {
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false, `${id}: overflow at ${width}`);
   const tiny = await page.$$eval('input[type=search],input[type=number],select,textarea', fields => fields.filter(field => field.getBoundingClientRect().width > 0 && parseFloat(getComputedStyle(field).fontSize) < 16).map(field => field.outerHTML.slice(0, 140)));
   assert.deepEqual(tiny, [], `${id}: readable input at ${width}`);
+  const statusHeight = await page.$eval('.masthead-bottom>a.masthead-status', element => element.getBoundingClientRect().height);
+  assert(statusHeight === 0 || statusHeight >= 44, `${id}: status touch target at ${width}`);
+  const cramped = await page.$$eval('.town-invitation h2', headings => headings.filter(heading => heading.scrollWidth > heading.clientWidth + 1 || (innerWidth <= 600 && heading.clientWidth < innerWidth - 100)).map(heading => heading.textContent));
+  assert.deepEqual(cramped, [], `${id}: invitation heading uses mobile column at ${width}`);
   report.views.push({ id, width, overflow: false, inputMinPx: 16 });
 }
-async function sticky(dialog, width) {
+async function sticky(dialog, width, closeSelector = '[data-close]') {
   await page.$eval(dialog, element => { element.scrollTop = element.scrollHeight; });
   await page.evaluate(() => new Promise(resolve => requestAnimationFrame(resolve)));
-  const visible = await page.$eval(dialog, element => {
+  const visible = await page.$eval(dialog, (element, closeSelector) => {
     const box = element.getBoundingClientRect();
-    const close = element.querySelector('[data-close]').getBoundingClientRect();
+    const close = element.querySelector(closeSelector).getBoundingClientRect();
     const hit = document.elementFromPoint(close.x + close.width / 2, close.y + close.height / 2);
-    return close.top >= box.top && close.bottom <= box.bottom && !!hit?.closest('[data-close]');
-  });
+    return close.top >= box.top && close.bottom <= box.bottom && !!hit?.closest(closeSelector);
+  }, closeSelector);
   assert.equal(visible, true, `${dialog}: reachable close after scrolling at ${width}`);
   report.dialogs.push({ dialog, width, closeVisibleAtBottom: true });
 }
@@ -67,7 +71,7 @@ try {
   assert(total >= 62, 'Complete editorial library');
   for (const width of [320, 390, 768, 1280]) {
     await page.setViewport({ width, height: 900 });
-    for (const [id, path] of [['home','/'],['menu','/menu/'],['product','/pirogi/myasnoy-pirog/'],['delivery','/delivery/'],['bundles','/nabory/'],['article','/journal/skolko-piroga-na-cheloveka/']]) {
+    for (const [id, path] of [['home','/'],['menu','/menu/'],['product','/pirogi/myasnoy-pirog/'],['delivery','/delivery/'],['city','/zelenogradsk/'],['bundles','/nabory/'],['article','/journal/skolko-piroga-na-cheloveka/']]) {
       await go(path); await view(id, width);
     }
     await go('/blog/'); await view('blog', width);
@@ -134,6 +138,17 @@ try {
     assert.equal(await page.$eval('#composition-preview', element => element.open), false);
     assert.deepEqual(await page.evaluate(() => JSON.parse(localStorage.getItem('pirogorsk-selection'))), seed);
     await page.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
+    // Navigation remains dismissible on a short phone/landscape window.
+    await page.setViewport({ width, height: 500 });
+    for (const [opener, dialog, closer] of [
+      ['[data-menu-open]', '#site-menu-dialog', '[data-menu-close]'],
+      [width <= 1000 ? '.masthead-city--mobile' : '.masthead-city--desktop', '#city-dialog', '[data-close]'],
+    ]) {
+      await page.locator(opener).click(); await sticky(dialog, width, closer);
+      await page.locator(`${dialog} ${closer}`).click();
+      assert.equal(await page.$eval(dialog, element => element.open), false);
+      assert.equal(await page.$eval(opener, element => element === document.activeElement), true);
+    }
   }
   const plain = await browser.newPage(); await setup(plain); await plain.setJavaScriptEnabled(false);
   await plain.goto(origin + '/blog/?qa=1&q=сыр', { waitUntil: 'networkidle0' });
