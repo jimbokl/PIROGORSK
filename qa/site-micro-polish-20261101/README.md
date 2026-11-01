@@ -1,4 +1,4 @@
-# Общая полировка сайта · 01.11.2026
+# Общая полировка сайта · 01–02.11.2026
 
 UX-14. Сохранены одобренная бесконечная лента, все 154 SKU, цены и айдентика.
 
@@ -49,5 +49,28 @@ build 262 HTML PASS; SEO: 154 товарные страницы, 257 URL sitemap
 
 ## Публикация
 
-Ожидает полного CI и проверки production. Окончательная приёмка будет
-добавлена после публикации; текущая проверка относится к local build.
+Runtime `8ad7bc799f7da037ba81e377268ab8e9e418b5bb`,
+[CI 41353460604 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41353460604).
+Полный browser suite, Node/Worker и проверки всех шаблонов прошли до публикации.
+
+Production: 19 типов страниц, 76 просмотров на ширинах 320/390/768/1280 px
+и 8 состояний коротких диалогов PASS. Ошибок JS/ассетов и горизонтального
+переполнения нет; рабочий путь количества, вариантов, клавиатуры, точных сумм,
+merge, границ, fallback и подборки/reload PASS. Телефон, планшет и desktop
+просмотрены визуально. Release compatibility PASS.
+
+На семи страницах 21 inline CSS/JS блок и 10 внешних ассетов совпали с принятой
+сборкой по SHA256. В этой сборке CSS встроен в HTML; проверены сами inline-блоки.
+
+- [Production audit](production-audit.json)
+- [Сборка и CI](ci.json)
+- [Сверка опубликованных стилей и скриптов](production-assets.json)
+- [Release compatibility](release-production.log)
+- [Закреплённое закрытие меню, телефон](production-site-menu-dialog-short-390.png)
+- [Приглашение, телефон](production-city-invitation-390.png)
+- [Статья и хлебные крошки, телефон](production-article-390.png)
+- [Меню, планшет](production-menu-768.png)
+- [Главная, desktop](production-home-1280.png)
+
+UX-14 закрыта. Лента, ассортимент из 154 SKU, цены и айдентика сохранены;
+CRM, контакты и операционные данные не менялись.
