@@ -25,7 +25,7 @@ for (const item of prompts) {
     square.clone().resize(width, width).avif({ quality: 43, effort: 4 }).toFile(`public/product-backdrops/${item.id}-${width}.avif`),
     square.clone().resize(width, width).webp({ quality: 69, effort: 4 }).toFile(`public/product-backdrops/${item.id}-${width}.webp`),
   ]));
-  manifest.push({ id: item.id, source: item.source, sourceSha256, base: `/product-backdrops/${item.id}`, widths, promptFile: 'research/product-backdrops-20261029/prompts.json', generator: 'builtin-imagegen', generatedOn: '2026-10-29' });
+  manifest.push({ id: item.id, source: item.source, sourceSha256, base: `/product-backdrops/${item.id}`, widths, promptFile: 'research/product-backdrops-20261029/prompts.json', generator: 'builtin-imagegen', generatedOn: item.generatedOn ?? '2026-10-29' });
 }
 if (missing.length && !process.argv.includes('--partial')) throw new Error(`Missing ${missing.length} backdrops: ${missing.join(', ')}`);
 await writeFile('src/data/product-backdrops.json', JSON.stringify(manifest, null, 2) + '\n');

@@ -1258,5 +1258,20 @@
     "promptFile": "research/product-backdrops-20261029/prompts.json",
     "generator": "builtin-imagegen",
     "generatedOn": "2026-10-29"
+  },
+  {
+    "id": "picnic-set",
+    "source": "design/picnic-set-20261101/backdrop.png",
+    "sourceSha256": "cf7f4a61e420a858bb52785fe8be9dfa34d4b78feac2c5582bc9ac04d8fe5ee7",
+    "base": "/product-backdrops/picnic-set",
+    "widths": [
+      256,
+      400,
+      640,
+      960
+    ],
+    "promptFile": "research/product-backdrops-20261029/prompts.json",
+    "generator": "builtin-imagegen",
+    "generatedOn": "2026-11-01"
   }
 ]

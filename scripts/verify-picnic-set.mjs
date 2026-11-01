@@ -4,6 +4,7 @@ import { extname, resolve } from 'node:path';
 import { launch } from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
 import { catalog } from '../src/data/catalog.ts';
+import { catalogProductHref } from '../src/lib/product-paths.ts';
 
 const output = process.env.QA_OUTPUT || 'qa/picnic-set-20261101';
 const stage = process.env.QA_BASE ? 'production' : 'local';
@@ -16,7 +17,7 @@ const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome
 const page = await browser.newPage();
 // Static captures must not race the category rail's scheduled smooth scroll.
 await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
-const report = { stage, widths: [], errors: [] };
+const report = { stage, widths: [], artwork: [], errors: [] };
 page.on('pageerror', error => report.errors.push(error.message));
 await page.setRequestInterception(true);
 page.on('request', async request => {
@@ -42,6 +43,32 @@ const view = async selector => {
   await page.$$eval(`${selector} img`, images => Promise.all(images.map(image => { image.loading = 'eager'; return image.decode(); })));
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false, `Overflow ${page.url()}`);
 };
+const artwork = async (selector, placement, width) => {
+  await view(selector);
+  const layers = await page.$eval(selector, root => {
+    const visual = root.querySelector('.product-visual');
+    const backdrop = visual?.querySelector('[data-product-backdrop="picnic-set"]');
+    const image = backdrop?.querySelector('img');
+    const subject = visual?.querySelector('.product-visual-subject');
+    const rect = visual?.getBoundingClientRect();
+    const back = image?.getBoundingClientRect();
+    return {
+      backdrops: visual?.querySelectorAll('[data-product-backdrop="picnic-set"]').length,
+      subjects: visual?.querySelectorAll('.product-visual-subject').length,
+      loaded: !!(image?.naturalWidth && subject?.naturalWidth),
+      decorative: backdrop?.getAttribute('aria-hidden') === 'true' && image?.alt === '',
+      visible: !!(back?.width && back?.height && getComputedStyle(backdrop).display !== 'none' && Number(getComputedStyle(backdrop).opacity) >= .2),
+      fillsSurface: !!(rect && back && Math.abs(rect.width - back.width) < 1 && Math.abs(rect.height - back.height) < 1),
+      responsive: !!(image?.srcset && backdrop?.querySelector('source[type="image/avif"]')?.srcset),
+      width: rect?.width,
+      source: image?.currentSrc,
+    };
+  });
+  assert.equal(layers.backdrops, 1, `${placement}: one shared backdrop`);
+  assert.equal(layers.subjects, 1, `${placement}: original foreground`);
+  for (const key of ['loaded', 'decorative', 'visible', 'fillsSurface', 'responsive']) assert.equal(layers[key], true, `${placement}: ${key}`);
+  report.artwork.push({ placement, viewport: width, ...layers });
+};
 try {
   await go(href);
   for (const width of (process.env.QA_WIDTHS || '320,390,768,1280').split(',').map(Number)) {
@@ -49,6 +76,7 @@ try {
     await page.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
     await go(href);
     await view('.product-hero');
+    await artwork('.product-hero', 'product', width);
     assert.equal(await page.$eval('h1', el => el.textContent), 'Балтийский пикник-сет');
     assert.equal(await page.$eval('link[rel=canonical]', el => el.href), origin + href);
     assert.equal(await money('[data-option-price]'), 350);
@@ -70,6 +98,7 @@ try {
     for (const source of ['/nabory/', '/nabor/piknik-u-morya/']) {
       await go(source);
       await view('[data-picnic-offer]');
+      await artwork('[data-picnic-offer]', source, width);
       assert.equal(await page.$$eval('[data-picnic-offer] a', els => els.every(el => el.getAttribute('href') === '/catalog/baltiyskiy-piknik-set/')), true);
       await page.$eval('[data-picnic-offer]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
       if (source === '/nabory/') await page.screenshot({ path: `${output}/${stage}-hub-${width}.png` });
@@ -85,18 +114,28 @@ try {
     await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     assert.equal(await page.$eval('[data-home-more]', el => el.hidden && getComputedStyle(el).display === 'none'), true, 'No zero-count load button after the complete catalogue is revealed');
     await view(card);
+    await artwork(card, 'home', width);
     await page.$eval(card, el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
     await page.waitForFunction(() => { const r = document.querySelector('[data-product="picnic-set"]').getBoundingClientRect(); return r.top < innerHeight && r.bottom > 0; });
     await page.screenshot({ path: `${output}/${stage}-catalog-${width}.png` });
+    await go('/menu/');
+    const menuCard = '[data-menu-product][data-feed-id="picnic-set"]';
+    await page.$eval(menuCard, el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+    await artwork(menuCard, 'menu', width);
+    await page.screenshot({ path: `${output}/${stage}-menu-${width}.png` });
+    await go(catalogProductHref(catalog.find(product => product.id === 'meat')));
+    await page.$eval('[data-upsell-group="picnic"]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+    await artwork('[data-upsell-group="picnic"]', 'product-addons', width);
+    await page.screenshot({ path: `${output}/${stage}-addons-${width}.png` });
     report.widths.push({ width, price: 350, quantityTwo: 700, add: true, reload: true, hub: true, scenario: true, catalog: catalog.length });
   }
   const sitemap = process.env.QA_BASE ? await (await fetch(process.env.QA_BASE + '/sitemap.xml')).text() : await readFile('site/sitemap.xml', 'utf8');
   assert.equal(sitemap.split(`<loc>${origin + href}</loc>`).length - 1, 1);
   assert.deepEqual(report.errors, []);
   await writeFile(`${output}/${stage}-report.json`, JSON.stringify(report, null, 2) + '\n');
-  console.log(`Picnic set PASS (${stage}): 350 ₽ separately, 2×350=700, add/reload, hub/scenario/catalog, sitemap, ${report.widths.map(row => row.width).join('/')}px.`);
+  console.log(`Picnic set PASS (${stage}): 350 ₽ separately, 2×350=700, add/reload, hub/scenario/catalog, sitemap, ${report.artwork.length} layered artwork placements, ${report.widths.map(row => row.width).join('/')}px.`);
 } catch (error) {
   await writeFile(`${output}/${stage}-failure.json`, JSON.stringify({ ...report, error: error.message, url: page.url() }, null, 2) + '\n');
-  await page.screenshot({ path: `${output}/${stage}-failure.png` });
+  await page.screenshot({ path: `${output}/${stage}-failure.png` }).catch(() => {});
   throw error;
 } finally { await browser.disconnect(); chrome.kill(); }

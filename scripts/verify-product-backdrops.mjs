@@ -9,14 +9,12 @@ const retained = JSON.parse(await readFile('research/product-backdrops-20261029/
 const prompts = JSON.parse(await readFile('research/product-backdrops-20261029/prompts.json', 'utf8'));
 const hash = data => createHash('sha256').update(data).digest('hex');
 const fresh = JSON.parse(await readFile('src/data/pirogi39-backdrops.json', 'utf8'));
-const standalone = [{ id: 'picnic-set', source: 'design/picnic-set-20261101/picnic-set.png' }];
-for (const item of standalone) assert.equal((await sharp(item.source).metadata()).hasAlpha, true, `${item.id} transparent accessory artwork`);
+assert.equal((await sharp('design/picnic-set-20261101/picnic-set.png').metadata()).hasAlpha, true, 'picnic-set transparent foreground');
 assert.equal(fresh.length,61);
 for (const item of fresh) assert.ok(manifest.some(original => original.id === item.reusedFrom && original.sourceSha256 === item.sourceSha256), `${item.id} reuses a verified original backdrop`);
 const expected = catalog.map(product => product.id).sort();
-assert.equal(manifest.length, 84);
 assert.equal(retained.length, 8);
-assert.deepEqual([...manifest, ...retained, ...fresh, ...standalone].map(item => item.id).sort(), expected);
+assert.deepEqual([...manifest, ...retained, ...fresh].map(item => item.id).sort(), expected, 'every product has a separate decorative backdrop; no foreground-only exceptions');
 assert.deepEqual(prompts.map(item => item.id).sort(), manifest.map(item => item.id).sort());
 assert.equal(new Set(manifest.map(item => item.sourceSha256)).size, manifest.length, 'each new product has its own generated source');
 const assets = [];
@@ -30,7 +28,7 @@ for (const item of manifest) {
     assets.push({ id:item.id, file, width, bytes:(await stat(file)).size });
   }
 }
-assert.equal(assets.length, 672);
+assert.equal(assets.length, manifest.length * 8);
 for(const item of retained) await stat(item.source);
 const menu = await readFile('site/menu/index.html','utf8');
 // Bundles reuse artwork; catalog coverage is checked on product cards only.
@@ -48,9 +46,6 @@ for (const product of catalog) {
     const heroBackdrop = html.match(new RegExp(`<picture[^>]*data-product-backdrop="${product.id}"[^>]*>[\\s\\S]*?</picture>`))?.[0];
     assert.match(heroBackdrop, /loading="eager"/, `${route} hero backdrop loads eagerly`);
     assert.match(heroBackdrop, /fetchpriority="high"/, `${route} hero backdrop has LCP priority`);
-  } else if (standalone.some(item => item.id === product.id)) {
-    assert.ok(html.includes('data-image-state="ready"'), `${route} generated accessory is ready`);
-    assert.ok(html.includes('product-visual-subject'), `${route} transparent foreground on the product surface`);
   } else assert.ok(html.includes('product-visual-background'), `${route} retained backdrop`);
 }
 const tableware = await sharp('design/product-backdrops-source/tableware-product.png').metadata();
