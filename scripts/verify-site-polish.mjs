@@ -51,6 +51,10 @@ async function view(id, width) {
   assert(statusHeight === 0 || statusHeight >= 44, `${id}: status touch target at ${width}`);
   const cramped = await page.$$eval('.town-invitation h2', headings => headings.filter(heading => heading.scrollWidth > heading.clientWidth + 1 || (innerWidth <= 600 && heading.clientWidth < innerWidth - 100)).map(heading => heading.textContent));
   assert.deepEqual(cramped, [], `${id}: invitation heading uses mobile column at ${width}`);
+  if (width <= 760) {
+    const joined = await page.$$eval('.ed-breadcrumbs li:nth-child(n+3):last-child', crumbs => crumbs.filter(crumb => parseFloat(getComputedStyle(crumb, '::before').marginRight) < 10).map(crumb => crumb.textContent));
+    assert.deepEqual(joined, [], `${id}: breadcrumb separator spacing at ${width}`);
+  }
   report.views.push({ id, width, overflow: false, inputMinPx: 16 });
 }
 async function sticky(dialog, width, closeSelector = '[data-close]') {

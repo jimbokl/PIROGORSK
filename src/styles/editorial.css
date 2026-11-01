@@ -31,4 +31,5 @@
 .ed-hero-text h1{text-wrap:wrap}
 @media(max-width:760px){
  .ed-breadcrumbs li:nth-child(n+3):last-child{flex:0 1 100%;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .ed-breadcrumbs li:nth-child(n+3):last-child:before{margin-right:10px}
 }

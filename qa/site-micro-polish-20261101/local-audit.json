@@ -138,6 +138,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -287,6 +288,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 230,
@@ -318,6 +320,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/delivery/"
@@ -341,6 +344,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [
         {
           "headingWidth": 230,
@@ -372,6 +378,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 230,
@@ -567,6 +574,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [
         {
           "headingWidth": 230,
@@ -744,6 +754,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [],
       "activeSections": [
         "/menu/"
@@ -767,6 +780,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/nabory/"
@@ -790,6 +804,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [
         {
           "headingWidth": 230,
@@ -809,6 +826,15 @@
       "width": 320,
       "overflow": false,
       "outliers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "Пироги на семейный ужин и к приходу гостей в Зеленоградске",
+          "x": 33,
+          "y": 191,
+          "w": 291,
+          "h": 11
+        },
         {
           "tag": "TABLE",
           "class": "ed-reading-table",
@@ -907,15 +933,6 @@
           "y": 2340,
           "w": 440,
           "h": 46
-        },
-        {
-          "tag": "TD",
-          "class": "",
-          "text": "3 кг",
-          "x": 257,
-          "y": 2340,
-          "w": 204,
-          "h": 46
         }
       ],
       "tinyControls": [
@@ -985,6 +1002,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [],
       "activeSections": []
     },
@@ -1079,6 +1099,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/podbor/"
@@ -1102,6 +1123,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 230,
@@ -1252,6 +1274,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [
         {
           "headingWidth": 230,
@@ -1293,6 +1318,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [],
       "activeSections": [
         "/menu/"
@@ -1316,6 +1344,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 230,
@@ -1355,6 +1384,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [],
       "activeSections": []
     },
@@ -1376,6 +1408,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 230,
@@ -1405,6 +1438,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -1426,6 +1460,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -1566,6 +1601,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -1715,6 +1751,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 300,
@@ -1746,6 +1783,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/delivery/"
@@ -1769,6 +1807,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [
         {
           "headingWidth": 300,
@@ -1800,6 +1841,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 300,
@@ -1995,6 +2037,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [
         {
           "headingWidth": 300,
@@ -2172,6 +2217,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [],
       "activeSections": [
         "/menu/"
@@ -2195,6 +2243,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/nabory/"
@@ -2218,6 +2267,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [
         {
           "headingWidth": 300,
@@ -2413,6 +2465,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [],
       "activeSections": []
     },
@@ -2507,6 +2562,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/podbor/"
@@ -2530,6 +2586,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 300,
@@ -2680,6 +2737,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [
         {
           "headingWidth": 300,
@@ -2721,6 +2781,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [],
       "activeSections": [
         "/menu/"
@@ -2744,6 +2807,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 300,
@@ -2773,6 +2837,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
       "invitations": [],
       "activeSections": []
     },
@@ -2794,6 +2861,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 300,
@@ -2823,6 +2891,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -2844,6 +2913,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -2939,6 +3009,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -2960,6 +3031,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 435,
@@ -2991,6 +3063,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/delivery/"
@@ -3014,6 +3087,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [
         {
           "headingWidth": 435,
@@ -3045,6 +3121,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 435,
@@ -3131,6 +3208,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [
         {
           "headingWidth": 435,
@@ -3199,6 +3279,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [],
       "activeSections": [
         "/menu/"
@@ -3222,6 +3305,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/nabory/"
@@ -3245,6 +3329,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [
         {
           "headingWidth": 435,
@@ -3331,6 +3418,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [],
       "activeSections": []
     },
@@ -3425,6 +3515,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/podbor/"
@@ -3448,6 +3539,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 435,
@@ -3498,6 +3590,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [
         {
           "headingWidth": 435,
@@ -3539,6 +3634,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [],
       "activeSections": [
         "/menu/"
@@ -3562,6 +3660,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 435,
@@ -3591,6 +3690,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [],
       "activeSections": []
     },
@@ -3612,6 +3714,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 435,
@@ -3641,6 +3744,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -3662,6 +3766,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -3729,6 +3834,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -3750,6 +3856,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 901,
@@ -3781,6 +3888,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/delivery/"
@@ -3804,6 +3912,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [
         {
           "headingWidth": 901,
@@ -3835,6 +3946,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 901,
@@ -3921,6 +4033,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [
         {
           "headingWidth": 901,
@@ -3989,6 +4104,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [],
       "activeSections": [
         "/menu/"
@@ -4012,6 +4130,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/nabory/"
@@ -4035,6 +4154,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [
         {
           "headingWidth": 901,
@@ -4121,6 +4243,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [],
       "activeSections": []
     },
@@ -4215,6 +4340,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": [
         "/podbor/"
@@ -4238,6 +4364,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 901,
@@ -4288,6 +4415,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [
         {
           "headingWidth": 901,
@@ -4329,6 +4459,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [],
       "activeSections": [
         "/menu/"
@@ -4352,6 +4485,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 901,
@@ -4381,6 +4515,9 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
       "invitations": [],
       "activeSections": []
     },
@@ -4402,6 +4539,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [
         {
           "headingWidth": 901,
@@ -4431,6 +4569,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },
@@ -4452,6 +4591,7 @@
         }
       ],
       "statusHeight": 44,
+      "breadcrumbMargins": [],
       "invitations": [],
       "activeSections": []
     },

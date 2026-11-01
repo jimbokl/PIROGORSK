@@ -48,6 +48,7 @@ try {
         clipped:[...document.querySelectorAll('h1,h2,h3,button')].filter(visible).filter(e=>e.scrollWidth>e.clientWidth+2||e.scrollHeight>e.clientHeight+2).slice(0,10).map(e=>({tag:e.tagName,class:e.className,text:e.textContent.slice(0,90),...rect(e)})),
         h1:[...document.querySelectorAll('h1')].map(e=>({text:e.textContent,...rect(e)})),
         statusHeight:document.querySelector('.masthead-bottom>a.masthead-status')?.getBoundingClientRect().height,
+        breadcrumbMargins:[...document.querySelectorAll('.ed-breadcrumbs li:nth-child(n+3):last-child')].map(e=>parseFloat(getComputedStyle(e,'::before').marginRight)),
         invitations:[...document.querySelectorAll('.town-invitation')].map(e=>{
           const h=e.querySelector('h2'),p=e.querySelector('div>p:last-child');
           return {headingWidth:h.clientWidth,headingOverflow:h.scrollWidth>h.clientWidth+1,bodyFont:parseFloat(getComputedStyle(p).fontSize),cardWidth:e.clientWidth,buttonWidth:e.querySelector('.ed-button').getBoundingClientRect().width};
@@ -59,6 +60,7 @@ try {
     assert.equal(metrics.overflow,false,`${id} ${width}: horizontal overflow`);
     if(stage!=='before'){
       if(metrics.statusHeight) assert(metrics.statusHeight>=44,`${id} ${width}: status touch target`);
+      if(width<=760) assert(metrics.breadcrumbMargins.every(margin=>margin>=10),`${id} ${width}: breadcrumb separator spacing`);
       for(const invitation of metrics.invitations){
         assert(!invitation.headingOverflow,`${id} ${width}: invitation heading overflow`);
         assert(invitation.bodyFont>=14,`${id} ${width}: readable invitation copy`);
