@@ -14,6 +14,7 @@ const otherCategories = blogCategories.map(category => ({ ...category, entries: 
 const schema = [{ '@type': 'Blog', '@id': `${siteOrigin}/blog/#blog`, name: 'Блог Пирогорска', url: `${siteOrigin}/blog/`, inLanguage: 'ru-RU', publisher: { '@id': `${siteOrigin}/#organization` }, blogPost: blogEntries.map(entry => ({ '@type': 'BlogPosting', headline: entry.title, url: `${siteOrigin}${articleHref(entry.slug)}` })) }];
 ---
 <ContentLayout bodyClass="blog-page" title="Блог Пирогорска — пироги и еда в Калининграде и на побережье" description="Начинки, тесто, выпечка, хранение и сервировка пирогов. Таблицы, расчёты и гиды для общего стола в Калининграде и на побережье." breadcrumbs={[{ name: 'Блог', href: '/blog/' }]} {schema}>
+  <Fragment slot="head"><noscript><style is:inline>.blog-search{display:none!important}</style></noscript></Fragment>
   <PieTownHero eyebrow={`Журнал пирогового города · ${blogEntries.length} материалов`} title="К общему столу" intro="Начинки и тесто, хрустящая корочка и общий стол. Разбираем, как выбрать пирог, сравнить цены и подать угощение для своей компании." image={town} imageAlt="Пироговый город на страницах раскрытой книги, пирог и балтийские волны" />
   <BlogSearch total={blogEntries.length} />
   <div id="blog-results">

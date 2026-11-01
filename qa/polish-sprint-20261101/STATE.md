@@ -16,6 +16,7 @@
 
 ## Осталось
 CI, публикация и production QA.
+Предыдущий CI 41334480093 отменён до публикации: Lighthouse нашёл скачок при появлении поиска; SSR исправлен и перепроверен.
 
 ## Проверки
 - check: 0 errors / warnings; build: 262 HTML.
@@ -26,3 +27,5 @@ CI, публикация и production QA.
 - Телефон и планшет просмотрены по новым снимкам.
 - Public PageSpeed до публикации: блог mobile/desktop 100/100; LCP 1.651/0.361s, CLS 0; одиночные lab samples.
 - Полный test:browser PASS: форма/Worker, подборка, наборы, фильтры, синхронизация вкладок, UX и контекст повода.
+
+- После SSR исправления повторный site polish/check PASS; локальный CLS mobile/desktop 0/0 (до исправления 0.079/0.020). Подробности в performance-cls.json.

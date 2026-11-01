@@ -53,5 +53,4 @@ if (form) {
   });
   window.addEventListener('popstate', readUrl);
   readUrl();
-  form.hidden = false;
 }

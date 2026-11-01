@@ -1,0 +1,161 @@
+{
+  "note": "Same local Python static server, uncompressed assets; single lab sample per mode. Headline speed is not comparable to compressed production. Late JS reveal of search form removed; form is now in SSR layout with head noscript fallback.",
+  "results": {
+    "performance-local": [
+      {
+        "mode": "mobile",
+        "run": 1,
+        "scores": {
+          "performance": 71,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 3212.6911,
+            "display": "3.2 s"
+          },
+          "largest-contentful-paint": {
+            "value": 5930.53665,
+            "display": "5.9 s"
+          },
+          "total-blocking-time": {
+            "value": 0,
+            "display": "0 ms"
+          },
+          "cumulative-layout-shift": {
+            "value": 0.07915536364303148,
+            "display": "0.079"
+          },
+          "speed-index": {
+            "value": 3212.6911,
+            "display": "3.2 s"
+          }
+        },
+        "observed": {
+          "fcp": 58,
+          "lcp": 140
+        },
+        "timestamp": "2026-11-01T18:02:15.220Z",
+        "url": "http://127.0.0.1:4325/blog/"
+      },
+      {
+        "mode": "desktop",
+        "run": 1,
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 766.8157250000002,
+            "display": "0.8 s"
+          },
+          "largest-contentful-paint": {
+            "value": 985.8420500000002,
+            "display": "1.0 s"
+          },
+          "total-blocking-time": {
+            "value": 0,
+            "display": "0 ms"
+          },
+          "cumulative-layout-shift": {
+            "value": 0.02023045267489712,
+            "display": "0.02"
+          },
+          "speed-index": {
+            "value": 766.8157250000002,
+            "display": "0.8 s"
+          }
+        },
+        "observed": {
+          "fcp": 65,
+          "lcp": 65
+        },
+        "timestamp": "2026-11-01T18:02:22.317Z",
+        "url": "http://127.0.0.1:4325/blog/"
+      }
+    ],
+    "performance-final": [
+      {
+        "mode": "mobile",
+        "run": 1,
+        "scores": {
+          "performance": 69,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 4003.0242,
+            "display": "4.0 s"
+          },
+          "largest-contentful-paint": {
+            "value": 5930.524200000001,
+            "display": "5.9 s"
+          },
+          "total-blocking-time": {
+            "value": 0,
+            "display": "0 ms"
+          },
+          "cumulative-layout-shift": {
+            "value": 0,
+            "display": "0"
+          },
+          "speed-index": {
+            "value": 4003.0242,
+            "display": "4.0 s"
+          }
+        },
+        "observed": {
+          "fcp": 100,
+          "lcp": 109
+        },
+        "timestamp": "2026-11-01T18:06:35.894Z",
+        "url": "http://127.0.0.1:4325/blog/"
+      },
+      {
+        "mode": "desktop",
+        "run": 1,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 767.8386,
+            "display": "0.8 s"
+          },
+          "largest-contentful-paint": {
+            "value": 1126.7188,
+            "display": "1.1 s"
+          },
+          "total-blocking-time": {
+            "value": 0,
+            "display": "0 ms"
+          },
+          "cumulative-layout-shift": {
+            "value": 0,
+            "display": "0"
+          },
+          "speed-index": {
+            "value": 767.8386,
+            "display": "0.8 s"
+          }
+        },
+        "observed": {
+          "fcp": 69,
+          "lcp": 69
+        },
+        "timestamp": "2026-11-01T18:06:42.998Z",
+        "url": "http://127.0.0.1:4325/blog/"
+      }
+    ]
+  }
+}

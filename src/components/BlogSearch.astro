@@ -2,7 +2,7 @@
 interface Props { total: number }
 const { total } = Astro.props;
 ---
-<form class="blog-search" data-blog-search-form role="search" aria-label="Поиск по журналу" hidden>
+<form class="blog-search" data-blog-search-form role="search" aria-label="Поиск по журналу">
   <label for="blog-query">Найдите полезное к столу</label>
   <div class="blog-search-row">
     <input id="blog-query" type="search" name="q" maxlength="100" autocomplete="off" placeholder="Начинка, подача или повод" enterkeyhint="search" aria-controls="blog-results" />
