@@ -27,11 +27,12 @@
       "week": 1,
       "decision": "new",
       "scenario": "Пикник на косе",
-      "status": "evidence_needed",
-      "dataGap": "Нет единой региональной страницы, но сезон/наличие и статус видов требуют официальных рыбохозяйственных источников; нельзя создавать справочник без них.",
+      "status": "integrated_ready_for_qa",
+      "dataGap": "",
       "cluster": "regional",
       "brandReframe": null,
-      "window": "2026-11-01 — 2026-11-07"
+      "window": "2026-11-01 — 2026-11-07",
+      "sprint": "2026-11-01"
     },
     {
       "number": 3,
@@ -57,11 +58,12 @@
       "week": 1,
       "decision": "new",
       "scenario": "Ужин в апартаментах",
-      "status": "evidence_needed",
-      "dataGap": "Исторический и современный рецепт/состав требуют профильных музейных/архивных источников; «лучшие» требует личной дегустации, не включать.",
+      "status": "integrated_ready_for_qa",
+      "dataGap": "",
       "cluster": "regional",
       "brandReframe": null,
-      "window": "2026-11-01 — 2026-11-07"
+      "window": "2026-11-01 — 2026-11-07",
+      "sprint": "2026-11-01"
     },
     {
       "number": 5,
@@ -102,11 +104,12 @@
       "week": 2,
       "decision": "new",
       "scenario": "Пикник на косе",
-      "status": "evidence_needed",
-      "dataGap": "Пересекается с темами 2/3; общий разбор видов обработки можно объединить с темой 2 после проверки терминов.",
+      "status": "integrated_ready_for_qa",
+      "dataGap": "",
       "cluster": "regional",
       "brandReframe": null,
-      "window": "2026-11-08 — 2026-11-14"
+      "window": "2026-11-08 — 2026-11-14",
+      "sprint": "2026-11-01"
     },
     {
       "number": 8,
@@ -402,11 +405,12 @@
       "week": 2,
       "decision": "новый при подтверждении",
       "scenario": "подборка — собрать домашний стол из пирогов",
-      "status": "evidence_needed",
-      "dataGap": "Нужны официальные страницы рынков с адресами, режимом работы, правилами торговли и подтверждением ассортимента/происхождения.",
+      "status": "integrated_ready_for_qa",
+      "dataGap": "",
       "cluster": "kaliningrad",
       "brandReframe": null,
-      "window": "2026-11-08 — 2026-11-14"
+      "window": "2026-11-08 — 2026-11-14",
+      "sprint": "2026-11-01"
     },
     {
       "number": 28,
@@ -657,11 +661,12 @@
       "week": 1,
       "decision": "strengthen_existing_owner",
       "scenario": "информационный переход к подборке только при уместности",
-      "status": "evidence_needed",
-      "dataGap": "Нужны меню завтраков в Зеленоградске и часы именно завтрака/кухни, а также семь подтверждённых точек, если число сохраняется в заголовке.",
+      "status": "integrated_update_ready_for_qa",
+      "dataGap": "",
       "cluster": "coast",
       "brandReframe": null,
-      "window": "2026-11-01 — 2026-11-07"
+      "window": "2026-11-01 — 2026-11-07",
+      "sprint": "2026-11-01"
     },
     {
       "number": 45,
@@ -867,11 +872,12 @@
       "week": 2,
       "decision": "strengthen_existing_owner",
       "scenario": "информационный переход к подборке только при уместности",
-      "status": "evidence_needed",
-      "dataGap": "Нужны пять действующих завтраков у моря: часы кухни, меню и подтверждённый вид из доступного гостям зала/террасы.",
+      "status": "integrated_update_ready_for_qa",
+      "dataGap": "",
       "cluster": "coast",
       "brandReframe": null,
-      "window": "2026-11-08 — 2026-11-14"
+      "window": "2026-11-08 — 2026-11-14",
+      "sprint": "2026-11-01"
     },
     {
       "number": 59,
@@ -1392,11 +1398,12 @@
       "week": 4,
       "decision": "merge_or_strengthen",
       "scenario": "пикник",
-      "status": "evidence_needed",
-      "dataGap": "Сравнить упаковку, хранение и условия пути по маркировке конкретных товаров; не давать общую гарантию рыбе/сэндвичу.",
+      "status": "integrated_update_ready_for_qa",
+      "dataGap": "",
       "cluster": "scenarios",
       "brandReframe": null,
-      "window": "2026-11-22 — 2026-11-30"
+      "window": "2026-11-22 — 2026-11-30",
+      "sprint": "2026-11-01"
     },
     {
       "number": 94,

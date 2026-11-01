@@ -1,0 +1,65 @@
+{
+  "note": "Latest user authorizes presentation changes; catalog/feeds data and homepage structure preserved.",
+  "files": [
+    {
+      "path": "src/components/CatalogFillings.astro",
+      "baseline": "3bd9a7565bfc8b00600649093357066a688ba88bbfcb0415069faeb1835dfec6",
+      "current": "3bd9a7565bfc8b00600649093357066a688ba88bbfcb0415069faeb1835dfec6",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/CatalogServiceFacts.astro",
+      "baseline": "76368e43498ec2b053237ad927220e98f85625d55594e67b86b6f84a5cac660b",
+      "current": "5fe5b2d789e80d58fc243ac4f05048c0e5eb87a8ad16f7d8df2027df678d00d1",
+      "unchanged": false
+    },
+    {
+      "path": "src/components/ProductCard.astro",
+      "baseline": "b67ee1c9e077896055cc1a78f3fc424a71c3ed6607538b5fdd00d2fed146be00",
+      "current": "b67ee1c9e077896055cc1a78f3fc424a71c3ed6607538b5fdd00d2fed146be00",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/SupplierCatalog.astro",
+      "baseline": "3f47999006ee300be032647be80c575ffbf86139781924a225d71f52cacd238d",
+      "current": "3f47999006ee300be032647be80c575ffbf86139781924a225d71f52cacd238d",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/catalog-contract.ts",
+      "baseline": "629bc17e1be5b8008eae961695da5c0536629b550ff567a45104502b8afa1178",
+      "current": "629bc17e1be5b8008eae961695da5c0536629b550ff567a45104502b8afa1178",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/catalog.ts",
+      "baseline": "6fc8c9940f2219f04724f166e24a3bbc2dbcf488946b728ac0826b9c5b165c5c",
+      "current": "6fc8c9940f2219f04724f166e24a3bbc2dbcf488946b728ac0826b9c5b165c5c",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/holland-catalog.ts",
+      "baseline": "35f7e575306e504161fb4e7cbe2411e0816016c5b683a8a59d172da214a2d3a4",
+      "current": "35f7e575306e504161fb4e7cbe2411e0816016c5b683a8a59d172da214a2d3a4",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/home-catalog.ts",
+      "baseline": "d669e782d70a932dde63d1f640bd33dd8c33e6c941ec6751079f9c751bf86c36",
+      "current": "d669e782d70a932dde63d1f640bd33dd8c33e6c941ec6751079f9c751bf86c36",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/pirogi39-catalog.ts",
+      "baseline": "e6868c29ed7fbd9cce65bfc77da59d7e773de0b78cf811d46cd6eebaced1634b",
+      "current": "e6868c29ed7fbd9cce65bfc77da59d7e773de0b78cf811d46cd6eebaced1634b",
+      "unchanged": true
+    },
+    {
+      "path": "src/pages/index.astro",
+      "baseline": "1de4f0deddcb629d63f772086abeb2b8ecaae1c5e80f42ccea6e888bc7775521",
+      "current": "1de4f0deddcb629d63f772086abeb2b8ecaae1c5e80f42ccea6e888bc7775521",
+      "unchanged": true
+    }
+  ]
+}

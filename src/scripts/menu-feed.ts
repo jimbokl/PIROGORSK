@@ -32,7 +32,7 @@ if (feed && feedback) {
       const price = Number(selected.dataset.feedPrice ?? selected.dataset.supplierUnitPrice);
       card.querySelector('[data-feed-price-label], [data-supplier-price]')!.textContent = money(price * quantity);
       const prefix = card.querySelector('.supplier-from')?.textContent ?? '';
-      card.querySelector('[data-feed-price-note]')!.textContent = quantity > 1 ? `${prefix}${money(price)} / шт. · предварительно` : 'Предварительно';
+      card.querySelector('[data-feed-price-note]')!.textContent = quantity > 1 ? `${prefix}${money(price)} / шт.\nПредварительно` : 'Предварительно';
       const url = new URL(button.href);
       url.searchParams.set('variant', selected.value);
       url.searchParams.set('quantity', String(quantity));

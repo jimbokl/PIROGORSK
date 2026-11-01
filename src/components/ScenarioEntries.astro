@@ -1,13 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import apartment from '../../design/catalog-polish-20261101/link-apartments.png';
+import picnic from '../../design/catalog-polish-20261101/link-picnic.png';
+import company from '../../design/catalog-polish-20261101/link-company.png';
+const entries = [
+  { href: '/nabor/uzhin-v-apartamentah/?pg_channel=scenario', title: 'В апартаменты', image: apartment },
+  { href: '/nabor/piknik-u-morya/?pg_channel=scenario', title: 'На пикник', image: picnic },
+  { href: '/nabor/na-kompaniyu/?pg_channel=scenario', title: 'На компанию', image: company },
+];
+---
 <nav class="scenario-entries" aria-label="Подобрать пироги к случаю">
   <span>К какому столу?</span>
-  <a href="/nabor/uzhin-v-apartamentah/?pg_channel=scenario" data-guide-catalog>В апартаменты <span aria-hidden="true">↗</span></a>
-  <a href="/nabor/piknik-u-morya/?pg_channel=scenario" data-guide-catalog>На пикник <span aria-hidden="true">↗</span></a>
-  <a href="/nabor/na-kompaniyu/?pg_channel=scenario" data-guide-catalog>На компанию <span aria-hidden="true">↗</span></a>
+  <div>{entries.map(entry => <a href={entry.href} data-guide-catalog><Image src={entry.image} alt="" width={80} height={62} format="webp" quality={72} loading="lazy" /><strong>{entry.title}</strong><span class="scenario-arrow" aria-hidden="true">↗</span></a>)}</div>
 </nav>
 <style>
-  .scenario-entries{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 20px;font:400 12px/1.4 var(--sans)}
-  .scenario-entries>span{color:var(--muted);margin-right:8px}
-  a{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;min-height:44px;padding:10px 16px;border:1px solid var(--line,#dde2e8);border-radius:12px;color:var(--navy);text-decoration:none;background:#fff;transition:background .2s,border-color .2s}
-  a:hover{background:#f3f5f8;border-color:var(--navy)}a:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-  a>span{font-size:16px}@media(max-width:600px){.scenario-entries{gap:6px;margin:6px 0 14px;font-size:11px}.scenario-entries>span{width:100%;margin:0}a{gap:8px;padding:8px 10px;flex:1;white-space:nowrap}}
+.scenario-entries{margin:14px 0 24px;font:400 12px/1.4 var(--sans)}
+.scenario-entries>span{display:block;color:var(--muted);margin:0 0 10px}
+.scenario-entries>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:940px}
+a{display:flex;align-items:center;gap:12px;min-width:0;min-height:78px;padding:8px 14px 8px 8px;border-radius:18px;color:var(--navy);text-decoration:none;background:#fbf7ef;box-shadow:inset 0 0 0 1px #b6813426;transition:background .2s,box-shadow .2s}
+a:nth-child(2){background:#eff6f6}a:nth-child(3){background:#f5f3f8}
+img{width:80px;height:62px;object-fit:cover;border-radius:12px;flex-shrink:0}
+strong{font-weight:500}.scenario-arrow{display:grid;place-items:center;margin-left:auto;flex-shrink:0;width:28px;height:28px;border:1px solid #bc873451;border-radius:50%;font-size:16px;color:#8d5d21}
+a:hover{background:#f7edda;box-shadow:inset 0 0 0 1px #b6813470}a:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+@media(max-width:760px){.scenario-entries>div{gap:8px}a{padding:8px;gap:8px;flex-wrap:wrap}img{width:100%;height:72px}strong{font-size:11px}.scenario-arrow{width:22px;height:22px;font-size:14px}}
+@media(max-width:390px){.scenario-entries>div{gap:6px}a{gap:5px;padding:6px}strong{font-size:10px}.scenario-arrow{width:18px;height:18px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){a{transition:none}}
 </style>

@@ -4302,9 +4302,9 @@
       "label": "Рассчитать подборку для своего стола"
     },
     "relatedArticles": [
-      "/journal/sostav-piroga-i-allergeny/",
-      "/journal/kak-perevezti-pirog/",
-      "/journal/skolko-piroga-na-cheloveka/"
+      "/journal/ryba-baltiki-vidy/",
+      "/journal/konigsbergskie-klopsy/",
+      "/journal/rynki-kaliningrada-eda/"
     ]
   },
   {
@@ -4414,6 +4414,72 @@
       "/journal/piknik-s-pirogom-chto-vzyat/",
       "/journal/kak-perevezti-pirog/",
       "/journal/skolko-piroga-na-cheloveka/"
+    ]
+  },
+  {
+    "path": "/journal/ryba-baltiki-vidy/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Рыба Балтики: что пробовать в Калининградской области",
+    "query": "рыба балтики что попробовать в калининградской области",
+    "intent": "Разобраться в видах рыбы и выбрать блюдо или продукт в Калининградской области.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "/journal/rynki-kaliningrada-eda/",
+      "/journal/kak-perevezti-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/konigsbergskie-klopsy/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Кёнигсбергские клопсы: состав, соус и выбор в Калининграде",
+    "query": "кёнигсбергские клопсы состав калининград",
+    "intent": "Узнать состав клопсов и сравнить полные порции в меню Калининграда.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "/journal/ryba-baltiki-vidy/",
+      "/journal/gde-poest-v-kaliningrade/"
+    ]
+  },
+  {
+    "path": "/journal/rynki-kaliningrada-eda/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Центральный рынок Калининграда: что купить и как спланировать визит",
+    "query": "центральный рынок калининград продукты",
+    "intent": "Узнать адрес и часы Центрального рынка и составить план продуктовых покупок.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/ryba-baltiki-vidy/",
+      "/journal/sedobnye-suveniry-iz-kaliningrada/",
+      "/journal/kak-perevezti-pirog/"
     ]
   }
 ]

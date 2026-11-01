@@ -248,7 +248,7 @@ all('[data-home-catalog] [data-product]').forEach(card => {
     const prefix = card.dataset.pricePrefix ?? '';
     card.querySelector('[data-price]')!.textContent = `${prefix}${money(product.prices[value] * count)}`;
     const priceNote = card.querySelector('[data-feed-price-note]');
-    if (priceNote) priceNote.textContent = count > 1 ? `${prefix}${money(product.prices[value])} / шт. · предварительно` : 'Предварительно';
+    if (priceNote) priceNote.textContent = count > 1 ? `${prefix}${money(product.prices[value])} / шт.\nПредварительно` : 'Предварительно';
     const portions = card.querySelector<HTMLElement>('[data-pie-portions]');
     if (portions) portions.textContent = portionSummary(value, count);
   };

@@ -6,6 +6,7 @@ import {launch} from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
 const output=process.env.PIROGORSK_QA_OUTPUT||'qa/content-month-202611';
 const articles=JSON.parse(await readFile('src/data/monthly-articles.json','utf8'));
+const metadata=JSON.parse(await readFile('src/data/monthly-article-meta.json','utf8'));
 const plan=JSON.parse(await readFile('research/content-month-202611/topic-map.json','utf8'));
 const source=await readFile('research/backlog-intake-20261031/A6.txt','utf8');
 assert.deepEqual(plan.topics.map(x=>x.number),Array.from({length:100},(_,i)=>i+1));
@@ -16,8 +17,9 @@ for(const x of plan.topics){
 }
 assert.ok(!/рыбу без мяса/.test(plan.topics[30].topic));
 for(const n of [42,56,62,65,82])assert.ok(plan.topics[n-1].brandReframe);
-assert.equal(articles.length,6);
-for(const article of articles)assert.ok(!/^#|\*\*|\]\(/u.test(article.intro),`Plain-text intro ${article.slug}`);
+assert.deepEqual(articles.map(x=>x.slug).sort(),Object.keys(metadata).sort(),'Publication registry matches metadata');
+assert.equal(new Set(articles.map(x=>x.slug)).size,articles.length,'Unique article owners');
+for(const article of articles)for(const field of ['intro','takeaway'])assert.ok(!/^#|\*\*|\]\(/u.test(article[field]),`Plain-text ${field} ${article.slug}`);
 const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'application/javascript','.webp':'image/webp','.avif':'image/avif','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.woff2':'font/woff2'};
 const site=resolve('site');
 const server=createServer(async(req,res)=>{try{
@@ -64,7 +66,7 @@ try{
   assert.ok(data.words>=1200&&data.words<=1800,`${path}: ${data.words} words`);
   assert.ok(data.title.length<=60&&data.description.length<=160,`Metadata length ${path}`);
   assert.equal(data.canonical,'https://pirogorsk.ru'+path);assert.equal(data.h1,1);assert.equal(data.blogPosting.length,1);assert.equal(data.faq,false);
-  assert.equal(data.blogPosting[0].datePublished,'2026-10-31');assert.equal(data.blogPosting[0].dateModified,'2026-10-31');
+  assert.equal(data.blogPosting[0].datePublished,article.date);assert.equal(data.blogPosting[0].dateModified,metadata[article.slug].modified);
   assert.equal(data.cta.length,1);assert.ok(data.cta[0].measured);
   assert.ok(data.bodyLinks.length>=3&&data.bodyLinks.length<=5,`Context links ${path}`);
   assert.ok(article.sources.length>=3&&article.sources.length<=5,`Sources ${path}`);
@@ -82,7 +84,7 @@ try{
    await page.setViewport({width,height:900,deviceScaleFactor:1});
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);
    assert.equal(overflow,false,`${path} overflow at ${width}`);data.viewports.push({width,overflow});
-   if([390,1280].includes(width)){
+   if([390,768,1280].includes(width)){
     await page.screenshot({path:`${output}/${stage}-${article.slug}-${width}.png`});
     if(width===390){await page.$eval('.ed-body-figure',el=>el.scrollIntoView({block:'center'}));await page.screenshot({path:`${output}/${stage}-${article.slug}-diagram-${width}.png`});await page.evaluate(()=>scrollTo(0,0));}
    }
@@ -94,7 +96,7 @@ try{
   await page.goto(base+update.ownerURL,{waitUntil:'networkidle0'});
   const data=await page.evaluate(()=>({text:document.querySelector('.blog-article').textContent,structured:[...document.querySelectorAll('script[type="application/ld+json"]')].map(x=>x.textContent).join(''),links:[...document.querySelectorAll('.ed-article a[href^="/"]')].map(a=>a.getAttribute('href'))}));
   for(const section of update.sections)assert.ok(data.text.includes(section.title));
-  assert.ok(data.text.includes('Обновлено')&&data.structured.includes('"dateModified":"2026-10-31"'),`Updated date ${update.ownerURL}`);
+  assert.ok(data.text.includes('Обновлено')&&data.structured.includes(`"dateModified":"${update.modified}"`),`Updated date ${update.ownerURL}`);
   for(const href of data.links){const path=new URL(href,base).pathname;assert.ok((await stat(resolve(site,'.'+path+'index.html'))).isFile(),`Updated internal link ${href}`);}
   const viewports=[];
   for(const width of [320,390,768,1024,1280]){
@@ -108,7 +110,7 @@ try{
     await page.evaluate(()=>scrollTo(0,0));
    }
   }
-  report.updates.push({path:update.ownerURL,sections:update.sections.length,modified:'2026-10-31',links:data.links,viewports});
+  report.updates.push({path:update.ownerURL,sections:update.sections.length,modified:update.modified,links:data.links,viewports});
  }
  assert.deepEqual(report.errors,[]);
  await writeFile(`${output}/${stage}-report.json`,JSON.stringify(report,null,2)+'\n');

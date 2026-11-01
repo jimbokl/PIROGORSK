@@ -80,8 +80,8 @@ body.home-page .home-catalog-heading h3{margin:0;font:600 18px/1.3 var(--sans);l
  .home-catalog-group .menu-feed-variants{grid-column:1;grid-row:4;margin:0;align-self:stretch;max-width:none}
  .home-catalog-group .menu-feed-variants span{font-size:11px;padding-inline:5px;height:100%}
  .home-catalog-group .menu-quantity{grid-column:1;grid-row:5;justify-self:start}
- .home-catalog-group .menu-feed-purchase{grid-column:1;grid-row:6;gap:8px;align-self:end}
- .home-catalog-group .menu-feed-bottom strong{font-size:20px}
- .home-catalog-group .menu-feed-add{min-width:108px;padding-inline:13px;font-size:11px}
+ .home-catalog-group .menu-feed-purchase{grid-column:1;grid-row:6;gap:6px;align-self:end;grid-template-columns:minmax(0,1fr) 96px;min-height:62px}
+ .home-catalog-group .menu-feed-bottom strong{font-size:clamp(16px,1.3vw,20px)}
+ .home-catalog-group .menu-feed-add{min-width:0;width:96px;padding-inline:7px;font-size:11px}
 }
 @media(min-width:1280px){.home-catalog-group .menu-feed-list{grid-template-columns:repeat(5,minmax(0,1fr));column-gap:24px}}

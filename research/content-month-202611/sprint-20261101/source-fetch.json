@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fish-lagoons",
+    "url": "https://www.atlant.vniro.ru/index.php/laboratoriya-limanov",
+    "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "fish-sea",
+    "url": "https://www.atlant.vniro.ru/index.php/novosti2/item/936-mezhdunarodnyj-den-baltijskogo-morya",
+    "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "tourism-food",
+    "url": "https://visit-kaliningrad.ru/blog/localfood/",
+    "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "klopsy-recipe",
+    "url": "https://xn----8sbehgcimb3cfabqj3b.xn--p1ai/recipes/selection/kyenigsbergskie-klopsy/",
+    "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "fisher",
+    "url": "https://tetkafisher.ru/",
+    "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "market",
+    "url": "https://rynok39.ru/",
+    "finalURL": "https://rynok39.ru/",
+    "status": 200,
+    "checked": "2026-11-01",
+    "sha256": "5527c69e7597b7a7eb8dd8e0d61c096e41338956d082271044a08d130a1e2ea9",
+    "textFile": "research/content-month-202611/sprint-20261101/sources/market.txt"
+  },
+  {
+    "id": "grand",
+    "url": "https://grandmonopol.com/restaurant",
+    "finalURL": "https://grandmonopol.com/restaurant",
+    "status": 200,
+    "checked": "2026-11-01",
+    "sha256": "012bff092cec75babe42aa201c40b719d725ac69bf06c00ab48a4f9b84592800",
+    "textFile": "research/content-month-202611/sprint-20261101/sources/grand.txt"
+  },
+  {
+    "id": "riviera",
+    "url": "https://riviera-restaurant.ru/",
+    "finalURL": "https://riviera-restaurant.ru/",
+    "status": 200,
+    "checked": "2026-11-01",
+    "sha256": "2aeeec03fde5f7eb48c3b4fda0e4a82c154604f7ac689e7f371b4e8e7d16862b",
+    "textFile": "research/content-month-202611/sprint-20261101/sources/riviera.txt"
+  },
+  {
+    "id": "riviera-address",
+    "url": "https://visit-kaliningrad.ru/food/rivera-i-riviera/",
+    "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "picnic",
+    "url": "https://39.rospotrebnadzor.ru/content/23-aprelya-den-piknika-pravila-bezopasnogo-otdyha-na-prirode",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1082)>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "storage",
+    "url": "https://39.rospotrebnadzor.ru/content/den-domashney-kuhni-osnovnye-pravila-hraneniya-produktov-i-gotovyh-blyud",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1082)>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "fish-purchase",
+    "url": "https://52.rospotrebnadzor.ru/napravleniya-deyatelnosti/sanitarno-epidemiologicheskiy-nadzor/1725/?print=Y",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1082)>",
+    "checked": "2026-11-01"
+  },
+  {
+    "id": "tram",
+    "url": "https://gortrans39.ru/routes/tm5/",
+    "finalURL": "https://gortrans39.ru/routes/tm5/",
+    "status": 200,
+    "checked": "2026-11-01",
+    "sha256": "42884f0c8e55356415701fb41e4a4760e5da03d2dbea68adce5c69c9b7da6ab9",
+    "textFile": "research/content-month-202611/sprint-20261101/sources/tram.txt"
+  }
+]

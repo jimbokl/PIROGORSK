@@ -53,11 +53,11 @@ body.editorial-site .menu-feed .supplier-variants:has(label:only-of-type),.menu-
 body.editorial-site .menu-feed .supplier-variants label:only-of-type span,.menu-feed-variants label:only-of-type span{justify-content:flex-start;padding-inline:0;background:transparent;box-shadow:none;color:var(--muted);font-weight:400}
 body.editorial-site .menu-feed .supplier-variants input:focus-visible+span,.menu-feed-variants input:focus-visible+span{outline:3px solid var(--focus);outline-offset:2px}
 body.editorial-site .menu-feed .supplier-card-bottom,.menu-feed-bottom{display:contents}
-body.editorial-site .menu-feed .supplier-purchase,.menu-feed-purchase{grid-column:2;grid-row:4;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 14px;min-width:0;margin:0;padding:0}
+body.editorial-site .menu-feed .supplier-purchase,.menu-feed-purchase{grid-column:2;grid-row:4;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px 14px;min-width:0;margin:0;padding:0}
 body.editorial-site .menu-feed .supplier-purchase>div,.menu-feed-purchase>div{min-width:0}
 body.editorial-site .menu-feed .supplier-card-bottom strong,.menu-feed-bottom strong{font:600 24px/1.3 var(--sans);letter-spacing:-.035em;white-space:nowrap}
 body.editorial-site .menu-feed .supplier-from{display:block;font:400 10px/1.3 var(--sans);color:var(--muted)}
-body.editorial-site .menu-feed .supplier-card-bottom small,.menu-feed-bottom small{display:block;margin-top:3px;font:400 10px/1.4 var(--sans);color:var(--muted)}
+body.editorial-site .menu-feed .supplier-card-bottom small,.menu-feed-bottom small{display:block;margin-top:3px;font:400 10px/1.4 var(--sans);color:var(--muted);min-height:28px;white-space:pre-line}
 body.editorial-site .menu-feed .supplier-card-bottom .button,.menu-feed-add{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;min-width:128px;width:auto;padding:10px 20px;background:var(--navy);color:var(--paper);border:0;border-radius:30px;font:500 12px/1.5 var(--sans);text-decoration:none;white-space:nowrap}
 body.editorial-site .menu-feed .supplier-card-bottom .button .icon{display:none}
 .menu-feed-add:hover{background:var(--action-hover)}
@@ -159,4 +159,13 @@ body.editorial-site.menu-page .menu-planner-link a{min-height:44px;padding-block
  .menu-page .menu-feed .supplier-catalog{padding-block:20px 32px}
  body.editorial-site.menu-page .menu-sections a{padding:10px 13px}
  .menu-page .menu-empty{padding:22px 18px}
+}
+
+/* A 1→99 quantity edit must not resize the price rail or its neighbours. */
+.menu-feed-purchase strong,.supplier-purchase strong{font-variant-numeric:tabular-nums}
+.menu-feed-description .pie-portions,.supplier-format .pie-portions{min-height:35.2px}
+@media(max-width:600px){
+ body.editorial-site .menu-feed .supplier-art-link,.menu-feed-art{grid-row:1/3}
+ .menu-quantity{grid-row:3}
+ body.editorial-site .menu-feed .supplier-purchase,.menu-feed-purchase{grid-column:1/-1;grid-row:4;margin-top:10px}
 }
