@@ -57,7 +57,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
   .addon-body p{font:400 12px/1.6 var(--sans);color:var(--muted);margin:5px 0 10px}
   .addon-label{display:block;font-size:11px;margin-bottom:5px;color:var(--muted)}
   .addon-controls{display:grid;gap:8px;grid-template-columns:minmax(0,1fr) auto;align-items:center}
-  .addon-controls select{min-width:0;width:100%;min-height:var(--control-height);padding:10px 24px 10px 10px;border:1px solid var(--line);border-radius:var(--radius-control);background:var(--paper);color:var(--navy);font:400 12px/1.5 var(--sans)}
+  .addon-controls select{min-width:0;width:100%;min-height:var(--control-height);padding:10px 24px 10px 10px;border:1px solid var(--line);border-radius:var(--radius-control);background:var(--paper);color:var(--navy);font:400 var(--input-font-size)/1.5 var(--sans)}
   .addon-controls .addon-add{padding:10px 14px;min-height:var(--control-height);font-size:12px}
   .addon-controls :is(select,button):focus-visible{outline:3px solid var(--focus);outline-offset:3px}
   @media(max-width:600px){.addon-card{grid-template-columns:56px minmax(0,1fr);gap:10px}.addon-controls{grid-template-columns:minmax(0,1fr)}.addon-add{width:100%}.addon-body .addon-title{font-size:18px}}

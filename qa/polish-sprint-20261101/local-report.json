@@ -1,0 +1,290 @@
+{
+  "stage": "local",
+  "views": [
+    {
+      "id": "home",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "menu",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "product",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "delivery",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "bundles",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "article",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "blog",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "home",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "menu",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "product",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "delivery",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "bundles",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "article",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "blog",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "home",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "menu",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "product",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "delivery",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "bundles",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "article",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "blog",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "home",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "menu",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "product",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "delivery",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "bundles",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "article",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "blog",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    }
+  ],
+  "blog": [
+    {
+      "width": 320,
+      "total": 62,
+      "cheese": 9,
+      "empty": true,
+      "reset": true,
+      "wordOrder": true,
+      "yo": true,
+      "submit": true,
+      "urlBack": true,
+      "articleLink": true
+    },
+    {
+      "width": 390,
+      "total": 62,
+      "cheese": 9,
+      "empty": true,
+      "reset": true,
+      "wordOrder": true,
+      "yo": true,
+      "submit": true,
+      "urlBack": true,
+      "articleLink": true
+    },
+    {
+      "width": 768,
+      "total": 62,
+      "cheese": 9,
+      "empty": true,
+      "reset": true,
+      "wordOrder": true,
+      "yo": true,
+      "submit": true,
+      "urlBack": true,
+      "articleLink": true
+    },
+    {
+      "width": 1280,
+      "total": 62,
+      "cheese": 9,
+      "empty": true,
+      "reset": true,
+      "wordOrder": true,
+      "yo": true,
+      "submit": true,
+      "urlBack": true,
+      "articleLink": true
+    }
+  ],
+  "dialogs": [
+    {
+      "dialog": "#selection-dialog",
+      "width": 320,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#bundle-editor",
+      "width": 320,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#composition-preview",
+      "width": 320,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#selection-dialog",
+      "width": 390,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#bundle-editor",
+      "width": 390,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#composition-preview",
+      "width": 390,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#selection-dialog",
+      "width": 768,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#bundle-editor",
+      "width": 768,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#composition-preview",
+      "width": 768,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#selection-dialog",
+      "width": 1280,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#bundle-editor",
+      "width": 1280,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#composition-preview",
+      "width": 1280,
+      "closeVisibleAtBottom": true
+    }
+  ],
+  "errors": [],
+  "noJs": {
+    "articles": 62,
+    "allLinks": true
+  }
+}

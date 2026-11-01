@@ -9,3 +9,19 @@
 @media(max-width:760px){.blog-city-guide .ed-hero{padding-block:22px 20px}.blog-city-guide .ed-hero h1{font-size:34px;max-width:26ch}.blog-guide-context{grid-template-columns:1fr;gap:24px;margin-block:24px}.blog-guide-intro{font-size:14px}}
 
 .blog-byline a{color:inherit;text-underline-offset:3px}.blog-byline a:hover{color:var(--ed-amber)}
+/* A quiet search surface for the full editorial library. */
+.blog-search{margin-top:28px;padding:22px 24px;border:1px solid var(--brand-line);border-radius:var(--radius-card);background:var(--brand-paper)}
+.blog-search>label{display:block;margin-bottom:12px;font:500 16px/1.5 var(--sans)}
+.blog-search-row{display:flex;gap:10px}
+.blog-search-row input{box-sizing:border-box;flex:1;min-width:0;min-height:var(--control-height);padding:12px 16px;border:1px solid var(--line);border-radius:var(--radius-control);background:var(--paper);color:var(--ink);font:400 var(--input-font-size)/1.5 var(--sans)}
+.blog-search-row .ed-button{flex-shrink:0;width:auto;border:0;cursor:pointer}
+.blog-search-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 16px;min-height:44px;margin-top:8px;font:400 12px/1.6 var(--sans);color:var(--muted)}
+.blog-search-meta p{margin:0}
+.blog-search-meta button{min-height:44px;padding:8px 0;border:0;background:none;color:var(--navy);font:500 12px/1.5 var(--sans);text-decoration:underline;text-decoration-color:var(--brand-gold);text-underline-offset:5px;cursor:pointer}
+.blog-empty{padding:32px 0 12px;scroll-margin-top:24px}
+.blog-empty h2{font:500 var(--heading-section)/1.2 var(--serif);letter-spacing:-.035em;margin:0 0 12px}
+.blog-empty p{font-size:14px;line-height:1.75;margin-bottom:20px;color:var(--muted)}
+.blog-empty .ed-button{border:0;cursor:pointer}
+.blog-feature[data-blog-entry]{scroll-margin-top:24px}
+.blog-search[hidden],.blog-search [hidden],.blog-empty[hidden],[data-blog-entry][hidden],[data-blog-category][hidden],[data-blog-topics][hidden],[data-blog-category-link][hidden]{display:none!important}
+@media(max-width:600px){.blog-search{padding:18px 16px;margin-top:20px}.blog-search-row{gap:8px}.blog-search-row input{padding-inline:12px}.blog-search-row .ed-button{padding-inline:16px}.blog-search-meta{align-items:baseline}}

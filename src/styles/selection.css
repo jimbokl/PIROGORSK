@@ -6,10 +6,10 @@
 .interest-dialog button{appearance:none;border:0;font-family:var(--sans);cursor:pointer}
 .interest-dialog .button{display:flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;background:var(--navy);color:white;border-radius:999px;font-size:14px}
 
-.selection-dialog{box-sizing:border-box;margin:auto;width:min(580px,calc(100% - 24px));max-height:calc(100dvh - 32px);padding:28px;background:var(--paper,#fff);color:var(--ink);border:1px solid var(--line);border-radius:24px;overflow:auto;overscroll-behavior:contain}
+.selection-dialog{box-sizing:border-box;margin:auto;width:min(580px,calc(100% - 24px));max-height:calc(100dvh - 32px);padding:28px;background:var(--paper,#fff);color:var(--ink);border:1px solid var(--line);border-radius:24px;overflow:auto;overscroll-behavior:contain;scroll-padding-top:88px}
 .selection-dialog::backdrop{background:rgb(12 25 42 / .48)}
 body:has(dialog[open]){overflow:hidden}
-.selection-dialog .dialog-header{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px}
+.selection-dialog .dialog-header{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px;padding-bottom:12px;background:var(--paper,#fff);box-shadow:0 -28px 0 var(--paper,#fff),0 1px 0 var(--line)}
 .selection-dialog h2{font:500 34px/1.15 var(--serif);letter-spacing:-.035em;margin:0 0 24px}
 .selection-city{display:flex;align-items:center;gap:8px;min-height:44px;font:500 13px var(--sans)}
 .selection-dialog .icon-button{width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:var(--soft)}
