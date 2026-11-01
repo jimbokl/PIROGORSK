@@ -1,5 +1,8 @@
 # Балтийский пикник-сет · 01.11.2026
 
+Айдентика утверждена пользователем 01.11.2026 как ориентир для следующих
+материалов Пирогорска. [Зафиксированное направление](../BRAND-DIRECTION.md).
+
 Built-in imagegen, transparent PNG, original generation (not a supplier photo).
 Final project asset: `design/picnic-set-20261101/picnic-set.png`.
 Source: `/Users/dmitrij/.codex/generated_images/01a16a37-1bd2-7913-9c7b-ecd36e870428/exec-5381121f-db35-49b2-b6ab-a19b5708b069.png`.
