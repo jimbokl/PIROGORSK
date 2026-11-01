@@ -1,0 +1,75 @@
+{
+  "context": "Local uncompressed Python HTTP server, one mobile and one desktop Lighthouse run; diagnostic only, production PSI recorded separately after deployment.",
+  "runs": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "url": "http://127.0.0.1:4331/journal/dostavka-edy-v-zelenogradske/",
+      "timestamp": "2026-11-01T20:20:41.262Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 89,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 2853.1339,
+          "display": "2.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3081.2677999999996,
+          "display": "3.1 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 2853.1339,
+          "display": "2.9 s"
+        }
+      }
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "http://127.0.0.1:4331/journal/dostavka-edy-v-zelenogradske/",
+      "timestamp": "2026-11-01T20:20:47.923Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 703.9483500000001,
+          "display": "0.7 s"
+        },
+        "largest-contentful-paint": {
+          "value": 964.5124000000001,
+          "display": "1.0 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 703.9483500000001,
+          "display": "0.7 s"
+        }
+      }
+    }
+  ]
+}
