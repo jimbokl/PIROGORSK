@@ -108,7 +108,9 @@ try {
       await page.evaluate(() => localStorage.removeItem('pirogorsk-selection'));
     }
     await page.goto(`${origin}/journal/skolko-piroga-na-cheloveka/`, { waitUntil: 'networkidle0' });
-    await page.waitForSelector('[data-party-apply]').catch(async error => {
+    await page.click('#article-tools > summary');
+    assert.equal(await page.$eval('#article-tools', details => details.open), true, 'reader opens article tools before using the calculator');
+    await page.waitForSelector('[data-party-apply]', { visible: true }).catch(async error => {
       console.error('Calculator diagnostic', { width, url: page.url(), errors, failedResources, title: await page.title() });
       throw error;
     });

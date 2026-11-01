@@ -14,4 +14,6 @@
 
 Команды: `npm run check`, `npm run build`, `node scripts/verify-seo.mjs`, `node scripts/verify-article-artwork.mjs`, `node scripts/verify-content-month.mjs`, `npm test`, `node scripts/verify-journal-reading.mjs`.
 
-Изображения и промпты: [PROMPTS.md](PROMPTS.md). Проверка исходного текста использует [baseline-sections.json](baseline-sections.json), снятый до изменений. Production и CI ожидаются.
+Изображения и промпты: [PROMPTS.md](PROMPTS.md). Проверка исходного текста использует [baseline-sections.json](baseline-sections.json), снятый до изменений.
+
+Первый [CI 41339954207](https://github.com/jimbokl/PIROGORSK/actions/runs/41339954207) остановился до публикации: старый браузерный сценарий нажимал калькулятор внутри свёрнутого блока. В `qa-site.mjs` добавлены раскрытие через summary и ожидание видимой ссылки. Повторная проверка и production ожидаются.
