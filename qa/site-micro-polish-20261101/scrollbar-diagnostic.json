@@ -1,0 +1,15 @@
+{
+  "cause": "Classic Chrome scrollbar consumes 15 CSS px; innerWidth includes it, the invitation content column does not.",
+  "viewport": 320,
+  "documentClientWidth": 305,
+  "headingWidth": 215,
+  "headingScrollWidth": 215,
+  "gridColumns": "215px",
+  "oldViewportThreshold": 220,
+  "oldCheck": false,
+  "newContentWidthCheck": true,
+  "chromeFlags": [
+    "--disable-features=OverlayScrollbar"
+  ],
+  "verified": true
+}

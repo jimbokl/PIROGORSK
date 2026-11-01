@@ -8,7 +8,7 @@ const output = process.env.QA_OUTPUT || 'qa/polish-sprint-20261101';
 const stage = process.env.QA_BASE ? 'production' : 'local';
 const origin = 'https://pirogorsk.ru';
 await mkdir(output, { recursive: true });
-const chrome = await launch({ chromeFlags: ['--headless=new', '--disable-extensions'] });
+const chrome = await launch({ chromeFlags: ['--headless=new', '--disable-extensions', '--disable-features=OverlayScrollbar'] });
 const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
 const report = { stage, views: [], blog: [], dialogs: [], errors: [] };
 const cache = new Map();
@@ -49,7 +49,14 @@ async function view(id, width) {
   assert.deepEqual(tiny, [], `${id}: readable input at ${width}`);
   const statusHeight = await page.$eval('.masthead-bottom>a.masthead-status', element => element.getBoundingClientRect().height);
   assert(statusHeight === 0 || statusHeight >= 44, `${id}: status touch target at ${width}`);
-  const cramped = await page.$$eval('.town-invitation h2', headings => headings.filter(heading => heading.scrollWidth > heading.clientWidth + 1 || (innerWidth <= 600 && heading.clientWidth < innerWidth - 100)).map(heading => heading.textContent));
+  // Measure the actual card column: classic scrollbars consume viewport space.
+  const invitations = await page.$$eval('.town-invitation h2', headings => headings.map(heading => {
+    const card = heading.closest('.town-invitation');
+    const style = getComputedStyle(card);
+    const contentWidth = card.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+    return { text: heading.textContent, width: heading.clientWidth, contentWidth, overflow: heading.scrollWidth > heading.clientWidth + 1 };
+  }));
+  const cramped = invitations.filter(heading => heading.overflow || (width <= 600 && Math.abs(heading.width - heading.contentWidth) > 2));
   assert.deepEqual(cramped, [], `${id}: invitation heading uses mobile column at ${width}`);
   if (width <= 760) {
     const joined = await page.$$eval('.ed-breadcrumbs li:nth-child(n+3):last-child', crumbs => crumbs.filter(crumb => parseFloat(getComputedStyle(crumb, '::before').marginRight) < 10).map(crumb => crumb.textContent));

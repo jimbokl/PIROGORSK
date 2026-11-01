@@ -12,7 +12,7 @@ const paths = [['home','/'],['menu','/menu/'],['delivery','/delivery/'],['city',
 const types = {'.html':'text/html','.css':'text/css','.js':'application/javascript','.avif':'image/avif','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.ico':'image/x-icon','.woff2':'font/woff2','.json':'application/json'};
 const report = { stage, views: [], errors: [] };
 await mkdir(output,{recursive:true});
-const chrome = await launch({chromeFlags:['--headless=new','--disable-extensions']});
+const chrome = await launch({chromeFlags:['--headless=new','--disable-extensions','--disable-features=OverlayScrollbar']});
 const browser = await puppeteer.connect({browserURL:`http://localhost:${chrome.port}`});
 const page = await browser.newPage(); const cache = new Map();
 await page.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);
@@ -51,7 +51,7 @@ try {
         breadcrumbMargins:[...document.querySelectorAll('.ed-breadcrumbs li:nth-child(n+3):last-child')].map(e=>parseFloat(getComputedStyle(e,'::before').marginRight)),
         invitations:[...document.querySelectorAll('.town-invitation')].map(e=>{
           const h=e.querySelector('h2'),p=e.querySelector('div>p:last-child');
-          return {headingWidth:h.clientWidth,headingOverflow:h.scrollWidth>h.clientWidth+1,bodyFont:parseFloat(getComputedStyle(p).fontSize),cardWidth:e.clientWidth,buttonWidth:e.querySelector('.ed-button').getBoundingClientRect().width};
+          return {headingWidth:h.clientWidth,headingOverflow:h.scrollWidth>h.clientWidth+1,bodyFont:parseFloat(getComputedStyle(p).fontSize),cardWidth:e.clientWidth,contentWidth:e.clientWidth-parseFloat(getComputedStyle(e).paddingLeft)-parseFloat(getComputedStyle(e).paddingRight),buttonWidth:e.querySelector('.ed-button').getBoundingClientRect().width};
         }),
         activeSections:[...document.querySelectorAll('.site-navigation--drawer a[aria-current]')].map(e=>e.getAttribute('href')),
       };
@@ -64,7 +64,7 @@ try {
       for(const invitation of metrics.invitations){
         assert(!invitation.headingOverflow,`${id} ${width}: invitation heading overflow`);
         assert(invitation.bodyFont>=14,`${id} ${width}: readable invitation copy`);
-        if(width<=600) assert(invitation.headingWidth>=width-100,`${id} ${width}: invitation text uses the mobile column`);
+        if(width<=600) assert(Math.abs(invitation.headingWidth-invitation.contentWidth)<=2,`${id} ${width}: invitation text uses the mobile column`);
       }
       if(id==='bundle') assert.deepEqual(metrics.activeSections,['/nabory/'],'Bundle parent navigation');
     }
