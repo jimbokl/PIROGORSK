@@ -1,6 +1,7 @@
 ---
 import ContentLayout from '../../layouts/ContentLayout.astro';
 import ProductFacts from '../../components/ProductFacts.astro';
+import PicnicSetDetails from '../../components/PicnicSetDetails.astro';
 import ProductHero from '../../components/ProductHero.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import ProductAddOns from '../../components/ProductAddOns.astro';
@@ -32,14 +33,14 @@ const guide = /осетин/i.test(product.name) ? { href: '/osetinskie-pirogi/'
     <ProductOptions slot="actions" {product} showDelivery />
   </ProductHero>
   {['mini-pies', 'hearty-pies', 'sweet-pies', 'siberian-pies', 'kurniki', 'prussian-pies', 'ossetian-pies'].includes(product.category) && <ProductAddOns {product} />}
-  <section class="catalog-details" aria-labelledby="product-details">
+  {product.id === 'picnic-set' ? <PicnicSetDetails /> : <section class="catalog-details" aria-labelledby="product-details">
     <div class="catalog-story"><p class="ed-eyebrow">Выбрать осознанно</p><h2 id="product-details">{page.source ? 'К вашему столу' : 'К вашей подборке'}</h2><p>{page.serving}</p><h3>Как подготовить к подаче</h3><p>{page.prep}</p>
       {page.source && !page.fresh && <p class="catalog-cold">Планируем поставку замороженного продукта с соблюдением условий хранения. Способ получения и температурный режим подтвердим перед продажами. Размороженный продукт повторно не замораживают.</p>}
     </div>
     <aside class="catalog-facts" aria-label="Формат и происхождение"><h2>Коротко о позиции</h2><dl><div><dt>Статус</dt><dd>Изучаем спрос, продажи не начались</dd></div>
       {page.source ? <><div><dt>Производитель</dt><dd>{product.supplier?.name}</dd></div><div><dt>{page.fresh ? 'Вес целого пирога' : 'Одна единица'}</dt><dd>{page.fresh ? product.variants.map(v => formatWeight(v.value)).join(' / ') : formatWeight(page.source.unitWeightG)}</dd></div><div><dt>{page.fresh ? 'Формат производителя' : 'Заводская упаковка'}</dt><dd>{page.source.sourceLabel}</dd></div><div><dt>Формат продукта</dt><dd>{product.description}</dd></div></> : <div><dt>Формат</dt><dd>{product.variants.map(v => v.label).join(' или ')}</dd></div>}
       <div><dt>Наша подборка</dt><dd>{page.fresh ? 'Целые пироги; количество можно изменить в общей подборке.' : page.source ? 'Небольшие наборы — планируемая фасовка Пирогорска из заводской упаковки.' : 'Количество можно изменить в общей подборке.'}</dd></div><div><dt>Цена и доставка</dt><dd>Предварительно. Доставка считается отдельно за всю подборку.</dd></div></dl></aside>
-  </section>
+  </section>}
   <ProductFacts {product} />
   <ProductRecommendations products={page.related} />
   <EditorialLinks title="Для вашего стола" links={[guide, { href: '/delivery/', title: 'Города и условия', text: 'Планируем Калининград, Зеленоградск и Светлогорск. Условия получения и цены пока предварительные.', label: 'Доставка' }]} />

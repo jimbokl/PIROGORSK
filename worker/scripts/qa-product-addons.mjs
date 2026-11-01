@@ -16,7 +16,7 @@ export async function verifyProductAddOns(page, origin, width, output) {
   await page.evaluate(() => { localStorage.removeItem('pirogorsk-selection'); localStorage.setItem('pirogorsk-city', 'Зеленоградск'); });
   await page.reload({ waitUntil: 'networkidle0' });
   const inspect = async name => {
-    assert.equal(await page.$$eval('[data-product-addons] .addon-card', cards => cards.length), 3);
+    assert.equal(await page.$$eval('[data-product-addons] .addon-card', cards => cards.length), name === 'supplier' ? 3 : 4);
     assert.equal(await page.$eval('#product-addons-heading', heading => heading.textContent), 'С этим берут');
     assert.equal(await page.evaluate(() => document.body.scrollWidth <= innerWidth), true, `${name}: overflow ${width}`);
     assert.equal(await page.$$eval('[data-product-addons] select, [data-product-addons] button, [data-addon-selection]', controls => controls.every(control => control.getBoundingClientRect().height >= 48)), true, `${name}: touch targets`);
@@ -85,7 +85,7 @@ export async function verifyProductAddOns(page, origin, width, output) {
   await visit('apple');
   assert.equal(await page.$$eval('[data-product-addons] [data-upsell-choice=sweet] option', options => options.some(option => option.value.startsWith('apple:'))), false, 'do not recommend same sweet pie');
   await inspect('sweet');
-  const supplier = catalog.find(product => product.category === 'ossetian-pies');
+  const supplier = catalog.find(product => product.category === 'mini-pies');
   await visit(supplier.id);
   await inspect('supplier');
   const fresh = catalog.find(product => product.id.startsWith('p39-'));
@@ -100,7 +100,11 @@ export async function verifyProductAddOns(page, origin, width, output) {
   await page.evaluate(() => { localStorage.removeItem('pirogorsk-selection'); const write = Storage.prototype.setItem; Storage.prototype.setItem = function(key, value) { if (key === 'pirogorsk-selection') throw new DOMException('QA storage denied', 'QuotaExceededError'); return write.call(this, key, value); }; });
   await click('morse');
   assert.match(await page.$eval('[data-addon-feedback]', el => el.textContent), /Добавлено/);
-  await page.click('[data-addon-selection]');
+  // Adding the fourth add-on changes the footer position. Finish scrolling
+  // before dispatching the pointer event, including with CSS smooth scrolling.
+  await page.$eval('[data-addon-selection]', el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+  await page.locator('[data-addon-selection]').click();
+  await page.waitForSelector('#selection-dialog[open]');
   assert.equal(await page.$eval('[data-item] output', el => el.textContent), '1', 'storage denial retains current selection in memory');
   await page.keyboard.press('Escape');
   assert.deepEqual(await selection(), []);

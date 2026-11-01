@@ -1,0 +1,15 @@
+
+ ⛅️ wrangler 4.155.0 (update available 4.156.0)
+───────────────────────────────────────────────
+Total Upload: 351.49 KiB / gzip: 35.27 KiB
+Worker Startup Time: 8 ms
+Your Worker has access to the following bindings:
+Binding                                       Resource
+env.DB (pirogorsk-interest)                   D1 Database
+env.ALLOW_LOCALHOST ("false")                 Environment Variable
+
+Uploaded pirogorsk-interest (7.43 sec)
+Deployed pirogorsk-interest triggers (3.27 sec)
+  https://pirogorsk-interest.mmotorin.workers.dev
+  schedule: */10 * * * *
+Current Version ID: 7c7b062c-ab8c-40ad-93b7-134de498ebb8

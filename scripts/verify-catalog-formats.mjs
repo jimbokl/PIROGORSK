@@ -33,7 +33,7 @@ try {
     await page.goto(`${base}/?qa=1#pirogi`, { waitUntil: 'networkidle0' });
     assert.equal(await page.$$eval('[data-home-catalog] .variant-summary', labels => labels.every(el => !el.hidden && el.textContent.includes('₽'))), true, 'prices survive without JS');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, 'no-JS layout fits');
-    report.views.push({ width, result: 'PASS', formats: '153 home + 153 menu', bundles: 5, editor: true, noJS: true });
+    report.views.push({ width, result: 'PASS', formats: '154 home + 154 menu', bundles: 5, editor: true, noJS: true });
     await context.close();
   }
   assert.deepEqual(report.errors, []);

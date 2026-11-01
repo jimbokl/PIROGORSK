@@ -13,7 +13,7 @@ export async function verifyDominos(page, origin, width, output) {
     await page.goto(`${origin}${path}?qa=1`, { waitUntil: 'networkidle0' });
     const home = path === '/';
     const status = home ? '[data-home-filter-status]' : '[data-menu-status]';
-    assert.match(await page.$eval(status, el => el.textContent), /153/);
+    assert.match(await page.$eval(status, el => el.textContent), /154/);
     for (const [filling] of fillingFilters.slice(1)) {
       await click(`[data-catalog-fillings] [data-filling=${filling}]`);
       const expected = catalog.filter(product => productFillings(product).includes(filling)).length;
@@ -26,12 +26,12 @@ export async function verifyDominos(page, origin, width, output) {
     await page.goBack({ waitUntil: 'domcontentloaded' });
     await page.waitForFunction(() => document.querySelector('[data-filling=fish]').getAttribute('aria-pressed') === 'true');
     await click('[data-catalog-reset]');
-    assert.match(await page.$eval(status, el => el.textContent), /153/);
+    assert.match(await page.$eval(status, el => el.textContent), /154/);
     await page.$eval('[data-catalog-query]', input => { input.value = 'несуществующаяначинка'; input.dispatchEvent(new Event('input', { bubbles: true })); });
     assert.match(await page.$eval(status, el => el.textContent), /: 0$/);
     assert.equal(await page.$eval(home ? '[data-home-empty]' : '[data-menu-empty]', el => el.hidden), false);
     await click('[data-catalog-reset]');
-    assert.match(await page.$eval(status, el => el.textContent), /153/);
+    assert.match(await page.$eval(status, el => el.textContent), /154/);
     // An item originally outside the progressive batch must be searchable.
     const last = catalog.at(-1);
     await page.$eval('[data-catalog-query]', (input, value) => { input.value = value; input.dispatchEvent(new Event('input', { bubbles: true })); }, last.name);
@@ -75,5 +75,5 @@ export async function verifyDominos(page, origin, width, output) {
   await click('.masthead-selection');
   assert.equal(await page.$('[data-item]'), null, 'corrupted persistence safely starts empty');
   await page.keyboard.press('Escape');
-  console.log(`PASS: global 153-product filling/search/reset/history, shared dialog, dock/totals, focus/city handoff and corrupted storage at ${width}px`);
+  console.log(`PASS: global 154-product filling/search/reset/history, shared dialog, dock/totals, focus/city handoff and corrupted storage at ${width}px`);
 }

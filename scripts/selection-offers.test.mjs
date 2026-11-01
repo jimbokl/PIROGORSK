@@ -33,9 +33,9 @@ test('limit or invalid variant rejects entire set without partial additions', ()
 test('recommendations follow contents, including supplier sweet pies and drinks', () => {
   assert.deepEqual(availableAddOns([], catalog), []);
   assert.deepEqual(availableAddOns([{ id: 'tableware' }], catalog), []);
-  assert.deepEqual(availableAddOns(bundles[0].items, catalog), ['morse', 'sweet', 'tableware']);
-  assert.deepEqual(availableAddOns(bundles[2].items, catalog), ['morse', 'tableware']);
-  assert.deepEqual(availableAddOns([...bundles[0].items, { id: 'apple' }, { id: 'seabuckthorn' }, { id: 'tableware' }], catalog), []);
+  assert.deepEqual(availableAddOns(bundles[0].items, catalog), ['morse', 'sweet', 'tableware', 'picnic']);
+  assert.deepEqual(availableAddOns(bundles[2].items, catalog), ['morse', 'tableware', 'picnic']);
+  assert.deepEqual(availableAddOns([...bundles[0].items, { id: 'apple' }, { id: 'seabuckthorn' }, { id: 'tableware' }, { id: 'picnic-set' }], catalog), []);
 });
 
 
@@ -44,4 +44,19 @@ test('saved selection normalizes legacy weights, duplicates and stale or invalid
   assert.deepEqual(readSavedSelection(saved, catalog), [{ id: 'meat', value: 500, quantity: 99 }, { id: 'cherry', value: 500, quantity: 1 }]);
   assert.deepEqual(readSavedSelection({ items: saved }, catalog), []);
   assert.equal(readSavedSelection(catalog.slice(0, 30).map(p => ({ id: p.id, value: p.variants[0].value, quantity: 1 })), catalog).length, 24);
+});
+
+test('picnic accessory has its own unit price, survives reload and stays separate from pie portions', () => {
+  const picnic = catalog.find(product => product.id === 'picnic-set');
+  assert.equal(picnic.kind, 'accessory');
+  assert.equal(picnic.unit, 'pcs');
+  assert.deepEqual(picnic.variants, [{ value: 1, label: '1 сет · на двоих', price: 350 }]);
+  assert.deepEqual(addOnGroups.find(group => group.id === 'picnic').choices.map(item => selectionPrice([item], catalog)), [350, 700, 1050]);
+  const items = [{ id: 'meat', value: 500, quantity: 1 }, { id: 'picnic-set', value: 1, quantity: 2 }];
+  assert.equal(selectionPrice(items, catalog), 1390);
+  assert.deepEqual(readSavedSelection(items, catalog), items);
+  assert.equal(availableAddOns(items, catalog).includes('picnic'), false);
+  assert.equal(availableAddOns([{ id: 'picnic-set' }], catalog).includes('picnic'), false);
+  const mini = catalog.find(product => product.category === 'mini-pies');
+  assert.equal(availableAddOns([{ id: mini.id }], catalog).includes('picnic'), false);
 });

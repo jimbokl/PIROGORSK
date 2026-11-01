@@ -4529,5 +4529,22 @@
     "demandSource": null,
     "serpValidated": false,
     "ownershipBasis": "existing_bundle_composition"
+  },
+  {
+    "path": "/catalog/baltiyskiy-piknik-set/",
+    "cluster": "catalog",
+    "pageType": "product",
+    "cohort": "picnic-set-20261101",
+    "title": "Балтийский пикник-сет",
+    "query": "набор для пикника к пирогу Зеленоградск",
+    "intent": "Узнать состав дополнения к пирогу для прогулки у моря, цену 350 рублей и добавить в подборку.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "user_confirmed_product_brief",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пирог к пикник-сету"
+    }
   }
 ]

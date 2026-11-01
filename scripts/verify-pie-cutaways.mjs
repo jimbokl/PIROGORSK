@@ -72,7 +72,7 @@ try {
       assert.equal(await page.$$eval('[data-pie-gallery]', elements => elements.length), 6);
       const sources = await page.$$eval('template[data-cutaway-template]', templates => templates.flatMap(template => [...template.content.querySelector('img').getAttribute('srcset').matchAll(/(\S+) \d+w/g)].map(match => new URL(match[1], location.href).pathname)));
       assert.equal(requests.some(path => sources.includes(path)), false, 'no cutaway request before tap');
-      assert.equal(await page.$$eval(path === '/' ? '[data-home-catalog] [data-product]' : '.menu-feed [data-feed-id], .menu-feed [data-supplier-id]', elements => elements.length), 153);
+      assert.equal(await page.$$eval(path === '/' ? '[data-home-catalog] [data-product]' : '.menu-feed [data-feed-id], .menu-feed [data-supplier-id]', elements => elements.length), 154);
       assert.equal(await page.$$eval('.catalog-service-facts a', elements => elements.every(el => el.getBoundingClientRect().height >= 44)), true);
       for (const id of Object.keys(pies)) await toggle(id, id === 'meat');
       if (width === 390 || width === 768) {
@@ -121,7 +121,7 @@ try {
     await context.close();
   }
   assert.deepEqual(report.errors, []);
-  console.log('Cutaways and serving route PASS: 320/390/768/1024/1280, 153 SKU, on-demand loading, keyboard, error/retry, no-JS.');
+  console.log('Cutaways and serving route PASS: 320/390/768/1024/1280, 154 SKU, on-demand loading, keyboard, error/retry, no-JS.');
 } finally {
   await writeFile(`${output}/report.json`, JSON.stringify(report, null, 2));
   browser.disconnect();

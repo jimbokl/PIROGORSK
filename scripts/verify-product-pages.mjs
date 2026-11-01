@@ -54,4 +54,4 @@ for (const product of catalog) {
 }
 assert.equal((menu.match(/class="supplier-art-link"/g) ?? []).length, 139, 'all supplier cards illustrated in the complete menu');
 assert.equal(matrix.filter(row => row.cohort === 'pirogi39-20261029').length, 61);
-console.log('Product pages verified: 153 routes, 145 SEO owners, 139 imagegen originals and 1112 responsive assets.');
+console.log('Product pages verified: 154 routes, 146 SEO owners, 139 imagegen originals and 1112 responsive assets.');

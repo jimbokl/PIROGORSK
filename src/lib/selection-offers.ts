@@ -1,4 +1,5 @@
 import type { Product } from '../data/catalog.ts';
+import { hasPortionPrice } from './product-portions.ts';
 
 export type SelectionItem = { id: string; value: number; quantity: number };
 type PricedProduct = Pick<Product, 'id' | 'variants'>;
@@ -38,7 +39,7 @@ export function mergeSelection(current: SelectionItem[], incoming: SelectionItem
   return merged.length > 24 || merged.some(item => item.quantity > 99) ? null : merged;
 }
 
-export function availableAddOns(items: SelectionItem[], catalog: Pick<Product, 'id' | 'kind' | 'category'>[]): string[] {
+export function availableAddOns(items: SelectionItem[], catalog: Pick<Product, 'id' | 'kind' | 'unit' | 'category'>[]): string[] {
   const selected = items.map(item => catalog.find(product => product.id === item.id)).filter(product => product !== undefined);
   if (!selected.some(product => product.kind === 'pie' || product.kind === 'bakery')) return [];
   const sweet = selected.some(product => ['sweet', 'sweet-pies', 'desserts'].includes(product.category));
@@ -46,5 +47,6 @@ export function availableAddOns(items: SelectionItem[], catalog: Pick<Product, '
     !selected.some(product => ['cranberry', 'seabuckthorn'].includes(product.id)) && 'morse',
     !sweet && 'sweet',
     !selected.some(product => product.id === 'tableware') && 'tableware',
+    selected.some(hasPortionPrice) && !selected.some(product => product.id === 'picnic-set') && 'picnic',
   ].filter((id): id is string => Boolean(id));
 }

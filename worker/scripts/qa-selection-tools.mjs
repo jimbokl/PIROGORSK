@@ -127,6 +127,6 @@ export async function verifySelectionTools(page, origin, width, output) {
   assert.match(await page.$eval('[data-tools-status]', el => el.textContent), /не разрешил/);
   assert.deepEqual(await selection(), beforeInvalid);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
-  assert.equal(catalog.length, 153);
+  assert.equal(catalog.length, 154);
   console.log(`PASS: editable/atomic bundles, independent favorite, safe share preview/reapply/stale/fallback, guest top-ups and denied persistence at ${width}px`);
 }

@@ -5,7 +5,7 @@ import { productFillings, parseCriteria, fillingFilters } from '../src/lib/catal
 
 test('filling filters cover every catalog record with unique allowlisted tags', () => {
   const allowed = new Set(fillingFilters.slice(1).map(([id]) => id));
-  assert.equal(catalog.length, 153);
+  assert.equal(catalog.length, 154);
   for (const product of catalog) {
     const tags = productFillings(product);
     assert.equal(new Set(tags).size, tags.length, product.id);

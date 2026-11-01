@@ -62,6 +62,7 @@ export const extras: Product[] = [
   draftProduct({ id: 'coffee', name: 'Кофе', description: 'К чашке кофе — кусочек пирога', category: 'drinks', kind: 'drink', unit: 'ml', variants: [{ value: 250, label: '250 мл', price: 160 }], defaultVariant: 250, slug: 'kofe', visualKey: 'coffee' }),
   draftProduct({ id: 'water', name: 'Питьевая вода', description: 'Без газа', category: 'drinks', kind: 'drink', unit: 'ml', variants: [{ value: 500, label: '500 мл', price: 80 }], defaultVariant: 500, slug: 'pitevaya-voda', visualKey: 'water' }),
   draftProduct({ id: 'tableware', name: 'Набор посуды', description: 'Тарелка, вилка и салфетка на одного гостя', category: 'accessories', kind: 'accessory', unit: 'pcs', variants: [{ value: 1, label: '1 набор', price: 35 }], defaultVariant: 1, slug: 'nabor-posudy' }),
+  draftProduct({ id: 'picnic-set', name: 'Балтийский пикник-сет', description: 'Чай с мёдом на двоих, салфетки и лодочки для восьми кусочков. Дополнение к отдельно выбранному пирогу для прогулки у моря.', category: 'accessories', kind: 'accessory', unit: 'pcs', variants: [{ value: 1, label: '1 сет · на двоих', price: 350 }], defaultVariant: 1, slug: 'baltiyskiy-piknik-set' }),
 ];
 
 export const catalog: Product[] = [...products, ...extras, ...supplierProducts, ...freshProducts];

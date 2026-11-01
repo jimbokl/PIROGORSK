@@ -11,4 +11,5 @@ export const addOnGroups = [
   { id: 'morse', title: 'Морс к пирогам', description: 'Клюква или облепиха, 500 мл или 1 л.', imageId: 'cranberry', choices: ['cranberry', 'seabuckthorn'].flatMap(id => [500, 1000].map(value => ({ id, value, quantity: 1 }))) },
   { id: 'sweet', title: 'Пирог к чаю', description: 'Небольшой сладкий пирог к сытному столу.', imageId: 'apple', choices: ['apple', 'cherry', 'curd'].map(id => ({ id, value: 500, quantity: 1 })) },
   { id: 'tableware', title: 'Посуда для гостей', description: 'Тарелка, вилка и салфетка каждому.', imageId: 'tableware', choices: [1, 5, 10].map(quantity => ({ id: 'tableware', value: 1, quantity })) },
+  { id: 'picnic', title: 'Балтийский пикник-сет', description: 'Чай и принадлежности на двоих. Пирог отдельно.', imageId: 'picnic-set', choices: [1, 2, 3].map(quantity => ({ id: 'picnic-set', value: 1, quantity })) },
 ];

@@ -155,7 +155,7 @@ try {
     assert.equal(await page.$$eval('.home-product-feed [data-product]', cards => cards.length), catalog.length);
     assert.equal(await page.$$eval('[data-home-category]', links => links.length), 8);
     assert.equal(await page.$$eval('.home-product-feed [data-product]:not([hidden])', cards => cards.length), 12);
-    assert.equal(await page.$eval('#catalog-data', script => JSON.parse(script.textContent).length), 153);
+    assert.equal(await page.$eval('#catalog-data', script => JSON.parse(script.textContent).length), 154);
     assert.equal(await page.$$eval('.offer-card', cards => cards.every(card => card.scrollWidth <= card.clientWidth)), true, `offer content overflow at ${width}`);
     assert.equal(await page.$$eval('.offer-add', buttons => buttons.every(button => { const a = button.getBoundingClientRect(), b = button.closest('.offer-card').getBoundingClientRect(); return a.right <= b.right && a.left >= b.left; })), true, `offer button clipped at ${width}`);
     assert.deepEqual(await page.$$eval('[data-tasting-scene]', scenes => scenes.map(scene => scene.dataset.tastingScene)), ['pies', 'company', 'tea', 'mini', 'seaside', 'bake', 'warm']);
@@ -219,7 +219,7 @@ try {
     }
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => button.hidden), true);
     assert.equal(await page.$eval('#holland [data-supplier-more]', button => getComputedStyle(button).display), 'none', 'the last catalogue page hides pagination through CSS');
-    // One search covers all 153 products, including concepts and extras. It
+    // One search covers all 154 products, including concepts and extras. It
     // resets local filters and survives reload without making another URL owner.
     const menuSearch = async query => page.$eval('[data-menu-search]', (input, query) => {
       input.value = query; input.dispatchEvent(new Event('input', { bubbles: true }));
@@ -243,7 +243,7 @@ try {
     await page.click('[data-menu-reset]');
     assert.equal(await page.$eval('[data-menu-search]', input => document.activeElement === input), true, 'reset restores keyboard focus');
     assert.equal(new URL(page.url()).searchParams.has('q'), false);
-    assert.equal(await page.$eval('[data-menu-status]', el => el.textContent), 'Позиций по вашему выбору: 153');
+    assert.equal(await page.$eval('[data-menu-status]', el => el.textContent), 'Позиций по вашему выбору: 154');
     assert.equal(await page.$$eval('[data-menu-jump]:not([hidden])', links => links.length), 4);
     await menuSearch('Морс');
     assert.equal(await page.$eval('#extras', section => section.hidden), false, 'extras participate in search');

@@ -9,7 +9,7 @@ import { selectionHref } from '../src/lib/product-paths.ts';
 test('all 61 fresh whole pies and their 63 real size variants are selectable', () => {
   assert.equal(freshProducts.length, 61);
   assert.equal(freshProducts.reduce((sum,p) => sum + p.variants.length,0),63);
-  assert.equal(catalog.length,153);
+  assert.equal(catalog.length,154);
   assert.deepEqual(Object.fromEntries(['hearty-pies','sweet-pies','siberian-pies','kurniki','prussian-pies','ossetian-pies'].map(g=>[g,freshProducts.filter(p=>p.category===g).length])),{'hearty-pies':18,'sweet-pies':17,'siberian-pies':5,kurniki:4,'prussian-pies':3,'ossetian-pies':14});
   for (const product of freshProducts) {
     const source = freshSource.find(s=>s.id===product.id);

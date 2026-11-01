@@ -1,6 +1,7 @@
 ---
 import ContentLayout from '../layouts/ContentLayout.astro';
 import HomeOffers from '../components/HomeOffers.astro';
+import PicnicSetOffer from '../components/PicnicSetOffer.astro';
 import { bundles } from '../data/bundles';
 import { siteOrigin } from '../data/editorial';
 
@@ -19,6 +20,7 @@ const schema = [{
     <p class="ed-intro">Сытное к ужину, сладкое к чаю и пироги для большой встречи. Начните с готового сочетания — вкусы, вес и количество можно изменить.</p>
   </header>
   <HomeOffers embedded listing />
+  <PicnicSetOffer />
 </ContentLayout>
 <style>
   .bundle-hub-heading{padding:40px 0 36px;max-width:760px}

@@ -3,18 +3,19 @@ import { catalog } from '../data/catalog';
 import { addOnGroups } from '../data/bundles';
 import type { Product } from '../data/catalog';
 import ProductVisual from './ProductVisual.astro';
+import { hasPortionPrice } from '../lib/product-portions';
 interface Props { mode?: 'selection' | 'product'; product?: Product }
 const { mode = 'selection', product } = Astro.props;
 const detail = mode === 'product';
 const headingId = detail ? 'product-addons-heading' : 'addons-heading';
 const Heading = detail ? 'h2' : 'h3';
 const CardHeading = detail ? 'h3' : 'h4';
-const groups = addOnGroups.map(group => ({ ...group, choices: group.choices.filter(choice => choice.id !== product?.id) }));
+const groups = addOnGroups.filter(group => group.id !== 'picnic' || !product || hasPortionPrice(product)).map(group => ({ ...group, choices: group.choices.filter(choice => choice.id !== product?.id) })).filter(group => group.choices.length);
 const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
 ---
 <section class:list={['selection-addons', { 'product-addons': detail }]} data-upsells={!detail || undefined} data-product-addons={detail || undefined} hidden={!detail} aria-labelledby={headingId}>
   <Heading id={headingId} class="addons-heading" tabindex="-1">{detail ? 'С этим берут' : 'К пирогам на стол'}</Heading>
-  <p>{detail ? 'Морс, сладкий пирог к чаю и посуда для гостей. Добавьте в свою подборку.' : 'Добавьте по желанию — всё можно изменить.'}</p>
+  <p>{detail ? 'К чаю, к общему столу или на прогулку. Добавьте то, что пригодится к вашим пирогам.' : 'Добавьте по желанию — всё можно изменить.'}</p>
   <div class="addons-grid">
   {groups.map(group => {
     const first = group.choices[0];
@@ -22,15 +23,15 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
     return <article class="addon-card" data-upsell-group={group.id}>
     <div class="addon-art" aria-hidden="true"><ProductVisual product={catalog.find(product => product.id === (group.id === 'sweet' ? first.id : group.imageId))!} decorative thumbnail /></div>
     <div class="addon-body">
-      <CardHeading class="addon-title">{group.title}</CardHeading><p>{group.description}</p>
-      <label for={`${mode}-addon-${group.id}`} class="addon-label">{group.id === 'tableware' ? 'На сколько гостей' : group.id === 'sweet' ? 'Начинка · 500 г' : 'Вкус и объём'}</label>
+      <CardHeading class="addon-title">{group.id === 'picnic' ? <a href="/catalog/baltiyskiy-piknik-set/">{group.title}</a> : group.title}</CardHeading><p>{group.description}</p>
+      <label for={`${mode}-addon-${group.id}`} class="addon-label">{group.id === 'picnic' ? 'Сколько сетов' : group.id === 'tableware' ? 'На сколько гостей' : group.id === 'sweet' ? 'Начинка · 500 г' : 'Вкус и объём'}</label>
       <div class="addon-controls">
         <select id={`${mode}-addon-${group.id}`} data-upsell-choice={group.id}>
           {group.choices.map(choice => {
             const product = catalog.find(product => product.id === choice.id)!;
             const variant = product.variants.find(variant => variant.value === choice.value)!;
             const shortName: Record<string, string> = { cranberry: 'Клюква', seabuckthorn: 'Облепиха', apple: 'Яблоко и брусника', cherry: 'Вишня', curd: 'Творог и малина' };
-            const label = group.id === 'tableware' ? `${choice.quantity} ${choice.quantity === 1 ? 'набор' : 'наборов'}` : group.id === 'sweet' ? shortName[choice.id] : `${shortName[choice.id]} · ${variant.label}`;
+            const label = group.id === 'picnic' ? `${choice.quantity} ${choice.quantity === 1 ? 'сет' : 'сета'} · на ${choice.quantity * 2} человек` : group.id === 'tableware' ? `${choice.quantity} ${choice.quantity === 1 ? 'набор' : 'наборов'}` : group.id === 'sweet' ? shortName[choice.id] : `${shortName[choice.id]} · ${variant.label}`;
             return <option value={`${choice.id}:${choice.value}:${choice.quantity}`} data-price={variant.price * choice.quantity}>{label}</option>;
           })}
         </select>
@@ -52,6 +53,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
   .addon-art :global(.product-visual-badge){display:none}
   .addon-art :global(.product-visual){width:100%;height:auto;aspect-ratio:1;margin:0!important}
   .addon-body{min-width:0}.addon-body .addon-title{font:500 18px/1.3 var(--serif);margin:0}
+  .addon-title a{color:inherit;text-decoration-color:var(--copper,#a76525);text-underline-offset:4px}
   .addon-body p{font:400 12px/1.6 var(--sans);color:var(--muted);margin:5px 0 10px}
   .addon-label{display:block;font-size:11px;margin-bottom:5px;color:var(--muted)}
   .addon-controls{display:grid;gap:8px;grid-template-columns:minmax(0,1fr) auto;align-items:center}
@@ -62,7 +64,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
   .product-addons{padding-block:32px;margin-bottom:40px;border-block:1px solid var(--line)}
   .product-addons .addons-heading{font-size:clamp(29px,3vw,38px)}
   .product-addons>p{font-size:14px;max-width:64ch;margin-bottom:24px}
-  .product-addons .addons-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .product-addons .addons-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
   .product-addons .addon-card{grid-template-columns:76px minmax(0,1fr);gap:14px;padding:20px 16px 14px;border:1px solid var(--line);border-radius:20px;background:var(--paper-raised)}
   .product-addons .addon-body{display:flex;flex-direction:column}
   .product-addons .addon-body>p:not(.addon-saved){min-height:58px;font-size:12px}

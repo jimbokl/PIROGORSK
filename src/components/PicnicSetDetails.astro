@@ -1,0 +1,26 @@
+---
+const contents = [
+  { number: '01', title: 'Восемь удобных кусочков', text: 'Нарезка одного выбранного целого пирога на 8 частей и 8 вощёных бумажных лодочек. Кусочек удобно держать за края бумаги.' },
+  { number: '02', title: 'Чистые руки', text: 'Две антисептические и две влажные салфетки в индивидуальных упаковках — перед едой и после.' },
+  { number: '03', title: 'Чай на двоих', text: 'Два крафтовых стаканчика, два пакетика облепихового травяного чая и две порции мёда. Кипяток возьмите с собой в термосе.' },
+  { number: '04', title: 'Чистый берег', text: 'Бумажный пакет для использованных салфеток и упаковки. Пироги — нам, чистый берег — всем.' },
+];
+---
+<section class="picnic-details" aria-labelledby="picnic-contents" data-picnic-set>
+  <header><p class="ed-eyebrow">Пирог — с собой</p><h2 id="picnic-contents">Всё для маленького пикника</h2><p>Для прогулки по Зеленоградску, поездки на Куршскую косу или паузы у моря. Один сет рассчитан на двоих и нарезку одного целого пирога.</p></header>
+  <div class="picnic-contents">{contents.map(item => <article><span aria-hidden="true">{item.number}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
+  <div class="picnic-pie"><div><h3>Выберите свой пирог</h3><p>350 ₽ — цена дополнения. Сам пирог выбирается и оплачивается отдельно.</p></div><a class="ed-button" href="/menu/#pirogi39">К целым пирогам <span aria-hidden="true">→</span></a></div>
+</section>
+<style>
+  .picnic-details{padding-block:40px 56px;border-top:1px solid var(--ed-line)}
+  header{max-width:720px}h2{font:500 clamp(28px,4vw,44px)/1.12 var(--ed-serif);letter-spacing:-.03em;margin:14px 0 18px}
+  header>p:last-child{font-size:15px;line-height:1.8;color:var(--ed-muted)}
+  .picnic-contents{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:32px}
+  article{padding:24px 20px;border:1px solid var(--ed-line);border-radius:20px;background:var(--paper-raised)}
+  article>span{display:block;color:var(--copper,#a76525);font-size:12px;font-weight:600;letter-spacing:.12em;margin-bottom:24px;font-variant-numeric:tabular-nums}
+  h3{font-size:17px;line-height:1.4;margin:0 0 12px}article p,.picnic-pie p{font-size:13px;line-height:1.8;color:var(--ed-muted);margin:0}
+  .picnic-pie{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:24px;padding:24px;border-radius:20px;background:var(--paper-raised);border:1px solid var(--ed-line)}
+  .picnic-pie h3{margin-bottom:5px}.picnic-pie a{flex-shrink:0}
+  @media(max-width:1000px){.picnic-contents{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:600px){.picnic-details{padding-block:28px 36px}.picnic-contents{grid-template-columns:1fr;gap:12px;margin-top:24px}article{padding:20px}article>span{margin-bottom:14px}.picnic-pie{align-items:stretch;flex-direction:column;padding:20px}.picnic-pie a{width:100%;justify-content:center}}
+</style>

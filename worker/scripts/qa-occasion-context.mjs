@@ -59,7 +59,7 @@ try {
     const goals = () => page.evaluate(() => (window.ym?.a || []).filter(args => args[1] === 'reachGoal').map(args => ({ goal: args[2], params: args[3] })));
     for (const path of ['/', '/menu/']) {
       await go(path);
-      assert.equal(await page.$$eval('[data-product], [data-menu-product], [data-supplier-id]', cards => new Set(cards.map(card => card.dataset.product || card.dataset.feedId || card.dataset.supplierId)).size), 153);
+      assert.equal(await page.$$eval('[data-product], [data-menu-product], [data-supplier-id]', cards => new Set(cards.map(card => card.dataset.product || card.dataset.feedId || card.dataset.supplierId)).size), 154);
       assert.equal(await page.$$eval('.scenario-entries a', links => links.length), 3);
       assert(await page.$$eval('.scenario-entries a', links => links.every(link => {
         const rect = link.getBoundingClientRect();

@@ -72,7 +72,7 @@ try{
     }
     return {ids:cards.map(c=>c.dataset.product||c.dataset.feedId||c.dataset.supplierId),checked,errors,overflow:document.documentElement.scrollWidth>innerWidth+1};
    },{selector,products:catalog.map(product=>({id:product.id,defaultVariant:product.defaultVariant,eligible:hasPortionPrice(product),labels:Object.fromEntries(product.variants.map(v=>[v.value,portionPriceLabel(v.price,v.value,product.supplier?.priceFrom)]))}))});
-   assert.deepEqual(data.ids.slice().sort(),catalog.map(p=>p.id).sort(),`${surface}: 153 SKU`);
+   assert.deepEqual(data.ids.slice().sort(),catalog.map(p=>p.id).sort(),`${surface}: 154 SKU`);
    row.surfaces.push({surface,...data});
    // Save failure details before asserting so geometry regressions remain inspectable.
    await writeFile(`${output}/${stage}-progress.json`,JSON.stringify({...report,current:row},null,2)+'\n');
@@ -120,5 +120,5 @@ try{
  }
  assert.deepEqual(report.errors,[]);
  await writeFile(`${output}/${stage}-report.json`,JSON.stringify(report,null,2)+'\n');
- console.log(`Catalog polish PASS (${stage}): 153 SKU on home/menu; 1→2→99→1 geometry on six widths; portion prices across variants/quantities on cards, bundles and product pages; links, format/price/add synchronization.`);
+ console.log(`Catalog polish PASS (${stage}): 154 SKU on home/menu; 1→2→99→1 geometry on six widths; portion prices across variants/quantities on cards, bundles and product pages; links, format/price/add synchronization.`);
 }finally{await browser.disconnect();await chrome.kill();}

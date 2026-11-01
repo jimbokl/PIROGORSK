@@ -16,8 +16,8 @@ async function compareFormats(page, selector) {
       text: label.querySelector('small').textContent,
     })),
   })));
-  assert.equal(rows.length, 153);
-  assert.equal(new Set(rows.map(row => row.id)).size, 153);
+  assert.equal(rows.length, 154);
+  assert.equal(new Set(rows.map(row => row.id)).size, 154);
   for (const row of rows) {
     const product = catalog.find(product => product.id === row.id);
     assert.deepEqual(row.variants.map(({ value, price }) => ({ value, price })), product.variants.map(({ value, price }) => ({ value, price })));
@@ -91,5 +91,5 @@ export async function verifyCatalogFormats(page, origin, width, output) {
     await assertFits(page, options);
     await (await page.$(options)).screenshot({ path: `${output}/product-${product.id}-${width}.png` });
   }
-  console.log(`PASS: all 153 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at ${width}px`);
+  console.log(`PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at ${width}px`);
 }
