@@ -1,0 +1,58 @@
+body.editorial-site.journal-page .blog-city-guide .ed-hero{padding-bottom:0}
+body.editorial-site.journal-page .blog-guide-context{margin-top:24px}
+/* The journal shares the site's navy, kraft and amber, with a quiet reading rhythm. */
+body.editorial-site.journal-page .article-reading{display:grid;grid-template-columns:240px minmax(0,760px);justify-content:space-between;gap:clamp(32px,5vw,80px);align-items:start;margin-block:36px 64px}
+body.editorial-site.journal-page .article-reading-nav{position:sticky;top:100px;min-width:0}
+body.editorial-site.journal-page .article-contents{background:#faf7f1;border:1px solid #e9e1d4;border-radius:20px;padding:20px}
+body.editorial-site.journal-page .article-contents summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;min-height:48px}
+body.editorial-site.journal-page .article-contents summary::-webkit-details-marker{display:none}
+body.editorial-site.journal-page .article-contents-kicker{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#80633d;margin-bottom:7px}
+body.editorial-site.journal-page .article-contents strong{font:500 24px/1.2 var(--serif)}
+body.editorial-site.journal-page .article-contents-toggle{font-size:22px;transition:transform .2s}
+body.editorial-site.journal-page .article-contents[open] .article-contents-toggle{transform:rotate(180deg)}
+body.editorial-site.journal-page .article-contents nav{max-height:calc(100svh - 230px);overflow-y:auto;overscroll-behavior:contain;margin-top:18px}
+body.editorial-site.journal-page .article-contents ol{list-style:none;padding:0;margin:0;counter-reset:reading-chapter}
+body.editorial-site.journal-page .article-contents li{counter-increment:reading-chapter;border-top:1px solid #e9e1d4}
+body.editorial-site.journal-page .article-contents a{display:grid;grid-template-columns:20px 1fr;gap:8px;align-items:baseline;padding:13px 0;min-height:44px;text-decoration:none;font-size:13px;line-height:1.55;color:var(--ed-ink)}
+body.editorial-site.journal-page .article-contents a:before{content:counter(reading-chapter,decimal-leading-zero);font-size:10px;color:#956126;font-variant-numeric:tabular-nums}
+body.editorial-site.journal-page .article-contents a:hover{color:#925717}
+body.editorial-site.journal-page .article-reading-main{min-width:0}
+body.editorial-site.journal-page .article-reading-main .ed-article{margin:0}
+body.editorial-site.journal-page .article-reading-main .ed-article-section{display:block;padding-block:36px;border-top:1px solid var(--ed-line);scroll-margin-top:110px}
+body.editorial-site.journal-page .article-reading-main .ed-article-section:first-child{border-top:0;padding-top:0}
+body.editorial-site.journal-page .article-reading-main .ed-article-section h2{font:500 clamp(27px,2.8vw,36px)/1.2 var(--serif);letter-spacing:-.025em;max-width:32ch;margin-bottom:23px;scroll-margin-top:110px;text-wrap:balance}
+body.editorial-site.journal-page .article-reading-main .ed-article-section p,body.editorial-site.journal-page .article-reading-main .ed-article-section li{font-size:16px;line-height:1.9;max-width:70ch;color:#425269}
+body.editorial-site.journal-page .article-reading-main .ed-article-section p+p{margin-top:18px}
+body.editorial-site.journal-page .article-reading-main .ed-article-section ul,body.editorial-site.journal-page .article-reading-main .ed-article-section ol{margin-block:24px;padding-left:25px}
+body.editorial-site.journal-page .article-reading-main .ed-article-section li{padding-left:6px;margin-block:12px}
+body.editorial-site.journal-page .article-reading-main li::marker{color:#a56a28;font-weight:500}
+body.editorial-site.journal-page .article-reading-main .ed-body-figure{margin:30px 0 4px}
+body.editorial-site.journal-page .article-reading-main .ed-body-figure img{display:block;border-radius:18px;width:100%;height:auto;background:#f8f3eb}
+body.editorial-site.journal-page .article-reading-main .ed-body-figure figcaption{font-size:12px;line-height:1.7;padding-left:14px;border-left:2px solid #d8a45a;margin-top:14px}
+body.editorial-site.journal-page .article-reading-main .ed-reading-links{gap:10px;margin-top:24px}
+body.editorial-site.journal-page .article-reading-main .ed-reading-links a{padding:14px 18px;border:1px solid #e9e1d4;border-radius:12px;background:#faf7f1;color:var(--ed-ink);font-size:14px;line-height:1.5;text-decoration:none;min-height:52px}
+body.editorial-site.journal-page .article-reading-main .ed-reading-links a:hover{border-color:#c48d45;background:#f7eedf}
+body.editorial-site.journal-page .article-reading-main .ed-reading-table{font-size:14px;line-height:1.75}
+body.editorial-site.journal-page .article-reading-main .ed-reading-table thead{background:#f7f1e7}
+body.editorial-site.journal-page .article-reading-main .ed-reading-table th,body.editorial-site.journal-page .article-reading-main .ed-reading-table td{padding:16px 14px;vertical-align:top}
+body.editorial-site.journal-page .article-reading-main .ed-reading-table tbody tr:nth-child(even){background:#fcfaf6}
+body.editorial-site.journal-page .article-reading-main .ed-reading-table caption{font-size:13px;line-height:1.6;padding:16px 14px}
+body.editorial-site.journal-page .article-tools{margin-top:36px;border:1px solid #e5e8ee;border-radius:18px;padding:0 22px;scroll-margin-top:110px}
+body.editorial-site.journal-page .article-tools>summary{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;font-size:17px;font-weight:500;line-height:1.5;padding-block:20px}
+body.editorial-site.journal-page .article-tools>summary::-webkit-details-marker{display:none}
+body.editorial-site.journal-page .article-tools>summary::after{content:'+';font-size:25px;color:#956126}
+body.editorial-site.journal-page .article-tools[open]>summary::after{content:'−'}
+body.editorial-site.journal-page .article-tools[open]{padding-bottom:24px}
+body.editorial-site.journal-page .article-tools .guide-summary,body.editorial-site.journal-page .article-tools .cost-widget,body.editorial-site.journal-page .article-tools .party-calc{margin-block:24px}
+body.editorial-site.journal-page .article-reading-main .blog-takeaway{display:block;border:0;border-left:3px solid #cf9645;border-radius:0 16px 16px 0;background:#faf7f1;padding:24px 26px;margin:0 0 36px}
+body.editorial-site.journal-page .article-reading-main .blog-takeaway h2{font:500 23px/1.3 var(--serif);margin-bottom:12px}
+body.editorial-site.journal-page .article-reading-main .blog-takeaway p{font-size:15px;line-height:1.85;color:#425269}
+body.editorial-site.journal-page .article-reading-main .article-sources{margin-top:32px;padding:24px}
+body.editorial-site.journal-page .article-reading-main .venue{display:block;scroll-margin-top:110px}
+body.editorial-site.journal-page .article-reading-main .venue-menu,body.editorial-site.journal-page .article-reading-main .venue-story{margin-top:24px}
+body.editorial-site.journal-page .article-reading-main .guide-choices>div{grid-template-columns:1fr}
+body.editorial-site.journal-page .article-reading-main .guide-choices a{border-radius:16px;background:#faf7f1}
+body.editorial-site.journal-page :is(.article-contents,.article-tools) :is(a,summary):focus-visible{outline:2px solid #a56a28;outline-offset:4px;border-radius:4px}
+@media(max-width:1000px){body.editorial-site.journal-page .article-reading{grid-template-columns:1fr;gap:30px;max-width:760px;margin-inline:auto}body.editorial-site.journal-page .article-reading-nav{position:static}body.editorial-site.journal-page .article-contents nav{max-height:none}body.editorial-site.journal-page .article-contents ol{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}}
+@media(max-width:600px){body.editorial-site.journal-page .article-reading{margin-block:24px 40px;gap:28px}body.editorial-site.journal-page .article-contents{padding:18px;border-radius:16px}body.editorial-site.journal-page .article-contents ol{grid-template-columns:1fr}body.editorial-site.journal-page .article-contents a{font-size:14px}body.editorial-site.journal-page .article-reading-main .ed-article-section{padding-block:28px}body.editorial-site.journal-page .article-reading-main .ed-article-section p,body.editorial-site.journal-page .article-reading-main .ed-article-section li{font-size:16px;line-height:1.85}body.editorial-site.journal-page .article-reading-main .ed-article-section h2{font-size:28px;margin-bottom:19px}body.editorial-site.journal-page .article-tools{padding-inline:16px}body.editorial-site.journal-page .article-reading-main .blog-takeaway{padding:20px}body.editorial-site.journal-page .article-reading-main .ed-body-figure{margin-top:24px}}
+@media(prefers-reduced-motion:reduce){body.editorial-site.journal-page .article-contents-toggle{transition:none}}

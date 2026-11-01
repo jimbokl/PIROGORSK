@@ -1,5 +1,7 @@
 ---
 import ContentLayout from '../../layouts/ContentLayout.astro';
+import ArticleReading from '../../components/ArticleReading.astro';
+import { journalFigures } from '../../data/journal-figures';
 import JournalMasthead from '../../components/JournalMasthead.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
@@ -28,6 +30,7 @@ import PlaceMap from '../../components/PlaceMap.astro';
 import GuideFaq from '../../components/GuideFaq.astro';
 import {cityForArticle,contextualLinks,guideFaq,faqSchema,placesSchema} from '../../data/content-links';
 import '../../styles/blog.css';
+import '../../styles/journal-reading.css';
 export function getStaticPaths() {
   return [...guides, ...blogArticles, ...expansionGuides].map(item => ({ params: { slug: item.slug }, props: { item } }));
 }
@@ -62,21 +65,23 @@ const graph=[...schema.map(post => ({...post, isAccessibleForFree:true, ...(hasS
       {!isCity && <p class="blog-byline"><a href="/about/#redaktsiya">{hasSources ? 'Редакция Пирогорска' : 'Пирогорск'}</a>{isNew && <> · Опубликовано <time datetime={item.date}>{dateLabel}</time></>}{modified && <> · Обновлено <time datetime={modified}>{modifiedLabel}</time></>} · ≈ {readingMinutes} мин чтения</p>}
     </EditorialHero>
     {isCity && <>
-      <GuideSummary {city} />
       <div class="blog-guide-context"><div><p class="blog-guide-intro">{item.intro}</p><p class="blog-byline"><a href="/about/#redaktsiya">{update ? 'Редакция Пирогорска' : 'Пирогорск'}</a>{isNew && <> · Опубликовано <time datetime={item.date}>{dateLabel}</time></>}{modified && <> · Обновлено <time datetime={modified}>{modifiedLabel}</time></>} · ≈ {readingMinutes} мин чтения</p></div>
         <figure><Picture src={entry.image} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*entry.image.height/entry.image.width)} quality={58} alt={entry.imageAlt} loading="lazy" decoding="async" /></figure>
       </div>
     </>}
+    <ArticleReading links={[...item.sections.map((section,index) => ({href:`#section-${index}`,title:section.title})), ...(hasSources ? [{href:'#sources',title:'Источники и расчёты'}] : []), ...((isCity || useGenericTools) ? [{href:'#article-tools',title:isCity ? 'Адреса, карта и расчёты' : 'Расчёт порций и вопросы'}] : [])]}>
     {isNew && <aside class="blog-takeaway" aria-labelledby="takeaway-title"><h2 id="takeaway-title">Если коротко</h2><p>{item.takeaway}</p></aside>}
-    <nav class="blog-toc" aria-label="Содержание статьи">{item.sections.map((section, index) => <a href={`#section-${index}`}>{section.title}</a>)}{hasSources && <a href="#sources">Источники и расчёты</a>}</nav>
     {servingGuide && <ServingRoute slug={item.slug} />}
-    <EditorialNextStep path={articleHref(item.slug)} />
-    <EditorialBody sections={item.sections} figures={monthly?.figures} />
+    <EditorialBody sections={item.sections} figures={monthly?.figures ?? journalFigures(item.slug, item.sections.length, isCity)} />
     {item.slug === 'kak-narezat-pirog' && <PieCuttingDiagram />}
     {'feature' in item && item.feature==='ratio' && <FillingRatioBar />}
-    {isCity && <><RestaurantVsPiesTable {city} /><CostComparisonWidget {city} /><PlaceMap {city} /></>}
     {sources && <ArticleSources {sources} />}
-    {useGenericTools && <><PartyCalculator {city} /><GuideFaq {faq} /></>}
+    {(isCity || useGenericTools) && <details class="article-tools" id="article-tools"><summary>{isCity ? 'Адреса, карта и расчёты' : 'Рассчитать порции и посмотреть ответы'}</summary>
+      {isCity && <><GuideSummary {city} /><RestaurantVsPiesTable {city} /><CostComparisonWidget {city} /><PlaceMap {city} /></>}
+      {useGenericTools && <><PartyCalculator {city} /><GuideFaq {faq} /></>}
+    </details>}
+    </ArticleReading>
+    <EditorialNextStep path={articleHref(item.slug)} />
   </article>
   {servingGuide && <ProductRecommendations products={servingProducts} title="Сытное и сладкое для общего стола" />}
   {!monthly && <><EditorialInterest interest={`guide-${item.slug}`} title="Выбираем вкусы для будущего меню" text="Пирогорск готовится к запуску. На главной можно анонимно отметить начинки и город, которые вам интересны." label="Посмотреть пироги" /><EditorialLinks title="Собрать стол в своём городе" links={contextualLinks(city)} /></>}

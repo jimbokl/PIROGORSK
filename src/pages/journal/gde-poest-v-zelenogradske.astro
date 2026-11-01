@@ -1,5 +1,8 @@
 ---
 import ContentLayout from '../../layouts/ContentLayout.astro';
+import ArticleReading from '../../components/ArticleReading.astro';
+import { journalFigures } from '../../data/journal-figures';
+import '../../styles/journal-reading.css';
 import JournalMasthead from '../../components/JournalMasthead.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import EditorialBody from '../../components/EditorialBody.astro';
@@ -38,15 +41,15 @@ schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
 ---
 <ContentLayout bodyClass="journal-page" title={`${foodGuide.title} | Пирогорск`} description={foodGuide.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: 'Где поесть в Зеленоградске', href: path }]} {schema} type="article" image="/seo/blog/gde-poest-v-zelenogradske.jpg" imageAlt={foodGuideImageAlt}>
   <JournalMasthead />
+  <article class="blog-article">
   <div class="guide-lead"><EditorialHero eyebrow="Зеленоградск · еда у моря" title={foodGuide.title} compact /></div>
-  <GuideSummary city="zelenogradsk" />
   <section class="guide-context" aria-label="Об этом гиде"><div><p>После пляжа — кесадилья у моря, на ужин — паста или горячее, на Курортном — пироги с рыбными начинками. Собрали три варианта под разные прогулки и посчитали четыре блюда по двум официальным меню.</p>
     <p class="guide-date">Редакция Пирогорска · Обновлено <time datetime={foodGuide.updatedAt}>{foodGuide.updatedLabel}</time><br />Цены двух меню проверены <time datetime={foodGuide.checkedAt}>{foodGuide.checkedLabel}</time></p>
     <nav class="guide-jumps" aria-label="Кафе в гиде">{[...menuVenues, localPieCafe].map(venue => <a href={`#${venue.id}`}>{venue.name} <span aria-hidden="true">↓</span></a>)}</nav></div>
     <figure><Picture src={foodGuideImage} formats={['avif','webp']} fallbackFormat="webp" widths={[480,680,800]} sizes="(max-width:760px) 92vw, 42vw" width={800} height={Math.round(800*foodGuideImage.height/foodGuideImage.width)} quality={58} alt={foodGuideImageAlt} loading="lazy" decoding="async" /></figure>
   </section>
 
-  <EditorialNextStep path={path} />
+  <ArticleReading links={[...[...menuVenues,localPieCafe].map(venue => ({href:`#${venue.id}`,title:venue.name})),{href:'#section-0',title:'Как выбрать под свою прогулку'},{href:'#section-1',title:'Ужин в апартаментах'},{href:'#article-tools',title:'Адреса, карта и расчёты'}]}>
 
   <section class="guide-choices" aria-labelledby="choice-title">
     <h2 id="choice-title">Сначала выберите, куда идёте</h2>
@@ -84,17 +87,23 @@ schema.push(placesSchema('zelenogradsk'),faqSchema(guideFaq));
     </section>
   </div>
 
-  <EditorialBody sections={[
+  <EditorialBody figures={journalFigures(foodGuide.slug, 2, true)} sections={[
     { title: 'Как выбрать под свою прогулку', paragraphs: ['Начните с маршрута: кафе у Малиновки и адрес на улице Володарского — разные точки города. Проверьте расстояние от жилья, время работы и наличие нужного блюда перед выходом. Если идёте компанией, заранее спросите про свободный стол.', 'В примерах на четверых нет супов, салатов и напитков. Добавьте их из того же меню, если они нужны вашему столу. Для детей и гостей с ограничениями в питании уточняйте состав у кафе: название блюда не заменяет полный список ингредиентов.'] },
     { title: 'Если ужин планируется в апартаментах', paragraphs: ['Сначала проверьте посуду, места за столом и возможность разогрева. Для общего блюда полезно отдельно посчитать количество еды, а затем выбирать вкусы. В нашем калькуляторе можно задать число гостей и свою порцию в граммах.', 'Пирогорск пока разрабатывает меню и изучает спрос. Калькулятор показывает предварительный расчёт будущих пирогов; заказывать еду на сегодняшний вечер через него ещё нельзя. Цены кафе выше не сравниваем с ним как с готовой услугой доставки.'] },
   ]} />
 
   <section class="ed-interest" aria-labelledby="plan-title"><div><p class="ed-eyebrow">К общему столу</p><h2 id="plan-title">А сколько пирогов на четверых?</h2><p>Попробуйте расчёт: число гостей × выбранная вами порция. Меняйте начинки, вес и город; результат можно сохранить в подборку.</p><p>Или <a href="/?interest=guide-gde-poest-v-zelenogradske#pirogi">отметьте интересные вкусы</a> для будущего меню.</p></div><a class="ed-button" href="/podbor/">Рассчитать количество <span aria-hidden="true">↗</span></a></section>
+  <details class="article-tools" id="article-tools"><summary>Адреса, карта и расчёты</summary>
+  <GuideSummary city="zelenogradsk"/>
   <RestaurantVsPiesTable city="zelenogradsk"/>
   <CostComparisonWidget city="zelenogradsk"/>
   <PlaceMap city="zelenogradsk"/>
   <PartyCalculator city="zelenogradsk"/>
   <GuideFaq faq={guideFaq}/>
+  </details>
+  </ArticleReading>
+  <EditorialNextStep path={path} />
+  </article>
   <EditorialLinks title="Собрать стол в Зеленоградске" links={contextualLinks('zelenogradsk')}/>
   <EditorialLinks id="related-reading" title="Продолжить по теме" links={articleRecommendations(path)} />
 </ContentLayout>
