@@ -1,7 +1,8 @@
 # Полировка сайта · 01.11.2026
 
 UX-09–11. Исходный runtime: `21d20e7`; начало спринта: `33bde9c`.
-Статус: локальные исправления готовы, CI и production-приёмка впереди.
+Статус: опубликовано. Runtime `7d961b3d26dbbe5a0632ce8787c705bfb36218f9`;
+[CI 41334972274 — SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41334972274).
 
 ## Что исправлено
 
@@ -35,3 +36,35 @@ CodeGraph context: `Transport closed`; проверка продолжена п�
 
 [Public PageSpeed до публикации](public-pagespeed-before.json): блог mobile/desktop
 100/100, LCP 1.651/0.361s, CLS 0/0. Это один lab sample на режим, CrUX данных нет.
+
+## Проверка скачков при загрузке
+
+Первый Lighthouse на новой локальной сборке выявил CLS 0.079 mobile / 0.020 desktop:
+форма поиска появлялась только после запуска JavaScript и сдвигала статьи.
+Первый CI отменён до публикации. Форма перенесена в начальную SSR-раскладку;
+для no-JS она скрыта через `noscript` в head, все 62 материала доступны.
+Повторный check и browser-протокол PASS. [Повторное измерение](performance-cls.json):
+CLS 0/0. Локальный Python server не сжимает assets: его simulated LCP нельзя
+сопоставлять с публичным PageSpeed. Публичный PSI после публикации приведён ниже.
+
+## Production-приёмка
+
+- [CI](ci.json): все 35 шагов завершены успешно, включая новую регрессию.
+- [Браузерная проверка](production-report.json): 28 просмотров семи шаблонов
+  на 320/390/768/1280 px, 12 прокрученных диалогов, поиск по 62 статьям,
+  счётчики/сброс/URL/Back/no-JS, закрытие/клавиатура/сохранность подборки PASS.
+  Переполнений и ошибок JavaScript нет. [Лог](verify-production.log).
+- [Файлы опубликованного интерфейса](production-ui-assets.json): шесть страниц,
+  11 CSS/JS, inline-стили/скрипты совпали с принятой сборкой; HTTP/типы/SHA-256 PASS.
+- [Совместимость со Worker](release-production.log): PASS.
+- Production-снимки телефона и планшета просмотрены: поиск
+  [390 px](production-blog-search-390.png) / [768 px](production-blog-search-768.png),
+  длинная подборка [390 px](production-selection-390.png) / [768 px](production-selection-768.png).
+- [Public PageSpeed после публикации](public-pagespeed-after.json),
+  [отчёт](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/bkbtcn9all):
+  блог mobile/desktop 100/100; LCP 1.651/0.401 s, CLS 0/0, TBT 0/0.
+  Accessibility / best practices / SEO: 100 в обоих режимах.
+  До публикации LCP 1.651/0.361 s, CLS 0/0: значимого ухудшения в этих замерах нет.
+  По одному лабораторному замеру на режим; CrUX данных нет.
+
+UX-09–11 закрыты. Обязательных работ по этому спринту не осталось.

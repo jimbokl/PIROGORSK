@@ -1,0 +1,30 @@
+{
+  "runtime": "7d961b3d26dbbe5a0632ce8787c705bfb36218f9",
+  "report": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru-blog/bkbtcn9all",
+  "capturedAt": "2026-11-01T18:35:00Z",
+  "source": "Public PageSpeed Insights UI, Lighthouse 13.6.0",
+  "crux": "No data",
+  "mobile": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 1096,
+    "lcpMs": 1651,
+    "tbtMs": 0,
+    "cls": 0,
+    "speedIndexMs": 1096
+  },
+  "desktop": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 311,
+    "lcpMs": 401,
+    "tbtMs": 0,
+    "cls": 0,
+    "speedIndexMs": 311
+  },
+  "note": "One laboratory sample per form factor; not field data. No meaningful regression against before sample."
+}
