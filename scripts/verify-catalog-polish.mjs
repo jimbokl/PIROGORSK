@@ -39,7 +39,7 @@ try{
     const cards=[...document.querySelectorAll(selector)];
     const errors=[];let checked=0;
     const box=el=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,width:r.width,height:r.height};};
-    const snapshot=card=>({card:box(card),purchase:box(card.querySelector('.menu-feed-purchase,.supplier-purchase')),button:box(card.querySelector('[data-add],[data-feed-add],[data-supplier-link]'))});
+    const snapshot=card=>({card:box(card),purchase:box(card.querySelector('.catalog-purchase')),button:box(card.querySelector('[data-add],[data-feed-add],[data-supplier-link]'))});
     for(const card of cards){
      if(!card.getBoundingClientRect().height)continue;
      const input=card.querySelector('[data-feed-quantity]');

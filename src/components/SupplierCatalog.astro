@@ -1,5 +1,6 @@
 ---
 import PortionPrice from './PortionPrice.astro';
+import CatalogPurchase from './CatalogPurchase.astro';
 import VariantLabel from './VariantLabel.astro';
 import { productFillings } from '../lib/catalog-fillings';
 import Icon from './Icon.astro';
@@ -31,9 +32,9 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
       <div class="supplier-card-top"><span>{groupLabel}</span><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span></div>
       <a class="supplier-art-link" href={catalogProductHref(product)} aria-label={`Подробнее: ${product.name}`}><SupplierArtwork id={product.id} decorative sizes={feed ? '(max-width: 600px) max(114px, calc(34vw - 12px)), (max-width: 1000px) 176px, 220px' : undefined} /></a>
       <h3 id={`name-${product.id}`}><a href={catalogProductHref(product)}>{product.name}</a></h3><p class="supplier-format">{product.description}<PiePortions {product} /></p>
-      <fieldset class="supplier-variants"><legend class="sr-only">Формат: {product.name}</legend>{product.variants.map(variant => <label><input type="radio" name={`format-${product.id}`} value={variant.value} data-supplier-unit-price={variant.price} checked={variant.value === product.defaultVariant} /><VariantLabel label={variant.label} price={variant.price} from={product.supplier?.priceFrom} /></label>)}</fieldset>
+      <CatalogPurchase enabled={feed}><fieldset class="supplier-variants"><legend class="sr-only">Формат: {product.name}</legend>{product.variants.map(variant => <label><input type="radio" name={`format-${product.id}`} value={variant.value} data-supplier-unit-price={variant.price} checked={variant.value === product.defaultVariant} /><VariantLabel label={variant.label} price={variant.price} from={product.supplier?.priceFrom} /></label>)}</fieldset>
       <div class="supplier-card-bottom">{feed && <MenuQuantity name={product.name} />}<div class="supplier-purchase"><div>{product.supplier!.priceFrom && <span class="supplier-from">от </span>}<strong data-price={interactive ? '' : undefined} data-supplier-price>{money(selected.price)}</strong><small data-feed-price-note={feed ? '' : undefined}>Предварительно</small><PortionPrice {product} price={selected.price} grams={selected.value} /></div>{interactive ? <button type="button" class="button button-small" data-add={product.id} aria-label={`В подборку: ${product.name}`}><span>В подборку</span><Icon name="check" class="added-icon" /></button> : <a class="button button-small" data-supplier-link href={`/?interest=${product.id}&variant=${selected.value}#${sectionId}`}>В подборку<Icon name="arrow" /></a>}</div></div>
-    </article>;
+    </CatalogPurchase></article>;
   })}</div>
   <p class="supplier-empty" data-supplier-empty hidden>Такой позиции пока нет. Попробуйте другое название или раздел.</p>
   <button type="button" class="button button-secondary supplier-more" data-supplier-more hidden>Показать ещё</button>

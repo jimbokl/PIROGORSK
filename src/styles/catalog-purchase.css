@@ -1,0 +1,116 @@
+/* One buying area for the home gallery and both menu renderers. */
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card)>.catalog-purchase{
+  container-type:inline-size;
+  display:grid;
+  grid-template-rows:auto 1fr;
+  grid-column:2;
+  grid-row:3/5;
+  align-self:start;
+  min-width:0;
+  width:100%;
+  max-width:480px;
+  padding:14px;
+  border:1px solid #e8dccb;
+  border-radius:20px;
+  background:linear-gradient(135deg,#fcf8f1,#fffdf9 78%);
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants){
+  display:flex;
+  grid-area:auto;
+  align-self:auto;
+  align-items:stretch;
+  flex-wrap:nowrap;
+  gap:3px;
+  width:100%;
+  max-width:none;
+  min-height:54px;
+  margin:0 0 12px;
+  padding:3px;
+  background:#eee9e0;
+  border:0;
+  border-radius:14px;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants) label{
+  display:flex;flex:1 1 0;min-width:0;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants) .variant-summary{
+  width:100%;min-height:48px;height:100%;padding:6px 4px;gap:3px;
+  border:0;border-radius:11px;background:transparent;
+  color:var(--navy);font:500 11px/1.35 var(--sans);
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants) input:checked+.variant-summary{
+  background:#fff;color:var(--navy);box-shadow:0 1px 3px #15273d0d;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants):has(label:only-of-type){
+  width:100%;padding:0;background:transparent;border-radius:0;
+  border-bottom:1px solid #e8dccb;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants) label:only-of-type .variant-summary{
+  justify-content:center;align-items:flex-start;padding:0 0 8px;background:transparent;box-shadow:none;
+  color:var(--muted);font-weight:500;
+}
+/* The total already gives the single format's price. Keep its source price
+   in the HTML for the no-JS catalogue and format verification. */
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase label:only-of-type .variant-summary small{display:none}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-bottom,.supplier-card-bottom){
+  display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:88px 46px 46px;align-content:end;gap:12px;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-purchase,.supplier-purchase){
+  display:contents;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-bottom,.supplier-card-bottom):has(.menu-quantity[hidden]){grid-template-rows:88px 46px}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-bottom,.supplier-card-bottom):has(.menu-quantity[hidden]) :is(.menu-feed-add,.button){grid-row:2}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-purchase,.supplier-purchase)>div{
+  grid-column:1;grid-row:1;min-width:0;min-height:88px;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-purchase,.supplier-purchase) strong{
+  display:block;font:600 22px/1.3 var(--sans);letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-purchase,.supplier-purchase) small{
+  display:block;min-height:28px;margin-top:3px;color:var(--muted);
+  font:400 10px/1.4 var(--sans);white-space:pre-line;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .portion-price{
+  max-width:none;min-height:28px;margin-top:3px;
+  font:400 11px/1.4 var(--sans);color:var(--muted);
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .supplier-from{
+  display:inline;font:400 11px/1.4 var(--sans);color:var(--muted);
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity{
+  grid-column:1;grid-row:2;align-self:start;justify-self:stretch;
+  justify-content:space-between;width:auto;min-width:114px;margin:0;
+  border:1px solid #dfd6c8;border-radius:13px;background:#fffdf9;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity[hidden]{display:none}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity button{
+  width:44px;min-width:44px;min-height:44px;border-radius:11px;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity input{width:26px;min-height:44px}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-add,.button){
+  grid-column:1;grid-row:3;display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;min-width:0;min-height:46px;margin:0;padding:10px 12px;
+  border:0;border-radius:13px;background:var(--navy);color:#fff;
+  font:500 12px/1.5 var(--sans);white-space:nowrap;text-decoration:none;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-add,.button)::after{
+  content:'→';font-size:18px;line-height:1;color:#e5bb77;
+  transition:transform 160ms ease;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-add,.button):hover{background:var(--action-hover)}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-add,.button):hover::after{transform:translateX(3px)}
+@container (min-width:300px){
+  body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-bottom,.supplier-card-bottom){grid-template-columns:minmax(0,1fr) 114px;grid-template-rows:88px 46px;column-gap:16px}
+  body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity{grid-column:2;grid-row:1;align-self:start;margin-top:2px}
+  body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-add,.button){grid-column:1/-1;grid-row:2}
+}
+@media(max-width:600px){
+  body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card)>.catalog-purchase{grid-column:1/-1;grid-row:3/5;margin-top:4px}
+}
+@media(min-width:1100px){
+  body.home-page .home-catalog-group .home-feed-card>.catalog-purchase{grid-column:1;grid-row:4;align-self:stretch;max-width:none;padding:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-add,.button)::after{transition:none}
+}

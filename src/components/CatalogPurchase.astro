@@ -1,0 +1,6 @@
+---
+import '../styles/catalog-purchase.css';
+interface Props { enabled?: boolean }
+const { enabled = true } = Astro.props;
+---
+{enabled ? <div class="catalog-purchase"><slot /></div> : <slot />}
