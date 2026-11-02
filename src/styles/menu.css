@@ -121,8 +121,8 @@ body.editorial-site .menu-feed .supplier-card-bottom .button .icon{display:none}
 .menu-page .menu-finder{max-width:none;padding:20px 24px;margin-bottom:0;background:var(--paper);border-color:var(--line);border-radius:20px}
 .menu-page .menu-finder label{font-size:14px}
 .menu-stage{font:400 11px/1.6 var(--sans);color:var(--muted);margin:6px 0 0}
-.menu-page .menu-search-meta{margin-top:8px;min-height:20px}
-.menu-page .menu-search-meta button{min-height:32px;padding-block:4px}
+.menu-page .menu-search-meta{display:grid;grid-template-columns:minmax(0,1fr) 80px;gap:12px;margin-top:8px;min-height:44px;align-items:center}
+.menu-page .menu-search-meta button{justify-self:end;min-height:44px;padding-block:4px}
 body.editorial-site.menu-page .menu-sections{margin-block:16px 0;scroll-padding-inline:4px}
 body.editorial-site.menu-page .menu-sections a{display:flex;flex-direction:row;align-items:center;gap:9px;padding:10px 16px;border:1px solid transparent}
 body.editorial-site.menu-page .menu-sections span{display:block;margin:0;font-size:11px}

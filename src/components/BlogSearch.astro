@@ -10,7 +10,7 @@ const { total } = Astro.props;
   </div>
   <div class="blog-search-meta">
     <p data-blog-search-status role="status" aria-live="polite" aria-atomic="true">Материалов в журнале: {total}</p>
-    <button type="button" data-blog-search-reset hidden>Сбросить поиск</button>
+    <button type="button" data-blog-search-reset aria-label="Сбросить поиск по журналу" hidden>Сбросить</button>
   </div>
 </form>
 <script>import '../scripts/blog-search';</script>

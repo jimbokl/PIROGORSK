@@ -3,6 +3,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { resolve, extname } from 'node:path';
 import { launch } from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
+import { verifyCatalogSearch } from './qa-catalog-search.mjs';
 
 const output = process.env.QA_OUTPUT || 'qa/polish-sprint-20261101';
 const stage = process.env.QA_BASE ? 'production' : 'local';
@@ -10,7 +11,7 @@ const origin = 'https://pirogorsk.ru';
 await mkdir(output, { recursive: true });
 const chrome = await launch({ chromeFlags: ['--headless=new', '--disable-extensions', '--disable-features=OverlayScrollbar'] });
 const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
-const report = { stage, views: [], blog: [], dialogs: [], errors: [] };
+const report = { stage, views: [], blog: [], dialogs: [], catalogSearch: [], errors: [] };
 const cache = new Map();
 const types = { '.html':'text/html', '.css':'text/css', '.js':'application/javascript', '.avif':'image/avif', '.webp':'image/webp', '.png':'image/png', '.svg':'image/svg+xml', '.ico':'image/x-icon', '.woff2':'font/woff2', '.json':'application/json' };
 async function setup(page) {
@@ -82,6 +83,7 @@ try {
   assert(total >= 62, 'Complete editorial library');
   for (const width of [320, 390, 768, 1280]) {
     await page.setViewport({ width, height: 900 });
+    report.catalogSearch.push(await verifyCatalogSearch(page, go, { width, output, stage }));
     for (const [id, path] of [['home','/'],['menu','/menu/'],['product','/pirogi/myasnoy-pirog/'],['delivery','/delivery/'],['city','/zelenogradsk/'],['bundles','/nabory/'],['article','/journal/skolko-piroga-na-cheloveka/']]) {
       await go(path); await view(id, width);
     }

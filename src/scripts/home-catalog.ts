@@ -116,7 +116,10 @@ if (feed && nav && more && moreWrap) {
   }
   const form = document.querySelector<HTMLFormElement>('[data-home-finder]')!;
   const filters = setupCatalogFilters(form, 'home', next => { criteria = next; limit = batch; render(); return matching().length; });
-  form.addEventListener('submit', event => { event.preventDefault(); groups.find(group => !group.hidden)?.scrollIntoView({ block: 'start' }); });
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    (groups.find(group => !group.hidden) || document.querySelector<HTMLElement>('[data-home-empty]'))?.scrollIntoView({ block: 'start' });
+  });
   moreWrap.hidden = false;
   render();
   markActive(groups.find(group => !group.hidden)?.id || '');

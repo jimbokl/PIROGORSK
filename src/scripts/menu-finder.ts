@@ -45,7 +45,7 @@ if (form) {
   setupCatalogFilters(form, 'menu', search);
   form.addEventListener('submit', event => {
     event.preventDefault();
-    sections.find(section => !section.hidden && Number(section.dataset.matchCount ?? section.querySelectorAll('[data-menu-product]:not([hidden])').length) > 0)?.scrollIntoView({ block: 'start' });
+    (sections.find(section => !section.hidden && Number(section.dataset.matchCount ?? section.querySelectorAll('[data-menu-product]:not([hidden])').length) > 0) || empty).scrollIntoView({ block: 'start' });
   });
   summarize();
 

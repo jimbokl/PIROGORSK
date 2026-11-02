@@ -51,7 +51,7 @@ const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({
             <label for="home-search">Найдите любимый вкус</label>
             <div class="home-search-row"><input id="home-search" type="search" name="q" maxlength="100" data-catalog-query autocomplete="off" placeholder="Начинка или название" enterkeyhint="search" /><button type="submit">Найти</button></div>
             <CatalogFillings />
-            <div class="home-search-meta"><p data-home-filter-status role="status" aria-live="polite">В меню {catalog.length} позиции</p><button type="button" data-catalog-reset hidden>Сбросить фильтры</button></div>
+            <div class="home-search-meta"><p data-home-filter-status role="status" aria-live="polite">В меню {catalog.length} позиции</p><button type="button" data-catalog-reset aria-label="Сбросить поиск и фильтры" hidden>Сбросить</button></div>
           </form>
           <div class="home-catalog-empty" data-home-empty hidden><p>Такого вкуса пока не нашлось. Попробуйте другую начинку или часть названия.</p><button type="button" data-catalog-empty-reset>Показать всё меню</button></div>
         <nav class="home-menu-shortcuts home-catalog-nav" aria-label="Разделы меню" data-home-catalog-nav>

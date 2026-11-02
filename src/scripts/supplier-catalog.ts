@@ -17,8 +17,9 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
   if (!criteria.query && location.hash === `#${root.id}` && filters.some(button => button.dataset.supplierFilter === requestedGroup)) {
     group = requestedGroup!;
   }
+  const matching = () => cards.filter(card => (group === 'all' || card.dataset.supplierGroup === group) && matchesCard(card, { ...criteria, query: `${criteria.query} ${search.value}` }));
   function render() {
-    const matches = cards.filter(card => (group === 'all' || card.dataset.supplierGroup === group) && matchesCard(card, { ...criteria, query: `${criteria.query} ${search.value}` }));
+    const matches = matching();
     cards.forEach(card => { card.hidden = true; });
     matches.slice(0, limit).forEach(card => { card.hidden = false; });
     filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.supplierFilter === group)));
@@ -45,7 +46,12 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-supplier-catalo
   if (initialId) reveal(initialId);
   search.addEventListener('input', () => { limit = 24; render(); });
   filters.forEach(button => button.addEventListener('click', () => { group = button.dataset.supplierFilter!; limit = 24; render(); }));
-  more.addEventListener('click', () => { limit += 24; render(); });
+  more.addEventListener('click', () => {
+    const first = matching()[limit];
+    limit += 24;
+    render();
+    first?.querySelector<HTMLAnchorElement>('a[href]')?.focus({ preventScroll: true });
+  });
   // HTML contains every product; the button remains a keyboard/fallback control.
   // In the menu feed the next batch appears as its end approaches the viewport.
   if (root.hasAttribute('data-menu-feed') && 'IntersectionObserver' in window) {

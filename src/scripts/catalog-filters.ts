@@ -35,6 +35,10 @@ export function setupCatalogFilters(form: HTMLFormElement, surface: 'home' | 'me
   const clear = (focus = true) => { criteria = { query: '', filling: 'all' }; apply('push'); if (focus) input.focus({ preventScroll: true }); };
   reset.addEventListener('click', () => clear());
   document.querySelector('[data-catalog-empty-reset]')?.addEventListener('click', () => clear());
+  form.addEventListener('submit', () => {
+    // Match journal search: release the touch keyboard before revealing results.
+    if (document.activeElement === input) input.blur();
+  });
   window.addEventListener('popstate', () => { clearTimeout(timer); criteria = parseCriteria(location.search); apply('read'); });
   apply('read');
   return { get: () => criteria, reset: clear };
