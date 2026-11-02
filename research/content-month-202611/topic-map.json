@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "source": "../backlog-intake-20261031/A6.txt",
-  "publicationNote": "Календарь редакционных действий. Текущий выпуск опубликован 1 ноября: runtime 788e525, CI 41286032798 SUCCESS; production QA PASS. Будущие строки не означают публикацию без источников.",
+  "publicationNote": "Календарь редакционных действий. Выпуск 1 ноября: runtime 788e525, CI 41286032798 SUCCESS; production QA PASS. Дополнение A6-92/95/98 опубликовано 2 ноября: runtime 5e6f547, CI 41517929378 SUCCESS; production QA PASS. Будущие строки не означают публикацию без источников.",
   "topics": [
     {
       "number": 1,
@@ -1383,12 +1383,12 @@
       "week": 4,
       "decision": "merge_or_strengthen",
       "scenario": "компания",
-      "status": "integrated_ready",
+      "status": "integrated_update_published",
       "dataGap": "",
       "cluster": "scenarios",
       "brandReframe": null,
       "window": "2026-11-22 — 2026-11-30",
-      "releaseNote": "Таблица для каждого числа гостей 2–15 и порций 150/250/350 г; параметры передаются в редактируемый калькулятор. Приёмка выпуска 02.11 в работе."
+      "releaseNote": "Таблица для каждого числа гостей 2–15 и порций 150/250/350 г; параметры передаются в редактируемый калькулятор. Опубликовано 02.11: runtime 5e6f547, CI 41517929378 SUCCESS; production QA PASS."
     },
     {
       "number": 93,
@@ -1431,12 +1431,12 @@
       "week": 4,
       "decision": "merge_or_strengthen",
       "scenario": "апартаменты",
-      "status": "integrated_ready",
+      "status": "integrated_update_published",
       "dataGap": "",
       "cluster": "scenarios",
       "brandReframe": null,
       "window": "2026-11-22 — 2026-11-30",
-      "releaseNote": "Добавлены домашний завтрак, расчёты на 2/4/6 гостей, чай и посуда из каталога. Форматы/цены берутся из данных меню. Приёмка выпуска 02.11 в работе."
+      "releaseNote": "Добавлены домашний завтрак, расчёты на 2/4/6 гостей, чай и посуда из каталога. Форматы/цены берутся из данных меню. Опубликовано 02.11: runtime 5e6f547, CI 41517929378 SUCCESS; production QA PASS."
     },
     {
       "number": 96,
@@ -1477,12 +1477,12 @@
       "week": 4,
       "decision": "merge_or_strengthen",
       "scenario": "компания",
-      "status": "integrated_ready",
+      "status": "integrated_update_published",
       "dataGap": "",
       "cluster": "scenarios",
       "brandReframe": null,
       "window": "2026-11-22 — 2026-11-30",
-      "releaseNote": "Сопоставлены реальные брусничные изделия, облепиховый морс и отдельная тема марципана; добавлено чаепитие на четверых. Приёмка выпуска 02.11 в работе."
+      "releaseNote": "Сопоставлены реальные брусничные изделия, облепиховый морс и отдельная тема марципана; добавлено чаепитие на четверых. Опубликовано 02.11: runtime 5e6f547, CI 41517929378 SUCCESS; production QA PASS."
     },
     {
       "number": 99,
