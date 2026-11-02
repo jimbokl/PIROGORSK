@@ -74,11 +74,11 @@ export async function verifyCatalogFormats(page, origin, width, output) {
         await page.screenshot({ path: `${output}/${surface}-phone-context-${width}.png` });
       }
       const add = await element.$('[data-add], [data-feed-add], [data-supplier-link]');
-      // Element screenshots may restore a different scroll position. Finish
-      // scrolling before the physical click, as the menu filter helper does;
-      // otherwise CSS smooth scrolling can move the target under the pointer.
+      // Screenshots restore scroll position asynchronously. Center the button,
+      // then let the locator wait for its box to be stable across two frames
+      // before the physical click. The selection assertion below stays exact.
       await add.evaluate(el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-      await add.click();
+      await add.asLocator().click();
       expected.push({ id: product.id, value: last.value, quantity: 2 });
       assert.deepEqual(await selection(), expected);
     }

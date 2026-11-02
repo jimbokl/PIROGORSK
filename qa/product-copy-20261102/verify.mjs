@@ -48,7 +48,7 @@ try{
   for(const p of [...products,...samples]){
    await go(p);await fits();
    if(products.some(original=>original.id===p.id)){
-    const note=await page.$eval('[data-product-notes]',el=>({height:el.offsetHeight,words:el.textContent.trim().split(/\s+/).length,links:[...el.querySelectorAll('a')].map(a=>({href:a.pathname,height:a.offsetHeight}))}));
+    const note=await page.$eval('[data-product-notes]',el=>({height:el.offsetHeight,words:el.innerText.trim().split(/\s+/).length,links:[...el.querySelectorAll('a')].map(a=>({href:a.pathname,height:a.offsetHeight}))}));
     assert(note.words<=42,`${p.id}: concise note`);assert(note.height<=330,`${p.id}: compact height ${note.height}`);assert.equal(note.links.length,2);
     for(const link of note.links){assert(link.height>=44);assert(products.some(p=>catalogProductHref(p)===link.href));}
     if(p.id==='curd') {await page.$eval('[data-product-notes]',el=>el.scrollIntoView({block:'center',behavior:'instant'}));await page.screenshot({path:`${output}/${stage}-curd-${width}.png`});}
