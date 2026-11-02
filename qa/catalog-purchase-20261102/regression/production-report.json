@@ -1,0 +1,556 @@
+{
+  "stage": "production",
+  "views": [
+    {
+      "id": "home",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "menu",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "product",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "delivery",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "city",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "bundles",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "article",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "blog",
+      "width": 320,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "home",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "menu",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "product",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "delivery",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "city",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "bundles",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "article",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "blog",
+      "width": 390,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "home",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "menu",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "product",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "delivery",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "city",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "bundles",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "article",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "blog",
+      "width": 768,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "home",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "menu",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "product",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "delivery",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "city",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "bundles",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "article",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    },
+    {
+      "id": "blog",
+      "width": 1280,
+      "overflow": false,
+      "inputMinPx": 16
+    }
+  ],
+  "blog": [
+    {
+      "width": 320,
+      "total": 62,
+      "cheese": 9,
+      "empty": true,
+      "reset": true,
+      "wordOrder": true,
+      "yo": true,
+      "submit": true,
+      "urlBack": true,
+      "articleLink": true
+    },
+    {
+      "width": 390,
+      "total": 62,
+      "cheese": 9,
+      "empty": true,
+      "reset": true,
+      "wordOrder": true,
+      "yo": true,
+      "submit": true,
+      "urlBack": true,
+      "articleLink": true
+    },
+    {
+      "width": 768,
+      "total": 62,
+      "cheese": 9,
+      "empty": true,
+      "reset": true,
+      "wordOrder": true,
+      "yo": true,
+      "submit": true,
+      "urlBack": true,
+      "articleLink": true
+    },
+    {
+      "width": 1280,
+      "total": 62,
+      "cheese": 9,
+      "empty": true,
+      "reset": true,
+      "wordOrder": true,
+      "yo": true,
+      "submit": true,
+      "urlBack": true,
+      "articleLink": true
+    }
+  ],
+  "dialogs": [
+    {
+      "dialog": "#selection-dialog",
+      "width": 320,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#bundle-editor",
+      "width": 320,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#composition-preview",
+      "width": 320,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#site-menu-dialog",
+      "width": 320,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#city-dialog",
+      "width": 320,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#selection-dialog",
+      "width": 390,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#bundle-editor",
+      "width": 390,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#composition-preview",
+      "width": 390,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#site-menu-dialog",
+      "width": 390,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#city-dialog",
+      "width": 390,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#selection-dialog",
+      "width": 768,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#bundle-editor",
+      "width": 768,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#composition-preview",
+      "width": 768,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#site-menu-dialog",
+      "width": 768,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#city-dialog",
+      "width": 768,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#selection-dialog",
+      "width": 1280,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#bundle-editor",
+      "width": 1280,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#composition-preview",
+      "width": 1280,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#site-menu-dialog",
+      "width": 1280,
+      "closeVisibleAtBottom": true
+    },
+    {
+      "dialog": "#city-dialog",
+      "width": 1280,
+      "closeVisibleAtBottom": true
+    }
+  ],
+  "catalogSearch": [
+    {
+      "cases": [
+        {
+          "name": "home",
+          "width": 320,
+          "stableHeight": 413,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": true
+        },
+        {
+          "name": "menu",
+          "width": 320,
+          "stableHeight": 459.1875,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": true
+        },
+        {
+          "name": "blog",
+          "width": 320,
+          "stableHeight": 180,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": false
+        }
+      ],
+      "manual": [
+        {
+          "id": "pirogi39",
+          "width": 320,
+          "total": 61,
+          "batches": 2,
+          "focusOnNewProduct": true
+        },
+        {
+          "id": "holland",
+          "width": 320,
+          "total": 78,
+          "batches": 3,
+          "focusOnNewProduct": true
+        }
+      ]
+    },
+    {
+      "cases": [
+        {
+          "name": "home",
+          "width": 390,
+          "stableHeight": 313,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": true
+        },
+        {
+          "name": "menu",
+          "width": 390,
+          "stableHeight": 359.1875,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": true
+        },
+        {
+          "name": "blog",
+          "width": 390,
+          "stableHeight": 180,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": false
+        }
+      ],
+      "manual": [
+        {
+          "id": "pirogi39",
+          "width": 390,
+          "total": 61,
+          "batches": 2,
+          "focusOnNewProduct": true
+        },
+        {
+          "id": "holland",
+          "width": 390,
+          "total": 78,
+          "batches": 3,
+          "focusOnNewProduct": true
+        }
+      ]
+    },
+    {
+      "cases": [
+        {
+          "name": "home",
+          "width": 768,
+          "stableHeight": 323,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": true
+        },
+        {
+          "name": "menu",
+          "width": 768,
+          "stableHeight": 359.59375,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": true
+        },
+        {
+          "name": "blog",
+          "width": 768,
+          "stableHeight": 188,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": false
+        }
+      ],
+      "manual": [
+        {
+          "id": "pirogi39",
+          "width": 768,
+          "total": 61,
+          "batches": 2,
+          "focusOnNewProduct": true
+        },
+        {
+          "id": "holland",
+          "width": 768,
+          "total": 78,
+          "batches": 3,
+          "focusOnNewProduct": true
+        }
+      ]
+    },
+    {
+      "cases": [
+        {
+          "name": "home",
+          "width": 1280,
+          "stableHeight": 271,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": true
+        },
+        {
+          "name": "menu",
+          "width": 1280,
+          "stableHeight": 307.59375,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": true
+        },
+        {
+          "name": "blog",
+          "width": 1280,
+          "stableHeight": 188,
+          "resetTouchPx": 44,
+          "resultsAndEmpty": true,
+          "keyboardReleased": true,
+          "reset": true,
+          "history": false
+        }
+      ],
+      "manual": [
+        {
+          "id": "pirogi39",
+          "width": 1280,
+          "total": 61,
+          "batches": 2,
+          "focusOnNewProduct": true
+        },
+        {
+          "id": "holland",
+          "width": 1280,
+          "total": 78,
+          "batches": 3,
+          "focusOnNewProduct": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "noJs": {
+    "articles": 62,
+    "allLinks": true
+  }
+}

@@ -41,5 +41,26 @@ Desktop subgrid главной согласован с новым общим б�
 ## Публикация
 
 Первый CI 41418935278 отменён агентом до публикации для исправления
-переноса «от» у трёх позиций. Финальный CI и production-приёмка ожидаются.
-UX-16 остаётся в работе до проверки выпуска.
+переноса «от» у трёх позиций.
+
+Runtime `6752aa752010d51d1b29b5e6c376c9d92a7b9fee`,
+[финальный CI 41420090174 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41420090174).
+Все проверки workflow и публикация Cloudflare Pages прошли.
+
+Production-приёмка:
+
+- [84 состояния карточек](production-visual.json) на шести ширинах:
+  количество, клавиатура, варианты, суммы, подборка и reload PASS; ошибок нет.
+- [Все 154 SKU](catalog/production-report.json) после полной догрузки на
+  главной и в меню: геометрия 1→2→99→1 на 320/390/768/1024/1280/1440 px,
+  цены за порцию, варианты/суммы/добавление и страницы товаров PASS.
+- [Общая регрессия](regression/production-report.json): 32 вида страниц,
+  62 статьи, поиск/reset/URL/no-JS и 20 прокрученных диалогов PASS.
+- [SHA256](production-assets.json): семь страниц, 21 inline CSS/JS блок и
+  10 внешних ассетов совпали с принятой сборкой; release compatibility PASS.
+
+Просмотрены production-снимки: [телефон](production-home-p39-497-390.png),
+[планшет](production-menu-p39-497-768.png),
+[desktop](production-home-context-1440.png),
+[цена «от», 99 штук](production-menu-hb-hlebnaya-korzina-1-8-kg-390.png).
+UX-16 закрыта. Лента, ассортимент, цены и данные подборки сохранены.
