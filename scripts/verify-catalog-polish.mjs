@@ -34,6 +34,10 @@ try{
   for(const surface of ['home','menu']){
    await page.goto(origin+(surface==='home'?'/':'/menu/')+'?qa=1#nabory',{waitUntil:'networkidle0'});
    await page.evaluate(()=>document.fonts.ready);
+   if(surface==='menu')for(const group of ['pirogi39','holland']){
+    const more=`#${group} [data-supplier-more]`;
+    while(await page.$eval(more,button=>!button.hidden))await page.$eval(more,button=>button.click());
+   }
    const selector=surface==='home'?'[data-home-catalog] [data-product]':'.menu-feed [data-feed-id],.menu-feed [data-supplier-id]';
    const data=await page.evaluate(({selector,products})=>{
     const cards=[...document.querySelectorAll(selector)];
@@ -73,6 +77,7 @@ try{
     return {ids:cards.map(c=>c.dataset.product||c.dataset.feedId||c.dataset.supplierId),checked,errors,overflow:document.documentElement.scrollWidth>innerWidth+1};
    },{selector,products:catalog.map(product=>({id:product.id,defaultVariant:product.defaultVariant,eligible:hasPortionPrice(product),labels:Object.fromEntries(product.variants.map(v=>[v.value,portionPriceLabel(v.price,v.value,product.supplier?.priceFrom)]))}))});
    assert.deepEqual(data.ids.slice().sort(),catalog.map(p=>p.id).sort(),`${surface}: 154 SKU`);
+   assert.equal(data.checked,catalog.length,`${surface}: measure every loaded SKU`);
    row.surfaces.push({surface,...data});
    // Save failure details before asserting so geometry regressions remain inspectable.
    await writeFile(`${output}/${stage}-progress.json`,JSON.stringify({...report,current:row},null,2)+'\n');

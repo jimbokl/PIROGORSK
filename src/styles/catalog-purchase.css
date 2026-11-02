@@ -78,6 +78,7 @@ body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.cata
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .supplier-from{
   display:inline;font:400 11px/1.4 var(--sans);color:var(--muted);
 }
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .supplier-from+strong{display:inline}
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity{
   grid-column:1;grid-row:2;align-self:start;justify-self:stretch;
   justify-content:space-between;width:auto;min-width:114px;margin:0;

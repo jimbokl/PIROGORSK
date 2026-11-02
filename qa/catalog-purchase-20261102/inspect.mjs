@@ -41,14 +41,19 @@ try{
     for(const surface of ['home','menu']){
       await page.goto(origin+(surface==='home'?'/':'/menu/')+'?qa=1#nabory',{waitUntil:'networkidle0'});
       await page.evaluate(()=>document.fonts.ready);
+      if(surface==='menu')for(const group of ['pirogi39','holland']){
+        const more=`#${group} [data-supplier-more]`;
+        while(await page.$eval(more,button=>!button.hidden))await page.$eval(more,button=>button.click());
+      }
       const mini=catalog.find(p=>p.category==='mini-pies'&&p.variants.length===3).id;
-      for(const id of ['meat','p39-497',mini,'tableware']){
+      for(const id of ['meat','p39-497',mini,'tableware',...catalog.filter(p=>p.supplier?.priceFrom).map(p=>p.id)]){
         const selector=surface==='home'?`[data-home-catalog] [data-product="${id}"]`:`.menu-feed [data-feed-id="${id}"],.menu-feed [data-supplier-id="${id}"]`;
         const card=await page.$(selector);
         await card.evaluate(async el=>{
           el.scrollIntoView({block:'center',behavior:'instant'});
           await Promise.all([...el.querySelectorAll('img')].map(img=>{img.loading='eager';return img.decode().catch(()=>{});}));
         });
+        if(catalog.find(p=>p.id===id).supplier?.priceFrom)await card.$eval('[data-feed-quantity]',el=>{el.value='99';el.dispatchEvent(new Event('input',{bubbles:true}));});
         const metrics=await card.evaluate(el=>{
           const box=e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height};};
           const panel=el.querySelector('.catalog-purchase');
