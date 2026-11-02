@@ -73,7 +73,12 @@ export async function verifyCatalogFormats(page, origin, width, output) {
         await element.screenshot({ path: `${output}/${surface}-three-formats-${width}.png` });
         await page.screenshot({ path: `${output}/${surface}-phone-context-${width}.png` });
       }
-      await (await element.$('[data-add], [data-feed-add], [data-supplier-link]')).click();
+      const add = await element.$('[data-add], [data-feed-add], [data-supplier-link]');
+      // Element screenshots may restore a different scroll position. Finish
+      // scrolling before the physical click, as the menu filter helper does;
+      // otherwise CSS smooth scrolling can move the target under the pointer.
+      await add.evaluate(el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+      await add.click();
       expected.push({ id: product.id, value: last.value, quantity: 2 });
       assert.deepEqual(await selection(), expected);
     }
