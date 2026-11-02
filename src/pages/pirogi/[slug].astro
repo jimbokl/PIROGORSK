@@ -7,8 +7,7 @@ import ProductOptions from '../../components/ProductOptions.astro';
 import ProductRecommendations from '../../components/ProductRecommendations.astro';
 import ContentLayout from '../../layouts/ContentLayout.astro';
 import ProductHero from '../../components/ProductHero.astro';
-import EditorialBody from '../../components/EditorialBody.astro';
-import EditorialInterest from '../../components/EditorialInterest.astro';
+import ProductNotes from '../../components/ProductNotes.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import FillingRatioBar from '../../components/FillingRatioBar.astro';
 import { editorialProducts, productHref, siteOrigin, scenarios } from '../../data/editorial';
@@ -23,16 +22,12 @@ const image = product.image ? await getImage({ src: product.image, width: 1000, 
 const schema = [{ '@type': 'ItemPage', '@id': `${siteOrigin}${productHref(product)}#page`, name: product.name, description: product.editorial.intro, url: `${siteOrigin}${productHref(product)}`, ...(image ? { primaryImageOfPage: { '@type': 'ImageObject', url: new URL(image.src, siteOrigin).href, width: image.attributes.width, height: image.attributes.height, caption: product.name } } : {}) }];
 const otherProducts = editorialProducts.filter(other => other.id !== product.id && other.sweet === product.sweet).slice(0, 2);
 const scenario = scenarios.find(item => item.slug === product.editorial.scenario)!;
+const pairings = product.editorial.pairings.map(id => editorialProducts.find(item => item.id === id)!).map(item => ({ href: productHref(item), title: item.name }));
 ---
 <ContentLayout {title} {description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }, { name: product.name, href: productHref(product) }]} {schema}>
   <ProductHero productId={product.id} eyebrow={`${product.sweet ? 'Сладкий' : 'Сытный'} пирог · будущее меню`} title={product.name} intro={product.editorial.intro}><PieGallery slot="visual" {product} hero sizes="(max-width: 700px) min(380px, calc(100vw - 68px)), 480px"><ProductVisual {product} layout="hero" /></PieGallery><ProductOptions slot="actions" {product} showDelivery /></ProductHero>
   <ProductAddOns {product} />
-  <EditorialBody sections={[
-    { title: 'О начинке', paragraphs: [product.editorial.question] },
-    { title: 'С чем поставить на стол', paragraphs: [product.editorial.pairing] },
-    { title: 'К запуску меню', paragraphs: ['Перед началом продаж опубликуем полный состав и аллергены, условия хранения и рекомендации по разогреву. Сейчас рецепты и цены предварительные, а изображения показывают идею будущих пирогов.'] },
-  ]} />
-  <EditorialInterest interest={product.id} title={`Интересен ${product.name.toLowerCase()}?`} label="Отметить интерес к пирогу" />
+  <ProductNotes taste={product.editorial.question} links={pairings} />
   {!product.sweet && <FillingRatioBar/>}
   <EditorialLinks title="Вес и количество для вашего стола" links={[{href:'/journal/skolko-piroga-na-cheloveka/',title:'Сколько пирога на компанию',text:'Таблица веса и калькулятор для разных порций.',label:'Расчёт'},{href:'/journal/pirog-500-g-ili-1-kg/',title:'500 г или 1 кг',text:'Сравнение одинакового веса и разных вкусов.',label:'Форматы'}]}/>
   <ProductRecommendations products={otherProducts} />

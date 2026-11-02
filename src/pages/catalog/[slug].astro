@@ -1,6 +1,7 @@
 ---
 import ContentLayout from '../../layouts/ContentLayout.astro';
 import ProductFacts from '../../components/ProductFacts.astro';
+import ProductDisclosure from '../../components/ProductDisclosure.astro';
 import PicnicSetDetails from '../../components/PicnicSetDetails.astro';
 import ProductHero from '../../components/ProductHero.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
@@ -33,23 +34,22 @@ const guide = /осетин/i.test(product.name) ? { href: '/osetinskie-pirogi/'
     <ProductOptions slot="actions" {product} showDelivery />
   </ProductHero>
   {['mini-pies', 'hearty-pies', 'sweet-pies', 'siberian-pies', 'kurniki', 'prussian-pies', 'ossetian-pies'].includes(product.category) && <ProductAddOns {product} />}
-  {product.id === 'picnic-set' ? <PicnicSetDetails /> : <section class="catalog-details" aria-labelledby="product-details">
-    <div class="catalog-story"><p class="ed-eyebrow">Выбрать осознанно</p><h2 id="product-details">{page.source ? 'К вашему столу' : 'К вашей подборке'}</h2><p>{page.serving}</p><h3>Как подготовить к подаче</h3><p>{page.prep}</p>
+  {product.id === 'picnic-set' ? <PicnicSetDetails /> : <ProductDisclosure title="Подача и формат" id="product-details"><div class="catalog-details">
+    <div class="catalog-story"><h3>К вашему столу</h3><p>{page.serving}</p><h3>Как подготовить к подаче</h3><p>{page.prep}</p>
       {page.source && !page.fresh && <p class="catalog-cold">Планируем поставку замороженного продукта с соблюдением условий хранения. Способ получения и температурный режим подтвердим перед продажами. Размороженный продукт повторно не замораживают.</p>}
     </div>
-    <aside class="catalog-facts" aria-label="Формат и происхождение"><h2>Коротко о позиции</h2><dl><div><dt>Статус</dt><dd>Изучаем спрос, продажи не начались</dd></div>
+    <aside class="catalog-facts" aria-label="Формат и происхождение"><h3>Коротко о позиции</h3><dl><div><dt>Статус</dt><dd>Изучаем спрос, продажи не начались</dd></div>
       {page.source ? <><div><dt>Производитель</dt><dd>{product.supplier?.name}</dd></div><div><dt>{page.fresh ? 'Вес целого пирога' : 'Одна единица'}</dt><dd>{page.fresh ? product.variants.map(v => formatWeight(v.value)).join(' / ') : formatWeight(page.source.unitWeightG)}</dd></div><div><dt>{page.fresh ? 'Формат производителя' : 'Заводская упаковка'}</dt><dd>{page.source.sourceLabel}</dd></div><div><dt>Формат продукта</dt><dd>{product.description}</dd></div></> : <div><dt>Формат</dt><dd>{product.variants.map(v => v.label).join(' или ')}</dd></div>}
       <div><dt>Наша подборка</dt><dd>{page.fresh ? 'Целые пироги; количество можно изменить в общей подборке.' : page.source ? 'Небольшие наборы — планируемая фасовка Пирогорска из заводской упаковки.' : 'Количество можно изменить в общей подборке.'}</dd></div><div><dt>Цена и доставка</dt><dd>Предварительно. Доставка считается отдельно за всю подборку.</dd></div></dl></aside>
-  </section>}
+  </div></ProductDisclosure>}
   <ProductFacts {product} />
   <ProductRecommendations products={page.related} />
   <EditorialLinks title="Для вашего стола" links={[guide, { href: '/delivery/', title: 'Города и условия', text: 'Планируем Калининград, Зеленоградск и Светлогорск. Условия получения и цены пока предварительные.', label: 'Доставка' }]} />
 </ContentLayout>
 <style>
-  .catalog-details{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,6vw,90px);padding-block:48px 64px;border-top:1px solid var(--ed-line)}
-  .catalog-story h2,.catalog-facts h2,.catalog-composition h2{font-family:var(--ed-serif);font-weight:500;font-size:clamp(26px,3vw,36px);line-height:1.15;margin:12px 0 22px}.catalog-story h3{font-size:17px;margin-top:30px}
-  .catalog-story p,.catalog-composition p{font-size:15px;line-height:1.85;max-width:76ch}.catalog-cold,.catalog-source{color:var(--ed-muted)}
-  .catalog-facts{border:1px solid var(--ed-line);border-radius:14px;padding:26px;align-self:start}.catalog-facts h2{font-size:25px;margin-top:0}.catalog-facts dl{margin:0}.catalog-facts dl>div{padding:12px 0;border-top:1px solid var(--ed-line)}.catalog-facts dt{font-size:11px;color:var(--ed-muted);margin-bottom:5px}.catalog-facts dd{margin:0;font-size:13px;line-height:1.65}
-  .catalog-composition{padding-block:32px 54px;border-top:1px solid var(--ed-line)}.catalog-composition .catalog-source{font-size:12px}.catalog-composition a{color:inherit;text-underline-offset:4px}
-  @media(max-width:760px){.catalog-details{grid-template-columns:1fr;gap:28px;padding-block:30px 42px}.catalog-facts{padding:20px}.catalog-composition{padding-bottom:30px}}
+  .catalog-details{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,6vw,90px);padding:0}
+  .catalog-story h3,.catalog-facts h3{font:600 16px/1.5 var(--sans);margin:0 0 12px}.catalog-story h3:not(:first-child){margin-top:24px}
+  .catalog-story p{font-size:14px;line-height:1.8;max-width:76ch}.catalog-cold{color:var(--ed-muted)}
+  .catalog-facts{border:1px solid var(--ed-line);border-radius:14px;padding:26px;align-self:start}.catalog-facts dl{margin:0}.catalog-facts dl>div{padding:12px 0;border-top:1px solid var(--ed-line)}.catalog-facts dt{font-size:11px;color:var(--ed-muted);margin-bottom:5px}.catalog-facts dd{margin:0;font-size:13px;line-height:1.65}
+  @media(max-width:760px){.catalog-details{grid-template-columns:1fr;gap:24px}.catalog-facts{padding:20px}}
 </style>
