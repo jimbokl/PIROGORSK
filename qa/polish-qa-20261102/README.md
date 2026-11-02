@@ -40,6 +40,30 @@ CRM, контакты и операционные данные не меняли
 [768](regression/local-search-menu-768.png),
 [1280](regression/local-search-home-1280.png).
 
-## Публикация
+Дополнительный [аудит 19 шаблонов](local-audit.json): 76 адаптивных просмотров
+и 8 коротких диалогов PASS. Количество, форматы, суммы, объединение одинаковых
+позиций, границы ввода, fallback-ссылка и reload — PASS. Скрипт [audit.mjs](audit.mjs)
+переиспользован из предыдущего спринта с отдельной папкой результатов.
 
-Ожидаются CI и production QA. До их завершения UX-15 остаётся в работе.
+## Публикация и production QA
+
+Опубликовано в `09ea9258ab2139895d2ad0862aa2521d08e4dd98`.
+[CI 41405399232 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41405399232)
+включает полный browser/Worker прогон и все проверки шаблонов. [CI JSON](ci.json).
+
+- [Production audit](production-audit.json): 19 шаблонов, 76 адаптивных
+  просмотров + 8 коротких диалогов; количество/форматы/точные суммы/объединение/
+  границы/fallback/подборка/reload PASS.
+- [Production regression](regression/production-report.json): 32 вида страниц,
+  62 статьи, 20 прокрученных окон, 12 поисковых сценариев и 8 ручных каталогов PASS.
+  Высота формы не меняется при query/empty/reset/filling/Back/Forward.
+- Ошибок JS, загрузки ассетов и горизонтального overflow нет в обоих прогонах.
+- `verify-release published`: PASS, совместимость Pages/Worker сохранена.
+- [SHA256](production-assets.json): на 7 страницах 21 inline CSS/JS блок
+  и 10 внешних ассетов совпали с локально принятой сборкой.
+- Визуально просмотрены опубликованные [телефон](regression/production-search-home-390.png),
+  [планшет](regression/production-search-menu-768.png) и
+  [desktop](regression/production-search-blog-1280.png).
+
+UX-15 закрыта. Лента, ассортимент 154 SKU, цены и данные подборки сохранены.
+Новых публикационных блокеров в проверенном объёме нет.

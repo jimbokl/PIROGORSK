@@ -1,0 +1,30 @@
+{
+  "runtime": "09ea9258ab2139895d2ad0862aa2521d08e4dd98",
+  "local": {
+    "templates": 19,
+    "responsiveStates": 84,
+    "quantity": "PASS: all three menu renderers, variants, typed quantity, limits, selection/reload",
+    "regressionViews": 32,
+    "scrolledDialogs": 20,
+    "searchCases": 12,
+    "manualCatalogCases": 8,
+    "errors": 0
+  },
+  "publication": "PASS: CI 41405399232, production QA and release compatibility",
+  "production": {
+    "templates": 19,
+    "responsiveStates": 84,
+    "quantity": "PASS: all three menu renderers, variants, typed quantity, limits, selection/reload",
+    "regressionViews": 32,
+    "scrolledDialogs": 20,
+    "searchCases": 12,
+    "manualCatalogCases": 8,
+    "errors": 0
+  },
+  "assets": {
+    "pages": 7,
+    "inlineBlocks": 21,
+    "externalAssets": 10,
+    "sha256Match": true
+  }
+}
