@@ -1,0 +1,48 @@
+{
+  "stage": "local",
+  "views": [
+    {
+      "id": "options",
+      "width": 390,
+      "before": {
+        "value": "1",
+        "height": 562.046875,
+        "buttonY": 312.265625
+      },
+      "quantity99": {
+        "value": "99",
+        "height": 562.046875,
+        "buttonY": 312.265625
+      }
+    },
+    {
+      "id": "options",
+      "width": 768,
+      "before": {
+        "value": "1",
+        "height": 642.421875,
+        "buttonY": 388.640625
+      },
+      "quantity99": {
+        "value": "99",
+        "height": 642.421875,
+        "buttonY": 388.640625
+      }
+    },
+    {
+      "id": "options",
+      "width": 1280,
+      "before": {
+        "value": "1",
+        "height": 560.9375,
+        "buttonY": 307.15625
+      },
+      "quantity99": {
+        "value": "99",
+        "height": 560.9375,
+        "buttonY": 307.15625
+      }
+    }
+  ],
+  "errors": []
+}

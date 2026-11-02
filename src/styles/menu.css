@@ -143,7 +143,7 @@ body.editorial-site.menu-page .menu-planner-link a{min-height:44px;padding-block
 .menu-empty p{font-size:14px;max-width:54ch;margin-bottom:20px}
 .menu-empty .ed-button{width:fit-content}
 @media(max-width:760px){
- .menu-page .town-hero{grid-template-columns:minmax(0,1fr) 64px;grid-template-areas:'eyebrow art' 'title art' 'intro intro';padding:18px;gap:10px;margin-bottom:16px}
+ .menu-page .town-hero{grid-template-columns:minmax(0,1fr) 64px;grid-template-areas:'eyebrow art' 'title title' 'intro intro';padding:18px;gap:10px;margin-bottom:16px}
  .menu-page .town-hero h1{font-size:clamp(25px,6.4vw,30px);text-wrap:pretty;letter-spacing:-.035em}
  .menu-page .town-hero-art{max-width:64px}
  .menu-page .town-hero-eyebrow{font-size:9px;letter-spacing:.04em}

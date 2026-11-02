@@ -87,7 +87,6 @@ body:is(.home-page,.editorial-site) .variant-switch{background:var(--surface-oat
 body:is(.home-page,.editorial-site) .variant-switch span{font-size:12px}
 body:is(.home-page,.editorial-site) .product-price-note{font-size:11px}
 body:is(.home-page,.editorial-site) .product-hero-frame :is(.product-visual,.product-artwork){background:transparent}
-body:is(.home-page,.editorial-site) .product-options{padding:24px;border:1px solid var(--line);background:var(--paper-raised);border-radius:24px}
 body:is(.home-page,.editorial-site) .supplier-heading h2{font:500 var(--heading-section)/1.15 var(--serif);letter-spacing:-.035em}
 body:is(.home-page,.editorial-site) .supplier-intro{font-size:14px;max-width:650px;color:var(--muted)}
 body:is(.home-page,.editorial-site) .supplier-grid{gap:40px 24px}
@@ -107,7 +106,6 @@ body:is(.home-page,.editorial-site) .supplier-note{font-size:12px;color:var(--mu
 body:is(.home-page,.editorial-site) .menu-finder{border:0;background:var(--surface-oat);padding:28px}
 body:is(.home-page,.editorial-site) .menu-sections a{border:0;background:var(--surface-oat);padding:22px}
 body:is(.home-page,.editorial-site) .ed-product-card .product-visual{border-radius:22px}
-body:is(.home-page,.editorial-site) .product-addons .addon-card{border:1px solid var(--line);border-radius:22px;background:var(--paper-raised);padding:22px}
 body:is(.home-page,.editorial-site) .product-addons .addon-title{font-weight:500}
 body:is(.home-page,.editorial-site) .product-addons .addons-heading{font-weight:500}
 body:is(.home-page,.editorial-site) .blog-feature-number{display:none}
@@ -124,7 +122,6 @@ body:is(.home-page,.editorial-site) :is(.site-footer,.ed-footer){padding-block:3
 body:is(.home-page,.editorial-site) .selection-dialog{border:0;border-radius:28px;background:var(--paper);box-shadow:0 30px 100px var(--dialog-shadow)}
 @media(min-width:761px){body:is(.home-page,.editorial-site) .ed-hero-text{padding-block:56px 64px}body:is(.home-page,.editorial-site) .ed-hero-text .ed-intro{max-width:680px}body:is(.home-page,.editorial-site) .menu-sections{gap:14px}}
 @media(max-width:760px){
- body:is(.home-page,.editorial-site) .product-options{padding:20px}
  body:is(.home-page,.editorial-site) .menu-finder{padding:20px}
  body:is(.home-page,.editorial-site) .menu-sections a{padding:18px}
  body:is(.home-page,.editorial-site) .supplier-grid{gap:32px 18px}
@@ -133,7 +130,6 @@ body:is(.home-page,.editorial-site) .selection-dialog{border:0;border-radius:28p
  body:is(.home-page,.editorial-site) .catalog .product-card.catalog-card h3{font-size:23px}
  body.home-page .home-status{margin-bottom:32px}
  body.home-page .home-featured{padding-block:44px}
- body:is(.home-page,.editorial-site) .product-addons .addon-card{padding:18px}
  body:is(.home-page,.editorial-site) .selection-dialog{border-radius:24px 24px 0 0}
 }
 @media(prefers-reduced-motion:reduce){body:is(.home-page,.editorial-site) .ed-link-card{transition:none;transform:none}}
@@ -142,10 +138,8 @@ body:is(.home-page,.editorial-site) .selection-dialog{border:0;border-radius:28p
 body:is(.home-page,.editorial-site) :is(.button,.ed-button){border:1px solid transparent;transition:background 180ms var(--ease-out),transform 180ms var(--ease-out)}
 body:is(.home-page,.editorial-site) :is(.button,.ed-button):hover{background:var(--action-hover);color:var(--paper)}
 body:is(.home-page,.editorial-site) .ed-eyebrow{color:var(--accent);font-weight:500;letter-spacing:.12em}
-body:is(.home-page,.editorial-site) :is(.variant-switch,.product-options-sizes){border-radius:16px;background:var(--soft);padding:4px;gap:4px}
+body:is(.home-page,.editorial-site) .variant-switch{border-radius:16px;background:var(--soft);padding:4px;gap:4px}
 body:is(.home-page,.editorial-site) .variant-switch span{border-radius:12px}
-body:is(.home-page,.editorial-site) .product-options-sizes label span{border:0;border-radius:12px}
-body:is(.home-page,.editorial-site) .product-menu-back{color:var(--accent)}
 body:is(.home-page,.editorial-site) .blog-feature .ed-eyebrow{font-size:11px}
 body:is(.home-page,.editorial-site) .blog-feature-image{overflow:hidden}
 body:is(.home-page,.editorial-site) .blog-topics{gap:8px;padding-block:16px}

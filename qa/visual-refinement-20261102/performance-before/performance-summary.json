@@ -1,0 +1,557 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/osetinskie-pirogi/",
+    "timestamp": "2026-11-02T12:12:45.855Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 195,
+      "lcp": 195
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 130.286,
+      "elementRenderDelay": 64.483
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1381,
+        "display": "1.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1756,
+        "display": "1.8 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1381,
+        "display": "1.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 17 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,2,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 16,
+                "bottom": 97,
+                "left": 94,
+                "right": 318,
+                "width": 224,
+                "height": 81
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,6,MAIN,1,SECTION,3,FIGURE,0,PICTURE,2,IMG",
+              "selector": "section.town-hero > figure.town-hero-art > picture > img",
+              "boundingRect": {
+                "top": 311,
+                "bottom": 375,
+                "left": 309,
+                "right": 373,
+                "width": 64,
+                "height": 64
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/pie-city.Dbh0IDcT_w1aQJ.avif\" srcset=\"/_astro/pie-city.Dbh0IDcT_ZedFFR.webp 160w, /_astro/pie-city.Dbh0IDcT_Z72l…\" sizes=\"(max-width: 600px) 32vw, (max-width: 1000px) 34vw, 380px\" alt=\"Пироговый город у балтийского моря\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" data-astro-cid-zfhad4tx=\"true\" width=\"640\" height=\"640\">",
+              "nodeLabel": "Пироговый город у балтийского моря"
+            },
+            "url": "http://127.0.0.1:4322/_astro/pie-city.Dbh0IDcT_w1aQJ.avif",
+            "totalBytes": 15060,
+            "wastedBytes": 5460,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 5460
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "46DFA257BFBDAD6042E5F3E83B8CC7C7": {
+                  "url": "http://127.0.0.1:4322/osetinskie-pirogi/",
+                  "navStartToEndTime": 181,
+                  "transferSize": 48907,
+                  "isLongest": true,
+                  "children": {
+                    "91032.9": {
+                      "url": "http://127.0.0.1:4322/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BXmz4zdz.js",
+                      "navStartToEndTime": 181,
+                      "transferSize": 352,
+                      "isLongest": true,
+                      "children": {
+                        "91032.106": {
+                          "url": "http://127.0.0.1:4322/_astro/storefront.BSq9V9fG.js",
+                          "navStartToEndTime": 242,
+                          "transferSize": 10744,
+                          "isLongest": true,
+                          "children": {
+                            "91032.110": {
+                              "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 252,
+                              "transferSize": 1121,
+                              "isLongest": true,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "91032.6": {
+                      "url": "http://127.0.0.1:4322/_astro/osetinskie-pirogi.astro_astro_type_script_index_0_lang.DCy2kiqU.js",
+                      "navStartToEndTime": 181,
+                      "transferSize": 351,
+                      "children": {
+                        "91032.107": {
+                          "url": "http://127.0.0.1:4322/_astro/menu-feed.B4lwdDC3.js",
+                          "navStartToEndTime": 242,
+                          "transferSize": 1537,
+                          "children": {
+                            "91032.109": {
+                              "url": "http://127.0.0.1:4322/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 251,
+                              "transferSize": 1173,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "91032.2": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CvUASK7i.js",
+                      "navStartToEndTime": 181,
+                      "transferSize": 351,
+                      "children": {
+                        "91032.104": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.BOPJQXZp.js",
+                          "navStartToEndTime": 246,
+                          "transferSize": 23565,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "91032.8": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.Cm2B8OhK.js",
+                      "navStartToEndTime": 182,
+                      "transferSize": 4426,
+                      "children": {
+                        "91032.108": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 240,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "91032.5": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 181,
+                      "transferSize": 357,
+                      "children": {
+                        "91032.105": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 220,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "91032.85": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 220,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "91032.86": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 220,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "91032.88": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 220,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "91032.87": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 220,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "91032.7": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 182,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 252
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/osetinskie-pirogi/",
+    "timestamp": "2026-11-02T12:12:53.066Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 71,
+      "lcp": 71
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 12.482,
+      "elementRenderDelay": 58.028
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 345.0928,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 479.0928,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 345.0928,
+        "display": "0.3 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 11 KiB",
+        "items": [
+          {
+            "url": ".town-hero[data-astro-cid-zfhad4tx]{isolation:isolate; … } …",
+            "wastedBytes": 10817,
+            "wastedPercent": 75.11306938511791,
+            "totalBytes": 14401
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 48 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,6,MAIN,1,SECTION,3,FIGURE,0,PICTURE,2,IMG",
+              "selector": "section.town-hero > figure.town-hero-art > picture > img",
+              "boundingRect": {
+                "top": 375,
+                "bottom": 545,
+                "left": 1086,
+                "right": 1256,
+                "width": 170,
+                "height": 170
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/pie-city.Dbh0IDcT_2bVDXM.avif\" srcset=\"/_astro/pie-city.Dbh0IDcT_ZedFFR.webp 160w, /_astro/pie-city.Dbh0IDcT_Z72l…\" sizes=\"(max-width: 600px) 32vw, (max-width: 1000px) 34vw, 380px\" alt=\"Пироговый город у балтийского моря\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" data-astro-cid-zfhad4tx=\"true\" width=\"640\" height=\"640\">",
+              "nodeLabel": "Пироговый город у балтийского моря"
+            },
+            "url": "http://127.0.0.1:4322/_astro/pie-city.Dbh0IDcT_2bVDXM.avif",
+            "totalBytes": 42792,
+            "wastedBytes": 37975,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 4392
+                },
+                {
+                  "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (170x170). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 37424
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,2,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 20,
+                "bottom": 132,
+                "left": 519,
+                "right": 831,
+                "width": 312,
+                "height": 112
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "1A3D8CDFBA6F03BF78892ADFAC5381EC": {
+                  "url": "http://127.0.0.1:4322/osetinskie-pirogi/",
+                  "navStartToEndTime": 22,
+                  "transferSize": 48907,
+                  "isLongest": true,
+                  "children": {
+                    "91050.76": {
+                      "url": "http://127.0.0.1:4322/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BXmz4zdz.js",
+                      "navStartToEndTime": 60,
+                      "transferSize": 352,
+                      "isLongest": true,
+                      "children": {
+                        "91050.98": {
+                          "url": "http://127.0.0.1:4322/_astro/storefront.BSq9V9fG.js",
+                          "navStartToEndTime": 91,
+                          "transferSize": 10744,
+                          "isLongest": true,
+                          "children": {
+                            "91050.102": {
+                              "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 100,
+                              "transferSize": 1121,
+                              "isLongest": true,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "91050.62": {
+                      "url": "http://127.0.0.1:4322/_astro/osetinskie-pirogi.astro_astro_type_script_index_0_lang.DCy2kiqU.js",
+                      "navStartToEndTime": 60,
+                      "transferSize": 351,
+                      "children": {
+                        "91050.99": {
+                          "url": "http://127.0.0.1:4322/_astro/menu-feed.B4lwdDC3.js",
+                          "navStartToEndTime": 89,
+                          "transferSize": 1537,
+                          "children": {
+                            "91050.101": {
+                              "url": "http://127.0.0.1:4322/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 97,
+                              "transferSize": 1173,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "91050.2": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CvUASK7i.js",
+                      "navStartToEndTime": 60,
+                      "transferSize": 351,
+                      "children": {
+                        "91050.96": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.BOPJQXZp.js",
+                          "navStartToEndTime": 91,
+                          "transferSize": 23565,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "91050.75": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.Cm2B8OhK.js",
+                      "navStartToEndTime": 60,
+                      "transferSize": 4426,
+                      "children": {
+                        "91050.100": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 89,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "91050.77": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 81,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "91050.79": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 81,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "91050.7": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 60,
+                      "transferSize": 357,
+                      "children": {
+                        "91050.97": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 76,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "91050.80": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 75,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "91050.78": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 75,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "91050.68": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 60,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 100
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

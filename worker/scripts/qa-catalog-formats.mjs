@@ -78,18 +78,35 @@ export async function verifyCatalogFormats(page, origin, width, output) {
       assert.deepEqual(await selection(), expected);
     }
   }
-  for (const product of [samples[0], mini, samples[1], samples.at(-1)]) {
+  for (const product of [samples[0], mini, samples[1], samples.at(-1), catalog.find(product => product.id === 'hb-osetinskiy-pirog-s-kuritsey-i-syrom')]) {
     await page.goto(`${origin}${catalogProductHref(product)}?qa=1`, { waitUntil: 'networkidle0' });
+    await page.evaluate(() => document.fonts.ready);
     const options = '[data-product-options]';
     const shown = await page.$$eval(`${options} [data-variant-price]`, labels => labels.map(el => Number(el.dataset.variantPrice)));
     assert.deepEqual(shown, product.variants.map(variant => variant.price));
     await click(`${options} label:last-of-type`);
     await click('[data-option-increase]');
     assert.equal(await page.$eval('[data-option-price]', el => Number(el.textContent.replace(/\D/g, ''))), product.variants.at(-1).price * 2);
-    await page.waitForFunction(() => getComputedStyle(document.querySelector('[data-product-options] input:checked + .variant-summary')).color === 'rgb(255, 255, 255)');
+    assert.equal(await page.$eval(`${options} input:checked`, el => el.value), String(product.variants.at(-1).value), 'selected format stays checked');
     if (product.supplier?.priceFrom) assert.match(await page.$eval('.product-options-price small', el => el.textContent), /^от /);
     await assertFits(page, options);
-    await (await page.$(options)).screenshot({ path: `${output}/product-${product.id}-${width}.png` });
+    const geometry = () => page.$eval(options, el => {
+      const panel = el.getBoundingClientRect();
+      const button = el.querySelector('[data-option-link]').getBoundingClientRect();
+      const price = el.querySelector('[data-option-price]');
+      return { height: panel.height, buttonY: button.y - panel.y, priceFits: price.scrollWidth <= price.clientWidth + 1 };
+    });
+    const baseline = await geometry();
+    for (const quantity of [99, 1]) {
+      await page.$eval('[data-option-quantity]', (el, value) => { el.value = String(value); el.dispatchEvent(new Event('input', { bubbles: true })); }, quantity);
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      const changed = await geometry();
+      assert(Math.abs(changed.height - baseline.height) <= 1 && Math.abs(changed.buttonY - baseline.buttonY) <= 1, `${product.id} ${width}: quantity ${quantity} keeps the purchase button in place`);
+      assert(changed.priceFits, `${product.id} ${width}: total stays within its column`);
+      assert.equal(await page.$eval('[data-option-price]', el => Number(el.textContent.replace(/\D/g, ''))), product.variants.at(-1).price * quantity);
+    }
+    await page.$eval(options, el => el.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    await page.screenshot({ path: `${output}/product-${product.id}-${width}.png` });
   }
   console.log(`PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at ${width}px`);
 }
