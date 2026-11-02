@@ -9,13 +9,28 @@ const error = document.querySelector<HTMLElement>('[data-planner-error]')!;
 const link = document.querySelector<HTMLAnchorElement>('[data-planner-continue]')!;
 const weight = (grams: number) => (grams / 1000).toLocaleString('ru-RU');
 const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
-const preset = occasionPresets.find(item => item.slug === new URLSearchParams(location.search).get('occasion'));
+const query = new URLSearchParams(location.search);
+const preset = occasionPresets.find(item => item.slug === query.get('occasion'));
 if (preset) {
   form.querySelector<HTMLInputElement>('[name="guests"]')!.value = String(preset.guests);
   form.querySelector<HTMLSelectElement>('[name="grams"]')!.value = String(preset.grams);
   form.querySelectorAll<HTMLInputElement>('[name="flavour"]').forEach(input => { input.checked = (preset.ids as readonly string[]).includes(input.value); });
   const label = document.querySelector<HTMLElement>('[data-planner-occasion]')!;
   label.textContent = `Открыт пример: ${preset.label}. Все параметры можно изменить.`;
+  label.hidden = false;
+}
+// Accept only values the existing form can represent; malformed links retain its defaults.
+const guestsInput = form.querySelector<HTMLInputElement>('[name="guests"]')!;
+const gramsSelect = form.querySelector<HTMLSelectElement>('[name="grams"]')!;
+const guestSeed = query.get('guests') ?? '';
+const portionSeed = query.get('grams') ?? '';
+const hasGuests = /^\d+$/.test(guestSeed) && Number(guestSeed) >= Number(guestsInput.min) && Number(guestSeed) <= Number(guestsInput.max);
+const hasPortion = /^\d+$/.test(portionSeed) && [...gramsSelect.options].some(option => option.value === portionSeed);
+if (hasGuests) guestsInput.value = String(Number(guestSeed));
+if (hasPortion) gramsSelect.value = portionSeed;
+if (hasGuests || hasPortion) {
+  const label = document.querySelector<HTMLElement>('[data-planner-occasion]')!;
+  label.textContent = `Открыт расчёт: ${guestsInput.value} гостей, по ${gramsSelect.value} г. Все параметры можно изменить.`;
   label.hidden = false;
 }
 function update() {

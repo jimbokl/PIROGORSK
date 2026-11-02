@@ -3,8 +3,25 @@ import assert from 'node:assert/strict';
 import { planPies, parsePlan } from '../src/lib/pie-planner.ts';
 import { occasionPresets } from '../src/data/occasion-presets.ts';
 import { occasions } from '../src/data/occasions.ts';
+import { portionTableRows, breakfastExamples } from '../src/data/planning-updates.ts';
+import { catalog as actualCatalog } from '../src/data/catalog.ts';
 
 const catalog = ['meat', 'cabbage', 'fish'].map((id, index) => ({ id, kind: 'pie', variants: [{ value: 500, price: 400 + index * 100 }, { value: 1000, price: 700 + index * 200 }] }));
+test('published 2–15 guest table and breakfast budgets agree with real formats and prices', () => {
+  assert.deepEqual(portionTableRows.map(row => Number(row[0])), Array.from({length:14}, (_, i) => i + 2));
+  for (const row of portionTableRows) for (const [index, grams] of [150, 250, 350].entries()) {
+    const kg = Number(row[index + 1].replace(' кг', '').replace(',', '.'));
+    assert.ok(kg * 1000 >= Number(row[0]) * grams);
+    assert.ok(kg * 1000 - Number(row[0]) * grams < 500);
+    assert.equal(kg * 1000 % 500, 0);
+  }
+  const variantPrice = (id, value) => actualCatalog.find(p => p.id === id).variants.find(v => v.value === value).price;
+  for (const example of breakfastExamples) {
+    assert.equal(example.pieWeight, example.guests * 250);
+    assert.equal(example.piePrice, example.pies.reduce((sum, p) => sum + variantPrice(p.id, p.value), 0));
+    assert.equal(example.total - example.piePrice, example.guests * (variantPrice('tea',250) + variantPrice('tableware',1)));
+  }
+});
 test('rounds up to 500 g, distributes flavours, and prices the actual variants', () => {
   const plan = planPies(4, 300, ['meat', 'cabbage'], catalog);
   assert.equal(plan.requested, 1200);

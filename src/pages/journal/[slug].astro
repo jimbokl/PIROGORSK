@@ -20,6 +20,7 @@ import { guides, siteOrigin } from '../../data/editorial';
 import { blogArticles, type BlogArticle } from '../../data/blog-articles';
 import { blogEntries, articleHref } from '../../data/blog';
 import articleUpdates from '../../data/article-updates.json';
+import { planningUpdates } from '../../data/planning-updates';
 import { monthlyPresentation } from '../../data/monthly-article-presentation';
 import {expansionGuides,type ExpansionArticle} from '../../data/expansion-guides';
 import PartyCalculator from '../../components/PartyCalculator.astro';
@@ -36,7 +37,7 @@ export function getStaticPaths() {
 }
 interface Props { item: (typeof guides)[number] | BlogArticle | ExpansionArticle }
 const original = Astro.props.item;
-const update = articleUpdates.find(update => update.ownerURL === articleHref(original.slug));
+const update = [...articleUpdates, ...planningUpdates].find(update => update.ownerURL === articleHref(original.slug));
 const item = update ? { ...original, sections: [...original.sections, ...update.sections], sources: [...('sources' in original ? original.sources ?? [] : []), ...update.sources] } : original;
 const monthly = monthlyPresentation(item.slug);
 const servingGuide = ['skolko-piroga-na-cheloveka', 'kak-narezat-pirog', 'kak-hranit-pirogi', 'kak-razogret-pirog-v-apartamentah'].includes(item.slug);

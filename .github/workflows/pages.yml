@@ -31,6 +31,7 @@ jobs:
       - run: node scripts/verify-city-pages.mjs
       - run: node scripts/verify-article-artwork.mjs
       - run: node scripts/verify-content-month.mjs
+      - run: node scripts/verify-content-priority.mjs
       - run: node scripts/verify-product-pages.mjs
       - run: node scripts/verify-product-backdrops.mjs
       - run: npm test
