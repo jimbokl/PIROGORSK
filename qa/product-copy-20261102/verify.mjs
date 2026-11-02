@@ -42,6 +42,10 @@ page.on('request',async req=>{
 });
 const go=async p=>{await page.goto(origin+catalogProductHref(p)+'?qa=1',{waitUntil:'networkidle0'});await page.evaluate(()=>document.fonts.ready);};
 const fits=async()=>assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),true,'no horizontal overflow');
+const screenshot=async options=>{
+ await page.waitForFunction(()=>[...document.images].filter(img=>{const r=img.getBoundingClientRect();return r.width>0&&r.height>0&&r.bottom>0&&r.top<innerHeight;}).every(img=>img.complete&&img.naturalWidth>0),{timeout:15000});
+ await page.screenshot(options);
+};
 try{
  for(const width of [320,390,768,1280]){
   await page.setViewport({width,height:1000});
@@ -51,7 +55,7 @@ try{
     const note=await page.$eval('[data-product-notes]',el=>({height:el.offsetHeight,words:el.innerText.trim().split(/\s+/).length,links:[...el.querySelectorAll('a')].map(a=>({href:a.pathname,height:a.offsetHeight}))}));
     assert(note.words<=42,`${p.id}: concise note`);assert(note.height<=330,`${p.id}: compact height ${note.height}`);assert.equal(note.links.length,2);
     for(const link of note.links){assert(link.height>=44);assert(products.some(p=>catalogProductHref(p)===link.href));}
-    if(p.id==='curd') {await page.$eval('[data-product-notes]',el=>el.scrollIntoView({block:'center',behavior:'instant'}));await page.screenshot({path:`${output}/${stage}-curd-${width}.png`});}
+    if(p.id==='curd') {await page.$eval('[data-product-notes]',el=>el.scrollIntoView({block:'center',behavior:'instant'}));await screenshot({path:`${output}/${stage}-curd-${width}.png`});}
     report.views.push({id:p.id,width,note});
    }else{
     const rows=await page.$$eval('[data-product-disclosure]',els=>els.map(el=>({open:el.open,height:el.querySelector('summary').offsetHeight,hiddenBody:el.querySelector('.disclosure-body').getBoundingClientRect().height, title:el.querySelector('summary').textContent.trim()})));
@@ -59,10 +63,10 @@ try{
     for(let i=0;i<rows.length;i++){
      const handles=await page.$$('[data-product-disclosure] summary');await handles[i].focus();await page.keyboard.press('Enter');
      assert.equal(await page.$$eval('[data-product-disclosure]',(els,i)=>els[i].open,i),true,'keyboard opens');await fits();
-     if(p.id==='p39-10'&&i===1){await handles[0].evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));await page.screenshot({path:`${output}/${stage}-facts-open-${width}.png`});}
+     if(p.id==='p39-10'&&i===1){await handles[0].evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));await screenshot({path:`${output}/${stage}-facts-open-${width}.png`});}
      await handles[i].focus();await page.keyboard.press('Enter');assert.equal(await page.$$eval('[data-product-disclosure]',(els,i)=>els[i].open,i),false,'keyboard closes');
     }
-    if(p.id==='p39-10'){await page.$eval('[data-product-disclosure]',el=>el.scrollIntoView({block:'center',behavior:'instant'}));await page.screenshot({path:`${output}/${stage}-catalog-${width}.png`});}
+    if(p.id==='p39-10'){await page.$eval('[data-product-disclosure]',el=>el.scrollIntoView({block:'center',behavior:'instant'}));await screenshot({path:`${output}/${stage}-catalog-${width}.png`});}
     report.views.push({id:p.id,width,rows});
    }
   }

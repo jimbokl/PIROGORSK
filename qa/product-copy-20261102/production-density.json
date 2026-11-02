@@ -1,0 +1,43 @@
+{
+  "stage": "production",
+  "rows": [
+    {
+      "width": 390,
+      "height": 274.1875,
+      "words": 25
+    },
+    {
+      "width": 768,
+      "height": 173.5625,
+      "words": 25
+    },
+    {
+      "width": 1280,
+      "height": 199.5,
+      "words": 25
+    }
+  ],
+  "comparison": [
+    {
+      "width": 390,
+      "wordsBefore": 78,
+      "wordsAfter": 25,
+      "heightBefore": 635.25,
+      "heightAfter": 274.1875
+    },
+    {
+      "width": 768,
+      "wordsBefore": 78,
+      "wordsAfter": 25,
+      "heightBefore": 502.5,
+      "heightAfter": 173.5625
+    },
+    {
+      "width": 1280,
+      "wordsBefore": 78,
+      "wordsAfter": 25,
+      "heightBefore": 455.75,
+      "heightAfter": 199.5
+    }
+  ]
+}
