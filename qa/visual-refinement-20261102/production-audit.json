@@ -1,0 +1,4897 @@
+{
+  "stage": "production",
+  "views": [
+    {
+      "id": "home",
+      "path": "/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Мини-пироги14",
+          "x": 268,
+          "y": 1533,
+          "w": 118,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "14",
+          "x": 361,
+          "y": 1547,
+          "w": 11,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "К чаю11",
+          "x": 392,
+          "y": 1533,
+          "w": 76,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "11",
+          "x": 445,
+          "y": 1547,
+          "w": 10,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Хлеб и булочки24",
+          "x": 475,
+          "y": 1533,
+          "w": 131,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "24",
+          "x": 580,
+          "y": 1547,
+          "w": 12,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Для выпечки23",
+          "x": 612,
+          "y": 1533,
+          "w": 118,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "23",
+          "x": 703,
+          "y": 1547,
+          "w": 12,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Тесто6",
+          "x": 735,
+          "y": 1533,
+          "w": 72,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "6",
+          "x": 787,
+          "y": 1547,
+          "w": 6,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Напитки и посуда7",
+          "x": 813,
+          "y": 1533,
+          "w": 137,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "7",
+          "x": 931,
+          "y": 1547,
+          "w": 5,
+          "h": 15
+        }
+      ],
+      "tinyControls": [],
+      "clipped": [
+        {
+          "tag": "H1",
+          "class": "",
+          "text": "Целый город вкусных пирогов",
+          "x": 39,
+          "y": 180,
+          "w": 227,
+          "h": 100
+        }
+      ],
+      "h1": [
+        {
+          "text": "Целый город вкусных пирогов",
+          "x": 39,
+          "y": 180,
+          "w": 227,
+          "h": 100
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "menu",
+      "path": "/menu/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Выпечка и мини-пирогиЗамороженные продукты и заготовки78",
+          "x": 154,
+          "y": 1352,
+          "w": 180,
+          "h": 46
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Идеи ПирогорскаВосемь концептов · 500 г и 1 кг8",
+          "x": 340,
+          "y": 1352,
+          "w": 140,
+          "h": 46
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "Идеи Пирогорска",
+          "x": 354,
+          "y": 1366,
+          "w": 97,
+          "h": 18
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "8",
+          "x": 460,
+          "y": 1369,
+          "w": 6,
+          "h": 12
+        },
+        {
+          "tag": "B",
+          "class": "",
+          "text": "8",
+          "x": 460,
+          "y": 1369,
+          "w": 6,
+          "h": 12
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "К столуНапитки и посуда7",
+          "x": 486,
+          "y": 1352,
+          "w": 84,
+          "h": 46
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "К столу",
+          "x": 500,
+          "y": 1366,
+          "w": 41,
+          "h": 18
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "7",
+          "x": 550,
+          "y": 1369,
+          "w": 6,
+          "h": 12
+        },
+        {
+          "tag": "B",
+          "class": "",
+          "text": "7",
+          "x": 550,
+          "y": 1369,
+          "w": 6,
+          "h": 12
+        },
+        {
+          "tag": "BUTTON",
+          "class": "",
+          "text": "Сладкие 17",
+          "x": 248,
+          "y": 1701,
+          "w": 102,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "17",
+          "x": 320,
+          "y": 1716,
+          "w": 13,
+          "h": 14
+        },
+        {
+          "tag": "BUTTON",
+          "class": "",
+          "text": "Сибирские 5",
+          "x": 355,
+          "y": 1701,
+          "w": 107,
+          "h": 44
+        }
+      ],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Меню пирогов, хлеба и выпечки",
+          "x": 41,
+          "y": 263,
+          "w": 223,
+          "h": 66
+        }
+      ],
+      "compactHero": [
+        {
+          "titleWidth": 223,
+          "titleOverflow": false,
+          "contentWidth": 223
+        }
+      ],
+      "producerLinks": [
+        44,
+        44
+      ],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "delivery",
+      "path": "/delivery/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "К вашему столу.В вашем городе.",
+          "x": 41,
+          "y": 267,
+          "w": 223,
+          "h": 66
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/delivery/"
+      ]
+    },
+    {
+      "id": "city",
+      "path": "/zelenogradsk/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги в Зеленоградске",
+          "x": 41,
+          "y": 294,
+          "w": 223,
+          "h": 66
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": [
+        "/delivery/"
+      ]
+    },
+    {
+      "id": "blog",
+      "path": "/blog/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "К общему столу",
+          "x": 41,
+          "y": 278,
+          "w": 223,
+          "h": 33
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "article",
+      "path": "/journal/dostavka-edy-v-zelenogradske/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "TABLE",
+          "class": "",
+          "text": "Примеры корзин на четверых без напитков и стоимости получения. Это раз",
+          "x": 38,
+          "y": 10504,
+          "w": 650,
+          "h": 1205
+        },
+        {
+          "tag": "CAPTION",
+          "class": "",
+          "text": "Примеры корзин на четверых без напитков и стоимости получения. Это раз",
+          "x": 38,
+          "y": 10504,
+          "w": 650,
+          "h": 52
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Место и адресФормат / с собойЧетыре блюдаЧто учесть",
+          "x": 38,
+          "y": 10556,
+          "w": 650,
+          "h": 51
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Место и адресФормат / с собойЧетыре блюдаЧто учесть",
+          "x": 38,
+          "y": 10556,
+          "w": 650,
+          "h": 51
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "text": "Формат / с собой",
+          "x": 207,
+          "y": 10556,
+          "w": 141,
+          "h": 51
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "text": "Четыре блюда",
+          "x": 348,
+          "y": 10556,
+          "w": 123,
+          "h": 51
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "text": "Что учесть",
+          "x": 471,
+          "y": 10556,
+          "w": 217,
+          "h": 51
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Балт ↗Курортный проспект, 16кафеСамовывоз уточнитьНе рассчитаноРегиона",
+          "x": 38,
+          "y": 10607,
+          "w": 650,
+          "h": 1004
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Балт ↗Курортный проспект, 16кафеСамовывоз уточнитьНе рассчитаноРегиона",
+          "x": 38,
+          "y": 10607,
+          "w": 650,
+          "h": 78
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "кафеСамовывоз уточнить",
+          "x": 207,
+          "y": 10607,
+          "w": 141,
+          "h": 78
+        },
+        {
+          "tag": "SMALL",
+          "class": "",
+          "text": "Самовывоз уточнить",
+          "x": 223,
+          "y": 10651,
+          "w": 109,
+          "h": 17
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "Не рассчитано",
+          "x": 348,
+          "y": 10607,
+          "w": 123,
+          "h": 78
+        }
+      ],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 65,
+          "y": 13610,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 65,
+          "y": 13654,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 64,
+          "y": 13732,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 64,
+          "y": 13776,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 64,
+          "y": 13820,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 64,
+          "y": 13864,
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Доставка еды в Зеленоградске: ужин в апартаментах",
+          "x": 20,
+          "y": 364,
+          "w": 265,
+          "h": 147
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "product",
+      "path": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "recommendation-card",
+          "text": "Осетинский пирог с картофелем5 шт. · 1,05 кг1 070 ₽ предварительно↗",
+          "x": 284,
+          "y": 5153,
+          "w": 250,
+          "h": 442
+        },
+        {
+          "tag": "DIV",
+          "class": "recommendation-art",
+          "text": "",
+          "x": 301,
+          "y": 5170,
+          "w": 216,
+          "h": 216
+        },
+        {
+          "tag": "DIV",
+          "class": "supplier-artwork product-artwork",
+          "text": "",
+          "x": 301,
+          "y": 5170,
+          "w": 216,
+          "h": 216
+        },
+        {
+          "tag": "PICTURE",
+          "class": "product-backdrop",
+          "text": "",
+          "x": 301,
+          "y": 5170,
+          "w": 216,
+          "h": 216
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "x": 301,
+          "y": 5170,
+          "w": 216,
+          "h": 216
+        },
+        {
+          "tag": "PICTURE",
+          "class": "product-artwork-subject",
+          "text": "",
+          "x": 309,
+          "y": 5178,
+          "w": 198,
+          "h": 198
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "x": 309,
+          "y": 5178,
+          "w": 198,
+          "h": 198
+        },
+        {
+          "tag": "H3",
+          "class": "",
+          "text": "Осетинский пирог с картофелем",
+          "x": 301,
+          "y": 5399,
+          "w": 216,
+          "h": 58
+        },
+        {
+          "tag": "P",
+          "class": "",
+          "text": "5 шт. · 1,05 кг",
+          "x": 301,
+          "y": 5467,
+          "w": 216,
+          "h": 19
+        },
+        {
+          "tag": "DIV",
+          "class": "recommendation-bottom",
+          "text": "1 070 ₽ предварительно↗",
+          "x": 301,
+          "y": 5533,
+          "w": 216,
+          "h": 45
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "1 070 ₽ предварительно",
+          "x": 301,
+          "y": 5533,
+          "w": 76,
+          "h": 45
+        },
+        {
+          "tag": "SMALL",
+          "class": "",
+          "text": "предварительно",
+          "x": 301,
+          "y": 5563,
+          "w": 76,
+          "h": 15
+        }
+      ],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 50,
+          "y": 795,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 123,
+          "y": 795,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 196,
+          "y": 795,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "каталогу производителя ↗",
+          "x": 37,
+          "y": 4906,
+          "w": 138,
+          "h": 12
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Осетинский пирог с курицей и сыром",
+          "x": 20,
+          "y": 259,
+          "w": 265,
+          "h": 66
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "bundles",
+      "path": "/nabory/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Наборы пирогов",
+          "x": 20,
+          "y": 246,
+          "w": 265,
+          "h": 40
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/nabory/"
+      ]
+    },
+    {
+      "id": "bundle",
+      "path": "/nabor/piknik-u-morya/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги для пикника у моря",
+          "x": 20,
+          "y": 261,
+          "w": 265,
+          "h": 73
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": [
+        "/nabory/"
+      ]
+    },
+    {
+      "id": "occasion",
+      "path": "/povody/zelenogradsk/semeynyy-uzhin/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "Пироги на семейный ужин и к приходу гостей в Зеленоградске",
+          "x": 33,
+          "y": 191,
+          "w": 291,
+          "h": 11
+        },
+        {
+          "tag": "TABLE",
+          "class": "ed-reading-table",
+          "text": "350 г на человека как редактируемый пример, без напитков и гарнировЗа ",
+          "x": 21,
+          "y": 2190,
+          "w": 440,
+          "h": 253
+        },
+        {
+          "tag": "CAPTION",
+          "class": "",
+          "text": "350 г на человека как редактируемый пример, без напитков и гарниров",
+          "x": 21,
+          "y": 2190,
+          "w": 440,
+          "h": 70
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "За столомРасчётПосле округления",
+          "x": 21,
+          "y": 2260,
+          "w": 440,
+          "h": 45
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "За столомРасчётПосле округления",
+          "x": 21,
+          "y": 2260,
+          "w": 440,
+          "h": 45
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "text": "После округления",
+          "x": 257,
+          "y": 2260,
+          "w": 204,
+          "h": 45
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "4 человека1 400 г1,5 кг6 человек2 100 г2,5 кг8 человек2 800 г3 кг",
+          "x": 21,
+          "y": 2305,
+          "w": 440,
+          "h": 137
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "4 человека1 400 г1,5 кг",
+          "x": 21,
+          "y": 2305,
+          "w": 440,
+          "h": 46
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "1,5 кг",
+          "x": 257,
+          "y": 2305,
+          "w": 204,
+          "h": 46
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "6 человек2 100 г2,5 кг",
+          "x": 21,
+          "y": 2351,
+          "w": 440,
+          "h": 46
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "2,5 кг",
+          "x": 257,
+          "y": 2351,
+          "w": 204,
+          "h": 46
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "8 человек2 800 г3 кг",
+          "x": 21,
+          "y": 2397,
+          "w": 440,
+          "h": 46
+        }
+      ],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 48,
+          "y": 1227,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 48,
+          "y": 1271,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 47,
+          "y": 1349,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 47,
+          "y": 1393,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 47,
+          "y": 1437,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 47,
+          "y": 1481,
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги на семейный ужин и к приходу гостей в Зеленоградске",
+          "x": 20,
+          "y": 279,
+          "w": 265,
+          "h": 184
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "planner",
+      "path": "/podbor/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1046,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1104,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1162,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1220,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1278,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1336,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1394,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1452,
+          "w": 18,
+          "h": 18
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Хватит на всех.А сколько это?",
+          "x": 20,
+          "y": 271,
+          "w": 265,
+          "h": 82
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/podbor/"
+      ]
+    },
+    {
+      "id": "about",
+      "path": "/about/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги с балтийским характером",
+          "x": 41,
+          "y": 263,
+          "w": 223,
+          "h": 98
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": [
+        "/about/"
+      ]
+    },
+    {
+      "id": "original",
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "recommendation-card",
+          "text": "ОвощнойПирог с капустой500 г390 ₽ предварительно↗",
+          "x": 284,
+          "y": 6217,
+          "w": 250,
+          "h": 385
+        },
+        {
+          "tag": "DIV",
+          "class": "recommendation-art",
+          "text": "Овощной",
+          "x": 301,
+          "y": 6234,
+          "w": 216,
+          "h": 216
+        },
+        {
+          "tag": "DIV",
+          "class": "product-visual product-visual--pie",
+          "text": "Овощной",
+          "x": 301,
+          "y": 6234,
+          "w": 216,
+          "h": 216
+        },
+        {
+          "tag": "IMG",
+          "class": "product-visual-background",
+          "text": "",
+          "x": 301,
+          "y": 6234,
+          "w": 216,
+          "h": 216
+        },
+        {
+          "tag": "IMG",
+          "class": "product-visual-subject",
+          "text": "",
+          "x": 314,
+          "y": 6247,
+          "w": 190,
+          "h": 190
+        },
+        {
+          "tag": "H3",
+          "class": "",
+          "text": "Пирог с капустой",
+          "x": 301,
+          "y": 6464,
+          "w": 216,
+          "h": 29
+        },
+        {
+          "tag": "P",
+          "class": "",
+          "text": "500 г",
+          "x": 301,
+          "y": 6503,
+          "w": 216,
+          "h": 19
+        },
+        {
+          "tag": "DIV",
+          "class": "recommendation-bottom",
+          "text": "390 ₽ предварительно↗",
+          "x": 301,
+          "y": 6540,
+          "w": 216,
+          "h": 45
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "390 ₽ предварительно",
+          "x": 301,
+          "y": 6540,
+          "w": 76,
+          "h": 45
+        },
+        {
+          "tag": "SMALL",
+          "class": "",
+          "text": "предварительно",
+          "x": 301,
+          "y": 6570,
+          "w": 76,
+          "h": 15
+        },
+        {
+          "tag": "SPAN",
+          "class": "recommendation-arrow",
+          "text": "↗",
+          "x": 480,
+          "y": 6544,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 50,
+          "y": 738,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 160,
+          "y": 738,
+          "w": 1,
+          "h": 1
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Мясной пирог",
+          "x": 20,
+          "y": 259,
+          "w": 265,
+          "h": 33
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "picnic",
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 46,
+          "y": 809,
+          "w": 1,
+          "h": 1
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Балтийский пикник-сет",
+          "x": 20,
+          "y": 277,
+          "w": 265,
+          "h": 66
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "occasions",
+      "path": "/povody/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "У каждого стола свой повод",
+          "x": 41,
+          "y": 263,
+          "w": 223,
+          "h": 66
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": []
+    },
+    {
+      "id": "ossetian",
+      "path": "/osetinskie-pirogi/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Осетинские пироги в Калининградской области",
+          "x": 39,
+          "y": 314,
+          "w": 227,
+          "h": 131
+        }
+      ],
+      "compactHero": [
+        {
+          "titleWidth": 227,
+          "titleOverflow": false,
+          "contentWidth": 227
+        }
+      ],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "partners",
+      "path": "/partners/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Хороший стол начинается со знакомства",
+          "x": 41,
+          "y": 263,
+          "w": 223,
+          "h": 98
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 215,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 263,
+          "contentWidth": 215,
+          "buttonWidth": 215
+        }
+      ],
+      "activeSections": []
+    },
+    {
+      "id": "privacy",
+      "path": "/privacy/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Данные анонимных заявок",
+          "x": 20,
+          "y": 269,
+          "w": 265,
+          "h": 114
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "terms",
+      "path": "/terms/",
+      "width": 320,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пока готовим запуск",
+          "x": 20,
+          "y": 269,
+          "w": 265,
+          "h": 76
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "home",
+      "path": "/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "",
+          "text": "К чаю11",
+          "x": 392,
+          "y": 1395,
+          "w": 76,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "11",
+          "x": 445,
+          "y": 1410,
+          "w": 10,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Хлеб и булочки24",
+          "x": 475,
+          "y": 1395,
+          "w": 131,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "24",
+          "x": 580,
+          "y": 1410,
+          "w": 12,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Для выпечки23",
+          "x": 612,
+          "y": 1395,
+          "w": 118,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "23",
+          "x": 703,
+          "y": 1410,
+          "w": 12,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Тесто6",
+          "x": 735,
+          "y": 1395,
+          "w": 72,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "6",
+          "x": 787,
+          "y": 1410,
+          "w": 6,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Напитки и посуда7",
+          "x": 813,
+          "y": 1395,
+          "w": 137,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "7",
+          "x": 931,
+          "y": 1410,
+          "w": 5,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Наборы",
+          "x": 956,
+          "y": 1395,
+          "w": 71,
+          "h": 44
+        },
+        {
+          "tag": "A",
+          "class": "department-card department-card--cream",
+          "text": "Сладкое к чаюДесерты и торты",
+          "x": 377,
+          "y": 7383,
+          "w": 168,
+          "h": 221
+        }
+      ],
+      "tinyControls": [],
+      "clipped": [
+        {
+          "tag": "H1",
+          "class": "",
+          "text": "Целый город вкусных пирогов",
+          "x": 44,
+          "y": 200,
+          "w": 287,
+          "h": 73
+        }
+      ],
+      "h1": [
+        {
+          "text": "Целый город вкусных пирогов",
+          "x": 44,
+          "y": 200,
+          "w": 287,
+          "h": 73
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "menu",
+      "path": "/menu/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Идеи ПирогорскаВосемь концептов · 500 г и 1 кг8",
+          "x": 340,
+          "y": 1180,
+          "w": 140,
+          "h": 46
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "Идеи Пирогорска",
+          "x": 354,
+          "y": 1194,
+          "w": 97,
+          "h": 18
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "8",
+          "x": 460,
+          "y": 1197,
+          "w": 6,
+          "h": 12
+        },
+        {
+          "tag": "B",
+          "class": "",
+          "text": "8",
+          "x": 460,
+          "y": 1197,
+          "w": 6,
+          "h": 12
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "К столуНапитки и посуда7",
+          "x": 486,
+          "y": 1180,
+          "w": 84,
+          "h": 46
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "К столу",
+          "x": 500,
+          "y": 1194,
+          "w": 41,
+          "h": 18
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "7",
+          "x": 550,
+          "y": 1197,
+          "w": 6,
+          "h": 12
+        },
+        {
+          "tag": "B",
+          "class": "",
+          "text": "7",
+          "x": 550,
+          "y": 1197,
+          "w": 6,
+          "h": 12
+        },
+        {
+          "tag": "BUTTON",
+          "class": "",
+          "text": "Сибирские 5",
+          "x": 355,
+          "y": 1498,
+          "w": 107,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "5",
+          "x": 440,
+          "y": 1513,
+          "w": 7,
+          "h": 14
+        },
+        {
+          "tag": "BUTTON",
+          "class": "",
+          "text": "Курники 4",
+          "x": 469,
+          "y": 1498,
+          "w": 92,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "4",
+          "x": 538,
+          "y": 1513,
+          "w": 7,
+          "h": 14
+        }
+      ],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Меню пирогов, хлеба и выпечки",
+          "x": 41,
+          "y": 281,
+          "w": 293,
+          "h": 69
+        }
+      ],
+      "compactHero": [
+        {
+          "titleWidth": 293,
+          "titleOverflow": false,
+          "contentWidth": 293
+        }
+      ],
+      "producerLinks": [
+        44,
+        44
+      ],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "delivery",
+      "path": "/delivery/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "К вашему столу.В вашем городе.",
+          "x": 41,
+          "y": 285,
+          "w": 293,
+          "h": 69
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/delivery/"
+      ]
+    },
+    {
+      "id": "city",
+      "path": "/zelenogradsk/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги в Зеленоградске",
+          "x": 41,
+          "y": 297,
+          "w": 293,
+          "h": 69
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": [
+        "/delivery/"
+      ]
+    },
+    {
+      "id": "blog",
+      "path": "/blog/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "К общему столу",
+          "x": 41,
+          "y": 281,
+          "w": 293,
+          "h": 34
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "article",
+      "path": "/journal/dostavka-edy-v-zelenogradske/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "TABLE",
+          "class": "",
+          "text": "Примеры корзин на четверых без напитков и стоимости получения. Это раз",
+          "x": 38,
+          "y": 8980,
+          "w": 650,
+          "h": 1205
+        },
+        {
+          "tag": "CAPTION",
+          "class": "",
+          "text": "Примеры корзин на четверых без напитков и стоимости получения. Это раз",
+          "x": 38,
+          "y": 8980,
+          "w": 650,
+          "h": 52
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Место и адресФормат / с собойЧетыре блюдаЧто учесть",
+          "x": 38,
+          "y": 9033,
+          "w": 650,
+          "h": 51
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Место и адресФормат / с собойЧетыре блюдаЧто учесть",
+          "x": 38,
+          "y": 9033,
+          "w": 650,
+          "h": 51
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "text": "Четыре блюда",
+          "x": 348,
+          "y": 9033,
+          "w": 123,
+          "h": 51
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "text": "Что учесть",
+          "x": 471,
+          "y": 9033,
+          "w": 217,
+          "h": 51
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Балт ↗Курортный проспект, 16кафеСамовывоз уточнитьНе рассчитаноРегиона",
+          "x": 38,
+          "y": 9084,
+          "w": 650,
+          "h": 1004
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Балт ↗Курортный проспект, 16кафеСамовывоз уточнитьНе рассчитаноРегиона",
+          "x": 38,
+          "y": 9084,
+          "w": 650,
+          "h": 78
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "Не рассчитано",
+          "x": 348,
+          "y": 9084,
+          "w": 123,
+          "h": 78
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "Не рассчитано",
+          "x": 364,
+          "y": 9103,
+          "w": 82,
+          "h": 14
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "Региональная кухняВремя ожидания не опубликовано",
+          "x": 471,
+          "y": 9084,
+          "w": 217,
+          "h": 78
+        },
+        {
+          "tag": "SMALL",
+          "class": "",
+          "text": "Время ожидания не опубликовано",
+          "x": 487,
+          "y": 9128,
+          "w": 185,
+          "h": 17
+        }
+      ],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 65,
+          "y": 11760,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 186,
+          "y": 11760,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 64,
+          "y": 11837,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 194,
+          "y": 11837,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 64,
+          "y": 11881,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 64,
+          "y": 11925,
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Доставка еды в Зеленоградске: ужин в апартаментах",
+          "x": 20,
+          "y": 363,
+          "w": 335,
+          "h": 110
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "product",
+      "path": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "recommendation-card",
+          "text": "Осетинский пирог с картофелем5 шт. · 1,05 кг1 070 ₽ предварительно↗",
+          "x": 304,
+          "y": 4656,
+          "w": 270,
+          "h": 434
+        },
+        {
+          "tag": "DIV",
+          "class": "recommendation-art",
+          "text": "",
+          "x": 321,
+          "y": 4673,
+          "w": 236,
+          "h": 236
+        },
+        {
+          "tag": "DIV",
+          "class": "supplier-artwork product-artwork",
+          "text": "",
+          "x": 321,
+          "y": 4673,
+          "w": 236,
+          "h": 236
+        },
+        {
+          "tag": "PICTURE",
+          "class": "product-backdrop",
+          "text": "",
+          "x": 321,
+          "y": 4673,
+          "w": 236,
+          "h": 236
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "x": 321,
+          "y": 4673,
+          "w": 236,
+          "h": 236
+        },
+        {
+          "tag": "PICTURE",
+          "class": "product-artwork-subject",
+          "text": "",
+          "x": 330,
+          "y": 4682,
+          "w": 217,
+          "h": 217
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "x": 330,
+          "y": 4682,
+          "w": 217,
+          "h": 217
+        },
+        {
+          "tag": "H3",
+          "class": "",
+          "text": "Осетинский пирог с картофелем",
+          "x": 321,
+          "y": 4923,
+          "w": 236,
+          "h": 58
+        },
+        {
+          "tag": "P",
+          "class": "",
+          "text": "5 шт. · 1,05 кг",
+          "x": 321,
+          "y": 4990,
+          "w": 236,
+          "h": 19
+        },
+        {
+          "tag": "DIV",
+          "class": "recommendation-bottom",
+          "text": "1 070 ₽ предварительно↗",
+          "x": 321,
+          "y": 5027,
+          "w": 236,
+          "h": 45
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "1 070 ₽ предварительно",
+          "x": 321,
+          "y": 5027,
+          "w": 76,
+          "h": 45
+        },
+        {
+          "tag": "SMALL",
+          "class": "",
+          "text": "предварительно",
+          "x": 321,
+          "y": 5057,
+          "w": 76,
+          "h": 15
+        }
+      ],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 50,
+          "y": 863,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 146,
+          "y": 863,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 243,
+          "y": 863,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "каталогу производителя ↗",
+          "x": 37,
+          "y": 4461,
+          "w": 138,
+          "h": 12
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Осетинский пирог с курицей и сыром",
+          "x": 20,
+          "y": 276,
+          "w": 335,
+          "h": 70
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "bundles",
+      "path": "/nabory/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Наборы пирогов",
+          "x": 20,
+          "y": 263,
+          "w": 335,
+          "h": 40
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/nabory/"
+      ]
+    },
+    {
+      "id": "bundle",
+      "path": "/nabor/piknik-u-morya/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги для пикника у моря",
+          "x": 20,
+          "y": 278,
+          "w": 335,
+          "h": 73
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": [
+        "/nabory/"
+      ]
+    },
+    {
+      "id": "occasion",
+      "path": "/povody/zelenogradsk/semeynyy-uzhin/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "TABLE",
+          "class": "ed-reading-table",
+          "text": "350 г на человека как редактируемый пример, без напитков и гарнировЗа ",
+          "x": 21,
+          "y": 1869,
+          "w": 440,
+          "h": 253
+        },
+        {
+          "tag": "CAPTION",
+          "class": "",
+          "text": "350 г на человека как редактируемый пример, без напитков и гарниров",
+          "x": 21,
+          "y": 1869,
+          "w": 440,
+          "h": 70
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "За столомРасчётПосле округления",
+          "x": 21,
+          "y": 1939,
+          "w": 440,
+          "h": 45
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "За столомРасчётПосле округления",
+          "x": 21,
+          "y": 1939,
+          "w": 440,
+          "h": 45
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "text": "После округления",
+          "x": 257,
+          "y": 1939,
+          "w": 204,
+          "h": 45
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "4 человека1 400 г1,5 кг6 человек2 100 г2,5 кг8 человек2 800 г3 кг",
+          "x": 21,
+          "y": 1984,
+          "w": 440,
+          "h": 137
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "4 человека1 400 г1,5 кг",
+          "x": 21,
+          "y": 1984,
+          "w": 440,
+          "h": 46
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "1,5 кг",
+          "x": 257,
+          "y": 1984,
+          "w": 204,
+          "h": 46
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "6 человек2 100 г2,5 кг",
+          "x": 21,
+          "y": 2030,
+          "w": 440,
+          "h": 46
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "2,5 кг",
+          "x": 257,
+          "y": 2030,
+          "w": 204,
+          "h": 46
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "8 человек2 800 г3 кг",
+          "x": 21,
+          "y": 2076,
+          "w": 440,
+          "h": 46
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "text": "3 кг",
+          "x": 257,
+          "y": 2076,
+          "w": 204,
+          "h": 46
+        }
+      ],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 48,
+          "y": 1099,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 169,
+          "y": 1099,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 47,
+          "y": 1177,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 177,
+          "y": 1177,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 47,
+          "y": 1221,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 197,
+          "y": 1221,
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги на семейный ужин и к приходу гостей в Зеленоградске",
+          "x": 20,
+          "y": 278,
+          "w": 335,
+          "h": 147
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "planner",
+      "path": "/podbor/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 895,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 210,
+          "y": 895,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 953,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 210,
+          "y": 953,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1012,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 210,
+          "y": 1012,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 39,
+          "y": 1072,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 210,
+          "y": 1072,
+          "w": 18,
+          "h": 18
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Хватит на всех.А сколько это?",
+          "x": 20,
+          "y": 270,
+          "w": 335,
+          "h": 97
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/podbor/"
+      ]
+    },
+    {
+      "id": "about",
+      "path": "/about/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги с балтийским характером",
+          "x": 41,
+          "y": 281,
+          "w": 293,
+          "h": 69
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": [
+        "/about/"
+      ]
+    },
+    {
+      "id": "original",
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "recommendation-card",
+          "text": "ОвощнойПирог с капустой500 г390 ₽ предварительно↗",
+          "x": 304,
+          "y": 5965,
+          "w": 270,
+          "h": 405
+        },
+        {
+          "tag": "DIV",
+          "class": "recommendation-art",
+          "text": "Овощной",
+          "x": 321,
+          "y": 5982,
+          "w": 236,
+          "h": 236
+        },
+        {
+          "tag": "DIV",
+          "class": "product-visual product-visual--pie",
+          "text": "Овощной",
+          "x": 321,
+          "y": 5982,
+          "w": 236,
+          "h": 236
+        },
+        {
+          "tag": "IMG",
+          "class": "product-visual-background",
+          "text": "",
+          "x": 321,
+          "y": 5982,
+          "w": 236,
+          "h": 236
+        },
+        {
+          "tag": "IMG",
+          "class": "product-visual-subject",
+          "text": "",
+          "x": 335,
+          "y": 5996,
+          "w": 208,
+          "h": 208
+        },
+        {
+          "tag": "H3",
+          "class": "",
+          "text": "Пирог с капустой",
+          "x": 321,
+          "y": 6232,
+          "w": 236,
+          "h": 29
+        },
+        {
+          "tag": "P",
+          "class": "",
+          "text": "500 г",
+          "x": 321,
+          "y": 6270,
+          "w": 236,
+          "h": 19
+        },
+        {
+          "tag": "DIV",
+          "class": "recommendation-bottom",
+          "text": "390 ₽ предварительно↗",
+          "x": 321,
+          "y": 6307,
+          "w": 236,
+          "h": 45
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "390 ₽ предварительно",
+          "x": 321,
+          "y": 6307,
+          "w": 76,
+          "h": 45
+        },
+        {
+          "tag": "SMALL",
+          "class": "",
+          "text": "предварительно",
+          "x": 321,
+          "y": 6337,
+          "w": 76,
+          "h": 15
+        },
+        {
+          "tag": "SPAN",
+          "class": "recommendation-arrow",
+          "text": "↗",
+          "x": 521,
+          "y": 6312,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 50,
+          "y": 828,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 195,
+          "y": 828,
+          "w": 1,
+          "h": 1
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Мясной пирог",
+          "x": 20,
+          "y": 276,
+          "w": 335,
+          "h": 35
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "picnic",
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 46,
+          "y": 859,
+          "w": 1,
+          "h": 1
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Балтийский пикник-сет",
+          "x": 20,
+          "y": 276,
+          "w": 335,
+          "h": 70
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "occasions",
+      "path": "/povody/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "У каждого стола свой повод",
+          "x": 41,
+          "y": 281,
+          "w": 293,
+          "h": 69
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": []
+    },
+    {
+      "id": "ossetian",
+      "path": "/osetinskie-pirogi/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Осетинские пироги в Калининградской области",
+          "x": 39,
+          "y": 332,
+          "w": 297,
+          "h": 103
+        }
+      ],
+      "compactHero": [
+        {
+          "titleWidth": 297,
+          "titleOverflow": false,
+          "contentWidth": 297
+        }
+      ],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        10
+      ],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "partners",
+      "path": "/partners/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Хороший стол начинается со знакомства",
+          "x": 41,
+          "y": 281,
+          "w": 293,
+          "h": 103
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 285,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 333,
+          "contentWidth": 285,
+          "buttonWidth": 285
+        }
+      ],
+      "activeSections": []
+    },
+    {
+      "id": "privacy",
+      "path": "/privacy/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Данные анонимных заявок",
+          "x": 20,
+          "y": 286,
+          "w": 335,
+          "h": 76
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "terms",
+      "path": "/terms/",
+      "width": 390,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пока готовим запуск",
+          "x": 20,
+          "y": 286,
+          "w": 335,
+          "h": 38
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "home",
+      "path": "/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Для выпечки23",
+          "x": 707,
+          "y": 1236,
+          "w": 132,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "23",
+          "x": 809,
+          "y": 1250,
+          "w": 12,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Тесто6",
+          "x": 847,
+          "y": 1236,
+          "w": 82,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "6",
+          "x": 905,
+          "y": 1250,
+          "w": 6,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Напитки и посуда7",
+          "x": 937,
+          "y": 1236,
+          "w": 154,
+          "h": 44
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "7",
+          "x": 1068,
+          "y": 1250,
+          "w": 5,
+          "h": 15
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "Наборы",
+          "x": 1099,
+          "y": 1236,
+          "w": 83,
+          "h": 44
+        }
+      ],
+      "tinyControls": [],
+      "clipped": [
+        {
+          "tag": "H1",
+          "class": "",
+          "text": "Целый город вкусных пирогов",
+          "x": 81,
+          "y": 251,
+          "w": 296,
+          "h": 140
+        }
+      ],
+      "h1": [
+        {
+          "text": "Целый город вкусных пирогов",
+          "x": 81,
+          "y": 251,
+          "w": 296,
+          "h": 140
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "menu",
+      "path": "/menu/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Меню пирогов, хлеба и выпечки",
+          "x": 64,
+          "y": 335,
+          "w": 359,
+          "h": 88
+        }
+      ],
+      "compactHero": [
+        {
+          "titleWidth": 359,
+          "titleOverflow": false,
+          "contentWidth": 626
+        }
+      ],
+      "producerLinks": [
+        44,
+        44
+      ],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 263.828125
+        }
+      ],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "delivery",
+      "path": "/delivery/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "К вашему столу.В вашем городе.",
+          "x": 64,
+          "y": 329,
+          "w": 359,
+          "h": 88
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/delivery/"
+      ]
+    },
+    {
+      "id": "city",
+      "path": "/zelenogradsk/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги в Зеленоградске",
+          "x": 64,
+          "y": 335,
+          "w": 359,
+          "h": 88
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 227.515625
+        }
+      ],
+      "activeSections": [
+        "/delivery/"
+      ]
+    },
+    {
+      "id": "blog",
+      "path": "/blog/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "К общему столу",
+          "x": 64,
+          "y": 335,
+          "w": 359,
+          "h": 44
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 190.28125
+        }
+      ],
+      "activeSections": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "article",
+      "path": "/journal/dostavka-edy-v-zelenogradske/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 94,
+          "y": 9733,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 215,
+          "y": 9733,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 93,
+          "y": 9811,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 223,
+          "y": 9811,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 93,
+          "y": 9855,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 243,
+          "y": 9855,
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Доставка еды в Зеленоградске: ужин в апартаментах",
+          "x": 35,
+          "y": 424,
+          "w": 679,
+          "h": 75
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 202.96875
+        }
+      ],
+      "activeSections": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "product",
+      "path": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 425,
+          "y": 568,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 516,
+          "y": 568,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 607,
+          "y": 568,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "каталогу производителя ↗",
+          "x": 52,
+          "y": 3370,
+          "w": 138,
+          "h": 12
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Осетинский пирог с курицей и сыром",
+          "x": 391,
+          "y": 312,
+          "w": 328,
+          "h": 79
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "bundles",
+      "path": "/nabory/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Наборы пирогов",
+          "x": 35,
+          "y": 321,
+          "w": 684,
+          "h": 42
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/nabory/"
+      ]
+    },
+    {
+      "id": "bundle",
+      "path": "/nabor/piknik-u-morya/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги для пикника у моря",
+          "x": 35,
+          "y": 319,
+          "w": 310,
+          "h": 75
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 256.8125
+        }
+      ],
+      "activeSections": [
+        "/nabory/"
+      ]
+    },
+    {
+      "id": "occasion",
+      "path": "/povody/zelenogradsk/semeynyy-uzhin/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 71,
+          "y": 1026,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 192,
+          "y": 1026,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 70,
+          "y": 1104,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 200,
+          "y": 1104,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 70,
+          "y": 1148,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 220,
+          "y": 1148,
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги на семейный ужин и к приходу гостей в Зеленоградске",
+          "x": 35,
+          "y": 343,
+          "w": 467,
+          "h": 112
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "planner",
+      "path": "/podbor/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 54,
+          "y": 1022,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 221,
+          "y": 1022,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 54,
+          "y": 1080,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 221,
+          "y": 1080,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 54,
+          "y": 1139,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 221,
+          "y": 1139,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 54,
+          "y": 1199,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 221,
+          "y": 1199,
+          "w": 18,
+          "h": 18
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Хватит на всех.А сколько это?",
+          "x": 35,
+          "y": 326,
+          "w": 684,
+          "h": 86
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/podbor/"
+      ]
+    },
+    {
+      "id": "about",
+      "path": "/about/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги с балтийским характером",
+          "x": 64,
+          "y": 335,
+          "w": 359,
+          "h": 132
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 257.546875
+        }
+      ],
+      "activeSections": [
+        "/about/"
+      ]
+    },
+    {
+      "id": "original",
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 425,
+          "y": 528,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 561,
+          "y": 528,
+          "w": 1,
+          "h": 1
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Мясной пирог",
+          "x": 391,
+          "y": 312,
+          "w": 328,
+          "h": 40
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 253.234375
+        }
+      ],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "picnic",
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 421,
+          "y": 564,
+          "w": 1,
+          "h": 1
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Балтийский пикник-сет",
+          "x": 391,
+          "y": 312,
+          "w": 328,
+          "h": 79
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "occasions",
+      "path": "/povody/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "У каждого стола свой повод",
+          "x": 64,
+          "y": 335,
+          "w": 359,
+          "h": 88
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 175.90625
+        }
+      ],
+      "activeSections": []
+    },
+    {
+      "id": "ossetian",
+      "path": "/osetinskie-pirogi/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Осетинские пироги в Калининградской области",
+          "x": 68,
+          "y": 327,
+          "w": 426,
+          "h": 132
+        }
+      ],
+      "compactHero": [
+        {
+          "titleWidth": 426,
+          "titleOverflow": false,
+          "contentWidth": 618
+        }
+      ],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "partners",
+      "path": "/partners/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Хороший стол начинается со знакомства",
+          "x": 64,
+          "y": 335,
+          "w": 359,
+          "h": 132
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 420,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 682,
+          "contentWidth": 610,
+          "buttonWidth": 196.25
+        }
+      ],
+      "activeSections": []
+    },
+    {
+      "id": "privacy",
+      "path": "/privacy/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Данные анонимных заявок",
+          "x": 35,
+          "y": 330,
+          "w": 684,
+          "h": 39
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "terms",
+      "path": "/terms/",
+      "width": 768,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пока готовим запуск",
+          "x": 35,
+          "y": 330,
+          "w": 684,
+          "h": 39
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "home",
+      "path": "/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [
+        {
+          "tag": "H1",
+          "class": "",
+          "text": "Целый город вкусных пирогов",
+          "x": 122,
+          "y": 302,
+          "w": 355,
+          "h": 163
+        },
+        {
+          "tag": "H2",
+          "class": "",
+          "text": "Меню по разделам",
+          "x": 58,
+          "y": 3995,
+          "w": 334,
+          "h": 46
+        },
+        {
+          "tag": "H2",
+          "class": "",
+          "text": "К столу — всё вместе",
+          "x": 58,
+          "y": 4513,
+          "w": 379,
+          "h": 46
+        },
+        {
+          "tag": "H2",
+          "class": "",
+          "text": "Пироги в балтийских городах",
+          "x": 58,
+          "y": 6281,
+          "w": 540,
+          "h": 46
+        },
+        {
+          "tag": "H2",
+          "class": "",
+          "text": "Перед первым пирогом",
+          "x": 58,
+          "y": 7335,
+          "w": 472,
+          "h": 46
+        }
+      ],
+      "h1": [
+        {
+          "text": "Целый город вкусных пирогов",
+          "x": 122,
+          "y": 302,
+          "w": 355,
+          "h": 163
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "menu",
+      "path": "/menu/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Меню пирогов, хлеба и выпечки",
+          "x": 101,
+          "y": 369,
+          "w": 612,
+          "h": 115
+        }
+      ],
+      "compactHero": [
+        {
+          "titleWidth": 612,
+          "titleOverflow": false,
+          "contentWidth": 1064
+        }
+      ],
+      "producerLinks": [
+        44,
+        44
+      ],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 263.828125
+        }
+      ],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "delivery",
+      "path": "/delivery/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "К вашему столу.В вашем городе.",
+          "x": 101,
+          "y": 381,
+          "w": 612,
+          "h": 133
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/delivery/"
+      ]
+    },
+    {
+      "id": "city",
+      "path": "/zelenogradsk/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги в Зеленоградске",
+          "x": 101,
+          "y": 395,
+          "w": 612,
+          "h": 83
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 227.515625
+        }
+      ],
+      "activeSections": [
+        "/delivery/"
+      ]
+    },
+    {
+      "id": "blog",
+      "path": "/blog/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "К общему столу",
+          "x": 101,
+          "y": 369,
+          "w": 612,
+          "h": 58
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 190.28125
+        }
+      ],
+      "activeSections": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "article",
+      "path": "/journal/dostavka-edy-v-zelenogradske/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 518,
+          "y": 9662,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 639,
+          "y": 9662,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 517,
+          "y": 9739,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 648,
+          "y": 9739,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 517,
+          "y": 9783,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 667,
+          "y": 9783,
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Доставка еды в Зеленоградске: ужин в апартаментах",
+          "x": 58,
+          "y": 450,
+          "w": 850,
+          "h": 121
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 202.96875
+        }
+      ],
+      "activeSections": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "product",
+      "path": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 686,
+          "y": 599,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 853,
+          "y": 599,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 1020,
+          "y": 599,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "A",
+          "class": "",
+          "text": "каталогу производителя ↗",
+          "x": 75,
+          "y": 3059,
+          "w": 138,
+          "h": 12
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Осетинский пирог с курицей и сыром",
+          "x": 652,
+          "y": 338,
+          "w": 555,
+          "h": 110
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "bundles",
+      "path": "/nabory/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Наборы пирогов",
+          "x": 58,
+          "y": 348,
+          "w": 760,
+          "h": 68
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/nabory/"
+      ]
+    },
+    {
+      "id": "bundle",
+      "path": "/nabor/piknik-u-morya/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги для пикника у моря",
+          "x": 58,
+          "y": 345,
+          "w": 534,
+          "h": 121
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 256.8125
+        }
+      ],
+      "activeSections": [
+        "/nabory/"
+      ]
+    },
+    {
+      "id": "occasion",
+      "path": "/povody/zelenogradsk/semeynyy-uzhin/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 106,
+          "y": 1120,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 226,
+          "y": 1120,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 105,
+          "y": 1197,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 235,
+          "y": 1197,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 368,
+          "y": 1197,
+          "w": 13,
+          "h": 13
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 518,
+          "y": 1197,
+          "w": 13,
+          "h": 13
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги на семейный ужин и к приходу гостей в Зеленоградске",
+          "x": 58,
+          "y": 369,
+          "w": 756,
+          "h": 181
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "planner",
+      "path": "/podbor/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 77,
+          "y": 945,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 355,
+          "y": 945,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 77,
+          "y": 1003,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 355,
+          "y": 1003,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 77,
+          "y": 1061,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 355,
+          "y": 1061,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 77,
+          "y": 1119,
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 355,
+          "y": 1119,
+          "w": 18,
+          "h": 18
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Хватит на всех.А сколько это?",
+          "x": 58,
+          "y": 352,
+          "w": 760,
+          "h": 141
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": [
+        "/podbor/"
+      ]
+    },
+    {
+      "id": "about",
+      "path": "/about/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пироги с балтийским характером",
+          "x": 101,
+          "y": 369,
+          "w": 612,
+          "h": 115
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 257.546875
+        }
+      ],
+      "activeSections": [
+        "/about/"
+      ]
+    },
+    {
+      "id": "original",
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 686,
+          "y": 544,
+          "w": 1,
+          "h": 1
+        },
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 937,
+          "y": 544,
+          "w": 1,
+          "h": 1
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Мясной пирог",
+          "x": 652,
+          "y": 338,
+          "w": 555,
+          "h": 55
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 253.234375
+        }
+      ],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "picnic",
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "text": "",
+          "x": 682,
+          "y": 540,
+          "w": 1,
+          "h": 1
+        }
+      ],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Балтийский пикник-сет",
+          "x": 652,
+          "y": 338,
+          "w": 555,
+          "h": 55
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [],
+      "activeSections": [
+        "/menu/"
+      ]
+    },
+    {
+      "id": "occasions",
+      "path": "/povody/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "У каждого стола свой повод",
+          "x": 101,
+          "y": 393,
+          "w": 612,
+          "h": 139
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 175.90625
+        }
+      ],
+      "activeSections": []
+    },
+    {
+      "id": "ossetian",
+      "path": "/osetinskie-pirogi/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Осетинские пироги в Калининградской области",
+          "x": 91,
+          "y": 353,
+          "w": 612,
+          "h": 115
+        }
+      ],
+      "compactHero": [
+        {
+          "titleWidth": 612,
+          "titleOverflow": false,
+          "contentWidth": 1084
+        }
+      ],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [
+        0
+      ],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "partners",
+      "path": "/partners/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Хороший стол начинается со знакомства",
+          "x": 101,
+          "y": 369,
+          "w": 612,
+          "h": 115
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [
+        {
+          "headingWidth": 886,
+          "headingOverflow": false,
+          "bodyFont": 14,
+          "cardWidth": 1148,
+          "contentWidth": 1076,
+          "buttonWidth": 196.25
+        }
+      ],
+      "activeSections": []
+    },
+    {
+      "id": "privacy",
+      "path": "/privacy/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Данные анонимных заявок",
+          "x": 252,
+          "y": 356,
+          "w": 760,
+          "h": 63
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "id": "terms",
+      "path": "/terms/",
+      "width": 1280,
+      "overflow": false,
+      "outliers": [],
+      "tinyControls": [],
+      "clipped": [],
+      "h1": [
+        {
+          "text": "Пока готовим запуск",
+          "x": 252,
+          "y": 356,
+          "w": 760,
+          "h": 63
+        }
+      ],
+      "compactHero": [],
+      "producerLinks": [],
+      "statusHeight": 44,
+      "breadcrumbMargins": [],
+      "invitations": [],
+      "activeSections": []
+    },
+    {
+      "dialog": "#site-menu-dialog",
+      "width": 320,
+      "height": 500,
+      "close": {
+        "top": 40,
+        "bottom": 84,
+        "dialogTop": 16,
+        "visible": true,
+        "clickable": true
+      }
+    },
+    {
+      "dialog": "#city-dialog",
+      "width": 320,
+      "height": 500,
+      "close": {
+        "top": 57.453125,
+        "bottom": 101.453125,
+        "dialogTop": 33.453125,
+        "visible": true,
+        "clickable": true
+      }
+    },
+    {
+      "dialog": "#site-menu-dialog",
+      "width": 390,
+      "height": 500,
+      "close": {
+        "top": 40,
+        "bottom": 84,
+        "dialogTop": 16,
+        "visible": true,
+        "clickable": true
+      }
+    },
+    {
+      "dialog": "#city-dialog",
+      "width": 390,
+      "height": 500,
+      "close": {
+        "top": 57.453125,
+        "bottom": 101.453125,
+        "dialogTop": 33.453125,
+        "visible": true,
+        "clickable": true
+      }
+    },
+    {
+      "dialog": "#site-menu-dialog",
+      "width": 768,
+      "height": 500,
+      "close": {
+        "top": 48,
+        "bottom": 92,
+        "dialogTop": 16,
+        "visible": true,
+        "clickable": true
+      }
+    },
+    {
+      "dialog": "#city-dialog",
+      "width": 768,
+      "height": 500,
+      "close": {
+        "top": 51.15625,
+        "bottom": 95.15625,
+        "dialogTop": 19.15625,
+        "visible": true,
+        "clickable": true
+      }
+    },
+    {
+      "dialog": "#site-menu-dialog",
+      "width": 1280,
+      "height": 500,
+      "close": {
+        "top": 48,
+        "bottom": 92,
+        "dialogTop": 16,
+        "visible": true,
+        "clickable": true
+      }
+    },
+    {
+      "dialog": "#city-dialog",
+      "width": 1280,
+      "height": 500,
+      "close": {
+        "top": 51.15625,
+        "bottom": 95.15625,
+        "dialogTop": 19.15625,
+        "visible": true,
+        "clickable": true
+      }
+    }
+  ],
+  "errors": [],
+  "quantityPath": "PASS: all three menu renderers, variants, typed quantity, limits, selection/reload"
+}

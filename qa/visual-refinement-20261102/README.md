@@ -49,4 +49,35 @@ LCP 1.756→1.671 s / 0.479→0.462 s, TBT 0, CLS 0 в обоих режимах
 [PSI](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-osetinskie-pirogi/ynmcktnf7x):
 mobile/desktop 100/100, LCP 1.091/0.308 s, CLS 0/0.
 Единичные лабораторные замеры, CrUX нет.
-CI и production-приёмка ожидаются; результаты будут дописаны после публикации.
+
+Runtime `e3b39e5be98f99deaad546db891217121731c06f` опубликован.
+[CI 41443532251 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41443532251):
+общая регрессия, статьи, наборы, пикник-сет, каталог и иллюстрации PASS.
+Свежий [public PSI после](https://pagespeed.web.dev/analysis/https-pirogorsk-ru-osetinskie-pirogi/5x8la392u2):
+все четыре оценки 100 на mobile и desktop; LCP 1.086/0.292 s,
+TBT 3/7 ms, CLS 0/0. [Точные показатели](psi-after.json).
+Это единичные лабораторные замеры раздела `/osetinskie-pirogi/`, не всей
+главной и не полевые показатели; CrUX по странице пока нет.
+
+## Production-приёмка
+
+- [84 состояния](production-audit.json): 19 шаблонов на 320/390/768/1280 px
+  и короткие диалоги. Overflow, ошибки JS и собственных ассетов отсутствуют;
+  меню/подборка, Escape/фокус и quantity-путь PASS.
+- [Секции](production-sections.json): 7 секций на 390/768/1280 px;
+  высота панели и положение CTA при qty1→99 не меняются.
+- [Сценарии](production-targeted.json): все 154 SKU на главной/в меню,
+  форматы/суммы/количество/добавление/reload, морс/сладкий/посуда/пикник,
+  storage-error, клавиатура и no-JS на четырёх ширинах PASS.
+- [SHA256](production-assets.json): 12 страниц, 33 inline CSS/JS блока,
+  13 внешних ассетов совпали с принятой локальной сборкой.
+  `node scripts/verify-release.mjs published https://pirogorsk.ru/` PASS.
+
+Просмотрены production-снимки телефона, планшета и desktop:
+[покупка · телефон](production-section-options-390.png),
+[покупка · desktop](production-section-options-1280.png),
+[дополнения · планшет](production-section-addons-768.png),
+[дополнения · desktop](production-section-addons-1280.png),
+[FAQ · планшет](production-section-faq-768.png),
+[длинный заголовок · телефон](production-ossetian-390.png).
+Лента, ассортимент, цены и существующие пути сохранены. UX-17 закрыт.

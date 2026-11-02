@@ -51,6 +51,8 @@ try {
    const metrics=()=>el.evaluate(e=>{const q=e.querySelector('[data-option-quantity]'),b=e.querySelector('.product-options-bottom'),r=e.getBoundingClientRect(),a=e.querySelector('[data-option-link]').getBoundingClientRect();return {value:q.value,height:r.height,buttonY:a.y-r.y};});
    await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));const a=await metrics();await el.$eval('[data-option-quantity]',e=>{e.value='99';e.dispatchEvent(new Event('input',{bubbles:true}));});await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));const b=await metrics();report.views.push({id,width,before:a,quantity99:b});console.log(JSON.stringify({id,width,before:a,quantity99:b}));if(stage!=='before'){assert(Math.abs(a.height-b.height)<=1&&Math.abs(a.buttonY-b.buttonY)<=1,`Stable purchase geometry at ${width}`);}
   }
+  if(id==='options') await el.$eval('[data-option-quantity]',e=>{e.value='1';e.dispatchEvent(new Event('input',{bubbles:true}));});
+  await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
   await el.evaluate(e=>e.scrollIntoView({block:'start',behavior:'instant'}));await page.screenshot({path:`${output}/${stage}-section-${id}-${width}.png`});
  }
  assert.deepEqual(report.errors,[]);
