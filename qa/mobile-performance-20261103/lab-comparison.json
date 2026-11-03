@@ -1,0 +1,524 @@
+{
+  "before": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "url": "https://pirogorsk.ru/",
+      "timestamp": "2026-11-03T08:24:56.702Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1651.004,
+          "display": "1.7 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2440.004,
+          "display": "2.4 s"
+        },
+        "total-blocking-time": {
+          "value": 146.5,
+          "display": "150 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.013099247190065683,
+          "display": "0.013"
+        },
+        "speed-index": {
+          "value": 2873.0039745008607,
+          "display": "2.9 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 1206.938,
+        "resourceLoadDelay": 42.707,
+        "resourceLoadDuration": 315.958,
+        "elementRenderDelay": 39.474
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 2,
+      "url": "https://pirogorsk.ru/",
+      "timestamp": "2026-11-03T08:25:11.957Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1508.2665,
+          "display": "1.5 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2390.0245000000004,
+          "display": "2.4 s"
+        },
+        "total-blocking-time": {
+          "value": 32,
+          "display": "30 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0006303502290486044,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 3608.6768481213085,
+          "display": "3.6 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 1890.229,
+        "resourceLoadDelay": 45.104,
+        "resourceLoadDuration": 145.202,
+        "elementRenderDelay": 55.408
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 3,
+      "url": "https://pirogorsk.ru/",
+      "timestamp": "2026-11-03T08:25:29.007Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1732.7019999999998,
+          "display": "1.7 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2242.3284999999996,
+          "display": "2.2 s"
+        },
+        "total-blocking-time": {
+          "value": 45,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.013099247190065683,
+          "display": "0.013"
+        },
+        "speed-index": {
+          "value": 4643.048916396343,
+          "display": "4.6 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 2473.353,
+        "resourceLoadDelay": 34.792,
+        "resourceLoadDuration": 407.306,
+        "elementRenderDelay": 4.382
+      }
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "https://pirogorsk.ru/",
+      "timestamp": "2026-11-03T08:25:46.684Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 584.2349999999997,
+          "display": "0.6 s"
+        },
+        "largest-contentful-paint": {
+          "value": 784.3514999999994,
+          "display": "0.8 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0010244108805416924,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 2101.2707392437487,
+          "display": "2.1 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 2294.866,
+        "resourceLoadDelay": 28.915,
+        "resourceLoadDuration": 1021.118,
+        "elementRenderDelay": 18.428
+      }
+    }
+  ],
+  "local-before": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-11-03T08:27:38.436Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1518.0680000000002,
+          "display": "1.5 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2718.0679999999993,
+          "display": "2.7 s"
+        },
+        "total-blocking-time": {
+          "value": 2.5,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0009111666374518746,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 1518.0680000000002,
+          "display": "1.5 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 59.87499975585938,
+        "resourceLoadDelay": 9.678000244140625,
+        "resourceLoadDuration": 26.228,
+        "elementRenderDelay": 92.18
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 2,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-11-03T08:27:48.356Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1535.1970000000001,
+          "display": "1.5 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2060.197,
+          "display": "2.1 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0009111666374518746,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 1535.1970000000001,
+          "display": "1.5 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 24.036000244140624,
+        "resourceLoadDelay": 8.114999755859374,
+        "resourceLoadDuration": 5.741,
+        "elementRenderDelay": 75.965
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 3,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-11-03T08:27:58.612Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1520.237,
+          "display": "1.5 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2045.237,
+          "display": "2.0 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0009111666374518746,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 1520.237,
+          "display": "1.5 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 26.016,
+        "resourceLoadDelay": 7.461,
+        "resourceLoadDuration": 6.208,
+        "elementRenderDelay": 62.995
+      }
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-11-03T08:28:08.676Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 372.80899999999997,
+          "display": "0.4 s"
+        },
+        "largest-contentful-paint": {
+          "value": 552.809,
+          "display": "0.6 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.001992752167060678,
+          "display": "0.002"
+        },
+        "speed-index": {
+          "value": 372.80899999999997,
+          "display": "0.4 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 24.983,
+        "resourceLoadDelay": 7.659,
+        "resourceLoadDuration": 9.42,
+        "elementRenderDelay": 80.674
+      }
+    }
+  ],
+  "local-after": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-11-03T08:31:44.663Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1561.1737000000003,
+          "display": "1.6 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2118.1737000000003,
+          "display": "2.1 s"
+        },
+        "total-blocking-time": {
+          "value": 10.91314999999986,
+          "display": "10 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0009111666374518746,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 1561.1737000000003,
+          "display": "1.6 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 27.253,
+        "resourceLoadDelay": 10.827,
+        "resourceLoadDuration": 6.075,
+        "elementRenderDelay": 92.044
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 2,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-11-03T08:31:54.681Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1519.496,
+          "display": "1.5 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2044.496,
+          "display": "2.0 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0009111666374518746,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 1519.496,
+          "display": "1.5 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 25.757,
+        "resourceLoadDelay": 3.864,
+        "resourceLoadDuration": 7.283,
+        "elementRenderDelay": 66.227
+      }
+    },
+    {
+      "mode": "mobile",
+      "run": 3,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-11-03T08:32:04.392Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1535.315,
+          "display": "1.5 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2041.315,
+          "display": "2.0 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0009111666374518746,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 1535.315,
+          "display": "1.5 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 28.029,
+        "resourceLoadDelay": 3.669,
+        "resourceLoadDuration": 7.633,
+        "elementRenderDelay": 73.358
+      }
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "http://127.0.0.1:4322/",
+      "timestamp": "2026-11-03T08:32:14.460Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 376.0094,
+          "display": "0.4 s"
+        },
+        "largest-contentful-paint": {
+          "value": 516.0094,
+          "display": "0.5 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.001992752167060678,
+          "display": "0.002"
+        },
+        "speed-index": {
+          "value": 376.0094,
+          "display": "0.4 s"
+        }
+      },
+      "lcpBreakdown": {
+        "timeToFirstByte": 19.334,
+        "resourceLoadDelay": 2.134,
+        "resourceLoadDuration": 6.58,
+        "elementRenderDelay": 72.653
+      }
+    }
+  ]
+}

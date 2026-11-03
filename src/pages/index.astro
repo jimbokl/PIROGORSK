@@ -18,6 +18,8 @@ import { blogEntries } from '../data/blog';
 import { catalog } from '../data/catalog';
 import { homeCatalogGroups } from '../data/home-catalog';
 import TastingHero from '../components/TastingHero.astro';
+import cityBanner from '../../design/pie-city-site-20261030/banner-city.png';
+import { campaignImage, phoneCampaignSizes, wideCampaignSizes } from '../lib/campaign-images';
 import '../styles/global.css';
 import '../styles/home.css';
 import '../styles/site-ui.css';
@@ -31,13 +33,18 @@ const faqs = [
   ['Нужно оставлять телефон?', 'Нет. Заявка анонимная: мы сохраняем город, выбранные товары, количество, желаемый день и способ получения. Связаться с вами по такой заявке не получится.'],
 ];
 const faqSchema = { '@type': 'FAQPage', mainEntity: faqs.map(([name,text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })) };
+const [phoneBanner, wideBanner] = await Promise.all([
+  campaignImage(cityBanner, true, 'avif'), campaignImage(cityBanner, false, 'avif'),
+]);
 ---
 <!doctype html>
 <html lang="ru">
   <head>
-    <!-- Inline font-face + optional lets the first frame render while the fonts load.
-         Preloading all four subsets delayed the hero's first frame in Chrome 153. -->
+    <!-- Font-face rules are inline. Keep early bandwidth for the responsive hero
+         instead of preloading all four font subsets. -->
     <SeoHead title="Пирогорск — пироги в Зеленоградске, Калининграде и Светлогорске" description="Пироги с балтийским характером: целые и мини-пироги, хлеб, десерты и наборы к общему столу. Посмотрите меню и соберите подборку с расчётом доставки. Готовим запуск." canonicalPath="/" schema={[faqSchema]} preloadFonts={false} />
+    <link rel="preload" as="image" type="image/avif" media="(max-width: 480px)" imagesrcset={phoneBanner.srcSet.attribute} imagesizes={phoneCampaignSizes} fetchpriority="high" />
+    <link rel="preload" as="image" type="image/avif" media="(width > 480px)" imagesrcset={wideBanner.srcSet.attribute} imagesizes={wideCampaignSizes} fetchpriority="high" />
   </head>
   <body class="home-page">
     <a class="skip-link" href="#pirogi">Перейти к пирогам</a>

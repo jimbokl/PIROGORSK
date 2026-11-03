@@ -1,3 +1,13 @@
+## Мобильный PageSpeed · 03.11.2026 · проверено локально
+
+PERF-02: устранены синхронные измерения reveal-анимации, responsive preload
+первого баннера использует те же URL/sizes, что picture. Полный каталог,
+154 SKU, лента, сцены и аналитика сохранены. Local mobile 99/99/99,
+LCP 2,118/2,044/2,041 s; desktop 100 / 0,516 s. check/build/SEO/66 Node,
+каталог на шести ширинах и hero на семи ширинах PASS; no-JS/reduced motion
+PASS; телефон/планшет/desktop просмотрены. Ожидаются CI и public PSI.
+[Протокол](qa/mobile-performance-20261103/README.md).
+
 ## Рисованные подложки дополнений · 03.11.2026 · опубликовано и проверено
 
 UX-21: общий AddOnPattern для четырёх карточек SelectionAddOns в товаре

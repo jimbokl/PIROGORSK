@@ -92,18 +92,20 @@ if (hero) {
 // Reveal the featured row together so the different product kinds never drift apart.
 const cards = document.querySelectorAll<HTMLElement>('.home-featured .product-grid, .occasion-card, .home-journal > header');
 if ('IntersectionObserver' in window && !reducedMotion.matches) {
+  const offscreen = new WeakSet<Element>();
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      if (!entry.isIntersecting) continue;
+      if (!entry.isIntersecting) { offscreen.add(entry.target); continue; }
       observer.unobserve(entry.target);
+      // Initial viewport content stays still. Observer geometry avoids forcing
+      // layout of the complete catalogue while the first banner is painting.
+      if (!offscreen.has(entry.target)) continue;
       animate(entry.target, [{ opacity: .35, transform: 'translateY(26px)' }, { opacity: 1, transform: 'translateY(0)' }], {
         duration: 650, easing: 'cubic-bezier(.16,1,.3,1)',
       });
     }
   }, { threshold: .08 });
-  for (const card of cards) {
-    if (card.getBoundingClientRect().top > window.innerHeight) observer.observe(card);
-  }
+  for (const card of cards) observer.observe(card);
 }
 
 function finishMotion() {
