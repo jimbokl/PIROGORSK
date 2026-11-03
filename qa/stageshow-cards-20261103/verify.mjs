@@ -54,6 +54,7 @@ try{
    for(const a of group)for(const b of group)if(Math.abs(a.top-b.top)<1){assert(Math.abs(a.height-b.height)<1);assert(Math.abs(a.action-b.action)<1,'action baseline aligned');}
   }
   if(path==='/'||path==='/menu/'){
+   assert.equal(await p.$$eval('[data-product], [data-menu-product], [data-supplier-id]',es=>new Set(es.map(e=>e.dataset.product||e.dataset.feedId||e.dataset.supplierId)).size),154,'full product assortment');
    const links=metrics.cards.filter(c=>c.compact);assert.equal(links.length,3);assert(links.every(e=>e.href.endsWith('?pg_channel=scenario')));
    await scroll('.scenario-entries');
    if(width<600){

@@ -1,11 +1,13 @@
-## Карточки переходов со stageshow · 03.11.2026 · локальная приёмка
+## Карточки переходов со stageshow · 03.11.2026 · опубликовано и проверено
 
 UX-20: общий SceneCard для сценариев главной/меню и EditorialLinks.
-Крупные сцены, короткие подписи, полные заголовки, единые стрелки;
-мобильный ряд листается. 943 ссылки на 247 страницах сохранены,
-24 адаптивных вида, клавиатура/no-JS/hover/reduced motion PASS.
-check/build/66 Node/SEO/artwork и каталог 154 SKU PASS; browser QA PASS,
-включая исправленный фокус горизонтального ряда. Следом CI и production. [Протокол](qa/stageshow-cards-20261103/README.md).
+Крупные сцены, полные заголовки, единые стрелки; мобильный ряд листается.
+943 назначения на 247 страницах сохранены; production: 24 вида на
+320/390/768/1280 px, 154 SKU, клавиатура/no-JS/hover/reduced motion PASS.
+check/build/66 Node/SEO/artwork/полный browser и каталог PASS.
+Runtime eb09e16, [CI SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41592445040).
+Release PASS; 6 публичных страниц, 20 inline-блоков и 11 внешних ресурсов
+совпали с build по SHA256. [Протокол](qa/stageshow-cards-20261103/README.md).
 
 ## Компактные страницы товаров · 02–03.11.2026 · опубликовано и проверено
 

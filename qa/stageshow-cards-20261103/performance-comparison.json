@@ -1,0 +1,101 @@
+{
+  "note": "Single Lighthouse lab sample per mode before and after publication; not CrUX or proof of a causal speed improvement.",
+  "beforeRuntime": "e4eb0169ae9be2c1f728fcab868c024d84f28ff9",
+  "afterRuntime": "eb09e16086682806525ee4734afa998936d72c50",
+  "before": [
+    {
+      "mode": "mobile",
+      "timestamp": "2026-11-03T06:57:47.710Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2117.6549999999997,
+      "cls": 0.0006303502290486044,
+      "tbtMs": 66.49999999999977
+    },
+    {
+      "mode": "desktop",
+      "timestamp": "2026-11-03T06:58:02.855Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 729.6659999999997,
+      "cls": 0.0010244108805416924,
+      "tbtMs": 0
+    }
+  ],
+  "after": [
+    {
+      "mode": "mobile",
+      "timestamp": "2026-11-03T07:27:34.884Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1925.2365,
+      "cls": 0.014099096512547923,
+      "tbtMs": 34.5
+    },
+    {
+      "mode": "desktop",
+      "timestamp": "2026-11-03T07:27:48.548Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 709.2155000000002,
+      "cls": 0.011393182952456001,
+      "tbtMs": 0
+    }
+  ],
+  "beforeMobileLayoutShifts": [
+    {
+      "selector": "main#top > section.tasting-hero > div.tasting-copy > h1#hero-heading",
+      "score": 0.0004038707896136921,
+      "causes": [
+        "Media element lacking an explicit size",
+        "Web font loaded"
+      ]
+    },
+    {
+      "selector": "main#top > section#pirogi > nav.catalog-service-facts > span",
+      "score": 0.0002264794394349123,
+      "causes": [
+        "Media element lacking an explicit size",
+        "Web font loaded"
+      ]
+    }
+  ],
+  "afterMobileLayoutShifts": [
+    {
+      "selector": "main#top > section.tasting-hero > div.tasting-copy > p.tasting-description",
+      "score": 0.009705892145285062,
+      "causes": [
+        "Media element lacking an explicit size",
+        "Web font loaded",
+        "Web font loaded"
+      ]
+    },
+    {
+      "selector": "main#top > section.tasting-hero > div.tasting-copy > p.tasting-description",
+      "score": 0.004393204367262861,
+      "causes": [
+        "Web font loaded"
+      ]
+    }
+  ]
+}

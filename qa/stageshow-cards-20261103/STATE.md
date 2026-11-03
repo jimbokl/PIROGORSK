@@ -15,8 +15,19 @@
    отключение, no-JS, переходы, количество и подборку. check/build/Node/SEO.
 5. Выпуск, CI, проверка актуальных ресурсов и тех же сценариев на production.
 
-Состояние: общий компонент реализован. 24 адаптивных вида, 943 ссылки,
-клавиатура/no-JS/hover/reduced motion, check/build/66 Node/SEO/artwork и
-каталог 154 SKU PASS. Все четыре части browser QA PASS (occasion-context повторно после исправления
-частично скрытого фокуса). Далее выпуск и prod.
+Состояние: завершено и опубликовано. Общий компонент реализован,
+24 адаптивных вида локально и на production PASS. Сохранены 943 назначения
+на 247 страницах, все 154 SKU, лента и цены. Клавиатура/no-JS/hover/reduced
+motion, check/build/66 Node/SEO/artwork/полный browser и каталог PASS.
 CRM/контакты и VoiceOver не затрагиваются.
+
+Выпуск: source `eb09e16086682806525ee4734afa998936d72c50`.
+CI SUCCESS: https://github.com/jimbokl/PIROGORSK/actions/runs/41592445040
+Production release compatibility PASS. Шесть публичных страниц,
+20 inline CSS/JS-блоков и 11 внешних CSS/JS совпали с build по SHA256.
+Registry sync + strict PASS, без drift. Подробности и снимки — в README.
+
+Контроль скорости после выпуска: mobile/desktop 98/96, LCP 1.925/0.709 s,
+CLS 0.014/0.011. По одному лабораторному замеру; шрифтовые сдвиги первого
+экрана отмечены в performance-comparison.json. Физические устройства и
+Safari не проверялись; Chrome responsive 320/390/768/1280.

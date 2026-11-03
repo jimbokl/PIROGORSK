@@ -30,10 +30,34 @@
 [Local report](local-report.json), [desktop](local-article-1280.png),
 [телефон](local-home-390.png), [планшет](local-home-768.png).
 
-Публикация и production-проверка — следующий шаг.
+Опубликовано: runtime `eb09e16086682806525ee4734afa998936d72c50`,
+[CI SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41592445040).
+
+На production повторно пройдены 24 вида на 320/390/768/1280 px:
+главная, меню, статья, товар, набор и город. Картинки декодируются,
+действия выровнены, полные заголовки читаются, overflow отсутствует.
+Все 154 SKU на главной и в меню; Tab/Shift+Tab/Enter, scroll, no-JS,
+query атрибуции, hover и reduced motion PASS. 943 назначения на 247
+страницах совпадают с исходным списком; их цели существуют в build.
+Runtime на шести публичных страницах сверён с build: SHA256 всех
+20 inline CSS/JS-блоков и 11 внешних CSS/JS совпал. Release compatibility PASS.
+
+[Production report](production-report.json), [SHA256](production-assets.json),
+[телефон](production-home-390.png), [планшет](production-home-768.png),
+[редакционные карточки на desktop](production-article-1280.png).
+Физические устройства и Safari не проверялись; это Chrome responsive views.
 
 В общем browser-прогоне первые три проверки прошли, четвёртая обнаружила
 устаревшее требование вместить три сценария в 320 px. После обновления проверки
 найдено реальное частичное скрытие второго фокуса Chromium: явная прокрутка
 устранила его. Повторный occasion-context и усиленный verify.mjs PASS.
 Shared registry: sync и check --strict PASS (без drift).
+
+
+Контроль Lighthouse после публикации: mobile 98, LCP 1.925 s, CLS 0.014;
+desktop 96, LCP 0.709 s, CLS 0.011. Accessibility / best practices / SEO —
+100 в обоих режимах. До публикации mobile/desktop 94/94 и LCP 2.118/0.730 s.
+Это по одному лабораторному образцу, не CrUX и не доказательство ускорения.
+Небольшой рост CLS в этом образце относится к шрифтам/первому экрану:
+layout-shifts указывает на tasting-description, а не на SceneCard.
+[Сравнение и источники сдвигов](performance-comparison.json).
