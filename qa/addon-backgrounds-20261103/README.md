@@ -10,7 +10,9 @@
 четыре ширины, видимый фокус/изменение вариантов/добавление/подборка →
 CI → опубликованные ресурсы и повторная адаптивная проверка.
 
-Состояние: локально готово, ожидаются CI и production QA.
+Состояние: опубликовано и проверено. Runtime
+`09fff3853e21c0ae8022d9d0a6fd2d8e3f38e3a9`,
+[CI 41597838792 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41597838792).
 
 Проверено локально:
 
@@ -27,3 +29,19 @@ CI → опубликованные ресурсы и повторная ада�
 Воспроизведение: `node qa/addon-backgrounds-20261103/verify.mjs`.
 Для production: `QA_BASE=https://pirogorsk.ru node qa/addon-backgrounds-20261103/verify.mjs`.
 Эмуляция viewport в Chrome, физические устройства не использовались.
+
+Production:
+
+- Повторный verifyProductAddOns на 320/390/768/1280 px PASS;
+  ошибок страницы и недоступных ресурсов нет, отправки формы нет.
+- Просмотрены production-fish-768/1280, production-focus-390 и
+  production-selection-768. Текст, кнопки и фокус читаются на подложках.
+- Release compatibility PASS. `verify-public-assets.mjs`: на пяти страницах
+  оригинальных/поставщицких пирогов, главной и меню совпали декоративные
+  SVG, 19 inline-блоков CSS/JS и 10 внешних ресурсов по SHA256.
+- Новый декор — встроенный SVG, без новых запросов, JS и анимаций;
+  размеры контролов и сетка сохранены. Ассортимент и цены не менялись.
+
+Доказательства: production-report.json, production-assets.json,
+production-fish-390/768/1280.png, production-focus-390.png,
+production-selection-768.png. Остальные состояния остаются локально.
