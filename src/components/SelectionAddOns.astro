@@ -3,6 +3,7 @@ import { catalog } from '../data/catalog';
 import { addOnGroups } from '../data/bundles';
 import type { Product } from '../data/catalog';
 import ProductVisual from './ProductVisual.astro';
+import AddOnPattern from './AddOnPattern.astro';
 import { hasPortionPrice } from '../lib/product-portions';
 interface Props { mode?: 'selection' | 'product'; product?: Product }
 const { mode = 'selection', product } = Astro.props;
@@ -21,6 +22,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
     const first = group.choices[0];
     const firstPrice = catalog.find(product => product.id === first.id)!.prices[first.value] * first.quantity;
     return <article class="addon-card" data-upsell-group={group.id}>
+    <AddOnPattern kind={group.id} />
     <div class="addon-art" aria-hidden="true"><ProductVisual product={catalog.find(product => product.id === (group.id === 'sweet' ? first.id : group.imageId))!} decorative thumbnail /></div>
     <div class="addon-body">
       <CardHeading class="addon-title">{group.id === 'picnic' ? <a href="/catalog/baltiyskiy-piknik-set/">{group.title}</a> : group.title}</CardHeading><p>{group.description}</p>
@@ -47,7 +49,10 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
   .selection-addons{padding-block:22px;border-bottom:1px solid var(--line)}
   .selection-addons .addons-heading{font:500 25px/1.2 var(--serif);letter-spacing:-.025em;margin:0}
   .selection-addons>p{font-size:12px;color:var(--muted);margin:8px 0 16px;line-height:1.6}
-  .addon-card{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;padding:16px 0;border-top:1px solid var(--line)}
+  .addon-card{position:relative;isolation:isolate;display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;padding:16px 0;border-top:1px solid var(--line);--addon-pattern-ink:#a47845;--addon-wash:#f8f0e3}
+  .addon-card[data-upsell-group="morse"]{--addon-pattern-ink:#9c5660;--addon-wash:#faf0ed}
+  .addon-card[data-upsell-group="tableware"]{--addon-pattern-ink:#527c8c;--addon-wash:#eef4f5}
+  .addon-card[data-upsell-group="picnic"]{--addon-pattern-ink:#467b83;--addon-wash:#eaf3f1}
   .addon-card[hidden]{display:none}
   .addon-art{align-self:start;border-radius:var(--radius-control);overflow:hidden;background:var(--paper-raised)}
   .addon-art :global(.product-visual-badge){display:none}
@@ -65,7 +70,7 @@ const money = (value: number) => `${value.toLocaleString('ru-RU')} ₽`;
   .product-addons .addons-heading{font-size:clamp(29px,3vw,38px)}
   .product-addons>p{font-size:14px;max-width:64ch;margin-bottom:24px}
   .product-addons .addons-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-  .product-addons .addon-card{grid-template-columns:96px minmax(0,1fr);grid-template-rows:auto 1fr auto auto 20px;gap:10px 18px;padding:22px;border:1px solid var(--brand-line);border-radius:24px;background:linear-gradient(135deg,#fffdf9,#fff 75%)}
+  .product-addons .addon-card{grid-template-columns:96px minmax(0,1fr);grid-template-rows:auto 1fr auto auto 20px;gap:10px 18px;padding:22px;border:1px solid var(--brand-line);border-radius:24px;background:radial-gradient(ellipse at right top,var(--addon-wash),transparent 76%),#fffdf9}
   .product-addons .addon-art{grid-column:1;grid-row:1/4;width:100%;border-radius:18px;background:var(--brand-paper)}
   .product-addons .addon-body{display:contents}
   .product-addons .addon-title{grid-column:2;grid-row:1;min-height:0;font-size:24px;line-height:1.2}

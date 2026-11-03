@@ -1,0 +1,34 @@
+---
+interface Props { kind: string }
+const { kind } = Astro.props;
+---
+<svg class="addon-pattern" viewBox="0 0 280 180" fill="none" aria-hidden="true" focusable="false">
+  <g stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    {kind === 'morse' && <>
+      <path d="M170 181c7-29 27-50 41-77s25-56 24-97M196 126c-13-4-24-13-26-27 16-2 27 9 29 20M213 99c19 0 31-10 34-25-18-1-28 9-31 18M225 66c-13-3-22-12-22-24 14 0 22 8 24 18M234 34c15-3 23-13 23-24-13 2-21 10-23 18" />
+      <path d="M206 111l-18-32M222 78l24-25M188 148l-25-7M233 46l-5-21" />
+      <circle cx="182" cy="70" r="10" /><circle cx="199" cy="64" r="8" /><circle cx="181" cy="51" r="7" />
+      <circle cx="253" cy="49" r="9" /><circle cx="264" cy="64" r="7" /><circle cx="157" cy="138" r="9" /><circle cx="151" cy="156" r="7" />
+      <g fill="currentColor" stroke="none"><circle cx="180" cy="68" r="2" /><circle cx="251" cy="47" r="2" /><circle cx="155" cy="136" r="2" /></g>
+    </>}
+    {kind === 'sweet' && <>
+      <path d="M170 182C202 124 230 72 259 12M190 144c-22-1-31-11-32-23 20-1 29 9 32 23Zm8-17c-20-5-27-15-26-28 19 3 26 13 26 28Zm9-18c-18-6-23-17-21-29 17 4 23 15 21 29Zm9-19c-16-7-20-18-16-30 16 6 20 17 16 30Zm10-20c-14-8-17-19-12-29 14 7 17 18 12 29Zm10-20c-12-9-14-19-8-29 12 8 14 19 8 29Z" />
+      <path d="M194 138c18 5 31 0 38-11-17-6-29-2-38 11Zm10-19c18 4 30-2 35-14-17-4-29 1-35 14Zm10-20c17 2 28-5 32-16-16-3-28 3-32 16Zm10-21c16 0 26-7 28-19-15-1-25 6-28 19Zm11-22c14-1 23-10 23-21-14 1-22 9-23 21Z" />
+      <path d="M135 43c-7-16-21-12-22 0-1 14 13 25 22 29 10-4 23-15 22-29-1-12-15-16-22 0Zm0 0c-3-10-1-18 5-23M139 29c9-9 18-7 22-3-5 7-13 9-22 3Z" />
+    </>}
+    {kind === 'tableware' && <>
+      <circle cx="231" cy="57" r="60" /><circle cx="231" cy="57" r="49" /><circle cx="231" cy="57" r="37" />
+      <path d="m156 39-33 96m26-98-7 21m14-19-7 21m14-18-7 21m-14-5c-3 11 11 16 14 5M185 132c12-4 27-4 39 0l34 27c-17-5-34-4-51 2l-22-29Zm0 0 22 29m17-29-17 29M123 165c16-8 32-8 48 0m-65 11c16-8 32-8 48 0" />
+      <path d="M257 122c4-3 9-3 13 0m-35-17c4-3 9-3 13 0" />
+    </>}
+    {kind === 'picnic' && <>
+      <circle cx="231" cy="32" r="17" /><path d="M231 7V2m25 30h6m-49-18-5-5m40 5 5-5" />
+      <path d="M112 119V88l17-14 17 14v31m-38-31 21-19 21 19m7 31V67l21-20 21 20v52m-47-52 26-25 26 25m5 52V85l17-14 17 14v34m-38-34 21-20 21 20m-78 34V34h13v14m-16-14 9-16 9 16m-8 42v12m-47 9v11m99-17v13" />
+      <path d="M95 135c15-10 25-10 40 0s25 10 40 0 25-10 40 0 25 10 40 0 25-10 40 0M117 154c15-10 25-10 40 0s25 10 40 0 25-10 40 0 25 10 40 0M169 173c15-10 25-10 40 0s25 10 40 0" />
+    </>}
+  </g>
+</svg>
+<style>
+  .addon-pattern{position:absolute;inset:0 0 auto auto;width:240px;height:160px;color:var(--addon-pattern-ink,#a47845);opacity:.22;pointer-events:none;z-index:-1;overflow:hidden;border-top-right-radius:inherit}
+  @media(max-width:600px){.addon-pattern{width:190px;height:128px;opacity:.18}}
+</style>
