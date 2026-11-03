@@ -1,0 +1,20 @@
+{
+  "status": "no-issues-detected",
+  "exitCode": 0,
+  "scopes": [
+    {
+      "findings": [],
+      "checked": {
+        "controls": 0,
+        "paddedContainers": 3,
+        "compositionCrops": 0
+      },
+      "deferred": [],
+      "manual": [
+        "This snapshot checks box fit and authored insets; inspect optical centering, shape contours, interaction states and motion visually."
+      ]
+    }
+  ],
+  "errors": [],
+  "manualReviewRequired": true
+}

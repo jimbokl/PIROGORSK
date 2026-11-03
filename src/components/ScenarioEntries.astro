@@ -1,28 +1,36 @@
 ---
-import { Image } from 'astro:assets';
-import apartment from '../../design/catalog-polish-20261101/link-apartments.png';
-import picnic from '../../design/catalog-polish-20261101/link-picnic.png';
-import company from '../../design/catalog-polish-20261101/link-company.png';
+import SceneCard from './SceneCard.astro';
+import apartment from '../../design/editorial-cards-20261101/dinner.png';
+import picnic from '../../design/blog-source/reading-20261101/picnic.png';
+import company from '../../design/editorial-cards-20261101/gathering.png';
 const entries = [
-  { href: '/nabor/uzhin-v-apartamentah/?pg_channel=scenario', title: 'В апартаменты', image: apartment },
-  { href: '/nabor/piknik-u-morya/?pg_channel=scenario', title: 'На пикник', image: picnic },
-  { href: '/nabor/na-kompaniyu/?pg_channel=scenario', title: 'На компанию', image: company },
+  { href: '/nabor/uzhin-v-apartamentah/?pg_channel=scenario', title: 'В апартаменты', text: 'Спокойный ужин у моря', image: apartment, kind: 'dinner' },
+  { href: '/nabor/piknik-u-morya/?pg_channel=scenario', title: 'На пикник', text: 'Взять с собой на берег', image: picnic, kind: 'picnic' },
+  { href: '/nabor/na-kompaniyu/?pg_channel=scenario', title: 'На компанию', text: 'Несколько вкусов для друзей', image: company, kind: 'gathering' },
 ];
 ---
 <nav class="scenario-entries" aria-label="Подобрать пироги к случаю">
-  <span>К какому столу?</span>
-  <div>{entries.map(entry => <a href={entry.href} data-guide-catalog><Image src={entry.image} alt="" width={80} height={62} format="webp" quality={72} loading="lazy" /><strong>{entry.title}</strong><span class="scenario-arrow" aria-hidden="true">↗</span></a>)}</div>
+  <div class="scenario-heading"><span>К какому столу?</span><span class="scenario-hint" aria-hidden="true">Листайте →</span></div>
+  <div class="scenario-rail">{entries.map(entry => <SceneCard {...entry} compact conversion sizes="(max-width:599px) 280px, (max-width:1099px) 30vw, 350px" />)}</div>
 </nav>
+<script>
+  document.querySelectorAll<HTMLElement>('.scenario-rail').forEach(rail => {
+    rail.addEventListener('focusin', event => {
+      const card = event.target instanceof Element ? event.target.closest<HTMLElement>('.scene-card') : null;
+      if (!card || card.parentElement !== rail) return;
+      const bounds = rail.getBoundingClientRect();
+      const rect = card.getBoundingClientRect();
+      // Keep the complete card and focus ring visible in the horizontal rail.
+      const offset = rect.left < bounds.left + 8 ? rect.left - bounds.left - 8
+        : rect.right > bounds.right - 8 ? rect.right - bounds.right + 8 : 0;
+      if (offset) rail.scrollBy({ left: offset, behavior: 'instant' });
+    });
+  });
+</script>
 <style>
-.scenario-entries{margin:14px 0 24px;font:400 12px/1.4 var(--sans)}
-.scenario-entries>span{display:block;color:var(--muted);margin:0 0 10px}
-.scenario-entries>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:940px}
-a{display:flex;align-items:center;gap:12px;min-width:0;min-height:78px;padding:8px 14px 8px 8px;border-radius:18px;color:var(--navy);text-decoration:none;background:#fbf7ef;box-shadow:inset 0 0 0 1px #b6813426;transition:background .2s,box-shadow .2s}
-a:nth-child(2){background:#eff6f6}a:nth-child(3){background:#f5f3f8}
-img{width:80px;height:62px;object-fit:cover;border-radius:12px;flex-shrink:0}
-strong{font-weight:500}.scenario-arrow{display:grid;place-items:center;margin-left:auto;flex-shrink:0;width:28px;height:28px;border:1px solid #bc873451;border-radius:50%;font-size:16px;color:#8d5d21}
-a:hover{background:#f7edda;box-shadow:inset 0 0 0 1px #b6813470}a:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-@media(max-width:760px){.scenario-entries>div{gap:8px}a{padding:8px;gap:8px;flex-wrap:wrap}img{width:100%;height:72px}strong{font-size:11px}.scenario-arrow{width:22px;height:22px;font-size:14px}}
-@media(max-width:390px){.scenario-entries>div{gap:6px}a{gap:5px;padding:6px}strong{font-size:10px}.scenario-arrow{width:18px;height:18px;font-size:12px}}
-@media(prefers-reduced-motion:reduce){a{transition:none}}
+.scenario-entries{margin:14px 0 26px;font-family:var(--sans)}
+.scenario-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px;font-size:14px;font-weight:500;color:var(--navy)}
+.scenario-hint{display:none;color:var(--muted);font-size:11px;font-weight:400}
+.scenario-rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:1100px}
+@media(max-width:599px){.scenario-hint{display:block}.scenario-rail{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(280px,86%);gap:12px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-inline:8px;padding:8px 8px 12px;margin:-8px;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#c9b797 transparent}.scenario-rail :global(.scene-card){scroll-snap-align:start}}
 </style>

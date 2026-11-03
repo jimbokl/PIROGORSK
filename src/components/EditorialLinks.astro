@@ -1,7 +1,7 @@
 ---
 import type { EditorialLink } from '../data/editorial';
 import { isConversionHref } from '../lib/seo-navigation';
-import { Picture } from 'astro:assets';
+import SceneCard from './SceneCard.astro';
 import { editorialCardArtwork } from '../data/editorial-card-artwork';
 import '../styles/editorial-cards.css';
 interface Props { title: string; links: readonly EditorialLink[]; id?: string }
@@ -15,17 +15,9 @@ const { title, links, id } = Astro.props;
       const wideDesktop = links.length === 2 || (links.length === 5 && index >= 3);
       const wideTablet = links.length % 2 === 1 && index === links.length - 1;
       const sizes = `(max-width: 599px) calc(100vw - 40px), (max-width: 1099px) ${wideTablet ? '90vw' : '45vw'}, ${wideDesktop ? '45vw' : '30vw'}`;
-      return <a class="ed-link-card ed-link-card--illustrated" href={link.href} data-card-kind={art.kind} data-guide-catalog={isConversionHref(link.href) ? '' : undefined}>
-        <div class="ed-link-art" aria-hidden="true">
-          <Picture src={art.image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[320, 480, 720, 960]} {sizes} width={960} height={Math.round(960 * art.image.height / art.image.width)} quality={60} alt="" loading="lazy" decoding="async" />
-        </div>
-        <div class="ed-link-copy">
-          <span class="ed-eyebrow">{link.label ?? 'Пирогорск'}</span>
-          <h3>{link.title}</h3>
-          <p>{link.text}</p>
-          <span class="ed-link-action" aria-hidden="true">{art.action}<span class="ed-link-arrow">↗</span></span>
-        </div>
-      </a>;
+      return <SceneCard href={link.href} title={link.title} text={link.text}
+        label={link.label ?? 'Пирогорск'} image={art.image} action={art.action}
+        kind={art.kind} {sizes} conversion={isConversionHref(link.href)} />;
     })}
   </div>
 </section>

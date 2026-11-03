@@ -61,10 +61,32 @@ try {
       await go(path);
       assert.equal(await page.$$eval('[data-product], [data-menu-product], [data-supplier-id]', cards => new Set(cards.map(card => card.dataset.product || card.dataset.feedId || card.dataset.supplierId)).size), 154);
       assert.equal(await page.$$eval('.scenario-entries a', links => links.length), 3);
-      assert(await page.$$eval('.scenario-entries a', links => links.every(link => {
-        const rect = link.getBoundingClientRect();
-        return rect.height >= 44 && rect.left >= 0 && rect.right <= innerWidth;
-      })));
+      // Compact screens show a native rail. Every link must be reachable and
+      // revealed by keyboard navigation, rather than all fitting at once.
+      const scenarioLinks = await page.$$('.scenario-entries a');
+      await scenarioLinks[0].focus();
+      for (let i = 0; i < scenarioLinks.length; i++) {
+        if (i) await page.keyboard.press('Tab');
+        // Chromium completes native focus scrolling/snap after the key event.
+        await page.waitForFunction(index => {
+          const link = document.querySelectorAll('.scenario-entries a')[index];
+          const rect = link.getBoundingClientRect();
+          return link === document.activeElement && rect.left >= 0 && rect.right <= innerWidth;
+        }, { timeout: 5000 }, i).catch(async error => {
+          console.error(await page.$$eval('.scenario-entries a', links => links.map(link => ({
+            title: link.textContent.trim(), focused: link === document.activeElement,
+            left: link.getBoundingClientRect().left, right: link.getBoundingClientRect().right,
+            viewport: innerWidth, scrollLeft: link.parentElement.scrollLeft,
+          }))));
+          throw error;
+        });
+        assert(await scenarioLinks[i].evaluate(link => {
+          const rect = link.getBoundingClientRect();
+          return link === document.activeElement && rect.height >= 44 &&
+            rect.left >= 0 && rect.right <= innerWidth;
+        }), `Scenario ${i + 1} is visible and focused at ${width}px`);
+      }
+      await page.$eval('.scenario-rail', rail => { rail.scrollLeft = 0; });
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     }
     await page.$eval('.scenario-entries', element => element.scrollIntoView({ block: 'center', behavior: 'instant' }));

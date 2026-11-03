@@ -1,0 +1,56 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Picture } from 'astro:assets';
+import Icon from './Icon.astro';
+interface Props {
+  href: string; title: string; text: string; image: ImageMetadata; sizes: string;
+  label?: string; action?: string; kind?: string; compact?: boolean; conversion?: boolean;
+}
+const { href, title, text, image, sizes, label, action = 'Посмотреть подборку',
+  kind = 'collection', compact = false, conversion = false } = Astro.props;
+const Title = compact ? 'strong' : 'h3';
+---
+<a class:list={['scene-card', { 'scene-card--compact': compact }]}
+  {href} data-card-kind={kind} data-guide-catalog={conversion ? '' : undefined}>
+  <div class="scene-card-art" aria-hidden="true">
+    <Picture src={image} formats={['avif', 'webp']} fallbackFormat="webp"
+      widths={[320, 480, 720, 960]} {sizes} width={960}
+      height={Math.round(960 * image.height / image.width)} quality={65}
+      alt="" loading="lazy" decoding="async" />
+  </div>
+  <div class="scene-card-copy">
+    {label && <span class="scene-card-label">{label}</span>}
+    <Title class="scene-card-title">{title}</Title>
+    <p class="scene-card-description">{text}</p>
+    <span class="scene-card-action" aria-hidden="true">
+      {!compact && <span>{action}</span>}
+      <span class="scene-card-arrow"><Icon name="arrow" /></span>
+    </span>
+  </div>
+</a>
+<style>
+.scene-card{--scene-ground:#faf5ec;--scene-edge:#e5dac8;display:flex;flex-direction:column;min-width:0;height:100%;overflow:hidden;border:1px solid var(--scene-edge);border-radius:24px;background:var(--scene-ground);color:var(--navy);text-decoration:none;isolation:isolate;transition:border-color 240ms var(--ease-out),box-shadow 240ms var(--ease-out)}
+.scene-card[data-card-kind="picnic"]{--scene-ground:#edf4f3;--scene-edge:#d3e1df}
+.scene-card[data-card-kind="gathering"]{--scene-ground:#f3f3f7;--scene-edge:#dddfe8}
+.scene-card-art{position:relative;flex:none;height:200px;overflow:hidden;background:#f4ead9}
+.scene-card-art :global(picture),.scene-card-art :global(img){display:block;width:100%;height:100%}
+.scene-card-art :global(img){object-fit:cover;object-position:center 60%;transition:transform 550ms var(--ease-out)}
+.scene-card-copy{position:relative;display:flex;flex:1;flex-direction:column;align-items:start;min-width:0;padding:24px}
+.scene-card-label{margin-bottom:10px;color:#765733;font:500 10px/1.5 var(--sans);letter-spacing:.09em;text-transform:uppercase}
+.scene-card-title{display:block;margin:0;font:500 clamp(24px,2.2vw,29px)/1.2 var(--serif);letter-spacing:-.025em;text-wrap:pretty;overflow-wrap:anywhere}
+.scene-card-description{margin:12px 0 22px;color:#536278;font:400 14px/1.65 var(--sans)}
+.scene-card-action{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;margin-top:auto;padding-top:14px;border-top:1px solid var(--scene-edge);font:500 12px/1.5 var(--sans)}
+.scene-card-arrow{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;transition:background 240ms var(--ease-out),transform 240ms var(--ease-out)}
+.scene-card-arrow :global(.icon){display:block;width:20px;height:20px}
+.scene-card:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+.scene-card--compact .scene-card-art{height:132px}
+.scene-card--compact .scene-card-copy{display:grid;grid-template-columns:minmax(0,1fr) 36px;grid-template-rows:auto auto;column-gap:12px;row-gap:4px;align-content:center;padding:16px 18px;min-height:80px}
+.scene-card--compact .scene-card-title{grid-column:1;font:600 17px/1.3 var(--sans);letter-spacing:-.025em}
+.scene-card--compact .scene-card-description{grid-column:1;margin:0;font-size:12px;line-height:1.5}
+.scene-card--compact .scene-card-action{grid-column:2;grid-row:1/3;border:0;padding:0;margin:0;width:auto;align-self:center}
+.scene-card--compact .scene-card-arrow{width:36px;height:36px}
+@media(hover:hover){.scene-card:hover{border-color:#b68c52;box-shadow:0 12px 26px -18px #152b494d}.scene-card:hover .scene-card-art :global(img){transform:scale(1.04)}.scene-card:hover .scene-card-arrow{background:#344c68;transform:translateX(2px)}}
+@media(max-width:1099px){.scene-card--compact .scene-card-copy{padding:14px}.scene-card--compact .scene-card-title{font-size:16px}.scene-card--compact .scene-card-description{font-size:11px}.scene-card--compact .scene-card-art{height:120px}}
+@media(max-width:599px){.scene-card{border-radius:22px}.scene-card-art{height:auto;aspect-ratio:1.8}.scene-card-copy{padding:22px}.scene-card-title{font-size:27px}.scene-card--compact .scene-card-art{height:128px;aspect-ratio:auto}.scene-card--compact .scene-card-copy{min-height:80px;padding:15px 16px}.scene-card--compact .scene-card-title{font-size:17px}.scene-card--compact .scene-card-description{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.scene-card,.scene-card-arrow,.scene-card-art :global(img){transition:none!important;transform:none!important}}
+</style>
