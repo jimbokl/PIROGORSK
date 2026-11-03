@@ -1,0 +1,1841 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-11-03T12:30:36.435Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 176,
+      "lcp": 176
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 27.047,
+      "resourceLoadDelay": 14.541,
+      "resourceLoadDuration": 15.264,
+      "elementRenderDelay": 118.826
+    },
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1822.493,
+        "display": "1.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2572.493,
+        "display": "2.6 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0008665852028112651,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 1822.493,
+        "display": "1.8 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,1,NAV,2,A",
+              "selector": "main#top > section#pirogi > nav.catalog-service-facts > a",
+              "boundingRect": {
+                "top": 812,
+                "bottom": 856,
+                "left": 20,
+                "right": 174,
+                "width": 154,
+                "height": 44
+              },
+              "snippet": "<a href=\"/?interest=selection\" data-open=\"selection-dialog\" data-astro-cid-j3dlkbox=\"\" aria-label=\"Подборка, открыть\">",
+              "nodeLabel": "↗\nПодборка по ссылке",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,0,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 1641,
+                "bottom": 1685,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Мясной пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-2-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,1,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2086,
+                "bottom": 2130,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Рыбный пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-3-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,2,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2530,
+                "bottom": 2574,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с капустой\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-4-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,3,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2975,
+                "bottom": 3019,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Сырный пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-5-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,5,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 3845,
+                "bottom": 3889,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с яблоком и брусникой\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,6,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 4312,
+                "bottom": 4356,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с вишней\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 55 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-5-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,1,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 313,
+                "right": 591,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/picnic.BO51Bov8_Zc2Yd6.avif\" srcset=\"/_astro/picnic.BO51Bov8_Z1Qf2k5.webp 320w, /_astro/picnic.BO51Bov8_rNXNn.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "totalBytes": 56144,
+            "wastedBytes": 29847,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 16505
+                },
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18897
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-6-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 21,
+                "right": 299,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/dinner.BVmDmSXN_Zubufw.avif\" srcset=\"/_astro/dinner.BVmDmSXN_Z29nxmv.webp 320w, /_astro/dinner.BVmDmSXN_9FsKW.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "totalBytes": 40817,
+            "wastedBytes": 14520,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 13738
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-4-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 8,
+                "bottom": 89,
+                "left": 94,
+                "right": 318,
+                "width": 224,
+                "height": 81
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "D303C319E50062CEF8350F3FAB32E89A": {
+                  "url": "http://127.0.0.1:4322/",
+                  "navStartToEndTime": 170,
+                  "transferSize": 118535,
+                  "isLongest": true,
+                  "children": {
+                    "80448.403": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CvUASK7i.js",
+                      "navStartToEndTime": 203,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "80448.408": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.BOPJQXZp.js",
+                          "navStartToEndTime": 240,
+                          "transferSize": 23565,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80448.402": {
+                      "url": "http://127.0.0.1:4322/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BXmz4zdz.js",
+                      "navStartToEndTime": 203,
+                      "transferSize": 352,
+                      "children": {
+                        "80448.407": {
+                          "url": "http://127.0.0.1:4322/_astro/storefront.BSq9V9fG.js",
+                          "navStartToEndTime": 230,
+                          "transferSize": 10744,
+                          "children": {
+                            "80448.412": {
+                              "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 238,
+                              "transferSize": 1121,
+                              "children": {}
+                            },
+                            "80448.413": {
+                              "url": "http://127.0.0.1:4322/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 237,
+                              "transferSize": 1173,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "80448.404": {
+                      "url": "http://127.0.0.1:4322/_astro/index.astro_astro_type_script_index_0_lang.DQbaqg8u.js",
+                      "navStartToEndTime": 209,
+                      "transferSize": 1834,
+                      "children": {
+                        "80448.410": {
+                          "url": "http://127.0.0.1:4322/_astro/catalog-filters.CLJRI3l6.js",
+                          "navStartToEndTime": 229,
+                          "transferSize": 1389,
+                          "children": {
+                            "80448.411": {
+                              "url": "http://127.0.0.1:4322/_astro/catalog-search.CmJMF--A.js",
+                              "navStartToEndTime": 236,
+                              "transferSize": 485,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "80448.401": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.Cm2B8OhK.js",
+                      "navStartToEndTime": 204,
+                      "transferSize": 4426,
+                      "children": {
+                        "80448.409": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 229,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80448.7": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 92,
+                      "transferSize": 357,
+                      "children": {
+                        "80448.405": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 203,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80448.8": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 92,
+                      "transferSize": 357,
+                      "children": {}
+                    },
+                    "80448.24": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 91,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "80448.23": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 91,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "80448.25": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 91,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "80448.26": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 91,
+                      "transferSize": 16224,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 240
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-11-03T12:30:46.767Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 86,
+      "lcp": 86
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 19.847999755859377,
+      "resourceLoadDelay": 3.458000244140625,
+      "resourceLoadDuration": 4.56,
+      "elementRenderDelay": 58.322
+    },
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1512.083,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2037.083,
+        "display": "2.0 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.001029010213261006,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 1512.083,
+        "display": "1.5 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,1,NAV,2,A",
+              "selector": "main#top > section#pirogi > nav.catalog-service-facts > a",
+              "boundingRect": {
+                "top": 812,
+                "bottom": 856,
+                "left": 20,
+                "right": 174,
+                "width": 154,
+                "height": 44
+              },
+              "snippet": "<a href=\"/?interest=selection\" data-open=\"selection-dialog\" data-astro-cid-j3dlkbox=\"\" aria-label=\"Подборка, открыть\">",
+              "nodeLabel": "↗\nПодборка по ссылке",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,0,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 1641,
+                "bottom": 1685,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Мясной пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-2-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,1,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2086,
+                "bottom": 2130,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Рыбный пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-3-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,2,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2530,
+                "bottom": 2574,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с капустой\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-4-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,3,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2975,
+                "bottom": 3019,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Сырный пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-5-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,5,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 3845,
+                "bottom": 3889,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с яблоком и брусникой\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,6,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 4312,
+                "bottom": 4356,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с вишней\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 55 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-6-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,1,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 313,
+                "right": 591,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/picnic.BO51Bov8_Zc2Yd6.avif\" srcset=\"/_astro/picnic.BO51Bov8_Z1Qf2k5.webp 320w, /_astro/picnic.BO51Bov8_rNXNn.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "totalBytes": 56144,
+            "wastedBytes": 29847,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 16505
+                },
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18897
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-7-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 21,
+                "right": 299,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/dinner.BVmDmSXN_Zubufw.avif\" srcset=\"/_astro/dinner.BVmDmSXN_Z29nxmv.webp 320w, /_astro/dinner.BVmDmSXN_9FsKW.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "totalBytes": 40817,
+            "wastedBytes": 14520,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 13738
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-5-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 8,
+                "bottom": 89,
+                "left": 94,
+                "right": 318,
+                "width": 224,
+                "height": 81
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "8F1C7E00AF6A91FA7A654F1B25CBD4FC": {
+                  "url": "http://127.0.0.1:4322/",
+                  "navStartToEndTime": 91,
+                  "transferSize": 118535,
+                  "isLongest": true,
+                  "children": {
+                    "80477.395": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CvUASK7i.js",
+                      "navStartToEndTime": 119,
+                      "transferSize": 351,
+                      "isLongest": true,
+                      "children": {
+                        "80477.399": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.BOPJQXZp.js",
+                          "navStartToEndTime": 174,
+                          "transferSize": 23565,
+                          "isLongest": true,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80477.394": {
+                      "url": "http://127.0.0.1:4322/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BXmz4zdz.js",
+                      "navStartToEndTime": 119,
+                      "transferSize": 352,
+                      "children": {
+                        "80477.400": {
+                          "url": "http://127.0.0.1:4322/_astro/storefront.BSq9V9fG.js",
+                          "navStartToEndTime": 168,
+                          "transferSize": 10744,
+                          "children": {
+                            "80477.404": {
+                              "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 173,
+                              "transferSize": 1121,
+                              "children": {}
+                            },
+                            "80477.405": {
+                              "url": "http://127.0.0.1:4322/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 173,
+                              "transferSize": 1173,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "80477.396": {
+                      "url": "http://127.0.0.1:4322/_astro/index.astro_astro_type_script_index_0_lang.DQbaqg8u.js",
+                      "navStartToEndTime": 156,
+                      "transferSize": 1834,
+                      "children": {
+                        "80477.402": {
+                          "url": "http://127.0.0.1:4322/_astro/catalog-filters.CLJRI3l6.js",
+                          "navStartToEndTime": 165,
+                          "transferSize": 1389,
+                          "children": {
+                            "80477.403": {
+                              "url": "http://127.0.0.1:4322/_astro/catalog-search.CmJMF--A.js",
+                              "navStartToEndTime": 167,
+                              "transferSize": 485,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "80477.393": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.Cm2B8OhK.js",
+                      "navStartToEndTime": 156,
+                      "transferSize": 4426,
+                      "children": {
+                        "80477.401": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 164,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80477.37": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 81,
+                      "transferSize": 357,
+                      "children": {
+                        "80477.397": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 156,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80477.196": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 118,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "80477.198": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 118,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "80477.199": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 118,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "80477.197": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 118,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "80477.20": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 81,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 174
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-11-03T12:30:56.744Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 63,
+      "lcp": 131
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 22.474,
+      "resourceLoadDelay": 3.384,
+      "resourceLoadDuration": 5.687,
+      "elementRenderDelay": 99.703
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1817.9587000000001,
+        "display": "1.8 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2417.9587,
+        "display": "2.4 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0005266187846043526,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 1817.9587000000001,
+        "display": "1.8 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,1,NAV,2,A",
+              "selector": "main#top > section#pirogi > nav.catalog-service-facts > a",
+              "boundingRect": {
+                "top": 812,
+                "bottom": 856,
+                "left": 20,
+                "right": 174,
+                "width": 154,
+                "height": 44
+              },
+              "snippet": "<a href=\"/?interest=selection\" data-open=\"selection-dialog\" data-astro-cid-j3dlkbox=\"\" aria-label=\"Подборка, открыть\">",
+              "nodeLabel": "↗\nПодборка по ссылке",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,0,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 1641,
+                "bottom": 1685,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Мясной пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-2-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,1,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2086,
+                "bottom": 2130,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Рыбный пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-3-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,2,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2530,
+                "bottom": 2574,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с капустой\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-4-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,3,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2975,
+                "bottom": 3019,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Сырный пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-5-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,5,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 3845,
+                "bottom": 3889,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с яблоком и брусникой\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,6,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 4312,
+                "bottom": 4356,
+                "left": 77,
+                "right": 144,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с вишней\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 55 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-5-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,1,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 313,
+                "right": 591,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/picnic.BO51Bov8_Zc2Yd6.avif\" srcset=\"/_astro/picnic.BO51Bov8_Z1Qf2k5.webp 320w, /_astro/picnic.BO51Bov8_rNXNn.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "totalBytes": 56144,
+            "wastedBytes": 29847,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 16505
+                },
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18897
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-6-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 21,
+                "right": 299,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/dinner.BVmDmSXN_Zubufw.avif\" srcset=\"/_astro/dinner.BVmDmSXN_Z29nxmv.webp 320w, /_astro/dinner.BVmDmSXN_9FsKW.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "totalBytes": 40817,
+            "wastedBytes": 14520,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 13738
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-4-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 8,
+                "bottom": 89,
+                "left": 94,
+                "right": 318,
+                "width": 224,
+                "height": 81
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "15E4C302270488F6B927AA333C51516F": {
+                  "url": "http://127.0.0.1:4322/",
+                  "navStartToEndTime": 49,
+                  "transferSize": 118535,
+                  "isLongest": true,
+                  "children": {
+                    "80503.381": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.Cm2B8OhK.js",
+                      "navStartToEndTime": 125,
+                      "transferSize": 4426,
+                      "isLongest": true,
+                      "children": {
+                        "80503.399": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.BOPJQXZp.js",
+                          "navStartToEndTime": 186,
+                          "transferSize": 23565,
+                          "isLongest": true,
+                          "children": {}
+                        },
+                        "80503.400": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 173,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80503.395": {
+                      "url": "http://127.0.0.1:4322/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BXmz4zdz.js",
+                      "navStartToEndTime": 160,
+                      "transferSize": 352,
+                      "children": {
+                        "80503.401": {
+                          "url": "http://127.0.0.1:4322/_astro/storefront.BSq9V9fG.js",
+                          "navStartToEndTime": 177,
+                          "transferSize": 10744,
+                          "children": {
+                            "80503.404": {
+                              "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 184,
+                              "transferSize": 1121,
+                              "children": {}
+                            },
+                            "80503.405": {
+                              "url": "http://127.0.0.1:4322/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 184,
+                              "transferSize": 1173,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "80503.397": {
+                      "url": "http://127.0.0.1:4322/_astro/index.astro_astro_type_script_index_0_lang.DQbaqg8u.js",
+                      "navStartToEndTime": 161,
+                      "transferSize": 1834,
+                      "children": {
+                        "80503.402": {
+                          "url": "http://127.0.0.1:4322/_astro/catalog-filters.CLJRI3l6.js",
+                          "navStartToEndTime": 174,
+                          "transferSize": 1389,
+                          "children": {
+                            "80503.403": {
+                              "url": "http://127.0.0.1:4322/_astro/catalog-search.CmJMF--A.js",
+                              "navStartToEndTime": 184,
+                              "transferSize": 485,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "80503.5": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 162,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "80503.6": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 161,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "80503.24": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 123,
+                      "transferSize": 357,
+                      "children": {
+                        "80503.398": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 161,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80503.396": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CvUASK7i.js",
+                      "navStartToEndTime": 160,
+                      "transferSize": 351,
+                      "children": {}
+                    },
+                    "80503.41": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 123,
+                      "transferSize": 357,
+                      "children": {}
+                    },
+                    "80503.8": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 49,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "80503.7": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 49,
+                      "transferSize": 18996,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 186
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "http://127.0.0.1:4322/",
+    "timestamp": "2026-11-03T12:31:06.652Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 120,
+      "lcp": 120
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 27.967,
+      "resourceLoadDelay": 2.47,
+      "resourceLoadDuration": 4.135,
+      "elementRenderDelay": 85.404
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 412.63390000000004,
+        "display": "0.4 s"
+      },
+      "largest-contentful-paint": {
+        "value": 692.6339000000002,
+        "display": "0.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.002380726293669556,
+        "display": "0.002"
+      },
+      "speed-index": {
+        "value": 412.63390000000004,
+        "display": "0.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "label-content-name-mismatch",
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,1,NAV,2,A",
+              "selector": "main#top > section#pirogi > nav.catalog-service-facts > a",
+              "boundingRect": {
+                "top": 766,
+                "bottom": 810,
+                "left": 455,
+                "right": 608,
+                "width": 154,
+                "height": 44
+              },
+              "snippet": "<a href=\"/?interest=selection\" data-open=\"selection-dialog\" data-astro-cid-j3dlkbox=\"\" aria-label=\"Подборка, открыть\">",
+              "nodeLabel": "↗\nПодборка по ссылке",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,0,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 1708,
+                "bottom": 1752,
+                "left": 218,
+                "right": 285,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Мясной пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-2-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,1,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 1708,
+                "bottom": 1752,
+                "left": 469,
+                "right": 536,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Рыбный пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-3-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,2,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 1708,
+                "bottom": 1752,
+                "left": 719,
+                "right": 786,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с капустой\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-4-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,3,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 1708,
+                "bottom": 1752,
+                "left": 970,
+                "right": 1037,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Сырный пирог\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-5-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,5,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2453,
+                "bottom": 2497,
+                "left": 218,
+                "right": 285,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с яблоком и брусникой\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-6-BUTTON",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,7,DIV,0,SECTION,1,DIV,6,ARTICLE,0,DIV,3,BUTTON",
+              "selector": "div.menu-feed-list > article.menu-feed-item > div.menu-feed-art > button.pie-gallery-toggle",
+              "boundingRect": {
+                "top": 2453,
+                "bottom": 2497,
+                "left": 469,
+                "right": 536,
+                "width": 67,
+                "height": 44
+              },
+              "snippet": "<button class=\"pie-gallery-toggle\" type=\"button\" data-cutaway-toggle=\"\" aria-pressed=\"false\" aria-label=\"Показать начинку: Пирог с вишней\" data-astro-cid-ukf66x6y=\"\">",
+              "nodeLabel": "Срез",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ]
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 10 KiB",
+        "items": [
+          {
+            "url": ".catalog-fillings{border:0;min-width:0;margin:20px 0 8px;padding:0} …",
+            "wastedBytes": 10732,
+            "wastedPercent": 67.38847142213399,
+            "totalBytes": 15925
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 46 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-11-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,1,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 858,
+                "bottom": 990,
+                "left": 433,
+                "right": 788,
+                "width": 355,
+                "height": 132
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/picnic.BO51Bov8_1CPkRW.avif\" srcset=\"/_astro/picnic.BO51Bov8_Z1Qf2k5.webp 320w, /_astro/picnic.BO51Bov8_rNXNn.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/picnic.BO51Bov8_1CPkRW.avif",
+            "totalBytes": 29467,
+            "wastedBytes": 15209,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 15209
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-12-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,2,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 858,
+                "bottom": 990,
+                "left": 804,
+                "right": 1160,
+                "width": 355,
+                "height": 132
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/gathering.CDgDJmy5_6XxyL.avif\" srcset=\"/_astro/gathering.CDgDJmy5_Z2aTjzS.webp 320w, /_astro/gathering.CDgDJmy5_A…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/gathering.CDgDJmy5_6XxyL.avif",
+            "totalBytes": 27178,
+            "wastedBytes": 12920,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 12920
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-10-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 12,
+                "bottom": 124,
+                "left": 519,
+                "right": 831,
+                "width": 312,
+                "height": 112
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "http://127.0.0.1:4322/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-13-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 858,
+                "bottom": 990,
+                "left": 62,
+                "right": 417,
+                "width": 355,
+                "height": 132
+              },
+              "snippet": "<img src=\"http://127.0.0.1:4322/_astro/dinner.BVmDmSXN_1kGOPw.avif\" srcset=\"/_astro/dinner.BVmDmSXN_Z29nxmv.webp 320w, /_astro/dinner.BVmDmSXN_9FsKW.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "http://127.0.0.1:4322/_astro/dinner.BVmDmSXN_1kGOPw.avif",
+            "totalBytes": 21179,
+            "wastedBytes": 6921,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 6921
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "832C665FE8F81F5B2EDE1084F5A74A08": {
+                  "url": "http://127.0.0.1:4322/",
+                  "navStartToEndTime": 107,
+                  "transferSize": 118535,
+                  "isLongest": true,
+                  "children": {
+                    "80538.3": {
+                      "url": "https://www.gstatic.com/og/_/ss/k=og.qtm.gxc8Nhj2sSM.L.W.O/m=qmd,qcwid,d_b_gm3,d_wi_gm3,d_lo_gm3/excm=qaaw,qabr,qadd,qaid,qalo,qebr,qein,qhaw,qhawgm3,qhba,qhbr,qhbrgm3,qhch,qhchgm3,qhga,qhid,qhidgm3,qhin,qhlo,qhlogm3,qhmn,qhpc,qhsf,qhsfgm3,qhtt/d=1/ed=1/ct=zgms/rs=AA2YrTvJwWT_kUKJhBovYFypIp7jzkaHvA",
+                      "navStartToEndTime": 2241,
+                      "transferSize": 0,
+                      "isLongest": true,
+                      "children": {}
+                    },
+                    "80532.422": {
+                      "url": "http://127.0.0.1:4322/_astro/Analytics.astro_astro_type_script_index_0_lang.CvUASK7i.js",
+                      "navStartToEndTime": 165,
+                      "transferSize": 351,
+                      "children": {
+                        "80532.427": {
+                          "url": "http://127.0.0.1:4322/_astro/analytics.BOPJQXZp.js",
+                          "navStartToEndTime": 188,
+                          "transferSize": 23565,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80532.421": {
+                      "url": "http://127.0.0.1:4322/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BXmz4zdz.js",
+                      "navStartToEndTime": 165,
+                      "transferSize": 352,
+                      "children": {
+                        "80532.426": {
+                          "url": "http://127.0.0.1:4322/_astro/storefront.BSq9V9fG.js",
+                          "navStartToEndTime": 180,
+                          "transferSize": 10744,
+                          "children": {
+                            "80532.431": {
+                              "url": "http://127.0.0.1:4322/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 188,
+                              "transferSize": 1121,
+                              "children": {}
+                            },
+                            "80532.432": {
+                              "url": "http://127.0.0.1:4322/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 188,
+                              "transferSize": 1173,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "80532.423": {
+                      "url": "http://127.0.0.1:4322/_astro/index.astro_astro_type_script_index_0_lang.DQbaqg8u.js",
+                      "navStartToEndTime": 165,
+                      "transferSize": 1834,
+                      "children": {
+                        "80532.428": {
+                          "url": "http://127.0.0.1:4322/_astro/catalog-filters.CLJRI3l6.js",
+                          "navStartToEndTime": 179,
+                          "transferSize": 1389,
+                          "children": {
+                            "80532.430": {
+                              "url": "http://127.0.0.1:4322/_astro/catalog-search.CmJMF--A.js",
+                              "navStartToEndTime": 188,
+                              "transferSize": 485,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "80532.420": {
+                      "url": "http://127.0.0.1:4322/_astro/InterestForm.astro_astro_type_script_index_0_lang.Cm2B8OhK.js",
+                      "navStartToEndTime": 165,
+                      "transferSize": 4426,
+                      "children": {
+                        "80532.429": {
+                          "url": "http://127.0.0.1:4322/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 178,
+                          "transferSize": 491,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80532.20": {
+                      "url": "http://127.0.0.1:4322/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 81,
+                      "transferSize": 357,
+                      "children": {
+                        "80532.424": {
+                          "url": "http://127.0.0.1:4322/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 165,
+                          "transferSize": 857,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "80532.39": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 103,
+                      "transferSize": 18916,
+                      "children": {}
+                    },
+                    "80532.41": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 103,
+                      "transferSize": 18996,
+                      "children": {}
+                    },
+                    "80532.42": {
+                      "url": "http://127.0.0.1:4322/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 103,
+                      "transferSize": 16224,
+                      "children": {}
+                    },
+                    "80532.40": {
+                      "url": "http://127.0.0.1:4322/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 103,
+                      "transferSize": 9546,
+                      "children": {}
+                    },
+                    "80532.37": {
+                      "url": "http://127.0.0.1:4322/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 81,
+                      "transferSize": 357,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 2241
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

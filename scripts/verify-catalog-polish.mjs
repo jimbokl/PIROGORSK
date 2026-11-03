@@ -14,7 +14,26 @@ const origin='https://pirogorsk.ru';
 const types={'.html':'text/html','.css':'text/css','.js':'application/javascript','.woff2':'font/woff2','.webp':'image/webp','.avif':'image/avif','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.ico':'image/x-icon','.json':'application/json'};
 const chrome=await launch({chromeFlags:['--headless=new','--disable-extensions']});
 const browser=await puppeteer.connect({browserURL:`http://localhost:${chrome.port}`});
-const report={stage,widths:[],errors:[]};
+const report={stage,widths:[],errors:[],networkRetries:[]};
+// Immutable Astro assets need only one production read per run. Share in-flight
+// requests too, so lazy pictures do not fan out identical CDN downloads.
+const productionAssets=new Map();
+async function fetchProduction(path){
+ const read=async()=>{
+  for(let attempt=1;attempt<=3;attempt++){
+   try{
+    const response=await fetch(process.env.QA_BASE+path,{signal:AbortSignal.timeout(20000)});
+    return {status:response.status,contentType:response.headers.get('content-type')||'',body:Buffer.from(await response.arrayBuffer())};
+   }catch(error){
+    if(attempt===3)throw error;
+    report.networkRetries.push({path,attempt,error:error.message,cause:error.cause?.code||error.cause?.message});
+   }
+  }
+ };
+ if(!path.startsWith('/_astro/'))return read();
+ if(!productionAssets.has(path))productionAssets.set(path,read().catch(error=>{productionAssets.delete(path);throw error;}));
+ return productionAssets.get(path);
+}
 try{
  for(const width of [320,390,768,1024,1280,1440]){
   const context=await browser.createBrowserContext();const page=await context.newPage();
@@ -26,7 +45,7 @@ try{
    if(!req.url().startsWith(origin+'/')||req.method()!=='GET')return req.abort();
    try{
     const path=new URL(req.url()).pathname;
-    if(process.env.QA_BASE){const r=await fetch(process.env.QA_BASE+path);if(!r.ok)report.errors.push(`${r.status} ${path}`);await req.respond({status:r.status,contentType:r.headers.get('content-type')||'',body:Buffer.from(await r.arrayBuffer())});}
+    if(process.env.QA_BASE){const r=await fetchProduction(path);if(r.status<200||r.status>=300)report.errors.push(`${r.status} ${path}`);await req.respond(r);}
     else await req.respond({status:200,contentType:types[path.endsWith('/')?'.html':extname(path)]||'application/octet-stream',body:await readFile(resolve('site','.'+decodeURIComponent(path)+(path.endsWith('/')?'index.html':'')))});
    }catch(e){report.errors.push(`${new URL(req.url()).pathname}: ${e.message}`);await req.abort();}
   });

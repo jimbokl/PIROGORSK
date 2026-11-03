@@ -1,0 +1,42 @@
+{
+  "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/3upuiprcyk?form_factor=mobile",
+  "target": "https://pirogorsk.ru/",
+  "reportDate": "2026-11-03",
+  "runtime": "4a4d88350e883108944f0bdcb5f3877a33dbe210",
+  "source": "Public PageSpeed UI, mobile and desktop tabs; exact metric values from visible calculator link",
+  "lighthouseVersion": "13.6.0",
+  "cruxAvailable": false,
+  "mobile": {
+    "performance": 99,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 1370,
+    "lcpMs": 2101,
+    "tbtMs": 26,
+    "cls": 0.001,
+    "speedIndexMs": 1390
+  },
+  "desktop": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcpMs": 337,
+    "lcpMs": 491,
+    "tbtMs": 0,
+    "cls": 0.004,
+    "speedIndexMs": 624
+  },
+  "remainingDiagnostics": {
+    "mobileCacheKiB": 405,
+    "desktopCacheKiB": 573,
+    "mobileImagesKiB": 54,
+    "desktopImagesKiB": 45,
+    "unusedJsKiB": 38,
+    "desktopUnusedCssKiB": 11,
+    "mobileLongTasks": 2,
+    "desktopUnattributedForcedLayoutMs": 71
+  },
+  "interpretation": "Single laboratory report after publication; no claim of field Core Web Vitals or score improvement attributable to visual polish. Previous runtime also scored 99 on mobile."
+}
