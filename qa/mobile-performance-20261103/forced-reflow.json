@@ -1,0 +1,297 @@
+{
+  "local-before": [
+    {
+      "run": 1,
+      "fetchTime": "2026-11-03T08:27:38.436Z",
+      "score": 0,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": [
+              {
+                "source": {
+                  "type": "source-location",
+                  "url": "http://127.0.0.1:4322/",
+                  "urlProvider": "network",
+                  "line": 12,
+                  "column": 38336
+                },
+                "reflowTime": 32.568
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run": 2,
+      "fetchTime": "2026-11-03T08:27:48.356Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      }
+    },
+    {
+      "run": 3,
+      "fetchTime": "2026-11-03T08:27:58.612Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      }
+    }
+  ],
+  "local-after": [
+    {
+      "run": 1,
+      "fetchTime": "2026-11-03T08:31:44.663Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      }
+    },
+    {
+      "run": 2,
+      "fetchTime": "2026-11-03T08:31:54.681Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      }
+    },
+    {
+      "run": 3,
+      "fetchTime": "2026-11-03T08:32:04.392Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      }
+    }
+  ],
+  "productionAfter": [
+    {
+      "report": "lighthouse-desktop-1.json",
+      "timestamp": "2026-11-03T09:22:49.457Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      },
+      "lcpDiscoveryScore": 1,
+      "consoleErrorsScore": 1
+    },
+    {
+      "report": "lighthouse-mobile-1.json",
+      "timestamp": "2026-11-03T09:21:50.272Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      },
+      "lcpDiscoveryScore": 1,
+      "consoleErrorsScore": 1
+    },
+    {
+      "report": "lighthouse-mobile-2.json",
+      "timestamp": "2026-11-03T09:22:08.942Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      },
+      "lcpDiscoveryScore": 1,
+      "consoleErrorsScore": 1
+    },
+    {
+      "report": "lighthouse-mobile-3.json",
+      "timestamp": "2026-11-03T09:22:30.333Z",
+      "score": 1,
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": []
+          }
+        ]
+      },
+      "lcpDiscoveryScore": 1,
+      "consoleErrorsScore": 1
+    }
+  ]
+}

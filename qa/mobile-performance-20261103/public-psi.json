@@ -1,0 +1,143 @@
+{
+  "method": "Public PageSpeed Insights UI; metrics transcribed from the visible report and its score calculator link. Separate runs can vary; these are not field percentiles.",
+  "reports": [
+    {
+      "phase": "user-report-before",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/n1193g0kd6?form_factor=mobile",
+      "reportTime": "2026-11-03T09:56:45+02:00",
+      "runtime": "09fff3853e21c0ae8022d9d0a6fd2d8e3f38e3a9",
+      "lighthouse": "13.6.0",
+      "mobile": {
+        "performance": 88,
+        "fcpMs": 1415,
+        "lcpMs": 3792,
+        "tbtMs": 43,
+        "cls": 0.001,
+        "speedIndexMs": 3015
+      },
+      "desktop": {
+        "performance": 89,
+        "fcpMs": 348,
+        "lcpMs": 543,
+        "tbtMs": 284,
+        "cls": 0.003,
+        "speedIndexMs": 817
+      },
+      "mobileObservedLcp": {
+        "ttfbMs": 20,
+        "discoveryMs": 260,
+        "downloadMs": 210,
+        "renderMs": 960
+      },
+      "ownStartupForcedReflowMs": 121
+    },
+    {
+      "phase": "control-before-deploy",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/mkojvupbgy?form_factor=mobile",
+      "reportTime": "2026-11-03T10:41:04+02:00",
+      "runtime": "09fff3853e21c0ae8022d9d0a6fd2d8e3f38e3a9",
+      "lighthouse": "13.6.0",
+      "mobile": {
+        "performance": 98,
+        "fcpMs": 1371,
+        "lcpMs": 2251,
+        "tbtMs": 6,
+        "cls": 0.001,
+        "speedIndexMs": 1371,
+        "accessibility": 100,
+        "bestPractices": 96,
+        "seo": 100
+      },
+      "desktop": {
+        "performance": 68,
+        "fcpMs": 395,
+        "lcpMs": 721,
+        "tbtMs": 1358,
+        "cls": 0.003,
+        "speedIndexMs": 1696,
+        "bestPractices": 100
+      },
+      "mobileObservedLcp": {
+        "ttfbMs": 20,
+        "discoveryMs": 220,
+        "downloadMs": 180,
+        "renderMs": 130
+      },
+      "ownStartupForcedReflowMs": 70,
+      "notes": [
+        "Same runtime already scores 98: do not attribute the full difference from 88 to the upcoming change.",
+        "Mobile trace reports one HTTP 503 for golos-cyrillic.woff2; independent checks of all four font URLs returned HTTP 200."
+      ]
+    },
+    {
+      "phase": "published-after-1",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/nnvr15xszt?form_factor=mobile",
+      "reportTime": "2026-11-03T11:15:53+02:00",
+      "runtime": "6e75d0d916b786386792f0152a717a882dcef069",
+      "lighthouse": "13.6.0",
+      "mobile": {
+        "performance": 99,
+        "fcpMs": 1368,
+        "lcpMs": 2101,
+        "tbtMs": 50,
+        "cls": 0.005,
+        "speedIndexMs": 1560,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "desktop": {
+        "performance": 100,
+        "fcpMs": 344,
+        "lcpMs": 521,
+        "tbtMs": 0,
+        "cls": 0.005,
+        "speedIndexMs": 671,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "mobileObservedLcp": {
+        "ttfbMs": 20,
+        "discoveryMs": 300,
+        "downloadMs": 470,
+        "renderMs": 60
+      },
+      "notes": [
+        "Forced reflow lists only unattributed 107 ms; original own startup source is absent."
+      ]
+    },
+    {
+      "phase": "published-after-2",
+      "url": "https://pagespeed.web.dev/analysis/https-pirogorsk-ru/ltgjy6y7gs?form_factor=mobile",
+      "reportTime": "2026-11-03T11:18:08+02:00",
+      "runtime": "6e75d0d916b786386792f0152a717a882dcef069",
+      "lighthouse": "13.6.0",
+      "mobile": {
+        "performance": 99,
+        "fcpMs": 1371,
+        "lcpMs": 2101,
+        "tbtMs": 12,
+        "cls": 0.001,
+        "speedIndexMs": 1371,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "desktop": {
+        "performance": 100,
+        "fcpMs": 342,
+        "lcpMs": 521,
+        "tbtMs": 0,
+        "cls": 0.003,
+        "speedIndexMs": 593,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "notes": [
+        "Forced reflow is not a failing mobile insight. Score calculator rounds CLS; recorded CLS is from the visible metric."
+      ]
+    }
+  ]
+}

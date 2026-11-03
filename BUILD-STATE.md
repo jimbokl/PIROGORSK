@@ -1,11 +1,21 @@
-## Мобильный PageSpeed · 03.11.2026 · проверено локально
+## Мобильный PageSpeed · 03.11.2026 · опубликовано и проверено
 
 PERF-02: устранены синхронные измерения reveal-анимации, responsive preload
 первого баннера использует те же URL/sizes, что picture. Полный каталог,
 154 SKU, лента, сцены и аналитика сохранены. Local mobile 99/99/99,
 LCP 2,118/2,044/2,041 s; desktop 100 / 0,516 s. check/build/SEO/66 Node,
 каталог на шести ширинах и hero на семи ширинах PASS; no-JS/reduced motion
-PASS; телефон/планшет/desktop просмотрены. Ожидаются CI и public PSI.
+PASS; телефон/планшет/desktop просмотрены. Runtime
+`6e75d0d916b786386792f0152a717a882dcef069`,
+[CI SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41604982285).
+Production: 7 inline-скриптов, inline-CSS и 6 внешних JS совпали с build по SHA256,
+четыре шрифта HTTP 200, release PASS; hero/no-JS на семи ширинах PASS.
+Два новых public PSI mobile **99 / LCP 2,101 s**, desktop **100 / LCP 0,521 s**;
+accessibility/best practices/SEO по 100. Исходная версия при повторе до публикации
+получила 98 вместо 88: вся разница баллов не является эффектом исправления.
+Отдельный cold production Lighthouse: mobile 95/94/96, LCP 2,480/2,109/2,390 s;
+desktop 96 / 0,679 s. Это другая лаборатория; стартовая принудительная компоновка
+не обнаружена во всех четырёх её after-трассах.
 [Протокол](qa/mobile-performance-20261103/README.md).
 
 ## Рисованные подложки дополнений · 03.11.2026 · опубликовано и проверено

@@ -12,12 +12,15 @@ const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome
 const report = { base, stage, timestamp: new Date().toISOString(), widths: [], errors: [] };
 try {
   for (const width of [320, 390, 480, 481, 600, 768, 1280]) {
+    console.log(`Checking ${stage} hero at ${width}px`);
     const context = await browser.createBrowserContext();
     const page = await context.newPage();
     await page.setViewport({ width, height: 1000, deviceScaleFactor: 1.75 });
     const requests = [];
     page.on('request', r => { if (r.url().includes('/banner-city.')) requests.push(r.url()); });
     page.on('pageerror', e => report.errors.push(`${width}: ${e.message}`));
+    page.on('response', response => { if (response.status() >= 400) console.log(`HTTP ${response.status()} ${response.url()}`); });
+    page.on('requestfailed', request => console.log(`Request failed ${request.failure()?.errorText} ${request.url()}`));
     await page.goto(`${base}/?qa=1`, { waitUntil: 'networkidle0' });
     await page.waitForFunction(() => document.querySelector('[data-tasting-scene="pies"] img')?.complete);
     const initial = await page.evaluate(() => {
@@ -48,6 +51,7 @@ try {
     }
     const heights = [];
     for (const flavor of ['company', 'tea', 'mini', 'seaside', 'bake', 'warm', 'pies']) {
+      console.log(`Selecting ${flavor} at ${width}px`);
       await page.click(`[data-tasting-select="${flavor}"]`);
       await page.waitForFunction(value => document.querySelector('[data-tasting-hero]').dataset.flavor === value, {}, flavor);
       heights.push(await page.$eval('[data-tasting-hero]', el => el.getBoundingClientRect().height));
