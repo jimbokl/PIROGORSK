@@ -146,14 +146,14 @@ body.editorial-site.menu-page .menu-planner-link a{min-height:44px;padding-block
  .menu-page .town-hero{grid-template-columns:minmax(0,1fr) 64px;grid-template-areas:'eyebrow art' 'title title' 'intro intro';padding:18px;gap:10px;margin-bottom:16px}
  .menu-page .town-hero h1{font-size:clamp(25px,6.4vw,30px);text-wrap:pretty;letter-spacing:-.035em}
  .menu-page .town-hero-art{max-width:64px}
- .menu-page .town-hero-eyebrow{font-size:9px;letter-spacing:.04em}
+ .menu-page .town-hero-eyebrow{font-size:12px;letter-spacing:0}
  .menu-page .town-hero-eyebrow::before{display:none}
  .menu-page .town-hero-intro{font-size:12px;line-height:1.7;max-width:55ch}
  .menu-page .menu-finder{padding:16px}
  .menu-page .supplier-heading{display:flex;align-items:center;gap:10px}
  .menu-page .supplier-heading>a{font-size:10px;white-space:normal;flex:0 0 80px;text-align:right;margin:0}
  .menu-page .supplier-heading h2{font-size:28px}
- .menu-page .supplier-heading .eyebrow{font-size:9px}
+ .menu-page .supplier-heading .eyebrow{font-size:12px}
  .menu-page .supplier-filters{flex-wrap:nowrap;overflow-x:auto;padding:4px 2px 12px;scrollbar-width:thin;scrollbar-color:var(--card-line-hover) transparent}
  .menu-page .supplier-filters button{flex-shrink:0}
  .menu-page .menu-feed .supplier-catalog{padding-block:20px 32px}

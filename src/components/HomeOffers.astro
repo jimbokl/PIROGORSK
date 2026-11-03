@@ -16,7 +16,7 @@ const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
 ---
 <section class:list={['home-offers', { container: !embedded, 'home-offers--listing': listing }]} id="nabory" aria-label={listing ? 'Все наборы пирогов' : undefined} aria-labelledby={listing ? undefined : 'home-offers-heading'}>
   {!listing && <div class="offers-heading">
-    <div><span class="offers-kicker">НЕСКОЛЬКО ВКУСОВ · ОДНА ПОДБОРКА</span><h2 id="home-offers-heading">К столу — всё вместе</h2></div>
+    <div><span class="offers-kicker">Несколько вкусов · одна подборка</span><h2 id="home-offers-heading">К столу — всё вместе</h2></div>
     <p>Готовые сочетания для ужина и встречи с друзьями. Всё можно изменить под себя.</p>
   </div>}
   <div class="offers-grid">
@@ -41,7 +41,7 @@ const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
 <style>
 .home-offers{padding:12px 0 48px}
 .offers-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:28px}
-.offers-kicker{display:block;color:var(--muted);font-size:10px;letter-spacing:.1em;margin-bottom:10px}
+.offers-kicker{display:block;color:var(--muted);font-size:12px;line-height:1.5;letter-spacing:0;margin-bottom:12px}
 .offers-heading h2{font:500 var(--heading-section)/1.15 var(--serif);margin:0;letter-spacing:-.03em}
 .offers-heading>p{font-size:14px;line-height:1.65;color:var(--muted);max-width:320px;margin:0}
 .offers-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
@@ -77,7 +77,7 @@ const money = (price: number) => `${price.toLocaleString('ru-RU')} ₽`;
 .offers-footnote{display:flex;justify-content:space-between;gap:20px;margin-top:20px;font:400 11px/1.7 var(--sans);color:var(--muted)}.offers-footnote>span{max-width:560px}
 .offers-footnote nav{display:flex;flex-wrap:wrap;gap:18px;flex-shrink:0}.offers-footnote a{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:var(--navy);text-decoration:none}.offers-footnote :global(.icon){width:14px;height:14px}
 @media(max-width:1050px){.offers-grid{gap:14px}.offer-body{padding:20px}.offer-bottom{align-items:start;flex-direction:column}.offer-bottom small{max-width:none}.offer-add{width:100%}.offer-art{height:185px;padding-top:40px}.offer-body h3{font-size:24px;min-height:56px}}
-@media(max-width:700px){.home-offers{padding:0 0 32px}.offers-heading{display:block;margin-bottom:22px}.offers-heading>p{margin-top:12px;max-width:42ch}.offers-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(86vw,350px);gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:16px}.offer-card{scroll-snap-align:start}.offer-card{display:grid;grid-template-columns:1fr}.offer-art{height:185px;padding:40px 18px 0}.offer-art :global(:is(.product-visual,.product-artwork)){max-width:160px}.offer-body{padding:22px}.offer-body h3{min-height:58px;font-size:26px}.offer-note{min-height:32px;margin-bottom:14px}.offer-body ul{margin-bottom:20px;font-size:13px}.offer-bottom{align-items:center;flex-direction:row}.offer-add{width:auto;min-width:120px}.offer-bottom small{max-width:125px}.offers-footnote{flex-direction:column;gap:8px}.offers-kicker{font-size:9px}}
+@media(max-width:700px){.home-offers{padding:0 0 32px}.offers-heading{display:block;margin-bottom:22px}.offers-heading>p{margin-top:12px;max-width:42ch}.offers-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(86vw,350px);gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:16px}.offer-card{scroll-snap-align:start}.offer-card{display:grid;grid-template-columns:1fr}.offer-art{height:185px;padding:40px 18px 0}.offer-art :global(:is(.product-visual,.product-artwork)){max-width:160px}.offer-body{padding:22px}.offer-body h3{min-height:58px;font-size:26px}.offer-note{min-height:32px;margin-bottom:14px}.offer-body ul{margin-bottom:20px;font-size:13px}.offer-bottom{align-items:center;flex-direction:row}.offer-add{width:auto;min-width:120px}.offer-bottom small{max-width:125px}.offers-footnote{flex-direction:column;gap:8px}.offers-kicker{font-size:12px}}
 @media(min-width:701px) and (max-width:1000px){.home-offers--listing .offers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.home-offers--listing .offers-grid{grid-template-columns:minmax(0,1fr);grid-auto-flow:row;grid-auto-columns:auto;overflow:visible;scroll-snap-type:none;gap:24px}.home-offers--listing .offer-body h3{min-height:0}.home-offers--listing .offer-note{min-height:0}.home-offers--listing .offer-bottom{flex-wrap:wrap}}
 </style>

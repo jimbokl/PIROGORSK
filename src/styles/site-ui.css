@@ -8,7 +8,7 @@ body:is(.home-page,.editorial-site) .ed-hero,body:is(.home-page,.editorial-site)
 body:is(.home-page,.editorial-site) .ed-hero-text .ed-hero-copy{max-width:850px}
 body:is(.home-page,.editorial-site) .ed-hero .ed-intro{font-size:15px;line-height:1.75;margin-top:18px}
 body:is(.home-page,.editorial-site) .ed-hero-art img,body:is(.home-page,.editorial-site) .blog-guide-context img{border:0;border-radius:var(--radius-card);background:var(--surface-oat);padding:0}
-body:is(.home-page,.editorial-site) .ed-eyebrow{font-size:11px;line-height:1.6}
+body:is(.home-page,.editorial-site) .ed-eyebrow{font-size:12px;line-height:1.5}
 body:is(.home-page,.editorial-site) .ed-links-section>h2,body:is(.home-page,.editorial-site) .ed-interest h2,body:is(.home-page,.editorial-site) .ed-article-section h2,body:is(.home-page,.editorial-site) .blog-category>header h2,body:is(.home-page,.editorial-site) .blog-feature h2,body:is(.home-page,.editorial-site) .blog-takeaway h2,body:is(.home-page,.editorial-site) .menu-originals>header h2,body.home-page .home-section-heading h2,body.home-page .departments-heading h2,body.home-page .offers-heading h2,body.home-page .discovery h2,body.home-page .home-faq h2,body.home-page .journal h2{font:500 var(--heading-section)/1.15 var(--serif);letter-spacing:-.035em}
 body:is(.home-page,.editorial-site) .ed-links-section{margin-block:40px 56px}
 body:is(.home-page,.editorial-site) .ed-link-grid{align-items:stretch;gap:var(--card-gap)}
@@ -40,7 +40,7 @@ body:is(.home-page,.editorial-site) .menu-extras .ed-product-card>a{grid-row:spa
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .product-visual,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card .product-visual{aspect-ratio:1;width:100%;border-radius:var(--radius-image);margin:0}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card h3,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card h3{font:500 var(--heading-card)/1.2 var(--serif);letter-spacing:-.035em;margin:0;padding:8px 12px 12px}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card p,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card p{margin:0;padding:0 12px 16px;font-size:14px;line-height:1.65}
-body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .ed-eyebrow,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card .ed-eyebrow{font-size:11px;padding-top:18px;padding-bottom:0}
+body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .ed-eyebrow,body:is(.home-page,.editorial-site) .menu-extras .ed-product-card .ed-eyebrow{font-size:12px;padding-top:20px;padding-bottom:0}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-card .menu-original-price{font-size:20px;font-weight:600}
 body:is(.home-page,.editorial-site) .menu-originals .ed-product-more,body:is(.home-page,.editorial-site) .menu-extras .ed-product-more{display:flex;align-items:center;justify-content:center;min-height:var(--control-height);margin:6px 12px 0;padding:12px 16px;border:1px solid var(--navy);border-radius:var(--radius-control);font:500 13px/1.4 var(--sans);color:var(--navy);text-align:center}
 body.home-page .department-card{border-radius:var(--radius-card)}
@@ -137,10 +137,10 @@ body:is(.home-page,.editorial-site) .selection-dialog{border:0;border-radius:28p
 /* Shared detail and interaction roles across every page family. */
 body:is(.home-page,.editorial-site) :is(.button,.ed-button){border:1px solid transparent;transition:background 180ms var(--ease-out),transform 180ms var(--ease-out)}
 body:is(.home-page,.editorial-site) :is(.button,.ed-button):hover{background:var(--action-hover);color:var(--paper)}
-body:is(.home-page,.editorial-site) .ed-eyebrow{color:var(--accent);font-weight:500;letter-spacing:.12em}
+body:is(.home-page,.editorial-site) .ed-eyebrow{color:var(--brand-ink);font-weight:500;letter-spacing:0;text-transform:none}
 body:is(.home-page,.editorial-site) .variant-switch{border-radius:16px;background:var(--soft);padding:4px;gap:4px}
 body:is(.home-page,.editorial-site) .variant-switch span{border-radius:12px}
-body:is(.home-page,.editorial-site) .blog-feature .ed-eyebrow{font-size:11px}
+body:is(.home-page,.editorial-site) .blog-feature .ed-eyebrow{font-size:12px}
 body:is(.home-page,.editorial-site) .blog-feature-image{overflow:hidden}
 body:is(.home-page,.editorial-site) .blog-topics{gap:8px;padding-block:16px}
 body:is(.home-page,.editorial-site) .blog-topics a{min-height:44px;padding:12px 16px;border-radius:var(--radius-control);background:var(--soft)}

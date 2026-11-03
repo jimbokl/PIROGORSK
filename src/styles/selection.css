@@ -49,7 +49,7 @@ body.has-selection{padding-bottom:124px}body:has(dialog[open]) .selection-dock,b
 :is(.selection-fields,.bundle-edit-row)>label{display:flex;flex-direction:column;gap:6px;min-width:0;font:400 12px/1.5 var(--sans);color:var(--muted)}
 :is(.selection-fields,.bundle-edit-row) :is(input,select){box-sizing:border-box;min-width:0;width:100%;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--sans)}
 .guest-tools .button{margin-top:16px}.selection-dialog button:disabled{opacity:.45;cursor:default}
-.composition-kicker{font:500 11px/1.5 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.composition-kicker{font:500 12px/1.5 var(--sans);letter-spacing:0;text-transform:none;color:var(--muted)}
 .composition-dialog h2{margin-bottom:12px}.composition-dialog .composition-intro{margin-bottom:24px}
 .bundle-edit-row{min-width:0;padding:16px 0;border:0;border-bottom:1px solid var(--line);margin:0 0 16px}.bundle-edit-row legend{font:500 16px/1.5 var(--sans);padding:0}.bundle-edit-row>.selection-fields{margin-top:12px;grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
 .selection-dialog .composition-text-button{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px;font:400 12px/1.5 var(--sans);color:var(--muted)}
