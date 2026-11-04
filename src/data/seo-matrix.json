@@ -4546,5 +4546,71 @@
       "path": "/menu/",
       "label": "Выбрать пирог к пикник-сету"
     }
+  },
+  {
+    "path": "/journal/stroganina-iz-pelamidy/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Строганина из пеламиды в Калининграде: как её едят",
+    "query": "строганина из пеламиды в калининграде: как её едят",
+    "intent": "Строганина из пеламиды — холодная рыбная закуска, которую предлагают в Калининграде. К тонко нарезанной замороженной рыбе подают лук, лимон, хлеб или гренки; соус зависит от кухни. Для первого знакомства удобно заказать её в кафе и попробовать несколько сочетаний. Разберём подачу, примеры меню и вопросы, которые помогут выбрать порцию для себя или общего стола.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/ryba-baltiki-vidy/",
+      "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "/journal/kak-perevezti-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/kuhnya-vostochnoy-prussii/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Кухня Восточной Пруссии в Калининграде: блюда и названия",
+    "query": "кухня восточной пруссии в калининграде: блюда и названия",
+    "intent": "Знакомиться с кухней Восточной Пруссии в Калининграде удобно через конкретные блюда и источники. У флека есть музейное свидетельство связи с Кёнигсбергом; цеппелины относятся к литовской кухне, хотя встречаются в области. А выражение «прусский пирог» без состава мало помогает выбрать обед. Разберём названия, которые могут встретиться туристу, и вопросы, позволяющие превратить исторический интерес в понятный заказ.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/konigsbergskie-klopsy/",
+      "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "/journal/kak-perevezti-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/baltiyskie-syry/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Сыры Калининградской области: две сыроварни и выбор",
+    "query": "сыры калининградской области: две сыроварни и выбор",
+    "intent": "За сыром в Калининградской области можно отправиться в Неман, к «Тильзит-Рагнит», или в посёлок Некрасово, на семейное производство «Шаакен Дорф». В первом случае удобно начать с каталога сыров и тильзитера, во втором — совместить магазин с экскурсией и дегустацией. Ниже — адресные ориентиры, примеры цен, вопросы для записи и простой способ выбрать несколько сыров к вечернему столу.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/sedobnye-suveniry-iz-kaliningrada/",
+      "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "/journal/kak-perevezti-pirog/"
+    ]
   }
 ]
