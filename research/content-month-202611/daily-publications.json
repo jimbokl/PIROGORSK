@@ -1,5 +1,25 @@
 {
   "version": 1,
   "timezone": "Europe/Kaliningrad",
-  "releases": []
+  "releases": [
+    {
+      "date": "2026-11-05",
+      "topic": 9,
+      "slug": "hleb-i-vypechka-kaliningradskoy-oblasti",
+      "url": "https://pirogorsk.ru/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "status": "publishing",
+      "stage": "commit_and_ci",
+      "startedAt": "2026-11-05T08:02:30.063876+00:00",
+      "protocol": "research/content-daily-20261105/RELEASE.md",
+      "localVerification": {
+        "typeCheck": "PASS: 0 errors, 0 warnings",
+        "build": "PASS: 266 pages",
+        "seo": "PASS: 261 sitemap URLs",
+        "artwork": "PASS: 66 unique scenes",
+        "content": "PASS: 95 viewports",
+        "unitTests": "PASS: 66 tests",
+        "report": "qa/content-daily-20261105/local-report.json"
+      }
+    }
+  ]
 }
