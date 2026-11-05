@@ -167,17 +167,19 @@
     {
       "number": 11,
       "sourceTitle": "Рыбный день каждый день: как на Балтике едят рыбу — от уличных точек до fine dining",
-      "topic": "Рыбный день каждый день: как на Балтике едят рыбу — от уличных точек до fine dining",
+      "topic": "Как выбрать рыбное блюдо на Балтике",
       "intent": "Рыбный день каждый день",
       "ownerURL": "/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
       "week": 2,
       "decision": "new",
       "scenario": "Ужин в апартаментах",
-      "status": "evidence_needed",
-      "dataGap": "Пересечение с темами 2/7 и локальными ресторанными гайдами; формат «от улицы до fine dining» требует актуальных заведений/личных проверок.",
+      "status": "integrated_new",
+      "dataGap": "",
       "cluster": "regional",
       "brandReframe": null,
-      "window": "2026-11-08 — 2026-11-14"
+      "window": "2026-11-08 — 2026-11-14",
+      "publicationDate": "2026-11-05",
+      "evidenceNote": "Дополнительный ручной спринт по запросу пользователя. Источники и приёмка: research/content-sprint-20261105/README.md"
     },
     {
       "number": 12,
@@ -212,17 +214,19 @@
     {
       "number": 14,
       "sourceTitle": "Завтрак на Балтике: что едят в курортных городах до пляжа (и где)",
-      "topic": "Завтрак на Балтике: что едят в курортных городах до пляжа (и где)",
+      "topic": "Завтрак на Балтике: Зеленоградск и Светлогорск",
       "intent": "Завтрак на Балтике",
       "ownerURL": "/journal/zavtrak-na-baltike/",
       "week": 3,
       "decision": "new",
       "scenario": "Ужин в апартаментах",
-      "status": "evidence_needed",
-      "dataGap": "Слишком широкое гео и сезонность. Требуются конкретные курортные города и актуальные часы; потенциально отдельные локальные владельцы.",
+      "status": "integrated_new",
+      "dataGap": "",
       "cluster": "regional",
       "brandReframe": null,
-      "window": "2026-11-15 — 2026-11-21"
+      "window": "2026-11-15 — 2026-11-21",
+      "publicationDate": "2026-11-05",
+      "evidenceNote": "Дополнительный ручной спринт по запросу пользователя. Источники и приёмка: research/content-sprint-20261105/README.md"
     },
     {
       "number": 15,

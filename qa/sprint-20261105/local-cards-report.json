@@ -1,0 +1,1504 @@
+{
+  "stage": "local",
+  "base": "http://127.0.0.1:4330",
+  "pages": [
+    {
+      "path": "/",
+      "width": 320,
+      "catalogCount": 154
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "catalogCount": 154
+    },
+    {
+      "path": "/delivery/",
+      "width": 320
+    },
+    {
+      "path": "/zelenogradsk/",
+      "width": 320
+    },
+    {
+      "path": "/pirogi/pirog-s-tvorogom-i-malinoy/",
+      "width": 320
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 320
+    },
+    {
+      "path": "/journal/",
+      "width": 320
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "catalogCount": 154
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "catalogCount": 154
+    },
+    {
+      "path": "/delivery/",
+      "width": 390
+    },
+    {
+      "path": "/zelenogradsk/",
+      "width": 390
+    },
+    {
+      "path": "/pirogi/pirog-s-tvorogom-i-malinoy/",
+      "width": 390
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 390
+    },
+    {
+      "path": "/journal/",
+      "width": 390
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "catalogCount": 154
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "catalogCount": 154
+    },
+    {
+      "path": "/delivery/",
+      "width": 768
+    },
+    {
+      "path": "/zelenogradsk/",
+      "width": 768
+    },
+    {
+      "path": "/pirogi/pirog-s-tvorogom-i-malinoy/",
+      "width": 768
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 768
+    },
+    {
+      "path": "/journal/",
+      "width": 768
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "catalogCount": 154
+    },
+    {
+      "path": "/menu/",
+      "width": 1024,
+      "catalogCount": 154
+    },
+    {
+      "path": "/delivery/",
+      "width": 1024
+    },
+    {
+      "path": "/zelenogradsk/",
+      "width": 1024
+    },
+    {
+      "path": "/pirogi/pirog-s-tvorogom-i-malinoy/",
+      "width": 1024
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 1024
+    },
+    {
+      "path": "/journal/",
+      "width": 1024
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "catalogCount": 154
+    },
+    {
+      "path": "/menu/",
+      "width": 1440,
+      "catalogCount": 154
+    },
+    {
+      "path": "/delivery/",
+      "width": 1440
+    },
+    {
+      "path": "/zelenogradsk/",
+      "width": 1440
+    },
+    {
+      "path": "/pirogi/pirog-s-tvorogom-i-malinoy/",
+      "width": 1440
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 1440
+    },
+    {
+      "path": "/journal/",
+      "width": 1440
+    }
+  ],
+  "cards": [
+    {
+      "path": "/",
+      "width": 320,
+      "probe": 0,
+      "name": "Мясной пирог",
+      "id": "meat",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 1380,
+          "height": 519.75,
+          "buttonY": 437.75,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 68310,
+          "height": 519.75,
+          "buttonY": 437.75,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 690,
+          "height": 519.75,
+          "buttonY": 437.75,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "500",
+        "1000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 581.53125,
+          "buttonY": 499.53125,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 581.53125,
+          "buttonY": 499.53125,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 581.53125,
+          "buttonY": 499.53125,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 569.625,
+          "buttonY": 487.625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 569.625,
+          "buttonY": 487.625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 569.625,
+          "buttonY": 487.625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 516.75,
+          "buttonY": 434.75,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 516.75,
+          "buttonY": 434.75,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 516.75,
+          "buttonY": 434.75,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "probe": 0,
+      "name": "Пирог ржаной закусочный с сельдью",
+      "id": "p39-497",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 6560,
+          "height": 589.53125,
+          "buttonY": 503.53125,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 324720,
+          "height": 589.53125,
+          "buttonY": 503.53125,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 3280,
+          "height": 589.53125,
+          "buttonY": 503.53125,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1100"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 589.53125,
+          "buttonY": 503.53125,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 589.53125,
+          "buttonY": 503.53125,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 589.53125,
+          "buttonY": 503.53125,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 577.625,
+          "buttonY": 491.625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 577.625,
+          "buttonY": 491.625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 577.625,
+          "buttonY": 491.625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 524.75,
+          "buttonY": 438.75,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 524.75,
+          "buttonY": 438.75,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 524.75,
+          "buttonY": 438.75,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "probe": 0,
+      "name": "Мясной пирог",
+      "id": "meat",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 1380,
+          "height": 444.5,
+          "buttonY": 362.5,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 68310,
+          "height": 444.5,
+          "buttonY": 362.5,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 690,
+          "height": 444.5,
+          "buttonY": 362.5,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "500",
+        "1000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 447.1875,
+          "buttonY": 365.1875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 447.1875,
+          "buttonY": 365.1875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 447.1875,
+          "buttonY": 365.1875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 467.4375,
+          "buttonY": 385.4375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 467.4375,
+          "buttonY": 385.4375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 467.4375,
+          "buttonY": 385.4375,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 419.90625,
+          "buttonY": 337.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 419.90625,
+          "buttonY": 337.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 419.90625,
+          "buttonY": 337.90625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "probe": 0,
+      "name": "Пирог ржаной закусочный с сельдью",
+      "id": "p39-497",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 6560,
+          "height": 475.4375,
+          "buttonY": 389.4375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 324720,
+          "height": 475.4375,
+          "buttonY": 389.4375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 3280,
+          "height": 475.4375,
+          "buttonY": 389.4375,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1100"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 455.1875,
+          "buttonY": 369.1875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 455.1875,
+          "buttonY": 369.1875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 455.1875,
+          "buttonY": 369.1875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 475.4375,
+          "buttonY": 389.4375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 475.4375,
+          "buttonY": 389.4375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 475.4375,
+          "buttonY": 389.4375,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 427.90625,
+          "buttonY": 341.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 427.90625,
+          "buttonY": 341.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 427.90625,
+          "buttonY": 341.90625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "probe": 0,
+      "name": "Мясной пирог",
+      "id": "meat",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 1380,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 68310,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 690,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "500",
+        "1000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "probe": 0,
+      "name": "Пирог ржаной закусочный с сельдью",
+      "id": "p39-497",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 6560,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 324720,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 3280,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1100"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 441.359375,
+          "buttonY": 347.359375,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 398.171875,
+          "buttonY": 304.171875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "probe": 0,
+      "name": "Мясной пирог",
+      "id": "meat",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 1380,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 68310,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 690,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "500",
+        "1000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 1024,
+      "probe": 0,
+      "name": "Пирог ржаной закусочный с сельдью",
+      "id": "p39-497",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 6560,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 324720,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 3280,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1100"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 1024,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 1024,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 445.90625,
+          "buttonY": 351.90625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 1024,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 402.71875,
+          "buttonY": 308.71875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "probe": 0,
+      "name": "Мясной пирог",
+      "id": "meat",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 1380,
+          "height": 735.140625,
+          "buttonY": 644.140625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 68310,
+          "height": 735.140625,
+          "buttonY": 644.140625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 690,
+          "height": 735.140625,
+          "buttonY": 644.140625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "500",
+        "1000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 755.921875,
+          "buttonY": 664.921875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 755.921875,
+          "buttonY": 664.921875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 755.921875,
+          "buttonY": 664.921875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 767.21875,
+          "buttonY": 676.21875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 767.21875,
+          "buttonY": 676.21875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 767.21875,
+          "buttonY": 676.21875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 691.9375,
+          "buttonY": 600.9375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 691.9375,
+          "buttonY": 600.9375,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 691.9375,
+          "buttonY": 600.9375,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 1440,
+      "probe": 0,
+      "name": "Пирог ржаной закусочный с сельдью",
+      "id": "p39-497",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 6560,
+          "height": 449.15625,
+          "buttonY": 355.15625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 324720,
+          "height": 449.15625,
+          "buttonY": 355.15625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 3280,
+          "height": 449.15625,
+          "buttonY": 355.15625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1100"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 1440,
+      "probe": 1,
+      "name": "Тесто бездрожжевое слоеное замороженное, весовое",
+      "id": "hb-testo-bezdrozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 12700,
+          "height": 405.96875,
+          "buttonY": 311.96875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 628650,
+          "height": 405.96875,
+          "buttonY": 311.96875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 6350,
+          "height": 405.96875,
+          "buttonY": 311.96875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "15000"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 1440,
+      "probe": 2,
+      "name": "Осетинский пирог с курицей и сыром",
+      "id": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 3280,
+          "height": 449.15625,
+          "buttonY": 355.15625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 162360,
+          "height": 449.15625,
+          "buttonY": 355.15625,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 1640,
+          "height": 449.15625,
+          "buttonY": 355.15625,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "210",
+        "1050",
+        "4200"
+      ]
+    },
+    {
+      "path": "/menu/",
+      "width": 1440,
+      "probe": 3,
+      "name": "Балтийский пикник-сет",
+      "id": "picnic-set",
+      "states": [
+        {
+          "quantity": 2,
+          "price": 700,
+          "height": 405.96875,
+          "buttonY": 311.96875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 99,
+          "price": 34650,
+          "height": 405.96875,
+          "buttonY": 311.96875,
+          "buttonHeight": 46
+        },
+        {
+          "quantity": 1,
+          "price": 350,
+          "height": 405.96875,
+          "buttonY": 311.96875,
+          "buttonHeight": 46
+        }
+      ],
+      "formats": [
+        "1"
+      ]
+    }
+  ],
+  "errors": []
+}

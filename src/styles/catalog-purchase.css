@@ -12,7 +12,7 @@ body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card)>.catalog
   padding:14px;
   border:1px solid #e8dccb;
   border-radius:20px;
-  background:linear-gradient(135deg,#fcf8f1,#fffdf9 78%);
+  background:linear-gradient(135deg,#faf3e7,#fffdf9 78%);
 }
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants){
   display:flex;
@@ -39,15 +39,22 @@ body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.cata
   color:var(--navy);font:500 11px/1.35 var(--sans);
 }
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants) input:checked+.variant-summary{
-  background:#fff;color:var(--navy);box-shadow:0 1px 3px #15273d0d;
+  background:#fff;color:var(--navy);box-shadow:0 0 0 1px #d8ba86,0 2px 4px #15273d08;
 }
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .variant-summary b{font-weight:600}
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants):has(label:only-of-type){
   width:100%;padding:0;background:transparent;border-radius:0;
   border-bottom:1px solid #e8dccb;
 }
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-variants,.supplier-variants) label:only-of-type .variant-summary{
   justify-content:center;align-items:flex-start;padding:0 0 8px;background:transparent;box-shadow:none;
-  color:var(--muted);font-weight:500;
+  color:var(--navy);font-weight:500;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase label:only-of-type .variant-summary b{
+  display:flex;align-items:center;gap:8px;font-size:12px;
+}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase label:only-of-type .variant-summary b::before{
+  content:'';flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#bf883d;
 }
 /* The total already gives the single format's price. Keep its source price
    in the HTML for the no-JS catalogue and format verification. */
@@ -82,13 +89,15 @@ body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.cata
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity{
   grid-column:1;grid-row:2;align-self:start;justify-self:stretch;
   justify-content:space-between;width:auto;min-width:114px;margin:0;
-  border:1px solid #dfd6c8;border-radius:13px;background:#fffdf9;
+  border:1px solid #dfd6c8;border-radius:13px;background:#fff;
 }
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity:focus-within{border-color:#bf883d;box-shadow:0 0 0 3px #bf883d18}
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity[hidden]{display:none}
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity button{
   width:44px;min-width:44px;min-height:44px;border-radius:11px;
 }
-body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity input{width:26px;min-height:44px}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity input{width:26px;min-height:44px;font-variant-numeric:tabular-nums}
+body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase .menu-quantity [data-feed-increase]:not(:disabled){background:#f6efe3}
 body:is(.home-page,.editorial-site) :is(.menu-feed-item,.supplier-card) div.catalog-purchase :is(.menu-feed-add,.button){
   grid-column:1;grid-row:3;display:flex;align-items:center;justify-content:center;gap:8px;
   width:100%;min-width:0;min-height:46px;margin:0;padding:10px 12px;

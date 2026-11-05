@@ -4634,5 +4634,49 @@
       "/journal/baltiyskie-syry/",
       "/journal/svetlogorsk-kaliningrad-edamarshrut/"
     ]
+  },
+  {
+    "path": "/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Как выбрать рыбное блюдо на Балтике",
+    "query": "как выбрать рыбное блюдо на балтике",
+    "intent": "В Калининградской области рыбный обед можно собрать из небольшой закуски, тарелки ухи или горячего филе. Разбираем, какой формат выбрать под прогулку и общий стол, как прочитать цену за 100 граммов и что уточнить до заказа.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/ryba-baltiki-vidy/",
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/"
+    ]
+  },
+  {
+    "path": "/journal/zavtrak-na-baltike/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Завтрак на Балтике: Зеленоградск и Светлогорск",
+    "query": "завтрак на балтике: зеленоградск и светлогорск",
+    "intent": "Утро на Балтике удобнее планировать от времени завтрака, а не от красивой фотографии кафе. Сравниваем три официально опубликованных расписания в Зеленоградске, Светлогорске и Отрадном и собираем спокойный план перед прогулкой к морю.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/gde-pozavtrakat-v-zelenogradske/",
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/"
+    ]
   }
 ]

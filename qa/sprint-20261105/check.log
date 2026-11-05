@@ -1,0 +1,489 @@
+
+> pirogorsk@0.1.0 check
+> astro check && tsc --noEmit
+
+13:30:17 [types] Generated 65ms
+13:30:17 [check] Getting diagnostics for Astro files in /Volumes/DevSim/Projects/PIROGORSK...
+[96mbusiness/investment-plan-20261030/private/build-model.mjs[0m:[93m74[0m:[93m59[0m - [93mwarning[0m[90m ts(6133): [0m'ye' is declared but its value is never read.
+
+[7m74[0m  const c=col(m+3),p=col(m+2),ys=4+Math.floor((m-1)/12)*12,ye=ys+11,yc=col(ys),prevys=ys-12;
+[7m  [0m [93m                                                          ~~[0m
+[96mbusiness/investment-plan-20261030/private/build-model.mjs[0m:[93m72[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'calcRows' is declared but its value is never read.
+
+[7m72[0m const calcRows=[];
+[7m  [0m [93m      ~~~~~~~~[0m
+[96mbusiness/investment-plan-20261030/private/build-model.mjs[0m:[93m52[0m:[93m15[0m - [93mwarning[0m[90m ts(6133): [0m'x' is declared but its value is never read.
+
+[7m52[0m skus.forEach((x,i)=>form(sku,`J${5+i}`,`=SUM(G${20+i}:W${20+i})+0.08`));
+[7m  [0m [93m              ~[0m
+[96mbusiness/investment-plan-20261030/private/build-model.mjs[0m:[93m13[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'money' is declared but its value is never read.
+
+[7m13[0m const money='#,##0" ₽";[Red](#,##0)" ₽";–';
+[7m  [0m [93m      ~~~~~[0m
+
+[96mqa/addon-backgrounds-20261103/verify.mjs[0m:[93m54[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m54[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/analytics-20261031/verify-responsive.mjs[0m:[93m80[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m80[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/brand-v5-20261030/inspect-concepts.mjs[0m:[93m88[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m88[0m } finally { await browser.close(); await chrome.kill(); }
+[7m  [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+[96mqa/brand-v5-20261030/inspect-concepts.mjs[0m:[93m66[0m:[93m55[0m - [93mwarning[0m[90m ts(6387): [0mThe signature '(string: string): string' of 'unescape' is deprecated.
+
+[7m66[0m         image.src = `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svg)))}`;
+[7m  [0m [93m                                                      ~~~~~~~~[0m
+
+[96mqa/brand-v6-20261030/verify-brand.mjs[0m:[93m95[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m95[0m } finally { await browser.close(); await chrome.kill(); }
+[7m  [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/catalog-purchase-20261102/inspect.mjs[0m:[93m84[0m:[93m25[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m84[0m   await browser.close();await chrome.kill();
+[7m  [0m [93m                        ~~~~~~~~~~~~~~~~~~~[0m
+[96mqa/catalog-purchase-20261102/inspect.mjs[0m:[93m54[0m:[93m65[0m - [93mwarning[0m[90m ts(80006): [0mThis may be converted to an async function.
+
+[7m54[0m           await Promise.all([...el.querySelectorAll('img')].map(img=>{img.loading='eager';return img.decode().catch(()=>{});}));
+[7m  [0m [93m                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/city-landings-20261030/audit.mjs[0m:[93m102[0m:[93m26[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m102[0m   await browser.close(); await chrome.kill();
+[7m   [0m [93m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/delivery-premium-20261030/audit.mjs[0m:[93m77[0m:[93m24[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m77[0m  await browser.close();await chrome.kill();
+[7m  [0m [93m                       ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/delivery-premium-20261030/verify-pagespeed.mjs[0m:[93m23[0m:[93m24[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m23[0m  await browser.close();await chrome.kill();
+[7m  [0m [93m                       ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/dominos-sprint-20261031/verify-functional.mjs[0m:[93m30[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m30[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/editorial-cards-20261101/verify.mjs[0m:[93m111[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m111[0m } finally { await browser.close(); await chrome.kill(); }
+[7m   [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/header-reference-20261030/verify-ui.mjs[0m:[93m106[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m106[0m }finally{await browser.close();await chrome.kill()}
+[7m   [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-full-catalog-20261030/verify-home.mjs[0m:[93m205[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m205[0m } finally { await browser.close(); await chrome.kill(); }
+[7m   [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-full-catalog-20261030/verify-pagespeed.mjs[0m:[93m23[0m:[93m24[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m23[0m  await browser.close();await chrome.kill();
+[7m  [0m [93m                       ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/audit.mjs[0m:[93m25[0m:[93m10[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m25[0m }finally{await chrome.kill();}
+[7m  [0m [93m         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/browser-diagnostic.mjs[0m:[93m33[0m:[93m13[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m33[0m  } finally {await chrome.kill();}
+[7m  [0m [93m            ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/render-variants.mjs[0m:[93m53[0m:[93m41[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m53[0m   } finally {await browser.disconnect();await chrome.kill();}
+[7m  [0m [93m                                        ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/raw/font-fix-audit.mjs[0m:[93m56[0m:[93m7[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m56[0m       await chrome.kill();
+[7m  [0m [93m      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-lcp-20261029/raw/font-fix-production-audit.mjs[0m:[93m56[0m:[93m7[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m56[0m       await chrome.kill();
+[7m  [0m [93m      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-storefront-20261030/verify-home.mjs[0m:[93m105[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m105[0m } finally { await browser.close(); await chrome.kill(); }
+[7m   [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/home-storefront-20261030/verify-pagespeed.mjs[0m:[93m23[0m:[93m24[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m23[0m  await browser.close();await chrome.kill();
+[7m  [0m [93m                       ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/menu-cards-reference-20261030/verify-ui.mjs[0m:[93m100[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m100[0m } finally { await browser.close(); await chrome.kill(); }
+[7m   [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/menu-quantity-20261030/verify-ui.mjs[0m:[93m49[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m49[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/mobile-performance-20261103/verify-hero.mjs[0m:[93m79[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m79[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pie-city-banners-20261030/verify-banners.mjs[0m:[93m136[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m136[0m } finally { await browser.close(); await chrome.kill(); }
+[7m   [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pie-city-banners-20261030/verify-pagespeed.mjs[0m:[93m25[0m:[93m26[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m25[0m   await browser.close(); await chrome.kill();
+[7m  [0m [93m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pie-city-site-20261030/debug-swipe.mjs[0m:[93m1[0m:[93m1603[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m1[0m import{launch}from'chrome-launcher';import puppeteer from'puppeteer-core';const c=await launch({chromeFlags:['--headless=new']});const b=await puppeteer.connect({browserURL:`http://localhost:${c.port}`});try{const p=await b.newPage();await p.setViewport({width:390,height:1000,isMobile:true,hasTouch:true});await p.goto('https://pirogorsk.ru/?qa=1',{waitUntil:'networkidle0'});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);await p.click('[data-tasting-select="tea"]');await p.waitForFunction(()=>document.querySelector('[data-tasting-hero]').dataset.flavor==='tea');await p.evaluate(()=>{window.events=[];for(const t of ['pointerdown','pointermove','pointerup','pointercancel'])document.addEventListener(t,e=>window.events.push({t,tag:e.target.className,x:e.clientX,y:e.clientY,pt:e.pointerType}));});let art=await(await p.$('[data-tasting-art]')).boundingBox();let point={x:art.x+art.width-12,y:art.y+art.height/2};console.log({art,point});console.log(await p.evaluate(({x,y})=>({target:document.elementFromPoint(x,y)?.outerHTML.slice(0,200),scroll:scrollY}),point));const s=await p.createCDPSession();await s.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]});for(const dx of [25,50,75,100])await s.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:point.x-dx,y:point.y+2}]});await s.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await new Promise(r=>setTimeout(r,1200));console.log(await p.evaluate(()=>({events,slide:document.querySelector('[data-tasting-hero]').dataset.flavor})));}finally{await b.close();await c.kill();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~~[0m
+[96mqa/pie-city-site-20261030/debug-swipe.mjs[0m:[93m1[0m:[93m750[0m - [93mwarning[0m[90m ts(2568): [0mProperty 'events' may not exist on type 'Window & typeof globalThis'. Did you mean 'event'?
+
+[7m1[0m import{launch}from'chrome-launcher';import puppeteer from'puppeteer-core';const c=await launch({chromeFlags:['--headless=new']});const b=await puppeteer.connect({browserURL:`http://localhost:${c.port}`});try{const p=await b.newPage();await p.setViewport({width:390,height:1000,isMobile:true,hasTouch:true});await p.goto('https://pirogorsk.ru/?qa=1',{waitUntil:'networkidle0'});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);await p.click('[data-tasting-select="tea"]');await p.waitForFunction(()=>document.querySelector('[data-tasting-hero]').dataset.flavor==='tea');await p.evaluate(()=>{window.events=[];for(const t of ['pointerdown','pointermove','pointerup','pointercancel'])document.addEventListener(t,e=>window.events.push({t,tag:e.target.className,x:e.clientX,y:e.clientY,pt:e.pointerType}));});let art=await(await p.$('[data-tasting-art]')).boundingBox();let point={x:art.x+art.width-12,y:art.y+art.height/2};console.log({art,point});console.log(await p.evaluate(({x,y})=>({target:document.elementFromPoint(x,y)?.outerHTML.slice(0,200),scroll:scrollY}),point));const s=await p.createCDPSession();await s.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]});for(const dx of [25,50,75,100])await s.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:point.x-dx,y:point.y+2}]});await s.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await new Promise(r=>setTimeout(r,1200));console.log(await p.evaluate(()=>({events,slide:document.querySelector('[data-tasting-hero]').dataset.flavor})));}finally{await b.close();await c.kill();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ~~~~~~[0m
+[96mqa/pie-city-site-20261030/debug-swipe.mjs[0m:[93m1[0m:[93m629[0m - [93mwarning[0m[90m ts(2568): [0mProperty 'events' may not exist on type 'Window & typeof globalThis'. Did you mean 'event'?
+
+[7m1[0m import{launch}from'chrome-launcher';import puppeteer from'puppeteer-core';const c=await launch({chromeFlags:['--headless=new']});const b=await puppeteer.connect({browserURL:`http://localhost:${c.port}`});try{const p=await b.newPage();await p.setViewport({width:390,height:1000,isMobile:true,hasTouch:true});await p.goto('https://pirogorsk.ru/?qa=1',{waitUntil:'networkidle0'});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);await p.click('[data-tasting-select="tea"]');await p.waitForFunction(()=>document.querySelector('[data-tasting-hero]').dataset.flavor==='tea');await p.evaluate(()=>{window.events=[];for(const t of ['pointerdown','pointermove','pointerup','pointercancel'])document.addEventListener(t,e=>window.events.push({t,tag:e.target.className,x:e.clientX,y:e.clientY,pt:e.pointerType}));});let art=await(await p.$('[data-tasting-art]')).boundingBox();let point={x:art.x+art.width-12,y:art.y+art.height/2};console.log({art,point});console.log(await p.evaluate(({x,y})=>({target:document.elementFromPoint(x,y)?.outerHTML.slice(0,200),scroll:scrollY}),point));const s=await p.createCDPSession();await s.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]});for(const dx of [25,50,75,100])await s.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:point.x-dx,y:point.y+2}]});await s.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await new Promise(r=>setTimeout(r,1200));console.log(await p.evaluate(()=>({events,slide:document.querySelector('[data-tasting-hero]').dataset.flavor})));}finally{await b.close();await c.kill();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ~~~~~~[0m
+
+[96mqa/pie-city-site-20261030/verify-destinations.mjs[0m:[93m5[0m:[93m152[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m5[0m }finally{await writeFile(`${root}/${stage}-destinations.json`,JSON.stringify({checkedAt:new Date().toISOString(),checks},null,2)+'\n');await b.close();await c.kill();}
+[7m [0m [93m                                                                                                                                                       ~~~~~~~~~~~~~~[0m
+
+[96mqa/pie-city-site-20261030/verify-pagespeed.mjs[0m:[93m25[0m:[93m26[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m25[0m   await browser.close(); await chrome.kill();
+[7m  [0m [93m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pie-city-site-20261030/verify-site.mjs[0m:[93m41[0m:[93m178[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m41[0m }finally{await writeFile(`${root}/${stage}-results.json`,JSON.stringify({checkedAt:new Date().toISOString(),production,results,flows,errors},null,2)+'\n');await browser.close();await chrome.kill();}
+[7m  [0m [93m                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pie-cutaways-20261031/verify-pagespeed.mjs[0m:[93m24[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m24[0m }finally{await browser.close();await chrome.kill()}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pirogi39-20261029/verify-selection.mjs[0m:[93m67[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m67[0m } finally { await browser.close(); await chrome.kill(); }
+[7m  [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/pirogi39-20261029/verify-ui.mjs[0m:[93m78[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m78[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261029/probe-render.mjs[0m:[93m34[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m34[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261029/render-font-control.mjs[0m:[93m56[0m:[93m41[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m56[0m   } finally {await browser.disconnect();await chrome.kill();}
+[7m  [0m [93m                                        ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261030/baseline.mjs[0m:[93m8[0m:[93m940[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m8[0m try {for(const width of [390,768,1280])for(const path of routes){const page=await browser.newPage();await page.setViewport({width,height:900});await page.goto(`http://127.0.0.1:4322${path}?qa=1`,{waitUntil:'networkidle0'});await page.evaluate(()=>document.fonts.ready);const key=path.replaceAll('/','_')||'home';await page.screenshot({path:`qa/polish-20261030/before/${key}-${width}.jpg`,type:'jpeg',quality:75,fullPage:true});results.push({path,width,...await page.evaluate(()=>({title:document.title,h1:document.querySelector('h1')?.textContent,overflow:document.documentElement.scrollWidth>innerWidth,product:document.querySelector('.product-options')?.getBoundingClientRect().toJSON(),hero:document.querySelector('.product-hero,.town-hero')?.getBoundingClientRect().toJSON()}))});await page.close();}await writeFile('qa/polish-20261030/baseline.json',JSON.stringify(results,null,2));console.log(results);}finally{await browser.close();await chrome.kill();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261030/probe.mjs[0m:[93m15[0m:[93m33[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m15[0m } finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                                ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261030/verify-all-products.mjs[0m:[93m49[0m:[93m25[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m49[0m   await browser.close();await chrome.kill();
+[7m  [0m [93m                        ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261030/verify-feed-anchor.mjs[0m:[93m25[0m:[93m34[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m25[0m } finally {await browser.close();await chrome.kill();}
+[7m  [0m [93m                                 ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261030/verify-polish.mjs[0m:[93m82[0m:[93m169[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m82[0m }finally{await writeFile(`${root}/results.json`,JSON.stringify({checkedAt:new Date().toISOString(),production,results,flows,errors},null,2)+'\n');await browser.close();await chrome.kill();}
+[7m  [0m [93m                                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261030/viewport-after.mjs[0m:[93m3[0m:[93m594[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m3[0m try{for(const width of [390,768])for(const [name,path]of [['menu','/menu/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['occasion','/povody/']]){const page=await browser.newPage();await page.setViewport({width,height:1000});await page.goto(`http://127.0.0.1:4322${path}?qa=1`,{waitUntil:'networkidle0'});await page.screenshot({path:`qa/polish-20261030/after/${name}-top-${width}.jpg`,type:'jpeg',quality:85});if(name==='menu'){console.log(await page.$eval('.supplier-card',e=>({firstProductY:e.getBoundingClientRect().y})));}await page.close();}}finally{await browser.close();await chrome.kill();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-20261030/viewport.mjs[0m:[93m3[0m:[93m595[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m3[0m try{for(const width of [390,768])for(const [name,path]of [['menu','/menu/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['occasion','/povody/']]){const page=await browser.newPage();await page.setViewport({width,height:1000});await page.goto(`http://127.0.0.1:4322${path}?qa=1`,{waitUntil:'networkidle0'});await page.screenshot({path:`qa/polish-20261030/before/${name}-top-${width}.jpg`,type:'jpeg',quality:85});if(name==='menu'){console.log(await page.$eval('.supplier-card',e=>({firstProductY:e.getBoundingClientRect().y})));}await page.close();}}finally{await browser.close();await chrome.kill();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-qa-20261102/audit.mjs[0m:[93m110[0m:[93m33[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m110[0m } finally{await browser.close();await chrome.kill();}
+[7m   [0m [93m                                ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/polish-qa-20261102/explore.mjs[0m:[93m29[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m29[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/product-copy-20261102/compare.mjs[0m:[93m25[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m25[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/product-copy-20261102/verify-catalog-click.mjs[0m:[93m40[0m:[93m35[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m40[0m } finally { await browser.close();await chrome.kill(); }
+[7m  [0m [93m                                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/product-copy-20261102/verify.mjs[0m:[93m95[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m95[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/product-detail-style-20261029/capture-after.mjs[0m:[93m15[0m:[93m34[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m15[0m } finally {await browser.close();await chrome.kill();}
+[7m  [0m [93m                                 ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/product-detail-style-20261029/capture-before.mjs[0m:[93m15[0m:[93m34[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m15[0m } finally {await browser.close();await chrome.kill();}
+[7m  [0m [93m                                 ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/product-pages-20261029/verify-ui.mjs[0m:[93m78[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m78[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/qa-polish-20261030/audit.mjs[0m:[93m142[0m:[93m36[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m142[0m } finally { await browser.close(); await chrome.kill(); }
+[7m   [0m [93m                                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/selection-tools-20261031/verify-functional.mjs[0m:[93m30[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m30[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/site-micro-polish-20261101/audit.mjs[0m:[93m110[0m:[93m33[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m110[0m } finally{await browser.close();await chrome.kill();}
+[7m   [0m [93m                                ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/site-premium-20261030/audit.mjs[0m:[93m81[0m:[93m24[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m81[0m  await browser.close();await chrome.kill();
+[7m  [0m [93m                       ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/site-premium-20261030/flows.mjs[0m:[93m51[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m51[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/site-premium-20261030/verify-pagespeed.mjs[0m:[93m23[0m:[93m24[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m23[0m  await browser.close();await chrome.kill();
+[7m  [0m [93m                       ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/stageshow-cards-20261103/inspect-dev.mjs[0m:[93m3[0m:[93m946[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m3[0m try{const p=await b.newPage();await p.setViewport({width:1280,height:1000});p.on('requestfailed',r=>console.log('FAILED',r.url(),r.failure()?.errorText));await p.goto('http://127.0.0.1:4321/journal/dostavka-edy-v-zelenogradske/',{waitUntil:'networkidle2'});const cards=await p.$$('.scene-card');for(const e of cards){await e.evaluate(n=>n.scrollIntoView({block:'center',behavior:'instant'}));await e.evaluate(async n=>{await Promise.all([...n.querySelectorAll('img')].map(i=>i.decode().catch(e=>e.message)))});}await p.$eval('.ed-links-section',n=>n.scrollIntoView({block:'start',behavior:'instant'}));console.log(JSON.stringify(await p.$$eval('.scene-card',es=>es.map(e=>({href:e.getAttribute('href'),image:e.querySelector('img').currentSrc,complete:e.querySelector('img').complete,width:e.querySelector('img').naturalWidth}))),null,2));await p.screenshot({path:'qa/stageshow-cards-20261103/draft-article-loaded.png'});}finally{await b.close();await c.kill();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ~~~~~~~~~~~~~~[0m
+
+[96mqa/stageshow-cards-20261103/layout.mjs[0m:[93m5[0m:[93m744[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m5[0m try{const p=await b.newPage();for(const width of [390,1280]){await p.setViewport({width,height:1000});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);await p.goto('http://127.0.0.1:4321/',{waitUntil:'networkidle0'});await p.$eval('.scenario-entries',e=>e.scrollIntoView({block:'center',behavior:'instant'}));await p.evaluate(()=>document.fonts.ready);const scope=await p.$eval('.scenario-entries',auditLayout);const result=layoutResult([scope],[],true);await writeFile(`qa/stageshow-cards-20261103/layout-${width}.json`,JSON.stringify(result,null,2)+'\n');console.log(width,result.status,JSON.stringify(scope.checked),scope.findings);if(result.exitCode)process.exitCode=result.exitCode;}}finally{await b.close();await c.kill();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~[0m
+
+[96mqa/stageshow-cards-20261103/probe-focus.mjs[0m:[93m4[0m:[93m803[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m4[0m try{const p=await b.newPage();await p.setViewport({width:320,height:960});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);for(const css of ['', '.scene-card{overflow:clip!important}', '.scenario-rail{scroll-snap-type:none!important}', '.scenario-rail a{scroll-margin-inline:30px!important}']){await p.goto('http://127.0.0.1:4399/',{waitUntil:'networkidle0'});if(css)await p.addStyleTag({content:css});await p.$eval('.scenario-rail a',e=>e.focus());await p.keyboard.press('Tab');await new Promise(r=>setTimeout(r,500));console.log(css||'baseline',await p.$$eval('.scenario-rail a',es=>es.map(e=>{const r=e.getBoundingClientRect();return{left:r.left,right:r.right,top:r.top,focus:e===document.activeElement,scroll:e.parentElement.scrollLeft};})));}}finally{await b.close();await c.kill();server.close();}
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~~[0m
+
+[96mqa/stageshow-cards-20261103/verify.mjs[0m:[93m105[0m:[93m26[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m105[0m }finally{await b.close();await c.kill();}
+[7m   [0m [93m                         ~~~~~~~~~~~~~~[0m
+
+[96mqa/supplier-catalog-20261029/verify-ui.mjs[0m:[93m57[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m57[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/unslop-20261103/audit.mjs[0m:[93m85[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m85[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/unslop-20261103/verify-hero.mjs[0m:[93m79[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m79[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/ux-polish-20261031/audit-accessibility.mjs[0m:[93m54[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m54[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-redesign-20261030/experiment.mjs[0m:[93m51[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m51[0m }finally{await browser.close();await chrome.kill()}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-redesign-20261030/probe.mjs[0m:[93m2[0m:[93m1198[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m2[0m const c=await launch({chromeFlags:['--headless=new']}),b=await puppeteer.connect({browserURL:`http://localhost:${c.port}`});const p=await b.newPage();await p.setViewport({width:390,height:900,isMobile:true,hasTouch:true});await p.setRequestInterception(true);p.on('request',async r=>{const u=new URL(r.url());try{const path=`site${u.pathname}${u.pathname.endsWith('/')?'index.html':''}`;await r.respond({status:200,contentType:({'.html':'text/html','.css':'text/css','.js':'application/javascript','.avif':'image/avif','.webp':'image/webp','.woff2':'font/woff2'})[extname(path)],body:await readFile(path)})}catch{await r.abort()}});await p.goto('https://pirogorsk.ru/?qa=1',{waitUntil:'networkidle0'});console.log(await p.evaluate(()=>[...document.querySelectorAll('.tasting-art,.tasting-scene,.tasting-scene img,.offer-art,.offer-art .product-artwork,.offer-art .product-artwork-subject,.offer-art .product-artwork img')].map(e=>({c:e.className,rect:e.getBoundingClientRect().toJSON(),css:{height:getComputedStyle(e).height,display:getComputedStyle(e).display,position:getComputedStyle(e).position}}))));await p.screenshot({path:'qa/visual-redesign-20261030/local/hero-390.png'});await b.close();await c.kill();
+[7m [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-redesign-20261030/verify-other-ui.mjs[0m:[93m51[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m51[0m }finally{await browser.close();await chrome.kill()}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-redesign-20261030/verify-pagespeed.mjs[0m:[93m24[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m24[0m }finally{await browser.close();await chrome.kill()}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-redesign-20261030/verify-ui.mjs[0m:[93m51[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m51[0m }finally{await browser.close();await chrome.kill()}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-refinement-20261102/audit.mjs[0m:[93m114[0m:[93m33[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m114[0m } finally{await browser.close();await chrome.kill();}
+[7m   [0m [93m                                ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-refinement-20261102/probe.mjs[0m:[93m42[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m42[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96mqa/visual-refinement-20261102/probe.mjs[0m:[93m11[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'paths' is declared but its value is never read.
+
+[7m11[0m const paths = [['home','/'],['menu','/menu/'],['delivery','/delivery/'],['city','/zelenogradsk/'],['blog','/blog/'],['article','/journal/dostavka-edy-v-zelenogradske/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['bundles','/nabory/'],['bundle','/nabor/piknik-u-morya/'],['occasion','/povody/zelenogradsk/semeynyy-uzhin/'],['planner','/podbor/'],['about','/about/'],['original','/pirogi/myasnoy-pirog/'],['picnic','/catalog/baltiyskiy-piknik-set/'],['occasions','/povody/'],['ossetian','/osetinskie-pirogi/'],['partners','/partners/'],['privacy','/privacy/'],['terms','/terms/']];
+[7m  [0m [93m      ~~~~~[0m
+[96mqa/visual-refinement-20261102/probe.mjs[0m:[93m6[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'verifyMenuQuantity' is declared but its value is never read.
+
+[7m6[0m import { verifyMenuQuantity } from '../../worker/scripts/qa-menu-quantity.mjs';
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mqa/visual-refinement-20261102/probe.mjs[0m:[93m2[0m:[93m20[0m - [93mwarning[0m[90m ts(6133): [0m'writeFile' is declared but its value is never read.
+
+[7m2[0m import { readFile, writeFile, mkdir } from 'node:fs/promises';
+[7m [0m [93m                   ~~~~~~~~~[0m
+[96mqa/visual-refinement-20261102/probe.mjs[0m:[93m1[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'assert' is declared but its value is never read.
+
+[7m1[0m import assert from 'node:assert/strict';
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-refinement-20261102/sections.mjs[0m:[93m60[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m60[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96mqa/visual-refinement-20261102/sections.mjs[0m:[93m51[0m:[93m88[0m - [93mwarning[0m[90m ts(6133): [0m'b' is declared but its value is never read.
+
+[7m51[0m    const metrics=()=>el.evaluate(e=>{const q=e.querySelector('[data-option-quantity]'),b=e.querySelector('.product-options-bottom'),r=e.getBoundingClientRect(),a=e.querySelector('[data-option-link]').getBoundingClientRect();return {value:q.value,height:r.height,buttonY:a.y-r.y};});
+[7m  [0m [93m                                                                                       ~[0m
+[96mqa/visual-refinement-20261102/sections.mjs[0m:[93m49[0m:[93m137[0m - [93mwarning[0m[90m ts(80006): [0mThis may be converted to an async function.
+
+[7m49[0m   await el.evaluate(async e=>{e.scrollIntoView({block:'start',behavior:'instant'});await Promise.all([...e.querySelectorAll('img')].map(i=>{i.loading='eager';return i.decode().catch(()=>{});}));});
+[7m  [0m [93m                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96mqa/visual-refinement-20261102/sections.mjs[0m:[93m11[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'paths' is declared but its value is never read.
+
+[7m11[0m const paths = [['home','/'],['menu','/menu/'],['delivery','/delivery/'],['city','/zelenogradsk/'],['blog','/blog/'],['article','/journal/dostavka-edy-v-zelenogradske/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['bundles','/nabory/'],['bundle','/nabor/piknik-u-morya/'],['occasion','/povody/zelenogradsk/semeynyy-uzhin/'],['planner','/podbor/'],['about','/about/'],['original','/pirogi/myasnoy-pirog/'],['picnic','/catalog/baltiyskiy-piknik-set/'],['occasions','/povody/'],['ossetian','/osetinskie-pirogi/'],['partners','/partners/'],['privacy','/privacy/'],['terms','/terms/']];
+[7m  [0m [93m      ~~~~~[0m
+[96mqa/visual-refinement-20261102/sections.mjs[0m:[93m6[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'verifyMenuQuantity' is declared but its value is never read.
+
+[7m6[0m import { verifyMenuQuantity } from '../../worker/scripts/qa-menu-quantity.mjs';
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mqa/visual-refinement-20261102/targeted.mjs[0m:[93m58[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m58[0m }finally{await browser.close();await chrome.kill();}
+[7m  [0m [93m                               ~~~~~~~~~~~~~~~~~~~[0m
+[96mqa/visual-refinement-20261102/targeted.mjs[0m:[93m12[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'paths' is declared but its value is never read.
+
+[7m12[0m const paths = [['home','/'],['menu','/menu/'],['delivery','/delivery/'],['city','/zelenogradsk/'],['blog','/blog/'],['article','/journal/dostavka-edy-v-zelenogradske/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['bundles','/nabory/'],['bundle','/nabor/piknik-u-morya/'],['occasion','/povody/zelenogradsk/semeynyy-uzhin/'],['planner','/podbor/'],['about','/about/'],['original','/pirogi/myasnoy-pirog/'],['picnic','/catalog/baltiyskiy-piknik-set/'],['occasions','/povody/'],['ossetian','/osetinskie-pirogi/'],['partners','/partners/'],['privacy','/privacy/'],['terms','/terms/']];
+[7m  [0m [93m      ~~~~~[0m
+
+[96mscripts/audit-performance.mjs[0m:[93m57[0m:[93m7[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m57[0m       await chrome.kill();
+[7m  [0m [93m      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/verify-catalog-formats.mjs[0m:[93m43[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m43[0m   await chrome.kill();
+[7m  [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/verify-catalog-polish.mjs[0m:[93m148[0m:[93m37[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m148[0m }finally{await browser.disconnect();await chrome.kill();}
+[7m   [0m [93m                                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/verify-content-month.mjs[0m:[93m118[0m:[93m38[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m118[0m }finally{await browser?.disconnect();await chrome?.kill();await new Promise(done=>server.close(done));}
+[7m   [0m [93m                                     ~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/verify-content-priority.mjs[0m:[93m135[0m:[93m32[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m135[0m   await browser?.disconnect(); await chrome?.kill(); await new Promise(done => server.close(done));
+[7m   [0m [93m                               ~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/verify-journal-reading.mjs[0m:[93m98[0m:[93m34[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m98[0m } finally {await browser.close();await chrome.kill();}
+[7m  [0m [93m                                 ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mscripts/verify-pie-cutaways.mjs[0m:[93m128[0m:[93m3[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m128[0m   await chrome.kill();
+[7m   [0m [93m  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mworker/scripts/qa-interest-report.mjs[0m:[93m54[0m:[93m41[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m54[0m } finally { await browser.disconnect(); await chrome.kill(); }
+[7m  [0m [93m                                        ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mworker/scripts/qa-occasion-context.mjs[0m:[93m168[0m:[93m41[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m168[0m } finally { await browser.disconnect(); await chrome.kill(); }
+[7m   [0m [93m                                        ~~~~~~~~~~~~~~~~~~~[0m
+
+[96mworker/scripts/qa-ux-polish.mjs[0m:[93m106[0m:[93m39[0m - [93mwarning[0m[90m ts(80007): [0m'await' has no effect on the type of this expression.
+
+[7m106[0m } finally {await browser.disconnect();await chrome.kill();}
+[7m   [0m [93m                                      ~~~~~~~~~~~~~~~~~~~[0m
+
+Result (572 files):
+- 0 errors
+- 0 warnings
+- 99 hints
