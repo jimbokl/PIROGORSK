@@ -1,0 +1,124 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-05T12:27:33.445Z",
+  "expectedSha": "05569ff0a8b51042a69fef82d0ae06a318f2e02d",
+  "articles": [
+    {
+      "path": "/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
+      "datePublished": "2026-11-05",
+      "blog": true,
+      "sitemap": true
+    },
+    {
+      "path": "/journal/zavtrak-na-baltike/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/zavtrak-na-baltike/",
+      "datePublished": "2026-11-05",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/kak-edyat-rybu-v-kaliningradskoy-oblasti.bJ0sL9Yl_Z2455ke.webp",
+      "bytes": 57080,
+      "sha256": "278081f702637b1f52dca4e71ebc33cef11c5d29b36c12fd5903fd986a7c27de"
+    },
+    {
+      "path": "/_astro/kak-edyat-rybu-v-kaliningradskoy-oblasti-1.HcjEQF6q_2qt3UD.webp",
+      "bytes": 16404,
+      "sha256": "69e9f86a3e59bf4dab2e6a957cfe5ed83714ecffb9217800c7f42319b299fbd3"
+    },
+    {
+      "path": "/_astro/kak-edyat-rybu-v-kaliningradskoy-oblasti-2.BOc4rr39_1zARRM.webp",
+      "bytes": 11612,
+      "sha256": "ecd589e2056791449ab367ac663d13a72c0eb6b22e6dcd68fd897c8a8a6d58ee"
+    },
+    {
+      "path": "/seo/blog/kak-edyat-rybu-v-kaliningradskoy-oblasti.jpg",
+      "bytes": 177260,
+      "sha256": "90105c388cf866a7a9816ab616fb1fe2ac37a85ccc921547f5ee6670e5341873"
+    },
+    {
+      "path": "/_astro/zavtrak-na-baltike.CCqCzE-I_2rOlIp.webp",
+      "bytes": 71446,
+      "sha256": "a9e28165c067749abb8939fe393ba55800a3c194b387c3040937cb541ea93ccf"
+    },
+    {
+      "path": "/_astro/zavtrak-na-baltike-1.CgHohX4P_2r21yz.webp",
+      "bytes": 14186,
+      "sha256": "c59bea73c7f5f4aa7b1fca1c448e0ade2ae77bc024408cc634b452efbbf8f382"
+    },
+    {
+      "path": "/_astro/zavtrak-na-baltike-2._D2CbpDf_Z2lOyMu.webp",
+      "bytes": 14638,
+      "sha256": "d40f6df2e039b864c9968800af6e22cdd5179f19d4935fe569e33077988a08f1"
+    },
+    {
+      "path": "/seo/blog/zavtrak-na-baltike.jpg",
+      "bytes": 210021,
+      "sha256": "3c5a895c6bf0792c8ef505c7bb87e6fc285c07d8b6a52034c1fad6c8e5bed005"
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42021771745,
+    "headSha": "05569ff0a8b51042a69fef82d0ae06a318f2e02d",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42021771745"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 68,
+  "sitemapUrls": 263,
+  "buyingStyles": [
+    {
+      "inline": true,
+      "bytes": 165138,
+      "sha256": "7824384f6786385b33e719f41060dacc4f28729b90f539ba1110d7aaf86af267"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/ryba-baltiki-vidy/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    },
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/journal/gde-pozavtrakat-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/svetlogorsk-kaliningrad-edamarshrut/",
+      "status": 200
+    },
+    {
+      "path": "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "status": 200
+    }
+  ],
+  "cards": {
+    "pages": 35,
+    "cards": 40,
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ]
+  }
+}

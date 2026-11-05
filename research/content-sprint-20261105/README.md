@@ -40,4 +40,11 @@ A6-11 `/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/`: формат рыб�
 
 ## Приёмка
 
-Локальные проверки пройдены; CI/production ожидаются. Итоговый протокол — `qa/sprint-20261105/README.md`.
+Опубликовано в `05569ff0a8b51042a69fef82d0ae06a318f2e02d`;
+[CI SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42021771745).
+Production: две страницы HTTP 200, даты/canonical/BlogPosting верны,
+восемь изображений и общие стили совпали со сборкой по SHA256.
+Шесть внутренних переходов, 105 контентных просмотров и 35 общих просмотров
+на пяти ширинах PASS. Журнал — 68 статей, sitemap — 263 URL.
+IndexNow принял оба новых URL: API/Яндекс — 200/200; это не подтверждение индексации.
+Итоговый протокол — `qa/sprint-20261105/README.md`.

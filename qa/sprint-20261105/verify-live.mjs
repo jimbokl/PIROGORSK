@@ -51,6 +51,15 @@ const home=(await get('/')).toString();
 const homeLocal=await fs.readFile('site/index.html','utf8');
 const styles=[...homeLocal.matchAll(/<link[^>]+href="([^"\s]+\.css)"/g)].map(m=>m[1]);
 const buyingStyles=[];
+// Astro may inline small stylesheets. Verify the deployed style bytes in
+// either representation rather than requiring an external CSS request.
+const inlineStyles=[...homeLocal.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/g)].map(m=>m[1]);
+const liveInlineStyles=[...home.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/g)].map(m=>m[1]);
+for(const css of inlineStyles.filter(css=>css.includes('#faf3e7'))){
+ const expected=Buffer.from(css);
+ assert.ok(liveInlineStyles.some(actual=>hash(Buffer.from(actual))===hash(expected)),'Inline purchase CSS SHA256');
+ buyingStyles.push({inline:true,bytes:expected.length,sha256:hash(expected)});
+}
 for(const path of styles){
  const expected=await fs.readFile('site'+path);
  if(!expected.toString().includes('#faf3e7'))continue;

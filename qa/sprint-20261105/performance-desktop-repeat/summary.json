@@ -1,0 +1,59 @@
+[
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-11-05T12:31:43.628Z",
+    "lighthouseVersion": "13.5.0",
+    "throttlingMethod": "simulate",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 634.6485,
+    "observedLcpMs": 2507,
+    "cls": 0.0018311605084201617,
+    "tbtMs": 0,
+    "slowRequests": 0
+  },
+  {
+    "mode": "desktop",
+    "run": 2,
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-11-05T12:32:00.465Z",
+    "lighthouseVersion": "13.5.0",
+    "throttlingMethod": "simulate",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 612.6400000000001,
+    "observedLcpMs": 2368,
+    "cls": 0.0013321237194641447,
+    "tbtMs": 0,
+    "slowRequests": 0
+  },
+  {
+    "mode": "desktop",
+    "run": 3,
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-11-05T12:32:17.619Z",
+    "lighthouseVersion": "13.5.0",
+    "throttlingMethod": "simulate",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 741.2494999999999,
+    "observedLcpMs": 2775,
+    "cls": 0.0013321237194641447,
+    "tbtMs": 0,
+    "slowRequests": 0
+  }
+]

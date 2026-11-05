@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Exactly one matching purchase stylesheet
+
+0 !== 1
+
+    at file:///Volumes/DevSim/Projects/PIROGORSK/qa/sprint-20261105/verify-live.mjs:62:8 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 0,
+  expected: 1,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0

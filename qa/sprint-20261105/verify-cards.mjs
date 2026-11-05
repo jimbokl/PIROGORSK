@@ -70,7 +70,7 @@ try{
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`${path} overflow ${width}`);
    report.pages.push({path,width,catalogCount:ids.length});
   }
-  for(const path of['/delivery/','/zelenogradsk/','/pirogi/pirog-s-tvorogom-i-malinoy/','/catalog/baltiyskiy-piknik-set/','/journal/']){
+  for(const path of['/delivery/','/zelenogradsk/','/pirogi/pirog-s-tvorogom-i-malinoy/','/catalog/baltiyskiy-piknik-set/','/blog/']){
    const response=await page.goto(base+path+'?qa=1',{waitUntil:'networkidle0'});assert.equal(response.status(),200,path);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`${path} overflow ${width}`);
    assert.equal(await page.$$eval('h1',els=>els.length),1);

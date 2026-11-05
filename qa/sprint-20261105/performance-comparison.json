@@ -1,0 +1,195 @@
+{
+  "url": "https://pirogorsk.ru/?qa=1",
+  "lighthouseVersion": "13.5.0",
+  "throttlingMethod": "simulate",
+  "release": "05569ff0a8b51042a69fef82d0ae06a318f2e02d",
+  "baseline": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "timestamp": "2026-11-05T11:54:54.907Z",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2061.8235,
+      "observedLcpMs": 2504,
+      "cls": 0.013001382549003484,
+      "tbtMs": 35
+    },
+    {
+      "mode": "mobile",
+      "run": 2,
+      "timestamp": "2026-11-05T11:55:09.556Z",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1788.051,
+      "observedLcpMs": 2155,
+      "cls": 0.0011395952576401364,
+      "tbtMs": 41
+    },
+    {
+      "mode": "mobile",
+      "run": 3,
+      "timestamp": "2026-11-05T11:55:22.889Z",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1796.12,
+      "observedLcpMs": 1994,
+      "cls": 0.001029010213261006,
+      "tbtMs": 12
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "timestamp": "2026-11-05T11:55:35.853Z",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 768.4725,
+      "observedLcpMs": 1541,
+      "cls": 0.0020558138516767357,
+      "tbtMs": 0
+    }
+  ],
+  "production": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "timestamp": "2026-11-05T12:28:18.935Z",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2533.1425,
+      "observedLcpMs": 2127,
+      "cls": 0.0032112018301197853,
+      "tbtMs": 57.5
+    },
+    {
+      "mode": "mobile",
+      "run": 2,
+      "timestamp": "2026-11-05T12:28:34.082Z",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1959.7640000000001,
+      "observedLcpMs": 1791,
+      "cls": 0.013001382549003484,
+      "tbtMs": 5
+    },
+    {
+      "mode": "mobile",
+      "run": 3,
+      "timestamp": "2026-11-05T12:28:47.510Z",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1830.3155,
+      "observedLcpMs": 1377,
+      "cls": 0.004787835081528907,
+      "tbtMs": 29.5
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "timestamp": "2026-11-05T12:28:59.860Z",
+      "scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 8272.383,
+      "observedLcpMs": 1424,
+      "cls": 0.004477014253713919,
+      "tbtMs": 0
+    }
+  ],
+  "desktopRepeats": [
+    {
+      "mode": "desktop",
+      "run": 1,
+      "url": "https://pirogorsk.ru/?qa=1",
+      "timestamp": "2026-11-05T12:31:43.628Z",
+      "lighthouseVersion": "13.5.0",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 634.6485,
+      "observedLcpMs": 2507,
+      "cls": 0.0018311605084201617,
+      "tbtMs": 0,
+      "slowRequests": 0
+    },
+    {
+      "mode": "desktop",
+      "run": 2,
+      "url": "https://pirogorsk.ru/?qa=1",
+      "timestamp": "2026-11-05T12:32:00.465Z",
+      "lighthouseVersion": "13.5.0",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 612.6400000000001,
+      "observedLcpMs": 2368,
+      "cls": 0.0013321237194641447,
+      "tbtMs": 0,
+      "slowRequests": 0
+    },
+    {
+      "mode": "desktop",
+      "run": 3,
+      "url": "https://pirogorsk.ru/?qa=1",
+      "timestamp": "2026-11-05T12:32:17.619Z",
+      "lighthouseVersion": "13.5.0",
+      "throttlingMethod": "simulate",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 741.2494999999999,
+      "observedLcpMs": 2775,
+      "cls": 0.0013321237194641447,
+      "tbtMs": 0,
+      "slowRequests": 0
+    }
+  ],
+  "notes": [
+    "Every run starts a new Chrome process/profile. Laboratory measurements, not CrUX.",
+    "Initial production desktop sample retained: score 55 and simulated LCP 8272 ms; observed LCP 1424 ms.",
+    "That trace has 38 requests lasting over 5 seconds. Three later desktop samples have zero such requests. This supports a transient network anomaly; its upstream cause is not established.",
+    "Local Python HTTP server measurements excluded from production comparisons: no HTML compression and font connection resets."
+  ]
+}
