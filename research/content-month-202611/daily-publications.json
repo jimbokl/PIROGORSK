@@ -7,8 +7,8 @@
       "topic": 9,
       "slug": "hleb-i-vypechka-kaliningradskoy-oblasti",
       "url": "https://pirogorsk.ru/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
-      "status": "publishing",
-      "stage": "commit_and_ci",
+      "status": "published",
+      "stage": "complete",
       "startedAt": "2026-11-05T08:02:30.063876+00:00",
       "protocol": "research/content-daily-20261105/RELEASE.md",
       "localVerification": {
@@ -19,6 +19,39 @@
         "content": "PASS: 95 viewports",
         "unitTests": "PASS: 66 tests",
         "report": "qa/content-daily-20261105/local-report.json"
+      },
+      "commit": "92205ea56e6a1775806994d74f54becdbde8c632",
+      "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/41993220307",
+      "publishedAt": "2026-11-05T08:45:28Z",
+      "verifiedAt": "2026-11-05T08:49:21.851678+00:00",
+      "verifiedLocalAt": "2026-11-05T10:49:21.851678+02:00",
+      "verification": {
+        "http": 200,
+        "canonical": "https://pirogorsk.ru/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+        "datePublished": "2026-11-05",
+        "words": 1292,
+        "productionViewportChecks": 95,
+        "articleViewports": [
+          320,
+          390,
+          768,
+          1024,
+          1280
+        ],
+        "journalArticles": 66,
+        "sitemapUrls": 261,
+        "matchingAssets": 4,
+        "internalLinks": 4,
+        "mobileTableScroll": "PASS",
+        "productionRelease": "PASS",
+        "indexNow": {
+          "status": "received-by-all",
+          "count": 261,
+          "apiHttp": 200,
+          "yandexHttp": 200,
+          "articleIncluded": true
+        },
+        "report": "qa/content-daily-20261105/README.md"
       }
     }
   ]

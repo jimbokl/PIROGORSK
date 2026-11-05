@@ -1,0 +1,70 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-05T08:46:48.928Z",
+  "expectedSha": "92205ea56e6a1775806994d74f54becdbde8c632",
+  "articles": [
+    {
+      "path": "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "datePublished": "2026-11-05",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/hleb-i-vypechka-kaliningradskoy-oblasti.BskLwsUc_Z2iBXkf.webp",
+      "bytes": 80586,
+      "sha256": "e41cffb2bd6d35f8b8085da4a5cda8d0767af6a595d5445763b8abb3ddbba28f"
+    },
+    {
+      "path": "/_astro/hleb-i-vypechka-kaliningradskoy-oblasti-1.CNsQeMrL_OkSiK.webp",
+      "bytes": 13320,
+      "sha256": "ad319bdd57208175708517f60e8e247b268ad89396d8e461e7c5cd87fd345667"
+    },
+    {
+      "path": "/_astro/hleb-i-vypechka-kaliningradskoy-oblasti-2.DjsfgBV1_Z1SlTxT.webp",
+      "bytes": 13552,
+      "sha256": "ef7ad47a0344e394f070b52707d24961e1320eea780045350f699d7003d0bd42"
+    },
+    {
+      "path": "/seo/blog/hleb-i-vypechka-kaliningradskoy-oblasti.jpg",
+      "bytes": 226800,
+      "sha256": "c09e1900c3966161f7799f32918dbb59652f098a40826a6ef1b3813b39df2418"
+    }
+  ],
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 41993220307,
+    "headSha": "92205ea56e6a1775806994d74f54becdbde8c632",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/41993220307"
+  },
+  "journalArticles": 66,
+  "sitemapUrls": 261,
+  "links": [
+    {
+      "path": "/journal/svetlogorsk-kaliningrad-edamarshrut/",
+      "status": 200
+    },
+    {
+      "path": "/journal/baltiyskie-syry/",
+      "status": 200
+    },
+    {
+      "path": "/journal/ryba-baltiki-vidy/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    }
+  ]
+}
