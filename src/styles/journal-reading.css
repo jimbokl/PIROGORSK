@@ -1,5 +1,11 @@
 body.editorial-site.journal-page .blog-city-guide .ed-hero{padding-bottom:0}
 body.editorial-site.journal-page .blog-guide-context{margin-top:24px}
+/* Give editorial headings a full reading line before the desktop split. */
+@media(min-width:761px) and (max-width:1000px){
+  body.editorial-site.journal-page .blog-article:not(.blog-city-guide) .ed-hero{grid-template-columns:minmax(0,1fr);max-width:760px;margin-inline:auto;gap:28px}
+  body.editorial-site.journal-page .blog-article:not(.blog-city-guide) .ed-hero h1{max-width:30ch}
+  body.editorial-site.journal-page .blog-article:not(.blog-city-guide) .ed-intro{max-width:65ch}
+}
 /* The journal shares the site's navy, kraft and amber, with a quiet reading rhythm. */
 body.editorial-site.journal-page .article-reading{display:grid;grid-template-columns:240px minmax(0,760px);justify-content:space-between;gap:clamp(32px,5vw,80px);align-items:start;margin-block:36px 64px}
 body.editorial-site.journal-page .article-reading-nav{position:sticky;top:100px;min-width:0}

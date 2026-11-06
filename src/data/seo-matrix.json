@@ -782,7 +782,9 @@
     },
     "relatedArticles": [
       "/journal/pekarni-kaliningrada-pirogi-na-vynos/",
-      "/journal/obed-v-ofis-v-kaliningrade/"
+      "/journal/obed-v-ofis-v-kaliningrade/",
+      "/journal/zavtraki-v-kaliningrade/",
+      "/journal/kofeyni-kaliningrada/"
     ]
   },
   {
@@ -4808,6 +4810,53 @@
     "relatedArticles": [
       "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
       "/journal/stroganina-iz-pelamidy/"
+    ]
+  },
+  {
+    "path": "/journal/zavtraki-v-kaliningrade/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Завтраки в Калининграде: где поесть утром и после прогулки",
+    "query": "завтраки в калининграде: где поесть утром и после прогулки",
+    "intent": "Утром перед поездкой важны часы открытия, после долгой прогулки — возможность заказать завтрак днём. Собрали несколько подтверждённых вариантов в Калининграде и показали, как сравнить их под свой маршрут. Здесь есть меню, адресные ориентиры и расчёты, которые можно повторить для своей компании.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/kofeyni-kaliningrada/",
+      "/journal/gde-poest-v-kaliningrade/",
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/skolko-piroga-na-cheloveka/",
+      "/journal/zavtrak-na-baltike/"
+    ]
+  },
+  {
+    "path": "/journal/kofeyni-kaliningrada/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Кофейни Калининграда: кофе, выпечка и выбор под свой день",
+    "query": "кофейни калининграда: кофе, выпечка и выбор под свой день",
+    "intent": "Одному нужен привычный кофе по дороге, другому — время выбрать зерно и способ заваривания, третьему — выпечка для всей компании. Разбираем кофейные форматы Калининграда на подтверждённых примерах: какие вопросы задать, что показывает меню и как собрать удобную остановку без случайных обещаний.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/zavtraki-v-kaliningrade/",
+      "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "/journal/gde-poest-v-kaliningrade/",
+      "/journal/skolko-piroga-na-cheloveka/"
     ]
   }
 ]

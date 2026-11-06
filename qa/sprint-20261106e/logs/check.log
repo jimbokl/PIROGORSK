@@ -1,0 +1,514 @@
+
+> pirogorsk@0.1.0 check
+> astro check && tsc --noEmit
+
+20:56:45 [types] Generated 67ms
+20:56:45 [check] Getting diagnostics for Astro files in /Volumes/DevSim/Projects/PIROGORSK...
+business/investment-plan-20261030/private/build-model.mjs:74:59 - warning ts(6133): 'ye' is declared but its value is never read.
+
+74  const c=col(m+3),p=col(m+2),ys=4+Math.floor((m-1)/12)*12,ye=ys+11,yc=col(ys),prevys=ys-12;
+                                                             ~~
+business/investment-plan-20261030/private/build-model.mjs:72:7 - warning ts(6133): 'calcRows' is declared but its value is never read.
+
+72 const calcRows=[];
+         ~~~~~~~~
+business/investment-plan-20261030/private/build-model.mjs:52:15 - warning ts(6133): 'x' is declared but its value is never read.
+
+52 skus.forEach((x,i)=>form(sku,`J${5+i}`,`=SUM(G${20+i}:W${20+i})+0.08`));
+                 ~
+business/investment-plan-20261030/private/build-model.mjs:13:7 - warning ts(6133): 'money' is declared but its value is never read.
+
+13 const money='#,##0" ₽";[Red](#,##0)" ₽";–';
+         ~~~~~
+
+qa/addon-backgrounds-20261103/verify.mjs:54:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+54 }finally{await browser.close();await chrome.kill();}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/analytics-20261031/verify-responsive.mjs:80:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+80   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/brand-v5-20261030/inspect-concepts.mjs:88:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+88 } finally { await browser.close(); await chrome.kill(); }
+                                      ~~~~~~~~~~~~~~~~~~~
+qa/brand-v5-20261030/inspect-concepts.mjs:66:55 - warning ts(6387): The signature '(string: string): string' of 'unescape' is deprecated.
+
+66         image.src = `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svg)))}`;
+                                                         ~~~~~~~~
+
+qa/brand-v6-20261030/verify-brand.mjs:95:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+95 } finally { await browser.close(); await chrome.kill(); }
+                                      ~~~~~~~~~~~~~~~~~~~
+
+qa/catalog-click-20261106/reproduce.mjs:60:35 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+60 } finally { browser.disconnect(); await chrome.kill(); }
+                                     ~~~~~~~~~~~~~~~~~~~
+
+qa/catalog-click-20261106c/reproduce.mjs:60:35 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+60 } finally { browser.disconnect(); await chrome.kill(); }
+                                     ~~~~~~~~~~~~~~~~~~~
+
+qa/catalog-purchase-20261102/inspect.mjs:84:25 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+84   await browser.close();await chrome.kill();
+                           ~~~~~~~~~~~~~~~~~~~
+qa/catalog-purchase-20261102/inspect.mjs:54:65 - warning ts(80006): This may be converted to an async function.
+
+54           await Promise.all([...el.querySelectorAll('img')].map(img=>{img.loading='eager';return img.decode().catch(()=>{});}));
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+qa/city-landings-20261030/audit.mjs:102:26 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+102   await browser.close(); await chrome.kill();
+                             ~~~~~~~~~~~~~~~~~~~
+
+qa/delivery-premium-20261030/audit.mjs:77:24 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+77  await browser.close();await chrome.kill();
+                          ~~~~~~~~~~~~~~~~~~~
+
+qa/delivery-premium-20261030/verify-pagespeed.mjs:23:24 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+23  await browser.close();await chrome.kill();
+                          ~~~~~~~~~~~~~~~~~~~
+
+qa/dominos-sprint-20261031/verify-functional.mjs:30:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+30   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/editorial-cards-20261101/verify.mjs:111:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+111 } finally { await browser.close(); await chrome.kill(); }
+                                       ~~~~~~~~~~~~~~~~~~~
+
+qa/header-reference-20261030/verify-ui.mjs:106:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+106 }finally{await browser.close();await chrome.kill()}
+                                   ~~~~~~~~~~~~~~~~~~~
+
+qa/home-full-catalog-20261030/verify-home.mjs:205:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+205 } finally { await browser.close(); await chrome.kill(); }
+                                       ~~~~~~~~~~~~~~~~~~~
+
+qa/home-full-catalog-20261030/verify-pagespeed.mjs:23:24 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+23  await browser.close();await chrome.kill();
+                          ~~~~~~~~~~~~~~~~~~~
+
+qa/home-lcp-20261029/audit.mjs:25:10 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+25 }finally{await chrome.kill();}
+            ~~~~~~~~~~~~~~~~~~~
+
+qa/home-lcp-20261029/browser-diagnostic.mjs:33:13 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+33  } finally {await chrome.kill();}
+               ~~~~~~~~~~~~~~~~~~~
+
+qa/home-lcp-20261029/render-variants.mjs:53:41 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+53   } finally {await browser.disconnect();await chrome.kill();}
+                                           ~~~~~~~~~~~~~~~~~~~
+
+qa/home-lcp-20261029/raw/font-fix-audit.mjs:56:7 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+56       await chrome.kill();
+         ~~~~~~~~~~~~~~~~~~~
+
+qa/home-lcp-20261029/raw/font-fix-production-audit.mjs:56:7 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+56       await chrome.kill();
+         ~~~~~~~~~~~~~~~~~~~
+
+qa/home-storefront-20261030/verify-home.mjs:105:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+105 } finally { await browser.close(); await chrome.kill(); }
+                                       ~~~~~~~~~~~~~~~~~~~
+
+qa/home-storefront-20261030/verify-pagespeed.mjs:23:24 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+23  await browser.close();await chrome.kill();
+                          ~~~~~~~~~~~~~~~~~~~
+
+qa/menu-cards-reference-20261030/verify-ui.mjs:100:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+100 } finally { await browser.close(); await chrome.kill(); }
+                                       ~~~~~~~~~~~~~~~~~~~
+
+qa/menu-quantity-20261030/verify-ui.mjs:49:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+49   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/mobile-performance-20261103/verify-hero.mjs:79:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+79   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/pie-city-banners-20261030/verify-banners.mjs:136:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+136 } finally { await browser.close(); await chrome.kill(); }
+                                       ~~~~~~~~~~~~~~~~~~~
+
+qa/pie-city-banners-20261030/verify-pagespeed.mjs:25:26 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+25   await browser.close(); await chrome.kill();
+                            ~~~~~~~~~~~~~~~~~~~
+
+qa/pie-city-site-20261030/debug-swipe.mjs:1:1603 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+1 import{launch}from'chrome-launcher';import puppeteer from'puppeteer-core';const c=await launch({chromeFlags:['--headless=new']});const b=await puppeteer.connect({browserURL:`http://localhost:${c.port}`});try{const p=await b.newPage();await p.setViewport({width:390,height:1000,isMobile:true,hasTouch:true});await p.goto('https://pirogorsk.ru/?qa=1',{waitUntil:'networkidle0'});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);await p.click('[data-tasting-select="tea"]');await p.waitForFunction(()=>document.querySelector('[data-tasting-hero]').dataset.flavor==='tea');await p.evaluate(()=>{window.events=[];for(const t of ['pointerdown','pointermove','pointerup','pointercancel'])document.addEventListener(t,e=>window.events.push({t,tag:e.target.className,x:e.clientX,y:e.clientY,pt:e.pointerType}));});let art=await(await p.$('[data-tasting-art]')).boundingBox();let point={x:art.x+art.width-12,y:art.y+art.height/2};console.log({art,point});console.log(await p.evaluate(({x,y})=>({target:document.elementFromPoint(x,y)?.outerHTML.slice(0,200),scroll:scrollY}),point));const s=await p.createCDPSession();await s.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]});for(const dx of [25,50,75,100])await s.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:point.x-dx,y:point.y+2}]});await s.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await new Promise(r=>setTimeout(r,1200));console.log(await p.evaluate(()=>({events,slide:document.querySelector('[data-tasting-hero]').dataset.flavor})));}finally{await b.close();await c.kill();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~
+qa/pie-city-site-20261030/debug-swipe.mjs:1:750 - warning ts(2568): Property 'events' may not exist on type 'Window & typeof globalThis'. Did you mean 'event'?
+
+1 import{launch}from'chrome-launcher';import puppeteer from'puppeteer-core';const c=await launch({chromeFlags:['--headless=new']});const b=await puppeteer.connect({browserURL:`http://localhost:${c.port}`});try{const p=await b.newPage();await p.setViewport({width:390,height:1000,isMobile:true,hasTouch:true});await p.goto('https://pirogorsk.ru/?qa=1',{waitUntil:'networkidle0'});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);await p.click('[data-tasting-select="tea"]');await p.waitForFunction(()=>document.querySelector('[data-tasting-hero]').dataset.flavor==='tea');await p.evaluate(()=>{window.events=[];for(const t of ['pointerdown','pointermove','pointerup','pointercancel'])document.addEventListener(t,e=>window.events.push({t,tag:e.target.className,x:e.clientX,y:e.clientY,pt:e.pointerType}));});let art=await(await p.$('[data-tasting-art]')).boundingBox();let point={x:art.x+art.width-12,y:art.y+art.height/2};console.log({art,point});console.log(await p.evaluate(({x,y})=>({target:document.elementFromPoint(x,y)?.outerHTML.slice(0,200),scroll:scrollY}),point));const s=await p.createCDPSession();await s.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]});for(const dx of [25,50,75,100])await s.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:point.x-dx,y:point.y+2}]});await s.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await new Promise(r=>setTimeout(r,1200));console.log(await p.evaluate(()=>({events,slide:document.querySelector('[data-tasting-hero]').dataset.flavor})));}finally{await b.close();await c.kill();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ~~~~~~
+qa/pie-city-site-20261030/debug-swipe.mjs:1:629 - warning ts(2568): Property 'events' may not exist on type 'Window & typeof globalThis'. Did you mean 'event'?
+
+1 import{launch}from'chrome-launcher';import puppeteer from'puppeteer-core';const c=await launch({chromeFlags:['--headless=new']});const b=await puppeteer.connect({browserURL:`http://localhost:${c.port}`});try{const p=await b.newPage();await p.setViewport({width:390,height:1000,isMobile:true,hasTouch:true});await p.goto('https://pirogorsk.ru/?qa=1',{waitUntil:'networkidle0'});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);await p.click('[data-tasting-select="tea"]');await p.waitForFunction(()=>document.querySelector('[data-tasting-hero]').dataset.flavor==='tea');await p.evaluate(()=>{window.events=[];for(const t of ['pointerdown','pointermove','pointerup','pointercancel'])document.addEventListener(t,e=>window.events.push({t,tag:e.target.className,x:e.clientX,y:e.clientY,pt:e.pointerType}));});let art=await(await p.$('[data-tasting-art]')).boundingBox();let point={x:art.x+art.width-12,y:art.y+art.height/2};console.log({art,point});console.log(await p.evaluate(({x,y})=>({target:document.elementFromPoint(x,y)?.outerHTML.slice(0,200),scroll:scrollY}),point));const s=await p.createCDPSession();await s.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]});for(const dx of [25,50,75,100])await s.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:point.x-dx,y:point.y+2}]});await s.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await new Promise(r=>setTimeout(r,1200));console.log(await p.evaluate(()=>({events,slide:document.querySelector('[data-tasting-hero]').dataset.flavor})));}finally{await b.close();await c.kill();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ~~~~~~
+
+qa/pie-city-site-20261030/verify-destinations.mjs:5:152 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+5 }finally{await writeFile(`${root}/${stage}-destinations.json`,JSON.stringify({checkedAt:new Date().toISOString(),checks},null,2)+'\n');await b.close();await c.kill();}
+                                                                                                                                                         ~~~~~~~~~~~~~~
+
+qa/pie-city-site-20261030/verify-pagespeed.mjs:25:26 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+25   await browser.close(); await chrome.kill();
+                            ~~~~~~~~~~~~~~~~~~~
+
+qa/pie-city-site-20261030/verify-site.mjs:41:178 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+41 }finally{await writeFile(`${root}/${stage}-results.json`,JSON.stringify({checkedAt:new Date().toISOString(),production,results,flows,errors},null,2)+'\n');await browser.close();await chrome.kill();}
+                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~
+
+qa/pie-cutaways-20261031/verify-pagespeed.mjs:24:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+24 }finally{await browser.close();await chrome.kill()}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/pirogi39-20261029/verify-selection.mjs:67:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+67 } finally { await browser.close(); await chrome.kill(); }
+                                      ~~~~~~~~~~~~~~~~~~~
+
+qa/pirogi39-20261029/verify-ui.mjs:78:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+78   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261029/probe-render.mjs:34:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+34 }finally{await browser.close();await chrome.kill();}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261029/render-font-control.mjs:56:41 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+56   } finally {await browser.disconnect();await chrome.kill();}
+                                           ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261030/baseline.mjs:8:940 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+8 try {for(const width of [390,768,1280])for(const path of routes){const page=await browser.newPage();await page.setViewport({width,height:900});await page.goto(`http://127.0.0.1:4322${path}?qa=1`,{waitUntil:'networkidle0'});await page.evaluate(()=>document.fonts.ready);const key=path.replaceAll('/','_')||'home';await page.screenshot({path:`qa/polish-20261030/before/${key}-${width}.jpg`,type:'jpeg',quality:75,fullPage:true});results.push({path,width,...await page.evaluate(()=>({title:document.title,h1:document.querySelector('h1')?.textContent,overflow:document.documentElement.scrollWidth>innerWidth,product:document.querySelector('.product-options')?.getBoundingClientRect().toJSON(),hero:document.querySelector('.product-hero,.town-hero')?.getBoundingClientRect().toJSON()}))});await page.close();}await writeFile('qa/polish-20261030/baseline.json',JSON.stringify(results,null,2));console.log(results);}finally{await browser.close();await chrome.kill();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261030/probe.mjs:15:33 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+15 } finally{await browser.close();await chrome.kill();}
+                                   ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261030/verify-all-products.mjs:49:25 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+49   await browser.close();await chrome.kill();
+                           ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261030/verify-feed-anchor.mjs:25:34 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+25 } finally {await browser.close();await chrome.kill();}
+                                    ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261030/verify-polish.mjs:82:169 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+82 }finally{await writeFile(`${root}/results.json`,JSON.stringify({checkedAt:new Date().toISOString(),production,results,flows,errors},null,2)+'\n');await browser.close();await chrome.kill();}
+                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261030/viewport-after.mjs:3:594 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+3 try{for(const width of [390,768])for(const [name,path]of [['menu','/menu/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['occasion','/povody/']]){const page=await browser.newPage();await page.setViewport({width,height:1000});await page.goto(`http://127.0.0.1:4322${path}?qa=1`,{waitUntil:'networkidle0'});await page.screenshot({path:`qa/polish-20261030/after/${name}-top-${width}.jpg`,type:'jpeg',quality:85});if(name==='menu'){console.log(await page.$eval('.supplier-card',e=>({firstProductY:e.getBoundingClientRect().y})));}await page.close();}}finally{await browser.close();await chrome.kill();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-20261030/viewport.mjs:3:595 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+3 try{for(const width of [390,768])for(const [name,path]of [['menu','/menu/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['occasion','/povody/']]){const page=await browser.newPage();await page.setViewport({width,height:1000});await page.goto(`http://127.0.0.1:4322${path}?qa=1`,{waitUntil:'networkidle0'});await page.screenshot({path:`qa/polish-20261030/before/${name}-top-${width}.jpg`,type:'jpeg',quality:85});if(name==='menu'){console.log(await page.$eval('.supplier-card',e=>({firstProductY:e.getBoundingClientRect().y})));}await page.close();}}finally{await browser.close();await chrome.kill();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-qa-20261102/audit.mjs:110:33 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+110 } finally{await browser.close();await chrome.kill();}
+                                    ~~~~~~~~~~~~~~~~~~~
+
+qa/polish-qa-20261102/explore.mjs:29:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+29 }finally{await browser.close();await chrome.kill();}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/product-copy-20261102/compare.mjs:25:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+25 }finally{await browser.close();await chrome.kill();}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/product-copy-20261102/verify-catalog-click.mjs:40:35 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+40 } finally { await browser.close();await chrome.kill(); }
+                                     ~~~~~~~~~~~~~~~~~~~
+
+qa/product-copy-20261102/verify.mjs:95:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+95 }finally{await browser.close();await chrome.kill();}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/product-detail-style-20261029/capture-after.mjs:15:34 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+15 } finally {await browser.close();await chrome.kill();}
+                                    ~~~~~~~~~~~~~~~~~~~
+
+qa/product-detail-style-20261029/capture-before.mjs:15:34 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+15 } finally {await browser.close();await chrome.kill();}
+                                    ~~~~~~~~~~~~~~~~~~~
+
+qa/product-pages-20261029/verify-ui.mjs:78:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+78   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/qa-polish-20261030/audit.mjs:142:36 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+142 } finally { await browser.close(); await chrome.kill(); }
+                                       ~~~~~~~~~~~~~~~~~~~
+
+qa/selection-tools-20261031/verify-functional.mjs:30:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+30   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/site-micro-polish-20261101/audit.mjs:110:33 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+110 } finally{await browser.close();await chrome.kill();}
+                                    ~~~~~~~~~~~~~~~~~~~
+
+qa/site-premium-20261030/audit.mjs:81:24 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+81  await browser.close();await chrome.kill();
+                          ~~~~~~~~~~~~~~~~~~~
+
+qa/site-premium-20261030/flows.mjs:51:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+51   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/site-premium-20261030/verify-pagespeed.mjs:23:24 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+23  await browser.close();await chrome.kill();
+                          ~~~~~~~~~~~~~~~~~~~
+
+qa/sprint-20261105/verify-cards.mjs:82:123 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+82 }finally{await fs.writeFile(`${out}/${stage}-cards-report.json`,JSON.stringify(report,null,2)+'\n');await browser.close();await chrome.kill();}
+                                                                                                                             ~~~~~~~~~~~~~~~~~~~
+
+qa/sprint-20261106/verify-cards.mjs:103:123 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+103 }finally{await fs.writeFile(`${out}/${stage}-cards-report.json`,JSON.stringify(report,null,2)+'\n');await browser.close();await chrome.kill();}
+                                                                                                                              ~~~~~~~~~~~~~~~~~~~
+
+qa/stageshow-cards-20261103/inspect-dev.mjs:3:946 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+3 try{const p=await b.newPage();await p.setViewport({width:1280,height:1000});p.on('requestfailed',r=>console.log('FAILED',r.url(),r.failure()?.errorText));await p.goto('http://127.0.0.1:4321/journal/dostavka-edy-v-zelenogradske/',{waitUntil:'networkidle2'});const cards=await p.$$('.scene-card');for(const e of cards){await e.evaluate(n=>n.scrollIntoView({block:'center',behavior:'instant'}));await e.evaluate(async n=>{await Promise.all([...n.querySelectorAll('img')].map(i=>i.decode().catch(e=>e.message)))});}await p.$eval('.ed-links-section',n=>n.scrollIntoView({block:'start',behavior:'instant'}));console.log(JSON.stringify(await p.$$eval('.scene-card',es=>es.map(e=>({href:e.getAttribute('href'),image:e.querySelector('img').currentSrc,complete:e.querySelector('img').complete,width:e.querySelector('img').naturalWidth}))),null,2));await p.screenshot({path:'qa/stageshow-cards-20261103/draft-article-loaded.png'});}finally{await b.close();await c.kill();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~
+
+qa/stageshow-cards-20261103/layout.mjs:5:744 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+5 try{const p=await b.newPage();for(const width of [390,1280]){await p.setViewport({width,height:1000});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);await p.goto('http://127.0.0.1:4321/',{waitUntil:'networkidle0'});await p.$eval('.scenario-entries',e=>e.scrollIntoView({block:'center',behavior:'instant'}));await p.evaluate(()=>document.fonts.ready);const scope=await p.$eval('.scenario-entries',auditLayout);const result=layoutResult([scope],[],true);await writeFile(`qa/stageshow-cards-20261103/layout-${width}.json`,JSON.stringify(result,null,2)+'\n');console.log(width,result.status,JSON.stringify(scope.checked),scope.findings);if(result.exitCode)process.exitCode=result.exitCode;}}finally{await b.close();await c.kill();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ~~~~~~~~~~~~~~
+
+qa/stageshow-cards-20261103/probe-focus.mjs:4:803 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+4 try{const p=await b.newPage();await p.setViewport({width:320,height:960});await p.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);for(const css of ['', '.scene-card{overflow:clip!important}', '.scenario-rail{scroll-snap-type:none!important}', '.scenario-rail a{scroll-margin-inline:30px!important}']){await p.goto('http://127.0.0.1:4399/',{waitUntil:'networkidle0'});if(css)await p.addStyleTag({content:css});await p.$eval('.scenario-rail a',e=>e.focus());await p.keyboard.press('Tab');await new Promise(r=>setTimeout(r,500));console.log(css||'baseline',await p.$$eval('.scenario-rail a',es=>es.map(e=>{const r=e.getBoundingClientRect();return{left:r.left,right:r.right,top:r.top,focus:e===document.activeElement,scroll:e.parentElement.scrollLeft};})));}}finally{await b.close();await c.kill();server.close();}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~
+
+qa/stageshow-cards-20261103/verify.mjs:105:26 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+105 }finally{await b.close();await c.kill();}
+                             ~~~~~~~~~~~~~~
+
+qa/supplier-catalog-20261029/verify-ui.mjs:57:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+57   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/unslop-20261103/audit.mjs:85:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+85   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/unslop-20261103/verify-hero.mjs:79:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+79   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/ux-polish-20261031/audit-accessibility.mjs:54:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+54   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+qa/visual-redesign-20261030/experiment.mjs:51:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+51 }finally{await browser.close();await chrome.kill()}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/visual-redesign-20261030/probe.mjs:2:1198 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+2 const c=await launch({chromeFlags:['--headless=new']}),b=await puppeteer.connect({browserURL:`http://localhost:${c.port}`});const p=await b.newPage();await p.setViewport({width:390,height:900,isMobile:true,hasTouch:true});await p.setRequestInterception(true);p.on('request',async r=>{const u=new URL(r.url());try{const path=`site${u.pathname}${u.pathname.endsWith('/')?'index.html':''}`;await r.respond({status:200,contentType:({'.html':'text/html','.css':'text/css','.js':'application/javascript','.avif':'image/avif','.webp':'image/webp','.woff2':'font/woff2'})[extname(path)],body:await readFile(path)})}catch{await r.abort()}});await p.goto('https://pirogorsk.ru/?qa=1',{waitUntil:'networkidle0'});console.log(await p.evaluate(()=>[...document.querySelectorAll('.tasting-art,.tasting-scene,.tasting-scene img,.offer-art,.offer-art .product-artwork,.offer-art .product-artwork-subject,.offer-art .product-artwork img')].map(e=>({c:e.className,rect:e.getBoundingClientRect().toJSON(),css:{height:getComputedStyle(e).height,display:getComputedStyle(e).display,position:getComputedStyle(e).position}}))));await p.screenshot({path:'qa/visual-redesign-20261030/local/hero-390.png'});await b.close();await c.kill();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ~~~~~~~~~~~~~~
+
+qa/visual-redesign-20261030/verify-other-ui.mjs:51:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+51 }finally{await browser.close();await chrome.kill()}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/visual-redesign-20261030/verify-pagespeed.mjs:24:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+24 }finally{await browser.close();await chrome.kill()}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/visual-redesign-20261030/verify-ui.mjs:51:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+51 }finally{await browser.close();await chrome.kill()}
+                                  ~~~~~~~~~~~~~~~~~~~
+
+qa/visual-refinement-20261102/audit.mjs:114:33 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+114 } finally{await browser.close();await chrome.kill();}
+                                    ~~~~~~~~~~~~~~~~~~~
+
+qa/visual-refinement-20261102/probe.mjs:42:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+42 }finally{await browser.close();await chrome.kill();}
+                                  ~~~~~~~~~~~~~~~~~~~
+qa/visual-refinement-20261102/probe.mjs:11:7 - warning ts(6133): 'paths' is declared but its value is never read.
+
+11 const paths = [['home','/'],['menu','/menu/'],['delivery','/delivery/'],['city','/zelenogradsk/'],['blog','/blog/'],['article','/journal/dostavka-edy-v-zelenogradske/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['bundles','/nabory/'],['bundle','/nabor/piknik-u-morya/'],['occasion','/povody/zelenogradsk/semeynyy-uzhin/'],['planner','/podbor/'],['about','/about/'],['original','/pirogi/myasnoy-pirog/'],['picnic','/catalog/baltiyskiy-piknik-set/'],['occasions','/povody/'],['ossetian','/osetinskie-pirogi/'],['partners','/partners/'],['privacy','/privacy/'],['terms','/terms/']];
+         ~~~~~
+qa/visual-refinement-20261102/probe.mjs:6:1 - warning ts(6133): 'verifyMenuQuantity' is declared but its value is never read.
+
+6 import { verifyMenuQuantity } from '../../worker/scripts/qa-menu-quantity.mjs';
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+qa/visual-refinement-20261102/probe.mjs:2:20 - warning ts(6133): 'writeFile' is declared but its value is never read.
+
+2 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+                     ~~~~~~~~~
+qa/visual-refinement-20261102/probe.mjs:1:1 - warning ts(6133): 'assert' is declared but its value is never read.
+
+1 import assert from 'node:assert/strict';
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+qa/visual-refinement-20261102/sections.mjs:60:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+60 }finally{await browser.close();await chrome.kill();}
+                                  ~~~~~~~~~~~~~~~~~~~
+qa/visual-refinement-20261102/sections.mjs:51:88 - warning ts(6133): 'b' is declared but its value is never read.
+
+51    const metrics=()=>el.evaluate(e=>{const q=e.querySelector('[data-option-quantity]'),b=e.querySelector('.product-options-bottom'),r=e.getBoundingClientRect(),a=e.querySelector('[data-option-link]').getBoundingClientRect();return {value:q.value,height:r.height,buttonY:a.y-r.y};});
+                                                                                          ~
+qa/visual-refinement-20261102/sections.mjs:49:137 - warning ts(80006): This may be converted to an async function.
+
+49   await el.evaluate(async e=>{e.scrollIntoView({block:'start',behavior:'instant'});await Promise.all([...e.querySelectorAll('img')].map(i=>{i.loading='eager';return i.decode().catch(()=>{});}));});
+                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+qa/visual-refinement-20261102/sections.mjs:11:7 - warning ts(6133): 'paths' is declared but its value is never read.
+
+11 const paths = [['home','/'],['menu','/menu/'],['delivery','/delivery/'],['city','/zelenogradsk/'],['blog','/blog/'],['article','/journal/dostavka-edy-v-zelenogradske/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['bundles','/nabory/'],['bundle','/nabor/piknik-u-morya/'],['occasion','/povody/zelenogradsk/semeynyy-uzhin/'],['planner','/podbor/'],['about','/about/'],['original','/pirogi/myasnoy-pirog/'],['picnic','/catalog/baltiyskiy-piknik-set/'],['occasions','/povody/'],['ossetian','/osetinskie-pirogi/'],['partners','/partners/'],['privacy','/privacy/'],['terms','/terms/']];
+         ~~~~~
+qa/visual-refinement-20261102/sections.mjs:6:1 - warning ts(6133): 'verifyMenuQuantity' is declared but its value is never read.
+
+6 import { verifyMenuQuantity } from '../../worker/scripts/qa-menu-quantity.mjs';
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+qa/visual-refinement-20261102/targeted.mjs:58:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+58 }finally{await browser.close();await chrome.kill();}
+                                  ~~~~~~~~~~~~~~~~~~~
+qa/visual-refinement-20261102/targeted.mjs:12:7 - warning ts(6133): 'paths' is declared but its value is never read.
+
+12 const paths = [['home','/'],['menu','/menu/'],['delivery','/delivery/'],['city','/zelenogradsk/'],['blog','/blog/'],['article','/journal/dostavka-edy-v-zelenogradske/'],['product','/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/'],['bundles','/nabory/'],['bundle','/nabor/piknik-u-morya/'],['occasion','/povody/zelenogradsk/semeynyy-uzhin/'],['planner','/podbor/'],['about','/about/'],['original','/pirogi/myasnoy-pirog/'],['picnic','/catalog/baltiyskiy-piknik-set/'],['occasions','/povody/'],['ossetian','/osetinskie-pirogi/'],['partners','/partners/'],['privacy','/privacy/'],['terms','/terms/']];
+         ~~~~~
+
+scripts/audit-performance.mjs:57:7 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+57       await chrome.kill();
+         ~~~~~~~~~~~~~~~~~~~
+
+scripts/verify-catalog-formats.mjs:43:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+43   await chrome.kill();
+     ~~~~~~~~~~~~~~~~~~~
+
+scripts/verify-catalog-polish.mjs:148:37 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+148 }finally{await browser.disconnect();await chrome.kill();}
+                                        ~~~~~~~~~~~~~~~~~~~
+
+scripts/verify-content-month.mjs:118:38 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+118 }finally{await browser?.disconnect();await chrome?.kill();await new Promise(done=>server.close(done));}
+                                         ~~~~~~~~~~~~~~~~~~~~
+
+scripts/verify-content-priority.mjs:135:32 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+135   await browser?.disconnect(); await chrome?.kill(); await new Promise(done => server.close(done));
+                                   ~~~~~~~~~~~~~~~~~~~~
+
+scripts/verify-control-names.mjs:100:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+100   await chrome.kill();
+      ~~~~~~~~~~~~~~~~~~~
+
+scripts/verify-journal-reading.mjs:98:34 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+98 } finally {await browser.close();await chrome.kill();}
+                                    ~~~~~~~~~~~~~~~~~~~
+
+scripts/verify-pie-cutaways.mjs:156:3 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+156   await chrome.kill();
+      ~~~~~~~~~~~~~~~~~~~
+
+worker/scripts/qa-interest-report.mjs:54:41 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+54 } finally { await browser.disconnect(); await chrome.kill(); }
+                                           ~~~~~~~~~~~~~~~~~~~
+
+worker/scripts/qa-occasion-context.mjs:168:41 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+168 } finally { await browser.disconnect(); await chrome.kill(); }
+                                            ~~~~~~~~~~~~~~~~~~~
+
+worker/scripts/qa-ux-polish.mjs:112:39 - warning ts(80007): 'await' has no effect on the type of this expression.
+
+112 } finally {await browser.disconnect();await chrome.kill();}
+                                          ~~~~~~~~~~~~~~~~~~~
+
+Result (587 files):
+- 0 errors
+- 0 warnings
+- 104 hints

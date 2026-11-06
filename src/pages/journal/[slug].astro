@@ -62,7 +62,7 @@ const graph=[...schema.map(post => ({...post, isAccessibleForFree:true, ...(hasS
 <ContentLayout bodyClass="journal-page" title={monthly?.seoTitle ?? `${item.title} | Пирогорск`} description={item.description} breadcrumbs={[{ name: 'Блог', href: '/blog/' }, { name: item.title, href: articleHref(item.slug) }]} schema={graph} {image} imageAlt={entry.imageAlt} type="article">
   <JournalMasthead />
   <article class:list={['blog-article',{'blog-city-guide':isCity}]}>
-    <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={isCity ? undefined : item.intro} image={isCity ? undefined : entry.image} imageAlt={entry.imageAlt} caption={monthly?.caption} compact>
+    <EditorialHero eyebrow={`${entry.category} · Блог Пирогорска`} title={item.title} intro={isCity ? undefined : item.intro} image={isCity ? undefined : entry.image} imageAlt={entry.imageAlt} imageSizes="(max-width: 1000px) 92vw, 52vw" caption={monthly?.caption} compact>
       {!isCity && <p class="blog-byline"><a href="/about/#redaktsiya">{hasSources ? 'Редакция Пирогорска' : 'Пирогорск'}</a>{isNew && <> · Опубликовано <time datetime={item.date}>{dateLabel}</time></>}{modified && <> · Обновлено <time datetime={modified}>{modifiedLabel}</time></>} · ≈ {readingMinutes} мин чтения</p>}
     </EditorialHero>
     {isCity && <>
