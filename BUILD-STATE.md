@@ -1,3 +1,22 @@
+## Дополнительный спринт · 06.11.2026 · четвёртый выпуск · завершён
+
+CNT-09/QA-20/CI-02: A6-35 — пивоварни Калининграда и Орловки;
+1240 слов, пять первичных источников, imagegen-обложка, две крупные схемы,
+две таблицы и перелинковка. Блог 73 → 74; 274 HTML / 269 sitemap URL.
+Runtime `f0626999e404671432c6cc40d452176013d8340d`,
+[CI 42261603754 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42261603754).
+Local check/build/66 unit/Worker/browser/SEO/artwork PASS; 135 local +
+135 production контентных просмотров на пяти ширинах. Каталог 154 SKU
+local+production на шести ширинах: количества/геометрия/суммы/добавление PASS.
+Новая статья, четыре image assets SHA256 и четыре перехода,
+canonical/blog/sitemap/release PASS; телефон/планшет/схема просмотрены.
+CI: первый Pages timeout и конфликт артефактов при rerun сохранены;
+уникальное имя run_id/run_attempt и 20 минут ожидания, actionlint/YAML PASS.
+Новый артефакт принят, Pages 5:35, Worker compatibility/IndexNow PASS.
+Карта плана синхронизирована с A6-15/16/18/39. QA-17 остаётся открытой.
+Лента/154 SKU/цены, CRM/контакты и ежедневный ledger сохранены.
+Новый Lighthouse не запускался. [Протокол](qa/sprint-20261106d/README.md).
+
 ## Дополнительный спринт · 06.11.2026 · третий выпуск · завершён
 
 CNT-08/QA-19: A6-19 — история «куршской вороны» и словарь меню; imagegen-

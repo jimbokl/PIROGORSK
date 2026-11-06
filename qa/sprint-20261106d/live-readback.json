@@ -1,0 +1,70 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-06T17:52:40.152Z",
+  "expectedSha": "f0626999e404671432c6cc40d452176013d8340d",
+  "articles": [
+    {
+      "path": "/journal/kraftovoe-pivo-kaliningrada/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/kraftovoe-pivo-kaliningrada/",
+      "datePublished": "2026-11-06",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/kraftovoe-pivo-kaliningrada.ovqm7UZO_Z15GuD.webp",
+      "bytes": 97432,
+      "sha256": "ba3e3c2a5f802e6198a8d1cab51185edee9edc6c8f9aa2f2ef2b5d2ab8755844"
+    },
+    {
+      "path": "/_astro/kraftovoe-pivo-kaliningrada-1.Cj-SGu1e_1V0SiD.webp",
+      "bytes": 20456,
+      "sha256": "47c1fa912cccc4b3b19974c19115c0995a539a7f8b2e76a4fedfb25ce111ad95"
+    },
+    {
+      "path": "/_astro/kraftovoe-pivo-kaliningrada-2.1Op4FAf9_Ze9Qrl.webp",
+      "bytes": 20336,
+      "sha256": "df06f30388dad94acc95bbe70b3aad1ef29b6a182e7da16f710cba0866b5d21f"
+    },
+    {
+      "path": "/seo/blog/kraftovoe-pivo-kaliningrada.jpg",
+      "bytes": 225912,
+      "sha256": "f28571baca81323f06e5fc86a43d4bf3dee6c6a4ac83ae6bc0cb83f4b2345d68"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/stroganina-iz-pelamidy/",
+      "status": 200
+    },
+    {
+      "path": "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    },
+    {
+      "path": "/menu/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42261603754,
+    "headSha": "f0626999e404671432c6cc40d452176013d8340d",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42261603754"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 74,
+  "sitemapUrls": 269
+}
