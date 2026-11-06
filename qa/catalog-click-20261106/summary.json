@@ -1,0 +1,99 @@
+{
+  "result": "NOT_REPRODUCED",
+  "runtime": "bbf10bb6e72fe793e4eb346eca37deb0a47fdfd5",
+  "runs": [
+    {
+      "iteration": 0,
+      "width": 320,
+      "cpu": 1,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 0,
+      "width": 320,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 0,
+      "width": 390,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 0,
+      "width": 1280,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 1,
+      "width": 320,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 1,
+      "width": 390,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 1,
+      "width": 1280,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 2,
+      "width": 320,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 2,
+      "width": 390,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    },
+    {
+      "iteration": 2,
+      "width": 1280,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "events": 173,
+      "physicalClicks": 61
+    }
+  ],
+  "exactAddAssertions": 140,
+  "productFormatViews": 50,
+  "note": "Replays the unchanged verifyCatalogFormats; does not establish root cause."
+}
