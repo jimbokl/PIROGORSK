@@ -1,0 +1,58 @@
+deploy	Run npm run test:browser	﻿2026-11-06T19:22:32.2718865Z ##[group]Run npm run test:browser
+deploy	Run npm run test:browser	2026-11-06T19:22:32.2719443Z ^[[36;1mnpm run test:browser^[[0m
+deploy	Run npm run test:browser	2026-11-06T19:22:32.2742425Z shell: /usr/bin/bash -e {0}
+deploy	Run npm run test:browser	2026-11-06T19:22:32.2742711Z ##[endgroup]
+deploy	Run npm run test:browser	2026-11-06T19:22:32.3753580Z
+deploy	Run npm run test:browser	2026-11-06T19:22:32.3754135Z > pirogorsk@0.1.0 test:browser
+deploy	Run npm run test:browser	2026-11-06T19:22:32.3755593Z > node worker/scripts/bundle.mjs && node --check worker/dist/worker.js && node worker/scripts/qa-browser.mjs && node worker/scripts/qa-site.mjs && node worker/scripts/qa-ux-polish.mjs && node worker/scripts/qa-occasion-context.mjs
+deploy	Run npm run test:browser	2026-11-06T19:22:32.3756512Z
+deploy	Run npm run test:browser	2026-11-06T19:22:32.8584679Z /home/runner/work/PIROGORSK/PIROGORSK/worker/dist/worker.js
+deploy	Run npm run test:browser	2026-11-06T19:22:41.3320309Z PASS: actual form + deployed bundle, 320px layout, validation/focus, double submit, lost acknowledgement, idempotent retry, one goal/event, empty endpoint, QA/local analytics suppression.
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6133124Z Catalog physical-click diagnostic: {"surface":"home","width":320,"product":"hb-osetinskiy-pirog-s-kuritsey-i-syrom","actual":[{"id":"meat","value":1000,"quantity":2},{"id":"p39-10","value":1200,"quantity":2},{"id":"p39-482","value":2000,"quantity":2}],"expected":[{"id":"meat","value":1000,"quantity":2},{"id":"p39-10","value":1200,"quantity":2},{"id":"p39-482","value":2000,"quantity":2},{"id":"hb-osetinskiy-pirog-s-kuritsey-i-syrom","value":4200,"quantity":2}],"browser":"Chrome/156.0.8078.79","state":{"events":[{"type":"pointerdown","x":160,"y":458.390625,"scrollY":41751,"target":"INPUT","product":"hb-osetinskiy-pirog-s-kuritsey-i-syrom"},{"type":"pointerup","x":160,"y":458.390625,"scrollY":41751,"target":"INPUT","product":"hb-osetinskiy-pirog-s-kuritsey-i-syrom"},{"type":"click","x":160,"y":458,"scrollY":41751,"target":"INPUT","product":"hb-osetinskiy-pirog-s-kuritsey-i-syrom"}],"button":{"x":35,"y":475.203125,"width":235,"height":46,"top":475.203125,"right":270,"bottom":521.203125,"left":35},"scrollY":41751,"viewport":[320,900],"active":"<input type=\"number\" data-feed-quantity=\"\" min=\"1\" max=\"99\" step=\"1\" value=\"1\" inputmode=\"numeric\" aria-label=\"Количество: Осетинский пирог с курицей и сыром\">"}}
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6922973Z node:internal/modules/run_main:107
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6923778Z     triggerUncaughtException(
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6924356Z     ^
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6924673Z
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6925718Z AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6926661Z + actual - expected
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6927150Z ... Skipped lines
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6927419Z
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6927609Z   [
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6927947Z     {
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6928229Z       id: 'meat',
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6928797Z       quantity: 2,
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6929022Z       value: 1000
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6929226Z ...
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6929419Z     },
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6929610Z -   {
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6930312Z -     id: 'hb-osetinskiy-pirog-s-kuritsey-i-syrom',
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6930685Z -     quantity: 2,
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6930929Z -     value: 4200
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6931169Z -   }
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6931356Z   ]
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6931465Z
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6931928Z     at verifyCatalogFormats (file:///home/runner/work/PIROGORSK/PIROGORSK/worker/scripts/qa-catalog-formats.mjs:97:20)
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6932747Z     at async file:///home/runner/work/PIROGORSK/PIROGORSK/worker/scripts/qa-site.mjs:371:5 {
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6933220Z   generatedMessage: true,
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6933481Z   code: 'ERR_ASSERTION',
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6933723Z   actual: [
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6933992Z     { id: 'meat', value: 1000, quantity: 2 },
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6934344Z     { id: 'p39-10', value: 1200, quantity: 2 },
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6934693Z     { id: 'p39-482', value: 2000, quantity: 2 }
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6934975Z   ],
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6935166Z   expected: [
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6935422Z     { id: 'meat', value: 1000, quantity: 2 },
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6935752Z     { id: 'p39-10', value: 1200, quantity: 2 },
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6936092Z     { id: 'p39-482', value: 2000, quantity: 2 },
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6936648Z     {
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6936934Z       id: 'hb-osetinskiy-pirog-s-kuritsey-i-syrom',
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6937274Z       value: 4200,
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6937494Z       quantity: 2
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6937706Z     }
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6937893Z   ],
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6938126Z   operator: 'deepStrictEqual',
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6938398Z   diff: 'simple'
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6938621Z }
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6938733Z
+deploy	Run npm run test:browser	2026-11-06T19:23:24.6938831Z Node.js v24.22.2
+deploy	Run npm run test:browser	2026-11-06T19:23:24.7243190Z ##[error]Process completed with exit code 1.

@@ -1,0 +1,61 @@
+{
+  "ciFailure": 42278373258,
+  "chrome": "156.0.8078.79",
+  "fixed": {
+    "cpu": 4,
+    "classicScrollbarPx": 15,
+    "runs": [
+      {
+        "width": 320,
+        "iteration": 0,
+        "result": "PASS",
+        "errors": []
+      },
+      {
+        "width": 390,
+        "iteration": 0,
+        "result": "PASS",
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "iteration": 0,
+        "result": "PASS",
+        "errors": []
+      },
+      {
+        "width": 320,
+        "iteration": 1,
+        "result": "PASS",
+        "errors": []
+      },
+      {
+        "width": 390,
+        "iteration": 1,
+        "result": "PASS",
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "iteration": 1,
+        "result": "PASS",
+        "errors": []
+      }
+    ]
+  },
+  "baseline": {
+    "unmodifiedWithScrollbar": {
+      "passes": 5,
+      "log": "logs/click-baseline-scrollbar.log"
+    },
+    "noScrollbarTrace": {
+      "runs": 3,
+      "misses": 0
+    },
+    "scrollbarTrace": {
+      "runs": 3,
+      "misses": 0
+    }
+  },
+  "caveat": "Baseline does not reproduce locally; CI event trace proves misdirected pointer. Screenshot viewport override removed; monitor CI/production."
+}

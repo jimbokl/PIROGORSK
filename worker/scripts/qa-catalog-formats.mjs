@@ -70,7 +70,12 @@ export async function verifyCatalogFormats(page, origin, width, output) {
         if (surface === 'home') assert.match(await element.$eval('[data-price]', el => el.textContent), /^от /);
       }
       if (product.id === mini.id) {
-        await element.screenshot({ path: `${output}/${surface}-three-formats-${width}.png` });
+        // Keep the capture in the current viewport. Chromium's beyond-viewport
+        // path temporarily hides scrollbars and re-emulates the viewport; on
+        // Linux that can change the 320px layout to 305px between capture and
+        // the next physical click. These are viewport evidence, not full-page
+        // exports, so no viewport override is needed.
+        await element.screenshot({ path: `${output}/${surface}-three-formats-${width}.png`, captureBeyondViewport: false });
         await page.screenshot({ path: `${output}/${surface}-phone-context-${width}.png` });
       }
       const add = await element.$('[data-add], [data-feed-add], [data-supplier-link]');
@@ -87,9 +92,8 @@ export async function verifyCatalogFormats(page, origin, width, output) {
             button: button?.getBoundingClientRect().toJSON() });
         }, true);
       });
-      // Screenshots restore scroll position asynchronously. Center the button,
-      // then let the locator wait for its box to be stable across two frames
-      // before the physical click. The selection assertion below stays exact.
+      // Center the button and wait for stable geometry before a physical click.
+      // The exact selection assertion below also catches a misdirected click.
       await add.evaluate(el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
       await add.asLocator().click();
       expected.push({ id: product.id, value: last.value, quantity: 2 });
@@ -100,6 +104,7 @@ export async function verifyCatalogFormats(page, origin, width, output) {
           browser: await browserVersion(page),
           state: await add.evaluate(el => ({ events: window.__catalogClickEvents,
             button: el.getBoundingClientRect().toJSON(), scrollY, viewport: [innerWidth, innerHeight],
+            clientWidth: document.documentElement.clientWidth,
             active: document.activeElement?.outerHTML.slice(0, 500) })) };
         console.error('Catalog physical-click diagnostic:', JSON.stringify(diagnostic));
         await writeFile(`${output}/click-failure-${surface}-${width}.json`, JSON.stringify(diagnostic, null, 2));

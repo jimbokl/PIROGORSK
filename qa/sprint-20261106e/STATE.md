@@ -12,6 +12,10 @@ check/build/66 unit/Worker/SEO/artwork/145 контентных просмотр
 Повторные check/build/content/SEO после CSS PASS. Browser regression PASS;
 каталог 154 SKU на шести ширинах PASS. Финальные снимки телефона,
 планшета и десктопа просмотрены: герой не сжат, карточки/наборы ровные.
-Осталось: commit/CI/production; оформить receipts.
-QA-17 остаётся открытой; нового воспроизводимого дефекта клика нет.
+Runtime 2364ae0 отправлен, CI 42278373258 упал до публикации на QA-17.
+Есть точная трасса: physical click попал в INPUT, ширина кнопки 250→235.
+Убрано beyond-viewport screenshot из теста; строгий assert сохранён.
+Повторный полный browser и 6 CPU×4/scrollbar прогонов PASS.
+Осталось: commit исправления, CI, production; оформить receipts.
+QA-17 остаётся под наблюдением: исходный локальный промах не воспроизведён.
 Registry strict PASS. Не запускать VoiceOver или production POST форм.
