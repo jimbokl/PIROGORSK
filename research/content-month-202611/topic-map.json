@@ -1048,13 +1048,15 @@
       "week": 3,
       "decision": "strengthen_existing_owner",
       "scenario": "информационный переход к подборке только при уместности",
-      "status": "integrated_update",
+      "status": "integrated_update_published",
       "dataGap": null,
       "cluster": "coast",
       "brandReframe": null,
       "window": "2026-11-15 — 2026-11-21",
       "result": "Три раздела в существующем гиде: два прямых меню с ценами/единицами, расчёты 380/540/920 и 1 140 ₽, два дополнительных адреса по ТИЦ. Цены и часы пекарни и Erol не установлены; полного рейтинга и личной дегустации нет.",
-      "evidence": "research/content-sprint-20261107/README.md"
+      "evidence": "research/content-sprint-20261107/README.md",
+      "modified": "2026-11-07",
+      "publicationEvidence": "qa/sprint-20261107/live-readback.json"
     },
     {
       "number": 68,

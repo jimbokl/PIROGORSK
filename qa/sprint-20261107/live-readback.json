@@ -1,0 +1,148 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-06T23:36:46.400Z",
+  "expectedSha": "fed107295a9e390c2544efd5d70f90e6f8abd2e1",
+  "assets": [
+    {
+      "path": "/_astro/journal-town.B8TPySfB_ZJ0gdd.webp",
+      "bytes": 3178,
+      "sha256": "a5ecaf6f428ca44968da30bec61508f417df16ffbe7031c7dd1174d7a1b7dcfc"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_Z1syRNa.webp",
+      "bytes": 54318,
+      "sha256": "20e09f894d7d3996f4d84f208f938065f2bedf81706101c4a2bdd162abc68bdc"
+    },
+    {
+      "path": "/_astro/delivery.k4_ZRRO__JkOmq.webp",
+      "bytes": 107616,
+      "sha256": "4eaf44ab546b06c851aa9227a78eff1e3532cc749141a13b899adca34873e072"
+    },
+    {
+      "path": "/_astro/picnic.BO51Bov8_1afI1S.webp",
+      "bytes": 115702,
+      "sha256": "346aea4d48c2cc0236ea9d7f2163ca305c0b8c028c1e04dad8e36562864b8d11"
+    },
+    {
+      "path": "/_astro/pie-islands.B_yt5wp5_1iDTBz.webp",
+      "bytes": 12564,
+      "sha256": "7f7c25725a3f90e42be1eb283c785e57235698f58f49bf0f3c5b15e656f12fbc"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_Z1ji18m.webp",
+      "bytes": 47136,
+      "sha256": "e1cf26c9554fa226aa50992ac62d1c1845d4b523d10502b46dd3322d23ce59f5"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_Z3Vo1z.webp",
+      "bytes": 59694,
+      "sha256": "05c4d07a61d7e6121fb8e0505ea277090e9f2ffe4578671f48cc9d538dda87dd"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_25YjQ7.webp",
+      "bytes": 82106,
+      "sha256": "98a47cf7d85389ff224a917dc8dfd5e73de611d58b2054b413a62d981d2390b9"
+    },
+    {
+      "path": "/_astro/nedorogo-poest-semey-v-svetlogorske.BDt68WoE_1zzzub.webp",
+      "bytes": 118082,
+      "sha256": "4439e11714896ea2f35456de35d704b66690821f60a447ca31ed654ac6f86456"
+    },
+    {
+      "path": "/_astro/eda-s-soboy-v-svetlogorske.doe2yfjt_ZJixup.webp",
+      "bytes": 72654,
+      "sha256": "1cec266e51dc6f9712111cb3dd87c2e36308d5ab1217c6ed550412605cdf4d60"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_20hxFG.webp",
+      "bytes": 21488,
+      "sha256": "507ad5a728bfd8ee861b5710c815eb34974958ca4d235314d7c3cc2891589f7f"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_10Cowk.webp",
+      "bytes": 24636,
+      "sha256": "31cb96b37fd43bc64eb5ffa221448e65b7dfeea9bbaf3bf4dfc1622a4ecfc8ec"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_1jToCw.webp",
+      "bytes": 66006,
+      "sha256": "0c366a9315a951fdc958f898163e66dfca9363d4e06731c0418e5a8f7dd946cd"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_ZlgmII.webp",
+      "bytes": 32744,
+      "sha256": "d6d402f09743098f1483fcc50744ecd479ac058cedaf1bdf64c6f7fac9a0604a"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_jiK6V.webp",
+      "bytes": 55962,
+      "sha256": "63e21db8b8efa275633eeab1e699d9737d5ea7c54e841a13a9f94cb385f6b5cf"
+    },
+    {
+      "path": "/seo/blog/gde-poest-v-svetlogorske.jpg",
+      "bytes": 144021,
+      "sha256": "0c37410169836ac1a832dc9969d8cf3b724451f2c487b09875adb52bb6ab6e98"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "status": 200
+    },
+    {
+      "path": "/svetlogorsk/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    },
+    {
+      "path": "/journal/zavtrak-na-baltike/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kenigsbergskiy-martsipan/",
+      "status": 200
+    },
+    {
+      "path": "/journal/nedorogo-poest-semey-v-svetlogorske/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42310390637,
+    "headSha": "fed107295a9e390c2544efd5d70f90e6f8abd2e1",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42310390637"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 78,
+  "sitemapUrls": 273,
+  "inlineStyles": [
+    {
+      "bytes": 129072,
+      "sha256": "66b039181b74e8fbde5c219f2f5c3cd6f4dbd21d1a88de5f6cb0e29bcc923a5e"
+    }
+  ],
+  "owner": {
+    "path": "/journal/gde-poest-v-svetlogorske/",
+    "canonical": "https://pirogorsk.ru/journal/gde-poest-v-svetlogorske/",
+    "published": "2026-10-24",
+    "modified": "2026-11-07",
+    "newSections": 3,
+    "sources": 8,
+    "blog": true,
+    "sitemap": true
+  }
+}

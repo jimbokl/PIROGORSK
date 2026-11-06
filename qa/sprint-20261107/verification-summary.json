@@ -1,6 +1,6 @@
 {
   "scope": "A6-67 existing Svetlogorsk owner + price-table readability",
-  "runtime": "pending",
+  "runtime": "fed107295a9e390c2544efd5d70f90e6f8abd2e1",
   "local": {
     "check": {
       "files": 600,
@@ -46,8 +46,125 @@
         1440
       ],
       "errors": []
-    }
+    },
+    "registryStrict": true
   },
-  "production": null,
-  "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  "production": {
+    "base": "https://pirogorsk.ru",
+    "contentViews": 160,
+    "guideWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "guideSources": 8,
+    "catalog": {
+      "sku": 154,
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1280,
+        1440
+      ],
+      "surfaceViews": 12,
+      "allFormatPrices": true,
+      "physicalFormatChecks": [
+        390,
+        768,
+        1280
+      ],
+      "errors": [],
+      "networkRetries": [
+        {
+          "path": "/brand/pirogorsk-logo-400.webp",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "EPROTO"
+        },
+        {
+          "path": "/product-backdrops/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        },
+        {
+          "path": "/fonts/golos-latin.woff2",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        },
+        {
+          "path": "/brand/pirogorsk-symbol.svg",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        },
+        {
+          "path": "/fonts/golos-cyrillic.woff2",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        },
+        {
+          "path": "/fonts/playfair-latin.woff2",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        },
+        {
+          "path": "/catalog-art/hb-osetinskiy-pirog-s-kuritsey-i-syrom-640.avif",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        },
+        {
+          "path": "/product-backdrops/cranberry-256.avif",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        },
+        {
+          "path": "/fonts/playfair-cyrillic.woff2",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        },
+        {
+          "path": "/product-backdrops/tableware-256.avif",
+          "attempt": 1,
+          "error": "fetch failed",
+          "cause": "UND_ERR_SOCKET"
+        }
+      ]
+    },
+    "matchingAssets": 16,
+    "matchingInlineStyles": 1,
+    "internalLinks": 7,
+    "journalArticles": 78,
+    "sitemapUrls": 273,
+    "screenshotsReviewed": [
+      390,
+      768
+    ],
+    "errors": []
+  },
+  "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20",
+  "ci": {
+    "id": 42310390637,
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42310390637",
+    "status": "completed",
+    "conclusion": "success",
+    "headSha": "fed107295a9e390c2544efd5d70f90e6f8abd2e1"
+  },
+  "priceVariantImpact": {
+    "tables": 2,
+    "owners": [
+      "/journal/gde-poest-v-svetlogorske/"
+    ],
+    "otherTablesUnchanged": true
+  }
 }
