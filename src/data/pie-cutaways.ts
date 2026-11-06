@@ -4,6 +4,8 @@ import cabbage from '../../design/pie-cutaways-20261031/cabbage.png';
 import cheese from '../../design/pie-cutaways-20261031/cheese.png';
 import apple from '../../design/pie-cutaways-20261031/apple.png';
 import cherry from '../../design/pie-cutaways-20261031/cherry.png';
+import chickenCheese from '../../design/pie-cutaways-20261106/chicken-cheese.png';
+import spinachCheese from '../../design/pie-cutaways-20261106/spinach-cheese.png';
 
 /** Original alternate illustrations. These do not assert a final production recipe. */
 export const pieCutaways = {
@@ -13,6 +15,8 @@ export const pieCutaways = {
   cheese: { image: cheese, alt: 'Кусочек сырного пирога: светлая сырная начинка под румяной корочкой' },
   apple: { image: apple, alt: 'Кусочек пирога с яблоком и брусникой: яблочные кусочки и красные ягоды на срезе' },
   cherry: { image: cherry, alt: 'Кусочек вишнёвого пирога: крупная сочная вишня между слоями теста' },
+  'hb-osetinskiy-pirog-s-kuritsey-i-syrom': { image: chickenCheese, alt: 'Срез осетинского пирога: курица и брынза между тонкими слоями румяного теста' },
+  'hb-osetinskiy-pirog-so-shpinatom-i-syrom': { image: spinachCheese, alt: 'Срез осетинского пирога: зелёный шпинат и светлая брынза в тонком тесте' },
 } as const;
 
 export const pieCutaway = (id: string) => pieCutaways[id as keyof typeof pieCutaways];

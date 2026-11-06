@@ -4720,5 +4720,51 @@
       "/journal/uzhin-v-semnyh-apartamentah/",
       "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/"
     ]
+  },
+  {
+    "path": "/journal/dich-i-myaso-kaliningradskoy-oblasti/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Оленина и дичь в Калининградской области: где пробовать",
+    "query": "оленина и дичь в калининградской области: где пробовать",
+    "intent": "Оленина встречается в калининградских ресторанах в разных форматах: от борща до самостоятельного мясного блюда. Собрали четыре адреса из официальных описаний и объясняем, что уточнить перед визитом: происхождение мяса, способ приготовления, гарнир и наличие в сегодняшнем меню.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "/journal/svetlogorsk-kaliningrad-edamarshrut/",
+      "/journal/vegetarianskaya-eda-v-kaliningrade/",
+      "/journal/uzhin-na-baltike-posle-21/"
+    ]
+  },
+  {
+    "path": "/journal/eda-v-aeroportu-hrabrovo/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Еда перед вылетом из Храброво: план без спешки",
+    "query": "еда перед вылетом из храброво: план без спешки",
+    "intent": "Последний обед в Калининградской области лучше запланировать до поездки в Храброво. Сравниваем три варианта: поесть в городе, выбрать еду в терминале или подготовить перекус. Подсказываем, как учесть посадку, упаковку и правила своей авиакомпании.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/sedobnye-suveniry-iz-kaliningrada/",
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/kak-narezat-pirog/",
+      "/journal/baltiyskaya-kuhnya-dlya-detey/"
+    ]
   }
 ]

@@ -4,6 +4,7 @@ import ProductFacts from '../../components/ProductFacts.astro';
 import ProductDisclosure from '../../components/ProductDisclosure.astro';
 import PicnicSetDetails from '../../components/PicnicSetDetails.astro';
 import ProductHero from '../../components/ProductHero.astro';
+import PieGallery from '../../components/PieGallery.astro';
 import EditorialLinks from '../../components/EditorialLinks.astro';
 import ProductAddOns from '../../components/ProductAddOns.astro';
 import ProductOptions from '../../components/ProductOptions.astro';
@@ -30,7 +31,9 @@ const guide = /осетин/i.test(product.name) ? { href: '/osetinskie-pirogi/'
 ---
 <ContentLayout {title} description={page.description} breadcrumbs={[{ name: 'Меню', href: '/menu/' }, { name: page.heading, href: page.href }]} {schema} image={art?.ogImage} imageAlt={art?.alt} preloadFonts={false}>
   <ProductHero productId={product.id} eyebrow={`${page.group} · изучаем спрос`} title={page.heading} intro={page.intro}>
-    {art ? <SupplierArtwork slot="visual" id={product.id} hero /> : <ProductVisual slot="visual" {product} layout="hero" />}
+    <PieGallery slot="visual" {product} hero sizes="(max-width: 700px) min(380px, calc(100vw - 68px)), 480px">
+      {art ? <SupplierArtwork id={product.id} hero /> : <ProductVisual {product} layout="hero" />}
+    </PieGallery>
     <ProductOptions slot="actions" {product} showDelivery />
   </ProductHero>
   {['mini-pies', 'hearty-pies', 'sweet-pies', 'siberian-pies', 'kurniki', 'prussian-pies', 'ossetian-pies'].includes(product.category) && <ProductAddOns {product} />}

@@ -28,6 +28,7 @@ if (!process.env.QA_BASE) {
 const base = process.env.QA_BASE || `http://127.0.0.1:${server.address().port}`;
 report.base = base;
 const pies = { meat: 'myasnoy-pirog', fish: 'rybnyy-pirog', cabbage: 'pirog-s-kapustoy', cheese: 'syrnyy-pirog', apple: 'pirog-s-yablokom-i-brusnikoy', cherry: 'pirog-s-vishney' };
+const supplierPies = { 'hb-osetinskiy-pirog-s-kuritsey-i-syrom': 'osetinskiy-pirog-s-kuritsey-i-syrom', 'hb-osetinskiy-pirog-so-shpinatom-i-syrom': 'osetinskiy-pirog-so-shpinatom-i-syrom' };
 const guides = ['skolko-piroga-na-cheloveka', 'kak-narezat-pirog', 'kak-hranit-pirogi', 'kak-razogret-pirog-v-apartamentah'];
 const chrome = await launch({ chromeFlags: ['--headless=new', '--disable-extensions', '--no-first-run'] });
 const browser = await puppeteer.connect({ browserURL: `http://localhost:${chrome.port}` });
@@ -56,7 +57,7 @@ try {
       assert.equal(await page.$eval(button, el => el.hidden), false);
       const matchingName = () => page.$eval(button, el => el.getAttribute('aria-label').includes(el.querySelector('[data-cutaway-label]').textContent.trim()));
       assert.equal(await matchingName(), true, 'whole-pie control name includes visible text');
-      assert.ok(await page.$eval(button, el => el.getBoundingClientRect().height >= 44));
+      assert.ok(await page.$eval(button, el => el.getBoundingClientRect().height >= 44), `${id} at ${width}: visible 44px cutaway target`);
       if (keyboard) { await page.focus(button); await page.keyboard.press('Enter'); }
       else await page.click(button);
       await page.waitForFunction(selector => document.querySelector(`${selector} [data-cutaway-toggle]`).getAttribute('aria-pressed') === 'true', { timeout: 20000 }, selector);
@@ -64,6 +65,10 @@ try {
       assert.deepEqual(await page.$eval(selector, el => ({ width: el.clientWidth, height: el.clientHeight })), rect, 'cutaway keeps the artwork dimensions');
       assert.equal(await fits(page), true);
       assert.equal(await matchingName(), true, 'cutaway control name includes visible text');
+      if (supplierPies[id] && [390, 768].includes(width)) {
+        const surface = new URL(page.url()).pathname === '/' ? 'home' : new URL(page.url()).pathname === '/menu/' ? 'menu' : 'hero';
+        await page.screenshot({ path: `${output}/${surface}-cutaway-${id}-${width}.png` });
+      }
       await page.click(button);
       assert.equal(await page.$eval(`${selector} [data-cutaway-image]`, el => el.hidden), true);
       assert.equal(await page.$eval(button, el => el.getAttribute('aria-pressed')), 'false');
@@ -73,12 +78,18 @@ try {
     for (const path of ['/', '/menu/']) {
       requests.length = 0;
       await page.goto(`${base}${path}?qa=1`, { waitUntil: 'networkidle0' });
-      assert.equal(await page.$$eval('[data-pie-gallery]', elements => elements.length), 6);
+      assert.equal(await page.$$eval('[data-pie-gallery]', elements => elements.length), Object.keys(pies).length + Object.keys(supplierPies).length);
       const sources = await page.$$eval('template[data-cutaway-template]', templates => templates.flatMap(template => [...template.content.querySelector('img').getAttribute('srcset').matchAll(/(\S+) \d+w/g)].map(match => new URL(match[1], location.href).pathname)));
       assert.equal(requests.some(path => sources.includes(path)), false, 'no cutaway request before tap');
+      // Supplier cutaways occur beyond the initially presented batch. Reveal
+      // them through the existing catalogue handlers before measuring controls.
+      await page.$$eval('[data-home-more],[data-supplier-more]', buttons => buttons.forEach(button => {
+        for (let batch = 0; !button.hidden && batch < 20; batch++) button.click();
+        if (!button.hidden) throw new Error('Catalogue did not finish revealing');
+      }));
       assert.equal(await page.$$eval(path === '/' ? '[data-home-catalog] [data-product]' : '.menu-feed [data-feed-id], .menu-feed [data-supplier-id]', elements => elements.length), 154);
       assert.equal(await page.$$eval('.catalog-service-facts a', elements => elements.every(el => el.getBoundingClientRect().height >= 44)), true);
-      for (const id of Object.keys(pies)) await toggle(id, id === 'meat');
+      for (const id of [...Object.keys(pies), ...Object.keys(supplierPies)]) await toggle(id, id === 'meat');
       if (width === 390 || width === 768) {
         await page.click('[data-pie-gallery="meat"] [data-cutaway-toggle]');
         await page.waitForFunction(() => document.querySelector('[data-pie-gallery="meat"] [data-cutaway-toggle]').getAttribute('aria-pressed') === 'true');
@@ -88,6 +99,18 @@ try {
     }
     for (const [id, slug] of Object.entries(pies).filter(([id]) => width === 390 || id === 'meat')) {
       await page.goto(`${base}/pirogi/${slug}/?qa=1`, { waitUntil: 'networkidle0' });
+      await toggle(id, true);
+      if (width === 390 || width === 768) {
+        await page.click(`[data-pie-gallery="${id}"] [data-cutaway-toggle]`);
+        await page.waitForFunction(id => document.querySelector(`[data-pie-gallery="${id}"] [data-cutaway-toggle]`).getAttribute('aria-pressed') === 'true', {}, id);
+        await page.screenshot({ path: `${output}/product-${id}-${width}.png` });
+      }
+    }
+    for (const [id, slug] of Object.entries(supplierPies)) {
+      requests.length = 0;
+      await page.goto(`${base}/catalog/${slug}/?qa=1`, { waitUntil: 'networkidle0' });
+      const sources = await page.$eval('template[data-cutaway-template]', template => [...template.content.querySelector('img').getAttribute('srcset').matchAll(/(\S+) \d+w/g)].map(match => new URL(match[1], location.href).pathname));
+      assert.equal(requests.some(path => sources.includes(path)), false, 'supplier hero defers the cutaway too');
       await toggle(id, true);
       if (width === 390 || width === 768) {
         await page.click(`[data-pie-gallery="${id}"] [data-cutaway-toggle]`);
@@ -122,7 +145,7 @@ try {
     await page.goto(`${base}/?qa=1`, { waitUntil: 'networkidle0' });
     assert.equal(await page.$$eval('[data-cutaway-toggle]', buttons => buttons.every(button => button.hidden)), true);
     assert.equal(await fits(page), true);
-    report.views.push({ width, result: 'PASS', galleries: '6 home + 6 menu + product', deferredFetch: true, stableSize: true, keyboard: true, retry: true, noJS: true, guides: 4 });
+    report.views.push({ width, result: 'PASS', galleries: '8 home + 8 menu + own/supplier product pages', deferredFetch: true, stableSize: true, keyboard: true, retry: true, noJS: true, guides: 4 });
     await context.close();
   }
   assert.deepEqual(report.errors, []);

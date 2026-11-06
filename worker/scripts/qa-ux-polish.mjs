@@ -93,7 +93,13 @@ try {
   assert.equal(await page.$$eval('[data-feed-id] .product-artwork-subject img',imgs=>imgs.length),28,'every supplier pie has a subject layer');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth<=1),'hub does not overflow');
   if([390,768,1280].includes(width)) await page.screenshot({path:output+stage+'-hub-'+width+'.png'});
-  const count=await page.$$eval('[data-feed-id] a.menu-feed-art',els=>new Set(els.map(el=>el.pathname)).size);
+  const count=await page.$$eval('[data-feed-id] .menu-feed-art',els=>new Set(els.map(el=>{
+    // Cutaway galleries wrap the original product link; other artwork is
+    // linked directly. Both must retain an actual destination per product.
+    const link=el.matches('a')?el:el.querySelector('a.product-visual-link');
+    if(!link?.getAttribute('href'))throw new Error('Artwork has no product link');
+    return link.pathname;
+  })).size);
   assert.equal(count,28);
   await page.setJavaScriptEnabled(false);await page.reload({waitUntil:'networkidle0'});
   assert.equal(await page.$$eval('[data-feed-id] a[data-feed-add]',els=>els.filter(el=>new URL(el.href).searchParams.has('interest')).length),28);
