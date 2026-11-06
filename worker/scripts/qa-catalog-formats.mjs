@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdir } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import { catalog } from '../../src/data/catalog.ts';
 import { catalogProductHref } from '../../src/lib/product-paths.ts';
 
@@ -74,13 +74,38 @@ export async function verifyCatalogFormats(page, origin, width, output) {
         await page.screenshot({ path: `${output}/${surface}-phone-context-${width}.png` });
       }
       const add = await element.$('[data-add], [data-feed-add], [data-supplier-link]');
+      await page.evaluate(() => {
+        window.__catalogClickEvents = [];
+        if (window.__catalogClickProbe) return;
+        window.__catalogClickProbe = true;
+        for (const type of ['pointerdown', 'pointerup', 'click']) document.addEventListener(type, event => {
+          const card = event.target.closest?.('[data-product], [data-feed-id], [data-supplier-id]');
+          const button = event.target.closest?.('button, a');
+          window.__catalogClickEvents.push({ type, x: event.clientX, y: event.clientY, scrollY,
+            target: event.target.tagName, text: button?.textContent.trim(),
+            product: card?.dataset.product || card?.dataset.feedId || card?.dataset.supplierId,
+            button: button?.getBoundingClientRect().toJSON() });
+        }, true);
+      });
       // Screenshots restore scroll position asynchronously. Center the button,
       // then let the locator wait for its box to be stable across two frames
       // before the physical click. The selection assertion below stays exact.
       await add.evaluate(el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
       await add.asLocator().click();
       expected.push({ id: product.id, value: last.value, quantity: 2 });
-      assert.deepEqual(await selection(), expected);
+      const actual = await selection();
+      try { assert.deepEqual(actual, expected); }
+      catch (error) {
+        const diagnostic = { surface, width, product: product.id, actual, expected,
+          browser: await browserVersion(page),
+          state: await add.evaluate(el => ({ events: window.__catalogClickEvents,
+            button: el.getBoundingClientRect().toJSON(), scrollY, viewport: [innerWidth, innerHeight],
+            active: document.activeElement?.outerHTML.slice(0, 500) })) };
+        console.error('Catalog physical-click diagnostic:', JSON.stringify(diagnostic));
+        await writeFile(`${output}/click-failure-${surface}-${width}.json`, JSON.stringify(diagnostic, null, 2));
+        await page.screenshot({ path: `${output}/click-failure-${surface}-${width}.png` });
+        throw error;
+      }
     }
   }
   for (const product of [samples[0], mini, samples[1], samples.at(-1), catalog.find(product => product.id === 'hb-osetinskiy-pirog-s-kuritsey-i-syrom')]) {
@@ -115,3 +140,5 @@ export async function verifyCatalogFormats(page, origin, width, output) {
   }
   console.log(`PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at ${width}px`);
 }
+
+const browserVersion = page => page.browser().version();

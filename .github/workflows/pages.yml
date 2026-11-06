@@ -50,6 +50,13 @@ jobs:
       - run: npm test
       - run: npm run test:worker
       - run: npm run test:browser
+      - name: Save browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-failure-evidence
+          path: worker/dist/qa-formats/
+          if-no-files-found: ignore
       - run: node scripts/verify-site-polish.mjs
       - run: node scripts/verify-journal-reading.mjs
       - run: node scripts/verify-bundle-pages.mjs
