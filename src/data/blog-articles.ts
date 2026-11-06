@@ -259,10 +259,5 @@ export const blogArticles: readonly BlogArticle[] = [
         { href: '/journal/gde-poest-v-svetlogorske/', title: 'Где поесть в Светлогорске' },
       ] },
     ], related: '/journal/pirog-500-g-ili-1-kg/', relatedTitle: 'Как выбрать размер пирога для общего стола',
-    sources: [
-      { href: 'https://visit-kaliningrad.ru/food/restoran-patisson-markt/', title: 'ТИЦ области: форматы и адреса Патиссон Маркт', checked: '2026-10-24' },
-      { href: 'https://patisson-markt.ru/', title: 'Патиссон Маркт: меню и самовывоз на дату проверки', checked: '2026-10-24' },
-      { href: 'https://borshsalo.ru/menu/hits/', title: 'Борщ и Сало: меню доставки, цены и вес блюд', checked: '2026-11-06' },
-    ],
   },
 ];

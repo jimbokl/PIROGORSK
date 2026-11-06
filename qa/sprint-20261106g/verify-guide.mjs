@@ -38,10 +38,12 @@ try {
   toc:[...document.querySelectorAll('.article-contents a')].map(a=>({text:a.textContent.trim(),href:a.getAttribute('href'),valid:Boolean(document.getElementById(a.hash.slice(1)))})),
   text:document.querySelector('.ed-article').textContent,
   structured:[...document.querySelectorAll('script[type="application/ld+json"]')].map(el=>el.textContent).join(''),
+  partyForm:Boolean(document.querySelector('[data-party-form]')),
   tables:[...document.querySelectorAll('.ed-article table')].map(el=>({caption:el.caption?.textContent,rows:[...el.rows].map(row=>[...row.cells].map(cell=>cell.textContent.trim()))})),
  }));
  assert.equal(data.canonical,origin+path);assert.equal(data.h1,1);assert.equal(data.sources,8);
  assert(data.structured.includes('"datePublished":"2026-10-24"'));assert(data.structured.includes('"dateModified":"2026-11-07"'));
+ assert(data.partyForm);assert(data.structured.includes('"@type":"FAQPage"'));assert(data.structured.includes('"@type":"ItemList"'));
  assert(data.toc.every(a=>a.valid));
  const fish=data.tables.find(t=>t.caption.includes('Хофбург'));
  assert(fish);assert(fish.rows.some(row=>row.join(' ').includes('За 100 г')&&row.join(' ').includes('490 ₽')));
