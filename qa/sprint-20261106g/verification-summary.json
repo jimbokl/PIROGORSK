@@ -1,0 +1,207 @@
+{
+  "runtime": "301b37e9b99cca4e47cb8cba64e3b6170e19e7c9",
+  "local": {
+    "astro": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "unit": 66,
+    "htmlPages": 278,
+    "sitemapURLs": 273,
+    "SKU": 154,
+    "journalArticles": 78
+  },
+  "contentViews": 160,
+  "baselineOtherEntriesUnchanged": 61,
+  "guide": {
+    "stage": "local",
+    "path": "/journal/gde-poest-v-kaliningrade/",
+    "checked": "2026-11-06T22:22:49.496Z",
+    "views": [
+      {
+        "width": 320,
+        "overflow": false,
+        "bodyFont": 16,
+        "tocTargets": true,
+        "tocNavigation": true
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "bodyFont": 16,
+        "tocTargets": true,
+        "tocNavigation": true
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "bodyFont": 16,
+        "tocTargets": true,
+        "tocNavigation": true
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "bodyFont": 16,
+        "tocTargets": true,
+        "tocNavigation": true
+      },
+      {
+        "width": 1280,
+        "overflow": false,
+        "bodyFont": 16,
+        "tocTargets": true,
+        "tocNavigation": true
+      }
+    ],
+    "errors": [],
+    "content": {
+      "canonical": "https://pirogorsk.ru/journal/gde-poest-v-kaliningrade/",
+      "sources": 8,
+      "sections": 9,
+      "toc": [
+        {
+          "text": "Выберите формат, пока все ещё не проголодались",
+          "href": "#section-0",
+          "valid": true
+        },
+        {
+          "text": "Патиссон Маркт: готовые блюда и отдельное меню",
+          "href": "#section-1",
+          "valid": true
+        },
+        {
+          "text": "Борщ и Сало: сначала посмотрите меню нужного формата",
+          "href": "#section-2",
+          "valid": true
+        },
+        {
+          "text": "Пример расчёта: два супа и два горячих",
+          "href": "#section-3",
+          "valid": true
+        },
+        {
+          "text": "Если обед забираете в апартаменты",
+          "href": "#section-4",
+          "valid": true
+        },
+        {
+          "text": "Что проверить перед выходом",
+          "href": "#section-5",
+          "valid": true
+        },
+        {
+          "text": "Рыбный обед: судак, угорь или целая рыба",
+          "href": "#section-6",
+          "valid": true
+        },
+        {
+          "text": "Где поесть с видом на Преголю",
+          "href": "#section-7",
+          "valid": true
+        },
+        {
+          "text": "С детьми: сначала меню, потом стол",
+          "href": "#section-8",
+          "valid": true
+        },
+        {
+          "text": "Источники и расчёты",
+          "href": "#sources",
+          "valid": true
+        },
+        {
+          "text": "Адреса, карта и расчёты",
+          "href": "#article-tools",
+          "valid": true
+        }
+      ],
+      "fishTable": {
+        "caption": "Хофбург · официальное PDF-меню · проверено 06.11.2026",
+        "rows": [
+          [
+            "Позиция",
+            "Вес и цена"
+          ],
+          [
+            "Филе судака, картофель и грибы",
+            "330 г · 910 ₽"
+          ],
+          [
+            "Котлета из судака с пюре",
+            "330 г · 810 ₽"
+          ],
+          [
+            "Салат с угрём, огурцом и чука",
+            "220 г · 740 ₽"
+          ],
+          [
+            "Камбала целиком, соус",
+            "За 100 г · 490 ₽"
+          ]
+        ]
+      },
+      "viewTable": {
+        "caption": "Вид из конкретного пространства · официальные страницы и ТИЦ · проверено 06.11.2026",
+        "rows": [
+          [
+            "Место и адрес",
+            "Вид и детали"
+          ],
+          [
+            "Kaiserhof · Октябрьская, 6а",
+            "Из окон лобби-бара — Преголя и Юбилейный мост. Спросите о столе у окна и доступном меню."
+          ],
+          [
+            "Ластадие · Виктора Гюго, 1",
+            "Лобби-бар на первом этаже с панорамным видом на реку. Уточните посадку в нужной части зала."
+          ],
+          [
+            "Мадам Буше · Октябрьская, 2а",
+            "Из зала в башне Маяк виден собор. Уточните расположение стола и подъём в зал."
+          ]
+        ]
+      },
+      "published": "2026-10-24",
+      "modified": "2026-11-07"
+    }
+  },
+  "ci": {
+    "id": 42304319615,
+    "state": "success",
+    "headSha": "301b37e9b99cca4e47cb8cba64e3b6170e19e7c9",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42304319615"
+  },
+  "production": {
+    "contentViewportChecks": 160,
+    "guideViewportChecks": 5,
+    "pageViews": 35,
+    "cardScenarios": 40,
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "catalogSKU": 154,
+    "matchingAssets": 20,
+    "inlineCSSMatches": true,
+    "internalLinks": 9,
+    "journalArticles": 78,
+    "sitemapURLs": 273,
+    "errors": [],
+    "visualReview": [
+      "phone guide/header/tables/cards",
+      "tablet guide/tables/cards"
+    ]
+  },
+  "incident": {
+    "firstRun": 42303492152,
+    "failedStep": "verify-expansion",
+    "cause": "Original article sources hid generic city tools",
+    "fix": "Keep update sources in article-updates, preserving the existing city tools",
+    "localRecheck": "build + expansion + targeted guide PASS",
+    "verified": "Second CI and production PASS"
+  }
+}
