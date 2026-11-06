@@ -1,0 +1,597 @@
+{
+  "base": "http://127.0.0.1:4330",
+  "stage": "local",
+  "views": [
+    {
+      "width": 320,
+      "query": "",
+      "count": 78,
+      "grids": [
+        {
+          "count": 12,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 7,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 4,
+          "columns": 1,
+          "single": false,
+          "even": true
+        },
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 37,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 1,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "query": "островом Канта",
+      "count": 1,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "query": "Калининград",
+      "count": 28,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 22,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 1,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "query": "кофе",
+      "count": 3,
+      "grids": [
+        {
+          "count": 3,
+          "columns": 1,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "query": "несуществующийзапрос",
+      "count": 0,
+      "grids": []
+    },
+    {
+      "width": 390,
+      "query": "",
+      "count": 78,
+      "grids": [
+        {
+          "count": 12,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 7,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 4,
+          "columns": 1,
+          "single": false,
+          "even": true
+        },
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 37,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 1,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "query": "островом Канта",
+      "count": 1,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "query": "Калининград",
+      "count": 28,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 22,
+          "columns": 1,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 1,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "query": "кофе",
+      "count": 3,
+      "grids": [
+        {
+          "count": 3,
+          "columns": 1,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "query": "несуществующийзапрос",
+      "count": 0,
+      "grids": []
+    },
+    {
+      "width": 768,
+      "query": "",
+      "count": 78,
+      "grids": [
+        {
+          "count": 12,
+          "columns": 2,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 7,
+          "columns": 2,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 4,
+          "columns": 2,
+          "single": false,
+          "even": true
+        },
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 2,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 37,
+          "columns": 2,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 2,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 2,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 2,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "query": "островом Канта",
+      "count": 1,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "query": "Калининград",
+      "count": 28,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 22,
+          "columns": 2,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 2,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "query": "кофе",
+      "count": 3,
+      "grids": [
+        {
+          "count": 3,
+          "columns": 2,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "query": "несуществующийзапрос",
+      "count": 0,
+      "grids": []
+    },
+    {
+      "width": 1024,
+      "query": "",
+      "count": 78,
+      "grids": [
+        {
+          "count": 12,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 7,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 4,
+          "columns": 2,
+          "single": false,
+          "even": true
+        },
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 37,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 3,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "query": "островом Канта",
+      "count": 1,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "query": "Калининград",
+      "count": 28,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 22,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 3,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "query": "кофе",
+      "count": 3,
+      "grids": [
+        {
+          "count": 3,
+          "columns": 3,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "query": "несуществующийзапрос",
+      "count": 0,
+      "grids": []
+    },
+    {
+      "width": 1280,
+      "query": "",
+      "count": 78,
+      "grids": [
+        {
+          "count": 12,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 7,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 4,
+          "columns": 2,
+          "single": false,
+          "even": true
+        },
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 37,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 3,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 3,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "query": "островом Канта",
+      "count": 1,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "query": "Калининград",
+      "count": 28,
+      "grids": [
+        {
+          "count": 1,
+          "columns": 1,
+          "single": true,
+          "even": false
+        },
+        {
+          "count": 22,
+          "columns": 3,
+          "single": false,
+          "even": false
+        },
+        {
+          "count": 5,
+          "columns": 3,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "query": "кофе",
+      "count": 3,
+      "grids": [
+        {
+          "count": 3,
+          "columns": 3,
+          "single": false,
+          "even": false
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "query": "несуществующийзапрос",
+      "count": 0,
+      "grids": []
+    }
+  ],
+  "errors": []
+}

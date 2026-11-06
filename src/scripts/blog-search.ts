@@ -22,6 +22,15 @@ if (form) {
     categories.forEach(category => {
       const count = category.querySelectorAll('[data-blog-entry]:not([hidden])').length;
       category.hidden = count === 0;
+      const grid = category.querySelector<HTMLElement>('.blog-card-grid')!;
+      grid.classList.toggle('blog-card-grid-single', count === 1);
+      grid.classList.toggle('blog-card-grid-even', count === 2 || count === 4);
+      const sizes = count === 1 || count === 2 || count === 4
+        ? '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 560px, 44vw'
+        : '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 360px, (max-width: 900px) 44vw, 30vw';
+      grid.querySelectorAll<HTMLImageElement | HTMLSourceElement>('[sizes]').forEach(image => {
+        image.sizes = sizes;
+      });
       const link = topics.querySelector<HTMLElement>(`[data-blog-category-link="${category.id}"]`)!;
       link.hidden = category.hidden;
       link.querySelector('small')!.textContent = String(count);

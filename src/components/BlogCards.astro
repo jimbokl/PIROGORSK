@@ -3,8 +3,9 @@ import { Picture } from 'astro:assets';
 import { articleHref, type BlogEntry } from '../data/blog';
 interface Props { entries: readonly BlogEntry[]; searchable?: boolean }
 const { entries, searchable = false } = Astro.props;
+const wideCards = entries.length === 1 || entries.length === 2 || entries.length === 4;
 ---
-<div class:list={['blog-card-grid', { 'blog-card-grid-single': entries.length === 1, 'blog-card-grid-even': entries.length === 4 }]}>{entries.map(entry => <article class="blog-card" data-blog-entry={searchable || undefined} data-blog-search={searchable ? `${entry.title} ${entry.description} ${entry.category}` : undefined}><a href={articleHref(entry.slug)}><div class="blog-card-image"><Picture src={entry.image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[360, 480, 680, 960]} sizes={entries.length === 1 || entries.length === 4 ? '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 560px, 44vw' : '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 360px, (max-width: 900px) 44vw, 30vw'} width={640} height={427} quality={48} alt={entry.imageAlt} loading="lazy" decoding="async" /></div><h3>{entry.title}<span aria-hidden="true">↗</span></h3><div class="blog-card-meta"><span>{entry.category}</span><span>≈ {entry.minutes} мин</span></div><p>{entry.description}</p></a></article>)}</div>
+<div class:list={['blog-card-grid', { 'blog-card-grid-single': entries.length === 1, 'blog-card-grid-even': entries.length === 2 || entries.length === 4 }]}>{entries.map(entry => <article class="blog-card" data-blog-entry={searchable || undefined} data-blog-search={searchable ? `${entry.title} ${entry.description} ${entry.category}` : undefined}><a href={articleHref(entry.slug)}><div class="blog-card-image"><Picture src={entry.image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[360, 480, 680, 960]} sizes={wideCards ? '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 560px, 44vw' : '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 360px, (max-width: 900px) 44vw, 30vw'} width={640} height={427} quality={48} alt={entry.imageAlt} loading="lazy" decoding="async" /></div><h3>{entry.title}<span aria-hidden="true">↗</span></h3><div class="blog-card-meta"><span>{entry.category}</span><span>≈ {entry.minutes} мин</span></div><p>{entry.description}</p></a></article>)}</div>
 <style>
   .blog-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--card-gap);align-items:stretch}
   .blog-card{min-width:0;display:grid;grid-template-rows:subgrid;grid-row:span 4;border:0;border-radius:0;background:transparent;padding:0 0 22px;row-gap:0}
@@ -25,6 +26,7 @@ const { entries, searchable = false } = Astro.props;
   .blog-card-grid-single .blog-card{grid-template-rows:auto;padding-bottom:8px}
   .blog-card-grid-single .blog-card a{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto 1fr;gap:0 20px;grid-row:auto}
   .blog-card-grid-single .blog-card-image{grid-row:1/4}
+  .blog-card-grid-single .blog-card h3{padding-top:0}
   @media(max-width:900px){.blog-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.blog-card-grid-single{grid-template-columns:minmax(0,1fr)}}
-  @media(max-width:650px){.blog-card-grid{grid-template-columns:minmax(0,1fr)}.blog-card-grid-single .blog-card{grid-template-rows:subgrid;padding-bottom:22px}.blog-card-grid-single .blog-card a{grid-template-columns:minmax(0,1fr);grid-template-rows:subgrid;grid-row:span 4}.blog-card-grid-single .blog-card-image{grid-row:auto}}
+  @media(max-width:650px){.blog-card-grid{grid-template-columns:minmax(0,1fr)}.blog-card-grid-single .blog-card{grid-template-rows:subgrid;padding-bottom:22px}.blog-card-grid-single .blog-card a{grid-template-columns:minmax(0,1fr);grid-template-rows:subgrid;grid-row:span 4}.blog-card-grid-single .blog-card-image{grid-row:auto}.blog-card-grid-single .blog-card h3{padding-top:20px}}
 </style>

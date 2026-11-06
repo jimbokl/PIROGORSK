@@ -784,7 +784,9 @@
       "/journal/pekarni-kaliningrada-pirogi-na-vynos/",
       "/journal/obed-v-ofis-v-kaliningrade/",
       "/journal/zavtraki-v-kaliningrade/",
-      "/journal/kofeyni-kaliningrada/"
+      "/journal/kofeyni-kaliningrada/",
+      "/journal/gde-poest-ryadom-s-ostrovom-kanta/",
+      "/journal/kaliningrad-zimoy-gde-poest/"
     ]
   },
   {
@@ -4857,6 +4859,53 @@
       "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
       "/journal/gde-poest-v-kaliningrade/",
       "/journal/skolko-piroga-na-cheloveka/"
+    ]
+  },
+  {
+    "path": "/journal/gde-poest-ryadom-s-ostrovom-kanta/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Где поесть рядом с островом Канта в Калининграде",
+    "query": "где поесть рядом с островом канта в калининграде",
+    "intent": "После прогулки по острову Канта удобно искать еду на соседних набережных. На стороне Рыбной деревни есть кофейня и рестораны, на Московском проспекте — ресторан при отеле. Собрали четыре адреса и разобрали, какой формат выбрать для завтрака, обеда с детьми или ужина перед концертом. Список основан на официальных страницах и данных регионального туристического центра.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/kaliningrad-zimoy-gde-poest/",
+      "/journal/gde-poest-v-kaliningrade/",
+      "/journal/zavtraki-v-kaliningrade/",
+      "/journal/baltiyskaya-kuhnya-dlya-detey/",
+      "/journal/uzhin-v-semnyh-apartamentah/"
+    ]
+  },
+  {
+    "path": "/journal/kaliningrad-zimoy-gde-poest/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Калининград зимой: где поесть и согреться",
+    "query": "калининград зимой: где поесть и согреться",
+    "intent": "Зимний день в Калининграде удобнее строить вокруг нескольких тёплых остановок. Короткая прогулка, обед за столом, музей или концерт, затем спокойный ужин — такой план легко изменить по погоде. Разберём, как выбрать кафе, что посмотреть в меню и сколько заложить на конкретный заказ. Примеры блюд взяты из опубликованных меню, а не из предположений о зимнем ассортименте.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-ryadom-s-ostrovom-kanta/",
+      "/journal/vegetarianskaya-eda-v-kaliningrade/",
+      "/journal/kofeyni-kaliningrada/",
+      "/journal/uzhin-v-semnyh-apartamentah/"
     ]
   }
 ]

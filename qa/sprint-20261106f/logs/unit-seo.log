@@ -1,0 +1,15 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Oversized social preview: gde-poest-ryadom-s-ostrovom-kanta
+    at file:///Volumes/DevSim/Projects/PIROGORSK/scripts/verify-article-artwork.mjs:25:10 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v25.9.0
