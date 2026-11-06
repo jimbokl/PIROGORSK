@@ -1,0 +1,70 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-06T15:43:35.919Z",
+  "expectedSha": "cb98837438c91a260c7c0b1ec671353175dcf029",
+  "articles": [
+    {
+      "path": "/journal/kurschskaya-vorona-i-menyu/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/kurschskaya-vorona-i-menyu/",
+      "datePublished": "2026-11-06",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/kurschskaya-vorona-i-menyu.BYApRpoa_ZMxPr8.webp",
+      "bytes": 92016,
+      "sha256": "2de6955601a175a62037ecd6859d96833fa9b996889fdd7708fd6897325b0667"
+    },
+    {
+      "path": "/_astro/kurschskaya-vorona-i-menyu-1.DvdzCPhk_Eya2I.webp",
+      "bytes": 15334,
+      "sha256": "6a25f6fd964fc33ebf0ed1bfd5901488cadcfa11b9db10697ae8a365287d2a6a"
+    },
+    {
+      "path": "/_astro/kurschskaya-vorona-i-menyu-2.CK9LlG9j_Z1H840E.webp",
+      "bytes": 13846,
+      "sha256": "85273769590767c9c7c813911bb7f29fc16d091aa7d774b6c535267dd2d38e0d"
+    },
+    {
+      "path": "/seo/blog/kurschskaya-vorona-i-menyu.jpg",
+      "bytes": 211627,
+      "sha256": "1b8a0caca8b93b35fcd206c77663fe4904926e489a108d7422b6c772ad40bd07"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/kuhnya-vostochnoy-prussii/",
+      "status": 200
+    },
+    {
+      "path": "/journal/stroganina-iz-pelamidy/",
+      "status": 200
+    },
+    {
+      "path": "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42241913842,
+    "headSha": "cb98837438c91a260c7c0b1ec671353175dcf029",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42241913842"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 73,
+  "sitemapUrls": 268
+}

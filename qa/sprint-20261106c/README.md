@@ -37,7 +37,26 @@ PASS, 126 точных сравнений подборки и 45 товарны�
 
 ## Публикация
 
-Впереди: CI и независимая production-приёмка exact runtime.
+CI [42241913842](https://github.com/jimbokl/PIROGORSK/actions/runs/42241913842)
+**SUCCESS**, runtime `cb98837438c91a260c7c0b1ec671353175dcf029`.
+Полная CI browser/site/UX/occasion, journal/bundle/picnic/catalogue/gallery/
+control-name регрессия и published Pages/Worker compatibility PASS.
+
+Production readback `2026-11-06T15:43:35.919Z` — **PASS**:
+
+- Новая статья HTTP 200, title/canonical/datePublished соответствуют сборке.
+- 73 статьи в хабе, 268 URL в sitemap; новый URL присутствует в обоих.
+- Четыре image assets побайтно совпали со сборкой (SHA256), четыре
+  внутренних направления HTTP 200, release manifest совпал.
+- 130 production viewport checks: 20 новых статей месячного плана + шесть
+  обновлённых владельцев × 320/390/768/1024/1280.
+- Опубликованная новая статья на 390/768 px и схема на 390 px просмотрены.
+- QA-17 в этом CI не повторилась; задача остаётся открытой.
+
+[CI](ci-success.json), [readback](live-readback.json),
+[контент](content-production/production-report.json),
+[телефон](content-production/production-kurschskaya-vorona-i-menyu-390.png),
+[планшет](content-production/production-kurschskaya-vorona-i-menyu-768.png).
 Новый Lighthouse не запускался. Формы production не отправлялись.
 
 Источники и редактура: [brief](../../research/content-sprint-20261106c/README.md).
