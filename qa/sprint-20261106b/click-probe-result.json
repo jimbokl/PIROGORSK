@@ -1,0 +1,22 @@
+{
+  "runs": 3,
+  "width": 320,
+  "cpuThrottling": 4,
+  "result": "PASS",
+  "fullSite": {
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "result": "PASS"
+  },
+  "ci": 42231358665,
+  "ciResult": "success",
+  "qa17": "open; root cause not established",
+  "diagnosticCommit": "6e14092d4154cc18036ebc2bc11bdf256e76dedb",
+  "logSha256": {
+    "click-probe-local.log": "d867cd8b6fd6ee3cf591b1607d4871eb230d42216c9561e46e41aaaaac3a426e",
+    "site-click-probe-local.log": "d1fee35bc6efeca826b5f2c0df3836d222251583c5e5bad1bc87e08524da85b7"
+  }
+}

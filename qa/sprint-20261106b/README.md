@@ -46,14 +46,43 @@
    обязательные 139 карточек сохранены. Локально 154 routes / 139 originals /
    1112 responsive assets и product backdrops PASS. Код сайта этим
    исправлением не менялся.
-4. Прежняя QA-17 остаётся открытой. Её редкий холодный сбой физического
-   клика этим спринтом не объяснён и не объявлен исправленным.
+4. Второй CI `42229191561` воспроизвёл QA-17: мини-пирог не появился
+   в подборке после screenshot и физического клика. Теперь тест сохраняет
+   pointerdown/pointerup/click, фактическую цель, координаты, геометрию,
+   ожидаемую/фактическую подборку и снимок при сбое; workflow выгружает
+   evidence. Повторные клики и программный click не добавлены. Три прохода
+   320 px при CPU×4 и полный `qa-site` на 320/390/1280 локально PASS.
+   QA-17 остаётся открытой: успешные повторения и дополнительная диагностика
+   не устанавливают причину редкого сбоя и не доказывают его устранение.
 
 ## Публикация
 
-CI и production readback ещё предстоят. Фактические результаты будут
-добавлены после завершения публикации. Старые Lighthouse-замеры этого
-спринта не характеризуют: новый Lighthouse здесь не запускался.
+CI [42231358665](https://github.com/jimbokl/PIROGORSK/actions/runs/42231358665) **SUCCESS**; runtime `6e14092d4154cc18036ebc2bc11bdf256e76dedb`.
+Production readback `2026-11-06T14:40:22.372Z` — **PASS**:
+
+- 72 статьи в хабе и 267 URL в sitemap; новые страницы HTTP 200,
+  canonical/title/datePublished соответствуют сборке.
+- 14 новых image assets (8 статейных и 6 срезов) побайтно совпали со сборкой;
+  общий inline CSS галерей совпал. Семь внутренних направлений новых статей HTTP 200.
+- Контент: 125 production viewport checks на 320/390/768/1024/1280.
+- Галереи: пять ширин, lazy loading / keyboard / retry / no-JS PASS.
+- Каталог: 154 SKU на главной/в меню, геометрия 1→2→99→1 на шести
+  ширинах 320/390/768/1024/1280/1440; цены/форматы/подборка PASS.
+- Published Pages/Worker release compatibility PASS. Формы на проде не отправлялись.
+- Визуально просмотрены опубликованные статьи и оба среза на телефоне и планшете.
+
+[Readback](live-readback.json), [CI](ci-success.json),
+[контент](content-production/production-report.json),
+[каталог](catalog-production/production-report.json),
+[галереи](cutaways-production/report.json).
+[Статья на телефоне](content-production/production-eda-v-aeroportu-hrabrovo-390.png),
+[статья на планшете](content-production/production-dich-i-myaso-kaliningradskoy-oblasti-768.png),
+[срез на телефоне](cutaways-production/hero-cutaway-hb-osetinskiy-pirog-so-shpinatom-i-syrom-390.png),
+[срез на планшете](cutaways-production/hero-cutaway-hb-osetinskiy-pirog-s-kuritsey-i-syrom-768.png).
+
+QA-17 остаётся открытой. Финальный CI с диагностикой прошёл, но причина
+предыдущего редкого сбоя не установлена. Новый Lighthouse не запускался;
+старые замеры не характеризуют этот выпуск.
 
 ## Входные данные
 
