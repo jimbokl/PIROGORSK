@@ -1,0 +1,120 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-06T12:30:51.515Z",
+  "expectedSha": "bbf10bb6e72fe793e4eb346eca37deb0a47fdfd5",
+  "articles": [
+    {
+      "path": "/journal/uzhin-na-baltike-posle-21/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/uzhin-na-baltike-posle-21/",
+      "datePublished": "2026-11-06",
+      "blog": true,
+      "sitemap": true
+    },
+    {
+      "path": "/journal/baltiyskaya-kuhnya-dlya-detey/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/baltiyskaya-kuhnya-dlya-detey/",
+      "datePublished": "2026-11-06",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/uzhin-na-baltike-posle-21.B37QHY3N_Z1zpEzj.webp",
+      "bytes": 96610,
+      "sha256": "a542dc8b249b1b0f0b1bf85bdfd65429244f0d886e5f02bb161950d121fcb7a6"
+    },
+    {
+      "path": "/_astro/uzhin-na-baltike-posle-21-1.DZ5elFd5_hpfp0.webp",
+      "bytes": 13868,
+      "sha256": "05ecebca19208856f5199539ea50ce525cc8e3673c7cedf3f5354e8252c29c51"
+    },
+    {
+      "path": "/_astro/uzhin-na-baltike-posle-21-2.CQG7W_1q_Z15a5tM.webp",
+      "bytes": 14038,
+      "sha256": "91053fd32c81b5d181995384cebae834e8bb957f1a610be2c8d5dbd28ea45b0c"
+    },
+    {
+      "path": "/seo/blog/uzhin-na-baltike-posle-21.jpg",
+      "bytes": 226383,
+      "sha256": "17b5a757375e8e3f52ae5d0cb08e695b2936d1dadbc7a701636bdab45b1b19a6"
+    },
+    {
+      "path": "/_astro/baltiyskaya-kuhnya-dlya-detey.BkaOtIsN_Z10O0Yj.webp",
+      "bytes": 90546,
+      "sha256": "e6f2836ed5c5c1b3d765620b58651ee74759a019d30deda4c73662cf1f05b166"
+    },
+    {
+      "path": "/_astro/baltiyskaya-kuhnya-dlya-detey-1.BeJy1Uf2_2lu5SM.webp",
+      "bytes": 15508,
+      "sha256": "00c65be903a2f576396f9ab4fc89412fda4830a1d0a2f244511ec930d7c2153b"
+    },
+    {
+      "path": "/_astro/baltiyskaya-kuhnya-dlya-detey-2.DmiDkv3o_1d5k4t.webp",
+      "bytes": 13328,
+      "sha256": "28d6110e13402e1d23c9286a5932c8c3cfdcd29369a07ac26f0990e3c626cf3f"
+    },
+    {
+      "path": "/seo/blog/baltiyskaya-kuhnya-dlya-detey.jpg",
+      "bytes": 215411,
+      "sha256": "f289db5f4399a22d686c6c495f1b74dc404b334de88e94bd16f76c0065c4e8ac"
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42214316951,
+    "headSha": "bbf10bb6e72fe793e4eb346eca37deb0a47fdfd5",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42214316951"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 70,
+  "sitemapUrls": 265,
+  "buyingStyles": [
+    {
+      "inline": true,
+      "bytes": 165810,
+      "sha256": "4dba3a657da245a1e99edd04cf604e2a2919021e3d52ec7d490638ff5a0bdde6"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/svetlogorsk-kaliningrad-edamarshrut/",
+      "status": 200
+    },
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    },
+    {
+      "path": "/journal/zavtrak-na-baltike/",
+      "status": 200
+    },
+    {
+      "path": "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "status": 200
+    }
+  ],
+  "cards": {
+    "pages": 35,
+    "cards": 40,
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ]
+  }
+}

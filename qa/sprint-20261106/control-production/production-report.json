@@ -1,0 +1,521 @@
+{
+  "stage": "production",
+  "base": "https://pirogorsk.ru",
+  "views": [
+    {
+      "path": "/",
+      "width": 320,
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 320,
+      "result": "PASS"
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 320,
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 390,
+      "result": "PASS"
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 390,
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 768,
+      "result": "PASS"
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 768,
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 1280,
+      "result": "PASS"
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 1280,
+      "result": "PASS"
+    }
+  ],
+  "checks": [
+    {
+      "path": "/",
+      "width": 320,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "state": "two-added",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "state": "dialog-open",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "state": "saved-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "state": "cleared-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "state": "two-added",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "state": "dialog-open",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "state": "saved-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "state": "cleared-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 320,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 320,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 320,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 320,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 320,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "two-added",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "dialog-open",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "saved-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "cleared-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "state": "two-added",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "state": "dialog-open",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "state": "saved-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "state": "cleared-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 390,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 390,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 390,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 390,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 390,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "two-added",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "dialog-open",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "saved-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "cleared-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "state": "two-added",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "state": "dialog-open",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "state": "saved-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "state": "cleared-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 768,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 768,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 768,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 768,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 768,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "state": "two-added",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "state": "dialog-open",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "state": "saved-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "state": "cleared-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "state": "two-added",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "state": "dialog-open",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "state": "saved-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "state": "cleared-reload",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/menu/",
+      "width": 1280,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 1280,
+      "state": "empty",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 1280,
+      "state": "cutaway-visible",
+      "result": "PASS"
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "width": 1280,
+      "state": "whole-pie-restored",
+      "result": "PASS"
+    },
+    {
+      "path": "/catalog/baltiyskiy-piknik-set/",
+      "width": 1280,
+      "state": "empty",
+      "result": "PASS"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,25 @@
+{
+  "headSha": "f41f4bc3e98d39b4b05f142a2411b5e8d00f569e",
+  "cold": {
+    "run": 42209099231,
+    "conclusion": "failure",
+    "build": {
+      "startedAt": "2026-11-06T11:19:37Z",
+      "completedAt": "2026-11-06T11:36:44Z",
+      "seconds": 1027
+    },
+    "cacheSaved": true,
+    "failure": "qa-catalog-formats.mjs physical click; expected 4 selection items, got 3"
+  },
+  "warm": {
+    "run": 42212411427,
+    "conclusion": "success",
+    "build": {
+      "startedAt": "2026-11-06T11:45:33Z",
+      "completedAt": "2026-11-06T11:45:39Z",
+      "seconds": 6
+    },
+    "cacheRestored": true
+  },
+  "scope": "CI image-processing duration, not website loading speed"
+}

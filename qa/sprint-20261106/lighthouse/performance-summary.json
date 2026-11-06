@@ -1,0 +1,2518 @@
+[
+  {
+    "mode": "mobile",
+    "run": 1,
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-11-06T12:31:06.610Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 3363,
+      "lcp": 3813
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 3295.543,
+      "resourceLoadDelay": 33.334,
+      "resourceLoadDuration": 466.681,
+      "elementRenderDelay": 17.624
+    },
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1558.8405,
+        "display": "1.6 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2439.8405000000002,
+        "display": "2.4 s"
+      },
+      "total-blocking-time": {
+        "value": 12,
+        "display": "10 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0006890437950540936,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 5746.78499496497,
+        "display": "5.7 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 336 KiB",
+        "items": [
+          {
+            "url": "https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 56293,
+            "wastedBytes": 51601.916666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 40712,
+            "wastedBytes": 37319.33333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 40395,
+            "wastedBytes": 37028.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/analytics.5iFZ3hUQ.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 26040,
+            "wastedBytes": 23870
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 21435,
+            "wastedBytes": 19648.75
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18868,
+            "wastedBytes": 17295.666666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18850,
+            "wastedBytes": 17279.166666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 16055,
+            "wastedBytes": 14717.083333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.BOtyLgF8_Z2oypJr.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12365,
+            "wastedBytes": 11334.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.d61w9KjH_Z1zSY9V.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12360,
+            "wastedBytes": 11330
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.CUr0iAWH_ZNGwrl.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12232,
+            "wastedBytes": 11212.666666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.Bo977vUT_12Okxv.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11760,
+            "wastedBytes": 10780
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.Bp1vJZAV_Z1oGW1q.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11693,
+            "wastedBytes": 10718.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.CoMDhDYZ_1KVsii.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11650,
+            "wastedBytes": 10679.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/storefront.DrO1GRsq.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 10721,
+            "wastedBytes": 9827.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9541,
+            "wastedBytes": 8745.916666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.C3rRYxI3_1XyTsl.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 6031,
+            "wastedBytes": 5528.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.CwMc51iY_Iw847.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5910,
+            "wastedBytes": 5417.5
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.dPlBJLpD_1lKDhJ.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5545,
+            "wastedBytes": 5082.916666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.DMEurvcD_z8t0T.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5278,
+            "wastedBytes": 4838.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.591iKjEd_1pBhyh.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5054,
+            "wastedBytes": 4632.833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/InterestForm.astro_astro_type_script_index_0_lang.BzQzX1U1.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4279,
+            "wastedBytes": 3922.4166666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.DuGp5oBv_2adsI4.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4238,
+            "wastedBytes": 3884.833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/index.astro_astro_type_script_index_0_lang.BVj7pW9-.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1753,
+            "wastedBytes": 1606.9166666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-symbol.svg?v=20261031-7",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1513,
+            "wastedBytes": 1386.9166666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/catalog-filters.B6s1Sq3J.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1294,
+            "wastedBytes": 1186.1666666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie-planner.D65GEHih.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1000,
+            "wastedBytes": 916.6666666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/product-portions.__Q5qpfT.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 761,
+            "wastedBytes": 697.5833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 508,
+            "wastedBytes": 465.66666666666663
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/catalog-search.CmJMF--A.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 356,
+            "wastedBytes": 326.3333333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pricing.uFphHH5q.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 336,
+            "wastedBytes": 308
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BZwdC_uL.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 290,
+            "wastedBytes": 265.8333333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 249,
+            "wastedBytes": 228.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 230,
+            "wastedBytes": 210.83333333333331
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.KCgLJv4H.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 195,
+            "wastedBytes": 178.75
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 54 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,1,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 313,
+                "right": 591,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif\" srcset=\"/_astro/picnic.BO51Bov8_Z1Qf2k5.webp 320w, /_astro/picnic.BO51Bov8_rNXNn.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "totalBytes": 56052,
+            "wastedBytes": 29755,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 16413
+                },
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18866
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 21,
+                "right": 299,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif\" srcset=\"/_astro/dinner.BVmDmSXN_Z29nxmv.webp 320w, /_astro/dinner.BVmDmSXN_9FsKW.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "totalBytes": 40471,
+            "wastedBytes": 14174,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 13622
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 8,
+                "bottom": 89,
+                "left": 94,
+                "right": 318,
+                "width": 224,
+                "height": 81
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "lcp-breakdown-insight",
+        "title": "LCP breakdown",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "label",
+                "valueType": "text",
+                "label": "Subpart"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "subpart": "timeToFirstByte",
+                "label": "Time to first byte",
+                "duration": 3295.543
+              },
+              {
+                "subpart": "resourceLoadDelay",
+                "label": "Resource load delay",
+                "duration": 33.334
+              },
+              {
+                "subpart": "resourceLoadDuration",
+                "label": "Resource load duration",
+                "duration": 466.681
+              },
+              {
+                "subpart": "elementRenderDelay",
+                "label": "Element render delay",
+                "duration": 17.624
+              }
+            ]
+          },
+          {
+            "type": "node",
+            "lhId": "page-3-IMG",
+            "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,DIV,0,DIV,0,DIV,0,PICTURE,3,IMG",
+            "selector": "div.tasting-art > div.tasting-scene > picture > img",
+            "boundingRect": {
+              "top": 459,
+              "bottom": 694,
+              "left": 20,
+              "right": 392,
+              "width": 372,
+              "height": 235
+            },
+            "snippet": "<img src=\"https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif\" srcset=\"/_astro/banner-city.B15d-_pI_Z1zf6Tk.webp 640w, /_astro/banner-city.B15d-_…\" sizes=\"(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px\" width=\"1920\" height=\"640\" alt=\"Пироговый город: золотистые приморские домики на большом пироге с синими в…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+            "nodeLabel": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "34424352619177B556075DCA5BF1E095": {
+                  "url": "https://pirogorsk.ru/?qa=1",
+                  "navStartToEndTime": 3485,
+                  "transferSize": 123095,
+                  "isLongest": true,
+                  "children": {
+                    "8711.396": {
+                      "url": "https://pirogorsk.ru/_astro/index.astro_astro_type_script_index_0_lang.BVj7pW9-.js",
+                      "navStartToEndTime": 3688,
+                      "transferSize": 1753,
+                      "isLongest": true,
+                      "children": {
+                        "8711.402": {
+                          "url": "https://pirogorsk.ru/_astro/catalog-filters.B6s1Sq3J.js",
+                          "navStartToEndTime": 3839,
+                          "transferSize": 1294,
+                          "isLongest": true,
+                          "children": {
+                            "8711.405": {
+                              "url": "https://pirogorsk.ru/_astro/catalog-search.CmJMF--A.js",
+                              "navStartToEndTime": 4067,
+                              "transferSize": 356,
+                              "isLongest": true,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8711.394": {
+                      "url": "https://pirogorsk.ru/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BZwdC_uL.js",
+                      "navStartToEndTime": 3676,
+                      "transferSize": 290,
+                      "children": {
+                        "8711.399": {
+                          "url": "https://pirogorsk.ru/_astro/storefront.DrO1GRsq.js",
+                          "navStartToEndTime": 3818,
+                          "transferSize": 10721,
+                          "children": {
+                            "8711.403": {
+                              "url": "https://pirogorsk.ru/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 4058,
+                              "transferSize": 1000,
+                              "children": {}
+                            },
+                            "8711.404": {
+                              "url": "https://pirogorsk.ru/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 3958,
+                              "transferSize": 761,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8711.393": {
+                      "url": "https://pirogorsk.ru/_astro/InterestForm.astro_astro_type_script_index_0_lang.BzQzX1U1.js",
+                      "navStartToEndTime": 3687,
+                      "transferSize": 4279,
+                      "children": {
+                        "8711.401": {
+                          "url": "https://pirogorsk.ru/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 3840,
+                          "transferSize": 336,
+                          "children": {}
+                        },
+                        "8711.400": {
+                          "url": "https://pirogorsk.ru/_astro/analytics.5iFZ3hUQ.js",
+                          "navStartToEndTime": 3839,
+                          "transferSize": 26040,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8711.24": {
+                      "url": "https://pirogorsk.ru/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 3582,
+                      "transferSize": 230,
+                      "children": {
+                        "8711.398": {
+                          "url": "https://pirogorsk.ru/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 3720,
+                          "transferSize": 508,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8711.395": {
+                      "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.KCgLJv4H.js",
+                      "navStartToEndTime": 3688,
+                      "transferSize": 195,
+                      "children": {}
+                    },
+                    "8711.5": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 3676,
+                      "transferSize": 18850,
+                      "children": {}
+                    },
+                    "8711.53": {
+                      "url": "https://pirogorsk.ru/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 3675,
+                      "transferSize": 249,
+                      "children": {}
+                    },
+                    "8711.6": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 3630,
+                      "transferSize": 9541,
+                      "children": {}
+                    },
+                    "8711.7": {
+                      "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 3553,
+                      "transferSize": 18868,
+                      "children": {}
+                    },
+                    "8711.8": {
+                      "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 3552,
+                      "transferSize": 16055,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 4067
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 2,
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-11-06T12:31:21.408Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 2515,
+      "lcp": 2672
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 2463.0890000305176,
+      "resourceLoadDelay": 17.71499996948242,
+      "resourceLoadDuration": 164.231,
+      "elementRenderDelay": 27.409
+    },
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1529.2085,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1966.2085,
+        "display": "2.0 s"
+      },
+      "total-blocking-time": {
+        "value": 6,
+        "display": "10 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0006890437950540936,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 4375.213870755918,
+        "display": "4.4 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 336 KiB",
+        "items": [
+          {
+            "url": "https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 56287,
+            "wastedBytes": 51596.416666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 40687,
+            "wastedBytes": 37296.416666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 40274,
+            "wastedBytes": 36917.83333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/analytics.5iFZ3hUQ.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 26059,
+            "wastedBytes": 23887.416666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 21420,
+            "wastedBytes": 19635
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18826,
+            "wastedBytes": 17257.166666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18784,
+            "wastedBytes": 17218.666666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 16220,
+            "wastedBytes": 14868.333333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.BOtyLgF8_Z2oypJr.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12513,
+            "wastedBytes": 11470.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.CUr0iAWH_ZNGwrl.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12247,
+            "wastedBytes": 11226.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.d61w9KjH_Z1zSY9V.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12236,
+            "wastedBytes": 11216.333333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.Bo977vUT_12Okxv.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11712,
+            "wastedBytes": 10736
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.Bp1vJZAV_Z1oGW1q.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11673,
+            "wastedBytes": 10700.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.CoMDhDYZ_1KVsii.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11610,
+            "wastedBytes": 10642.5
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/storefront.DrO1GRsq.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 10825,
+            "wastedBytes": 9922.916666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9561,
+            "wastedBytes": 8764.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.C3rRYxI3_1XyTsl.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5995,
+            "wastedBytes": 5495.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.CwMc51iY_Iw847.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5899,
+            "wastedBytes": 5407.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.dPlBJLpD_1lKDhJ.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5518,
+            "wastedBytes": 5058.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.DMEurvcD_z8t0T.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5291,
+            "wastedBytes": 4850.083333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.591iKjEd_1pBhyh.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5197,
+            "wastedBytes": 4763.916666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/InterestForm.astro_astro_type_script_index_0_lang.BzQzX1U1.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4250,
+            "wastedBytes": 3895.833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.DuGp5oBv_2adsI4.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4223,
+            "wastedBytes": 3871.083333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/index.astro_astro_type_script_index_0_lang.BVj7pW9-.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1687,
+            "wastedBytes": 1546.4166666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-symbol.svg?v=20261031-7",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1473,
+            "wastedBytes": 1350.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/catalog-filters.B6s1Sq3J.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1204,
+            "wastedBytes": 1103.6666666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie-planner.D65GEHih.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1013,
+            "wastedBytes": 928.5833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/product-portions.__Q5qpfT.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 702,
+            "wastedBytes": 643.5
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 579,
+            "wastedBytes": 530.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 362,
+            "wastedBytes": 331.8333333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/catalog-search.CmJMF--A.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 335,
+            "wastedBytes": 307.0833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.KCgLJv4H.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 329,
+            "wastedBytes": 301.5833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pricing.uFphHH5q.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 322,
+            "wastedBytes": 295.16666666666663
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BZwdC_uL.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 270,
+            "wastedBytes": 247.5
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 244,
+            "wastedBytes": 223.66666666666666
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 54 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,1,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 313,
+                "right": 591,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif\" srcset=\"/_astro/picnic.BO51Bov8_Z1Qf2k5.webp 320w, /_astro/picnic.BO51Bov8_rNXNn.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "totalBytes": 56052,
+            "wastedBytes": 29755,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 16413
+                },
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18866
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 21,
+                "right": 299,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif\" srcset=\"/_astro/dinner.BVmDmSXN_Z29nxmv.webp 320w, /_astro/dinner.BVmDmSXN_9FsKW.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "totalBytes": 40471,
+            "wastedBytes": 14174,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 13622
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-2-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 8,
+                "bottom": 89,
+                "left": 94,
+                "right": 318,
+                "width": 224,
+                "height": 81
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "lcp-breakdown-insight",
+        "title": "LCP breakdown",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "label",
+                "valueType": "text",
+                "label": "Subpart"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "subpart": "timeToFirstByte",
+                "label": "Time to first byte",
+                "duration": 2463.0890000305176
+              },
+              {
+                "subpart": "resourceLoadDelay",
+                "label": "Resource load delay",
+                "duration": 17.71499996948242
+              },
+              {
+                "subpart": "resourceLoadDuration",
+                "label": "Resource load duration",
+                "duration": 164.231
+              },
+              {
+                "subpart": "elementRenderDelay",
+                "label": "Element render delay",
+                "duration": 27.409
+              }
+            ]
+          },
+          {
+            "type": "node",
+            "lhId": "page-3-IMG",
+            "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,DIV,0,DIV,0,DIV,0,PICTURE,3,IMG",
+            "selector": "div.tasting-art > div.tasting-scene > picture > img",
+            "boundingRect": {
+              "top": 459,
+              "bottom": 694,
+              "left": 20,
+              "right": 392,
+              "width": 372,
+              "height": 235
+            },
+            "snippet": "<img src=\"https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif\" srcset=\"/_astro/banner-city.B15d-_pI_Z1zf6Tk.webp 640w, /_astro/banner-city.B15d-_…\" sizes=\"(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px\" width=\"1920\" height=\"640\" alt=\"Пироговый город: золотистые приморские домики на большом пироге с синими в…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+            "nodeLabel": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "01848B698DDD1F20AF4B75F5E7A9C326": {
+                  "url": "https://pirogorsk.ru/?qa=1",
+                  "navStartToEndTime": 2587,
+                  "transferSize": 123095,
+                  "isLongest": true,
+                  "children": {
+                    "8743.395": {
+                      "url": "https://pirogorsk.ru/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BZwdC_uL.js",
+                      "navStartToEndTime": 2789,
+                      "transferSize": 270,
+                      "isLongest": true,
+                      "children": {
+                        "8743.402": {
+                          "url": "https://pirogorsk.ru/_astro/storefront.DrO1GRsq.js",
+                          "navStartToEndTime": 2925,
+                          "transferSize": 10825,
+                          "isLongest": true,
+                          "children": {
+                            "8743.405": {
+                              "url": "https://pirogorsk.ru/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 3052,
+                              "transferSize": 702,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "8743.404": {
+                              "url": "https://pirogorsk.ru/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 3047,
+                              "transferSize": 1013,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8743.397": {
+                      "url": "https://pirogorsk.ru/_astro/index.astro_astro_type_script_index_0_lang.BVj7pW9-.js",
+                      "navStartToEndTime": 2756,
+                      "transferSize": 1687,
+                      "children": {
+                        "8743.400": {
+                          "url": "https://pirogorsk.ru/_astro/catalog-filters.B6s1Sq3J.js",
+                          "navStartToEndTime": 2874,
+                          "transferSize": 1204,
+                          "children": {
+                            "8743.403": {
+                              "url": "https://pirogorsk.ru/_astro/catalog-search.CmJMF--A.js",
+                              "navStartToEndTime": 2989,
+                              "transferSize": 335,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8743.394": {
+                      "url": "https://pirogorsk.ru/_astro/InterestForm.astro_astro_type_script_index_0_lang.BzQzX1U1.js",
+                      "navStartToEndTime": 2788,
+                      "transferSize": 4250,
+                      "children": {
+                        "8743.401": {
+                          "url": "https://pirogorsk.ru/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 2922,
+                          "transferSize": 322,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8743.396": {
+                      "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.KCgLJv4H.js",
+                      "navStartToEndTime": 2756,
+                      "transferSize": 329,
+                      "children": {
+                        "8743.399": {
+                          "url": "https://pirogorsk.ru/_astro/analytics.5iFZ3hUQ.js",
+                          "navStartToEndTime": 2885,
+                          "transferSize": 26059,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8743.24": {
+                      "url": "https://pirogorsk.ru/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 2673,
+                      "transferSize": 362,
+                      "children": {
+                        "8743.398": {
+                          "url": "https://pirogorsk.ru/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 2789,
+                          "transferSize": 579,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8743.6": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 2756,
+                      "transferSize": 9561,
+                      "children": {}
+                    },
+                    "8743.53": {
+                      "url": "https://pirogorsk.ru/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 2752,
+                      "transferSize": 244,
+                      "children": {}
+                    },
+                    "8743.5": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 2751,
+                      "transferSize": 18784,
+                      "children": {}
+                    },
+                    "8743.8": {
+                      "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 2673,
+                      "transferSize": 16220,
+                      "children": {}
+                    },
+                    "8743.7": {
+                      "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 2673,
+                      "transferSize": 18826,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 3052
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "mobile",
+    "run": 3,
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-11-06T12:31:34.744Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 3680,
+      "lcp": 3816
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 3637.216,
+      "resourceLoadDelay": 4.167,
+      "resourceLoadDuration": 159.743,
+      "elementRenderDelay": 15.341
+    },
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1515.708,
+        "display": "1.5 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1804.708,
+        "display": "1.8 s"
+      },
+      "total-blocking-time": {
+        "value": 15,
+        "display": "20 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.0011395952576401364,
+        "display": "0.001"
+      },
+      "speed-index": {
+        "value": 6019.880745525092,
+        "display": "6.0 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 337 KiB",
+        "items": [
+          {
+            "url": "https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 56324,
+            "wastedBytes": 51630.33333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 40743,
+            "wastedBytes": 37347.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 40272,
+            "wastedBytes": 36916
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/analytics.5iFZ3hUQ.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 26058,
+            "wastedBytes": 23886.5
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 21386,
+            "wastedBytes": 19603.833333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18942,
+            "wastedBytes": 17363.5
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18821,
+            "wastedBytes": 17252.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 16090,
+            "wastedBytes": 14749.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.BOtyLgF8_Z2oypJr.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12476,
+            "wastedBytes": 11436.333333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.CUr0iAWH_ZNGwrl.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12279,
+            "wastedBytes": 11255.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.d61w9KjH_Z1zSY9V.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12221,
+            "wastedBytes": 11202.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.Bo977vUT_12Okxv.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11811,
+            "wastedBytes": 10826.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.Bp1vJZAV_Z1oGW1q.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11711,
+            "wastedBytes": 10735.083333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.CoMDhDYZ_1KVsii.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11639,
+            "wastedBytes": 10669.083333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/storefront.DrO1GRsq.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 10817,
+            "wastedBytes": 9915.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9489,
+            "wastedBytes": 8698.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.C3rRYxI3_1XyTsl.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 6034,
+            "wastedBytes": 5531.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.CwMc51iY_Iw847.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5868,
+            "wastedBytes": 5379
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.dPlBJLpD_1lKDhJ.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5582,
+            "wastedBytes": 5116.833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.DMEurvcD_z8t0T.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5330,
+            "wastedBytes": 4885.833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.591iKjEd_1pBhyh.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5122,
+            "wastedBytes": 4695.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/InterestForm.astro_astro_type_script_index_0_lang.BzQzX1U1.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4247,
+            "wastedBytes": 3893.083333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.DuGp5oBv_2adsI4.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4233,
+            "wastedBytes": 3880.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/index.astro_astro_type_script_index_0_lang.BVj7pW9-.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1725,
+            "wastedBytes": 1581.25
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-symbol.svg?v=20261031-7",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1530,
+            "wastedBytes": 1402.5
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/catalog-filters.B6s1Sq3J.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1209,
+            "wastedBytes": 1108.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie-planner.D65GEHih.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 982,
+            "wastedBytes": 900.1666666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/product-portions.__Q5qpfT.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 693,
+            "wastedBytes": 635.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 582,
+            "wastedBytes": 533.5
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/catalog-search.CmJMF--A.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 402,
+            "wastedBytes": 368.5
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pricing.uFphHH5q.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 363,
+            "wastedBytes": 332.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 323,
+            "wastedBytes": 296.0833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BZwdC_uL.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 304,
+            "wastedBytes": 278.66666666666663
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 268,
+            "wastedBytes": 245.66666666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.KCgLJv4H.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 195,
+            "wastedBytes": 178.75
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 54 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-7-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,1,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 313,
+                "right": 591,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif\" srcset=\"/_astro/picnic.BO51Bov8_Z1Qf2k5.webp 320w, /_astro/picnic.BO51Bov8_rNXNn.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/picnic.BO51Bov8_Zc2Yd6.avif",
+            "totalBytes": 56052,
+            "wastedBytes": 29755,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 16413
+                },
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 18866
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-8-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 904,
+                "bottom": 1032,
+                "left": 21,
+                "right": 299,
+                "width": 278,
+                "height": 128
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif\" srcset=\"/_astro/dinner.BVmDmSXN_Z29nxmv.webp 320w, /_astro/dinner.BVmDmSXN_9FsKW.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/dinner.BVmDmSXN_Zubufw.avif",
+            "totalBytes": 40471,
+            "wastedBytes": 14174,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (720x330) for its displayed dimensions (487x324). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 13622
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-9-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 8,
+                "bottom": 89,
+                "left": 94,
+                "right": 318,
+                "width": 224,
+                "height": 81
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "lcp-breakdown-insight",
+        "title": "LCP breakdown",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "label",
+                "valueType": "text",
+                "label": "Subpart"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "subpart": "timeToFirstByte",
+                "label": "Time to first byte",
+                "duration": 3637.216
+              },
+              {
+                "subpart": "resourceLoadDelay",
+                "label": "Resource load delay",
+                "duration": 4.167
+              },
+              {
+                "subpart": "resourceLoadDuration",
+                "label": "Resource load duration",
+                "duration": 159.743
+              },
+              {
+                "subpart": "elementRenderDelay",
+                "label": "Element render delay",
+                "duration": 15.341
+              }
+            ]
+          },
+          {
+            "type": "node",
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,DIV,0,DIV,0,DIV,0,PICTURE,3,IMG",
+            "selector": "div.tasting-art > div.tasting-scene > picture > img",
+            "boundingRect": {
+              "top": 459,
+              "bottom": 694,
+              "left": 20,
+              "right": 392,
+              "width": 372,
+              "height": 235
+            },
+            "snippet": "<img src=\"https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif\" srcset=\"/_astro/banner-city.B15d-_pI_Z1zf6Tk.webp 640w, /_astro/banner-city.B15d-_…\" sizes=\"(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px\" width=\"1920\" height=\"640\" alt=\"Пироговый город: золотистые приморские домики на большом пироге с синими в…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+            "nodeLabel": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "5FC2E43D6279792B97130604938EF9D7": {
+                  "url": "https://pirogorsk.ru/?qa=1",
+                  "navStartToEndTime": 3763,
+                  "transferSize": 123094,
+                  "isLongest": true,
+                  "children": {
+                    "8775.397": {
+                      "url": "https://pirogorsk.ru/_astro/index.astro_astro_type_script_index_0_lang.BVj7pW9-.js",
+                      "navStartToEndTime": 4100,
+                      "transferSize": 1725,
+                      "isLongest": true,
+                      "children": {
+                        "8775.402": {
+                          "url": "https://pirogorsk.ru/_astro/catalog-filters.B6s1Sq3J.js",
+                          "navStartToEndTime": 4234,
+                          "transferSize": 1209,
+                          "isLongest": true,
+                          "children": {
+                            "8775.405": {
+                              "url": "https://pirogorsk.ru/_astro/catalog-search.CmJMF--A.js",
+                              "navStartToEndTime": 4371,
+                              "transferSize": 402,
+                              "isLongest": true,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8775.395": {
+                      "url": "https://pirogorsk.ru/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BZwdC_uL.js",
+                      "navStartToEndTime": 3979,
+                      "transferSize": 304,
+                      "children": {
+                        "8775.399": {
+                          "url": "https://pirogorsk.ru/_astro/storefront.DrO1GRsq.js",
+                          "navStartToEndTime": 4133,
+                          "transferSize": 10817,
+                          "children": {
+                            "8775.404": {
+                              "url": "https://pirogorsk.ru/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 4260,
+                              "transferSize": 693,
+                              "children": {}
+                            },
+                            "8775.403": {
+                              "url": "https://pirogorsk.ru/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 4260,
+                              "transferSize": 982,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8775.394": {
+                      "url": "https://pirogorsk.ru/_astro/InterestForm.astro_astro_type_script_index_0_lang.BzQzX1U1.js",
+                      "navStartToEndTime": 3984,
+                      "transferSize": 4247,
+                      "children": {
+                        "8775.400": {
+                          "url": "https://pirogorsk.ru/_astro/analytics.5iFZ3hUQ.js",
+                          "navStartToEndTime": 4136,
+                          "transferSize": 26058,
+                          "children": {}
+                        },
+                        "8775.401": {
+                          "url": "https://pirogorsk.ru/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 4133,
+                          "transferSize": 363,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8775.396": {
+                      "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.KCgLJv4H.js",
+                      "navStartToEndTime": 4017,
+                      "transferSize": 195,
+                      "children": {}
+                    },
+                    "8775.24": {
+                      "url": "https://pirogorsk.ru/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 3855,
+                      "transferSize": 323,
+                      "children": {
+                        "8775.398": {
+                          "url": "https://pirogorsk.ru/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 4017,
+                          "transferSize": 582,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8775.4": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 3979,
+                      "transferSize": 18821,
+                      "children": {}
+                    },
+                    "8775.52": {
+                      "url": "https://pirogorsk.ru/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 3952,
+                      "transferSize": 268,
+                      "children": {}
+                    },
+                    "8775.5": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 3927,
+                      "transferSize": 9489,
+                      "children": {}
+                    },
+                    "8775.6": {
+                      "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 3824,
+                      "transferSize": 18942,
+                      "children": {}
+                    },
+                    "8775.7": {
+                      "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 3821,
+                      "transferSize": 16090,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 4371
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mode": "desktop",
+    "run": 1,
+    "url": "https://pirogorsk.ru/?qa=1",
+    "timestamp": "2026-11-06T12:31:49.612Z",
+    "lighthouseVersion": "13.5.0",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "throttlingMethod": "simulate",
+    "observed": {
+      "fcp": 2391,
+      "lcp": 2571
+    },
+    "lcpBreakdown": {
+      "timeToFirstByte": 2341.02,
+      "resourceLoadDelay": 16.747,
+      "resourceLoadDuration": 179.652,
+      "elementRenderDelay": 33.33
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 578.3515,
+        "display": "0.6 s"
+      },
+      "largest-contentful-paint": {
+        "value": 654.3515,
+        "display": "0.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.006183212630972186,
+        "display": "0.006"
+      },
+      "speed-index": {
+        "value": 1785.9964157973186,
+        "display": "1.8 s"
+      }
+    },
+    "findings": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 11 KiB",
+        "items": [
+          {
+            "url": ".catalog-fillings{border:0;min-width:0;margin:20px 0 8px;padding:0} …",
+            "wastedBytes": 11203,
+            "wastedPercent": 67.25148667720107,
+            "totalBytes": 16658
+          }
+        ]
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 496 KiB",
+        "items": [
+          {
+            "url": "https://pirogorsk.ru/_astro/banner-city.B15d-_pI_ZvuLfd.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 73600,
+            "wastedBytes": 67466.66666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/picnic.BO51Bov8_1CPkRW.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 29425,
+            "wastedBytes": 26972.916666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/gathering.CDgDJmy5_6XxyL.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 27377,
+            "wastedBytes": 25095.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/analytics.5iFZ3hUQ.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 26031,
+            "wastedBytes": 23861.75
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 21397,
+            "wastedBytes": 19613.916666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/dinner.BVmDmSXN_1kGOPw.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 21045,
+            "wastedBytes": 19291.25
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18982,
+            "wastedBytes": 17400.166666666664
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 18885,
+            "wastedBytes": 17311.25
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 16055,
+            "wastedBytes": 14717.083333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.DL6DiK4v_5xkko.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 13212,
+            "wastedBytes": 12111
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.BeTQd9tN_1cKQeS.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12541,
+            "wastedBytes": 11495.916666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.BOtyLgF8_Z2oypJr.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12473,
+            "wastedBytes": 11433.583333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.d61w9KjH_Z1zSY9V.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12369,
+            "wastedBytes": 11338.25
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.CUr0iAWH_ZNGwrl.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 12254,
+            "wastedBytes": 11232.833333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.Bo977vUT_12Okxv.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11772,
+            "wastedBytes": 10791
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.Bp1vJZAV_Z1oGW1q.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11763,
+            "wastedBytes": 10782.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie.CoMDhDYZ_1KVsii.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 11622,
+            "wastedBytes": 10653.5
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/storefront.DrO1GRsq.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 10784,
+            "wastedBytes": 9885.333333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-498-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 10441,
+            "wastedBytes": 9570.916666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-497-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9811,
+            "wastedBytes": 8993.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9529,
+            "wastedBytes": 8734.916666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-20-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 9242,
+            "wastedBytes": 8471.833333333332
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-99-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 8832,
+            "wastedBytes": 8096
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-10-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 8584,
+            "wastedBytes": 7868.666666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-122-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 8572,
+            "wastedBytes": 7857.666666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-151-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 8443,
+            "wastedBytes": 7739.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-9-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 8311,
+            "wastedBytes": 7618.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-12-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 8230,
+            "wastedBytes": 7544.166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/catalog-art/p39-496-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 8022,
+            "wastedBytes": 7353.5
+          },
+          {
+            "url": "https://pirogorsk.ru/product-backdrops/hb-osetinskiy-pirog-s-govyadinoy-i-svininoy-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 6309,
+            "wastedBytes": 5783.25
+          },
+          {
+            "url": "https://pirogorsk.ru/product-backdrops/hb-osetinskiy-pirog-s-kartofelem-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 6057,
+            "wastedBytes": 5552.25
+          },
+          {
+            "url": "https://pirogorsk.ru/product-backdrops/hb-sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 6053,
+            "wastedBytes": 5548.583333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.C3rRYxI3_1XyTsl.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 6043,
+            "wastedBytes": 5539.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/product-backdrops/hb-sloyka-lukovaya-s-pechenyu-90-gr-h-100-sht-up-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5975,
+            "wastedBytes": 5477.083333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/product-backdrops/hb-osetinskiy-pirog-s-syrom-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5939,
+            "wastedBytes": 5444.083333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/product-backdrops/hb-osetinskiy-pirog-s-kuritsey-i-syrom-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5832,
+            "wastedBytes": 5346
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.CwMc51iY_Iw847.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5776,
+            "wastedBytes": 5294.666666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.dPlBJLpD_1lKDhJ.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5603,
+            "wastedBytes": 5136.083333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/product-backdrops/hb-testo-drozhzhevoe-sloenoe-zamorozhennoe-vesovoe-ot-15-kg-256.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5375,
+            "wastedBytes": 4927.083333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.DMEurvcD_z8t0T.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5312,
+            "wastedBytes": 4869.333333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.591iKjEd_1pBhyh.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 5119,
+            "wastedBytes": 4692.416666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/InterestForm.astro_astro_type_script_index_0_lang.BzQzX1U1.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4378,
+            "wastedBytes": 4013.1666666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.CJgaZJ6N_21T3lE.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4339,
+            "wastedBytes": 3977.4166666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.DuGp5oBv_2adsI4.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 4250,
+            "wastedBytes": 3895.833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/background.Bv6zT-OE_Zvj3uN.avif",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 3628,
+            "wastedBytes": 3325.6666666666665
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/index.astro_astro_type_script_index_0_lang.BVj7pW9-.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1640,
+            "wastedBytes": 1503.3333333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/brand/pirogorsk-symbol.svg?v=20261031-7",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1479,
+            "wastedBytes": 1355.75
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/catalog-filters.B6s1Sq3J.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 1289,
+            "wastedBytes": 1181.5833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pie-planner.D65GEHih.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 973,
+            "wastedBytes": 891.9166666666666
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/product-portions.__Q5qpfT.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 704,
+            "wastedBytes": 645.3333333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/product-artwork.CYLiGMDI.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 517,
+            "wastedBytes": 473.91666666666663
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/pricing.uFphHH5q.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 432,
+            "wastedBytes": 396
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/catalog-search.CmJMF--A.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 329,
+            "wastedBytes": 301.5833333333333
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.KCgLJv4H.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 254,
+            "wastedBytes": 232.83333333333331
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BZwdC_uL.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 236,
+            "wastedBytes": 216.33333333333331
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 230,
+            "wastedBytes": 210.83333333333331
+          },
+          {
+            "url": "https://pirogorsk.ru/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+            "cacheLifetimeMs": 600000,
+            "totalBytes": 203,
+            "wastedBytes": 186.08333333333331
+          }
+        ]
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 45 KiB",
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-8-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,1,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 858,
+                "bottom": 990,
+                "left": 433,
+                "right": 788,
+                "width": 355,
+                "height": 132
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/picnic.BO51Bov8_1CPkRW.avif\" srcset=\"/_astro/picnic.BO51Bov8_Z1Qf2k5.webp 320w, /_astro/picnic.BO51Bov8_rNXNn.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/picnic.BO51Bov8_1CPkRW.avif",
+            "totalBytes": 29243,
+            "wastedBytes": 14985,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 14985
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-9-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,2,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 858,
+                "bottom": 990,
+                "left": 804,
+                "right": 1160,
+                "width": 355,
+                "height": 132
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/gathering.CDgDJmy5_6XxyL.avif\" srcset=\"/_astro/gathering.CDgDJmy5_Z2aTjzS.webp 320w, /_astro/gathering.CDgDJmy5_A…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/gathering.CDgDJmy5_6XxyL.avif",
+            "totalBytes": 27071,
+            "wastedBytes": 12813,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 12813
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-7-IMG",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,1,A,0,IMG",
+              "selector": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo",
+              "boundingRect": {
+                "top": 12,
+                "bottom": 124,
+                "left": 519,
+                "right": 831,
+                "width": 312,
+                "height": 112
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6\" srcset=\"/brand/pirogorsk-logo-400.webp?v=6 400w, /brand/pirogorsk-logo-640.webp?v=…\" sizes=\"(max-width: 370px) 176px, (max-width: 600px) 224px, (max-width: 1000px) 28…\" width=\"2089\" height=\"753\" alt=\"\" aria-hidden=\"true\" decoding=\"async\" loading=\"eager\" class=\"pirogorsk-brand-logo\" data-astro-cid-6bctqxxv=\"\">",
+              "nodeLabel": "header.masthead > div.masthead-main > a.pirogorsk-brand > img.pirogorsk-brand-logo"
+            },
+            "url": "https://pirogorsk.ru/brand/pirogorsk-logo-400.webp?v=6",
+            "totalBytes": 21210,
+            "wastedBytes": 11610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 11610
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-10-IMG",
+              "path": "1,HTML,1,BODY,5,MAIN,2,SECTION,2,NAV,1,DIV,0,A,0,DIV,0,PICTURE,2,IMG",
+              "selector": "a.scene-card > div.scene-card-art > picture > img",
+              "boundingRect": {
+                "top": 858,
+                "bottom": 990,
+                "left": 62,
+                "right": 417,
+                "width": 355,
+                "height": 132
+              },
+              "snippet": "<img src=\"https://pirogorsk.ru/_astro/dinner.BVmDmSXN_1kGOPw.avif\" srcset=\"/_astro/dinner.BVmDmSXN_Z29nxmv.webp 320w, /_astro/dinner.BVmDmSXN_9FsKW.w…\" sizes=\"(max-width:599px) 280px, (max-width:1099px) 30vw, 350px\" alt=\"\" loading=\"lazy\" decoding=\"async\" data-astro-cid-6yfvqtkx=\"true\" width=\"960\" height=\"640\">",
+              "nodeLabel": "a.scene-card > div.scene-card-art > picture > img"
+            },
+            "url": "https://pirogorsk.ru/_astro/dinner.BVmDmSXN_1kGOPw.avif",
+            "totalBytes": 20868,
+            "wastedBytes": 6610,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 6610
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "lcp-breakdown-insight",
+        "title": "LCP breakdown",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "label",
+                "valueType": "text",
+                "label": "Subpart"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "subpart": "timeToFirstByte",
+                "label": "Time to first byte",
+                "duration": 2341.02
+              },
+              {
+                "subpart": "resourceLoadDelay",
+                "label": "Resource load delay",
+                "duration": 16.747
+              },
+              {
+                "subpart": "resourceLoadDuration",
+                "label": "Resource load duration",
+                "duration": 179.652
+              },
+              {
+                "subpart": "elementRenderDelay",
+                "label": "Element render delay",
+                "duration": 33.33
+              }
+            ]
+          },
+          {
+            "type": "node",
+            "lhId": "page-0-IMG",
+            "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,DIV,0,DIV,0,DIV,0,PICTURE,3,IMG",
+            "selector": "div.tasting-art > div.tasting-scene > picture > img",
+            "boundingRect": {
+              "top": 212,
+              "bottom": 682,
+              "left": 61,
+              "right": 1289,
+              "width": 1229,
+              "height": 470
+            },
+            "snippet": "<img src=\"https://pirogorsk.ru/_astro/banner-city.B15d-_pI_ZvuLfd.avif\" srcset=\"/_astro/banner-city.B15d-_pI_Z1zf6Tk.webp 640w, /_astro/banner-city.B15d-_…\" sizes=\"(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px\" width=\"1920\" height=\"640\" alt=\"Пироговый город: золотистые приморские домики на большом пироге с синими в…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+            "nodeLabel": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+          }
+        ]
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "9E3C3BC56BB2DEFA0A825BDC50D3D158": {
+                  "url": "https://pirogorsk.ru/?qa=1",
+                  "navStartToEndTime": 2470,
+                  "transferSize": 123094,
+                  "isLongest": true,
+                  "children": {
+                    "8821.424": {
+                      "url": "https://pirogorsk.ru/_astro/index.astro_astro_type_script_index_0_lang.BVj7pW9-.js",
+                      "navStartToEndTime": 2788,
+                      "transferSize": 1640,
+                      "isLongest": true,
+                      "children": {
+                        "8821.429": {
+                          "url": "https://pirogorsk.ru/_astro/catalog-filters.B6s1Sq3J.js",
+                          "navStartToEndTime": 2916,
+                          "transferSize": 1289,
+                          "isLongest": true,
+                          "children": {
+                            "8821.430": {
+                              "url": "https://pirogorsk.ru/_astro/catalog-search.CmJMF--A.js",
+                              "navStartToEndTime": 3062,
+                              "transferSize": 329,
+                              "isLongest": true,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8821.422": {
+                      "url": "https://pirogorsk.ru/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BZwdC_uL.js",
+                      "navStartToEndTime": 2788,
+                      "transferSize": 236,
+                      "children": {
+                        "8821.428": {
+                          "url": "https://pirogorsk.ru/_astro/storefront.DrO1GRsq.js",
+                          "navStartToEndTime": 2916,
+                          "transferSize": 10784,
+                          "children": {
+                            "8821.432": {
+                              "url": "https://pirogorsk.ru/_astro/product-portions.__Q5qpfT.js",
+                              "navStartToEndTime": 3039,
+                              "transferSize": 704,
+                              "children": {}
+                            },
+                            "8821.431": {
+                              "url": "https://pirogorsk.ru/_astro/pie-planner.D65GEHih.js",
+                              "navStartToEndTime": 3038,
+                              "transferSize": 973,
+                              "children": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "8821.421": {
+                      "url": "https://pirogorsk.ru/_astro/InterestForm.astro_astro_type_script_index_0_lang.BzQzX1U1.js",
+                      "navStartToEndTime": 2774,
+                      "transferSize": 4378,
+                      "children": {
+                        "8821.426": {
+                          "url": "https://pirogorsk.ru/_astro/analytics.5iFZ3hUQ.js",
+                          "navStartToEndTime": 2910,
+                          "transferSize": 26031,
+                          "children": {}
+                        },
+                        "8821.427": {
+                          "url": "https://pirogorsk.ru/_astro/pricing.uFphHH5q.js",
+                          "navStartToEndTime": 2889,
+                          "transferSize": 432,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8821.24": {
+                      "url": "https://pirogorsk.ru/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 2613,
+                      "transferSize": 230,
+                      "children": {
+                        "8821.425": {
+                          "url": "https://pirogorsk.ru/_astro/product-artwork.CYLiGMDI.js",
+                          "navStartToEndTime": 2805,
+                          "transferSize": 517,
+                          "children": {}
+                        }
+                      }
+                    },
+                    "8821.5": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-cyrillic.woff2",
+                      "navStartToEndTime": 2791,
+                      "transferSize": 18885,
+                      "children": {}
+                    },
+                    "8821.423": {
+                      "url": "https://pirogorsk.ru/_astro/Analytics.astro_astro_type_script_index_0_lang.KCgLJv4H.js",
+                      "navStartToEndTime": 2788,
+                      "transferSize": 254,
+                      "children": {}
+                    },
+                    "8821.6": {
+                      "url": "https://pirogorsk.ru/fonts/playfair-latin.woff2",
+                      "navStartToEndTime": 2681,
+                      "transferSize": 9529,
+                      "children": {}
+                    },
+                    "8821.41": {
+                      "url": "https://pirogorsk.ru/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+                      "navStartToEndTime": 2613,
+                      "transferSize": 203,
+                      "children": {}
+                    },
+                    "8821.8": {
+                      "url": "https://pirogorsk.ru/fonts/golos-latin.woff2",
+                      "navStartToEndTime": 2613,
+                      "transferSize": 16055,
+                      "children": {}
+                    },
+                    "8821.7": {
+                      "url": "https://pirogorsk.ru/fonts/golos-cyrillic.woff2",
+                      "navStartToEndTime": 2571,
+                      "transferSize": 18982,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 3062
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "text",
+              "value": "no origins were preconnected"
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
