@@ -1,0 +1,38 @@
+{
+  "checked": "2026-11-06T17:23:42.543Z",
+  "artifactTemplate": "github-pages-${{ github.run_id }}-${{ github.run_attempt }}",
+  "attempts": [
+    "github-pages-42252090286-1",
+    "github-pages-42252090286-2"
+  ],
+  "timeoutMs": 1200000,
+  "qualityCommands": [
+    "npm ci",
+    "npm run check",
+    "npm run build",
+    "node scripts/verify-seo.mjs",
+    "node scripts/verify-expansion.mjs",
+    "node scripts/verify-seo-map.mjs",
+    "node scripts/verify-city-pages.mjs",
+    "node scripts/verify-article-artwork.mjs",
+    "node scripts/verify-content-month.mjs",
+    "node scripts/verify-content-priority.mjs",
+    "node scripts/verify-product-pages.mjs",
+    "node scripts/verify-product-backdrops.mjs",
+    "npm test",
+    "npm run test:worker",
+    "npm run test:browser",
+    "node scripts/verify-site-polish.mjs",
+    "node scripts/verify-journal-reading.mjs",
+    "node scripts/verify-bundle-pages.mjs",
+    "node scripts/verify-picnic-set.mjs",
+    "node scripts/verify-catalog-polish.mjs",
+    "node scripts/verify-pie-cutaways.mjs",
+    "node scripts/verify-control-names.mjs",
+    "node scripts/verify-release.mjs check",
+    "node scripts/indexnow.mjs manifest",
+    "node scripts/verify-release.mjs published https://pirogorsk.ru/",
+    "node scripts/indexnow.mjs submit"
+  ],
+  "result": "PASS"
+}

@@ -1,0 +1,22 @@
+deploy	Run actions/deploy-pages@v5	﻿2026-11-06T17:17:19.2765448Z ##[group]Run actions/deploy-pages@v5
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2765970Z with:
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2770623Z   token: ***
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2770977Z   timeout: 600000
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2771339Z   error_count: 10
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2771720Z   reporting_interval: 5000
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2772454Z   artifact_name: github-pages
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2772902Z   preview: false
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2773248Z env:
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2773573Z   GITHUB_PAGES: true
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.2773940Z ##[endgroup]
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.4903937Z (node:30376) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.4905603Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.6543355Z Fetching artifact metadata for "github-pages" in this workflow run
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.7853556Z Found 2 artifact(s)
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.7878227Z ##[error]Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.9525477Z ##[error]Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow run. Artifact count is 2.
+deploy	Run actions/deploy-pages@v5	    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)
+deploy	Run actions/deploy-pages@v5	    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+deploy	Run actions/deploy-pages@v5	    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)
+deploy	Run actions/deploy-pages@v5	    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)
+deploy	Run actions/deploy-pages@v5	2026-11-06T17:17:19.9531309Z ##[error]Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow run. Artifact count is 2.
