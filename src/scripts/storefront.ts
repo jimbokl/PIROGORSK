@@ -28,6 +28,7 @@ export const catalogSurface = () => location.pathname === '/' ? 'home' as const 
 let toastTimer: ReturnType<typeof setTimeout>;
 let returnToSelection = false;
 const dialogTriggers = new WeakMap<HTMLDialogElement, HTMLElement>();
+const selectionTriggerNames = new WeakMap<HTMLElement, string>();
 const itemContainer = document.querySelector<HTMLElement>('[data-selection-items]')!;
 
 function toast(message: string) {
@@ -122,7 +123,13 @@ function updateBadge(persist = true) {
   }
   const count = selection.reduce((sum, item) => sum + item.quantity, 0);
   all('[data-count]').forEach(element => { element.textContent = String(count); element.hidden = count === 0; });
-  all('[data-open="selection-dialog"]').forEach(trigger => trigger.setAttribute('aria-label', count ? `Подборка: ${count} шт.` : 'Подборка, открыть'));
+  all('[data-open="selection-dialog"]').forEach(trigger => {
+    // Text links keep their native name; only explicit icon labels need a count.
+    const name = selectionTriggerNames.get(trigger) || trigger.getAttribute('aria-label');
+    if (!name) return;
+    selectionTriggerNames.set(trigger, name);
+    trigger.setAttribute('aria-label', count ? `${name}, ${count} шт.` : name);
+  });
   const dock = document.querySelector<HTMLElement>('[data-selection-dock]')!;
   dock.hidden = count === 0;
   dock.querySelector('[data-dock-count]')!.textContent = `· ${count} шт.`;

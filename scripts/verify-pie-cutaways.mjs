@@ -6,7 +6,7 @@ import { launch } from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
 
 const stage = process.env.QA_STAGE || 'local';
-const output = `qa/pie-cutaways-20261031/${stage}`;
+const output = process.env.QA_OUTPUT || `qa/pie-cutaways-20261031/${stage}`;
 await mkdir(output, { recursive: true });
 const report = { stage, base: '', views: [], errors: [] };
 const root = resolve('site');
@@ -54,6 +54,8 @@ try {
       const rect = await page.$eval(selector, el => ({ width: el.clientWidth, height: el.clientHeight }));
       const button = `${selector} [data-cutaway-toggle]`;
       assert.equal(await page.$eval(button, el => el.hidden), false);
+      const matchingName = () => page.$eval(button, el => el.getAttribute('aria-label').includes(el.querySelector('[data-cutaway-label]').textContent.trim()));
+      assert.equal(await matchingName(), true, 'whole-pie control name includes visible text');
       assert.ok(await page.$eval(button, el => el.getBoundingClientRect().height >= 44));
       if (keyboard) { await page.focus(button); await page.keyboard.press('Enter'); }
       else await page.click(button);
@@ -61,9 +63,11 @@ try {
       assert.equal(await page.$eval(`${selector} [data-cutaway-image] img`, img => img.naturalWidth > 0 && img.alt.length > 10), true);
       assert.deepEqual(await page.$eval(selector, el => ({ width: el.clientWidth, height: el.clientHeight })), rect, 'cutaway keeps the artwork dimensions');
       assert.equal(await fits(page), true);
+      assert.equal(await matchingName(), true, 'cutaway control name includes visible text');
       await page.click(button);
       assert.equal(await page.$eval(`${selector} [data-cutaway-image]`, el => el.hidden), true);
       assert.equal(await page.$eval(button, el => el.getAttribute('aria-pressed')), 'false');
+      assert.equal(await matchingName(), true, 'restored control name includes visible text');
       return button;
     };
     for (const path of ['/', '/menu/']) {
@@ -111,6 +115,7 @@ try {
     await page.click('[data-cutaway-toggle]');
     await page.waitForFunction(() => document.querySelector('[data-cutaway-status]').textContent.includes('Не удалось'));
     assert.equal(await page.$eval('[data-cutaway-toggle]', el => el.getAttribute('aria-pressed')), 'false');
+    assert.equal(await page.$eval('[data-cutaway-toggle]', el => el.getAttribute('aria-label').includes(el.querySelector('[data-cutaway-label]').textContent.trim())), true, 'failed image preserves control name');
     blocked = false;
     await toggle('meat');
     await page.setJavaScriptEnabled(false);

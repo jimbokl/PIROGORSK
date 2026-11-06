@@ -24,7 +24,20 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - name: Restore processed Astro images
+        id: astro-images
+        uses: actions/cache/restore@v4
+        with:
+          path: node_modules/.astro/assets
+          key: ${{ runner.os }}-astro-images-v1-${{ hashFiles('package-lock.json', 'astro.config.mjs') }}-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-astro-images-v1-${{ hashFiles('package-lock.json', 'astro.config.mjs') }}-
       - run: npm run build
+      - name: Save processed Astro images
+        if: steps.astro-images.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: node_modules/.astro/assets
+          key: ${{ steps.astro-images.outputs.cache-primary-key }}
       - run: node scripts/verify-seo.mjs
       - run: node scripts/verify-expansion.mjs
       - run: node scripts/verify-seo-map.mjs
@@ -43,6 +56,7 @@ jobs:
       - run: node scripts/verify-picnic-set.mjs
       - run: node scripts/verify-catalog-polish.mjs
       - run: node scripts/verify-pie-cutaways.mjs
+      - run: node scripts/verify-control-names.mjs
       - name: Check deployed Worker against Pages artifact
         run: node scripts/verify-release.mjs check
       - run: node scripts/indexnow.mjs manifest

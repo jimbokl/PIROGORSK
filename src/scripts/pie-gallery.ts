@@ -51,7 +51,7 @@ const initializeGallery = (gallery: HTMLElement) => {
     }
     container.hidden = false;
     button.setAttribute('aria-pressed', 'true');
-    button.setAttribute('aria-label', initialLabel.replace('Показать начинку:', 'Показать пирог целиком:'));
+    button.setAttribute('aria-label', initialLabel.replace('Срез — показать начинку:', 'Пирог — показать целиком:'));
     label.textContent = 'Пирог';
     status.textContent = 'Показан крупный срез начинки.';
   });
