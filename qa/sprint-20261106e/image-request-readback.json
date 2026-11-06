@@ -1,0 +1,179 @@
+{
+  "checked": "2026-11-06T20:28:55.647Z",
+  "originalEvents": [
+    {
+      "type": "requestfailed",
+      "url": "https://pirogorsk.ru/_astro/piknik-s-pirogom-chto-vzyat.CgQzsDR0_wBc2M.avif",
+      "failure": {
+        "errorText": "net::ERR_SSL_PROTOCOL_ERROR"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://pirogorsk.ru/_astro/piknik-s-pirogom-chto-vzyat.CgQzsDR0_wBc2M.avif",
+      "attempt": 1,
+      "status": 200,
+      "contentType": "image/avif",
+      "bytes": 52544,
+      "sha256": "5505907502bf09771d21f6846d70a8160903cbcbfb42fd34f65a89da325f28ea",
+      "localSha256": "ce55df8259ada0bd07dbeb1d0227b0c092d1ddf2cd93665bdb59049b5e47e612",
+      "metadata": {
+        "format": "heif",
+        "mediaType": "image/avif",
+        "size": 52544,
+        "width": 800,
+        "height": 533,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "pages": 1,
+        "pagePrimary": 0,
+        "compression": "av1",
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 800,
+          "height": 533
+        }
+      },
+      "pixelSha256": "b7c4531418654176b1ed0bd94d46a83db3f01eed5f9fa81acd36ebaf782f67ee",
+      "localPixelSha256": "277ca8f52b58dd412d326567a024c33e97bd2aec7ce0b355bb3e309e4939aabc",
+      "decoded": {
+        "format": "raw",
+        "width": 800,
+        "height": 533,
+        "channels": 3,
+        "depth": "uchar",
+        "premultiplied": false,
+        "hasAlpha": false,
+        "size": 1279200
+      },
+      "localDecoded": {
+        "format": "raw",
+        "width": 800,
+        "height": 533,
+        "channels": 3,
+        "depth": "uchar",
+        "premultiplied": false,
+        "hasAlpha": false,
+        "size": 1279200
+      }
+    },
+    {
+      "url": "https://pirogorsk.ru/_astro/piknik-s-pirogom-chto-vzyat.CgQzsDR0_wBc2M.avif",
+      "attempt": 2,
+      "status": 200,
+      "contentType": "image/avif",
+      "bytes": 52544,
+      "sha256": "5505907502bf09771d21f6846d70a8160903cbcbfb42fd34f65a89da325f28ea",
+      "localSha256": "ce55df8259ada0bd07dbeb1d0227b0c092d1ddf2cd93665bdb59049b5e47e612",
+      "metadata": {
+        "format": "heif",
+        "mediaType": "image/avif",
+        "size": 52544,
+        "width": 800,
+        "height": 533,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "pages": 1,
+        "pagePrimary": 0,
+        "compression": "av1",
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 800,
+          "height": 533
+        }
+      },
+      "pixelSha256": "b7c4531418654176b1ed0bd94d46a83db3f01eed5f9fa81acd36ebaf782f67ee",
+      "localPixelSha256": "277ca8f52b58dd412d326567a024c33e97bd2aec7ce0b355bb3e309e4939aabc",
+      "decoded": {
+        "format": "raw",
+        "width": 800,
+        "height": 533,
+        "channels": 3,
+        "depth": "uchar",
+        "premultiplied": false,
+        "hasAlpha": false,
+        "size": 1279200
+      },
+      "localDecoded": {
+        "format": "raw",
+        "width": 800,
+        "height": 533,
+        "channels": 3,
+        "depth": "uchar",
+        "premultiplied": false,
+        "hasAlpha": false,
+        "size": 1279200
+      }
+    },
+    {
+      "url": "https://pirogorsk.ru/_astro/piknik-s-pirogom-chto-vzyat.CgQzsDR0_wBc2M.avif",
+      "attempt": 3,
+      "status": 200,
+      "contentType": "image/avif",
+      "bytes": 52544,
+      "sha256": "5505907502bf09771d21f6846d70a8160903cbcbfb42fd34f65a89da325f28ea",
+      "localSha256": "ce55df8259ada0bd07dbeb1d0227b0c092d1ddf2cd93665bdb59049b5e47e612",
+      "metadata": {
+        "format": "heif",
+        "mediaType": "image/avif",
+        "size": 52544,
+        "width": 800,
+        "height": 533,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "pages": 1,
+        "pagePrimary": 0,
+        "compression": "av1",
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 800,
+          "height": 533
+        }
+      },
+      "pixelSha256": "b7c4531418654176b1ed0bd94d46a83db3f01eed5f9fa81acd36ebaf782f67ee",
+      "localPixelSha256": "277ca8f52b58dd412d326567a024c33e97bd2aec7ce0b355bb3e309e4939aabc",
+      "decoded": {
+        "format": "raw",
+        "width": 800,
+        "height": 533,
+        "channels": 3,
+        "depth": "uchar",
+        "premultiplied": false,
+        "hasAlpha": false,
+        "size": 1279200
+      },
+      "localDecoded": {
+        "format": "raw",
+        "width": 800,
+        "height": 533,
+        "channels": 3,
+        "depth": "uchar",
+        "premultiplied": false,
+        "hasAlpha": false,
+        "size": 1279200
+      }
+    }
+  ],
+  "note": "Three production GETs are byte-identical and decode to 800×533. Local encoding differs; the encoding cause was not established. This does not identify the earlier decode failure.",
+  "pixelDifference": {
+    "meanAbsoluteChannelDifference": 3.0596036585365853,
+    "maxAbsoluteChannelDifference": 85,
+    "channels": 1279200
+  }
+}

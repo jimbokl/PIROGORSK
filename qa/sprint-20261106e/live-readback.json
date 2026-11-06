@@ -1,0 +1,141 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-06T20:26:57.528Z",
+  "expectedSha": "afca2cf1d81352b4b0d22f048575d7f3b1a7059a",
+  "articles": [
+    {
+      "path": "/journal/zavtraki-v-kaliningrade/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/zavtraki-v-kaliningrade/",
+      "datePublished": "2026-11-06",
+      "blog": true,
+      "sitemap": true
+    },
+    {
+      "path": "/journal/kofeyni-kaliningrada/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/kofeyni-kaliningrada/",
+      "datePublished": "2026-11-06",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/zavtraki-v-kaliningrade.BjiKvuA7_Z16sYQc.webp",
+      "bytes": 84862,
+      "sha256": "ee87087486ee63ac740c3e6ff4982bf26a5465478e8a24da939339ace24f59a9"
+    },
+    {
+      "path": "/_astro/zavtraki-v-kaliningrade-1.7ivDDrSD_Z29j1nG.webp",
+      "bytes": 22416,
+      "sha256": "f6f2690153ab46fa82e4e6d86e39097c9f6d778106285d196c31f5c10279ffb7"
+    },
+    {
+      "path": "/_astro/zavtraki-v-kaliningrade-2.B5350iLt_1vTBUS.webp",
+      "bytes": 20524,
+      "sha256": "fb568bef14274618ca96699d7dd472a26b3f68bbdb48b743d830444f38949ded"
+    },
+    {
+      "path": "/seo/blog/zavtraki-v-kaliningrade.jpg",
+      "bytes": 211376,
+      "sha256": "fac32e528388981de9c3d4e73b08b1d2d6fb2f5672e327d108c59522b28e8040"
+    },
+    {
+      "path": "/_astro/kofeyni-kaliningrada.2z6-g_r-_2h0i61.webp",
+      "bytes": 86888,
+      "sha256": "68a689edc4073f25d2fd7abfed405f9b7b04a1f67ca4da5985dcdff52572b36b"
+    },
+    {
+      "path": "/_astro/kofeyni-kaliningrada-1.DkCuIRpH_Z1KoW2I.webp",
+      "bytes": 23994,
+      "sha256": "c9133bb50b9c8e140b8b2be04c01131603d3b0f32ec451bb6d485d2881254477"
+    },
+    {
+      "path": "/_astro/kofeyni-kaliningrada-2.JONzhtrP_Z1TWwwJ.webp",
+      "bytes": 24848,
+      "sha256": "a9ee2d899c98e5d3600c35e3a73e28fafec94150be36eb3c3e623b210bcac7ea"
+    },
+    {
+      "path": "/seo/blog/kofeyni-kaliningrada.jpg",
+      "bytes": 215306,
+      "sha256": "caa84abbba5782bf4664b9c7d0407f025d8d642850984ac215b638dc449bf4c0"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/gde-poest-v-kaliningrade/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kofeyni-kaliningrada/",
+      "status": 200
+    },
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "status": 200
+    },
+    {
+      "path": "/journal/zavtrak-na-baltike/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    },
+    {
+      "path": "/journal/zavtraki-v-kaliningrade/",
+      "status": 200
+    },
+    {
+      "path": "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42284179219,
+    "headSha": "afca2cf1d81352b4b0d22f048575d7f3b1a7059a",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42284179219"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 76,
+  "sitemapUrls": 271,
+  "inlineStyles": [
+    {
+      "path": "/journal/zavtraki-v-kaliningrade/",
+      "blocks": [
+        {
+          "bytes": 128706,
+          "sha256": "5a6f3492930c9fc8bfaa33ecd696e464e438f7c31c603bb1b81e46e08afe54b7"
+        }
+      ]
+    },
+    {
+      "path": "/journal/kofeyni-kaliningrada/",
+      "blocks": [
+        {
+          "bytes": 128706,
+          "sha256": "5a6f3492930c9fc8bfaa33ecd696e464e438f7c31c603bb1b81e46e08afe54b7"
+        }
+      ]
+    }
+  ],
+  "incomingLinks": {
+    "path": "/journal/gde-poest-v-kaliningrade/",
+    "slugs": [
+      "zavtraki-v-kaliningrade",
+      "kofeyni-kaliningrada"
+    ]
+  }
+}

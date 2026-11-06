@@ -32,6 +32,10 @@ for(const slug of slugs){
  assert.ok(html.includes(`rel="canonical" href="${base+path}"`));
  assert.ok(html.includes('"datePublished":"2026-11-06"'));
  const title=local.match(/<h1\b[^>]*>(.*?)<\/h1>/s)?.[1];assert.ok(title&&html.includes(title));
+ const stylesIn=source=>[...source.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/g)].map(m=>m[1]);
+ const localStyles=stylesIn(local),liveStyles=stylesIn(html);
+ assert.deepEqual(liveStyles,localStyles,'Inline stylesheet '+path);
+ report.inlineStyles??=[];report.inlineStyles.push({path,blocks:liveStyles.map(css=>({bytes:Buffer.byteLength(css),sha256:hash(Buffer.from(css))}))});
  const assets=new Set([...local.matchAll(/<img\b[^>]*>/g)].map(m=>m[0].match(/\bsrc="([^"]+)"/)?.[1]).filter(p=>p&&p.startsWith('/_astro/')&&p.includes(slug)));
  assert.equal(assets.size,3);assets.add(`/seo/blog/${slug}.jpg`);
  const styles=new Set([...local.matchAll(/<link\b[^>]*rel="stylesheet"[^>]*>/g)].map(m=>m[0].match(/\bhref="([^"]+)"/)?.[1]).filter(Boolean));
@@ -50,4 +54,4 @@ for(const slug of slugs)assert.ok(hub.includes(`href="/journal/${slug}/"`),'Inco
 report.incomingLinks={path:'/journal/gde-poest-v-kaliningrade/',slugs};
 for(const path of linkPaths){await get(path);report.links.push({path,status:200});}
 await fs.writeFile(`${out}/live-readback.json`,JSON.stringify(report,null,2)+'\n');
-console.log(`Live PASS: 2 articles, ${report.assets.length} matching image/CSS assets, ${report.links.length} links; journal 76 / sitemap 271, CI ${sha}.`);
+console.log(`Live PASS: 2 articles, ${report.assets.length} matching images + inline CSS, ${report.links.length} links; journal 76 / sitemap 271, CI ${sha}.`);
