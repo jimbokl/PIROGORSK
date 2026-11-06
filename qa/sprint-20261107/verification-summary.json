@@ -1,0 +1,53 @@
+{
+  "scope": "A6-67 existing Svetlogorsk owner + price-table readability",
+  "runtime": "pending",
+  "local": {
+    "check": {
+      "files": 600,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 113
+    },
+    "unit": {
+      "tests": 66,
+      "pass": 66,
+      "fail": 0
+    },
+    "build": {
+      "html": 278,
+      "sitemap": 273
+    },
+    "seo": true,
+    "artwork": true,
+    "expansion": true,
+    "contentViews": 160,
+    "journalOwners": 62,
+    "journalViews": 24,
+    "guideWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "baselineChanged": [
+      "gde-poest-v-svetlogorske"
+    ],
+    "baselinePreserved": 61,
+    "errors": [],
+    "catalog": {
+      "sku": 154,
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1280,
+        1440
+      ],
+      "errors": []
+    }
+  },
+  "production": null,
+  "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+}
