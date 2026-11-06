@@ -9,3 +9,7 @@ UX/occasion, SEO/map/artwork, 125 контентных просмотров, в�
 Осталось: commit/push, дождаться CI, проверить production content/gallery,
 контрольные суммы новых изображений, журнал/sitemap, обновить документы.
 QA-17 открыта. GSC ZIP 05.11 повторяет 108 показов / 5 кликов до 03.11.
+
+Первый CI 42228250615: старый exact-class селектор product-pages не
+считал две gallery-обёртки (137/139). Исправлен на class token, 139
+сохранены; product-pages/backdrops локально PASS. Повтор CI предстоит.
