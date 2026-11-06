@@ -245,8 +245,15 @@ all('[data-home-catalog] [data-product]').forEach(card => {
   const quantity = card.querySelector<HTMLInputElement>('[data-feed-quantity]');
   const decrease = card.querySelector<HTMLButtonElement>('[data-feed-decrease]');
   const increase = card.querySelector<HTMLButtonElement>('[data-feed-increase]');
+  const addButton = card.querySelector<HTMLButtonElement>('[data-add]')!;
+  const addLabel = addButton.getAttribute('aria-label')!;
+  let feedbackTimer: ReturnType<typeof setTimeout> | undefined;
   const readQuantity = () => Math.max(1, Math.min(99, Math.floor(Number(quantity?.value) || 1)));
   const updatePrice = () => {
+    clearTimeout(feedbackTimer);
+    addButton.classList.remove('added');
+    addButton.querySelector('span:not(.icon)')!.textContent = 'В подборку';
+    addButton.setAttribute('aria-label', addLabel);
     const count = readQuantity();
     if (quantity) quantity.value = String(count);
     if (decrease) decrease.disabled = count === 1;
@@ -270,16 +277,21 @@ all('[data-home-catalog] [data-product]').forEach(card => {
   quantity?.addEventListener('input', () => {
     if (quantity.validity.valid && quantity.value) updatePrice();
   });
-  card.querySelector<HTMLButtonElement>('[data-add]')!.addEventListener('click', event => {
+  addButton.addEventListener('click', event => {
     const button = event.currentTarget as HTMLButtonElement;
     const value = Number(card.querySelector<HTMLInputElement>('input:checked')!.value);
     updatePrice();
     const count = readQuantity();
     if (!addItems([{ id: product.id, value, quantity: count }])) return;
     button.classList.add('added');
-    button.querySelector('span:not(.icon)')!.textContent = 'Добавлен';
+    button.querySelector('span:not(.icon)')!.textContent = 'Добавлено';
+    button.setAttribute('aria-label', `Добавлено: ${product.name.toLowerCase()}`);
     toast(`${product.name}, ${variantLabel(product, value)}${count > 1 ? ` × ${count}` : ''} — в подборке`);
-    setTimeout(() => { button.classList.remove('added'); button.querySelector('span:not(.icon)')!.textContent = 'В подборку'; }, 1500);
+    feedbackTimer = setTimeout(() => {
+      button.classList.remove('added');
+      button.querySelector('span:not(.icon)')!.textContent = 'В подборку';
+      button.setAttribute('aria-label', addLabel);
+    }, 1500);
   });
 });
 

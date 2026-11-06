@@ -4678,5 +4678,47 @@
       "/journal/uzhin-v-semnyh-apartamentah/",
       "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/"
     ]
+  },
+  {
+    "path": "/journal/uzhin-na-baltike-posle-21/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Поздний ужин на Балтике: где поесть после 21:00",
+    "query": "поздний ужин на балтике: где поесть после 21:00",
+    "intent": "После вечерней прогулки нужен понятный ответ: где ещё можно поужинать и успеете ли вы сделать заказ. Сравнили официальные расписания в Зеленоградске и Светлогорске. Время закрытия зала отделяем от последнего заказа на кухне, а ночной бар — от спокойного семейного ужина.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/"
+    ]
+  },
+  {
+    "path": "/journal/baltiyskaya-kuhnya-dlya-detey/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Балтийская кухня с детьми: что выбрать без рыбы",
+    "query": "балтийская кухня с детьми: что выбрать без рыбы",
+    "intent": "В поездке по Калининградской области необязательно превращать каждый обед в знакомство с рыбой. Взрослые могут пробовать балтийскую кухню, а ребёнок — выбрать знакомое блюдо. Собрали способы читать меню и три ориентира в Зеленоградске с опубликованной информацией для семей.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/"
+    ]
   }
 ]
