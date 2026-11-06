@@ -1,0 +1,141 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-06T21:43:45.409Z",
+  "expectedSha": "3a9afa6fe30dfdd3403d2b53b54ed7a6773b2604",
+  "articles": [
+    {
+      "path": "/journal/gde-poest-ryadom-s-ostrovom-kanta/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/gde-poest-ryadom-s-ostrovom-kanta/",
+      "datePublished": "2026-11-06",
+      "blog": true,
+      "sitemap": true
+    },
+    {
+      "path": "/journal/kaliningrad-zimoy-gde-poest/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/kaliningrad-zimoy-gde-poest/",
+      "datePublished": "2026-11-06",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/gde-poest-ryadom-s-ostrovom-kanta.DFJWdN_V_Z1S16nH.webp",
+      "bytes": 116922,
+      "sha256": "3228e5dd046196cfdae8df23fe2cd1e1634a5af81cd02ca2478936882d1d9675"
+    },
+    {
+      "path": "/_astro/gde-poest-ryadom-s-ostrovom-kanta-1.jdg5x98e_ZgAGHg.webp",
+      "bytes": 23482,
+      "sha256": "f7ca86c22cb132b269c1549170a1d3bae37d1784d9e7e85bbe66ae4c38d2d4e9"
+    },
+    {
+      "path": "/_astro/gde-poest-ryadom-s-ostrovom-kanta-2.DrIkqyqt_ZjpY4x.webp",
+      "bytes": 19482,
+      "sha256": "275f1b030bf1009d8eff17584bf10de374c0cff1a370e7a25af8a239ea799a78"
+    },
+    {
+      "path": "/seo/blog/gde-poest-ryadom-s-ostrovom-kanta.jpg",
+      "bytes": 214626,
+      "sha256": "539290f1e1e0e8224a70090fcf7648c9eebe6e6eded3b8fc03281b323762b95f"
+    },
+    {
+      "path": "/_astro/kaliningrad-zimoy-gde-poest.CRGq8Apm_Z23wqwF.webp",
+      "bytes": 106416,
+      "sha256": "a3cfd33234580d62b91ff2889155914aaefe8aa9ce56f4d6cf9f886d14a18659"
+    },
+    {
+      "path": "/_astro/kaliningrad-zimoy-gde-poest-1.P2v604Gj_Z27Ccth.webp",
+      "bytes": 23890,
+      "sha256": "be0655f4f84b34ee5de191a35ee3db5030c2cc108105e13044c5079288bb1b2c"
+    },
+    {
+      "path": "/_astro/kaliningrad-zimoy-gde-poest-2.hGvjc6uY_Z1peNo8.webp",
+      "bytes": 20884,
+      "sha256": "24201b92a76b4b3c9adb3f3c0c1f4ed21c6686e43c14e3b45262a1eb6ccfce1f"
+    },
+    {
+      "path": "/seo/blog/kaliningrad-zimoy-gde-poest.jpg",
+      "bytes": 198797,
+      "sha256": "3cefff20f7b978b9ec65e3c44224432741dbc85ff6983ae500923e525516157d"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/gde-poest-v-kaliningrade/",
+      "status": 200
+    },
+    {
+      "path": "/journal/zavtraki-v-kaliningrade/",
+      "status": 200
+    },
+    {
+      "path": "/journal/baltiyskaya-kuhnya-dlya-detey/",
+      "status": 200
+    },
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    },
+    {
+      "path": "/journal/gde-poest-ryadom-s-ostrovom-kanta/",
+      "status": 200
+    },
+    {
+      "path": "/journal/vegetarianskaya-eda-v-kaliningrade/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kofeyni-kaliningrada/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42295834672,
+    "headSha": "3a9afa6fe30dfdd3403d2b53b54ed7a6773b2604",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42295834672"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 78,
+  "sitemapUrls": 273,
+  "inlineStyles": [
+    {
+      "path": "/journal/gde-poest-ryadom-s-ostrovom-kanta/",
+      "blocks": [
+        {
+          "bytes": 128706,
+          "sha256": "5a6f3492930c9fc8bfaa33ecd696e464e438f7c31c603bb1b81e46e08afe54b7"
+        }
+      ]
+    },
+    {
+      "path": "/journal/kaliningrad-zimoy-gde-poest/",
+      "blocks": [
+        {
+          "bytes": 128706,
+          "sha256": "5a6f3492930c9fc8bfaa33ecd696e464e438f7c31c603bb1b81e46e08afe54b7"
+        }
+      ]
+    }
+  ],
+  "incomingLinks": {
+    "path": "/journal/gde-poest-v-kaliningrade/",
+    "slugs": [
+      "gde-poest-ryadom-s-ostrovom-kanta",
+      "kaliningrad-zimoy-gde-poest"
+    ]
+  }
+}

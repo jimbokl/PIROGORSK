@@ -21,7 +21,15 @@ try{
   await page.setViewport({width,height:1000,deviceScaleFactor:1});
   const response=await page.goto(base+'/blog/',{waitUntil:'networkidle0'});
   assert.equal(response.status(),200);await page.evaluate(()=>document.fonts.ready);
-  for(const query of ['', 'островом Канта','Калининград','кофе','несуществующийзапрос']){
+  const pairQuery=await page.$$eval('[data-blog-category]',categories=>{
+   for(const category of categories){
+    const texts=[...category.querySelectorAll('[data-blog-entry]')].map(e=>e.dataset.blogSearch.toLocaleLowerCase('ru-RU').replaceAll('ё','е'));
+    const words=new Set(texts.join(' ').match(/[\p{L}]{5,}/gu));
+    for(const word of words)if(texts.filter(text=>text.includes(word)).length===2)return word;
+   }
+  });
+  assert.ok(pairQuery,'A real search with two results in a category is available');
+  for(const query of ['', 'островом Канта',pairQuery,'Калининград','кофе','несуществующийзапрос']){
    await page.$eval('[data-blog-search-form] input',(input,q)=>{input.value=q;input.dispatchEvent(new Event('input',{bubbles:true}));},query);
    const data=await page.evaluate(()=>({
     overflow:document.documentElement.scrollWidth>innerWidth,
@@ -54,8 +62,15 @@ try{
    if(query==='островом Канта'){
     const card=await page.$('[data-blog-category]:not([hidden]) [data-blog-entry]:not([hidden])');
     assert.ok(card,'New article appears in search');
+    await card.evaluate(e=>e.scrollIntoView({block:'center',inline:'nearest'}));
+    await page.waitForFunction(()=>{
+     const image=document.querySelector('[data-blog-category]:not([hidden]) [data-blog-entry]:not([hidden]) img');
+     return image?.complete&&image.naturalWidth>0;
+    });
+    await card.$eval('img',image=>image.decode());
     await card.screenshot({path:`${out}/${stage}-blog-single-${width}.png`,captureBeyondViewport:false});
    }
+   if(query===pairQuery)assert.ok(data.grids.some(g=>g.count===2));
    report.views.push({width,query,count:data.visible,grids:data.grids.map(g=>({count:g.count,columns:g.columns,single:g.single,even:g.even}))});
   }
   await page.$eval('[data-blog-search-form] input',input=>{input.value='островом Канта';input.dispatchEvent(new Event('input',{bubbles:true}));});
