@@ -564,3 +564,10 @@ scrollbar + полный browser + новый CI/прод PASS, устойчив
 ## CI-03 · контроль восстановления · 07.11.2026
 
 - **P1 · Готово:** контролируемая повторная публикация текущего проверенного артефакта — [42344310031 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42344310031). Pages05:50:06UTC, Worker/Pages PASS, IndexNow unchanged/count0. Семь unit/actionlint/Node syntax/registry strict и production до/после6 HTML/8 assets SHA256/14 ссылок/release/блог82/sitemap277 PASS. Runtime/лента/154 SKU/цены сохранены. Историческая причина timeout не установлена; QA-17 и оставшийся контентный план открыты. [Протокол](qa/pages-recovery-20261107/README.md), [checkpoint](qa/pages-recovery-20261107/STATE.md).
+
+
+## Спринт g · 07.11.2026 · Светлогорск и карточки
+
+- [ ] WEB-G01 · P1: три раздела/таблицы и Imagegen в существующем гиде Светлогорска; A6-63/66 оставить частичными.
+- [ ] WEB-G02 · P1: читаемые пояснения суммы и порции, стабильная высота при 1→2→99→1; сохранить ленту/154 SKU/цены.
+- [ ] WEB-G03 · P1: local check/build/unit66/Worker/SEO/registry strict, monthly185/журнал62+24/каталог6/focused5 PASS; дождаться CI и production readback. QA-17 открыта. [Протокол](qa/sprint-20261107g/README.md).

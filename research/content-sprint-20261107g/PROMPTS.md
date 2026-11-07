@@ -1,0 +1,7 @@
+# Imagegen — редакционный завтрак
+
+Built-in imagegen, новая генерация, без входных фотографий и без API fallback. Источник: `design/blog-source/reading-20261107/svetlogorsk-breakfast.png` (1536×1024). В статье оптимизированные AVIF/WebP, ленивое изображение с размерами. Подпись сообщает, что это ИИ-иллюстрация, а не фото кафе.
+
+Prompt:
+
+> Use case: illustration-story. Asset type: editorial inset illustration for Pirogorsk, a Baltic pie catalogue and local food journal. Primary request: an elegant illustrated family breakfast in Svetlogorsk, Kaliningrad region. Scene: oak table by a tall window, distant blue-grey Baltic sea and coastal pine trees; a subtle whimsical small town silhouette resembling baked golden pie rooftops far outside. Subject: four place settings, one modest bowl of oatmeal, a plate of golden syrniki with a little berry jam, two omelettes, ceramic cups and a flaky croissant; no people. Style: refined hand-painted gouache and engraved coloured pencil details, realistic appetising food proportions, fine paper grain, quiet editorial composition; similar to a premium illustrated Baltic bakery identity. Composition: wide landscape, tabletop fills foreground, clear separate dishes, relaxed breathing room. Palette: warm ivory, golden pastry, navy ink, muted teal sea, small amber accents. Natural soft morning light. Constraints: no text, no logos, no watermarks, not an advertisement or a photograph of an actual restaurant; no price labels, no decorative UI, no collage borders.

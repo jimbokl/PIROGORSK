@@ -1,6 +1,7 @@
 import delivery from '../../design/blog-source/reading-20261101/delivery.png';
 import picnic from '../../design/blog-source/reading-20261101/picnic.png';
 import kitchen from '../../design/blog-source/reading-20261101/kitchen.png';
+import svetlogorskBreakfast from '../../design/blog-source/reading-20261107/svetlogorsk-breakfast.png';
 
 const scenes = {
   delivery: { image: delivery, alt: 'Пирог в крафтовой коробке, чашки и блокнот на деревянном столе у окна с видом на Балтику', caption: 'Для ужина в апартаментах удобно заранее продумать общий стол: еду, напитки и посуду.' },
@@ -10,6 +11,12 @@ const scenes = {
 
 /** Shared editorial cutaways supplement each article's own unique cover. */
 export function journalFigures(slug: string, sectionCount: number, city = false) {
+  // Keep the earlier cutaways beside their original text when this city guide grows.
+  if (slug === 'gde-poest-v-svetlogorske' && sectionCount > 10) return [
+    { ...scenes.delivery, afterSection: 1 },
+    { ...scenes.picnic, afterSection: 6 },
+    { image: svetlogorskBreakfast, afterSection: 10, alt: 'Иллюстрированный семейный завтрак: омлет, сырники, каша и круассан на деревянном столе у окна с видом на Балтику', caption: 'Редакционная иллюстрация, созданная с помощью ИИ. Не фотография конкретного кафе или его блюд.' },
+  ];
   const coastal = /piknik|s-soboy|perevezti|kompaniyu|den-rozhdeniya|kofe-breyk|furshet|chto-pit/.test(slug);
   const atHome = city || /apartament|dostavka|uzhin|obed-v-ofis/.test(slug);
   const primary = atHome ? scenes.delivery : coastal ? scenes.picnic : scenes.kitchen;

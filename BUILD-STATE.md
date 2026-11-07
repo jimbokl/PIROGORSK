@@ -1,3 +1,7 @@
+## Спринт g · 07.11.2026 · публикация ожидается
+
+A6-63/66: три новых раздела/таблицы и Imagegen в существующем гиде Светлогорска; десять прежних разделов и 61 сосед сохранены. Пояснения суммы/порции 12 px; единая область суммы 100 px. Local check/build/unit66/Worker/SEO/registry strict/monthly185/журнал62+24/каталог6/focused5 PASS. Лента/154 SKU/цены сохранены, CRM/контакты отложены. Далее: CI, Pages и production readback. QA-17 открыта; A6-63/66 частичны. [Протокол](qa/sprint-20261107g/README.md).
+
 ## CI-03 · 07.11.2026 · контроль восстановления · завершён
 
 Повторная публикация текущего готового артефакта подтверждена: [Recover Pages42344310031 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42344310031), workflow a4f90c5, источник42341955531/runtime782e750. Pages07.11 05:50:06UTC; Worker/Pages PASS, IndexNow unchanged/count0. Семь unit/actionlint/Node syntax/registry strict PASS. Production до/после: 6 HTML и 8 assets SHA256, 14 ссылок, release/блог82/sitemap277 совпали. Лента/154 SKU/цены не менялись. CI-03 закрыта для end-to-end пути повторной публикации; причина прежнего timeout неизвестна. QA-17 и оставшийся контент открыты. [Протокол](qa/pages-recovery-20261107/README.md).
