@@ -1,0 +1,91 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-07T00:33:59.099Z",
+  "expectedSha": "6bf2ea4248711ba2b29336043acbe7c159caa99a",
+  "articles": [
+    {
+      "path": "/journal/kofe-i-vypechka-v-zelenogradske/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/kofe-i-vypechka-v-zelenogradske/",
+      "datePublished": "2026-11-07",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/kofe-i-vypechka-v-zelenogradske.BmqyYkBH_Z2mSfss.webp",
+      "bytes": 82988,
+      "sha256": "ea79ddbeb4cab5ffa22496c16e603206e7b2ee4918d7f1505b873c0bfd89b0df"
+    },
+    {
+      "path": "/_astro/kofe-i-vypechka-v-zelenogradske-1.DVnxYgqM_CzVs5.webp",
+      "bytes": 25648,
+      "sha256": "121cc8a9df74ba8b865af105f7f3e4762b3e08b686e2867f90a0a38a64b795bf"
+    },
+    {
+      "path": "/_astro/kofe-i-vypechka-v-zelenogradske-2.9QHmdb7N_Z138spH.webp",
+      "bytes": 20552,
+      "sha256": "8dc50106f0b68df0251b33290ff4624e54cbfd9ea2b94edd06f0f99eed50e607"
+    },
+    {
+      "path": "/seo/blog/kofe-i-vypechka-v-zelenogradske.jpg",
+      "bytes": 169158,
+      "sha256": "6845239c1180048ca9965676fc24890060573f15a63f167cf3f49c5214afb22f"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/pekarni-i-pirogi-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/chto-pit-s-pirogami/",
+      "status": 200
+    },
+    {
+      "path": "/journal/zavtrak-na-baltike/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42316745985,
+    "headSha": "6bf2ea4248711ba2b29336043acbe7c159caa99a",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42316745985"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 79,
+  "sitemapUrls": 274,
+  "inlineStyles": [
+    {
+      "path": "/journal/kofe-i-vypechka-v-zelenogradske/",
+      "blocks": [
+        {
+          "bytes": 129072,
+          "sha256": "66b039181b74e8fbde5c219f2f5c3cd6f4dbd21d1a88de5f6cb0e29bcc923a5e"
+        }
+      ]
+    }
+  ],
+  "incomingLinks": {
+    "path": "/journal/gde-poest-v-zelenogradske/",
+    "slugs": [
+      "kofe-i-vypechka-v-zelenogradske"
+    ]
+  }
+}
