@@ -1,6 +1,6 @@
-## CI-03 · 07.11.2026 · контроль восстановления · выполняется
+## CI-03 · 07.11.2026 · контроль восстановления · завершён
 
-Добавлен явный drill успешного текущего артефакта, без изменения runtime. Семь unit-тестов, actionlint, Node syntax, Worker и registry strict PASS. Источник42341955531 / runtime782e750 / artifact13562727503. Следом ручной recovery и production readback; CI-03 до результата не закрыта. [Checkpoint](qa/pages-recovery-20261107/STATE.md).
+Повторная публикация текущего готового артефакта подтверждена: [Recover Pages42344310031 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42344310031), workflow a4f90c5, источник42341955531/runtime782e750. Pages07.11 05:50:06UTC; Worker/Pages PASS, IndexNow unchanged/count0. Семь unit/actionlint/Node syntax/registry strict PASS. Production до/после: 6 HTML и 8 assets SHA256, 14 ссылок, release/блог82/sitemap277 совпали. Лента/154 SKU/цены не менялись. CI-03 закрыта для end-to-end пути повторной публикации; причина прежнего timeout неизвестна. QA-17 и оставшийся контент открыты. [Протокол](qa/pages-recovery-20261107/README.md).
 
 ## Спринт · 07.11.2026 · семейный обед и поздний ужин · завершён
 

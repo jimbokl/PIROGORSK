@@ -1,0 +1,26 @@
+{
+  "mode": "drill",
+  "sourceConclusion": "success",
+  "sourceRunId": 42341955531,
+  "sourceAttempt": 1,
+  "testedSourceSha": "782e750ff4f31fc6e8b1ba3dcab3a72a8341fd57",
+  "artifactId": 13562727503,
+  "artifactName": "github-pages-42341955531-1",
+  "artifactDigest": "sha256:d38e6535041167050416b87d6afc5123a12a209d6ae5fa5c4058b8fa549a4f2b",
+  "deploymentWorkflowSha": "a4f90c5f322f625266c93d00d1f44d327dc62414",
+  "recoveryRunId": 42344310031,
+  "startedAt": "2026-11-07T05:49:44.067Z",
+  "statuses": [
+    {
+      "status": "deployment_in_progress",
+      "at": "2026-11-07T05:49:56.047Z"
+    },
+    {
+      "status": "succeed",
+      "at": "2026-11-07T05:50:06.288Z"
+    }
+  ],
+  "deploymentId": "a4f90c5f322f625266c93d00d1f44d327dc62414",
+  "pageUrl": "https://pirogorsk.ru/",
+  "completedAt": "2026-11-07T05:50:06.288Z"
+}
