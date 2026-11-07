@@ -7,6 +7,7 @@ import puppeteer from 'puppeteer-core';
 const output=process.env.PIROGORSK_QA_OUTPUT||'qa/content-month-202611';
 const articles=JSON.parse(await readFile('src/data/monthly-articles.json','utf8'));
 const metadata=JSON.parse(await readFile('src/data/monthly-article-meta.json','utf8'));
+const figures=JSON.parse(await readFile('src/data/monthly-article-figures.json','utf8'));
 const plan=JSON.parse(await readFile('research/content-month-202611/topic-map.json','utf8'));
 const source=await readFile('research/backlog-intake-20261031/A6.txt','utf8');
 assert.deepEqual(plan.topics.map(x=>x.number),Array.from({length:100},(_,i)=>i+1));
@@ -71,7 +72,10 @@ try{
   assert.ok(data.bodyLinks.length>=3&&data.bodyLinks.length<=5,`Context links ${path}`);
   assert.ok(article.sources.length>=3&&article.sources.length<=5,`Sources ${path}`);
   assert.equal(data.sourceCount,article.sources.length,`Rendered sources ${path}`);
-  assert.equal(data.images.length,3);assert.equal(data.captions.length,3);assert.ok(data.captions[0].includes('Не фотография'));
+  const expectedImages=1+figures[article.slug].length;
+  assert.equal(data.images.length,expectedImages,`All registered images ${path}`);
+  assert.equal(data.captions.length,expectedImages,`All registered captions ${path}`);
+  assert.ok(data.captions[0].includes('Не фотография'));
   for(const image of data.images){
    assert.ok(image.alt&&image.width&&image.height&&image.srcset&&image.complete,`Image attributes ${path}`);
    assert.ok(image.srcAttribute.endsWith('.webp'),`WebP fallback ${path}`);

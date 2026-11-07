@@ -959,13 +959,14 @@
       "intent": "Что везти из Зеленоградска съедобного: локальные сувениры",
       "ownerURL": "/journal/sedobnye-suveniry-iz-kaliningrada/",
       "week": 2,
-      "decision": "new_candidate_after_evidence",
+      "decision": "update_existing_owner",
       "scenario": "информационный переход к подборке только при уместности",
-      "status": "evidence_needed",
-      "dataGap": "Нужны официальные торговые точки Зеленоградска с ассортиментом съедобных сувениров, происхождением изделий и условиями хранения в дороге.",
+      "status": "integrated_update_partial",
+      "dataGap": "Проверены адреса ТИЦ, три формата марципана Pomatti и производство в области. Для полного обзора других локальных продуктов нужны первоисточники по изготовителям и хранению; цены и наличие в магазинах не подтверждены.",
       "cluster": "coast",
       "brandReframe": null,
-      "window": "2026-11-08 — 2026-11-14"
+      "window": "2026-11-08 — 2026-11-14",
+      "evidence": "research/content-sprint-20261107h/README.md"
     },
     {
       "number": 61,
@@ -1267,13 +1268,14 @@
       "intent": "Что везти из Светлогорска: съедобные сувениры и локальные продукты",
       "ownerURL": "/journal/sedobnye-suveniry-iz-kaliningrada/",
       "week": 4,
-      "decision": "new_candidate_after_evidence",
+      "decision": "update_existing_owner",
       "scenario": "информационный переход к подборке только при уместности",
-      "status": "evidence_needed",
-      "dataGap": "Нужны официальные производители/торговые точки и подтверждение происхождения продуктов.",
+      "status": "integrated_update_partial",
+      "dataGap": "Проверены адреса ТИЦ, три формата марципана Pomatti и производство в области. Для полного обзора других локальных продуктов нужны первоисточники по изготовителям и хранению; цены и наличие в магазинах не подтверждены.",
       "cluster": "coast",
       "brandReframe": null,
-      "window": "2026-11-22 — 2026-11-30"
+      "window": "2026-11-22 — 2026-11-30",
+      "evidence": "research/content-sprint-20261107h/README.md"
     },
     {
       "number": 81,
