@@ -1,0 +1,110 @@
+{
+  "observedAt": "2026-11-07T11:54:00Z/2026-11-07T11:59:00Z",
+  "provenance": "Manual transcription of visible native Chrome accessibility states through CUA; not an API export. Account details and UI session tokens omitted.",
+  "site": "https://pirogorsk.ru/",
+  "observations": [
+    {
+      "route": "https://webmaster.yandex.ru/site/https:pirogorsk.ru:443/indexing/check-url/",
+      "result": "Инструмент «Проверка страницы» временно недоступен."
+    },
+    {
+      "route": "https://webmaster.yandex.ru/site/https:pirogorsk.ru:443/indexing/searchable/?nodeId=47&samplesType=event",
+      "result": "Графики и выгрузка отчетов временно недоступны; данные могут не обновляться или обновляться с задержкой. Все страницы и Исключённые страницы disabled. Нет изменений в индексировании страниц.",
+      "interpretation": "No current index size or exclusion reason established."
+    },
+    {
+      "route": "https://webmaster.yandex.ru/site/https:pirogorsk.ru:443/indexing/reindex/",
+      "rows": [
+        {
+          "url": "https://pirogorsk.ru/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/menu/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/podbor/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/kaliningrad/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/zelenogradsk/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/svetlogorsk/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/osetinskie-pirogi/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/journal/dostavka-pirogov-v-kaliningrade-sravnenie/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/journal/kak-narezat-pirog/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        },
+        {
+          "url": "https://pirogorsk.ru/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+          "status": "Заявка обработана",
+          "sentAsDisplayed": "04.11.2026 17:59"
+        }
+      ],
+      "dailyLimit": 10,
+      "submittedNow": false
+    },
+    {
+      "route": "https://webmaster.yandex.ru/site/https:pirogorsk.ru:443/indexing/sitemap/",
+      "result": "Только для чтения; добавить файл или отправить на переобход не получится. Добавить disabled.",
+      "processingStatusEstablished": false
+    },
+    {
+      "route": "https://webmaster.yandex.ru/site/https:pirogorsk.ru:443/dashboard/",
+      "result": "Данные временно не обновляются. Ошибок нет; 1 рекомендация; Invalid date; 0 кликов; Данные появятся в ближайшее время.",
+      "interpretation": "Stale summary, not a current absence of errors or clicks."
+    },
+    {
+      "route": "https://yandex.ru/search/?text=site%3Apirogorsk.ru&lr=22",
+      "query": "site:pirogorsk.ru",
+      "regionAsDisplayed": "Пионерский",
+      "result": "Ничего не нашли",
+      "interpretation": "Visible query result, not complete evidence of index absence."
+    },
+    {
+      "route": "https://webmaster.yandex.ru/site/https:pirogorsk.ru:443/tools/page-indexing-analysis/",
+      "url": "https://pirogorsk.ru/",
+      "result": "Владелец сайта разрешил показ страницы в поиске Яндекса",
+      "interpretation": "Permission, not confirmation of inclusion."
+    },
+    {
+      "route": "https://webmaster.yandex.ru/site/https:pirogorsk.ru:443/tools/server-response/?url=https%3A%2F%2Fpirogorsk.ru&user-agent=robot",
+      "robotAsDisplayed": "Основной робот Яндекса",
+      "status": "200 OK",
+      "responseMs": 363,
+      "sizeAsDisplayed": "1,17 МБ",
+      "lastModified": "Sat, 07 Nov 2026 11:41:22 GMT",
+      "responseDate": "Sat, 07 Nov 2026 11:58:20 GMT",
+      "warning": "Инструмент может работать нестабильно."
+    }
+  ],
+  "changedSettings": false,
+  "resubmittedUrls": false,
+  "voiceOverActivated": false,
+  "conclusion": "SEO-09 remains under observation: no confirmed site-side indexing prohibition; actual Yandex inclusion and delay cause unknown."
+}
