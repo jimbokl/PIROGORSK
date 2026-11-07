@@ -1,0 +1,25 @@
+deploy	Run actions/deploy-pages@v5	﻿2026-11-07T01:53:36.7782892Z ##[group]Run actions/deploy-pages@v5
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7783247Z with:
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7783495Z   artifact_name: github-pages-42321526060-2
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7783824Z   timeout: 1200000
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7786760Z   token: ***
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7787014Z   error_count: 10
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7787254Z   reporting_interval: 5000
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7787513Z   preview: false
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7787739Z env:
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7787940Z   GITHUB_PAGES: true
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.7788177Z ##[endgroup]
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.9786975Z (node:30482) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:36.9788380Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.0509442Z ##[warning]Warning: timeout value is greater than the allowed maximum - timeout set to the maximum of 600000 milliseconds.
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.0520488Z Fetching artifact metadata for "github-pages-42321526060-2" in this workflow run
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.1426588Z Found 2 artifact(s)
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.1440935Z Creating Pages deployment with payload:
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.1441565Z {
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.1442018Z 	"artifact_id": 13555410775,
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.1442802Z 	"pages_build_version": "301f71ce4359c4121183fb607fbe205b8c4d2a8f",
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.1505961Z 	"oidc_token": "***"
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:37.1506482Z }
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:38.3790943Z Created deployment for 301f71ce4359c4121183fb607fbe205b8c4d2a8f, ID: 301f71ce4359c4121183fb607fbe205b8c4d2a8f
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:42.9904252Z Getting Pages deployment status...
+deploy	Run actions/deploy-pages@v5	2026-11-07T01:53:43.1310386Z ##[error]Deployment cancelled.

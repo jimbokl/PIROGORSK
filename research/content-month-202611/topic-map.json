@@ -762,13 +762,13 @@
       "week": 1,
       "decision": "Отдельный интент короткой кофейной остановки с выпечкой в Зеленоградске; общий ресторанный гид и покупка целых пирогов сохраняют собственных владельцев.",
       "scenario": "информационный переход к подборке только при уместности",
-      "status": "integrated_new",
+      "status": "integrated_published",
       "dataGap": "",
       "cluster": "coast",
       "brandReframe": null,
       "window": "2026-11-01 — 2026-11-07",
       "publicationDate": "2026-11-07",
-      "evidenceNote": "Ручной спринт по запросу пользователя. Первичные источники, границы выводов и приёмка: research/content-sprint-20261107b/README.md"
+      "evidenceNote": "Опубликовано 07.11.2026: runtime 6bf2ea4248711ba2b29336043acbe7c159caa99a, CI 42316745985 SUCCESS; production QA — qa/sprint-20261107b/README.md. Первичные источники и границы выводов — research/content-sprint-20261107b/README.md."
     },
     {
       "number": 49,

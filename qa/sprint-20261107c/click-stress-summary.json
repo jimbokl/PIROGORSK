@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-07T02:39:59.004734+00:00",
+  "buildSourceSha": "5caa74e68242b43344819ab77e4a09b9d959b4cd",
+  "cpu": 4,
+  "widths": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "iterations": 2,
+  "runs": [
+    {
+      "iteration": 0,
+      "width": 320,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "pointerEvents": 173
+    },
+    {
+      "iteration": 0,
+      "width": 390,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "pointerEvents": 173
+    },
+    {
+      "iteration": 0,
+      "width": 768,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "pointerEvents": 173
+    },
+    {
+      "iteration": 0,
+      "width": 1280,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "pointerEvents": 173
+    },
+    {
+      "iteration": 1,
+      "width": 320,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "pointerEvents": 173
+    },
+    {
+      "iteration": 1,
+      "width": 390,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "pointerEvents": 173
+    },
+    {
+      "iteration": 1,
+      "width": 768,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "pointerEvents": 173
+    },
+    {
+      "iteration": 1,
+      "width": 1280,
+      "cpu": 4,
+      "result": "PASS",
+      "errors": [],
+      "pointerEvents": 173
+    }
+  ],
+  "scope": "Existing strict physical-click catalog scenario; local artifact resources, no production form submissions. QA-17 root cause not established."
+}
