@@ -17,4 +17,12 @@ QA-17 остаётся открытой. Редкий отказ выбора ф
 
 Команды и результаты: `logs/`, `label-stress/report.json`, `formats/reproduction-cpu1.json`; проверка искусственного отказа — `logs/diagnostic-probe.log` и `click-stress/frames/product-click-failure-meat-390.json`.
 
-CI и production: ожидаются после публикации.
+## Публикация и production
+
+Код `e7dca97813731c49a76d2a0e12aaba517c40c39a`; [CI 42337065302 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42337065302), 40 успешных шагов. Pages завершил публикацию 07.11.2026 в 04:25:21 UTC; опубликованные Pages/Worker совместимы, шаг IndexNow PASS. Успешный запуск не создавал failure-артефакт: отказ и запись диагностики проверены отдельно локальным искусственным отказом, порядок загрузки — YAML-проверкой и опубликованным workflow.
+
+Production: главная, меню, мясной пирог, блог, новый гид напитков и семейный гид — шесть HTML SHA256 совпали с локальной сборкой; canonical и release manifest PASS. В блоге 80 статей, sitemap 275 URL, каталог 154 SKU. Worker health / release compatibility PASS. Между прежним runtime b5ece2e и e7dca97 изменений в src/public нет; повторный визуальный редизайн в этом дополнении не заявляется.
+
+Pages artifact `13560775473`, digest `sha256:90035637272ac90086e33254d05b467d4d1db19359cc1e5c849d2383fe5e56d9`. [CI](ci.json), [artifacts](artifacts.json), [production readback](production-readback.json), `logs/production-readback.log`, `logs/release-production.log`; registry strict PASS. Новый PageSpeed не измерялся.
+
+QA-28 закрыта: диагностика и порядок CI исправлены. QA-17 открыта: её причина не установлена. Спринт контента d остаётся опубликован; месячный план продолжается.

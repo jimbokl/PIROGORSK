@@ -1,0 +1,52 @@
+{
+  "checked": "2026-11-07T04:26:34.698Z",
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42337065302,
+    "headSha": "e7dca97813731c49a76d2a0e12aaba517c40c39a",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42337065302"
+  },
+  "runtimeFiles": [],
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "sha256": "a11c831fefdd7710857a11c5115bcce6d44c2a94a4d97ae2e80d2aa2cb1b924c",
+      "bytes": 1228824
+    },
+    {
+      "path": "/menu/",
+      "status": 200,
+      "sha256": "e0dc2d07647ddb64e1e6cd8f11fddbeb73845cbfe6ea6792b103d54a854b6b10",
+      "bytes": 1212059
+    },
+    {
+      "path": "/pirogi/myasnoy-pirog/",
+      "status": 200,
+      "sha256": "4f3b31b55c72ae6e3c86e0997108a9673da894bfbfa7ba146ca914765a3667b4",
+      "bytes": 287392
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "sha256": "fc041252bda814e626e8508bad44ecbae312cea9c53c0c596690a8cc8de75253",
+      "bytes": 447978
+    },
+    {
+      "path": "/journal/napitki-kaliningradskoy-oblasti/",
+      "status": 200,
+      "sha256": "a8599c34b0e75f276884d4faa2932d38a16f83ed2c662c751d0c8faace09a7ce",
+      "bytes": 274562
+    },
+    {
+      "path": "/journal/gde-poest-s-detmi-v-zelenogradske/",
+      "status": 200,
+      "sha256": "911be28e6b1f611faec077fa302b17f47e7646cdd7bc3a966dda73c769520b0d",
+      "bytes": 306059
+    }
+  ],
+  "articles": 80,
+  "sitemap": 275,
+  "catalog": 154
+}
