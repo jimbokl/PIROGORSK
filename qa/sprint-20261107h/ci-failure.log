@@ -1,0 +1,23 @@
+deploy	Run node scripts/verify-journal-reading.mjs	﻿2026-11-07T07:27:41.4202156Z ##[group]Run node scripts/verify-journal-reading.mjs
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:27:41.4202897Z ^[[36;1mnode scripts/verify-journal-reading.mjs^[[0m
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:27:41.4229677Z shell: /usr/bin/bash -e {0}
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:27:41.4230167Z ##[endgroup]
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4170932Z node:internal/modules/run_main:107
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4172847Z     triggerUncaughtException(
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4173209Z     ^
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4173335Z 
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4173710Z AssertionError [ERR_ASSERTION]: sedobnye-suveniry-iz-kaliningrada: section count
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4174069Z 
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4174164Z 11 !== 9
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4174287Z 
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4175050Z     at file:///home/runner/work/PIROGORSK/PIROGORSK/scripts/verify-journal-reading.mjs:47:12 {
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4175960Z   generatedMessage: false,
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4176448Z   code: 'ERR_ASSERTION',
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4176891Z   actual: 11,
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4177262Z   expected: 9,
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4177665Z   operator: 'strictEqual',
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4178142Z   diff: 'simple'
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4178495Z }
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4178682Z 
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4178780Z Node.js v24.22.2
+deploy	Run node scripts/verify-journal-reading.mjs	2026-11-07T07:28:26.4371230Z ##[error]Process completed with exit code 1.
