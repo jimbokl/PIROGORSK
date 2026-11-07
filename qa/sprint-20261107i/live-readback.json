@@ -1,0 +1,132 @@
+{
+  "checked": "2026-11-07T09:02:44.938Z",
+  "base": "https://pirogorsk.ru",
+  "sha": "5841b852dfb0778c8d9efc09c1de69ec162a0c1f",
+  "pages": [
+    {
+      "path": "/journal/pekarni-i-pirogi-v-zelenogradske/",
+      "bytes": 310189,
+      "sha256": "5b3977132ea1c1bd2f71090f6a85efc9f9c53c3468eeb6ec4ccacf34682e911b"
+    },
+    {
+      "path": "/journal/gde-poest-v-svetlogorske/",
+      "bytes": 338610,
+      "sha256": "d944d889dbe3333658185e6e17817e5d0e46b671aecc7032145c7e6c64293559"
+    },
+    {
+      "path": "/",
+      "bytes": 1228982,
+      "sha256": "6bda2d0c132f3f9f7e74e1ab80e73994cd55da7677991d2c771c33cee41ada39"
+    },
+    {
+      "path": "/menu/",
+      "bytes": 1212065,
+      "sha256": "b9dffa15845825fbb696eea47e49d7121ef5016514f111386ce56f0c29903626"
+    },
+    {
+      "path": "/blog/",
+      "bytes": 457374,
+      "sha256": "90e9f978008c4193920ab091354a7f17d9ce65cab87f525e3cbf21be6557caed"
+    },
+    {
+      "path": "/zelenogradsk/",
+      "bytes": 254385,
+      "sha256": "77da44ec3c2b9088a02d49cb2c142bff066344a44f972e83e99630355837a7eb"
+    },
+    {
+      "path": "/svetlogorsk/",
+      "bytes": 254150,
+      "sha256": "5e0f4ee295f5f0b931ca90ded26a17d86f6811445360748bbf2df5cada65c932"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/zelenogradsk-bakery-formats.CXL3QJb0_WAUGV.avif",
+      "bytes": 42101,
+      "sha256": "0440bf957ec7e5af58f5053c5cb5983cb8f67729b8884154ab54d9b5a68c2f72",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/zelenogradsk-bakery-formats.CXL3QJb0_PxHl5.avif",
+      "bytes": 108532,
+      "sha256": "2052134cc05cdeba653da94b62a1aa52fb1446e27f37f428a4b33ccc38e13da1",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 533,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/zelenogradsk-bakery-formats.CXL3QJb0_2bu8lf.avif",
+      "bytes": 215810,
+      "sha256": "d94828117460cff852591da2f10998ea3e007437720499abfdbc8a21374ab032",
+      "localMatches": false,
+      "decoded": true,
+      "width": 1200,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/zelenogradsk-bakery-formats.CXL3QJb0_ZYPQIa.webp",
+      "bytes": 31914,
+      "sha256": "28c081d6d3762915188d6751fded395b5df783ced05d928b4746ab3cd1bf1b58",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/zelenogradsk-bakery-formats.CXL3QJb0_Z16T551.webp",
+      "bytes": 81322,
+      "sha256": "e05660e7ad21e07507e37ad38e229ca0843b8f21b8f9712a4882d15ff7cdbcf5",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/zelenogradsk-bakery-formats.CXL3QJb0_2uKfTp.webp",
+      "bytes": 162034,
+      "sha256": "87171cbc9d0edb8e723da8cd4b0ae5a0832216cc37fdfb2dacbe406ae8d9d6e9",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kofe-i-vypechka-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kak-perevezti-pirog/",
+      "status": 200
+    },
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42356565329,
+    "headSha": "5841b852dfb0778c8d9efc09c1de69ec162a0c1f",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42356565329"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "articleCount": 83,
+  "sitemapCount": 278
+}

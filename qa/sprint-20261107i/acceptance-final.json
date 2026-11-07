@@ -1,0 +1,101 @@
+{
+  "checked": "2026-11-07T09:07:36.546269+00:00",
+  "result": "PASS",
+  "runtimeSha": "5841b852dfb0778c8d9efc09c1de69ec162a0c1f",
+  "ci": {
+    "conclusion": "success",
+    "databaseId": 42356565329,
+    "headSha": "5841b852dfb0778c8d9efc09c1de69ec162a0c1f",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42356565329"
+  },
+  "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20",
+  "preserved": {
+    "skuCount": 154,
+    "prices": true,
+    "infiniteFeed": true,
+    "crmAndContacts": true
+  },
+  "content": {
+    "owner": "/journal/pekarni-i-pirogi-v-zelenogradske/",
+    "newSections": 4,
+    "newTables": 3,
+    "newOriginalImagegenInsets": 1,
+    "sectionsTotal": 8,
+    "tablesTotal": 4,
+    "insetsTotal": 2,
+    "sources": 4,
+    "articleCount": 83,
+    "sitemapUrls": 278,
+    "topicA642": "integrated_update_partial"
+  },
+  "local": {
+    "checkErrors": 0,
+    "checkWarnings": 0,
+    "existingHints": 123,
+    "html": 283,
+    "unitTests": 66,
+    "monthlyViewportChecks": 195,
+    "journalArticles": 62,
+    "journalResponsiveViews": 24
+  },
+  "production": {
+    "htmlSha256Pages": 7,
+    "assets": 6,
+    "internalLinks": 5,
+    "focusedWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "catalogWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "catalogErrors": [],
+    "networkRetries": [
+      {
+        "path": "/catalog-art/p39-482-256.avif",
+        "attempt": 1,
+        "error": "fetch failed",
+        "cause": "UND_ERR_SOCKET"
+      },
+      {
+        "path": "/catalog-art/p39-482-256.avif",
+        "attempt": 2,
+        "error": "fetch failed",
+        "cause": "UND_ERR_SOCKET"
+      }
+    ],
+    "quantitySequence": [
+      1,
+      2,
+      99,
+      1
+    ],
+    "visuallyInspected": [
+      "production-long-card-390.png",
+      "production-illustration-768.png",
+      "production-weights-390.png"
+    ]
+  },
+  "limits": [
+    "No new card runtime defect found; card CSS/runtime unchanged this sprint.",
+    "Coast network menu does not prove branch stock. Königsbäcker address and Prussian recipe unconfirmed.",
+    "AVIF dimensions/HEIF-AV1/decode checked; exact CI AVIF bytes not claimed.",
+    "No fresh PageSpeed. QA-17 root cause remains unconfirmed.",
+    "Independent daily A6-17 article retained; not authored in this sprint."
+  ],
+  "evidence": [
+    "README.md",
+    "live-readback.json",
+    "production-focused.json",
+    "catalog-production/production-report.json"
+  ]
+}
