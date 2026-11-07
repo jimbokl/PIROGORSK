@@ -546,7 +546,8 @@
     },
     "relatedArticles": [
       "/journal/gde-poest-s-detmi-v-zelenogradske/",
-      "/journal/dostavka-edy-v-zelenogradske/"
+      "/journal/dostavka-edy-v-zelenogradske/",
+      "/journal/kofe-i-vypechka-v-zelenogradske/"
     ]
   },
   {
@@ -4906,6 +4907,29 @@
       "/journal/vegetarianskaya-eda-v-kaliningrade/",
       "/journal/kofeyni-kaliningrada/",
       "/journal/uzhin-v-semnyh-apartamentah/"
+    ]
+  },
+  {
+    "path": "/journal/kofe-i-vypechka-v-zelenogradske/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Кофе и выпечка в Зеленоградске: адреса и цены",
+    "query": "кофе и выпечка в зеленоградске",
+    "intent": "Найти кофейню и выпечку в Зеленоградске, сравнить цены конкретного заказа и выбрать формат на месте или с собой",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-v-zelenogradske/",
+      "/journal/pekarni-i-pirogi-v-zelenogradske/",
+      "/journal/chto-pit-s-pirogami/",
+      "/journal/zavtrak-na-baltike/"
     ]
   }
 ]

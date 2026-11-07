@@ -50,7 +50,7 @@ const hasOriginalSources = 'sources' in original && Boolean(original.sources?.le
 const useGenericTools = !hasOriginalSources && !monthly;
 const image = entry.ogImage;
 const city='city' in item ? item.city : cityForArticle(item.slug);
-const isCity='cluster' in item ? item.cluster==='city' : ['Калининград','Зеленоградск','Светлогорск'].includes(entry.category);
+const isCity=!monthly && ('cluster' in item ? item.cluster==='city' : ['Калининград','Зеленоградск','Светлогорск'].includes(entry.category));
 const faq='takeaway' in item ? [{question:item.title,answer:item.takeaway},...guideFaq] : guideFaq;
 const modified = update?.modified ?? monthly?.modified ?? (servingGuide ? '2026-10-31' : undefined);
 const modifiedLabel = modified ? new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${modified}T00:00:00Z`)).replace(/\s*г\.$/, '') : undefined;
