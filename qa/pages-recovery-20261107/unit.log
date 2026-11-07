@@ -1,0 +1,15 @@
+✔ accepts the exact artifact after all source checks passed (0.714792ms)
+✔ successful source requires explicit drill mode and completed production checks (0.803375ms)
+✔ drill retains failed-check, changed-website and artifact provenance validation (0.194125ms)
+✔ rejects failed tests, changed website, missing checks and expired artifacts (0.244417ms)
+✔ publishes after more than ten minutes without the deploy-pages timeout cap (2.050583ms)
+✔ terminal publication failure never reports success (0.1295ms)
+✔ twenty-minute deadline cancels deployment and reports timeout (0.279792ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 71.774958

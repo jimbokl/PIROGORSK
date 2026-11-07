@@ -3,9 +3,14 @@ on:
   workflow_dispatch:
     inputs:
       source_run_id:
-        description: Completed Deploy Pages run whose tests passed and publication failed
+        description: Completed Deploy Pages run whose tests passed (failed publication, or successful drill source)
         required: true
         type: string
+      drill:
+        description: Re-publish an unchanged successful source to verify recovery end to end
+        required: false
+        default: false
+        type: boolean
 permissions:
   contents: read
   actions: read
@@ -33,9 +38,10 @@ jobs:
         uses: actions/github-script@v7
         env:
           SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+          RECOVERY_DRILL: ${{ inputs.drill }}
         with:
           script: |
-            await require('./.github/scripts/recover-pages.cjs').inspect({github, core, context, sourceId: process.env.SOURCE_RUN_ID});
+            await require('./.github/scripts/recover-pages.cjs').inspect({github, core, context, sourceId: process.env.SOURCE_RUN_ID, drill: process.env.RECOVERY_DRILL === 'true'});
       - uses: actions/download-artifact@v4
         with:
           artifact-ids: ${{ steps.source.outputs.artifact_id }}

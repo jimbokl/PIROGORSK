@@ -10,15 +10,19 @@ const requiredChecks = [
 ];
 const deploymentStep = 'Run actions/deploy-pages@v5';
 
-function validateSource(run, jobs, artifacts, comparison) {
+function validateSource(run, jobs, artifacts, comparison, { drill = false } = {}) {
+  assert.equal(typeof drill, 'boolean');
   assert.equal(run.path, '.github/workflows/pages.yml');
   assert.equal(run.head_branch, 'main');
   assert.equal(run.status, 'completed');
-  assert.equal(run.conclusion, 'failure');
+  assert.equal(run.conclusion, drill ? 'success' : 'failure');
   const job = jobs.find(item => item.name === 'deploy');
   assert(job, 'Source deployment job missing');
   const index = job.steps.findIndex(step => step.name === deploymentStep);
-  assert(index >= 0 && job.steps[index].conclusion === 'failure', 'Source must have failed at Pages publication');
+  assert(index >= 0 && job.steps[index].conclusion === (drill ? 'success' : 'failure'), drill ? 'Drill source must have passed Pages publication' : 'Source must have failed at Pages publication');
+  if (drill) {
+    assert(job.steps.slice(index + 1).some(step => step.name === 'Verify published Pages and Worker compatibility' && step.conclusion === 'success'), 'Drill source must have passed production compatibility checks');
+  }
   for (const name of requiredChecks) {
     assert(job.steps.slice(0, index).some(step => step.name === name && step.conclusion === 'success'), `Source check did not pass: ${name}`);
   }
@@ -44,7 +48,7 @@ function validateSource(run, jobs, artifacts, comparison) {
   return artifact;
 }
 
-async function inspect({ github, core, context, sourceId }) {
+async function inspect({ github, core, context, sourceId, drill = false }) {
   assert.match(sourceId ?? '', /^\d+$/);
   const repo = context.repo;
   const { data: run } = await github.rest.actions.getWorkflowRun({ ...repo, run_id: Number(sourceId) });
@@ -52,8 +56,9 @@ async function inspect({ github, core, context, sourceId }) {
   const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRunAttempt, { ...repo, run_id: run.id, attempt_number: run.run_attempt, per_page: 100 });
   const artifacts = await github.paginate(github.rest.actions.listWorkflowRunArtifacts, { ...repo, run_id: run.id, per_page: 100 });
   const { data: comparison } = await github.rest.repos.compareCommitsWithBasehead({ ...repo, basehead: `${run.head_sha}...${context.sha}` });
-  const artifact = validateSource(run, jobs, artifacts, comparison);
+  const artifact = validateSource(run, jobs, artifacts, comparison, { drill });
   const report = {
+    mode: drill ? 'drill' : 'recovery', sourceConclusion: run.conclusion,
     sourceRunId: run.id, sourceAttempt: run.run_attempt, testedSourceSha: run.head_sha,
     artifactId: artifact.id, artifactName: artifact.name, artifactDigest: artifact.digest,
     deploymentWorkflowSha: context.sha, recoveryRunId: context.runId,
@@ -61,7 +66,7 @@ async function inspect({ github, core, context, sourceId }) {
   };
   await fs.writeFile(reportPath, JSON.stringify(report, null, 2) + '\n');
   core.setOutput('artifact_id', String(artifact.id));
-  core.info(`All source checks passed before Pages failed; reusing ${artifact.name} (${artifact.digest}).`);
+  core.info(`All source checks passed; ${report.mode} reuses ${artifact.name} (${artifact.digest}).`);
   return report;
 }
 

@@ -12,10 +12,39 @@ function source() {
     comparison: { status: 'ahead', files: [{ filename: '.github/workflows/recover-pages.yml' }] },
   };
 }
-const validate = input => validateSource(input.run, input.jobs, input.artifacts, input.comparison);
+const validate = (input, options) => validateSource(input.run, input.jobs, input.artifacts, input.comparison, options);
+
+function drillSource() {
+  const input = source();
+  input.run.conclusion = 'success';
+  input.jobs[0].steps.at(-1).conclusion = 'success';
+  input.jobs[0].steps.push({ name: 'Verify published Pages and Worker compatibility', conclusion: 'success' });
+  return input;
+}
 
 test('accepts the exact artifact after all source checks passed', () => {
   assert.equal(validate(source()).id, 456);
+});
+
+test('successful source requires explicit drill mode and completed production checks', () => {
+  const input = drillSource();
+  assert.throws(() => validate(input));
+  assert.equal(validate(input, { drill: true }).id, 456);
+  input.jobs[0].steps.at(-1).conclusion = 'skipped';
+  assert.throws(() => validate(input, { drill: true }), /production compatibility checks/);
+  assert.throws(() => validate(source(), { drill: true }));
+  assert.throws(() => validate(drillSource(), { drill: 'false' }));
+});
+
+test('drill retains failed-check, changed-website and artifact provenance validation', () => {
+  const failed = drillSource(); failed.jobs[0].steps[0].conclusion = 'failure';
+  assert.throws(() => validate(failed, { drill: true }), /Source check did not pass/);
+  const changed = drillSource(); changed.comparison.files.push({ filename: 'src/data/catalog.ts' });
+  assert.throws(() => validate(changed, { drill: true }), /Website differs/);
+  const expired = drillSource(); expired.artifacts[0].expired = true;
+  assert.throws(() => validate(expired, { drill: true }), /Source artifact expired/);
+  const wrong = drillSource(); wrong.artifacts[0].workflow_run.head_sha = 'c'.repeat(40);
+  assert.throws(() => validate(wrong, { drill: true }));
 });
 
 test('rejects failed tests, changed website, missing checks and expired artifacts', () => {

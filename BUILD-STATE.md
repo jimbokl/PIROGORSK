@@ -1,3 +1,7 @@
+## CI-03 · 07.11.2026 · контроль восстановления · выполняется
+
+Добавлен явный drill успешного текущего артефакта, без изменения runtime. Семь unit-тестов, actionlint, Node syntax, Worker и registry strict PASS. Источник42341955531 / runtime782e750 / artifact13562727503. Следом ручной recovery и production readback; CI-03 до результата не закрыта. [Checkpoint](qa/pages-recovery-20261107/STATE.md).
+
 ## Спринт · 07.11.2026 · семейный обед и поздний ужин · завершён
 
 Две статьи, две Imagegen-обложки/четыре схемы, таблицы/источники/перелинковка. Блог82 / sitemap277. Цены форматов читабельнее, порции компьютерной сетки выровнены; лента/154 SKU/цены сохранены. Runtime `782e750ff4f31fc6e8b1ba3dcab3a72a8341fd57`; [CI 42341955531 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42341955531), Pages07.11 05:35:42UTC, Worker/Pages и IndexNow PASS.

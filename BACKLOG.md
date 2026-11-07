@@ -560,3 +560,7 @@ scrollbar + полный browser + новый CI/прод PASS, устойчив
 - [x] WEB-F01: две статьи месячного плана — семейный обед и поздний ужин в Калининграде. Imagegen, таблицы, схемы, источники и перелинковка; сохранить частичные статусы A6-30/32.
 - [x] WEB-F02: улучшить читаемость цен форматов и выровнять строки порций в галерее, сохранить геометрию при 1→2→99→1 и все 154 SKU.
 - [x] WEB-F03: check/build/unit66/Worker/SEO/monthly185/журнал62+24/каталог6/focused5 PASS; CI42341955531 SUCCESS / Pages07.11 05:35:42UTC. Production: 6 HTML/8 assets SHA256, 14 ссылок, блог82/sitemap277, release, каталог154/геометрия6/форматы3/focused5 PASS; телефон/планшет просмотрены. A6-30/32 частичны, QA-17 открыта. Доказательства: `qa/sprint-20261107f/README.md`.
+
+## CI-03 · контроль восстановления · 07.11.2026
+
+- **P1 · Выполняется:** явный drill текущего успешного проверенного артефакта; обычный failed-publication recovery по умолчанию сохранён. Семь unit-тестов/actionlint/Node syntax/Worker/registry strict PASS. Источник42341955531 / runtime782e750 / artifact13562727503; реальный прогон и production readback ожидаются. Runtime, лента/154 SKU/цены не меняются. [Протокол](qa/pages-recovery-20261107/README.md), [checkpoint](qa/pages-recovery-20261107/STATE.md).
