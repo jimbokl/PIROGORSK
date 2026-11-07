@@ -13,6 +13,10 @@ const scenes = {
 
 /** Shared editorial cutaways supplement each article's own unique cover. */
 export function journalFigures(slug: string, sectionCount: number, city = false) {
+  if (slug === 'gde-pozavtrakat-v-zelenogradske') return [
+    { image: svetlogorskBreakfast, afterSection: 2, alt: 'Редакционная иллюстрация завтрака у Балтики: омлет, сырники, каша, круассан и кофе на деревянном столе', caption: 'Разные блюда за одним столом: выбирайте завтрак по меню, времени и своему маршруту. Редакционная иллюстрация.' },
+    { ...scenes.picnic, afterSection: Math.min(8, sectionCount - 1), caption: 'Для еды на прогулке заранее продумайте упаковку, напитки и подачу.' },
+  ];
   // Keep the earlier cutaways beside their original text when this city guide grows.
   if (slug === 'gde-poest-v-svetlogorske' && sectionCount > 10) return [
     { ...scenes.delivery, afterSection: 1 },

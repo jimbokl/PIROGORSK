@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://ghroyallions.ru/",
+    "final": "https://ghroyallions.ru/",
+    "status": 200,
+    "length": 58823,
+    "links": [
+      "/docs/privacy_policy_ru.pdf",
+      "/docs/privacy_policy_ru.pdf"
+    ]
+  },
+  {
+    "url": "https://ghroyallions.ru/restaurants/bereg-morya/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://grandmonopol.com/restaurant",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://riviera-restaurant.ru/",
+    "final": "https://riviera-restaurant.ru/",
+    "status": 200,
+    "length": 89492,
+    "links": [
+      "http://riviera-restaurant.ru",
+      "#popup:menu",
+      "https://riviera-restaurant.ru/privacypolicy",
+      "mailto:info@rivierarestaurant.ru"
+    ]
+  },
+  {
+    "url": "https://branchnamore.ru/",
+    "final": "https://branchnamore.ru/",
+    "status": 200,
+    "length": 232053,
+    "links": [
+      "https://static.tildacdn.com/css/tilda-menu-widgeticons-1.0.min.css",
+      "#menuopen",
+      "#menuopen",
+      "#menuopen",
+      "#menu",
+      "#popup:food",
+      "#popup:menu",
+      "#popup:food",
+      "#popup:food",
+      "#popup:food"
+    ]
+  },
+  {
+    "url": "https://zavtrak-7-45.clients.site/",
+    "final": "https://zavtrak-7-45.clients.site/showcaptcha",
+    "status": 200,
+    "length": 13653,
+    "links": [],
+    "content": "captcha; no fresh schedule read via HTTP"
+  }
+]
