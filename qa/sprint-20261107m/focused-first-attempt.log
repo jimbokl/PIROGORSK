@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+'12' !== '10'
+
+    at file:///Volumes/DevSim/Projects/PIROGORSK/qa/sprint-20261107m/verify.mjs:54:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '12',
+  expected: '10',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0

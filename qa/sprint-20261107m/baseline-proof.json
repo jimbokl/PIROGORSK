@@ -1,0 +1,34 @@
+{
+  "baselineHead": "66e037a58b8ad9fff8f8bb68a82a1ae8847c17d4",
+  "unchanged": {
+    "src/data/semantic-articles.json": "96dd582822002b96d12e721622012c1aa0e1813c62f1c10db978207a7daf72bd",
+    "research/content-month-202611/topic-map.json": "87bebb994b40bf7c89fa52efb0ce3dd50f4d375314d983768f038887ddab8001",
+    "src/data/seo-matrix.json": "b38683b37a973f0a679d6ee1aa30af557fee0b0106f5d27346bf29fa76343810"
+  },
+  "checks": {
+    "previousUpdateOwnersUnchanged": 10,
+    "addedSections": 3,
+    "arithmetic": {
+      "1500grams": [
+        250,
+        187.5,
+        150,
+        125
+      ],
+      "twentyGuests": [
+        3000,
+        4000,
+        5000,
+        7000
+      ],
+      "sliceExample": true
+    }
+  },
+  "articleBaseline": {
+    "originalSections": 6,
+    "originalBaselineStringsPreserved": true,
+    "originalTextPrefixPreservedIgnoringWhitespace": true,
+    "addedSections": 3,
+    "unchangedNeighbours": 61
+  }
+}

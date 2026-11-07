@@ -2,33 +2,77 @@
 const circles = [6, 8];
 ---
 <section class="cutting-diagrams" aria-labelledby="cutting-diagrams-heading">
-  <header><p class="ed-eyebrow">Сначала выберите размер кусочка</p><h2 id="cutting-diagrams-heading">Три понятные схемы нарезки</h2><p>Пример для пирога 1,2 кг: делим общий вес на число равных частей. Это вес кусочка, а не число гостей.</p></header>
+  <header><p class="ed-eyebrow">Сначала выберите размер кусочка</p><h2 id="cutting-diagrams-heading">Три понятные схемы нарезки</h2><p>Пример для пирога <span data-cut-weight-label>1,2 кг</span>: делим общий вес на число равных частей. Это вес кусочка, а не число гостей.</p></header>
+  <form class="cutting-controls" data-cut-controls hidden>
+    <label>Масса готового пирога<select name="cut-weight"><option value="1000">1 кг</option><option value="1200" selected>1,2 кг</option><option value="1500">1,5 кг</option></select></label>
+    <label>Частей на средней схеме<select name="cut-count"><option value="8">8 частей</option><option value="10">10 частей</option><option value="12">12 частей</option></select></label>
+  </form>
   <div class="cutting-grid">
-    {circles.map(count => <figure>
+    {circles.map((count,index) => <figure data-cut-parts={count} data-cut-variable={index === 1 ? '' : undefined}>
       <svg viewBox="0 0 240 190" role="img" aria-label={`Круглый пирог: ${count} равных секторов`}>
         <circle class="crust" cx="120" cy="95" r="76" />
         <circle class="filling" cx="120" cy="95" r="66" />
         {Array.from({ length: count }, (_, i) => { const a = (i * 2 * Math.PI / count) - Math.PI / 2; return <line x1="120" y1="95" x2={120 + 76 * Math.cos(a)} y2={95 + 76 * Math.sin(a)} />; })}
         <circle class="center" cx="120" cy="95" r="4" />
       </svg>
-      <figcaption><strong>{count} кусочков</strong><span>≈ {1200 / count} г каждый</span></figcaption>
+      <figcaption><strong data-cut-count-label>{count} кусочков</strong><span data-cut-mass>≈ {1200 / count} г каждый</span></figcaption>
     </figure>)}
-    <figure>
+    <figure data-cut-parts="12">
       <svg viewBox="0 0 240 190" role="img" aria-label="Прямоугольный пирог: три ряда по четыре равных кусочка">
         <rect class="crust" x="22" y="28" width="196" height="134" rx="12" />
         <rect class="filling" x="32" y="38" width="176" height="114" rx="5" />
         {[1,2,3].map(i => <line x1={22 + i * 49} y1="28" x2={22 + i * 49} y2="162" />)}
         {[1,2].map(i => <line x1="22" y1={28 + i * 134/3} x2="218" y2={28 + i * 134/3} />)}
       </svg>
-      <figcaption><strong>12 кусочков</strong><span>≈ 100 г каждый</span></figcaption>
+      <figcaption><strong>12 кусочков</strong><span data-cut-mass>≈ 100 г каждый</span></figcaption>
     </figure>
   </div>
+  <p class="cutting-status" data-cut-status role="status" aria-live="polite" aria-atomic="true"></p>
   <p class="cutting-note">Для общего стола нарежьте часть пирога, оставив остальные кусочки крупнее. Сытные и сладкие начинки удобно поставить на разные блюда, а лопатку положить рядом с каждым.</p>
 </section>
+<script>
+  const diagram = document.querySelector<HTMLElement>('.cutting-diagrams');
+  const controls = diagram?.querySelector<HTMLFormElement>('[data-cut-controls]');
+  if (diagram && controls) {
+    const weightInput = controls.querySelector<HTMLSelectElement>('[name="cut-weight"]')!;
+    const countInput = controls.querySelector<HTMLSelectElement>('[name="cut-count"]')!;
+    const variable = diagram.querySelector<HTMLElement>('[data-cut-variable]')!;
+    const svg = variable.querySelector('svg')!;
+    const cutLine = svg.querySelector('line')!;
+    const format = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 1 });
+    const render = () => {
+      const weight = Number(weightInput.value), count = Number(countInput.value);
+      variable.dataset.cutParts = String(count);
+      variable.querySelector('[data-cut-count-label]')!.textContent = `${count} кусочков`;
+      svg.setAttribute('aria-label', `Круглый пирог: ${count} равных секторов`);
+      svg.querySelectorAll('line').forEach(line => line.remove());
+      const center = svg.querySelector('.center')!;
+      for (let i = 0; i < count; i++) {
+        const angle = i * 2 * Math.PI / count - Math.PI / 2;
+        // Retain Astro's scoped style attribute when rebuilding the sectors.
+        const line = cutLine.cloneNode(false) as SVGLineElement;
+        for (const [key, value] of Object.entries({ x1:120, y1:95, x2:120 + 76 * Math.cos(angle), y2:95 + 76 * Math.sin(angle) })) line.setAttribute(key, String(value));
+        svg.insertBefore(line, center);
+      }
+      diagram.querySelector('[data-cut-weight-label]')!.textContent = `${format.format(weight / 1000)} кг`;
+      const summaries: string[] = [];
+      diagram.querySelectorAll<HTMLElement>('[data-cut-parts]').forEach(figure => {
+        const parts = Number(figure.dataset.cutParts), mass = format.format(weight / parts);
+        figure.querySelector('[data-cut-mass]')!.textContent = `≈ ${mass} г каждый`;
+        summaries.push(`${parts} кусочков по ${mass} г`);
+      });
+      diagram.querySelector('[data-cut-status]')!.textContent = `Пирог ${format.format(weight / 1000)} кг: ${summaries.join('; ')}. Средняя масса, без взвешивания отдельных кусков.`;
+    };
+    controls.addEventListener('submit', event => event.preventDefault());
+    controls.addEventListener('change', render);
+    controls.hidden = false;
+  }
+</script>
 <style>
   .cutting-diagrams{padding-block:30px 36px;margin-block:20px;border-block:1px solid var(--line)}
   header{max-width:690px}h2{font:500 clamp(27px,3vw,38px)/1.18 var(--serif);letter-spacing:-.03em;margin:8px 0 14px}
   p{font:400 14px/1.8 var(--sans);color:var(--muted);margin:0}
+  .cutting-controls{display:flex;flex-wrap:wrap;gap:16px 24px;margin-top:22px}.cutting-controls[hidden]{display:none}.cutting-controls label{display:grid;gap:8px;font:500 13px/1.5 var(--sans);color:var(--navy);flex:1 1 180px;max-width:300px;min-width:0}.cutting-controls select{width:100%;min-height:46px;padding:10px 34px 10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--soft);color:var(--navy);font:500 16px/1.5 var(--sans)}.cutting-controls select:focus-visible{outline:2px solid var(--navy);outline-offset:4px}.cutting-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
   .cutting-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-block:24px}
   figure{margin:0;padding:12px 14px 20px;border:1px solid var(--line);border-radius:var(--radius-card);background:var(--soft)}
   svg{display:block;width:100%;height:auto}.crust{fill:#ecd2a4;stroke:#bd8c51;stroke-width:1.5}.filling{fill:#f8edda;stroke:#d5ae76;stroke-width:1}line{stroke:var(--navy);stroke-width:1.5;stroke-linecap:round}.center{fill:var(--navy)}

@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: kak-narezat-pirog: section count
+
+9 !== 6
+
+    at file:///Volumes/DevSim/Projects/PIROGORSK/scripts/verify-journal-reading.mjs:47:12 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 9,
+  expected: 6,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0
