@@ -16,4 +16,10 @@ A6-63/66: существующий гид `/journal/gde-poest-v-svetlogorske/` �
 
 ## Публикация
 
-Ожидаются normal CI, Pages и production-приёмка. Веб-результат не объявляется готовым до readback.
+Runtime `b891f802e3e68aec1d8ecca9a2036a835a87b1ff`; [normal CI 42346166051 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42346166051). Pages опубликован 07.11 в 06:34:23 UTC; Worker/Pages и IndexNow postcheck PASS. `gh run watch` прервался на TLS handshake timeout; окончательный SUCCESS независимо получен через `gh run view` и сохранён в [ci.json](ci.json).
+
+Production PASS: 6 HTML SHA256, 20 assets SHA256, 11 внутренних ссылок HTTP 200, release/canonical/dates, блог82/sitemap277. Целевой QA на пяти ширинах: карточки/13 разделов/3 иллюстрации/содержание/таблицы/клавиатура/no-JS. Полный каталог: 154 SKU home/menu, геометрия 1→2→99→1 на шести ширинах, цены/форматы/добавление на 390/768/1280; ошибок нет. Телефон и планшет просмотрены визуально на опубликованной версии.
+
+Первая сверка обнаружила различие байтов локального AVIF. Публикация проверена по фактическому Pages-артефакту `13564710361` этого CI и коммита: SHA256 ZIP `d623c0944b21fd442a8d622546e493a8ae95e8b886cba99794b5eb9dc4255d3c` совпал с GitHub metadata. Все 20 assets совпадают с ним побайтово; HTML и CSS совпадают также с локальной сборкой. У шести AVIF локальная/CI версии различаются: размеры одинаковы, средняя абсолютная разница каналов 2,20–2,80 из 255, декодирование успешно. Причина различий AVIF отдельно не установлена; побайтовое сравнение этих AVIF с локальной сборкой не подтвердилось. Верификатор с `QA_ARTIFACT_ROOT` сохраняет отличия и требует точное совпадение продакшена с CI, а для HTML/CSS сохраняет также сравнение с локальной сборкой.
+
+Доказательства: [production readback](live-readback.json), [артефакт и digest](pages-artifact.json), [различия AVIF](image-byte-comparison.json), [целевой QA](production-focused.json), [каталог](catalog-production/production-report.json). Для повторения: скачать `github-pages-42346166051-1` через `gh run download`, проверить digest, распаковать `artifact.tar`; выполнить `QA_ARTIFACT_ROOT=<распакованный site> node qa/sprint-20261107g/verify-live.mjs b891f802e3e68aec1d8ecca9a2036a835a87b1ff`. Runtime не изменялся после успешного CI.

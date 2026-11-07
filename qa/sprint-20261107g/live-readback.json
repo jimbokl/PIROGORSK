@@ -1,0 +1,291 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-07T06:46:01.333Z",
+  "expectedSha": "b891f802e3e68aec1d8ecca9a2036a835a87b1ff",
+  "artifactRoot": "/Volumes/DevSim/Artifacts/pirogorsk-sprint-20261107g-ranged/site",
+  "pages": [
+    {
+      "path": "/journal/gde-poest-s-detmi-v-kaliningrade/",
+      "canonical": "https://pirogorsk.ru/journal/gde-poest-s-detmi-v-kaliningrade/",
+      "bytes": 275326,
+      "sha256": "a8cf6d7a23b397f7cfee377e8aae7ba8a7d6fbb1cd7863176d2970026c30601f",
+      "modified": "2026-11-07"
+    },
+    {
+      "path": "/journal/pozdniy-uzhin-v-kaliningrade/",
+      "canonical": "https://pirogorsk.ru/journal/pozdniy-uzhin-v-kaliningrade/",
+      "bytes": 275002,
+      "sha256": "44dbb413ef69a7644f1e470292341f29b02fe1e212bddf638afb0cb7f737a4af",
+      "modified": "2026-11-07"
+    },
+    {
+      "path": "/journal/gde-poest-v-svetlogorske/",
+      "canonical": "https://pirogorsk.ru/journal/gde-poest-v-svetlogorske/",
+      "bytes": 338610,
+      "sha256": "ab823e1588c79eec4422c0469db5a4aba0f10794ae83472b4c560e7fc1868c0b",
+      "modified": "2026-11-07"
+    },
+    {
+      "path": "/",
+      "bytes": 1228954,
+      "sha256": "7b6ca901cbb6be9269e1fd1cacd1f16aab06cf7d4694c41cc5dccb60f9d6d5e8"
+    },
+    {
+      "path": "/menu/",
+      "bytes": 1212065,
+      "sha256": "c5bb158198423892883e21ea336001f35dd6af8e143b89e4052d4cdb517e1057"
+    },
+    {
+      "path": "/blog/",
+      "bytes": 454171,
+      "sha256": "dc1045c518b22099f600244d9dce47ff664a930214df5ebe2e687aa16205249e"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/gde-poest-s-detmi-v-kaliningrade.BEacNyxT_Z1pVM0V.webp",
+      "bytes": 87482,
+      "sha256": "3773430ff657a0f3188ae0923f758f718e2f5fed582566bc7173eab447a73042",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/gde-poest-s-detmi-v-kaliningrade-1.BbLMJ8Sy_ZBWcOf.webp",
+      "bytes": 29906,
+      "sha256": "aaf2277ef7626c8501ea5088ba7009bcadba39274674a05b059c5572b0b4f5c0",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/gde-poest-s-detmi-v-kaliningrade-2.DGuds9jC_ZulDh4.webp",
+      "bytes": 29160,
+      "sha256": "b1ce7e51dbe038cd796ea37700a9e99ca369bb8916aad5784f1271b4e3b70f6c",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/seo/blog/gde-poest-s-detmi-v-kaliningrade.jpg",
+      "bytes": 179256,
+      "sha256": "9dd00bf044cc8256c8c9c54b147f51eeb7a654def571af78ba83f930132c8fa1",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/pozdniy-uzhin-v-kaliningrade.CJ0CnPLb_ZTn5Al.webp",
+      "bytes": 88990,
+      "sha256": "059a0a406f93d0ce0ec7eb46383175674e4038b51183e179da75bcf16c5926fa",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/pozdniy-uzhin-v-kaliningrade-1.BYrk-v2O_2uEFvF.webp",
+      "bytes": 30744,
+      "sha256": "87d7b3f2ff311462c4010d7603f9141a7758f9ca64de122f0ececfca960a2dce",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/pozdniy-uzhin-v-kaliningrade-2.DulqIq9t_Z1eydz.webp",
+      "bytes": 29562,
+      "sha256": "872dd0e0447e2e5437809136908ed4c3dea1f5244c707455061d0f23604369da",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/seo/blog/pozdniy-uzhin-v-kaliningrade.jpg",
+      "bytes": 181781,
+      "sha256": "3640845d79e3cd1667c7f23d28fbc819a656aab43f54bc4064841ca166e59695",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_Z2bib7A.avif",
+      "bytes": 21887,
+      "sha256": "bdf055c0c267bf13064ea70599cc31ba6cde2c11bf719b8893d12eb8dd5a9015",
+      "localMatches": false,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_Z17ExJg.avif",
+      "bytes": 37911,
+      "sha256": "a4fbbcd8614db02e5243d8479a6aadb1ec898add3841b23bf9b9cc644ca39fb0",
+      "localMatches": false,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_JyERv.avif",
+      "bytes": 49042,
+      "sha256": "4e4e891d7898435063f358bc4c409d387ff2425ccdd27cd0963e0120154cd50c",
+      "localMatches": false,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_FKp0F.webp",
+      "bytes": 24916,
+      "sha256": "f73d942a63b2770e0d37ea78d7dba6ddf19d57ea9e0f2169228999ae773186ea",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_1Jo2o0.webp",
+      "bytes": 43178,
+      "sha256": "9146b27f7f473588602f009307f07c8fe0454d59ab114aa8e12bca4802b3b08e",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_Z1syRNa.webp",
+      "bytes": 54318,
+      "sha256": "20e09f894d7d3996f4d84f208f938065f2bedf81706101c4a2bdd162abc68bdc",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_ZYpWTV.avif",
+      "bytes": 44616,
+      "sha256": "39a823c9b2ea1245fe87f4eac24cf6afc11f04bc3e9bf933d738102665a36d89",
+      "localMatches": false,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_1VqS5a.avif",
+      "bytes": 119203,
+      "sha256": "ed3f30b7851bf05e3dd6e61914a1b3dda2458b3f87683e5799a264c4826d5b6d",
+      "localMatches": false,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_Z2r3nBh.avif",
+      "bytes": 248046,
+      "sha256": "d74c4624e5dfed0c5a371d46935b9dc3c09ba661b3c9583033239cbabec2cc45",
+      "localMatches": false,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_1RCCdk.webp",
+      "bytes": 35728,
+      "sha256": "ba8d507101049e903dd3b8f2fd605f704312ab8d81c44cf99dd4006bc97f5d8c",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_ZgGEAv.webp",
+      "bytes": 95462,
+      "sha256": "3f45bbcb89b5a29b2f9bafb36e317bcae93143611dcb0239494fb0d4305c7366",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_4nvEX.webp",
+      "bytes": 201388,
+      "sha256": "5726a0e50d6f227afa48363a78f76663935498a1a83c3bdf7cc7d41565b5547d",
+      "localMatches": true,
+      "reference": "CI Pages artifact"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kak-narezat-pirog/",
+      "status": 200
+    },
+    {
+      "path": "/journal/gde-poest-v-kaliningrade/",
+      "status": 200
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kak-razogret-pirog-v-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/journal/gde-poest-s-detmi-v-kaliningrade/",
+      "status": 200
+    },
+    {
+      "path": "/journal/zavtrak-na-baltike/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kenigsbergskiy-martsipan/",
+      "status": 200
+    },
+    {
+      "path": "/journal/nedorogo-poest-semey-v-svetlogorske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/baltiyskaya-kuhnya-dlya-detey/",
+      "status": 200
+    }
+  ],
+  "localImageByteDifferences": [
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_Z2bib7A.avif",
+      "publishedSha256": "bdf055c0c267bf13064ea70599cc31ba6cde2c11bf719b8893d12eb8dd5a9015",
+      "localSha256": "6ca7f73e6a88e5f03215000a5a520f3110a6f2df217322098ff0457381f3b410",
+      "publishedBytes": 21887,
+      "localBytes": 22156
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_Z17ExJg.avif",
+      "publishedSha256": "a4fbbcd8614db02e5243d8479a6aadb1ec898add3841b23bf9b9cc644ca39fb0",
+      "localSha256": "f6d11366a4aa0458042d821c519a3f17c385420c7835b248e39580349ce7d832",
+      "publishedBytes": 37911,
+      "localBytes": 38119
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.DAqTcKan_JyERv.avif",
+      "publishedSha256": "4e4e891d7898435063f358bc4c409d387ff2425ccdd27cd0963e0120154cd50c",
+      "localSha256": "7c7901195081b28f64c117fc2ca378605cba831904c0ae83e7a97283c0a7ccd3",
+      "publishedBytes": 49042,
+      "localBytes": 49391
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_ZYpWTV.avif",
+      "publishedSha256": "39a823c9b2ea1245fe87f4eac24cf6afc11f04bc3e9bf933d738102665a36d89",
+      "localSha256": "16a9484f4ac5eb92368c7027039bdd2f5519c010724dc73f343a23d182a4a5e7",
+      "publishedBytes": 44616,
+      "localBytes": 44790
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_1VqS5a.avif",
+      "publishedSha256": "ed3f30b7851bf05e3dd6e61914a1b3dda2458b3f87683e5799a264c4826d5b6d",
+      "localSha256": "22452ba5a179f6122347ecdd2617f9b7435b4bf58ffb22d49a5a24d06f6e170e",
+      "publishedBytes": 119203,
+      "localBytes": 120110
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_Z2r3nBh.avif",
+      "publishedSha256": "d74c4624e5dfed0c5a371d46935b9dc3c09ba661b3c9583033239cbabec2cc45",
+      "localSha256": "eb287f186f847cc7890eab80b710d04484b23cdf0b9ce0f38ca7271aea573c3b",
+      "publishedBytes": 248046,
+      "localBytes": 248278
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42346166051,
+    "headSha": "b891f802e3e68aec1d8ecca9a2036a835a87b1ff",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42346166051"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 82,
+  "sitemapUrls": 277
+}

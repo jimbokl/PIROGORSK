@@ -568,6 +568,6 @@ scrollbar + полный browser + новый CI/прод PASS, устойчив
 
 ## Спринт g · 07.11.2026 · Светлогорск и карточки
 
-- [ ] WEB-G01 · P1: три раздела/таблицы и Imagegen в существующем гиде Светлогорска; A6-63/66 оставить частичными.
-- [ ] WEB-G02 · P1: читаемые пояснения суммы и порции, стабильная высота при 1→2→99→1; сохранить ленту/154 SKU/цены.
-- [ ] WEB-G03 · P1: local check/build/unit66/Worker/SEO/registry strict, monthly185/журнал62+24/каталог6/focused5 PASS; дождаться CI и production readback. QA-17 открыта. [Протокол](qa/sprint-20261107g/README.md).
+- [x] WEB-G01 · P1: три раздела/таблицы и Imagegen в существующем гиде Светлогорска; A6-63/66 оставить частичными.
+- [x] WEB-G02 · P1: читаемые пояснения суммы и порции, стабильная высота при 1→2→99→1; сохранить ленту/154 SKU/цены.
+- [x] WEB-G03 · P1: local check/build/unit66/Worker/SEO/registry strict/monthly185/журнал62+24/каталог6/focused5 PASS; CI42346166051 SUCCESS / Pages07.11 06:34:23UTC, Worker/Pages и IndexNow PASS. Production: 6 HTML/20 assets SHA256 по CI artifact с проверенным digest, 11 ссылок/release/блог82/sitemap277; каталог154/геометрия6/форматы3/focused5 PASS, телефон/планшет просмотрены. Отличия шести локальных AVIF сохранены в протоколе; прод совпал с CI. A6-63/66 частичны, QA-17 открыта. [Протокол](qa/sprint-20261107g/README.md).
