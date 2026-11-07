@@ -20,4 +20,4 @@ Imagegen создал новую обложку по сохранённому п
 
 Архив GSC от 05.11 уже разобран в `research/content-sprint-20261107c/search-input.json`: выборка ранняя, объём мал. Новый материал выбран из месячного плана; ранжирование и спрос по нему не объявлены подтверждёнными.
 
-Приёмка и фактическая публикация — `qa/sprint-20261107d/README.md`.
+Опубликовано 07.11.2026 в runtime `b5ece2e9c6cf4608b46ca977e8b599f2b4ba74d9`, [CI 42334050232 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42334050232). [Новая статья](https://pirogorsk.ru/journal/napitki-kaliningradskoy-oblasti/) и [семейный гид](https://pirogorsk.ru/journal/gde-poest-s-detmi-v-zelenogradske/) приняты на production: пять ширин, источники/даты/изображения/таблицы, 175 просмотров месячного контента, cards30 и каталог154 PASS. [Полная приёмка](../../qa/sprint-20261107d/README.md). Частичный объём исходных A6-13/49 и пробелы данных сохранены.

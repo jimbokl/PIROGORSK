@@ -1,0 +1,118 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-07T03:47:01.774Z",
+  "expectedSha": "b5ece2e9c6cf4608b46ca977e8b599f2b4ba74d9",
+  "pages": [
+    {
+      "path": "/journal/napitki-kaliningradskoy-oblasti/",
+      "canonical": "https://pirogorsk.ru/journal/napitki-kaliningradskoy-oblasti/",
+      "bytes": 274562,
+      "sha256": "a8599c34b0e75f276884d4faa2932d38a16f83ed2c662c751d0c8faace09a7ce",
+      "modified": "2026-11-07"
+    },
+    {
+      "path": "/journal/gde-poest-s-detmi-v-zelenogradske/",
+      "canonical": "https://pirogorsk.ru/journal/gde-poest-s-detmi-v-zelenogradske/",
+      "bytes": 306059,
+      "sha256": "911be28e6b1f611faec077fa302b17f47e7646cdd7bc3a966dda73c769520b0d",
+      "modified": "2026-11-07"
+    },
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "canonical": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+      "bytes": 308812,
+      "sha256": "cfa69f5843b0a691bd1a2e83b6ac676da97115b114ebe92c61658651ac120065",
+      "modified": "2026-11-07"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/napitki-kaliningradskoy-oblasti.DHnUskmm_1jvnEA.webp",
+      "bytes": 78738,
+      "sha256": "abe8fdd08434fd28659e2551649a2faba92526c8f8512d36c6aef0061951a6fb"
+    },
+    {
+      "path": "/_astro/napitki-kaliningradskoy-oblasti-1.BXOuNDzL_1O89PL.webp",
+      "bytes": 25340,
+      "sha256": "52e884d98a66958989ceb00b2d8ccf3df17a503de5ddf2b9482202856633f5e7"
+    },
+    {
+      "path": "/_astro/napitki-kaliningradskoy-oblasti-2.DfE4CczH_1PHw4V.webp",
+      "bytes": 27110,
+      "sha256": "ab57b7daaf1826a3ed599bc8f38296139373428f97f3600dd55c33a926145621"
+    },
+    {
+      "path": "/seo/blog/napitki-kaliningradskoy-oblasti.jpg",
+      "bytes": 162875,
+      "sha256": "c4c77608f633ceba7189ea7989acf38b10c387a65190a521014ec6ae3fb30af5"
+    },
+    {
+      "path": "/_astro/gde-poest-s-detmi-v-zelenogradske.Bx9gK8WT_Z67bYr.webp",
+      "bytes": 50934,
+      "sha256": "a75151a3d4047704f9186e7a4d096ed94eb4ddebe6fe70aa03b80c699b01cf22"
+    },
+    {
+      "path": "/seo/blog/gde-poest-s-detmi-v-zelenogradske.jpg",
+      "bytes": 140583,
+      "sha256": "6bc196b7eba6317251a74e7282419fa7bad4b2aac7b3292b78dd76e6da481974"
+    },
+    {
+      "path": "/seo/blog/gde-poest-v-zelenogradske.jpg",
+      "bytes": 148395,
+      "sha256": "dd1891229f19b5b0a22d54cd94f58e6befb69a1acb24669dbe70835cba92e362"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/kofe-i-vypechka-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+      "status": 200
+    },
+    {
+      "path": "/journal/chto-pit-s-pirogami/",
+      "status": 200
+    },
+    {
+      "path": "/journal/piknik-s-pirogom-chto-vzyat/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    },
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/journal/vegetarianskaya-eda-v-kaliningrade/",
+      "status": 200
+    },
+    {
+      "path": "/journal/gde-pozavtrakat-v-zelenogradske/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42334050232,
+    "headSha": "b5ece2e9c6cf4608b46ca977e8b599f2b4ba74d9",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42334050232"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "journalArticles": 80,
+  "sitemapUrls": 275
+}
