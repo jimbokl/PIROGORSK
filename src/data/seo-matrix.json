@@ -547,7 +547,8 @@
     "relatedArticles": [
       "/journal/gde-poest-s-detmi-v-zelenogradske/",
       "/journal/dostavka-edy-v-zelenogradske/",
-      "/journal/kofe-i-vypechka-v-zelenogradske/"
+      "/journal/kofe-i-vypechka-v-zelenogradske/",
+      "/journal/napitki-kaliningradskoy-oblasti/"
     ]
   },
   {
@@ -4930,6 +4931,29 @@
       "/journal/pekarni-i-pirogi-v-zelenogradske/",
       "/journal/chto-pit-s-pirogami/",
       "/journal/zavtrak-na-baltike/"
+    ]
+  },
+  {
+    "path": "/journal/napitki-kaliningradskoy-oblasti/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Что пить на Балтике: чай, морс и кофе к пирогам",
+    "query": "напитки калининградской области",
+    "intent": "Выбрать чай, кофе, морс или какао к прогулке и пирогам в Калининградской области; сравнить подтверждённые цены и объёмы",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/kofe-i-vypechka-v-zelenogradske/",
+      "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+      "/journal/chto-pit-s-pirogami/",
+      "/journal/piknik-s-pirogom-chto-vzyat/"
     ]
   }
 ]

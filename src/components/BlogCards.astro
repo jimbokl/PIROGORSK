@@ -5,7 +5,7 @@ interface Props { entries: readonly BlogEntry[]; searchable?: boolean }
 const { entries, searchable = false } = Astro.props;
 const wideCards = entries.length === 1 || entries.length === 2 || entries.length === 4;
 ---
-<div class:list={['blog-card-grid', { 'blog-card-grid-single': entries.length === 1, 'blog-card-grid-even': entries.length === 2 || entries.length === 4 }]}>{entries.map(entry => <article class="blog-card" data-blog-entry={searchable || undefined} data-blog-search={searchable ? `${entry.title} ${entry.description} ${entry.category}` : undefined}><a href={articleHref(entry.slug)}><div class="blog-card-image"><Picture src={entry.image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[360, 480, 680, 960]} sizes={wideCards ? '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 560px, 44vw' : '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 360px, (max-width: 900px) 44vw, 30vw'} width={640} height={427} quality={48} alt={entry.imageAlt} loading="lazy" decoding="async" /></div><h3>{entry.title}<span aria-hidden="true">↗</span></h3><div class="blog-card-meta"><span>{entry.category}</span><span>≈ {entry.minutes} мин</span></div><p>{entry.description}</p></a></article>)}</div>
+<div class:list={['blog-card-grid', { 'blog-card-grid-single': entries.length === 1, 'blog-card-grid-even': entries.length === 2 || entries.length === 4 }]}>{entries.map(entry => <article class="blog-card" data-blog-entry={searchable || undefined} data-blog-search={searchable ? `${entry.title} ${entry.description} ${entry.category}` : undefined}><a href={articleHref(entry.slug)}><div class="blog-card-image"><Picture src={entry.image} formats={['avif', 'webp']} fallbackFormat="webp" widths={[360, 480, 680, 960]} sizes={wideCards ? '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 560px, 44vw' : '(max-width: 650px) calc(100vw - 36px), (min-width: 1240px) 360px, (max-width: 900px) 44vw, 30vw'} width={640} height={427} quality={48} alt={entry.imageAlt} loading="lazy" decoding="async" /></div><h3><span class="blog-card-title">{entry.title}</span><span class="blog-card-arrow" aria-hidden="true">↗</span></h3><div class="blog-card-meta"><span>{entry.category}</span><span>≈ {entry.minutes} мин</span></div><p>{entry.description}</p></a></article>)}</div>
 <style>
   .blog-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--card-gap);align-items:stretch}
   .blog-card{min-width:0;display:grid;grid-template-rows:subgrid;grid-row:span 4;border:0;border-radius:0;background:transparent;padding:0 0 22px;row-gap:0}
@@ -16,11 +16,12 @@ const wideCards = entries.length === 1 || entries.length === 2 || entries.length
   .blog-card-meta{display:flex;justify-content:space-between;align-items:start;gap:15px;padding:0 0 12px;font-size:12px;line-height:1.6;color:var(--muted)}
   .blog-card-meta>span:first-child{color:var(--coral-ink)}
   .blog-card h3{display:flex;justify-content:space-between;gap:10px;font:500 var(--heading-card)/1.2 var(--serif);letter-spacing:-.035em;margin:0;padding:20px 0 12px}
-  .blog-card h3 span{display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--line);border-radius:50%;font:16px/1 var(--sans);flex-shrink:0;transition:background 180ms,color 180ms,border-color 180ms}
+  .blog-card-title{min-width:0;overflow-wrap:anywhere;text-wrap:pretty}
+  .blog-card h3 .blog-card-arrow{display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--line);border-radius:50%;font:16px/1 var(--sans);flex-shrink:0;transition:background 180ms,color 180ms,border-color 180ms}
   .blog-card p{font-size:14px;line-height:1.75;color:var(--muted);max-width:65ch;padding:0;margin:0}
-  .blog-card a:hover h3{color:var(--accent)}
-  .blog-card a:hover h3 span{background:var(--accent);color:var(--paper);border-color:var(--accent)}
-  @media(prefers-reduced-motion:reduce){.blog-card h3 span{transition:none}}
+  .blog-card a:is(:hover,:focus-visible) h3{color:var(--accent)}
+  .blog-card a:is(:hover,:focus-visible) h3 .blog-card-arrow{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+  @media(prefers-reduced-motion:reduce){.blog-card h3 .blog-card-arrow{transition:none}}
   .blog-card-grid-even{grid-template-columns:repeat(2,minmax(0,1fr))}
   .blog-card-grid-single{grid-template-columns:minmax(0,1fr)}
   .blog-card-grid-single .blog-card{grid-template-rows:auto;padding-bottom:8px}

@@ -1,0 +1,17 @@
+PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 390px
+PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 768px
+file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/ElementHandle.js:693
+                throw new Error('Node is either not clickable or not an Element');
+                      ^
+
+Error: Node is either not clickable or not an Element
+    at CdpElementHandle.clickablePoint (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/ElementHandle.js:693:23)
+    at async CdpElementHandle.<anonymous> (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/ElementHandle.js:119:20)
+    at async CdpElementHandle.click (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/ElementHandle.js:723:30)
+    at async CdpElementHandle.<anonymous> (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/ElementHandle.js:130:24)
+    at async CdpFrame.click (file:///Volumes/DevSim/Projects/PIROGORSK/node_modules/puppeteer-core/lib/puppeteer/api/Frame.js:754:17)
+    at async click (file:///Volumes/DevSim/Projects/PIROGORSK/worker/scripts/qa-catalog-formats.mjs:42:132)
+    at async verifyCatalogFormats (file:///Volumes/DevSim/Projects/PIROGORSK/worker/scripts/qa-catalog-formats.mjs:123:5)
+    at async file:///Volumes/DevSim/Projects/PIROGORSK/scripts/verify-catalog-polish.mjs:142:37
+
+Node.js v25.9.0

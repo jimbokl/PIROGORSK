@@ -540,3 +540,11 @@ scrollbar + полный browser + новый CI/прод PASS, устойчив
 - **CI-03 · P1 · Ожидает публикации:** recovery существующего проверенного артефакта реализован через Pages REST API / Actions OIDC. Пять unit-тестов издателя и actionlint/YAML PASS; исходные CI/SHA/digest/совместимость Worker проверены. Recovery 42329859038 принял артефакт, затем deployment_queued → syncing_files; 07.11.2026 02:55 UTC — `Pages publication timed out after 20 minutes; cancellation requested`. Поздние ответы API содержали пустой status. Worker/Pages postcheck и IndexNow skipped, причина задержки не установлена. Готовность: успешная публикация того же артефакта при изменении состояния Pages, Worker/IndexNow и независимый production readback.
 
 [Бриф](research/content-sprint-20261107c/README.md), [checkpoint](qa/sprint-20261107c/STATE.md), [результат recovery](qa/sprint-20261107c/README.md).
+
+## Напитки и семейный гид · 07.11.2026 · спринт 20261107d
+
+- **CNT-16 · P1 · Готово в коде, ожидает публикации:** статья про напитки Калининградской области и четыре новых раздела семейного гида Зеленоградска; Imagegen/схемы/четыре таблицы, первичные меню/источники/даты/перелинковка. A6-13/49 частично адаптированы, исходный объём не сокращён. Блог 80 / sitemap 275.
+- **UX-31 · P1 · Готово в коде, ожидает публикации:** длинные заголовки и отдельная стрелка карточек, равнозначный keyboard focus/hover и reduced motion; единое выравнивание сумм редакционных таблиц. Телефон/планшет и 30 состояний поиска PASS.
+- **QA-27 · P1 · В работе:** check/build/66 unit/SEO/artwork/expansion/registry strict, 175 контентных просмотров, target5, cards30 и journal62/24 PASS. Каталог 154 SKU / шесть ширин PASS; CI/production ещё проверяются. Первый отказ Puppeteer сохранён; QA-17 не закрыта. Лента/154 SKU/цены, CRM/контакты сохранены.
+
+[Бриф](research/content-sprint-20261107d/README.md), [протокол](qa/sprint-20261107d/README.md).
