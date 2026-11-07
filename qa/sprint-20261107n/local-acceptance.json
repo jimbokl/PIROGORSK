@@ -1,0 +1,54 @@
+{
+  "status": "local_pass_production_pending",
+  "runtimeCommit": "3c9ac933762ebba15f24213a8756c7ea0bb0ec83",
+  "check": {
+    "files": 654,
+    "errors": 0,
+    "warnings": 0
+  },
+  "buildPages": 285,
+  "unitTests": 66,
+  "worker": "PASS",
+  "seoOwners": 280,
+  "artworkOwners": 85,
+  "monthlyViews": 210,
+  "priorityViews": 16,
+  "focusedWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "blogCardWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "noJavaScript": true,
+  "catalogWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "catalogSource": "http://127.0.0.1:4330 (existing verifier labels QA_BASE runs production)",
+  "catalogErrors": [],
+  "catalogNetworkRetries": [],
+  "registry": {
+    "passed": true,
+    "hasDrift": false,
+    "errors": 0,
+    "warnings": 100
+  },
+  "visualReview": [
+    "local-hero-390.png",
+    "local-preparation-768.png",
+    "local-blog-card-390.png",
+    "local-blog-card-768.png"
+  ]
+}

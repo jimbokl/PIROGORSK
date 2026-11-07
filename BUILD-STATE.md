@@ -1,6 +1,8 @@
-## Спринт n · 07.11.2026 · локальная проверка пройдена, CI/прод впереди
+## Спринт n · 07.11.2026 · завершён
 
-W07-01: новый рецепт шарлотки, 7 разделов/2 таблицы/6 шагов/3 источника, две imagegen-иллюстрации. Исходный выбор яблок сохранён и связан в обе стороны. Build285/check654/unit66/Worker/SEO280/artwork85/monthly210/priority16/focused5/blog-card5 PASS. Карточка и статья390/768 просмотрены. [Состояние и следующий шаг](qa/sprint-20261107n/STATE.md). Лента/154 SKU/цены/CRM/контакты сохранены.
+W07-01: опубликован рецепт шарлотки,7 разделов/2 таблицы/6 шагов/3 источника, две imagegen-иллюстрации и двусторонние ссылки с выбором яблок. Local check654/build285/unit66/Worker/SEO280/artwork85/monthly210/priority16/focused5/blog-card5/catalog6/registry PASS.
+
+Runtime `3c9ac933762ebba15f24213a8756c7ea0bb0ec83`; [CI42384307114 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42384307114), Pages07.11 15:21:49UTC; Worker/Pages/IndexNow PASS. Production9 HTML SHA256/144 ресурса (73 байт-совпадения,71 AVIF размеры/декодирование)/4 ссылки; блог85/sitemap280; focused5/blog-card5/catalog6 PASS, телефон/планшет просмотрены. Один503 AVIF восстановился200 и полным повтором verifier, причина не установлена. Лента/154 SKU/цены/CRM/контакты сохранены. SEO-11/W07-02/03, QA-17/PERF-01 и индексация открыты. [Протокол](qa/sprint-20261107n/README.md).
 
 ## SEO-01 · 07.11.2026 · региональный хвост исследован, задача частична
 

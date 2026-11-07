@@ -18,8 +18,11 @@
     "serpVerified": false,
     "frequencyInterpretation": "Отдельные строки экспорта Wordstat; вложенные запросы не складывать. Период в CSV 06.10–06.11.2026; экран показывал другой период.",
     "previousRelatedOwnerURL": "https://pirogorsk.ru/journal/yabloki-dlya-piroga/",
-    "status": "implemented_awaiting_ci_and_production",
-    "evidence": "research/content-sprint-20261107n/brief.md"
+    "status": "published_verified",
+    "evidence": "research/content-sprint-20261107n/brief.md",
+    "verification": "qa/sprint-20261107n/acceptance-final.json",
+    "runtimeCommit": "3c9ac933762ebba15f24213a8756c7ea0bb0ec83",
+    "ciURL": "https://github.com/jimbokl/PIROGORSK/actions/runs/42384307114"
   },
   {
     "id": "W07-02",

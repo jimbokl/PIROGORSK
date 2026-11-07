@@ -1,0 +1,74 @@
+{
+  "status": "published_verified",
+  "checked": "2026-11-07T15:29:32.947345+00:00",
+  "runtimeCommit": "3c9ac933762ebba15f24213a8756c7ea0bb0ec83",
+  "ci": {
+    "id": 42384307114,
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42384307114",
+    "conclusion": "success",
+    "pagesCompletedAt": "2026-11-07T15:21:49Z"
+  },
+  "localEvidence": "local-acceptance.json",
+  "production": {
+    "htmlSha256Matches": 9,
+    "assets": 144,
+    "assetByteMatches": 73,
+    "decodedAvif": 71,
+    "internalLinks200": 4,
+    "articleCount": 85,
+    "sitemapCount": 280,
+    "focusedWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "blogCardWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "catalogWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "catalogErrors": [],
+    "catalogNetworkRetries": [],
+    "workerPagesCompatibility": "PASS",
+    "transientFailure": {
+      "firstStatus": 503,
+      "path": "/_astro/drinks-table.BIrLKuQs_Z19bIFk.avif",
+      "immediateRecheckStatus": 200,
+      "completeUnmodifiedVerifierRerun": "PASS",
+      "cause": "not established",
+      "originalLog": "live-readback-first.log"
+    }
+  },
+  "visualReview": [
+    "production-hero-390.png",
+    "production-preparation-768.png",
+    "production-blog-card-390.png",
+    "production-blog-card-768.png",
+    "catalog-production/production-home-cards-390.png",
+    "catalog-production/production-home-cards-768.png"
+  ],
+  "invariants": {
+    "skuCount": 154,
+    "catalogSourceSha256": "84ec663dfc312f869f8d4b563095acfa5ca5d86acaf6473ccaa90c25894dc7a0",
+    "feedAndPricesPreserved": true,
+    "crmAndContactsUntouched": true,
+    "voiceOverStarted": false
+  },
+  "remaining": [
+    "SEO-11 content queue including W07-02/03",
+    "QA-17 rare physical-click failure not reproduced",
+    "PERF-01 PSI/CrUX and search indexing monitoring"
+  ]
+}

@@ -1,0 +1,20 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: /_astro/drinks-table.BIrLKuQs_Z19bIFk.avif
+
+503 !== 200
+
+    at get (file:///Volumes/DevSim/Projects/PIROGORSK/qa/sprint-20261107n/verify-live.mjs:11:115)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///Volumes/DevSim/Projects/PIROGORSK/qa/sprint-20261107n/verify-live.mjs:37:15 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 503,
+  expected: 200,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0
