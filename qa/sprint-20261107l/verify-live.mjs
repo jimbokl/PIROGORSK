@@ -20,7 +20,7 @@ report.articleCount=new Set([...blog.matchAll(/href="(\/journal\/[^"?#]+\/)"/g)]
 assert.equal(report.articleCount,84);
 const sitemap=(await get('/sitemap.xml')).toString();report.sitemapCount=[...sitemap.matchAll(/<loc>/g)].length;assert.equal(report.sitemapCount,279);
 const assets=new Set([`/seo/blog/${slug}.jpg`]),links=new Set();
-for(const path of [articlePath,'/journal/pesochnoe-testo-dlya-kisha/','/','/menu/','/blog/','/zelenogradsk/','/svetlogorsk/']){
+for(const path of [articlePath,'/journal/pekarni-svetlogorska/','/journal/sloenoe-ili-drozhzhevoe-testo/','/journal/pesochnoe-testo-dlya-kisha/','/','/menu/','/blog/','/zelenogradsk/','/svetlogorsk/']){
  const actual=await get(path),local=await readFile(`site${path}index.html`),html=actual.toString();
  assert.equal(hash(actual),hash(local),`Published HTML ${path}`);assert(html.includes(`rel="canonical" href="${base+path}"`));
  report.pages.push({path,bytes:actual.length,sha256:hash(actual)});

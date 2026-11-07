@@ -1,0 +1,200 @@
+{
+  "checked": "2026-11-07T12:57:30.155Z",
+  "base": "https://pirogorsk.ru",
+  "sha": "d7a11df2e69db33ea91775806b0d53afc2cd6570",
+  "pages": [
+    {
+      "path": "/journal/gde-pozavtrakat-v-zelenogradske/",
+      "bytes": 317164,
+      "sha256": "e888768b54b26cf24e2690d03e977c78cec8ed69cd1299ee0945a7931cf0d9a5"
+    },
+    {
+      "path": "/journal/pekarni-svetlogorska/",
+      "bytes": 272161,
+      "sha256": "11fe38f6654134812519ea4d6d2635841a70265c41db7901f342580814508ed7"
+    },
+    {
+      "path": "/journal/sloenoe-ili-drozhzhevoe-testo/",
+      "bytes": 281001,
+      "sha256": "fa2fb7719d95c8000d5b6b5af770b3312c75ea3ac043b592086e12d9567b08f0"
+    },
+    {
+      "path": "/journal/pesochnoe-testo-dlya-kisha/",
+      "bytes": 269105,
+      "sha256": "9c6b3c18a14627594712772bd411c3b16f973f2cfeb2471ee45d97c2c97fe56f"
+    },
+    {
+      "path": "/",
+      "bytes": 1228982,
+      "sha256": "e5ecd50ac1d4ec40a97bc806505db643b8b649101193f95cbfb18c514009a906"
+    },
+    {
+      "path": "/menu/",
+      "bytes": 1212065,
+      "sha256": "47f72ea69c539eb52103d51a2004e5beba90d7a88c54b716f8302faab32a7155"
+    },
+    {
+      "path": "/blog/",
+      "bytes": 460038,
+      "sha256": "c79c25a0c0872e7ebb80b76705938d4d709eb4f1d761b28f503c1383c8a5e1ca"
+    },
+    {
+      "path": "/zelenogradsk/",
+      "bytes": 254474,
+      "sha256": "b9c803104cbaf95d122483626a13da22ff826b0a0cc83eb6666d9bf665298373"
+    },
+    {
+      "path": "/svetlogorsk/",
+      "bytes": 254239,
+      "sha256": "155c1458bd567312f4e0f8479c8a36cd2d943067b69214528d5e4570918a2f15"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/seo/blog/gde-pozavtrakat-v-zelenogradske.jpg",
+      "bytes": 127797,
+      "sha256": "4dd267decde338d4d9cf93e9cd17d780efb4d929b838ca0676d12e61e82c32f8",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/zelenogradsk-breakfast.DlgxdJfh_WSqFY.avif",
+      "bytes": 19508,
+      "sha256": "d79523fedc616884c3abb5830545962f08ccfcfb9e4358186597f0e490f2d8f4",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/zelenogradsk-breakfast.DlgxdJfh_1gLGUq.avif",
+      "bytes": 34882,
+      "sha256": "d4063dcfae23387bb69a24eadf5bc4815b6753eeeb426605e242d8aea3b9770f",
+      "localMatches": false,
+      "decoded": true,
+      "width": 680,
+      "height": 453,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/zelenogradsk-breakfast.DlgxdJfh_ZERnBk.avif",
+      "bytes": 44670,
+      "sha256": "c9b269e50f58a9d257947eef4c50af79f43b4169dbcf45b9d4c7b6c078c323eb",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 533,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/zelenogradsk-breakfast.DlgxdJfh_Z1AQMPH.webp",
+      "bytes": 21042,
+      "sha256": "5d29c912a186d73d970e346a849868081188baba19e45e04d53686c84da3d7fe",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/zelenogradsk-breakfast.DlgxdJfh_Z1hXwBg.webp",
+      "bytes": 36396,
+      "sha256": "1b9124c9b9de7da66d48e88e2c571e075c3ae60a019242af9933834a82d66ded",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/zelenogradsk-breakfast.DlgxdJfh_1PyvEU.webp",
+      "bytes": 46414,
+      "sha256": "f14caed10a7ad1870d4b0726cd2acb5d13ab7c62fb9eaff6f7df7948ed7a441a",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_ZYpWTV.avif",
+      "bytes": 44616,
+      "sha256": "39a823c9b2ea1245fe87f4eac24cf6afc11f04bc3e9bf933d738102665a36d89",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_1VqS5a.avif",
+      "bytes": 119203,
+      "sha256": "ed3f30b7851bf05e3dd6e61914a1b3dda2458b3f87683e5799a264c4826d5b6d",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 533,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_Z2r3nBh.avif",
+      "bytes": 248046,
+      "sha256": "d74c4624e5dfed0c5a371d46935b9dc3c09ba661b3c9583033239cbabec2cc45",
+      "localMatches": false,
+      "decoded": true,
+      "width": 1200,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_1RCCdk.webp",
+      "bytes": 35728,
+      "sha256": "ba8d507101049e903dd3b8f2fd605f704312ab8d81c44cf99dd4006bc97f5d8c",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_ZgGEAv.webp",
+      "bytes": 95462,
+      "sha256": "3f45bbcb89b5a29b2f9bafb36e317bcae93143611dcb0239494fb0d4305c7366",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/svetlogorsk-breakfast.CzT8rEmT_4nvEX.webp",
+      "bytes": 201388,
+      "sha256": "5726a0e50d6f227afa48363a78f76663935498a1a83c3bdf7cc7d41565b5547d",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/dostavka-edy-v-zelenogradske/",
+      "status": 200
+    },
+    {
+      "path": "/journal/uzhin-v-semnyh-apartamentah/",
+      "status": 200
+    },
+    {
+      "path": "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "status": 200
+    },
+    {
+      "path": "/journal/pekarni-i-pirogi-v-zelenogradske/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42373204059,
+    "headSha": "d7a11df2e69db33ea91775806b0d53afc2cd6570",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42373204059"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "articleCount": 84,
+  "sitemapCount": 279
+}

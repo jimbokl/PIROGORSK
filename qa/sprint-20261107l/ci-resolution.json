@@ -1,0 +1,20 @@
+{
+  "firstRun": 42372591480,
+  "firstRunConclusion": "failure",
+  "failedCheck": "node scripts/verify-expansion.mjs",
+  "cause": "Adding original.sources implicitly removed the existing party calculator, visible FAQ and FAQPage/ItemList schema from the breakfast owner URL.",
+  "fix": "BlogArticle.tools explicitly retains party tools independently from source metadata; breakfast opts in. Existing legacy defaults and other routes are preserved.",
+  "runtimeCommit": "d7a11df2e69db33ea91775806b0d53afc2cd6570",
+  "replacementRun": 42373204059,
+  "regression": "Five widths check source count, calculator and FAQ presence, FAQPage/ItemList, keyboard guest-count update, city-specific transfer, opened FAQ and no page overflow.",
+  "local": [
+    "check 0 errors/0 warnings",
+    "build 284",
+    "unit 66",
+    "expansion 36",
+    "SEO 284/154/279",
+    "focused widths 320/390/768/1024/1280"
+  ],
+  "replacementConclusion": "success",
+  "productionAcceptance": "passed"
+}

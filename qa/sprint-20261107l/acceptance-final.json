@@ -1,0 +1,100 @@
+{
+  "checked": "2026-11-07T13:02:05.340376+00:00",
+  "status": "passed",
+  "runtimeCommit": "d7a11df2e69db33ea91775806b0d53afc2cd6570",
+  "ci": {
+    "run": 42373204059,
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42373204059",
+    "conclusion": "success"
+  },
+  "publicationUTC": "2026-11-07T12:56:27Z",
+  "content": {
+    "newArticle": "/journal/pekarni-svetlogorska/",
+    "refreshedArticles": [
+      "/journal/sloenoe-ili-drozhzhevoe-testo/",
+      "/journal/gde-pozavtrakat-v-zelenogradske/"
+    ],
+    "curatedBlogArticles": 84,
+    "sitemapURLs": 279,
+    "breakfastSections": 10,
+    "breakfastTables": 4,
+    "breakfastSources": 5,
+    "breakfastFigures": 2
+  },
+  "polish": [
+    "Shared reading time for 13 updated article/card pairs",
+    "Compact price-table headings wrap without forcing page overflow",
+    "Existing breakfast calculator/FAQ retained independently from source metadata"
+  ],
+  "local": {
+    "checkErrors": 0,
+    "checkWarnings": 0,
+    "unitTests": 66,
+    "htmlPages": 284,
+    "expansionTargets": 36,
+    "preservedBaselineNeighbours": 61,
+    "preservedOtherUpdateOwners": 9
+  },
+  "production": {
+    "htmlSHA256": 9,
+    "assets": 13,
+    "internalLinksHTTP200": 5,
+    "focusedWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "blogCardWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "catalogWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "catalogSKU": 154,
+    "catalogErrors": [],
+    "networkRetries": [],
+    "keyboardCalculatorAndFaq": true,
+    "noJavaScript": true,
+    "visualReview": [
+      "production-cards-390.png",
+      "production-long-card-768.png",
+      "production-breakfast-budget-390.png",
+      "production-blog-card-768.png"
+    ]
+  },
+  "preserved": {
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20",
+    "infiniteFeed": true,
+    "prices": true,
+    "crmAndContacts": true,
+    "voiceOverNotActivated": true
+  },
+  "remaining": [
+    "SEO-11: continue demand-led article owners; A6-44/58 remain partial, not padded to the requested place count",
+    "Fresh hours for ZavtraK and current Royal Lions breakfast tariff/access unconfirmed; historical facts are dated",
+    "QA-17 requires a reproducible real click trace; this run did not reproduce it",
+    "Fresh public PSI/CrUX remains a separate observation; no new public PSI result claimed",
+    "Ranking/indexation response after publication not yet measured"
+  ],
+  "evidence": [
+    "ci-final.json",
+    "ci-resolution.json",
+    "live-readback.json",
+    "production-focused.json",
+    "production-blog-card.json",
+    "production-reading.json",
+    "catalog-production/production-report.json",
+    "baseline-proof.json"
+  ]
+}

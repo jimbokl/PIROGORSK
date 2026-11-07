@@ -69,6 +69,16 @@ try{
   }));
   assert.equal(article.sections,10);assert.equal(article.tables,4);assert.equal(article.figures,2);assert.equal(article.h1,1);
   assert.equal(article.tools.calculator,1);assert.equal(article.tools.faq,1);assert(article.tools.schema.includes('FAQPage')&&article.tools.schema.includes('ItemList'));
+  await page.$eval('#article-tools',el=>{el.open=true;});
+  await page.$eval('[data-party-form] input[name="guests"]',el=>el.focus());
+  await page.keyboard.press('Home');await page.keyboard.press('ArrowRight');
+  assert.equal(await page.$eval('[data-guests]',el=>el.textContent),'2');
+  assert(await page.$eval('[data-party-apply]',el=>new URL(el.href).searchParams.get('city')==='zelenogradsk'));
+  await page.click('.guide-faq details:first-of-type summary');
+  assert(await page.$eval('.guide-faq details:first-of-type',el=>el.open));
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Expanded article tools must fit');
+  await page.$eval('#article-tools',el=>{el.open=false;});
+  article.tools.keyboardInteraction=true;
   await writeFile(output+stage+'-article-progress.json',JSON.stringify({width,article},null,2)+'\n');
   assert.equal(article.dates.datePublished,'2026-10-26');assert.equal(article.dates.dateModified,'2026-11-07');assert.equal(article.sources.length,5);assert.equal(article.catalogCTA,1);assert.equal(article.canonical,'https://pirogorsk.ru'+path);assert(!article.overflow);assert(article.anchors&&article.tableSemantics&&article.newTablesFit);
   for(const text of ['1580 ₽','Пограничная, 1','26 октября','исторический расчёт','404','Кофе и завтрак с собой'])assert(article.text.includes(text),text);
