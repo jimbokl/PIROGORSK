@@ -1,0 +1,1394 @@
+{
+  "checked": "2026-11-07T18:51:57.721Z",
+  "base": "https://pirogorsk.ru",
+  "sha": "8b36b79f1b792252e362dd91e5ce2b5c11c7839a",
+  "pages": [
+    {
+      "path": "/",
+      "bytes": 1230361,
+      "sha256": "ecc5309e869adb0dd749f63ff7036a3dc3fd746b8d0948ebcbec51da49c9371a"
+    },
+    {
+      "path": "/menu/",
+      "bytes": 1212603,
+      "sha256": "de744c1345ca0d7cf344980de705d122beb69bf29e458d5d40d763efb02b742e"
+    },
+    {
+      "path": "/pirogi/rybnyy-pirog/",
+      "bytes": 288117,
+      "sha256": "f2ae0667b4dc5e6497d00a0c389a13d49a759213fe9af2c59b326e7379245cfa"
+    },
+    {
+      "path": "/catalog/osetinskiy-pirog-s-kuritsey-i-syrom/",
+      "bytes": 288705,
+      "sha256": "0e33adf9dc6128a8fafba17dcf95b5ecf43ad46e7d8e86c47321eb5817aa6553"
+    },
+    {
+      "path": "/delivery/",
+      "bytes": 211932,
+      "sha256": "a446b6656f6efa6a726293ca5d9437af5f1417821d8a25e6d6bef151f32385a4"
+    },
+    {
+      "path": "/zelenogradsk/",
+      "bytes": 255012,
+      "sha256": "339df7954937df377ab349ab7eb70a88ff4f08316058da4ffffd5a3095f7bd08"
+    },
+    {
+      "path": "/svetlogorsk/",
+      "bytes": 254777,
+      "sha256": "8fd98898d6c5e6b8cb40461628b5f4df9c0c10466e4f806d8a0aaa7e5e84c1cb"
+    },
+    {
+      "path": "/kaliningrad/",
+      "bytes": 254840,
+      "sha256": "cd05b615f895f125678a37d95f04c448e4d9713c65cf3ffd1cfe9cd6943d273d"
+    },
+    {
+      "path": "/blog/",
+      "bytes": 470755,
+      "sha256": "9125771c48551826be8927126a6bef562c4bf2d564baec1fdada894427512859"
+    },
+    {
+      "path": "/journal/kish-s-kuritsey-i-gribami/",
+      "bytes": 274670,
+      "sha256": "0ea7308e95865c241f8afd078846b55525d10069372a65f57c7666b65e75965c"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/seo/blog/kish-s-kuritsey-i-gribami.jpg",
+      "bytes": 173205,
+      "sha256": "00c1dd10ce532ec0ad718447ccb46b768c9c5815325e37df9e6cc24e9d721444",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/ProductVisual.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+      "bytes": 38,
+      "sha256": "a1245db7bbe51c23ded02852651413cd1b463891c75f03c974983f3abf8b0a80",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/SupplierArtwork.astro_astro_type_script_index_0_lang.BbBFwyAK.js",
+      "bytes": 38,
+      "sha256": "a1245db7bbe51c23ded02852651413cd1b463891c75f03c974983f3abf8b0a80",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/InterestForm.astro_astro_type_script_index_0_lang.BtwPqz_A.js",
+      "bytes": 9811,
+      "sha256": "a6c80570569d083a2cabc9003f205a65b8cdeb8865d58e988f7eaba822da1d18",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/SelectionUI.astro_astro_type_script_index_0_lang.BUqFfBvT.js",
+      "bytes": 33,
+      "sha256": "ef113c67ef77d65855dcc44583dab28cc7dd0c7f78b20d5801cd46e8eec06766",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/Analytics.astro_astro_type_script_index_0_lang.SRka9HCd.js",
+      "bytes": 32,
+      "sha256": "baa7ed9000bafd87f227661aa8b63911af96450deed74d2a896a6d89cbad22a6",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/index.astro_astro_type_script_index_0_lang.f5_FaPdh.js",
+      "bytes": 3366,
+      "sha256": "87d25d6127a95ca120b12a02cd21eb6458e46b40a43f671dab170e4b286d2bda",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/SupplierCatalog.astro_astro_type_script_index_0_lang.C5H60Y_p.js",
+      "bytes": 3287,
+      "sha256": "367c71f920d494eb98ea52de8c405315f1afb8af2296208e1a2ea9647ca6f550",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/menu.astro_astro_type_script_index_0_lang.Bn7USkx8.js",
+      "bytes": 2088,
+      "sha256": "f3b3e2e00e729cd8da4d7a1702b466693a7b99db23c25a36e96fbf47af95c5d9",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/ProductOptions.astro_astro_type_script_index_0_lang.fwnHyzKP.js",
+      "bytes": 2562,
+      "sha256": "d7bc3010f1184a388903bcf08626f14472f486b84d8afbe09ea0da97befba368",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/ProductAddOns.astro_astro_type_script_index_0_lang.BJI-ZVMr.js",
+      "bytes": 1797,
+      "sha256": "02b63823852ed6ac8a7f2ff93d0f803b26ad4b4518492a3e2f2643e3a9aec14b",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/BlogSearch.astro_astro_type_script_index_0_lang.D_cwOAXg.js",
+      "bytes": 1997,
+      "sha256": "fa5aa3889f5282888479559a77cac7d434dc57cc9ba1e9c125db7273156b0d8b",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/journal-town.B8TPySfB_ZIoYPe.avif",
+      "bytes": 3531,
+      "sha256": "5dd9d35992dd1f4407e995157151e1eba5d5337ba3505f7b0143af0da3a8d3aa",
+      "localMatches": false,
+      "decoded": true,
+      "width": 80,
+      "height": 80,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/journal-town.B8TPySfB_28sMHa.avif",
+      "bytes": 8297,
+      "sha256": "4289f537712e5ea246080f45a1bf5e91c2b565c3278780be44b594eef5d7d78b",
+      "localMatches": false,
+      "decoded": true,
+      "width": 160,
+      "height": 160,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/journal-town.B8TPySfB_ZIXDpU.webp",
+      "bytes": 4392,
+      "sha256": "818a5973ee1be8852bcc7c375c5ae070f486f81fd19660764172186b9f902f83",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/journal-town.B8TPySfB_Z1IbFHz.webp",
+      "bytes": 12016,
+      "sha256": "e8f5d8c815ebcd3117b200c713d49bcf498b5f1af7b1cc4dead5ae97c182ecd1",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/journal-town.B8TPySfB_ZJ0gdd.webp",
+      "bytes": 3178,
+      "sha256": "a5ecaf6f428ca44968da30bec61508f417df16ffbe7031c7dd1174d7a1b7dcfc",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/kish-s-kuritsey-i-gribami.yCPsjOt6_ZKyPY8.avif",
+      "bytes": 30837,
+      "sha256": "4295b406ff332a33eca04c4ce753d5743575b4ce61e5defc6df852d27f2d1151",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/kish-s-kuritsey-i-gribami.yCPsjOt6_2rdaP5.avif",
+      "bytes": 59230,
+      "sha256": "156c8cd42b0b75fc41eddc7cd11de8ca86d555a7f048ddae6796456f338f7cf2",
+      "localMatches": false,
+      "decoded": true,
+      "width": 680,
+      "height": 453,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/kish-s-kuritsey-i-gribami.yCPsjOt6_ZneKzB.avif",
+      "bytes": 79669,
+      "sha256": "958aca10c5a64b84d2084d96a4158170e042c6091a6069dc482f56b405664b10",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 533,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/kish-s-kuritsey-i-gribami.yCPsjOt6_ZemIcx.avif",
+      "bytes": 159547,
+      "sha256": "c0d396bae0664b2bf0446906199cc34910e25c4dad0c71da6a9fa66860b55843",
+      "localMatches": false,
+      "decoded": true,
+      "width": 1200,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/kish-s-kuritsey-i-gribami.yCPsjOt6_n1BEO.webp",
+      "bytes": 32482,
+      "sha256": "1fe5b62ea860b65fa52890cb23d3666462a90c46b0c3a952c8885ea20456ab35",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/kish-s-kuritsey-i-gribami.yCPsjOt6_Z1unujT.webp",
+      "bytes": 61684,
+      "sha256": "ed9f8a7c5291d25a4881e4580489e5f861791a21e42c3b3523cae67e9b6f80eb",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/kish-s-kuritsey-i-gribami.yCPsjOt6_KlH4l.webp",
+      "bytes": 82046,
+      "sha256": "3a8a36bda618b86f61af280a13490c70a512a5884e0e7d59abc533dffeacead0",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/kish-s-kuritsey-i-gribami.yCPsjOt6_ZseaCB.webp",
+      "bytes": 163080,
+      "sha256": "ae2c013c86db2f5226761b92ef4ba20827309f0923b85db339170693362d564c",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/quiche-recipe-assembly.CQfDB5PF_1B2m2n.avif",
+      "bytes": 42893,
+      "sha256": "595ca4c66a5dae6c3d17dedfcf6b41c5d76edf4a25914292e986091f376be7bc",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/quiche-recipe-assembly.CQfDB5PF_Z1IsfV.avif",
+      "bytes": 112956,
+      "sha256": "7f2c0f2e57b6ba8d728e706a5af4b66c96e3fed806768f3def7dfe6462085576",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 533,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/quiche-recipe-assembly.CQfDB5PF_Z19N0gC.avif",
+      "bytes": 226298,
+      "sha256": "4f0c15733e0fbd5514c247d9508fd52ebcff38bd2fc7cf3538b0503940374b00",
+      "localMatches": false,
+      "decoded": true,
+      "width": 1200,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/quiche-recipe-assembly.CQfDB5PF_ZWHRuj.webp",
+      "bytes": 33250,
+      "sha256": "1f9d15cbb199445ec7693ac716a0a76bdf402b405ce75a551ce76c784e895904",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/quiche-recipe-assembly.CQfDB5PF_2tHr1j.webp",
+      "bytes": 86164,
+      "sha256": "75a248b61d59ebb980d5d27d3ab03772cfc47e71eb1e7fe23a2b4dbbe51b855a",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/quiche-recipe-assembly.CQfDB5PF_wRUcY.webp",
+      "bytes": 173624,
+      "sha256": "0078e0ce1ebb392a7803941b38facb75c8558ede62112e463d65caef74d0f833",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie-islands.B_yt5wp5_1Ag1JU.avif",
+      "bytes": 8330,
+      "sha256": "1ff2668fcc4052e49e67f2587069cc57adace906077724a646c475ceabd524ea",
+      "localMatches": false,
+      "decoded": true,
+      "width": 160,
+      "height": 160,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie-islands.B_yt5wp5_ZVpVnt.avif",
+      "bytes": 14083,
+      "sha256": "20b027ba64217c97c551fe53613235a2e51e5bb682609671677b952771a35869",
+      "localMatches": false,
+      "decoded": true,
+      "width": 240,
+      "height": 240,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie-islands.B_yt5wp5_1B8GuR.avif",
+      "bytes": 25569,
+      "sha256": "853ef73a6ece7b689919f73fce87d02de622d7756d575b09ab19c7440d7f07b1",
+      "localMatches": false,
+      "decoded": true,
+      "width": 360,
+      "height": 360,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie-islands.B_yt5wp5_1iDTBz.webp",
+      "bytes": 12564,
+      "sha256": "7f7c25725a3f90e42be1eb283c785e57235698f58f49bf0f3c5b15e656f12fbc",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie-islands.B_yt5wp5_Z1e23vO.webp",
+      "bytes": 21524,
+      "sha256": "f816fd702e36b221448cc3ec9f9f76b242b2dc8c8716029d0a189afa2e67300f",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie-islands.B_yt5wp5_1jwzmw.webp",
+      "bytes": 39712,
+      "sha256": "37f5852f4a108abd880e79749655b2a17f7b0d6f6f5425c3e39525a5c304c15e",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_1xk62z.avif",
+      "bytes": 9143,
+      "sha256": "ffb1ec77a29a9201b62e541c0079fe8f1757d4870c06a3a7d32e5d323e20509e",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 213,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_2l8EKK.avif",
+      "bytes": 17193,
+      "sha256": "f55bf3dae76a6ce913813523c4cbfe97b09fabbfc7be95bb5fd4b0e7c1307095",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_ZAwyfm.avif",
+      "bytes": 32271,
+      "sha256": "47ecfa376f0eaba5de280f7d6ca917b01ac44d46f880c533c43b65b0de89a512",
+      "localMatches": false,
+      "decoded": true,
+      "width": 720,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_2hUat3.avif",
+      "bytes": 54243,
+      "sha256": "61f6888b871cbe18c22a38607038af409815ea61e8366697a2fee4b0edc59585",
+      "localMatches": false,
+      "decoded": true,
+      "width": 960,
+      "height": 640,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_Z23S5yP.webp",
+      "bytes": 8504,
+      "sha256": "e6f43f4cf000fce1340f6f15292042884f6391239a236280502a44f3df7b9f26",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_Z1g4vPE.webp",
+      "bytes": 15754,
+      "sha256": "d547b4d6733516562a57d226815262ebd0bbdbb529e934d20476bf790c18c795",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_RrnWa.webp",
+      "bytes": 29392,
+      "sha256": "ee87bda415e7ee85199840cf7296227ff2829a581a3c91553569ad0c3feab6b9",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/city.XQD3k2h0_Z1ji18m.webp",
+      "bytes": 47136,
+      "sha256": "e1cf26c9554fa226aa50992ac62d1c1845d4b523d10502b46dd3322d23ce59f5",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_ZXmbhV.avif",
+      "bytes": 11505,
+      "sha256": "4b4f8930426578bebbe614142bff0fa4f7e9b2a10203b639bac05383c4fe30fa",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 213,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_1kGOPw.avif",
+      "bytes": 20868,
+      "sha256": "1fc0e8acc513f00b4f580da34c0e6c355daba6932987a7a8473f91b508bea31f",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_Zubufw.avif",
+      "bytes": 40471,
+      "sha256": "81966b291ccd41f4312d91fef60fdd707548c13b3ff66111c5c9cfbd7878cba0",
+      "localMatches": false,
+      "decoded": true,
+      "width": 720,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_174X30.avif",
+      "bytes": 64414,
+      "sha256": "7f0f1a13ae3428957adc842e7557347ddb64f9b9a2640e0716084f94dba424ad",
+      "localMatches": false,
+      "decoded": true,
+      "width": 960,
+      "height": 640,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_Z29nxmv.webp",
+      "bytes": 11104,
+      "sha256": "ab5ef6fc58ba8a85cc1e92e8cfb4f684a863c2aac9de6f0b2174c9a377df1908",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_9FsKW.webp",
+      "bytes": 20660,
+      "sha256": "389ae212af07200d8000222446bede7ac9857dd9606f64a1b759f8fbbebab0d0",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_Z1FcQk6.webp",
+      "bytes": 38266,
+      "sha256": "e4eec8f7fb3819d7174f5116b6b2bc7c0a3f553f18c4851a4354bf49e9ff8f9c",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/dinner.BVmDmSXN_Z3Vo1z.webp",
+      "bytes": 59694,
+      "sha256": "05c4d07a61d7e6121fb8e0505ea277090e9f2ffe4578671f48cc9d538dda87dd",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_2phKHO.avif",
+      "bytes": 14432,
+      "sha256": "1750bc8b634dd7b64878b3e11d3303225f6ca76b1431c415a0b99c12a0190ccf",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 213,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_6XxyL.avif",
+      "bytes": 27071,
+      "sha256": "c11056b0183e2814c25c9d6e632d1bdc0faf460163cf9ac6253f6b3add8e5d38",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_29JSId.avif",
+      "bytes": 53161,
+      "sha256": "143b3930bd3b1b11ed8d52ca72676852b69d2c6e1b47a0a3b3295cd44e1b3e2f",
+      "localMatches": false,
+      "decoded": true,
+      "width": 720,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_1AYgkS.avif",
+      "bytes": 85415,
+      "sha256": "950db24c39faeb7eff30a7cedeceded2866c37de971e499db5587c5ef998d0df",
+      "localMatches": false,
+      "decoded": true,
+      "width": 960,
+      "height": 640,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_Z2aTjzS.webp",
+      "bytes": 13642,
+      "sha256": "1a3848d459760474c7d390c3811bbf7000a8de21da49c43b9375954caaad5f4d",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_AXB50.webp",
+      "bytes": 26244,
+      "sha256": "ff937e429e5a76851863e39ae792f5e31cdf67855f31b5a89acb7200491c82f0",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_Z2qrbzu.webp",
+      "bytes": 50742,
+      "sha256": "52804250bbbd395ae399b3b0d11231128edd498193f9fa29b7b9572d2f4337b9",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/gathering.CDgDJmy5_25YjQ7.webp",
+      "bytes": 82106,
+      "sha256": "98a47cf7d85389ff224a917dc8dfd5e73de611d58b2054b413a62d981d2390b9",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pesochnoe-testo-dlya-kisha.C1eQN1e0_ZEAjgU.avif",
+      "bytes": 21166,
+      "sha256": "d48db4f4332b56d946f058243da08c32a6174bbd87e2b3ff49ea8941fa9a7cd9",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 213,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pesochnoe-testo-dlya-kisha.C1eQN1e0_Z20KKO9.avif",
+      "bytes": 44120,
+      "sha256": "c0415532df4e5f4f0f5c7f4ae553d50e17e250d883750401df57562192fc2774",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pesochnoe-testo-dlya-kisha.C1eQN1e0_ZTGVzi.avif",
+      "bytes": 91379,
+      "sha256": "95f0e2a2a92f15026c08dbe5094984457126f86b5f82f9687ac742d61bd14db2",
+      "localMatches": false,
+      "decoded": true,
+      "width": 720,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pesochnoe-testo-dlya-kisha.C1eQN1e0_2p1IEp.avif",
+      "bytes": 148528,
+      "sha256": "be1e8d742ca303f216d23c21476e71b9d6a4b6b5081b4a9fa0b45be197a08dd2",
+      "localMatches": false,
+      "decoded": true,
+      "width": 960,
+      "height": 640,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pesochnoe-testo-dlya-kisha.C1eQN1e0_ZSrKGY.webp",
+      "bytes": 19710,
+      "sha256": "336319213f9dd28c019cd6c9d1a1394f7fe56dec12e1bccad15700d080e62447",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pesochnoe-testo-dlya-kisha.C1eQN1e0_Z2eCdfd.webp",
+      "bytes": 40484,
+      "sha256": "fb315f06e2aadd3103c916e3a02ac78e8f44fbf4c4332f6b1769c838d617192f",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pesochnoe-testo-dlya-kisha.C1eQN1e0_Z18yo0m.webp",
+      "bytes": 82332,
+      "sha256": "8243450ef56fcc7bcb1d576c8c765c33ff7778b48bbb03288e9064d392259deb",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pesochnoe-testo-dlya-kisha.C1eQN1e0_2bahel.webp",
+      "bytes": 131314,
+      "sha256": "16f68f81f8dda4ecb9f16675d951bfb07d8f159a8a0bc09c347585886136bb83",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pochemu-u-piroga-syroe-dno.o1VMj_EN_Z13QHVt.avif",
+      "bytes": 21093,
+      "sha256": "61025ad0a42a991b5c5267ff5e63ce7eebb731a275a10554f30ff55d184e7f24",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 213,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pochemu-u-piroga-syroe-dno.o1VMj_EN_Z2p2atH.avif",
+      "bytes": 43454,
+      "sha256": "758a360b93121929099fc05e7e701a38ee4726991f1cfdeb5b8a167299b6e189",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pochemu-u-piroga-syroe-dno.o1VMj_EN_Z1iXleQ.avif",
+      "bytes": 86126,
+      "sha256": "f8c28cc2dd1530909eeefdd6bf64b10eae78d8f69852dc6270ec8ac7a3460d97",
+      "localMatches": false,
+      "decoded": true,
+      "width": 720,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pochemu-u-piroga-syroe-dno.o1VMj_EN_20KjYQ.avif",
+      "bytes": 136555,
+      "sha256": "ec93294f359ecee03d48d32ec79418399128848d3a558d22299f94c6234ec81c",
+      "localMatches": false,
+      "decoded": true,
+      "width": 960,
+      "height": 640,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pochemu-u-piroga-syroe-dno.o1VMj_EN_Z1hIamx.webp",
+      "bytes": 20028,
+      "sha256": "ad2e4d28c796e37a83e16eb7694e7f671c52ad91b920c4cb4ea071ec1c228aae",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pochemu-u-piroga-syroe-dno.o1VMj_EN_2rivTa.webp",
+      "bytes": 40304,
+      "sha256": "4956a0ba236be13c2ea208804919debb8e150415737c268d71e51a1972bf3e4b",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pochemu-u-piroga-syroe-dno.o1VMj_EN_Z1wOMEU.webp",
+      "bytes": 78630,
+      "sha256": "14a3e1196bd64af83da87464a0b6394e5c3b4f11f7c69374ad21238050c7a6cd",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pochemu-u-piroga-syroe-dno.o1VMj_EN_1LSRyM.webp",
+      "bytes": 121268,
+      "sha256": "c524174fef68537acedc4ee928c45c5d4a38c9b950a0535af9b76f08c8dea99c",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/kak-narezat-pirog.De5HImT0_23ejs8.avif",
+      "bytes": 22179,
+      "sha256": "2ba275e4c11bdfed0c3926ac3f40275a165c644348610389e6a4e9a03f266eb5",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 213,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/kak-narezat-pirog.De5HImT0_Z2pOLTT.avif",
+      "bytes": 46602,
+      "sha256": "7e046bb414ab425e8147d90d15b419202dc9b346633946f8fb7cc25e24910657",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/kak-narezat-pirog.De5HImT0_1hUaVp.avif",
+      "bytes": 96464,
+      "sha256": "2b0c73553aea5af01a3a9d8649c00d9fa91e8fbdf4281ac82401dc349ef6dc86",
+      "localMatches": false,
+      "decoded": true,
+      "width": 720,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/kak-narezat-pirog.De5HImT0_S6pI1.avif",
+      "bytes": 156415,
+      "sha256": "2191a1bb9daaf253c263ca69b544ff71ebac8c4851f2d49681e1e6e5e6db02b4",
+      "localMatches": false,
+      "decoded": true,
+      "width": 960,
+      "height": 640,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/kak-narezat-pirog.De5HImT0_2lE5XV.webp",
+      "bytes": 21196,
+      "sha256": "842d336421899f3e0c245f1370984cb73dbe2c8e433027242bbc572a4ea639b7",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/kak-narezat-pirog.De5HImT0_Z27p0o6.webp",
+      "bytes": 44232,
+      "sha256": "997d12e946e8958936aabdb1b56884ecb5bd41c70726eb5b9ea42c8d235c5bfd",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/kak-narezat-pirog.De5HImT0_1AkWsd.webp",
+      "bytes": 90010,
+      "sha256": "9961f2a3d26e5fb6072cfe0a9786c911ae62d2f2cf6ffc32db217146c64c5284",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/kak-narezat-pirog.De5HImT0_1bwceO.webp",
+      "bytes": 144076,
+      "sha256": "4ec5e087f9c5e1233b431b6cc5d71fb4af6e662c26254ca1b4e70f00fe33d27c",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_ewaKL.avif",
+      "bytes": 3312,
+      "sha256": "af1ed4f731c3e70876378b5a4ae0db9dc33f9b897992bdcf81ce976e7899fb9f",
+      "localMatches": false,
+      "decoded": true,
+      "width": 240,
+      "height": 240,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_Z1UiiPj.avif",
+      "bytes": 3697,
+      "sha256": "b929dc58fe737c6ef55eb620763e3d017c6e3a62c8535f405c71fd78f3922004",
+      "localMatches": false,
+      "decoded": true,
+      "width": 280,
+      "height": 280,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_ZaC9FL.avif",
+      "bytes": 5303,
+      "sha256": "8b789a2382147505aab22c8956ebb4cebe9e643e754a4eeef31e96a90361978d",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_ZzLu8j.avif",
+      "bytes": 6074,
+      "sha256": "9cb20d19468beb31d4d21af532000af109bd21c88927d08b290c237d8c47ca46",
+      "localMatches": false,
+      "decoded": true,
+      "width": 400,
+      "height": 400,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_aKFss.avif",
+      "bytes": 9176,
+      "sha256": "b8651a03f379b6ff3f903caf8144f9db3f1b313f40182865796f45e58e471940",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_1vhuas.avif",
+      "bytes": 12271,
+      "sha256": "4fae49d7186319c350301b6e62481c7307677f082f1ca3fb709b86796f31ef85",
+      "localMatches": false,
+      "decoded": true,
+      "width": 600,
+      "height": 600,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_Z1sPEkH.avif",
+      "bytes": 21201,
+      "sha256": "5751f081dba0f71f6cff4d90792e85d766d8bccd6e439e3dc849de62781066e8",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_Iweh0.webp",
+      "bytes": 5400,
+      "sha256": "00281639749a28e79b01aff98899e2e5c0b9a28f0ff1bdaec7d52df202965add",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_Z1qifk5.webp",
+      "bytes": 6098,
+      "sha256": "837bf6c748ca0fe698d0c3a7a30404622eba9752c35d27461ee3f074df0b76b1",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_jmSOs.webp",
+      "bytes": 8884,
+      "sha256": "6c0be2ccc3759bfe4d819d5028c031da513cced4ea7d30eb9a043e841b8d9ff2",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_Z5LqC5.webp",
+      "bytes": 10886,
+      "sha256": "66ef35d164d3892659f5f04f6110709b0262025d6cf068cc5d72168738bdf257",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_EKIXG.webp",
+      "bytes": 15046,
+      "sha256": "895a8885a4264ffeac96429a13983dfe6a38d8b11d4958d9263b10ef640ddb45",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_20hxFG.webp",
+      "bytes": 21488,
+      "sha256": "507ad5a728bfd8ee861b5710c815eb34974958ca4d235314d7c3cc2891589f7f",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/cranberry.BeAaUA4p_ZXPAOt.webp",
+      "bytes": 36000,
+      "sha256": "7e37a1f41db3d6532c08c48aaf17296be8a0347da815c7c0c6ffa856cc5af4f7",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_2adsI4.avif",
+      "bytes": 4002,
+      "sha256": "cc963136be582857acd7da859d468dc3ff174604913ebf1013dfb40505aa9da2",
+      "localMatches": false,
+      "decoded": true,
+      "width": 240,
+      "height": 240,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_2idOwi.avif",
+      "bytes": 5284,
+      "sha256": "19d86750d4345b8c973a2e5b82357eb3c05eb7a2f1fc8e11d8e3d9d0ad28068d",
+      "localMatches": false,
+      "decoded": true,
+      "width": 280,
+      "height": 280,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_z9Ypg.avif",
+      "bytes": 6224,
+      "sha256": "5e241f66cadf2913ff51bbae2fd8db743ae6fd31b56d1250260b72dc06e40f52",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_Z10StSx.avif",
+      "bytes": 8686,
+      "sha256": "2e4c6514528795787752f794ac8a0a58da475e219d3c81b8f9addc3830ace693",
+      "localMatches": false,
+      "decoded": true,
+      "width": 400,
+      "height": 400,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_ZJRLh5.avif",
+      "bytes": 11846,
+      "sha256": "1d9e324a61d9839de302fdcfa7c92c8bb9cc0644440474309d466ce3e59e2f26",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_11c371.avif",
+      "bytes": 17043,
+      "sha256": "a8c9edd8908bb967ce3c22dcead672b46af2be1a70fffc6e3625c54d69342d01",
+      "localMatches": false,
+      "decoded": true,
+      "width": 600,
+      "height": 600,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_Z21TxGm.avif",
+      "bytes": 27769,
+      "sha256": "ebaa46d5a2924717f2be5d28602f49d53d4cca7bf7dd2e17923fc3c2f64ce2a8",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_29DO8n.webp",
+      "bytes": 5272,
+      "sha256": "eaa517976a8b484d51a585d350abf1e4a3a3ebfca57c341a4a577b845c551cdb",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_2hEaVB.webp",
+      "bytes": 6734,
+      "sha256": "037918601e0a81da50390a24157eafdf42c028590a200659922742ec343bd4ad",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_yAkOz.webp",
+      "bytes": 8404,
+      "sha256": "83fde9c72198c5fb82c118d4a6a6d891d46977f03d8abb8daef0fc543a016924",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_Z11s8te.webp",
+      "bytes": 12208,
+      "sha256": "9c2681c6b3773ae01b8469cfd6213edc803d5715f90a05ff4c91e5b6b6e0ee6b",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_ZKrpQL.webp",
+      "bytes": 16570,
+      "sha256": "a563076345a3c5455589e46f2105162cc19d4a53fd1e4e82287a2ccbca32940d",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_10Cowk.webp",
+      "bytes": 24636,
+      "sha256": "31cb96b37fd43bc64eb5ffa221448e65b7dfeea9bbaf3bf4dfc1622a4ecfc8ec",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/background.DuGp5oBv_Z22tch3.webp",
+      "bytes": 41426,
+      "sha256": "332884076841262ae0c12d62c778a3b8b47e197f6216747233c11cc2d9dc6ea3",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_Z2oypJr.avif",
+      "bytes": 12203,
+      "sha256": "d923bba3ac419b9ac41a67f20e7e54c8003667b1b0efc87c0413de5547bc2b50",
+      "localMatches": false,
+      "decoded": true,
+      "width": 240,
+      "height": 240,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_JH6n2.avif",
+      "bytes": 15213,
+      "sha256": "44d6effbbdb375968e9a8851e5d4b57ca6787d247c1c37f0ce31e1a99caf65d2",
+      "localMatches": false,
+      "decoded": true,
+      "width": 280,
+      "height": 280,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_1n9lz0.avif",
+      "bytes": 19249,
+      "sha256": "a0c689642caf0322c4894b1bfa861a3a8a819ff62430f7134d0ad46a7288b100",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_4EY4v.avif",
+      "bytes": 27576,
+      "sha256": "ea565afbc90695c8fcdc8d2cb5160ec79ca6707e9f10dd01f3dbfc7f7255e21f",
+      "localMatches": false,
+      "decoded": true,
+      "width": 400,
+      "height": 400,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_1i0Suw.avif",
+      "bytes": 36874,
+      "sha256": "fba86d4440e69c4a6721b26ae6a076a7d34c88133d8b3ba793a362cffba191f6",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_BXLc0.avif",
+      "bytes": 54704,
+      "sha256": "1984801867fc0f801573f2b624c134d7dc65e76b87e6fabdd7317cf94277f876",
+      "localMatches": false,
+      "decoded": true,
+      "width": 600,
+      "height": 600,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_1ahyju.avif",
+      "bytes": 90784,
+      "sha256": "cf7f2eb93e88e4303a6a58d07ab15500a60e42503a5dcff8cb83f0b1858d2ecf",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_Z1GCMiU.webp",
+      "bytes": 14374,
+      "sha256": "768eee7b8675def2688298e2f29ab579a84b0b4879776e2aac25aea2b5193e91",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_1rCINy.webp",
+      "bytes": 18304,
+      "sha256": "31de9e1267f0cfdbe1614c90c175982b6bcc9c88fbfff4a0dd086bbf3521498c",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_254Y0w.webp",
+      "bytes": 23282,
+      "sha256": "2b3d012e5569bacc07ac5ec511a4fc7b8756127f6a14abe3b4f19f42917e0bce",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_LABv2.webp",
+      "bytes": 33098,
+      "sha256": "157fd816e7c74338d7182076e0452414574e815f769a376ed4d3269216635be1",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_1YVvV3.webp",
+      "bytes": 44746,
+      "sha256": "1ae52f24b3e5c6553188a230d55bf5be8af75084ce51c951f97a10c732069a85",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_1jToCw.webp",
+      "bytes": 66006,
+      "sha256": "0c366a9315a951fdc958f898163e66dfca9363d4e06731c0418e5a8f7dd946cd",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/pie.BOtyLgF8_1RdbK1.webp",
+      "bytes": 109458,
+      "sha256": "d66e3a480393644cc41fae1d513699740b57e5938a5b68a234cec09aeba08536",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_ZsYXS4.avif",
+      "bytes": 6830,
+      "sha256": "469ba92ed78b9fe61b8845573cb61e3c733093f800ca373bf46b5230af734ff6",
+      "localMatches": false,
+      "decoded": true,
+      "width": 240,
+      "height": 240,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_H1rdL.avif",
+      "bytes": 7912,
+      "sha256": "8efe238420c4fedeaab6ba0354a2a71668d8b99ccf7fc67fe074b414f4ec9f9d",
+      "localMatches": false,
+      "decoded": true,
+      "width": 280,
+      "height": 280,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_ZNFnfD.avif",
+      "bytes": 9582,
+      "sha256": "38e0cfffa09557ffccd3e82aa6f1e7353f52b5c5a49eb9bf9bc826b5c329a8ef",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_Z19lLCd.avif",
+      "bytes": 13002,
+      "sha256": "8da01fe63aa0e78d782e5129eb650274bcd3144c8c18b672bef304db615a3a1e",
+      "localMatches": false,
+      "decoded": true,
+      "width": 400,
+      "height": 400,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_1cG4As.avif",
+      "bytes": 17004,
+      "sha256": "6c8472ad8a345118f36e7f48e743090a872b82f99780d44267d222e77f5d6753",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_ZDG9fw.avif",
+      "bytes": 23758,
+      "sha256": "26c5a5643b9ca748cba19a5d0478dc2857276037595d160f45aee5651339895c",
+      "localMatches": false,
+      "decoded": true,
+      "width": 600,
+      "height": 600,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_Z91vRP.avif",
+      "bytes": 38429,
+      "sha256": "5593af31e89d10ddac7538dd8546f1e50a85a9d8534dd9cc68c1d25f87ec497b",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_Zazcmg.webp",
+      "bytes": 8542,
+      "sha256": "e256d1235c177b1e4060ae3635fb5110ad4a74fa9c07c207ebf6d29f7d72c2a2",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_10rdJz.webp",
+      "bytes": 10486,
+      "sha256": "130c438bc2842ad55486925f4015764c0120eba0360f9b508dd0e1bb598de961",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_ZvfAIP.webp",
+      "bytes": 13642,
+      "sha256": "f7d52eb48409088b9f4dfbed5b52a5ee05060131db25662c06b7cc961292a394",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_ZPV06p.webp",
+      "bytes": 18100,
+      "sha256": "78d4d3654e0309926a13fb02339cc3c646d006d2cc2ace46fdca84ab3c9a287d",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_1v6Q7g.webp",
+      "bytes": 23266,
+      "sha256": "7f06a3deb82cd20feccd76abc485dc3f4e796ea143db401f62683c2e9e36ee20",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_ZlgmII.webp",
+      "bytes": 32744,
+      "sha256": "d6d402f09743098f1483fcc50744ecd479ac058cedaf1bdf64c6f7fac9a0604a",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/tableware-product.BM6h_pJP_9ofCX.webp",
+      "bytes": 54854,
+      "sha256": "604e74dcf35466914d0fb62c339d7389172964a4990c327c812903d542e8cbe2",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_1sSOiF.avif",
+      "bytes": 10017,
+      "sha256": "9b3e486e406174a5e7567a775765e22db69858c34e0847a83a7da69444e56398",
+      "localMatches": false,
+      "decoded": true,
+      "width": 240,
+      "height": 240,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_1ATb6T.avif",
+      "bytes": 12358,
+      "sha256": "634078a9eb988c2ab143455b791f5a4ee856f3698aad09e54793b115c88271ca",
+      "localMatches": false,
+      "decoded": true,
+      "width": 280,
+      "height": 280,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_Z79E08.avif",
+      "bytes": 14673,
+      "sha256": "5414c3421f7db5cc299d23a2e4c81e9fa24b21b776b5fa256bf19b806b2ef0d6",
+      "localMatches": false,
+      "decoded": true,
+      "width": 320,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_Z1Hd8iV.avif",
+      "bytes": 20125,
+      "sha256": "58afe4218db47eb35323fd68accb3a85d035e0b371a72de5b5aa790792117ecf",
+      "localMatches": false,
+      "decoded": true,
+      "width": 400,
+      "height": 400,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_Z1rcpGt.avif",
+      "bytes": 25379,
+      "sha256": "b2f9b33a02e886cdd745378a8f324789effd6a13fcd1026346ff994252adfe15",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 480,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_jRoGC.avif",
+      "bytes": 36178,
+      "sha256": "6085cd1a4fd228d833e9e18cb1113ba13a223250b8cb5a748486d3e5c6cb4b3f",
+      "localMatches": false,
+      "decoded": true,
+      "width": 600,
+      "height": 600,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_2lWVHb.avif",
+      "bytes": 58322,
+      "sha256": "23b0d3e339de0cb88391074991afe989855b472dfcd9ed98f2553cce69d3b7f0",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_1skaHY.webp",
+      "bytes": 15004,
+      "sha256": "29252e34675196aa9ca00be7b527ffe095cf3916956ac84b0cb8babaece26379",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_1Akwwd.webp",
+      "bytes": 18776,
+      "sha256": "2b7669aeefe214d96c97bf3571e6570550d1946d0d3901d28e9a06d6a8db45f9",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_Z7IizO.webp",
+      "bytes": 23040,
+      "sha256": "4a54071302f9c1be70b4a689f81308034e311052fa1a6f29e906b7ba3352fe9a",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_Z1HLLSC.webp",
+      "bytes": 30736,
+      "sha256": "71640cb8edb77be5eb6b98904c45e1219b0965316dd90a322b74822e31a5436b",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_Z1rL4ha.webp",
+      "bytes": 39834,
+      "sha256": "439c8f1d667531163fd4397b9d5f8bd2af302605a8328b25be1bcda3a0d1e2ed",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_jiK6V.webp",
+      "bytes": 55962,
+      "sha256": "63e21db8b8efa275633eeab1e699d9737d5ea7c54e841a13a9f94cb385f6b5cf",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/picnic-set.TAfkw4Nt_2loi7u.webp",
+      "bytes": 89708,
+      "sha256": "7fb04906795f5e0c96d817750f169be42d34e71717a8650b6956724121986de0",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/pesochnoe-testo-dlya-kisha/",
+      "status": 200
+    },
+    {
+      "path": "/journal/pochemu-u-piroga-syroe-dno/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kak-narezat-pirog/",
+      "status": 200
+    },
+    {
+      "path": "/journal/skolko-piroga-na-cheloveka/",
+      "status": 200
+    },
+    {
+      "path": "/journal/chto-pit-s-pirogami/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42401676045,
+    "headSha": "8b36b79f1b792252e362dd91e5ce2b5c11c7839a",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42401676045"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "articleCount": 87,
+  "sitemapCount": 282
+}

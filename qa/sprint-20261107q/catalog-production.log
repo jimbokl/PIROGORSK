@@ -1,0 +1,25 @@
+PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 390px
+PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 768px
+PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 1280px
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   '503 /catalog-art/hb-bulka-dlya-gamburgera-maksi-190-g-256.avif'
++ ]
+- []
+
+    at file:///Volumes/DevSim/Projects/PIROGORSK/scripts/verify-catalog-polish.mjs:145:9 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [ '503 /catalog-art/hb-bulka-dlya-gamburgera-maksi-190-g-256.avif' ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0

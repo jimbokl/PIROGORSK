@@ -1,0 +1,93 @@
+{
+  "scope": "One final site-polish sprint, then stop",
+  "runtime": "8b36b79f1b792252e362dd91e5ce2b5c11c7839a",
+  "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/42401676045",
+  "state": "published, verified, stopped",
+  "local": {
+    "check": "0 errors / 0 warnings",
+    "buildHtml": 287,
+    "unitPassed": 66,
+    "worker": "typecheck/API/SQL PASS",
+    "seoSitemap": 282,
+    "seoProducts": 154,
+    "auditViews": 24,
+    "sitePolishViews": 32,
+    "scrolledDialogs": 20,
+    "catalogWidths": 6,
+    "focusedWidths": 5,
+    "controlNameViews": 16,
+    "axeStates": 72,
+    "protectedSHA256": "PASS"
+  },
+  "registry": {
+    "exitCode": 1,
+    "errors": 0,
+    "passed": false,
+    "externalDrift": "/Users/dmitrij/.codex/skills/.system/openai-docs/SKILL.md"
+  },
+  "deferred": [
+    "Product and production handled by user",
+    "CRM and contacts",
+    "QA-17 rare automated click investigation",
+    "PERF-01 public PSI/CrUX",
+    "Indexation and remaining SEO queue"
+  ],
+  "newPageSpeed": false,
+  "stopAfterAcceptance": true,
+  "ciConclusion": "success",
+  "deployedAt": "2026-11-07T18:51:18Z",
+  "acceptedAt": "2026-11-07T18:59:10.389811+00:00",
+  "production": {
+    "focusedWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "focusedErrors": 0,
+    "postRequests": 0,
+    "sitePolishViews": 32,
+    "dialogs": 20,
+    "catalogSKU": 154,
+    "catalogWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "catalogErrors": 0,
+    "catalogTransportRetries": [
+      {
+        "path": "/catalog-art/hb-osetinskiy-pirog-s-kartofelem-256.avif",
+        "attempt": 1,
+        "error": "fetch failed",
+        "cause": "UND_ERR_CONNECT_TIMEOUT"
+      },
+      {
+        "path": "/product-backdrops/hb-osetinskiy-pirog-s-kartofelem-i-zelenyu-256.avif",
+        "attempt": 1,
+        "error": "fetch failed",
+        "cause": "UND_ERR_CONNECT_TIMEOUT"
+      }
+    ],
+    "initialCatalogHTTP503": {
+      "path": "/catalog-art/hb-bulka-dlya-gamburgera-maksi-190-g-256.avif",
+      "threeRechecks": "200 with matching SHA256",
+      "fullRerun": "PASS"
+    },
+    "readbackHTML": 10,
+    "readbackAssets": 155,
+    "articles": 87,
+    "sitemap": 282,
+    "visualsReviewed": [
+      "selection320",
+      "selection768",
+      "copy390",
+      "catalog390",
+      "catalog768"
+    ]
+  }
+}

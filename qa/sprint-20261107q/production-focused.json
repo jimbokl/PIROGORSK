@@ -1,0 +1,437 @@
+{
+  "base": "https://pirogorsk.ru",
+  "widths": [
+    {
+      "width": 320,
+      "emptyNavigation": [
+        {
+          "path": "/",
+          "tag": "H2",
+          "inCatalog": true,
+          "input": false
+        },
+        {
+          "path": "/menu/",
+          "tag": "FORM",
+          "inCatalog": true,
+          "input": false
+        }
+      ],
+      "geometry": {
+        "overflow": false,
+        "rows": [
+          {
+            "title": "Тесто бездрожжевое слоеное замороженное, весовое",
+            "titleWidth": 242,
+            "rowWidth": 242,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          },
+          {
+            "title": "Мясной пирог",
+            "titleWidth": 242,
+            "rowWidth": 242,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          }
+        ]
+      },
+      "limit99": {
+        "quantityUnchanged": true,
+        "inlineFeedback": true,
+        "focusPreserved": true
+      },
+      "copyFallback": [
+        {
+          "button": "[data-share-selection]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        },
+        {
+          "button": "[data-copy]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        }
+      ],
+      "cityAndTotals": {
+        "city": "Калининград",
+        "products": 696270,
+        "delivery": 350,
+        "grand": 696620
+      },
+      "interestOpened": true
+    },
+    {
+      "width": 390,
+      "emptyNavigation": [
+        {
+          "path": "/",
+          "tag": "H2",
+          "inCatalog": true,
+          "input": false
+        },
+        {
+          "path": "/menu/",
+          "tag": "FORM",
+          "inCatalog": true,
+          "input": false
+        }
+      ],
+      "geometry": {
+        "overflow": false,
+        "rows": [
+          {
+            "title": "Тесто бездрожжевое слоеное замороженное, весовое",
+            "titleWidth": 312,
+            "rowWidth": 312,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          },
+          {
+            "title": "Мясной пирог",
+            "titleWidth": 312,
+            "rowWidth": 312,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          }
+        ]
+      },
+      "limit99": {
+        "quantityUnchanged": true,
+        "inlineFeedback": true,
+        "focusPreserved": true
+      },
+      "copyFallback": [
+        {
+          "button": "[data-share-selection]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        },
+        {
+          "button": "[data-copy]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        }
+      ],
+      "cityAndTotals": {
+        "city": "Калининград",
+        "products": 696270,
+        "delivery": 350,
+        "grand": 696620
+      },
+      "interestOpened": true
+    },
+    {
+      "width": 768,
+      "emptyNavigation": [
+        {
+          "path": "/",
+          "tag": "H2",
+          "inCatalog": true,
+          "input": false
+        },
+        {
+          "path": "/menu/",
+          "tag": "FORM",
+          "inCatalog": true,
+          "input": false
+        }
+      ],
+      "geometry": {
+        "overflow": false,
+        "rows": [
+          {
+            "title": "Тесто бездрожжевое слоеное замороженное, весовое",
+            "titleWidth": 524,
+            "rowWidth": 524,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          },
+          {
+            "title": "Мясной пирог",
+            "titleWidth": 524,
+            "rowWidth": 524,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          }
+        ]
+      },
+      "limit99": {
+        "quantityUnchanged": true,
+        "inlineFeedback": true,
+        "focusPreserved": true
+      },
+      "copyFallback": [
+        {
+          "button": "[data-share-selection]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        },
+        {
+          "button": "[data-copy]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        }
+      ],
+      "cityAndTotals": {
+        "city": "Калининград",
+        "products": 696270,
+        "delivery": 350,
+        "grand": 696620
+      },
+      "interestOpened": true
+    },
+    {
+      "width": 1024,
+      "emptyNavigation": [
+        {
+          "path": "/",
+          "tag": "H2",
+          "inCatalog": true,
+          "input": false
+        },
+        {
+          "path": "/menu/",
+          "tag": "FORM",
+          "inCatalog": true,
+          "input": false
+        }
+      ],
+      "geometry": {
+        "overflow": false,
+        "rows": [
+          {
+            "title": "Тесто бездрожжевое слоеное замороженное, весовое",
+            "titleWidth": 524,
+            "rowWidth": 524,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          },
+          {
+            "title": "Мясной пирог",
+            "titleWidth": 524,
+            "rowWidth": 524,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          }
+        ]
+      },
+      "limit99": {
+        "quantityUnchanged": true,
+        "inlineFeedback": true,
+        "focusPreserved": true
+      },
+      "copyFallback": [
+        {
+          "button": "[data-share-selection]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        },
+        {
+          "button": "[data-copy]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        }
+      ],
+      "cityAndTotals": {
+        "city": "Калининград",
+        "products": 696270,
+        "delivery": 350,
+        "grand": 696620
+      },
+      "interestOpened": true
+    },
+    {
+      "width": 1440,
+      "emptyNavigation": [
+        {
+          "path": "/",
+          "tag": "H2",
+          "inCatalog": true,
+          "input": false
+        },
+        {
+          "path": "/menu/",
+          "tag": "FORM",
+          "inCatalog": true,
+          "input": false
+        }
+      ],
+      "geometry": {
+        "overflow": false,
+        "rows": [
+          {
+            "title": "Тесто бездрожжевое слоеное замороженное, весовое",
+            "titleWidth": 524,
+            "rowWidth": 524,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          },
+          {
+            "title": "Мясной пирог",
+            "titleWidth": 524,
+            "rowWidth": 524,
+            "priceBelowTitle": true,
+            "priceFits": true,
+            "controlSizes": [
+              {
+                "width": 44,
+                "height": 44
+              },
+              {
+                "width": 44,
+                "height": 44
+              }
+            ]
+          }
+        ]
+      },
+      "limit99": {
+        "quantityUnchanged": true,
+        "inlineFeedback": true,
+        "focusPreserved": true
+      },
+      "copyFallback": [
+        {
+          "button": "[data-share-selection]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        },
+        {
+          "button": "[data-copy]",
+          "font": 16,
+          "focused": true,
+          "selected": true,
+          "readonly": true,
+          "inViewport": true
+        }
+      ],
+      "cityAndTotals": {
+        "city": "Калининград",
+        "products": 696270,
+        "delivery": 350,
+        "grand": 696620
+      },
+      "interestOpened": true
+    }
+  ],
+  "errors": [],
+  "postRequests": []
+}
