@@ -47,7 +47,8 @@ const isNew = 'date' in item;
 const sources = 'sources' in item ? item.sources : undefined;
 const hasSources = Boolean(sources?.length);
 const hasOriginalSources = 'sources' in original && Boolean(original.sources?.length);
-const useGenericTools = !hasOriginalSources && !monthly;
+// Keep explicitly selected tools when an article gains original sources.
+const useGenericTools = !monthly && (!hasOriginalSources || ('tools' in original && original.tools === 'party'));
 const image = entry.ogImage;
 const city='city' in item ? item.city : cityForArticle(item.slug);
 const isCity=!monthly && ('cluster' in item ? item.cluster==='city' : ['Калининград','Зеленоградск','Светлогорск'].includes(entry.category));

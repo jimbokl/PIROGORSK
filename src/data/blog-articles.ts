@@ -26,6 +26,7 @@ export interface BlogArticle {
   takeaway: string; sections: readonly BlogSection[];
   related: string; relatedTitle: string;
   sources?: readonly ArticleSource[];
+  tools?: 'party';
 }
 
 export const blogArticles: readonly BlogArticle[] = [

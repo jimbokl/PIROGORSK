@@ -54,6 +54,7 @@ try{
   await page.evaluate(async()=>{for(const img of document.querySelectorAll('article img')){img.loading='eager';await img.decode();}});
   const article=await page.evaluate(()=>({
    dates:[...document.querySelectorAll('script[type="application/ld+json"]')].flatMap(e=>JSON.parse(e.textContent)['@graph']||[]).find(e=>e['@type']==='BlogPosting'),
+   tools:{calculator:document.querySelectorAll('[data-party-form]').length,faq:document.querySelectorAll('.guide-faq').length,schema:[...document.querySelectorAll('script[type="application/ld+json"]')].flatMap(e=>JSON.parse(e.textContent)['@graph']||[]).map(e=>e['@type'])},
    sources:[...document.querySelectorAll('.article-sources ol a')].map(a=>a.href),
    catalogCTA:document.querySelectorAll('.ed-next-step [data-guide-catalog]').length,
    sections:document.querySelectorAll('.ed-article-section').length,tables:document.querySelectorAll('.ed-reading-table').length,
@@ -67,6 +68,7 @@ try{
    tableSemantics:[...document.querySelectorAll('.ed-reading-table')].every(t=>t.caption&&t.querySelector('th[scope=col]')&&t.querySelector('th[scope=row]')),
   }));
   assert.equal(article.sections,10);assert.equal(article.tables,4);assert.equal(article.figures,2);assert.equal(article.h1,1);
+  assert.equal(article.tools.calculator,1);assert.equal(article.tools.faq,1);assert(article.tools.schema.includes('FAQPage')&&article.tools.schema.includes('ItemList'));
   await writeFile(output+stage+'-article-progress.json',JSON.stringify({width,article},null,2)+'\n');
   assert.equal(article.dates.datePublished,'2026-10-26');assert.equal(article.dates.dateModified,'2026-11-07');assert.equal(article.sources.length,5);assert.equal(article.catalogCTA,1);assert.equal(article.canonical,'https://pirogorsk.ru'+path);assert(!article.overflow);assert(article.anchors&&article.tableSemantics&&article.newTablesFit);
   for(const text of ['1580 ₽','Пограничная, 1','26 октября','исторический расчёт','404','Кофе и завтрак с собой'])assert(article.text.includes(text),text);
