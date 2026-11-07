@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "runtimeCommit": "5bad551639bf077951313b9d75edb2338861bbe1",
+  "ci": {
+    "run": 42377369992,
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42377369992",
+    "conclusion": "success",
+    "pagesPublished": "2026-11-07T13:51:59Z"
+  },
+  "content": {
+    "updatedURL": "/journal/kak-narezat-pirog/",
+    "newURLsInThisIncrement": 0,
+    "addedSections": 3,
+    "addedTables": 2,
+    "totalSections": 9,
+    "totalTables": 3,
+    "totalSources": 3,
+    "published": "2026-10-31",
+    "modified": "2026-11-07",
+    "readingMinutes": 6
+  },
+  "local": {
+    "check": "0 errors, 0 warnings",
+    "builtHTML": 284,
+    "unitTests": 66,
+    "worker": "PASS",
+    "staticSEO": "PASS",
+    "registryStrict": "PASS",
+    "monthlyResponsiveViews": 210,
+    "journalArticles": 62,
+    "journalResponsiveViews": 24,
+    "focusedWidths": 5,
+    "calculationStates": 25,
+    "blogCardWidths": 5,
+    "readingOwners": 14,
+    "catalogWidths": 6
+  },
+  "production": {
+    "htmlSHA256": 9,
+    "resources": 198,
+    "assetsByteMatched": 100,
+    "avifDimensionsAndDecode": 98,
+    "avifByteDifferences": 98,
+    "linksHTTP200": 7,
+    "blogArticles": 84,
+    "sitemapURLs": 279,
+    "focusedWidths": 5,
+    "calculationStates": 25,
+    "blogCardWidths": 5,
+    "readingOwners": 14,
+    "catalogWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "catalogSKU": 154,
+    "errors": [],
+    "networkRetries": [],
+    "visualReview": [
+      "production-cutting-390.png",
+      "production-cutting-768.png",
+      "production-blog-card-390.png",
+      "production-blog-card-768.png",
+      "catalog-production/production-home-cards-390.png",
+      "catalog-production/production-home-cards-768.png"
+    ]
+  },
+  "preserved": {
+    "catalogSHA256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20",
+    "originalArticleSections": 6,
+    "otherArticleUpdateOwners": 10,
+    "neighbourJournalBaselines": 61,
+    "infiniteFeed": true,
+    "prices": true,
+    "CRMAndContactsUntouched": true,
+    "VoiceOverNotStarted": true,
+    "preexistingBacklogDiff": "59 additions / 4 deletions, excluded from commit"
+  },
+  "remaining": [
+    "SEO-11: further existing-owner updates",
+    "QA-17: rare physical click failure not reproduced; remains open",
+    "PERF-01: no fresh public PSI/CrUX in this increment",
+    "Search indexing and ranking impact still unmeasured",
+    "CRM, operator and contacts deferred by user"
+  ]
+}
