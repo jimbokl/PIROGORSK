@@ -3815,8 +3815,32 @@
       "label": "Выбрать пироги в меню"
     },
     "relatedArticles": [
+      "/journal/yablochnyy-pirog-v-duhovke/",
       "/journal/pirog-s-brusnikoy-sochetaniya/",
       "/journal/pochemu-u-piroga-syroe-dno/"
+    ]
+  },
+  {
+    "path": "/journal/yablochnyy-pirog-v-duhovke/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "search-followup-20261107",
+    "pageType": "article",
+    "title": "Яблочный пирог в духовке: шарлотка с граммовками и шагами",
+    "query": "рецепт пирога с яблоками",
+    "intent": "Приготовить домашнюю бисквитную шарлотку: граммовки, форма, порядок замеса, выпечка, готовность и нарезка. Выбор сортов остаётся у существующего владельца /journal/yabloki-dlya-piroga/.",
+    "monthlySearches": null,
+    "demandSource": "research/wordstat-followup-20261107/review-queue.json · W07-01, регион 10857, все устройства; периоды CSV/UI расходятся",
+    "serpValidated": false,
+    "ownershipBasis": "wordstat_recipe_intent_and_existing_owner_inventory; general recipe SERP checked, regional positions not measured",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги к чаю"
+    },
+    "relatedArticles": [
+      "/journal/yabloki-dlya-piroga/",
+      "/journal/kak-narezat-pirog/",
+      "/journal/chto-pit-s-pirogami/"
     ]
   },
   {

@@ -1,8 +1,9 @@
 import content from './semantic-articles.json';
+import searchFollowup from './search-followup-articles.json';
 import { articleArtwork } from './article-artwork';
 import type { BlogArticle, BlogCategory } from './blog-articles';
 
-export const semanticArticles: readonly BlogArticle[] = content.map(article => ({
+export const semanticArticles: readonly BlogArticle[] = [...content, ...searchFollowup].map(article => ({
   ...article,
   category: article.category as BlogCategory,
   ...articleArtwork(article.slug),

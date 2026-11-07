@@ -4,6 +4,7 @@ import kitchen from '../../design/blog-source/reading-20261101/kitchen.png';
 import svetlogorskBreakfast from '../../design/blog-source/reading-20261107/svetlogorsk-breakfast.png';
 
 import zelenogradskBakery from '../../design/blog-source/reading-20261107/zelenogradsk-bakery-formats.png';
+import applePreparation from '../../design/blog-source/reading-20261107/apple-recipe-preparation.png';
 
 const scenes = {
   delivery: { image: delivery, alt: 'Пирог в крафтовой коробке, чашки и блокнот на деревянном столе у окна с видом на Балтику', caption: 'Для ужина в апартаментах удобно заранее продумать общий стол: еду, напитки и посуду.' },
@@ -13,6 +14,9 @@ const scenes = {
 
 /** Shared editorial cutaways supplement each article's own unique cover. */
 export function journalFigures(slug: string, sectionCount: number, city = false) {
+  if (slug === 'yablochnyy-pirog-v-duhovke') return [
+    { image: applePreparation, afterSection: 0, alt: 'Редакционная иллюстрация: яблоки, яйца, миски с мукой и сахаром, венчик и нарезанные яблочные дольки на деревянном столе', caption: 'Подготовьте продукты перед замесом. Количества сверяйте с таблицей; на иллюстрации показан общий набор ингредиентов.' },
+  ];
   if (slug === 'gde-pozavtrakat-v-zelenogradske') return [
     { image: svetlogorskBreakfast, afterSection: 2, alt: 'Редакционная иллюстрация завтрака у Балтики: омлет, сырники, каша, круассан и кофе на деревянном столе', caption: 'Разные блюда за одним столом: выбирайте завтрак по меню, времени и своему маршруту. Редакционная иллюстрация.' },
     { ...scenes.picnic, afterSection: Math.min(8, sectionCount - 1), caption: 'Для еды на прогулке заранее продумайте упаковку, напитки и подачу.' },
