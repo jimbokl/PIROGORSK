@@ -3,6 +3,8 @@ import picnic from '../../design/blog-source/reading-20261101/picnic.png';
 import kitchen from '../../design/blog-source/reading-20261101/kitchen.png';
 import svetlogorskBreakfast from '../../design/blog-source/reading-20261107/svetlogorsk-breakfast.png';
 
+import zelenogradskBakery from '../../design/blog-source/reading-20261107/zelenogradsk-bakery-formats.png';
+
 const scenes = {
   delivery: { image: delivery, alt: 'Пирог в крафтовой коробке, чашки и блокнот на деревянном столе у окна с видом на Балтику', caption: 'Для ужина в апартаментах удобно заранее продумать общий стол: еду, напитки и посуду.' },
   picnic: { image: picnic, alt: 'Нарезанный пирог на деревянной доске, чай и ягоды на столе у Балтийского моря', caption: 'Пирог для общего стола: нарежьте порции и подготовьте всё для подачи до начала трапезы.' },
@@ -16,6 +18,10 @@ export function journalFigures(slug: string, sectionCount: number, city = false)
     { ...scenes.delivery, afterSection: 1 },
     { ...scenes.picnic, afterSection: 6 },
     { image: svetlogorskBreakfast, afterSection: 10, alt: 'Иллюстрированный семейный завтрак: омлет, сырники, каша и круассан на деревянном столе у окна с видом на Балтику', caption: 'Редакционная иллюстрация, созданная с помощью ИИ. Не фотография конкретного кафе или его блюд.' },
+  ];
+  if (slug === 'pekarni-i-pirogi-v-zelenogradske' && sectionCount > 4) return [
+    { ...scenes.delivery, afterSection: 1 },
+    { image: zelenogradskBakery, afterSection: 5, alt: 'Иллюстрированный прилавок приморской пекарни: целый пирог, отдельный кусок, багет, хлеб и вишнёвый штрудель', caption: 'Целое изделие и порция решают разные задачи. Редакционная ИИ-иллюстрация вымышленной пекарни.' },
   ];
   const coastal = /piknik|s-soboy|perevezti|kompaniyu|den-rozhdeniya|kofe-breyk|furshet|chto-pit/.test(slug);
   const atHome = city || /apartament|dostavka|uzhin|obed-v-ofis/.test(slug);
