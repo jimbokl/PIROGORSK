@@ -5025,5 +5025,27 @@
       "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
       "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/"
     ]
+  },
+  {
+    "path": "/journal/pekarni-svetlogorska/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Пекарни Светлогорска: выпечка с собой и цены",
+    "query": "пекарни светлогорска выпечка с собой цены",
+    "intent": "Выбрать хлеб и порционную выпечку с собой в Светлогорске: адрес, масса, бюджет и упаковка.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "distinct_takeaway_bakery_intent_primary_sources_A6_65",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-v-svetlogorske/",
+      "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "/journal/uzhin-v-semnyh-apartamentah/"
+    ]
   }
 ]
