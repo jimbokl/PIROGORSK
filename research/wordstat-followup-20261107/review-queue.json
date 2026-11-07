@@ -75,9 +75,12 @@
     "decision": "Полный рецепт реализован по единому первичному рецепту Ксении Феневой, Т—Ж: продукты, восемь шагов, проверка температуры, порции и две оригинальные иллюстрации. Гид песочной основы сохранён, ссылки в обе стороны. Общая выдача и инвентарь различают задачи; региональные позиции не измерены.",
     "serpVerified": false,
     "frequencyInterpretation": "Отдельные строки экспорта Wordstat; вложенные запросы не складывать. Период в CSV 06.10–06.11.2026; экран показывал другой период.",
-    "status": "implemented_pending_verification",
+    "status": "published_verified",
     "previousRelatedOwnerURL": "https://pirogorsk.ru/journal/pesochnoe-testo-dlya-kisha/",
-    "evidence": "research/content-sprint-20261107p/brief.md"
+    "evidence": "research/content-sprint-20261107p/brief.md",
+    "verification": "qa/sprint-20261107p/acceptance-final.json",
+    "runtimeCommit": "ff968b4cab00800244b9a2eb5eee4039a6847239",
+    "ciURL": "https://github.com/jimbokl/PIROGORSK/actions/runs/42394401306"
   },
   {
     "id": "W07-04",

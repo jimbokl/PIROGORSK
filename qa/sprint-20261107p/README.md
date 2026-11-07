@@ -10,4 +10,8 @@
 
 [Бриф](../../research/content-sprint-20261107p/brief.md), [редакторская проверка](../../research/content-sprint-20261107p/editorial-review.md), [GSC](../../research/content-sprint-20261107p/gsc/README.md). Режим изображений — imagegen tool, промпты в `imagegen-prompts.txt`.
 
-CI и production: ожидают публикации; итог будет дописан после проверки конкретного SHA.
+Runtime `ff968b4cab00800244b9a2eb5eee4039a6847239`; [CI42394401306 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42394401306). Pages07.11 17:24:42UTC, опубликованная совместимость Worker/Pages и IndexNow PASS.
+
+Production: 9 HTML SHA256, 144 ресурса (73 побайтовых совпадения CSS/WebP/JPEG и 71 AVIF с совпавшими размерами и успешным декодированием), 5 внутренних ссылок200, блог87/sitemap282. Recipe5/blog-card5 PASS, телефон и планшет просмотрены. Ошибок и сетевых повторов нет. Уточнён только QA-сценарий: снимки ждут декодирования всех видимых соседних карточек, повторно PASS local/production. Исходный runtime не менялся.
+
+W07-03 закрыт в очереди и бэклоге. [Машиночитаемая приёмка](acceptance-final.json). Спринт завершён; следующие спринты, наблюдения и контентные задачи не запускаются по запросу пользователя.

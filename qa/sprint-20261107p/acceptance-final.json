@@ -1,0 +1,102 @@
+{
+  "status": "complete",
+  "checkedAt": "2026-11-07T17:29:04.865497+00:00",
+  "scope": "One current sprint W07-03 plus user GSC archive; stop after production acceptance.",
+  "runtimeCommit": "ff968b4cab00800244b9a2eb5eee4039a6847239",
+  "ci": {
+    "id": 42394401306,
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42394401306",
+    "conclusion": "success",
+    "deploymentCompletedAt": "2026-11-07T17:24:42Z",
+    "publishedCompatibility": "success",
+    "indexNow": "success"
+  },
+  "article": {
+    "url": "https://pirogorsk.ru/journal/kish-s-kuritsey-i-gribami/",
+    "sections": 7,
+    "tables": 2,
+    "steps": 8,
+    "primarySources": 3,
+    "originalIllustrations": 2,
+    "sourceReview": "research/content-sprint-20261107p/editorial-review.md",
+    "regionalSERPVerified": false,
+    "kitchenTrialClaimed": false
+  },
+  "production": {
+    "htmlSHA256Matches": 9,
+    "assets": 144,
+    "byteMatches": 73,
+    "decodedAVIFWithMatchingDimensions": 71,
+    "internalLinks200": 5,
+    "blogArticles": 87,
+    "sitemapURLs": 282,
+    "recipeWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "blogCardWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "noJavaScript": true,
+    "phoneTabletScreensReviewed": true,
+    "finalErrors": 0,
+    "networkRetries": 0
+  },
+  "local": {
+    "typeErrors": 0,
+    "typeWarnings": 0,
+    "unitTests": 66,
+    "workerAPIAndSQL": "PASS",
+    "buildHTML": 287,
+    "seo": "PASS",
+    "artworkArticles": 87,
+    "monthlyViewportChecks": 210,
+    "priority": "PASS",
+    "catalogSKUs": 154,
+    "catalogWidths": 6,
+    "quantityGeometry": "1→2→99→1 PASS",
+    "registryStrict": "PASS",
+    "ogBytes": 173205
+  },
+  "preserved": {
+    "baselineSHA256": "PASS",
+    "feed": true,
+    "catalogSKUs": 154,
+    "prices": true,
+    "sharedProductAndBlogCards": true,
+    "CRMAndContacts": true,
+    "foreignBacklogAndHistoricalQA": true
+  },
+  "gsc": {
+    "input": "/Users/dmitrij/Downloads/pirogorsk.ru-Performance-on-Search-2026-11-07 (1).zip",
+    "actualDates": [
+      "2026-10-22",
+      "2026-11-04"
+    ],
+    "clicks": 8,
+    "impressions": 147,
+    "ctrPercent": 5.442176870748299,
+    "mobileClicks": 6,
+    "sameSevenCSVAsPreviousNov7": true,
+    "addedDayVsNov5": {
+      "date": "2026-11-04",
+      "clicks": 3,
+      "impressions": 39
+    },
+    "report": "research/content-sprint-20261107p/gsc/README.md"
+  },
+  "verificationNotes": [
+    "Blog-card captures await decoding of all visible neighboring card images; updated verifier passed locally and on production.",
+    "No fresh PageSpeed result claimed."
+  ],
+  "remainingInThisSprint": [],
+  "stopAfterCompletion": true,
+  "nextSprintStarted": false
+}

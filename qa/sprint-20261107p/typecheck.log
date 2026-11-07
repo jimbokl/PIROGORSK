@@ -711,8 +711,7 @@
 [7m112[0m } finally {await browser.disconnect();await chrome.kill();}
 [7m   [0m [93m                                      ~~~~~~~~~~~~~~~~~~~[0m
 
-Result (658 files): 
+Result (658 files):
 - 0 errors
 - 0 warnings
 - 145 hints
-
