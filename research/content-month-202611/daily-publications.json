@@ -53,6 +53,26 @@
         },
         "report": "qa/content-daily-20261105/README.md"
       }
+    },
+    {
+      "date": "2026-11-07",
+      "topic": 17,
+      "slug": "kopchenie-na-sosnovyh-shishkah",
+      "url": "https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/",
+      "status": "preparing",
+      "stage": "ready-for-ci",
+      "startedAt": "2026-11-07T08:05:18.574Z",
+      "protocol": "research/content-daily-20261107/RELEASE.md",
+      "title": "Копчёная рыба: история Кранца и выбор на Балтике",
+      "localVerification": {
+        "typeCheck": "PASS: 0 errors, 0 warnings",
+        "build": "PASS: 283 pages",
+        "seo": "PASS: 278 sitemap URLs",
+        "artwork": "PASS: 83 unique scenes",
+        "content": "PASS: 190 viewports",
+        "unitTests": "PASS: 66 tests",
+        "report": "qa/content-daily-20261107/local-report.json"
+      }
     }
   ]
 }
