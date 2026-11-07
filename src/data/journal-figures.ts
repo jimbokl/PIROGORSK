@@ -5,6 +5,7 @@ import svetlogorskBreakfast from '../../design/blog-source/reading-20261107/svet
 
 import zelenogradskBakery from '../../design/blog-source/reading-20261107/zelenogradsk-bakery-formats.png';
 import applePreparation from '../../design/blog-source/reading-20261107/apple-recipe-preparation.png';
+import cabbagePreparation from '../../design/blog-source/reading-20261107/cabbage-recipe-preparation.png';
 
 const scenes = {
   delivery: { image: delivery, alt: 'Пирог в крафтовой коробке, чашки и блокнот на деревянном столе у окна с видом на Балтику', caption: 'Для ужина в апартаментах удобно заранее продумать общий стол: еду, напитки и посуду.' },
@@ -14,6 +15,9 @@ const scenes = {
 
 /** Shared editorial cutaways supplement each article's own unique cover. */
 export function journalFigures(slug: string, sectionCount: number, city = false) {
+  if (slug === 'zalivnoy-pirog-s-kapustoy-na-kefire') return [
+    { image: cabbagePreparation, afterSection: 0, alt: 'Капуста в дуршлаге, нарезанные варёные яйца и отдельная миска с кефирным тестом на деревянном столе', caption: 'Разделите продукты для начинки и теста до замеса. Количества сверяйте с таблицей; иллюстрация показывает этап подготовки.' },
+  ];
   if (slug === 'yablochnyy-pirog-v-duhovke') return [
     { image: applePreparation, afterSection: 0, alt: 'Редакционная иллюстрация: яблоки, яйца, миски с мукой и сахаром, венчик и нарезанные яблочные дольки на деревянном столе', caption: 'Подготовьте продукты перед замесом. Количества сверяйте с таблицей; на иллюстрации показан общий набор ингредиентов.' },
   ];

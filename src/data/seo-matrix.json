@@ -3706,7 +3706,8 @@
     },
     "relatedArticles": [
       "/journal/pirog-s-lukom-i-yaytsom/",
-      "/journal/postnye-pirogi-kak-proverit-sostav/"
+      "/journal/postnye-pirogi-kak-proverit-sostav/",
+      "/journal/zalivnoy-pirog-s-kapustoy-na-kefire/"
     ]
   },
   {
@@ -3994,7 +3995,8 @@
     },
     "relatedArticles": [
       "/journal/pirog-na-skovorode-ili-v-duhovke/",
-      "/journal/pochemu-u-piroga-syroe-dno/"
+      "/journal/pochemu-u-piroga-syroe-dno/",
+      "/journal/zalivnoy-pirog-s-kapustoy-na-kefire/"
     ]
   },
   {
@@ -5070,6 +5072,29 @@
       "/journal/gde-poest-v-svetlogorske/",
       "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
       "/journal/uzhin-v-semnyh-apartamentah/"
+    ]
+  },
+  {
+    "path": "/journal/zalivnoy-pirog-s-kapustoy-na-kefire/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "search-followup-20261107",
+    "pageType": "article",
+    "title": "Заливной пирог с капустой на кефире: рецепт и порции",
+    "query": "заливной пирог с капустой",
+    "intent": "Приготовить заливной пирог с капустой и яйцом на кефире: закладка, разделение яиц, подготовка капусты, выпечка и порции. Выбор начинки и осетинский рецепт сохраняют прежних владельцев.",
+    "monthlySearches": null,
+    "demandSource": "research/wordstat-followup-20261107/review-queue.json · W07-02, область10857, все устройства; периоды CSV/UI расходятся",
+    "serpValidated": false,
+    "ownershipBasis": "wordstat_recipe_intent_and_existing_owner_inventory; general recipe SERP checked, regional positions not measured",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Выбрать пироги к общему столу"
+    },
+    "relatedArticles": [
+      "/journal/pirog-s-kapustoy-i-yaytsom/",
+      "/journal/zalivnoy-pirog-na-kefire/",
+      "/journal/kak-narezat-pirog/"
     ]
   }
 ]

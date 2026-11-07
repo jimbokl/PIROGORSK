@@ -1,0 +1,67 @@
+{
+  "stage": "local",
+  "status": "PASS",
+  "article": "/journal/zalivnoy-pirog-s-kapustoy-na-kefire/",
+  "sections": 7,
+  "tables": 2,
+  "steps": 7,
+  "sources": 3,
+  "originalIllustrations": 2,
+  "catalogSKU": 154,
+  "blogArticles": 86,
+  "sitemapOwners": 281,
+  "builtHTML": 286,
+  "check": {
+    "files": 658,
+    "errors": 0,
+    "warnings": 0
+  },
+  "unitTests": 66,
+  "worker": "PASS",
+  "seo": "PASS",
+  "artwork": "PASS",
+  "monthlyViewportChecks": 210,
+  "priorityViews": 16,
+  "articleWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "blogCardWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "catalogWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "quantityStates": [
+    1,
+    2,
+    99,
+    1
+  ],
+  "registryStrict": "PASS",
+  "visualReview": [
+    "local-hero-390.png",
+    "local-preparation-768.png",
+    "local-blog-card-390.png",
+    "local-blog-card-768.png",
+    "catalog-local/local-home-cards-390.png",
+    "catalog-local/local-menu-cards-768.png"
+  ],
+  "preserved": "preserved.json",
+  "pending": [
+    "CI",
+    "production readback and responsive verification"
+  ]
+}

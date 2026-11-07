@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+85 !== 86
+
+    at file:///Volumes/DevSim/Projects/PIROGORSK/qa/sprint-20261107o/verify-blog-card.mjs:17:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 85,
+  expected: 86,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0

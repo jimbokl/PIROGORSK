@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+800 !== 630
+
+    at file:///Volumes/DevSim/Projects/PIROGORSK/scripts/verify-article-artwork.mjs:24:46 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 800,
+  expected: 630,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0
