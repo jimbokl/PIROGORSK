@@ -1,0 +1,2763 @@
+{
+  "exports": [
+    {
+      "source": "/Users/dmitrij/Downloads/pirogorsk.ru-Performance-on-Search-2026-11-04.zip",
+      "sha256": "0e72eb51301142c9adf042a52e9a3da3ea9ec50239801b23c76d9951f0c3c356",
+      "csvSha256": {
+        "Диаграмма.csv": "3f0599671e72c93459cae11315e927ea3c09924b319e64dbbd6102b1f76f90b9",
+        "Запросы.csv": "fbf1d3e086e5c85dd4cee63b118f3082a8c8c769c4c64171d0c38222d9c5c2ce",
+        "Страницы.csv": "0133a8858e4a836f3e248afb83609c9121756c3842ca0069dc46f17ad11e1311",
+        "Страны.csv": "1a6aaba04fbd215e610799891db5b6106f57af026e062ebcab8df3cd060175e0",
+        "Устройства.csv": "ef481c2cd5e25b337c57a29ec45c3fd11440fe7b1a9093638f8aad3a57124256",
+        "Вид в поиске.csv": "f546566349e76d5fac64e14c88770d05162c3031cb725de899c21da8de736a66",
+        "Фильтры.csv": "2631fb0026db90ef1c45f903312782540275438ae67b7e133ba2e85230cad70d"
+      },
+      "firstDate": "2026-10-22",
+      "lastDate": "2026-11-02",
+      "days": 12,
+      "clicks": 4,
+      "impressions": 75,
+      "ctrPct": 5.333333333333334,
+      "daily": [
+        [
+          "2026-10-22",
+          "0",
+          "0",
+          "",
+          ""
+        ],
+        [
+          "2026-10-23",
+          "0",
+          "1",
+          "0%",
+          "5"
+        ],
+        [
+          "2026-10-24",
+          "0",
+          "2",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-10-25",
+          "0",
+          "2",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-10-26",
+          "0",
+          "3",
+          "0%",
+          "10.7"
+        ],
+        [
+          "2026-10-27",
+          "0",
+          "4",
+          "0%",
+          "9.5"
+        ],
+        [
+          "2026-10-28",
+          "0",
+          "5",
+          "0%",
+          "8.8"
+        ],
+        [
+          "2026-10-29",
+          "0",
+          "8",
+          "0%",
+          "15.8"
+        ],
+        [
+          "2026-10-30",
+          "0",
+          "6",
+          "0%",
+          "18.7"
+        ],
+        [
+          "2026-10-31",
+          "0",
+          "6",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-11-01",
+          "0",
+          "14",
+          "0%",
+          "12.3"
+        ],
+        [
+          "2026-11-02",
+          "4",
+          "24",
+          "16.67%",
+          "21"
+        ]
+      ],
+      "dimensions": {
+        "Запросы.csv": {
+          "count": 11,
+          "clicks": 4,
+          "impressions": 14,
+          "rows": [
+            {
+              "key": "круглый пирог",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 21.5
+            },
+            {
+              "key": "пироги калининград",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 30.5
+            },
+            {
+              "key": "где позавтракать в зеленоградске",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 26.0
+            },
+            {
+              "key": "1 5 кг пирога на сколько человек",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 11.0
+            },
+            {
+              "key": "сколько пирогов надо на 20 человек",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 14.0
+            },
+            {
+              "key": "мясной пирог цена",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "начинка из вишни для открытого пирога",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "лучшие завтраки в зеленоградске",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 28.0
+            },
+            {
+              "key": "сколько весит один кусок пирога",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 30.0
+            },
+            {
+              "key": "срок годности пирога с капустой",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 36.0
+            },
+            {
+              "key": "пироги на заказ калининград",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 39.0
+            }
+          ]
+        },
+        "Страницы.csv": {
+          "count": 28,
+          "clicks": 4,
+          "impressions": 76,
+          "rows": [
+            {
+              "key": "https://pirogorsk.ru/journal/kak-narezat-pirog/",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 21.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+              "clicks": 1,
+              "impressions": 3,
+              "ctrPctReported": 33.33,
+              "position": 15.0
+            },
+            {
+              "key": "https://pirogorsk.ru/kaliningrad/",
+              "clicks": 1,
+              "impressions": 2,
+              "ctrPctReported": 50.0,
+              "position": 36.5
+            },
+            {
+              "key": "https://pirogorsk.ru/podbor/",
+              "clicks": 0,
+              "impressions": 23,
+              "ctrPctReported": 0.0,
+              "position": 11.09
+            },
+            {
+              "key": "https://pirogorsk.ru/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctrPctReported": 0.0,
+              "position": 4.57
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-pozavtrakat-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 5,
+              "ctrPctReported": 0.0,
+              "position": 21.4
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/myasnoy-pirog-nachinka-i-testo/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 12.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/sloenoe-ili-drozhzhevoe-testo/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 35.75
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/kak-hranit-pirogi/",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 41.67
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/sibirskiy-pirog-s-brusnikoy-i-smetanoy-1600-g/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 3.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pesochnoe-testo-dlya-kisha/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 7.5
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/dostavka/zelenogradsk/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 18.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-s-detmi-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-v-kaliningrade/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/kak-perevezti-pirog/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 5.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 7.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-dlya-gamburgera-solodovaya-75-gr/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-k-kofe-85-gr-h-100-sht-v-up/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/lepeshka-pshenichnaya-kruglaya/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/pirog-s-pechenyu-1400-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-smak-dlya-gamburgera-mini-30-gr/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "https://pirogorsk.ru/svetlogorsk/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "http://pirogorsk.ru/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pirog-s-vishney-nachinka/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "https://pirogorsk.ru/pirogi/myasnoy-pirog/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/drozhzhevoe-testo-dlya-pirogov/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 27.0
+            },
+            {
+              "key": "https://pirogorsk.ru/nabor/na-kompaniyu/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 27.0
+            }
+          ]
+        },
+        "Страны.csv": {
+          "count": 6,
+          "clicks": 4,
+          "impressions": 75,
+          "rows": [
+            {
+              "key": "Россия",
+              "clicks": 4,
+              "impressions": 68,
+              "ctrPctReported": 5.88,
+              "position": 14.28
+            },
+            {
+              "key": "Казахстан",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 8.5
+            },
+            {
+              "key": "Беларусь",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 17.0
+            },
+            {
+              "key": "Финляндия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "Кения",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 30.0
+            },
+            {
+              "key": "Бангладеш",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 36.0
+            }
+          ]
+        },
+        "Устройства.csv": {
+          "count": 3,
+          "clicks": 4,
+          "impressions": 75,
+          "rows": [
+            {
+              "key": "Мобильный",
+              "clicks": 4,
+              "impressions": 58,
+              "ctrPctReported": 6.9,
+              "position": 13.29
+            },
+            {
+              "key": "ПК",
+              "clicks": 0,
+              "impressions": 9,
+              "ctrPctReported": 0.0,
+              "position": 12.33
+            },
+            {
+              "key": "Планшет",
+              "clicks": 0,
+              "impressions": 8,
+              "ctrPctReported": 0.0,
+              "position": 26.88
+            }
+          ]
+        },
+        "Вид в поиске.csv": {
+          "count": 1,
+          "clicks": 0,
+          "impressions": 9,
+          "rows": [
+            {
+              "key": "Описания товара",
+              "clicks": 0,
+              "impressions": 9,
+              "ctrPctReported": 0.0,
+              "position": 7.0
+            }
+          ]
+        }
+      },
+      "filters": [
+        [
+          "Тип поиска",
+          "Веб-поиск (текст)"
+        ],
+        [
+          "Дата",
+          "За последние 3 месяца"
+        ]
+      ]
+    },
+    {
+      "source": "/Users/dmitrij/Downloads/pirogorsk.ru-Performance-on-Search-2026-11-05.zip",
+      "sha256": "423af5b6714945f950fb83844e11761f3a754a453894f473d16a0e8790d4aa92",
+      "csvSha256": {
+        "Диаграмма.csv": "c2a811332844a00ee5e698746a089c8fc3ba7620e5cd10fe38dc97779dc7d61a",
+        "Запросы.csv": "6ca882388acb9c627a6ee2128feddd12bdebacce2c24dc7f4c6f4fbb2e51f014",
+        "Страницы.csv": "5188acaf86e5d7d0030f639fcf9d8cf2091e1c89ac4c88976cacd3463dd8ed87",
+        "Страны.csv": "76d25ae02cfdb9f9b9445161de0231e6f845cda6d5e8da67e1393d116f4b9955",
+        "Устройства.csv": "4c5dc0387c9bfb3669ea550faed9994ebc5d9d6dac134b9848996d18e2009306",
+        "Вид в поиске.csv": "78bd78d012db76264925ec4087015abf0e8c80d8935a108a099898b944bf2d5c",
+        "Фильтры.csv": "2631fb0026db90ef1c45f903312782540275438ae67b7e133ba2e85230cad70d"
+      },
+      "firstDate": "2026-10-22",
+      "lastDate": "2026-11-03",
+      "days": 13,
+      "clicks": 5,
+      "impressions": 108,
+      "ctrPct": 4.62962962962963,
+      "daily": [
+        [
+          "2026-10-22",
+          "0",
+          "0",
+          "",
+          ""
+        ],
+        [
+          "2026-10-23",
+          "0",
+          "1",
+          "0%",
+          "5"
+        ],
+        [
+          "2026-10-24",
+          "0",
+          "2",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-10-25",
+          "0",
+          "2",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-10-26",
+          "0",
+          "3",
+          "0%",
+          "10.7"
+        ],
+        [
+          "2026-10-27",
+          "0",
+          "4",
+          "0%",
+          "9.5"
+        ],
+        [
+          "2026-10-28",
+          "0",
+          "5",
+          "0%",
+          "8.8"
+        ],
+        [
+          "2026-10-29",
+          "0",
+          "8",
+          "0%",
+          "15.8"
+        ],
+        [
+          "2026-10-30",
+          "0",
+          "6",
+          "0%",
+          "18.7"
+        ],
+        [
+          "2026-10-31",
+          "0",
+          "6",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-11-01",
+          "0",
+          "14",
+          "0%",
+          "12.3"
+        ],
+        [
+          "2026-11-02",
+          "4",
+          "24",
+          "16.67%",
+          "21"
+        ],
+        [
+          "2026-11-03",
+          "1",
+          "33",
+          "3.03%",
+          "18"
+        ]
+      ],
+      "dimensions": {
+        "Запросы.csv": {
+          "count": 15,
+          "clicks": 4,
+          "impressions": 19,
+          "rows": [
+            {
+              "key": "круглый пирог",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 21.5
+            },
+            {
+              "key": "пироги калининград",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 30.5
+            },
+            {
+              "key": "где позавтракать в зеленоградске",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 25.33
+            },
+            {
+              "key": "1 5 кг пирога на сколько человек",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 11.0
+            },
+            {
+              "key": "сколько пирогов надо на 20 человек",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 14.0
+            },
+            {
+              "key": "мясной пирог цена",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "начинка из вишни для открытого пирога",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "лучшие завтраки в зеленоградске",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 28.0
+            },
+            {
+              "key": "сколько весит один кусок пирога",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 30.0
+            },
+            {
+              "key": "срок годности пирога с капустой",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 36.0
+            },
+            {
+              "key": "как выбрать слоеное тесто в магазине",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 38.0
+            },
+            {
+              "key": "пироги на заказ калининград",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 39.0
+            },
+            {
+              "key": "какое слоеное тесто лучше купить дрожжевое или бездрожжевое",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 41.0
+            },
+            {
+              "key": "как красиво нарезать пирог прямоугольный",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 45.0
+            },
+            {
+              "key": "как определить готовность дрожжевого теста",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 50.0
+            }
+          ]
+        },
+        "Страницы.csv": {
+          "count": 38,
+          "clicks": 5,
+          "impressions": 118,
+          "rows": [
+            {
+              "key": "https://pirogorsk.ru/journal/kak-narezat-pirog/",
+              "clicks": 2,
+              "impressions": 5,
+              "ctrPctReported": 40.0,
+              "position": 27.4
+            },
+            {
+              "key": "https://pirogorsk.ru/",
+              "clicks": 1,
+              "impressions": 9,
+              "ctrPctReported": 11.11,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+              "clicks": 1,
+              "impressions": 4,
+              "ctrPctReported": 25.0,
+              "position": 13.75
+            },
+            {
+              "key": "https://pirogorsk.ru/kaliningrad/",
+              "clicks": 1,
+              "impressions": 3,
+              "ctrPctReported": 33.33,
+              "position": 25.0
+            },
+            {
+              "key": "https://pirogorsk.ru/podbor/",
+              "clicks": 0,
+              "impressions": 28,
+              "ctrPctReported": 0.0,
+              "position": 11.89
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/sloenoe-ili-drozhzhevoe-testo/",
+              "clicks": 0,
+              "impressions": 9,
+              "ctrPctReported": 0.0,
+              "position": 26.78
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/myasnoy-pirog-nachinka-i-testo/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctrPctReported": 0.0,
+              "position": 11.86
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-pozavtrakat-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 6,
+              "ctrPctReported": 0.0,
+              "position": 21.83
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/kak-hranit-pirogi/",
+              "clicks": 0,
+              "impressions": 5,
+              "ctrPctReported": 0.0,
+              "position": 36.2
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 17.25
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/rynki-kaliningrada-eda/",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 8.67
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/sibirskiy-pirog-s-brusnikoy-i-smetanoy-1600-g/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 3.0
+            },
+            {
+              "key": "https://pirogorsk.ru/svetlogorsk/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 6.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pesochnoe-testo-dlya-kisha/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 7.5
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/pirogi/myasnoy-pirog/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 16.0
+            },
+            {
+              "key": "https://pirogorsk.ru/dostavka/zelenogradsk/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 18.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pirog-s-vishney-nachinka/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 24.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/drozhzhevoe-testo-dlya-pirogov/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 38.5
+            },
+            {
+              "key": "https://pirogorsk.ru/zelenogradsk/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 3.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-s-detmi-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-v-kaliningrade/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/blog/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 5.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/tort-s-kuricey-1500-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 5.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/kak-perevezti-pirog/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 5.0
+            },
+            {
+              "key": "https://pirogorsk.ru/nabory/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 6.0
+            },
+            {
+              "key": "https://pirogorsk.ru/menu/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 7.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-dlya-gamburgera-solodovaya-75-gr/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-k-kofe-85-gr-h-100-sht-v-up/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/lepeshka-pshenichnaya-kruglaya/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/pirog-s-pechenyu-1400-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/about/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-smak-dlya-gamburgera-mini-30-gr/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "http://pirogorsk.ru/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-myasom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/partners/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-vishney-i-gretskim-orehom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 18.0
+            },
+            {
+              "key": "https://pirogorsk.ru/nabor/na-kompaniyu/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 27.0
+            }
+          ]
+        },
+        "Страны.csv": {
+          "count": 11,
+          "clicks": 5,
+          "impressions": 108,
+          "rows": [
+            {
+              "key": "Россия",
+              "clicks": 5,
+              "impressions": 94,
+              "ctrPctReported": 5.32,
+              "position": 14.94
+            },
+            {
+              "key": "Казахстан",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 7.67
+            },
+            {
+              "key": "Беларусь",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 17.0
+            },
+            {
+              "key": "Бангладеш",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 38.5
+            },
+            {
+              "key": "Египет",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 1.0
+            },
+            {
+              "key": "Австрия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 7.0
+            },
+            {
+              "key": "Финляндия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "Турция",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "Кения",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 30.0
+            },
+            {
+              "key": "Бразилия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 45.0
+            },
+            {
+              "key": "Индия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 50.0
+            }
+          ]
+        },
+        "Устройства.csv": {
+          "count": 3,
+          "clicks": 5,
+          "impressions": 108,
+          "rows": [
+            {
+              "key": "Мобильный",
+              "clicks": 5,
+              "impressions": 83,
+              "ctrPctReported": 6.02,
+              "position": 14.86
+            },
+            {
+              "key": "ПК",
+              "clicks": 0,
+              "impressions": 14,
+              "ctrPctReported": 0.0,
+              "position": 10.79
+            },
+            {
+              "key": "Планшет",
+              "clicks": 0,
+              "impressions": 11,
+              "ctrPctReported": 0.0,
+              "position": 27.82
+            }
+          ]
+        },
+        "Вид в поиске.csv": {
+          "count": 1,
+          "clicks": 0,
+          "impressions": 10,
+          "rows": [
+            {
+              "key": "Описания товара",
+              "clicks": 0,
+              "impressions": 10,
+              "ctrPctReported": 0.0,
+              "position": 6.8
+            }
+          ]
+        }
+      },
+      "filters": [
+        [
+          "Тип поиска",
+          "Веб-поиск (текст)"
+        ],
+        [
+          "Дата",
+          "За последние 3 месяца"
+        ]
+      ]
+    },
+    {
+      "source": "/Users/dmitrij/Downloads/pirogorsk.ru-Performance-on-Search-2026-11-07.zip",
+      "sha256": "27eb62e92cf06ab644842aa9590c43ec6b969a926197b02a0c97aabea57eac02",
+      "csvSha256": {
+        "Диаграмма.csv": "b1b1bb5f8a77e5016f75230c8eb111c49002ccbd873b34b37419df1e3536a10a",
+        "Запросы.csv": "4cc6f57ef8b16a6cec9e9a3ded38e94998874e3fd26d80b4c85bb4b05204cc19",
+        "Страницы.csv": "1beee8a1964c01ad2271d7e71311811eb8b25983d2e79da4700a70c639244337",
+        "Страны.csv": "e2903c3fd1c1d420840f5939f934856a47d4ea800dfede41654cb8ff91296ea8",
+        "Устройства.csv": "3199208bb2914eaca8c1cce7be5822b6399872f3adbfd728fdc60998fef1c70b",
+        "Вид в поиске.csv": "968f9594121a6516a89d9aa1c8d02011699faa1d2ba0c94605dff7513a7dafb5",
+        "Фильтры.csv": "2631fb0026db90ef1c45f903312782540275438ae67b7e133ba2e85230cad70d"
+      },
+      "firstDate": "2026-10-22",
+      "lastDate": "2026-11-04",
+      "days": 14,
+      "clicks": 8,
+      "impressions": 147,
+      "ctrPct": 5.442176870748299,
+      "daily": [
+        [
+          "2026-10-22",
+          "0",
+          "0",
+          "",
+          ""
+        ],
+        [
+          "2026-10-23",
+          "0",
+          "1",
+          "0%",
+          "5"
+        ],
+        [
+          "2026-10-24",
+          "0",
+          "2",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-10-25",
+          "0",
+          "2",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-10-26",
+          "0",
+          "3",
+          "0%",
+          "10.7"
+        ],
+        [
+          "2026-10-27",
+          "0",
+          "4",
+          "0%",
+          "9.5"
+        ],
+        [
+          "2026-10-28",
+          "0",
+          "5",
+          "0%",
+          "8.8"
+        ],
+        [
+          "2026-10-29",
+          "0",
+          "8",
+          "0%",
+          "15.8"
+        ],
+        [
+          "2026-10-30",
+          "0",
+          "6",
+          "0%",
+          "18.7"
+        ],
+        [
+          "2026-10-31",
+          "0",
+          "6",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-11-01",
+          "0",
+          "14",
+          "0%",
+          "12.3"
+        ],
+        [
+          "2026-11-02",
+          "4",
+          "24",
+          "16.67%",
+          "21"
+        ],
+        [
+          "2026-11-03",
+          "1",
+          "33",
+          "3.03%",
+          "18"
+        ],
+        [
+          "2026-11-04",
+          "3",
+          "39",
+          "7.69%",
+          "19.5"
+        ]
+      ],
+      "dimensions": {
+        "Запросы.csv": {
+          "count": 24,
+          "clicks": 6,
+          "impressions": 32,
+          "rows": [
+            {
+              "key": "круглый пирог",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 21.5
+            },
+            {
+              "key": "пироги калининград",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 30.5
+            },
+            {
+              "key": "замороженное песочное тесто купить",
+              "clicks": 1,
+              "impressions": 1,
+              "ctrPctReported": 100.0,
+              "position": 18.0
+            },
+            {
+              "key": "ассорти круассанов",
+              "clicks": 1,
+              "impressions": 1,
+              "ctrPctReported": 100.0,
+              "position": 35.0
+            },
+            {
+              "key": "где позавтракать в зеленоградске",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 26.25
+            },
+            {
+              "key": "горский пирог",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 19.0
+            },
+            {
+              "key": "сколько весит один кусок пирога",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 29.0
+            },
+            {
+              "key": "какое слоеное тесто лучше купить дрожжевое или бездрожжевое",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 42.5
+            },
+            {
+              "key": "1 5 кг пирога на сколько человек",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 11.0
+            },
+            {
+              "key": "пастуший пирог с курицей и грибами",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "пирог с капустой купить в самаре",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "сколько пирогов надо на 20 человек",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 14.0
+            },
+            {
+              "key": "мясной пирог цена",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "начинка из вишни для открытого пирога",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "лучшие завтраки в зеленоградске",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 28.0
+            },
+            {
+              "key": "как красиво порезать пирог круглый",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 33.0
+            },
+            {
+              "key": "срок годности пирога с капустой",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 36.0
+            },
+            {
+              "key": "как выбрать слоеное тесто в магазине",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 38.0
+            },
+            {
+              "key": "пироги на заказ калининград",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 39.0
+            },
+            {
+              "key": "сколько хранятся пирожки с мясом",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 40.0
+            },
+            {
+              "key": "как красиво нарезать пирог прямоугольный",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 45.0
+            },
+            {
+              "key": "сколько по времени должно подниматься тесто",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 47.0
+            },
+            {
+              "key": "как определить готовность дрожжевого теста",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 50.0
+            },
+            {
+              "key": "мини булка",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 66.0
+            }
+          ]
+        },
+        "Страницы.csv": {
+          "count": 48,
+          "clicks": 8,
+          "impressions": 158,
+          "rows": [
+            {
+              "key": "https://pirogorsk.ru/journal/kak-narezat-pirog/",
+              "clicks": 2,
+              "impressions": 7,
+              "ctrPctReported": 28.57,
+              "position": 24.43
+            },
+            {
+              "key": "https://pirogorsk.ru/",
+              "clicks": 1,
+              "impressions": 9,
+              "ctrPctReported": 11.11,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pochemu-pirog-treskaetsya/",
+              "clicks": 1,
+              "impressions": 8,
+              "ctrPctReported": 12.5,
+              "position": 12.88
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+              "clicks": 1,
+              "impressions": 5,
+              "ctrPctReported": 20.0,
+              "position": 12.4
+            },
+            {
+              "key": "https://pirogorsk.ru/kaliningrad/",
+              "clicks": 1,
+              "impressions": 3,
+              "ctrPctReported": 33.33,
+              "position": 25.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/testo-pesochnoe-zamorozhennoe-ot-5-kg/",
+              "clicks": 1,
+              "impressions": 2,
+              "ctrPctReported": 50.0,
+              "position": 13.5
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/assorti-na-vybor-kruassanov-mini-30-g-h-100-sht-up/",
+              "clicks": 1,
+              "impressions": 1,
+              "ctrPctReported": 100.0,
+              "position": 35.0
+            },
+            {
+              "key": "https://pirogorsk.ru/podbor/",
+              "clicks": 0,
+              "impressions": 29,
+              "ctrPctReported": 0.0,
+              "position": 11.66
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/sloenoe-ili-drozhzhevoe-testo/",
+              "clicks": 0,
+              "impressions": 12,
+              "ctrPctReported": 0.0,
+              "position": 28.75
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/kak-hranit-pirogi/",
+              "clicks": 0,
+              "impressions": 9,
+              "ctrPctReported": 0.0,
+              "position": 32.44
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/myasnoy-pirog-nachinka-i-testo/",
+              "clicks": 0,
+              "impressions": 8,
+              "ctrPctReported": 0.0,
+              "position": 13.88
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-pozavtrakat-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctrPctReported": 0.0,
+              "position": 22.86
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/rynki-kaliningrada-eda/",
+              "clicks": 0,
+              "impressions": 5,
+              "ctrPctReported": 0.0,
+              "position": 8.4
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/kak-perevezti-pirog/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 5.25
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 17.25
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/drozhzhevoe-testo-dlya-pirogov/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 38.5
+            },
+            {
+              "key": "https://pirogorsk.ru/pirogi/myasnoy-pirog/",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 14.67
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/sibirskiy-pirog-s-brusnikoy-i-smetanoy-1600-g/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 3.0
+            },
+            {
+              "key": "https://pirogorsk.ru/svetlogorsk/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 6.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pesochnoe-testo-dlya-kisha/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 7.5
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/dostavka/zelenogradsk/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 18.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pirog-s-vishney-nachinka/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 24.5
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-smak-dlya-gamburgera-mini-30-gr/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 37.5
+            },
+            {
+              "key": "https://pirogorsk.ru/zelenogradsk/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 3.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-s-detmi-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-v-kaliningrade/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/blog/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 5.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/tort-s-kuricey-1500-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 5.0
+            },
+            {
+              "key": "https://pirogorsk.ru/nabory/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 6.0
+            },
+            {
+              "key": "https://pirogorsk.ru/menu/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 7.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-dlya-gamburgera-solodovaya-75-gr/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-k-kofe-85-gr-h-100-sht-v-up/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/lepeshka-pshenichnaya-kruglaya/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/pirog-s-pechenyu-1400-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/about/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "http://pirogorsk.ru/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-myasom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/vitushka-s-makom-85-gr-h-100-sht-up/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/partners/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/pirog-s-kapustoj-1200-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pirog-s-kuritsey-i-gribami-vybor/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "https://pirogorsk.ru/povody/svetlogorsk/na-pominki/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 16.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-vishney-i-gretskim-orehom/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 17.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-vishney-i-gretskim-orehom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 18.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-syirom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 21.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskiy-pirog-so-shpinatom-i-syrom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 26.0
+            },
+            {
+              "key": "https://pirogorsk.ru/nabor/na-kompaniyu/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 27.0
+            }
+          ]
+        },
+        "Страны.csv": {
+          "count": 15,
+          "clicks": 8,
+          "impressions": 147,
+          "rows": [
+            {
+              "key": "Россия",
+              "clicks": 8,
+              "impressions": 126,
+              "ctrPctReported": 6.35,
+              "position": 15.63
+            },
+            {
+              "key": "Казахстан",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 7.67
+            },
+            {
+              "key": "Бангладеш",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 35.0
+            },
+            {
+              "key": "Беларусь",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 17.0
+            },
+            {
+              "key": "Бразилия",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 46.0
+            },
+            {
+              "key": "Индия",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 47.0
+            },
+            {
+              "key": "Египет",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 1.0
+            },
+            {
+              "key": "Австрия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 7.0
+            },
+            {
+              "key": "Финляндия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "Грузия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "Турция",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "Германия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 12.0
+            },
+            {
+              "key": "Индонезия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "Кения",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 30.0
+            },
+            {
+              "key": "Вьетнам",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 40.0
+            }
+          ]
+        },
+        "Устройства.csv": {
+          "count": 3,
+          "clicks": 8,
+          "impressions": 147,
+          "rows": [
+            {
+              "key": "Мобильный",
+              "clicks": 6,
+              "impressions": 111,
+              "ctrPctReported": 5.41,
+              "position": 15.95
+            },
+            {
+              "key": "ПК",
+              "clicks": 2,
+              "impressions": 19,
+              "ctrPctReported": 10.53,
+              "position": 13.89
+            },
+            {
+              "key": "Планшет",
+              "clicks": 0,
+              "impressions": 17,
+              "ctrPctReported": 0.0,
+              "position": 24.47
+            }
+          ]
+        },
+        "Вид в поиске.csv": {
+          "count": 1,
+          "clicks": 2,
+          "impressions": 16,
+          "rows": [
+            {
+              "key": "Описания товара",
+              "clicks": 2,
+              "impressions": 16,
+              "ctrPctReported": 12.5,
+              "position": 13.69
+            }
+          ]
+        }
+      },
+      "filters": [
+        [
+          "Тип поиска",
+          "Веб-поиск (текст)"
+        ],
+        [
+          "Дата",
+          "За последние 3 месяца"
+        ]
+      ]
+    },
+    {
+      "source": "/Users/dmitrij/Downloads/pirogorsk.ru-Performance-on-Search-2026-11-07 (1).zip",
+      "sha256": "aef7cf3d052df0738284576b5b812d8f6d26aaf5e04771f436c534e249db4c2b",
+      "csvSha256": {
+        "Диаграмма.csv": "b1b1bb5f8a77e5016f75230c8eb111c49002ccbd873b34b37419df1e3536a10a",
+        "Запросы.csv": "4cc6f57ef8b16a6cec9e9a3ded38e94998874e3fd26d80b4c85bb4b05204cc19",
+        "Страницы.csv": "1beee8a1964c01ad2271d7e71311811eb8b25983d2e79da4700a70c639244337",
+        "Страны.csv": "e2903c3fd1c1d420840f5939f934856a47d4ea800dfede41654cb8ff91296ea8",
+        "Устройства.csv": "3199208bb2914eaca8c1cce7be5822b6399872f3adbfd728fdc60998fef1c70b",
+        "Вид в поиске.csv": "968f9594121a6516a89d9aa1c8d02011699faa1d2ba0c94605dff7513a7dafb5",
+        "Фильтры.csv": "2631fb0026db90ef1c45f903312782540275438ae67b7e133ba2e85230cad70d"
+      },
+      "firstDate": "2026-10-22",
+      "lastDate": "2026-11-04",
+      "days": 14,
+      "clicks": 8,
+      "impressions": 147,
+      "ctrPct": 5.442176870748299,
+      "daily": [
+        [
+          "2026-10-22",
+          "0",
+          "0",
+          "",
+          ""
+        ],
+        [
+          "2026-10-23",
+          "0",
+          "1",
+          "0%",
+          "5"
+        ],
+        [
+          "2026-10-24",
+          "0",
+          "2",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-10-25",
+          "0",
+          "2",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-10-26",
+          "0",
+          "3",
+          "0%",
+          "10.7"
+        ],
+        [
+          "2026-10-27",
+          "0",
+          "4",
+          "0%",
+          "9.5"
+        ],
+        [
+          "2026-10-28",
+          "0",
+          "5",
+          "0%",
+          "8.8"
+        ],
+        [
+          "2026-10-29",
+          "0",
+          "8",
+          "0%",
+          "15.8"
+        ],
+        [
+          "2026-10-30",
+          "0",
+          "6",
+          "0%",
+          "18.7"
+        ],
+        [
+          "2026-10-31",
+          "0",
+          "6",
+          "0%",
+          "6.5"
+        ],
+        [
+          "2026-11-01",
+          "0",
+          "14",
+          "0%",
+          "12.3"
+        ],
+        [
+          "2026-11-02",
+          "4",
+          "24",
+          "16.67%",
+          "21"
+        ],
+        [
+          "2026-11-03",
+          "1",
+          "33",
+          "3.03%",
+          "18"
+        ],
+        [
+          "2026-11-04",
+          "3",
+          "39",
+          "7.69%",
+          "19.5"
+        ]
+      ],
+      "dimensions": {
+        "Запросы.csv": {
+          "count": 24,
+          "clicks": 6,
+          "impressions": 32,
+          "rows": [
+            {
+              "key": "круглый пирог",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 21.5
+            },
+            {
+              "key": "пироги калининград",
+              "clicks": 2,
+              "impressions": 2,
+              "ctrPctReported": 100.0,
+              "position": 30.5
+            },
+            {
+              "key": "замороженное песочное тесто купить",
+              "clicks": 1,
+              "impressions": 1,
+              "ctrPctReported": 100.0,
+              "position": 18.0
+            },
+            {
+              "key": "ассорти круассанов",
+              "clicks": 1,
+              "impressions": 1,
+              "ctrPctReported": 100.0,
+              "position": 35.0
+            },
+            {
+              "key": "где позавтракать в зеленоградске",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 26.25
+            },
+            {
+              "key": "горский пирог",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 19.0
+            },
+            {
+              "key": "сколько весит один кусок пирога",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 29.0
+            },
+            {
+              "key": "какое слоеное тесто лучше купить дрожжевое или бездрожжевое",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 42.5
+            },
+            {
+              "key": "1 5 кг пирога на сколько человек",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 11.0
+            },
+            {
+              "key": "пастуший пирог с курицей и грибами",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "пирог с капустой купить в самаре",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "сколько пирогов надо на 20 человек",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 14.0
+            },
+            {
+              "key": "мясной пирог цена",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "начинка из вишни для открытого пирога",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 25.0
+            },
+            {
+              "key": "лучшие завтраки в зеленоградске",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 28.0
+            },
+            {
+              "key": "как красиво порезать пирог круглый",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 33.0
+            },
+            {
+              "key": "срок годности пирога с капустой",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 36.0
+            },
+            {
+              "key": "как выбрать слоеное тесто в магазине",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 38.0
+            },
+            {
+              "key": "пироги на заказ калининград",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 39.0
+            },
+            {
+              "key": "сколько хранятся пирожки с мясом",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 40.0
+            },
+            {
+              "key": "как красиво нарезать пирог прямоугольный",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 45.0
+            },
+            {
+              "key": "сколько по времени должно подниматься тесто",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 47.0
+            },
+            {
+              "key": "как определить готовность дрожжевого теста",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 50.0
+            },
+            {
+              "key": "мини булка",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 66.0
+            }
+          ]
+        },
+        "Страницы.csv": {
+          "count": 48,
+          "clicks": 8,
+          "impressions": 158,
+          "rows": [
+            {
+              "key": "https://pirogorsk.ru/journal/kak-narezat-pirog/",
+              "clicks": 2,
+              "impressions": 7,
+              "ctrPctReported": 28.57,
+              "position": 24.43
+            },
+            {
+              "key": "https://pirogorsk.ru/",
+              "clicks": 1,
+              "impressions": 9,
+              "ctrPctReported": 11.11,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pochemu-pirog-treskaetsya/",
+              "clicks": 1,
+              "impressions": 8,
+              "ctrPctReported": 12.5,
+              "position": 12.88
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pekarni-kaliningrada-pirogi-na-vynos/",
+              "clicks": 1,
+              "impressions": 5,
+              "ctrPctReported": 20.0,
+              "position": 12.4
+            },
+            {
+              "key": "https://pirogorsk.ru/kaliningrad/",
+              "clicks": 1,
+              "impressions": 3,
+              "ctrPctReported": 33.33,
+              "position": 25.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/testo-pesochnoe-zamorozhennoe-ot-5-kg/",
+              "clicks": 1,
+              "impressions": 2,
+              "ctrPctReported": 50.0,
+              "position": 13.5
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/assorti-na-vybor-kruassanov-mini-30-g-h-100-sht-up/",
+              "clicks": 1,
+              "impressions": 1,
+              "ctrPctReported": 100.0,
+              "position": 35.0
+            },
+            {
+              "key": "https://pirogorsk.ru/podbor/",
+              "clicks": 0,
+              "impressions": 29,
+              "ctrPctReported": 0.0,
+              "position": 11.66
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/sloenoe-ili-drozhzhevoe-testo/",
+              "clicks": 0,
+              "impressions": 12,
+              "ctrPctReported": 0.0,
+              "position": 28.75
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/kak-hranit-pirogi/",
+              "clicks": 0,
+              "impressions": 9,
+              "ctrPctReported": 0.0,
+              "position": 32.44
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/myasnoy-pirog-nachinka-i-testo/",
+              "clicks": 0,
+              "impressions": 8,
+              "ctrPctReported": 0.0,
+              "position": 13.88
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-pozavtrakat-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctrPctReported": 0.0,
+              "position": 22.86
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/rynki-kaliningrada-eda/",
+              "clicks": 0,
+              "impressions": 5,
+              "ctrPctReported": 0.0,
+              "position": 8.4
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/kak-perevezti-pirog/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 5.25
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 17.25
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/drozhzhevoe-testo-dlya-pirogov/",
+              "clicks": 0,
+              "impressions": 4,
+              "ctrPctReported": 0.0,
+              "position": 38.5
+            },
+            {
+              "key": "https://pirogorsk.ru/pirogi/myasnoy-pirog/",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 14.67
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/sibirskiy-pirog-s-brusnikoy-i-smetanoy-1600-g/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 3.0
+            },
+            {
+              "key": "https://pirogorsk.ru/svetlogorsk/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 6.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pesochnoe-testo-dlya-kisha/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 7.5
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/sloyka-s-kapustoy-85-g-85-gr-h-100-sht-up/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/dostavka/zelenogradsk/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 18.5
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pirog-s-vishney-nachinka/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 24.5
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-smak-dlya-gamburgera-mini-30-gr/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 37.5
+            },
+            {
+              "key": "https://pirogorsk.ru/zelenogradsk/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 3.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-s-detmi-v-zelenogradske/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/gde-poest-v-kaliningrade/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 4.0
+            },
+            {
+              "key": "https://pirogorsk.ru/blog/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 5.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/tort-s-kuricey-1500-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 5.0
+            },
+            {
+              "key": "https://pirogorsk.ru/nabory/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 6.0
+            },
+            {
+              "key": "https://pirogorsk.ru/menu/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 7.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-dlya-gamburgera-solodovaya-75-gr/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/bulochka-k-kofe-85-gr-h-100-sht-v-up/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/lepeshka-pshenichnaya-kruglaya/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/pirog-s-pechenyu-1400-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 8.0
+            },
+            {
+              "key": "https://pirogorsk.ru/about/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "http://pirogorsk.ru/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-myasom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/vitushka-s-makom-85-gr-h-100-sht-up/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/partners/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/pirog-s-kapustoj-1200-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "https://pirogorsk.ru/journal/pirog-s-kuritsey-i-gribami-vybor/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "https://pirogorsk.ru/povody/svetlogorsk/na-pominki/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 16.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-vishney-i-gretskim-orehom/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 17.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskiy-pirog-s-vishney-i-gretskim-orehom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 18.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskij-pirog-s-syirom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 21.0
+            },
+            {
+              "key": "https://pirogorsk.ru/catalog/osetinskiy-pirog-so-shpinatom-i-syrom-850-g/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 26.0
+            },
+            {
+              "key": "https://pirogorsk.ru/nabor/na-kompaniyu/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 27.0
+            }
+          ]
+        },
+        "Страны.csv": {
+          "count": 15,
+          "clicks": 8,
+          "impressions": 147,
+          "rows": [
+            {
+              "key": "Россия",
+              "clicks": 8,
+              "impressions": 126,
+              "ctrPctReported": 6.35,
+              "position": 15.63
+            },
+            {
+              "key": "Казахстан",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 7.67
+            },
+            {
+              "key": "Бангладеш",
+              "clicks": 0,
+              "impressions": 3,
+              "ctrPctReported": 0.0,
+              "position": 35.0
+            },
+            {
+              "key": "Беларусь",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 17.0
+            },
+            {
+              "key": "Бразилия",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 46.0
+            },
+            {
+              "key": "Индия",
+              "clicks": 0,
+              "impressions": 2,
+              "ctrPctReported": 0.0,
+              "position": 47.0
+            },
+            {
+              "key": "Египет",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 1.0
+            },
+            {
+              "key": "Австрия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 7.0
+            },
+            {
+              "key": "Финляндия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 9.0
+            },
+            {
+              "key": "Грузия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "Турция",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 10.0
+            },
+            {
+              "key": "Германия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 12.0
+            },
+            {
+              "key": "Индонезия",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 13.0
+            },
+            {
+              "key": "Кения",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 30.0
+            },
+            {
+              "key": "Вьетнам",
+              "clicks": 0,
+              "impressions": 1,
+              "ctrPctReported": 0.0,
+              "position": 40.0
+            }
+          ]
+        },
+        "Устройства.csv": {
+          "count": 3,
+          "clicks": 8,
+          "impressions": 147,
+          "rows": [
+            {
+              "key": "Мобильный",
+              "clicks": 6,
+              "impressions": 111,
+              "ctrPctReported": 5.41,
+              "position": 15.95
+            },
+            {
+              "key": "ПК",
+              "clicks": 2,
+              "impressions": 19,
+              "ctrPctReported": 10.53,
+              "position": 13.89
+            },
+            {
+              "key": "Планшет",
+              "clicks": 0,
+              "impressions": 17,
+              "ctrPctReported": 0.0,
+              "position": 24.47
+            }
+          ]
+        },
+        "Вид в поиске.csv": {
+          "count": 1,
+          "clicks": 2,
+          "impressions": 16,
+          "rows": [
+            {
+              "key": "Описания товара",
+              "clicks": 2,
+              "impressions": 16,
+              "ctrPctReported": 12.5,
+              "position": 13.69
+            }
+          ]
+        }
+      },
+      "filters": [
+        [
+          "Тип поиска",
+          "Веб-поиск (текст)"
+        ],
+        [
+          "Дата",
+          "За последние 3 месяца"
+        ]
+      ]
+    }
+  ],
+  "comparison": {
+    "baseline": "/Users/dmitrij/Downloads/pirogorsk.ru-Performance-on-Search-2026-11-05.zip",
+    "overlapUnchanged": true,
+    "addedDays": [
+      [
+        "2026-11-04",
+        "3",
+        "39",
+        "7.69%",
+        "19.5"
+      ]
+    ],
+    "clicksDelta": 3,
+    "impressionsDelta": 39,
+    "ctrPercentagePointDelta": 0.8125472411186694,
+    "identicalToNovember7Export": true
+  },
+  "limits": [
+    "Clicks are not unique visitors or orders.",
+    "Query and page exports are independent marginals; no query-to-URL join is available.",
+    "Country Russia does not establish Kaliningrad Oblast.",
+    "No data after latest exported date; sparse samples do not establish ranking or conversion trends."
+  ]
+}

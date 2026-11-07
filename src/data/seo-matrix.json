@@ -3973,7 +3973,8 @@
     },
     "relatedArticles": [
       "/journal/pochemu-u-piroga-syroe-dno/",
-      "/journal/pochemu-pirog-treskaetsya/"
+      "/journal/pochemu-pirog-treskaetsya/",
+      "/journal/kish-s-kuritsey-i-gribami/"
     ]
   },
   {
@@ -5094,6 +5095,29 @@
     "relatedArticles": [
       "/journal/pirog-s-kapustoy-i-yaytsom/",
       "/journal/zalivnoy-pirog-na-kefire/",
+      "/journal/kak-narezat-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/kish-s-kuritsey-i-gribami/",
+    "cluster": "product",
+    "new": true,
+    "cohort": "search-followup-20261107",
+    "pageType": "article",
+    "title": "Киш с курицей и грибами: рецепт на форму 26 см",
+    "query": "киш с курицей и грибами",
+    "intent": "Приготовить целый киш: продукты, песочная основа, начинка, заливка, выпечка и нарезка. Гид основы сохраняет своего владельца.",
+    "monthlySearches": null,
+    "demandSource": "research/wordstat-followup-20261107/review-queue.json · W07-03, область10857, все устройства; периоды CSV/UI расходятся",
+    "serpValidated": false,
+    "ownershipBasis": "wordstat_recipe_intent_and_existing_owner_inventory; general recipe SERP checked, regional positions not measured",
+    "nextStep": {
+      "path": "/menu/",
+      "label": "Собрать пироги к столу"
+    },
+    "relatedArticles": [
+      "/journal/pesochnoe-testo-dlya-kisha/",
+      "/journal/pochemu-u-piroga-syroe-dno/",
       "/journal/kak-narezat-pirog/"
     ]
   }

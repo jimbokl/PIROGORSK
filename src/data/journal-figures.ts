@@ -6,6 +6,7 @@ import svetlogorskBreakfast from '../../design/blog-source/reading-20261107/svet
 import zelenogradskBakery from '../../design/blog-source/reading-20261107/zelenogradsk-bakery-formats.png';
 import applePreparation from '../../design/blog-source/reading-20261107/apple-recipe-preparation.png';
 import cabbagePreparation from '../../design/blog-source/reading-20261107/cabbage-recipe-preparation.png';
+import quicheAssembly from '../../design/blog-source/reading-20261107/quiche-recipe-assembly.png';
 
 const scenes = {
   delivery: { image: delivery, alt: 'Пирог в крафтовой коробке, чашки и блокнот на деревянном столе у окна с видом на Балтику', caption: 'Для ужина в апартаментах удобно заранее продумать общий стол: еду, напитки и посуду.' },
@@ -15,6 +16,9 @@ const scenes = {
 
 /** Shared editorial cutaways supplement each article's own unique cover. */
 export function journalFigures(slug: string, sectionCount: number, city = false) {
+  if (slug === 'kish-s-kuritsey-i-gribami') return [
+    { image: quicheAssembly, afterSection: 1, alt: 'Песочная основа в форме с курицей и грибами; отдельно стоят миска сливочно-яичной заливки и тарелка тёртого сыра', caption: 'Сборка киша: начинку распределяют по основе, затем добавляют заливку и сыр.' },
+  ];
   if (slug === 'zalivnoy-pirog-s-kapustoy-na-kefire') return [
     { image: cabbagePreparation, afterSection: 0, alt: 'Капуста в дуршлаге, нарезанные варёные яйца и отдельная миска с кефирным тестом на деревянном столе', caption: 'Разделите продукты для начинки и теста до замеса. Количества сверяйте с таблицей; иллюстрация показывает этап подготовки.' },
   ];
