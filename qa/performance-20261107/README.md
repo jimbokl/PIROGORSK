@@ -43,8 +43,9 @@ throughput 1638,4 Kbit/s. Полные настройки каждого про�
 | Mobile 3 | 2702 | 2330 | 31 | 327 | 15 |
 | Desktop 1 | 2888 | 2441 | 9 | 404 | 34 |
 
-Все значения в мс. LCP-элемент — первый баннер пирогового города
-`banner-city.B15d-_pI_Z1FUWQc.avif`, `loading=eager`, `fetchpriority=high`.
+Все значения в мс. LCP-элемент — первый баннер пирогового города:
+на mobile `banner-city.B15d-_pI_Z1FUWQc.avif`, на desktop
+`banner-city.B15d-_pI_ZvuLfd.avif`; `loading=eager`, `fetchpriority=high`.
 Проверки discovery/high priority/eager loading и render-blocking получили 1.
 Оценка breakdown — 0/1/0 на mobile, поэтому все LCP-insights успешными
 не объявляются. Основная часть observed trace — ожидание первого байта;
