@@ -1,0 +1,41 @@
+{
+  "project": "pirogorsk.ru",
+  "product": "Каталог пирогов, наборов и дополнений; 154 SKU",
+  "landing": "https://pirogorsk.ru/",
+  "conversion": "Анонимная подборка и интерес к ассортименту; не подтверждённый заказ",
+  "relevance": "Тематические запросы о пирогах, выборе и подаче; гео только Калининградская область; исключить бренды конкурентов и чужие локации",
+  "region": "Калининградская область",
+  "regionId": 10857,
+  "period": "CSV: 06.10.2026 — 06.11.2026; observed UI for three seeds: 07.09.2026 — 06.10.2026; discrepancy unresolved",
+  "devices": "Все устройства — UI and each CSV header confirmed",
+  "currency": "not_applicable",
+  "searchScope": "Yandex organic demand, Wordstat Top queries",
+  "metric": "seo_frequency",
+  "interpretation": "Последний месяц; не клики, не показы сайта, не CPC",
+  "batchSize": 7,
+  "seeds": [
+    "осетинские пироги",
+    "пироги с картошкой",
+    "пироги с капустой",
+    "пироги с сыром",
+    "хачапури",
+    "пирог",
+    "киш"
+  ],
+  "authorization": "research only; no campaigns or spend",
+  "outputs": [
+    "research-contract.json",
+    "STATE.md",
+    "raw/",
+    "normalized.csv",
+    "observations.json",
+    "raw-manifest.json",
+    "unique-queries.csv",
+    "journal-owners.csv",
+    "review-queue.json",
+    "summary.json",
+    "normalize.py",
+    "README.md"
+  ],
+  "comparability": "Новый срез хранится отдельно от 2026-10-31; не сравнивать несовместимые периоды, устройства или регионы"
+}

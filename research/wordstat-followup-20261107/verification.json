@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "rawFiles": 7,
+  "rows": 4951,
+  "uniqueQueries": 4744,
+  "reviewedExamples": 25,
+  "repeatOutputSHA256": {
+    "normalized.csv": "21e9651e90d4b99aef2e34844ce115470aec8103eecb73254601ef5853d751a4",
+    "unique-queries.csv": "0ee4eb3cf8eb3681e10dfec1b146eac4b2752365ecd026c88c8c7d674b8fd73c",
+    "journal-owners.csv": "5e2e645d334f8ceb04f99dceebff8095ee2119992cce8d180ec16ca5e39e9492",
+    "raw-manifest.json": "e71a5b887c1689644247f1c419e0ca912015ada2b4e1a3c65edd9e4c4ba77709",
+    "summary.json": "7fe7c529a03c166b3ad1df196ba425c1d943d4f3c397ca2dea25d706f66cc01d"
+  },
+  "runtimeTrackedDiff": [],
+  "notRun": "Runtime build/UI/CI were not repeated for this research-only iteration; prior release evidence is in qa/sprint-20261107m/README.md.",
+  "checkoutHEADBeforeResearchCommit": "aff31c77884015ea47b1e9bc86670fde498682a0",
+  "runtimeRelease": "5bad551639bf077951313b9d75edb2338861bbe1",
+  "originalDownloadsSHA256Match": 7,
+  "preservedCatalogSHA256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20",
+  "packagingCorrection": "Initial packaging check expected 20 files; actual 21. Derived CSV writer CRLF changed to LF. Raw vendor CSV CRLF preserved and validated against original Downloads.",
+  "registryStrict": {
+    "passed": true,
+    "errors": 0,
+    "warnings": 100,
+    "hasDrift": false,
+    "checkedAt": "2026-11-07T14:30:18.371099Z"
+  }
+}
