@@ -1,0 +1,77 @@
+{
+  "status": "published_verified",
+  "checkedAt": "2026-11-07T10:07:33.790015+00:00",
+  "runtimeSha": "a4648bd57574f71628758473ef3cdbc2e20e0a7e",
+  "article": {
+    "url": "https://pirogorsk.ru/journal/pekarni-svetlogorska/",
+    "words": 1241,
+    "sections": 7,
+    "tables": 3,
+    "tableColumns": 2,
+    "primarySources": 3,
+    "contextLinks": 4,
+    "imagegenCovers": 1,
+    "diagrams": 2,
+    "topicStatus": "integrated_new_partial"
+  },
+  "publication": {
+    "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/42360783229",
+    "ciRun": 42360783229,
+    "conclusion": "success",
+    "pagesPublishedAt": "2026-11-07T10:01:56Z",
+    "compatibility": "pass",
+    "indexNowStep": "success",
+    "indexationConfirmed": false
+  },
+  "production": {
+    "blogArticles": 84,
+    "sitemapUrls": 279,
+    "htmlSha256Checks": 7,
+    "assetChecks": 21,
+    "internalLinks": 5,
+    "catalogWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "catalogErrors": 0,
+    "catalogNetworkRetries": 0,
+    "focusedWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "focusedErrors": 0,
+    "blogCardErrors": 0,
+    "noJavaScript": true,
+    "phoneTabletVisuallyInspected": true
+  },
+  "catalog": {
+    "skuCount": 154,
+    "preserved": true,
+    "sha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20",
+    "runtimeCardChanges": false
+  },
+  "fixes": [
+    "New article tables fit 320px after two-column reformatting",
+    "Targeted verifier uses actual monthly article CTA and containing section"
+  ],
+  "deferred": [
+    "A6-65 source gaps: Nasha Kukhnya, full assortment, branch stock",
+    "QA-17 not reproduced; remains open",
+    "Fresh PageSpeed not measured"
+  ],
+  "evidence": [
+    "ci-final.json",
+    "live-readback.json",
+    "production-focused.json",
+    "production-blog-card.json",
+    "catalog-production/production-report.json",
+    "baseline-proof.json"
+  ]
+}

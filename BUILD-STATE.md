@@ -1,3 +1,7 @@
+## Спринт j · 07.11.2026 · завершён
+
+Опубликован [гид выпечки Светлогорска](https://pirogorsk.ru/journal/pekarni-svetlogorska/): 1241 слово, 7 разделов, 3 таблицы, 3 источника, 4 контекстные ссылки, Imagegen и 2 схемы; общий городской гид сохранён. Исправлена прокрутка новых таблиц на 320 px. Local check/build 284/unit 66/Worker/SEO 279/artwork 84/registry/monthly 200/journal 62+24/catalog 6/focused 5/blog-card 5 — PASS. Runtime `a4648bd57574f71628758473ef3cdbc2e20e0a7e`; [CI 42360783229](https://github.com/jimbokl/PIROGORSK/actions/runs/42360783229) SUCCESS, Pages 10:01:56 UTC. Production: 7 HTML SHA256, 21 ресурс, 5 переходов, каталог на 6 ширинах и две целевые проверки на 5 ширинах — PASS; блог 84 / sitemap 279. Телефон и планшет просмотрены. Лента, 154 SKU и цены сохранены. A6-65 partial, QA-17 открыт, свежий PSI не измерялся. [Протокол](qa/sprint-20261107j/README.md).
+
 ## Ежедневный выпуск · 07.11.2026 · A6-17 · завершён
 
 [Копчёная рыба: история Кранца и выбор на Балтике](https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/).
