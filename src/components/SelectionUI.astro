@@ -35,7 +35,7 @@ import '../styles/selection.css';
   <a href="/?interest=selection" data-open="selection-dialog" class="selection-dock-open"><span>Подборка</span><strong data-dock-total>0 ₽</strong><Icon name="arrow" /></a>
 </aside>
     <template id="selection-item-template">
-      <div><h3></h3><small></small></div><strong class="item-price" data-item-price></strong>
+      <div class="item-description"><h3></h3><div class="item-meta"><small></small><strong class="item-price" data-item-price></strong></div></div>
       <div class="item-details"><div class="item-controls"><button data-decrease><Icon name="minus" /></button><output></output><button data-increase><Icon name="plus" /></button></div></div><button class="item-remove" data-remove>Убрать</button>
     </template>
     <script id="catalog-data" type="application/json" set:html={JSON.stringify(catalog.map(({ id, name, kind, unit, category, variants, prices, defaultVariant }) => ({ id, name, kind, unit, category, variants, prices, defaultVariant })))} />

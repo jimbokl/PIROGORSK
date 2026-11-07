@@ -188,6 +188,7 @@ function renderSelection() {
     element.querySelector('[data-item-price]')!.textContent = money(product.prices[item.value] * item.quantity);
     element.querySelector('[data-decrease]')!.setAttribute('aria-label', `Уменьшить: ${product.name}, ${variantLabel(product, item.value)}`);
     element.querySelector('[data-increase]')!.setAttribute('aria-label', `Увеличить: ${product.name}, ${variantLabel(product, item.value)}`);
+    element.querySelector('[data-increase]')!.setAttribute('aria-disabled', String(item.quantity >= 99));
     element.querySelector('[data-remove]')!.setAttribute('aria-label', `Убрать: ${product.name}, ${variantLabel(product, item.value)}`);
     itemContainer.append(element);
   }
@@ -319,10 +320,17 @@ all<HTMLButtonElement>('#selection-dialog [data-upsell-add]').forEach(button => 
 }));
 
 function goToCatalog() {
-  all<HTMLDialogElement>('dialog[open]').forEach(dialog => dialog.close());
+  all<HTMLDialogElement>('dialog[open]').forEach(dialog => {
+    // This action moves to the catalogue instead of returning to the opener.
+    dialogTriggers.delete(dialog);
+    dialog.close();
+  });
   const catalog = document.querySelector('[data-menu-finder], #pirogi');
   if (!catalog) { location.assign('/menu/'); return; }
   catalog.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  const destination = catalog.querySelector<HTMLElement>('h2') || catalog as HTMLElement;
+  destination.tabIndex = -1;
+  destination.focus({ preventScroll: true });
 }
 document.addEventListener('click', event => {
   const target = event.target as HTMLElement;
@@ -336,7 +344,10 @@ document.addEventListener('click', event => {
   const item = { ...selection[itemIndex] };
   const action = control.hasAttribute('data-increase') ? 'increase' : control.hasAttribute('data-decrease') ? 'decrease' : 'remove';
   if (action === 'remove' || (action === 'decrease' && selection[itemIndex].quantity === 1)) selection.splice(itemIndex, 1);
-  else if (action === 'increase' && selection[itemIndex].quantity >= 99) { toast('Можно выбрать до 99 таких товаров'); return; }
+  else if (action === 'increase' && selection[itemIndex].quantity >= 99) {
+    document.querySelector<HTMLElement>('[data-selection-feedback]')!.textContent = 'Можно выбрать до 99 штук одного варианта. Количество сохранено.';
+    return;
+  }
   else selection[itemIndex].quantity += action === 'increase' ? 1 : -1;
   const delta = action === 'remove' ? item.quantity : 1;
   trackGoal(action === 'increase' ? 'catalog_add' : 'catalog_remove', { city, source: 'selection', surface: catalogSurface(), productid: item.id, variant: String(item.value), qty: delta, value: productFor(item).prices[item.value] * delta });

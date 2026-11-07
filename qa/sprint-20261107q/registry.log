@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-11-07T18:29:11.897765Z",
+  "stats": {
+    "projects": 226,
+    "projectsWithSkills": 40,
+    "projectsWithHarnesses": 68,
+    "skills": 245,
+    "validSkills": 219,
+    "harnesses": 563,
+    "harnessPackages": 468,
+    "harnessEntrypoints": 95,
+    "issues": 296,
+    "errors": 0,
+    "warnings": 100,
+    "info": 196
+  },
+  "drift": {
+    "skills": {
+      "added": [],
+      "removed": [],
+      "changed": [
+        "/Users/dmitrij/.codex/skills/.system/openai-docs/SKILL.md"
+      ]
+    },
+    "harnesses": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "hasDrift": true
+  },
+  "passed": false
+}

@@ -656,3 +656,9 @@ Runtime `2c14834a8bed7f6b6bfa211769bc953e990a7369`; [CI42389346631 SUCCESS](http
 - WEB-P02 · P1 · Готово: local check/build287/unit66/Worker/SEO/artwork87/monthly210/priority/registry strict; recipe5/blog-card5/catalog6 PASS. OG сжат до173205 байт. Свежих дефектов геометрии карточек после предыдущей полировки не найдено; количество1→2→99→1 стабильно. Лента/154 SKU/цены/общие карточки/CRM/контакты сохранены. Runtime `ff968b4cab00800244b9a2eb5eee4039a6847239`; [CI42394401306 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42394401306), Pages07.11 17:24:42UTC, Worker/Pages/IndexNow PASS. Production9 HTML SHA256/144 assets/5 ссылок; recipe5/blog-card5 PASS, телефон/планшет просмотрены, ошибок/повторов нет. [Приёмка](qa/sprint-20261107p/acceptance-final.json), [протокол](qa/sprint-20261107p/README.md).
 - WEB-P03 · Готово: ZIP07.11(1) —8 кликов/147 показов за22.10–04.11, мобильные6 кликов. Все7 CSV совпадают с предыдущим ZIP07.11; к ZIP05.11 добавлен день3/39. Это расширение периода, не сравнение равных интервалов. [Разбор](research/content-sprint-20261107p/gsc/README.md).
 - По прямому запросу пользователя: текущий спринт завершён, работа остановлена. Новые спринты/наблюдения/контентные задачи не запускать. Ранее открытые задачи бэклога сохранены.
+
+
+## Спринт q · 07.11.2026 · финальная полировка — приёмка
+
+- WEB-Q01 · P1 · Готово локально: длинные названия и суммы подборки, единая типографика копирования16px, видимый предел99 без потери фокуса, переход к каталогу с клавиатуры.
+- WEB-Q02 · P1 · Локальная регрессия PASS: check/build287/unit66/Worker/SEO282, site-polish32/dialog20, catalog154/6ширин, control-names16/72, focused5. Лента/цены/87статей сохранены; CRM/контакты не менялись. Registry strict0errors, внешний drift openai-docs отмечен. Ожидаются CI и production, затем остановка. [Протокол](qa/sprint-20261107q/README.md).
