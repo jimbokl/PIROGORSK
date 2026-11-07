@@ -1,0 +1,74 @@
+{
+  "base": "https://pirogorsk.ru",
+  "checked": "2026-11-07T08:42:39.543Z",
+  "expectedSha": "5d60c7add3c1d5b74f8a182736927989307f1147",
+  "articles": [
+    {
+      "path": "/journal/kopchenie-na-sosnovyh-shishkah/",
+      "status": 200,
+      "canonical": "https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/",
+      "datePublished": "2026-11-07",
+      "blog": true,
+      "sitemap": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/kopchenie-na-sosnovyh-shishkah.CKmYsd1u_ZSeIgs.webp",
+      "bytes": 55874,
+      "sha256": "c9782d979e7d4db42697971828fd313f06caedfdc69ead22b2fc984b24c66fb4"
+    },
+    {
+      "path": "/_astro/kopchenie-na-sosnovyh-shishkah-1.fE8ZEbuk_Z1GxVOj.webp",
+      "bytes": 16370,
+      "sha256": "7b1f0315e879a7942aed712a8a3314bcd6f9952b59440e3f34ab3d1fc0c9270f"
+    },
+    {
+      "path": "/_astro/kopchenie-na-sosnovyh-shishkah-2.rdPmWpbE_ZzhSx5.webp",
+      "bytes": 12348,
+      "sha256": "847497bece101af426c71e09873237dc532416964897476e005297467d061c6f"
+    },
+    {
+      "path": "/seo/blog/kopchenie-na-sosnovyh-shishkah.jpg",
+      "bytes": 154666,
+      "sha256": "c84c73062237fd577aea7b62aed7fa06c526cfe0293dab879f9bcf418538ee3a"
+    }
+  ],
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42354736410,
+    "headSha": "5d60c7add3c1d5b74f8a182736927989307f1147",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42354736410"
+  },
+  "journalArticles": 83,
+  "sitemapUrls": 278,
+  "links": [
+    {
+      "path": "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/",
+      "status": 200
+    },
+    {
+      "path": "/journal/ryba-baltiki-vidy/",
+      "status": 200
+    },
+    {
+      "path": "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "status": 200
+    },
+    {
+      "path": "/journal/sedobnye-suveniry-iz-kaliningrada/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    }
+  ]
+}

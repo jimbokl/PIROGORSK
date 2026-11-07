@@ -1,10 +1,16 @@
-## Ежедневный выпуск · 07.11.2026 · A6-17 · приёмка
+## Ежедневный выпуск · 07.11.2026 · A6-17 · завершён
 
-Копчёная рыба: история Кранца и выбор на Балтике. 1209 слов, 4 первоисточника,
-две таблицы, Imagegen-обложка и две схемы. Новый владелец, до подготовки HTTP 404.
-Запись preparing создана до текста. Local check/build/66 unit/SEO/map/artwork/registry strict PASS;
-30 новых + 8 обновлений / 190 адаптивных просмотров PASS. 283 страницы,
-83 статьи / 278 URL sitemap. Далее main/CI и production read-back. [Протокол](research/content-daily-20261107/RELEASE.md).
+[Копчёная рыба: история Кранца и выбор на Балтике](https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/).
+1209 слов, 4 первоисточника, две таблицы, Imagegen-обложка и две схемы.
+Один новый материал ежедневного потока за местную дату; прежние ручные выпуски не повторялись.
+Runtime `5d60c7add3c1d5b74f8a182736927989307f1147`; [CI SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42354736410), Pages 2026-11-07T08:36:16Z.
+Local check/build/66 unit/SEO/map/artwork/registry strict и 190 просмотров PASS.
+Production: HTTP 200, текст/дата/canonical, 4 ресурса SHA256, 5 переходов,
+190 адаптивных просмотров, две таблицы с клавиатурной прокруткой, release PASS.
+Телефон/планшет/desktop просмотрены; блог 83 / sitemap 278.
+IndexNow API/Яндекс 200/200, новый URL принят.
+Запись daily-publications published/complete; свободных decision=new в карте нет.
+[Протокол](research/content-daily-20261107/RELEASE.md).
 
 ## Спринт h · 07.11.2026 · завершён
 

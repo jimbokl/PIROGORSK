@@ -59,8 +59,8 @@
       "topic": 17,
       "slug": "kopchenie-na-sosnovyh-shishkah",
       "url": "https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/",
-      "status": "preparing",
-      "stage": "ready-for-ci",
+      "status": "published",
+      "stage": "complete",
       "startedAt": "2026-11-07T08:05:18.574Z",
       "protocol": "research/content-daily-20261107/RELEASE.md",
       "title": "Копчёная рыба: история Кранца и выбор на Балтике",
@@ -72,6 +72,53 @@
         "content": "PASS: 190 viewports",
         "unitTests": "PASS: 66 tests",
         "report": "qa/content-daily-20261107/local-report.json"
+      },
+      "commit": "5d60c7add3c1d5b74f8a182736927989307f1147",
+      "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/42354736410",
+      "verificationIssue": {
+        "step": "initial production content-month pass",
+        "cause": "The shared worktree acquired a ninth unpublished updated owner during CI; deployed commit contains eight.",
+        "status": "resolved",
+        "resolution": "Repeated all 190 checks using seven input files and the verifier frozen at the deployed SHA.",
+        "firstLog": "qa/content-daily-20261107/production-content-first.log",
+        "diagnostic": "qa/content-daily-20261107/production-update-diagnostic.json",
+        "inputs": "qa/content-daily-20261107/production-inputs.json",
+        "imageDecodeRetry": {
+          "error": "DOMException EncodingError: The source image cannot be decoded",
+          "log": "qa/content-daily-20261107/production-content-decode.log",
+          "result": "Unchanged full repeat PASS; cause not established"
+        }
+      },
+      "publishedAt": "2026-11-07T08:36:16Z",
+      "verifiedAt": "2026-11-07T08:42:56.049585+00:00",
+      "verifiedLocalAt": "2026-11-07T10:42:56.049585+02:00",
+      "verification": {
+        "http": 200,
+        "canonical": "https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/",
+        "datePublished": "2026-11-07",
+        "words": 1209,
+        "productionViewportChecks": 190,
+        "articleViewports": [
+          320,
+          390,
+          768,
+          1024,
+          1280
+        ],
+        "journalArticles": 83,
+        "sitemapUrls": 278,
+        "matchingAssets": 4,
+        "internalLinks": 5,
+        "mobileTableScroll": "PASS: two tables, keyboard and four widths",
+        "productionRelease": "PASS",
+        "indexNow": {
+          "status": "received-by-all",
+          "count": 278,
+          "apiHttp": 200,
+          "yandexHttp": 200,
+          "articleIncluded": true
+        },
+        "report": "qa/content-daily-20261107/README.md"
       }
     }
   ]

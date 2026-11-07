@@ -273,13 +273,16 @@
       "week": 4,
       "decision": "new",
       "scenario": "Пикник на косе",
-      "status": "integrated_new",
+      "status": "integrated_published",
       "dataGap": "Историческое упоминание камбалы Кранца подтверждено муниципальным ИТЦ; ольха подтверждена изготовителем для шпрот. Режим и безопасность копчения на сосновом сырье первоисточником не установлены; рецепт не публикуется.",
       "cluster": "regional",
       "brandReframe": null,
       "window": "2026-11-22 — 2026-11-30",
       "publicationDate": "2026-11-07",
-      "evidenceNote": "Ежедневный выпуск 07.11; угол уточнён по первоисточникам. Источники и приёмка: research/content-daily-20261107/RELEASE.md"
+      "evidenceNote": "Ежедневный выпуск 07.11 опубликован и проверен. Источники и протокол: research/content-daily-20261107/RELEASE.md; production 190 просмотров, HTTP/canonical/дата/изображения/переходы/blog/sitemap/IndexNow PASS.",
+      "commit": "5d60c7add3c1d5b74f8a182736927989307f1147",
+      "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/42354736410",
+      "publicURL": "https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/"
     },
     {
       "number": 18,
