@@ -4,6 +4,6 @@
 
 Сделано: точная пара GSC запрос→URL подтверждена (0 кликов/2 показа, не частотность); три первоисточника прочитаны. Владелец /journal/sloenoe-ili-drozhzhevoe-testo/ дополнен тремя разделами, двумя таблицами, источниками и перелинковкой; исходные шесть разделов и дата публикации сохраняются. Исправлен неподтверждённый якорь на существующий /menu/#holland.
 
-Локальная приёмка завершена: check/build/unit66/Worker/SEO/map/artwork/content-priority/registry PASS; monthly205/journal62+24/catalog6/focused5/blog-card5 PASS. Время чтения 13 обновлённых владельцев синхронизировано и проверено. Осталось: CI, production, итоговый протокол.
+Локальная приёмка завершена: check/build/unit66/Worker/SEO/map/artwork/content-priority/registry PASS; monthly205/journal62+24/catalog6/focused5/blog-card5 PASS. Время чтения 13 обновлённых владельцев синхронизировано и проверено. CI 42367928443 SUCCESS; Pages 07.11 11:41:26 UTC, Worker/Pages и IndexNow PASS. Production: 7 HTML SHA256/9 assets/2 перехода, блог84/sitemap279; focused5/blog-card5/reading13/catalog6 PASS. Пять connect timeout восстановлены штатными повторами, итоговых ошибок нет. Телефон/планшет просмотрены; acceptance-final.json сохранён. Спринт завершён.
 
 Лента, 154 SKU, цены, CRM и контакты сохраняются. Новую статью с тем же интентом не создавать. VoiceOver не включать.

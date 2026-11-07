@@ -1,0 +1,79 @@
+{
+  "status": "published_verified",
+  "checkedAt": "2026-11-07T11:47:01.545686+00:00",
+  "runtimeSha": "4170ea02257082f772701ed88945b58b16056ce4",
+  "article": {
+    "url": "https://pirogorsk.ru/journal/sloenoe-ili-drozhzhevoe-testo/",
+    "sections": 9,
+    "originalSectionsPreserved": 6,
+    "tables": 3,
+    "sources": 4,
+    "diagrams": 2,
+    "datePublished": "2026-10-31",
+    "dateModified": "2026-11-07",
+    "newUrl": false
+  },
+  "publication": {
+    "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/42367928443",
+    "ciRun": 42367928443,
+    "conclusion": "success",
+    "pagesPublishedAt": "2026-11-07T11:41:26Z",
+    "compatibility": "pass",
+    "indexNowStep": "success",
+    "indexationConfirmed": false
+  },
+  "production": {
+    "blogArticles": 84,
+    "sitemapUrls": 279,
+    "htmlSha256Checks": 7,
+    "assetChecks": 9,
+    "internalLinks": 2,
+    "catalogWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "catalogErrors": 0,
+    "catalogNetworkRetries": 5,
+    "focusedWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "focusedErrors": 0,
+    "blogCardErrors": 0,
+    "readingEstimatesMatch": 13,
+    "noJavaScript": true,
+    "phoneTabletVisuallyInspected": true
+  },
+  "catalog": {
+    "skuCount": 154,
+    "preserved": true,
+    "sha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20",
+    "runtimeProductCardChanges": false
+  },
+  "fixes": [
+    "Blog cards and article pages share one reading estimate that includes supplemental sections",
+    "Puff pastry guide expanded in its existing URL with checked primary sources and responsive tables"
+  ],
+  "deferred": [
+    "QA-17 not reproduced; remains open",
+    "Fresh PageSpeed not measured",
+    "Remaining monthly content and SEO-11 owners continue in backlog",
+    "CRM, contacts and operator facts deferred by user"
+  ],
+  "evidence": [
+    "ci-final.json",
+    "live-readback.json",
+    "production-focused.json",
+    "production-blog-card.json",
+    "production-reading.json",
+    "catalog-production/production-report.json",
+    "baseline-proof.json"
+  ]
+}
