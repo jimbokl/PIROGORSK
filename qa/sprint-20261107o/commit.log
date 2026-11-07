@@ -1,0 +1,109 @@
+[main 2c14834] Add cabbage pie recipe and refine journal card interactions
+ Committer: Дмитрий <dmitrij@MacBook-Air-Dmitrij-4.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 104 files changed, 17211 insertions(+), 7 deletions(-)
+ create mode 100644 design/blog-source/month-202611/zalivnoy-pirog-s-kapustoy-na-kefire.png
+ create mode 100644 design/blog-source/reading-20261107/cabbage-recipe-preparation.png
+ create mode 100644 public/seo/blog/zalivnoy-pirog-s-kapustoy-na-kefire.jpg
+ create mode 100644 qa/sprint-20261107o/README.md
+ create mode 100644 qa/sprint-20261107o/STATE.md
+ create mode 100644 qa/sprint-20261107o/acceptance-local.json
+ create mode 100644 qa/sprint-20261107o/artwork-accepted.log
+ create mode 100644 qa/sprint-20261107o/artwork-final.log
+ create mode 100644 qa/sprint-20261107o/artwork.log
+ create mode 100644 qa/sprint-20261107o/baseline.json
+ create mode 100644 qa/sprint-20261107o/before-catalog-390.png
+ create mode 100644 qa/sprint-20261107o/blog-card-accepted.log
+ create mode 100644 qa/sprint-20261107o/blog-card-complete.log
+ create mode 100644 qa/sprint-20261107o/blog-card-final.log
+ create mode 100644 qa/sprint-20261107o/blog-card.log
+ create mode 100644 qa/sprint-20261107o/build-accepted.log
+ create mode 100644 qa/sprint-20261107o/build-final.log
+ create mode 100644 qa/sprint-20261107o/build.log
+ create mode 100644 qa/sprint-20261107o/catalog-accepted.log
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/home-phone-context-1280.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/home-phone-context-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/home-phone-context-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/home-three-formats-1280.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/home-three-formats-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/home-three-formats-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/menu-phone-context-1280.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/menu-phone-context-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/menu-phone-context-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/menu-three-formats-1280.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/menu-three-formats-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/menu-three-formats-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-hb-hlebnaya-korzina-1-8-kg-1280.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-hb-hlebnaya-korzina-1-8-kg-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-hb-hlebnaya-korzina-1-8-kg-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-hb-osetinskiy-pirog-s-kuritsey-i-syrom-1280.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-hb-osetinskiy-pirog-s-kuritsey-i-syrom-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-hb-osetinskiy-pirog-s-kuritsey-i-syrom-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-meat-1280.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-meat-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-meat-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-p39-10-1280.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-p39-10-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-formats/product-p39-10-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-bundles-1440.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-bundles-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-bundles-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-cards-1440.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-cards-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-cards-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-links-1440.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-links-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-home-links-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-bundles-1440.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-bundles-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-bundles-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-cards-1440.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-cards-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-cards-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-links-1440.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-links-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-menu-links-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-portion-product-390.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-portion-product-768.png
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-progress.json
+ create mode 100644 qa/sprint-20261107o/catalog-local/local-report.json
+ create mode 100644 qa/sprint-20261107o/check.log
+ create mode 100644 qa/sprint-20261107o/focused.log
+ create mode 100644 qa/sprint-20261107o/local-article-progress.json
+ create mode 100644 qa/sprint-20261107o/local-blog-card-390.png
+ create mode 100644 qa/sprint-20261107o/local-blog-card-768.png
+ create mode 100644 qa/sprint-20261107o/local-blog-card.json
+ create mode 100644 qa/sprint-20261107o/local-focused.json
+ create mode 100644 qa/sprint-20261107o/local-hero-390.png
+ create mode 100644 qa/sprint-20261107o/local-hero-768.png
+ create mode 100644 qa/sprint-20261107o/local-portions-390.png
+ create mode 100644 qa/sprint-20261107o/local-portions-768.png
+ create mode 100644 qa/sprint-20261107o/local-preparation-390.png
+ create mode 100644 qa/sprint-20261107o/local-preparation-768.png
+ create mode 100644 qa/sprint-20261107o/monthly-accepted.log
+ create mode 100644 qa/sprint-20261107o/preserved.json
+ create mode 100644 qa/sprint-20261107o/priority-accepted.log
+ create mode 100644 qa/sprint-20261107o/registry.log
+ create mode 100644 qa/sprint-20261107o/seo-map-final.log
+ create mode 100644 qa/sprint-20261107o/seo-map.log
+ create mode 100644 qa/sprint-20261107o/seo.log
+ create mode 100644 qa/sprint-20261107o/unit.log
+ create mode 100644 qa/sprint-20261107o/verify-blog-card.mjs
+ create mode 100644 qa/sprint-20261107o/verify-live.mjs
+ create mode 100644 qa/sprint-20261107o/verify.mjs
+ create mode 100644 qa/sprint-20261107o/worker.log
+ create mode 100644 research/content-sprint-20261107o/article.json
+ create mode 100644 research/content-sprint-20261107o/brief.md
+ create mode 100644 research/content-sprint-20261107o/editorial-audit.md
+ create mode 100644 research/content-sprint-20261107o/imagegen-prompts.txt
+ create mode 100644 research/content-sprint-20261107o/source-budget.json

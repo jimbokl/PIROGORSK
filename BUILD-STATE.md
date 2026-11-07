@@ -1,6 +1,8 @@
-## Спринт o · 07.11.2026 · в работе
+## Спринт o · 07.11.2026 · завершён
 
-W07-02: добавлен отдельный капустный заливной рецепт, два imagegen-рисунка и двусторонние ссылки. Карточки журнала: непрерывное время чтения, лёгкое наведение изображения, отклик на нажатие с reduced motion. Далее local QA/CI/production. Лента/154 SKU/цены/CRM/контакты сохраняются. [Checkpoint](qa/sprint-20261107o/STATE.md).
+W07-02: опубликован отдельный заливной капустный рецепт,7 разделов/2 таблицы/7 шагов/3 источника, две imagegen-иллюстрации и двусторонние ссылки. Карточки журнала: непрерывное время чтения, лёгкое наведение изображения, отклик на нажатие с reduced motion. Local check658/build286/unit66/Worker/SEO281/artwork86/monthly210/priority16/focused5/blog-card5/catalog6/registry PASS.
+
+Runtime `2c14834a8bed7f6b6bfa211769bc953e990a7369`; [CI42389346631 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42389346631), Pages07.11 16:24:14UTC; Worker/Pages/IndexNow PASS. Production9 HTML SHA256/144 ресурса (73 байт-совпадения,71 AVIF размеры/декодирование)/6 ссылок; блог86/sitemap281; focused5/blog-card5/catalog6 PASS, телефон/планшет просмотрены. Один connect timeout `/product-backdrops/tea-256.avif` восстановлен штатным повтором; причина не установлена. Лента/154 SKU/цены/CRM/контакты сохранены. W07-03/SEO-11, QA-17/PERF-01 и индексация открыты. CI-04/P2 — обновить устаревшие actions, текущий выпуск успешен. [Протокол](qa/sprint-20261107o/README.md).
 
 ## Спринт n · 07.11.2026 · завершён
 

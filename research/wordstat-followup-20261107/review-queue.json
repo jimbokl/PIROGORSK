@@ -47,8 +47,11 @@
     "serpVerified": false,
     "frequencyInterpretation": "Отдельные строки экспорта Wordstat; вложенные запросы не складывать. Период в CSV 06.10–06.11.2026; экран показывал другой период.",
     "previousRelatedOwnerURL": "https://pirogorsk.ru/journal/pirog-s-kapustoy-i-yaytsom/",
-    "status": "implemented_verification_pending",
-    "evidence": "research/content-sprint-20261107o/brief.md"
+    "status": "published_verified",
+    "evidence": "research/content-sprint-20261107o/brief.md",
+    "verification": "qa/sprint-20261107o/acceptance-final.json",
+    "runtimeCommit": "2c14834a8bed7f6b6bfa211769bc953e990a7369",
+    "ciURL": "https://github.com/jimbokl/PIROGORSK/actions/runs/42389346631"
   },
   {
     "id": "W07-03",

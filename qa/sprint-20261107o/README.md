@@ -10,4 +10,13 @@
 
 Проверка social preview сначала поймала1200×800 вместо1200×630; размер исправлен, повтор artwork PASS. Дополнительный gallery-check сначала ожидал86 обычных карточек: фактически85+1 выделенная, проверка исправлена и повторена без отключения продуктовых проверок. Исходные логи сохранены.
 
-Runtime/CI/production — ожидают проверки. Лента/154 SKU/цены/CRM/контакты сохранены по исходным SHA256. Чужой diff BACKLOG59+/4− исключается. W07-03/SEO-11, QA-17/PERF-01 и индексация остаются очередью.
+Runtime `2c14834a8bed7f6b6bfa211769bc953e990a7369`; [CI42389346631 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42389346631), Pages07.11 16:24:14UTC; Worker/Pages/IndexNow PASS. Production9 HTML SHA256/144 ресурса (73 байт-совпадения,71 AVIF размеры/декодирование)/6 ссылок; блог86/sitemap281; focused5/blog-card5/catalog6 PASS, телефон/планшет просмотрены. Один connect timeout `/product-backdrops/tea-256.avif` восстановлен штатным повтором; причина не установлена. Лента/154 SKU/цены/CRM/контакты сохранены. W07-03/SEO-11, QA-17/PERF-01 и индексация открыты. [Итоговая приёмка](acceptance-final.json). Чужой diff BACKLOG59+/4− исключён.
+
+CI-04/P2: Actions сообщает, что checkout/setup-node/cache/configure-pages/upload-artifact на Node20 принудительно запускаются на Node24; также отмечена миграция ubuntu-latest на Ubuntu26. Сборка и публикация успешны. Обновление закреплённых actions и повторная проверка выделены в бэклог.
+
+
+Иллюстрации созданы встроенным imagegen (tool mode), затем оптимизированы для Astro:
+
+- [Обложка: пирог с капустой](../../design/blog-source/month-202611/zalivnoy-pirog-s-kapustoy-na-kefire.png).
+- [Подготовка начинки и теста](../../design/blog-source/reading-20261107/cabbage-recipe-preparation.png).
+- [Полный набор промптов](../../research/content-sprint-20261107o/imagegen-prompts.txt).
