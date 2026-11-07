@@ -50,9 +50,10 @@ try {
       await page.locator('#blog-query').fill(query);
       const target=await page.waitForSelector(`[data-blog-entry]:not([hidden]) a[href="/journal/${slugs[index]}/"]`);
       await target.evaluate(el=>el.scrollIntoView({block:'center',behavior:'instant'}));
+      await target.evaluate(async el=>{const img=el.querySelector('img');if(!img)throw new Error('Missing article cover');await img.decode();});
       await page.keyboard.press('Tab');
       await target.focus();
-      const result=await target.evaluate(el=>({href:el.getAttribute('href'),overflow:el.scrollWidth>el.clientWidth+1,focus:getComputedStyle(el).outlineWidth,image:!!el.querySelector('img')?.complete}));
+      const result=await target.evaluate(el=>({href:el.getAttribute('href'),overflow:el.scrollWidth>el.clientWidth+1,focus:getComputedStyle(el).outlineWidth,image:!!el.querySelector('img')?.complete&&el.querySelector('img').naturalWidth>0}));
       assert(!result.overflow); assert.equal(result.focus,'3px'); assert(result.image);
       row.search.push(result);
       if(index===0&&[390,768,1280].includes(width))await page.screenshot({path:output+stage+'-blog-'+width+'.png'});
@@ -60,6 +61,7 @@ try {
     for(const slug of slugs) {
       const response=await page.goto(base+'/journal/'+slug+'/?qa=1',{waitUntil:'networkidle0'});
       assert.equal(response.status(),200);
+      await page.evaluate(async()=>{for(const img of document.querySelectorAll('article img')){img.loading='eager';await img.decode();}});
       const article=await page.evaluate(()=>({
         h1:document.querySelectorAll('h1').length,
         canonical:document.querySelector('link[rel=canonical]').href,
