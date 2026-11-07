@@ -1,0 +1,124 @@
+[
+  {
+    "command": "npm run check",
+    "exitCode": 0,
+    "localLog": "check.log",
+    "lastLines": [
+      "Result (615 files): ",
+      "- 0 errors",
+      "- 0 warnings",
+      "- 121 hints"
+    ]
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "localLog": "build.log",
+    "lastLines": [
+      "06:47:26 [build] ✓ Completed in 15.17s.",
+      "06:47:26 [build] 282 page(s) built in 15.44s",
+      "06:47:26 [build] Complete!",
+      "Release manifest written: site/release.json"
+    ]
+  },
+  {
+    "command": "npm test",
+    "exitCode": 0,
+    "localLog": "unit.log",
+    "lastLines": [
+      "ℹ cancelled 0",
+      "ℹ skipped 0",
+      "ℹ todo 0",
+      "ℹ duration_ms 539.928125"
+    ]
+  },
+  {
+    "command": "npm run test:worker",
+    "exitCode": 0,
+    "localLog": "worker.log",
+    "lastLines": [
+      "",
+      "Worker typecheck: PASS",
+      "Browser script typecheck: PASS",
+      "API and SQL integration tests: PASS"
+    ]
+  },
+  {
+    "command": "node scripts/verify-seo.mjs",
+    "exitCode": 0,
+    "localLog": "seo.log",
+    "lastLines": [
+      "SEO verification passed: 282 HTML pages, 154 item pages, 277 sitemap URLs, 104707 local references. Scope: all."
+    ]
+  },
+  {
+    "command": "node scripts/verify-seo-map.mjs",
+    "exitCode": 0,
+    "localLog": "seo-map.log",
+    "lastLines": [
+      "SEO map PASS: 277 owners, 82 curated article routes, maximum depth 2."
+    ]
+  },
+  {
+    "command": "node scripts/verify-expansion.mjs",
+    "exitCode": 0,
+    "localLog": "expansion.log",
+    "lastLines": [
+      "Expansion PASS: 36 targets (28 new), 36 sourced locations, 16 scenarios, all indexable pages within 2 clicks."
+    ]
+  },
+  {
+    "command": "node scripts/verify-article-artwork.mjs",
+    "exitCode": 0,
+    "localLog": "artwork.log",
+    "lastLines": [
+      "Artwork PASS: 82 unique source scenes, covers, cards and 1200×630 social previews."
+    ]
+  },
+  {
+    "command": "node scripts/verify-content-priority.mjs",
+    "exitCode": 0,
+    "localLog": "content-priority.log",
+    "lastLines": [
+      "Content priority PASS (local): 3 article owners, 16 responsive views, 22 query cases, edited selection transfer, no-JS fallback."
+    ]
+  },
+  {
+    "command": "node scripts/verify-content-month.mjs",
+    "exitCode": 0,
+    "localLog": "content-month.log",
+    "lastLines": [
+      "Content month PASS (local): 100 topics; 29 new articles, 8 updated owners; 185 viewport checks."
+    ]
+  },
+  {
+    "command": "node scripts/verify-catalog-polish.mjs",
+    "exitCode": 0,
+    "localLog": "catalog.log",
+    "lastLines": [
+      "PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 390px",
+      "PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 768px",
+      "PASS: all 154 format prices in home/menu, quantity/add synchronization and 1/2/3-format product pages at 1280px",
+      "Catalog polish PASS (local): 154 SKU on home/menu; 1→2→99→1 geometry on six widths; portion prices across variants/quantities on cards, bundles and product pages; links, format/price/add synchronization."
+    ]
+  },
+  {
+    "command": "node qa/sprint-20261107f/verify.mjs",
+    "exitCode": 0,
+    "localLog": "focused-local.log",
+    "lastLines": [
+      "PASS local: 154 SKU, price typography, aligned desktop portions, 82 searchable articles, two guides on five widths, keyboard focus and no-JS links."
+    ]
+  },
+  {
+    "command": "solaros_skill_harness_manager.sh check --strict",
+    "exitCode": 0,
+    "localLog": "registry.log",
+    "lastLines": [
+      "    \"hasDrift\": false",
+      "  },",
+      "  \"passed\": true",
+      "}"
+    ]
+  }
+]

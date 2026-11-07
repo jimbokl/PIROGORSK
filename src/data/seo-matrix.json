@@ -788,7 +788,9 @@
       "/journal/zavtraki-v-kaliningrade/",
       "/journal/kofeyni-kaliningrada/",
       "/journal/gde-poest-ryadom-s-ostrovom-kanta/",
-      "/journal/kaliningrad-zimoy-gde-poest/"
+      "/journal/kaliningrad-zimoy-gde-poest/",
+      "/journal/gde-poest-s-detmi-v-kaliningrade/",
+      "/journal/pozdniy-uzhin-v-kaliningrade/"
     ]
   },
   {
@@ -4954,6 +4956,52 @@
       "/journal/kak-vybrat-pirogi-na-kompaniyu/",
       "/journal/chto-pit-s-pirogami/",
       "/journal/piknik-s-pirogom-chto-vzyat/"
+    ]
+  },
+  {
+    "path": "/journal/gde-poest-s-detmi-v-kaliningrade/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Где поесть с детьми в Калининграде: семейный обед",
+    "query": "где поесть с детьми в калининграде",
+    "intent": "Семейный обед в Калининграде: три места с подтверждёнными условиями, детское меню и игровые комнаты. Адреса, таблица выбора и план заказа.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги для семейного стола"
+    },
+    "relatedArticles": [
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/kak-narezat-pirog/",
+      "/journal/gde-poest-v-kaliningrade/",
+      "/journal/skolko-piroga-na-cheloveka/"
+    ]
+  },
+  {
+    "path": "/journal/pozdniy-uzhin-v-kaliningrade/",
+    "cluster": "editorial",
+    "cohort": "month-202611",
+    "pageType": "article",
+    "title": "Поздний ужин в Калининграде: где и как спланировать",
+    "query": "где поесть поздно в калининграде",
+    "intent": "Где поесть поздно в Калининграде: три адреса, опубликованные часы, отличие зала от кухни и план ужина после прогулки или позднего приезда.",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Спланировать пироги для вечернего стола"
+    },
+    "relatedArticles": [
+      "/journal/gde-poest-v-kaliningrade/",
+      "/journal/uzhin-v-semnyh-apartamentah/",
+      "/journal/kak-razogret-pirog-v-apartamentah/",
+      "/journal/gde-poest-s-detmi-v-kaliningrade/"
     ]
   }
 ]

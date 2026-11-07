@@ -1,3 +1,7 @@
+## Спринт · 07.11.2026 · семейный обед и поздний ужин · приёмка публикации
+
+Две статьи, две Imagegen-обложки/четыре схемы, таблицы/источники/перелинковка. Блог82 / sitemap277. Цены форматов читабельнее, порции компьютерной сетки выровнены; лента/154 SKU/цены сохранены. Локально check/build/unit66/Worker/SEO/artwork/registry strict, monthly185, каталог6 ширин/форматы3 ширины и focused5 PASS. CI и production впереди; A6-30/32 частичны, QA-17 открыта. [Протокол](qa/sprint-20261107f/README.md).
+
 ## QA · 07.11.2026 · диагностика кликов · завершён
 
 Спринт e: product click failure сохраняет URL/SKU/геометрию/попадание/события/исходную ошибку и PNG; в CI сохранение артефактов перенесено после всех браузерных проверок. Искусственный отказ, unit66, исходный CPU×4, 100 переходов CPU×4, полные форматы на 390/768/1280 и registry strict PASS. Код e7dca97813731c49a76d2a0e12aaba517c40c39a; [CI 42337065302 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42337065302), Pages 07.11 04:25:21 UTC. Production шесть HTML SHA256/canonical, manifest/Worker, каталог154/блог80/sitemap275 PASS. QA-28 закрыта; QA-17 открыта, причина прежнего отказа не установлена. Runtime, лента/154 SKU/цены не менялись. [Протокол](qa/sprint-20261107e/README.md), [checkpoint](qa/sprint-20261107e/STATE.md).
