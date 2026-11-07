@@ -1,0 +1,20 @@
+recover	Publish tested artifact with twenty-minute polling	﻿2026-11-07T02:34:58.9669972Z ##[group]Run actions/github-script@v7
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9670262Z with:
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9670607Z   script: await require('./.github/scripts/recover-pages.cjs').deploy({github, core, context});
+recover	Publish tested artifact with twenty-minute polling
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9673050Z   github-token: ***
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9673252Z   debug: false
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9673456Z   user-agent: actions/github-script
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9673858Z   result-encoding: json
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9673996Z   retries: 0
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9674140Z   retry-exempt-status-codes: 400,401,403,404,422
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:34:58.9674333Z ##[endgroup]
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:35:00.0872266Z Pages: deployment_queued
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:35:10.3320184Z Pages: syncing_files
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:55:00.6218360Z Error: Pages publication timed out after 20 minutes; cancellation requested
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:55:00.6219029Z     at publish (/home/runner/work/PIROGORSK/PIROGORSK/.github/scripts/recover-pages.cjs:108:9)
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:55:00.6219607Z     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:55:00.6220300Z     at async Object.deploy (/home/runner/work/PIROGORSK/PIROGORSK/.github/scripts/recover-pages.cjs:114:16)
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:55:00.6221047Z     at async eval (eval at callAsyncFunction (/home/runner/work/_actions/actions/github-script/v7/dist/index.js:36187:16), <anonymous>:3:1)
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:55:00.6221517Z     at async main (/home/runner/work/_actions/actions/github-script/v7/dist/index.js:36285:20)
+recover	Publish tested artifact with twenty-minute polling	2026-11-07T02:55:00.6240762Z ##[error]Unhandled error: Error: Pages publication timed out after 20 minutes; cancellation requested

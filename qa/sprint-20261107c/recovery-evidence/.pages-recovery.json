@@ -1,0 +1,24 @@
+{
+  "sourceRunId": 42326579786,
+  "sourceAttempt": 1,
+  "testedSourceSha": "5caa74e68242b43344819ab77e4a09b9d959b4cd",
+  "artifactId": 13556191650,
+  "artifactName": "github-pages-42326579786-1",
+  "artifactDigest": "sha256:3949fa9977514917af8727d0f15c8b466bdfcfd4cf8d52d2874d668b7164cfe1",
+  "deploymentWorkflowSha": "e54789722f34fa545aadc0efb481654493fe6231",
+  "recoveryRunId": 42329859038,
+  "startedAt": "2026-11-07T02:34:51.723Z",
+  "statuses": [
+    {
+      "status": "deployment_queued",
+      "at": "2026-11-07T02:35:00.086Z"
+    },
+    {
+      "status": "syncing_files",
+      "at": "2026-11-07T02:35:10.331Z"
+    }
+  ],
+  "deploymentId": "e54789722f34fa545aadc0efb481654493fe6231",
+  "pageUrl": "https://pirogorsk.ru/",
+  "error": "Pages publication timed out after 20 minutes; cancellation requested"
+}

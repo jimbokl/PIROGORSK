@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-07T02:55:36.415Z",
+  "testedSourceSha": "5caa74e68242b43344819ab77e4a09b9d959b4cd",
+  "recoveryRunId": 42329859038,
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "lastModified": "Sat, 07 Nov 2026 00:31:24 GMT",
+      "canonical": "https://pirogorsk.ru/",
+      "sha256": "99460b3cd9457fa05102ca38e1ba3785c52fa8ed03a455d6aa37f20a1b302993"
+    },
+    {
+      "path": "/menu/",
+      "status": 200,
+      "lastModified": "Sat, 07 Nov 2026 00:31:24 GMT",
+      "canonical": "https://pirogorsk.ru/menu/",
+      "sha256": "a8471d736101b8585d5fe70fa3d1bd380de00c7a2a9ab1518d5f1c328b528bc9"
+    },
+    {
+      "path": "/delivery/",
+      "status": 200,
+      "lastModified": "Sat, 07 Nov 2026 00:31:24 GMT",
+      "canonical": "https://pirogorsk.ru/delivery/",
+      "sha256": "ab20ccb8429d9fe27ea2e1621b467c18dd7c88c9a5b29153211d23e995403ea8"
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "lastModified": "Sat, 07 Nov 2026 00:31:26 GMT",
+      "canonical": "https://pirogorsk.ru/blog/",
+      "sha256": "3341a8d005ac447494832ddd6c8c0c372be5f31a360888b73bf55e56c3c7ffb9",
+      "articleLinks": 79
+    },
+    {
+      "path": "/journal/gde-poest-v-zelenogradske/",
+      "status": 200,
+      "lastModified": "Sat, 07 Nov 2026 00:31:25 GMT",
+      "canonical": "https://pirogorsk.ru/journal/gde-poest-v-zelenogradske/",
+      "sha256": "351642435a7dd0b66a2b6f548776f7d82fa4e6ab36c27dc54f7914b184b066b4",
+      "expectedLocalSha256": "de9d87d7c7805a82827d2ad735bd404ed2622a527a9d0b837b4c57571238b759",
+      "newBudgetSection": false,
+      "newMenuSource": false
+    }
+  ]
+}
