@@ -116,11 +116,46 @@ export async function verifyCatalogFormats(page, origin, width, output) {
   for (const product of [samples[0], mini, samples[1], samples.at(-1), catalog.find(product => product.id === 'hb-osetinskiy-pirog-s-kuritsey-i-syrom')]) {
     await page.goto(`${origin}${catalogProductHref(product)}?qa=1`, { waitUntil: 'networkidle0' });
     await page.evaluate(() => document.fonts.ready);
+    await page.evaluate(() => {
+      window.__productFormatEvents = [];
+      for (const type of ['pointerdown', 'pointerup', 'click', 'change']) document.addEventListener(type, event => {
+        const control = event.target.closest?.('[data-product-options] label, [data-product-options] button, [data-product-options] input');
+        window.__productFormatEvents.push({ type, trusted: event.isTrusted, x: event.clientX, y: event.clientY,
+          target: event.target.tagName, control: control?.outerHTML.slice(0, 500), scrollY });
+        window.__productFormatEvents = window.__productFormatEvents.slice(-12);
+      }, true);
+    });
     const options = '[data-product-options]';
     const shown = await page.$$eval(`${options} [data-variant-price]`, labels => labels.map(el => Number(el.dataset.variantPrice)));
     assert.deepEqual(shown, product.variants.map(variant => variant.price));
-    await click(`${options} label:last-of-type`);
-    await click('[data-option-increase]');
+    for (const selector of [`${options} label:last-of-type`, '[data-option-increase]']) {
+      try { await click(selector); }
+      catch (error) {
+        // Diagnose physical click failures without retrying or weakening the
+        // selected-format, price and exact-selection assertions below.
+        try {
+          const diagnostic = { product: product.id, width, selector, url: page.url(),
+            browser: await browserVersion(page), error: error.stack,
+            state: await page.evaluate(selector => ({
+              events: window.__productFormatEvents, scrollY,
+              viewport: [innerWidth, innerHeight], clientWidth: document.documentElement.clientWidth,
+              selected: document.querySelector('[data-product-options] input:checked')?.value,
+              targets: Array.from(document.querySelectorAll(selector), el => {
+                const rect = el.getBoundingClientRect();
+                const style = getComputedStyle(el);
+                const hit = document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2);
+                return { rect: rect.toJSON(), connected: el.isConnected, display: style.display,
+                  visibility: style.visibility, pointerEvents: style.pointerEvents,
+                  html: el.outerHTML.slice(0, 1500), hit: hit?.outerHTML.slice(0, 500) };
+              })
+            }), selector) };
+          await writeFile(`${output}/product-click-failure-${product.id}-${width}.json`, JSON.stringify(diagnostic, null, 2));
+          await page.screenshot({ path: `${output}/product-click-failure-${product.id}-${width}.png`, captureBeyondViewport: false });
+          console.error('Product physical-click diagnostic:', JSON.stringify(diagnostic));
+        } catch (diagnosticError) { console.error('Product click diagnostic could not be saved:', diagnosticError.message); }
+        throw error;
+      }
+    }
     assert.equal(await page.$eval('[data-option-price]', el => Number(el.textContent.replace(/\D/g, ''))), product.variants.at(-1).price * 2);
     assert.equal(await page.$eval(`${options} input:checked`, el => el.value), String(product.variants.at(-1).value), 'selected format stays checked');
     if (product.supplier?.priceFrom) assert.match(await page.$eval('.product-options-price small', el => el.textContent), /^от /);

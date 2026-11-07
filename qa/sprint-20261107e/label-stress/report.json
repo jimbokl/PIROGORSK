@@ -1,0 +1,3008 @@
+{
+  "cpu": 4,
+  "width": 1280,
+  "height": 1000,
+  "iterations": 20,
+  "runs": [
+    {
+      "iteration": 0,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 0,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 0,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 0,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 0,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 1,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 1,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 1,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 1,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 1,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 2,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 2,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 2,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 2,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 2,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 3,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 3,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 3,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 3,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 3,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 4,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 4,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 4,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 4,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 4,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 5,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 5,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 5,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 5,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 5,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 6,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 6,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 6,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 6,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 6,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 7,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 7,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 7,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 7,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 7,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 8,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 8,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 8,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 8,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 8,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 9,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 9,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 9,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 9,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 9,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 10,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 10,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 10,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 10,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 10,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 11,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 11,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 11,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 11,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 11,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 12,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 12,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 12,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 12,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 12,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 13,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 13,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 13,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 13,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 13,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 14,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 14,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 14,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 14,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 14,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 15,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 15,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 15,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 15,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 15,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 16,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 16,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 16,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 16,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 16,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 17,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 17,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 17,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 17,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 17,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 18,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 18,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 18,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 18,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 18,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 19,
+      "product": "meat",
+      "before": {
+        "scrollY": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 943.1875,
+              "y": 484.71875,
+              "width": 250.203125,
+              "height": 54.1875,
+              "top": 484.71875,
+              "right": 1193.390625,
+              "bottom": 538.90625,
+              "left": 943.1875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-meat\" value=\"1000\" data-price=\"1290\" data-href=\"/?interest=meat&amp;variant=1000#pirogi\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1290\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">1 кг</b><small data-astro-cid-6nkfdiko=\"\">1&nbsp;290 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">1 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 19,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 19,
+      "product": "p39-10",
+      "before": {
+        "scrollY": 107,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.625,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.625,
+              "right": 1197.390625,
+              "bottom": 538.625,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-p39-10\" value=\"1200\" checked=\"\" data-price=\"3100\" data-href=\"/?interest=p39-10&amp;variant=1200#pirogi39\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"3100\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">Целый · 1,2 кг</b><small data-astro-cid-6nkfdiko=\"\">3&nbsp;100 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 19,
+      "product": "hb-hlebnaya-korzina-1-8-kg",
+      "before": {
+        "scrollY": 52,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 684.984375,
+              "y": 484.71875,
+              "width": 512.40625,
+              "height": 54,
+              "top": 484.71875,
+              "right": 1197.390625,
+              "bottom": 538.71875,
+              "left": 684.984375
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-hlebnaya-korzina-1-8-kg\" value=\"1800\" checked=\"\" data-price=\"1710\" data-href=\"/?interest=hb-hlebnaya-korzina-1-8-kg&amp;variant=1800#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span></label>",
+            "hit": "<span class=\"variant-summary\" data-variant-price=\"1710\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">60 шт. · 1,8 кг</b><small data-astro-cid-6nkfdiko=\"\">от 1&nbsp;710 ₽</small></span>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    },
+    {
+      "iteration": 19,
+      "product": "hb-osetinskiy-pirog-s-kuritsey-i-syrom",
+      "before": {
+        "scrollY": 111,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "clientWidth": 1280,
+        "labels": [
+          {
+            "rect": {
+              "x": 1027.921875,
+              "y": 484.625,
+              "width": 165.46875,
+              "height": 54.1875,
+              "top": 484.625,
+              "right": 1193.390625,
+              "bottom": 538.8125,
+              "left": 1027.921875
+            },
+            "html": "<label data-astro-cid-wzr2otvr=\"\"><input type=\"radio\" name=\"product-size-hb-osetinskiy-pirog-s-kuritsey-i-syrom\" value=\"4200\" data-price=\"6330\" data-href=\"/?interest=hb-osetinskiy-pirog-s-kuritsey-i-syrom&amp;variant=4200#holland\" data-astro-cid-wzr2otvr=\"\"><span class=\"variant-summary\" data-variant-price=\"6330\" data-astro-cid-6nkfdiko=\"\"><b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b><small data-astro-cid-6nkfdiko=\"\">6&nbsp;330 ₽</small></span></label>",
+            "hit": "<b data-astro-cid-6nkfdiko=\"\">20 шт. · 4,2 кг</b>",
+            "display": "block"
+          }
+        ]
+      },
+      "result": "PASS"
+    }
+  ]
+}
