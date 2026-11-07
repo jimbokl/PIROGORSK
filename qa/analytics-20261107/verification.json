@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archiveComparison": true,
+  "uiQueriesMatchCSV": true,
+  "confirmedQueryPagePairs": 5,
+  "confirmedClicks": 6,
+  "productionURLs": 13,
+  "localREADMElinks": true,
+  "runtimeFilesUnchanged": {
+    "src/data/catalog.ts": "84ec663dfc312f869f8d4b563095acfa5ca5d86acaf6473ccaa90c25894dc7a0",
+    "src/data/pirogi39-catalog.ts": "e6868c29ed7fbd9cce65bfc77da59d7e773de0b78cf811d46cd6eebaced1634b",
+    "src/data/holland-source.json": "656356d518130df11de4d5578c1477caa821aa5632eec5822a5db4e48a4f892b",
+    "src/styles/global.css": "ede586fb238ad7f8c7c8699795011bd72f270e823c21bc18e64637e7a0b43833"
+  },
+  "personalScreenshotAbsent": true,
+  "fullBuildRepeated": false,
+  "reason": "Evidence/docs-only stage; published runtime acceptance referenced separately"
+}

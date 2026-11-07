@@ -1,0 +1,65 @@
+{
+  "provenance": {
+    "method": "Manual transcription of native Chrome accessibility UI via cua_repl; no API response or screenshot claimed",
+    "observedDate": "2026-11-07",
+    "gscProperty": "sc-domain:pirogorsk.ru",
+    "gscWindow": "2026-10-22/2026-11-04",
+    "gscLastUpdatedLabel": "4 hours ago",
+    "gscRoundedPosition": 16.7,
+    "mutations": "Report navigation and inbound CSV export only; no index request, validation, settings or analytics integration changes"
+  },
+  "filteredQueryPages": [
+    {"query": "круглый пирог", "clicks": 2, "impressions": 2, "position": 21.5, "pages": [
+      {"path": "/journal/kak-narezat-pirog/", "clicks": 2, "impressions": 2, "position": 21.5}
+    ]},
+    {"query": "пироги калининград", "clicks": 2, "impressions": 2, "position": 30.5, "pages": [
+      {"path": "/journal/pekarni-kaliningrada-pirogi-na-vynos/", "clicks": 1, "impressions": 1, "position": 27.0},
+      {"path": "/kaliningrad/", "clicks": 1, "impressions": 1, "position": 34.0}
+    ]},
+    {"query": "замороженное песочное тесто купить", "clicks": 1, "impressions": 1, "position": 18.0, "pages": [
+      {"path": "/catalog/testo-pesochnoe-zamorozhennoe-ot-5-kg/", "clicks": 1, "impressions": 1, "position": 18.0}
+    ]},
+    {"query": "ассорти круассанов", "clicks": 1, "impressions": 1, "position": 35.0, "pages": [
+      {"path": "/catalog/assorti-na-vybor-kruassanov-mini-30-g-h-100-sht-up/", "clicks": 1, "impressions": 1, "position": 35.0}
+    ]}
+  ],
+  "indexing": {
+    "overviewLastUpdatedLabel": "2026-10-23",
+    "overviewIndexed": 22,
+    "overviewExcluded": 6,
+    "notCurrentIndexCount": true,
+    "exclusions": [
+      {"reason": "noindex", "paths": ["/terms/", "/privacy/"]},
+      {"reason": "alternate with canonical", "paths": ["/?interest=city-zelenogradsk"]},
+      {"reason": "crawled not indexed", "paths": ["/blog/", "/journal/gde-poest-v-zelenogradske/", "/journal/gde-poest-v-kaliningrade/"]}
+    ],
+    "individualInspection": [
+      {"path": "/blog/", "status": "URL есть в индексе Google", "crawlDisplayed": "2026-10-25 21:19:32", "inspectionId": "ang8pOZeVa_RZZPTg5VShA"},
+      {"path": "/journal/gde-poest-v-zelenogradske/", "status": "URL есть в индексе Google", "crawlDisplayed": "2026-10-25 06:06:34", "inspectionId": "nxVFwlFknoHnPUSqEG-gYA"},
+      {"path": "/journal/gde-poest-v-kaliningrade/", "status": "URL есть в индексе Google", "crawlDisplayed": "2026-10-28 10:06:53", "inspectionId": "W5plZ1VRwsFvVhh3iKL_gg"}
+    ],
+    "commonIndividualResult": {"crawler": "Googlebot smartphone", "crawlAllowed": true, "fetch": "Successful", "indexAllowed": true, "declaredCanonical": "self", "googleCanonical": "inspected URL", "sitemap": "https://pirogorsk.ru/sitemap.xml", "displayedCrawlTimezone": "not established"},
+    "limits": "These are stored index inspections, not live crawl tests. Three URL results do not establish whole-site coverage."
+  },
+  "metrika": {
+    "counter": "113767847",
+    "dashboardUrl": "https://metrika.yandex.ru/dashboard?id=113767847",
+    "window": "2026-11-01/2026-11-07",
+    "windowComplete": false,
+    "samplingDisplayedPercent": 100,
+    "attribution": "LastSign; isCrossDevice=true",
+    "pageviews": 94,
+    "visits": 57,
+    "visitors": 31,
+    "averageDurationDisplayed": "2 м 40 с",
+    "pageDepth": 1.65,
+    "bounceRatePercent": 43.86,
+    "newVisitors": 26,
+    "returningVisitors": 5,
+    "sourcesVisits": {"direct": 33, "internal": 22, "searchEngines": 2},
+    "webvisorExactBanner": "Метрика временно работает с ограничениями. Записи Вебвизора и данные отчетов группы \"Поведение\" с 11 октября будут отсутствовать.",
+    "webvisorHelp": "https://yandex.ru/support/metrica/ru/special-mode",
+    "replaysViewed": 0,
+    "limits": ["Owner and unmarked QA not separated", "No individual sessions or goals read in this snapshot", "Window differs from GSC; no session matching or conversion calculation", "No conclusion about current Webvisor setting; only service banner rechecked"]
+  }
+}
