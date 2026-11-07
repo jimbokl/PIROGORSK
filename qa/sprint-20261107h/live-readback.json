@@ -1,0 +1,136 @@
+{
+  "checked": "2026-11-07T07:53:34.555Z",
+  "base": "https://pirogorsk.ru",
+  "sha": "2bab7b35fbea4684496c456cf54141dfde0a7af3",
+  "pages": [
+    {
+      "path": "/journal/sedobnye-suveniry-iz-kaliningrada/",
+      "bytes": 286150,
+      "sha256": "8ac96b9a3e7876826d354b49ca45309f220c60856a257a382e660b5512d21c18"
+    },
+    {
+      "path": "/journal/gde-poest-v-svetlogorske/",
+      "bytes": 338610,
+      "sha256": "ab823e1588c79eec4422c0469db5a4aba0f10794ae83472b4c560e7fc1868c0b"
+    },
+    {
+      "path": "/",
+      "bytes": 1228954,
+      "sha256": "7b6ca901cbb6be9269e1fd1cacd1f16aab06cf7d4694c41cc5dccb60f9d6d5e8"
+    },
+    {
+      "path": "/menu/",
+      "bytes": 1212065,
+      "sha256": "c5bb158198423892883e21ea336001f35dd6af8e143b89e4052d4cdb517e1057"
+    },
+    {
+      "path": "/blog/",
+      "bytes": 454149,
+      "sha256": "1b9da0c361fdee75b6e5bd2a9660effa5a819e8e846e61c13716d94aa7dac5fb"
+    },
+    {
+      "path": "/zelenogradsk/",
+      "bytes": 254385,
+      "sha256": "47a50b7dafabc2bdaa96d22b904c2b866e46d6664c442b288092169d59f0a2cd"
+    },
+    {
+      "path": "/svetlogorsk/",
+      "bytes": 254150,
+      "sha256": "a786da93fec749815a3a41c220c970c94c7f3cecbfe3a39517394417445c4dad"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_astro/sedobnye-suveniry-iz-kaliningrada-3.BaoM5rbG_Z28zg5j.avif",
+      "bytes": 38069,
+      "sha256": "18eb3df89524702f764766e9d8091f339b61875bbe9e58cdbde80df6035299b3",
+      "localMatches": false,
+      "decoded": true,
+      "width": 480,
+      "height": 320,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/sedobnye-suveniry-iz-kaliningrada-3.BaoM5rbG_Z1JXULp.avif",
+      "bytes": 102808,
+      "sha256": "7c7e49f2f4473729c9b380f258c88823600a5b777f7c2f4ce2d9e0dc86d624bb",
+      "localMatches": false,
+      "decoded": true,
+      "width": 800,
+      "height": 533,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/sedobnye-suveniry-iz-kaliningrada-3.BaoM5rbG_ZBvB0W.avif",
+      "bytes": 208295,
+      "sha256": "781d0ffdd52aafcb8dcd511f6d1bdaf26a01007685f5a5435ea195386397e2b1",
+      "localMatches": false,
+      "decoded": true,
+      "width": 1200,
+      "height": 800,
+      "reference": "local dimensions and successful decode; AVIF bytes may differ between platforms"
+    },
+    {
+      "path": "/_astro/sedobnye-suveniry-iz-kaliningrada-3.BaoM5rbG_1baor4.webp",
+      "bytes": 27426,
+      "sha256": "6f8f4a67113639920104b895d1484303d7300ed22a4cdcf8ed035daa05014144",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/sedobnye-suveniry-iz-kaliningrada-3.BaoM5rbG_1yKIJX.webp",
+      "bytes": 70302,
+      "sha256": "b212527ffa1ff5df48271d6b40a4e12bcabb73c17a4f2b28f71e2017a3b890d7",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    },
+    {
+      "path": "/_astro/sedobnye-suveniry-iz-kaliningrada-3.BaoM5rbG_HH643.webp",
+      "bytes": 145058,
+      "sha256": "a2f82be520ce183e0147bcb444080a2c9ea28bb2b6c80f6adb3ab565121b09ba",
+      "localMatches": true,
+      "reference": "local build SHA256"
+    }
+  ],
+  "links": [
+    {
+      "path": "/journal/kak-hranit-pirogi/",
+      "status": 200
+    },
+    {
+      "path": "/journal/sostav-piroga-i-allergeny/",
+      "status": 200
+    },
+    {
+      "path": "/journal/kak-perevezti-pirog/",
+      "status": 200
+    },
+    {
+      "path": "/zelenogradsk/",
+      "status": 200
+    },
+    {
+      "path": "/svetlogorsk/",
+      "status": 200
+    },
+    {
+      "path": "/podbor/",
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "conclusion": "success",
+    "databaseId": 42351793967,
+    "headSha": "2bab7b35fbea4684496c456cf54141dfde0a7af3",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42351793967"
+  },
+  "release": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "articleCount": 82,
+  "sitemapCount": 277
+}

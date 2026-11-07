@@ -1,0 +1,7 @@
+{
+  "process": 3676,
+  "command": "node qa/sprint-20261107h/verify.mjs",
+  "children": [],
+  "symptom": "All assertions passed and report saved; browser.close left Node alive without a Chrome child for more than four minutes. Root cause not established.",
+  "action": "Terminate only this own QA Node process; reuse catalog harness chrome-launcher/disconnect/kill lifecycle; rerun unchanged assertions."
+}

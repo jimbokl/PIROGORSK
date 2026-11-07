@@ -1,0 +1,47 @@
+{
+  "runtime": "2bab7b35fbea4684496c456cf54141dfde0a7af3",
+  "ci": "https://github.com/jimbokl/PIROGORSK/actions/runs/42351793967",
+  "ciConclusion": "success",
+  "productionChecks": {
+    "readbackExit": 0,
+    "focusedFinalExit": 0,
+    "catalogExit": 0,
+    "focusedScriptSyntaxExit": 0,
+    "htmlSha256Count": 7,
+    "assets": 6,
+    "internalLinks": 6,
+    "focusedWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280
+    ],
+    "catalogWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "catalogSku": 154,
+    "blogArticles": 82,
+    "sitemapUrls": 277,
+    "catalogNetworkRetries": [
+      {
+        "path": "/catalog-art/hb-rogalik-zernovoy-kornshpits-400.avif",
+        "attempt": 1,
+        "error": "fetch failed",
+        "cause": "UND_ERR_CONNECT_TIMEOUT"
+      }
+    ]
+  },
+  "avifEvidence": "Three new AVIF files decoded with matching local dimensions; bytes differ from local. CSS/WebP exact local SHA256. No CI-artifact byte comparison claimed for AVIF.",
+  "qaCleanup": "First focused assertions passed; Node cleanup hung and own process terminated (143). Reused catalog chrome-launcher lifecycle; unchanged assertions reran with exit 0.",
+  "remaining": [
+    "A6-60/80 partial for other local products and current shop inventory/prices",
+    "QA-17 rare physical click remains under observation",
+    "New PageSpeed not measured"
+  ]
+}

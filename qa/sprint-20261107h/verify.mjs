@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import {mkdir, stat, writeFile} from 'node:fs/promises';
+import {launch} from 'chrome-launcher';
 import puppeteer from 'puppeteer-core';
 const base=process.env.QA_BASE||'http://127.0.0.1:4330';
 const stage=process.env.QA_BASE?'production':'local';
@@ -7,7 +8,8 @@ const output=new URL('./',import.meta.url).pathname;
 const slug='sedobnye-suveniry-iz-kaliningrada', path='/journal/'+slug+'/';
 const report={stage,base,widths:[],errors:[]};
 await mkdir(output,{recursive:true});
-const browser=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--disable-extensions']});
+const chrome=await launch({chromeFlags:['--headless=new','--disable-extensions']});
+const browser=await puppeteer.connect({browserURL:`http://localhost:${chrome.port}`});
 try{
  for(const width of [320,390,768,1024,1280]){
   const page=await browser.newPage();await page.setViewport({width,height:1000});
@@ -64,4 +66,4 @@ try{
  report.noJavaScript=true;assert.deepEqual(report.errors,[]);
  await writeFile(output+stage+'-focused.json',JSON.stringify(report,null,2)+'\n');
  console.log(`PASS ${stage}: five widths, 154 SKU, 12px notes/portions, 1→2→99→1 stable, keyboard focus, 11 guide sections/3 figures/tables/anchors/no-JS.`);
-}finally{await browser.close();}
+}finally{await browser.disconnect();await chrome.kill();}

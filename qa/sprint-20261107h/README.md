@@ -21,4 +21,20 @@
 
 ## Публикация
 
-Первый CI `42350529014` остановился до публикации: старый эталон журнала ожидал 9 разделов вместо 11 в обновлённом гиде. Точечно актуализирован один владелец; восемь прежних разделов совпадают после нормализации пробелов, 61 сосед не изменён. Проверка сохранности текста не ослаблена. [Лог сбоя](ci-failure.log), [подтверждение эталона](baseline-proof.json). Повторный локальный журнал PASS: 62 статьи, 24 responsive views, якоря, сохранность текста и no-JS. Повторный CI и фактическая сверка production ожидаются. Новый PageSpeed не измерялся.
+Первый CI `42350529014` остановился до публикации: старый эталон журнала ожидал 9 разделов вместо 11 в обновлённом гиде. Точечно актуализирован один владелец; восемь прежних разделов совпадают после нормализации пробелов, 61 сосед не изменён. Проверка сохранности текста не ослаблена. [Лог сбоя](ci-failure.log), [подтверждение эталона](baseline-proof.json). Повторный локальный журнал PASS: 62 статьи, 24 responsive views, якоря, сохранность текста и no-JS. Повторный [CI42351793967 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42351793967), runtime `2bab7b35fbea4684496c456cf54141dfde0a7af3`. Pages опубликованы 07.11 в 07:51:13 UTC; Worker/Pages compatibility и IndexNow PASS.
+
+Production readback: семь HTML SHA256, CSS/WebP SHA256, шесть ресурсов и шесть внутренних переходов; release/canonical/dates, блог82/sitemap277/catalog154 PASS. Три AVIF побайтово отличаются от локальной сборки, но декодируются и имеют ожидаемые размеры; сравнение AVIF с CI artifact в этом прогоне не заявляется. [Фактический readback](live-readback.json).
+
+Полный каталог на проде: 154 SKU на главной/в меню; геометрия 1→2→99→1 на 320/390/768/1024/1280/1440 px, цены/порции/варианты/добавление PASS. Единственный `UND_ERR_CONNECT_TIMEOUT` при чтении `hb-rogalik-zernovoy-kornshpits-400.avif` устранён штатной повторной загрузкой; итоговых ошибок нет. [Отчёт каталога](catalog-production/production-report.json).
+
+Целевая production проверка: пять ширин, содержание/таблицы/иллюстрации/no-JS/фокус PASS. Телефон и планшет просмотрены визуально. Первый целевой прогон сохранил успешные assertions, но завис на `browser.close()` без дочернего Chrome; завершён только собственный QA Node-процесс. Причина не установлена. Для QA использован уже работающий в каталоге lifecycle `chrome-launcher → connect → disconnect → kill`; assertions не менялись, повтор завершился кодом0. [Диагностика](focused-cleanup.json), [повтор](production-focused.json), [итог](acceptance-final.json).
+
+WEB-H01–03 закрыты. A6-60/80 остаются частичными, QA-17 — под наблюдением. Новый PageSpeed не измерялся.
+
+Повтор production-проверок:
+
+```sh
+node qa/sprint-20261107h/verify-live.mjs 2bab7b35fbea4684496c456cf54141dfde0a7af3
+QA_BASE=https://pirogorsk.ru node qa/sprint-20261107h/verify.mjs
+QA_BASE=https://pirogorsk.ru QA_OUTPUT=qa/sprint-20261107h/catalog-production node scripts/verify-catalog-polish.mjs
+```
