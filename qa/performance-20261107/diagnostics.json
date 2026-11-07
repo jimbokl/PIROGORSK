@@ -1,0 +1,1093 @@
+{
+  "url": "https://pirogorsk.ru/",
+  "qaQuery": false,
+  "runtimeSha": "a4648bd57574f71628758473ef3cdbc2e20e0a7e",
+  "method": "One new Chrome process/profile per sample; default Lighthouse simulated throttling; analytics enabled",
+  "sanitization": "HTTP(S) URL query strings/fragments removed recursively; numeric audits and category scores verified unchanged; original reports remain local",
+  "reports": [
+    {
+      "mode": "mobile",
+      "run": 1,
+      "fetchTime": "2026-11-07T10:12:46.027Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1745.0034999999998,
+        "largest-contentful-paint": 1968.0034999999998,
+        "total-blocking-time": 78,
+        "cumulative-layout-shift": 0.012710397611982085,
+        "speed-index": 4833.876599158471
+      },
+      "observedLcpMs": 2929,
+      "observedSubpartsMs": {
+        "timeToFirstByte": 2582.878,
+        "resourceLoadDelay": 15.38,
+        "resourceLoadDuration": 303.54,
+        "elementRenderDelay": 27.528
+      },
+      "lcpElement": {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,DIV,0,DIV,0,DIV,0,PICTURE,3,IMG",
+        "selector": "div.tasting-art > div.tasting-scene > picture > img",
+        "boundingRect": {
+          "top": 459,
+          "bottom": 694,
+          "left": 20,
+          "right": 392,
+          "width": 372,
+          "height": 235
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif\" srcset=\"/_astro/banner-city.B15d-_pI_Z1zf6Tk.webp 640w, /_astro/banner-city.B15d-_…\" sizes=\"(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px\" width=\"1920\" height=\"640\" alt=\"Пироговый город: золотистые приморские домики на большом пироге с синими в…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+        "nodeLabel": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "insightScores": {
+        "lcp-discovery-insight": 1,
+        "lcp-breakdown-insight": 0,
+        "render-blocking-insight": 1
+      },
+      "failedBestPractices": [
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "name": "bh",
+                "url": "https://mc.yandex.ru/metrika/tag.js"
+              },
+              {
+                "name": "bh",
+                "url": "https://mc.yandex.com/metrika/advert.gif"
+              },
+              {
+                "name": "sync_cookie_csrf",
+                "url": "https://mc.yandex.com/sync_cookie_image_check"
+              },
+              {
+                "name": "sync_cookie_csrf",
+                "url": "https://mc.yandex.ru/sync_cookie_image_start"
+              },
+              {
+                "name": "yabs-sid",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "i",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "yandexuid",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "yuidss",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "ymex",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "sync_cookie_ok",
+                "url": "https://mc.yandex.com/sync_cookie_image_decide"
+              },
+              {
+                "name": "yandexuid",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              },
+              {
+                "name": "yuidss",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              },
+              {
+                "name": "i",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              }
+            ]
+          }
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "issueType",
+                "valueType": "text",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Issue type"
+              }
+            ],
+            "items": [
+              {
+                "issueType": "Cookie",
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "url": "https://mc.yandex.ru/metrika/tag.js"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/metrika/advert.gif"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_check"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_start"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_decide"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847/1"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_check"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_start"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_decide"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/ytm-config/113767847"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "mainDocument": {
+        "url": "https://pirogorsk.ru/",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.3030000329017639,
+        "networkEndTime": 2685.9480000138283,
+        "finished": true,
+        "transferSize": 124387,
+        "resourceSize": 1228982,
+        "statusCode": 200,
+        "mimeType": "text/html",
+        "resourceType": "Document",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "pirogorsk.ru"
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "runWarnings": [],
+      "sourceSha256": "61084a081885157433912b25faee7d9bcae0b043c225ec9bc111fa6300c52132",
+      "publishedReport": "reports/lighthouse-mobile-1.json.gz",
+      "publishedReportSha256": "fc199eefbc2ab53c029b9b55775b22b3fd12819599789aa9d649e01cff342962"
+    },
+    {
+      "mode": "mobile",
+      "run": 2,
+      "fetchTime": "2026-11-07T10:13:03.050Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1659.9025,
+        "largest-contentful-paint": 1932.9025,
+        "total-blocking-time": 51.5,
+        "cumulative-layout-shift": 0.003661753292705828,
+        "speed-index": 3266.023887485324
+      },
+      "observedLcpMs": 1793,
+      "observedSubpartsMs": {
+        "timeToFirstByte": 1548.517,
+        "resourceLoadDelay": 12.678,
+        "resourceLoadDuration": 219.765,
+        "elementRenderDelay": 11.595
+      },
+      "lcpElement": {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,DIV,0,DIV,0,DIV,0,PICTURE,3,IMG",
+        "selector": "div.tasting-art > div.tasting-scene > picture > img",
+        "boundingRect": {
+          "top": 459,
+          "bottom": 694,
+          "left": 20,
+          "right": 392,
+          "width": 372,
+          "height": 235
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif\" srcset=\"/_astro/banner-city.B15d-_pI_Z1zf6Tk.webp 640w, /_astro/banner-city.B15d-_…\" sizes=\"(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px\" width=\"1920\" height=\"640\" alt=\"Пироговый город: золотистые приморские домики на большом пироге с синими в…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+        "nodeLabel": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "insightScores": {
+        "lcp-discovery-insight": 1,
+        "lcp-breakdown-insight": 1,
+        "render-blocking-insight": 1
+      },
+      "failedBestPractices": [
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "name": "bh",
+                "url": "https://mc.yandex.ru/metrika/tag.js"
+              },
+              {
+                "name": "bh",
+                "url": "https://mc.yandex.com/metrika/advert.gif"
+              },
+              {
+                "name": "sync_cookie_csrf",
+                "url": "https://mc.yandex.com/sync_cookie_image_check"
+              },
+              {
+                "name": "sync_cookie_csrf",
+                "url": "https://mc.yandex.ru/sync_cookie_image_start"
+              },
+              {
+                "name": "yabs-sid",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "i",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "yandexuid",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "yuidss",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "ymex",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "sync_cookie_ok",
+                "url": "https://mc.yandex.com/sync_cookie_image_decide"
+              },
+              {
+                "name": "yandexuid",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              },
+              {
+                "name": "yuidss",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              },
+              {
+                "name": "i",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              }
+            ]
+          }
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "issueType",
+                "valueType": "text",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Issue type"
+              }
+            ],
+            "items": [
+              {
+                "issueType": "Cookie",
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "url": "https://mc.yandex.ru/metrika/tag.js"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/metrika/advert.gif"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_check"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_start"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_decide"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847/1"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_check"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_start"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_decide"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/ytm-config/113767847"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "mainDocument": {
+        "url": "https://pirogorsk.ru/",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.34299999475479126,
+        "networkEndTime": 1721.5239999890327,
+        "finished": true,
+        "transferSize": 124384,
+        "resourceSize": 1228982,
+        "statusCode": 200,
+        "mimeType": "text/html",
+        "resourceType": "Document",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "pirogorsk.ru"
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "runWarnings": [],
+      "sourceSha256": "b8e45a59db5b6057849bc4b326072a673a4f2928413b53c9a2612cc445abcbeb",
+      "publishedReport": "reports/lighthouse-mobile-2.json.gz",
+      "publishedReportSha256": "618845ff13a46032843b9e82ff0f8ed64dde5e5b8045284282c52d8e61093c14"
+    },
+    {
+      "mode": "mobile",
+      "run": 3,
+      "fetchTime": "2026-11-07T10:13:19.740Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1777.9250000000002,
+        "largest-contentful-paint": 2056.4030000000002,
+        "total-blocking-time": 70.5,
+        "cumulative-layout-shift": 0.0006890437950540936,
+        "speed-index": 4579.36157262783
+      },
+      "observedLcpMs": 2702,
+      "observedSubpartsMs": {
+        "timeToFirstByte": 2330.162,
+        "resourceLoadDelay": 30.636,
+        "resourceLoadDuration": 326.799,
+        "elementRenderDelay": 14.502
+      },
+      "lcpElement": {
+        "type": "node",
+        "lhId": "page-0-IMG",
+        "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,DIV,0,DIV,0,DIV,0,PICTURE,3,IMG",
+        "selector": "div.tasting-art > div.tasting-scene > picture > img",
+        "boundingRect": {
+          "top": 459,
+          "bottom": 694,
+          "left": 20,
+          "right": 392,
+          "width": 372,
+          "height": 235
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/banner-city.B15d-_pI_Z1FUWQc.avif\" srcset=\"/_astro/banner-city.B15d-_pI_Z1zf6Tk.webp 640w, /_astro/banner-city.B15d-_…\" sizes=\"(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px\" width=\"1920\" height=\"640\" alt=\"Пироговый город: золотистые приморские домики на большом пироге с синими в…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+        "nodeLabel": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "insightScores": {
+        "lcp-discovery-insight": 1,
+        "lcp-breakdown-insight": 0,
+        "render-blocking-insight": 1
+      },
+      "failedBestPractices": [
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "name": "bh",
+                "url": "https://mc.yandex.ru/metrika/tag.js"
+              },
+              {
+                "name": "bh",
+                "url": "https://mc.yandex.com/metrika/advert.gif"
+              },
+              {
+                "name": "sync_cookie_csrf",
+                "url": "https://mc.yandex.com/sync_cookie_image_check"
+              },
+              {
+                "name": "sync_cookie_csrf",
+                "url": "https://mc.yandex.ru/sync_cookie_image_start"
+              },
+              {
+                "name": "yabs-sid",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "i",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "yandexuid",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "yuidss",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "ymex",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "sync_cookie_ok",
+                "url": "https://mc.yandex.com/sync_cookie_image_decide"
+              },
+              {
+                "name": "yandexuid",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              },
+              {
+                "name": "yuidss",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              },
+              {
+                "name": "i",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              }
+            ]
+          }
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "issueType",
+                "valueType": "text",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Issue type"
+              }
+            ],
+            "items": [
+              {
+                "issueType": "Cookie",
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "url": "https://mc.yandex.ru/metrika/tag.js"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/metrika/advert.gif"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_check"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_start"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_decide"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847/1"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_check"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_start"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_decide"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/ytm-config/113767847"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "mainDocument": {
+        "url": "https://pirogorsk.ru/",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.34999996423721313,
+        "networkEndTime": 2619.5469999313354,
+        "finished": true,
+        "transferSize": 124385,
+        "resourceSize": 1228982,
+        "statusCode": 200,
+        "mimeType": "text/html",
+        "resourceType": "Document",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "pirogorsk.ru"
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "runWarnings": [],
+      "sourceSha256": "ca2770bacc48daf43be7f6e4f0fc1e6af549c40465fb2051489069240502d7c7",
+      "publishedReport": "reports/lighthouse-mobile-3.json.gz",
+      "publishedReportSha256": "021356c14a1f0c58b62e8f35c0bc51414509399c02f0374364a6393f1a69656c"
+    },
+    {
+      "mode": "desktop",
+      "run": 1,
+      "fetchTime": "2026-11-07T10:13:37.813Z",
+      "lighthouseVersion": "13.5.0",
+      "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 77,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 504.44749999999993,
+        "largest-contentful-paint": 735.7384999999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.0019130966348539238,
+        "speed-index": 1906.2592052111727
+      },
+      "observedLcpMs": 2888,
+      "observedSubpartsMs": {
+        "timeToFirstByte": 2440.964,
+        "resourceLoadDelay": 8.838,
+        "resourceLoadDuration": 404.272,
+        "elementRenderDelay": 33.525
+      },
+      "lcpElement": {
+        "type": "node",
+        "lhId": "page-4-IMG",
+        "path": "1,HTML,1,BODY,5,MAIN,0,SECTION,1,DIV,0,DIV,0,DIV,0,PICTURE,3,IMG",
+        "selector": "div.tasting-art > div.tasting-scene > picture > img",
+        "boundingRect": {
+          "top": 212,
+          "bottom": 682,
+          "left": 61,
+          "right": 1289,
+          "width": 1229,
+          "height": 470
+        },
+        "snippet": "<img src=\"https://pirogorsk.ru/_astro/banner-city.B15d-_pI_ZvuLfd.avif\" srcset=\"/_astro/banner-city.B15d-_pI_Z1zf6Tk.webp 640w, /_astro/banner-city.B15d-_…\" sizes=\"(max-width: 600px) 180vw, (max-width: 1400px) 94vw, 1280px\" width=\"1920\" height=\"640\" alt=\"Пироговый город: золотистые приморские домики на большом пироге с синими в…\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\">",
+        "nodeLabel": "Пироговый город: золотистые приморские домики на большом пироге с синими волнами"
+      },
+      "insightScores": {
+        "lcp-discovery-insight": 1,
+        "lcp-breakdown-insight": 0,
+        "render-blocking-insight": 1
+      },
+      "failedBestPractices": [
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "name": "bh",
+                "url": "https://mc.yandex.ru/metrika/tag.js"
+              },
+              {
+                "name": "bh",
+                "url": "https://mc.yandex.com/metrika/advert.gif"
+              },
+              {
+                "name": "sync_cookie_csrf",
+                "url": "https://mc.yandex.com/sync_cookie_image_check"
+              },
+              {
+                "name": "sync_cookie_csrf",
+                "url": "https://mc.yandex.ru/sync_cookie_image_start"
+              },
+              {
+                "name": "yabs-sid",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "i",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "yandexuid",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "yuidss",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "ymex",
+                "url": "https://mc.yandex.com/watch/113767847"
+              },
+              {
+                "name": "sync_cookie_ok",
+                "url": "https://mc.yandex.com/sync_cookie_image_decide"
+              },
+              {
+                "name": "yandexuid",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              },
+              {
+                "name": "yuidss",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              },
+              {
+                "name": "i",
+                "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+              }
+            ]
+          }
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "issueType",
+                "valueType": "text",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Issue type"
+              }
+            ],
+            "items": [
+              {
+                "issueType": "Cookie",
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "url": "https://mc.yandex.ru/metrika/tag.js"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/metrika/advert.gif"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_check"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_start"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_decide"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847/1"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_check"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_start"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/sync_cookie_image_decide"
+                    },
+                    {
+                      "url": "https://mc.yandex.ru/sync_cookie_image_finish"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/ytm-config/113767847"
+                    },
+                    {
+                      "url": "https://mc.yandex.com/watch/113767847"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "mainDocument": {
+        "url": "https://pirogorsk.ru/",
+        "sessionTargetType": "page",
+        "protocol": "h2",
+        "cache": "none",
+        "rendererStartTime": 0,
+        "networkRequestTime": 0.39800000190734863,
+        "networkEndTime": 2501.232000052929,
+        "finished": true,
+        "transferSize": 124385,
+        "resourceSize": 1228982,
+        "statusCode": 200,
+        "mimeType": "text/html",
+        "resourceType": "Document",
+        "priority": "VeryHigh",
+        "experimentalFromMainFrame": true,
+        "entity": "pirogorsk.ru"
+      },
+      "settings": {
+        "output": [
+          "json",
+          "html"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "node",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "runWarnings": [],
+      "sourceSha256": "7bcc8a9659415e04c5cc93be72b9938ad0131d8f12773ec58b64d469d3aebb1f",
+      "publishedReport": "reports/lighthouse-desktop-1.json.gz",
+      "publishedReportSha256": "56b76c9dcede0f3266704a9bd96281941fa4b8aa072bc316f8964fbbcc434b3c"
+    }
+  ]
+}

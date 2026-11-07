@@ -1,5 +1,25 @@
 # Скорость production-сборки
 
+## Контроль после контентных выпусков — 07.11.2026
+
+Runtime `a4648bd`, [CI42360783229 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/42360783229).
+Три холодных mobile CLI: **P95/98/95**, LCP **1,97/1,93/2,06с**,
+медиана **1,97с**, TBT78/51,5/70,5мс, CLS0,00069–0,01271.
+Desktop **P96/LCP736мс/TBT0/CLS0,00191**. Lighthouse13.5/Chrome157,
+simulated throttling, новый процесс/профиль на каждый запрос, обычный URL
+без `?qa`, аналитика включена. A/SEO100, BP77 — cookies/issues Метрики.
+Observed mobile render delay12–28мс; прежняя двухсекундная задержка не
+воспроизвелась. Observed TTFB1,55–2,58с, причина разброса не установлена.
+Код не менялся; текущий HTML/manifest подтверждены SHA256.
+
+Публичный API вернул429 по дневной квоте, два UI-запуска — ошибку перехода
+к URL без отчёта. Свежего публичного PSI и прочитанного CrUX в этой проверке
+нет. PERF-03 завершён; PERF-01 остаётся под наблюдением. Малая CLI-серия
+не доказывает полевую стабильность и не является A/B с прежним Chrome156.
+[Протокол](qa/performance-20261107/README.md),
+[четыре измерения](qa/performance-20261107/diagnostics.json),
+[диапазоны](qa/performance-20261107/ranges.json).
+
 ## Метки входа и сценарии — 31.10.2026
 
 Runtime `e4937e8`, [CI 41235927132 SUCCESS](https://github.com/jimbokl/PIROGORSK/actions/runs/41235927132).

@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-11-07T10:14:05.560Z",
+  "head": "4b4a34fe41863a0b78d6ab5befc6bc9936173e5c",
+  "runtimeSha": "a4648bd57574f71628758473ef3cdbc2e20e0a7e",
+  "url": "https://pirogorsk.ru/",
+  "qaQuery": false,
+  "localRelease": {
+    "attributionVersion": 1,
+    "interestContextVersion": 1,
+    "apiVersion": 1,
+    "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+  },
+  "snapshotTiming": "captured after CLI measurements started; runtime was not modified",
+  "home": {
+    "status": 200,
+    "sha256": "277d61817c430e5e4d1ae8e33bc33bd8ed01b3425a2f3e3730de82c4bf4021f0",
+    "matchesLocalArtifact": true
+  },
+  "release": {
+    "status": 200,
+    "sha256": "752c8bb3d194b193fb9c7f26b2f9eb6082e9e9cf6e6ad61ed1d80880691bfd18",
+    "data": {
+      "attributionVersion": 1,
+      "interestContextVersion": 1,
+      "apiVersion": 1,
+      "catalogSha256": "8f0167cee69690fdfa76d87a1b1edfe60354887dd0dfb16bd2c23dd7b6881a20"
+    }
+  }
+}

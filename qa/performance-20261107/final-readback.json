@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-07T10:23:35.643Z",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "sha256": "277d61817c430e5e4d1ae8e33bc33bd8ed01b3425a2f3e3730de82c4bf4021f0",
+      "matchesBaseline": true
+    },
+    {
+      "path": "/release.json",
+      "status": 200,
+      "sha256": "752c8bb3d194b193fb9c7f26b2f9eb6082e9e9cf6e6ad61ed1d80880691bfd18",
+      "matchesBaseline": true
+    }
+  ]
+}
