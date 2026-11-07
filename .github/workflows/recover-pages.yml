@@ -1,0 +1,81 @@
+name: Recover Pages
+on:
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: Completed Deploy Pages run whose tests passed and publication failed
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  recover:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test recovery publisher
+        run: node --test .github/scripts/recover-pages.test.cjs
+      - name: Validate tested source and unchanged website
+        id: source
+        uses: actions/github-script@v7
+        env:
+          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+        with:
+          script: |
+            await require('./.github/scripts/recover-pages.cjs').inspect({github, core, context, sourceId: process.env.SOURCE_RUN_ID});
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ steps.source.outputs.artifact_id }}
+          run-id: ${{ inputs.source_run_id }}
+          github-token: ${{ github.token }}
+          path: .pages-recovery-artifact
+          merge-multiple: true
+      - name: Extract tested Pages artifact
+        run: |
+          mkdir -p site
+          tar -xf .pages-recovery-artifact/artifact.tar -C site
+      - name: Check deployed Worker against tested artifact
+        run: node scripts/verify-release.mjs check
+      - name: Publish tested artifact with twenty-minute polling
+        id: deployment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await require('./.github/scripts/recover-pages.cjs').deploy({github, core, context});
+      - name: Verify published Pages and Worker compatibility
+        run: node scripts/verify-release.mjs published https://pirogorsk.ru/
+      - uses: actions/cache/restore@v4
+        with:
+          path: .indexnow/state.json
+          key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: indexnow-v1-
+      - name: Notify IndexNow after publication
+        id: indexnow
+        run: node scripts/indexnow.mjs submit
+      - uses: actions/cache/save@v4
+        if: steps.indexnow.outcome == 'success'
+        with:
+          path: .indexnow/state.json
+          key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pages-recovery-evidence
+          include-hidden-files: true
+          path: |
+            .pages-recovery.json
+            .indexnow/report.json
+          if-no-files-found: ignore
