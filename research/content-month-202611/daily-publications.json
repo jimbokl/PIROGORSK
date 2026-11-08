@@ -120,6 +120,43 @@
         },
         "report": "qa/content-daily-20261107/README.md"
       }
+    },
+    {
+      "date": "2026-11-08",
+      "topic": null,
+      "slug": null,
+      "url": null,
+      "status": "waiting_for_topic",
+      "stage": "queue-exhausted",
+      "startedAt": "2026-11-08T08:01:45.537Z",
+      "checkedAt": "2026-11-08T08:04:06.405180+00:00",
+      "checkedLocalAt": "2026-11-08T10:05:13.699668+02:00",
+      "protocol": "research/content-daily-20261108/CHECK.md",
+      "reason": "All 14 decision=new rows already integrated; all 13 distinct owners confirmed live. No unpublished candidate.",
+      "queueFingerprint": "638e65b14356e25bb8cc3c8acb37e7bab9eb5b2a3ba056107f36f2d754b15c68",
+      "queue": {
+        "topicCount": 14,
+        "uniqueOwners": 13,
+        "unpublishedCandidates": 0
+      },
+      "verification": {
+        "report": "qa/content-daily-20261108/queue-check.json",
+        "gitHead": "c131ea809aa83a29eb1098c1d7a402af516bde71",
+        "latestCI": "https://github.com/jimbokl/PIROGORSK/actions/runs/42401676045",
+        "latestCIConclusion": "success",
+        "liveOwners": 13,
+        "ownerHttpCanonicalBlogSitemap": "PASS",
+        "journalArticles": 87,
+        "sitemapUrls": 282
+      },
+      "automation": {
+        "id": "automation-4",
+        "status": "ACTIVE",
+        "time": "10:00 Europe/Kaliningrad",
+        "readback": "qa/content-daily-20261108/automation-readback.json"
+      },
+      "nextAction": "Пополнить редакционную очередь новыми темами с отдельными владельцами и источниками.",
+      "notificationDecision": "NOTIFY"
     }
   ]
 }

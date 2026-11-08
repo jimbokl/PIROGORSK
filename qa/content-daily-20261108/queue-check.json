@@ -1,0 +1,262 @@
+{
+  "checkedAt": "2026-11-08T08:04:06.405180+00:00",
+  "date": "2026-11-08",
+  "timezone": "Europe/Kaliningrad",
+  "gitHead": "c131ea809aa83a29eb1098c1d7a402af516bde71",
+  "remoteHead": "c131ea809aa83a29eb1098c1d7a402af516bde71",
+  "latestCI": {
+    "conclusion": "success",
+    "databaseId": 42401676045,
+    "headSha": "8b36b79f1b792252e362dd91e5ce2b5c11c7839a",
+    "status": "completed",
+    "url": "https://github.com/jimbokl/PIROGORSK/actions/runs/42401676045"
+  },
+  "queue": {
+    "decision": "new",
+    "topicCount": 14,
+    "uniqueOwners": 13,
+    "unpublishedCandidates": [],
+    "topics": [
+      {
+        "number": 2,
+        "ownerURL": "/journal/ryba-baltiki-vidy/",
+        "status": "integrated_published",
+        "publicationDate": null
+      },
+      {
+        "number": 3,
+        "ownerURL": "/journal/stroganina-iz-pelamidy/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-04"
+      },
+      {
+        "number": 4,
+        "ownerURL": "/journal/konigsbergskie-klopsy/",
+        "status": "integrated_published",
+        "publicationDate": null
+      },
+      {
+        "number": 5,
+        "ownerURL": "/journal/kuhnya-vostochnoy-prussii/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-04"
+      },
+      {
+        "number": 7,
+        "ownerURL": "/journal/ryba-baltiki-vidy/",
+        "status": "integrated_published",
+        "publicationDate": null
+      },
+      {
+        "number": 8,
+        "ownerURL": "/journal/baltiyskie-syry/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-04"
+      },
+      {
+        "number": 9,
+        "ownerURL": "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-05"
+      },
+      {
+        "number": 11,
+        "ownerURL": "/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-05"
+      },
+      {
+        "number": 14,
+        "ownerURL": "/journal/zavtrak-na-baltike/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-05"
+      },
+      {
+        "number": 15,
+        "ownerURL": "/journal/uzhin-na-baltike-posle-21/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-06"
+      },
+      {
+        "number": 16,
+        "ownerURL": "/journal/baltiyskaya-kuhnya-dlya-detey/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-06"
+      },
+      {
+        "number": 17,
+        "ownerURL": "/journal/kopchenie-na-sosnovyh-shishkah/",
+        "status": "integrated_published",
+        "publicationDate": "2026-11-07"
+      },
+      {
+        "number": 18,
+        "ownerURL": "/journal/dich-i-myaso-kaliningradskoy-oblasti/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-06"
+      },
+      {
+        "number": 19,
+        "ownerURL": "/journal/kurschskaya-vorona-i-menyu/",
+        "status": "integrated_new",
+        "publicationDate": "2026-11-06"
+      }
+    ]
+  },
+  "owners": [
+    {
+      "path": "/journal/baltiyskaya-kuhnya-dlya-detey/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/baltiyskaya-kuhnya-dlya-detey/",
+      "canonical": "https://pirogorsk.ru/journal/baltiyskaya-kuhnya-dlya-detey/",
+      "datePublished": "2026-11-06",
+      "h1": "Балтийская кухня с детьми: что выбрать без рыбы",
+      "sha256": "7d1306caa02aec9156f45a6397826d7f011250f77188df53b72d8d27464d1d1c",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/baltiyskie-syry/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/baltiyskie-syry/",
+      "canonical": "https://pirogorsk.ru/journal/baltiyskie-syry/",
+      "datePublished": "2026-11-04",
+      "h1": "Сыры Калининградской области: две сыроварни и выбор",
+      "sha256": "54e1821f2af1012074225ce99b16aee5037a857c31fc1a81f06d39cce40300fd",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/dich-i-myaso-kaliningradskoy-oblasti/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/dich-i-myaso-kaliningradskoy-oblasti/",
+      "canonical": "https://pirogorsk.ru/journal/dich-i-myaso-kaliningradskoy-oblasti/",
+      "datePublished": "2026-11-06",
+      "h1": "Оленина и дичь в Калининградской области: где пробовать",
+      "sha256": "ac364b5d1e86d7e62c310a49cf703c654a6dbac818627c7605c156b84e7dd3e8",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "canonical": "https://pirogorsk.ru/journal/hleb-i-vypechka-kaliningradskoy-oblasti/",
+      "datePublished": "2026-11-05",
+      "h1": "Хлеб и выпечка Калининградской области: пекарни и адреса",
+      "sha256": "09f0982e95643edb8c970bc2c89616c26e0ec880b0f77f9c100dc6998f1487f3",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
+      "canonical": "https://pirogorsk.ru/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
+      "datePublished": "2026-11-05",
+      "h1": "Как выбрать рыбное блюдо на Балтике",
+      "sha256": "034a192c22eccc32280eaa4a51c0485a175c69f7699bc1f2f71a4bc7b98567fd",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/konigsbergskie-klopsy/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/konigsbergskie-klopsy/",
+      "canonical": "https://pirogorsk.ru/journal/konigsbergskie-klopsy/",
+      "datePublished": "2026-11-01",
+      "h1": "Кёнигсбергские клопсы: состав, соус и выбор в Калининграде",
+      "sha256": "a02c765695ff855c73d4eaf6e5afe8d6bca2bcad02e8083eff27e1e8d3deb148",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/kopchenie-na-sosnovyh-shishkah/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/",
+      "canonical": "https://pirogorsk.ru/journal/kopchenie-na-sosnovyh-shishkah/",
+      "datePublished": "2026-11-07",
+      "h1": "Копчёная рыба: история Кранца и выбор на Балтике",
+      "sha256": "e9459cc03845460d5ee9c23734939f610065c1532eff2d02463bb4fa4414588a",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/kuhnya-vostochnoy-prussii/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/kuhnya-vostochnoy-prussii/",
+      "canonical": "https://pirogorsk.ru/journal/kuhnya-vostochnoy-prussii/",
+      "datePublished": "2026-11-04",
+      "h1": "Кухня Восточной Пруссии в Калининграде: блюда и названия",
+      "sha256": "a85b5089eb476ca141716c8548c40e17a3c9e8eb9fe986c062107fb5de554bce",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/kurschskaya-vorona-i-menyu/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/kurschskaya-vorona-i-menyu/",
+      "canonical": "https://pirogorsk.ru/journal/kurschskaya-vorona-i-menyu/",
+      "datePublished": "2026-11-06",
+      "h1": "Куршская ворона и другие названия в меню Калининграда",
+      "sha256": "0bab36d8c2943df4725302c57098eb7b02bb572f1239f0c107ca44fcc69eda8a",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/ryba-baltiki-vidy/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/ryba-baltiki-vidy/",
+      "canonical": "https://pirogorsk.ru/journal/ryba-baltiki-vidy/",
+      "datePublished": "2026-11-01",
+      "h1": "Рыба Балтики: что пробовать в Калининградской области",
+      "sha256": "cca8a1d78726deb8cbb481c4dc2234046aa617a8942b05112a80622121f2cef9",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/stroganina-iz-pelamidy/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/stroganina-iz-pelamidy/",
+      "canonical": "https://pirogorsk.ru/journal/stroganina-iz-pelamidy/",
+      "datePublished": "2026-11-04",
+      "h1": "Строганина из пеламиды в Калининграде: как её едят",
+      "sha256": "ebb099ec917405f31353df4c025d0330e96581cd250872f563dd09ce8e5cd80b",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/uzhin-na-baltike-posle-21/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/uzhin-na-baltike-posle-21/",
+      "canonical": "https://pirogorsk.ru/journal/uzhin-na-baltike-posle-21/",
+      "datePublished": "2026-11-06",
+      "h1": "Поздний ужин на Балтике: где поесть после 21:00",
+      "sha256": "edea5b2fad5668998f4793cb1aee26e46b95d18b4ae98d7bd9786d363c526a33",
+      "inBlog": true,
+      "inSitemap": true
+    },
+    {
+      "path": "/journal/zavtrak-na-baltike/",
+      "http": 200,
+      "url": "https://pirogorsk.ru/journal/zavtrak-na-baltike/",
+      "canonical": "https://pirogorsk.ru/journal/zavtrak-na-baltike/",
+      "datePublished": "2026-11-05",
+      "h1": "Завтрак на Балтике: Зеленоградск и Светлогорск",
+      "sha256": "5f4cd8173fd4f7e0b0e6e35e365e017ff79459a1935baa5d589e8a10b8e95104",
+      "inBlog": true,
+      "inSitemap": true
+    }
+  ],
+  "blog": {
+    "http": 200,
+    "journalCount": 87
+  },
+  "sitemap": {
+    "http": 200,
+    "urlCount": 282
+  },
+  "todayPublishedInDailyLedger": false,
+  "result": "queue-exhausted",
+  "nextAction": "Replenish editorial queue with researched topics and distinct page ownership."
+}
