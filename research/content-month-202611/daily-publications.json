@@ -157,6 +157,51 @@
       },
       "nextAction": "Пополнить редакционную очередь новыми темами с отдельными владельцами и источниками.",
       "notificationDecision": "NOTIFY"
+    },
+    {
+      "date": "2026-11-10",
+      "topic": null,
+      "slug": null,
+      "url": null,
+      "status": "waiting_for_topic",
+      "stage": "queue-exhausted",
+      "startedAt": "2026-11-10T09:30:48.125Z",
+      "checkedAt": "2026-11-10T09:32:32.130589+00:00",
+      "checkedLocalAt": "2026-11-10T11:32:32.130589+02:00",
+      "protocol": "research/content-daily-20261110/CHECK.md",
+      "reason": "All 14 decision=new rows already integrated; all 13 distinct owners confirmed live. No unpublished candidate.",
+      "queueFingerprint": "638e65b14356e25bb8cc3c8acb37e7bab9eb5b2a3ba056107f36f2d754b15c68",
+      "unchangedSince": "2026-11-08",
+      "queue": {
+        "topicCount": 14,
+        "uniqueOwners": 13,
+        "unpublishedCandidates": 0
+      },
+      "verification": {
+        "report": "qa/content-daily-20261110/queue-check.json",
+        "gitHead": "20480ddb1f1de7b08ed08d90976186beca9abbfb",
+        "latestCI": "https://github.com/jimbokl/PIROGORSK/actions/runs/42401676045",
+        "latestCIConclusion": "success",
+        "liveOwners": 13,
+        "ownerHttpCanonicalBlogSitemap": "PASS",
+        "journalArticles": 87,
+        "sitemapUrls": 282
+      },
+      "verificationIssue": {
+        "firstPass": "HTTP Error 503: Service Unavailable during parallel owner checks; URL not captured in first output",
+        "status": "resolved",
+        "result": "Full repeat of all 13 owners, blog and sitemap PASS, no retry errors; cause not established",
+        "evidence": "qa/content-daily-20261110/first-check.json"
+      },
+      "automation": {
+        "id": "automation-4",
+        "status": "ACTIVE",
+        "time": "10:00 Europe/Kaliningrad",
+        "promptSHA256": "d12a56a605462abbdd19a75667665b7d347aabb72dd988790ae4166eccac4445"
+      },
+      "nextAction": "Пополнить редакционную очередь новыми темами с отдельными владельцами и источниками.",
+      "notificationDecision": "DONT_NOTIFY",
+      "notificationReason": "Queue unchanged from the exhaustion notice sent on November 8."
     }
   ]
 }

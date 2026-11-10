@@ -1,0 +1,6 @@
+{
+  "stage": "live check of 13 queue owners",
+  "result": "HTTP Error 503: Service Unavailable",
+  "failedURL": null,
+  "note": "The first parallel pass stopped on HTTP 503; its output did not identify which owner failed. Cause not established. Full pass repeated with URL-specific results."
+}
