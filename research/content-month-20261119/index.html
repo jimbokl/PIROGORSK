@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Редакционный календарь · Пирогорск</title>
+<style>
+:root{color-scheme:light;--ink:#253d3e;--muted:#526063;--accent:#8a362b;--paper:#f7f2e8;--line:#ddd2c4;--white:#fffdf8}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.57 system-ui,Segoe UI,sans-serif;overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:.2em}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.wrap{max-width:1180px;margin:auto;padding:0 clamp(16px,4vw,52px)}header{padding:clamp(38px,6vw,82px) 0 36px;border-bottom:1px solid var(--line)}
+.brand{color:var(--accent);font-weight:750;letter-spacing:.09em;font-size:.82rem;text-transform:uppercase;margin:0 0 10px}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.12;margin:0}h1{font-size:clamp(2.45rem,6vw,5.25rem);max-width:900px;letter-spacing:-.044em}
+.intro{font-size:clamp(1rem,2.2vw,1.18rem);max-width:690px;margin:16px 0 18px;color:var(--muted)}
+nav,.filters{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:16px 0 0}
+.filters{gap:8px}
+button{background:var(--white);color:var(--ink);border:1px solid var(--line);border-radius:99px;padding:7px 13px;font:inherit;font-size:.9rem;cursor:pointer}
+button[aria-pressed=true]{color:#fff;background:var(--ink);border-color:var(--ink)}
+main{padding:30px 0 60px}.week{margin:0 0 40px}.date-range{font-size:.85rem;color:var(--muted);margin:0 0 5px;text-transform:uppercase;letter-spacing:.05em}
+h2{font-size:clamp(1.65rem,3vw,2.55rem);margin-bottom:17px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;align-items:start}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden}.card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover;background:#e0d3c2}
+.body{padding:15px 16px 17px}.meta{display:flex;flex-wrap:wrap;gap:5px 8px;align-items:center;justify-content:space-between;color:var(--muted);font-size:.82rem}
+.kind{border-radius:99px;padding:2px 7px;background:#ebefea;color:#374e4c;white-space:nowrap}.kind.new{background:#f4e4d9;color:#713429}
+h3{font-size:clamp(1.26rem,2.3vw,1.55rem);margin-top:10px}.body>p{font-size:.94rem;color:var(--muted);margin:8px 0 10px}
+details{border-top:1px solid var(--line);padding-top:8px;font-size:.9rem}summary{cursor:pointer;font-weight:650}.detail p{margin:8px 0}.route{font: .79rem ui-monospace,monospace;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:16px 0 26px;color:var(--muted);font-size:.91rem}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:570px){.grid{grid-template-columns:1fr}.card img{max-height:220px}}
+</style></head><body>
+<header><div class="wrap"><p class="brand">Редакция Пирогорска</p><h1>Календарь публикаций</h1>
+<p class="intro"><strong>19 ноября — 18 декабря 2026</strong><br>Один слот в день в 10:00 по Калининграду. 13 новых статей и 17 обновлений.</p>
+<nav aria-label="Файлы плана"><a href="CALENDAR.md">План в Markdown</a><a href="PIROGORSK.ics" download>Скачать календарь ICS</a><a href="BRIEFS.md">Все брифы</a><a href="REVIEW-AND-SPRINT.md">Ревью и спринт</a></nav>
+<div class="filters" role="group" aria-label="Фильтр выпусков"><button type="button" aria-pressed="true" data-filter="all">Все 30</button><button type="button" aria-pressed="false" data-filter="new">Новые 13</button><button type="button" aria-pressed="false" data-filter="update">Обновления 17</button></div>
+</div></header><main><div class="wrap">
+<section class="week" aria-labelledby="week-1"><p class="date-range">19 ноября — 25 ноября</p><h2 id="week-1">Праздничный стол и практические ответы</h2><div class="grid"><article class="card" data-kind="new" id="cnt-101">
+  <img src="previews/novogodniy-stol-s-pirogami.webp" width="640" height="336" alt="Два пирога на зимнем столе со скромным декором" loading="eager">
+  <div class="body"><div class="meta"><time datetime="2026-11-19">19 ноября · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Новогодний стол с пирогами на 6–12 человек</h3><p>Собрать меню с одним горячим блюдом и десертом.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Три состава стола для 6, 8 и 12 гостей; пример с закусками; список закупок и таймлайн подачи.</p><p><b>Врезки:</b> Таблица меню на 6/8/12 гостей · часы подготовки и подачи</p><p><b>До выпуска:</b> Сверить расчёт с калькулятором и явно обозначить, где пироги служат основным блюдом.</p>
+  <p class="route">/journal/novogodniy-stol-s-pirogami/</p><a href="BRIEFS.md#cnt-101">Полный бриф</a> · <a href="og/novogodniy-stol-s-pirogami.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-102">
+  <img src="previews/pochemu-pirog-treskaetsya.webp" width="640" height="336" alt="Два золотистых пирога с надрезами для пара на фоне иллюстрированного пирогового города" loading="eager">
+  <div class="body"><div class="meta"><time datetime="2026-11-20">20 ноября · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Почему трескается пирог: диагностика по виду трещины</h3><p>Определить причину по месту и моменту появления трещины.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Разделить трещины по краю и в центре; показать разницу между вентиляционным надрезом и аварийной трещиной; добавить таблицу исправлений для следующей выпечки.</p><p><b>Врезки:</b> Макро трёх типов трещин · матрица симптомов и действий</p><p><b>До выпуска:</b> Сверить запросы и URL в Search Console. Причины формулировать как диагностику, проверить на примерах.</p>
+  <p class="route">/journal/pochemu-pirog-treskaetsya/</p><a href="BRIEFS.md#cnt-102">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/pochemu-pirog-treskaetsya/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-103">
+  <img src="previews/vypechka-zaranee-prazdnik.webp" width="640" height="336" alt="Пласты теста на пергаменте в домашней кухне" loading="eager">
+  <div class="body"><div class="meta"><time datetime="2026-11-21">21 ноября · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Что из выпечки приготовить заранее к празднику</h3><p>Разнести работу по дням до праздничного обеда.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>График по видам теста и начинок; что приготовить накануне, а что оставить на день подачи; подготовка морозилки и духовки.</p><p><b>Врезки:</b> Шкала за 2 дня / накануне / в день · список маркировки заготовок</p><p><b>До выпуска:</b> Сроки для конкретных начинок брать из проверенного источника или маркировки.</p>
+  <p class="route">/journal/vypechka-zaranee-prazdnik/</p><a href="BRIEFS.md#cnt-103">Полный бриф</a> · <a href="og/vypechka-zaranee-prazdnik.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="new" id="cnt-104">
+  <img src="previews/zimnyaya-progulka-zelenogradsk-s-perekusom.webp" width="640" height="336" alt="Термос и выпечка на скамье у зимнего моря" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-22">22 ноября · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Зимняя прогулка в Зеленоградске с тёплым перекусом</h3><p>Собрать короткую прогулку от вокзала с местом для паузы.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Схемы на 45 и 90 минут; варианты при ветре и дожде; покупка перед прогулкой и запасной вариант в помещении.</p><p><b>Врезки:</b> Две схематичные петли · точки, где можно согреться</p><p><b>До выпуска:</b> Время ходьбы сверить по карте. Адреса, часы и зимние ограничения брать у самих площадок.</p>
+  <p class="route">/journal/zimnyaya-progulka-zelenogradsk-s-perekusom/</p><a href="BRIEFS.md#cnt-104">Полный бриф</a> · <a href="og/zimnyaya-progulka-zelenogradsk-s-perekusom.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-105">
+  <img src="previews/kak-narezat-pirog.webp" width="640" height="336" alt="Круглый и прямоугольный пироги, нарезанные на порции на фоне иллюстрированного пирогового города" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-23">23 ноября · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Как нарезать пирог: круглый, прямоугольный и с хрупкой коркой</h3><p>Разделить пирог поровну, сохранив форму кусков.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Дополнить действующую схему прямоугольным листом и примерами на 9 и 12 частей; показать, как подавать хрупкую корку.</p><p><b>Врезки:</b> Новая схема прямоугольного пирога · пример на весах</p><p><b>До выпуска:</b> Измерить порции по фактическому весу. Проверить схему на 320 px и с клавиатуры.</p>
+  <p class="route">/journal/kak-narezat-pirog/</p><a href="BRIEFS.md#cnt-105">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/kak-narezat-pirog/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-106">
+  <img src="previews/pirog-s-kartoshkoy-i-gribami-recept.webp" width="640" height="336" alt="Закрытый пирог в разрезе с картофелем и грибами" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-24">24 ноября · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Пирог с картошкой и грибами в духовке</h3><p>Испечь закрытый пирог с картофельно-грибной начинкой.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Граммовки и форма; подготовка картофеля и грибов; сборка и надрез; готовность и частые ошибки.</p><p><b>Врезки:</b> Крупно начинка перед сборкой · разрез готовой корки</p><p><b>До выпуска:</b> Проверить авторскую раскладку на одной форме. Без заявления о тестировании до его проведения.</p>
+  <p class="route">/journal/pirog-s-kartoshkoy-i-gribami-recept/</p><a href="BRIEFS.md#cnt-106">Полный бриф</a> · <a href="og/pirog-s-kartoshkoy-i-gribami-recept.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-107">
+  <img src="previews/kak-zamorozit-pirog.webp" width="640" height="336" alt="Куски пирога в контейнерах для замораживания на фоне иллюстрированного пирогового города" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-25">25 ноября · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Как заморозить пирог целиком или порциями</h3><p>Выбрать способ подготовки и разморозки под тип пирога.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Развести заготовку, готовый целый пирог и кусочки; предложить маркировку, упаковку и способы разморозки.</p><p><b>Врезки:</b> Слои упаковки · схема выбора целиком / порционно</p><p><b>До выпуска:</b> Различить безопасность и качество. Сверить с маркировкой, не давать универсальные сроки.</p>
+  <p class="route">/journal/kak-zamorozit-pirog/</p><a href="BRIEFS.md#cnt-107">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/kak-zamorozit-pirog/">Действующая статья</a></div></details></div></article></div></section>
+<section class="week" aria-labelledby="week-2"><p class="date-range">26 ноября — 2 декабря</p><h2 id="week-2">Зимние города, подарки и начинки</h2><div class="grid"><article class="card" data-kind="update" id="cnt-108">
+  <img src="previews/kaliningrad-zimoy-gde-poest.webp" width="640" height="336" alt="Зимний стол с пирогом, супом и чаем у окна на вымышленный заснеженный пироговый город" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-26">26 ноября · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Где поесть в Калининграде зимой: план на короткий день</h3><p>Найти тёплую остановку между прогулкой и вечерними планами.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Обновить существующий зимний гид; добавить 2 сценария с помещением и временем на переход, мини-таблицу оговорок по выходным.</p><p><b>Врезки:</b> Схема двух коротких маршрутов · карточка адресов с датой сверки</p><p><b>До выпуска:</b> Время работы кухни отдельно от времени работы зала, только подтверждённые даты.</p>
+  <p class="route">/journal/kaliningrad-zimoy-gde-poest/</p><a href="BRIEFS.md#cnt-108">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/kaliningrad-zimoy-gde-poest/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-109">
+  <img src="previews/pirog-s-grushey-i-mindalem.webp" width="640" height="336" alt="Открытый грушевый тарт с миндалём на пергаменте" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-27">27 ноября · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Грушевый тарт с миндалём: рецепт и нарезка</h3><p>Испечь открытый тарт и выбрать груши нужной плотности.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Песочная основа; подготовка груш; миндальный слой; признаки готовности; остывание перед нарезкой.</p><p><b>Врезки:</b> Выкладка долек · разрез после остывания</p><p><b>До выпуска:</b> Проверить свою раскладку. Миндаль отметить как аллерген, не заявлять универсальные замены.</p>
+  <p class="route">/journal/pirog-s-grushey-i-mindalem/</p><a href="BRIEFS.md#cnt-109">Полный бриф</a> · <a href="og/pirog-s-grushey-i-mindalem.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-110">
+  <img src="previews/kofe-i-vypechka-v-zelenogradske.webp" width="640" height="336" alt="Две чашки кофе, круассан, вишнёвая слойка и крендель на столе у моря в вымышленном балтийском пироговом городе" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-28">28 ноября · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Кофе и выпечка в Зеленоградске: по пути от вокзала</h3><p>Выбрать быструю остановку перед морем или обратной электричкой.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Разбить проверенные точки по сценарию кофе с собой / посидеть; добавить доступность с коляской при подтверждении; убрать устаревшие часы.</p><p><b>Врезки:</b> Схема по пути к морю · таблица форматов остановки</p><p><b>До выпуска:</b> Ссылки на меню и официальные страницы каждой упомянутой точки. Цены только с датой.</p>
+  <p class="route">/journal/kofe-i-vypechka-v-zelenogradske/</p><a href="BRIEFS.md#cnt-110">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/kofe-i-vypechka-v-zelenogradske/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-111">
+  <img src="previews/kak-podarit-pirog.webp" width="640" height="336" alt="Золотистый пирог в крафтовой коробке с запиской" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-29">29 ноября · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Как подарить пирог: упаковка и записка с составом</h3><p>Подготовить съедобный подарок хозяевам и довезти его целым.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Три варианта подарка; пищевая упаковка; что указать на записке; когда охлаждение требуется производителем.</p><p><b>Врезки:</b> Схема упаковки · образец карточки с составом и датой</p><p><b>До выпуска:</b> Упаковка для контакта с пищей. Интервалы хранения только по источнику и конкретному продукту.</p>
+  <p class="route">/journal/kak-podarit-pirog/</p><a href="BRIEFS.md#cnt-111">Полный бриф</a> · <a href="og/kak-podarit-pirog.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-112">
+  <img src="previews/kak-vybrat-pirogi-na-kompaniyu.webp" width="640" height="336" alt="Три пирога с разными начинками и сервировка общего стола на шестерых" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-11-30">30 ноября · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Какие пироги выбрать на компанию с разными вкусами</h3><p>Собрать набор, учитывая предпочтения гостей и состав.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Сценарии с мясной, растительной и сладкой начинками; выбор двух размеров; проверка состава для гостей с ограничениями.</p><p><b>Врезки:</b> Матрица вкусов · пример двух наборов с калькулятором</p><p><b>До выпуска:</b> Брать позиции из действующего каталога, сверить сценарий подбора.</p>
+  <p class="route">/journal/kak-vybrat-pirogi-na-kompaniyu/</p><a href="BRIEFS.md#cnt-112">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/kak-vybrat-pirogi-na-kompaniyu/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-113">
+  <img src="previews/galeta-s-tykvoy-i-syrom.webp" width="640" height="336" alt="Открытая галета с ломтиками тыквы и сыром на пергаменте" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-01">1 декабря · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Несладкая галета с тыквой и сыром</h3><p>Испечь открытую галету без формы.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Раскатка и защипы; влажность тыквы; толщина ломтиков; раскладка начинки; готовность дна.</p><p><b>Врезки:</b> Схема складывания края · нижняя корка после выпечки</p><p><b>До выпуска:</b> Сравнить с существующим гидом о тыкве, который владеет выбором вкуса. Проверить форму и граммовки.</p>
+  <p class="route">/journal/galeta-s-tykvoy-i-syrom/</p><a href="BRIEFS.md#cnt-113">Полный бриф</a> · <a href="og/galeta-s-tykvoy-i-syrom.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-114">
+  <img src="previews/kak-perevezti-pirog.webp" width="640" height="336" alt="Пирог в открытой коробке и термосумка для дороги на фоне иллюстрированного пирогового города" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-02">2 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Как перевезти пирог зимой: коробка, фиксация и подача</h3><p>Довезти пирог в машине или электричке.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Сравнить коробки и фиксацию; отдельные сценарии с сухой и влажной начинкой; действия по приезде.</p><p><b>Врезки:</b> Разрез с фиксаторами · памятка перед выходом</p><p><b>До выпуска:</b> Условия хранения проверять для конкретного пирога, не обещать безопасную перевозку без учёта температуры.</p>
+  <p class="route">/journal/kak-perevezti-pirog/</p><a href="BRIEFS.md#cnt-114">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/kak-perevezti-pirog/">Действующая статья</a></div></details></div></article></div></section>
+<section class="week" aria-labelledby="week-3"><p class="date-range">3 декабря — 9 декабря</p><h2 id="week-3">Домашняя выпечка и зимняя подача</h2><div class="grid"><article class="card" data-kind="update" id="cnt-115">
+  <img src="previews/sladkie-pirogi-k-chayu.webp" width="640" height="336" alt="Куски яблочного, вишнёвого и творожного пирогов к чаю на фоне иллюстрированного пирогового города" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-03">3 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Сладкая выпечка к зимнему чаепитию</h3><p>Выбрать сладкий пирог по начинке и количеству гостей.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Добавить сценарии на 4, 6 и 8; сравнить фруктовую, творожную и ягодную начинки; дать ссылки на рецепты и наборы.</p><p><b>Врезки:</b> Таблица вкусов · две подачи к общему столу</p><p><b>До выпуска:</b> Сохранить текущий URL и прежние сочетания. Даты и примеры подавать как редакционные сценарии.</p>
+  <p class="route">/journal/sladkie-pirogi-k-chayu/</p><a href="BRIEFS.md#cnt-115">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/sladkie-pirogi-k-chayu/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-116">
+  <img src="previews/sloenye-pirozhki-s-gribami.webp" width="640" height="336" alt="Небольшие слоёные пирожки и начинка из грибов" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-04">4 декабря · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Слоёные пирожки с грибами: маленькие порции в духовке</h3><p>Испечь порционную выпечку из готового слоёного теста.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Как осушить начинку, нарезать пласты, запечатать края и испечь на одном противне; примеры размеров.</p><p><b>Врезки:</b> Шаблон раскроя листа · крупный план защипа</p><p><b>До выпуска:</b> Сверить инструкцию теста. Отделить от рецепта большого пирога и сравнения размеров.</p>
+  <p class="route">/journal/sloenye-pirozhki-s-gribami/</p><a href="BRIEFS.md#cnt-116">Полный бриф</a> · <a href="og/sloenye-pirozhki-s-gribami.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-117">
+  <img src="previews/gde-poest-v-svetlogorske.webp" width="640" height="336" alt="Омлет, сырники и кофе у окна с соснами и морем" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-05">5 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Где поесть в Светлогорске зимой между прогулками</h3><p>Выбрать место для обеда на короткой поездке.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Добавить дождливый маршрут и варианты формата между вокзалом, центром и морем; обновить действующие ссылки.</p><p><b>Врезки:</b> Схема погодных развилок · таблица остановок</p><p><b>До выпуска:</b> Зимняя доступность спусков и часы кафе требуют проверки у владельцев и властей.</p>
+  <p class="route">/journal/gde-poest-v-svetlogorske/</p><a href="BRIEFS.md#cnt-117">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/gde-poest-v-svetlogorske/">Действующая статья</a></div></details></div></article><article class="card" data-kind="update" id="cnt-118">
+  <img src="previews/kak-hranit-pirogi.webp" width="640" height="336" alt="Разные пироги в закрывающихся керамических формах на фоне иллюстрированного пирогового города" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-06">6 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Как хранить пироги с разными начинками после застолья</h3><p>Решить, что убрать и как разделить остатки.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Уточнить упаковку, маркировку времени и разницу между сухой и влажной начинкой; дать компактное дерево решений.</p><p><b>Врезки:</b> Дерево действий · пример подписанного контейнера</p><p><b>До выпуска:</b> Точные сроки только по маркировке или подходящим утверждённым источникам.</p>
+  <p class="route">/journal/kak-hranit-pirogi/</p><a href="BRIEFS.md#cnt-118">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/kak-hranit-pirogi/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-119">
+  <img src="previews/kak-ispech-dva-piroga-v-odnoy-duhovke.webp" width="640" height="336" alt="Две формы на уровнях духовки с хорошим зазором" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-07">7 декабря · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Как испечь два пирога в одной духовке</h3><p>Понять, когда ставить две формы одновременно, а когда печь по очереди.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Сравнить один и два уровня; проверить совместимость режимов; действия при неравномерном подрумянивании; тайминг для разных рецептов.</p><p><b>Врезки:</b> Схема уровней · план выпечки при совпадающих и разных режимах</p><p><b>До выпуска:</b> Подтвердить рекомендации инструкцией модели и сравнительной пробой, не обобщать на все духовки.</p>
+  <p class="route">/journal/kak-ispech-dva-piroga-v-odnoy-duhovke/</p><a href="BRIEFS.md#cnt-119">Полный бриф</a> · <a href="og/kak-ispech-dva-piroga-v-odnoy-duhovke.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-120">
+  <img src="previews/sloenoe-ili-drozhzhevoe-testo.webp" width="640" height="336" alt="Слоёный пирог в разрезе с заметными слоями теста на фоне иллюстрированного пирогового города" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-08">8 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Слоёное дрожжевое и бездрожжевое тесто: что взять для пирога</h3><p>Выбрать тип теста под начинку и ожидаемую корку.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Добавить таблицу на 4 изделия и фотографии сравнительных разрезов; показать, как читать инструкцию упаковки.</p><p><b>Врезки:</b> Парный разрез · матрица задач по типам теста</p><p><b>До выпуска:</b> Отдельно обозначить слоёное дрожжевое и обычное дрожжевое, не смешивать категории.</p>
+  <p class="route">/journal/sloenoe-ili-drozhzhevoe-testo/</p><a href="BRIEFS.md#cnt-120">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/sloenoe-ili-drozhzhevoe-testo/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-121">
+  <img src="previews/pirog-s-ryboy-i-risom-v-duhovke.webp" width="640" height="336" alt="Закрытый рыбный пирог с рисом в разрезе" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-09">9 декабря · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Закрытый пирог с рыбой и рисом в духовке</h3><p>Испечь сытный рыбный пирог по проверенной раскладке.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Разобрать рыбу, рис и тесто раздельно; показать охлаждение начинки, сборку, готовность и разрез.</p><p><b>Врезки:</b> Вид подготовленной начинки · крупный план шва</p><p><b>До выпуска:</b> Проверить рецепт и безопасную готовность по источникам для выбранной рыбы.</p>
+  <p class="route">/journal/pirog-s-ryboy-i-risom-v-duhovke/</p><a href="BRIEFS.md#cnt-121">Полный бриф</a> · <a href="og/pirog-s-ryboy-i-risom-v-duhovke.jpg">OG-обложка</a></div></details></div></article></div></section>
+<section class="week" aria-labelledby="week-4"><p class="date-range">10 декабря — 16 декабря</p><h2 id="week-4">Ягодные рецепты и локальные гиды</h2><div class="grid"><article class="card" data-kind="update" id="cnt-122">
+  <img src="previews/eda-v-aeroportu-hrabrovo.webp" width="640" height="336" alt="Пирог, чай и дорожная коробка на столе у окна с самолётом и светлым балтийским небом" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-10">10 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Еда в Храброво зимой: что взять до вылета</h3><p>Выбрать перекус до или после зоны досмотра.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Уточнить где купить еду, когда выезжать и что брать домашним перекусом; разделить зоны и подвести к источникам правил.</p><p><b>Врезки:</b> Таблица до / после контроля · список проверок перед выездом</p><p><b>До выпуска:</b> Всё зависящее от перевозчика и даты указывать только по официальным правилам.</p>
+  <p class="route">/journal/eda-v-aeroportu-hrabrovo/</p><a href="BRIEFS.md#cnt-122">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/eda-v-aeroportu-hrabrovo/">Действующая статья</a></div></details></div></article><article class="card" data-kind="update" id="cnt-123">
+  <img src="previews/pirogi-na-kofe-breyk.webp" width="640" height="336" alt="Мини-пироги, чашки и кофейники для кофе-брейка на фоне иллюстрированного пирогового города" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-11">11 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Зимний офисный кофе-брейк: пироги и подача по времени</h3><p>Рассчитать небольшой перерыв без очередей к столу.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Сценарии на 12 и 24 человека; выкладка в две точки; одноразовая или возвратная подача; как разложить изделия по составу.</p><p><b>Врезки:</b> План двух точек подачи · схема порций на 12 и 24</p><p><b>До выпуска:</b> Расчёт перепроверить на двух примерах, не обещать действующие кейтеринг и доставку.</p>
+  <p class="route">/journal/pirogi-na-kofe-breyk/</p><a href="BRIEFS.md#cnt-123">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/pirogi-na-kofe-breyk/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-124">
+  <img src="previews/sloyki-s-yablokami-v-duhovke.webp" width="640" height="336" alt="Порционные яблочные слойки с видимыми слоями корки" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-12">12 декабря · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Слойки с яблоками из готового теста</h3><p>Приготовить порционные слойки вместо большого пирога.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Сорт яблок, толщина нарезки, контроль сока; два способа складывания, признаки готовности и подача.</p><p><b>Врезки:</b> Две формы сложения · начинка до выпечки</p><p><b>До выпуска:</b> Проверить рецепт на конкретном тесте и отделить интент от шарлотки.</p>
+  <p class="route">/journal/sloyki-s-yablokami-v-duhovke/</p><a href="BRIEFS.md#cnt-124">Полный бриф</a> · <a href="og/sloyki-s-yablokami-v-duhovke.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-125">
+  <img src="previews/pirog-s-vishney-nachinka.webp" width="640" height="336" alt="Вишнёвый пирог с решёткой и вишня в миске на фоне иллюстрированного пирогового города" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-13">13 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Как сделать начинку для вишнёвого пирога из замороженных ягод</h3><p>Удержать сок, сохранив ягоды в начинке.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Разобрать подготовку замороженной вишни, охлаждение загущённой начинки и признаки избытка влаги.</p><p><b>Врезки:</b> Три стадии загущения · разрез корки после остывания</p><p><b>До выпуска:</b> Привязать дозировки к весу ягод и виду загустителя, проверить на тестовой порции.</p>
+  <p class="route">/journal/pirog-s-vishney-nachinka/</p><a href="BRIEFS.md#cnt-125">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/pirog-s-vishney-nachinka/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-126">
+  <img src="previews/pirog-s-klyukvoy-i-apelsinom.webp" width="640" height="336" alt="Невысокий пирог с клюквой, рядом апельсиновая цедра" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-14">14 декабря · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Пирог с клюквой и апельсином: зимний рецепт</h3><p>Испечь ягодный пирог с цитрусовой ноткой и контролем кислоты.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Клюква свежая или замороженная; цедра и сок; выпечка на выбранной основе и варианты подачи.</p><p><b>Врезки:</b> Подготовка ягод · разрез после остывания</p><p><b>До выпуска:</b> Сверить фактическую рецептуру. Не представлять клюкву и бруснику как взаимозаменяемые без адаптации.</p>
+  <p class="route">/journal/pirog-s-klyukvoy-i-apelsinom/</p><a href="BRIEFS.md#cnt-126">Полный бриф</a> · <a href="og/pirog-s-klyukvoy-i-apelsinom.jpg">OG-обложка</a></div></details></div></article><article class="card" data-kind="update" id="cnt-127">
+  <img src="previews/pekarni-svetlogorska.webp" width="640" height="336" alt="Редакционная иллюстрация: хлеб, круассан и фруктовые слойки в крафтовом пакете у вымышленного окна на балтийский город" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-15">15 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Пекарни Светлогорска зимой: где купить выпечку по пути</h3><p>Найти вариант на вынос по проверенному маршруту.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Перепроверить адреса и часы; добавить вариант от станции до центра и обозначить, что доступно утром.</p><p><b>Врезки:</b> Маршрут от станции · таблица часов и ссылок</p><p><b>До выпуска:</b> Цены и наличие указывать только на дату, с прямой ссылкой на источник.</p>
+  <p class="route">/journal/pekarni-svetlogorska/</p><a href="BRIEFS.md#cnt-127">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/pekarni-svetlogorska/">Действующая статья</a></div></details></div></article><article class="card" data-kind="new" id="cnt-128">
+  <img src="previews/chto-sdelat-iz-ostatkov-testa-dlya-piroga.webp" width="640" height="336" alt="Разные обрезки теста и небольшие изделия на пергаменте" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-16">16 декабря · 10:00</time><span class="kind new">Новая статья</span></div>
+  <h3>Что сделать из обрезков теста для пирога</h3><p>Использовать небольшие обрезки слоёного, песочного и дрожжевого теста.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Три сценария по типу теста; что можно собирать в один пласт; раскладка и готовность небольших изделий.</p><p><b>Врезки:</b> Три раскладки обрезков · примеры готовых изделий</p><p><b>До выпуска:</b> Проверить три способа с весом остатков. Сырые обрезки и остатки готовой выпечки описывать отдельно.</p>
+  <p class="route">/journal/chto-sdelat-iz-ostatkov-testa-dlya-piroga/</p><a href="BRIEFS.md#cnt-128">Полный бриф</a> · <a href="og/chto-sdelat-iz-ostatkov-testa-dlya-piroga.jpg">OG-обложка</a></div></details></div></article></div></section>
+<section class="week" aria-labelledby="week-5"><p class="date-range">17 декабря — 18 декабря</p><h2 id="week-5">Подача и региональная кухня</h2><div class="grid"><article class="card" data-kind="update" id="cnt-129">
+  <img src="previews/chto-pit-s-pirogami.webp" width="640" height="336" alt="Ягодный напиток, чай и кофе рядом с кусочком вишнёвого пирога" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-17">17 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Что пить с пирогами зимой: чай, морс и кофе</h3><p>Подобрать безалкогольный напиток к сладкой и сытной выпечке.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Собрать 5 сочетаний, указать кислотность и сладость на примерах; добавить вариант без кофеина и два способа подачи.</p><p><b>Врезки:</b> Матрица сочетаний · пример двух подач</p><p><b>До выпуска:</b> Проверить текущий каталог и не выдавать вкусовые сочетания за личную дегустацию.</p>
+  <p class="route">/journal/chto-pit-s-pirogami/</p><a href="BRIEFS.md#cnt-129">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/chto-pit-s-pirogami/">Действующая статья</a></div></details></div></article><article class="card" data-kind="update" id="cnt-130">
+  <img src="previews/stroganina-iz-pelamidy.webp" width="640" height="336" alt="Редакционная иллюстрация: тонкие ломтики рыбы на тарелке, красный лук, лимон, хлеб и отдельный соус у вымышленного балтийского окна" loading="lazy">
+  <div class="body"><div class="meta"><time datetime="2026-12-18">18 декабря · 10:00</time><span class="kind update">Обновление</span></div>
+  <h3>Строганина из пеламиды в Калининграде: где искать в меню</h3><p>Понять роль блюда и найти проверенное ресторанное меню.</p>
+  <details><summary>Бриф выпуска</summary><div class="detail"><p>Разнести исторический контекст и места, где блюдо заявлено; отметить дату проверки, обновить терминологию и перелинковку.</p><p><b>Врезки:</b> Набор ссылок на актуальные меню · схема различия названий</p><p><b>До выпуска:</b> Проверить меню непосредственно у ресторанов. При отсутствии актуальных меню оставить справочный материал без списка заведений.</p>
+  <p class="route">/journal/stroganina-iz-pelamidy/</p><a href="BRIEFS.md#cnt-130">Полный бриф</a> · <a href="https://pirogorsk.ru/journal/stroganina-iz-pelamidy/">Действующая статья</a></div></details></div></article></div></section>
+</div></main><footer><div class="wrap">Даты обозначают редакционные слоты. История фактических выпусков хранится отдельно. <a href="ARTWORK.md">Источники обложек</a></div></footer>
+<script>
+const filters = document.querySelectorAll('[data-filter]');
+const weeks = document.querySelectorAll('.week');
+for (const button of filters) button.addEventListener('click', () => {
+  for (const item of filters) item.setAttribute('aria-pressed', String(item === button));
+  for (const week of weeks) {
+    let visible = 0;
+    for (const card of week.querySelectorAll('[data-kind]')) {
+      card.hidden = button.dataset.filter !== 'all' && card.dataset.kind !== button.dataset.filter;
+      if (!card.hidden) visible++;
+    }
+    week.hidden = !visible;
+  }
+});
+</script></body></html>

@@ -1,0 +1,1838 @@
+{
+  "version": 1,
+  "title": "Пирогорск — план публикаций",
+  "period": {
+    "start": "2026-11-19",
+    "end": "2026-12-18"
+  },
+  "timezone": "Europe/Kaliningrad",
+  "slotLocalTime": "10:00",
+  "publicationNote": "Редакционная очередь по образцу A6. Плановые даты. Выпуск подтверждается отдельно по живому URL и CI.",
+  "source": "../content-month-202611/topic-map.json",
+  "topics": [
+    {
+      "number": 101,
+      "id": "CNT-101",
+      "date": "2026-11-19",
+      "time": "10:00",
+      "week": 1,
+      "decision": "new",
+      "status": "planned",
+      "slug": "novogodniy-stol-s-pirogami",
+      "sourceTitle": "Новогодний стол с пирогами на 6–12 человек",
+      "topic": "Новогодний стол с пирогами на 6–12 человек",
+      "seoTitle": "Новогодний стол с пирогами на 6–12 человек | Пирогорск",
+      "description": "Готовые варианты праздничного стола на 6, 8 и 12 гостей. Как выбрать сытные и сладкие пироги, собрать закуски и вовремя всё подать.",
+      "intent": "Собрать меню с одним горячим блюдом и десертом",
+      "cluster": "Стол и подача",
+      "region": null,
+      "scenario": "Собрать меню с одним горячим блюдом и десертом",
+      "ownerURL": "/journal/novogodniy-stol-s-pirogami/",
+      "deliverable": "Три состава стола для 6, 8 и 12 гостей; пример с закусками; список закупок и таймлайн подачи",
+      "contextLinks": [
+        "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+        "/journal/skolko-piroga-na-cheloveka/",
+        "/journal/kak-narezat-pirog/"
+      ],
+      "cta": {
+        "label": "Рассчитать количество пирогов",
+        "path": "/podbor/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "company",
+          "title": "Калькулятор Пирогорска",
+          "url": "https://pirogorsk.ru/podbor/",
+          "use": "Сверить сценарии и примеры расчёта."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "skolko-piroga-na-cheloveka",
+        "alt": "Два пирога на зимнем столе со скромным декором",
+        "figures": [
+          "Таблица меню на 6/8/12 гостей",
+          "часы подготовки и подачи"
+        ],
+        "cover": "artwork/novogodniy-stol-s-pirogami.png",
+        "preview": "previews/novogodniy-stol-s-pirogami.webp",
+        "og": "og/novogodniy-stol-s-pirogami.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nA festive home table from a slightly elevated three-quarter angle, two authentic round baked filled pies (one sliced with visible mushroom filling, one whole), small winter salad, linen napkins and muted pine greenery. Composition centered on the pies with room around the edges; warm indoor December afternoon, no extravagant decor.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no people unless hands are requested, no watermarks. Do not imply a specific commercial product or real venue."
+      },
+      "dataGap": "Сверить расчёт с калькулятором и явно обозначить, где пироги служат основным блюдом."
+    },
+    {
+      "number": 102,
+      "id": "CNT-102",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "week": 1,
+      "decision": "update",
+      "status": "planned",
+      "slug": "pochemu-pirog-treskaetsya",
+      "sourceTitle": "Почему трескается пирог: диагностика по виду трещины",
+      "topic": "Почему трескается пирог: диагностика по виду трещины",
+      "seoTitle": "Почему трескается пирог: диагностика по виду трещины | Пирогорск",
+      "description": "Трещина сбоку или по центру пирога? Разбираем, что подскажет форма трещины и как изменить сборку и выпечку в следующий раз.",
+      "intent": "Определить причину по месту и моменту появления трещины",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Определить причину по месту и моменту появления трещины",
+      "ownerURL": "/journal/pochemu-pirog-treskaetsya/",
+      "deliverable": "Разделить трещины по краю и в центре; показать разницу между вентиляционным надрезом и аварийной трещиной; добавить таблицу исправлений для следующей выпечки",
+      "contextLinks": [
+        "/journal/pochemu-u-piroga-syroe-dno/",
+        "/journal/drozhzhevoe-testo-dlya-pirogov/",
+        "/journal/yablochnyy-pirog-v-duhovke/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "crust",
+          "title": "King Arthur Baking — Pie Crust Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-crust",
+          "use": "Сопоставить формовку и обращение с тестом."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "pochemu-pirog-treskaetsya",
+        "alt": "Два золотистых пирога с надрезами для пара на фоне иллюстрированного пирогового города",
+        "figures": [
+          "Макро трёх типов трещин",
+          "матрица симптомов и действий"
+        ],
+        "cover": null,
+        "preview": "previews/pochemu-pirog-treskaetsya.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Сверить запросы и URL в Search Console. Причины формулировать как диагностику, проверить на примерах."
+    },
+    {
+      "number": 103,
+      "id": "CNT-103",
+      "date": "2026-11-21",
+      "time": "10:00",
+      "week": 1,
+      "decision": "new",
+      "status": "planned",
+      "slug": "vypechka-zaranee-prazdnik",
+      "sourceTitle": "Что из выпечки приготовить заранее к празднику",
+      "topic": "Что из выпечки приготовить заранее к празднику",
+      "seoTitle": "Что из выпечки приготовить заранее к празднику | Пирогорск",
+      "description": "Какие заготовки для пирогов сделать заранее, что оставить накануне и как распределить время выпечки в день праздника.",
+      "intent": "Разнести работу по дням до праздничного обеда",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Разнести работу по дням до праздничного обеда",
+      "ownerURL": "/journal/vypechka-zaranee-prazdnik/",
+      "deliverable": "График по видам теста и начинок; что приготовить накануне, а что оставить на день подачи; подготовка морозилки и духовки",
+      "contextLinks": [
+        "/journal/kak-zamorozit-pirog/",
+        "/journal/kak-hranit-pirogi/",
+        "/journal/kak-razogret-pirog-v-apartamentah/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "freeze",
+          "title": "King Arthur Baking — Freeze Pie Crust",
+          "url": "https://www.kingarthurbaking.com/blog/2025/11/05/freeze-pie-crust",
+          "use": "Техника относится к тесту; для готовой начинки нужен отдельный источник."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "kak-zamorozit-pirog",
+        "alt": "Пласты теста на пергаменте в домашней кухне",
+        "figures": [
+          "Шкала за 2 дня / накануне / в день",
+          "список маркировки заготовок"
+        ],
+        "cover": "artwork/vypechka-zaranee-prazdnik.png",
+        "preview": "previews/vypechka-zaranee-prazdnik.webp",
+        "og": "og/vypechka-zaranee-prazdnik.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nNatural quiet home kitchen prep, flour-dusted wooden worktop with two raw pastry rounds between sheets of baking parchment, covered shallow dish behind, little bowl of berries and a plain kitchen timer out of focus. Overhead, the parchment folds and dough are the subject. No readable numbers or labels.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no people unless hands are requested, no watermarks. Do not imply a specific commercial product or real venue."
+      },
+      "dataGap": "Сроки для конкретных начинок брать из проверенного источника или маркировки."
+    },
+    {
+      "number": 104,
+      "id": "CNT-104",
+      "date": "2026-11-22",
+      "time": "10:00",
+      "week": 1,
+      "decision": "new",
+      "status": "planned",
+      "slug": "zimnyaya-progulka-zelenogradsk-s-perekusom",
+      "sourceTitle": "Зимняя прогулка в Зеленоградске с тёплым перекусом",
+      "topic": "Зимняя прогулка в Зеленоградске с тёплым перекусом",
+      "seoTitle": "Зимняя прогулка в Зеленоградске с тёплым перекусом | Пирогорск",
+      "description": "Два коротких зимних маршрута по Зеленоградску от вокзала. Где сделать паузу с тёплым перекусом и как перестроить прогулку при ветре.",
+      "intent": "Собрать короткую прогулку от вокзала с местом для паузы",
+      "cluster": "Городские гиды",
+      "region": "Зеленоградск",
+      "scenario": "Собрать короткую прогулку от вокзала с местом для паузы",
+      "ownerURL": "/journal/zimnyaya-progulka-zelenogradsk-s-perekusom/",
+      "deliverable": "Схемы на 45 и 90 минут; варианты при ветре и дожде; покупка перед прогулкой и запасной вариант в помещении",
+      "contextLinks": [
+        "/journal/gde-poest-v-zelenogradske/",
+        "/journal/pekarni-i-pirogi-v-zelenogradske/",
+        "/journal/kofe-i-vypechka-v-zelenogradske/"
+      ],
+      "cta": {
+        "label": "Посмотреть подборки для Зеленоградска",
+        "path": "/zelenogradsk/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "zel",
+          "title": "Туристический центр — Зеленоградск",
+          "url": "https://visit-kaliningrad.ru/blog/zelenogradsk/",
+          "use": "Подтверждает точки ориентира; маршрут и доступность сверить отдельно."
+        },
+        {
+          "key": "events",
+          "title": "Туристический центр — календарь Калининградской области",
+          "url": "https://visit-kaliningrad.ru/calendar/",
+          "use": "Перепроверить на дату выхода, а часы заведений брать у владельцев."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "kofe-i-vypechka-v-zelenogradske",
+        "alt": "Термос и выпечка на скамье у зимнего моря",
+        "figures": [
+          "Две схематичные петли",
+          "точки, где можно согреться"
+        ],
+        "cover": "artwork/zimnyaya-progulka-zelenogradsk-s-perekusom.png",
+        "preview": "previews/zimnyaya-progulka-zelenogradsk-s-perekusom.webp",
+        "og": "og/zimnyaya-progulka-zelenogradsk-s-perekusom.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nAnonymous Baltic coastal promenade on a cold gray day viewed softly out of focus with dune grass and sea horizon. In foreground on wooden bench, compact plain thermos, wrapped savory pastry in folded parchment, knit scarf. No identifiable buildings or claimed establishment, no gulls or exaggerated snow.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no people unless hands are requested, no watermarks. Do not imply a specific commercial product or real venue."
+      },
+      "dataGap": "Время ходьбы сверить по карте. Адреса, часы и зимние ограничения брать у самих площадок."
+    },
+    {
+      "number": 105,
+      "id": "CNT-105",
+      "date": "2026-11-23",
+      "time": "10:00",
+      "week": 1,
+      "decision": "update",
+      "status": "planned",
+      "slug": "kak-narezat-pirog",
+      "sourceTitle": "Как нарезать пирог: круглый, прямоугольный и с хрупкой коркой",
+      "topic": "Как нарезать пирог: круглый, прямоугольный и с хрупкой коркой",
+      "seoTitle": "Как нарезать пирог: круглый, прямоугольный и с хрупкой коркой | Пирогорск",
+      "description": "Способы нарезки круглого и прямоугольного пирога. Как получить равные куски и сохранить хрупкую корку при подаче.",
+      "intent": "Разделить пирог поровну, сохранив форму кусков",
+      "cluster": "Стол и подача",
+      "region": null,
+      "scenario": "Разделить пирог поровну, сохранив форму кусков",
+      "ownerURL": "/journal/kak-narezat-pirog/",
+      "deliverable": "Дополнить действующую схему прямоугольным листом и примерами на 9 и 12 частей; показать, как подавать хрупкую корку",
+      "contextLinks": [
+        "/journal/skolko-piroga-na-cheloveka/",
+        "/journal/pirog-500-g-ili-1-kg/",
+        "/journal/mini-pirogi-ili-tselyy-pirog/"
+      ],
+      "cta": {
+        "label": "Рассчитать количество пирогов",
+        "path": "/podbor/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "company",
+          "title": "Калькулятор Пирогорска",
+          "url": "https://pirogorsk.ru/podbor/",
+          "use": "Сверить сценарии и примеры расчёта."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "kak-narezat-pirog",
+        "alt": "Круглый и прямоугольный пироги, нарезанные на порции на фоне иллюстрированного пирогового города",
+        "figures": [
+          "Новая схема прямоугольного пирога",
+          "пример на весах"
+        ],
+        "cover": null,
+        "preview": "previews/kak-narezat-pirog.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Измерить порции по фактическому весу. Проверить схему на 320 px и с клавиатуры."
+    },
+    {
+      "number": 106,
+      "id": "CNT-106",
+      "date": "2026-11-24",
+      "time": "10:00",
+      "week": 1,
+      "decision": "new",
+      "status": "planned",
+      "slug": "pirog-s-kartoshkoy-i-gribami-recept",
+      "sourceTitle": "Пирог с картошкой и грибами в духовке",
+      "topic": "Пирог с картошкой и грибами в духовке",
+      "seoTitle": "Пирог с картошкой и грибами в духовке | Пирогорск",
+      "description": "Закрытый пирог с картофелем и грибами в духовке. Состав начинки, сборка, надрез и признаки готовности.",
+      "intent": "Испечь закрытый пирог с картофельно-грибной начинкой",
+      "cluster": "Рецепты",
+      "region": null,
+      "scenario": "Испечь закрытый пирог с картофельно-грибной начинкой",
+      "ownerURL": "/journal/pirog-s-kartoshkoy-i-gribami-recept/",
+      "deliverable": "Граммовки и форма; подготовка картофеля и грибов; сборка и надрез; готовность и частые ошибки",
+      "contextLinks": [
+        "/journal/pirog-s-kartoshkoy-i-syrom/",
+        "/journal/drozhzhevoe-testo-dlya-pirogov/",
+        "/journal/pochemu-u-piroga-syroe-dno/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "pirog-s-kartoshkoy-i-syrom",
+        "alt": "Закрытый пирог в разрезе с картофелем и грибами",
+        "figures": [
+          "Крупно начинка перед сборкой",
+          "разрез готовой корки"
+        ],
+        "cover": "artwork/pirog-s-kartoshkoy-i-gribami-recept.png",
+        "preview": "previews/pirog-s-kartoshkoy-i-gribami-recept.webp",
+        "og": "og/pirog-s-kartoshkoy-i-gribami-recept.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nHomemade closed yeast-pastry pie with a removed wedge revealing identifiable soft potato pieces and browned mushrooms, on a dark pine board, modest linen and two whole mushrooms in the background. Warm crust, authentic food texture, no cheese strands or meat.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no people unless hands are requested, no watermarks. Do not imply a specific commercial product or real venue."
+      },
+      "dataGap": "Проверить авторскую раскладку на одной форме. Без заявления о тестировании до его проведения."
+    },
+    {
+      "number": 107,
+      "id": "CNT-107",
+      "date": "2026-11-25",
+      "time": "10:00",
+      "week": 1,
+      "decision": "update",
+      "status": "planned",
+      "slug": "kak-zamorozit-pirog",
+      "sourceTitle": "Как заморозить пирог целиком или порциями",
+      "topic": "Как заморозить пирог целиком или порциями",
+      "seoTitle": "Как заморозить пирог целиком или порциями | Пирогорск",
+      "description": "Что выбрать для готового пирога, кусков и заготовки. Как упаковать, подписать и разморозить выпечку разных типов.",
+      "intent": "Выбрать способ подготовки и разморозки под тип пирога",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Выбрать способ подготовки и разморозки под тип пирога",
+      "ownerURL": "/journal/kak-zamorozit-pirog/",
+      "deliverable": "Развести заготовку, готовый целый пирог и кусочки; предложить маркировку, упаковку и способы разморозки",
+      "contextLinks": [
+        "/journal/kak-hranit-pirogi/",
+        "/journal/kak-razogret-pirog-v-apartamentah/",
+        "/journal/pochemu-u-piroga-syroe-dno/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "freeze",
+          "title": "King Arthur Baking — Freeze Pie Crust",
+          "url": "https://www.kingarthurbaking.com/blog/2025/11/05/freeze-pie-crust",
+          "use": "Техника относится к тесту; для готовой начинки нужен отдельный источник."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "kak-zamorozit-pirog",
+        "alt": "Куски пирога в контейнерах для замораживания на фоне иллюстрированного пирогового города",
+        "figures": [
+          "Слои упаковки",
+          "схема выбора целиком / порционно"
+        ],
+        "cover": null,
+        "preview": "previews/kak-zamorozit-pirog.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Различить безопасность и качество. Сверить с маркировкой, не давать универсальные сроки."
+    },
+    {
+      "number": 108,
+      "id": "CNT-108",
+      "date": "2026-11-26",
+      "time": "10:00",
+      "week": 2,
+      "decision": "update",
+      "status": "planned",
+      "slug": "kaliningrad-zimoy-gde-poest",
+      "sourceTitle": "Где поесть в Калининграде зимой: план на короткий день",
+      "topic": "Где поесть в Калининграде зимой: план на короткий день",
+      "seoTitle": "Где поесть в Калининграде зимой: план на короткий день | Пирогорск",
+      "description": "Где сделать тёплую остановку на прогулке по Калининграду зимой. Два сценария с проверкой адресов, времени работы и формата еды.",
+      "intent": "Найти тёплую остановку между прогулкой и вечерними планами",
+      "cluster": "Городские гиды",
+      "region": "Калининград и область",
+      "scenario": "Найти тёплую остановку между прогулкой и вечерними планами",
+      "ownerURL": "/journal/kaliningrad-zimoy-gde-poest/",
+      "deliverable": "Обновить существующий зимний гид; добавить 2 сценария с помещением и временем на переход, мини-таблицу оговорок по выходным",
+      "contextLinks": [
+        "/journal/gde-poest-ryadom-s-ostrovom-kanta/",
+        "/journal/zavtraki-v-kaliningrade/",
+        "/journal/pozdniy-uzhin-v-kaliningrade/"
+      ],
+      "cta": {
+        "label": "Посмотреть подборки для Калининграда",
+        "path": "/kaliningrad/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "events",
+          "title": "Туристический центр — календарь Калининградской области",
+          "url": "https://visit-kaliningrad.ru/calendar/",
+          "use": "Перепроверить на дату выхода, а часы заведений брать у владельцев."
+        },
+        {
+          "key": "kgd",
+          "title": "Туристический центр — Калининград",
+          "url": "https://visit-kaliningrad.ru/blog/kaliningrad-za-3-dnya/",
+          "use": "Контекст маршрутов; меню и часы подтвердить у площадок."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "kaliningrad-zimoy-gde-poest",
+        "alt": "Зимний стол с пирогом, супом и чаем у окна на вымышленный заснеженный пироговый город",
+        "figures": [
+          "Схема двух коротких маршрутов",
+          "карточка адресов с датой сверки"
+        ],
+        "cover": null,
+        "preview": "previews/kaliningrad-zimoy-gde-poest.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Время работы кухни отдельно от времени работы зала, только подтверждённые даты."
+    },
+    {
+      "number": 109,
+      "id": "CNT-109",
+      "date": "2026-11-27",
+      "time": "10:00",
+      "week": 2,
+      "decision": "new",
+      "status": "planned",
+      "slug": "pirog-s-grushey-i-mindalem",
+      "sourceTitle": "Грушевый тарт с миндалём: рецепт и нарезка",
+      "topic": "Грушевый тарт с миндалём: рецепт и нарезка",
+      "seoTitle": "Грушевый тарт с миндалём: рецепт и нарезка | Пирогорск",
+      "description": "Как выбрать груши, приготовить песочную основу и миндальный слой, испечь открытый тарт и дать ему остыть перед нарезкой.",
+      "intent": "Испечь открытый тарт и выбрать груши нужной плотности",
+      "cluster": "Рецепты",
+      "region": null,
+      "scenario": "Испечь открытый тарт и выбрать груши нужной плотности",
+      "ownerURL": "/journal/pirog-s-grushey-i-mindalem/",
+      "deliverable": "Песочная основа; подготовка груш; миндальный слой; признаки готовности; остывание перед нарезкой",
+      "contextLinks": [
+        "/journal/pesochnoe-testo-dlya-kisha/",
+        "/journal/sladkie-pirogi-k-chayu/",
+        "/journal/kak-narezat-pirog/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "pear",
+          "title": "King Arthur Baking — Pear & Almond Tart",
+          "url": "https://www.kingarthurbaking.com/recipes/pear-almond-tart-recipe",
+          "use": "Сверить технологию и подготовку груши; не копировать текст и не считать авторскую раскладку проверенной."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "crust",
+          "title": "King Arthur Baking — Pie Crust Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-crust",
+          "use": "Сопоставить формовку и обращение с тестом."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "sladkie-pirogi-k-chayu",
+        "alt": "Открытый грушевый тарт с миндалём на пергаменте",
+        "figures": [
+          "Выкладка долек",
+          "разрез после остывания"
+        ],
+        "cover": "artwork/pirog-s-grushey-i-mindalem.png",
+        "preview": "previews/pirog-s-grushey-i-mindalem.webp",
+        "og": "og/pirog-s-grushey-i-mindalem.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nHomemade pear and almond tart on worn parchment, pale golden fan of thin pear slices and toasted almond flakes, only a small restrained dusting of sugar, wedge on a ceramic plate, one ripe pear in the background. Neutral Baltic winter daylight. Realistic flour and fruit texture.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no people unless hands are requested, no watermarks. Do not imply a specific commercial product or real venue."
+      },
+      "dataGap": "Проверить свою раскладку. Миндаль отметить как аллерген, не заявлять универсальные замены."
+    },
+    {
+      "number": 110,
+      "id": "CNT-110",
+      "date": "2026-11-28",
+      "time": "10:00",
+      "week": 2,
+      "decision": "update",
+      "status": "planned",
+      "slug": "kofe-i-vypechka-v-zelenogradske",
+      "sourceTitle": "Кофе и выпечка в Зеленоградске: по пути от вокзала",
+      "topic": "Кофе и выпечка в Зеленоградске: по пути от вокзала",
+      "seoTitle": "Кофе и выпечка в Зеленоградске: по пути от вокзала | Пирогорск",
+      "description": "Где взять кофе и выпечку по дороге от вокзала к морю в Зеленоградске. Идеи для быстрого перекуса и паузы в помещении.",
+      "intent": "Выбрать быструю остановку перед морем или обратной электричкой",
+      "cluster": "Городские гиды",
+      "region": "Зеленоградск",
+      "scenario": "Выбрать быструю остановку перед морем или обратной электричкой",
+      "ownerURL": "/journal/kofe-i-vypechka-v-zelenogradske/",
+      "deliverable": "Разбить проверенные точки по сценарию кофе с собой / посидеть; добавить доступность с коляской при подтверждении; убрать устаревшие часы",
+      "contextLinks": [
+        "/journal/gde-pozavtrakat-v-zelenogradske/",
+        "/journal/pekarni-i-pirogi-v-zelenogradske/",
+        "/journal/gde-poest-v-zelenogradske/"
+      ],
+      "cta": {
+        "label": "Посмотреть подборки для Зеленоградска",
+        "path": "/zelenogradsk/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "zel",
+          "title": "Туристический центр — Зеленоградск",
+          "url": "https://visit-kaliningrad.ru/blog/zelenogradsk/",
+          "use": "Подтверждает точки ориентира; маршрут и доступность сверить отдельно."
+        },
+        {
+          "key": "events",
+          "title": "Туристический центр — календарь Калининградской области",
+          "url": "https://visit-kaliningrad.ru/calendar/",
+          "use": "Перепроверить на дату выхода, а часы заведений брать у владельцев."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "kofe-i-vypechka-v-zelenogradske",
+        "alt": "Две чашки кофе, круассан, вишнёвая слойка и крендель на столе у моря в вымышленном балтийском пироговом городе",
+        "figures": [
+          "Схема по пути к морю",
+          "таблица форматов остановки"
+        ],
+        "cover": null,
+        "preview": "previews/kofe-i-vypechka-v-zelenogradske.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Ссылки на меню и официальные страницы каждой упомянутой точки. Цены только с датой."
+    },
+    {
+      "number": 111,
+      "id": "CNT-111",
+      "date": "2026-11-29",
+      "time": "10:00",
+      "week": 2,
+      "decision": "new",
+      "status": "planned",
+      "slug": "kak-podarit-pirog",
+      "sourceTitle": "Как подарить пирог: упаковка и записка с составом",
+      "topic": "Как подарить пирог: упаковка и записка с составом",
+      "seoTitle": "Как подарить пирог: упаковка и записка с составом | Пирогорск",
+      "description": "Как выбрать коробку для пирога, закрепить выпечку и добавить записку с составом. Варианты для визита в гости и небольшого подарка.",
+      "intent": "Подготовить съедобный подарок хозяевам и довезти его целым",
+      "cluster": "Стол и подача",
+      "region": null,
+      "scenario": "Подготовить съедобный подарок хозяевам и довезти его целым",
+      "ownerURL": "/journal/kak-podarit-pirog/",
+      "deliverable": "Три варианта подарка; пищевая упаковка; что указать на записке; когда охлаждение требуется производителем",
+      "contextLinks": [
+        "/journal/kak-perevezti-pirog/",
+        "/journal/sostav-piroga-i-allergeny/",
+        "/journal/sedobnye-suveniry-iz-kaliningrada/"
+      ],
+      "cta": {
+        "label": "Рассчитать количество пирогов",
+        "path": "/podbor/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        },
+        {
+          "key": "company",
+          "title": "Калькулятор Пирогорска",
+          "url": "https://pirogorsk.ru/podbor/",
+          "use": "Сверить сценарии и примеры расчёта."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "sedobnye-suveniry-iz-kaliningrada",
+        "alt": "Золотистый пирог в крафтовой коробке с запиской",
+        "figures": [
+          "Схема упаковки",
+          "образец карточки с составом и датой"
+        ],
+        "cover": "artwork/kak-podarit-pirog.png",
+        "preview": "previews/kak-podarit-pirog.webp",
+        "og": "og/kak-podarit-pirog.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nSimple food-safe kraft bakery box with an intact golden round pie settled securely on white parchment, folded paper gift note with blank face, linen ribbon resting beside the box, soft warm natural light. Quiet winter host gift styling, no retail logo, no other food, no ornaments on the pie.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no people unless hands are requested, no watermarks. Do not imply a specific commercial product or real venue."
+      },
+      "dataGap": "Упаковка для контакта с пищей. Интервалы хранения только по источнику и конкретному продукту."
+    },
+    {
+      "number": 112,
+      "id": "CNT-112",
+      "date": "2026-11-30",
+      "time": "10:00",
+      "week": 2,
+      "decision": "update",
+      "status": "planned",
+      "slug": "kak-vybrat-pirogi-na-kompaniyu",
+      "sourceTitle": "Какие пироги выбрать на компанию с разными вкусами",
+      "topic": "Какие пироги выбрать на компанию с разными вкусами",
+      "seoTitle": "Какие пироги выбрать на компанию с разными вкусами | Пирогорск",
+      "description": "Как выбрать начинки и форматы пирогов для компании с разными вкусами. Примеры наборов и вопросы о составе перед подачей.",
+      "intent": "Собрать набор, учитывая предпочтения гостей и состав",
+      "cluster": "Стол и подача",
+      "region": null,
+      "scenario": "Собрать набор, учитывая предпочтения гостей и состав",
+      "ownerURL": "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+      "deliverable": "Сценарии с мясной, растительной и сладкой начинками; выбор двух размеров; проверка состава для гостей с ограничениями",
+      "contextLinks": [
+        "/journal/skolko-piroga-na-cheloveka/",
+        "/journal/sostav-piroga-i-allergeny/",
+        "/journal/mini-pirogi-ili-tselyy-pirog/"
+      ],
+      "cta": {
+        "label": "Рассчитать количество пирогов",
+        "path": "/podbor/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "company",
+          "title": "Калькулятор Пирогорска",
+          "url": "https://pirogorsk.ru/podbor/",
+          "use": "Сверить сценарии и примеры расчёта."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "kak-vybrat-pirogi-na-kompaniyu",
+        "alt": "Три пирога с разными начинками и сервировка общего стола на шестерых",
+        "figures": [
+          "Матрица вкусов",
+          "пример двух наборов с калькулятором"
+        ],
+        "cover": null,
+        "preview": "previews/kak-vybrat-pirogi-na-kompaniyu.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Брать позиции из действующего каталога, сверить сценарий подбора."
+    },
+    {
+      "number": 113,
+      "id": "CNT-113",
+      "date": "2026-12-01",
+      "time": "10:00",
+      "week": 2,
+      "decision": "new",
+      "status": "planned",
+      "slug": "galeta-s-tykvoy-i-syrom",
+      "sourceTitle": "Несладкая галета с тыквой и сыром",
+      "topic": "Несладкая галета с тыквой и сыром",
+      "seoTitle": "Несладкая галета с тыквой и сыром | Пирогорск",
+      "description": "Рецепт открытой несладкой галеты с тыквой и сыром. Как раскатать основу, защипнуть края и пропечь дно без формы.",
+      "intent": "Испечь открытую галету без формы",
+      "cluster": "Рецепты",
+      "region": null,
+      "scenario": "Испечь открытую галету без формы",
+      "ownerURL": "/journal/galeta-s-tykvoy-i-syrom/",
+      "deliverable": "Раскатка и защипы; влажность тыквы; толщина ломтиков; раскладка начинки; готовность дна",
+      "contextLinks": [
+        "/journal/pirog-s-tykvoy-sladkiy-i-sytnyy/",
+        "/journal/pochemu-u-piroga-syroe-dno/",
+        "/journal/pesochnoe-testo-dlya-kisha/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "crust",
+          "title": "King Arthur Baking — Pie Crust Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-crust",
+          "use": "Сопоставить формовку и обращение с тестом."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "pirog-s-tykvoy-sladkiy-i-sytnyy",
+        "alt": "Открытая галета с ломтиками тыквы и сыром на пергаменте",
+        "figures": [
+          "Схема складывания края",
+          "нижняя корка после выпечки"
+        ],
+        "cover": "artwork/galeta-s-tykvoy-i-syrom.png",
+        "preview": "previews/galeta-s-tykvoy-i-syrom.webp",
+        "og": "og/galeta-s-tykvoy-i-syrom.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nRustic circular savory free-form galette with a folded open crust, roasted pumpkin slices staggered in the middle and a light scattering of browned cheese, lying on crinkled parchment. Show clearly that it has an open top and free-folded outer edges, authentic food texture and modest portions.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no watermarks, no human figures. Do not imply a specific commercial product."
+      },
+      "dataGap": "Сравнить с существующим гидом о тыкве, который владеет выбором вкуса. Проверить форму и граммовки."
+    },
+    {
+      "number": 114,
+      "id": "CNT-114",
+      "date": "2026-12-02",
+      "time": "10:00",
+      "week": 2,
+      "decision": "update",
+      "status": "planned",
+      "slug": "kak-perevezti-pirog",
+      "sourceTitle": "Как перевезти пирог зимой: коробка, фиксация и подача",
+      "topic": "Как перевезти пирог зимой: коробка, фиксация и подача",
+      "seoTitle": "Как перевезти пирог зимой: коробка, фиксация и подача | Пирогорск",
+      "description": "Как подобрать коробку, зафиксировать пирог и довезти его зимой в машине или электричке. Что сделать по приезде.",
+      "intent": "Довезти пирог в машине или электричке",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Довезти пирог в машине или электричке",
+      "ownerURL": "/journal/kak-perevezti-pirog/",
+      "deliverable": "Сравнить коробки и фиксацию; отдельные сценарии с сухой и влажной начинкой; действия по приезде",
+      "contextLinks": [
+        "/journal/kak-hranit-pirogi/",
+        "/journal/kak-razogret-pirog-v-apartamentah/",
+        "/journal/kak-narezat-pirog/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "kak-perevezti-pirog",
+        "alt": "Пирог в открытой коробке и термосумка для дороги на фоне иллюстрированного пирогового города",
+        "figures": [
+          "Разрез с фиксаторами",
+          "памятка перед выходом"
+        ],
+        "cover": null,
+        "preview": "previews/kak-perevezti-pirog.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Условия хранения проверять для конкретного пирога, не обещать безопасную перевозку без учёта температуры."
+    },
+    {
+      "number": 115,
+      "id": "CNT-115",
+      "date": "2026-12-03",
+      "time": "10:00",
+      "week": 3,
+      "decision": "update",
+      "status": "planned",
+      "slug": "sladkie-pirogi-k-chayu",
+      "sourceTitle": "Сладкая выпечка к зимнему чаепитию",
+      "topic": "Сладкая выпечка к зимнему чаепитию",
+      "seoTitle": "Сладкая выпечка к зимнему чаепитию | Пирогорск",
+      "description": "Фруктовые, ягодные и творожные пироги к чаю. Примеры зимнего чаепития на 4, 6 и 8 гостей.",
+      "intent": "Выбрать сладкий пирог по начинке и количеству гостей",
+      "cluster": "Стол и подача",
+      "region": null,
+      "scenario": "Выбрать сладкий пирог по начинке и количеству гостей",
+      "ownerURL": "/journal/sladkie-pirogi-k-chayu/",
+      "deliverable": "Добавить сценарии на 4, 6 и 8; сравнить фруктовую, творожную и ягодную начинки; дать ссылки на рецепты и наборы",
+      "contextLinks": [
+        "/journal/chto-pit-s-pirogami/",
+        "/journal/pirog-s-vishney-nachinka/",
+        "/journal/yablochnyy-pirog-v-duhovke/"
+      ],
+      "cta": {
+        "label": "Рассчитать количество пирогов",
+        "path": "/podbor/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "company",
+          "title": "Калькулятор Пирогорска",
+          "url": "https://pirogorsk.ru/podbor/",
+          "use": "Сверить сценарии и примеры расчёта."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "sladkie-pirogi-k-chayu",
+        "alt": "Куски яблочного, вишнёвого и творожного пирогов к чаю на фоне иллюстрированного пирогового города",
+        "figures": [
+          "Таблица вкусов",
+          "две подачи к общему столу"
+        ],
+        "cover": null,
+        "preview": "previews/sladkie-pirogi-k-chayu.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Сохранить текущий URL и прежние сочетания. Даты и примеры подавать как редакционные сценарии."
+    },
+    {
+      "number": 116,
+      "id": "CNT-116",
+      "date": "2026-12-04",
+      "time": "10:00",
+      "week": 3,
+      "decision": "new",
+      "status": "planned",
+      "slug": "sloenye-pirozhki-s-gribami",
+      "sourceTitle": "Слоёные пирожки с грибами: маленькие порции в духовке",
+      "topic": "Слоёные пирожки с грибами: маленькие порции в духовке",
+      "seoTitle": "Слоёные пирожки с грибами: маленькие порции в духовке | Пирогорск",
+      "description": "Маленькие пирожки из готового слоёного теста с грибами. Подготовка начинки, раскрой листа, защипы и выпечка на одном противне.",
+      "intent": "Испечь порционную выпечку из готового слоёного теста",
+      "cluster": "Рецепты",
+      "region": null,
+      "scenario": "Испечь порционную выпечку из готового слоёного теста",
+      "ownerURL": "/journal/sloenye-pirozhki-s-gribami/",
+      "deliverable": "Как осушить начинку, нарезать пласты, запечатать края и испечь на одном противне; примеры размеров",
+      "contextLinks": [
+        "/journal/sloenoe-ili-drozhzhevoe-testo/",
+        "/journal/mini-pirogi-ili-tselyy-pirog/",
+        "/journal/pochemu-u-piroga-syroe-dno/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "mini-pirogi-ili-tselyy-pirog",
+        "alt": "Небольшие слоёные пирожки и начинка из грибов",
+        "figures": [
+          "Шаблон раскроя листа",
+          "крупный план защипа"
+        ],
+        "cover": "artwork/sloenye-pirozhki-s-gribami.png",
+        "preview": "previews/sloenye-pirozhki-s-gribami.webp",
+        "og": "og/sloenye-pirozhki-s-gribami.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nSeveral small rectangular golden laminated puff pastry hand pies with fine sealed edges, one opened to show finely chopped browned mushrooms. Plain oven tray and crinkled parchment, quiet modern home kitchen.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no watermarks, no human figures. Do not imply a specific commercial product."
+      },
+      "dataGap": "Сверить инструкцию теста. Отделить от рецепта большого пирога и сравнения размеров."
+    },
+    {
+      "number": 117,
+      "id": "CNT-117",
+      "date": "2026-12-05",
+      "time": "10:00",
+      "week": 3,
+      "decision": "update",
+      "status": "planned",
+      "slug": "gde-poest-v-svetlogorske",
+      "sourceTitle": "Где поесть в Светлогорске зимой между прогулками",
+      "topic": "Где поесть в Светлогорске зимой между прогулками",
+      "seoTitle": "Где поесть в Светлогорске зимой между прогулками | Пирогорск",
+      "description": "Где поесть зимой в Светлогорске между вокзалом, центром и морем. Идеи тёплой остановки и маршрут на дождливый день.",
+      "intent": "Выбрать место для обеда на короткой поездке",
+      "cluster": "Городские гиды",
+      "region": "Светлогорск",
+      "scenario": "Выбрать место для обеда на короткой поездке",
+      "ownerURL": "/journal/gde-poest-v-svetlogorske/",
+      "deliverable": "Добавить дождливый маршрут и варианты формата между вокзалом, центром и морем; обновить действующие ссылки",
+      "contextLinks": [
+        "/journal/pekarni-svetlogorska/",
+        "/journal/eda-s-soboy-v-svetlogorske/",
+        "/journal/nedorogo-poest-semey-v-svetlogorske/"
+      ],
+      "cta": {
+        "label": "Посмотреть подборки для Светлогорска",
+        "path": "/svetlogorsk/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "svet",
+          "title": "Туристический центр — Светлогорск",
+          "url": "https://visit-kaliningrad.ru/blog/svetlogorsk/",
+          "use": "Подтверждает точки ориентира; маршрут и доступность сверить отдельно."
+        },
+        {
+          "key": "events",
+          "title": "Туристический центр — календарь Калининградской области",
+          "url": "https://visit-kaliningrad.ru/calendar/",
+          "use": "Перепроверить на дату выхода, а часы заведений брать у владельцев."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "gde-poest-v-svetlogorske",
+        "alt": "Омлет, сырники и кофе у окна с соснами и морем",
+        "figures": [
+          "Схема погодных развилок",
+          "таблица остановок"
+        ],
+        "cover": null,
+        "preview": "previews/gde-poest-v-svetlogorske.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Зимняя доступность спусков и часы кафе требуют проверки у владельцев и властей."
+    },
+    {
+      "number": 118,
+      "id": "CNT-118",
+      "date": "2026-12-06",
+      "time": "10:00",
+      "week": 3,
+      "decision": "update",
+      "status": "planned",
+      "slug": "kak-hranit-pirogi",
+      "sourceTitle": "Как хранить пироги с разными начинками после застолья",
+      "topic": "Как хранить пироги с разными начинками после застолья",
+      "seoTitle": "Как хранить пироги с разными начинками после застолья | Пирогорск",
+      "description": "Как убрать остатки пирогов после застолья. Упаковка, маркировка и условия хранения для сухих и влажных начинок.",
+      "intent": "Решить, что убрать и как разделить остатки",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Решить, что убрать и как разделить остатки",
+      "ownerURL": "/journal/kak-hranit-pirogi/",
+      "deliverable": "Уточнить упаковку, маркировку времени и разницу между сухой и влажной начинкой; дать компактное дерево решений",
+      "contextLinks": [
+        "/journal/kak-zamorozit-pirog/",
+        "/journal/kak-razogret-pirog-v-apartamentah/",
+        "/journal/sostav-piroga-i-allergeny/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        },
+        {
+          "key": "freeze",
+          "title": "King Arthur Baking — Freeze Pie Crust",
+          "url": "https://www.kingarthurbaking.com/blog/2025/11/05/freeze-pie-crust",
+          "use": "Техника относится к тесту; для готовой начинки нужен отдельный источник."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "kak-hranit-pirogi",
+        "alt": "Разные пироги в закрывающихся керамических формах на фоне иллюстрированного пирогового города",
+        "figures": [
+          "Дерево действий",
+          "пример подписанного контейнера"
+        ],
+        "cover": null,
+        "preview": "previews/kak-hranit-pirogi.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Точные сроки только по маркировке или подходящим утверждённым источникам."
+    },
+    {
+      "number": 119,
+      "id": "CNT-119",
+      "date": "2026-12-07",
+      "time": "10:00",
+      "week": 3,
+      "decision": "new",
+      "status": "planned",
+      "slug": "kak-ispech-dva-piroga-v-odnoy-duhovke",
+      "sourceTitle": "Как испечь два пирога в одной духовке",
+      "topic": "Как испечь два пирога в одной духовке",
+      "seoTitle": "Как испечь два пирога в одной духовке | Пирогорск",
+      "description": "Можно ли поставить две формы в одну духовку? Когда совместить выпечку, как выбрать уровни и что делать при разном подрумянивании.",
+      "intent": "Понять, когда ставить две формы одновременно, а когда печь по очереди",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Понять, когда ставить две формы одновременно, а когда печь по очереди",
+      "ownerURL": "/journal/kak-ispech-dva-piroga-v-odnoy-duhovke/",
+      "deliverable": "Сравнить один и два уровня; проверить совместимость режимов; действия при неравномерном подрумянивании; тайминг для разных рецептов",
+      "contextLinks": [
+        "/journal/pochemu-u-piroga-syroe-dno/",
+        "/journal/pochemu-pirog-treskaetsya/",
+        "/journal/pirog-na-skovorode-ili-v-duhovke/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "pochemu-u-piroga-syroe-dno",
+        "alt": "Две формы на уровнях духовки с хорошим зазором",
+        "figures": [
+          "Схема уровней",
+          "план выпечки при совпадающих и разных режимах"
+        ],
+        "cover": "artwork/kak-ispech-dva-piroga-v-odnoy-duhovke.png",
+        "preview": "previews/kak-ispech-dva-piroga-v-odnoy-duhovke.webp",
+        "og": "og/kak-ispech-dva-piroga-v-odnoy-duhovke.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nView straight into a conventional household oven from the open door with two round pie dishes on separate, visibly level oven racks, each holding one simple pie in progress. Natural-dimension oven, realistic metal racks, clear air gap above and around each dish. Warm oven light with subdued neutral surroundings.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no watermarks, no human figures. Do not imply a specific commercial product."
+      },
+      "dataGap": "Подтвердить рекомендации инструкцией модели и сравнительной пробой, не обобщать на все духовки."
+    },
+    {
+      "number": 120,
+      "id": "CNT-120",
+      "date": "2026-12-08",
+      "time": "10:00",
+      "week": 3,
+      "decision": "update",
+      "status": "planned",
+      "slug": "sloenoe-ili-drozhzhevoe-testo",
+      "sourceTitle": "Слоёное дрожжевое и бездрожжевое тесто: что взять для пирога",
+      "topic": "Слоёное дрожжевое и бездрожжевое тесто: что взять для пирога",
+      "seoTitle": "Слоёное дрожжевое и бездрожжевое тесто: что взять для пирога | Пирогорск",
+      "description": "Чем отличаются дрожжевое и бездрожжевое слоёное тесто и как выбрать основу для пирожков, пирогов и открытых тартов.",
+      "intent": "Выбрать тип теста под начинку и ожидаемую корку",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Выбрать тип теста под начинку и ожидаемую корку",
+      "ownerURL": "/journal/sloenoe-ili-drozhzhevoe-testo/",
+      "deliverable": "Добавить таблицу на 4 изделия и фотографии сравнительных разрезов; показать, как читать инструкцию упаковки",
+      "contextLinks": [
+        "/journal/drozhzhevoe-testo-dlya-pirogov/",
+        "/journal/pesochnoe-testo-dlya-kisha/",
+        "/journal/pochemu-u-piroga-syroe-dno/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "crust",
+          "title": "King Arthur Baking — Pie Crust Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-crust",
+          "use": "Сопоставить формовку и обращение с тестом."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "sloenoe-ili-drozhzhevoe-testo",
+        "alt": "Слоёный пирог в разрезе с заметными слоями теста на фоне иллюстрированного пирогового города",
+        "figures": [
+          "Парный разрез",
+          "матрица задач по типам теста"
+        ],
+        "cover": null,
+        "preview": "previews/sloenoe-ili-drozhzhevoe-testo.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Отдельно обозначить слоёное дрожжевое и обычное дрожжевое, не смешивать категории."
+    },
+    {
+      "number": 121,
+      "id": "CNT-121",
+      "date": "2026-12-09",
+      "time": "10:00",
+      "week": 3,
+      "decision": "new",
+      "status": "planned",
+      "slug": "pirog-s-ryboy-i-risom-v-duhovke",
+      "sourceTitle": "Закрытый пирог с рыбой и рисом в духовке",
+      "topic": "Закрытый пирог с рыбой и рисом в духовке",
+      "seoTitle": "Закрытый пирог с рыбой и рисом в духовке | Пирогорск",
+      "description": "Закрытый рыбный пирог с рисом в духовке. Как подготовить рыбу и рис, собрать пирог и проверить готовность начинки.",
+      "intent": "Испечь сытный рыбный пирог по проверенной раскладке",
+      "cluster": "Рецепты",
+      "region": null,
+      "scenario": "Испечь сытный рыбный пирог по проверенной раскладке",
+      "ownerURL": "/journal/pirog-s-ryboy-i-risom-v-duhovke/",
+      "deliverable": "Разобрать рыбу, рис и тесто раздельно; показать охлаждение начинки, сборку, готовность и разрез",
+      "contextLinks": [
+        "/journal/rybnaya-nachinka-dlya-piroga/",
+        "/journal/ryba-baltiki-vidy/",
+        "/journal/pochemu-u-piroga-syroe-dno/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "rybnaya-nachinka-dlya-piroga",
+        "alt": "Закрытый рыбный пирог с рисом в разрезе",
+        "figures": [
+          "Вид подготовленной начинки",
+          "крупный план шва"
+        ],
+        "cover": "artwork/pirog-s-ryboy-i-risom-v-duhovke.png",
+        "preview": "previews/pirog-s-ryboy-i-risom-v-duhovke.webp",
+        "og": "og/pirog-s-ryboy-i-risom-v-duhovke.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nHomemade golden oval closed fish-and-rice pie on a wooden board, one clean wedge removed, the visible filling consists of recognizable flakes of white fish and grains of rice. Subtle dark gray linen, no raw fish or seafood garnish, modest portions.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no watermarks, no human figures. Do not imply a specific commercial product."
+      },
+      "dataGap": "Проверить рецепт и безопасную готовность по источникам для выбранной рыбы."
+    },
+    {
+      "number": 122,
+      "id": "CNT-122",
+      "date": "2026-12-10",
+      "time": "10:00",
+      "week": 4,
+      "decision": "update",
+      "status": "planned",
+      "slug": "eda-v-aeroportu-hrabrovo",
+      "sourceTitle": "Еда в Храброво зимой: что взять до вылета",
+      "topic": "Еда в Храброво зимой: что взять до вылета",
+      "seoTitle": "Еда в Храброво зимой: что взять до вылета | Пирогорск",
+      "description": "Где искать еду в Храброво и что проверить перед вылетом. Варианты перекуса до и после досмотра.",
+      "intent": "Выбрать перекус до или после зоны досмотра",
+      "cluster": "Городские гиды",
+      "region": "Калининград и область",
+      "scenario": "Выбрать перекус до или после зоны досмотра",
+      "ownerURL": "/journal/eda-v-aeroportu-hrabrovo/",
+      "deliverable": "Уточнить где купить еду, когда выезжать и что брать домашним перекусом; разделить зоны и подвести к источникам правил",
+      "contextLinks": [
+        "/journal/sedobnye-suveniry-iz-kaliningrada/",
+        "/journal/kak-perevezti-pirog/",
+        "/journal/rynki-kaliningrada-eda/"
+      ],
+      "cta": {
+        "label": "Посмотреть подборки для Калининграда",
+        "path": "/kaliningrad/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "airport",
+          "title": "Храброво — действующие сведения аэропорта",
+          "url": "https://kgdavia.ru/",
+          "use": "Уточнить конкретные ссылки на питание, зоны и правила до выпуска."
+        },
+        {
+          "key": "events",
+          "title": "Туристический центр — календарь Калининградской области",
+          "url": "https://visit-kaliningrad.ru/calendar/",
+          "use": "Перепроверить на дату выхода, а часы заведений брать у владельцев."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "eda-v-aeroportu-hrabrovo",
+        "alt": "Пирог, чай и дорожная коробка на столе у окна с самолётом и светлым балтийским небом",
+        "figures": [
+          "Таблица до / после контроля",
+          "список проверок перед выездом"
+        ],
+        "cover": null,
+        "preview": "previews/eda-v-aeroportu-hrabrovo.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Всё зависящее от перевозчика и даты указывать только по официальным правилам."
+    },
+    {
+      "number": 123,
+      "id": "CNT-123",
+      "date": "2026-12-11",
+      "time": "10:00",
+      "week": 4,
+      "decision": "update",
+      "status": "planned",
+      "slug": "pirogi-na-kofe-breyk",
+      "sourceTitle": "Зимний офисный кофе-брейк: пироги и подача по времени",
+      "topic": "Зимний офисный кофе-брейк: пироги и подача по времени",
+      "seoTitle": "Зимний офисный кофе-брейк: пироги и подача по времени | Пирогорск",
+      "description": "Сколько пирогов поставить на офисный кофе-брейк на 12 или 24 человека. Как разложить куски и подписать начинки.",
+      "intent": "Рассчитать небольшой перерыв без очередей к столу",
+      "cluster": "Стол и подача",
+      "region": null,
+      "scenario": "Рассчитать небольшой перерыв без очередей к столу",
+      "ownerURL": "/journal/pirogi-na-kofe-breyk/",
+      "deliverable": "Сценарии на 12 и 24 человека; выкладка в две точки; одноразовая или возвратная подача; как разложить изделия по составу",
+      "contextLinks": [
+        "/journal/obed-v-ofis-v-kaliningrade/",
+        "/journal/skolko-piroga-na-cheloveka/",
+        "/journal/mini-pirogi-ili-tselyy-pirog/"
+      ],
+      "cta": {
+        "label": "Рассчитать количество пирогов",
+        "path": "/podbor/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "company",
+          "title": "Калькулятор Пирогорска",
+          "url": "https://pirogorsk.ru/podbor/",
+          "use": "Сверить сценарии и примеры расчёта."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "pirogi-na-kofe-breyk",
+        "alt": "Мини-пироги, чашки и кофейники для кофе-брейка на фоне иллюстрированного пирогового города",
+        "figures": [
+          "План двух точек подачи",
+          "схема порций на 12 и 24"
+        ],
+        "cover": null,
+        "preview": "previews/pirogi-na-kofe-breyk.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Расчёт перепроверить на двух примерах, не обещать действующие кейтеринг и доставку."
+    },
+    {
+      "number": 124,
+      "id": "CNT-124",
+      "date": "2026-12-12",
+      "time": "10:00",
+      "week": 4,
+      "decision": "new",
+      "status": "planned",
+      "slug": "sloyki-s-yablokami-v-duhovke",
+      "sourceTitle": "Слойки с яблоками из готового теста",
+      "topic": "Слойки с яблоками из готового теста",
+      "seoTitle": "Слойки с яблоками из готового теста | Пирогорск",
+      "description": "Слойки с яблоками из готового теста в духовке. Как нарезать начинку, уменьшить вытекание сока и сложить изделия двумя способами.",
+      "intent": "Приготовить порционные слойки вместо большого пирога",
+      "cluster": "Рецепты",
+      "region": null,
+      "scenario": "Приготовить порционные слойки вместо большого пирога",
+      "ownerURL": "/journal/sloyki-s-yablokami-v-duhovke/",
+      "deliverable": "Сорт яблок, толщина нарезки, контроль сока; два способа складывания, признаки готовности и подача",
+      "contextLinks": [
+        "/journal/yabloki-dlya-piroga/",
+        "/journal/yablochnyy-pirog-v-duhovke/",
+        "/journal/sloenoe-ili-drozhzhevoe-testo/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "fruit",
+          "title": "King Arthur Baking — загустители для фруктовых пирогов",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-thickener",
+          "use": "Сопоставить вид ягод, вес и тип загустителя."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "yablochnyy-pirog-v-duhovke",
+        "alt": "Порционные яблочные слойки с видимыми слоями корки",
+        "figures": [
+          "Две формы сложения",
+          "начинка до выпечки"
+        ],
+        "cover": "artwork/sloyki-s-yablokami-v-duhovke.png",
+        "preview": "previews/sloyki-s-yablokami-v-duhovke.webp",
+        "og": "og/sloyki-s-yablokami-v-duhovke.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nFresh apple puff pastry turnovers small enough to hold in one hand, a few carefully spaced on baking parchment. One cut in half to show little softened apple cubes, clearly visible pastry lamination. A cut apple softly out of focus.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no watermarks, no human figures. Do not imply a specific commercial product."
+      },
+      "dataGap": "Проверить рецепт на конкретном тесте и отделить интент от шарлотки."
+    },
+    {
+      "number": 125,
+      "id": "CNT-125",
+      "date": "2026-12-13",
+      "time": "10:00",
+      "week": 4,
+      "decision": "update",
+      "status": "planned",
+      "slug": "pirog-s-vishney-nachinka",
+      "sourceTitle": "Как сделать начинку для вишнёвого пирога из замороженных ягод",
+      "topic": "Как сделать начинку для вишнёвого пирога из замороженных ягод",
+      "seoTitle": "Как сделать начинку для вишнёвого пирога из замороженных ягод | Пирогорск",
+      "description": "Как подготовить замороженную вишню для пирога и загустить начинку. Что проверить перед сборкой и выпечкой.",
+      "intent": "Удержать сок, сохранив ягоды в начинке",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Удержать сок, сохранив ягоды в начинке",
+      "ownerURL": "/journal/pirog-s-vishney-nachinka/",
+      "deliverable": "Разобрать подготовку замороженной вишни, охлаждение загущённой начинки и признаки избытка влаги",
+      "contextLinks": [
+        "/journal/pochemu-u-piroga-syroe-dno/",
+        "/journal/sladkie-pirogi-k-chayu/",
+        "/journal/kak-zamorozit-pirog/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "crust",
+          "title": "King Arthur Baking — Pie Crust Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-crust",
+          "use": "Сопоставить формовку и обращение с тестом."
+        },
+        {
+          "key": "fruit",
+          "title": "King Arthur Baking — загустители для фруктовых пирогов",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-thickener",
+          "use": "Сопоставить вид ягод, вес и тип загустителя."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "pirog-s-vishney-nachinka",
+        "alt": "Вишнёвый пирог с решёткой и вишня в миске на фоне иллюстрированного пирогового города",
+        "figures": [
+          "Три стадии загущения",
+          "разрез корки после остывания"
+        ],
+        "cover": null,
+        "preview": "previews/pirog-s-vishney-nachinka.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Привязать дозировки к весу ягод и виду загустителя, проверить на тестовой порции."
+    },
+    {
+      "number": 126,
+      "id": "CNT-126",
+      "date": "2026-12-14",
+      "time": "10:00",
+      "week": 4,
+      "decision": "new",
+      "status": "planned",
+      "slug": "pirog-s-klyukvoy-i-apelsinom",
+      "sourceTitle": "Пирог с клюквой и апельсином: зимний рецепт",
+      "topic": "Пирог с клюквой и апельсином: зимний рецепт",
+      "seoTitle": "Пирог с клюквой и апельсином: зимний рецепт | Пирогорск",
+      "description": "Зимний пирог с клюквой и апельсином. Подготовка ягод и цедры, сборка фруктовой начинки и подача после остывания.",
+      "intent": "Испечь ягодный пирог с цитрусовой ноткой и контролем кислоты",
+      "cluster": "Рецепты",
+      "region": null,
+      "scenario": "Испечь ягодный пирог с цитрусовой ноткой и контролем кислоты",
+      "ownerURL": "/journal/pirog-s-klyukvoy-i-apelsinom/",
+      "deliverable": "Клюква свежая или замороженная; цедра и сок; выпечка на выбранной основе и варианты подачи",
+      "contextLinks": [
+        "/journal/pirog-s-brusnikoy-sochetaniya/",
+        "/journal/pirog-s-vishney-nachinka/",
+        "/journal/sladkie-pirogi-k-chayu/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "crust",
+          "title": "King Arthur Baking — Pie Crust Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-crust",
+          "use": "Сопоставить формовку и обращение с тестом."
+        },
+        {
+          "key": "fruit",
+          "title": "King Arthur Baking — загустители для фруктовых пирогов",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-thickener",
+          "use": "Сопоставить вид ягод, вес и тип загустителя."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "pirog-s-brusnikoy-sochetaniya",
+        "alt": "Невысокий пирог с клюквой, рядом апельсиновая цедра",
+        "figures": [
+          "Подготовка ягод",
+          "разрез после остывания"
+        ],
+        "cover": "artwork/pirog-s-klyukvoy-i-apelsinom.png",
+        "preview": "previews/pirog-s-klyukvoy-i-apelsinom.webp",
+        "og": "og/pirog-s-klyukvoy-i-apelsinom.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nOpen winter cranberry pie about 24 cm wide with ruby whole cranberries in the baked filling, lattice crust and a removed wedge on a small plate. Two orange peel curls on the board, no inedible decor on the pie, quiet naturally illuminated home kitchen.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no watermarks, no human figures. Do not imply a specific commercial product."
+      },
+      "dataGap": "Сверить фактическую рецептуру. Не представлять клюкву и бруснику как взаимозаменяемые без адаптации."
+    },
+    {
+      "number": 127,
+      "id": "CNT-127",
+      "date": "2026-12-15",
+      "time": "10:00",
+      "week": 4,
+      "decision": "update",
+      "status": "planned",
+      "slug": "pekarni-svetlogorska",
+      "sourceTitle": "Пекарни Светлогорска зимой: где купить выпечку по пути",
+      "topic": "Пекарни Светлогорска зимой: где купить выпечку по пути",
+      "seoTitle": "Пекарни Светлогорска зимой: где купить выпечку по пути | Пирогорск",
+      "description": "Где купить выпечку в Светлогорске зимой по дороге от станции до центра. Ориентиры, подтверждённые адреса и часы работы.",
+      "intent": "Найти вариант на вынос по проверенному маршруту",
+      "cluster": "Городские гиды",
+      "region": "Светлогорск",
+      "scenario": "Найти вариант на вынос по проверенному маршруту",
+      "ownerURL": "/journal/pekarni-svetlogorska/",
+      "deliverable": "Перепроверить адреса и часы; добавить вариант от станции до центра и обозначить, что доступно утром",
+      "contextLinks": [
+        "/journal/gde-poest-v-svetlogorske/",
+        "/journal/eda-s-soboy-v-svetlogorske/",
+        "/journal/hleb-i-vypechka-kaliningradskoy-oblasti/"
+      ],
+      "cta": {
+        "label": "Посмотреть подборки для Светлогорска",
+        "path": "/svetlogorsk/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "svet",
+          "title": "Туристический центр — Светлогорск",
+          "url": "https://visit-kaliningrad.ru/blog/svetlogorsk/",
+          "use": "Подтверждает точки ориентира; маршрут и доступность сверить отдельно."
+        },
+        {
+          "key": "events",
+          "title": "Туристический центр — календарь Калининградской области",
+          "url": "https://visit-kaliningrad.ru/calendar/",
+          "use": "Перепроверить на дату выхода, а часы заведений брать у владельцев."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "pekarni-svetlogorska",
+        "alt": "Редакционная иллюстрация: хлеб, круассан и фруктовые слойки в крафтовом пакете у вымышленного окна на балтийский город",
+        "figures": [
+          "Маршрут от станции",
+          "таблица часов и ссылок"
+        ],
+        "cover": null,
+        "preview": "previews/pekarni-svetlogorska.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Цены и наличие указывать только на дату, с прямой ссылкой на источник."
+    },
+    {
+      "number": 128,
+      "id": "CNT-128",
+      "date": "2026-12-16",
+      "time": "10:00",
+      "week": 4,
+      "decision": "new",
+      "status": "planned",
+      "slug": "chto-sdelat-iz-ostatkov-testa-dlya-piroga",
+      "sourceTitle": "Что сделать из обрезков теста для пирога",
+      "topic": "Что сделать из обрезков теста для пирога",
+      "seoTitle": "Что сделать из обрезков теста для пирога | Пирогорск",
+      "description": "Три способа использовать обрезки песочного, дрожжевого и слоёного теста. Как собрать заготовки и испечь небольшие изделия.",
+      "intent": "Использовать небольшие обрезки слоёного, песочного и дрожжевого теста",
+      "cluster": "Приёмы и хранение",
+      "region": null,
+      "scenario": "Использовать небольшие обрезки слоёного, песочного и дрожжевого теста",
+      "ownerURL": "/journal/chto-sdelat-iz-ostatkov-testa-dlya-piroga/",
+      "deliverable": "Три сценария по типу теста; что можно собирать в один пласт; раскладка и готовность небольших изделий",
+      "contextLinks": [
+        "/journal/pesochnoe-testo-dlya-kisha/",
+        "/journal/sloenoe-ili-drozhzhevoe-testo/",
+        "/journal/drozhzhevoe-testo-dlya-pirogov/"
+      ],
+      "cta": {
+        "label": "Посмотреть пироги и начинки",
+        "path": "/menu/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        },
+        {
+          "key": "baking",
+          "title": "King Arthur Baking — Pie Baking Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-baking",
+          "use": "Сопоставить признаки готовности и технику."
+        },
+        {
+          "key": "crust",
+          "title": "King Arthur Baking — Pie Crust Guide",
+          "url": "https://www.kingarthurbaking.com/learn/guides/pie-crust",
+          "use": "Сопоставить формовку и обращение с тестом."
+        }
+      ],
+      "artwork": {
+        "kind": "new",
+        "referenceSlug": "pesochnoe-testo-dlya-kisha",
+        "alt": "Разные обрезки теста и небольшие изделия на пергаменте",
+        "figures": [
+          "Три раскладки обрезков",
+          "примеры готовых изделий"
+        ],
+        "cover": "artwork/chto-sdelat-iz-ostatkov-testa-dlya-piroga.png",
+        "preview": "previews/chto-sdelat-iz-ostatkov-testa-dlya-piroga.webp",
+        "og": "og/chto-sdelat-iz-ostatkov-testa-dlya-piroga.jpg",
+        "prompt": "Use case: photorealistic-natural.\nAsset type: cover photo for an article and social preview.\nHome baking editorial still life on a pale wooden worktop: a few strips and small offcuts of raw pastry near an offset rolling pin, separate small tray of finished golden mini twists and cut-out biscuits, clear visual separation of raw dough and cooked pieces. Calm overhead arrangement.\nLandscape 3:2 photography for the Pirogorsk local food journal, a quiet Baltic cookbook editorial. Natural north-window light, warm neutral palette, tangible food texture, lightly lived-in contemporary props, clean central subject suitable for 1200x630 center crop. One continuous photographic scene, no typography, no logos, no watermarks, no human figures. Do not imply a specific commercial product."
+      },
+      "dataGap": "Проверить три способа с весом остатков. Сырые обрезки и остатки готовой выпечки описывать отдельно."
+    },
+    {
+      "number": 129,
+      "id": "CNT-129",
+      "date": "2026-12-17",
+      "time": "10:00",
+      "week": 5,
+      "decision": "update",
+      "status": "planned",
+      "slug": "chto-pit-s-pirogami",
+      "sourceTitle": "Что пить с пирогами зимой: чай, морс и кофе",
+      "topic": "Что пить с пирогами зимой: чай, морс и кофе",
+      "seoTitle": "Что пить с пирогами зимой: чай, морс и кофе | Пирогорск",
+      "description": "Пять сочетаний сытных и сладких пирогов с чаем, кофе и морсом. Идеи подачи зимой и вариант без кофеина.",
+      "intent": "Подобрать безалкогольный напиток к сладкой и сытной выпечке",
+      "cluster": "Стол и подача",
+      "region": null,
+      "scenario": "Подобрать безалкогольный напиток к сладкой и сытной выпечке",
+      "ownerURL": "/journal/chto-pit-s-pirogami/",
+      "deliverable": "Собрать 5 сочетаний, указать кислотность и сладость на примерах; добавить вариант без кофеина и два способа подачи",
+      "contextLinks": [
+        "/journal/sladkie-pirogi-k-chayu/",
+        "/journal/napitki-kaliningradskoy-oblasti/",
+        "/journal/pirog-s-brusnikoy-sochetaniya/"
+      ],
+      "cta": {
+        "label": "Рассчитать количество пирогов",
+        "path": "/podbor/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "company",
+          "title": "Калькулятор Пирогорска",
+          "url": "https://pirogorsk.ru/podbor/",
+          "use": "Сверить сценарии и примеры расчёта."
+        },
+        {
+          "key": "pie",
+          "title": "King Arthur Baking — How to Bake Pie",
+          "url": "https://www.kingarthurbaking.com/learn/pie",
+          "use": "Сверить принципы и терминологию; точную рецептуру проверять отдельно."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "chto-pit-s-pirogami",
+        "alt": "Ягодный напиток, чай и кофе рядом с кусочком вишнёвого пирога",
+        "figures": [
+          "Матрица сочетаний",
+          "пример двух подач"
+        ],
+        "cover": null,
+        "preview": "previews/chto-pit-s-pirogami.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Проверить текущий каталог и не выдавать вкусовые сочетания за личную дегустацию."
+    },
+    {
+      "number": 130,
+      "id": "CNT-130",
+      "date": "2026-12-18",
+      "time": "10:00",
+      "week": 5,
+      "decision": "update",
+      "status": "planned",
+      "slug": "stroganina-iz-pelamidy",
+      "sourceTitle": "Строганина из пеламиды в Калининграде: где искать в меню",
+      "topic": "Строганина из пеламиды в Калининграде: где искать в меню",
+      "seoTitle": "Строганина из пеламиды в Калининграде: где искать в меню | Пирогорск",
+      "description": "Что называют строганиной из пеламиды в Калининграде и как искать её в актуальном меню. История блюда и ссылки с датой проверки.",
+      "intent": "Понять роль блюда и найти проверенное ресторанное меню",
+      "cluster": "Городские гиды",
+      "region": "Калининград и область",
+      "scenario": "Понять роль блюда и найти проверенное ресторанное меню",
+      "ownerURL": "/journal/stroganina-iz-pelamidy/",
+      "deliverable": "Разнести исторический контекст и места, где блюдо заявлено; отметить дату проверки, обновить терминологию и перелинковку",
+      "contextLinks": [
+        "/journal/ryba-baltiki-vidy/",
+        "/journal/kak-edyat-rybu-v-kaliningradskoy-oblasti/",
+        "/journal/regionalnaya-kuhnya-kaliningradskoy-oblasti/"
+      ],
+      "cta": {
+        "label": "Посмотреть подборки для Калининграда",
+        "path": "/kaliningrad/"
+      },
+      "sourceCandidates": [
+        {
+          "key": "kgd",
+          "title": "Туристический центр — Калининград",
+          "url": "https://visit-kaliningrad.ru/blog/kaliningrad-za-3-dnya/",
+          "use": "Контекст маршрутов; меню и часы подтвердить у площадок."
+        },
+        {
+          "key": "food",
+          "title": "Роспотребнадзор — рекомендации к праздничному столу",
+          "url": "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "use": "Проверить применимость к конкретному блюду и контексту."
+        },
+        {
+          "key": "events",
+          "title": "Туристический центр — календарь Калининградской области",
+          "url": "https://visit-kaliningrad.ru/calendar/",
+          "use": "Перепроверить на дату выхода, а часы заведений брать у владельцев."
+        }
+      ],
+      "artwork": {
+        "kind": "existing",
+        "referenceSlug": "stroganina-iz-pelamidy",
+        "alt": "Редакционная иллюстрация: тонкие ломтики рыбы на тарелке, красный лук, лимон, хлеб и отдельный соус у вымышленного балтийского окна",
+        "figures": [
+          "Набор ссылок на актуальные меню",
+          "схема различия названий"
+        ],
+        "cover": null,
+        "preview": "previews/stroganina-iz-pelamidy.webp",
+        "og": null,
+        "prompt": null
+      },
+      "dataGap": "Проверить меню непосредственно у ресторанов. При отсутствии актуальных меню оставить справочный материал без списка заведений."
+    }
+  ]
+}

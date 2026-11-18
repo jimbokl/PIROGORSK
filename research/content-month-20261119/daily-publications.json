@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "timezone": "Europe/Kaliningrad",
+  "queue": "topic-map.json",
+  "releases": [
+    {
+      "date": "2026-11-19",
+      "topicId": "CNT-101",
+      "slug": "novogodniy-stol-s-pirogami",
+      "url": "https://pirogorsk.ru/journal/novogodniy-stol-s-pirogami/",
+      "status": "preparing",
+      "startedAt": "2026-11-18T12:21:02.167Z",
+      "localDraft": "drafts/CNT-101/edition.json",
+      "preparedBranch": "codex/pirogorsk-cnt-101"
+    }
+  ]
+}

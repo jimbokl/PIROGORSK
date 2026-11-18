@@ -73,7 +73,10 @@ async function main() {
     for (const entry of await readdir(dir, { withFileTypes: true })) {
       const file = path.join(dir, entry.name);
       if (entry.isDirectory()) await scan(file);
-      else if (file.endsWith('.html')) pages.set('/' + path.relative('site', file).replace(/index\.html$/, ''), await readFile(file, 'utf8'));
+      else if (file.endsWith('.html')) {
+        const route = '/' + path.relative('site', file).split(path.sep).join('/').replace(/index\.html$/, '');
+        pages.set(route, await readFile(file, 'utf8'));
+      }
     }
   }
   await scan('site');
