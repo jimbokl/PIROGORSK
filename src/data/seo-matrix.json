@@ -1072,7 +1072,8 @@
     },
     "relatedArticles": [
       "/journal/skolko-piroga-na-cheloveka/",
-      "/journal/pirog-500-g-ili-1-kg/"
+      "/journal/pirog-500-g-ili-1-kg/",
+      "/journal/novogodniy-stol-s-pirogami/"
     ]
   },
   {
@@ -4173,7 +4174,8 @@
     },
     "relatedArticles": [
       "/journal/pirog-s-brusnikoy-sochetaniya/",
-      "/journal/pirogi-na-den-rozhdeniya/"
+      "/journal/pirogi-na-den-rozhdeniya/",
+      "/journal/novogodniy-stol-s-pirogami/"
     ]
   },
   {
@@ -5118,6 +5120,28 @@
     "relatedArticles": [
       "/journal/pesochnoe-testo-dlya-kisha/",
       "/journal/pochemu-u-piroga-syroe-dno/",
+      "/journal/kak-narezat-pirog/"
+    ]
+  },
+  {
+    "path": "/journal/novogodniy-stol-s-pirogami/",
+    "cluster": "editorial",
+    "cohort": "month-20261119",
+    "pageType": "article",
+    "title": "Новогодний стол с пирогами на 6–12 человек",
+    "query": "новогодний стол с пирогами",
+    "intent": "Выбрать меню и массу пирогов для праздничного стола на 6–12 человек",
+    "monthlySearches": null,
+    "demandSource": null,
+    "serpValidated": false,
+    "ownershipBasis": "editorial_scenario_primary_sources",
+    "nextStep": {
+      "path": "/podbor/",
+      "label": "Рассчитать пироги для праздничного стола"
+    },
+    "relatedArticles": [
+      "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+      "/journal/skolko-piroga-na-cheloveka/",
       "/journal/kak-narezat-pirog/"
     ]
   }

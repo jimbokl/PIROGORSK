@@ -1,0 +1,100 @@
+{
+  "article": "/journal/novogodniy-stol-s-pirogami/",
+  "expectedDate": "2026-11-19",
+  "stage": "local_preflight",
+  "viewports": [
+    {
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "overflow": false
+    }
+  ],
+  "inbound": [
+    "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+    "/journal/sladkie-pirogi-k-chayu/"
+  ],
+  "ogBytes": 164187,
+  "structure": {
+    "title": "Новогодний стол с пирогами на 6–12 гостей | Пирогорск",
+    "canonical": "https://pirogorsk.ru/journal/novogodniy-stol-s-pirogami/",
+    "h1": 1,
+    "tables": 2,
+    "images": [
+      {
+        "url": "/_astro/novogodniy-stol-s-pirogami.Ci1hAN2y_zEiRo.webp",
+        "alt": "Два сытных пирога на зимнем столе с салатом, льняными салфетками и еловыми ветками",
+        "width": 358,
+        "fallbackBytes": 63654
+      },
+      {
+        "url": "/_astro/novogodniy-stol-s-pirogami-1.B_DNfgUG_Z1T7Rac.webp",
+        "alt": "Масса сытной и сладкой выпечки на шесть, восемь и двенадцать гостей",
+        "width": 358,
+        "fallbackBytes": 18524
+      },
+      {
+        "url": "/_astro/novogodniy-stol-s-pirogami-2.USchL1TC_Z8oWSm.webp",
+        "alt": "Очередность действий накануне, в день праздника и перед подачей",
+        "width": 358,
+        "fallbackBytes": 20030
+      }
+    ],
+    "contentLinks": [
+      "/journal/kak-vybrat-pirogi-na-kompaniyu/",
+      "/journal/skolko-piroga-na-cheloveka/",
+      "/podbor/",
+      "/journal/kak-narezat-pirog/"
+    ],
+    "sources": 4,
+    "cta": "/podbor/",
+    "words": 1381,
+    "structured": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://pirogorsk.ru/journal/novogodniy-stol-s-pirogami/#article",
+        "headline": "Новогодний стол с пирогами на 6–12 человек",
+        "description": "Три варианта праздничного стола на 6, 8 и 12 гостей. Как рассчитать сытные и сладкие пироги, выбрать дополнения и вовремя всё подать.",
+        "inLanguage": "ru-RU",
+        "mainEntityOfPage": "https://pirogorsk.ru/journal/novogodniy-stol-s-pirogami/",
+        "isPartOf": {
+          "@id": "https://pirogorsk.ru/blog/#blog"
+        },
+        "image": "https://pirogorsk.ru/seo/blog/novogodniy-stol-s-pirogami.jpg",
+        "datePublished": "2026-11-19",
+        "dateModified": "2026-11-19",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://pirogorsk.ru/#organization",
+          "name": "Редакция Пирогорска",
+          "url": "https://pirogorsk.ru/about/#redaktsiya"
+        },
+        "publisher": {
+          "@id": "https://pirogorsk.ru/#organization"
+        },
+        "isAccessibleForFree": true,
+        "citation": [
+          "https://pirogorsk.ru/podbor/",
+          "https://zpp.rospotrebnadzor.ru/news/federal/570062",
+          "https://www.foodsafety.gov/blog/food-safety-tips-holidays",
+          "https://www.kingarthurbaking.com/blog/2025/07/08/best-pie-knife"
+        ]
+      }
+    ]
+  },
+  "status": "PASS"
+}
