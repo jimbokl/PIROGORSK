@@ -22,7 +22,13 @@ test('the first planned day opens CNT-101 and a repeated run resumes the same sl
 test('the release date follows Kaliningrad time, even when UTC is still the previous day', () => {
   const result = selectEditorialSlot(topics, [], new Date('2026-11-19T22:03:00Z'));
   assert.equal(result.date, '2026-11-20');
-  assert.equal(result.topic.id, second.id);
+  assert.equal(result.action, 'not-yet');
+});
+
+test('an early launch waits until 10:00 local time even for a prepared slot', () => {
+  const entry = { date: first.date, topicId: first.id, status: 'preparing' };
+  assert.equal(selectEditorialSlot(topics, [entry], new Date('2026-11-19T07:59:59Z')).action, 'not-yet');
+  assert.equal(selectEditorialSlot(topics, [entry], new Date('2026-11-19T08:00:00Z')).action, 'resume');
 });
 
 test('an unfinished earlier slot must be reconciled before preparing a new one', () => {

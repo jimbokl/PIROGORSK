@@ -3,6 +3,7 @@ import { pathToFileURL } from 'node:url';
 
 const timeZone = 'Europe/Kaliningrad';
 const dateFormat = new Intl.DateTimeFormat('sv-SE', { timeZone, dateStyle: 'short' });
+const hourFormat = new Intl.DateTimeFormat('en-GB', { timeZone, hour: '2-digit', hourCycle: 'h23' });
 const unfinished = new Set(['preparing', 'pushed']);
 const terminal = new Set(['published', 'deferred']);
 
@@ -25,9 +26,9 @@ export function selectEditorialSlot(topics, releases, now = new Date()) {
   const earlier = releases
     .filter(entry => entry.date < date && unfinished.has(entry.status))
     .sort((left, right) => left.date.localeCompare(right.date))[0];
-  if (earlier) return { action: 'reconcile', date, topic: byDate.get(earlier.date), entry: earlier };
-
   const topic = byDate.get(date);
+  if ((earlier || topic) && Number(hourFormat.format(now)) < 10) return { action: 'not-yet', date };
+  if (earlier) return { action: 'reconcile', date, topic: byDate.get(earlier.date), entry: earlier };
   const entry = entries.get(date);
   if (!topic) return { action: 'no-slot', date };
   if (!entry) return { action: 'prepare', date, topic };
