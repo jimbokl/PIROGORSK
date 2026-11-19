@@ -8,10 +8,50 @@
       "topicId": "CNT-101",
       "slug": "novogodniy-stol-s-pirogami",
       "url": "https://pirogorsk.ru/journal/novogodniy-stol-s-pirogami/",
-      "status": "preparing",
+      "status": "published",
       "startedAt": "2026-11-18T12:21:02.167Z",
       "localDraft": "drafts/CNT-101/edition.json",
-      "preparedBranch": "codex/pirogorsk-cnt-101"
+      "preparedBranch": "codex/pirogorsk-cnt-101",
+      "sha": "ee705d036ee558bf5e9b99d3263b4b627004299d",
+      "pushedAt": "2026-11-19T10:12:36.4420426+02:00",
+      "ciRunId": 44485679122,
+      "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/44485679122",
+      "publishedAt": "2026-11-19T08:55:57Z",
+      "verifiedAt": "2026-11-19T08:57:33.939Z",
+      "evidence": "releases/2026-11-19-CNT-101.md",
+      "verification": {
+        "http": 200,
+        "canonical": "https://pirogorsk.ru/journal/novogodniy-stol-s-pirogami/",
+        "journalCount": 88,
+        "sitemapCount": 283,
+        "browserWidths": [
+          320,
+          390,
+          768,
+          1024,
+          1280
+        ],
+        "releaseCompatibility": "PASS"
+      },
+      "indexnow": {
+        "status": "received-by-all",
+        "urls": 283,
+        "checkedAt": "2026-11-19T08:56:01.120Z",
+        "receivers": [
+          {
+            "endpoint": "https://api.indexnow.org/indexnow",
+            "status": "received",
+            "httpStatus": 200,
+            "articleIncluded": true
+          },
+          {
+            "endpoint": "https://yandex.com/indexnow",
+            "status": "received-key-validation-pending",
+            "httpStatus": 202,
+            "articleIncluded": true
+          }
+        ]
+      }
     }
   ]
 }
