@@ -54,12 +54,111 @@
       }
     },
     {
+      "date": "2026-11-20",
+      "topicId": "CNT-102",
+      "slug": "pochemu-pirog-treskaetsya",
+      "url": "https://pirogorsk.ru/journal/pochemu-pirog-treskaetsya/",
+      "status": "deferred",
+      "recordedAt": "2026-11-23T08:33:01.977Z",
+      "reason": "На действующем URL осталась редакция до 20 ноября; выпуска и незавершённой попытки в журнале и Deploy Pages нет.",
+      "localDraft": "BRIEFS.md#cnt-102",
+      "evidence": "releases/2026-11-23-CNT-102-104.md"
+    },
+    {
+      "date": "2026-11-21",
+      "topicId": "CNT-103",
+      "slug": "vypechka-zaranee-prazdnik",
+      "url": "https://pirogorsk.ru/journal/vypechka-zaranee-prazdnik/",
+      "status": "deferred",
+      "recordedAt": "2026-11-23T08:33:01.977Z",
+      "reason": "Плановый новый URL вернул HTTP 404; выпуска и незавершённой попытки в журнале и Deploy Pages нет.",
+      "localDraft": "BRIEFS.md#cnt-103",
+      "evidence": "releases/2026-11-23-CNT-102-104.md"
+    },
+    {
+      "date": "2026-11-22",
+      "topicId": "CNT-104",
+      "slug": "zimnyaya-progulka-zelenogradsk-s-perekusom",
+      "url": "https://pirogorsk.ru/journal/zimnyaya-progulka-zelenogradsk-s-perekusom/",
+      "status": "deferred",
+      "recordedAt": "2026-11-23T08:33:01.977Z",
+      "reason": "Плановый новый URL вернул HTTP 404; выпуска и незавершённой попытки в журнале и Deploy Pages нет.",
+      "localDraft": "BRIEFS.md#cnt-104",
+      "evidence": "releases/2026-11-23-CNT-102-104.md"
+    },
+    {
       "date": "2026-11-23",
       "topicId": "CNT-105",
       "slug": "kak-narezat-pirog",
       "url": "https://pirogorsk.ru/journal/kak-narezat-pirog/",
-      "status": "preparing",
-      "startedAt": "2026-11-23T08:18:01.839Z"
+      "status": "published",
+      "startedAt": "2026-11-23T08:18:01.839Z",
+      "sha": "f5529388af38cd8a120395c9fb6bf241bc92245c",
+      "pushedAt": "2026-11-24T10:05:48.8973717+02:00",
+      "ciRunId": 45353159562,
+      "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/45353159562",
+      "priorAttempts": [
+        {
+          "sha": "0af2650b08ef4a367a1659dd9215696e15d2cac7",
+          "ciRunId": 45139393066,
+          "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/45139393066",
+          "status": "failed",
+          "failedCheck": "verify-journal-reading.mjs"
+        }
+      ],
+      "recoveryRunId": 45355977850,
+      "recoveryUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/45355977850",
+      "artifactId": 14902620810,
+      "publishedAt": "2026-11-24T08:26:43.303Z",
+      "verifiedAt": "2026-11-24T08:27:28.418Z",
+      "evidence": "releases/2026-11-23-CNT-105.md",
+      "verification": {
+        "http": 200,
+        "canonical": "https://pirogorsk.ru/journal/kak-narezat-pirog/",
+        "modifiedDate": "2026-11-24",
+        "journalCount": 88,
+        "sitemapCount": 283,
+        "browserWidths": [
+          320,
+          390,
+          768,
+          1024,
+          1280
+        ],
+        "keyboard": true,
+        "noJavaScript": true,
+        "releaseCompatibility": "PASS"
+      },
+      "indexnow": {
+        "status": "received-by-all",
+        "urls": 283,
+        "checkedAt": "2026-11-24T08:26:46.037Z",
+        "receivers": [
+          {
+            "endpoint": "https://api.indexnow.org/indexnow",
+            "status": "received",
+            "httpStatus": 200,
+            "articleIncluded": true
+          },
+          {
+            "endpoint": "https://yandex.com/indexnow",
+            "status": "received-key-validation-pending",
+            "httpStatus": 202,
+            "articleIncluded": true
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "topicId": "CNT-106",
+      "slug": "pirog-s-kartoshkoy-i-gribami-recept",
+      "url": "https://pirogorsk.ru/journal/pirog-s-kartoshkoy-i-gribami-recept/",
+      "status": "deferred",
+      "recordedAt": "2026-11-24T08:27:28.418Z",
+      "reason": "Дневная выкладка использована для завершения CNT-105. Проверка авторской раскладки на одной форме не проводилась.",
+      "localDraft": "BRIEFS.md#cnt-106",
+      "evidence": "releases/2026-11-23-CNT-105.md"
     }
   ]
 }
