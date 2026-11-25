@@ -165,9 +165,56 @@
       "topicId": "CNT-107",
       "slug": "kak-zamorozit-pirog",
       "url": "https://pirogorsk.ru/journal/kak-zamorozit-pirog/",
-      "status": "preparing",
+      "status": "published",
       "startedAt": "2026-11-25T08:02:20.503Z",
-      "localDraft": "drafts/CNT-107/FACTCHECK.md"
+      "localDraft": "drafts/CNT-107/FACTCHECK.md",
+      "sha": "d7dd4a0c3ab55975858acabd279bc4e9cecc3389",
+      "ciRunId": 45573987878,
+      "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/45573987878",
+      "pushedAt": "2026-11-25T10:10:25.4403504+02:00",
+      "recoveryRunId": 45577118699,
+      "recoveryUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/45577118699",
+      "artifactId": 15004512238,
+      "publishedAt": "2026-11-25T08:33:36.837Z",
+      "verifiedAt": "2026-11-25T08:35:43.793Z",
+      "evidence": "releases/2026-11-25-CNT-107.md",
+      "verification": {
+        "http": 200,
+        "canonical": "https://pirogorsk.ru/journal/kak-zamorozit-pirog/",
+        "publishedDate": "2026-10-31",
+        "modifiedDate": "2026-11-25",
+        "journalCount": 88,
+        "sitemapCount": 283,
+        "browserWidths": [
+          320,
+          390,
+          768,
+          1024,
+          1280
+        ],
+        "keyboard": true,
+        "noJavaScript": true,
+        "releaseCompatibility": "PASS"
+      },
+      "indexnow": {
+        "status": "received-by-all",
+        "urls": 283,
+        "checkedAt": "2026-11-25T08:33:40.776Z",
+        "receivers": [
+          {
+            "endpoint": "https://api.indexnow.org/indexnow",
+            "status": "received",
+            "httpStatus": 200,
+            "articleIncluded": true
+          },
+          {
+            "endpoint": "https://yandex.com/indexnow",
+            "status": "received",
+            "httpStatus": 200,
+            "articleIncluded": true
+          }
+        ]
+      }
     }
   ]
 }
