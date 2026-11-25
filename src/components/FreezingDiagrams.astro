@@ -1,0 +1,32 @@
+<aside class="freezing-diagrams" aria-label="Схемы заморозки пирогов" data-freezing-diagrams>
+  <figure class="packing">
+    <svg viewBox="0 0 324 90" aria-hidden="true" focusable="false">
+      <path class="crust" d="M25 65 49 26q21 2 37 26v15H25Z"/><path class="filling" d="M28 56h56v7H28z"/>
+      <path class="arrow" d="M101 49h21m-6-6 6 6-6 6"/>
+      <path class="wrap" d="m140 63 25-44 42 24 6 31h-74Z"/><path class="crust" d="m151 59 17-28q17 2 30 18v12h-47Z"/><path class="arrow" d="m144 66 14-10m37-18 12 9"/>
+      <path class="arrow" d="M223 49h21m-6-6 6 6-6 6"/>
+      <rect class="wrap" x="260" y="41" width="51" height="32" rx="6"/><rect class="filling" x="256" y="36" width="59" height="7" rx="3"/><rect class="label" x="278" y="48" width="25" height="13" rx="2"/><path class="arrow" d="M282 53h16m-16 4h11"/>
+    </svg>
+    <figcaption><strong>Как упаковать кусок</strong><ol><li>Отделите порцию.</li><li>Закройте срез пищевой обёрткой.</li><li>Уберите в контейнер и подпишите.</li></ol></figcaption>
+  </figure>
+  <figure class="choices">
+    <figcaption><strong>Что выбрать перед заморозкой</strong></figcaption>
+    <dl>
+      <div><dt>Пирог целиком нужен для общей подачи</dt><dd>Заморозьте целиком</dd></div>
+      <div><dt>Будете доставать по одному или два куска</dt><dd>Упакуйте порциями</dd></div>
+      <div><dt>Пирог ещё не выпекали</dt><dd>Сверьтесь с рецептом или этикеткой</dd></div>
+    </dl>
+    <p>Сначала проверьте, подходит ли заморозка конкретному изделию.</p>
+  </figure>
+</aside>
+
+<style>
+  .freezing-diagrams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-block:24px 32px}
+  figure{min-width:0;margin:0;padding:clamp(13px,3vw,22px);border:1px solid var(--ed-line,#d6d8d3);border-radius:14px;background:var(--ed-sea,#f3f6f3)}
+  figcaption{font:inherit}strong{display:block;font-size:17px;line-height:1.35;color:var(--ed-ink,#263850)}
+  svg{display:block;width:100%;height:auto;margin-bottom:8px}
+  .crust{fill:#f2d398;stroke:#91683d;stroke-width:1.5}.filling{fill:#b5794e}.wrap{fill:#deebe8;stroke:#3e6470;stroke-width:1.5}.arrow{fill:none;stroke:#34495d;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.label{fill:#fff;stroke:#3e6470;stroke-width:1}
+  ol{margin:9px 0 0;padding-inline-start:20px}li,p,dt,dd{font-size:14px;line-height:1.5}li+li{margin-top:4px}
+  dl{margin:12px 0}dl div+div{border-top:1px solid var(--ed-line,#d6d8d3);padding-top:7px;margin-top:7px}dd{margin:2px 0 0;color:var(--ed-ink,#263850);font-weight:650}p{margin:0;color:var(--ed-muted,#3e5662)}
+  @media(max-width:650px){.freezing-diagrams{grid-template-columns:1fr}}
+</style>

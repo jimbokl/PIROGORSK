@@ -11,6 +11,7 @@ import EditorialLinks from '../../components/EditorialLinks.astro';
 import EditorialNextStep from '../../components/EditorialNextStep.astro';
 import ServingRoute from '../../components/ServingRoute.astro';
 import PieCuttingDiagram from '../../components/PieCuttingDiagram.astro';
+import FreezingDiagrams from '../../components/FreezingDiagrams.astro';
 import ProductRecommendations from '../../components/ProductRecommendations.astro';
 import { catalog } from '../../data/catalog';
 import { articleRecommendations } from '../../data/editorial-recommendations';
@@ -76,6 +77,7 @@ const graph=[...schema.map(post => ({...post, isAccessibleForFree:true, ...(hasS
     {servingGuide && <ServingRoute slug={item.slug} />}
     <EditorialBody sections={item.sections} figures={monthly?.figures ?? journalFigures(item.slug, item.sections.length, isCity)} />
     {item.slug === 'kak-narezat-pirog' && <PieCuttingDiagram />}
+    {item.slug === 'kak-zamorozit-pirog' && <FreezingDiagrams />}
     {'feature' in item && item.feature==='ratio' && <FillingRatioBar />}
     {sources && <ArticleSources {sources} />}
     {(isCity || useGenericTools) && <details class="article-tools" id="article-tools"><summary>{isCity ? 'Адреса, карта и расчёты' : 'Рассчитать порции и посмотреть ответы'}</summary>
