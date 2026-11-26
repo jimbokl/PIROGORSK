@@ -221,9 +221,62 @@
       "topicId": "CNT-108",
       "slug": "kaliningrad-zimoy-gde-poest",
       "url": "https://pirogorsk.ru/journal/kaliningrad-zimoy-gde-poest/",
-      "status": "preparing",
+      "status": "published",
       "startedAt": "2026-11-26T08:04:55.069Z",
-      "localDraft": "BRIEFS.md#cnt-108"
+      "localDraft": "BRIEFS.md#cnt-108",
+      "sha": "edc9f1fbd16d85287ebaf431087e67a19b269d7d",
+      "ciRunId": 45781739665,
+      "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/45781739665",
+      "pushedAt": "2026-11-26T10:16:11.0649511+02:00",
+      "priorAttempts": [
+        {
+          "sha": "763992568d66f17428d84e8b54e5dd0cf2130449",
+          "ciRunId": 45780637604,
+          "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/45780637604",
+          "status": "failed",
+          "failedCheck": "verify-content-month.mjs"
+        }
+      ],
+      "publishedAt": "2026-11-26T08:36:46Z",
+      "verifiedAt": "2026-11-26T08:37:51.199Z",
+      "evidence": "releases/2026-11-26-CNT-108.md",
+      "verification": {
+        "http": 200,
+        "canonical": "https://pirogorsk.ru/journal/kaliningrad-zimoy-gde-poest/",
+        "publishedDate": "2026-11-06",
+        "modifiedDate": "2026-11-26",
+        "journalCount": 88,
+        "sitemapCount": 283,
+        "browserWidths": [
+          320,
+          390,
+          768,
+          1024,
+          1280
+        ],
+        "keyboard": true,
+        "noJavaScript": true,
+        "releaseCompatibility": "PASS"
+      },
+      "indexnow": {
+        "status": "received-by-all",
+        "urls": 283,
+        "checkedAt": "2026-11-26T08:36:49.824Z",
+        "receivers": [
+          {
+            "endpoint": "https://api.indexnow.org/indexnow",
+            "status": "received",
+            "httpStatus": 200,
+            "articleIncluded": true
+          },
+          {
+            "endpoint": "https://yandex.com/indexnow",
+            "status": "received-key-validation-pending",
+            "httpStatus": 202,
+            "articleIncluded": true
+          }
+        ]
+      }
     }
   ]
 }
