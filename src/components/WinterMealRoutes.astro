@@ -1,0 +1,42 @@
+---
+const routes = [
+  { title: 'Остров Канта и Рыбная деревня', steps: ['Кафедральный собор', 'Пешком в Рыбную деревню', 'Обед в зале «Хофбурга»'], reserve: 'Оставьте 15 минут на переход и поиск входа.' },
+  { title: 'Музейная набережная', steps: ['Сеанс в «Планете Океан»', 'К Философскому мосту', 'Обед в зале Lastadie'], reserve: 'Оставьте 20 минут на выход из музея и переход.' },
+];
+const addresses = [
+  ['Кафедральный собор', 'ул. И. Канта, 1'],
+  ['Хофбург', 'ул. Октябрьская, 6А'],
+  ['Планета Океан', 'наб. Петра Великого, 1В'],
+  ['Lastadie', 'ул. Виктора Гюго, 1'],
+];
+---
+<aside class="winter-routes" aria-label="Схемы зимних маршрутов и адреса" data-winter-routes>
+  <figure class="route-sketch">
+    <figcaption><strong>Два маршрута до тёплого обеда</strong></figcaption>
+    {routes.map((route, index) => <div class="route">
+      <p class="route-name"><span aria-hidden="true">{index + 1}</span>{route.title}</p>
+      <ol>{route.steps.map(step => <li>{step}</li>)}</ol>
+      <p class="note">{route.reserve}</p>
+    </div>)}
+    <p class="note">Минуты — запас для плана, а не замер пути. По гололёду и с детьми оставьте больше времени.</p>
+  </figure>
+  <figure class="addresses">
+    <figcaption><strong>Сохраните адреса перед выходом</strong></figcaption>
+    <dl>{addresses.map(([name, address]) => <div><dt>{name}</dt><dd>{address}</dd></div>)}</dl>
+    <p class="note">Сверено <time datetime="2026-11-26">26 ноября 2026</time>. Расписание и последний заказ уточняйте на день визита.</p>
+  </figure>
+</aside>
+<style>
+  .winter-routes{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:14px;margin-block:24px 32px}
+  figure{min-width:0;margin:0;padding:clamp(13px,3vw,21px);border:1px solid var(--ed-line,#d6d8d3);border-radius:14px;background:var(--ed-sea,#f3f6f3)}
+  figcaption strong{display:block;font-size:17px;line-height:1.4;color:var(--ed-ink,#263850)}
+  .route,dl{margin:12px 0}.route+.route{border-top:1px solid var(--ed-line,#d6d8d3);padding-top:10px}
+  .route-name{display:flex;align-items:center;gap:8px;font-weight:650;margin:0 0 7px}
+  .route-name span{display:grid;place-items:center;width:25px;height:25px;flex:none;border-radius:50%;background:#253750;color:#fff}
+  ol{margin:0 0 7px 12px;padding:0 0 0 15px;border-inline-start:2px solid #a56e42;list-style:none}
+  li{padding-block:2px}li+li{margin-top:3px}
+  p,li,dt,dd{font-size:14px;line-height:1.5}.note{margin:0;color:var(--ed-muted,#3e5662)}
+  dl div+div{border-top:1px solid var(--ed-line,#d6d8d3);padding-top:7px;margin-top:7px}
+  dt{font-weight:650}dd{margin:1px 0 0}
+  @media(max-width:650px){.winter-routes{grid-template-columns:1fr}}
+</style>
