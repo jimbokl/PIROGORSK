@@ -294,9 +294,53 @@
       "topicId": "CNT-110",
       "slug": "kofe-i-vypechka-v-zelenogradske",
       "url": "https://pirogorsk.ru/journal/kofe-i-vypechka-v-zelenogradske/",
-      "status": "preparing",
+      "status": "published",
       "startedAt": "2026-11-28T08:05:55.717Z",
-      "localDraft": "BRIEFS.md#cnt-110"
+      "localDraft": "BRIEFS.md#cnt-110",
+      "sha": "71bacf132578f6016806c728c13cba501dca85a1",
+      "ciRunId": 46124718020,
+      "ciUrl": "https://github.com/jimbokl/PIROGORSK/actions/runs/46124718020",
+      "pushedAt": "2026-11-28T10:12:25.1813986+02:00",
+      "publishedAt": "2026-11-28T08:31:17Z",
+      "verifiedAt": "2026-11-28T08:32:41.461Z",
+      "evidence": "releases/2026-11-28-CNT-110.md",
+      "verification": {
+        "http": 200,
+        "canonical": "https://pirogorsk.ru/journal/kofe-i-vypechka-v-zelenogradske/",
+        "publishedDate": "2026-11-07",
+        "modifiedDate": "2026-11-28",
+        "journalCount": 88,
+        "sitemapCount": 283,
+        "browserWidths": [
+          320,
+          390,
+          768,
+          1024,
+          1280
+        ],
+        "keyboard": true,
+        "noJavaScript": true,
+        "releaseCompatibility": "PASS"
+      },
+      "indexnow": {
+        "status": "received-by-all",
+        "urls": 283,
+        "checkedAt": "2026-11-28T08:31:20.227Z",
+        "receivers": [
+          {
+            "endpoint": "https://api.indexnow.org/indexnow",
+            "status": "received",
+            "httpStatus": 200,
+            "articleIncluded": true
+          },
+          {
+            "endpoint": "https://yandex.com/indexnow",
+            "status": "received",
+            "httpStatus": 200,
+            "articleIncluded": true
+          }
+        ]
+      }
     }
   ]
 }
