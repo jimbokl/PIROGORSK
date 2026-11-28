@@ -13,6 +13,7 @@ import ServingRoute from '../../components/ServingRoute.astro';
 import PieCuttingDiagram from '../../components/PieCuttingDiagram.astro';
 import FreezingDiagrams from '../../components/FreezingDiagrams.astro';
 import WinterMealRoutes from '../../components/WinterMealRoutes.astro';
+import ZelenogradskCoffeeRoute from '../../components/ZelenogradskCoffeeRoute.astro';
 import ProductRecommendations from '../../components/ProductRecommendations.astro';
 import { catalog } from '../../data/catalog';
 import { articleRecommendations } from '../../data/editorial-recommendations';
@@ -76,6 +77,7 @@ const graph=[...schema.map(post => ({...post, isAccessibleForFree:true, ...(hasS
     <ArticleReading links={[...item.sections.map((section,index) => ({href:`#section-${index}`,title:section.title})), ...(hasSources ? [{href:'#sources',title:'Источники и расчёты'}] : []), ...((isCity || useGenericTools) ? [{href:'#article-tools',title:isCity ? 'Адреса, карта и расчёты' : 'Расчёт порций и вопросы'}] : [])]}>
     {isNew && <aside class="blog-takeaway" aria-labelledby="takeaway-title"><h2 id="takeaway-title">Если коротко</h2><p>{item.takeaway}</p></aside>}
     {servingGuide && <ServingRoute slug={item.slug} />}
+    {item.slug === 'kofe-i-vypechka-v-zelenogradske' && <ZelenogradskCoffeeRoute /> }
     <EditorialBody sections={item.sections} figures={monthly?.figures ?? journalFigures(item.slug, item.sections.length, isCity)} />
     {item.slug === 'kak-narezat-pirog' && <PieCuttingDiagram />}
     {item.slug === 'kak-zamorozit-pirog' && <FreezingDiagrams />}
